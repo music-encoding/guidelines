@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_dev.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_dev.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/dev/content/textencoding.html">
+          <form action="/guidelines/dev/content/textencoding.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -129,14 +129,14 @@
   </h2>
 
 <p>This chapter describes methods for encoding textual content with MEI. It is divided into section: One part deals with 
-  <a href="/dev/content/textencoding.html#textstructures">Text Structures</a> in MEI, the other with 
-  <a href="/dev/content/textencoding.html#text">Text in MEI</a>. While the first covers structures of textual documents such as front- and backmatter, the latter describes how to mark up features and various entities within a text, such as names, tables or quotes. These features may appear both within data (a 
-  <a href="/dev/elements/figure.html" class="link_odd_elementSpec">figure</a> scribbled as marginal 
-  <a href="/dev/elements/annot.html" class="link_odd_elementSpec">annot</a>ation into a score by a bored second violin…) and metadata (a number of 
-  <a href="/dev/elements/date.html" class="link_odd_elementSpec">date</a>s within a text about the 
-  <a href="/dev/elements/creation.html" class="link_odd_elementSpec">creation</a> of a work). Accordingly, many of the elements and models explained in this chapter are used to encode 
-  <a href="/dev/content/metadata.html">Metadata in MEI</a>. However, they should not be confused with the elements from the 
-  <a href="/dev/content/lyricsperfdir.html">Lyrics and Performance Directions</a> chapter, which deals with <em>performed</em> text in MEI.</p>
+  <a href="/guidelines/dev/content/textencoding.html#textstructures">Text Structures</a> in MEI, the other with 
+  <a href="/guidelines/dev/content/textencoding.html#text">Text in MEI</a>. While the first covers structures of textual documents such as front- and backmatter, the latter describes how to mark up features and various entities within a text, such as names, tables or quotes. These features may appear both within data (a 
+  <a href="/guidelines/dev/elements/figure.html" class="link_odd_elementSpec">figure</a> scribbled as marginal 
+  <a href="/guidelines/dev/elements/annot.html" class="link_odd_elementSpec">annot</a>ation into a score by a bored second violin…) and metadata (a number of 
+  <a href="/guidelines/dev/elements/date.html" class="link_odd_elementSpec">date</a>s within a text about the 
+  <a href="/guidelines/dev/elements/creation.html" class="link_odd_elementSpec">creation</a> of a work). Accordingly, many of the elements and models explained in this chapter are used to encode 
+  <a href="/guidelines/dev/content/metadata.html">Metadata in MEI</a>. However, they should not be confused with the elements from the 
+  <a href="/guidelines/dev/content/lyricsperfdir.html">Lyrics and Performance Directions</a> chapter, which deals with <em>performed</em> text in MEI.</p>
 
 <p>Most of the elements described here take inspiration from encoding formats that deal primarily with text, such as HTML and the Text Encoding Initiative (TEI). These elements are provided to encode relatively basic textual information. For deeper encoding of text, these Guidelines recommend consideration of other text-specific encoding formats with embedded MEI markup.</p>
 
@@ -155,7 +155,7 @@
   </h4>
 
 <p>Text can be organized in different parts, for example in chapters or sections. The 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> element is used to encode such structural divisions.</p>
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> element is used to encode such structural divisions.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -166,7 +166,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/div.html">div</a>
+                <a href="/guidelines/dev/elements/div.html">div</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -178,9 +178,9 @@
 </div>
 
 <p>For example, printed scores, before the actual notation, can have text that can be organized in multiple sections (e.g. a preface, a critical report, performance instructions, etc. for which see the following sections); each of these sections should be identified by a different 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> element. Text might also occur in between music sections (see 
-  <a href="/dev/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few pieces might be preceded or followed by poetry. Such text should be encoded with the 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> element, as demonstrated in the following example:</p>
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> element. Text might also occur in between music sections (see 
+  <a href="/guidelines/dev/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few pieces might be preceded or followed by poetry. Such text should be encoded with the 
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> element, as demonstrated in the following example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -204,7 +204,7 @@
 </div>
 
 <p>Textual divisions may have titles or other forms of introductory material, which are encoded with the 
-  <a href="/dev/elements/head.html" class="link_odd_elementSpec">head</a> element.</p>
+  <a href="/guidelines/dev/elements/head.html" class="link_odd_elementSpec">head</a> element.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -215,7 +215,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/head.html">head</a>
+                <a href="/guidelines/dev/elements/head.html">head</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -249,7 +249,7 @@
 </div>
 
 <p>Having said that 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> identifies any structural organization of text, it is often helpful to distinguish the typology of division. The <strong>@type</strong> attribute can be used for this purpose.</p>
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> identifies any structural organization of text, it is often helpful to distinguish the typology of division. The <strong>@type</strong> attribute can be used for this purpose.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -260,7 +260,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/div.html">@type</a>
+                <a href="/guidelines/dev/attribute-classes/div.html">@type</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -272,7 +272,7 @@
 </div>
 
 <p><strong>@type</strong> may contain any number of space-separated <em>tags</em> describing the nature of the 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> (or, in fact, any other element). The following example shows the use of <strong>@type</strong> (in combination with <strong>@n</strong>) to indicate three prefaces in English, German and Italian are columns on the same page.</p>
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> (or, in fact, any other element). The following example shows the use of <strong>@type</strong> (in combination with <strong>@n</strong>) to indicate three prefaces in English, German and Italian are columns on the same page.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -314,8 +314,8 @@
 <p>By ‘front matter’ these Guidelines mean distinct sections of a text (usually, but not necessarily, a printed one), prefixed to it by way of introduction or identification as a part of its production. Features such as title pages or prefaces are clear examples; a less definite case might be the prologue attached to a dramatic work. The front matter of an encoded text should not be confused with the MEI header described in chapter , which provides metadata for the entire file.</p>
 
 <p>An encoder may choose simply to ignore the front matter in a text, if the original presentation of the work is of no interest. No specific tags are provided for the various kinds of subdivision which may appear within front matter: instead, generic 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> (“division”) elements may be used, which should not be confused with 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> (“musical division”) elements. The following suggested values for the <strong>@type</strong> attribute may be used to distinguish various kinds of division characteristic of front matter:</p>
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> (“division”) elements may be used, which should not be confused with 
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> (“musical division”) elements. The following suggested values for the <strong>@type</strong> attribute may be used to distinguish various kinds of division characteristic of front matter:</p>
 
 <p class="gloss"><strong>‘preface’</strong>: A foreword or preface addressed to the reader in which the author or publisher explains the content, purpose, or origin of the text.</p>
 
@@ -330,7 +330,7 @@
 <p class="gloss"><strong>‘frontispiece’</strong>: A pictorial frontispiece, possibly including some text.</p>
 
 <p>The following extended example demonstrates how various parts of the front matter of a text may be encoded. The front part begins with a title page, which is presented in section 
-  <a href="/dev/content/metadata.html#textTitlePages">Title Pages</a>, below. This is followed by a dedication and a preface, each of which is encoded as a distinct div:</p>
+  <a href="/guidelines/dev/content/metadata.html#textTitlePages">Title Pages</a>, below. This is followed by a dedication and a preface, each of which is encoded as a distinct div:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -361,13 +361,13 @@
 </div>
 
 <p>The front matter concludes with another 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> element, shown in the next example, this time containing a table of contents, which contains a 
-  <a href="/dev/elements/list.html" class="link_odd_elementSpec">list</a> element (as described in chapter 
-  <a href="/dev/content/textencoding.html#textLists">Lists</a>). Note the use of the 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to provide page-references: the implication here is that the target identifiers (song1, song2, etc.) will correspond with identifiers used for the 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements containing the individual songs. (For a description of the 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element, see chapter 
-  <a href="/dev/content/linkingdata.html#ptrRef">Pointers and References</a>.)</p>
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> element, shown in the next example, this time containing a table of contents, which contains a 
+  <a href="/guidelines/dev/elements/list.html" class="link_odd_elementSpec">list</a> element (as described in chapter 
+  <a href="/guidelines/dev/content/textencoding.html#textLists">Lists</a>). Note the use of the 
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to provide page-references: the implication here is that the target identifiers (song1, song2, etc.) will correspond with identifiers used for the 
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements containing the individual songs. (For a description of the 
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element, see chapter 
+  <a href="/guidelines/dev/content/linkingdata.html#ptrRef">Pointers and References</a>.)</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -434,8 +434,8 @@
   </h5>
 
 <p>Conventions vary as to which elements are grouped as back matter and which as front. For example, some books place the table of contents at the front, and others at the back. For this reason, the content models of the 
-  <a href="/dev/elements/front.html" class="link_odd_elementSpec">front</a> and 
-  <a href="/dev/elements/back.html" class="link_odd_elementSpec">back</a> elements are identical.</p>
+  <a href="/guidelines/dev/elements/front.html" class="link_odd_elementSpec">front</a> and 
+  <a href="/guidelines/dev/elements/back.html" class="link_odd_elementSpec">back</a> elements are identical.</p>
 
 <p>The following suggested values may be used for the <strong>@type</strong> attribute on all division elements, in order to distinguish various kinds of divisions characteristic of back matter:</p>
 
@@ -503,8 +503,8 @@
   </h3>
 
 <p>This chapter describes methods for encoding textual content with MEI. Textual information on scores has several different uses, although some text is closer to music notation than other kinds. For example, tempo marks, directives and lyrics are directly related to the functionality of the notated music and are, therefore, described in other chapters (see for example 
-  <a href="/dev/content/lyricsperfdir.html#lyricsDesc">Vocal Text</a> and 
-  <a href="/dev/content/shared.html#sharedTextDirectives">Text Directives</a>).</p>
+  <a href="/guidelines/dev/content/lyricsperfdir.html#lyricsDesc">Vocal Text</a> and 
+  <a href="/guidelines/dev/content/shared.html#sharedTextDirectives">Text Directives</a>).</p>
 
 <p>Most of the elements described here take inspiration from encoding formats that deal primarily with text, such as HTML and the Text Encoding Initiative (TEI). These elements are provided to encode relatively basic textual information. For deeper encoding of text, these Guidelines recommend consideration of other text-specific encoding formats with embedded MEI markup.</p>
 
@@ -517,7 +517,7 @@
 <p>Paragraphs are fundamental to prose text and typically group one or more sentences that form a logical passage. Usually, it is typographically distinct; that is, it usually begins on a new line and the first letter of the content is often indented, enlarged, or both. This element has a similar meaning as the corresponding elements in Encoded Archival Description (EAD), Text Encoding Initiative (TEI), and HTML.</p>
 
 <p>A paragraph is encoded with the 
-  <a href="/dev/elements/p.html" class="link_odd_elementSpec">p</a> element:</p>
+  <a href="/guidelines/dev/elements/p.html" class="link_odd_elementSpec">p</a> element:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -528,7 +528,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/p.html">p</a>
+                <a href="/guidelines/dev/elements/p.html">p</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -539,7 +539,7 @@
 </div>
 
 <p>Prose text is used for several different purposes within a MEI document, therefore 
-  <a href="/dev/elements/p.html" class="link_odd_elementSpec">p</a> can occur in many situations. For example, it may be used within metadata elements (see ):</p>
+  <a href="/guidelines/dev/elements/p.html" class="link_odd_elementSpec">p</a> can occur in many situations. For example, it may be used within metadata elements (see ):</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -551,11 +551,11 @@
 </div>
 
 <p>Alternatively, paragraphs may be part of the document contents (and therefore encoded within 
-  <a href="/dev/elements/music.html" class="link_odd_elementSpec">music</a>), either as 
-  <a href="/dev/content/textencoding.html#textFrontBack">Paratext</a> or within the music notation. In these cases, a paragraph will likely be contained by a 
-  <a href="/dev/elements/div.html" class="link_odd_elementSpec">div</a> or other elements containing prose (e.g. 
-  <a href="/dev/elements/annot.html" class="link_odd_elementSpec">annot</a>, 
-  <a href="/dev/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>, etc.).</p>
+  <a href="/guidelines/dev/elements/music.html" class="link_odd_elementSpec">music</a>), either as 
+  <a href="/guidelines/dev/content/textencoding.html#textFrontBack">Paratext</a> or within the music notation. In these cases, a paragraph will likely be contained by a 
+  <a href="/guidelines/dev/elements/div.html" class="link_odd_elementSpec">div</a> or other elements containing prose (e.g. 
+  <a href="/guidelines/dev/elements/annot.html" class="link_odd_elementSpec">annot</a>, 
+  <a href="/guidelines/dev/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>, etc.).</p>
 
 <p>The following example shows a paragraph in a preface section:</p>
 
@@ -583,7 +583,7 @@
   </h4>
 
 <p>Sometimes, it is desirable to capture the typographical qualities of a word or phrase without assigning it a special meaning. For this purpose, MEI offers the 
-  <a href="/dev/elements/rend.html" class="link_odd_elementSpec">rend</a> element, similar to TEI’s <em>hi</em> element. Using CSS-like values, its <strong>@rend</strong> attribute can be used to specify many typographic features, such as font style, font variants, and relative font size and weight. In addition, text decoration, direction, and enclosing ‘boxes’ may be captured. While <strong>@rend</strong> is used to record relative font size and weight, absolute values for these qualities (measured in printer’s points) should be specified using the <strong>@fontsize</strong> and <strong>@fontweight</strong> attributes. In addition to commonly found typographical qualities, MEI provides the <strong>@altrend</strong> attribute for the capture of additional, user-defined rendition information.</p>
+  <a href="/guidelines/dev/elements/rend.html" class="link_odd_elementSpec">rend</a> element, similar to TEI’s <em>hi</em> element. Using CSS-like values, its <strong>@rend</strong> attribute can be used to specify many typographic features, such as font style, font variants, and relative font size and weight. In addition, text decoration, direction, and enclosing ‘boxes’ may be captured. While <strong>@rend</strong> is used to record relative font size and weight, absolute values for these qualities (measured in printer’s points) should be specified using the <strong>@fontsize</strong> and <strong>@fontweight</strong> attributes. In addition to commonly found typographical qualities, MEI provides the <strong>@altrend</strong> attribute for the capture of additional, user-defined rendition information.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -594,7 +594,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/rend.html">rend</a>
+                <a href="/guidelines/dev/elements/rend.html">rend</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -614,7 +614,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.textrendition.html">@rend</a>
+                <a href="/guidelines/dev/attribute-classes/att.textrendition.html">@rend</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -633,7 +633,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.textrendition.html">@altrend</a>
+                <a href="/guidelines/dev/attribute-classes/att.textrendition.html">@altrend</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -651,7 +651,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.typography.html">@fontname</a>
+                <a href="/guidelines/dev/attribute-classes/att.typography.html">@fontname</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -669,7 +669,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.typography.html">@fontsize</a>
+                <a href="/guidelines/dev/attribute-classes/att.typography.html">@fontsize</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -689,7 +689,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.typography.html">@fontstyle</a>
+                <a href="/guidelines/dev/attribute-classes/att.typography.html">@fontstyle</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -707,7 +707,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.typography.html">@fontweight</a>
+                <a href="/guidelines/dev/attribute-classes/att.typography.html">@fontweight</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -725,7 +725,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.horizontalalign.html">@halign</a>
+                <a href="/guidelines/dev/attribute-classes/att.horizontalalign.html">@halign</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -743,7 +743,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.verticalalign.html">@valign</a>
+                <a href="/guidelines/dev/attribute-classes/att.verticalalign.html">@valign</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -760,9 +760,9 @@
   </h4>
 
 <p>The 
-  <a href="/dev/elements/fig.html" class="link_odd_elementSpec">fig</a> element groups elements representing or containing graphic information such as an illustration or figure. This element is modelled on the figure element in the Text Encoding Initiative (TEI). The 
-  <a href="/dev/elements/fig.html" class="link_odd_elementSpec">fig</a> element is used to contain images, captions, and textual descriptions of the pictures. The images themselves are specified using the 
-  <a href="/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element, whose <strong>@target</strong> attribute provides the location of an image. For example:</p>
+  <a href="/guidelines/dev/elements/fig.html" class="link_odd_elementSpec">fig</a> element groups elements representing or containing graphic information such as an illustration or figure. This element is modelled on the figure element in the Text Encoding Initiative (TEI). The 
+  <a href="/guidelines/dev/elements/fig.html" class="link_odd_elementSpec">fig</a> element is used to contain images, captions, and textual descriptions of the pictures. The images themselves are specified using the 
+  <a href="/guidelines/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element, whose <strong>@target</strong> attribute provides the location of an image. For example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -793,7 +793,7 @@
   </h5>
 
 <p>The element 
-  <a href="/dev/elements/caption.html" class="link_odd_elementSpec">caption</a> may be used to transcribe (or supply) a title or descriptive heading for the graphic itself, as in the following example:</p>
+  <a href="/guidelines/dev/elements/caption.html" class="link_odd_elementSpec">caption</a> may be used to transcribe (or supply) a title or descriptive heading for the graphic itself, as in the following example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -806,8 +806,8 @@
 </div>
 
 <p>The figure description (
-  <a href="/dev/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>) element usually contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image, perhaps without displaying it. This element is intended for use as an alternative to the content of its parent 
-  <a href="/dev/elements/fig.html" class="link_odd_elementSpec">fig</a> element; for example, for display when the equipment in use cannot display graphic images. It may also be used for indexing or documentary purposes, in which case best practice suggests the use of controlled vocabulary terms.</p>
+  <a href="/guidelines/dev/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>) element usually contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image, perhaps without displaying it. This element is intended for use as an alternative to the content of its parent 
+  <a href="/guidelines/dev/elements/fig.html" class="link_odd_elementSpec">fig</a> element; for example, for display when the equipment in use cannot display graphic images. It may also be used for indexing or documentary purposes, in which case best practice suggests the use of controlled vocabulary terms.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -821,11 +821,11 @@
 </div>
 
 <p>Occasionally, a figure description may have a complex structure. In this case, one or more textual component elements (
-  <a href="/dev/elements/p.html" class="link_odd_elementSpec">p</a> [paragraph], 
-  <a href="/dev/elements/table.html" class="link_odd_elementSpec">table</a>, 
-  <a href="/dev/elements/list.html" class="link_odd_elementSpec">list</a>, 
-  <a href="/dev/elements/quote.html" class="link_odd_elementSpec">quote</a>, or 
-  <a href="/dev/elements/lg.html" class="link_odd_elementSpec">lg</a> [linegroup]) may be used to model the internal structure of the description:</p>
+  <a href="/guidelines/dev/elements/p.html" class="link_odd_elementSpec">p</a> [paragraph], 
+  <a href="/guidelines/dev/elements/table.html" class="link_odd_elementSpec">table</a>, 
+  <a href="/guidelines/dev/elements/list.html" class="link_odd_elementSpec">list</a>, 
+  <a href="/guidelines/dev/elements/quote.html" class="link_odd_elementSpec">quote</a>, or 
+  <a href="/guidelines/dev/elements/lg.html" class="link_odd_elementSpec">lg</a> [linegroup]) may be used to model the internal structure of the description:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -848,7 +848,7 @@
   </h5>
 
 <p>The 
-  <a href="/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element indicates the location of an inline graphic, illustration, or figure. As noted above, there exists a wide variety of different graphics formats, and the following list is in no way exhaustive. Moreover, inclusion of any format in this list should not be taken as indicating endorsement by the MEI of this format or any products associated with it. Some of the formats listed here are proprietary to a greater or lesser extent and cannot therefore be regarded as standards in any meaningful sense. They are, however, widely used by many different vendors. The following formats are widely used at the present time, and are likely to remain supported by more than one vendor’s software:</p>
+  <a href="/guidelines/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element indicates the location of an inline graphic, illustration, or figure. As noted above, there exists a wide variety of different graphics formats, and the following list is in no way exhaustive. Moreover, inclusion of any format in this list should not be taken as indicating endorsement by the MEI of this format or any products associated with it. Some of the formats listed here are proprietary to a greater or lesser extent and cannot therefore be regarded as standards in any meaningful sense. They are, however, widely used by many different vendors. The following formats are widely used at the present time, and are likely to remain supported by more than one vendor’s software:</p>
 
 <ul>
   <li>BMP: Microsoft bitmap format</li>
@@ -925,7 +925,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/list.html">list</a>
+                <a href="/guidelines/dev/elements/list.html">list</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -945,7 +945,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/head.html">head</a>
+                <a href="/guidelines/dev/elements/head.html">head</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -965,7 +965,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/item.html">item</a>
+                <a href="/guidelines/dev/elements/item.html">item</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -976,8 +976,8 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/list.html" class="link_odd_elementSpec">list</a> element can identify any kind of list; the <strong>@form</strong> attribute can be used to specify whether the list is ordered, unordered etc. Each item in the list is encoded with the 
-  <a href="/dev/elements/li.html" class="link_odd_elementSpec">li</a> element. The <strong>@n</strong> can be used to record a label for a list item, as in the following example:</p>
+  <a href="/guidelines/dev/elements/list.html" class="link_odd_elementSpec">list</a> element can identify any kind of list; the <strong>@form</strong> attribute can be used to specify whether the list is ordered, unordered etc. Each item in the list is encoded with the 
+  <a href="/guidelines/dev/elements/li.html" class="link_odd_elementSpec">li</a> element. The <strong>@n</strong> can be used to record a label for a list item, as in the following example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -994,7 +994,7 @@
 </div>
 
 <p>Occasionally, lists have headers or titles, which can be encoded with 
-  <a href="/dev/elements/head.html" class="link_odd_elementSpec">head</a>:</p>
+  <a href="/guidelines/dev/elements/head.html" class="link_odd_elementSpec">head</a>:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1018,10 +1018,10 @@
   </h4>
 
 <p>The element 
-  <a href="/dev/elements/table.html" class="link_odd_elementSpec">table</a> contains text displayed in tabular form, i.e., in rows and columns. A table is the least ‘graphic’ of the elements discussed in this chapter. Almost any text structure can be presented as a series of rows and columns: one might, for example, choose to show a glossary or other form of list in tabular form, without necessarily regarding it as a table. When tabular presentation is regarded as of less intrinsic importance, it is correspondingly simpler to encode descriptive or functional information about the contents of the table, for example to identify one cell as containing a name and another as containing a date, though the two methods may be combined.</p>
+  <a href="/guidelines/dev/elements/table.html" class="link_odd_elementSpec">table</a> contains text displayed in tabular form, i.e., in rows and columns. A table is the least ‘graphic’ of the elements discussed in this chapter. Almost any text structure can be presented as a series of rows and columns: one might, for example, choose to show a glossary or other form of list in tabular form, without necessarily regarding it as a table. When tabular presentation is regarded as of less intrinsic importance, it is correspondingly simpler to encode descriptive or functional information about the contents of the table, for example to identify one cell as containing a name and another as containing a date, though the two methods may be combined.</p>
 
 <p>The 
-  <a href="/dev/elements/table.html" class="link_odd_elementSpec">table</a> element may appear both within other components (such as paragraphs), or between them, provided that the module defined in this chapter has been enabled. It is to a large extent arbitrary whether a table should be regarded as a series of rows or as a series of columns. For compatibility with currently available systems, however, these Guidelines require a row-by-row description of a table.</p>
+  <a href="/guidelines/dev/elements/table.html" class="link_odd_elementSpec">table</a> element may appear both within other components (such as paragraphs), or between them, provided that the module defined in this chapter has been enabled. It is to a large extent arbitrary whether a table should be regarded as a series of rows or as a series of columns. For compatibility with currently available systems, however, these Guidelines require a row-by-row description of a table.</p>
 
 <p>While rows and columns are always encoded in top-to-bottom, left-to-right order, formatting properties such as those provided by CSS may be used to specify that they should be displayed differently.</p>
 
@@ -1032,10 +1032,10 @@
   </h5>
 
 <p>The 
-  <a href="/dev/elements/tr.html" class="link_odd_elementSpec">tr</a> (table row) element is a formatting element that contains one or more 
-  <a href="/dev/elements/td.html" class="link_odd_elementSpec">td</a> or 
-  <a href="/dev/elements/th.html" class="link_odd_elementSpec">th</a> elements (cells) in a 
-  <a href="/dev/elements/table.html" class="link_odd_elementSpec">table</a>. A cell is the intersection of a row and a column. The precise rendition of the table and its cells should be specified in a style steet.</p>
+  <a href="/guidelines/dev/elements/tr.html" class="link_odd_elementSpec">tr</a> (table row) element is a formatting element that contains one or more 
+  <a href="/guidelines/dev/elements/td.html" class="link_odd_elementSpec">td</a> or 
+  <a href="/guidelines/dev/elements/th.html" class="link_odd_elementSpec">th</a> elements (cells) in a 
+  <a href="/guidelines/dev/elements/table.html" class="link_odd_elementSpec">table</a>. A cell is the intersection of a row and a column. The precise rendition of the table and its cells should be specified in a style steet.</p>
 <div class="sampleCode" data-lang="">
 
 
@@ -1107,7 +1107,7 @@
   </h5>
 
 <p>The 
-  <a href="/dev/elements/td.html" class="link_odd_elementSpec">td</a> (table data) element designates a table cell that contains data as opposed to a cell that contains column or row heading information. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes provide tabular rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
+  <a href="/guidelines/dev/elements/td.html" class="link_odd_elementSpec">td</a> (table data) element designates a table cell that contains data as opposed to a cell that contains column or row heading information. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes provide tabular rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1152,7 +1152,7 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/th.html" class="link_odd_elementSpec">th</a> (table header) element designates a table cell containing column or row heading information as opposed to one containing data. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes tabular display rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
+  <a href="/guidelines/dev/elements/th.html" class="link_odd_elementSpec">th</a> (table header) element designates a table cell containing column or row heading information as opposed to one containing data. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes tabular display rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1206,7 +1206,7 @@
   </h4>
 
 <p>It is common, in many types of texts, to find quotations. A quotation is typically attributed to another text other than the one being encoded. Often, the quoted material is typographically distinct from the surrounding text; i.e., surrounded by so-called ‘quote marks’ or rendered as a separate block of text. The 
-  <a href="/dev/elements/quote.html" class="link_odd_elementSpec">quote</a> element is used to mark this function:</p>
+  <a href="/guidelines/dev/elements/quote.html" class="link_odd_elementSpec">quote</a> element is used to mark this function:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1217,7 +1217,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/quote.html">quote</a>
+                <a href="/guidelines/dev/elements/quote.html">quote</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1230,7 +1230,7 @@
 </div>
 
 <p>The following examples show the use of 
-  <a href="/dev/elements/quote.html" class="link_odd_elementSpec">quote</a>.</p>
+  <a href="/guidelines/dev/elements/quote.html" class="link_odd_elementSpec">quote</a>.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1266,7 +1266,7 @@
   </h4>
 
 <p>This 
-  <a href="/dev/elements/lg.html" class="link_odd_elementSpec">lg</a> (line group) element is used generically to encode any section of text that is organized as a group of lines. Following the recommendations of the Text Encoding Initiative, it is recommended to use it, along with the following elements, for marking up poetry:</p>
+  <a href="/guidelines/dev/elements/lg.html" class="link_odd_elementSpec">lg</a> (line group) element is used generically to encode any section of text that is organized as a group of lines. Following the recommendations of the Text Encoding Initiative, it is recommended to use it, along with the following elements, for marking up poetry:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1277,7 +1277,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/lg.html">lg</a>
+                <a href="/guidelines/dev/elements/lg.html">lg</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1298,7 +1298,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/head.html">head</a>
+                <a href="/guidelines/dev/elements/head.html">head</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1318,7 +1318,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/l.html">l</a>
+                <a href="/guidelines/dev/elements/l.html">l</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1329,7 +1329,7 @@
 </div>
 
 <p>Because 
-  <a href="/dev/elements/lg.html" class="link_odd_elementSpec">lg</a> groups verses, it can be used to encode additional stanzas not integrated into the music notation. In addition, it is common for a poem to include a title or a header, as is demonstrated by the following example:</p>
+  <a href="/guidelines/dev/elements/lg.html" class="link_odd_elementSpec">lg</a> groups verses, it can be used to encode additional stanzas not integrated into the music notation. In addition, it is common for a poem to include a title or a header, as is demonstrated by the following example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1366,12 +1366,12 @@
 <p>This chapter describes the MEI module used for the encoding of names (names of persons or corporations/organizations) or descriptive phrases for styles, periods or geographical indications.</p>
 
 <p>The chapter begins by discussing the elements provided for the encoding of names (
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a>) in general and finishes by addressing more specific elements for corporate names (
-  <a href="/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a>), geographic names (
-  <a href="/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a>), period names (
-  <a href="/dev/elements/periodname.html" class="link_odd_elementSpec">periodName</a>), personal names (
-  <a href="/dev/elements/persname.html" class="link_odd_elementSpec">persName</a>) and style names (
-  <a href="/dev/elements/stylename.html" class="link_odd_elementSpec">styleName</a>). In general it is recommended to use standardized forms of proper nouns and to record the names and web-accessible locations of the controlled vocabularies used. There are several commonly-referenced authority files, especially for geographical, organizational and personal names, such as the Gemeinsame Normdatei (GND), the Library of Congress Authorities, the Getty Thesaurus of Geographic Names (TGN), and the MARC code list for relators. Recommendations on which standards could be used can be found in the descriptions of the individual elements.</p>
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a>) in general and finishes by addressing more specific elements for corporate names (
+  <a href="/guidelines/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a>), geographic names (
+  <a href="/guidelines/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a>), period names (
+  <a href="/guidelines/dev/elements/periodname.html" class="link_odd_elementSpec">periodName</a>), personal names (
+  <a href="/guidelines/dev/elements/persname.html" class="link_odd_elementSpec">persName</a>) and style names (
+  <a href="/guidelines/dev/elements/stylename.html" class="link_odd_elementSpec">styleName</a>). In general it is recommended to use standardized forms of proper nouns and to record the names and web-accessible locations of the controlled vocabularies used. There are several commonly-referenced authority files, especially for geographical, organizational and personal names, such as the Gemeinsame Normdatei (GND), the Library of Congress Authorities, the Getty Thesaurus of Geographic Names (TGN), and the MARC code list for relators. Recommendations on which standards could be used can be found in the descriptions of the individual elements.</p>
 
 <h5 id="namesBasic">9.2.8.2. Basic Elements for Names
       
@@ -1390,7 +1390,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/name.html">name</a>
+                <a href="/guidelines/dev/elements/name.html">name</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1401,14 +1401,14 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> element contains the name of an entity that is difficult to tag more specifically as a 
-  <a href="/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a>, 
-  <a href="/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a>, 
-  <a href="/dev/elements/persname.html" class="link_odd_elementSpec">persName</a>, or 
-  <a href="/dev/elements/title.html" class="link_odd_elementSpec">title</a>. The 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> element may be used in place of the more specific elements when it is not known what kind of name is being described or when a high degree of precision is not necessary. For example, the 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> element might be used when it is not clear whether the name “Bach” refers to a person or a geographic feature. When name parts are needed, use 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements. The recommended values for the <strong>@type</strong> attribute are:</p>
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> element contains the name of an entity that is difficult to tag more specifically as a 
+  <a href="/guidelines/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a>, 
+  <a href="/guidelines/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a>, 
+  <a href="/guidelines/dev/elements/persname.html" class="link_odd_elementSpec">persName</a>, or 
+  <a href="/guidelines/dev/elements/title.html" class="link_odd_elementSpec">title</a>. The 
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> element may be used in place of the more specific elements when it is not known what kind of name is being described or when a high degree of precision is not necessary. For example, the 
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> element might be used when it is not clear whether the name “Bach” refers to a person or a geographic feature. When name parts are needed, use 
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements. The recommended values for the <strong>@type</strong> attribute are:</p>
 
 <p class="gloss"><strong>‘pers’</strong>: a personal name</p>
 
@@ -1419,7 +1419,7 @@
 <p class="gloss"><strong>‘process’</strong>: the name of a process or mechanical agent</p>
 
 <p>Examples of the use of the <strong>@type</strong> attribute within the 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> element:</p>
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> element:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1434,7 +1434,7 @@
 </div>
 
 <p>The date sub-element is available within 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the <strong>@auth</strong> attribute.</p>
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the <strong>@auth</strong> attribute.</p>
 
 <h5 id="namesspecialized">9.2.8.3. Specialized Name Elements
       
@@ -1443,8 +1443,8 @@
   </h5>
 
 <p>In addition to the generic 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> and 
-  <a href="/dev/elements/date.html" class="link_odd_elementSpec">date</a> elements provided by the shared module, the namesDates module provides for the markup of the specialized cases described below.</p>
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> and 
+  <a href="/guidelines/dev/elements/date.html" class="link_odd_elementSpec">date</a> elements provided by the shared module, the namesDates module provides for the markup of the specialized cases described below.</p>
 
 <h6 id="namesdatesCorpNames">9.2.8.3.1. Corporate Names
       
@@ -1461,7 +1461,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/corpname.html">corpName</a>
+                <a href="/guidelines/dev/elements/corpname.html">corpName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1475,8 +1475,8 @@
 <p>Corporate names are non-personal names which refer to structured bodies of one or more persons that act as a single entity. Typical examples include associations, businesses, projects or institutions (e.g., ‘the Royal College of Music’ or ‘the BBC’), but political factions or other groupings where these are regarded as forming a single agency. Organization names typically include some type of indicator or pattern or words that help identify them as non-personal names.</p>
 
 <p>The 
-  <a href="/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a> element is frequently used within the  of an MEI document. It is typically found in the 
-  <a href="/dev/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element:</p>
+  <a href="/guidelines/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a> element is frequently used within the  of an MEI document. It is typically found in the 
+  <a href="/guidelines/dev/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1506,7 +1506,7 @@
 </div>
 
 <p>When it is necessary to provide structure for a name, the separate parts of the name may be encoded in 
-  <a href="/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a> sub-elements, for example:</p>
+  <a href="/guidelines/dev/elements/corpname.html" class="link_odd_elementSpec">corpName</a> sub-elements, for example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1528,7 +1528,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1547,7 +1547,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth.uri</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth.uri</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1568,7 +1568,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.canonical.html">@codedval</a>
+                <a href="/guidelines/dev/attribute-classes/att.canonical.html">@codedval</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1595,7 +1595,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/geogname.html">geogName</a>
+                <a href="/guidelines/dev/elements/geogname.html">geogName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1628,7 +1628,7 @@
 </div>
 
 <p>Geographic name sub-parts may be encoded in 
-  <a href="/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a> sub-elements. For example:</p>
+  <a href="/guidelines/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a> sub-elements. For example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1658,7 +1658,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/bloc.html">bloc</a>
+                <a href="/guidelines/dev/elements/bloc.html">bloc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1678,7 +1678,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/country.html">country</a>
+                <a href="/guidelines/dev/elements/country.html">country</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1699,7 +1699,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/district.html">district</a>
+                <a href="/guidelines/dev/elements/district.html">district</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1719,7 +1719,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/geogfeat.html">geogFeat</a>
+                <a href="/guidelines/dev/elements/geogfeat.html">geogFeat</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1739,7 +1739,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/postbox.html">postBox</a>
+                <a href="/guidelines/dev/elements/postbox.html">postBox</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1759,7 +1759,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/postcode.html">postCode</a>
+                <a href="/guidelines/dev/elements/postcode.html">postCode</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1779,7 +1779,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/region.html">region</a>
+                <a href="/guidelines/dev/elements/region.html">region</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1799,7 +1799,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/settlement.html">settlement</a>
+                <a href="/guidelines/dev/elements/settlement.html">settlement</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1819,7 +1819,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/street.html">street</a>
+                <a href="/guidelines/dev/elements/street.html">street</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1831,7 +1831,7 @@
 </div>
 
 <p>In contrast to the way 
-  <a href="/dev/elements/addrline.html" class="link_odd_elementSpec">addrLine</a> is used to mark the physical arrangement of the parts of an address, these elements can be used to mark the semantic components of an address. For example:</p>
+  <a href="/guidelines/dev/elements/addrline.html" class="link_odd_elementSpec">addrLine</a> is used to mark the physical arrangement of the parts of an address, these elements can be used to mark the semantic components of an address. For example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1892,7 +1892,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1911,7 +1911,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth.uri</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth.uri</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1932,7 +1932,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.canonical.html">@codedval</a>
+                <a href="/guidelines/dev/attribute-classes/att.canonical.html">@codedval</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1958,7 +1958,7 @@
 </div>
 
 <p>The names of places given within addresses can be marked with 
-  <a href="/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements, for example:</p>
+  <a href="/guidelines/dev/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements, for example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -1993,7 +1993,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/periodname.html">periodName</a>
+                <a href="/guidelines/dev/elements/periodname.html">periodName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2005,7 +2005,7 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/periodname.html" class="link_odd_elementSpec">periodName</a> element is for names which describe a particular period of time, for example, those which characterize obvious similarities in style, such as ‘Baroque’ or ‘3rd Style Period’:</p>
+  <a href="/guidelines/dev/elements/periodname.html" class="link_odd_elementSpec">periodName</a> element is for names which describe a particular period of time, for example, those which characterize obvious similarities in style, such as ‘Baroque’ or ‘3rd Style Period’:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2015,7 +2015,7 @@
 </div>
 
 <p>The date sub-element is available within 
-  <a href="/dev/elements/periodname.html" class="link_odd_elementSpec">periodName</a> in order to record any dates associated with the name that should be captured in the text, for example, start and end dates of the named period:</p>
+  <a href="/guidelines/dev/elements/periodname.html" class="link_odd_elementSpec">periodName</a> in order to record any dates associated with the name that should be captured in the text, for example, start and end dates of the named period:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2047,7 +2047,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2066,7 +2066,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth.uri</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth.uri</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2087,7 +2087,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.canonical.html">@codedval</a>
+                <a href="/guidelines/dev/attribute-classes/att.canonical.html">@codedval</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2114,7 +2114,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/persname.html">persName</a>
+                <a href="/guidelines/dev/elements/persname.html">persName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2126,7 +2126,7 @@
 </div>
 
 <p>Personal names within an MEI document may simply be marked with the 
-  <a href="/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> element containing a proper noun or proper noun phrase referring to an individual. For example:</p>
+  <a href="/guidelines/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> element containing a proper noun or proper noun phrase referring to an individual. For example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2145,7 +2145,7 @@
 </div>
 
 <p>Apart from the composer or originator of a musical work, there could be many other persons involved in the genesis of a musical work, such as librettists, lyricists, arrangers, editors, transcribers, printers, publishers, etc. In addition, sometimes a single individual may have multiple functions with regard to a musical work, e.g. composer and librettist. The <strong>@role</strong> attribute on 
-  <a href="/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> may be used to capture a person’s responsibility. For example:</p>
+  <a href="/guidelines/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> may be used to capture a person’s responsibility. For example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2163,7 +2163,7 @@
 <p>The <a href="http://www.loc.gov/marc/relators/relaterm.html" class="link_ref">Marc code list for relators</a> offers a variety of controlled terms that may serve as values for this use of <strong>@role</strong>.</p>
 
 <p>Personal names often consist of several components, such as given names, surnames, inherited or life-time titles of nobility, honorific or academic prefixes, military ranks, and other traditional descriptive phrases. These components can be marked using 
-  <a href="/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> sub-elements, the function of which may be indicated using the <strong>@type</strong> attribute with the following values:</p>
+  <a href="/guidelines/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> sub-elements, the function of which may be indicated using the <strong>@type</strong> attribute with the following values:</p>
 
 <p class="gloss"><strong>‘forename’</strong>: contains a forename, given or baptismal name.</p>
 
@@ -2188,7 +2188,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/addname.html">addName</a>
+                <a href="/guidelines/dev/elements/addname.html">addName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2208,7 +2208,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/famname.html">famName</a>
+                <a href="/guidelines/dev/elements/famname.html">famName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2228,7 +2228,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/forename.html">foreName</a>
+                <a href="/guidelines/dev/elements/forename.html">foreName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2247,7 +2247,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/genname.html">genName</a>
+                <a href="/guidelines/dev/elements/genname.html">genName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2267,7 +2267,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/rolename.html">roleName</a>
+                <a href="/guidelines/dev/elements/rolename.html">roleName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2287,7 +2287,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/model.namelike.html">model.nameLike</a>
+                <a href="/guidelines/dev/elements/model.namelike.html">model.nameLike</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2315,7 +2315,7 @@
 </div>
 
 <p>In the case of individuals with more than one forename, it is often sufficient to place all given names within a single 
-  <a href="/dev/elements/forename.html" class="link_odd_elementSpec">foreName</a> element:</p>
+  <a href="/guidelines/dev/elements/forename.html" class="link_odd_elementSpec">foreName</a> element:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2328,7 +2328,7 @@
 </div>
 
 <p>However, the advantage of marking names with specific name part elements instead of nested 
-  <a href="/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> elements, is that it becomes possible to use the <strong>@type</strong> attribute to distinguish between multiple instances of the same generic name component. The following example indicates the function of each of the given names of Wolfgang Mozart:</p>
+  <a href="/guidelines/dev/elements/persname.html" class="link_odd_elementSpec">persName</a> elements, is that it becomes possible to use the <strong>@type</strong> attribute to distinguish between multiple instances of the same generic name component. The following example indicates the function of each of the given names of Wolfgang Mozart:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2354,7 +2354,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2373,7 +2373,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.authorized.html">@auth.uri</a>
+                <a href="/guidelines/dev/attribute-classes/att.authorized.html">@auth.uri</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2394,7 +2394,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.canonical.html">@codedval</a>
+                <a href="/guidelines/dev/attribute-classes/att.canonical.html">@codedval</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2430,7 +2430,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/stylename.html">styleName</a>
+                <a href="/guidelines/dev/elements/stylename.html">styleName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2446,7 +2446,7 @@
 <p>“In the discussion of music, which is orientated towards relationships rather than meanings, the term raises special difficulties; it may be used to denote music characterized of an individual composer, of a period, of a geographical area or center, or of a society or social function. For the aesthetician style concerns surface or appearance, though in music appearance and essence are ultimately inseparable. For the historian a style is a distinguishing and ordering concept, both consistent of and denoting generalities; he or she groups examples of music according to similarities between them.” (Source: “Style”, Grove Music Online, accessed: April 27, 2012)</p>
 
 <p>The name of a musical style can be marked by the 
-  <a href="/dev/elements/stylename.html" class="link_odd_elementSpec">styleName</a> element, for example:</p>
+  <a href="/guidelines/dev/elements/stylename.html" class="link_odd_elementSpec">styleName</a> element, for example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2467,7 +2467,7 @@
 </div>
 
 <p>or to record a style of a certain epoch by using the 
-  <a href="/dev/elements/stylename.html" class="link_odd_elementSpec">styleName</a> sub-element:</p>
+  <a href="/guidelines/dev/elements/stylename.html" class="link_odd_elementSpec">styleName</a> sub-element:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2479,8 +2479,8 @@
 </div>
 
 <p>Musical forms and genres must be distinguished from musical style. Form and genre are typically indicated using the 
-  <a href="/dev/elements/classification.html" class="link_odd_elementSpec">classification</a> element, described in chapter 
-  <a href="/dev/content/metadata.html#headerWorkClass">Classification</a>.</p>
+  <a href="/guidelines/dev/elements/classification.html" class="link_odd_elementSpec">classification</a> element, described in chapter 
+  <a href="/guidelines/dev/content/metadata.html#headerWorkClass">Classification</a>.</p>
 
 <h4 id="sharedNames">9.2.8. Names
       
@@ -2489,7 +2489,7 @@
   </h4>
 
 <p>The 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> element may be used to mark up portions of a text that function as name.</p>
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> element may be used to mark up portions of a text that function as name.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2500,7 +2500,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/name.html">name</a>
+                <a href="/guidelines/dev/elements/name.html">name</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2511,7 +2511,7 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/name.html" class="link_odd_elementSpec">name</a> element is intended for generic applications and may be used to identify any named entity, such as a person, item, application, place, etc. Sometimes, however, a more specific encoding is desired, identifying the type of entity by using dedicated elements. MEI offers an (optional) module for this, which provides such elements for various types of names.</p>
+  <a href="/guidelines/dev/elements/name.html" class="link_odd_elementSpec">name</a> element is intended for generic applications and may be used to identify any named entity, such as a person, item, application, place, etc. Sometimes, however, a more specific encoding is desired, identifying the type of entity by using dedicated elements. MEI offers an (optional) module for this, which provides such elements for various types of names.</p>
 
 <h4 id="dates">9.2.9. Dates
       
@@ -2520,7 +2520,7 @@
   </h4>
 
 <p>The 
-  <a href="/dev/elements/date.html" class="link_odd_elementSpec">date</a> element may be used to mark up portions of a text that denote a date.</p>
+  <a href="/guidelines/dev/elements/date.html" class="link_odd_elementSpec">date</a> element may be used to mark up portions of a text that denote a date.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2531,7 +2531,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/date.html">date</a>
+                <a href="/guidelines/dev/elements/date.html">date</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2542,7 +2542,7 @@
 </div>
 
 <p>The element 
-  <a href="/dev/elements/date.html" class="link_odd_elementSpec">date</a> contains a date in any format, including a date range. A date range may be expressed as textual content or, when intervening punctuation is present, as a combination of date sub-elements and text.</p>
+  <a href="/guidelines/dev/elements/date.html" class="link_odd_elementSpec">date</a> contains a date in any format, including a date range. A date range may be expressed as textual content or, when intervening punctuation is present, as a combination of date sub-elements and text.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2560,8 +2560,8 @@
 </div>
 
 <p>To be more specific about the date, the attributes in the 
-  <a href="/dev/attribute-classes/att.datable.html">att.datable</a> and 
-  <a href="/dev/attribute-classes/att.calendared.html">att.calendared</a> classes can be used:</p>
+  <a href="/guidelines/dev/attribute-classes/att.datable.html">att.datable</a> and 
+  <a href="/guidelines/dev/attribute-classes/att.calendared.html">att.calendared</a> classes can be used:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2572,7 +2572,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.datable.html">@startdate</a>
+                <a href="/guidelines/dev/attribute-classes/att.datable.html">@startdate</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2590,7 +2590,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.datable.html">@enddate</a>
+                <a href="/guidelines/dev/attribute-classes/att.datable.html">@enddate</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2608,7 +2608,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.datable.html">@notbefore</a>
+                <a href="/guidelines/dev/attribute-classes/att.datable.html">@notbefore</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2626,7 +2626,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.datable.html">@notafter</a>
+                <a href="/guidelines/dev/attribute-classes/att.datable.html">@notafter</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2644,7 +2644,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.datable.html">@isodate</a>
+                <a href="/guidelines/dev/attribute-classes/att.datable.html">@isodate</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2662,7 +2662,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.calendared.html">@calendar</a>
+                <a href="/guidelines/dev/attribute-classes/att.calendared.html">@calendar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2692,7 +2692,7 @@
   </h4>
 
 <p>The 
-  <a href="/dev/elements/num.html" class="link_odd_elementSpec">num</a> element may be used to identify any numeric information in a text. The <strong>@unit</strong> may be used to specify the unit of measurement.</p>
+  <a href="/guidelines/dev/elements/num.html" class="link_odd_elementSpec">num</a> element may be used to identify any numeric information in a text. The <strong>@unit</strong> may be used to specify the unit of measurement.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2703,7 +2703,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/num.html">num</a>
+                <a href="/guidelines/dev/elements/num.html">num</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2722,7 +2722,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.measurement.html">@unit</a>
+                <a href="/guidelines/dev/attribute-classes/att.measurement.html">@unit</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2741,8 +2741,8 @@
   </h4>
 
 <p>Addresses may be encoded using the 
-  <a href="/dev/elements/address.html" class="link_odd_elementSpec">address</a> element, which itself may hold an arbitrary number of 
-  <a href="/dev/elements/addrline.html" class="link_odd_elementSpec">addrLine</a> elements.</p>
+  <a href="/guidelines/dev/elements/address.html" class="link_odd_elementSpec">address</a> element, which itself may hold an arbitrary number of 
+  <a href="/guidelines/dev/elements/addrline.html" class="link_odd_elementSpec">addrLine</a> elements.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2753,7 +2753,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/address.html">address</a>
+                <a href="/guidelines/dev/elements/address.html">address</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2773,7 +2773,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/addrline.html">addrLine</a>
+                <a href="/guidelines/dev/elements/addrline.html">addrLine</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2784,7 +2784,7 @@
 </div>
 
 <p>It is important to note that the 
-  <a href="/dev/elements/address.html" class="link_odd_elementSpec">address</a> element does not hold a reference to the person or organization whose address is specified. This must be provided in a separate element, as in the following example:</p>
+  <a href="/guidelines/dev/elements/address.html" class="link_odd_elementSpec">address</a> element does not hold a reference to the person or organization whose address is specified. This must be provided in a separate element, as in the following example:</p>
 <div class="sampleCode" data-lang="">
 
 
@@ -2816,7 +2816,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/bibl.html">bibl</a>
+                <a href="/guidelines/dev/elements/bibl.html">bibl</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2828,7 +2828,7 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> element may contain a mix of text and more specific elements, including the following:</p>
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> element may contain a mix of text and more specific elements, including the following:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2839,7 +2839,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/annot.html">annot</a>
+                <a href="/guidelines/dev/elements/annot.html">annot</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2859,7 +2859,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/arranger.html">arranger</a>
+                <a href="/guidelines/dev/elements/arranger.html">arranger</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2880,7 +2880,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/author.html">author</a>
+                <a href="/guidelines/dev/elements/author.html">author</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2900,7 +2900,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/biblscope.html">biblScope</a>
+                <a href="/guidelines/dev/elements/biblscope.html">biblScope</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2920,7 +2920,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/composer.html">composer</a>
+                <a href="/guidelines/dev/elements/composer.html">composer</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2939,7 +2939,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/creation.html">creation</a>
+                <a href="/guidelines/dev/elements/creation.html">creation</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2960,7 +2960,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/date.html">date</a>
+                <a href="/guidelines/dev/elements/date.html">date</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2979,7 +2979,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/distributor.html">distributor</a>
+                <a href="/guidelines/dev/elements/distributor.html">distributor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2999,7 +2999,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/edition.html">edition</a>
+                <a href="/guidelines/dev/elements/edition.html">edition</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3022,7 +3022,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/editor.html">editor</a>
+                <a href="/guidelines/dev/elements/editor.html">editor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3042,7 +3042,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/extent.html">extent</a>
+                <a href="/guidelines/dev/elements/extent.html">extent</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3062,7 +3062,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/funder.html">funder</a>
+                <a href="/guidelines/dev/elements/funder.html">funder</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3083,7 +3083,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/genre.html">genre</a>
+                <a href="/guidelines/dev/elements/genre.html">genre</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3103,7 +3103,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/identifier.html">identifier</a>
+                <a href="/guidelines/dev/elements/identifier.html">identifier</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3122,7 +3122,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/imprint.html">imprint</a>
+                <a href="/guidelines/dev/elements/imprint.html">imprint</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3141,7 +3141,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/librettist.html">librettist</a>
+                <a href="/guidelines/dev/elements/librettist.html">librettist</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3160,7 +3160,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/lyricist.html">lyricist</a>
+                <a href="/guidelines/dev/elements/lyricist.html">lyricist</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3179,7 +3179,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/physloc.html">physLoc</a>
+                <a href="/guidelines/dev/elements/physloc.html">physLoc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3200,7 +3200,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/publisher.html">publisher</a>
+                <a href="/guidelines/dev/elements/publisher.html">publisher</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3219,7 +3219,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/pubplace.html">pubPlace</a>
+                <a href="/guidelines/dev/elements/pubplace.html">pubPlace</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3238,7 +3238,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/recipient.html">recipient</a>
+                <a href="/guidelines/dev/elements/recipient.html">recipient</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3258,7 +3258,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/relateditem.html">relatedItem</a>
+                <a href="/guidelines/dev/elements/relateditem.html">relatedItem</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3278,7 +3278,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/repository.html">repository</a>
+                <a href="/guidelines/dev/elements/repository.html">repository</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3297,7 +3297,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/respstmt.html">respStmt</a>
+                <a href="/guidelines/dev/elements/respstmt.html">respStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3318,7 +3318,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/series.html">series</a>
+                <a href="/guidelines/dev/elements/series.html">series</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3338,7 +3338,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/sponsor.html">sponsor</a>
+                <a href="/guidelines/dev/elements/sponsor.html">sponsor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3359,7 +3359,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/textlang.html">textLang</a>
+                <a href="/guidelines/dev/elements/textlang.html">textLang</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3379,7 +3379,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/title.html">title</a>
+                <a href="/guidelines/dev/elements/title.html">title</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3398,55 +3398,55 @@
 </ul>
 
 <p>The elements 
-  <a href="/dev/elements/title.html" class="link_odd_elementSpec">title</a>, 
-  <a href="/dev/elements/edition.html" class="link_odd_elementSpec">edition</a>, 
-  <a href="/dev/elements/series.html" class="link_odd_elementSpec">series</a>, and 
-  <a href="/dev/elements/identifier.html" class="link_odd_elementSpec">identifier</a> fall into the first category as do the elements 
-  <a href="/dev/elements/arranger.html" class="link_odd_elementSpec">arranger</a>, 
-  <a href="/dev/elements/author.html" class="link_odd_elementSpec">author</a>, 
-  <a href="/dev/elements/composer.html" class="link_odd_elementSpec">composer</a>, 
-  <a href="/dev/elements/librettist.html" class="link_odd_elementSpec">librettist</a>, 
-  <a href="/dev/elements/lyricist.html" class="link_odd_elementSpec">lyricist</a>, 
-  <a href="/dev/elements/funder.html" class="link_odd_elementSpec">funder</a>, 
-  <a href="/dev/elements/sponsor.html" class="link_odd_elementSpec">sponsor</a>, and 
-  <a href="/dev/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a>. The respStmt element is provided for marking responsibility roles that cannot be recorded using more specific elements. The 
-  <a href="/dev/elements/biblscope.html" class="link_odd_elementSpec">biblScope</a> element also carries information of an identifying nature.</p>
+  <a href="/guidelines/dev/elements/title.html" class="link_odd_elementSpec">title</a>, 
+  <a href="/guidelines/dev/elements/edition.html" class="link_odd_elementSpec">edition</a>, 
+  <a href="/guidelines/dev/elements/series.html" class="link_odd_elementSpec">series</a>, and 
+  <a href="/guidelines/dev/elements/identifier.html" class="link_odd_elementSpec">identifier</a> fall into the first category as do the elements 
+  <a href="/guidelines/dev/elements/arranger.html" class="link_odd_elementSpec">arranger</a>, 
+  <a href="/guidelines/dev/elements/author.html" class="link_odd_elementSpec">author</a>, 
+  <a href="/guidelines/dev/elements/composer.html" class="link_odd_elementSpec">composer</a>, 
+  <a href="/guidelines/dev/elements/librettist.html" class="link_odd_elementSpec">librettist</a>, 
+  <a href="/guidelines/dev/elements/lyricist.html" class="link_odd_elementSpec">lyricist</a>, 
+  <a href="/guidelines/dev/elements/funder.html" class="link_odd_elementSpec">funder</a>, 
+  <a href="/guidelines/dev/elements/sponsor.html" class="link_odd_elementSpec">sponsor</a>, and 
+  <a href="/guidelines/dev/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a>. The respStmt element is provided for marking responsibility roles that cannot be recorded using more specific elements. The 
+  <a href="/guidelines/dev/elements/biblscope.html" class="link_odd_elementSpec">biblScope</a> element also carries information of an identifying nature.</p>
 
 <p>The 
-  <a href="/dev/elements/identifier.html" class="link_odd_elementSpec">identifier</a> for a given item may be an International Standard Book/Music Number, Library of Congress Control Number, a publisher’s or plate number, a personal identification number, an entry in a bibliography or catalog, etc.</p>
+  <a href="/guidelines/dev/elements/identifier.html" class="link_odd_elementSpec">identifier</a> for a given item may be an International Standard Book/Music Number, Library of Congress Control Number, a publisher’s or plate number, a personal identification number, an entry in a bibliography or catalog, etc.</p>
 
 <p>To classify the 
-  <a href="/dev/elements/title.html" class="link_odd_elementSpec">title</a> according to some convenient typology, the <strong>@type</strong> attribute may be used. Sample values include: main (main title), subordinate (subtitle, title of part), abbreviated (abbreviated form of title), alternative (alternate title by which the work is also known), translated (translated form of title), uniform (collective title). The <strong>@type</strong> attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single 
-  <a href="/dev/elements/title.html" class="link_odd_elementSpec">title</a> element. Title parts may be encoded in 
-  <a href="/dev/elements/title.html" class="link_odd_elementSpec">title</a> sub-elements. The name of the list from which a controlled value is taken may be recorded using the <strong>@authority</strong> attribute.</p>
+  <a href="/guidelines/dev/elements/title.html" class="link_odd_elementSpec">title</a> according to some convenient typology, the <strong>@type</strong> attribute may be used. Sample values include: main (main title), subordinate (subtitle, title of part), abbreviated (abbreviated form of title), alternative (alternate title by which the work is also known), translated (translated form of title), uniform (collective title). The <strong>@type</strong> attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single 
+  <a href="/guidelines/dev/elements/title.html" class="link_odd_elementSpec">title</a> element. Title parts may be encoded in 
+  <a href="/guidelines/dev/elements/title.html" class="link_odd_elementSpec">title</a> sub-elements. The name of the list from which a controlled value is taken may be recorded using the <strong>@authority</strong> attribute.</p>
 
 <p>Publication and distribution data may be captured using 
-  <a href="/dev/elements/pubplace.html" class="link_odd_elementSpec">pubPlace</a>, 
-  <a href="/dev/elements/publisher.html" class="link_odd_elementSpec">publisher</a>, 
-  <a href="/dev/elements/distributor.html" class="link_odd_elementSpec">distributor</a>, and 
-  <a href="/dev/elements/date.html" class="link_odd_elementSpec">date</a> elements directly inside 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> when the citation is unstructured. However, these elements should be grouped within 
-  <a href="/dev/elements/imprint.html" class="link_odd_elementSpec">imprint</a> whenever practical.</p>
+  <a href="/guidelines/dev/elements/pubplace.html" class="link_odd_elementSpec">pubPlace</a>, 
+  <a href="/guidelines/dev/elements/publisher.html" class="link_odd_elementSpec">publisher</a>, 
+  <a href="/guidelines/dev/elements/distributor.html" class="link_odd_elementSpec">distributor</a>, and 
+  <a href="/guidelines/dev/elements/date.html" class="link_odd_elementSpec">date</a> elements directly inside 
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> when the citation is unstructured. However, these elements should be grouped within 
+  <a href="/guidelines/dev/elements/imprint.html" class="link_odd_elementSpec">imprint</a> whenever practical.</p>
 
 <p>The physical characteristics of the cited item may be described using the 
-  <a href="/dev/elements/extent.html" class="link_odd_elementSpec">extent</a> element.</p>
+  <a href="/guidelines/dev/elements/extent.html" class="link_odd_elementSpec">extent</a> element.</p>
 
 <p>Annotation of the bibliographic citation and the provision of other pertinent details are addressed by several elements. Commentary on the bibliographic item or citation is accommodated by the 
-  <a href="/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> and 
-  <a href="/dev/elements/creation.html" class="link_odd_elementSpec">creation</a> elements. The 
-  <a href="/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> element is provided for generic comments, while 
-  <a href="/dev/elements/creation.html" class="link_odd_elementSpec">creation</a> is intended to hold information about the context of the creation of the cited item. Terms by which the bibliographic item can be classified may be placed in 
-  <a href="/dev/elements/genre.html" class="link_odd_elementSpec">genre</a>. For letters and other correspondence, 
-  <a href="/dev/elements/recipient.html" class="link_odd_elementSpec">recipient</a> captures the name of the person or organization to whom the item was addressed. The natural language(s) of the item may be recorded in one or more 
-  <a href="/dev/elements/textlang.html" class="link_odd_elementSpec">textLang</a> elements. Finally, a holding institution may be documented using the 
-  <a href="/dev/elements/repository.html" class="link_odd_elementSpec">repository</a> element directly within 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a>, but 
-  <a href="/dev/elements/physloc.html" class="link_odd_elementSpec">physLoc</a> should be used whenever possible as a grouping mechanism for location and shelfmark information. To identify sub-units of the holding institution, 
-  <a href="/dev/elements/repository.html" class="link_odd_elementSpec">repository</a> sub-elements may be used. The name of the list from which a controlled value for the agency name is taken may be recorded using the <strong>@authority</strong> attribute.</p>
+  <a href="/guidelines/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> and 
+  <a href="/guidelines/dev/elements/creation.html" class="link_odd_elementSpec">creation</a> elements. The 
+  <a href="/guidelines/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> element is provided for generic comments, while 
+  <a href="/guidelines/dev/elements/creation.html" class="link_odd_elementSpec">creation</a> is intended to hold information about the context of the creation of the cited item. Terms by which the bibliographic item can be classified may be placed in 
+  <a href="/guidelines/dev/elements/genre.html" class="link_odd_elementSpec">genre</a>. For letters and other correspondence, 
+  <a href="/guidelines/dev/elements/recipient.html" class="link_odd_elementSpec">recipient</a> captures the name of the person or organization to whom the item was addressed. The natural language(s) of the item may be recorded in one or more 
+  <a href="/guidelines/dev/elements/textlang.html" class="link_odd_elementSpec">textLang</a> elements. Finally, a holding institution may be documented using the 
+  <a href="/guidelines/dev/elements/repository.html" class="link_odd_elementSpec">repository</a> element directly within 
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a>, but 
+  <a href="/guidelines/dev/elements/physloc.html" class="link_odd_elementSpec">physLoc</a> should be used whenever possible as a grouping mechanism for location and shelfmark information. To identify sub-units of the holding institution, 
+  <a href="/guidelines/dev/elements/repository.html" class="link_odd_elementSpec">repository</a> sub-elements may be used. The name of the list from which a controlled value for the agency name is taken may be recorded using the <strong>@authority</strong> attribute.</p>
 
 <p>When supplied with a <strong>@target</strong> attribute, 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> may function as a hypertext reference to an external electronic resource. In addition, other related bibliographic items may be described or referenced using the 
-  <a href="/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> element.</p>
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> may function as a hypertext reference to an external electronic resource. In addition, other related bibliographic items may be described or referenced using the 
+  <a href="/guidelines/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> element.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -3475,8 +3475,8 @@
 </div>
 
 <p>Please consult 
-  <a href="/dev/content/textencoding.html#sharedNames">Names</a> and 
-  <a href="/dev/content/textencoding.html#dates">Dates</a> for more information about recording the names and dates frequently found in bibliographic citations.</p>
+  <a href="/guidelines/dev/content/textencoding.html#sharedNames">Names</a> and 
+  <a href="/guidelines/dev/content/textencoding.html#dates">Dates</a> for more information about recording the names and dates frequently found in bibliographic citations.</p>
 
 <h5 id="sharedRelatedItemDesc">9.2.12.1. Related Items
       
@@ -3485,9 +3485,9 @@
   </h5>
 
 <p>In some situations it is necessary to provide references from one bibliographic item to another. For these situations, MEI offers the 
-  <a href="/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> element. A 
-  <a href="/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> may be used inside of 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a>, and may either point to a different entity using its <strong>@target</strong> attribute, or may hold the related item as a child.</p>
+  <a href="/guidelines/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> element. A 
+  <a href="/guidelines/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> may be used inside of 
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a>, and may either point to a different entity using its <strong>@target</strong> attribute, or may hold the related item as a child.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -3516,12 +3516,12 @@
 </div>
 
 <p>In this example, the nested 
-  <a href="/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> / 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> provides information about the ‘container’ where the outer 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> may be found. The kind of relation is expressed using the <strong>@rel</strong> attribute. It describes the relationship of the child 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> to the 
-  <a href="/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>’s parent 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a>.</p>
+  <a href="/guidelines/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> / 
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> provides information about the ‘container’ where the outer 
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> may be found. The kind of relation is expressed using the <strong>@rel</strong> attribute. It describes the relationship of the child 
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> to the 
+  <a href="/guidelines/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>’s parent 
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -3532,7 +3532,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/relateditem.html">@rel</a>
+                <a href="/guidelines/dev/attribute-classes/relateditem.html">@rel</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3543,13 +3543,13 @@
 </div>
 
 <p>In these relations, the subject is always the relatedItem, and the object is always the parent of the relatedItem. Thus, a value of <strong>@rel</strong>=”preceding” indicates that the resource described within the relatedItem (or referenced by its <strong>@target</strong> attribute) precedes the 
-  <a href="/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> containing the 
-  <a href="/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>. Following MODS, both values of “preceding” and “succeeding” indicate a temporal order.</p>
+  <a href="/guidelines/dev/elements/bibl.html" class="link_odd_elementSpec">bibl</a> containing the 
+  <a href="/guidelines/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>. Following MODS, both values of “preceding” and “succeeding” indicate a temporal order.</p>
 
 <p>It is important not to confuse 
-  <a href="/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> with the concepts of 
-  <a href="/dev/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a>; see 
-  <a href="/dev/content/metadata.html#headerRelatedItemVsFRBR">RelatedItem vs. FRBR</a>.</p>
+  <a href="/guidelines/dev/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> with the concepts of 
+  <a href="/guidelines/dev/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a>; see 
+  <a href="/guidelines/dev/content/metadata.html#headerRelatedItemVsFRBR">RelatedItem vs. FRBR</a>.</p>
 
 <h4 id="sharedAnnotations">9.2.13. Annotations
       
@@ -3558,7 +3558,7 @@
   </h4>
 
 <p>Annotations are one of the most versatile features of MEI. They are provided using the 
-  <a href="/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> element.</p>
+  <a href="/guidelines/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> element.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -3569,7 +3569,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/annot.html">annot</a>
+                <a href="/guidelines/dev/elements/annot.html">annot</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3583,7 +3583,7 @@
 <p>This element may be contained by a wide range of other elements and may contain a large number of other elements. While this offers great flexibility in addressing the wide variety of textual features that might occur within an annotation, it may lead to markup that cannot be effectively processed mechanistically.</p>
 
 <p>In all cases, 
-  <a href="/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> provides a comment upon a feature of the encoding, but never contains textual transcription. Depending on its context, an annotation will deal with either its parent element, or, more usually, with the element(s) specified in its <strong>@plist</strong> attribute. This attribute uses URI references to link to one or more other elements using their <strong>@xml:id</strong> attribute values, as in the following example:</p>
+  <a href="/guidelines/dev/elements/annot.html" class="link_odd_elementSpec">annot</a> provides a comment upon a feature of the encoding, but never contains textual transcription. Depending on its context, an annotation will deal with either its parent element, or, more usually, with the element(s) specified in its <strong>@plist</strong> attribute. This attribute uses URI references to link to one or more other elements using their <strong>@xml:id</strong> attribute values, as in the following example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -3602,7 +3602,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/dev/content/textencoding.html">
+        <form action="/guidelines/dev/content/textencoding.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -3615,7 +3615,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -3623,7 +3623,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -3631,7 +3631,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -3639,7 +3639,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -3647,7 +3647,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -3655,7 +3655,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -5159,7 +5159,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/textencoding.html#textstructures">9.1. Text Structures
+    <a class="level-2" href="/guidelines/dev/content/textencoding.html#textstructures">9.1. Text Structures
     </a>
   
 
@@ -5170,7 +5170,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#textDivisions">9.1.1. Organizing Text into Divisions
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textDivisions">9.1.1. Organizing Text into Divisions
     </a>
   
 
@@ -5181,65 +5181,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#textFrontBack">9.1.2. Paratext
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/dev/content/textencoding.html#text">9.2. Text in MEI
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedParagraphs">9.2.1. Paragraphs
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedTextRendition">9.2.2. Text Rendition
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#figTableFigures">9.2.3. Figures
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textFrontBack">9.1.2. Paratext
     </a>
   
 
@@ -5264,28 +5206,7 @@
 
   
 
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#textLists">9.2.4. Lists
+    <a class="level-2" href="/guidelines/dev/content/textencoding.html#text">9.2. Text in MEI
     </a>
   
 
@@ -5296,7 +5217,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#figTableTables">9.2.5. Tables
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedParagraphs">9.2.1. Paragraphs
     </a>
   
 
@@ -5307,21 +5228,7 @@
 
   
 
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#textQuote">9.2.6. Quotation
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedTextRendition">9.2.2. Text Rendition
     </a>
   
 
@@ -5332,7 +5239,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#textPoetry">9.2.7. Poetry
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#figTableFigures">9.2.3. Figures
     </a>
   
 
@@ -5378,28 +5285,7 @@
 
   
 
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedNames">9.2.8. Names
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textLists">9.2.4. Lists
     </a>
   
 
@@ -5410,40 +5296,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#dates">9.2.9. Dates
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedNumbers">9.2.10. Numbers
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedAddresses">9.2.11. Addresses
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedBibliographicCitations">9.2.12. Bibliographic Citations and References
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#figTableTables">9.2.5. Tables
     </a>
   
 
@@ -5461,7 +5314,154 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#sharedAnnotations">9.2.13. Annotations
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textQuote">9.2.6. Quotation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textPoetry">9.2.7. Poetry
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedNames">9.2.8. Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#dates">9.2.9. Dates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedNumbers">9.2.10. Numbers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedAddresses">9.2.11. Addresses
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedBibliographicCitations">9.2.12. Bibliographic Citations and References
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedAnnotations">9.2.13. Annotations
     </a>
   
 
@@ -5928,7 +5928,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -5936,7 +5936,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -5944,7 +5944,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -5952,7 +5952,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -5960,7 +5960,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -5968,7 +5968,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -7472,7 +7472,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/textencoding.html#textstructures">9.1. Text Structures
+    <a class="level-2" href="/guidelines/dev/content/textencoding.html#textstructures">9.1. Text Structures
     </a>
   
 
@@ -7483,7 +7483,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#textDivisions">9.1.1. Organizing Text into Divisions
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textDivisions">9.1.1. Organizing Text into Divisions
     </a>
   
 
@@ -7494,65 +7494,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#textFrontBack">9.1.2. Paratext
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/dev/content/textencoding.html#text">9.2. Text in MEI
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedParagraphs">9.2.1. Paragraphs
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedTextRendition">9.2.2. Text Rendition
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#figTableFigures">9.2.3. Figures
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textFrontBack">9.1.2. Paratext
     </a>
   
 
@@ -7577,28 +7519,7 @@
 
   
 
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#textLists">9.2.4. Lists
+    <a class="level-2" href="/guidelines/dev/content/textencoding.html#text">9.2. Text in MEI
     </a>
   
 
@@ -7609,7 +7530,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#figTableTables">9.2.5. Tables
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedParagraphs">9.2.1. Paragraphs
     </a>
   
 
@@ -7620,21 +7541,7 @@
 
   
 
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#textQuote">9.2.6. Quotation
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedTextRendition">9.2.2. Text Rendition
     </a>
   
 
@@ -7645,7 +7552,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#textPoetry">9.2.7. Poetry
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#figTableFigures">9.2.3. Figures
     </a>
   
 
@@ -7691,28 +7598,7 @@
 
   
 
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedNames">9.2.8. Names
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textLists">9.2.4. Lists
     </a>
   
 
@@ -7723,40 +7609,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#dates">9.2.9. Dates
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedNumbers">9.2.10. Numbers
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedAddresses">9.2.11. Addresses
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/textencoding.html#sharedBibliographicCitations">9.2.12. Bibliographic Citations and References
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#figTableTables">9.2.5. Tables
     </a>
   
 
@@ -7774,7 +7627,154 @@
 
   
 
-    <a class="level-3" href="/dev/content/textencoding.html#sharedAnnotations">9.2.13. Annotations
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textQuote">9.2.6. Quotation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#textPoetry">9.2.7. Poetry
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedNames">9.2.8. Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#dates">9.2.9. Dates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedNumbers">9.2.10. Numbers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedAddresses">9.2.11. Addresses
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedBibliographicCitations">9.2.12. Bibliographic Citations and References
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/textencoding.html#sharedAnnotations">9.2.13. Annotations
     </a>
   
 

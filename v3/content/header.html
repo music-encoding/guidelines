@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/header.html">
+          <form action="/guidelines/v3/content/header.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -129,23 +129,23 @@
 <p>This chapter addresses the description of an encoded item so that the musical text, as well as its sources, encoding, and revisions are all thoroughly documented. Such documentation is necessary for scholars using the texts, for software processing them, and for catalogers in libraries and archives. Together these descriptions and declarations provide an electronic analog to the title page attached to a printed work. They also constitute an equivalent for the content of the code books or introductory manuals customarily accompanying electronic data sets.</p>
 
 <p>Every MEI-conformant text not embedded in another XML carrier that provides for capturing metadata, such as TEI or METS, must carry a set of descriptions, prefixed to it and encoded as described in this chapter. This set is known as the MEI header, tagged 
-  <a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>, and has five major parts:</p>
+  <a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>, and has five major parts:</p>
 
 <ol>
   <li>one or more alternative identifiers, tagged with 
-  <a href="/v3/elements/altid.html" class="link_odd_elementSpec">altId</a>, each of which provides an identifying name or number associated with the file.</li>
+  <a href="/guidelines/v3/elements/altid.html" class="link_odd_elementSpec">altId</a>, each of which provides an identifying name or number associated with the file.</li>
   <li>a file description, tagged 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a>, containing a full bibliographic description of the computer file itself, from which a user of the text could derive a proper bibliographic citation, or which a librarian or archivist could use in creating a catalog entry recording its presence within a library or archive. The term computer file here is to be understood as referring to the whole intellectual entity or document described by the header, even when this is stored in multiple physical operating system files. The file description also includes information about the source or sources from which the electronic document was derived. The MEI elements used to encode the file description are described in section 
-  <a href="/v3/content/header.html#headerFileDescription">File Description</a> below.</li>
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a>, containing a full bibliographic description of the computer file itself, from which a user of the text could derive a proper bibliographic citation, or which a librarian or archivist could use in creating a catalog entry recording its presence within a library or archive. The term computer file here is to be understood as referring to the whole intellectual entity or document described by the header, even when this is stored in multiple physical operating system files. The file description also includes information about the source or sources from which the electronic document was derived. The MEI elements used to encode the file description are described in section 
+  <a href="/guidelines/v3/content/header.html#headerFileDescription">File Description</a> below.</li>
   <li>an encoding description, tagged 
-  <a href="/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a>, which describes the relationship between an electronic text and its source or sources. It allows for detailed description of whether (or how) the text was normalized during transcription, how the encoder resolved ambiguities in the source, what levels of encoding or analysis were applied, and similar matters. The MEI elements used to encode the encoding description are described in section 
-  <a href="/v3/content/header.html#headerEncodingDescription">Encoding Description</a> below.</li>
+  <a href="/guidelines/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a>, which describes the relationship between an electronic text and its source or sources. It allows for detailed description of whether (or how) the text was normalized during transcription, how the encoder resolved ambiguities in the source, what levels of encoding or analysis were applied, and similar matters. The MEI elements used to encode the encoding description are described in section 
+  <a href="/guidelines/v3/content/header.html#headerEncodingDescription">Encoding Description</a> below.</li>
   <li>a work description, tagged 
-  <a href="/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a>, containing classification and contextual information about the work, such as its subject matter, the situation in which it was produced, the individuals described by or participating in producing it, and so forth. Such a work profile is of particular use in highly structured composite texts such as corpora or language collections, where it is often highly desirable to enforce a controlled descriptive vocabulary or to perform retrievals from a body of text in terms of text type or origin. The work description may however be of use in any form of automatic text processing. The MEI elements used to encode the work description are described in section 
-  <a href="/v3/content/header.html#headerWorkDescription">Work Description</a> below.</li>
+  <a href="/guidelines/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a>, containing classification and contextual information about the work, such as its subject matter, the situation in which it was produced, the individuals described by or participating in producing it, and so forth. Such a work profile is of particular use in highly structured composite texts such as corpora or language collections, where it is often highly desirable to enforce a controlled descriptive vocabulary or to perform retrievals from a body of text in terms of text type or origin. The work description may however be of use in any form of automatic text processing. The MEI elements used to encode the work description are described in section 
+  <a href="/guidelines/v3/content/header.html#headerWorkDescription">Work Description</a> below.</li>
   <li>a revision history, tagged 
-  <a href="/v3/elements/revisiondesc.html" class="link_odd_elementSpec">revisionDesc</a>, which allows the encoder to provide a history of changes made during the development of the electronic text. The revision history is important for version control and for resolving questions about the history of a file. The MEI elements used to encode the revision description are described in section 
-  <a href="/v3/content/header.html#headerRevisionDescription">Revision Description</a> below.</li>
+  <a href="/guidelines/v3/elements/revisiondesc.html" class="link_odd_elementSpec">revisionDesc</a>, which allows the encoder to provide a history of changes made during the development of the electronic text. The revision history is important for version control and for resolving questions about the history of a file. The MEI elements used to encode the revision description are described in section 
+  <a href="/guidelines/v3/content/header.html#headerRevisionDescription">Revision Description</a> below.</li>
 </ol>
 
 <h3 id="headerFileDescription">2.1. File Description
@@ -155,7 +155,7 @@
 <p>The structure of the bibliographic description of a machine-readable or digital musical text resembles that of a book, an article, or other kinds of textual objects. The file description element of the MEI header has therefore been closely modelled on existing standards in library cataloging; it should thus provide enough information to allow users to give standard bibliographic references to the electronic text, and to allow catalogers to catalog it. Bibliographic citations occurring elsewhere in the header, and in the text itself, are derived from the same model.</p>
 
 <p>The bibliographic description of an electronic musical text should be supplied by the mandatory 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element:</p>
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -166,7 +166,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/filedesc.html">fileDesc</a>
+                <a href="/guidelines/v3/elements/filedesc.html">fileDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -177,8 +177,8 @@
 </div>
 
 <p>The 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element contains two mandatory and six optional elements, each of which is described in more detail below. These elements are listed below in the order in which they must occur within the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element.</p>
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element contains two mandatory and six optional elements, each of which is described in more detail below. These elements are listed below in the order in which they must occur within the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -189,7 +189,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/titlestmt.html">titleStmt</a>
+                <a href="/guidelines/v3/elements/titlestmt.html">titleStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -208,7 +208,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/editionstmt.html">editionStmt</a>
+                <a href="/guidelines/v3/elements/editionstmt.html">editionStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -229,7 +229,7 @@ material being described.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/extent.html">extent</a>
+                <a href="/guidelines/v3/elements/extent.html">extent</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -251,7 +251,7 @@ and visual projections, etc.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/pubstmt.html">pubStmt</a>
+                <a href="/guidelines/v3/elements/pubstmt.html">pubStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -273,7 +273,7 @@ of publication, and other relevant details.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/seriesstmt.html">seriesStmt</a>
+                <a href="/guidelines/v3/elements/seriesstmt.html">seriesStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -293,7 +293,7 @@ belongs.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/notesstmt.html">notesStmt</a>
+                <a href="/guidelines/v3/elements/notesstmt.html">notesStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -314,7 +314,7 @@ that recorded in other parts of the bibliographic description.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/sourcedesc.html">sourceDesc</a>
+                <a href="/guidelines/v3/elements/sourcedesc.html">sourceDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -365,8 +365,8 @@ creation of the electronic file.</div>
   </h4>
 
 <p>The 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> element is the first component of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element, and is mandatory:</p>
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> element is the first component of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element, and is mandatory:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -377,7 +377,7 @@ creation of the electronic file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/titlestmt.html">titleStmt</a>
+                <a href="/guidelines/v3/elements/titlestmt.html">titleStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -398,7 +398,7 @@ creation of the electronic file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/title.html">title</a>
+                <a href="/guidelines/v3/elements/title.html">title</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -417,7 +417,7 @@ creation of the electronic file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/arranger.html">arranger</a>
+                <a href="/guidelines/v3/elements/arranger.html">arranger</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -438,7 +438,7 @@ essentially unchanged.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/author.html">author</a>
+                <a href="/guidelines/v3/elements/author.html">author</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -458,7 +458,7 @@ work.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/composer.html">composer</a>
+                <a href="/guidelines/v3/elements/composer.html">composer</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -477,7 +477,7 @@ work.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/editor.html">editor</a>
+                <a href="/guidelines/v3/elements/editor.html">editor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -497,7 +497,7 @@ capacity.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/funder.html">funder</a>
+                <a href="/guidelines/v3/elements/funder.html">funder</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -518,7 +518,7 @@ intellectual support and authority.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/librettist.html">librettist</a>
+                <a href="/guidelines/v3/elements/librettist.html">librettist</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -537,7 +537,7 @@ intellectual support and authority.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/lyricist.html">lyricist</a>
+                <a href="/guidelines/v3/elements/lyricist.html">lyricist</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -556,7 +556,7 @@ intellectual support and authority.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/sponsor.html">sponsor</a>
+                <a href="/guidelines/v3/elements/sponsor.html">sponsor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -578,7 +578,7 @@ the funding but do not necessarily take intellectual responsibility.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/respstmt.html">respStmt</a>
+                <a href="/guidelines/v3/elements/respstmt.html">respStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -592,7 +592,7 @@ artistic content.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/title.html" class="link_odd_elementSpec">title</a> element contains the chief name of the electronic work. Its content takes the form considered appropriate by its creator. The element may be repeated, if the work has more than one title (perhaps in different languages). Where the electronic work is derived from an existing source text, it is strongly recommended that the title for the former should be derived from the latter, but clearly distinguishable from it, for example by the addition of a phrase such as ‘: an electronic transcription’ or ‘a digital edition’. This will distinguish the electronic work from the source text in citations and in catalogs, which contain descriptions of both types of material.</p>
+  <a href="/guidelines/v3/elements/title.html" class="link_odd_elementSpec">title</a> element contains the chief name of the electronic work. Its content takes the form considered appropriate by its creator. The element may be repeated, if the work has more than one title (perhaps in different languages). Where the electronic work is derived from an existing source text, it is strongly recommended that the title for the former should be derived from the latter, but clearly distinguishable from it, for example by the addition of a phrase such as ‘: an electronic transcription’ or ‘a digital edition’. This will distinguish the electronic work from the source text in citations and in catalogs, which contain descriptions of both types of material.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -610,7 +610,7 @@ artistic content.</div>
 <p>Other alternative titles or subtitles may be encoded in additional title elements with values in the <strong>@type</strong> attribute that distinguish them from the chief title. Sample values for the <strong>@type</strong> attribute include: main (main title), subordinate (subtitle, title of part), abbreviated (abbreviated form of title), alternative (alternate title by which the work is also known), translated (translated form of title), uniform (collective title).</p>
 
 <p>The <strong>@type</strong> attribute is provided for convenience in analyzing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single 
-  <a href="/v3/elements/title.html" class="link_odd_elementSpec">title</a> element, as in the following example:</p>
+  <a href="/guidelines/v3/elements/title.html" class="link_odd_elementSpec">title</a> element, as in the following example:</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -638,11 +638,11 @@ artistic content.</div>
 </div>
 
 <p>Secondary intellectual responsibility in this case is encoded using 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a>. The 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element has two subcomponents: a 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element identifying a responsible individual or organization, and a 
-  <a href="/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> element indicating the nature of the responsibility. All names should be stated in the form in which the persons or bodies wish to be publicly cited. This will usually be the fullest form of the name, including first names. No specific recommendations are made at this time as to appropriate content for 
-  <a href="/v3/elements/resp.html" class="link_odd_elementSpec">resp</a>. However, it should make clear the nature of the responsibility.</p>
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a>. The 
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element has two subcomponents: a 
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> element identifying a responsible individual or organization, and a 
+  <a href="/guidelines/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> element indicating the nature of the responsibility. All names should be stated in the form in which the persons or bodies wish to be publicly cited. This will usually be the fullest form of the name, including first names. No specific recommendations are made at this time as to appropriate content for 
+  <a href="/guidelines/v3/elements/resp.html" class="link_odd_elementSpec">resp</a>. However, it should make clear the nature of the responsibility.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -661,10 +661,10 @@ artistic content.</div>
 </div>
 
 <p>This method of encoding facilitates exchange of bibliographic data with library catalogs and bibliographic databases as well as applications whose handling of bibliographic data is restricted to traditional responsibility roles. Additional information regarding these responsibility-role elements can be found in chapter 
-  <a href="/v3/content/shared.html#sharedBibliographicCitations">Bibliographic Citations and References</a>.</p>
+  <a href="/guidelines/v3/content/shared.html#sharedBibliographicCitations">Bibliographic Citations and References</a>.</p>
 
 <p>When the MEI.namesdates module is enabled, two additional elements are also permitted within 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a>:</p>
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a>:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -675,7 +675,7 @@ artistic content.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/corpname.html">corpName</a>
+                <a href="/guidelines/v3/elements/corpname.html">corpName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -695,7 +695,7 @@ entity.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/persname.html">persName</a>
+                <a href="/guidelines/v3/elements/persname.html">persName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -707,7 +707,7 @@ individual's forenames, surnames, honorific titles, and added names.</div>
 </div>
 
 <p>These elements allow for more precise identification of the entity associated with the name than is permitted by the simpler 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element. The following example shows how a precise date range can be associated with a personal or corporate name.</p>
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> element. The following example shows how a precise date range can be associated with a personal or corporate name.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -720,15 +720,15 @@ individual's forenames, surnames, honorific titles, and added names.</div>
 </div>
 
 <p>For additional information about corporate and personal names, see chapter 
-  <a href="/v3/content/namesdates.html">Names and Dates</a>.</p>
+  <a href="/guidelines/v3/content/namesdates.html">Names and Dates</a>.</p>
 
 <p>In addition to, or instead of the 
-  <a href="/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> element, the <strong>@role</strong> attribute on 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a>, 
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>, and 
-  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> may be used to capture the nature of responsibility. While 
-  <a href="/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> accommodates capturing the wide variety of text that may occur in responsibility statements, use of the <strong>@role</strong> attribute provides the possibility of recording a controlled value independently of the textual content of 
-  <a href="/v3/elements/resp.html" class="link_odd_elementSpec">resp</a>.</p>
+  <a href="/guidelines/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> element, the <strong>@role</strong> attribute on 
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a>, 
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>, and 
+  <a href="/guidelines/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> may be used to capture the nature of responsibility. While 
+  <a href="/guidelines/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> accommodates capturing the wide variety of text that may occur in responsibility statements, use of the <strong>@role</strong> attribute provides the possibility of recording a controlled value independently of the textual content of 
+  <a href="/guidelines/v3/elements/resp.html" class="link_odd_elementSpec">resp</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -762,8 +762,8 @@ individual's forenames, surnames, honorific titles, and added names.</div>
 </div>
 
 <p>It is often desirable to mix primary and secondary intellectual responsibility information. Treating all intellectual roles the same way can allow literal transcription of existing responsibility statements and simplify programmatic processing. The following example demonstrates how a responsibility statement may be transcribed using interleaved 
-  <a href="/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> and 
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> elements:</p>
+  <a href="/guidelines/v3/elements/resp.html" class="link_odd_elementSpec">resp</a> and 
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> elements:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -800,8 +800,8 @@ individual's forenames, surnames, honorific titles, and added names.</div>
   </h4>
 
 <p>The 
-  <a href="/v3/elements/editionstmt.html" class="link_odd_elementSpec">editionStmt</a> element is the second component of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element. It is optional but recommended when applicable.</p>
+  <a href="/guidelines/v3/elements/editionstmt.html" class="link_odd_elementSpec">editionStmt</a> element is the second component of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element. It is optional but recommended when applicable.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -812,7 +812,7 @@ individual's forenames, surnames, honorific titles, and added names.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/editionstmt.html">editionStmt</a>
+                <a href="/guidelines/v3/elements/editionstmt.html">editionStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -835,7 +835,7 @@ material being described.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/edition.html">edition</a>
+                <a href="/guidelines/v3/elements/edition.html">edition</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -861,7 +861,7 @@ edition, British edition, etc.).</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/respstmt.html">respStmt</a>
+                <a href="/guidelines/v3/elements/respstmt.html">respStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -883,13 +883,13 @@ artistic content.</div>
 <p>Clearly, there will always be borderline cases and the matter is somewhat arbitrary. The simplest rule is: if you think that your file is a new edition, then call it such. An edition statement is optional for the first release of a computer file; it is mandatory for each later release, though this requirement cannot be enforced.</p>
 
 <p>Note that all changes in a file, whether or not they are regarded as constituting a new edition or simply a revision, should be independently noted in the revision description section of the file header (see section 
-  <a href="/v3/content/header.html#headerRevisionDescription">Revision Description</a>).</p>
+  <a href="/guidelines/v3/content/header.html#headerRevisionDescription">Revision Description</a>).</p>
 
 <p>The edition element should contain phrases describing the edition or version, including the word ‘edition’, ‘version’, or an equivalent term, together with a number or date, or terms indicating difference from other editions such as ‘new edition’, ‘revised edition’, etc. Any dates that occur within the edition statement should be marked with the 
-  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a> element. The <strong>@n</strong> attribute of the edition element may be used as elsewhere to supply any formal identification (such as a version number) for the edition.</p>
+  <a href="/guidelines/v3/elements/date.html" class="link_odd_elementSpec">date</a> element. The <strong>@n</strong> attribute of the edition element may be used as elsewhere to supply any formal identification (such as a version number) for the edition.</p>
 
 <p>One or more 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> elements may also be used to supply statements of responsibility for the edition in question. These may refer to individuals or corporate bodies and can indicate functions such as that of a reviser, or can name the person or body responsible for the provision of supplementary matter, of appendices, etc., in a new edition.</p>
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> elements may also be used to supply statements of responsibility for the edition in question. These may refer to individuals or corporate bodies and can indicate functions such as that of a reviser, or can name the person or body responsible for the provision of supplementary matter, of appendices, etc., in a new edition.</p>
 
 <p>Some examples follow:</p>
 
@@ -921,7 +921,7 @@ artistic content.</div>
   </h4>
 
 <p>The third component of the fileDesc is a description of the physical qualities of the file. The 
-  <a href="/v3/elements/extent.html" class="link_odd_elementSpec">extent</a> element is provided for this purpose.</p>
+  <a href="/guidelines/v3/elements/extent.html" class="link_odd_elementSpec">extent</a> element is provided for this purpose.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -932,7 +932,7 @@ artistic content.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/extent.html">extent</a>
+                <a href="/guidelines/v3/elements/extent.html">extent</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -946,14 +946,14 @@ and visual projections, etc.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/extent.html" class="link_odd_elementSpec">extent</a> element describes the approximate size of a text as stored on some carrier medium, whether digital or non-digital, specified in any convenient units.</p>
+  <a href="/guidelines/v3/elements/extent.html" class="link_odd_elementSpec">extent</a> element describes the approximate size of a text as stored on some carrier medium, whether digital or non-digital, specified in any convenient units.</p>
 
 <p>For printed books, information about the carrier, such as the kind of medium used and its size, are of great importance in cataloging procedures. The print-oriented rules for bibliographic description of an item’s medium and extent need some re-interpretation when applied to electronic media. An electronic file exists as a distinct entity quite independently of its carrier and remains the same intellectual object whether it is stored as file on a hard disc drive, a CD-ROM, a set of USB devices, or in the internet. Since, moreover, these Guidelines are specifically aimed at facilitating transparent document storage and interchange, any purely machine-dependent information should be irrelevant as far as the file header is concerned.</p>
 
 <p>This is particularly true of information about file-type although library-oriented rules for cataloging often distinguish two types of computer file: ‘data’ and ‘programs’. This distinction is quite difficult to draw in some cases, for example, hypermedia or texts with built-in search and retrieval software.</p>
 
 <p>Although it is equally system-dependent, some measure of the size of the computer file may be of use for cataloging and other practical purposes. Because the measurement and expression of file size is fraught with difficulties, only very general recommendations are possible; the element 
-  <a href="/v3/elements/extent.html" class="link_odd_elementSpec">extent</a> should contain a phrase indicating the size or approximate size of the computer file in one of the following ways:</p>
+  <a href="/guidelines/v3/elements/extent.html" class="link_odd_elementSpec">extent</a> should contain a phrase indicating the size or approximate size of the computer file in one of the following ways:</p>
 
 <ul>
   <li>in bytes of a specified length (e.g. ‘4000 bytes’)</li>
@@ -992,8 +992,8 @@ The use of standard abbreviations for units of quantity is recommended where app
   </h4>
 
 <p>The 
-  <a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> element is the fourth component of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element and is mandatory.</p>
+  <a href="/guidelines/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> element is the fourth component of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element and is mandatory.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1004,7 +1004,7 @@ The use of standard abbreviations for units of quantity is recommended where app
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/pubstmt.html">pubStmt</a>
+                <a href="/guidelines/v3/elements/pubstmt.html">pubStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1018,8 +1018,8 @@ of publication, and other relevant details.</div>
 </div>
 
 <p>It may contain either a single 
-  <a href="/v3/elements/unpub.html" class="link_odd_elementSpec">unpub</a> element, indicating that the file has yet to be published, or in the case of published material, one or more elements from the 
-  <a href="/v3/model-classes/model.pubstmtpart.html">model.pubStmtPart</a> class. The following elements may be used to provide details regarding the file’s publication and distribution:</p>
+  <a href="/guidelines/v3/elements/unpub.html" class="link_odd_elementSpec">unpub</a> element, indicating that the file has yet to be published, or in the case of published material, one or more elements from the 
+  <a href="/guidelines/v3/model-classes/model.pubstmtpart.html">model.pubStmtPart</a> class. The following elements may be used to provide details regarding the file’s publication and distribution:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1030,7 +1030,7 @@ of publication, and other relevant details.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/address.html">address</a>
+                <a href="/guidelines/v3/elements/address.html">address</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1050,7 +1050,7 @@ individual.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/availability.html">availability</a>
+                <a href="/guidelines/v3/elements/availability.html">availability</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1070,7 +1070,7 @@ including an MEI-encoded document.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/date.html">date</a>
+                <a href="/guidelines/v3/elements/date.html">date</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1089,7 +1089,7 @@ including an MEI-encoded document.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/distributor.html">distributor</a>
+                <a href="/guidelines/v3/elements/distributor.html">distributor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1109,7 +1109,7 @@ access) to a bibliographic entity may be obtained.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/identifier.html">identifier</a>
+                <a href="/guidelines/v3/elements/identifier.html">identifier</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1128,7 +1128,7 @@ access) to a bibliographic entity may be obtained.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/publisher.html">publisher</a>
+                <a href="/guidelines/v3/elements/publisher.html">publisher</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1147,7 +1147,7 @@ access) to a bibliographic entity may be obtained.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/pubplace.html">pubPlace</a>
+                <a href="/guidelines/v3/elements/pubplace.html">pubPlace</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1166,7 +1166,7 @@ access) to a bibliographic entity may be obtained.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/respstmt.html">respStmt</a>
+                <a href="/guidelines/v3/elements/respstmt.html">respStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1180,10 +1180,10 @@ artistic content.</div>
 </div>
 
 <p>The publisher is the person or institution by whose authority a given edition of the file is made public. The distributor is the person or institution from whom copies of the text may be obtained. Use 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> to identify other responsible persons or corporate bodies.</p>
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> to identify other responsible persons or corporate bodies.</p>
 
 <p>The sub-elements of 
-  <a href="/v3/elements/availability.html" class="link_odd_elementSpec">availability</a> should be used to provide detailed information regarding access to the MEI file.</p>
+  <a href="/guidelines/v3/elements/availability.html" class="link_odd_elementSpec">availability</a> should be used to provide detailed information regarding access to the MEI file.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1194,7 +1194,7 @@ artistic content.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/accessrestrict.html">accessRestrict</a>
+                <a href="/guidelines/v3/elements/accessrestrict.html">accessRestrict</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1214,7 +1214,7 @@ material.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/distributor.html">distributor</a>
+                <a href="/guidelines/v3/elements/distributor.html">distributor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1234,7 +1234,7 @@ access) to a bibliographic entity may be obtained.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/price.html">price</a>
+                <a href="/guidelines/v3/elements/price.html">price</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1253,7 +1253,7 @@ access) to a bibliographic entity may be obtained.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/userestrict.html">useRestrict</a>
+                <a href="/guidelines/v3/elements/userestrict.html">useRestrict</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1274,7 +1274,7 @@ a bibliographic item after access has been granted.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/sysreq.html">sysReq</a>
+                <a href="/guidelines/v3/elements/sysreq.html">sysReq</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1334,7 +1334,7 @@ a bibliographic item after access has been granted.</div>
 <p>Give any other useful information (e.g., dates of collection of data) in an annotation within the notes statement, which is described below.</p>
 
 <p>Here, as in the description of intellectual responsibility described above, the 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element may be used to contain all statements of responsibility regarding publication and distribution when uniformity is desired regardless of the role of participants in the publication process:</p>
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element may be used to contain all statements of responsibility regarding publication and distribution when uniformity is desired regardless of the role of participants in the publication process:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1352,8 +1352,8 @@ a bibliographic item after access has been granted.</div>
   </h4>
 
 <p>The 
-  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element is the fifth component of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element and is optional.</p>
+  <a href="/guidelines/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element is the fifth component of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element and is optional.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1364,7 +1364,7 @@ a bibliographic item after access has been granted.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/seriesstmt.html">seriesStmt</a>
+                <a href="/guidelines/v3/elements/seriesstmt.html">seriesStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1384,7 +1384,7 @@ belongs.</div>
 </ul>
 
 <p>The 
-  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element may contain one or more of the following more specific elements:</p>
+  <a href="/guidelines/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element may contain one or more of the following more specific elements:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1395,7 +1395,7 @@ belongs.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/title.html">title</a>
+                <a href="/guidelines/v3/elements/title.html">title</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1414,7 +1414,7 @@ belongs.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/editor.html">editor</a>
+                <a href="/guidelines/v3/elements/editor.html">editor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1434,7 +1434,7 @@ capacity.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/respstmt.html">respStmt</a>
+                <a href="/guidelines/v3/elements/respstmt.html">respStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1456,7 +1456,7 @@ artistic content.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/identifier.html">identifier</a>
+                <a href="/guidelines/v3/elements/identifier.html">identifier</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1475,7 +1475,7 @@ artistic content.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/contents.html">contents</a>
+                <a href="/guidelines/v3/elements/contents.html">contents</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1494,7 +1494,7 @@ artistic content.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/seriesstmt.html">seriesStmt</a>
+                <a href="/guidelines/v3/elements/seriesstmt.html">seriesStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1506,11 +1506,11 @@ belongs.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/title.html" class="link_odd_elementSpec">title</a>, 
-  <a href="/v3/elements/editor.html" class="link_odd_elementSpec">editor</a> and 
-  <a href="/v3/elements/identifier.html" class="link_odd_elementSpec">identifier</a> elements have the same function described above: identification of the item, in this case the series, and the individuals or groups responsible for its creation. The 
-  <a href="/v3/elements/title.html" class="link_odd_elementSpec">title</a> element is required within 
-  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a>.</p>
+  <a href="/guidelines/v3/elements/title.html" class="link_odd_elementSpec">title</a>, 
+  <a href="/guidelines/v3/elements/editor.html" class="link_odd_elementSpec">editor</a> and 
+  <a href="/guidelines/v3/elements/identifier.html" class="link_odd_elementSpec">identifier</a> elements have the same function described above: identification of the item, in this case the series, and the individuals or groups responsible for its creation. The 
+  <a href="/guidelines/v3/elements/title.html" class="link_odd_elementSpec">title</a> element is required within 
+  <a href="/guidelines/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1522,7 +1522,7 @@ belongs.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/identifier.html" class="link_odd_elementSpec">identifier</a> element may be used to supply any identifying number associated with the series, including both standard numbers such as an ISSN and particular issue numbers. Its <strong>@type</strong> attribute is used to categorize the number further, taking the value ‘ISSN’ for an ISSN, for example.</p>
+  <a href="/guidelines/v3/elements/identifier.html" class="link_odd_elementSpec">identifier</a> element may be used to supply any identifying number associated with the series, including both standard numbers such as an ISSN and particular issue numbers. Its <strong>@type</strong> attribute is used to categorize the number further, taking the value ‘ISSN’ for an ISSN, for example.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1536,8 +1536,8 @@ belongs.</div>
 </div>
 
 <p>The contents of the series may be enumerated using the 
-  <a href="/v3/elements/contents.html" class="link_odd_elementSpec">contents</a> element. Use of this element should be determined by the complexity of the resource and whether or not the information is readily available. The 
-  <a href="/v3/elements/contents.html" class="link_odd_elementSpec">contents</a> element may consist of a single paragraph when unstructured information is sufficient.</p>
+  <a href="/guidelines/v3/elements/contents.html" class="link_odd_elementSpec">contents</a> element. Use of this element should be determined by the complexity of the resource and whether or not the information is readily available. The 
+  <a href="/guidelines/v3/elements/contents.html" class="link_odd_elementSpec">contents</a> element may consist of a single paragraph when unstructured information is sufficient.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1551,7 +1551,7 @@ belongs.</div>
 </div>
 
 <p>Alternatively, 
-  <a href="/v3/elements/contentitem.html" class="link_odd_elementSpec">contentItem</a> elements may be used to provide structure for the content description.</p>
+  <a href="/guidelines/v3/elements/contentitem.html" class="link_odd_elementSpec">contentItem</a> elements may be used to provide structure for the content description.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1571,7 +1571,7 @@ belongs.</div>
 </div>
 
 <p>Finally, using the <strong>@target</strong> attribute, a link to an external table of contents may be supplied in lieu of or in addition to the child elements of 
-  <a href="/v3/elements/contents.html" class="link_odd_elementSpec">contents</a>.</p>
+  <a href="/guidelines/v3/elements/contents.html" class="link_odd_elementSpec">contents</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1581,16 +1581,16 @@ belongs.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element is allowed to nest within itself in order to accommodate a series within a series.</p>
+  <a href="/guidelines/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element is allowed to nest within itself in order to accommodate a series within a series.</p>
 
 <h4 id="headerNotesStatement">2.1.6. Notes Statement
       
   </h4>
 
 <p>The 
-  <a href="/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element is the sixth component of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element and is optional. If used, it contains one or more 
-  <a href="/v3/elements/annot.html" class="link_odd_elementSpec">annot</a> elements, each containing a single piece of descriptive information of the kind treated as ‘general notes’ in traditional bibliographic descriptions.</p>
+  <a href="/guidelines/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element is the sixth component of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element and is optional. If used, it contains one or more 
+  <a href="/guidelines/v3/elements/annot.html" class="link_odd_elementSpec">annot</a> elements, each containing a single piece of descriptive information of the kind treated as ‘general notes’ in traditional bibliographic descriptions.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1601,7 +1601,7 @@ belongs.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/notesstmt.html">notesStmt</a>
+                <a href="/guidelines/v3/elements/notesstmt.html">notesStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1617,34 +1617,34 @@ that recorded in other parts of the bibliographic description.</div>
 
 <ul>
   <li>the nature, scope, artistic form, or purpose of the work; also the genre or other intellectual category to which it may belong. These should be formally described within the 
-<a href="/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element (section 
-<a href="/v3/content/header.html#headerWorkDescription">Work Description</a>).</li>
+<a href="/guidelines/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element (section 
+<a href="/guidelines/v3/content/header.html#headerWorkDescription">Work Description</a>).</li>
   <li>bibliographic details relating to the source or sources of an electronic text: e.g., ‘Transcribed from a facsimile of the 1743 publication’. These should be formally described in the 
-<a href="/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a> element (section 
-<a href="/v3/content/header.html#headerSourceDescription">Source Description</a>).</li>
+<a href="/guidelines/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a> element (section 
+<a href="/guidelines/v3/content/header.html#headerSourceDescription">Source Description</a>).</li>
   <li>further information relating to publication, distribution, or release of the text, including sources from which the text may be obtained, any restrictions on its use or formal terms on its availability. These should be placed in the appropriate division of the 
-<a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> element (section 
-<a href="/v3/content/header.html#headerPublicationDistribution">Publication, Distribution, etc.</a>).</li>
+<a href="/guidelines/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> element (section 
+<a href="/guidelines/v3/content/header.html#headerPublicationDistribution">Publication, Distribution, etc.</a>).</li>
   <li>publicly documented numbers associated <em>with the file</em> should be placed in an 
-<a href="/v3/elements/altid.html" class="link_odd_elementSpec">altId</a> element within the 
-<a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element. International Standard Serial Numbers (ISSN), International Standard Book Numbers (ISBN), and other internationally agreed upon standard numbers that uniquely identify an item, should be treated in the same way, rather than as specialized bibliographic notes. As described elsewhere, identifiers <em>for sources of the file</em> should be recorded within the 
-<a href="/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a>.</li>
+<a href="/guidelines/v3/elements/altid.html" class="link_odd_elementSpec">altId</a> element within the 
+<a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element. International Standard Serial Numbers (ISSN), International Standard Book Numbers (ISBN), and other internationally agreed upon standard numbers that uniquely identify an item, should be treated in the same way, rather than as specialized bibliographic notes. As described elsewhere, identifiers <em>for sources of the file</em> should be recorded within the 
+<a href="/guidelines/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a>.</li>
 </ul>
 
 <p>Nevertheless, the 
-  <a href="/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element may be used to record potentially significant details about the file and its features, for example:</p>
+  <a href="/guidelines/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element may be used to record potentially significant details about the file and its features, for example:</p>
 
 <ul>
   <li>dates, when they are relevant to the content or condition of the computer file: e.g. ‘manual dated 2010’, ‘file validated Apr 2011’</li>
   <li>names of persons or bodies connected with the technical production, administration, or consulting functions of the effort which produced the file, if these are not named in statements of responsibility in the title or edition statements of the file description: e.g. ‘Historical commentary provided by members of the Big Symphony Orchestra’</li>
   <li>availability of the file in an additional medium or information not already recorded about the availability of documentation: e.g. ‘User manual is loose-leaf in eleven paginated sections’</li>
   <li>language of work and abstract, if not encoded in the 
-<a href="/v3/elements/langusage.html" class="link_odd_elementSpec">langUsage</a> element, e.g. ‘Text in English with stage directions in French and German’</li>
+<a href="/guidelines/v3/elements/langusage.html" class="link_odd_elementSpec">langUsage</a> element, e.g. ‘Text in English with stage directions in French and German’</li>
 </ul>
 
 <p>Each such item of information may be tagged using the general-purpose 
-  <a href="/v3/elements/annot.html" class="link_odd_elementSpec">annot</a> element. Groups of annotations are contained within the 
-  <a href="/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element, as in the following example:</p>
+  <a href="/guidelines/v3/elements/annot.html" class="link_odd_elementSpec">annot</a> element. Groups of annotations are contained within the 
+  <a href="/guidelines/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element, as in the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1680,10 +1680,10 @@ that recorded in other parts of the bibliographic description.</div>
   </h4>
 
 <p>The 
-  <a href="/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a> element is the seventh and final component of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element. In MEI, 
-  <a href="/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a> is a grouping element containing one or more 
-  <a href="/v3/elements/source.html" class="link_odd_elementSpec">source</a> elements, each of which records details of a source from which the computer file is derived. This might be a printed text or manuscript, another computer file, an audio or video recording, or a combination of these. An electronic file may also have no source, if what is being cataloged is an original text created in electronic form.</p>
+  <a href="/guidelines/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a> element is the seventh and final component of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element. In MEI, 
+  <a href="/guidelines/v3/elements/sourcedesc.html" class="link_odd_elementSpec">sourceDesc</a> is a grouping element containing one or more 
+  <a href="/guidelines/v3/elements/source.html" class="link_odd_elementSpec">source</a> elements, each of which records details of a source from which the computer file is derived. This might be a printed text or manuscript, another computer file, an audio or video recording, or a combination of these. An electronic file may also have no source, if what is being cataloged is an original text created in electronic form.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1694,7 +1694,7 @@ that recorded in other parts of the bibliographic description.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/sourcedesc.html">sourceDesc</a>
+                <a href="/guidelines/v3/elements/sourcedesc.html">sourceDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1714,7 +1714,7 @@ creation of the electronic file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/source.html">source</a>
+                <a href="/guidelines/v3/elements/source.html">source</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1726,10 +1726,10 @@ file.</div>
 </div>
 
 <p>The content model of the 
-  <a href="/v3/elements/source.html" class="link_odd_elementSpec">source</a> element is similar to that of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> and 
-  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a> elements. The list below reflects the order in which the optional components of 
-  <a href="/v3/elements/source.html" class="link_odd_elementSpec">source</a> must occur.</p>
+  <a href="/guidelines/v3/elements/source.html" class="link_odd_elementSpec">source</a> element is similar to that of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> and 
+  <a href="/guidelines/v3/elements/work.html" class="link_odd_elementSpec">work</a> elements. The list below reflects the order in which the optional components of 
+  <a href="/guidelines/v3/elements/source.html" class="link_odd_elementSpec">source</a> must occur.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1740,7 +1740,7 @@ file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/identifier.html">identifier</a>
+                <a href="/guidelines/v3/elements/identifier.html">identifier</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1759,7 +1759,7 @@ file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/titlestmt.html">titleStmt</a>
+                <a href="/guidelines/v3/elements/titlestmt.html">titleStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1778,7 +1778,7 @@ file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/editionstmt.html">editionStmt</a>
+                <a href="/guidelines/v3/elements/editionstmt.html">editionStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1799,7 +1799,7 @@ material being described.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/pubstmt.html">pubStmt</a>
+                <a href="/guidelines/v3/elements/pubstmt.html">pubStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1821,7 +1821,7 @@ of publication, and other relevant details.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/physdesc.html">physDesc</a>
+                <a href="/guidelines/v3/elements/physdesc.html">physDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1843,7 +1843,7 @@ technique of creation.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/physloc.html">physLoc</a>
+                <a href="/guidelines/v3/elements/physloc.html">physLoc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1865,7 +1865,7 @@ its previous locations.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/seriesstmt.html">seriesStmt</a>
+                <a href="/guidelines/v3/elements/seriesstmt.html">seriesStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1885,7 +1885,7 @@ belongs.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/history.html">history</a>
+                <a href="/guidelines/v3/elements/history.html">history</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1907,7 +1907,7 @@ creation of bibliographic resources should be recorded within the creation eleme
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/langusage.html">langUsage</a>
+                <a href="/guidelines/v3/elements/langusage.html">langUsage</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1927,7 +1927,7 @@ etc., represented within the encoded resource.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/contents.html">contents</a>
+                <a href="/guidelines/v3/elements/contents.html">contents</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1946,7 +1946,7 @@ etc., represented within the encoded resource.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/bibllist.html">biblList</a>
+                <a href="/guidelines/v3/elements/bibllist.html">biblList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1965,7 +1965,7 @@ etc., represented within the encoded resource.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/notesstmt.html">notesStmt</a>
+                <a href="/guidelines/v3/elements/notesstmt.html">notesStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1986,7 +1986,7 @@ that recorded in other parts of the bibliographic description.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/classification.html">classification</a>
+                <a href="/guidelines/v3/elements/classification.html">classification</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1997,7 +1997,7 @@ that recorded in other parts of the bibliographic description.</div>
 </div>
 
 <p>When the MEI.frbr module is available, the following elements may also appear after the classification element. Additional information regarding FRBR (Functional Requirements for Bibliographic Records) can be found at 
-  <a href="/v3/content/frbr.html">Functional Requirements for Bibliographic Records (FRBR)</a>.</p>
+  <a href="/guidelines/v3/content/frbr.html">Functional Requirements for Bibliographic Records (FRBR)</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2008,7 +2008,7 @@ that recorded in other parts of the bibliographic description.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/itemlist.html">itemList</a>
+                <a href="/guidelines/v3/elements/itemlist.html">itemList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2027,7 +2027,7 @@ that recorded in other parts of the bibliographic description.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/componentgrp.html">componentGrp</a>
+                <a href="/guidelines/v3/elements/componentgrp.html">componentGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2046,7 +2046,7 @@ that recorded in other parts of the bibliographic description.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/relationlist.html">relationList</a>
+                <a href="/guidelines/v3/elements/relationlist.html">relationList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2057,7 +2057,7 @@ that recorded in other parts of the bibliographic description.</div>
 </div>
 
 <p>In the simplest case, the 
-  <a href="/v3/elements/source.html" class="link_odd_elementSpec">source</a> element may contain nothing more than a notes statement giving a simple prose description or a brief note stating that the document has no physical source:</p>
+  <a href="/guidelines/v3/elements/source.html" class="link_odd_elementSpec">source</a> element may contain nothing more than a notes statement giving a simple prose description or a brief note stating that the document has no physical source:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2134,26 +2134,26 @@ that recorded in other parts of the bibliographic description.</div>
 </div>
 
 <p>A description of more precise capture of dates and date ranges is provided in chapter 
-  <a href="/v3/content/namesdates.html">Names and Dates</a>.</p>
+  <a href="/guidelines/v3/content/namesdates.html">Names and Dates</a>.</p>
 
 <p>The 
-  <a href="/v3/elements/identifier.html" class="link_odd_elementSpec">identifier</a> element is provided within 
-  <a href="/v3/elements/source.html" class="link_odd_elementSpec">source</a> in order to accommodate identifying strings which cannot be captured by the <strong>@xml:id</strong> attribute, such as numbers or strings requiring XML markup.</p>
+  <a href="/guidelines/v3/elements/identifier.html" class="link_odd_elementSpec">identifier</a> element is provided within 
+  <a href="/guidelines/v3/elements/source.html" class="link_odd_elementSpec">source</a> in order to accommodate identifying strings which cannot be captured by the <strong>@xml:id</strong> attribute, such as numbers or strings requiring XML markup.</p>
 
 <p>The 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a>, 
-  <a href="/v3/elements/editionstmt.html" class="link_odd_elementSpec">editionStmt</a>, 
-  <a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a>, 
-  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a>, and 
-  <a href="/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> elements function in exactly the same way as described in section 
-  <a href="/v3/content/header.html#headerFileDescription">File Description</a> above and 
-  <a href="/v3/content/header.html#headerWorkDescription">Work Description</a> below and will not be covered again here.</p>
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a>, 
+  <a href="/guidelines/v3/elements/editionstmt.html" class="link_odd_elementSpec">editionStmt</a>, 
+  <a href="/guidelines/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a>, 
+  <a href="/guidelines/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a>, and 
+  <a href="/guidelines/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> elements function in exactly the same way as described in section 
+  <a href="/guidelines/v3/content/header.html#headerFileDescription">File Description</a> above and 
+  <a href="/guidelines/v3/content/header.html#headerWorkDescription">Work Description</a> below and will not be covered again here.</p>
 
 <p>If a source of the file is an unpublished manuscript, it is recommended that the 
-  <a href="/v3/elements/unpub.html" class="link_odd_elementSpec">unpub</a> element be used as the only content of the source’s 
-  <a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> element. Other identifying information for the manuscript may be collected in the 
-  <a href="/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element, as described in section 
-  <a href="/v3/content/header.html#headerNotesStatement">Notes Statement</a>.</p>
+  <a href="/guidelines/v3/elements/unpub.html" class="link_odd_elementSpec">unpub</a> element be used as the only content of the source’s 
+  <a href="/guidelines/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> element. Other identifying information for the manuscript may be collected in the 
+  <a href="/guidelines/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element, as described in section 
+  <a href="/guidelines/v3/content/header.html#headerNotesStatement">Notes Statement</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2190,7 +2190,7 @@ that recorded in other parts of the bibliographic description.</div>
   </h3>
 
 <p>The 
-  <a href="/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a> element is the second major subdivision of the MEI header. It specifies the methods and editorial principles which governed the transcription or encoding of the source material. Though not formally required, its use is highly recommended.</p>
+  <a href="/guidelines/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a> element is the second major subdivision of the MEI header. It specifies the methods and editorial principles which governed the transcription or encoding of the source material. Though not formally required, its use is highly recommended.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2201,7 +2201,7 @@ that recorded in other parts of the bibliographic description.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/encodingdesc.html">encodingDesc</a>
+                <a href="/guidelines/v3/elements/encodingdesc.html">encodingDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2225,7 +2225,7 @@ encoding/editing process.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/appinfo.html">appInfo</a>
+                <a href="/guidelines/v3/elements/appinfo.html">appInfo</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2246,7 +2246,7 @@ the MEI file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/editorialdecl.html">editorialDecl</a>
+                <a href="/guidelines/v3/elements/editorialdecl.html">editorialDecl</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2266,7 +2266,7 @@ applied during the encoding of musical text.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/projectdesc.html">projectDesc</a>
+                <a href="/guidelines/v3/elements/projectdesc.html">projectDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2288,7 +2288,7 @@ information concerning the process by which it was assembled or collected.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/samplingdecl.html">samplingDecl</a>
+                <a href="/guidelines/v3/elements/samplingdecl.html">samplingDecl</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2326,7 +2326,7 @@ in sampling texts in the creation of a corpus or collection.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/application.html">application</a>
+                <a href="/guidelines/v3/elements/application.html">application</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2346,7 +2346,7 @@ document.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/application.html">@version</a>
+                <a href="/guidelines/v3/attribute-classes/application.html">@version</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2358,12 +2358,12 @@ display name.</div>
 </div>
 
 <p>Each 
-  <a href="/v3/elements/application.html" class="link_odd_elementSpec">application</a> element identifies the current state of one software application with regard to the current file. This element is a member of the att.datable class, which provides a variety of attributes for associating this state with a date and time, or a temporal range. The <strong>@xml:id</strong> and <strong>@version</strong> attributes should be used to uniquely identify the application and its major version number (for example, ‘Music Markup Tool 1.5’). It is not intended that a software application should add a new 
-  <a href="/v3/elements/application.html" class="link_odd_elementSpec">application</a> element each time it touches the file.</p>
+  <a href="/guidelines/v3/elements/application.html" class="link_odd_elementSpec">application</a> element identifies the current state of one software application with regard to the current file. This element is a member of the att.datable class, which provides a variety of attributes for associating this state with a date and time, or a temporal range. The <strong>@xml:id</strong> and <strong>@version</strong> attributes should be used to uniquely identify the application and its major version number (for example, ‘Music Markup Tool 1.5’). It is not intended that a software application should add a new 
+  <a href="/guidelines/v3/elements/application.html" class="link_odd_elementSpec">application</a> element each time it touches the file.</p>
 
 <p>The following example shows how these elements might be used to record the fact that version 1.5 of an application called ‘Music Markup Tool’ has an interest in two parts of a document. The parts concerned are accessible at the URLs given as targets of the two 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> elements. When used on 
-  <a href="/v3/elements/application.html" class="link_odd_elementSpec">application</a>, the <strong>@date</strong> attribute specifies when the application was employed, in this case June 6, 2011. Version information for the application should be placed in <strong>@version</strong>.</p>
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> elements. When used on 
+  <a href="/guidelines/v3/elements/application.html" class="link_odd_elementSpec">application</a>, the <strong>@date</strong> attribute specifies when the application was employed, in this case June 6, 2011. Version information for the application should be placed in <strong>@version</strong>.</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -2382,7 +2382,7 @@ display name.</div>
   </h4>
 
 <p>The 
-  <a href="/v3/elements/editorialdecl.html" class="link_odd_elementSpec">editorialDecl</a> element is used to provide details of the editorial practices applied during the encoding of a musical text.</p>
+  <a href="/guidelines/v3/elements/editorialdecl.html" class="link_odd_elementSpec">editorialDecl</a> element is used to provide details of the editorial practices applied during the encoding of a musical text.</p>
 
 <p>It may contain a prose description only, or one or more of a set of specialized elements; that is, members of the MEI model.editorialDeclPart class.</p>
 
@@ -2441,7 +2441,7 @@ display name.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/projectdesc.html">projectDesc</a>
+                <a href="/guidelines/v3/elements/projectdesc.html">projectDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2455,7 +2455,7 @@ information concerning the process by which it was assembled or collected.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/projectdesc.html" class="link_odd_elementSpec">projectDesc</a> element may be used to describe, in prose, the purpose for which a digital resource was created, together with any other relevant information concerning the process by which it was assembled or collected. This is of particular importance for corpora or miscellaneous collections, but may be of use for any text, for example to explain why one kind of encoding practice has been followed rather than another.</p>
+  <a href="/guidelines/v3/elements/projectdesc.html" class="link_odd_elementSpec">projectDesc</a> element may be used to describe, in prose, the purpose for which a digital resource was created, together with any other relevant information concerning the process by which it was assembled or collected. This is of particular importance for corpora or miscellaneous collections, but may be of use for any text, for example to explain why one kind of encoding practice has been followed rather than another.</p>
 
 <p>For example:</p>
 
@@ -2485,7 +2485,7 @@ information concerning the process by which it was assembled or collected.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/samplingdecl.html">samplingDecl</a>
+                <a href="/guidelines/v3/elements/samplingdecl.html">samplingDecl</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2498,7 +2498,7 @@ in sampling texts in the creation of a corpus or collection.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/samplingdecl.html" class="link_odd_elementSpec">samplingDecl</a> element should include information about such matters as:</p>
+  <a href="/guidelines/v3/elements/samplingdecl.html" class="link_odd_elementSpec">samplingDecl</a> element should include information about such matters as:</p>
 
 <ul>
   <li>the size of individual samples</li>
@@ -2539,14 +2539,14 @@ in sampling texts in the creation of a corpus or collection.</div>
 </div>
 
 <p>A sampling declaration which applies to more than one text or division of a text need not be repeated in the header of each such text. Instead, the <strong>@decls</strong> attribute of each text (or subdivision of the text) to which the sampling declaration applies may be used to supply a cross-reference to it, as further described in section 
-  <a href="/v3/content/header.html#headerAssociatingMetadataAndData">Associating Metadata and Data</a>.</p>
+  <a href="/guidelines/v3/content/header.html#headerAssociatingMetadataAndData">Associating Metadata and Data</a>.</p>
 
 <h3 id="headerWorkDescription">2.3. Work Description
       
   </h3>
 
 <p>The 
-  <a href="/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element is the third major subdivision of the MEI Header. It is an optional element, the purpose of which is to enable the recording of information characterizing various descriptive aspects of the abstract work.</p>
+  <a href="/guidelines/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element is the third major subdivision of the MEI Header. It is an optional element, the purpose of which is to enable the recording of information characterizing various descriptive aspects of the abstract work.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2557,7 +2557,7 @@ in sampling texts in the creation of a corpus or collection.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/workdesc.html">workDesc</a>
+                <a href="/guidelines/v3/elements/workdesc.html">workDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2569,8 +2569,8 @@ aspects of a text.</div>
 </div>
 
 <p>Within 
-  <a href="/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a>, the 
-  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a> element is used to hold information for each resource being described.</p>
+  <a href="/guidelines/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a>, the 
+  <a href="/guidelines/v3/elements/work.html" class="link_odd_elementSpec">work</a> element is used to hold information for each resource being described.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2581,7 +2581,7 @@ aspects of a text.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/work.html">work</a>
+                <a href="/guidelines/v3/elements/work.html">work</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2595,7 +2595,7 @@ duration.</div>
 </div>
 
 <p>All the components of 
-  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a> are optional, but they must occur in the following order:</p>
+  <a href="/guidelines/v3/elements/work.html" class="link_odd_elementSpec">work</a> are optional, but they must occur in the following order:</p>
 
 <ol>
   <li>identifier</li>
@@ -2639,7 +2639,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/identifier.html">identifier</a>
+                <a href="/guidelines/v3/elements/identifier.html">identifier</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2658,7 +2658,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/titlestmt.html">titleStmt</a>
+                <a href="/guidelines/v3/elements/titlestmt.html">titleStmt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2669,8 +2669,8 @@ duration.</div>
 </div>
 
 <p>The identifier and title values recorded here may or may not be the same as those assigned to published versions of the work. Fuller details regarding the use of 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> are available in section 
-  <a href="/v3/content/header.html#headerTitleStatement">Title Statement</a>.</p>
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> are available in section 
+  <a href="/guidelines/v3/content/header.html#headerTitleStatement">Title Statement</a>.</p>
 
 <h4 id="headerWorkIncipit">2.3.2. Incipits
       
@@ -2685,7 +2685,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/incip.html">incip</a>
+                <a href="/guidelines/v3/elements/incip.html">incip</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2708,7 +2708,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/incip.html">incip</a>
+                <a href="/guidelines/v3/elements/incip.html">incip</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2727,7 +2727,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/incipcode.html">incipCode</a>
+                <a href="/guidelines/v3/elements/incipcode.html">incipCode</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2746,7 +2746,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/inciptext.html">incipText</a>
+                <a href="/guidelines/v3/elements/inciptext.html">incipText</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2765,7 +2765,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/score.html">score</a>
+                <a href="/guidelines/v3/elements/score.html">score</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2784,7 +2784,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/graphic.html">graphic</a>
+                <a href="/guidelines/v3/elements/graphic.html">graphic</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2795,22 +2795,22 @@ duration.</div>
 </div>
 
 <p>The elements 
-  <a href="/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a> and 
-  <a href="/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> are available for the inclusion of coded incipits of music notation and textual incipits, respectively. The 
-  <a href="/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> element should contain only the initial performed text of the work, while 
-  <a href="/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a> may contain both words and music, depending on the capabilities of the scheme used to encode it. When both music and text are provided in 
-  <a href="/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a>, it may be helpful to repeat the text in 
-  <a href="/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> in order to provide easier access to only the text, for example, for indexing of the text without having to extract it from the coded incipit.</p>
+  <a href="/guidelines/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a> and 
+  <a href="/guidelines/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> are available for the inclusion of coded incipits of music notation and textual incipits, respectively. The 
+  <a href="/guidelines/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> element should contain only the initial performed text of the work, while 
+  <a href="/guidelines/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a> may contain both words and music, depending on the capabilities of the scheme used to encode it. When both music and text are provided in 
+  <a href="/guidelines/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a>, it may be helpful to repeat the text in 
+  <a href="/guidelines/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> in order to provide easier access to only the text, for example, for indexing of the text without having to extract it from the coded incipit.</p>
 
 <p>Both 
-  <a href="/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a> and 
-  <a href="/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> allow reference to an external file location via the <strong>@target</strong> attribute and specification of the internet media type of the external file via the <strong>@mimetype</strong> attribute. It is a semantic error not to include one of these attributes.</p>
+  <a href="/guidelines/v3/elements/incipcode.html" class="link_odd_elementSpec">incipCode</a> and 
+  <a href="/guidelines/v3/elements/inciptext.html" class="link_odd_elementSpec">incipText</a> allow reference to an external file location via the <strong>@target</strong> attribute and specification of the internet media type of the external file via the <strong>@mimetype</strong> attribute. It is a semantic error not to include one of these attributes.</p>
 
 <p>An MEI-encoded incipit may be captured in the 
-  <a href="/v3/elements/score.html" class="link_odd_elementSpec">score</a> element.</p>
+  <a href="/guidelines/v3/elements/score.html" class="link_odd_elementSpec">score</a> element.</p>
 
 <p>In addition, 
-  <a href="/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> may be used to include an image of an incipit.</p>
+  <a href="/guidelines/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> may be used to include an image of an incipit.</p>
 
 <h4 id="headerWorkKeyTempoMeter">2.3.3. Key, Tempo, and Meter
       
@@ -2827,7 +2827,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/key.html">key</a>
+                <a href="/guidelines/v3/elements/key.html">key</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2846,7 +2846,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/mensuration.html">mensuration</a>
+                <a href="/guidelines/v3/elements/mensuration.html">mensuration</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2865,7 +2865,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/meter.html">meter</a>
+                <a href="/guidelines/v3/elements/meter.html">meter</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2884,7 +2884,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/tempo.html">tempo</a>
+                <a href="/guidelines/v3/elements/tempo.html">tempo</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2896,20 +2896,20 @@ duration.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/key.html" class="link_odd_elementSpec">key</a> element is used exclusively within bibliographic descriptions. Do not confuse this element with 
-  <a href="/v3/elements/keysig.html" class="link_odd_elementSpec">keySig</a>, which is used within the body of an MEI file to record this data for musical notation. Likewise, 
-  <a href="/v3/elements/meter.html" class="link_odd_elementSpec">meter</a> should not be confused with the attributes used by staffDef and scoreDef to record meter-related data for notated music. The 
-  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> element can be used here as well as in the body of an MEI document; however, its attributes other than <strong>@xml:id</strong>, <strong>@label</strong>, <strong>@n</strong>, <strong>@base</strong>, and <strong>@lang</strong> are meaningless in the MEI header context, and therefore should be avoided within a work description. The 
-  <a href="/v3/elements/mensuration.html" class="link_odd_elementSpec">mensuration</a> element is available for the description of works in the mensural repertoire. When a work uses meter and mensural signs, both 
-  <a href="/v3/elements/mensuration.html" class="link_odd_elementSpec">mensuration</a> and 
-  <a href="/v3/elements/meter.html" class="link_odd_elementSpec">meter</a> elements may be used.</p>
+  <a href="/guidelines/v3/elements/key.html" class="link_odd_elementSpec">key</a> element is used exclusively within bibliographic descriptions. Do not confuse this element with 
+  <a href="/guidelines/v3/elements/keysig.html" class="link_odd_elementSpec">keySig</a>, which is used within the body of an MEI file to record this data for musical notation. Likewise, 
+  <a href="/guidelines/v3/elements/meter.html" class="link_odd_elementSpec">meter</a> should not be confused with the attributes used by staffDef and scoreDef to record meter-related data for notated music. The 
+  <a href="/guidelines/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> element can be used here as well as in the body of an MEI document; however, its attributes other than <strong>@xml:id</strong>, <strong>@label</strong>, <strong>@n</strong>, <strong>@base</strong>, and <strong>@lang</strong> are meaningless in the MEI header context, and therefore should be avoided within a work description. The 
+  <a href="/guidelines/v3/elements/mensuration.html" class="link_odd_elementSpec">mensuration</a> element is available for the description of works in the mensural repertoire. When a work uses meter and mensural signs, both 
+  <a href="/guidelines/v3/elements/mensuration.html" class="link_odd_elementSpec">mensuration</a> and 
+  <a href="/guidelines/v3/elements/meter.html" class="link_odd_elementSpec">meter</a> elements may be used.</p>
 
 <h4 id="headerWorkOtherChar">2.3.4. Other Identifying Characteristics
       
   </h4>
 
 <p>Additional information that aids the identification of the work may be encoded using 
-  <a href="/v3/elements/otherchar.html" class="link_odd_elementSpec">otherChar</a>.</p>
+  <a href="/guidelines/v3/elements/otherchar.html" class="link_odd_elementSpec">otherChar</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2920,7 +2920,7 @@ duration.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/otherchar.html">otherChar</a>
+                <a href="/guidelines/v3/elements/otherchar.html">otherChar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2948,7 +2948,7 @@ a work or expression from another.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/creation.html">creation</a>
+                <a href="/guidelines/v3/elements/creation.html">creation</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2971,7 +2971,7 @@ be captured within the history element.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/history.html">history</a>
+                <a href="/guidelines/v3/elements/history.html">history</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2993,7 +2993,7 @@ creation of bibliographic resources should be recorded within the creation eleme
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/eventlist.html">eventList</a>
+                <a href="/guidelines/v3/elements/eventlist.html">eventList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3012,7 +3012,7 @@ creation of bibliographic resources should be recorded within the creation eleme
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/event.html">event</a>
+                <a href="/guidelines/v3/elements/event.html">event</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3023,30 +3023,30 @@ creation of bibliographic resources should be recorded within the creation eleme
 </div>
 
 <p>The 
-  <a href="/v3/elements/creation.html" class="link_odd_elementSpec">creation</a> element is intended to contain a brief, machine-processable statement of the circumstances of the work’s creation. Its content is limited to text and the 
-  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a> and 
-  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements.</p>
+  <a href="/guidelines/v3/elements/creation.html" class="link_odd_elementSpec">creation</a> element is intended to contain a brief, machine-processable statement of the circumstances of the work’s creation. Its content is limited to text and the 
+  <a href="/guidelines/v3/elements/date.html" class="link_odd_elementSpec">date</a> and 
+  <a href="/guidelines/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements.</p>
 
 <p>The 
-  <a href="/v3/elements/history.html" class="link_odd_elementSpec">history</a> element is a container for additional non-bibliographic details relating to a work. It may use the 
-  <a href="/v3/elements/eventlist.html" class="link_odd_elementSpec">eventList</a> element to provide a list of key events in the creation and performance history of the work. The 
-  <a href="/v3/elements/eventlist.html" class="link_odd_elementSpec">eventList</a> element is comprised of 
-  <a href="/v3/elements/event.html" class="link_odd_elementSpec">event</a> elements containing a brief description of the associated event, including dates and locations where the event took place. An event list may use the <strong>@type</strong> attribute to distinguish between multiple event lists with different functions, such as a list of events in the compositional process and a list of performance dates.</p>
+  <a href="/guidelines/v3/elements/history.html" class="link_odd_elementSpec">history</a> element is a container for additional non-bibliographic details relating to a work. It may use the 
+  <a href="/guidelines/v3/elements/eventlist.html" class="link_odd_elementSpec">eventList</a> element to provide a list of key events in the creation and performance history of the work. The 
+  <a href="/guidelines/v3/elements/eventlist.html" class="link_odd_elementSpec">eventList</a> element is comprised of 
+  <a href="/guidelines/v3/elements/event.html" class="link_odd_elementSpec">event</a> elements containing a brief description of the associated event, including dates and locations where the event took place. An event list may use the <strong>@type</strong> attribute to distinguish between multiple event lists with different functions, such as a list of events in the compositional process and a list of performance dates.</p>
 
 <p>Event lists and other text components, such as paragraphs, tables, lists, and text divisions (
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a>) may be interleaved when an ‘essay-like’ work history is desired.</p>
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a>) may be interleaved when an ‘essay-like’ work history is desired.</p>
 
 <p>The 
-  <a href="/v3/elements/event.html" class="link_odd_elementSpec">event</a> element permits either a text-centric or a data-centric model. The text-centric model is provided for prose descriptions, while the data-centric model accommodates event descriptions that consist of a collection of descriptive phrases. In the text-centric model, paragraphs, tables, and lists may be used. In the data-centric model, however, only certain phrase-level elements, may appear.</p>
+  <a href="/guidelines/v3/elements/event.html" class="link_odd_elementSpec">event</a> element permits either a text-centric or a data-centric model. The text-centric model is provided for prose descriptions, while the data-centric model accommodates event descriptions that consist of a collection of descriptive phrases. In the text-centric model, paragraphs, tables, and lists may be used. In the data-centric model, however, only certain phrase-level elements, may appear.</p>
 
 <h4 id="headerWorkLanguage">2.3.6. Language Usage
       
   </h4>
 
 <p>The 
-  <a href="/v3/elements/langusage.html" class="link_odd_elementSpec">langUsage</a> element is used within the 
-  <a href="/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element to describe the languages, sublanguages, dialects, etc. represented within a work. It contains one or more 
-  <a href="/v3/elements/language.html" class="link_odd_elementSpec">language</a> elements, each of which provides information about a single language.</p>
+  <a href="/guidelines/v3/elements/langusage.html" class="link_odd_elementSpec">langUsage</a> element is used within the 
+  <a href="/guidelines/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element to describe the languages, sublanguages, dialects, etc. represented within a work. It contains one or more 
+  <a href="/guidelines/v3/elements/language.html" class="link_odd_elementSpec">language</a> elements, each of which provides information about a single language.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -3057,7 +3057,7 @@ creation of bibliographic resources should be recorded within the creation eleme
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/langusage.html">langUsage</a>
+                <a href="/guidelines/v3/elements/langusage.html">langUsage</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3077,7 +3077,7 @@ etc., represented within the encoded resource.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/language.html">language</a>
+                <a href="/guidelines/v3/elements/language.html">language</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3088,7 +3088,7 @@ etc., represented within the encoded resource.</div>
 </div>
 
 <p>A 
-  <a href="/v3/elements/language.html" class="link_odd_elementSpec">language</a> element may be supplied for each different language used in a document. If used, its <strong>@xml:id</strong> attribute should specify an appropriate language identifier. This is particularly important if extended language identifiers have been used as the value of @xml:lang attributes elsewhere in the document.</p>
+  <a href="/guidelines/v3/elements/language.html" class="link_odd_elementSpec">language</a> element may be supplied for each different language used in a document. If used, its <strong>@xml:id</strong> attribute should specify an appropriate language identifier. This is particularly important if extended language identifiers have been used as the value of @xml:lang attributes elsewhere in the document.</p>
 
 <p>Here is an example of the use of this element:</p>
 <div class="sampleCode" data-lang="false">
@@ -3121,7 +3121,7 @@ etc., represented within the encoded resource.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/perfmedium.html">perfMedium</a>
+                <a href="/guidelines/v3/elements/perfmedium.html">perfMedium</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3142,7 +3142,7 @@ in a musical composition.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/perfreslist.html">perfResList</a>
+                <a href="/guidelines/v3/elements/perfreslist.html">perfResList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3161,7 +3161,7 @@ in a musical composition.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/castlist.html">castList</a>
+                <a href="/guidelines/v3/elements/castlist.html">castList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3172,9 +3172,9 @@ in a musical composition.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/perfmedium.html" class="link_odd_elementSpec">perfMedium</a> element provides the possibility of describing a work in terms of its medium of performance; that is, the performing forces required. In the case of a dramatic work, the dramatis personae and associated voice qualities may be enumerated using 
-  <a href="/v3/elements/castlist.html" class="link_odd_elementSpec">castList</a>. The 
-  <a href="/v3/elements/perfreslist.html" class="link_odd_elementSpec">perfResList</a> element describes the necessary instrumental and vocal resources.</p>
+  <a href="/guidelines/v3/elements/perfmedium.html" class="link_odd_elementSpec">perfMedium</a> element provides the possibility of describing a work in terms of its medium of performance; that is, the performing forces required. In the case of a dramatic work, the dramatis personae and associated voice qualities may be enumerated using 
+  <a href="/guidelines/v3/elements/castlist.html" class="link_odd_elementSpec">castList</a>. The 
+  <a href="/guidelines/v3/elements/perfreslist.html" class="link_odd_elementSpec">perfResList</a> element describes the necessary instrumental and vocal resources.</p>
 
 <h5 id="headerWorkCast">2.3.7.1. Cast Lists
       
@@ -3191,7 +3191,7 @@ in a musical composition.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/castlist.html">castList</a>
+                <a href="/guidelines/v3/elements/castlist.html">castList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3210,7 +3210,7 @@ in a musical composition.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/castitem.html">castItem</a>
+                <a href="/guidelines/v3/elements/castitem.html">castItem</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3231,7 +3231,7 @@ non-speaking roles.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/castgrp.html">castGrp</a>
+                <a href="/guidelines/v3/elements/castgrp.html">castGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3245,12 +3245,12 @@ list.</div>
 <p>Cast lists often function as identifying metadata and for this reason are permitted within the description of a work.</p>
 
 <p>Because the format and internal structure of cast lists are unpredictable, a 
-  <a href="/v3/elements/castlist.html" class="link_odd_elementSpec">castList</a> may contain any combination of 
-  <a href="/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a> and 
-  <a href="/v3/elements/castgrp.html" class="link_odd_elementSpec">castGrp</a> elements.</p>
+  <a href="/guidelines/v3/elements/castlist.html" class="link_odd_elementSpec">castList</a> may contain any combination of 
+  <a href="/guidelines/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a> and 
+  <a href="/guidelines/v3/elements/castgrp.html" class="link_odd_elementSpec">castGrp</a> elements.</p>
 
 <p>A 
-  <a href="/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a> element may contain any mixture of text and the following elements:</p>
+  <a href="/guidelines/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a> element may contain any mixture of text and the following elements:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -3261,7 +3261,7 @@ list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/role.html">role</a>
+                <a href="/guidelines/v3/elements/role.html">role</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3280,7 +3280,7 @@ list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/roledesc.html">roleDesc</a>
+                <a href="/guidelines/v3/elements/roledesc.html">roleDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3299,7 +3299,7 @@ list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/perfres.html">perfRes</a>
+                <a href="/guidelines/v3/elements/perfres.html">perfRes</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3311,9 +3311,9 @@ voice range, or a standard performing ensemble designation.</div>
 </div>
 
 <p>In the following example, 
-  <a href="/v3/elements/role.html" class="link_odd_elementSpec">role</a> provides the name of the dramatic character and 
-  <a href="/v3/elements/roledesc.html" class="link_odd_elementSpec">roleDesc</a> contains a brief description of the role. The 
-  <a href="/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> element is used to describe the voice range of the role.</p>
+  <a href="/guidelines/v3/elements/role.html" class="link_odd_elementSpec">role</a> provides the name of the dramatic character and 
+  <a href="/guidelines/v3/elements/roledesc.html" class="link_odd_elementSpec">roleDesc</a> contains a brief description of the role. The 
+  <a href="/guidelines/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> element is used to describe the voice range of the role.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3385,7 +3385,7 @@ voice range, or a standard performing ensemble designation.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a> element may also contain:</p>
+  <a href="/guidelines/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a> element may also contain:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -3396,7 +3396,7 @@ voice range, or a standard performing ensemble designation.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/actor.html">actor</a>
+                <a href="/guidelines/v3/elements/actor.html">actor</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3409,18 +3409,18 @@ voice range, or a standard performing ensemble designation.</div>
 <p>However, this element is unlikely to be useful in the context of a work description. It may be used here, however, for the very rare occasion when a work was conceived for and is only performable by a single person or group, as for certain “performance art” works.</p>
 
 <p>It is common to find some roles presented in groups or sublists. Roles are also often grouped together by their function. To accommodate these situations, the 
-  <a href="/v3/elements/castgrp.html" class="link_odd_elementSpec">castGrp</a> element is provided as a component of 
-  <a href="/v3/elements/castlist.html" class="link_odd_elementSpec">castList</a>. It may contain any combination of 
-  <a href="/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a>, 
-  <a href="/v3/elements/castgrp.html" class="link_odd_elementSpec">castGrp</a>, and 
-  <a href="/v3/elements/roledesc.html" class="link_odd_elementSpec">roleDesc</a> elements.</p>
+  <a href="/guidelines/v3/elements/castgrp.html" class="link_odd_elementSpec">castGrp</a> element is provided as a component of 
+  <a href="/guidelines/v3/elements/castlist.html" class="link_odd_elementSpec">castList</a>. It may contain any combination of 
+  <a href="/guidelines/v3/elements/castitem.html" class="link_odd_elementSpec">castItem</a>, 
+  <a href="/guidelines/v3/elements/castgrp.html" class="link_odd_elementSpec">castGrp</a>, and 
+  <a href="/guidelines/v3/elements/roledesc.html" class="link_odd_elementSpec">roleDesc</a> elements.</p>
 
 <h5 id="headerWorkInstrumentation">2.3.7.2. Instrumentation
       
   </h5>
 
 <p>The 
-  <a href="/v3/elements/perfreslist.html" class="link_odd_elementSpec">perfResList</a> element is used to capture the solo and ensemble instrumental and vocal resources of a composition. For example, a work for a standard ensemble may be indicated thus:</p>
+  <a href="/guidelines/v3/elements/perfreslist.html" class="link_odd_elementSpec">perfResList</a> element is used to capture the solo and ensemble instrumental and vocal resources of a composition. For example, a work for a standard ensemble may be indicated thus:</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -3453,7 +3453,7 @@ voice range, or a standard performing ensemble designation.</div>
 </div>
 
 <p>Where multiple instruments of the same kind are used, the <strong>@count</strong> attribute on 
-  <a href="/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> may be used to encode the exact number of players called for.</p>
+  <a href="/guidelines/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> may be used to encode the exact number of players called for.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3473,8 +3473,8 @@ voice range, or a standard performing ensemble designation.</div>
 </div>
 
 <p>Instrument or voice specifications may be grouped using the 
-  <a href="/v3/elements/perfreslist.html" class="link_odd_elementSpec">perfResList</a> element and a label assigned to the group with 
-  <a href="/v3/elements/head.html" class="link_odd_elementSpec">head</a>. For example:</p>
+  <a href="/guidelines/v3/elements/perfreslist.html" class="link_odd_elementSpec">perfResList</a> element and a label assigned to the group with 
+  <a href="/guidelines/v3/elements/head.html" class="link_odd_elementSpec">head</a>. For example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3534,10 +3534,10 @@ voice range, or a standard performing ensemble designation.</div>
 </div>
 
 <p>The preceding example also demonstrates how instrumental doublings can be accommodate through the use of nested 
-  <a href="/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> elements. Only the outer-most perfRes element should use the <strong>@count</strong> attribute. Its value should reflect the total number of performers, not the number of instruments played.</p>
+  <a href="/guidelines/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> elements. Only the outer-most perfRes element should use the <strong>@count</strong> attribute. Its value should reflect the total number of performers, not the number of instruments played.</p>
 
 <p>The 
-  <a href="/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> element provides the <strong>@codedval</strong> attribute, which can be used to record a coded value that represents the string value stored as the element’s content. It is recommended that coded values be taken from a standardized list, such as the International Association of Music Libraries’ Medium of performance Codes List or the MARC Instruments and Voices Code List.</p>
+  <a href="/guidelines/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a> element provides the <strong>@codedval</strong> attribute, which can be used to record a coded value that represents the string value stored as the element’s content. It is recommended that coded values be taken from a standardized list, such as the International Association of Music Libraries’ Medium of performance Codes List or the MARC Instruments and Voices Code List.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3554,7 +3554,7 @@ voice range, or a standard performing ensemble designation.</div>
 </div>
 
 <p>Solo parts may be marked with the <strong>@solo</strong> attribute of 
-  <a href="/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a>, like so:</p>
+  <a href="/guidelines/v3/elements/perfres.html" class="link_odd_elementSpec">perfRes</a>, like so:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3593,7 +3593,7 @@ voice range, or a standard performing ensemble designation.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/audience.html">audience</a>
+                <a href="/guidelines/v3/elements/audience.html">audience</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3616,7 +3616,7 @@ or other categorization.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/context.html">context</a>
+                <a href="/guidelines/v3/elements/context.html">context</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3632,9 +3632,9 @@ artistic, or other context within which the expression was realized.</div>
 </div>
 
 <p>The intended audience for the work and additional information about context for the work that is not captured in more specific elements elsewhere, such as 
-  <a href="/v3/elements/history.html" class="link_odd_elementSpec">history</a> and its sub-components, may be recorded in the 
-  <a href="/v3/elements/audience.html" class="link_odd_elementSpec">audience</a> and 
-  <a href="/v3/elements/context.html" class="link_odd_elementSpec">context</a> elements.</p>
+  <a href="/guidelines/v3/elements/history.html" class="link_odd_elementSpec">history</a> and its sub-components, may be recorded in the 
+  <a href="/guidelines/v3/elements/audience.html" class="link_odd_elementSpec">audience</a> and 
+  <a href="/guidelines/v3/elements/context.html" class="link_odd_elementSpec">context</a> elements.</p>
 
 <h4 id="headerWorkContents">2.3.9. Work Contents
       
@@ -3649,7 +3649,7 @@ artistic, or other context within which the expression was realized.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/contents.html">contents</a>
+                <a href="/guidelines/v3/elements/contents.html">contents</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3668,7 +3668,7 @@ artistic, or other context within which the expression was realized.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/contentitem.html">contentItem</a>
+                <a href="/guidelines/v3/elements/contentitem.html">contentItem</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3692,7 +3692,7 @@ artistic, or other context within which the expression was realized.</div>
 </div>
 
 <p>Alternatively, a structured list of contents may be constructed using the 
-  <a href="/v3/elements/contentitem.html" class="link_odd_elementSpec">contentItem</a> element:</p>
+  <a href="/guidelines/v3/elements/contentitem.html" class="link_odd_elementSpec">contentItem</a> element:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3706,8 +3706,8 @@ artistic, or other context within which the expression was realized.</div>
 </div>
 
 <p>Each 
-  <a href="/v3/elements/contentitem.html" class="link_odd_elementSpec">contentItem</a> element may be preceded by an optional 
-  <a href="/v3/elements/label.html" class="link_odd_elementSpec">label</a>:</p>
+  <a href="/guidelines/v3/elements/contentitem.html" class="link_odd_elementSpec">contentItem</a> element may be preceded by an optional 
+  <a href="/guidelines/v3/elements/label.html" class="link_odd_elementSpec">label</a>:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3727,7 +3727,7 @@ artistic, or other context within which the expression was realized.</div>
 </div>
 
 <p>To facilitate the creation of music catalogs based on MEI header information, 
-  <a href="/v3/elements/contents.html" class="link_odd_elementSpec">contents</a> may contain a heading:</p>
+  <a href="/guidelines/v3/elements/contents.html" class="link_odd_elementSpec">contents</a> may contain a heading:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3756,7 +3756,7 @@ artistic, or other context within which the expression was realized.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/bibllist.html">biblList</a>
+                <a href="/guidelines/v3/elements/bibllist.html">biblList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3767,22 +3767,22 @@ artistic, or other context within which the expression was realized.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/bibllist.html" class="link_odd_elementSpec">biblList</a> element allows citation of bibliographic evidence supporting assertions made within other sub-components of the work description.</p>
+  <a href="/guidelines/v3/elements/bibllist.html" class="link_odd_elementSpec">biblList</a> element allows citation of bibliographic evidence supporting assertions made within other sub-components of the work description.</p>
 
 <h4 id="headerWorkNotes">2.3.11. Notes Statement
       
   </h4>
 
 <p>The 
-  <a href="/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element may be used within the description of the musical work to capture information not accounted for by the other elements of the description.</p>
+  <a href="/guidelines/v3/elements/notesstmt.html" class="link_odd_elementSpec">notesStmt</a> element may be used within the description of the musical work to capture information not accounted for by the other elements of the description.</p>
 
 <h4 id="headerWorkClass">2.3.12. Classification
       
   </h4>
 
 <p>The next component of the core 
-  <a href="/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element is the 
-  <a href="/v3/elements/classification.html" class="link_odd_elementSpec">classification</a> element. This element is used to classify a musical text according to one or more of the following methods:</p>
+  <a href="/guidelines/v3/elements/workdesc.html" class="link_odd_elementSpec">workDesc</a> element is the 
+  <a href="/guidelines/v3/elements/classification.html" class="link_odd_elementSpec">classification</a> element. This element is used to classify a musical text according to one or more of the following methods:</p>
 
 <ul>
   <li>by reference to a recognized international classification scheme such as the Dewey Decimal Classification, the Universal Decimal Classification, the Colon Classification, the Library of Congress Classification, or any other system widely used in library and documentation work</li>
@@ -3800,7 +3800,7 @@ artistic, or other context within which the expression was realized.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/termlist.html">termList</a>
+                <a href="/guidelines/v3/elements/termlist.html">termList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3819,7 +3819,7 @@ artistic, or other context within which the expression was realized.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/classcode.html">classCode</a>
+                <a href="/guidelines/v3/elements/classcode.html">classCode</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3834,8 +3834,8 @@ File
 </div>
 
 <p>The 
-  <a href="/v3/elements/termlist.html" class="link_odd_elementSpec">termList</a> element categorizes an individual text by supplying a set of terms which may describe its topic or subject matter, its physical or intellectual form, date, etc. Each term is indicated by a 
-  <a href="/v3/elements/term.html" class="link_odd_elementSpec">term</a> element. In some schemes, the order of items in the list is significant, for example, from major topic to minor; in others, the list has an organized substructure of its own. No recommendations are made here as to which method is to be preferred. Wherever possible, such terms should be taken from a recognized source.</p>
+  <a href="/guidelines/v3/elements/termlist.html" class="link_odd_elementSpec">termList</a> element categorizes an individual text by supplying a set of terms which may describe its topic or subject matter, its physical or intellectual form, date, etc. Each term is indicated by a 
+  <a href="/guidelines/v3/elements/term.html" class="link_odd_elementSpec">term</a> element. In some schemes, the order of items in the list is significant, for example, from major topic to minor; in others, the list has an organized substructure of its own. No recommendations are made here as to which method is to be preferred. Wherever possible, such terms should be taken from a recognized source.</p>
 
 <p>The classCode element offers the possibility of capturing a bibliographic citation and/or a URI at which the classification scheme or information about it may be found.</p>
 
@@ -3882,7 +3882,7 @@ File
 </div>
 
 <p>Alternatively, <strong>@classcode</strong> may be used on 
-  <a href="/v3/elements/termlist.html" class="link_odd_elementSpec">termList</a> when all the contained terms come from the same source.</p>
+  <a href="/guidelines/v3/elements/termlist.html" class="link_odd_elementSpec">termList</a> when all the contained terms come from the same source.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -3906,7 +3906,7 @@ File
   </h4>
 
 <p>When the FRBR (Functional Requirements for Bibliographic Records) module is available, the following elements may be used within 
-  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a> to describe relationships between the work being described and other works or between the work and expressions of it:</p>
+  <a href="/guidelines/v3/elements/work.html" class="link_odd_elementSpec">work</a> to describe relationships between the work being described and other works or between the work and expressions of it:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -3917,7 +3917,7 @@ File
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/expressionlist.html">expressionList</a>
+                <a href="/guidelines/v3/elements/expressionlist.html">expressionList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3936,7 +3936,7 @@ File
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/componentgrp.html">componentGrp</a>
+                <a href="/guidelines/v3/elements/componentgrp.html">componentGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3955,7 +3955,7 @@ File
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/relationlist.html">relationList</a>
+                <a href="/guidelines/v3/elements/relationlist.html">relationList</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3966,14 +3966,14 @@ File
 </div>
 
 <p>For more information about FRBR and the use of these elements, see chapter 
-  <a href="/v3/content/frbr.html">Functional Requirements for Bibliographic Records (FRBR)</a>.</p>
+  <a href="/guidelines/v3/content/frbr.html">Functional Requirements for Bibliographic Records (FRBR)</a>.</p>
 
 <h3 id="headerRevisionDescription">2.4. Revision Description
       
   </h3>
 
 <p>The final sub-element of the MEI header, the 
-  <a href="/v3/elements/revisiondesc.html" class="link_odd_elementSpec">revisionDesc</a> element, provides a detailed change log in which each change made to a text may be recorded. Its use is optional but highly recommended. It provides essential information for the administration of large numbers of files which are being updated, corrected, or otherwise modified as well as extremely useful documentation for files being passed from researcher to researcher or system to system. Without change logs, it is easy to confuse different versions of a file, or to remain unaware of small but important changes made in the file by some earlier link in the chain of distribution. No change should be made in any MEI-conformant file without corresponding entries being made in the change log.</p>
+  <a href="/guidelines/v3/elements/revisiondesc.html" class="link_odd_elementSpec">revisionDesc</a> element, provides a detailed change log in which each change made to a text may be recorded. Its use is optional but highly recommended. It provides essential information for the administration of large numbers of files which are being updated, corrected, or otherwise modified as well as extremely useful documentation for files being passed from researcher to researcher or system to system. Without change logs, it is easy to confuse different versions of a file, or to remain unaware of small but important changes made in the file by some earlier link in the chain of distribution. No change should be made in any MEI-conformant file without corresponding entries being made in the change log.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -3984,7 +3984,7 @@ File
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/revisiondesc.html">revisionDesc</a>
+                <a href="/guidelines/v3/elements/revisiondesc.html">revisionDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -4005,7 +4005,7 @@ to an MEI file.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/change.html">change</a>
+                <a href="/guidelines/v3/elements/change.html">change</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -4018,10 +4018,10 @@ to an MEI file.</div>
 <p>The main purpose of the revision description is to record changes in the text to which a header is prefixed. However, it is recommended practice to include entries also for significant changes in the header itself (other than the revision description itself, of course). At the very least, an entry should be supplied indicating the date of creation of the header.</p>
 
 <p>The log consists of a list of 
-  <a href="/v3/elements/change.html" class="link_odd_elementSpec">change</a> elements, each of which contains a detailed description of the changes made. If a number is to be associated with one or more changes (for example, a revision number), the <strong>@n</strong> attribute may be used to indicate it. The person responsible for the change and the date of the change may be indicated by the 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> and 
-  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a> elements. The description of the change itself is contained within the 
-  <a href="/v3/elements/changedesc.html" class="link_odd_elementSpec">changeDesc</a> element, which can hold one or more paragraphs.</p>
+  <a href="/guidelines/v3/elements/change.html" class="link_odd_elementSpec">change</a> elements, each of which contains a detailed description of the changes made. If a number is to be associated with one or more changes (for example, a revision number), the <strong>@n</strong> attribute may be used to indicate it. The person responsible for the change and the date of the change may be indicated by the 
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> and 
+  <a href="/guidelines/v3/elements/date.html" class="link_odd_elementSpec">date</a> elements. The description of the change itself is contained within the 
+  <a href="/guidelines/v3/elements/changedesc.html" class="link_odd_elementSpec">changeDesc</a> element, which can hold one or more paragraphs.</p>
 
 <p>It is recommended to give changes in reverse chronological order, most recent first.</p>
 
@@ -4097,19 +4097,19 @@ to an MEI file.</div>
 </div>
 
 <p>The only mandatory component of the MEI Header is the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element. Within this element, 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> and 
-  <a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> are required constituents. Within the title statement, a title is required. Within the 
-  <a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a>, a publisher, distributor, or other agency responsible for the file is required.</p>
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> element. Within this element, 
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> and 
+  <a href="/guidelines/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a> are required constituents. Within the title statement, a title is required. Within the 
+  <a href="/guidelines/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a>, a publisher, distributor, or other agency responsible for the file is required.</p>
 
 <p>While not formally required, additional information is recommended for a minimally effective header. For example, it is recommended that the person or corporate entity responsible for the creation of the encoding should be specified using 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> within the 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> element. It is also recommended that information about the source, or sources, of the encoding be included. Each 
-  <a href="/v3/elements/source.html" class="link_odd_elementSpec">source</a> element should contain at the least a loosely structured bibliographic citation that identifies the source used to construct the MEI file.</p>
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> within the 
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> element. It is also recommended that information about the source, or sources, of the encoding be included. Each 
+  <a href="/guidelines/v3/elements/source.html" class="link_odd_elementSpec">source</a> element should contain at the least a loosely structured bibliographic citation that identifies the source used to construct the MEI file.</p>
 
 <p>Furthermore, If the electronic transcription is a member of a series of publications, the series title and publisher should be included using the 
-  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element. It is also common for cataloging records to include genre and/or form information, here represented by the MEI 
-  <a href="/v3/elements/classification.html" class="link_odd_elementSpec">classification</a> element.</p>
+  <a href="/guidelines/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> element. It is also common for cataloging records to include genre and/or form information, here represented by the MEI 
+  <a href="/guidelines/v3/elements/classification.html" class="link_odd_elementSpec">classification</a> element.</p>
 
 <p>We now present the same example header, expanded to include additionally recommended information, adequate for most bibliographic purposes, in particular to allow for the creation of an AACR2-conformant bibliographic record.</p>
 
@@ -4187,7 +4187,7 @@ to an MEI file.</div>
 <p>An independent header is an MEI metadata header that can be exchanged as an independent document between libraries, archives, collections, projects, and individuals.</p>
 
 <p>The structure of an independent header is exactly the same as that of an header attached to a document. This means that an 
-  <a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> can be extracted from an MEI document and sent to a receiving institution with little or no change.</p>
+  <a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> can be extracted from an MEI document and sent to a receiving institution with little or no change.</p>
 
 <p>When deciding which information to include in the independent header, and the format or structure of that information, the following should be kept in mind:</p>
 
@@ -4195,8 +4195,8 @@ to an MEI file.</div>
   <li>The independent header should provide full bibliographic information about the encoded text, its sources, where the text can be located, and any restrictions governing its use.</li>
   <li>The independent header should contain useful information about the encoding of the text itself. In this regard, it is highly recommended that the encoding description be as complete as possible. The Guidelines do not require that the encoding description be included in the header (since some simple transcriptions of small items may not require it), but in practice the use of a header without an encoding description would be severely limited.</li>
   <li>The independent header should be amenable to automatic processing, particularly for loading into databases and for the creation of publications, indexes, and finding aids, without undue editorial intervention on the part of the receiving institution. For this reason, two recommendations are made regarding the format or structure of the header: first, where there is a choice between a prose content model and one that contains a formal series of specialized elements, wherever possible and appropriate the specialized elements should be preferred to unstructured prose. Second, with respect to corpora, information about each of the texts within a corpus should be included in the overall corpus-level 
-<a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>. That is, source information, editorial practices, encoding descriptions, and the like should be included in the relevant sections of the corpus 
-<a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>, with pointers to them from the headers of the individual texts included in the corpus. There are three reasons for this recommendation: first, the corpus-level header will contain the full array of bibliographic and documentary information for each of the texts in a corpus, and thus be of great benefit to remote users, who may have access only to the independent header; second, such a layout is easier for the coder to maintain than searching for information throughout a text; and third, generally speaking, this practice results in greater overall consistency, especially with respect to bibliographic citations.</li>
+<a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>. That is, source information, editorial practices, encoding descriptions, and the like should be included in the relevant sections of the corpus 
+<a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>, with pointers to them from the headers of the individual texts included in the corpus. There are three reasons for this recommendation: first, the corpus-level header will contain the full array of bibliographic and documentary information for each of the texts in a corpus, and thus be of great benefit to remote users, who may have access only to the independent header; second, such a layout is easier for the coder to maintain than searching for information throughout a text; and third, generally speaking, this practice results in greater overall consistency, especially with respect to bibliographic citations.</li>
 </ul>
 
 <h4 id="headerBiblAnalog">2.6.2. Header Elements and their Relationship to Other Bibliographic Standards
@@ -4214,7 +4214,7 @@ to an MEI file.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.bibl.html">@analog</a>
+                <a href="/guidelines/v3/attribute-classes/att.bibl.html">@analog</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -4233,12 +4233,12 @@ which this MEI element is comparable.</div>
   </h3>
 
 <p>MEI offers two related concepts for capturing relations between bibliographic items. The model of 
-  <a href="/v3/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>, as described in chapter 
-  <a href="/v3/content/shared.html#sharedRelatedItemDesc">Related Items</a> of these Guidelines, is derived from MODS v3.4 (see documentation <a href="http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#relateditem" class="link_ref">here</a>). Its purpose in MEI is to encode bibliographic references between mostly “secondary” material, like reviews, articles, and so on. It may be used to provide cross-references between information encoded in different places of the header.</p>
+  <a href="/guidelines/v3/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>, as described in chapter 
+  <a href="/guidelines/v3/content/shared.html#sharedRelatedItemDesc">Related Items</a> of these Guidelines, is derived from MODS v3.4 (see documentation <a href="http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#relateditem" class="link_ref">here</a>). Its purpose in MEI is to encode bibliographic references between mostly “secondary” material, like reviews, articles, and so on. It may be used to provide cross-references between information encoded in different places of the header.</p>
 
 <p>However, 
-  <a href="/v3/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> is less ideal for describing the relations between works, differing versions of these works, the sources in which those versions are transmitted, and where applicable the individual copies of a print. For these situations, it is strongly recommended to use the 
-  <a href="/v3/content/frbr.html">Functional Requirements for Bibliographic Records (FRBR)</a> instead. This module is based on the Functional Requirements for Bibliographic Records, as <a href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records" class="link_ref">specified</a> by the <a href="http://www.ifla.org" class="link_ref">IFLA</a>. It allows a much finer description of relationships between such “primary” entities. For compatibility reasons, both models should not be confused or mixed under any circumstances.</p>
+  <a href="/guidelines/v3/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> is less ideal for describing the relations between works, differing versions of these works, the sources in which those versions are transmitted, and where applicable the individual copies of a print. For these situations, it is strongly recommended to use the 
+  <a href="/guidelines/v3/content/frbr.html">Functional Requirements for Bibliographic Records (FRBR)</a> instead. This module is based on the Functional Requirements for Bibliographic Records, as <a href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records" class="link_ref">specified</a> by the <a href="http://www.ifla.org" class="link_ref">IFLA</a>. It allows a much finer description of relationships between such “primary” entities. For compatibility reasons, both models should not be confused or mixed under any circumstances.</p>
 
 
 
@@ -4246,7 +4246,7 @@ which this MEI element is comparable.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/header.html">
+        <form action="/guidelines/v3/content/header.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -4259,7 +4259,7 @@ which this MEI element is comparable.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -4267,7 +4267,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -4275,7 +4275,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -4283,7 +4283,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -4291,7 +4291,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -4299,7 +4299,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -4571,7 +4571,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerFileDescription">2.1. File Description
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerFileDescription">2.1. File Description
     </a>
   
 
@@ -4582,7 +4582,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerTitleStatement">2.1.1. Title Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerTitleStatement">2.1.1. Title Statement
     </a>
   
 
@@ -4593,7 +4593,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerEditionstmt">2.1.2. Edition Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerEditionstmt">2.1.2. Edition Statement
     </a>
   
 
@@ -4604,7 +4604,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerPhysicalDescription">2.1.3. Physical Description of the File
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerPhysicalDescription">2.1.3. Physical Description of the File
     </a>
   
 
@@ -4615,7 +4615,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerPublicationDistribution">2.1.4. Publication, Distribution, etc.
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerPublicationDistribution">2.1.4. Publication, Distribution, etc.
     </a>
   
 
@@ -4626,7 +4626,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerSeriesStatement">2.1.5. Series Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerSeriesStatement">2.1.5. Series Statement
     </a>
   
 
@@ -4637,7 +4637,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerNotesStatement">2.1.6. Notes Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerNotesStatement">2.1.6. Notes Statement
     </a>
   
 
@@ -4648,157 +4648,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerSourceDescription">2.1.7. Source Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/v3/content/header.html#headerEncodingDescription">2.2. Encoding Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerApplicationInformation">2.2.1. Application Information
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerEditorialPrinciples">2.2.2. Declaration of Editorial Principles
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerProjectDescription">2.2.3. Project Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerSamplingDeclaration">2.2.4. Sampling Declaration
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/v3/content/header.html#headerWorkDescription">2.3. Work Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkIdentification">2.3.1. Work Identification
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkIncipit">2.3.2. Incipits
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkKeyTempoMeter">2.3.3. Key, Tempo, and Meter
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkOtherChar">2.3.4. Other Identifying Characteristics
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkHistory">2.3.5. Work History
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkLanguage">2.3.6. Language Usage
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkMedium">2.3.7. Performance Medium
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerSourceDescription">2.1.7. Source Description
     </a>
   
 
@@ -4816,14 +4666,7 @@ which this MEI element is comparable.</div>
 
   
 
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkAudience">2.3.8. Audience and Context
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerEncodingDescription">2.2. Encoding Description
     </a>
   
 
@@ -4834,7 +4677,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkContents">2.3.9. Work Contents
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerApplicationInformation">2.2.1. Application Information
     </a>
   
 
@@ -4845,7 +4688,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkBiblList">2.3.10. Bibliographic Evidence
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerEditorialPrinciples">2.2.2. Declaration of Editorial Principles
     </a>
   
 
@@ -4856,7 +4699,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkNotes">2.3.11. Notes Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerProjectDescription">2.2.3. Project Description
     </a>
   
 
@@ -4867,7 +4710,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkClass">2.3.12. Classification
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerSamplingDeclaration">2.2.4. Sampling Declaration
     </a>
   
 
@@ -4878,7 +4721,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkRelationships">2.3.13. Work Relationships
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerWorkDescription">2.3. Work Description
     </a>
   
 
@@ -4889,7 +4732,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerRevisionDescription">2.4. Revision Description
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkIdentification">2.3.1. Work Identification
     </a>
   
 
@@ -4900,7 +4743,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerMinimalRecommendedHeader">2.5. Minimal and Recommended Header Information
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkIncipit">2.3.2. Incipits
     </a>
   
 
@@ -4911,7 +4754,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerIndependentHeader">2.6. Independent Headers
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkKeyTempoMeter">2.3.3. Key, Tempo, and Meter
     </a>
   
 
@@ -4922,7 +4765,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerIndependentHeaderDefinition">2.6.1. Definition and Principles for Encoders
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkOtherChar">2.3.4. Other Identifying Characteristics
     </a>
   
 
@@ -4933,7 +4776,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerBiblAnalog">2.6.2. Header Elements and their Relationship to Other Bibliographic Standards
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkHistory">2.3.5. Work History
     </a>
   
 
@@ -4944,7 +4787,164 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerRelatedItemVsFRBR">2.7. RelatedItem vs. FRBR
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkLanguage">2.3.6. Language Usage
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkMedium">2.3.7. Performance Medium
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkAudience">2.3.8. Audience and Context
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkContents">2.3.9. Work Contents
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkBiblList">2.3.10. Bibliographic Evidence
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkNotes">2.3.11. Notes Statement
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkClass">2.3.12. Classification
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkRelationships">2.3.13. Work Relationships
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerRevisionDescription">2.4. Revision Description
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerMinimalRecommendedHeader">2.5. Minimal and Recommended Header Information
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerIndependentHeader">2.6. Independent Headers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerIndependentHeaderDefinition">2.6.1. Definition and Principles for Encoders
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerBiblAnalog">2.6.2. Header Elements and their Relationship to Other Bibliographic Standards
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerRelatedItemVsFRBR">2.7. RelatedItem vs. FRBR
     </a>
   
 
@@ -6111,7 +6111,7 @@ which this MEI element is comparable.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -6119,7 +6119,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -6127,7 +6127,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -6135,7 +6135,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -6143,7 +6143,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -6151,7 +6151,7 @@ which this MEI element is comparable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -6423,7 +6423,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerFileDescription">2.1. File Description
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerFileDescription">2.1. File Description
     </a>
   
 
@@ -6434,7 +6434,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerTitleStatement">2.1.1. Title Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerTitleStatement">2.1.1. Title Statement
     </a>
   
 
@@ -6445,7 +6445,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerEditionstmt">2.1.2. Edition Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerEditionstmt">2.1.2. Edition Statement
     </a>
   
 
@@ -6456,7 +6456,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerPhysicalDescription">2.1.3. Physical Description of the File
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerPhysicalDescription">2.1.3. Physical Description of the File
     </a>
   
 
@@ -6467,7 +6467,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerPublicationDistribution">2.1.4. Publication, Distribution, etc.
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerPublicationDistribution">2.1.4. Publication, Distribution, etc.
     </a>
   
 
@@ -6478,7 +6478,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerSeriesStatement">2.1.5. Series Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerSeriesStatement">2.1.5. Series Statement
     </a>
   
 
@@ -6489,7 +6489,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerNotesStatement">2.1.6. Notes Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerNotesStatement">2.1.6. Notes Statement
     </a>
   
 
@@ -6500,157 +6500,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerSourceDescription">2.1.7. Source Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/v3/content/header.html#headerEncodingDescription">2.2. Encoding Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerApplicationInformation">2.2.1. Application Information
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerEditorialPrinciples">2.2.2. Declaration of Editorial Principles
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerProjectDescription">2.2.3. Project Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerSamplingDeclaration">2.2.4. Sampling Declaration
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/v3/content/header.html#headerWorkDescription">2.3. Work Description
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkIdentification">2.3.1. Work Identification
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkIncipit">2.3.2. Incipits
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkKeyTempoMeter">2.3.3. Key, Tempo, and Meter
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkOtherChar">2.3.4. Other Identifying Characteristics
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkHistory">2.3.5. Work History
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkLanguage">2.3.6. Language Usage
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkMedium">2.3.7. Performance Medium
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerSourceDescription">2.1.7. Source Description
     </a>
   
 
@@ -6668,14 +6518,7 @@ which this MEI element is comparable.</div>
 
   
 
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/header.html#headerWorkAudience">2.3.8. Audience and Context
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerEncodingDescription">2.2. Encoding Description
     </a>
   
 
@@ -6686,7 +6529,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkContents">2.3.9. Work Contents
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerApplicationInformation">2.2.1. Application Information
     </a>
   
 
@@ -6697,7 +6540,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkBiblList">2.3.10. Bibliographic Evidence
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerEditorialPrinciples">2.2.2. Declaration of Editorial Principles
     </a>
   
 
@@ -6708,7 +6551,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkNotes">2.3.11. Notes Statement
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerProjectDescription">2.2.3. Project Description
     </a>
   
 
@@ -6719,7 +6562,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkClass">2.3.12. Classification
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerSamplingDeclaration">2.2.4. Sampling Declaration
     </a>
   
 
@@ -6730,7 +6573,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerWorkRelationships">2.3.13. Work Relationships
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerWorkDescription">2.3. Work Description
     </a>
   
 
@@ -6741,7 +6584,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerRevisionDescription">2.4. Revision Description
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkIdentification">2.3.1. Work Identification
     </a>
   
 
@@ -6752,7 +6595,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerMinimalRecommendedHeader">2.5. Minimal and Recommended Header Information
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkIncipit">2.3.2. Incipits
     </a>
   
 
@@ -6763,7 +6606,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerIndependentHeader">2.6. Independent Headers
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkKeyTempoMeter">2.3.3. Key, Tempo, and Meter
     </a>
   
 
@@ -6774,7 +6617,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerIndependentHeaderDefinition">2.6.1. Definition and Principles for Encoders
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkOtherChar">2.3.4. Other Identifying Characteristics
     </a>
   
 
@@ -6785,7 +6628,7 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-3" href="/v3/content/header.html#headerBiblAnalog">2.6.2. Header Elements and their Relationship to Other Bibliographic Standards
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkHistory">2.3.5. Work History
     </a>
   
 
@@ -6796,7 +6639,164 @@ which this MEI element is comparable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/header.html#headerRelatedItemVsFRBR">2.7. RelatedItem vs. FRBR
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkLanguage">2.3.6. Language Usage
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkMedium">2.3.7. Performance Medium
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkAudience">2.3.8. Audience and Context
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkContents">2.3.9. Work Contents
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkBiblList">2.3.10. Bibliographic Evidence
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkNotes">2.3.11. Notes Statement
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkClass">2.3.12. Classification
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerWorkRelationships">2.3.13. Work Relationships
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerRevisionDescription">2.4. Revision Description
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerMinimalRecommendedHeader">2.5. Minimal and Recommended Header Information
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerIndependentHeader">2.6. Independent Headers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerIndependentHeaderDefinition">2.6.1. Definition and Principles for Encoders
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/header.html#headerBiblAnalog">2.6.2. Header Elements and their Relationship to Other Bibliographic Standards
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/header.html#headerRelatedItemVsFRBR">2.7. RelatedItem vs. FRBR
     </a>
   
 

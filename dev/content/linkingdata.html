@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_dev.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_dev.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/dev/content/linkingdata.html">
+          <form action="/guidelines/dev/content/linkingdata.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -153,8 +153,8 @@
   </h4>
 
 <p>The link elements discussed in this section are the 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and the 
-  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> elements which are declared in the <code class="language-plaintext highlighter-rouge">MEI.ptrref</code> module.</p>
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and the 
+  <a href="/guidelines/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> elements which are declared in the <code class="language-plaintext highlighter-rouge">MEI.ptrref</code> module.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -165,7 +165,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/ptr.html">ptr</a>
+                <a href="/guidelines/dev/elements/ptr.html">ptr</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -185,7 +185,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/ref.html">ref</a>
+                <a href="/guidelines/dev/elements/ref.html">ref</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -197,10 +197,10 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element is a traversible pointer to another location. It is an empty linking element that uses only attributes to describe its link destination. It cannot contain text or sub-elements to describe the referenced object. The next example shows the use of the 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to target a certain identifier (here e.g. a page number, or more precisely, page break elements, 
-  <a href="/dev/elements/pb.html" class="link_odd_elementSpec">pb</a>, bearing these identifiers) from within a 
-  <a href="/dev/elements/list.html" class="link_odd_elementSpec">list</a> of item descriptions:</p>
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element is a traversible pointer to another location. It is an empty linking element that uses only attributes to describe its link destination. It cannot contain text or sub-elements to describe the referenced object. The next example shows the use of the 
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to target a certain identifier (here e.g. a page number, or more precisely, page break elements, 
+  <a href="/guidelines/dev/elements/pb.html" class="link_odd_elementSpec">pb</a>, bearing these identifiers) from within a 
+  <a href="/guidelines/dev/elements/list.html" class="link_odd_elementSpec">list</a> of item descriptions:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -219,9 +219,9 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> element defines a traversible reference to another location. While 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> cannot contain other markup, the 
-  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> element can include text or sub-elements that further specify the link destination:</p>
+  <a href="/guidelines/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> element defines a traversible reference to another location. While 
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> cannot contain other markup, the 
+  <a href="/guidelines/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> element can include text or sub-elements that further specify the link destination:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -245,9 +245,9 @@
   </h4>
 
 <p>The 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
-  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> elements share a set of common attributes that are inherited from the 
-  <a href="/dev/attribute-classes/att.pointing.html">att.pointing</a> class (a more detailed explanation is provided below):</p>
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
+  <a href="/guidelines/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> elements share a set of common attributes that are inherited from the 
+  <a href="/guidelines/dev/attribute-classes/att.pointing.html">att.pointing</a> class (a more detailed explanation is provided below):</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -258,7 +258,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.pointing.html">@target</a>
+                <a href="/guidelines/dev/attribute-classes/att.pointing.html">@target</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -278,7 +278,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.pointing.html">@targettype</a>
+                <a href="/guidelines/dev/attribute-classes/att.pointing.html">@targettype</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -298,7 +298,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.pointing.html">@xlink:actuate</a>
+                <a href="/guidelines/dev/attribute-classes/att.pointing.html">@xlink:actuate</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -317,7 +317,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.pointing.html">@xlink:show</a>
+                <a href="/guidelines/dev/attribute-classes/att.pointing.html">@xlink:show</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -336,7 +336,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.pointing.html">@xlink:role</a>
+                <a href="/guidelines/dev/attribute-classes/att.pointing.html">@xlink:role</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -348,10 +348,10 @@
 </div>
 
 <p>In addition to the attributes in the 
-  <a href="/dev/attribute-classes/att.pointing.html">att.pointing</a> class, the <strong>@mimetype</strong> attribute from the 
-  <a href="/dev/attribute-classes/att.internetmedia.html">att.internetMedia</a> class is also available on 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
-  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> (a more detailed explanation is provided below):</p>
+  <a href="/guidelines/dev/attribute-classes/att.pointing.html">att.pointing</a> class, the <strong>@mimetype</strong> attribute from the 
+  <a href="/guidelines/dev/attribute-classes/att.internetmedia.html">att.internetMedia</a> class is also available on 
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
+  <a href="/guidelines/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> (a more detailed explanation is provided below):</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -362,7 +362,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.internetmedia.html">@mimetype</a>
+                <a href="/guidelines/dev/attribute-classes/att.internetmedia.html">@mimetype</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -375,9 +375,9 @@
 </div>
 
 <p>The 
-  <a href="/dev/attribute-classes/att.linking.html">att.linking</a> class provides another set of common attributes (a more detailed explanation is provided in 
-  <a href="/dev/content/analysisharm.html">Analysis Markup and Harmonies</a>: 
-  <a href="/dev/content/analysisharm.html#analysisDescribingRelationships">General Relationships Between Elements</a>):</p>
+  <a href="/guidelines/dev/attribute-classes/att.linking.html">att.linking</a> class provides another set of common attributes (a more detailed explanation is provided in 
+  <a href="/guidelines/dev/content/analysisharm.html">Analysis Markup and Harmonies</a>: 
+  <a href="/guidelines/dev/content/analysisharm.html#analysisDescribingRelationships">General Relationships Between Elements</a>):</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -388,7 +388,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@copyof</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@copyof</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -407,7 +407,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@corresp</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@corresp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -427,7 +427,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@follows</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@follows</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -447,7 +447,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@next</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@next</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -466,7 +466,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@precedes</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@precedes</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -486,7 +486,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@prev</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@prev</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -505,7 +505,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@sameas</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@sameas</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -525,7 +525,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@synch</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@synch</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -536,11 +536,11 @@
 </div>
 
 <p>Additionally, the following attributes are also available on 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
-  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a>:</p>
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
+  <a href="/guidelines/dev/elements/ref.html" class="link_odd_elementSpec">ref</a>:</p>
 
 <p>Via the 
-  <a href="/dev/attribute-classes/att.metadatapointing.html">att.metadataPointing</a> class:</p>
+  <a href="/guidelines/dev/attribute-classes/att.metadatapointing.html">att.metadataPointing</a> class:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -551,7 +551,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.metadatapointing.html">@decls</a>
+                <a href="/guidelines/dev/attribute-classes/att.metadatapointing.html">@decls</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -564,7 +564,7 @@
 </div>
 
 <p>Via the 
-  <a href="/dev/attribute-classes/att.classed.html">att.classed</a> class:</p>
+  <a href="/guidelines/dev/attribute-classes/att.classed.html">att.classed</a> class:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -575,7 +575,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.classed.html">@class</a>
+                <a href="/guidelines/dev/attribute-classes/att.classed.html">@class</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -587,7 +587,7 @@
 </div>
 
 <p>Via the 
-  <a href="/dev/attribute-classes/att.responsibility.html">att.responsibility</a> class:</p>
+  <a href="/guidelines/dev/attribute-classes/att.responsibility.html">att.responsibility</a> class:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -598,7 +598,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.responsibility.html">@resp</a>
+                <a href="/guidelines/dev/attribute-classes/att.responsibility.html">@resp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -702,8 +702,8 @@
 </div>
 
 <p>As shown above, the 
-  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element can be used to ‘point to’ a digital image (<code class="language-plaintext highlighter-rouge">target="my.png"</code>). However, when the intention is to <em>display</em> a digital image as part of the rendering of an MEI file, the 
-  <a href="/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element provides a convenient and recommended alternative:</p>
+  <a href="/guidelines/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element can be used to ‘point to’ a digital image (<code class="language-plaintext highlighter-rouge">target="my.png"</code>). However, when the intention is to <em>display</em> a digital image as part of the rendering of an MEI file, the 
+  <a href="/guidelines/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element provides a convenient and recommended alternative:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -821,7 +821,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/dev/content/linkingdata.html">
+        <form action="/guidelines/dev/content/linkingdata.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -834,7 +834,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -842,7 +842,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -850,7 +850,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -858,7 +858,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -866,7 +866,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -874,7 +874,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2924,7 +2924,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/linkingdata.html#links">13.1. Links
+    <a class="level-2" href="/guidelines/dev/content/linkingdata.html#links">13.1. Links
     </a>
   
 
@@ -2935,7 +2935,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/linkingdata.html#linkFromMei">13.2. Linking from MEI
+    <a class="level-2" href="/guidelines/dev/content/linkingdata.html#linkFromMei">13.2. Linking from MEI
     </a>
   
 
@@ -2946,7 +2946,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/linkingdata.html#ptrRef">13.2.1. Pointers and References
+    <a class="level-3" href="/guidelines/dev/content/linkingdata.html#ptrRef">13.2.1. Pointers and References
     </a>
   
 
@@ -2957,7 +2957,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/linkingdata.html#ptrrefModule">13.2.2. Specifying Link Elements
+    <a class="level-3" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2. Specifying Link Elements
     </a>
   
 
@@ -3003,7 +3003,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/linkingdata.html#linkAlign">13.3. Linking and Alignment
+    <a class="level-2" href="/guidelines/dev/content/linkingdata.html#linkAlign">13.3. Linking and Alignment
     </a>
   
 
@@ -3099,7 +3099,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -3107,7 +3107,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -3115,7 +3115,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -3123,7 +3123,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -3131,7 +3131,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -3139,7 +3139,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -5189,7 +5189,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/linkingdata.html#links">13.1. Links
+    <a class="level-2" href="/guidelines/dev/content/linkingdata.html#links">13.1. Links
     </a>
   
 
@@ -5200,7 +5200,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/linkingdata.html#linkFromMei">13.2. Linking from MEI
+    <a class="level-2" href="/guidelines/dev/content/linkingdata.html#linkFromMei">13.2. Linking from MEI
     </a>
   
 
@@ -5211,7 +5211,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/linkingdata.html#ptrRef">13.2.1. Pointers and References
+    <a class="level-3" href="/guidelines/dev/content/linkingdata.html#ptrRef">13.2.1. Pointers and References
     </a>
   
 
@@ -5222,7 +5222,7 @@
 
   
 
-    <a class="level-3" href="/dev/content/linkingdata.html#ptrrefModule">13.2.2. Specifying Link Elements
+    <a class="level-3" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2. Specifying Link Elements
     </a>
   
 
@@ -5268,7 +5268,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/linkingdata.html#linkAlign">13.3. Linking and Alignment
+    <a class="level-2" href="/guidelines/dev/content/linkingdata.html#linkAlign">13.3. Linking and Alignment
     </a>
   
 

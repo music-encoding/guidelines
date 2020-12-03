@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/text.html">
+          <form action="/guidelines/v3/content/text.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -127,8 +127,8 @@
   </h2>
 
 <p>This chapter describes methods for encoding textual content with MEI. Textual information on scores has several different uses, although some text is closer to music notation than other kinds. For example, tempo marks, directives and lyrics are directly related to the functionality of the notated music and are, therefore, described in other chapters (see for example 
-  <a href="/v3/content/lyricsdesc.html">Vocal Text</a> and 
-  <a href="/v3/content/shared.html#sharedTextDirectives">Text Directives</a>). This chapter, on the other hand, focuses on the text that accompanies the score, i.e., paratext (prefatory material, title pages, back matter, appendices, etc.), titles, prose, poetry, etc.</p>
+  <a href="/guidelines/v3/content/lyricsdesc.html">Vocal Text</a> and 
+  <a href="/guidelines/v3/content/shared.html#sharedTextDirectives">Text Directives</a>). This chapter, on the other hand, focuses on the text that accompanies the score, i.e., paratext (prefatory material, title pages, back matter, appendices, etc.), titles, prose, poetry, etc.</p>
 
 <p>Most of the elements described here take inspiration from encoding formats that deal primarily with text, such as HTML and the Text Encoding Initiative (TEI). These elements are provided to encode relatively basic textual information. For deeper encoding of text, these Guidelines recommend consideration of other text-specific encoding formats with embedded MEI markup.</p>
 
@@ -137,7 +137,7 @@
   </h3>
 
 <p>Text can be organized in different parts, for example in chapters or sections. The 
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element is used to encode such structural divisions.</p>
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a> element is used to encode such structural divisions.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -148,7 +148,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/div.html">div</a>
+                <a href="/guidelines/v3/elements/div.html">div</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -168,7 +168,7 @@ section.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/div.html">@type</a>
+                <a href="/guidelines/v3/attribute-classes/div.html">@type</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -187,7 +187,7 @@ or typology.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/div.html">@subtype</a>
+                <a href="/guidelines/v3/attribute-classes/div.html">@subtype</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -199,9 +199,9 @@ attribute.</div>
 </div>
 
 <p>For example, printed scores, before the actual notation, can have text that can be organized in multiple sections (e.g. a preface, a critical report, performance instructions, etc. for which see the following sections); each of these sections should be identified by a different 
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element. Text might also occur in between music sections (see 
-  <a href="/v3/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few pieces might be preceded or followed by poetry. Such text should be encoded with the 
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element, as demonstrated in the following example:</p>
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a> element. Text might also occur in between music sections (see 
+  <a href="/guidelines/v3/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few pieces might be preceded or followed by poetry. Such text should be encoded with the 
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a> element, as demonstrated in the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -225,7 +225,7 @@ attribute.</div>
 </div>
 
 <p>Textual divisions may have titles or other forms of introductory material, which are encoded with the 
-  <a href="/v3/elements/head.html" class="link_odd_elementSpec">head</a> element.</p>
+  <a href="/guidelines/v3/elements/head.html" class="link_odd_elementSpec">head</a> element.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -236,7 +236,7 @@ attribute.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/head.html">head</a>
+                <a href="/guidelines/v3/elements/head.html">head</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -271,7 +271,7 @@ heading of a list.</div>
 </div>
 
 <p>Having said that 
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> identifies any structural organization of text, it is often helpful to distinguish the typology of division. The attributes <strong>@type</strong> and <strong>@subtype</strong> can be used for this purpose. It is required that <strong>@type</strong> be present when <strong>@subtype</strong> is used, though their values can be freely set by the encoder.</p>
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a> identifies any structural organization of text, it is often helpful to distinguish the typology of division. The attributes <strong>@type</strong> and <strong>@subtype</strong> can be used for this purpose. It is required that <strong>@type</strong> be present when <strong>@subtype</strong> is used, though their values can be freely set by the encoder.</p>
 
 <p>The following example shows the use of <strong>@type</strong> to indicate three prefaces in English, German and Italian are columns on the same page.</p>
 
@@ -303,7 +303,7 @@ heading of a list.</div>
 <p>Paragraphs are fundamental to prose text and typically group one or more sentences that form a logical passage. A paragraph is usually typographically distinct: The text begins on a new line and the first letter of the content is often indented, enlarged, or both.</p>
 
 <p>A paragraph is encoded with the 
-  <a href="/v3/elements/p.html" class="link_odd_elementSpec">p</a> element:</p>
+  <a href="/guidelines/v3/elements/p.html" class="link_odd_elementSpec">p</a> element:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -314,7 +314,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/p.html">p</a>
+                <a href="/guidelines/v3/elements/p.html">p</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -325,8 +325,8 @@ heading of a list.</div>
 </div>
 
 <p>Prose text is used for several different purposes within a MEI document, therefore 
-  <a href="/v3/elements/p.html" class="link_odd_elementSpec">p</a> can occur in many situations. For example, it may be used within metadata elements (see 
-  <a href="/v3/content/header.html">The MEI Header</a>):</p>
+  <a href="/guidelines/v3/elements/p.html" class="link_odd_elementSpec">p</a> can occur in many situations. For example, it may be used within metadata elements (see 
+  <a href="/guidelines/v3/content/header.html">The MEI Header</a>):</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -338,11 +338,11 @@ heading of a list.</div>
 </div>
 
 <p>Alternatively, paragraphs may be part of the document contents (and therefore encoded within 
-  <a href="/v3/elements/music.html" class="link_odd_elementSpec">music</a>), either as 
-  <a href="/v3/content/text.html#textFrontBack">Paratext</a> or within the music notation. In these cases, a paragraph will likely be contained by a 
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> or other elements containing prose (e.g. 
-  <a href="/v3/elements/annot.html" class="link_odd_elementSpec">annot</a>, 
-  <a href="/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>, etc.).</p>
+  <a href="/guidelines/v3/elements/music.html" class="link_odd_elementSpec">music</a>), either as 
+  <a href="/guidelines/v3/content/text.html#textFrontBack">Paratext</a> or within the music notation. In these cases, a paragraph will likely be contained by a 
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a> or other elements containing prose (e.g. 
+  <a href="/guidelines/v3/elements/annot.html" class="link_odd_elementSpec">annot</a>, 
+  <a href="/guidelines/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>, etc.).</p>
 
 <p>The following example shows a paragraph in a preface section:</p>
 
@@ -378,7 +378,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/list.html">list</a>
+                <a href="/guidelines/v3/elements/list.html">list</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -398,7 +398,7 @@ arranged in a linear, often vertical, sequence.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/list.html">@type</a>
+                <a href="/guidelines/v3/attribute-classes/list.html">@type</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -417,7 +417,7 @@ arranged in a linear, often vertical, sequence.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/head.html">head</a>
+                <a href="/guidelines/v3/elements/head.html">head</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -438,7 +438,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/item.html">item</a>
+                <a href="/guidelines/v3/elements/item.html">item</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -449,8 +449,8 @@ heading of a list.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/list.html" class="link_odd_elementSpec">list</a> element can identify any kind of list; the <strong>@form</strong> attribute can be used to specify whether the list is ordered, unordered etc. Each item in the list is encoded with the 
-  <a href="/v3/elements/li.html" class="link_odd_elementSpec">li</a> element. The <strong>@n</strong> can be used to record a label for a list item, as in the following example:</p>
+  <a href="/guidelines/v3/elements/list.html" class="link_odd_elementSpec">list</a> element can identify any kind of list; the <strong>@form</strong> attribute can be used to specify whether the list is ordered, unordered etc. Each item in the list is encoded with the 
+  <a href="/guidelines/v3/elements/li.html" class="link_odd_elementSpec">li</a> element. The <strong>@n</strong> can be used to record a label for a list item, as in the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -467,7 +467,7 @@ heading of a list.</div>
 </div>
 
 <p>Occasionally, lists have headers or titles, which can be encoded with 
-  <a href="/v3/elements/head.html" class="link_odd_elementSpec">head</a>:</p>
+  <a href="/guidelines/v3/elements/head.html" class="link_odd_elementSpec">head</a>:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -489,7 +489,7 @@ heading of a list.</div>
   </h3>
 
 <p>It is common, in many types of texts, to find quotations. A quotation is typically attributed to another text other than the one being encoded. Often, the quoted material is typographically distinct from the surrounding text; i.e., surrounded by so-called ‘quote marks’ or rendered as a separate block of text. The 
-  <a href="/v3/elements/quote.html" class="link_odd_elementSpec">quote</a> element is used to mark this function:</p>
+  <a href="/guidelines/v3/elements/quote.html" class="link_odd_elementSpec">quote</a> element is used to mark this function:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -500,7 +500,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/quote.html">quote</a>
+                <a href="/guidelines/v3/elements/quote.html">quote</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -515,7 +515,7 @@ spacing or other typographic distinction.</div>
 </div>
 
 <p>The following examples show the use of 
-  <a href="/v3/elements/quote.html" class="link_odd_elementSpec">quote</a>.</p>
+  <a href="/guidelines/v3/elements/quote.html" class="link_odd_elementSpec">quote</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -549,7 +549,7 @@ spacing or other typographic distinction.</div>
   </h3>
 
 <p>This 
-  <a href="/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> (line group) element is used generically to encode any section of text that is organized as a group of lines. Following the recommendations of the Text Encoding Initiative, it is recommended to use it, along with the following elements, for marking up poetry:</p>
+  <a href="/guidelines/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> (line group) element is used generically to encode any section of text that is organized as a group of lines. Following the recommendations of the Text Encoding Initiative, it is recommended to use it, along with the following elements, for marking up poetry:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -560,7 +560,7 @@ spacing or other typographic distinction.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/lg.html">lg</a>
+                <a href="/guidelines/v3/elements/lg.html">lg</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -582,7 +582,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/head.html">head</a>
+                <a href="/guidelines/v3/elements/head.html">head</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -603,7 +603,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/l.html">l</a>
+                <a href="/guidelines/v3/elements/l.html">l</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -614,7 +614,7 @@ heading of a list.</div>
 </div>
 
 <p>Because 
-  <a href="/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> groups verses, it can be used to encode additional stanzas not integrated into the music notation. In addition, it is common for a poem to include a title or a header, as is demonstrated by the following example:</p>
+  <a href="/guidelines/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> groups verses, it can be used to encode additional stanzas not integrated into the music notation. In addition, it is common for a poem to include a title or a header, as is demonstrated by the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -653,11 +653,11 @@ heading of a list.</div>
   </h4>
 
 <p>By ‘front matter’ these Guidelines mean distinct sections of a text (usually, but not necessarily, a printed one), prefixed to it by way of introduction or identification as a part of its production. Features such as title pages or prefaces are clear examples; a less definite case might be the prologue attached to a dramatic work. The front matter of an encoded text should not be confused with the MEI header described in chapter 
-  <a href="/v3/content/header.html">The MEI Header</a>, which provides metadata for the entire file.</p>
+  <a href="/guidelines/v3/content/header.html">The MEI Header</a>, which provides metadata for the entire file.</p>
 
 <p>An encoder may choose simply to ignore the front matter in a text, if the original presentation of the work is of no interest. No specific tags are provided for the various kinds of subdivision which may appear within front matter: instead, generic 
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> (“division”) elements may be used, which should not be confused with 
-  <a href="/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> (“musical division”) elements. The following suggested values for the <strong>@type</strong> attribute may be used to distinguish various kinds of division characteristic of front matter:</p>
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a> (“division”) elements may be used, which should not be confused with 
+  <a href="/guidelines/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> (“musical division”) elements. The following suggested values for the <strong>@type</strong> attribute may be used to distinguish various kinds of division characteristic of front matter:</p>
 
 <p class="gloss"><strong>‘preface’</strong>: A foreword or preface addressed to the reader in which the author or publisher explains the content, purpose, or origin of the text.</p>
 
@@ -672,7 +672,7 @@ heading of a list.</div>
 <p class="gloss"><strong>‘frontispiece’</strong>: A pictorial frontispiece, possibly including some text.</p>
 
 <p>The following extended example demonstrates how various parts of the front matter of a text may be encoded. The front part begins with a title page, which is presented in section 
-  <a href="/v3/content/text.html#textTitlePages">Title Pages</a>, below. This is followed by a dedication and a preface, each of which is encoded as a distinct div:</p>
+  <a href="/guidelines/v3/content/text.html#textTitlePages">Title Pages</a>, below. This is followed by a dedication and a preface, each of which is encoded as a distinct div:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -703,13 +703,13 @@ heading of a list.</div>
 </div>
 
 <p>The front matter concludes with another 
-  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element, shown in the next example, this time containing a table of contents, which contains a 
-  <a href="/v3/elements/list.html" class="link_odd_elementSpec">list</a> element (as described in chapter 
-  <a href="/v3/content/text.html#textLists">Lists</a>). Note the use of the 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to provide page-references: the implication here is that the target identifiers (song1, song2, etc.) will correspond with identifiers used for the 
-  <a href="/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements containing the individual songs. (For a description of the 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element, see chapter 
-  <a href="/v3/content/ptrref.html">Pointers and References</a>.)</p>
+  <a href="/guidelines/v3/elements/div.html" class="link_odd_elementSpec">div</a> element, shown in the next example, this time containing a table of contents, which contains a 
+  <a href="/guidelines/v3/elements/list.html" class="link_odd_elementSpec">list</a> element (as described in chapter 
+  <a href="/guidelines/v3/content/text.html#textLists">Lists</a>). Note the use of the 
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to provide page-references: the implication here is that the target identifiers (song1, song2, etc.) will correspond with identifiers used for the 
+  <a href="/guidelines/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements containing the individual songs. (For a description of the 
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element, see chapter 
+  <a href="/guidelines/v3/content/ptrref.html">Pointers and References</a>.)</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -784,7 +784,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/titlepage.html">titlePage</a>
+                <a href="/guidelines/v3/elements/titlepage.html">titlePage</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -803,7 +803,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/p.html">p</a>
+                <a href="/guidelines/v3/elements/p.html">p</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -822,7 +822,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/table.html">table</a>
+                <a href="/guidelines/v3/elements/table.html">table</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -841,7 +841,7 @@ heading of a list.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/list.html">list</a>
+                <a href="/guidelines/v3/elements/list.html">list</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -861,7 +861,7 @@ arranged in a linear, often vertical, sequence.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/quote.html">quote</a>
+                <a href="/guidelines/v3/elements/quote.html">quote</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -884,7 +884,7 @@ spacing or other typographic distinction.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/lg.html">lg</a>
+                <a href="/guidelines/v3/elements/lg.html">lg</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -898,7 +898,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 </div>
 
 <p>The following example shows the encoding of the title page of Vaughan Williams’ <em>On Wenlock Edge</em>. Note the use of the 
-  <a href="/v3/elements/lb.html" class="link_odd_elementSpec">lb</a> element to mark the line breaks present in the original.</p>
+  <a href="/guidelines/v3/elements/lb.html" class="link_odd_elementSpec">lb</a> element to mark the line breaks present in the original.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -931,16 +931,16 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 </div>
 
 <p>The physical rendition of title page information is often of considerable importance. One approach to this requirement would be to use the 
-  <a href="/v3/elements/rend.html" class="link_odd_elementSpec">rend</a> element, described in chapter 
-  <a href="/v3/content/shared.html#sharedTextRendition">Text Rendition</a> to specify the rendition of each of the components of the title page. Another would be to employ a CSS stylesheet. Finally, a module customized for the description of typographic entities such as pages, lines, rules, etc., bearing special-purpose attributes to describe line-height, leading, degree of kerning, font, etc. could be employed.</p>
+  <a href="/guidelines/v3/elements/rend.html" class="link_odd_elementSpec">rend</a> element, described in chapter 
+  <a href="/guidelines/v3/content/shared.html#sharedTextRendition">Text Rendition</a> to specify the rendition of each of the components of the title page. Another would be to employ a CSS stylesheet. Finally, a module customized for the description of typographic entities such as pages, lines, rules, etc., bearing special-purpose attributes to describe line-height, leading, degree of kerning, font, etc. could be employed.</p>
 
 <h3 id="textBack">21.7. Back Matter
       
   </h3>
 
 <p>Conventions vary as to which elements are grouped as back matter and which as front. For example, some books place the table of contents at the front, and others at the back. For this reason, the content models of the 
-  <a href="/v3/elements/front.html" class="link_odd_elementSpec">front</a> and 
-  <a href="/v3/elements/back.html" class="link_odd_elementSpec">back</a> elements are identical.</p>
+  <a href="/guidelines/v3/elements/front.html" class="link_odd_elementSpec">front</a> and 
+  <a href="/guidelines/v3/elements/back.html" class="link_odd_elementSpec">back</a> elements are identical.</p>
 
 <p>The following suggested values may be used for the <strong>@type</strong> attribute on all division elements, in order to distinguish various kinds of divisions characteristic of back matter:</p>
 
@@ -1007,7 +1007,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/text.html">
+        <form action="/guidelines/v3/content/text.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -1020,7 +1020,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -1028,7 +1028,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -1036,7 +1036,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -1044,7 +1044,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -1052,7 +1052,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -1060,7 +1060,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2550,7 +2550,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textDivisions">21.1. Organizing Text into Divisions
+    <a class="level-2" href="/guidelines/v3/content/text.html#textDivisions">21.1. Organizing Text into Divisions
     </a>
   
 
@@ -2561,7 +2561,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textProse">21.2. Paragraphs
+    <a class="level-2" href="/guidelines/v3/content/text.html#textProse">21.2. Paragraphs
     </a>
   
 
@@ -2572,7 +2572,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textLists">21.3. Lists
+    <a class="level-2" href="/guidelines/v3/content/text.html#textLists">21.3. Lists
     </a>
   
 
@@ -2583,7 +2583,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textQuote">21.4. Quotation
+    <a class="level-2" href="/guidelines/v3/content/text.html#textQuote">21.4. Quotation
     </a>
   
 
@@ -2594,7 +2594,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textPoetry">21.5. Poetry
+    <a class="level-2" href="/guidelines/v3/content/text.html#textPoetry">21.5. Poetry
     </a>
   
 
@@ -2605,7 +2605,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textFrontBack">21.6. Paratext
+    <a class="level-2" href="/guidelines/v3/content/text.html#textFrontBack">21.6. Paratext
     </a>
   
 
@@ -2616,7 +2616,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-3" href="/v3/content/text.html#textFront">21.6.1. Front Matter
+    <a class="level-3" href="/guidelines/v3/content/text.html#textFront">21.6.1. Front Matter
     </a>
   
 
@@ -2627,7 +2627,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-3" href="/v3/content/text.html#textTitlePages">21.6.2. Title Pages
+    <a class="level-3" href="/guidelines/v3/content/text.html#textTitlePages">21.6.2. Title Pages
     </a>
   
 
@@ -2638,7 +2638,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textBack">21.7. Back Matter
+    <a class="level-2" href="/guidelines/v3/content/text.html#textBack">21.7. Back Matter
     </a>
   
 
@@ -2776,7 +2776,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2784,7 +2784,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2792,7 +2792,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2800,7 +2800,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2808,7 +2808,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2816,7 +2816,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -4306,7 +4306,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textDivisions">21.1. Organizing Text into Divisions
+    <a class="level-2" href="/guidelines/v3/content/text.html#textDivisions">21.1. Organizing Text into Divisions
     </a>
   
 
@@ -4317,7 +4317,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textProse">21.2. Paragraphs
+    <a class="level-2" href="/guidelines/v3/content/text.html#textProse">21.2. Paragraphs
     </a>
   
 
@@ -4328,7 +4328,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textLists">21.3. Lists
+    <a class="level-2" href="/guidelines/v3/content/text.html#textLists">21.3. Lists
     </a>
   
 
@@ -4339,7 +4339,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textQuote">21.4. Quotation
+    <a class="level-2" href="/guidelines/v3/content/text.html#textQuote">21.4. Quotation
     </a>
   
 
@@ -4350,7 +4350,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textPoetry">21.5. Poetry
+    <a class="level-2" href="/guidelines/v3/content/text.html#textPoetry">21.5. Poetry
     </a>
   
 
@@ -4361,7 +4361,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textFrontBack">21.6. Paratext
+    <a class="level-2" href="/guidelines/v3/content/text.html#textFrontBack">21.6. Paratext
     </a>
   
 
@@ -4372,7 +4372,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-3" href="/v3/content/text.html#textFront">21.6.1. Front Matter
+    <a class="level-3" href="/guidelines/v3/content/text.html#textFront">21.6.1. Front Matter
     </a>
   
 
@@ -4383,7 +4383,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-3" href="/v3/content/text.html#textTitlePages">21.6.2. Title Pages
+    <a class="level-3" href="/guidelines/v3/content/text.html#textTitlePages">21.6.2. Title Pages
     </a>
   
 
@@ -4394,7 +4394,7 @@ unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
 
   
 
-    <a class="level-2" href="/v3/content/text.html#textBack">21.7. Back Matter
+    <a class="level-2" href="/guidelines/v3/content/text.html#textBack">21.7. Back Matter
     </a>
   
 

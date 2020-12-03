@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/edittrans.html">
+          <form action="/guidelines/v3/content/edittrans.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -129,12 +129,12 @@
 <p>It is often necessary to render an account of any changes made to a musical text during its creation (and any subsequent editing) and to accommodate editorial comment necessitated by an editorial process. The elements and attributes described in this chapter may be used to record such editorial interventions, whether made by the composer, the copyists of the manuscript, the editor of a earlier edition used as a copy text, or the current encoder/editor.</p>
 
 <p>The scope of the elements described herein is therefore the description of features relating to the genesis, later revision and editorial interpretation of a text. Mechanisms for describing multiple sources are described in chapter 
-  <a href="/v3/content/critapp.html">Critical Apparatus</a> of these Guidelines.</p>
+  <a href="/guidelines/v3/content/critapp.html">Critical Apparatus</a> of these Guidelines.</p>
 
 <p>The elements described in this chapter may be contained by a wide range of other MEI elements and, in turn, may contain a variety of elements. The encoder must assume responsibility for the appropriateness of the markup; that is, a great many combinations of editorial and transcriptional markup are technically possible, but care must be taken to see that the encoding does not contravene the rationale of these Guidelines.</p>
 
 <p>For most of the elements discussed here, some encoders may wish to indicate both a responsibility; that is, a coded value indicating the person or agency responsible for making the editorial intervention in question, and an indication of the degree of certainty which the encoder wishes to associate with the intervention. Because these requirements are common to many of the elements discussed in this section, they are provided by an attribute class, 
-  <a href="/v3/attribute-classes/att.edit.html">att.edit</a>, to which these elements subscribe. Any of the elements discussed here thus may potentially carry the following optional attributes:</p>
+  <a href="/guidelines/v3/attribute-classes/att.edit.html">att.edit</a>, to which these elements subscribe. Any of the elements discussed here thus may potentially carry the following optional attributes:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -145,7 +145,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.evidence.html">@cert</a>
+                <a href="/guidelines/v3/attribute-classes/att.evidence.html">@cert</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -164,7 +164,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.responsibility.html">@resp</a>
+                <a href="/guidelines/v3/attribute-classes/att.responsibility.html">@resp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -177,7 +177,7 @@ identifiers declared in the document header.</div>
 </div>
 
 <p>Many of the elements discussed here can be used in two ways. Their primary purpose is to indicate that their content represents an editorial intervention (or, in some cases, the lack of intervention) of a specific kind. Sometimes, pairs or other meaningful groupings of such elements can be recorded, then wrapped within the special purpose 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element:</p>
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -188,7 +188,7 @@ identifiers declared in the document header.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/choice.html">choice</a>
+                <a href="/guidelines/v3/elements/choice.html">choice</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -201,14 +201,14 @@ identifiers declared in the document header.</div>
 <p>Wrapping elements this way enables the encoder to represent, for example, a text in its ‘original’, uncorrected form alongside the same text in one or more ‘edited’ forms. Making use of this style of representation, software may dynamically switch between the Urtext ‘view’ of the text and one or more ‘views’ of the text after the application of the encoded editorial interventions.</p>
 
 <p>Elements which can be combined in this way constitute the 
-  <a href="/v3/model-classes/model.choicepart.html">model.choicePart</a> class. The default members of this class are 
-  <a href="/v3/elements/sic.html" class="link_odd_elementSpec">sic</a>, 
-  <a href="/v3/elements/corr.html" class="link_odd_elementSpec">corr</a>, 
-  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a>, 
-  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a>, 
-  <a href="/v3/elements/unclear.html" class="link_odd_elementSpec">unclear</a>, 
-  <a href="/v3/elements/add.html" class="link_odd_elementSpec">add</a>, and 
-  <a href="/v3/elements/del.html" class="link_odd_elementSpec">del</a>; their functions and usage are described in greater detail below.</p>
+  <a href="/guidelines/v3/model-classes/model.choicepart.html">model.choicePart</a> class. The default members of this class are 
+  <a href="/guidelines/v3/elements/sic.html" class="link_odd_elementSpec">sic</a>, 
+  <a href="/guidelines/v3/elements/corr.html" class="link_odd_elementSpec">corr</a>, 
+  <a href="/guidelines/v3/elements/reg.html" class="link_odd_elementSpec">reg</a>, 
+  <a href="/guidelines/v3/elements/orig.html" class="link_odd_elementSpec">orig</a>, 
+  <a href="/guidelines/v3/elements/unclear.html" class="link_odd_elementSpec">unclear</a>, 
+  <a href="/guidelines/v3/elements/add.html" class="link_odd_elementSpec">add</a>, and 
+  <a href="/guidelines/v3/elements/del.html" class="link_odd_elementSpec">del</a>; their functions and usage are described in greater detail below.</p>
 
 <p>Three categories of editorial intervention are discussed by the remainder of this chapter:</p>
 
@@ -261,13 +261,13 @@ identifiers declared in the document header.</div>
 <p class="gloss"><strong>geographic</strong>: the abbreviation is for a geographic name.</p>
 
 <p>This tag is the mirror image of the 
-  <a href="/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> tag (not to be confused with the 
-  <a href="/v3/elements/expansion.html" class="link_odd_elementSpec">expansion</a> element described in 
-  <a href="/v3/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>). Both 
-  <a href="/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
-  <a href="/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> allow the encoder to transcribe an abbreviation and its expansion. In the case of 
-  <a href="/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a>, the original is transcribed as the content of the element and the expansion as an attribute value, while 
-  <a href="/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> reverses this. The choice between the two is up to the user. For example:</p>
+  <a href="/guidelines/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> tag (not to be confused with the 
+  <a href="/guidelines/v3/elements/expansion.html" class="link_odd_elementSpec">expansion</a> element described in 
+  <a href="/guidelines/v3/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>). Both 
+  <a href="/guidelines/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
+  <a href="/guidelines/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> allow the encoder to transcribe an abbreviation and its expansion. In the case of 
+  <a href="/guidelines/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a>, the original is transcribed as the content of the element and the expansion as an attribute value, while 
+  <a href="/guidelines/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> reverses this. The choice between the two is up to the user. For example:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -282,12 +282,12 @@ identifiers declared in the document header.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> tag is not required; if appropriate, the encoder may transcribe abbreviations in the source text silently, without tagging them. If abbreviations are not transcribed directly but expanded silently, then the MEI header should indicate this is the case. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the expansion of the abbreviation. The <strong>@expan</strong> attribute gives an expansion of the abbreviation. The <strong>@resp</strong> attribute contains an ID reference to an element containing the name of the editor or transcriber responsible for supplying the expansion of the abbreviation.</p>
+  <a href="/guidelines/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> tag is not required; if appropriate, the encoder may transcribe abbreviations in the source text silently, without tagging them. If abbreviations are not transcribed directly but expanded silently, then the MEI header should indicate this is the case. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the expansion of the abbreviation. The <strong>@expan</strong> attribute gives an expansion of the abbreviation. The <strong>@resp</strong> attribute contains an ID reference to an element containing the name of the editor or transcriber responsible for supplying the expansion of the abbreviation.</p>
 
 <p>When the content of the <strong>@abbr</strong> or <strong>@expan</strong> attributes requires additional markup, an attribute cannot be used. In this case, the abbreviated and expanded forms must be presented within elements. Furthermore, as alternatives to each other, the 
-  <a href="/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
-  <a href="/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> elements must be wrapped by the 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element, as described above. The previous example, where the ‘o:’ in ‘pno:’ is written as superscript, would be encoded as:</p>
+  <a href="/guidelines/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
+  <a href="/guidelines/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> elements must be wrapped by the 
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element, as described above. The previous example, where the ‘o:’ in ‘pno:’ is written as superscript, would be encoded as:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -305,16 +305,16 @@ identifiers declared in the document header.</div>
   </h4>
 
 <p>Many musical scores make use of various kinds of shorthand notation which omit some parts of the score that have already been written elsewhere. Typical exampleS for this are symbols that indicate repetition of the preceding measure or beat. In MEI, these symbols can be encoded using the 
-  <a href="/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a> and 
-  <a href="/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a> elements respectively. Often, similar graphical symbols (often one or two slashes, “//”) are used to mean that the current staff should have the same or similar content as another staff.</p>
+  <a href="/guidelines/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a> and 
+  <a href="/guidelines/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a> elements respectively. Often, similar graphical symbols (often one or two slashes, “//”) are used to mean that the current staff should have the same or similar content as another staff.</p>
 
 <p><em>colla parte</em> directives have a less strictly-defined scope than the ‘Rpt elements’ (
-  <a href="/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a>, 
-  <a href="/v3/elements/halfmrpt.html" class="link_odd_elementSpec">halfmRpt</a>, 
-  <a href="/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a>, 
-  <a href="/v3/elements/mrpt2.html" class="link_odd_elementSpec">mRpt2</a>, 
-  <a href="/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a>). That is, rather than specifying the repetition of content of a particular duration, like a measure or beat, <em>colla parte</em> instructions can refer to material of any length. In order to encode such scribal shorthand, MEI offers the 
-  <a href="/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element, which allows filling of blank spaces in the score with horizontally and/or vertically distant material.</p>
+  <a href="/guidelines/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a>, 
+  <a href="/guidelines/v3/elements/halfmrpt.html" class="link_odd_elementSpec">halfmRpt</a>, 
+  <a href="/guidelines/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a>, 
+  <a href="/guidelines/v3/elements/mrpt2.html" class="link_odd_elementSpec">mRpt2</a>, 
+  <a href="/guidelines/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a>). That is, rather than specifying the repetition of content of a particular duration, like a measure or beat, <em>colla parte</em> instructions can refer to material of any length. In order to encode such scribal shorthand, MEI offers the 
+  <a href="/guidelines/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element, which allows filling of blank spaces in the score with horizontally and/or vertically distant material.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -325,7 +325,7 @@ identifiers declared in the document header.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/cpmark.html">cpMark</a>
+                <a href="/guidelines/v3/elements/cpmark.html">cpMark</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -337,19 +337,19 @@ written elsewhere.</div>
 </div>
 
 <p>Like any other ‘controlEvent’, 
-  <a href="/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> is placed in the score using the <strong>@staff</strong> and <strong>@tstamp</strong> attributes. The end point of the mark itself, when necessary, may be indicated using the <strong>@tstamp2</strong> attribute. The source material, which is intended to be inserted in the space indicated by the copy mark, can be identified by the attributes <strong>@origin.tstamp</strong>, <strong>@origin.tstamp2</strong>, <strong>@origin.staff</strong> and <strong>@origin.layer</strong>. While <strong>@origin.tstamp</strong> provides the relative distance from the beginning of the “gap”, <strong>@origin.tstamp</strong> is relative to the position identified by <strong>@origin.tstamp</strong>. However, <strong>@origin.tstamp</strong> defaults to the same value as <strong>@tstamp2</strong> and should only be provided when necessary. When neither <strong>@origin.staff</strong> nor <strong>@origin.tstamp</strong> are not provided, they take the same values as the cpMark’s <strong>@staff</strong> and <strong>@tstamp</strong> attributes; that is, they indicate a strict ‘vertical’ or ‘horizontal’ copy.</p>
+  <a href="/guidelines/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> is placed in the score using the <strong>@staff</strong> and <strong>@tstamp</strong> attributes. The end point of the mark itself, when necessary, may be indicated using the <strong>@tstamp2</strong> attribute. The source material, which is intended to be inserted in the space indicated by the copy mark, can be identified by the attributes <strong>@origin.tstamp</strong>, <strong>@origin.tstamp2</strong>, <strong>@origin.staff</strong> and <strong>@origin.layer</strong>. While <strong>@origin.tstamp</strong> provides the relative distance from the beginning of the “gap”, <strong>@origin.tstamp</strong> is relative to the position identified by <strong>@origin.tstamp</strong>. However, <strong>@origin.tstamp</strong> defaults to the same value as <strong>@tstamp2</strong> and should only be provided when necessary. When neither <strong>@origin.staff</strong> nor <strong>@origin.tstamp</strong> are not provided, they take the same values as the cpMark’s <strong>@staff</strong> and <strong>@tstamp</strong> attributes; that is, they indicate a strict ‘vertical’ or ‘horizontal’ copy.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/cpMark_2.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/cpMark_2.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Copy marks in the first and second violin of C.M.v.Weber's Freischütz, Autograph, Nr.3 (Walzer), measures 223-231</figcaption>
 </figure>
 
 <p>In the example above, there are no less than three different copy instructions, which need to be encoded with four 
-  <a href="/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> elements. First, Weber inserts characters from “a” to “f” in red ink to identify filled measures. Then, he repeats the same characters in <em>empty</em> measures, which indicates that the content from the <em>filled</em> measures should be copied here. While one could try to encode this with just one 
-  <a href="/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element, it is both clearer and easier to process when using two elements.</p>
+  <a href="/guidelines/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> elements. First, Weber inserts characters from “a” to “f” in red ink to identify filled measures. Then, he repeats the same characters in <em>empty</em> measures, which indicates that the content from the <em>filled</em> measures should be copied here. While one could try to encode this with just one 
+  <a href="/guidelines/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element, it is both clearer and easier to process when using two elements.</p>
 
 <p>The second and third shorthand indications are written in the second violin (lower staff). Here, Weber writes “unis.[ono]”, silently omitting the reference to the first violin. His next shorthand (“in 8va”) additionally instructs the copyist to double the written material in another octave. This information can be captured using the <strong>@dis</strong> and <strong>@dis.place</strong> attributes on 
-  <a href="/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a>.</p>
+  <a href="/guidelines/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -361,20 +361,20 @@ written elsewhere.</div>
 
 </div>
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/cpMark_3.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/cpMark_3.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">A transcription of the example above with all shorthand resolved and colored</figcaption>
 </figure>
 
 <p>Text used as a copy mark, like the letters in the Weber example, may be encoded as content of the 
-  <a href="/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element. In the case of non-text marks, the <strong>@altsym</strong>, <strong>@extsym</strong> and <strong>@facs</strong> attributes may be used to refer to a graphical surrogate.</p>
+  <a href="/guidelines/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element. In the case of non-text marks, the <strong>@altsym</strong>, <strong>@extsym</strong> and <strong>@facs</strong> attributes may be used to refer to a graphical surrogate.</p>
 
 <p>Depending on the purpose of the encoding, the omitted parts in the score may be filled with 
-  <a href="/v3/elements/space.html" class="link_odd_elementSpec">space</a> and 
-  <a href="/v3/elements/mspace.html" class="link_odd_elementSpec">mSpace</a> elements of appropriate duration or silently overwritten with the content that the 
-  <a href="/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> identifies. Also, these two options may be combined through the use a 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element whose 
-  <a href="/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
-  <a href="/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> children explicitly encode a transcription of the original ‘gap’ (in abbr) and the result of the insertion of the indicated material (in expan).</p>
+  <a href="/guidelines/v3/elements/space.html" class="link_odd_elementSpec">space</a> and 
+  <a href="/guidelines/v3/elements/mspace.html" class="link_odd_elementSpec">mSpace</a> elements of appropriate duration or silently overwritten with the content that the 
+  <a href="/guidelines/v3/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> identifies. Also, these two options may be combined through the use a 
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element whose 
+  <a href="/guidelines/v3/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
+  <a href="/guidelines/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> children explicitly encode a transcription of the original ‘gap’ (in abbr) and the result of the insertion of the indicated material (in expan).</p>
 
 <h3 id="edittransErrors">11.2. Apparent Errors
       
@@ -391,7 +391,7 @@ written elsewhere.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/sic.html">sic</a>
+                <a href="/guidelines/v3/elements/sic.html">sic</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -410,7 +410,7 @@ written elsewhere.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/corr.html">corr</a>
+                <a href="/guidelines/v3/elements/corr.html">corr</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -453,7 +453,7 @@ written elsewhere.</div>
 </div>
 
 <p>Alternatively, the encoder may simply record the typographic error without correcting it, either without comment or with a 
-  <a href="/v3/elements/sic.html" class="link_odd_elementSpec">sic</a> element to indicate the error is not a transcription error in the encoding:</p>
+  <a href="/guidelines/v3/elements/sic.html" class="link_odd_elementSpec">sic</a> element to indicate the error is not a transcription error in the encoding:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -470,11 +470,11 @@ written elsewhere.</div>
 </div>
 
 <p>If the encoder elects to record the original source text and provide a correction for the sake of transparency, both 
-  <a href="/v3/elements/sic.html" class="link_odd_elementSpec">sic</a> and 
-  <a href="/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> may be used, wrapped in a 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element. The order of the 
-  <a href="/v3/elements/sic.html" class="link_odd_elementSpec">sic</a> and 
-  <a href="/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> elements is not significant:</p>
+  <a href="/guidelines/v3/elements/sic.html" class="link_odd_elementSpec">sic</a> and 
+  <a href="/guidelines/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> may be used, wrapped in a 
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element. The order of the 
+  <a href="/guidelines/v3/elements/sic.html" class="link_odd_elementSpec">sic</a> and 
+  <a href="/guidelines/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> elements is not significant:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -521,10 +521,10 @@ written elsewhere.</div>
 </div>
 
 <p>Here the <strong>@resp</strong> attribute has been used to indicate responsibility for the correction. Its value (<em>#editTrans.JK</em>) is an example of the pointer values discussed in section 
-  <a href="/v3/content/ptrref.html">Pointers and References</a>. In this case, the <strong>@resp</strong> attribute points to a 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element within the metadata header, but any element might be indicated in this way, if the correction has been taken from some other source. The <strong>@resp</strong> attribute is available for all elements which are members of the 
-  <a href="/v3/attribute-classes/att.responsibility.html">att.responsibility</a> class. The 
-  <a href="/v3/attribute-classes/att.edit.html">att.edit</a> class makes available a <strong>@cert</strong> attribute,which may be used to indicate the degree of editorial confidence in a particular correction, as in the following example:</p>
+  <a href="/guidelines/v3/content/ptrref.html">Pointers and References</a>. In this case, the <strong>@resp</strong> attribute points to a 
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> element within the metadata header, but any element might be indicated in this way, if the correction has been taken from some other source. The <strong>@resp</strong> attribute is available for all elements which are members of the 
+  <a href="/guidelines/v3/attribute-classes/att.responsibility.html">att.responsibility</a> class. The 
+  <a href="/guidelines/v3/attribute-classes/att.edit.html">att.edit</a> class makes available a <strong>@cert</strong> attribute,which may be used to indicate the degree of editorial confidence in a particular correction, as in the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -546,14 +546,14 @@ written elsewhere.</div>
 </div>
 
 <p>Where, as here, the correction takes the form of amending information present in the text being encoded, the encoder should use the 
-  <a href="/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> element. Where the correction is present in the text being encoded, and consists of some combination of visible additions and deletions, the elements 
-  <a href="/v3/elements/add.html" class="link_odd_elementSpec">add</a> or 
-  <a href="/v3/elements/del.html" class="link_odd_elementSpec">del</a> should be used. For additional information on the use of 
-  <a href="/v3/elements/add.html" class="link_odd_elementSpec">add</a> and 
-  <a href="/v3/elements/del.html" class="link_odd_elementSpec">del</a>, see section 
-  <a href="/v3/content/edittrans.html#edittransAddDel">Additions and Deletions</a> below. Where the correction takes the form of an addition of material not present in the original because of physical damage or illegibility, the 
-  <a href="/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element may be used. Where the ‘correction’ is simply a matter of expanding abbreviated notation, the 
-  <a href="/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> element may be used.</p>
+  <a href="/guidelines/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> element. Where the correction is present in the text being encoded, and consists of some combination of visible additions and deletions, the elements 
+  <a href="/guidelines/v3/elements/add.html" class="link_odd_elementSpec">add</a> or 
+  <a href="/guidelines/v3/elements/del.html" class="link_odd_elementSpec">del</a> should be used. For additional information on the use of 
+  <a href="/guidelines/v3/elements/add.html" class="link_odd_elementSpec">add</a> and 
+  <a href="/guidelines/v3/elements/del.html" class="link_odd_elementSpec">del</a>, see section 
+  <a href="/guidelines/v3/content/edittrans.html#edittransAddDel">Additions and Deletions</a> below. Where the correction takes the form of an addition of material not present in the original because of physical damage or illegibility, the 
+  <a href="/guidelines/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element may be used. Where the ‘correction’ is simply a matter of expanding abbreviated notation, the 
+  <a href="/guidelines/v3/elements/expan.html" class="link_odd_elementSpec">expan</a> element may be used.</p>
 
 <h3 id="edittransReg">11.3. Regularization and Normalization
       
@@ -572,7 +572,7 @@ written elsewhere.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/reg.html">reg</a>
+                <a href="/guidelines/v3/elements/reg.html">reg</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -592,7 +592,7 @@ sense.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/orig.html">orig</a>
+                <a href="/guidelines/v3/elements/orig.html">orig</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -612,7 +612,7 @@ being normalized or corrected.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/choice.html">choice</a>
+                <a href="/guidelines/v3/elements/choice.html">choice</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -625,7 +625,7 @@ being normalized or corrected.</div>
 <p>Consider this traditional soprano clef appearing somewhere in the course of a musical piece:</p>
 
 <p>An encoder may choose to preserve this original clef, but flag it as nonstandard from the perspective of current practice by using the 
-  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> element with no attributes specified, as follows:</p>
+  <a href="/guidelines/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> element with no attributes specified, as follows:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -637,7 +637,7 @@ being normalized or corrected.</div>
 </div>
 
 <p>Alternatively, the encoder may indicate that the clef has been modernized into a G-clef by using the 
-  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> element with no attributes specified, as follows:</p>
+  <a href="/guidelines/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> element with no attributes specified, as follows:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -681,7 +681,7 @@ being normalized or corrected.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/gap.html">gap</a>
+                <a href="/guidelines/v3/elements/gap.html">gap</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -702,7 +702,7 @@ sampling practice or for editorial reasons described in the MEI header.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/unclear.html">unclear</a>
+                <a href="/guidelines/v3/elements/unclear.html">unclear</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -723,7 +723,7 @@ inaudible in the source.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.reasonident.html">@reason</a>
+                <a href="/guidelines/v3/attribute-classes/att.reasonident.html">@reason</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -743,7 +743,7 @@ material is supplied (supplied), or why transcription is difficult (unclear).</d
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/add.html">add</a>
+                <a href="/guidelines/v3/elements/add.html">add</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -762,7 +762,7 @@ material is supplied (supplied), or why transcription is difficult (unclear).</d
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/del.html">del</a>
+                <a href="/guidelines/v3/elements/del.html">del</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -780,8 +780,8 @@ corrector.</div>
   </h4>
 
 <p>Encoders may choose to omit parts of the source for reasons ranging from illegibility, (making transcription difficult or impossible), to editorial policy, e.g., systematic exclusion of poetry or prose from an encoding. The full details of the policy decisions concerned should be documented in the MEI header (see section 
-  <a href="/v3/content/header.html#headerEncodingDescription">Encoding Description</a>). Each place in the text at which omission has taken place should be marked with a 
-  <a href="/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> element, optionally with further information about the reason for the omission, its extent, and the person or agency responsible for it, as in the following examples:</p>
+  <a href="/guidelines/v3/content/header.html#headerEncodingDescription">Encoding Description</a>). Each place in the text at which omission has taken place should be marked with a 
+  <a href="/guidelines/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> element, optionally with further information about the reason for the omission, its extent, and the person or agency responsible for it, as in the following examples:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -799,11 +799,11 @@ corrector.</div>
 <p>Note that the extent of the gap may be marked precisely using attributes <strong>@unit</strong> and <strong>@quantity</strong>, or more descriptively using the <strong>@extent</strong> attribute.</p>
 
 <p>Unlike TEI, MEI does not offer a <em>desc</em> element for further description of the reason for a gap. Instead, an 
-  <a href="/v3/elements/annot.html" class="link_odd_elementSpec">annot</a> may refer to the gap via its <strong>@startid</strong>, <strong>@endid</strong>, or <strong>@plist</strong> attributes and provide additional information.</p>
+  <a href="/guidelines/v3/elements/annot.html" class="link_odd_elementSpec">annot</a> may refer to the gap via its <strong>@startid</strong>, <strong>@endid</strong>, or <strong>@plist</strong> attributes and provide additional information.</p>
 
 <p>The 
-  <a href="/v3/elements/unclear.html" class="link_odd_elementSpec">unclear</a> element is used to mark passages in the original which cannot be read with confidence, or about which the transcriber is uncertain for other reasons, as for example when transcribing a illegible source. Its <strong>@reason</strong> and <strong>@resp</strong> attributes are used, as with the 
-  <a href="/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> element, to indicate the cause of uncertainty and the person responsible for the conjectured reading.</p>
+  <a href="/guidelines/v3/elements/unclear.html" class="link_odd_elementSpec">unclear</a> element is used to mark passages in the original which cannot be read with confidence, or about which the transcriber is uncertain for other reasons, as for example when transcribing a illegible source. Its <strong>@reason</strong> and <strong>@resp</strong> attributes are used, as with the 
+  <a href="/guidelines/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> element, to indicate the cause of uncertainty and the person responsible for the conjectured reading.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -817,21 +817,21 @@ corrector.</div>
 </div>
 
 <p>Where the difficulty in transcription arises from an identifiable cause, the <strong>@agent</strong> attribute signifies the causative agent. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the transcription of the text contained within the 
-  <a href="/v3/elements/unclear.html" class="link_odd_elementSpec">unclear</a> element. Where the difficulty in transcription arises from action (partial deletion, etc.) assignable to an identifiable hand, the <strong>@hand</strong> attribute may record the hand responsible for the action.</p>
+  <a href="/guidelines/v3/elements/unclear.html" class="link_odd_elementSpec">unclear</a> element. Where the difficulty in transcription arises from action (partial deletion, etc.) assignable to an identifiable hand, the <strong>@hand</strong> attribute may record the hand responsible for the action.</p>
 
 <p>When the reason for a gap in the encoding is damage of the document carrier (the paper on which the document is written, for example), the 
-  <a href="/v3/elements/damage.html" class="link_odd_elementSpec">damage</a> element should be used instead of the 
-  <a href="/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> element. In the case of damage resulting from an identifiable cause, the <strong>@agent</strong> attribute signifies the causative agent. The <strong>@degree</strong> attribute signifies the degree of damage according to a convenient scale. A 
-  <a href="/v3/elements/damage.html" class="link_odd_elementSpec">damage</a> tag with this attribute should only be used where the text may be read with some confidence; data supplied from other sources should be tagged as 
-  <a href="/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a>. The <strong>@extent</strong> attribute indicates approximately how much text is in the damaged area, in notes, measures, inches, or any appropriate unit, where this cannot be deduced from the contents of the tag. For example, the damage may span structural divisions in the text so that the tag must then be empty of content. In the case of damage (deliberate defacement, etc.) assignable to an identifiable hand, the <strong>@hand</strong> attribute signifies the hand responsible for the damage.</p>
+  <a href="/guidelines/v3/elements/damage.html" class="link_odd_elementSpec">damage</a> element should be used instead of the 
+  <a href="/guidelines/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> element. In the case of damage resulting from an identifiable cause, the <strong>@agent</strong> attribute signifies the causative agent. The <strong>@degree</strong> attribute signifies the degree of damage according to a convenient scale. A 
+  <a href="/guidelines/v3/elements/damage.html" class="link_odd_elementSpec">damage</a> tag with this attribute should only be used where the text may be read with some confidence; data supplied from other sources should be tagged as 
+  <a href="/guidelines/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a>. The <strong>@extent</strong> attribute indicates approximately how much text is in the damaged area, in notes, measures, inches, or any appropriate unit, where this cannot be deduced from the contents of the tag. For example, the damage may span structural divisions in the text so that the tag must then be empty of content. In the case of damage (deliberate defacement, etc.) assignable to an identifiable hand, the <strong>@hand</strong> attribute signifies the hand responsible for the damage.</p>
 
 <p>Sometimes the editor provides information not present in the source material. These conjectures or emendations are marked up in MEI using the 
-  <a href="/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element.</p>
+  <a href="/guidelines/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element.</p>
 
 <p>The following example demonstrates the use of the 
-  <a href="/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element in combination with 
-  <a href="/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> within 
-  <a href="/v3/elements/subst.html" class="link_odd_elementSpec">subst</a>:</p>
+  <a href="/guidelines/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element in combination with 
+  <a href="/guidelines/v3/elements/gap.html" class="link_odd_elementSpec">gap</a> within 
+  <a href="/guidelines/v3/elements/subst.html" class="link_odd_elementSpec">subst</a>:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -859,11 +859,11 @@ corrector.</div>
   </h4>
 
 <p>The 
-  <a href="/v3/elements/add.html" class="link_odd_elementSpec">add</a> and 
-  <a href="/v3/elements/del.html" class="link_odd_elementSpec">del</a> elements may be used to record where material has been added or deleted in the source material.</p>
+  <a href="/guidelines/v3/elements/add.html" class="link_odd_elementSpec">add</a> and 
+  <a href="/guidelines/v3/elements/del.html" class="link_odd_elementSpec">del</a> elements may be used to record where material has been added or deleted in the source material.</p>
 
 <p>The following example demonstrates the usage of 
-  <a href="/v3/elements/add.html" class="link_odd_elementSpec">add</a> to mark up a note being added to an existing chord:</p>
+  <a href="/guidelines/v3/elements/add.html" class="link_odd_elementSpec">add</a> to mark up a note being added to an existing chord:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -880,7 +880,7 @@ corrector.</div>
 </div>
 
 <p>The next example shows how 
-  <a href="/v3/elements/del.html" class="link_odd_elementSpec">del</a> may be used to capture the information that two measures have been cancelled. As seen in this example, the <strong>@rend</strong> attribute is used to specify the method of deletion.</p>
+  <a href="/guidelines/v3/elements/del.html" class="link_odd_elementSpec">del</a> may be used to capture the information that two measures have been cancelled. As seen in this example, the <strong>@rend</strong> attribute is used to specify the method of deletion.</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -907,18 +907,18 @@ corrector.</div>
 <p>Additional information for both elements may be specified using attributes. Whereas the <strong>@hand</strong> attribute marks responsibility for the textual change, the <strong>@resp</strong> attribute is used to refer to the editor who identified this textual change as such. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the identification of the hand of the deletion or addition.</p>
 
 <p>The 
-  <a href="/v3/elements/add.html" class="link_odd_elementSpec">add</a> element should not be used to mark editorial changes, such as supplying a note omitted by mistake from the source text or a passage present in another source. In these cases, either the 
-  <a href="/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> or 
-  <a href="/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> tags should be used instead.</p>
+  <a href="/guidelines/v3/elements/add.html" class="link_odd_elementSpec">add</a> element should not be used to mark editorial changes, such as supplying a note omitted by mistake from the source text or a passage present in another source. In these cases, either the 
+  <a href="/guidelines/v3/elements/corr.html" class="link_odd_elementSpec">corr</a> or 
+  <a href="/guidelines/v3/elements/supplied.html" class="link_odd_elementSpec">supplied</a> tags should be used instead.</p>
 
 <h4 id="edittransSubst">11.4.3. Substitutions, Restorations, and Handshifts
       
   </h4>
 
 <p>When several interventions to the musical text are to be regarded as a single action, they may be grouped using the 
-  <a href="/v3/elements/subst.html" class="link_odd_elementSpec">subst</a> element. The most common combination is a replacement of portions of the musical text using both the 
-  <a href="/v3/elements/add.html" class="link_odd_elementSpec">add</a> and 
-  <a href="/v3/elements/del.html" class="link_odd_elementSpec">del</a> element, as seen in the following example:</p>
+  <a href="/guidelines/v3/elements/subst.html" class="link_odd_elementSpec">subst</a> element. The most common combination is a replacement of portions of the musical text using both the 
+  <a href="/guidelines/v3/elements/add.html" class="link_odd_elementSpec">add</a> and 
+  <a href="/guidelines/v3/elements/del.html" class="link_odd_elementSpec">del</a> element, as seen in the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -939,8 +939,8 @@ corrector.</div>
 </div>
 
 <p>An intervention closely related to substitution is the restoration of a previously deleted section. For this purpose MEI offers the 
-  <a href="/v3/elements/restore.html" class="link_odd_elementSpec">restore</a> element, which may contain a 
-  <a href="/v3/elements/del.html" class="link_odd_elementSpec">del</a> or other content directly.</p>
+  <a href="/guidelines/v3/elements/restore.html" class="link_odd_elementSpec">restore</a> element, which may contain a 
+  <a href="/guidelines/v3/elements/del.html" class="link_odd_elementSpec">del</a> or other content directly.</p>
 
 <p>The following example illustrates an instance where a lyric which was cancelled and later restored by overwriting it:</p>
 
@@ -958,7 +958,7 @@ corrector.</div>
 <p>The <strong>@desc</strong> attribute gives a prose description of the means of restoration. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the identification of the hand of the restoration. The <strong>@type</strong> attribute may be used to indicate the action cancelled by the restoration. The <strong>@resp</strong> attribute contains an ID reference to an element containing the name of the editor or transcriber responsible for identifying the hand of the restoration. The <strong>@hand</strong> attribute signifies the hand of the agent which made the restoration.</p>
 
 <p>MEI offers a 
-  <a href="/v3/elements/handshift.html" class="link_odd_elementSpec">handShift</a> milestone element that can be used to mark a change of scribe or scribal style.</p>
+  <a href="/guidelines/v3/elements/handshift.html" class="link_odd_elementSpec">handShift</a> milestone element that can be used to mark a change of scribe or scribal style.</p>
 
 <p>The <strong>@character</strong> attribute describes characteristics of the hand, particularly those related to the quality of the writing, e.g., ‘shaky’, ‘thick’, regular’. A description of the tint or type of ink, e.g., ‘brown’ or the writing medium, e.g., ‘pencil’, may be placed in the <strong>@medium</strong> attribute.</p>
 
@@ -978,10 +978,10 @@ corrector.</div>
 <p>The new hand may be identified using the <strong>@new</strong> attribute, while the previous hand may be recorded in the <strong>@old</strong> attribute. The <strong>@resp</strong> attribute contains an ID reference to an element containing the name of the editor or transcriber responsible for identifying the change of hand. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the identification of the new hand.</p>
 
 <p>When using this element within a layer, it is important to ensure that all layers and staves are considered. Every 
-  <a href="/v3/elements/handshift.html" class="link_odd_elementSpec">handShift</a> affects only the content of its own layer and staff, even in the following measures. Therefore, there must be a separate 
-  <a href="/v3/elements/handshift.html" class="link_odd_elementSpec">handShift</a> for every 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. This mechanism allows the description of shifts at timestamps that differ between each staff.</p>
+  <a href="/guidelines/v3/elements/handshift.html" class="link_odd_elementSpec">handShift</a> affects only the content of its own layer and staff, even in the following measures. Therefore, there must be a separate 
+  <a href="/guidelines/v3/elements/handshift.html" class="link_odd_elementSpec">handShift</a> for every 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. This mechanism allows the description of shifts at timestamps that differ between each staff.</p>
 
 
 
@@ -989,7 +989,7 @@ corrector.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/edittrans.html">
+        <form action="/guidelines/v3/content/edittrans.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -1002,7 +1002,7 @@ corrector.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -1010,7 +1010,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -1018,7 +1018,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -1026,7 +1026,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -1034,7 +1034,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -1042,7 +1042,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2147,7 +2147,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransAbbrev">11.1. Abbreviations
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransAbbrev">11.1. Abbreviations
     </a>
   
 
@@ -2158,7 +2158,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittranscpMark">11.1.1.  Instructions
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittranscpMark">11.1.1.  Instructions
     </a>
   
 
@@ -2169,7 +2169,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransErrors">11.2. Apparent Errors
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransErrors">11.2. Apparent Errors
     </a>
   
 
@@ -2180,7 +2180,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransReg">11.3. Regularization and Normalization
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransReg">11.3. Regularization and Normalization
     </a>
   
 
@@ -2191,7 +2191,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransAddDelOmissions">11.4. Additions, Deletions, and Omissions
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransAddDelOmissions">11.4. Additions, Deletions, and Omissions
     </a>
   
 
@@ -2202,7 +2202,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittransOmission">11.4.1. Omissions, Unclear Readings, Damage, and Supplied Readings
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittransOmission">11.4.1. Omissions, Unclear Readings, Damage, and Supplied Readings
     </a>
   
 
@@ -2213,7 +2213,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittransAddDel">11.4.2. Additions and Deletions
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittransAddDel">11.4.2. Additions and Deletions
     </a>
   
 
@@ -2224,7 +2224,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittransSubst">11.4.3. Substitutions, Restorations, and Handshifts
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittransSubst">11.4.3. Substitutions, Restorations, and Handshifts
     </a>
   
 
@@ -2754,7 +2754,7 @@ corrector.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2762,7 +2762,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2770,7 +2770,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2778,7 +2778,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2786,7 +2786,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2794,7 +2794,7 @@ corrector.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3899,7 +3899,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransAbbrev">11.1. Abbreviations
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransAbbrev">11.1. Abbreviations
     </a>
   
 
@@ -3910,7 +3910,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittranscpMark">11.1.1.  Instructions
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittranscpMark">11.1.1.  Instructions
     </a>
   
 
@@ -3921,7 +3921,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransErrors">11.2. Apparent Errors
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransErrors">11.2. Apparent Errors
     </a>
   
 
@@ -3932,7 +3932,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransReg">11.3. Regularization and Normalization
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransReg">11.3. Regularization and Normalization
     </a>
   
 
@@ -3943,7 +3943,7 @@ corrector.</div>
 
   
 
-    <a class="level-2" href="/v3/content/edittrans.html#edittransAddDelOmissions">11.4. Additions, Deletions, and Omissions
+    <a class="level-2" href="/guidelines/v3/content/edittrans.html#edittransAddDelOmissions">11.4. Additions, Deletions, and Omissions
     </a>
   
 
@@ -3954,7 +3954,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittransOmission">11.4.1. Omissions, Unclear Readings, Damage, and Supplied Readings
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittransOmission">11.4.1. Omissions, Unclear Readings, Damage, and Supplied Readings
     </a>
   
 
@@ -3965,7 +3965,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittransAddDel">11.4.2. Additions and Deletions
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittransAddDel">11.4.2. Additions and Deletions
     </a>
   
 
@@ -3976,7 +3976,7 @@ corrector.</div>
 
   
 
-    <a class="level-3" href="/v3/content/edittrans.html#edittransSubst">11.4.3. Substitutions, Restorations, and Handshifts
+    <a class="level-3" href="/guidelines/v3/content/edittrans.html#edittransSubst">11.4.3. Substitutions, Restorations, and Handshifts
     </a>
   
 

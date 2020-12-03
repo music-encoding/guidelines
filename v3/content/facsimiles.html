@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/facsimiles.html">
+          <form action="/guidelines/v3/content/facsimiles.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -143,7 +143,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/facsimile.html">facsimile</a>
+                <a href="/guidelines/v3/elements/facsimile.html">facsimile</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -163,7 +163,7 @@ than as transcribed or encoded text.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/surface.html">surface</a>
+                <a href="/guidelines/v3/elements/surface.html">surface</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -185,7 +185,7 @@ interest within it.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/zone.html">zone</a>
+                <a href="/guidelines/v3/elements/zone.html">zone</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -196,8 +196,8 @@ interest within it.</div>
 </div>
 
 <p>These element are used to add a separate subtree to MEI, starting with the 
-  <a href="/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element inside 
-  <a href="/v3/elements/music.html" class="link_odd_elementSpec">music</a>, as seen in the following example:</p>
+  <a href="/guidelines/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element inside 
+  <a href="/guidelines/v3/elements/music.html" class="link_odd_elementSpec">music</a>, as seen in the following example:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -219,9 +219,9 @@ interest within it.</div>
 </div>
 
 <p>It is possible to have more than one 
-  <a href="/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element in this location. This is especially useful when multiple sources are encoded in the same file using the mechanisms described in chapter 
-  <a href="/v3/content/edittrans.html">Editorial Markup</a> of these Guidelines. In this case, the <strong>@decls</strong> (declarations) attribute of 
-  <a href="/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> may be used to refer to a source defined in the document’s header, as seen in the following example:</p>
+  <a href="/guidelines/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element in this location. This is especially useful when multiple sources are encoded in the same file using the mechanisms described in chapter 
+  <a href="/guidelines/v3/content/edittrans.html">Editorial Markup</a> of these Guidelines. In this case, the <strong>@decls</strong> (declarations) attribute of 
+  <a href="/guidelines/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> may be used to refer to a source defined in the document’s header, as seen in the following example:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -240,10 +240,10 @@ interest within it.</div>
 </div>
 
 <p>Within a 
-  <a href="/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element, each page of the source is represented by a 
-  <a href="/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> element. Each surface may be assigned an identifying string utilizing the <strong>@label</strong> attribute. In addition, it may encapsulate more detailed metadata about itself in a 
-  <a href="/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> element. The coordinate space of the surface may be recorded in abstract terms in the <strong>@ulx</strong>, <strong>@uly</strong>, <strong>@lrx</strong>, and <strong>@lry</strong> attributes. For navigation purposes, 
-  <a href="/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> has a <strong>@startid</strong> attribute that accommodates pointing to the first object appearing on this particular writing surface.</p>
+  <a href="/guidelines/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element, each page of the source is represented by a 
+  <a href="/guidelines/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> element. Each surface may be assigned an identifying string utilizing the <strong>@label</strong> attribute. In addition, it may encapsulate more detailed metadata about itself in a 
+  <a href="/guidelines/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> element. The coordinate space of the surface may be recorded in abstract terms in the <strong>@ulx</strong>, <strong>@uly</strong>, <strong>@lrx</strong>, and <strong>@lry</strong> attributes. For navigation purposes, 
+  <a href="/guidelines/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> has a <strong>@startid</strong> attribute that accommodates pointing to the first object appearing on this particular writing surface.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -255,9 +255,9 @@ interest within it.</div>
 </div>
 
 <p>Within 
-  <a href="/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> elements, one may nest one or more 
-  <a href="/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements, each providing a reference to an image file that represents the writing surface. Multiple 
-  <a href="/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements are permitted in order to accommodate alternative versions (different resolutions or formats, for instance) of the surface image. In spite of changes in resolution or format, all images must contain the same content, i.e., the entire writing surface.</p>
+  <a href="/guidelines/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> elements, one may nest one or more 
+  <a href="/guidelines/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements, each providing a reference to an image file that represents the writing surface. Multiple 
+  <a href="/guidelines/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements are permitted in order to accommodate alternative versions (different resolutions or formats, for instance) of the surface image. In spite of changes in resolution or format, all images must contain the same content, i.e., the entire writing surface.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -273,7 +273,7 @@ interest within it.</div>
 </div>
 
 <p>The preceding markup will provide the basis for most page-turning applications. Often, however, it is desirable to focus attention on particular areas of the graphical representation of the surface. The 
-  <a href="/v3/elements/zone.html" class="link_odd_elementSpec">zone</a> element fulfills this purpose:</p>
+  <a href="/guidelines/v3/elements/zone.html" class="link_odd_elementSpec">zone</a> element fulfills this purpose:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -304,11 +304,11 @@ interest within it.</div>
 </div>
 
 <p>A 
-  <a href="/v3/elements/zone.html" class="link_odd_elementSpec">zone</a> element may contain 
-  <a href="/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> or 
-  <a href="/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements that provide detailed descriptive information about the zone and additional images, e.g., at a different/higher resolution, of the rectangle defined by the zone. The data objects contained within the zone may also be specified through the use of the <strong>@data</strong> attribute, which contains ID references to one more elements in the content tree of the MEI file, such as a 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a>, 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, etc.</p>
+  <a href="/guidelines/v3/elements/zone.html" class="link_odd_elementSpec">zone</a> element may contain 
+  <a href="/guidelines/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> or 
+  <a href="/guidelines/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements that provide detailed descriptive information about the zone and additional images, e.g., at a different/higher resolution, of the rectangle defined by the zone. The data objects contained within the zone may also be specified through the use of the <strong>@data</strong> attribute, which contains ID references to one more elements in the content tree of the MEI file, such as a 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a>, 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, etc.</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -322,8 +322,8 @@ interest within it.</div>
 </div>
 
 <p>Conversely, an element in the content may refer to the 
-  <a href="/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> subtree using its <strong>@facs</strong> attribute, which is made available by the 
-  <a href="/v3/attribute-classes/att.facsimile.html">att.facsimile</a> attribute class. The last example could therefore be encoded with pointers in the other direction:</p>
+  <a href="/guidelines/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> subtree using its <strong>@facs</strong> attribute, which is made available by the 
+  <a href="/guidelines/v3/attribute-classes/att.facsimile.html">att.facsimile</a> attribute class. The last example could therefore be encoded with pointers in the other direction:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -337,14 +337,14 @@ interest within it.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> element defined in the 
-  <a href="/v3/content/shared.html">Shared Elements, Models, and Attributes</a> makes special use of the <strong>@facs</strong> attribute, in that it does not point to a 
-  <a href="/v3/elements/zone.html" class="link_odd_elementSpec">zone</a>, but a 
-  <a href="/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> element instead. A 
-  <a href="/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> marks the beginning of a page, so it can be concluded that all elements in the content tree which are encoded between any two 
-  <a href="/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> elements encode musical symbols written on the page (
-  <a href="/v3/elements/surface.html" class="link_odd_elementSpec">surface</a>) referenced by the first of these two 
-  <a href="/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> element’s <strong>@facs</strong> attribute.</p>
+  <a href="/guidelines/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> element defined in the 
+  <a href="/guidelines/v3/content/shared.html">Shared Elements, Models, and Attributes</a> makes special use of the <strong>@facs</strong> attribute, in that it does not point to a 
+  <a href="/guidelines/v3/elements/zone.html" class="link_odd_elementSpec">zone</a>, but a 
+  <a href="/guidelines/v3/elements/surface.html" class="link_odd_elementSpec">surface</a> element instead. A 
+  <a href="/guidelines/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> marks the beginning of a page, so it can be concluded that all elements in the content tree which are encoded between any two 
+  <a href="/guidelines/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> elements encode musical symbols written on the page (
+  <a href="/guidelines/v3/elements/surface.html" class="link_odd_elementSpec">surface</a>) referenced by the first of these two 
+  <a href="/guidelines/v3/elements/pb.html" class="link_odd_elementSpec">pb</a> element’s <strong>@facs</strong> attribute.</p>
 
 
 
@@ -352,7 +352,7 @@ interest within it.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/facsimiles.html">
+        <form action="/guidelines/v3/content/facsimiles.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -365,7 +365,7 @@ interest within it.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -373,7 +373,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -381,7 +381,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -389,7 +389,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -397,7 +397,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -405,7 +405,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1573,7 +1573,7 @@ interest within it.</div>
 
   
 
-    <a class="level-2" href="/v3/content/facsimiles.html#facsimileElements">12.1. Elements of the Facsimile Module
+    <a class="level-2" href="/guidelines/v3/content/facsimiles.html#facsimileElements">12.1. Elements of the Facsimile Module
     </a>
   
 
@@ -2089,7 +2089,7 @@ interest within it.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2097,7 +2097,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2105,7 +2105,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2113,7 +2113,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2121,7 +2121,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2129,7 +2129,7 @@ interest within it.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3297,7 +3297,7 @@ interest within it.</div>
 
   
 
-    <a class="level-2" href="/v3/content/facsimiles.html#facsimileElements">12.1. Elements of the Facsimile Module
+    <a class="level-2" href="/guidelines/v3/content/facsimiles.html#facsimileElements">12.1. Elements of the Facsimile Module
     </a>
   
 

@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_dev.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_dev.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/dev/content/shared.html">
+          <form action="/guidelines/dev/content/shared.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -155,7 +155,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/mei.html">mei</a>
+                <a href="/guidelines/dev/elements/mei.html">mei</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -167,16 +167,16 @@
 </div>
 
 <p>The most straightforward – and probably the most common choice fitting most of the use cases when encoding music – is the 
-  <a href="/dev/elements/mei.html" class="link_odd_elementSpec">mei</a> element. It contains an 
-  <a href="/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element for capturing metadata and a 
-  <a href="/dev/elements/music.html" class="link_odd_elementSpec">music</a> element  for describing the musical text. A more detailed description of the application of 
-  <a href="/dev/elements/music.html" class="link_odd_elementSpec">music</a> can be found in the course of this section (see 
-  <a href="/dev/content/shared.html#sharedMusicElement">General Music Structure Elements</a>). If you want to learn more about the use of the 
-  <a href="/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element – formally declared in the MEI.header module – please visit the chapter  in the 
-  <a href="/dev/content/metadata.html">Metadata in MEI</a> section.</p>
+  <a href="/guidelines/dev/elements/mei.html" class="link_odd_elementSpec">mei</a> element. It contains an 
+  <a href="/guidelines/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element for capturing metadata and a 
+  <a href="/guidelines/dev/elements/music.html" class="link_odd_elementSpec">music</a> element  for describing the musical text. A more detailed description of the application of 
+  <a href="/guidelines/dev/elements/music.html" class="link_odd_elementSpec">music</a> can be found in the course of this section (see 
+  <a href="/guidelines/dev/content/shared.html#sharedMusicElement">General Music Structure Elements</a>). If you want to learn more about the use of the 
+  <a href="/guidelines/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element – formally declared in the MEI.header module – please visit the chapter  in the 
+  <a href="/guidelines/dev/content/metadata.html">Metadata in MEI</a> section.</p>
 
 <p>The below example shows the basic structure of an MEI file with 
-  <a href="/dev/elements/mei.html" class="link_odd_elementSpec">mei</a> as root element. Please be aware that this example still does not represent a valid MEI file:</p>
+  <a href="/guidelines/dev/elements/mei.html" class="link_odd_elementSpec">mei</a> as root element. Please be aware that this example still does not represent a valid MEI file:</p>
 
 <div class="sampleCode" data-lang="no">
 
@@ -203,7 +203,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/music.html">music</a>
+                <a href="/guidelines/dev/elements/music.html">music</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -215,11 +215,11 @@
 </div>
 
 <p>A document with 
-  <a href="/dev/elements/music.html" class="link_odd_elementSpec">music</a> as root element provides music notation markup without metadata, and could serve embedding MEI within other kinds of markup, e.g. TEI (see 
-  <a href="/dev/content/integration.html#tei">TEI</a>).</p>
+  <a href="/guidelines/dev/elements/music.html" class="link_odd_elementSpec">music</a> as root element provides music notation markup without metadata, and could serve embedding MEI within other kinds of markup, e.g. TEI (see 
+  <a href="/guidelines/dev/content/integration.html#tei">TEI</a>).</p>
 
 <p>The below example shows the basic structure of an MEI file with 
-  <a href="/dev/elements/music.html" class="link_odd_elementSpec">music</a> as root element. Basically this already represents a valid MEI file, although without any contents:</p>
+  <a href="/guidelines/dev/elements/music.html" class="link_odd_elementSpec">music</a> as root element. Basically this already represents a valid MEI file, although without any contents:</p>
 
 <div class="sampleCode" data-lang="yes">
 
@@ -239,7 +239,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/meicorpus.html">meiCorpus</a>
+                <a href="/guidelines/dev/elements/meicorpus.html">meiCorpus</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -250,13 +250,13 @@
     </div>
 </div>
 
-<p><a href="/dev/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> contains an 
-  <a href="/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element describing a collection of related MEI-encoded texts – known as a corpus – and an 
-  <a href="/dev/elements/mei.html" class="link_odd_elementSpec">mei</a> element for each text. Further information regarding the organization and encoding of music corpora is given in chapter 
-  <a href="/dev/content/metadata.html#corpus">Musical Corpora</a>.</p>
+<p><a href="/guidelines/dev/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> contains an 
+  <a href="/guidelines/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element describing a collection of related MEI-encoded texts – known as a corpus – and an 
+  <a href="/guidelines/dev/elements/mei.html" class="link_odd_elementSpec">mei</a> element for each text. Further information regarding the organization and encoding of music corpora is given in chapter 
+  <a href="/guidelines/dev/content/metadata.html#corpus">Musical Corpora</a>.</p>
 
 <p>The below example shows the basic structure of an MEI file with 
-  <a href="/dev/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> as root element. Please be aware that this example still does not represent a valid MEI file:</p>
+  <a href="/guidelines/dev/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> as root element. Please be aware that this example still does not represent a valid MEI file:</p>
 
 <div class="sampleCode" data-lang="no">
 
@@ -302,7 +302,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/meihead.html">meiHead</a>
+                <a href="/guidelines/dev/elements/meihead.html">meiHead</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -314,13 +314,13 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element, formally declared in the MEI.header module, is described in chapter 
-  <a href="/dev/content/metadata.html#headerstructure">Structure of the MEI Header</a>. A document with 
-  <a href="/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> as root element only contains metadata and is also known as an independent or stand-alone header. Stand-alone headers are more fully described in chapter 
-  <a href="/dev/content/metadata.html#headerIndependentHeader">Independent Headers</a>.</p>
+  <a href="/guidelines/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element, formally declared in the MEI.header module, is described in chapter 
+  <a href="/guidelines/dev/content/metadata.html#headerstructure">Structure of the MEI Header</a>. A document with 
+  <a href="/guidelines/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> as root element only contains metadata and is also known as an independent or stand-alone header. Stand-alone headers are more fully described in chapter 
+  <a href="/guidelines/dev/content/metadata.html#headerIndependentHeader">Independent Headers</a>.</p>
 
 <p>The below example shows the basic structure of an MEI file with 
-  <a href="/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> as root element. Please be aware that this example still does not represent a valid MEI file:</p>
+  <a href="/guidelines/dev/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> as root element. Please be aware that this example still does not represent a valid MEI file:</p>
 
 <div class="sampleCode" data-lang="no">
 
@@ -332,7 +332,7 @@
 </div>
 
 <p>The above examples all carry two attributes on their root elements. While the @xmlns is a general feature of XML and not defined in MEI it is crucial for stating the fact that it is an MEI file you are dealing with. The second attribute is 
-  <a href="/dev/attribute-classes/att.meiversion.html">att.meiversion</a>.</p>
+  <a href="/guidelines/dev/attribute-classes/att.meiversion.html">att.meiversion</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -343,7 +343,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.meiversion.html">@meiversion</a>
+                <a href="/guidelines/dev/attribute-classes/att.meiversion.html">@meiversion</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -354,7 +354,7 @@
 </div>
 
 <p>Although not required the 
-  <a href="/dev/attribute-classes/att.meiversion.html">att.meiversion</a> attribute is important for defining a stable reference to a specific MEI-version used in the enclosed encoding, and thus is highly recommended on your root element.</p>
+  <a href="/guidelines/dev/attribute-classes/att.meiversion.html">att.meiversion</a> attribute is important for defining a stable reference to a specific MEI-version used in the enclosed encoding, and thus is highly recommended on your root element.</p>
 
 <h4 id="sharedMusicElement">2.1.2. General Music Structure Elements
       
@@ -371,7 +371,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/music.html">music</a>
+                <a href="/guidelines/dev/elements/music.html">music</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -383,7 +383,7 @@
 </div>
 
 <p>As indicated above, the general place for encoding the musical text is the 
-  <a href="/dev/elements/music.html" class="link_odd_elementSpec">music</a> element. MEI.shared offers two possible child elements:</p>
+  <a href="/guidelines/dev/elements/music.html" class="link_odd_elementSpec">music</a> element. MEI.shared offers two possible child elements:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -394,7 +394,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/body.html">body</a>
+                <a href="/guidelines/dev/elements/body.html">body</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -413,7 +413,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/group.html">group</a>
+                <a href="/guidelines/dev/elements/group.html">group</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -426,21 +426,21 @@
 </div>
 
 <p>While 
-  <a href="/dev/elements/body.html" class="link_odd_elementSpec">body</a> holds the contents of a single musical text, 
-  <a href="/dev/elements/group.html" class="link_odd_elementSpec">group</a> allows the textual body to consists of a series of (subordinate) musical texts or other e.g. to represent a collection of independent musical texts which is to be regarded as a single unit for processing or other purposes. It is provided to simplify the encoding of collections, anthologies, and cyclic works. It can also be used to record the potentially complex internal structure of corpora, covered more fully in chapter 
-  <a href="/dev/content/metadata.html#corpus">Musical Corpora</a>. Whether the musical text being encoded should be structured one way or the other is not to be decided here. For example, a collection of songs might be regarded as a single item in some circumstances, or as a number of distinct items in others. In such borderline cases, the encoder must choose whether to treat the text as unitary or composite; each option may have advantages and disadvantages.</p>
+  <a href="/guidelines/dev/elements/body.html" class="link_odd_elementSpec">body</a> holds the contents of a single musical text, 
+  <a href="/guidelines/dev/elements/group.html" class="link_odd_elementSpec">group</a> allows the textual body to consists of a series of (subordinate) musical texts or other e.g. to represent a collection of independent musical texts which is to be regarded as a single unit for processing or other purposes. It is provided to simplify the encoding of collections, anthologies, and cyclic works. It can also be used to record the potentially complex internal structure of corpora, covered more fully in chapter 
+  <a href="/guidelines/dev/content/metadata.html#corpus">Musical Corpora</a>. Whether the musical text being encoded should be structured one way or the other is not to be decided here. For example, a collection of songs might be regarded as a single item in some circumstances, or as a number of distinct items in others. In such borderline cases, the encoder must choose whether to treat the text as unitary or composite; each option may have advantages and disadvantages.</p>
 
 <p>There are several more possible child elements of the 
-  <a href="/dev/elements/music.html" class="link_odd_elementSpec">music</a> element defined in other modules of MEI, such as 
-  <a href="/dev/elements/front.html" class="link_odd_elementSpec">front</a> and 
-  <a href="/dev/elements/back.html" class="link_odd_elementSpec">back</a> elements (defined in MEI.text module, cf. 
-  <a href="/dev/content/textencoding.html#text">Text in MEI</a>), 
-  <a href="/dev/elements/performance.html" class="link_odd_elementSpec">performance</a> (defined in MEI.performance module, cf. 
-  <a href="/dev/content/facsimilesrecordings.html#performances">Performances</a>), 
-  <a href="/dev/elements/gendesc.html" class="link_odd_elementSpec">genDesc</a> (defined in MEI.genetic module, cf. 
-  <a href="/dev/content/scholarlyediting.html#genetic">Genetic Markup</a>), 
-  <a href="/dev/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> (defined in MEI.facsimile module, cf. 
-  <a href="/dev/content/facsimilesrecordings.html#facsimiles">Facsimiles</a>).</p>
+  <a href="/guidelines/dev/elements/music.html" class="link_odd_elementSpec">music</a> element defined in other modules of MEI, such as 
+  <a href="/guidelines/dev/elements/front.html" class="link_odd_elementSpec">front</a> and 
+  <a href="/guidelines/dev/elements/back.html" class="link_odd_elementSpec">back</a> elements (defined in MEI.text module, cf. 
+  <a href="/guidelines/dev/content/textencoding.html#text">Text in MEI</a>), 
+  <a href="/guidelines/dev/elements/performance.html" class="link_odd_elementSpec">performance</a> (defined in MEI.performance module, cf. 
+  <a href="/guidelines/dev/content/facsimilesrecordings.html#performances">Performances</a>), 
+  <a href="/guidelines/dev/elements/gendesc.html" class="link_odd_elementSpec">genDesc</a> (defined in MEI.genetic module, cf. 
+  <a href="/guidelines/dev/content/scholarlyediting.html#genetic">Genetic Markup</a>), 
+  <a href="/guidelines/dev/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> (defined in MEI.facsimile module, cf. 
+  <a href="/guidelines/dev/content/facsimilesrecordings.html#facsimiles">Facsimiles</a>).</p>
 
 <p>Please be aware that the following examples still do not reflect valid MEI files as they are missing some required elements not defined in the MEI.shared module.</p>
 
@@ -469,7 +469,7 @@
 </div>
 
 <p>Examples of composite texts which may be represented using the 
-  <a href="/dev/elements/group.html" class="link_odd_elementSpec">group</a> element include anthologies and other collections. The presence of common front matter referring to the whole collection, possibly in addition to front matter relating to each individual musical text, is a good indication that a given musical text might usefully be encoded in this way.</p>
+  <a href="/guidelines/dev/elements/group.html" class="link_odd_elementSpec">group</a> element include anthologies and other collections. The presence of common front matter referring to the whole collection, possibly in addition to front matter relating to each individual musical text, is a good indication that a given musical text might usefully be encoded in this way.</p>
 
 <p>For example, the overall structure of a collection of songs might be encoded as follows:</p>
 
@@ -515,7 +515,7 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/group.html" class="link_odd_elementSpec">group</a> element may be used to encode any kind of collection in which the constituents are regarded by the encoder as works in their own right, such as <em>ad hoc</em> single- or multiple-composer collections or anthologies of works not originally conceived of as a single composition.</p>
+  <a href="/guidelines/dev/elements/group.html" class="link_odd_elementSpec">group</a> element may be used to encode any kind of collection in which the constituents are regarded by the encoder as works in their own right, such as <em>ad hoc</em> single- or multiple-composer collections or anthologies of works not originally conceived of as a single composition.</p>
 
 <h5 id="sharedDivisionsBody">2.1.2.1. Divisions of the Body
       
@@ -524,8 +524,8 @@
   </h5>
 
 <p>This section describes sub-division of the 
-  <a href="/dev/elements/body.html" class="link_odd_elementSpec">body</a> of a musical text. Front and back matter are described in chapter 
-  <a href="/dev/content/textencoding.html#text">Text in MEI</a>.</p>
+  <a href="/guidelines/dev/elements/body.html" class="link_odd_elementSpec">body</a> of a musical text. Front and back matter are described in chapter 
+  <a href="/guidelines/dev/content/textencoding.html#text">Text in MEI</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -536,7 +536,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/mdiv.html">mdiv</a>
+                <a href="/guidelines/dev/elements/mdiv.html">mdiv</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -555,7 +555,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.typed.html">@type</a>
+                <a href="/guidelines/dev/attribute-classes/att.typed.html">@type</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -575,7 +575,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.classed.html">@class</a>
+                <a href="/guidelines/dev/attribute-classes/att.classed.html">@class</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -587,11 +587,11 @@
 </div>
 
 <p>The body of a unitary musical text may contain one or more discrete, linear segments. The names commonly used for these structural subdivisions vary with the genre, style, and time period of the music, or even at the whim of the author, editor, or publisher. For example, a major subdivision of a symphony is generally referred to as a ‘movement’. An opera, on the other hand, is usually organized into ‘acts’ and then further by ‘scenes’. All such divisions are treated as occurrences of the same neutrally-named 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> element. The attributes <strong>@type</strong> or <strong>@class</strong> may be used to categorize them independently of their hierarchic level.</p>
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> element. The attributes <strong>@type</strong> or <strong>@class</strong> may be used to categorize them independently of their hierarchic level.</p>
 
 <p>To accommodate “divisions within divisions”, an 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> element may contain additional 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> sub-elements nested to any level required. For example, the encoding of a multi-movement work, such as a symphony, might have the following structure:</p>
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> element may contain additional 
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> sub-elements nested to any level required. For example, the encoding of a multi-movement work, such as a symphony, might have the following structure:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -678,10 +678,10 @@
 </div>
 
 <p>Conventionally, in performance the musical structures represented by 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements are separated by pauses; however, <em>attacca</em>, <em>attacca subito</em>, <em>seque</em>, or similar terms are sometimes used at the end of an 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> to indicate that the next 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> should begin immediately after the conclusion of the current one. These terms have no effect, however, on the logical segmentation of musical content using 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements.</p>
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements are separated by pauses; however, <em>attacca</em>, <em>attacca subito</em>, <em>seque</em>, or similar terms are sometimes used at the end of an 
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> to indicate that the next 
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> should begin immediately after the conclusion of the current one. These terms have no effect, however, on the logical segmentation of musical content using 
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements.</p>
 
 <h5 id="sharedMdivContent">2.1.2.2. Content of Musical Divisions
       
@@ -690,9 +690,9 @@
   </h5>
 
 <p>The contents of 
-  <a href="/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> can be organised according to the two encoding paradigms provided by the 
-  <a href="/dev/elements/score.html" class="link_odd_elementSpec">score</a> and 
-  <a href="/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> elements.</p>
+  <a href="/guidelines/dev/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> can be organised according to the two encoding paradigms provided by the 
+  <a href="/guidelines/dev/elements/score.html" class="link_odd_elementSpec">score</a> and 
+  <a href="/guidelines/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> elements.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -703,7 +703,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/score.html">score</a>
+                <a href="/guidelines/dev/elements/score.html">score</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -722,7 +722,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/parts.html">parts</a>
+                <a href="/guidelines/dev/elements/parts.html">parts</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -733,8 +733,8 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/score.html" class="link_odd_elementSpec">score</a> element represents notation in which all the parts of an ensemble are arranged on vertically aligned staves, while the 
-  <a href="/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> element collects the individually notated parts for each performer or group of performers. The explicit encoding of these two ‘views’ is necessary because it is not always possible or desirable to automatically derive one view from the other. In addition, separating scores and parts can eliminate a great deal of markup complexity.</p>
+  <a href="/guidelines/dev/elements/score.html" class="link_odd_elementSpec">score</a> element represents notation in which all the parts of an ensemble are arranged on vertically aligned staves, while the 
+  <a href="/guidelines/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> element collects the individually notated parts for each performer or group of performers. The explicit encoding of these two ‘views’ is necessary because it is not always possible or desirable to automatically derive one view from the other. In addition, separating scores and parts can eliminate a great deal of markup complexity.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -754,12 +754,12 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/score.html" class="link_odd_elementSpec">score</a> and 
-  <a href="/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> elements may also be employed to accommodate different methods of organizing the markup – with no particular presentation implied. In this case, software may render a collection of parts as a score or a score as a collection of parts.</p>
+  <a href="/guidelines/dev/elements/score.html" class="link_odd_elementSpec">score</a> and 
+  <a href="/guidelines/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> elements may also be employed to accommodate different methods of organizing the markup – with no particular presentation implied. In this case, software may render a collection of parts as a score or a score as a collection of parts.</p>
 
 <p>Within the collective 
-  <a href="/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> element, notation for a single performer is represented by the 
-  <a href="/dev/elements/part.html" class="link_odd_elementSpec">part</a> element:</p>
+  <a href="/guidelines/dev/elements/parts.html" class="link_odd_elementSpec">parts</a> element, notation for a single performer is represented by the 
+  <a href="/guidelines/dev/elements/part.html" class="link_odd_elementSpec">part</a> element:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -770,7 +770,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/part.html">part</a>
+                <a href="/guidelines/dev/elements/part.html">part</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -782,13 +782,13 @@
 </div>
 
 <p>A 
-  <a href="/dev/elements/part.html" class="link_odd_elementSpec">part</a> is effectively a small-scale score, allowing all the encoding features of a full score, such as multiple staves, performance directives, and so on. A group of 
-  <a href="/dev/elements/part.html" class="link_odd_elementSpec">part</a> elements is useful for encoding performing parts when there is no score, such as in early music part books; when the parts have non-aligning bar lines; when different layout features, such as page turns, are needed for the score and parts; or for accommodating software that requires part-by-part encoding.</p>
+  <a href="/guidelines/dev/elements/part.html" class="link_odd_elementSpec">part</a> is effectively a small-scale score, allowing all the encoding features of a full score, such as multiple staves, performance directives, and so on. A group of 
+  <a href="/guidelines/dev/elements/part.html" class="link_odd_elementSpec">part</a> elements is useful for encoding performing parts when there is no score, such as in early music part books; when the parts have non-aligning bar lines; when different layout features, such as page turns, are needed for the score and parts; or for accommodating software that requires part-by-part encoding.</p>
 
 <p>Please note that 
-  <a href="/dev/elements/part.html" class="link_odd_elementSpec">part</a> elements in MEI are not an indication of voice leading or staff grouping. Voice leading can be encoded using the <strong>@next</strong> attribute, available on all the members of the 
-  <a href="/dev/model-classes/model.eventlike.html">model.eventLike</a> class. The 
-  <a href="/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> element handles grouping of staves in the score context.</p>
+  <a href="/guidelines/dev/elements/part.html" class="link_odd_elementSpec">part</a> elements in MEI are not an indication of voice leading or staff grouping. Voice leading can be encoded using the <strong>@next</strong> attribute, available on all the members of the 
+  <a href="/guidelines/dev/model-classes/model.eventlike.html">model.eventLike</a> class. The 
+  <a href="/guidelines/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> element handles grouping of staves in the score context.</p>
 <div class="sampleCode" data-lang="">
 
 
@@ -805,15 +805,15 @@
 </div>
 
 <p>In both score and part views, the 
-  <a href="/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element is used to describe logical characteristics of the encoded music, such as key signature, the sounding key (as opposed to the notated key signature), meter, etc., and visual features, such as page size, staff groupings and display labels, etc. The 
-  <a href="/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> elements within 
-  <a href="/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and the order of 
-  <a href="/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements inside 
-  <a href="/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> should follow the score order of the source for the encoding.</p>
+  <a href="/guidelines/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element is used to describe logical characteristics of the encoded music, such as key signature, the sounding key (as opposed to the notated key signature), meter, etc., and visual features, such as page size, staff groupings and display labels, etc. The 
+  <a href="/guidelines/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> elements within 
+  <a href="/guidelines/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and the order of 
+  <a href="/guidelines/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements inside 
+  <a href="/guidelines/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> should follow the score order of the source for the encoding.</p>
 
 <p>A 
-  <a href="/dev/elements/part.html" class="link_odd_elementSpec">part</a> or 
-  <a href="/dev/elements/score.html" class="link_odd_elementSpec">score</a> may be further divided into linear segments called “sections”.</p>
+  <a href="/guidelines/dev/elements/part.html" class="link_odd_elementSpec">part</a> or 
+  <a href="/guidelines/dev/elements/score.html" class="link_odd_elementSpec">score</a> may be further divided into linear segments called “sections”.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -824,7 +824,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/section.html">section</a>
+                <a href="/guidelines/dev/elements/section.html">section</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -834,14 +834,14 @@
     </div>
 </div>
 
-<p><a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements are often used as a scoping mechanism for clef signs, key and meter signatures, as well as metronome, tempo, and expression markings. Using 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements can help to minimize the need for backward scanning to establish context when the starting point for access is not at the beginning of the score. 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements may also be used for other user-defined, i.e., analytical or editorial, purposes and may therefore be arbitrarily nested to any desired level.</p>
+<p><a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements are often used as a scoping mechanism for clef signs, key and meter signatures, as well as metronome, tempo, and expression markings. Using 
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements can help to minimize the need for backward scanning to establish context when the starting point for access is not at the beginning of the score. 
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements may also be used for other user-defined, i.e., analytical or editorial, purposes and may therefore be arbitrarily nested to any desired level.</p>
 
 <p>The 
-  <a href="/dev/elements/ending.html" class="link_odd_elementSpec">ending</a> element shares the same model as the 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a> element. Unlike 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a>, however, it may not be recursively nested.</p>
+  <a href="/guidelines/dev/elements/ending.html" class="link_odd_elementSpec">ending</a> element shares the same model as the 
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a> element. Unlike 
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a>, however, it may not be recursively nested.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -852,7 +852,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/ending.html">ending</a>
+                <a href="/guidelines/dev/elements/ending.html">ending</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -864,8 +864,8 @@
 </div>
 
 <p>The most common (non-analytical, non-editorial) use of 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a> and 
-  <a href="/dev/elements/ending.html" class="link_odd_elementSpec">ending</a> elements is illustrated below:</p>
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a> and 
+  <a href="/guidelines/dev/elements/ending.html" class="link_odd_elementSpec">ending</a> elements is illustrated below:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -894,23 +894,23 @@
 </div>
 
 <p>Within 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements, several methods of organization are possible, depending upon the notational style of the source material and the encoder’s needs. For example, when the MEI.cmn module is used, the default organization is measure-by-measure, with 
-  <a href="/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
-  <a href="/dev/elements/layer.html" class="link_odd_elementSpec">layer</a> sub-elements within each 
-  <a href="/dev/elements/measure.html" class="link_odd_elementSpec">measure</a>. Further discussion of CMN notation is continued in chapter 
-  <a href="/dev/content/cmn.html">Repertoire: Common Music Notation</a>.</p>
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements, several methods of organization are possible, depending upon the notational style of the source material and the encoder’s needs. For example, when the MEI.cmn module is used, the default organization is measure-by-measure, with 
+  <a href="/guidelines/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/guidelines/dev/elements/layer.html" class="link_odd_elementSpec">layer</a> sub-elements within each 
+  <a href="/guidelines/dev/elements/measure.html" class="link_odd_elementSpec">measure</a>. Further discussion of CMN notation is continued in chapter 
+  <a href="/guidelines/dev/content/cmn.html">Repertoire: Common Music Notation</a>.</p>
 
 <p>However, staff-by-staff organization is more appropriate for music without measures and is provided when either the MEI.mensural or MEI.neumes module is employed. Coverage of mensural notation is provided in chapter 
-  <a href="/dev/content/mensural.html">Repertoire: Mensural Notation</a>, while 
-  <a href="/dev/content/neumes.html">Repertoire: Neume Notation</a> describes neumatic notation.</p>
+  <a href="/guidelines/dev/content/mensural.html">Repertoire: Mensural Notation</a>, while 
+  <a href="/guidelines/dev/content/neumes.html">Repertoire: Neume Notation</a> describes neumatic notation.</p>
 
 <p>It must be noted that, when both the MEI.cmn and MEI.mensural modules are available, it is possible to encode CMN notation without using 
-  <a href="/dev/elements/measure.html" class="link_odd_elementSpec">measure</a> elements; that is, staff-by-staff organization may be used and the ends of measures marked using 
-  <a href="/dev/elements/barline.html" class="link_odd_elementSpec">barLine</a> elements.</p>
+  <a href="/guidelines/dev/elements/measure.html" class="link_odd_elementSpec">measure</a> elements; that is, staff-by-staff organization may be used and the ends of measures marked using 
+  <a href="/guidelines/dev/elements/barline.html" class="link_odd_elementSpec">barLine</a> elements.</p>
 
 <p>In certain circumstances, this approach may be preferable for reproduction of the visual layout of the music. However, the simultaneous use of the 
-  <a href="/dev/elements/measure.html" class="link_odd_elementSpec">measure</a> and 
-  <a href="/dev/elements/barline.html" class="link_odd_elementSpec">barLine</a> elements may lead to confusion and should be avoided.</p>
+  <a href="/guidelines/dev/elements/measure.html" class="link_odd_elementSpec">measure</a> and 
+  <a href="/guidelines/dev/elements/barline.html" class="link_odd_elementSpec">barLine</a> elements may lead to confusion and should be avoided.</p>
 
 <p>Typically, MEI follows the order of sections as they appear in the document being encoded. When performance requires a different order, for instance in the case of D.C. and D.S. directives, the following element may be used to define the performance order.</p>
 
@@ -923,7 +923,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/expansion.html">expansion</a>
+                <a href="/guidelines/dev/elements/expansion.html">expansion</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -935,11 +935,11 @@
 </div>
 
 <p>In the following example, 
-  <a href="/dev/elements/expansion.html" class="link_odd_elementSpec">expansion</a> is used to indicate how the notated sections should be ordered in a “through-composed” rendition, for example for machine performance or analysis. The <strong>@plist</strong> attribute contains an ordered list of identifiers of descendant 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a>, 
-  <a href="/dev/elements/ending.html" class="link_odd_elementSpec">ending</a>, 
-  <a href="/dev/elements/lem.html" class="link_odd_elementSpec">lem</a>, or 
-  <a href="/dev/elements/rdg.html" class="link_odd_elementSpec">rdg</a> elements. The sequence of values in the <strong>@plist</strong> attribute indicates that the section labelled ‘A’ comes first, then the section labelled ‘B’, followed by the ‘A’ section again. This mechanism must be specified independently of any textual directives, such as “Da capo” or “D.S. al Fine”, that may be present in the document.</p>
+  <a href="/guidelines/dev/elements/expansion.html" class="link_odd_elementSpec">expansion</a> is used to indicate how the notated sections should be ordered in a “through-composed” rendition, for example for machine performance or analysis. The <strong>@plist</strong> attribute contains an ordered list of identifiers of descendant 
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a>, 
+  <a href="/guidelines/dev/elements/ending.html" class="link_odd_elementSpec">ending</a>, 
+  <a href="/guidelines/dev/elements/lem.html" class="link_odd_elementSpec">lem</a>, or 
+  <a href="/guidelines/dev/elements/rdg.html" class="link_odd_elementSpec">rdg</a> elements. The sequence of values in the <strong>@plist</strong> attribute indicates that the section labelled ‘A’ comes first, then the section labelled ‘B’, followed by the ‘A’ section again. This mechanism must be specified independently of any textual directives, such as “Da capo” or “D.S. al Fine”, that may be present in the document.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -981,7 +981,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/pb.html">pb</a>
+                <a href="/guidelines/v4/elements/pb.html">pb</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1001,7 +1001,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.nnumberlike.html">@n</a>
+                <a href="/guidelines/v4/attribute-classes/att.nnumberlike.html">@n</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1013,8 +1013,8 @@
 </div>
 
 <p>The 
-  <a href="/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> element can be used to mark page beginnings. When transcribing an existing document the <strong>@n</strong> attribute should be used to record the page number displayed in the source. It need not be an integer, e.g., ‘iv’, or ‘p17-3’. The logical page number can be calculated by counting previous 
-  <a href="/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> ancestor elements. When used in a score context, a page beginning implies an accompanying system beginning. This element is modelled on an element in the Text Encoding Initiative (TEI) standard.</p>
+  <a href="/guidelines/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> element can be used to mark page beginnings. When transcribing an existing document the <strong>@n</strong> attribute should be used to record the page number displayed in the source. It need not be an integer, e.g., ‘iv’, or ‘p17-3’. The logical page number can be calculated by counting previous 
+  <a href="/guidelines/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> ancestor elements. When used in a score context, a page beginning implies an accompanying system beginning. This element is modelled on an element in the Text Encoding Initiative (TEI) standard.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1025,7 +1025,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/pgdesc.html">pgDesc</a>
+                <a href="/guidelines/v4/elements/pgdesc.html">pgDesc</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1037,7 +1037,7 @@
 </div>
 
 <p>Additional information can be provided on page beginnings. Ranging from a prose description of the page layout in 
-  <a href="/v4/elements/pgdesc.html" class="link_odd_elementSpec">pgDesc</a> to defined headers and footers.</p>
+  <a href="/guidelines/v4/elements/pgdesc.html" class="link_odd_elementSpec">pgDesc</a> to defined headers and footers.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1048,7 +1048,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/pghead.html">pgHead</a>
+                <a href="/guidelines/v4/elements/pghead.html">pgHead</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1068,7 +1068,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/pghead2.html">pgHead2</a>
+                <a href="/guidelines/v4/elements/pghead2.html">pgHead2</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1087,7 +1087,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/pgfoot.html">pgFoot</a>
+                <a href="/guidelines/v4/elements/pgfoot.html">pgFoot</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1107,7 +1107,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/pgfoot2.html">pgFoot2</a>
+                <a href="/guidelines/v4/elements/pgfoot2.html">pgFoot2</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1128,7 +1128,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/cb.html">cb</a>
+                <a href="/guidelines/v4/elements/cb.html">cb</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1148,7 +1148,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/cb.html">@n</a>
+                <a href="/guidelines/v4/attribute-classes/cb.html">@n</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1167,7 +1167,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/collayout.html">colLayout</a>
+                <a href="/guidelines/v4/elements/collayout.html">colLayout</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1179,7 +1179,7 @@
 </div>
 
 <p>In order to force a system break in the musical text 
-  <a href="/v4/elements/sb.html" class="link_odd_elementSpec">sb</a> can be used.</p>
+  <a href="/guidelines/v4/elements/sb.html" class="link_odd_elementSpec">sb</a> can be used.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1190,7 +1190,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/sb.html">sb</a>
+                <a href="/guidelines/v4/elements/sb.html">sb</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1202,9 +1202,9 @@
 </div>
 
 <p>Critical editions and collections of works often contain extensive text, such as a title page, table of contents, an introductory essay, commentary, biographical sketch, index, etc. These textual items may appear in either the 
-  <a href="/v4/elements/front.html" class="link_odd_elementSpec">front</a> or 
-  <a href="/v4/elements/back.html" class="link_odd_elementSpec">back</a> elements. The front and back elements, available only when the MEI.text module is activated, are described more fully in chapter 
-  <a href="/v4/content/textencoding.html#text">Text in MEI</a>.</p>
+  <a href="/guidelines/v4/elements/front.html" class="link_odd_elementSpec">front</a> or 
+  <a href="/guidelines/v4/elements/back.html" class="link_odd_elementSpec">back</a> elements. The front and back elements, available only when the MEI.text module is activated, are described more fully in chapter 
+  <a href="/guidelines/v4/content/textencoding.html#text">Text in MEI</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1215,7 +1215,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/front.html">front</a>
+                <a href="/guidelines/v4/elements/front.html">front</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1234,7 +1234,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/back.html">back</a>
+                <a href="/guidelines/v4/elements/back.html">back</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1262,7 +1262,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/div.html">div</a>
+                <a href="/guidelines/v4/elements/div.html">div</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1282,7 +1282,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/head.html">head</a>
+                <a href="/guidelines/v4/elements/head.html">head</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1302,7 +1302,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/lg.html">lg</a>
+                <a href="/guidelines/v4/elements/lg.html">lg</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1323,7 +1323,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/lb.html">lb</a>
+                <a href="/guidelines/v4/elements/lb.html">lb</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1343,7 +1343,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/p.html">p</a>
+                <a href="/guidelines/v4/elements/p.html">p</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1354,7 +1354,7 @@
 </div>
 
 <p>A detailed description of their use and of other elements from the MEI.text module can be found in the corresponding chapter 
-  <a href="/v4/content/textencoding.html#text">Text in MEI</a>.</p>
+  <a href="/guidelines/v4/content/textencoding.html#text">Text in MEI</a>.</p>
 
 <h3 id="sharedMusicalElements">2.2. General Music Elements
       
@@ -1381,7 +1381,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/score.html">score</a>
+                <a href="/guidelines/dev/elements/score.html">score</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1400,7 +1400,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/parts.html">parts</a>
+                <a href="/guidelines/dev/elements/parts.html">parts</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1419,7 +1419,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/part.html">part</a>
+                <a href="/guidelines/dev/elements/part.html">part</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1439,7 +1439,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/scoredef.html">scoreDef</a>
+                <a href="/guidelines/dev/elements/scoredef.html">scoreDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1458,7 +1458,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/staffdef.html">staffDef</a>
+                <a href="/guidelines/dev/elements/staffdef.html">staffDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1477,7 +1477,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/layerdef.html">layerDef</a>
+                <a href="/guidelines/dev/elements/layerdef.html">layerDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1496,7 +1496,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/staffgrp.html">staffGrp</a>
+                <a href="/guidelines/dev/elements/staffgrp.html">staffGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1515,7 +1515,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/grpsym.html">grpSym</a>
+                <a href="/guidelines/dev/elements/grpsym.html">grpSym</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1535,7 +1535,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/label.html">label</a>
+                <a href="/guidelines/dev/elements/label.html">label</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1555,7 +1555,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/clef.html">clef</a>
+                <a href="/guidelines/dev/elements/clef.html">clef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1575,7 +1575,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/clefgrp.html">clefGrp</a>
+                <a href="/guidelines/dev/elements/clefgrp.html">clefGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1594,7 +1594,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/keysig.html">keySig</a>
+                <a href="/guidelines/dev/elements/keysig.html">keySig</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1613,7 +1613,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/keyaccid.html">keyAccid</a>
+                <a href="/guidelines/dev/elements/keyaccid.html">keyAccid</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1624,19 +1624,19 @@
 </div>
 
 <p>The character of elements specifying one or more score or staff parameters, such as meter and key signature, clefs, etc., is that of a milestone; that is, they affect all subsequent material until a following redefinition. A 
-  <a href="/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element, which may affect more than just one staff, is allowed only within 
-  <a href="/dev/elements/score.html" class="link_odd_elementSpec">score</a>, 
-  <a href="/dev/elements/part.html" class="link_odd_elementSpec">part</a> and 
-  <a href="/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements, whereas 
-  <a href="/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> is allowed only within 
-  <a href="/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a>, 
-  <a href="/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
-  <a href="/dev/elements/layer.html" class="link_odd_elementSpec">layer</a>. A 
-  <a href="/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> nested inside a 
-  <a href="/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> must bear the same value for its <strong>@n</strong> attribute as its parent staff and may thus not affect other staves.</p>
+  <a href="/guidelines/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element, which may affect more than just one staff, is allowed only within 
+  <a href="/guidelines/dev/elements/score.html" class="link_odd_elementSpec">score</a>, 
+  <a href="/guidelines/dev/elements/part.html" class="link_odd_elementSpec">part</a> and 
+  <a href="/guidelines/dev/elements/section.html" class="link_odd_elementSpec">section</a> elements, whereas 
+  <a href="/guidelines/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> is allowed only within 
+  <a href="/guidelines/dev/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a>, 
+  <a href="/guidelines/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/guidelines/dev/elements/layer.html" class="link_odd_elementSpec">layer</a>. A 
+  <a href="/guidelines/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> nested inside a 
+  <a href="/guidelines/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> must bear the same value for its <strong>@n</strong> attribute as its parent staff and may thus not affect other staves.</p>
 
 <p>The actual use of these elements depends on the repertoire and historical context of the source material. For details on their use in Common Western Notation, please refer to chapter 
-  <a href="/dev/content/cmn.html#cmnDefs">Defining Score Parameters for CMN</a>.</p>
+  <a href="/guidelines/dev/content/cmn.html#cmnDefs">Defining Score Parameters for CMN</a>.</p>
 
 <h4 id="sharedStavesAndLayers">2.2.2. Staves and Layers
       
@@ -1655,7 +1655,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/staff.html">staff</a>
+                <a href="/guidelines/dev/elements/staff.html">staff</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1677,7 +1677,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/layer.html">layer</a>
+                <a href="/guidelines/dev/elements/layer.html">layer</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1688,11 +1688,11 @@
 </div>
 
 <p>The actual use of the 
-  <a href="/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
-  <a href="/dev/elements/layer.html" class="link_odd_elementSpec">layer</a> elements depends on the repertoire and historical context of the source material. For details on their use in Common Western Notation, please refer to chapter 
-  <a href="/dev/content/cmn.html">Repertoire: Common Music Notation</a>. For mensural notation, see chapter 
-  <a href="/dev/content/mensural.html">Repertoire: Mensural Notation</a>, and for neumatic notation, chapter 
-  <a href="/dev/content/neumes.html">Repertoire: Neume Notation</a>.</p>
+  <a href="/guidelines/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/guidelines/dev/elements/layer.html" class="link_odd_elementSpec">layer</a> elements depends on the repertoire and historical context of the source material. For details on their use in Common Western Notation, please refer to chapter 
+  <a href="/guidelines/dev/content/cmn.html">Repertoire: Common Music Notation</a>. For mensural notation, see chapter 
+  <a href="/guidelines/dev/content/mensural.html">Repertoire: Mensural Notation</a>, and for neumatic notation, chapter 
+  <a href="/guidelines/dev/content/neumes.html">Repertoire: Neume Notation</a>.</p>
 
 <h4 id="sharedBasicEvents">2.2.3. Basic Music Events
       
@@ -1711,7 +1711,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/note.html">note</a>
+                <a href="/guidelines/dev/elements/note.html">note</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1730,7 +1730,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/chord.html">chord</a>
+                <a href="/guidelines/dev/elements/chord.html">chord</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1750,7 +1750,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/rest.html">rest</a>
+                <a href="/guidelines/dev/elements/rest.html">rest</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1761,7 +1761,7 @@
 </div>
 
 <p>The characteristics of stems on notes and chords are indicated by means of attributes found in the 
-  <a href="/dev/attribute-classes/att.stems.html">att.stems</a> class.</p>
+  <a href="/guidelines/dev/attribute-classes/att.stems.html">att.stems</a> class.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1772,7 +1772,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.stems.html">@stem.dir</a>
+                <a href="/guidelines/dev/attribute-classes/att.stems.html">@stem.dir</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1790,7 +1790,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.stems.html">@stem.len</a>
+                <a href="/guidelines/dev/attribute-classes/att.stems.html">@stem.len</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1808,7 +1808,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.stems.html">@stem.mod</a>
+                <a href="/guidelines/dev/attribute-classes/att.stems.html">@stem.mod</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1827,7 +1827,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.stems.html">@stem.pos</a>
+                <a href="/guidelines/dev/attribute-classes/att.stems.html">@stem.pos</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1845,7 +1845,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.stems.html">@stem.x</a>
+                <a href="/guidelines/dev/attribute-classes/att.stems.html">@stem.x</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1863,7 +1863,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.stems.html">@stem.y</a>
+                <a href="/guidelines/dev/attribute-classes/att.stems.html">@stem.y</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1880,7 +1880,7 @@
   </h4>
 
 <p>Because they can occur in the context of a stream of events on the staff, some elements which are used in other contexts are also treated as events. For example, in addition to being used to define the initial clef of a staff, the 
-  <a href="/dev/elements/clef.html" class="link_odd_elementSpec">clef</a> element can also be used to indicate a clef change.</p>
+  <a href="/guidelines/dev/elements/clef.html" class="link_odd_elementSpec">clef</a> element can also be used to indicate a clef change.</p>
 
 <h5 id="sharedKeySignaturesAndClefs">2.2.4.1. Key Signatures and Clefs
       
@@ -1899,7 +1899,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/keysig.html">keySig</a>
+                <a href="/guidelines/dev/elements/keysig.html">keySig</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1918,7 +1918,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/keyaccid.html">keyAccid</a>
+                <a href="/guidelines/dev/elements/keyaccid.html">keyAccid</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1937,7 +1937,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/clef.html">clef</a>
+                <a href="/guidelines/dev/elements/clef.html">clef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1957,7 +1957,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/clefgrp.html">clefGrp</a>
+                <a href="/guidelines/dev/elements/clefgrp.html">clefGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1984,7 +1984,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/barline.html">barLine</a>
+                <a href="/guidelines/dev/elements/barline.html">barLine</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2004,7 +2004,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/custos.html">custos</a>
+                <a href="/guidelines/dev/elements/custos.html">custos</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2032,7 +2032,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/accid.html">accid</a>
+                <a href="/guidelines/dev/elements/accid.html">accid</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2051,7 +2051,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/artic.html">artic</a>
+                <a href="/guidelines/dev/elements/artic.html">artic</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2070,7 +2070,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/dot.html">dot</a>
+                <a href="/guidelines/dev/elements/dot.html">dot</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2080,17 +2080,17 @@
     </div>
 </div>
 
-<div id="id_494788000_vrv"></div>
+<div id="id_271026000_vrv"></div>
 
-<pre><code class="xml" id="id_494788000"></code></pre>
+<pre><code class="xml" id="id_271026000"></code></pre>
 
 <script type="text/javascript">
-    $.get( "/mei/dev/accid-03.mei" , function( data ) {
+    $.get( "/guidelines/mei/dev/accid-03.mei" , function( data ) {
         
-        document.getElementById('id_494788000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_494788000'));
+        document.getElementById('id_271026000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_271026000'));
         
-        renderVerovio(data, 'id_494788000_vrv');
+        renderVerovio(data, 'id_271026000_vrv');
     });
 </script>
 
@@ -2101,8 +2101,8 @@
   </h5>
 
 <p>The 
-  <a href="/dev/elements/syl.html" class="link_odd_elementSpec">syl</a> element is used to mark a word or portion of a word that is to be vocally performed. A fuller description of its use is provided in chapter 
-  <a href="/dev/content/lyricsperfdir.html#lyricsSyl">Lyric Syllables</a>.</p>
+  <a href="/guidelines/dev/elements/syl.html" class="link_odd_elementSpec">syl</a> element is used to mark a word or portion of a word that is to be vocally performed. A fuller description of its use is provided in chapter 
+  <a href="/guidelines/dev/content/lyricsperfdir.html#lyricsSyl">Lyric Syllables</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2113,7 +2113,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/syl.html">syl</a>
+                <a href="/guidelines/dev/elements/syl.html">syl</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2140,7 +2140,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/space.html">space</a>
+                <a href="/guidelines/dev/elements/space.html">space</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2152,10 +2152,10 @@
 </div>
 
 <p>In this context, the term ‘space’ is used to mean whitespace that is required to meaningfully align multiple voices in a multi-voice texture. In DARMS these were referred to as ‘push codes’. The 
-  <a href="/dev/elements/space.html" class="link_odd_elementSpec">space</a> element is most often used when a new voice appears on a staff mid-measure.</p>
+  <a href="/guidelines/dev/elements/space.html" class="link_odd_elementSpec">space</a> element is most often used when a new voice appears on a staff mid-measure.</p>
 
 <p>The 
-  <a href="/dev/elements/space.html" class="link_odd_elementSpec">space</a> element may also be used to align material that crosses staves.</p>
+  <a href="/guidelines/dev/elements/space.html" class="link_odd_elementSpec">space</a> element may also be used to align material that crosses staves.</p>
 
 <p>‘Space’ can be thought of as another kind of event. In fact, some refer to this concept as an ‘invisible rest’.</p>
 
@@ -2170,7 +2170,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/pad.html">pad</a>
+                <a href="/guidelines/dev/elements/pad.html">pad</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2181,7 +2181,7 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/pad.html" class="link_odd_elementSpec">pad</a> element is provided in order to capture software-dependent placement information when it is desirable to do so. Unless the MEI file will be used as an intermediate file format, this is usually not necessary.</p>
+  <a href="/guidelines/dev/elements/pad.html" class="link_odd_elementSpec">pad</a> element is provided in order to capture software-dependent placement information when it is desirable to do so. Unless the MEI file will be used as an intermediate file format, this is usually not necessary.</p>
 
 <h4 id="sharedExpressionMarks">2.2.5. Expression Marks
       
@@ -2198,9 +2198,9 @@
   </h5>
 
 <p>All of the following elements can be considered text directives; however, MEI uses the 
-  <a href="/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> element specifically for words, abbreviations, numbers, or symbols specifying or suggesting the manner of performance that are not encoded elsewhere using the more specific elements of 
-  <a href="/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a> and 
-  <a href="/dev/elements/dynam.html" class="link_odd_elementSpec">dynam</a>.</p>
+  <a href="/guidelines/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> element specifically for words, abbreviations, numbers, or symbols specifying or suggesting the manner of performance that are not encoded elsewhere using the more specific elements of 
+  <a href="/guidelines/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a> and 
+  <a href="/guidelines/dev/elements/dynam.html" class="link_odd_elementSpec">dynam</a>.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2211,7 +2211,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/dir.html">dir</a>
+                <a href="/guidelines/dev/elements/dir.html">dir</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2243,7 +2243,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/tempo.html">tempo</a>
+                <a href="/guidelines/dev/elements/tempo.html">tempo</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2254,17 +2254,17 @@
     </div>
 </div>
 
-<div id="id_518298000_vrv"></div>
+<div id="id_294365000_vrv"></div>
 
-<pre><code class="xml" id="id_518298000"></code></pre>
+<pre><code class="xml" id="id_294365000"></code></pre>
 
 <script type="text/javascript">
-    $.get( "/mei/dev/tempo-01.mei" , function( data ) {
+    $.get( "/guidelines/mei/dev/tempo-01.mei" , function( data ) {
         
-        document.getElementById('id_518298000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_518298000'));
+        document.getElementById('id_294365000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_294365000'));
         
-        renderVerovio(data, 'id_518298000_vrv');
+        renderVerovio(data, 'id_294365000_vrv');
     });
 </script>
 
@@ -2285,7 +2285,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/dynam.html">dynam</a>
+                <a href="/guidelines/dev/elements/dynam.html">dynam</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2312,7 +2312,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/phrase.html">phrase</a>
+                <a href="/guidelines/dev/elements/phrase.html">phrase</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2331,7 +2331,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/slur.html">slur</a>
+                <a href="/guidelines/dev/elements/slur.html">slur</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2344,8 +2344,8 @@
 <p>MEI maintains a distinction between phrase marks and slurs, the latter being curved lines over or under a sequence of notes indicating they are to be performed using a particular playing/singing technique, notes that should be taken in a single breath by wind instruments or played by string instruments using a single stroke of the bow. Often, a slur also indicates that the affected notes should be played in a <em>legato</em> manner.</p>
 
 <p>Even so, it is common for both of these concepts to be referred to generically as “slurs”. Therefore, unless one is encoding music from a repertoire in which this distinction is important, the 
-  <a href="/dev/elements/slur.html" class="link_odd_elementSpec">slur</a> element should be preferred over 
-  <a href="/dev/elements/phrase.html" class="link_odd_elementSpec">phrase</a>.</p>
+  <a href="/guidelines/dev/elements/slur.html" class="link_odd_elementSpec">slur</a> element should be preferred over 
+  <a href="/guidelines/dev/elements/phrase.html" class="link_odd_elementSpec">phrase</a>.</p>
 
 <h5 id="sharedOrnaments">2.2.5.5. Ornaments
       
@@ -2364,7 +2364,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/ornam.html">ornam</a>
+                <a href="/guidelines/dev/elements/ornam.html">ornam</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2375,13 +2375,13 @@
 </div>
 
 <p>MEI provides a generic element for encoding an ornament symbol that is not a mordent, turn, or trill. For those common CMN ornaments, please refer to 
-  <a href="/dev/content/cmn.html#cmnOrnaments">Common Music Notation Ornaments</a>.</p>
+  <a href="/guidelines/dev/content/cmn.html#cmnOrnaments">Common Music Notation Ornaments</a>.</p>
 
 <p>Ornaments can be represented as textual strings (e.g. with a Unicode symbol) or with a user defined symbol (for the latter also see 
-  <a href="/dev/content/shared.html#userSymbols">User-defined Symbols</a>).</p>
+  <a href="/guidelines/dev/content/shared.html#userSymbols">User-defined Symbols</a>).</p>
 
 <p>Ornamentsmay also be encoded as so called control events (see also: 
-  <a href="/dev/content/introduction.html#eventsControlevents">Events and Controlevents</a>). That is, they be can linked via their attributes to other events. It is a semantic error not to specify a starting point attribute with either <strong>@tstamp</strong> or <strong>@startid</strong>.</p>
+  <a href="/guidelines/dev/content/introduction.html#eventsControlevents">Events and Controlevents</a>). That is, they be can linked via their attributes to other events. It is a semantic error not to specify a starting point attribute with either <strong>@tstamp</strong> or <strong>@startid</strong>.</p>
 
 <h3 id="sharedCommonAttributes">2.3. Common Attributes
       
@@ -2390,7 +2390,7 @@
   </h3>
 
 <p>The following attributes, all of which are defined in separate attribute classes but are also provided through the 
-  <a href="/dev/attribute-classes/att.common.html">att.common</a> attribute class, are available on nearly all elements in an MEI encoding. They provide e.g. the means to identify, label, or reference elements in MEI-encoded files.</p>
+  <a href="/guidelines/dev/attribute-classes/att.common.html">att.common</a> attribute class, are available on nearly all elements in an MEI encoding. They provide e.g. the means to identify, label, or reference elements in MEI-encoded files.</p>
 
 <h4 id="sharedXmlAttributes">2.3.1. Attributes from the XML-namespace
       
@@ -2399,7 +2399,7 @@
   </h4>
 
 <p>The most general attributes that are very frequently encountered in MEI files are not even native MEI attributes but are coming from the basic definition of XML in the XML-namespace <a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a>. MEI redefines some of them in the 
-  <a href="/dev/attribute-classes/att.basic.html">att.basic</a> class.</p>
+  <a href="/guidelines/dev/attribute-classes/att.basic.html">att.basic</a> class.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2410,7 +2410,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.id.html">@xml---id</a>
+                <a href="/guidelines/dev/attribute-classes/att.id.html">@xml---id</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2455,7 +2455,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.basic.html">@xml---base</a>
+                <a href="/guidelines/dev/attribute-classes/att.basic.html">@xml---base</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2476,7 +2476,7 @@
 </div>
 
 <p>When a reference to an external entity is not a complete URI it is resolved against the current base URI; if not defined by other means this would be the location of the current document. The above example consequently would mean, that the file <code class="language-plaintext highlighter-rouge">myImage.jpg</code> referenced from 
-  <a href="/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> resides at the same location (in the same folder) as the MEI-file.</p>
+  <a href="/guidelines/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> resides at the same location (in the same folder) as the MEI-file.</p>
 
 <p>The <strong>@xml:base</strong> attribute may be used “to specify a base URI other than the base URI of the document or external entity.” (Marsch, Jonathan; Tobin, Richard: XML Base (Second Edition). W3C Recommendation 28 January 2009. online at: <a href="http://www.w3.org/TR/2009/REC-xmlbase-20090128/" class="link_ref">http://www.w3.org/TR/2009/REC-xmlbase-20090128/</a>).</p>
 
@@ -2488,7 +2488,7 @@
 </div>
 
 <p>The value of <strong>@xml:base</strong> can be inherited from an ancestor. This is relevant for resolving relative links or URIs within the document. A comprehensible use case can be illustrated by the following example: the values of the graphic elements’ <strong>@target</strong> attribute can be completed by the <strong>@xml:base</strong> value specified for the ancestor 
-  <a href="/dev/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element:</p>
+  <a href="/guidelines/dev/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -2511,7 +2511,7 @@ http://www.mySite.org/images/myImage.tif
 <p>For more information on <strong>@xml:base</strong> see: <a href="https://www.w3.org/TR/xmlbase/">https://www.w3.org/TR/xmlbase/</a></p>
 
 <p>The <strong>@xml:id</strong> and <strong>@xml:base</strong> attributes are especially important when it comes to linking document fragments to eachother or to external entities. Many of the linking attributes are globally available in MEI through the 
-  <a href="/dev/attribute-classes/att.common.html">att.common</a> attribute class.</p>
+  <a href="/guidelines/dev/attribute-classes/att.common.html">att.common</a> attribute class.</p>
 
 <p>Yet there are other attributes from the XML-Namespace encountered in MEI files.</p>
 
@@ -2524,7 +2524,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.lang.html">@xml---lang</a>
+                <a href="/guidelines/dev/attribute-classes/att.lang.html">@xml---lang</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2545,7 +2545,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.whitespace.html">@xml---space</a>
+                <a href="/guidelines/dev/attribute-classes/att.whitespace.html">@xml---space</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2574,7 +2574,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.labelled.html">@label</a>
+                <a href="/guidelines/dev/attribute-classes/att.labelled.html">@label</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2594,7 +2594,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.nnumberlike.html">@n</a>
+                <a href="/guidelines/dev/attribute-classes/att.nnumberlike.html">@n</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2613,7 +2613,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.ninteger.html">@n</a>
+                <a href="/guidelines/dev/attribute-classes/att.ninteger.html">@n</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2655,7 +2655,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.classed.html">@class</a>
+                <a href="/guidelines/dev/attribute-classes/att.classed.html">@class</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2675,7 +2675,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.typed.html">@type</a>
+                <a href="/guidelines/dev/attribute-classes/att.typed.html">@type</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2701,7 +2701,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.responsibility.html">@resp</a>
+                <a href="/guidelines/dev/attribute-classes/att.responsibility.html">@resp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2728,7 +2728,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@copyof</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@copyof</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2746,7 +2746,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@corresp</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@corresp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2765,7 +2765,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@follows</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@follows</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2784,7 +2784,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@next</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@next</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2802,7 +2802,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@precedes</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@precedes</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2821,7 +2821,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@prev</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@prev</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2839,7 +2839,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@sameas</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@sameas</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2858,7 +2858,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/dev/attribute-classes/att.linking.html">@synch</a>
+                <a href="/guidelines/dev/attribute-classes/att.linking.html">@synch</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2869,7 +2869,7 @@ http://www.mySite.org/images/myImage.tif
 </div>
 
 <p>For a detailed description of linking mechanisms used in MEI also see the section on 
-  <a href="/dev/content/linkingdata.html">Linking Data</a>.</p>
+  <a href="/guidelines/dev/content/linkingdata.html">Linking Data</a>.</p>
 
 <h3 id="userSymbols">2.4. User-defined Symbols
       
@@ -2902,7 +2902,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/anchoredtext.html">anchoredText</a>
+                <a href="/guidelines/dev/elements/anchoredtext.html">anchoredText</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2922,7 +2922,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/curve.html">curve</a>
+                <a href="/guidelines/dev/elements/curve.html">curve</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2942,7 +2942,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/line.html">line</a>
+                <a href="/guidelines/dev/elements/line.html">line</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2962,7 +2962,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/symbol.html">symbol</a>
+                <a href="/guidelines/dev/elements/symbol.html">symbol</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2981,7 +2981,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/symboldef.html">symbolDef</a>
+                <a href="/guidelines/dev/elements/symboldef.html">symbolDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3000,7 +3000,7 @@ http://www.mySite.org/images/myImage.tif
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/dev/elements/symboltable.html">symbolTable</a>
+                <a href="/guidelines/dev/elements/symboltable.html">symbolTable</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -3026,9 +3026,9 @@ http://www.mySite.org/images/myImage.tif
 
 <p>The usersymbols module defines the following model classes:</p>
 
-<p><a href="/dev/model-classes/model.graphicprimitivelike.html">model.graphicprimitiveLike</a></p>
+<p><a href="/guidelines/dev/model-classes/model.graphicprimitivelike.html">model.graphicprimitiveLike</a></p>
 
-<p><a href="/dev/model-classes/model.symboltablelike.html">model.symbolTableLike</a></p>
+<p><a href="/guidelines/dev/model-classes/model.symboltablelike.html">model.symbolTableLike</a></p>
 
 <h4 id="usersymbolsModuleUses">2.4.2. Uses of the Usersymbols Module
       
@@ -3044,12 +3044,12 @@ http://www.mySite.org/images/myImage.tif
 </ol>
 
 <p>For this purpose, it provides three elements as graphic primitives, 
-  <a href="/dev/elements/line.html" class="link_odd_elementSpec">line</a>, 
-  <a href="/dev/elements/curve.html" class="link_odd_elementSpec">curve</a> and 
-  <a href="/dev/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Anywhere these elements are allowed, the 
-  <a href="/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element can be used as well. The 
-  <a href="/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element facilitates the re-use of symbols that were defined by 
-  <a href="/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements.</p>
+  <a href="/guidelines/dev/elements/line.html" class="link_odd_elementSpec">line</a>, 
+  <a href="/guidelines/dev/elements/curve.html" class="link_odd_elementSpec">curve</a> and 
+  <a href="/guidelines/dev/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Anywhere these elements are allowed, the 
+  <a href="/guidelines/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element can be used as well. The 
+  <a href="/guidelines/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element facilitates the re-use of symbols that were defined by 
+  <a href="/guidelines/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements.</p>
 
 <h5 id="usersymbolsReusableSymbols">2.4.2.1. Defining Reusable Symbols
       
@@ -3058,9 +3058,9 @@ http://www.mySite.org/images/myImage.tif
   </h5>
 
 <p>The 
-  <a href="/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> element uses SVG markup or the aforementioned graphic primitives to describe a symbol. A symbol definition may also use symbols defined by other 
-  <a href="/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements by employing the 
-  <a href="/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element.</p>
+  <a href="/guidelines/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> element uses SVG markup or the aforementioned graphic primitives to describe a symbol. A symbol definition may also use symbols defined by other 
+  <a href="/guidelines/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements by employing the 
+  <a href="/guidelines/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element.</p>
 
 <p>The following code snippet shows a definition of a triangle percussion symbol using graphic primitives:</p>
 <div class="sampleCode" data-lang="feasible">
@@ -3074,7 +3074,7 @@ http://www.mySite.org/images/myImage.tif
 
 </div>
 <figure class="figure">
-  <img src="/images/dev/modules/usersymbols/triangle.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/dev/modules/usersymbols/triangle.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendition of the triangle defined above</figcaption>
 </figure>
 
@@ -3089,7 +3089,7 @@ http://www.mySite.org/images/myImage.tif
 
 </div>
 <figure class="figure">
-  <img src="/images/dev/modules/usersymbols/triangleWithStick.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/dev/modules/usersymbols/triangleWithStick.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendition of the composite triangle symbol</figcaption>
 </figure>
 
@@ -3100,18 +3100,18 @@ http://www.mySite.org/images/myImage.tif
   </h5>
 
 <p>The graphics primitives and symbols can be used directly in the music to describe text and lines on a purely graphical level, without implying a specific logical meaning. If possible, however, more meaningful elements should be used. This means for example, “a tempo” or “da capo” should in general not be put inside 
-  <a href="/dev/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Instead, 
-  <a href="/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a> and 
-  <a href="/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> should be used. Likewise, slurs and ties should be encoded using their respective elements, not using 
-  <a href="/dev/elements/curve.html" class="link_odd_elementSpec">curve</a>, and for glissandi, 
-  <a href="/dev/elements/gliss.html" class="link_odd_elementSpec">gliss</a> should be used instead of 
-  <a href="/dev/elements/line.html" class="link_odd_elementSpec">line</a>.</p>
+  <a href="/guidelines/dev/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Instead, 
+  <a href="/guidelines/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a> and 
+  <a href="/guidelines/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> should be used. Likewise, slurs and ties should be encoded using their respective elements, not using 
+  <a href="/guidelines/dev/elements/curve.html" class="link_odd_elementSpec">curve</a>, and for glissandi, 
+  <a href="/guidelines/dev/elements/gliss.html" class="link_odd_elementSpec">gliss</a> should be used instead of 
+  <a href="/guidelines/dev/elements/line.html" class="link_odd_elementSpec">line</a>.</p>
 
 <p>An example usage for 
-  <a href="/dev/elements/line.html" class="link_odd_elementSpec">line</a> is the visualization of voice leading, which is not covered by a specific MEI element.</p>
+  <a href="/guidelines/dev/elements/line.html" class="link_odd_elementSpec">line</a> is the visualization of voice leading, which is not covered by a specific MEI element.</p>
 
 <figure class="figure">
-  <img src="/images/dev/modules/usersymbols/mignon.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/dev/modules/usersymbols/mignon.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Voice leading visualization as found in an Edition Peters print of Album für die Jugend by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number is 10478.)</figcaption>
 </figure>
 
@@ -3159,12 +3159,12 @@ http://www.mySite.org/images/myImage.tif
   </h5>
 
 <p>Usersymbols can define the rendition of different elements in two ways. Some elements, for example 
-  <a href="/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> and 
-  <a href="/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a>, can have user symbol elements as content. In the following example, the content of 
-  <a href="/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> is used to provide pictograms of percussion instruments.</p>
+  <a href="/guidelines/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> and 
+  <a href="/guidelines/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a>, can have user symbol elements as content. In the following example, the content of 
+  <a href="/guidelines/dev/elements/dir.html" class="link_odd_elementSpec">dir</a> is used to provide pictograms of percussion instruments.</p>
 
 <figure class="figure">
-  <img src="/images/dev/modules/usersymbols/percussion.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/dev/modules/usersymbols/percussion.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Indicating percussion instruments using pictograms</figcaption>
 </figure>
 
@@ -3229,7 +3229,7 @@ http://www.mySite.org/images/myImage.tif
 <p>A number of elements can point to an internally-defined symbol for rendering using the <strong>@altsym</strong> attribute.</p>
 
 <figure class="figure">
-  <img src="/images/dev/modules/usersymbols/charpentier.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/dev/modules/usersymbols/charpentier.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Different treble clef renditions as written by Charpentier (source: Journal of Seventeenth-Century Music, Volume 12, No. 1 (2006), figure 3) http://www.sscm-jscm.org/v12/no1/gosine.html</figcaption>
 </figure>
 
@@ -3266,7 +3266,7 @@ http://www.mySite.org/images/myImage.tif
 </div>
 
 <p>Externally-defined symbols may be referenced using a <strong>@glyph.name</strong> or <strong>@glyph.num</strong> attribute from the 
-  <a href="/dev/attribute-classes/att.extsym.html">att.extSym</a> attribute class. Both attributes refer to Standard Music Font Layout (SMuFL) characters, if not specified differently by the <strong>@glyph.auth</strong> and <strong>@glyph.uri</strong> attributes.</p>
+  <a href="/guidelines/dev/attribute-classes/att.extsym.html">att.extSym</a> attribute class. Both attributes refer to Standard Music Font Layout (SMuFL) characters, if not specified differently by the <strong>@glyph.auth</strong> and <strong>@glyph.uri</strong> attributes.</p>
 
 <div class="sampleCode" data-lang="feasible">
 
@@ -3306,7 +3306,7 @@ http://www.mySite.org/images/myImage.tif
   </h5>
 
 <p>There are two types of units used by MEI: Staff units and units of the output coordinate system. Units of the output coordinate system can be translated to physical real world distances by means of the <strong>@vu.height</strong> and <strong>@page.scale</strong> of a 
-  <a href="/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. Real world units are multiplied by the value of <strong>@page.scale</strong> to get the corresponding value in output coordinate units.</p>
+  <a href="/guidelines/dev/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. Real world units are multiplied by the value of <strong>@page.scale</strong> to get the corresponding value in output coordinate units.</p>
 
 <p>If an element is scaled using the <strong>@scale</strong> attribute, the actual size of the units changes accordingly.</p>
 
@@ -3325,7 +3325,7 @@ http://www.mySite.org/images/myImage.tif
 <ol>
   <li>If <strong>@startid</strong> is present, the origin of the referenced element;</li>
   <li>If the element is inside running text (e.g. inside 
-  <a href="/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a>), the end of the preceding text or element;</li>
+  <a href="/guidelines/dev/elements/tempo.html" class="link_odd_elementSpec">tempo</a>), the end of the preceding text or element;</li>
   <li>Otherwise, the origin of the containing element.</li>
 </ol>
 
@@ -3336,17 +3336,17 @@ http://www.mySite.org/images/myImage.tif
 <p>Examples of origins are:</p>
 
 <ul>
-  <li><a href="/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
-  <a href="/dev/elements/layer.html" class="link_odd_elementSpec">layer</a>: The horizontal origin is the starting point of the measure, the vertical one is the bottom staff line;</li>
-  <li><a href="/dev/elements/note.html" class="link_odd_elementSpec">note</a>: The horizontal origin is the left end of the notehead, the vertical one is the center of the notehead;</li>
-  <li><a href="/dev/elements/clef.html" class="link_odd_elementSpec">clef</a>: The horizontal origin is the left end of the clef, the vertical one the line specified by 
-  <a href="/dev/elements/clef.html" class="link_odd_elementSpec">clef</a>/<strong>@line</strong> (or <strong>@clef.line</strong>);</li>
+  <li><a href="/guidelines/dev/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/guidelines/dev/elements/layer.html" class="link_odd_elementSpec">layer</a>: The horizontal origin is the starting point of the measure, the vertical one is the bottom staff line;</li>
+  <li><a href="/guidelines/dev/elements/note.html" class="link_odd_elementSpec">note</a>: The horizontal origin is the left end of the notehead, the vertical one is the center of the notehead;</li>
+  <li><a href="/guidelines/dev/elements/clef.html" class="link_odd_elementSpec">clef</a>: The horizontal origin is the left end of the clef, the vertical one the line specified by 
+  <a href="/guidelines/dev/elements/clef.html" class="link_odd_elementSpec">clef</a>/<strong>@line</strong> (or <strong>@clef.line</strong>);</li>
   <li>For elements containing text: The left end of the baseline;</li>
-  <li><a href="/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a>: As symbol definitions aren’t rendered directly, their coordinate system and origin are considered virtual.</li>
+  <li><a href="/guidelines/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a>: As symbol definitions aren’t rendered directly, their coordinate system and origin are considered virtual.</li>
 </ul>
 
 <p>When they are referenced by 
-  <a href="/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> or <strong>@altsym</strong>, the origin of the context, i.e. the referencing symbol, is used.
+  <a href="/guidelines/dev/elements/symbol.html" class="link_odd_elementSpec">symbol</a> or <strong>@altsym</strong>, the origin of the context, i.e. the referencing symbol, is used.
 If neither absolute nor relative coordinates are specified, determining visually suitable start and end points for <strong>@line</strong> and <strong>@curve</strong> attributes is left to the rendering application. A value of 0 is not always assumed for absent relative coordinates. A typical example where a rendering application may not choose the origins of absent relative start and end coordinates to be the start point as well is the line connecting two notes in the above Schumann example.</p>
 
 <h5 id="usersymbolsCurveShape">2.4.3.4. Curve Shape
@@ -3360,14 +3360,14 @@ If neither absolute nor relative coordinates are specified, determining visually
 <p>The attributes <strong>@bezier</strong> and <strong>@bulge</strong> define the shape of a curve in two different ways. If both are present, a rendering application may choose either one. They override <strong>@curvedir</strong>.</p>
 
 <p><strong>@bezier</strong> defines the inner control points of a cubic Bézier curve, i.e., a Bézier curve with two inner control points. The coordinates are given by a space separated list, first x and y offsets for the first control point, then x and y offsets for the second one. The x and y offsets are given in staff units (or inside the context of 
-  <a href="/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> in abstract units). The offsets for the first inner control point are relative to the start point, the ones for the second inner control point are relative to the end point.</p>
+  <a href="/guidelines/dev/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> in abstract units). The offsets for the first inner control point are relative to the start point, the ones for the second inner control point are relative to the end point.</p>
 
 <p>The <strong>@bulge</strong> attribute allows specification of the curve shape by a number of interpolation points. The interpolation points are given by their distance from the line connecting the start and end point. The distance values are stored as a space separated list.</p>
 
 <p>The interpolation points are calculated as follows: If <strong>@bulge</strong> provides <em>n</em> distance values, the connection line is divided into <em>n+1</em> subsegments of equal length. The interpolation points are found by drawing a perpendicular line of the respective length at each subsegment joint. Positive distance values are drawn to the left of the connection line (left when traveling from start to end), negative ones to the right.</p>
 
 <figure class="figure">
-  <img src="/images/dev/modules/usersymbols/bulge.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/dev/modules/usersymbols/bulge.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendering a bulge attribute with value "-2 1"</figcaption>
 </figure>
 
@@ -3418,7 +3418,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
     <div class="column col-4 hide-md">
 
-        <form action="/dev/content/shared.html">
+        <form action="/guidelines/dev/content/shared.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -3431,7 +3431,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -3439,7 +3439,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -3447,7 +3447,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -3455,7 +3455,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -3463,7 +3463,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -3471,7 +3471,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3603,7 +3603,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-2" href="/dev/content/shared.html#sharedStructuralElements">2.1. Structural Elements
+    <a class="level-2" href="/guidelines/dev/content/shared.html#sharedStructuralElements">2.1. Structural Elements
     </a>
   
 
@@ -3614,7 +3614,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedDocumentElements">2.1.1. Document Root Elements
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedDocumentElements">2.1.1. Document Root Elements
     </a>
   
 
@@ -3625,98 +3625,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedMusicElement">2.1.2. General Music Structure Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedDocumentStructure">2.1.3. Document Layout Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedTextStructure">2.1.4. General Text Structure Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/dev/content/shared.html#sharedMusicalElements">2.2. General Music Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedScoreAndParts">2.2.1. Score and Parts
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedStavesAndLayers">2.2.2. Staves and Layers
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedBasicEvents">2.2.3. Basic Music Events
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedOtherEvents">2.2.4. Other events
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedMusicElement">2.1.2. General Music Structure Elements
     </a>
   
 
@@ -3741,11 +3650,8 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-
-  
-  
-  
-
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedDocumentStructure">2.1.3. Document Layout Elements
+    </a>
   
 
 
@@ -3755,6 +3661,10 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTextStructure">2.1.4. General Text Structure Elements
+    </a>
+  
+
 
   
   
@@ -3762,7 +3672,51 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedExpressionMarks">2.2.5. Expression Marks
+    <a class="level-2" href="/guidelines/dev/content/shared.html#sharedMusicalElements">2.2. General Music Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1. Score and Parts
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedStavesAndLayers">2.2.2. Staves and Layers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedBasicEvents">2.2.3. Basic Music Events
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedOtherEvents">2.2.4. Other events
     </a>
   
 
@@ -3808,198 +3762,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-2" href="/dev/content/shared.html#sharedCommonAttributes">2.3. Common Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedXmlAttributes">2.3.1. Attributes from the XML-namespace
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedLabellingAttributes">2.3.2. Label Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedTypedAttributes">2.3.3. Classification Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedResponsibilityAttributes">2.3.4. Responsibility Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedTypedAttributes">2.3.5. Linking Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/dev/content/shared.html#userSymbols">2.4. User-defined Symbols
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsOverview">2.4.1. Overview of the Usersymbols Module
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsModuleUses">2.4.2. Uses of the Usersymbols Module
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsPositioningCoordinates">2.4.3. Positioning and Coordinates
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsLineRendition">2.4.4. Line Rendition
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsLimitations">2.4.5. Limitations
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedExpressionMarks">2.2.5. Expression Marks
     </a>
   
 
@@ -4045,6 +3808,243 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
+    <a class="level-2" href="/guidelines/dev/content/shared.html#sharedCommonAttributes">2.3. Common Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedXmlAttributes">2.3.1. Attributes from the XML-namespace
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedLabellingAttributes">2.3.2. Label Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTypedAttributes">2.3.3. Classification Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedResponsibilityAttributes">2.3.4. Responsibility Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTypedAttributes">2.3.5. Linking Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/dev/content/shared.html#userSymbols">2.4. User-defined Symbols
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsOverview">2.4.1. Overview of the Usersymbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsModuleUses">2.4.2. Uses of the Usersymbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsPositioningCoordinates">2.4.3. Positioning and Coordinates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsLineRendition">2.4.4. Line Rendition
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsLimitations">2.4.5. Limitations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
 
   
   
@@ -5116,7 +5116,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedTextRendition">9.2.2. Text Rendition
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTextRendition">9.2.2. Text Rendition
     </a>
   
 
@@ -5772,7 +5772,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -5780,7 +5780,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -5788,7 +5788,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -5796,7 +5796,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -5804,7 +5804,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -5812,7 +5812,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -5944,7 +5944,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-2" href="/dev/content/shared.html#sharedStructuralElements">2.1. Structural Elements
+    <a class="level-2" href="/guidelines/dev/content/shared.html#sharedStructuralElements">2.1. Structural Elements
     </a>
   
 
@@ -5955,7 +5955,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedDocumentElements">2.1.1. Document Root Elements
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedDocumentElements">2.1.1. Document Root Elements
     </a>
   
 
@@ -5966,98 +5966,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedMusicElement">2.1.2. General Music Structure Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedDocumentStructure">2.1.3. Document Layout Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedTextStructure">2.1.4. General Text Structure Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/dev/content/shared.html#sharedMusicalElements">2.2. General Music Elements
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedScoreAndParts">2.2.1. Score and Parts
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedStavesAndLayers">2.2.2. Staves and Layers
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedBasicEvents">2.2.3. Basic Music Events
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedOtherEvents">2.2.4. Other events
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedMusicElement">2.1.2. General Music Structure Elements
     </a>
   
 
@@ -6082,11 +5991,8 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-
-  
-  
-  
-
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedDocumentStructure">2.1.3. Document Layout Elements
+    </a>
   
 
 
@@ -6096,6 +6002,10 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTextStructure">2.1.4. General Text Structure Elements
+    </a>
+  
+
 
   
   
@@ -6103,7 +6013,51 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedExpressionMarks">2.2.5. Expression Marks
+    <a class="level-2" href="/guidelines/dev/content/shared.html#sharedMusicalElements">2.2. General Music Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1. Score and Parts
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedStavesAndLayers">2.2.2. Staves and Layers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedBasicEvents">2.2.3. Basic Music Events
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedOtherEvents">2.2.4. Other events
     </a>
   
 
@@ -6149,198 +6103,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-2" href="/dev/content/shared.html#sharedCommonAttributes">2.3. Common Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedXmlAttributes">2.3.1. Attributes from the XML-namespace
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedLabellingAttributes">2.3.2. Label Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedTypedAttributes">2.3.3. Classification Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedResponsibilityAttributes">2.3.4. Responsibility Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#sharedTypedAttributes">2.3.5. Linking Attributes
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/dev/content/shared.html#userSymbols">2.4. User-defined Symbols
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsOverview">2.4.1. Overview of the Usersymbols Module
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsModuleUses">2.4.2. Uses of the Usersymbols Module
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsPositioningCoordinates">2.4.3. Positioning and Coordinates
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsLineRendition">2.4.4. Line Rendition
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/dev/content/shared.html#usersymbolsLimitations">2.4.5. Limitations
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedExpressionMarks">2.2.5. Expression Marks
     </a>
   
 
@@ -6386,6 +6149,243 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
+    <a class="level-2" href="/guidelines/dev/content/shared.html#sharedCommonAttributes">2.3. Common Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedXmlAttributes">2.3.1. Attributes from the XML-namespace
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedLabellingAttributes">2.3.2. Label Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTypedAttributes">2.3.3. Classification Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedResponsibilityAttributes">2.3.4. Responsibility Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTypedAttributes">2.3.5. Linking Attributes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/dev/content/shared.html#userSymbols">2.4. User-defined Symbols
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsOverview">2.4.1. Overview of the Usersymbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsModuleUses">2.4.2. Uses of the Usersymbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsPositioningCoordinates">2.4.3. Positioning and Coordinates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsLineRendition">2.4.4. Line Rendition
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/dev/content/shared.html#usersymbolsLimitations">2.4.5. Limitations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
 
   
   
@@ -7457,7 +7457,7 @@ If neither absolute nor relative coordinates are specified, determining visually
 
   
 
-    <a class="level-3" href="/dev/content/shared.html#sharedTextRendition">9.2.2. Text Rendition
+    <a class="level-3" href="/guidelines/dev/content/shared.html#sharedTextRendition">9.2.2. Text Rendition
     </a>
   
 

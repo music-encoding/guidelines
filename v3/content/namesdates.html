@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/namesdates.html">
+          <form action="/guidelines/v3/content/namesdates.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -127,16 +127,16 @@
   </h2>
 
 <p>This chapter describes the MEI module used for the encoding of names (names of persons or corporations/organizations) or descriptive phrases for styles, periods or geographical indications. In section 
-  <a href="/v3/content/shared.html#sharedNamesNumbersDates">Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the elements provided in the core module allow an encoder to specify that a given text segment is a proper noun. The elements provided by the present module allow the encoder to supply a detailed sub-structure for such proper nouns, and to distinguish explicitly between persons and organizations, and between stylistic, periodical or geographical indications.</p>
+  <a href="/guidelines/v3/content/shared.html#sharedNamesNumbersDates">Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the elements provided in the core module allow an encoder to specify that a given text segment is a proper noun. The elements provided by the present module allow the encoder to supply a detailed sub-structure for such proper nouns, and to distinguish explicitly between persons and organizations, and between stylistic, periodical or geographical indications.</p>
 
 <p>The chapter begins by discussing the elements provided for the encoding of names (
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a>) and dates (
-  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a>) in general and finishes by addressing more specific elements for corporate names (
-  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a>), geographic names (
-  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a>), period names (
-  <a href="/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a>), personal names (
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>) and style names (
-  <a href="/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a>). In general it is recommended to use standardized forms of proper nouns and to record the names and web-accessible locations of the controlled vocabularies used. There are several commonly-referenced authority files, especially for geographical, organizational and personal names, such as the Gemeinsame Normdatei (GND), the Library of Congress Authorities, the Getty Thesaurus of Geographic Names (TGN), and the MARC code list for relators. Recommendations on which standards could be used can be found in the descriptions of the individual elements.</p>
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a>) and dates (
+  <a href="/guidelines/v3/elements/date.html" class="link_odd_elementSpec">date</a>) in general and finishes by addressing more specific elements for corporate names (
+  <a href="/guidelines/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a>), geographic names (
+  <a href="/guidelines/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a>), period names (
+  <a href="/guidelines/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a>), personal names (
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>) and style names (
+  <a href="/guidelines/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a>). In general it is recommended to use standardized forms of proper nouns and to record the names and web-accessible locations of the controlled vocabularies used. There are several commonly-referenced authority files, especially for geographical, organizational and personal names, such as the Gemeinsame Normdatei (GND), the Library of Congress Authorities, the Getty Thesaurus of Geographic Names (TGN), and the MARC code list for relators. Recommendations on which standards could be used can be found in the descriptions of the individual elements.</p>
 
 <h3 id="namesdatesBasic">17.1. Basic Elements for Names and Dates
       
@@ -153,7 +153,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/name.html">name</a>
+                <a href="/guidelines/v3/elements/name.html">name</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -172,7 +172,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/date.html">date</a>
+                <a href="/guidelines/v3/elements/date.html">date</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -183,15 +183,15 @@
 </div>
 
 <p>The 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element contains the name of an entity that is difficult to tag more specifically as a 
-  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a>, 
-  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a>, 
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>, or 
-  <a href="/v3/elements/title.html" class="link_odd_elementSpec">title</a>. In section 
-  <a href="/v3/content/shared.html#sharedNamesNumbersDates">Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element may be used in place of the more specific elements when it is not known what kind of name is being described or when a high degree of precision is not necessary. For example, the 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element might be used when it is not clear whether the name “Bach” refers to a person or a geographic feature. When name parts are needed, use 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements. The recommended values for the <strong>@type</strong> attribute are:</p>
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> element contains the name of an entity that is difficult to tag more specifically as a 
+  <a href="/guidelines/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a>, 
+  <a href="/guidelines/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a>, 
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>, or 
+  <a href="/guidelines/v3/elements/title.html" class="link_odd_elementSpec">title</a>. In section 
+  <a href="/guidelines/v3/content/shared.html#sharedNamesNumbersDates">Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the 
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> element may be used in place of the more specific elements when it is not known what kind of name is being described or when a high degree of precision is not necessary. For example, the 
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> element might be used when it is not clear whether the name “Bach” refers to a person or a geographic feature. When name parts are needed, use 
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements. The recommended values for the <strong>@type</strong> attribute are:</p>
 
 <p class="gloss"><strong>‘pers’</strong>: a personal name</p>
 
@@ -202,10 +202,10 @@
 <p class="gloss"><strong>‘process’</strong>: the name of a process or mechanical agent</p>
 
 <p>The date sub-element is available within 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the authority attribute.</p>
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the authority attribute.</p>
 
 <p>Examples of the use of the 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element:</p>
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> element:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -218,7 +218,7 @@
 </div>
 
 <p>The element 
-  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a> contains a date in any format, including a date range. A date range may be expressed as textual content or, when intervening punctuation is present, as a combination of date sub-elements and text.</p>
+  <a href="/guidelines/v3/elements/date.html" class="link_odd_elementSpec">date</a> contains a date in any format, including a date range. A date range may be expressed as textual content or, when intervening punctuation is present, as a combination of date sub-elements and text.</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -234,7 +234,7 @@
 </div>
 
 <p>To be more specific about the date, the attributes in the 
-  <a href="/v3/attribute-classes/att.datable.html">att.datable</a> class can be used:</p>
+  <a href="/guidelines/v3/attribute-classes/att.datable.html">att.datable</a> class can be used:</p>
 
 <p class="gloss"><strong>startdate</strong>: contains the starting point of a date range in standard ISO form</p>
 
@@ -265,8 +265,8 @@
   </h3>
 
 <p>In addition to the generic 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> and 
-  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a> elements provided by the shared module, the namesDates module provides for the markup of the specialized cases described below.</p>
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> and 
+  <a href="/guidelines/v3/elements/date.html" class="link_odd_elementSpec">date</a> elements provided by the shared module, the namesDates module provides for the markup of the specialized cases described below.</p>
 
 <h4 id="namesdatesCorpNames">17.2.1. Corporate Names
       
@@ -281,7 +281,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/corpname.html">corpName</a>
+                <a href="/guidelines/v3/elements/corpname.html">corpName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -295,9 +295,9 @@ entity.</div>
 <p>Corporate names are non-personal names which refer to structured bodies of one or more persons that act as a single entity. Typical examples include associations, businesses, projects or institutions (e.g.,. ‘the Royal College of Music’ or ‘the BBC’), but also racial or ethnic groupings or political factions where these are regarded as forming a single agency. Organization names typically include some type of indicator or pattern or words that help identify them as non-personal names.</p>
 
 <p>The 
-  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> element is frequently used within the 
-  <a href="/v3/content/header.html">The MEI Header</a> of an MEI document. It is typically found in the 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element:</p>
+  <a href="/guidelines/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> element is frequently used within the 
+  <a href="/guidelines/v3/content/header.html">The MEI Header</a> of an MEI document. It is typically found in the 
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -327,7 +327,7 @@ entity.</div>
 </div>
 
 <p>When it is necessary to provide structure for a name, the separate parts of the name may be encoded in 
-  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> sub-elements, for example:</p>
+  <a href="/guidelines/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> sub-elements, for example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -359,7 +359,7 @@ entity.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/geogname.html">geogName</a>
+                <a href="/guidelines/v3/elements/geogname.html">geogName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -387,7 +387,7 @@ political jurisdiction.</div>
 </div>
 
 <p>Geographic name sub-parts may be encoded in 
-  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> sub-elements. For example:</p>
+  <a href="/guidelines/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> sub-elements. For example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -426,7 +426,7 @@ political jurisdiction.</div>
 </div>
 
 <p>The names of places given within addresses can be marked with 
-  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements, for example:</p>
+  <a href="/guidelines/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements, for example:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -457,7 +457,7 @@ political jurisdiction.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/periodname.html">periodName</a>
+                <a href="/guidelines/v3/elements/periodname.html">periodName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -470,7 +470,7 @@ period'.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a> element is for names which describe a particular period of time, for example, those which characterize obvious similarities in style, such as ‘Baroque’ or ‘3rd Style Period’:</p>
+  <a href="/guidelines/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a> element is for names which describe a particular period of time, for example, those which characterize obvious similarities in style, such as ‘Baroque’ or ‘3rd Style Period’:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -480,7 +480,7 @@ period'.</div>
 </div>
 
 <p>The date sub-element is available within 
-  <a href="/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a> in order to record any dates associated with the name that should be captured in the text, for example, start and end dates of the named period:</p>
+  <a href="/guidelines/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a> in order to record any dates associated with the name that should be captured in the text, for example, start and end dates of the named period:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -522,7 +522,7 @@ period'.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/persname.html">persName</a>
+                <a href="/guidelines/v3/elements/persname.html">persName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -534,8 +534,8 @@ individual's forenames, surnames, honorific titles, and added names.</div>
 </div>
 
 <p>Personal names within an MEI document may simply be marked with the 
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element containing a proper noun or proper noun phrase referring to an individual. Personal names, however, often consist of several components, like forenames and surnames, but also other components, such as inherited or life-time titles of nobility, honorific or academic prefixes, military ranks or traditional descriptive phrases. These components may be marked using 
-  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements, the function of which may be indicated using the <strong>@type</strong> attribute. In this case, <strong>@type</strong> attribute may take the following values:</p>
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element containing a proper noun or proper noun phrase referring to an individual. Personal names, however, often consist of several components, like forenames and surnames, but also other components, such as inherited or life-time titles of nobility, honorific or academic prefixes, military ranks or traditional descriptive phrases. These components may be marked using 
+  <a href="/guidelines/v3/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements, the function of which may be indicated using the <strong>@type</strong> attribute. In this case, <strong>@type</strong> attribute may take the following values:</p>
 
 <p class="gloss"><strong>‘forename’</strong>: contains a forename, given or baptismal name.</p>
 
@@ -568,13 +568,13 @@ individual's forenames, surnames, honorific titles, and added names.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element is often enclosed in the 
-  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element which may occur within 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a>, 
-  <a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a>, 
-  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> and 
-  <a href="/v3/elements/change.html" class="link_odd_elementSpec">change</a>. This usage of the 
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element typical looks like this:</p>
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element is often enclosed in the 
+  <a href="/guidelines/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element which may occur within 
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a>, 
+  <a href="/guidelines/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a>, 
+  <a href="/guidelines/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> and 
+  <a href="/guidelines/v3/elements/change.html" class="link_odd_elementSpec">change</a>. This usage of the 
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element typical looks like this:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -593,7 +593,7 @@ individual's forenames, surnames, honorific titles, and added names.</div>
 </div>
 
 <p>Apart from the composer or originator of a musical work, however, there could be many other persons involved in the genesis of a musical work, such as librettists, lyricists, arrangers, editors, transcribers, printers, publishers, etc. The special roles of these persons may be marked using the <strong>@role</strong> attribute on 
-  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>. For example:</p>
+  <a href="/guidelines/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>. For example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -634,7 +634,7 @@ individual's forenames, surnames, honorific titles, and added names.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/stylename.html">styleName</a>
+                <a href="/guidelines/v3/elements/stylename.html">styleName</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -651,7 +651,7 @@ as
 <p>“In the discussion of music, which is orientated towards relationships rather than meanings, the term raises special difficulties; it may be used to denote music characterized of an individual composer, of a period, of a geographical area or center, or of a society or social function. For the aesthetician style concerns surface or appearance, though in music appearance and essence are ultimately inseparable. For the historian a style is a distinguishing and ordering concept, both consistent of and denoting generalities; he or she groups examples of music according to similarities between them.” (Source: “Style”, Grove Music Online, accessed: April 27, 2012)</p>
 
 <p>The name of a musical style can be marked by the 
-  <a href="/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a> element, for example:</p>
+  <a href="/guidelines/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a> element, for example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -672,7 +672,7 @@ as
 </div>
 
 <p>or to record a style of a certain epoch by using the 
-  <a href="/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a> sub-element:</p>
+  <a href="/guidelines/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a> sub-element:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -692,8 +692,8 @@ as
 </ul>
 
 <p>Musical forms and genres must be distinguished from musical style. Form and genre are typically indicated using the 
-  <a href="/v3/elements/classification.html" class="link_odd_elementSpec">classification</a> element, described in chapter 
-  <a href="/v3/content/header.html#headerWorkClass">Classification</a>.</p>
+  <a href="/guidelines/v3/elements/classification.html" class="link_odd_elementSpec">classification</a> element, described in chapter 
+  <a href="/guidelines/v3/content/header.html#headerWorkClass">Classification</a>.</p>
 
 
 
@@ -701,7 +701,7 @@ as
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/namesdates.html">
+        <form action="/guidelines/v3/content/namesdates.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -714,7 +714,7 @@ as
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -722,7 +722,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -730,7 +730,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -738,7 +738,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -746,7 +746,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -754,7 +754,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2139,7 +2139,7 @@ as
 
   
 
-    <a class="level-2" href="/v3/content/namesdates.html#namesdatesBasic">17.1. Basic Elements for Names and Dates
+    <a class="level-2" href="/guidelines/v3/content/namesdates.html#namesdatesBasic">17.1. Basic Elements for Names and Dates
     </a>
   
 
@@ -2150,7 +2150,7 @@ as
 
   
 
-    <a class="level-2" href="/v3/content/namesdates.html#namesdatesSpecialized">17.2. Specialized Name and Date Elements
+    <a class="level-2" href="/guidelines/v3/content/namesdates.html#namesdatesSpecialized">17.2. Specialized Name and Date Elements
     </a>
   
 
@@ -2161,7 +2161,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesCorpNames">17.2.1. Corporate Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesCorpNames">17.2.1. Corporate Names
     </a>
   
 
@@ -2172,7 +2172,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesGeogNames">17.2.2. Geographic Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesGeogNames">17.2.2. Geographic Names
     </a>
   
 
@@ -2183,7 +2183,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPeriodNames">17.2.3. Time Period Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesPeriodNames">17.2.3. Time Period Names
     </a>
   
 
@@ -2194,7 +2194,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPersNames">17.2.4. Personal Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesPersNames">17.2.4. Personal Names
     </a>
   
 
@@ -2205,7 +2205,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesStyleNames">17.2.5. Style Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesStyleNames">17.2.5. Style Names
     </a>
   
 
@@ -2462,7 +2462,7 @@ as
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2470,7 +2470,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2478,7 +2478,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2486,7 +2486,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2494,7 +2494,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2502,7 +2502,7 @@ as
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3887,7 +3887,7 @@ as
 
   
 
-    <a class="level-2" href="/v3/content/namesdates.html#namesdatesBasic">17.1. Basic Elements for Names and Dates
+    <a class="level-2" href="/guidelines/v3/content/namesdates.html#namesdatesBasic">17.1. Basic Elements for Names and Dates
     </a>
   
 
@@ -3898,7 +3898,7 @@ as
 
   
 
-    <a class="level-2" href="/v3/content/namesdates.html#namesdatesSpecialized">17.2. Specialized Name and Date Elements
+    <a class="level-2" href="/guidelines/v3/content/namesdates.html#namesdatesSpecialized">17.2. Specialized Name and Date Elements
     </a>
   
 
@@ -3909,7 +3909,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesCorpNames">17.2.1. Corporate Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesCorpNames">17.2.1. Corporate Names
     </a>
   
 
@@ -3920,7 +3920,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesGeogNames">17.2.2. Geographic Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesGeogNames">17.2.2. Geographic Names
     </a>
   
 
@@ -3931,7 +3931,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPeriodNames">17.2.3. Time Period Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesPeriodNames">17.2.3. Time Period Names
     </a>
   
 
@@ -3942,7 +3942,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPersNames">17.2.4. Personal Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesPersNames">17.2.4. Personal Names
     </a>
   
 
@@ -3953,7 +3953,7 @@ as
 
   
 
-    <a class="level-3" href="/v3/content/namesdates.html#namesdatesStyleNames">17.2.5. Style Names
+    <a class="level-3" href="/guidelines/v3/content/namesdates.html#namesdatesStyleNames">17.2.5. Style Names
     </a>
   
 

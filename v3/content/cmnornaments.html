@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/cmnornaments.html">
+          <form action="/guidelines/v3/content/cmnornaments.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -139,8 +139,8 @@
   </h3>
 
 <p>When encoding CMN, ornaments should be encoded within a 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following the 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements, and connected to events on the staff via attributes. The <strong>@startid</strong> attribute is used to refer to the <strong>@xml:id</strong> of the starting note. Additionally, if the ornament involves more than one events on the staff, the <strong>@endid</strong> attribute can be used to anchor the ornament to a concluding event.</p>
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following the 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements, and connected to events on the staff via attributes. The <strong>@startid</strong> attribute is used to refer to the <strong>@xml:id</strong> of the starting note. Additionally, if the ornament involves more than one events on the staff, the <strong>@endid</strong> attribute can be used to anchor the ornament to a concluding event.</p>
 
 <p>The following example demonstrates the encoding of an inverted mordent over a middle C:</p>
 
@@ -159,7 +159,7 @@
 </div>
 
 <p>Alternatively, the relationship of an ornament to a note can be expressed in terms of beats with the attribute <strong>@tstamp</strong>. If the ornament involves more than one event on the staff, the <strong>@tstamp2</strong> attribute can be used to indicate the ending time stamp, as is explained in section 
-  <a href="/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a>. These methods may also be utilized simultaneously.</p>
+  <a href="/guidelines/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a>. These methods may also be utilized simultaneously.</p>
 
 <p>The following example shows the use of <strong>@tstamp</strong> for an ornament. Assuming that the following measure is in 2/2, the ornament (in this case, a mordent) is related to the note on the second beat.</p>
 
@@ -189,10 +189,10 @@
 <p>The symbols and sounded resolutions suggested for each ornament in this chapter are to be considered defaults. Nevertheless, because of the great historical and geographical variance in the notation of ornaments, the encoder is given methods to override the default resolutions.</p>
 
 <p>It is possible, for example, to specify in the 
-  <a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> a new default sounded resolution for an ornament. As discussed in the section 
-  <a href="/v3/content/header.html#headerEncodingDescription">Encoding Description</a>, the element 
-  <a href="/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a> holds a description (optional, but recommended) of the methods and editorial principles which govern the transcription or encoding of the source material. Let us take a trill as an example. The section regarding 
-  <a href="/v3/content/cmnornaments.html#cmnOrnamentsTrills">Trills</a> does not set a specific number of alternations between the principal and secondary notes; the encoder, however, may specify an exact number in the encoding description.</p>
+  <a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> a new default sounded resolution for an ornament. As discussed in the section 
+  <a href="/guidelines/v3/content/header.html#headerEncodingDescription">Encoding Description</a>, the element 
+  <a href="/guidelines/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a> holds a description (optional, but recommended) of the methods and editorial principles which govern the transcription or encoding of the source material. Let us take a trill as an example. The section regarding 
+  <a href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTrills">Trills</a> does not set a specific number of alternations between the principal and secondary notes; the encoder, however, may specify an exact number in the encoding description.</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -205,15 +205,15 @@
 </div>
 
 <p>Alternatively, resolutions can be defined on a case-by-case basis by encoding a specific resolution using the 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element. See the section 
-  <a href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">Special Cases</a> below for an example of a specific resolution of a trill.</p>
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element. See the section 
+  <a href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">Special Cases</a> below for an example of a specific resolution of a trill.</p>
 
 <h3 id="cmnOrnamentsMordents">8.2. Mordents
       
   </h3>
 
 <p>A mordent is an ornament that involves an auxiliary note a step above or below the principal note. The presence of a mordent is encoded with the 
-  <a href="/v3/elements/mordent.html" class="link_odd_elementSpec">mordent</a> element and its attributes:</p>
+  <a href="/guidelines/v3/elements/mordent.html" class="link_odd_elementSpec">mordent</a> element and its attributes:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -224,7 +224,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/mordent.html">mordent</a>
+                <a href="/guidelines/v3/elements/mordent.html">mordent</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -245,7 +245,7 @@ a step below, but sometimes a step above.
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.mordent.log.html">@form</a>
+                <a href="/guidelines/v3/attribute-classes/att.mordent.log.html">@form</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -267,7 +267,7 @@ about which visual symbol is actually to be rendered.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.mordent.log.html">@long</a>
+                <a href="/guidelines/v3/attribute-classes/att.mordent.log.html">@long</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -287,7 +287,7 @@ notes, is indicated.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
+                <a href="/guidelines/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -305,7 +305,7 @@ notes, is indicated.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
+                <a href="/guidelines/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -326,7 +326,7 @@ notes, is indicated.</div>
 <p>The following example demonstrates the encoding of simple mordents:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_mordent.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_mordent.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of simple mordent</figcaption>
 </figure>
 
@@ -350,7 +350,7 @@ notes, is indicated.</div>
 <p>Occasionally, mordents can be longer, employing five notes instead of three. The <strong>@long</strong> attribute can be used to identify mordents of this type. The following example shows the encoding of a long mordent:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of a long mordent</figcaption>
 </figure>
 
@@ -376,7 +376,7 @@ notes, is indicated.</div>
   </h3>
 
 <p>Trills are a type of ornament that consists of a rapid alternation of a note with one a semitone or tone above. A trill is encoded with the 
-  <a href="/v3/elements/trill.html" class="link_odd_elementSpec">trill</a> element and its attributes:</p>
+  <a href="/guidelines/v3/elements/trill.html" class="link_odd_elementSpec">trill</a> element and its attributes:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -387,7 +387,7 @@ notes, is indicated.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/trill.html">trill</a>
+                <a href="/guidelines/v3/elements/trill.html">trill</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -407,7 +407,7 @@ above).</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
+                <a href="/guidelines/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -425,7 +425,7 @@ above).</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
+                <a href="/guidelines/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -440,7 +440,7 @@ above).</div>
 <p>The following example demonstrates the encoding of simple trills:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_tr.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_tr.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of simple trills.</figcaption>
 </figure>
 
@@ -468,7 +468,7 @@ above).</div>
 <p>It has been specified earlier that it is a semantic error not to encode a starting event or time stamp for an ornament. This starting point of a trill can be expressed with the <strong>@startid</strong> attribute and/or with the <strong>@tstamp</strong> attribute. Specifying the end point is not required, although the <strong>@tstamp2</strong> attribute can be used to indicate the use of a wavy line extender as shown in this example:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of trills followed by wavy lines.</figcaption>
 </figure>
 
@@ -502,7 +502,7 @@ above).</div>
 <p>Chromatic alterations of auxiliary notes are occasionally expressed on the staff using small notes enclosed in parentheses, as shown in the example below. However, the attribute <strong>@accidupper</strong> is still to be used to encode the alteration. Display of the auxiliary note in this ‘cautionary’ manner is left to down-stream rendering processes.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example alterations expressed on the staff.</figcaption>
 </figure>
 
@@ -521,13 +521,13 @@ above).</div>
 </div>
 
 <p>Some trills may be introduced by a turn or followed by an inverted turn leading to the next note (see Le garzantine, Musica 2003, p. 911). In such cases, the trill is encoded as in previous examples and associated with the principal note. Starting or concluding turns are notated on the staff (in 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>) as 
-  <a href="/v3/content/cmn.html#cmnNotesGrace">Grace Notes</a>.</p>
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>) as 
+  <a href="/guidelines/v3/content/cmn.html#cmnNotesGrace">Grace Notes</a>.</p>
 
 <p>The following example, from a keyboard sonata by Joseph Haydn, shows a trill with concluding grace notes:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
 </figure>
 
@@ -555,12 +555,12 @@ above).</div>
   </h4>
 
 <p>Symbols and abbreviations for trills have changed and evolved considerably throughout history. Strategies to clarify the encoding and interpretation of ornaments have been discussed in section 
-  <a href="/v3/content/cmnornaments.html#cmnOrnamentsOverride">Overriding Default Resolutions</a> above. However, in order to aid the encoder in making educated choices in the encoding of non-standard trills, this section shows two examples diverging from modern standard use.</p>
+  <a href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsOverride">Overriding Default Resolutions</a> above. However, in order to aid the encoder in making educated choices in the encoding of non-standard trills, this section shows two examples diverging from modern standard use.</p>
 
 <p>The abbreviation “tr” followed by a wavy line spanning multiple notes is sometimes used to indicate multiple trills:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of multiple trills.</figcaption>
 </figure>
 
@@ -608,9 +608,9 @@ above).</div>
 </div>
 
 <p>However, when it is necessary to support multiple outputs, use of the 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element and appropriate sub-elements is recommended. In this case, the 
-  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> and 
-  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> elements can be used to represent the original source and a regularization provided by the editor, respectively:</p>
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element and appropriate sub-elements is recommended. In this case, the 
+  <a href="/guidelines/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> and 
+  <a href="/guidelines/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> elements can be used to represent the original source and a regularization provided by the editor, respectively:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -632,12 +632,12 @@ above).</div>
 <p>Another situation that requires disambiguation of an ornament’s name and its potential rendition is due to the fact that the symbols for trills and mordents have been often used interchangeably in the past. The following example, taken from <em>Klavierbüchlein für Wilhelm Friedemann Bach</em> (1720), shows a trill (Trillo) identified by the symbol associated with a mordent in modern practice. Nonetheless, J.S. Bach’s suggested resolution should be encoded with a variant of the procedure presented above.</p>
 
 <p>In the example below, the child elements of 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a>; that is, 
-  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> and 
-  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a>, represent non-exclusive options; that is, both may be processed by applications that aim to support both visual and aural renditions.</p>
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a>; that is, 
+  <a href="/guidelines/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> and 
+  <a href="/guidelines/v3/elements/reg.html" class="link_odd_elementSpec">reg</a>, represent non-exclusive options; that is, both may be processed by applications that aim to support both visual and aural renditions.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Trill transcribed from J.S. Bach's "Klavierbüchlein für Wilhelm Friedemann Bach" (1720)</figcaption>
 </figure>
 
@@ -701,8 +701,8 @@ above).</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> element contains the single-note-with-trill transcription of the original text, while the 
-  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> element represents the realization-without-trill version.</p>
+  <a href="/guidelines/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> element contains the single-note-with-trill transcription of the original text, while the 
+  <a href="/guidelines/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> element represents the realization-without-trill version.</p>
 
 <p>This approach facilitates substitution of the realization of the trill for the original written note (as well as the opposite procedure) and is therefore the recommended markup for applications where exchange of this kind is desirable.</p>
 
@@ -713,7 +713,7 @@ above).</div>
 <p>A turn is an ornament that typically consists of four notes: the upper neighbor of the principal note, the principal note, the lower neighbor, and the principal note again.</p>
 
 <p>The presence of a turn is encoded with the 
-  <a href="/v3/elements/turn.html" class="link_odd_elementSpec">turn</a> element and its attributes:</p>
+  <a href="/guidelines/v3/elements/turn.html" class="link_odd_elementSpec">turn</a> element and its attributes:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -724,7 +724,7 @@ above).</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.turn.log.html">@form</a>
+                <a href="/guidelines/v3/attribute-classes/att.turn.log.html">@form</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -742,7 +742,7 @@ above).</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.turn.log.html">@delayed</a>
+                <a href="/guidelines/v3/attribute-classes/att.turn.log.html">@delayed</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -762,7 +762,7 @@ the beat. See Read, p. 246.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
+                <a href="/guidelines/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -780,7 +780,7 @@ the beat. See Read, p. 246.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
+                <a href="/guidelines/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -801,7 +801,7 @@ the beat. See Read, p. 246.</div>
 <p>The following example shows the encoding of a simple turn:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_turn.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_turn.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of a simple turn.</figcaption>
 </figure>
 
@@ -827,7 +827,7 @@ the beat. See Read, p. 246.</div>
 <p>The following example from Beethoven’s piano sonata no. 1 in F minor, op. 2, no. 1, mvmt. 2 demonstrates the encoding of turns with the <strong>@delayed</strong> attribute. Note that the <strong>@tstamp</strong> attribute indicates the actual starting point in time, while <strong>@startid</strong> points to the principal note.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Delayed turn.</figcaption>
 </figure>
 
@@ -854,15 +854,15 @@ the beat. See Read, p. 246.</div>
   </h3>
 
 <p>CMN ornaments that are not mordents, trills, or turns can be encoded with a generic 
-  <a href="/v3/elements/ornam.html" class="link_odd_elementSpec">ornam</a>.</p>
+  <a href="/guidelines/v3/elements/ornam.html" class="link_odd_elementSpec">ornam</a>.</p>
 
 <p>This element allows the encoder to represent ornaments as textual strings (e.g. with a Unicode symbol) or with a user defined symbol. Chromatic auxiliaries can be represented with <strong>@accidlower</strong> and <strong>@accidupper</strong>. The 
-  <a href="/v3/elements/ornam.html" class="link_odd_elementSpec">ornam</a> element can also be a control element. That is, it can be linked via its attributes to other events. The starting point of the directive may be indicated by either a tstamp, tstamp.ges, tstamp.real or startid attribute, while the ending point may be recorded by either a tstamp2, dur, dur.ges or endid attribute. It is a semantic error not to specify a starting point attribute.</p>
+  <a href="/guidelines/v3/elements/ornam.html" class="link_odd_elementSpec">ornam</a> element can also be a control element. That is, it can be linked via its attributes to other events. The starting point of the directive may be indicated by either a tstamp, tstamp.ges, tstamp.real or startid attribute, while the ending point may be recorded by either a tstamp2, dur, dur.ges or endid attribute. It is a semantic error not to specify a starting point attribute.</p>
 
 <p>For example, Johann Sebastian Bach used non-standard ornaments in the <em>Klavierbüchlein für Wilhelm Friedemann Bach</em>:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm Friedemann Bach</figcaption>
 </figure>
 
@@ -876,7 +876,7 @@ the beat. See Read, p. 246.</div>
 </div>
 
 <p>A resolution, or expansion of the ornament can be provided as discussed in 
-  <a href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">Special Cases</a> below.</p>
+  <a href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">Special Cases</a> below.</p>
 
 <h3 id="cmnOrnamentsMultiple">8.6. Ornaments in Combinations
       
@@ -887,7 +887,7 @@ the beat. See Read, p. 246.</div>
 <p>The following example from C.P.E. Bach’s sonata W.62/1 shows a turn followed by a inverted mordent:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmnOrnaments/ex_multi_orn.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmnOrnaments/ex_multi_orn.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of multiple ornaments. From C.P.E. Bach's sonata W.62/1.</figcaption>
 </figure>
 
@@ -925,7 +925,7 @@ the beat. See Read, p. 246.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/cmnornaments.html">
+        <form action="/guidelines/v3/content/cmnornaments.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -938,7 +938,7 @@ the beat. See Read, p. 246.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -946,7 +946,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -954,7 +954,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -962,7 +962,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -970,7 +970,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -978,7 +978,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1957,7 +1957,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsAll">8.1. Encoding Common To All Ornaments
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsAll">8.1. Encoding Common To All Ornaments
     </a>
   
 
@@ -1968,7 +1968,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsOverride">8.1.1. Overriding Default Resolutions
+    <a class="level-3" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsOverride">8.1.1. Overriding Default Resolutions
     </a>
   
 
@@ -1979,7 +1979,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMordents">8.2. Mordents
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsMordents">8.2. Mordents
     </a>
   
 
@@ -1990,7 +1990,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTrills">8.3. Trills
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTrills">8.3. Trills
     </a>
   
 
@@ -2001,7 +2001,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">8.3.1. Special Cases
+    <a class="level-3" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">8.3.1. Special Cases
     </a>
   
 
@@ -2012,7 +2012,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTurns">8.4. Turns
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTurns">8.4. Turns
     </a>
   
 
@@ -2023,7 +2023,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsOther">8.5. Other Ornaments
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsOther">8.5. Other Ornaments
     </a>
   
 
@@ -2034,7 +2034,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMultiple">8.6. Ornaments in Combinations
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsMultiple">8.6. Ornaments in Combinations
     </a>
   
 
@@ -2690,7 +2690,7 @@ the beat. See Read, p. 246.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2698,7 +2698,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2706,7 +2706,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2714,7 +2714,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2722,7 +2722,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2730,7 +2730,7 @@ the beat. See Read, p. 246.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3709,7 +3709,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsAll">8.1. Encoding Common To All Ornaments
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsAll">8.1. Encoding Common To All Ornaments
     </a>
   
 
@@ -3720,7 +3720,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsOverride">8.1.1. Overriding Default Resolutions
+    <a class="level-3" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsOverride">8.1.1. Overriding Default Resolutions
     </a>
   
 
@@ -3731,7 +3731,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMordents">8.2. Mordents
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsMordents">8.2. Mordents
     </a>
   
 
@@ -3742,7 +3742,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTrills">8.3. Trills
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTrills">8.3. Trills
     </a>
   
 
@@ -3753,7 +3753,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">8.3.1. Special Cases
+    <a class="level-3" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">8.3.1. Special Cases
     </a>
   
 
@@ -3764,7 +3764,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTurns">8.4. Turns
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsTurns">8.4. Turns
     </a>
   
 
@@ -3775,7 +3775,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsOther">8.5. Other Ornaments
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsOther">8.5. Other Ornaments
     </a>
   
 
@@ -3786,7 +3786,7 @@ the beat. See Read, p. 246.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMultiple">8.6. Ornaments in Combinations
+    <a class="level-2" href="/guidelines/v3/content/cmnornaments.html#cmnOrnamentsMultiple">8.6. Ornaments in Combinations
     </a>
   
 

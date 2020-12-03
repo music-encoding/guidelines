@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v4.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v4/content/introduction.html">
+          <form action="/guidelines/v4/content/introduction.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -212,13 +212,13 @@
 </dl>
 
 <p>On a generic level, MEI follows the same definition, and it definitely shares the same terminology. However, not all four domains are available throughout the MEI schema, and quite frequently, two domains fall together in MEI. Very often, <em>MEI prioritizes the visual domain over the gestural domain</em> by (partly) <em>conflating the logical and the visual domains</em>. For example, MEI utilizes the <code>@pname</code> (pitch name) attribute on notes to capture the <em>written</em> pitch of a note, whereas the sounding pitch may be described with the <code>@pname.ges</code> attribute. Here, the logical and visual domains go without a special indication, whereas the gestural domain is identified by a special suffix. However, in case of transposing instruments, additional markup (namely the attributes <code>@trans.diat</code> and <code>@trans.semi</code> from MEI’s attribute class 
-  <a href="/v4/attribute-classes/att.staffdef.log.html">att.staffDef.log</a>) will create a distinction between the logical and visual domain (see chapter 
-  <a href="/v4/content/cmn.html#cmnDefs">Defining Score Parameters for CMN</a>). In that case, <code>@pname</code> will be restricted to the visual domain, while the logical aforementioned attributes provide additional information for the logical domain.</p>
+  <a href="/guidelines/v4/attribute-classes/att.staffdef.log.html">att.staffDef.log</a>) will create a distinction between the logical and visual domain (see chapter 
+  <a href="/guidelines/v4/content/cmn.html#cmnDefs">Defining Score Parameters for CMN</a>). In that case, <code>@pname</code> will be restricted to the visual domain, while the logical aforementioned attributes provide additional information for the logical domain.</p>
 
 <p>Even though the technical implementation of MEI prioritizes the visual domain to some degree, this does not mean that any given encoding has to provide visual information. MEI takes no assumption on what data is required: While an OMR project (<em>optical music recognition</em>) may generate strictly visually oriented data only, another project focussed on audio transcriptions may generate gestural data only. A third project could integrate both approaches.</p>
 
 <p>In order to avoid ambiguous encodings, MEI is very strict and specific on the scope of its individual markup elements. For an encoder, the suffixes mentioned above provide clear hints on which domain is addressed by specific markup: Many attributes carry a suffixed <em>.log</em> (logical), <em>.ges</em> (gestural), <em>.vis</em> (visual), or <em>.anl</em> (analytical) in their name. In addition, the internal structure of MEI heavily relies on those different domains. When customizing MEI (see chapter 
-  <a href="/v4/content/introduction.html#meicustomization">Customizing MEI</a>), it is possible to turn off either visual or gestural domain encoding completely. That way, MEI allows to address the four most eminent musical domains specifically and independent of each other.</p>
+  <a href="/guidelines/v4/content/introduction.html#meicustomization">Customizing MEI</a>), it is possible to turn off either visual or gestural domain encoding completely. That way, MEI allows to address the four most eminent musical domains specifically and independent of each other.</p>
 
 <h4 id="eventsControlevents">1.2.2. Events and Controlevents
       
@@ -227,22 +227,22 @@
 <p>MEI differentiates between two essential aspects of music notation: <em>Events</em> and <em>ControlEvents</em>. There are other examples for such a separation of concerns with regard to music. In Greg’s Copy-Text Theory (W.W.Greg: <em>The Rationale of Copy-Text</em>, 1950), a distinction between primary and secondary text is made; similar attempts have been made for music specifically.</p>
 
 <p>In MEI, elements describing the basic musical text are referred to as <em>Events</em>. They are the building blocks for the stream of music – mostly those are 
-  <a href="/v4/elements/note.html" class="link_odd_elementSpec">note</a>s, 
-  <a href="/v4/elements/rest.html" class="link_odd_elementSpec">rest</a>s, and 
-  <a href="/v4/elements/chord.html" class="link_odd_elementSpec">chord</a>s.
+  <a href="/guidelines/v4/elements/note.html" class="link_odd_elementSpec">note</a>s, 
+  <a href="/guidelines/v4/elements/rest.html" class="link_odd_elementSpec">rest</a>s, and 
+  <a href="/guidelines/v4/elements/chord.html" class="link_odd_elementSpec">chord</a>s.
 In contrast, <em>ControlEvents</em> make no independent contribution to that flow of music. Instead, they provide additional information about the encoded <em>Events</em>, they <em>control</em> their performance. Examples for such <em>ControlEvents</em> are 
-  <a href="/v4/elements/dynam.html" class="link_odd_elementSpec">dynam</a>ic markings, 
-  <a href="/v4/elements/tempo.html" class="link_odd_elementSpec">tempo</a>s indications, or performance 
-  <a href="/v4/elements/dir.html" class="link_odd_elementSpec">dir</a>ectives. Depending on the encoding strategy used, 
-  <a href="/v4/elements/slur.html" class="link_odd_elementSpec">slur</a>s and 
-  <a href="/v4/elements/tie.html" class="link_odd_elementSpec">tie</a>s often also fall into this category (they may be encoded as attributes instead, in which case they become a property of the basic events).
+  <a href="/guidelines/v4/elements/dynam.html" class="link_odd_elementSpec">dynam</a>ic markings, 
+  <a href="/guidelines/v4/elements/tempo.html" class="link_odd_elementSpec">tempo</a>s indications, or performance 
+  <a href="/guidelines/v4/elements/dir.html" class="link_odd_elementSpec">dir</a>ectives. Depending on the encoding strategy used, 
+  <a href="/guidelines/v4/elements/slur.html" class="link_odd_elementSpec">slur</a>s and 
+  <a href="/guidelines/v4/elements/tie.html" class="link_odd_elementSpec">tie</a>s often also fall into this category (they may be encoded as attributes instead, in which case they become a property of the basic events).
 Simply put, <em>Events</em> describe <strong><em>what</em></strong> needs to be performed, and <em>ControlEvents</em> indicate <strong><em>how</em></strong> it needs to be performed. In (
-  <a href="/v4/content/cmn.html">Repertoire: Common Music Notation</a>-based) MEI, <em>Events</em> are nested inside a 
-  <a href="/v4/elements/layer.html" class="link_odd_elementSpec">layer</a> element, while <em>ControlEvents</em> are direct children of the first 
-  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> they apply to, following all 
-  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> elements there.
+  <a href="/guidelines/v4/content/cmn.html">Repertoire: Common Music Notation</a>-based) MEI, <em>Events</em> are nested inside a 
+  <a href="/guidelines/v4/elements/layer.html" class="link_odd_elementSpec">layer</a> element, while <em>ControlEvents</em> are direct children of the first 
+  <a href="/guidelines/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> they apply to, following all 
+  <a href="/guidelines/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> elements there.
 These structural differences result in different markup concepts. As <em>Events</em> are encoded inside 
-  <a href="/v4/elements/layer.html" class="link_odd_elementSpec">layer</a>s, their <em>semantic position</em> inside the encoded work can be derived from their <em>structural position</em> – the measure, staff and layer they’re nested in, and within that layer by their position inside the sequence of all layer children. As mentioned above, it is highly <em>recommended</em> to encode <em>ControlEvents</em> inside the first measure they apply to, but they still require references to the actual events they apply to. There are two common concepts to provide such a connection, both of which offering specific benefits and drawbacks.
+  <a href="/guidelines/v4/elements/layer.html" class="link_odd_elementSpec">layer</a>s, their <em>semantic position</em> inside the encoded work can be derived from their <em>structural position</em> – the measure, staff and layer they’re nested in, and within that layer by their position inside the sequence of all layer children. As mentioned above, it is highly <em>recommended</em> to encode <em>ControlEvents</em> inside the first measure they apply to, but they still require references to the actual events they apply to. There are two common concepts to provide such a connection, both of which offering specific benefits and drawbacks.
 A technically very stable connection between <em>ControlEvents</em> and <em>Events</em> can be established by using <strong>pointers</strong>. In this case, all events that need to be referenced need an <em>@xml:id</em> attribute, which holds a globally unique identifier for this very element. The referencing controlevent then uses a <em>@startid</em> and, if necessary, <em>@endid</em> attribute to create a link to where in the stream of music it is supposed to start or end.</p>
 
 <div class="sampleCode" data-lang="">
@@ -263,8 +263,8 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 </div>
 
 <p>In the example above, the 
-  <a href="/v4/elements/dynam.html" class="link_odd_elementSpec">dynam</a> element references the second quarter in the given measure. Additional attributes like <em>@place</em> may be used to describe the position of the <em>forte</em> indication within the score. A 
-  <a href="/v4/elements/hairpin.html" class="link_odd_elementSpec">hairpin</a> element may use the <em>@endid</em> attribute to indicate the duration of the hairpin using the same mechanism as above.</p>
+  <a href="/guidelines/v4/elements/dynam.html" class="link_odd_elementSpec">dynam</a> element references the second quarter in the given measure. Additional attributes like <em>@place</em> may be used to describe the position of the <em>forte</em> indication within the score. A 
+  <a href="/guidelines/v4/elements/hairpin.html" class="link_odd_elementSpec">hairpin</a> element may use the <em>@endid</em> attribute to indicate the duration of the hairpin using the same mechanism as above.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -275,7 +275,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.startid.html">@startid</a>
+                <a href="/guidelines/v4/attribute-classes/att.startid.html">@startid</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -294,7 +294,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.startendid.html">@endid</a>
+                <a href="/guidelines/v4/attribute-classes/att.startendid.html">@endid</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -327,7 +327,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 </div>
 
 <p>Here, no <em>@xml:id</em> is required on notes. Instead, the 
-  <a href="/v4/elements/dynam.html" class="link_odd_elementSpec">dynam</a> element uses the <em>@staff</em> and <em>@layer</em> attributes to indicate to which set of events the following <em>@tstamp</em> attribute refers to.</p>
+  <a href="/guidelines/v4/elements/dynam.html" class="link_odd_elementSpec">dynam</a> element uses the <em>@staff</em> and <em>@layer</em> attributes to indicate to which set of events the following <em>@tstamp</em> attribute refers to.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -338,7 +338,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.timestamp.logical.html">@tstamp</a>
+                <a href="/guidelines/v4/attribute-classes/att.timestamp.logical.html">@tstamp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -364,7 +364,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.timestamp2.logical.html">@tstamp2</a>
+                <a href="/guidelines/v4/attribute-classes/att.timestamp2.logical.html">@tstamp2</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -378,7 +378,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 <p>Because of potential inconsistencies, an encoding should not offer both <em>@startid</em> and <em>tstamp</em> or <em>@endid</em> and <em>@tstamp2</em>. Though not being recommendable, it is possible to mix <em>@startid</em> with <em>@tstamp2</em> and <em>@tstamp</em> with <em>@endid</em>. In general, it is easier for software to process <em>@startid</em> and <em>@endid</em>. When no other arguments apply, using <em>@xml:id</em>-based pointers is therefore the most common way to connect <em>ControlEvents</em> with <em>Events</em>.</p>
 
 <p>The details on how timestamps are calculated and used in MEI are given in 
-  <a href="/v4/content/introduction.html#timestamps">Timestamps in MEI</a>.</p>
+  <a href="/guidelines/v4/content/introduction.html#timestamps">Timestamps in MEI</a>.</p>
 
 <h4 id="timestamps">1.2.3. Timestamps in MEI
       
@@ -395,7 +395,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.timestamp.logical.html">@tstamp</a>
+                <a href="/guidelines/v4/attribute-classes/att.timestamp.logical.html">@tstamp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -419,7 +419,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.timestamp2.logical.html">@tstamp2</a>
+                <a href="/guidelines/v4/attribute-classes/att.timestamp2.logical.html">@tstamp2</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -431,7 +431,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 </div>
 
 <p>The following example contains a number of 
-  <a href="/v4/elements/slur.html" class="link_odd_elementSpec">slur</a> examples illustrating durations expressed by timestamps.</p>
+  <a href="/guidelines/v4/elements/slur.html" class="link_odd_elementSpec">slur</a> examples illustrating durations expressed by timestamps.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -448,7 +448,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 </div>
 
 <p>Sometimes, timestamps are used to indicate positions where no music <em>Events</em> are located (see 
-  <a href="/v4/content/introduction.html#eventsControlevents">Events and Controlevents</a>). Therefore, the allowed range of timestamps stretches from 0 to the current meter count + 1. By definition, a timestamp of 1 indicates the position of the left barline, while a timestamp of 5 (in case of a 4/4 meter) indicates the right barline. This makes it possible to encode open-ended slurs in a graphical way. However, it should be kept in mind that such timestamps may not be converted to <em>@startid</em> and <em>@endid</em>, and not every application may be able to render them correctly, even though they are perfectly valid MEI, and sometimes are necessary to faithfully transcribe a source.</p>
+  <a href="/guidelines/v4/content/introduction.html#eventsControlevents">Events and Controlevents</a>). Therefore, the allowed range of timestamps stretches from 0 to the current meter count + 1. By definition, a timestamp of 1 indicates the position of the left barline, while a timestamp of 5 (in case of a 4/4 meter) indicates the right barline. This makes it possible to encode open-ended slurs in a graphical way. However, it should be kept in mind that such timestamps may not be converted to <em>@startid</em> and <em>@endid</em>, and not every application may be able to render them correctly, even though they are perfectly valid MEI, and sometimes are necessary to faithfully transcribe a source.</p>
 
 <h4 id="meiprofiles">1.2.4. MEI Profiles
       
@@ -457,26 +457,26 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 <p>MEI is an encoding framework, not a data format. This means that MEI provides recommendations for encoding music documents, but it depends on the encoder’s needs and requirements to which features and solutions are appropriate to the task and should to be used. MEI offers specific models for different notation types and music repertoires, but it is rarely advisable to use them all side by side in one encoding.</p>
 
 <p>In order to use MEI, it is advised to use a restricted version of the schema, which will make it easier both for an encoder and a reader of the encoded files. MEI provides a number of pre-defined <em>profiles</em>, which focus on specific uses of MEI while still maintaining a great level of flexibility. For projects that need even better control over their data, it is highly recommended to create a more specific customized version of MEI (see chapter 
-  <a href="/v4/content/introduction.html#meicustomization">Customizing MEI</a>). The following customizations are provided with every release of MEI:</p>
+  <a href="/guidelines/v4/content/introduction.html#meicustomization">Customizing MEI</a>). The following customizations are provided with every release of MEI:</p>
 
 <dl>
   <dt>mei-CMN</dt>
   <dd>For most users, this will be the best starting point into music encoding with MEI. The <em>mei-CMN</em> customization targets at documents that use <em>Common Western Music Notation</em>. The specific rules for that notation are specified in chapter 
-<a href="/v4/content/cmn.html">Repertoire: Common Music Notation</a>, even though other chapters of these Guidelines apply as well.</dd>
+<a href="/guidelines/v4/content/cmn.html">Repertoire: Common Music Notation</a>, even though other chapters of these Guidelines apply as well.</dd>
   <dt>mei-Mensural</dt>
   <dd>For documents written in <em>Mensural Notation</em> (both black and white), MEI offers the <em>mei-Mensural</em> customization. The specific rules for that notation are specified in chapter 
-<a href="/v4/content/mensural.html">Repertoire: Mensural Notation</a>, even though other chapters of these Guidelines apply as well.</dd>
+<a href="/guidelines/v4/content/mensural.html">Repertoire: Mensural Notation</a>, even though other chapters of these Guidelines apply as well.</dd>
   <dt>mei-Neumes</dt>
   <dd>This profile allows to encode medieval <em>Neume Notation</em> with MEI. The specific rules for that notation are specified in chapter 
-<a href="/v4/content/neumes.html">Repertoire: Neume Notation</a>, even though other chapters of these Guidelines apply as well. Please note that the <em>mei-Neumes</em> profile has undergone significant changes from MEI version 3 to version 4.</dd>
+<a href="/guidelines/v4/content/neumes.html">Repertoire: Neume Notation</a>, even though other chapters of these Guidelines apply as well. Please note that the <em>mei-Neumes</em> profile has undergone significant changes from MEI version 3 to version 4.</dd>
   <dt>mei-all</dt>
   <dd>This is the full definition of MEI. It includes all different repertoires, which has certain side effects and enables encoding options that are neither intended nor advocable. For example, in mensural notation music is organized by staves. In contrast, Common Music Notation utilizes measures, which in turn contain staves. These staves have a different meaning here, and are modeled differently in MEI. <em>mei-all</em> mixes those models and thus invites encoding errors. In general, you should almost never use <em>mei-all</em> except for testing purposes.</dd>
   <dt>mei-all_anyStart</dt>
   <dd>This profile includes all of <em>mei-all</em>, but extends it even further so that it allows any MEI element as root of conforming MEI instances. In regular MEI, the only allowed starting elements are 
-<a href="/v4/elements/mei.html" class="link_odd_elementSpec">mei</a>, 
-<a href="/v4/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>, 
-<a href="/v4/elements/music.html" class="link_odd_elementSpec">music</a> and 
-<a href="/v4/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a>. The sole purpose of this customization is to simplify validation at tutorial sessions and other educational purposes. It should not be used in production.</dd>
+<a href="/guidelines/v4/elements/mei.html" class="link_odd_elementSpec">mei</a>, 
+<a href="/guidelines/v4/elements/meihead.html" class="link_odd_elementSpec">meiHead</a>, 
+<a href="/guidelines/v4/elements/music.html" class="link_odd_elementSpec">music</a> and 
+<a href="/guidelines/v4/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a>. The sole purpose of this customization is to simplify validation at tutorial sessions and other educational purposes. It should not be used in production.</dd>
 </dl>
 
 <p>The first three profiles provide good starting points to encode music from the respective repertoires. They may also serve as template for further, project-specific customizations. The latter two profiles are targetting very specific use cases and should not be used by default.</p>
@@ -486,12 +486,12 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
   </h4>
 
 <p>In production, it is best to use a customized version of MEI, restricted to the very needs of a project. Such a custom schema will guide the encoders and will help to ensure consistency and data quality throughout a project’s files. A customization typically provides a subset of MEI’s encoding models (typically starting from one of the official <em>profiles</em> mentioned in chapter 
-  <a href="/v4/content/introduction.html#meiprofiles">MEI Profiles</a>), with only one solution for any given situation being allowed. The customization will help to reflect the scope of a project into its data: Only those aspects of music notation a project is interested in will be allowed, so that the absence of a specific information can not be misunderstood as an oversight of the encoders. Larger editorial projects like <em>Complete Works</em> editions typically use <em>Editorial Guidelines</em> (german: <em>Editionsrichtlinien</em>) for the same purposes: (internal) quality control and (external) documentation. In that sense, MEI customizations may serve as Editorial Guidelines in digital form.</p>
+  <a href="/guidelines/v4/content/introduction.html#meiprofiles">MEI Profiles</a>), with only one solution for any given situation being allowed. The customization will help to reflect the scope of a project into its data: Only those aspects of music notation a project is interested in will be allowed, so that the absence of a specific information can not be misunderstood as an oversight of the encoders. Larger editorial projects like <em>Complete Works</em> editions typically use <em>Editorial Guidelines</em> (german: <em>Editionsrichtlinien</em>) for the same purposes: (internal) quality control and (external) documentation. In that sense, MEI customizations may serve as Editorial Guidelines in digital form.</p>
 
 <p>MEI is implemented in ODD. ODD, or <em>One Document Does-it-all</em>, is another XML-based markup language developed and maintained by the TEI. TEI’s documentation for ODD can be found in the TEI Guidelines chapter 22: <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html" target="\_blank">Documentation Elements</a>, chapter 23: <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html" target="\_blank">Using the TEI</a>, and the “<a href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/" target="\_blank">Getting Started with P5 ODDs</a>” document.</p>
 
 <p>At this point, there is no specific documentation on how to customize MEI with ODD beyond the generic TEI documentation. However, the provided 
-  <a href="/v4/content/introduction.html#meiprofiles">MEI Profiles</a> are based on ODD customizations, and may serve as starting point for further project-specific restrictions. They can be found at <a href="https://github.com/music-encoding/music-encoding/tree/develop/customizations" target="\_blank">https://github.com/music-encoding/music-encoding/tree/develop/customizations</a>. In addition, several projects have shared their customizations on GitHub, such as <a href="https://github.com/Freischuetz-Digital/data-music/tree/master/schemata/odd" target="\_blank">Freischütz Digital</a> or <a href="https://github.com/BeethovensWerkstatt/module2/tree/dev/data/odd" target="\_blank">Beethovens Werkstatt</a>.</p>
+  <a href="/guidelines/v4/content/introduction.html#meiprofiles">MEI Profiles</a> are based on ODD customizations, and may serve as starting point for further project-specific restrictions. They can be found at <a href="https://github.com/music-encoding/music-encoding/tree/develop/customizations" target="\_blank">https://github.com/music-encoding/music-encoding/tree/develop/customizations</a>. In addition, several projects have shared their customizations on GitHub, such as <a href="https://github.com/Freischuetz-Digital/data-music/tree/master/schemata/odd" target="\_blank">Freischütz Digital</a> or <a href="https://github.com/BeethovensWerkstatt/module2/tree/dev/data/odd" target="\_blank">Beethovens Werkstatt</a>.</p>
 
 <p>MEI provides a webservice at <a href="http://custom.music-encoding.org/" target="\_blank">http://custom.music-encoding.org</a> which allows to compile such customizations against the MEI sources in order to generate RelaxNG schemata, which can be used for validation. More documentation on customizing MEI will be provided as time permits; until then, it is recommended to <a href="https://music-encoding.org/community/community-contacts.html" target="\_blank">reach out to the MEI Community</a> for additional assistance.</p>
 
@@ -509,7 +509,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
     <div class="column col-4 hide-md">
 
-        <form action="/v4/content/introduction.html">
+        <form action="/guidelines/v4/content/introduction.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -522,7 +522,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -530,7 +530,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -538,7 +538,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -546,7 +546,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -554,7 +554,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -562,7 +562,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -589,7 +589,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-2" href="/v4/content/introduction.html#about">1.1. About these Guidelines
+    <a class="level-2" href="/guidelines/v4/content/introduction.html#about">1.1. About these Guidelines
     </a>
   
 
@@ -600,7 +600,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#designprinciples">1.1.1. MEI Design Principles
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#designprinciples">1.1.1. MEI Design Principles
     </a>
   
 
@@ -611,7 +611,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#acknowledgments">1.1.2. Acknowledgments
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#acknowledgments">1.1.2. Acknowledgments
     </a>
   
 
@@ -622,7 +622,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-2" href="/v4/content/introduction.html#basicConcepts">1.2. Basic Concepts of MEI
+    <a class="level-2" href="/guidelines/v4/content/introduction.html#basicConcepts">1.2. Basic Concepts of MEI
     </a>
   
 
@@ -633,7 +633,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#musicalDomains">1.2.1. Musical Domains
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#musicalDomains">1.2.1. Musical Domains
     </a>
   
 
@@ -644,7 +644,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#eventsControlevents">1.2.2. Events and Controlevents
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#eventsControlevents">1.2.2. Events and Controlevents
     </a>
   
 
@@ -655,7 +655,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#timestamps">1.2.3. Timestamps in MEI
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#timestamps">1.2.3. Timestamps in MEI
     </a>
   
 
@@ -666,7 +666,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#meiprofiles">1.2.4. MEI Profiles
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#meiprofiles">1.2.4. MEI Profiles
     </a>
   
 
@@ -677,7 +677,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#meicustomization">1.2.5. Customizing MEI
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#meicustomization">1.2.5. Customizing MEI
     </a>
   
 
@@ -688,7 +688,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-2" href="/v4/content/introduction.html#samplesTools">1.3. Sample Encodings and Tools for MEI
+    <a class="level-2" href="/guidelines/v4/content/introduction.html#samplesTools">1.3. Sample Encodings and Tools for MEI
     </a>
   
 
@@ -2604,7 +2604,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -2612,7 +2612,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -2620,7 +2620,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2628,7 +2628,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2636,7 +2636,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2644,7 +2644,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2671,7 +2671,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-2" href="/v4/content/introduction.html#about">1.1. About these Guidelines
+    <a class="level-2" href="/guidelines/v4/content/introduction.html#about">1.1. About these Guidelines
     </a>
   
 
@@ -2682,7 +2682,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#designprinciples">1.1.1. MEI Design Principles
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#designprinciples">1.1.1. MEI Design Principles
     </a>
   
 
@@ -2693,7 +2693,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#acknowledgments">1.1.2. Acknowledgments
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#acknowledgments">1.1.2. Acknowledgments
     </a>
   
 
@@ -2704,7 +2704,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-2" href="/v4/content/introduction.html#basicConcepts">1.2. Basic Concepts of MEI
+    <a class="level-2" href="/guidelines/v4/content/introduction.html#basicConcepts">1.2. Basic Concepts of MEI
     </a>
   
 
@@ -2715,7 +2715,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#musicalDomains">1.2.1. Musical Domains
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#musicalDomains">1.2.1. Musical Domains
     </a>
   
 
@@ -2726,7 +2726,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#eventsControlevents">1.2.2. Events and Controlevents
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#eventsControlevents">1.2.2. Events and Controlevents
     </a>
   
 
@@ -2737,7 +2737,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#timestamps">1.2.3. Timestamps in MEI
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#timestamps">1.2.3. Timestamps in MEI
     </a>
   
 
@@ -2748,7 +2748,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#meiprofiles">1.2.4. MEI Profiles
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#meiprofiles">1.2.4. MEI Profiles
     </a>
   
 
@@ -2759,7 +2759,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-3" href="/v4/content/introduction.html#meicustomization">1.2.5. Customizing MEI
+    <a class="level-3" href="/guidelines/v4/content/introduction.html#meicustomization">1.2.5. Customizing MEI
     </a>
   
 
@@ -2770,7 +2770,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 
   
 
-    <a class="level-2" href="/v4/content/introduction.html#samplesTools">1.3. Sample Encodings and Tools for MEI
+    <a class="level-2" href="/guidelines/v4/content/introduction.html#samplesTools">1.3. Sample Encodings and Tools for MEI
     </a>
   
 

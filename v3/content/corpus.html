@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/corpus.html">
+          <form action="/guidelines/v3/content/corpus.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -147,7 +147,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/meicorpus.html">meiCorpus</a>
+                <a href="/guidelines/v3/elements/meicorpus.html">meiCorpus</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -159,13 +159,13 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> element is intended for the encoding of corpora, though it may also be useful in encoding any collection of disparate materials. The individual samples in the corpus are encoded as separate 
-  <a href="/v3/elements/mei.html" class="link_odd_elementSpec">mei</a> elements, and the entire corpus is enclosed in an 
-  <a href="/v3/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> element. Each sample has the usual structure for a 
-  <a href="/v3/elements/mei.html" class="link_odd_elementSpec">mei</a> document, comprising an 
-  <a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> followed by a 
-  <a href="/v3/elements/music.html" class="link_odd_elementSpec">music</a> element. The corpus, too, has a corpus-level 
-  <a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element, in which the corpus as a whole, and encoding practices common to multiple samples may be described. The overall structure of an MEI-conformant corpus is thus:</p>
+  <a href="/guidelines/v3/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> element is intended for the encoding of corpora, though it may also be useful in encoding any collection of disparate materials. The individual samples in the corpus are encoded as separate 
+  <a href="/guidelines/v3/elements/mei.html" class="link_odd_elementSpec">mei</a> elements, and the entire corpus is enclosed in an 
+  <a href="/guidelines/v3/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> element. Each sample has the usual structure for a 
+  <a href="/guidelines/v3/elements/mei.html" class="link_odd_elementSpec">mei</a> document, comprising an 
+  <a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> followed by a 
+  <a href="/guidelines/v3/elements/music.html" class="link_odd_elementSpec">music</a> element. The corpus, too, has a corpus-level 
+  <a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element, in which the corpus as a whole, and encoding practices common to multiple samples may be described. The overall structure of an MEI-conformant corpus is thus:</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -194,17 +194,17 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 </div>
 
 <p>This two-level structure allows for metadata to be specified at the corpus level, at the individual text level, or at both. However, metadata which relates to the whole corpus rather than to its individual components should be removed from the individual component metadata and included only in the 
-  <a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element prefixed to the whole.</p>
+  <a href="/guidelines/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> element prefixed to the whole.</p>
 
 <p>In some cases, the design of a corpus is reflected in its internal structure. For example, a corpus of musical incipits might be arranged to combine all compositions of one type (symphonies, songs, chamber music, etc.) into some higher-level grouping, possibly with sub-groups for date of publication, instrumentation, key, etc. The 
-  <a href="/v3/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> element provides no support for reflecting such internal structure in the markup: it treats the corpus as an undifferentiated series of components, each tagged with an 
-  <a href="/v3/elements/mei.html" class="link_odd_elementSpec">mei</a> element.</p>
+  <a href="/guidelines/v3/elements/meicorpus.html" class="link_odd_elementSpec">meiCorpus</a> element provides no support for reflecting such internal structure in the markup: it treats the corpus as an undifferentiated series of components, each tagged with an 
+  <a href="/guidelines/v3/elements/mei.html" class="link_odd_elementSpec">mei</a> element.</p>
 
 <p>If it is essential to reflect the organization of a corpus into sub-components, then the members of the corpus should be encoded as composite texts instead, using the 
-  <a href="/v3/elements/group.html" class="link_odd_elementSpec">group</a> element described section 
-  <a href="/v3/content/shared.html#sharedMusicElement">Music Element</a>. The mechanisms for corpus characterization described in this chapter, however, are designed to reduce the need to do this. Useful groupings of components may easily be expressed using the classification and identification elements described in section 
-  <a href="/v3/content/header.html#headerWorkClass">Classification</a>, and those for associating declarations with corpus components described in section 
-  <a href="/v3/content/header.html#headerAssociatingMetadataAndData">Associating Metadata and Data</a>. These mechanisms also allow several different methods of text grouping to co-exist, each to be used as needed at different times. This helps minimize the danger of cross-classification and mis-classification of samples, and helps improve the flexibility with which parts of a corpus may be characterized for different applications.</p>
+  <a href="/guidelines/v3/elements/group.html" class="link_odd_elementSpec">group</a> element described section 
+  <a href="/guidelines/v3/content/shared.html#sharedMusicElement">Music Element</a>. The mechanisms for corpus characterization described in this chapter, however, are designed to reduce the need to do this. Useful groupings of components may easily be expressed using the classification and identification elements described in section 
+  <a href="/guidelines/v3/content/header.html#headerWorkClass">Classification</a>, and those for associating declarations with corpus components described in section 
+  <a href="/guidelines/v3/content/header.html#headerAssociatingMetadataAndData">Associating Metadata and Data</a>. These mechanisms also allow several different methods of text grouping to co-exist, each to be used as needed at different times. This helps minimize the danger of cross-classification and mis-classification of samples, and helps improve the flexibility with which parts of a corpus may be characterized for different applications.</p>
 
 <p>All composite texts share the characteristic that their different component texts may be of structurally similar or dissimilar types. If all component texts may all be encoded using the same module, then no problem arises. If however they require different modules, then the various modules must all be included in the schema.</p>
 
@@ -215,10 +215,10 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 <p>An MEI-conformant document may have more than one header only in the case of a TEI corpus, which must have a header in its own right, as well as the obligatory header for each text. Every element specified in a corpus-header is understood as if it appeared within every text header in the corpus. An element specified in a text header but not in the corpus header supplements the specification for that text alone. If any element is specified in both corpus and text headers, the corpus header element is over-ridden for that text alone.</p>
 
 <p>The 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> for a corpus text is understood to be prefixed by the 
-  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> given in the corpus header. All other optional elements of the 
-  <a href="/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> should be omitted from an individual corpus text header unless they differ from those specified in the corpus header. All other header elements behave identically, in the manner documented in chapter 
-  <a href="/v3/content/header.html">The MEI Header</a>. This makes it possible to state information which is common to the whole of the corpus in the corpus header, while still allowing for individual texts to vary from this common metadata.</p>
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> for a corpus text is understood to be prefixed by the 
+  <a href="/guidelines/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a> given in the corpus header. All other optional elements of the 
+  <a href="/guidelines/v3/elements/filedesc.html" class="link_odd_elementSpec">fileDesc</a> should be omitted from an individual corpus text header unless they differ from those specified in the corpus header. All other header elements behave identically, in the manner documented in chapter 
+  <a href="/guidelines/v3/content/header.html">The MEI Header</a>. This makes it possible to state information which is common to the whole of the corpus in the corpus header, while still allowing for individual texts to vary from this common metadata.</p>
 
 <p>For example, the following markup shows the structure of a corpus consisting of three texts, the first and last of which share the same encoding description. The second one has its own encoding description.</p>
 
@@ -295,7 +295,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/corpus.html">
+        <form action="/guidelines/v3/content/corpus.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -308,7 +308,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -316,7 +316,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -324,7 +324,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -332,7 +332,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -340,7 +340,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -348,7 +348,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1390,7 +1390,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
   
 
-    <a class="level-2" href="/v3/content/corpus.html#corpusModuleOverview">9.1. Corpus Module Overview
+    <a class="level-2" href="/guidelines/v3/content/corpus.html#corpusModuleOverview">9.1. Corpus Module Overview
     </a>
   
 
@@ -1401,7 +1401,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
   
 
-    <a class="level-2" href="/v3/content/corpus.html#corpusCombiningHeaders">9.2. Combining Corpus and Text Headers
+    <a class="level-2" href="/guidelines/v3/content/corpus.html#corpusCombiningHeaders">9.2. Combining Corpus and Text Headers
     </a>
   
 
@@ -1412,7 +1412,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
   
 
-    <a class="level-2" href="/v3/content/corpus.html#corpusRecommendations">9.3. Recommendations for the Encoding of Large Corpora
+    <a class="level-2" href="/guidelines/v3/content/corpus.html#corpusRecommendations">9.3. Recommendations for the Encoding of Large Corpora
     </a>
   
 
@@ -2040,7 +2040,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2048,7 +2048,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2056,7 +2056,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2064,7 +2064,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2072,7 +2072,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2080,7 +2080,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3122,7 +3122,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
   
 
-    <a class="level-2" href="/v3/content/corpus.html#corpusModuleOverview">9.1. Corpus Module Overview
+    <a class="level-2" href="/guidelines/v3/content/corpus.html#corpusModuleOverview">9.1. Corpus Module Overview
     </a>
   
 
@@ -3133,7 +3133,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
   
 
-    <a class="level-2" href="/v3/content/corpus.html#corpusCombiningHeaders">9.2. Combining Corpus and Text Headers
+    <a class="level-2" href="/guidelines/v3/content/corpus.html#corpusCombiningHeaders">9.2. Combining Corpus and Text Headers
     </a>
   
 
@@ -3144,7 +3144,7 @@ and one or more &lt;mei&gt; elements, each with its own complete header.</div>
 
   
 
-    <a class="level-2" href="/v3/content/corpus.html#corpusRecommendations">9.3. Recommendations for the Encoding of Large Corpora
+    <a class="level-2" href="/guidelines/v3/content/corpus.html#corpusRecommendations">9.3. Recommendations for the Encoding of Large Corpora
     </a>
   
 

@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/elements/mdiv.html">
+          <form action="/guidelines/v3/elements/mdiv.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -145,30 +145,30 @@
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@decls</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Identifies one or more metadata elements within the header, which are understood to
                               apply to the element bearing this attribute and its content.</span>
-                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.declaring.html">att.declaring</a></span></div>
+                           One or more values from <a class="link_odd_classSpec" href="/guidelines/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.declaring.html">att.declaring</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@facs</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Permits the current element to reference a facsimile surface or image zone which
                               corresponds to it.</span>
-                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.facsimile.html">att.facsimile</a></span></div>
+                           One or more values from <a class="link_odd_classSpec" href="/guidelines/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.facsimile.html">att.facsimile</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@label</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
                            Value of datatype <span style="font-weight: 500;">string</span>.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@n</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a number-like designation for an element.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/token.html">token</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.html">att.common</a></span></div>
+                           Value conforms to <a class="link_odd_classSpec" href="/guidelines/v3/data-types/token.html">token</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.common.html">att.common</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -176,7 +176,7 @@
                         <div class="attributeDef"><span class="attribute"><strong>@subtype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provide any sub-classification for the element, additional to that given by its type
                               attribute.</span>
                            Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.typed.html">att.typed</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.typed.html">att.typed</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -184,15 +184,15 @@
                         <div class="attributeDef"><span class="attribute"><strong>@type</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Characterizes the element in some sense, using any convenient classification scheme
                               or typology.</span>
                            Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.typed.html">att.typed</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.typed.html">att.typed</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@xml:base</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
                               references into absolute URI references.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
+                           Value conforms to <a class="link_odd_classSpec" href="/guidelines/v3/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -201,7 +201,7 @@
                               and other resources. Each id attribute within a document must have a unique
                               value.</span>
                            Value of datatype <span style="font-weight: 500;">ID</span>.
-                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.id.html">att.id</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="/guidelines/v3/attribute-classes/att.id.html">att.id</a></span></div>
                      </td>
                   </tr>
                </tbody>
@@ -211,7 +211,7 @@
       <tr>
          <td class="wovenodd-col1"><strong>Member of</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd_classSpec" href="/v3/model-classes/model.mdivlike.html">model.mdivLike</a></div>
+            <div class="parent"><a class="link_odd_classSpec" href="/guidelines/v3/model-classes/model.mdivlike.html">model.mdivLike</a></div>
          </td>
       </tr>
       <tr>
@@ -219,7 +219,7 @@
          <td class="wovenodd-col2">
             <div class="parent">
                <div class="specChildren">
-                  <div class="specChild"><span class="specChildModule">MEI.shared</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/body.html">body</a> <a class="link_odd_elementSpec" href="/v3/elements/mdiv.html">mdiv</a></span></div>
+                  <div class="specChild"><span class="specChildModule">MEI.shared</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/guidelines/v3/elements/body.html">body</a> <a class="link_odd_elementSpec" href="/guidelines/v3/elements/mdiv.html">mdiv</a></span></div>
                </div>
             </div>
          </td>
@@ -228,7 +228,7 @@
          <td class="wovenodd-col1"><strong>May contain</strong></td>
          <td class="wovenodd-col2">
             <div class="specChildren">
-               <div class="specChild"><span class="specChildModule">MEI.shared</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/mdiv.html">mdiv</a> <a class="link_odd_elementSpec" href="/v3/elements/parts.html">parts</a> <a class="link_odd_elementSpec" href="/v3/elements/score.html">score</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.shared</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/guidelines/v3/elements/mdiv.html">mdiv</a> <a class="link_odd_elementSpec" href="/guidelines/v3/elements/parts.html">parts</a> <a class="link_odd_elementSpec" href="/guidelines/v3/elements/score.html">score</a></span></div>
             </div>
          </td>
       </tr>
@@ -239,19 +239,19 @@
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.common.html">att.common</a>"</span></span>/&gt;</span></div>
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/attribute-classes/att.common.html">att.common</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.declaring.html">att.declaring</a>"</span></span>/&gt;</span></div>
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/attribute-classes/att.declaring.html">att.declaring</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.facsimile.html">att.facsimile</a>"</span></span>/&gt;</span></div>
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/attribute-classes/att.facsimile.html">att.facsimile</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.typed.html">att.typed</a>"</span></span>/&gt;</span></div>
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/attribute-classes/att.typed.html">att.typed</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.mdivlike.html">model.mdivLike</a>"</span></span>/&gt;</span></div>
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/model-classes/model.mdivlike.html">model.mdivLike</a>"</span></span>/&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
@@ -263,7 +263,7 @@
                               
                               <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
-                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.scorelike.html">model.scoreLike</a>"</span></span>
+                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/model-classes/model.scorelike.html">model.scoreLike</a>"</span></span>
                                     /&gt;</span></div>
                               <span data-indentation="4" class="element">&lt;/rng:optional&gt;</span></div>
                            
@@ -271,7 +271,7 @@
                               
                               <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
-                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.partslike.html">model.partsLike</a>"</span></span>
+                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/model-classes/model.partslike.html">model.partsLike</a>"</span></span>
                                     /&gt;</span></div>
                               <span data-indentation="4" class="element">&lt;/rng:optional&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/rng:group&gt;</span></div>
@@ -280,7 +280,7 @@
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.mdivlike.html">model.mdivLike</a>"</span></span>
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v3/model-classes/model.mdivlike.html">model.mdivLike</a>"</span></span>
                                  /&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/rng:choice&gt;</span></div>
@@ -290,17 +290,17 @@
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The <a class="link_odd_elementSpec" href="/v3/elements/mdiv.html">mdiv</a> element may contain one or both of 2 possible views of the
+            <p>The <a class="link_odd_elementSpec" href="/guidelines/v3/elements/mdiv.html">mdiv</a> element may contain one or both of 2 possible views of the
                music. The score view is the traditional full and open score while the parts view
                contains
                each performer's view of the score; that is, his part. These 2 views are necessary
                because
-               it is not always possible or desirable to generate one from the other. The <a class="link_odd_elementSpec" href="/v3/elements/score.html">score</a> and <a class="link_odd_elementSpec" href="/v3/elements/parts.html">parts</a> elements are placed here and not
-               directly within the <a class="link_odd_elementSpec" href="/v3/elements/body.html">body</a> element because score and part
-               characteristics may change from <a class="link_odd_elementSpec" href="/v3/elements/mdiv.html">mdiv</a> to <a class="link_odd_elementSpec" href="/v3/elements/mdiv.html">mdiv</a>.
+               it is not always possible or desirable to generate one from the other. The <a class="link_odd_elementSpec" href="/guidelines/v3/elements/score.html">score</a> and <a class="link_odd_elementSpec" href="/guidelines/v3/elements/parts.html">parts</a> elements are placed here and not
+               directly within the <a class="link_odd_elementSpec" href="/guidelines/v3/elements/body.html">body</a> element because score and part
+               characteristics may change from <a class="link_odd_elementSpec" href="/guidelines/v3/elements/mdiv.html">mdiv</a> to <a class="link_odd_elementSpec" href="/guidelines/v3/elements/mdiv.html">mdiv</a>.
                For example, the 2nd movement of a symphony may require different performing forces
                (and
-               therefore different score and part layout) than the other movements. The <a class="link_odd_elementSpec" href="/v3/elements/mdiv.html">mdiv</a> element may be recursively nested in order to represent music which exhibits
+               therefore different score and part layout) than the other movements. The <a class="link_odd_elementSpec" href="/guidelines/v3/elements/mdiv.html">mdiv</a> element may be recursively nested in order to represent music which exhibits
                this kind of structure. For example, an opera is normally divided into acts, which
                are in
                turn divided into scenes.
@@ -315,7 +315,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/elements/mdiv.html">
+        <form action="/guidelines/v3/elements/mdiv.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -328,7 +328,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -336,7 +336,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -344,7 +344,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -352,7 +352,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -360,7 +360,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -368,7 +368,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2048,7 +2048,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2056,7 +2056,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2064,7 +2064,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2072,7 +2072,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2080,7 +2080,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2088,7 +2088,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 

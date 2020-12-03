@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/ptrref.html">
+          <form action="/guidelines/v3/content/ptrref.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -133,11 +133,11 @@
   </h3>
 
 <p>An element is a ‘link’ when it has an attribute whose value is a reference to the ID of one or more other elements. The links discussed in this chapter are the 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and the 
-  <a href="/v3/elements/ref.html" class="link_odd_elementSpec">ref</a> elements. These elements indicate an association between themselves (or one of their ancestors) and one or more other entities, either inside the same document or elsewhere. An association between two elements in the same document is said to be an ‘internal’ link, while an association that involves an entity outside the current document is called an ‘external’ link. However, either element can be used for either purpose.</p>
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and the 
+  <a href="/guidelines/v3/elements/ref.html" class="link_odd_elementSpec">ref</a> elements. These elements indicate an association between themselves (or one of their ancestors) and one or more other entities, either inside the same document or elsewhere. An association between two elements in the same document is said to be an ‘internal’ link, while an association that involves an entity outside the current document is called an ‘external’ link. However, either element can be used for either purpose.</p>
 
 <p>The two elements share a set of common attributes that are inherited from the 
-  <a href="/v3/attribute-classes/att.pointing.html">att.pointing</a> class:</p>
+  <a href="/guidelines/v3/attribute-classes/att.pointing.html">att.pointing</a> class:</p>
 
 <p class="gloss"><strong>@target</strong>: allows the use of one or more previously-undeclared URIs to identify an external electronic object.</p>
 
@@ -237,9 +237,9 @@
 <p>In the preceding example, the value of the <strong>@xlink:role</strong> attribute may be used to re-write the value of <strong>@xlink:title</strong>, depending on the target resource role.</p>
 
 <p>In addition to the attributes in the 
-  <a href="/v3/attribute-classes/att.pointing.html">att.pointing</a> class, the <strong>@mimetype</strong> attribute is also available on 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
-  <a href="/v3/elements/ref.html" class="link_odd_elementSpec">ref</a>. The function of the <strong>@mimetype</strong> attribute is similar to that of <strong>@targettype</strong> in that they both allow classification of the destination. Unlike <strong>@targettype</strong>, however, <strong>@mimetype</strong> explicitly defines the destination type using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail Extension) type defined by the Internet Engineering Task Force in RFC 2046, available at <a href="http://www.ietf.org/rfc/rfc2046.txt" class="link_ref">http://www.ietf.org/rfc/rfc2046.txt</a>. The following are all valid mimetype values:</p>
+  <a href="/guidelines/v3/attribute-classes/att.pointing.html">att.pointing</a> class, the <strong>@mimetype</strong> attribute is also available on 
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
+  <a href="/guidelines/v3/elements/ref.html" class="link_odd_elementSpec">ref</a>. The function of the <strong>@mimetype</strong> attribute is similar to that of <strong>@targettype</strong> in that they both allow classification of the destination. Unlike <strong>@targettype</strong>, however, <strong>@mimetype</strong> explicitly defines the destination type using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail Extension) type defined by the Internet Engineering Task Force in RFC 2046, available at <a href="http://www.ietf.org/rfc/rfc2046.txt" class="link_ref">http://www.ietf.org/rfc/rfc2046.txt</a>. The following are all valid mimetype values:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -265,8 +265,8 @@
   </h4>
 
 <p>The 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element is an empty linking element that uses only attributes to provide for movement from one place to another. Unlike the 
-  <a href="/v3/elements/ref.html" class="link_odd_elementSpec">ref</a> element, it cannot contain text or sub-elements to describe the referenced object. Its primary function is simply to point to another location. The next example shows targets that are page numbers; or more precisely, the targets are page break elements bearing these identifiers:</p>
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element is an empty linking element that uses only attributes to provide for movement from one place to another. Unlike the 
+  <a href="/guidelines/v3/elements/ref.html" class="link_odd_elementSpec">ref</a> element, it cannot contain text or sub-elements to describe the referenced object. Its primary function is simply to point to another location. The next example shows targets that are page numbers; or more precisely, the targets are page break elements bearing these identifiers:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -285,8 +285,8 @@
 </div>
 
 <p>As shown above, the 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element can be used to ‘point to’ a digital image. However, when the intention is to <em>display</em> a digital image as part of the rendering of an MEI file, the 
-  <a href="/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element provides a convenient and recommended alternative:</p>
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element can be used to ‘point to’ a digital image. However, when the intention is to <em>display</em> a digital image as part of the rendering of an MEI file, the 
+  <a href="/guidelines/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element provides a convenient and recommended alternative:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -296,8 +296,8 @@
 </div>
 
 <p>While 
-  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> cannot contain other markup, the 
-  <a href="/v3/elements/ref.html" class="link_odd_elementSpec">ref</a> element can include text and sub-elements that name or describe the destination:</p>
+  <a href="/guidelines/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> cannot contain other markup, the 
+  <a href="/guidelines/v3/elements/ref.html" class="link_odd_elementSpec">ref</a> element can include text and sub-elements that name or describe the destination:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -331,7 +331,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/ptrref.html">
+        <form action="/guidelines/v3/content/ptrref.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -344,7 +344,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -352,7 +352,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -360,7 +360,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -368,7 +368,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -376,7 +376,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -384,7 +384,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1839,7 +1839,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/ptrref.html#ptrrefModule">19.1. Links
+    <a class="level-2" href="/guidelines/v3/content/ptrref.html#ptrrefModule">19.1. Links
     </a>
   
 
@@ -1850,7 +1850,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/ptrref.html#ptrRefDifference">19.1.1. Difference between Pointers and References
+    <a class="level-3" href="/guidelines/v3/content/ptrref.html#ptrRefDifference">19.1.1. Difference between Pointers and References
     </a>
   
 
@@ -2072,7 +2072,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2080,7 +2080,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2088,7 +2088,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2096,7 +2096,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2104,7 +2104,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2112,7 +2112,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3567,7 +3567,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/ptrref.html#ptrrefModule">19.1. Links
+    <a class="level-2" href="/guidelines/v3/content/ptrref.html#ptrrefModule">19.1. Links
     </a>
   
 
@@ -3578,7 +3578,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/ptrref.html#ptrRefDifference">19.1.1. Difference between Pointers and References
+    <a class="level-3" href="/guidelines/v3/content/ptrref.html#ptrRefDifference">19.1.1. Difference between Pointers and References
     </a>
   
 

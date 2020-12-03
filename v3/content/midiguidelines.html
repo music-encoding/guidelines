@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/midiguidelines.html">
+          <form action="/guidelines/v3/content/midiguidelines.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -135,8 +135,8 @@
   </h3>
 
 <p>To define the MIDI resolution of a score, the <strong>@ppq</strong> attribute may be used on the 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. This value can be used to interpret the values found in the <strong>@dur.ges</strong> attribute on elements in the 
-  <a href="/v3/attribute-classes/att.duration.performed.html">att.duration.performed</a> class.</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. This value can be used to interpret the values found in the <strong>@dur.ges</strong> attribute on elements in the 
+  <a href="/guidelines/v3/attribute-classes/att.duration.performed.html">att.duration.performed</a> class.</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -158,10 +158,10 @@
 </div>
 
 <p>The <strong>@ppq</strong> attribute is also available on the 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element in order to aid in the conversion to MEI from other representations that allow a different time base for each staff. However, these independent values for <strong>@ppq</strong> are only interpretable in terms of a common time base. Therefore, the <strong>@ppq</strong> attribute is required on 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> when the values of <strong>@ppq</strong> on the staff definitions differ. In the following example, the values of the <strong>@ppq</strong> attributes on the 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements are all factors of the value of <strong>@ppq</strong> attached to 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>.</p>
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element in order to aid in the conversion to MEI from other representations that allow a different time base for each staff. However, these independent values for <strong>@ppq</strong> are only interpretable in terms of a common time base. Therefore, the <strong>@ppq</strong> attribute is required on 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> when the values of <strong>@ppq</strong> on the staff definitions differ. In the following example, the values of the <strong>@ppq</strong> attributes on the 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements are all factors of the value of <strong>@ppq</strong> attached to 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -181,7 +181,7 @@
   </h3>
 
 <p>The 
-  <a href="/v3/elements/instrdef.html" class="link_odd_elementSpec">instrDef</a> element can be used to record MIDI instrument names or numbers using the <strong>@midi.instrname</strong> and <strong>@midi.instrnum</strong> attributes. The <strong>@midi.instrname</strong> attribute must contain an instrument name from the list provided by the data.MIDINAMES data type. By default, data.MIDINAMES contains General MIDI Instrument designations.</p>
+  <a href="/guidelines/v3/elements/instrdef.html" class="link_odd_elementSpec">instrDef</a> element can be used to record MIDI instrument names or numbers using the <strong>@midi.instrname</strong> and <strong>@midi.instrnum</strong> attributes. The <strong>@midi.instrname</strong> attribute must contain an instrument name from the list provided by the data.MIDINAMES data type. By default, data.MIDINAMES contains General MIDI Instrument designations.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -234,16 +234,16 @@
   </h3>
 
 <p>MIDI messages are encapsulated in the 
-  <a href="/v3/elements/midi.html" class="link_odd_elementSpec">midi</a> element, which is typically used in contexts like 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> and 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>. In earlier versions of MEI, the 
-  <a href="/v3/elements/noteon.html" class="link_odd_elementSpec">noteOn</a> and 
-  <a href="/v3/elements/noteoff.html" class="link_odd_elementSpec">noteOff</a> elements were used to record MIDI note on/off events. The use of these elements is now discouraged in favor of using the 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> element directly. MIDI duration should be recorded using the <strong>@dur.ges</strong> attribute, and MIDI pitch information should be recorded using the <strong>@pnum</strong> attribute.</p>
+  <a href="/guidelines/v3/elements/midi.html" class="link_odd_elementSpec">midi</a> element, which is typically used in contexts like 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> and 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>. In earlier versions of MEI, the 
+  <a href="/guidelines/v3/elements/noteon.html" class="link_odd_elementSpec">noteOn</a> and 
+  <a href="/guidelines/v3/elements/noteoff.html" class="link_odd_elementSpec">noteOff</a> elements were used to record MIDI note on/off events. The use of these elements is now discouraged in favor of using the 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> element directly. MIDI duration should be recorded using the <strong>@dur.ges</strong> attribute, and MIDI pitch information should be recorded using the <strong>@pnum</strong> attribute.</p>
 
 <p>MIDI control changes (
-  <a href="/v3/elements/cc.html" class="link_odd_elementSpec">cc</a>) are encoded using the <strong>@num</strong> and <strong>@val</strong> attributes. Control change numbers are specified in the General MIDI documentation. In the example below, the 
-  <a href="/v3/elements/cc.html" class="link_odd_elementSpec">cc</a> elements encode increasing controller event 7 (volume) values, or in musical terms, a crescendo. Other MIDI event messages follow this same pattern, using the <strong>@num</strong> and <strong>@val</strong> attributes to record the raw MIDI data.</p>
+  <a href="/guidelines/v3/elements/cc.html" class="link_odd_elementSpec">cc</a>) are encoded using the <strong>@num</strong> and <strong>@val</strong> attributes. Control change numbers are specified in the General MIDI documentation. In the example below, the 
+  <a href="/guidelines/v3/elements/cc.html" class="link_odd_elementSpec">cc</a> elements encode increasing controller event 7 (volume) values, or in musical terms, a crescendo. Other MIDI event messages follow this same pattern, using the <strong>@num</strong> and <strong>@val</strong> attributes to record the raw MIDI data.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -270,7 +270,7 @@
 <p>In the preceding example, each control change is associated with a time stamp. The <strong>@tstamp</strong> attribute is required in order to indicate when the MIDI event should take place. It is often necessary to indicate a time stamp slightly earlier than the affected notes to compensate for MIDI delay.</p>
 
 <p>For better legibility and error checking, the 
-  <a href="/v3/elements/midi.html" class="link_odd_elementSpec">midi</a> element may be used, as in the following example, to group MIDI parameter changes. Even so, the <strong>@tstamp</strong> attribute is required on all parameters in order to associate them with their point of actuation:</p>
+  <a href="/guidelines/v3/elements/midi.html" class="link_odd_elementSpec">midi</a> element may be used, as in the following example, to group MIDI parameter changes. Even so, the <strong>@tstamp</strong> attribute is required on all parameters in order to associate them with their point of actuation:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -320,7 +320,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/midiguidelines.html">
+        <form action="/guidelines/v3/content/midiguidelines.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -333,7 +333,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -341,7 +341,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -349,7 +349,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -357,7 +357,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -365,7 +365,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -373,7 +373,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1723,7 +1723,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midi.scoreDefppq">16.1. PPQ in scoreDef and staffDef
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midi.scoreDefppq">16.1. PPQ in scoreDef and staffDef
     </a>
   
 
@@ -1734,7 +1734,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midiInstruments">16.2. Recording General MIDI Instrumentation
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midiInstruments">16.2. Recording General MIDI Instrumentation
     </a>
   
 
@@ -1745,7 +1745,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midiData">16.3. Recording MIDI Event Data
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midiData">16.3. Recording MIDI Event Data
     </a>
   
 
@@ -1756,7 +1756,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midiNonCMN">16.4. MIDI in Mensural and Neume Notation
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midiNonCMN">16.4. MIDI in Mensural and Neume Notation
     </a>
   
 
@@ -2069,7 +2069,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2077,7 +2077,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2085,7 +2085,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2093,7 +2093,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2101,7 +2101,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2109,7 +2109,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3459,7 +3459,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midi.scoreDefppq">16.1. PPQ in scoreDef and staffDef
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midi.scoreDefppq">16.1. PPQ in scoreDef and staffDef
     </a>
   
 
@@ -3470,7 +3470,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midiInstruments">16.2. Recording General MIDI Instrumentation
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midiInstruments">16.2. Recording General MIDI Instrumentation
     </a>
   
 
@@ -3481,7 +3481,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midiData">16.3. Recording MIDI Event Data
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midiData">16.3. Recording MIDI Event Data
     </a>
   
 
@@ -3492,7 +3492,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/midiguidelines.html#midiNonCMN">16.4. MIDI in Mensural and Neume Notation
+    <a class="level-2" href="/guidelines/v3/content/midiguidelines.html#midiNonCMN">16.4. MIDI in Mensural and Neume Notation
     </a>
   
 

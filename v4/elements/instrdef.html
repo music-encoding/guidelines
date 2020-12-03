@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v4.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v4/elements/instrdef.html">
+          <form action="/guidelines/v4/elements/instrdef.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -138,25 +138,25 @@
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="The lateral or left-to-right plane.">azimuth</span>, <span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span>, <span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span>, <span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span>, <span class="ident attribute" title="The above-to-below axis.">elevation</span>, <span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span>, <span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span>, <span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span>, <span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note's duration.">midi.duty</span>, <span class="ident attribute" title="Provides a General MIDI label for the MIDI instrument.">midi.instrname</span>, <span class="ident attribute" title="Captures the General MIDI instrument number. Use an integer for a 0-based value. An integer preceded by &#34;in&#34; indicates a 1-based value.">midi.instrnum</span>, <span class="ident attribute" title="Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values pan to the right, negative ones to the left. 0% is centered.">midi.pan</span>, <span class="ident attribute" title="Records a non-General MIDI patch/instrument name.">midi.patchname</span>, <span class="ident attribute" title="Records a non-General MIDI patch/instrument number.">midi.patchnum</span>, <span class="ident attribute" title="Sets the MIDI port value.">midi.port</span>, <span class="ident attribute" title="Sets the MIDI track.">midi.track</span>, <span class="ident attribute" title="Sets the instrument's volume.">midi.volume</span>, <span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span>, <span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span>, <span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span>, <span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span>, <span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span>, <span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span>, <span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span>, <span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span>, <span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span>, <span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="The lateral or left-to-right plane.">azimuth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The lateral or left-to-right plane.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.degrees.html">data.DEGREES</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.degrees.html">data.DEGREES</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element of which the current element is a copy.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                         fashion.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="The above-to-below axis.">elevation</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The above-to-below axis.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.degrees.html">data.DEGREES</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.degrees.html">data.DEGREES</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                         predecessors of the current element.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it's attached,
                         a
@@ -165,65 +165,65 @@
                         Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note's duration.">midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note's duration.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Provides a General MIDI label for the MIDI instrument.">midi.instrname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a General MIDI label for the MIDI instrument.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midinames.html">data.MIDINAMES</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midinames.html">data.MIDINAMES</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Captures the General MIDI instrument number. Use an integer for a 0-based value. An integer preceded by &#34;in&#34; indicates a 1-based value.">midi.instrnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the General MIDI instrument number. Use an integer for a 0-based value. An
                         integer preceded by "in" indicates a 1-based value.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values pan to the right, negative ones to the left. 0% is centered.">midi.pan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan
                         left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values
                         pan to the right, negative ones to the left. 0% is centered.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument name.">midi.patchname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument name.</span><span class="attributeValues">
                         Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument number.">midi.patchnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument number.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI port value.">midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
                         Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's volume.">midi.volume</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's volume.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.word.html">data.WORD</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.word.html">data.WORD</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                         successors of the current element.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
                         editing, or encoding. Its value must point to one or more identifiers declared in
                         the
                         document header.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                         copy
                         of the current element.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                        One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                        One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                         classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -231,7 +231,7 @@
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                         references into absolute URI references.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>.
+                        Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
@@ -240,17 +240,17 @@
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox" title="att.common">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.common.html">att.common</a></label><span class="classDesc">(MEI.shared) Attributes common to many elements.</span></div>
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.common.html">att.common</a></label><span class="classDesc">(MEI.shared) Attributes common to many elements.</span></div>
                      <div class="classContent">
                         <div class="classBox" title="att.basic">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.basic.html">att.basic</a></label><span class="classDesc">(MEI.shared) Attributes that form the basis of the att.common class.</span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.basic.html">att.basic</a></label><span class="classDesc">(MEI.shared) Attributes that form the basis of the att.common class.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                                     references into absolute URI references.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>.
                                     </span></div>
                               <div class="classBox" title="att.id">
-                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.id.html">att.id</a></label><span class="classDesc">(MEI.shared) Attributes that uniquely identify an element.</span></div>
+                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.id.html">att.id</a></label><span class="classDesc">(MEI.shared) Attributes that uniquely identify an element.</span></div>
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
@@ -261,7 +261,7 @@
                            </div>
                         </div>
                         <div class="classBox" title="att.labelled">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.labelled.html">att.labelled</a></label><span class="classDesc">(MEI.shared) </span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.labelled.html">att.labelled</a></label><span class="classDesc">(MEI.shared) </span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it's attached,
                                     a
@@ -272,73 +272,73 @@
                            </div>
                         </div>
                         <div class="classBox" title="att.linking">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.linking.html">att.linking</a></label><span class="classDesc">(MEI.shared) Attributes that specify element-to-element relationships.</span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.linking.html">att.linking</a></label><span class="classDesc">(MEI.shared) Attributes that specify element-to-element relationships.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element of which the current element is a copy.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                                     fashion.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                                     predecessors of the current element.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                                     successors of the current element.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                                     copy
                                     of the current element.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                            </div>
                         </div>
                         <div class="classBox" title="att.nNumberLike">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.nnumberlike.html">att.nNumberLike</a></label><span class="classDesc">(MEI.shared) Attributes used to supply a number-like designation for an element.</span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.nnumberlike.html">att.nNumberLike</a></label><span class="classDesc">(MEI.shared) Attributes used to supply a number-like designation for an element.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                                     of similar elements. May not contain space characters.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.word.html">data.WORD</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.word.html">data.WORD</a>.
                                     </span></div>
                            </div>
                         </div>
                         <div class="classBox" title="att.responsibility">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.responsibility.html">att.responsibility</a></label><span class="classDesc">(MEI.shared) Attributes capturing information regarding responsibility for some aspect
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.responsibility.html">att.responsibility</a></label><span class="classDesc">(MEI.shared) Attributes capturing information regarding responsibility for some aspect
                                  of the text's creation, transcription, editing, or encoding.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
                                     editing, or encoding. Its value must point to one or more identifiers declared in
                                     the
                                     document header.</span><span class="attributeValues">
-                                    One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                    One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                            </div>
                         </div>
                         <div class="classBox" title="att.typed">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.typed.html">att.typed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.typed.html">att.typed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                                     classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
                                     One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                                     </span></div>
                               <div class="classBox" title="att.classed">
-                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.classed.html">att.classed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
+                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.classed.html">att.classed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                                           bearing this attribute.</span><span class="attributeValues">
-                                          One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                                          One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                           </span></div>
                                  </div>
                               </div>
@@ -347,23 +347,23 @@
                      </div>
                   </div>
                   <div class="classBox" title="att.instrDef.anl">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.instrdef.anl.html">att.instrDef.anl</a></label><span class="classDesc">(MEI.analytical) Analytical domain attributes.</span></div>
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.instrdef.anl.html">att.instrDef.anl</a></label><span class="classDesc">(MEI.analytical) Analytical domain attributes.</span></div>
                      <div class="classContent"></div>
                   </div>
                   <div class="classBox" title="att.instrDef.ges">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.instrdef.ges.html">att.instrDef.ges</a></label><span class="classDesc">(MEI.gestural) Gestural domain attributes.</span></div>
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.instrdef.ges.html">att.instrDef.ges</a></label><span class="classDesc">(MEI.gestural) Gestural domain attributes.</span></div>
                      <div class="classContent">
                         <div class="classBox" title="att.channelized">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.channelized.html">att.channelized</a></label><span class="classDesc">(MEI.midi) Attributes that record MIDI channel information.</span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.channelized.html">att.channelized</a></label><span class="classDesc">(MEI.midi) Attributes that record MIDI channel information.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note's duration.">midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note's duration.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI port value.">midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
                                     Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
@@ -371,50 +371,50 @@
                            </div>
                         </div>
                         <div class="classBox" title="att.midiInstrument">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.midiinstrument.html">att.midiInstrument</a></label><span class="classDesc">(MEI.midi) Attributes that record MIDI instrument information.</span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.midiinstrument.html">att.midiInstrument</a></label><span class="classDesc">(MEI.midi) Attributes that record MIDI instrument information.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Captures the General MIDI instrument number. Use an integer for a 0-based value. An integer preceded by &#34;in&#34; indicates a 1-based value.">midi.instrnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the General MIDI instrument number. Use an integer for a 0-based value. An
                                     integer preceded by "in" indicates a 1-based value.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Provides a General MIDI label for the MIDI instrument.">midi.instrname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a General MIDI label for the MIDI instrument.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midinames.html">data.MIDINAMES</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midinames.html">data.MIDINAMES</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values pan to the right, negative ones to the left. 0% is centered.">midi.pan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan
                                     left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values
                                     pan to the right, negative ones to the left. 0% is centered.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument name.">midi.patchname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument name.</span><span class="attributeValues">
                                     Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument number.">midi.patchnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument number.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's volume.">midi.volume</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's volume.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
                                     </span></div>
                            </div>
                         </div>
                         <div class="classBox" title="att.soundLocation">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.soundlocation.html">att.soundLocation</a></label><span class="classDesc">(MEI.gestural) Attributes that locate a sound source within 3-D space.</span></div>
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.soundlocation.html">att.soundLocation</a></label><span class="classDesc">(MEI.gestural) Attributes that locate a sound source within 3-D space.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="The lateral or left-to-right plane.">azimuth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The lateral or left-to-right plane.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.degrees.html">data.DEGREES</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.degrees.html">data.DEGREES</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="The above-to-below axis.">elevation</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The above-to-below axis.</span><span class="attributeValues">
-                                    Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.degrees.html">data.DEGREES</a>.
+                                    Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.degrees.html">data.DEGREES</a>.
                                     </span></div>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="classBox" title="att.instrDef.log">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.instrdef.log.html">att.instrDef.log</a></label><span class="classDesc">(MEI.midi) Logical domain attributes.</span></div>
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.instrdef.log.html">att.instrDef.log</a></label><span class="classDesc">(MEI.midi) Logical domain attributes.</span></div>
                      <div class="classContent"></div>
                   </div>
                   <div class="classBox" title="att.instrDef.vis">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/attribute-classes/att.instrdef.vis.html">att.instrDef.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes.</span></div>
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/attribute-classes/att.instrdef.vis.html">att.instrDef.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes.</span></div>
                      <div class="classContent"></div>
                   </div>
                </div>
@@ -423,10 +423,10 @@
                      <div class="classHeading"><label class="classLabel">MEI.gestural</label><span class="classDesc">Gestural component declarations.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="The lateral or left-to-right plane.">azimuth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The lateral or left-to-right plane.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.degrees.html">data.DEGREES</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.degrees.html">data.DEGREES</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="The above-to-below axis.">elevation</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The above-to-below axis.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.degrees.html">data.DEGREES</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.degrees.html">data.DEGREES</a>.
                               </span></div>
                      </div>
                   </div>
@@ -434,37 +434,37 @@
                      <div class="classHeading"><label class="classLabel">MEI.midi</label><span class="classDesc">MIDI component declarations.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note's duration.">midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note's duration.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Provides a General MIDI label for the MIDI instrument.">midi.instrname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a General MIDI label for the MIDI instrument.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midinames.html">data.MIDINAMES</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midinames.html">data.MIDINAMES</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Captures the General MIDI instrument number. Use an integer for a 0-based value. An integer preceded by &#34;in&#34; indicates a 1-based value.">midi.instrnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the General MIDI instrument number. Use an integer for a 0-based value. An
                               integer preceded by "in" indicates a 1-based value.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values pan to the right, negative ones to the left. 0% is centered.">midi.pan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan
                               left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values
                               pan to the right, negative ones to the left. 0% is centered.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument name.">midi.patchname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument name.</span><span class="attributeValues">
                               Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument number.">midi.patchnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument number.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue.html">data.MIDIVALUE</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI port value.">midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
                               Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's volume.">midi.volume</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's volume.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
                               </span></div>
                      </div>
                   </div>
@@ -473,18 +473,18 @@
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element of which the current element is a copy.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                               fashion.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                               predecessors of the current element.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it's attached,
                               a
@@ -494,31 +494,31 @@
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.word.html">data.WORD</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.word.html">data.WORD</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                               successors of the current element.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
                               editing, or encoding. Its value must point to one or more identifiers declared in
                               the
                               document header.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                               copy
                               of the current element.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                              One or more values from <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                              One or more values from <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                               classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -526,7 +526,7 @@
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                               references into absolute URI references.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="/v4/data-types/data.uri.html">data.URI</a>.
+                              Value conforms to <a class="link_odd_classSpec" href="/guidelines/v4/data-types/data.uri.html">data.URI</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
@@ -540,7 +540,7 @@
          <div class="facet memberships">
             <div class="label">Member of</div>
             <div class="statement memberships">
-               <div class="memberOf"><a class="link_odd_classSpec" href="/v4/model-classes/model.instrdeflike.html">model.instrDefLike</a><span class="groupDesc">Groups elements used to declare a MIDI instrument.</span></div>
+               <div class="memberOf"><a class="link_odd_classSpec" href="/guidelines/v4/model-classes/model.instrdeflike.html">model.instrDefLike</a><span class="groupDesc">Groups elements used to declare a MIDI instrument.</span></div>
             </div>
          </div>
          <div class="facet containedBy" id="containedBy">
@@ -551,15 +551,15 @@
                   <li class="tab-item"><a data-display="class" id="containedBy_class_tab" href="#containedBy" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="containedBy_module_tab" href="#containedBy" class="displayTab">by module</a></li>
                </ul>
-               <div id="containedBy_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(instrument group) – Collects MIDI instrument definitions."><a class="link_odd_elementSpec" href="/v4/elements/instrgrp.html">instrGrp</a></span>, <span class="ident element" title="(layer definition) – Container for layer meta-information."><a class="link_odd_elementSpec" href="/v4/elements/layerdef.html">layerDef</a></span>, <span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="/v4/elements/staffdef.html">staffDef</a></span>, <span class="ident element" title="(staff group) – A group of bracketed or braced staves."><a class="link_odd_elementSpec" href="/v4/elements/staffgrp.html">staffGrp</a></span></div>
+               <div id="containedBy_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(instrument group) – Collects MIDI instrument definitions."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/instrgrp.html">instrGrp</a></span>, <span class="ident element" title="(layer definition) – Container for layer meta-information."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/layerdef.html">layerDef</a></span>, <span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/staffdef.html">staffDef</a></span>, <span class="ident element" title="(staff group) – A group of bracketed or braced staves."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/staffgrp.html">staffGrp</a></span></div>
                <div id="containedBy_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox" title="model.instrDefLike">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/v4/model-classes/model.instrdeflike.html">model.instrDefLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to declare a MIDI instrument.</span></div>
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="/guidelines/v4/model-classes/model.instrdeflike.html">model.instrDefLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to declare a MIDI instrument.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(instrument group) – Collects MIDI instrument definitions."><a class="link_odd_elementSpec" href="/v4/elements/instrgrp.html">instrGrp</a></span><span class="elementDesc desc">(instrument group) – Collects MIDI instrument definitions.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(layer definition) – Container for layer meta-information."><a class="link_odd_elementSpec" href="/v4/elements/layerdef.html">layerDef</a></span><span class="elementDesc desc">(layer definition) – Container for layer meta-information.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="/v4/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">(staff definition) – Container for staff meta-information.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(staff group) – A group of bracketed or braced staves."><a class="link_odd_elementSpec" href="/v4/elements/staffgrp.html">staffGrp</a></span><span class="elementDesc desc">(staff group) – A group of bracketed or braced staves.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(instrument group) – Collects MIDI instrument definitions."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/instrgrp.html">instrGrp</a></span><span class="elementDesc desc">(instrument group) – Collects MIDI instrument definitions.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(layer definition) – Container for layer meta-information."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/layerdef.html">layerDef</a></span><span class="elementDesc desc">(layer definition) – Container for layer meta-information.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">(staff definition) – Container for staff meta-information.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(staff group) – A group of bracketed or braced staves."><a class="link_odd_elementSpec" href="/guidelines/v4/elements/staffgrp.html">staffGrp</a></span><span class="elementDesc desc">(staff group) – A group of bracketed or braced staves.</span></div>
                      </div>
                   </div>
                </div>
@@ -567,15 +567,15 @@
                   <div class="classBox" title="MEI.midi">
                      <div class="classHeading"><label class="classLabel">MEI.midi</label><span class="classDesc">MIDI component declarations.</span></div>
                      <div class="classContent">
-                        <div class="elementRef"><a class="link_odd_elementSpec" href="/v4/elements/instrgrp.html">instrGrp</a><span class="elementDesc">(instrument group) – Collects MIDI instrument definitions.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="/guidelines/v4/elements/instrgrp.html">instrGrp</a><span class="elementDesc">(instrument group) – Collects MIDI instrument definitions.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
-                        <div class="elementRef"><a class="link_odd_elementSpec" href="/v4/elements/layerdef.html">layerDef</a><span class="elementDesc">(layer definition) – Container for layer meta-information.</span></div>
-                        <div class="elementRef"><a class="link_odd_elementSpec" href="/v4/elements/staffdef.html">staffDef</a><span class="elementDesc">(staff definition) – Container for staff meta-information.</span></div>
-                        <div class="elementRef"><a class="link_odd_elementSpec" href="/v4/elements/staffgrp.html">staffGrp</a><span class="elementDesc">(staff group) – A group of bracketed or braced staves.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="/guidelines/v4/elements/layerdef.html">layerDef</a><span class="elementDesc">(layer definition) – Container for layer meta-information.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="/guidelines/v4/elements/staffdef.html">staffDef</a><span class="elementDesc">(staff definition) – Container for staff meta-information.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="/guidelines/v4/elements/staffgrp.html">staffGrp</a><span class="elementDesc">(staff group) – A group of bracketed or braced staves.</span></div>
                      </div>
                   </div>
                </div>
@@ -608,22 +608,22 @@
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
-                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v4/attribute-classes/att.common.html">att.common</a>"</span></span>/&gt;</span></div>
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v4/attribute-classes/att.common.html">att.common</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
-                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v4/attribute-classes/att.instrdef.anl.html">att.instrDef.anl</a>"</span></span>/&gt;</span></div>
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v4/attribute-classes/att.instrdef.anl.html">att.instrDef.anl</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
-                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v4/attribute-classes/att.instrdef.ges.html">att.instrDef.ges</a>"</span></span>/&gt;</span></div>
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v4/attribute-classes/att.instrdef.ges.html">att.instrDef.ges</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
-                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v4/attribute-classes/att.instrdef.log.html">att.instrDef.log</a>"</span></span>/&gt;</span></div>
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v4/attribute-classes/att.instrdef.log.html">att.instrDef.log</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
-                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v4/attribute-classes/att.instrdef.vis.html">att.instrDef.vis</a>"</span></span>/&gt;</span></div>
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v4/attribute-classes/att.instrdef.vis.html">att.instrDef.vis</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
-                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v4/model-classes/model.instrdeflike.html">model.instrDefLike</a>"</span></span>/&gt;</span></div>
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/guidelines/v4/model-classes/model.instrdeflike.html">model.instrDefLike</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;content&gt;</span>
@@ -702,7 +702,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/v4/elements/instrdef.html">
+        <form action="/guidelines/v4/elements/instrdef.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -715,7 +715,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -723,7 +723,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -731,7 +731,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -739,7 +739,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -747,7 +747,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -755,7 +755,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2757,7 +2757,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -2765,7 +2765,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -2773,7 +2773,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2781,7 +2781,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2789,7 +2789,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2797,7 +2797,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 

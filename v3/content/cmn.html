@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/cmn.html">
+          <form action="/guidelines/v3/content/cmn.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -127,27 +127,27 @@
   </h2>
 
 <p>The module described in this chapter offers the means to describe music in so-called ‘Common Music Notation’ (CMN, sometimes referred to as ‘Common Western Music Notation’). For this purpose, it provides a number of special elements and adds several attribute classes to elements from the 
-  <a href="/v3/content/shared.html">Shared Elements, Models, and Attributes</a> module.</p>
+  <a href="/guidelines/v3/content/shared.html">Shared Elements, Models, and Attributes</a> module.</p>
 
 <h3 id="cmnBasics">4.1. Basic Elements of CMN
       
   </h3>
 
 <p>This section describes the use of basic features of MEI important for encoding CMN material. Most of the elements discussed here are defined in chapter 
-  <a href="/v3/content/shared.html">Shared Elements, Models, and Attributes</a> of these Guidelines, but are used in music from the CMN repertoire in specialized ways.</p>
+  <a href="/guidelines/v3/content/shared.html">Shared Elements, Models, and Attributes</a> of these Guidelines, but are used in music from the CMN repertoire in specialized ways.</p>
 
 <h4 id="cmnMeasures">4.1.1. The Role of the Measure Element
       
   </h4>
 
 <p>Arguably, the most important element of the CMN module is the 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> element. It is used as a structural unit inside 
-  <a href="/v3/elements/section.html" class="link_odd_elementSpec">section</a> elements and acts as a container for ‘events’ from the 
-  <a href="/v3/model-classes/model.eventlike.html">model.eventLike</a> class, such as notes, chords and rests as well as ‘control events’ from the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, such as slurs and indications of dynamics.</p>
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> element. It is used as a structural unit inside 
+  <a href="/guidelines/v3/elements/section.html" class="link_odd_elementSpec">section</a> elements and acts as a container for ‘events’ from the 
+  <a href="/guidelines/v3/model-classes/model.eventlike.html">model.eventLike</a> class, such as notes, chords and rests as well as ‘control events’ from the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, such as slurs and indications of dynamics.</p>
 
 <p>The following example demonstrates the use of the 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> element:</p>
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> element:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -174,13 +174,13 @@
 </div>
 
 <p>A 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> slices the flow of a score or part into chunks that normally comply with a duration determined by the meter defined within a preceding 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> or 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element. Each staff in the source material is represented by a 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> element. As the order of the staff elements in the file does not have to reflect their order in the original document, to eliminate confusion they should always refer to a 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element, using either an <strong>@n</strong> or <strong>@def</strong> attribute. Whereas the <strong>@def</strong> attribute uses the xs:anyURI datatype, the <strong>@n</strong> value refers to the closest preceding 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> or 
-  <a href="/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> with the same value in its <strong>@n</strong> attribute.</p>
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> slices the flow of a score or part into chunks that normally comply with a duration determined by the meter defined within a preceding 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> or 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element. Each staff in the source material is represented by a 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> element. As the order of the staff elements in the file does not have to reflect their order in the original document, to eliminate confusion they should always refer to a 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element, using either an <strong>@n</strong> or <strong>@def</strong> attribute. Whereas the <strong>@def</strong> attribute uses the xs:anyURI datatype, the <strong>@n</strong> value refers to the closest preceding 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> or 
+  <a href="/guidelines/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> with the same value in its <strong>@n</strong> attribute.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -200,10 +200,10 @@
 </div>
 
 <p>Each 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> may hold a number of 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> elements to reflect multiple ‘voices’. Just as with 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a>, the order of the 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> elements in the file does not have to reflect their original order in the document, so they also possess <strong>@n</strong> and <strong>@def</strong> attributes for association with the appropriate layer definition.</p>
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> may hold a number of 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> elements to reflect multiple ‘voices’. Just as with 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a>, the order of the 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> elements in the file does not have to reflect their original order in the document, so they also possess <strong>@n</strong> and <strong>@def</strong> attributes for association with the appropriate layer definition.</p>
 <div class="sampleCode" data-lang="false">
 
 
@@ -230,7 +230,7 @@
   </h4>
 
 <p>When encoding a score in CMN, MEI relies on the following elements from the 
-  <a href="/v3/content/shared.html">Shared Elements, Models, and Attributes</a> module:</p>
+  <a href="/guidelines/v3/content/shared.html">Shared Elements, Models, and Attributes</a> module:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -241,7 +241,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/scoredef.html">scoreDef</a>
+                <a href="/guidelines/v3/elements/scoredef.html">scoreDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -260,7 +260,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/staffgrp.html">staffGrp</a>
+                <a href="/guidelines/v3/elements/staffgrp.html">staffGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -279,7 +279,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/staffdef.html">staffDef</a>
+                <a href="/guidelines/v3/elements/staffdef.html">staffDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -298,7 +298,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/layerdef.html">layerDef</a>
+                <a href="/guidelines/v3/elements/layerdef.html">layerDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -309,7 +309,7 @@
 </div>
 
 <p>A 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element is used to specify the common parameters of a score, e.g., key and meter. The most important attributes for this purpose are:</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element is used to specify the common parameters of a score, e.g., key and meter. The most important attributes for this purpose are:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -320,7 +320,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.metersigdefault.log.html">@meter.count</a>
+                <a href="/guidelines/v3/attribute-classes/att.metersigdefault.log.html">@meter.count</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -341,7 +341,7 @@ a decimal number, such as 2+3.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.metersigdefault.log.html">@meter.unit</a>
+                <a href="/guidelines/v3/attribute-classes/att.metersigdefault.log.html">@meter.unit</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -361,7 +361,7 @@ meter signature.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.metersigdefault.vis.html">@meter.sym</a>
+                <a href="/guidelines/v3/attribute-classes/att.metersigdefault.vis.html">@meter.sym</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -381,7 +381,7 @@ meter signature.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.keysigdefault.log.html">@key.pname</a>
+                <a href="/guidelines/v3/attribute-classes/att.keysigdefault.log.html">@key.pname</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -399,7 +399,7 @@ meter signature.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.keysigdefault.log.html">@key.accid</a>
+                <a href="/guidelines/v3/attribute-classes/att.keysigdefault.log.html">@key.accid</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -418,7 +418,7 @@ equals 'c' and key.accid equals 's', then a tonic of C# is indicated.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.keysigdefault.log.html">@key.mode</a>
+                <a href="/guidelines/v3/attribute-classes/att.keysigdefault.log.html">@key.mode</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -436,7 +436,7 @@ equals 'c' and key.accid equals 's', then a tonic of C# is indicated.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.keysigdefault.log.html">@key.sig</a>
+                <a href="/guidelines/v3/attribute-classes/att.keysigdefault.log.html">@key.sig</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -466,7 +466,7 @@ equals 'c' and key.accid equals 's', then a tonic of C# is indicated.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.pages.html">@page.width</a>
+                <a href="/guidelines/v3/attribute-classes/att.pages.html">@page.width</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -485,7 +485,7 @@ steps.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.pages.html">@page.height</a>
+                <a href="/guidelines/v3/attribute-classes/att.pages.html">@page.height</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -504,7 +504,7 @@ steps.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.pages.html">@page.leftmar</a>
+                <a href="/guidelines/v3/attribute-classes/att.pages.html">@page.leftmar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -522,7 +522,7 @@ steps.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.pages.html">@page.topmar</a>
+                <a href="/guidelines/v3/attribute-classes/att.pages.html">@page.topmar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -540,7 +540,7 @@ steps.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.pages.html">@page.rightmar</a>
+                <a href="/guidelines/v3/attribute-classes/att.pages.html">@page.rightmar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -558,7 +558,7 @@ steps.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.pages.html">@page.botmar</a>
+                <a href="/guidelines/v3/attribute-classes/att.pages.html">@page.botmar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -576,7 +576,7 @@ steps.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.systems.html">@system.leftmar</a>
+                <a href="/guidelines/v3/attribute-classes/att.systems.html">@system.leftmar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -595,7 +595,7 @@ page.leftmar.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.systems.html">@system.topmar</a>
+                <a href="/guidelines/v3/attribute-classes/att.systems.html">@system.topmar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -614,7 +614,7 @@ only.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.systems.html">@system.rightmar</a>
+                <a href="/guidelines/v3/attribute-classes/att.systems.html">@system.rightmar</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -633,7 +633,7 @@ page.rightmar.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.textstyle.html">@text.name</a>
+                <a href="/guidelines/v3/attribute-classes/att.textstyle.html">@text.name</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -652,7 +652,7 @@ information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.textstyle.html">@text.fam</a>
+                <a href="/guidelines/v3/attribute-classes/att.textstyle.html">@text.fam</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -671,7 +671,7 @@ this information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.textstyle.html">@text.size</a>
+                <a href="/guidelines/v3/attribute-classes/att.textstyle.html">@text.size</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -690,7 +690,7 @@ information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.notationstyle.html">@music.name</a>
+                <a href="/guidelines/v3/attribute-classes/att.notationstyle.html">@music.name</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -708,7 +708,7 @@ information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.notationstyle.html">@music.size</a>
+                <a href="/guidelines/v3/attribute-classes/att.notationstyle.html">@music.size</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -726,7 +726,7 @@ information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.lyricstyle.html">@lyric.name</a>
+                <a href="/guidelines/v3/attribute-classes/att.lyricstyle.html">@lyric.name</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -744,7 +744,7 @@ information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.lyricstyle.html">@lyric.fam</a>
+                <a href="/guidelines/v3/attribute-classes/att.lyricstyle.html">@lyric.fam</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -762,7 +762,7 @@ information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.lyricstyle.html">@lyric.size</a>
+                <a href="/guidelines/v3/attribute-classes/att.lyricstyle.html">@lyric.size</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -773,38 +773,38 @@ information is not provided on the individual elements.</div>
 </div>
 
 <p>There are other attributes that allow the specification of many further details of a score. These are available from the element definitions accessible at 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, 
-  <a href="/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> and 
-  <a href="/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a>.</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, 
+  <a href="/guidelines/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> and 
+  <a href="/guidelines/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a>.</p>
 
 <p>When content is provided for 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, it must contain a 
-  <a href="/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> element. This element is used to gather individual staves and other staff groups. This is useful for collecting instrumental or vocal groups in a large score, such as woodwinds, brasses, etc., and for assigning a shared label to the group, using the <strong>@label</strong> and <strong>@label.abbr</strong> attributes. The 
-  <a href="/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> element is also used for the two staves of a grand staff. The <strong>@barthru</strong> attribute on 
-  <a href="/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> allows one to specify whether barlines are drawn across the space between staves of that group or only on the staves themselves.</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, it must contain a 
+  <a href="/guidelines/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> element. This element is used to gather individual staves and other staff groups. This is useful for collecting instrumental or vocal groups in a large score, such as woodwinds, brasses, etc., and for assigning a shared label to the group, using the <strong>@label</strong> and <strong>@label.abbr</strong> attributes. The 
+  <a href="/guidelines/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> element is also used for the two staves of a grand staff. The <strong>@barthru</strong> attribute on 
+  <a href="/guidelines/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a> allows one to specify whether barlines are drawn across the space between staves of that group or only on the staves themselves.</p>
 
 <p>A 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element is used to describe an individual staff of a 
-  <a href="/v3/elements/score.html" class="link_odd_elementSpec">score</a> or performer 
-  <a href="/v3/elements/part.html" class="link_odd_elementSpec">part</a>. It bears most of the attributes described above, including <strong>@label</strong> and <strong>@label.abbr</strong> for providing staff labels for the first and subsequent pages.</p>
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element is used to describe an individual staff of a 
+  <a href="/guidelines/v3/elements/score.html" class="link_odd_elementSpec">score</a> or performer 
+  <a href="/guidelines/v3/elements/part.html" class="link_odd_elementSpec">part</a>. It bears most of the attributes described above, including <strong>@label</strong> and <strong>@label.abbr</strong> for providing staff labels for the first and subsequent pages.</p>
 
 <p>Every 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> must have an <strong>@n</strong> attribute with an integer as its value. The first occurence of a 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> with a given number must also indicate the number of staff lines via the <strong>@lines</strong> attribute.</p>
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> must have an <strong>@n</strong> attribute with an integer as its value. The first occurence of a 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> with a given number must also indicate the number of staff lines via the <strong>@lines</strong> attribute.</p>
 
 <p>The order of 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements within 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> follows the order of staves in the source document or planned rendering. The individual 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within a 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> refer to these 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> declarations using their own <strong>@n</strong> attribute values. Therefore, the encoding order of staves within a measure does not have to mimic the order of the 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements with 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>.</p>
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements within 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> follows the order of staves in the source document or planned rendering. The individual 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within a 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> refer to these 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> declarations using their own <strong>@n</strong> attribute values. Therefore, the encoding order of staves within a measure does not have to mimic the order of the 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements with 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>.</p>
 
 <p>In addition to the parameters inherited from 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, the following attributes are important for 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements:</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, the following attributes are important for 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -815,7 +815,7 @@ information is not provided on the individual elements.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.cleffing.log.html">@clef.line</a>
+                <a href="/guidelines/v3/attribute-classes/att.cleffing.log.html">@clef.line</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -836,7 +836,7 @@ the lowest line of the staff.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.cleffing.log.html">@clef.shape</a>
+                <a href="/guidelines/v3/attribute-classes/att.cleffing.log.html">@clef.shape</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -854,7 +854,7 @@ the lowest line of the staff.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.cleffing.log.html">@clef.dis</a>
+                <a href="/guidelines/v3/attribute-classes/att.cleffing.log.html">@clef.dis</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -872,7 +872,7 @@ the lowest line of the staff.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.cleffing.log.html">@clef.dis.place</a>
+                <a href="/guidelines/v3/attribute-classes/att.cleffing.log.html">@clef.dis.place</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -892,7 +892,7 @@ the lowest line of the staff.</div>
 </div>
 
 <p>In the case of transposing instruments, the key-related attributes described above may be used to override the written key expressed in the 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. As a basic principle, MEI always captures written pitches, so the <strong>@trans.diat</strong> and <strong>@trans.semi</strong> attributes may be used to indicate the number of diatonic steps and semitones to calculate sounded pitch from written pitch. The piccolo and E♭ clarinet staves in the example below utilize these attributes:</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. As a basic principle, MEI always captures written pitches, so the <strong>@trans.diat</strong> and <strong>@trans.semi</strong> attributes may be used to indicate the number of diatonic steps and semitones to calculate sounded pitch from written pitch. The piccolo and E♭ clarinet staves in the example below utilize these attributes:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -912,7 +912,7 @@ the lowest line of the staff.</div>
 </div>
 
 <p>There are a number of additional elements that can be used as children of 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> in order to describe additional features of the staff, such as the color of a clef or a key signature added in a different hand. These elements include:</p>
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> in order to describe additional features of the staff, such as the color of a clef or a key signature added in a different hand. These elements include:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -923,7 +923,7 @@ the lowest line of the staff.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/clef.html">clef</a>
+                <a href="/guidelines/v3/elements/clef.html">clef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -944,7 +944,7 @@ other notes as well.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/clefgrp.html">clefGrp</a>
+                <a href="/guidelines/v3/elements/clefgrp.html">clefGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -963,7 +963,7 @@ other notes as well.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/keysig.html">keySig</a>
+                <a href="/guidelines/v3/elements/keysig.html">keySig</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -982,7 +982,7 @@ other notes as well.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/keyaccid.html">keyAccid</a>
+                <a href="/guidelines/v3/elements/keyaccid.html">keyAccid</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1001,7 +1001,7 @@ other notes as well.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/label.html">label</a>
+                <a href="/guidelines/v3/elements/label.html">label</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1020,7 +1020,7 @@ other notes as well.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/metersig.html">meterSig</a>
+                <a href="/guidelines/v3/elements/metersig.html">meterSig</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1039,7 +1039,7 @@ other notes as well.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/metersiggrp.html">meterSigGrp</a>
+                <a href="/guidelines/v3/elements/metersiggrp.html">meterSigGrp</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1051,60 +1051,60 @@ signatures.</div>
 </div>
 
 <p>With the exception of 
-  <a href="/v3/elements/label.html" class="link_odd_elementSpec">label</a>, these elements may also occur within the flow of musical events captured in a 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>, since they are members of 
-  <a href="/v3/model-classes/model.eventlike.html">model.eventLike</a>. In the layer context they function as milestones and affect all following content assigned to the layer (even in subsequent measures) until their information is again overridden either by the same element bearing different information or a 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> or 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>. In this context, it is also possible to combine them with the elements described in chapters 
-  <a href="/v3/content/critapp.html">Critical Apparatus</a> and 
-  <a href="/v3/content/edittrans.html">Editorial Markup</a> of these Guidelines.</p>
+  <a href="/guidelines/v3/elements/label.html" class="link_odd_elementSpec">label</a>, these elements may also occur within the flow of musical events captured in a 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>, since they are members of 
+  <a href="/guidelines/v3/model-classes/model.eventlike.html">model.eventLike</a>. In the layer context they function as milestones and affect all following content assigned to the layer (even in subsequent measures) until their information is again overridden either by the same element bearing different information or a 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> or 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>. In this context, it is also possible to combine them with the elements described in chapters 
+  <a href="/guidelines/v3/content/critapp.html">Critical Apparatus</a> and 
+  <a href="/guidelines/v3/content/edittrans.html">Editorial Markup</a> of these Guidelines.</p>
 
 <p>Such flexibility as this may require close inspection of an encoding to retrieve the correct definitions for a given staff. As a general rule, the closest preceding and most specific element provides this information: For example, a 
-  <a href="/v3/elements/keysig.html" class="link_odd_elementSpec">keySig</a> in the preceding measure is more relevant than a 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> at the beginning of the section, which is more relevant than a 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> at the beginning of the score. However, a section-specific 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> that provides only information about the meter does not override the more specific information about key signature gathered from a 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> for a transposing instrument.</p>
+  <a href="/guidelines/v3/elements/keysig.html" class="link_odd_elementSpec">keySig</a> in the preceding measure is more relevant than a 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> at the beginning of the section, which is more relevant than a 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> at the beginning of the score. However, a section-specific 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> that provides only information about the meter does not override the more specific information about key signature gathered from a 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> for a transposing instrument.</p>
 
 <p>Every 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> may contain a number of 
-  <a href="/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> elements, which may be used to establish default values for the distinct layers sharing one staff. MEI does not use the term ‘voice’ to describe these ‘musical threads’ because that term implies continuity across measure boundaries. Given the sometimes arbitrary relationships between these threads from measure to measure as well as across staves, MEI uses the more neutral term ‘layer’.</p>
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> may contain a number of 
+  <a href="/guidelines/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> elements, which may be used to establish default values for the distinct layers sharing one staff. MEI does not use the term ‘voice’ to describe these ‘musical threads’ because that term implies continuity across measure boundaries. Given the sometimes arbitrary relationships between these threads from measure to measure as well as across staves, MEI uses the more neutral term ‘layer’.</p>
 
 <h4 id="cmnReDef">4.1.3. Redefinition of Score Parameters
       
   </h4>
 
 <p>Sometimes it is necessary to provide the parameters of a score or a staff with new values. For example. a score may change keys, gain or lose staves, use different layout settings at any point, etc. Likewise, a staff may change its clef, gain or lose layers, or become invisible, and so on. To accommodate these circumstances, in CMN 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> is allowed to occur in the following locations:</p>
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> is allowed to occur in the following locations:</p>
 
 <ul>
   <li>within the description of staff groups; that is, in 
-<a href="/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a>,</li>
+<a href="/guidelines/v3/elements/staffgrp.html" class="link_odd_elementSpec">staffGrp</a>,</li>
   <li>within the content of a 
-<a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>,</li>
+<a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>,</li>
   <li>between measures; that is, directly within 
-<a href="/v3/elements/section.html" class="link_odd_elementSpec">section</a> and 
-<a href="/v3/elements/ending.html" class="link_odd_elementSpec">ending</a> elements, and</li>
+<a href="/guidelines/v3/elements/section.html" class="link_odd_elementSpec">section</a> and 
+<a href="/guidelines/v3/elements/ending.html" class="link_odd_elementSpec">ending</a> elements, and</li>
   <li>between sections and endings; that is, directly within a 
-<a href="/v3/elements/score.html" class="link_odd_elementSpec">score</a> or 
-<a href="/v3/elements/part.html" class="link_odd_elementSpec">part</a> element.</li>
+<a href="/guidelines/v3/elements/score.html" class="link_odd_elementSpec">score</a> or 
+<a href="/guidelines/v3/elements/part.html" class="link_odd_elementSpec">part</a> element.</li>
 </ul>
 
 <p>In addition, 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> is allowed to occur:</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> is allowed to occur:</p>
 
 <ul>
   <li>within sections and endings; that is, inside 
-<a href="/v3/elements/section.html" class="link_odd_elementSpec">section</a> and 
-<a href="/v3/elements/ending.html" class="link_odd_elementSpec">ending</a> elements; and</li>
+<a href="/guidelines/v3/elements/section.html" class="link_odd_elementSpec">section</a> and 
+<a href="/guidelines/v3/elements/ending.html" class="link_odd_elementSpec">ending</a> elements; and</li>
   <li>between sections and endings; that is, directly within a 
-<a href="/v3/elements/score.html" class="link_odd_elementSpec">score</a> or 
-<a href="/v3/elements/part.html" class="link_odd_elementSpec">part</a>.</li>
+<a href="/guidelines/v3/elements/score.html" class="link_odd_elementSpec">score</a> or 
+<a href="/guidelines/v3/elements/part.html" class="link_odd_elementSpec">part</a>.</li>
 </ul>
 
 <p>The possibility also exists to include 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> in staves and layers when the mei-all schema is in use; however, this practice is not recommended for the CMN repertoire.</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> in staves and layers when the mei-all schema is in use; however, this practice is not recommended for the CMN repertoire.</p>
 
 <h4 id="cmnNotesChords">4.1.4. Notes, Chords and Rests in CMN
       
@@ -1115,9 +1115,9 @@ signatures.</div>
   </h5>
 
 <p>Undoubtedly, the most important element for any music notation representation is the 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> element, which is defined in section 
-  <a href="/v3/content/shared.html#sharedBasicEvents">Basic Music Events</a>. This section describes the usage of 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> in the CMN repertoire as well as CMN-specific additions to the basic definition in the shared module.</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> element, which is defined in section 
+  <a href="/guidelines/v3/content/shared.html#sharedBasicEvents">Basic Music Events</a>. This section describes the usage of 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> in the CMN repertoire as well as CMN-specific additions to the basic definition in the shared module.</p>
 
 <h6 id="cmnNotesBasic">4.1.4.1.1. Basic Usage of Notes in CMN
       
@@ -1141,8 +1141,8 @@ signatures.</div>
 </div>
 
 <p>Because these attributes may not be required in all situations (such as <strong>@dur</strong> for the notes of a chord), processing software should anticipate retrieving the information that would have been provided by missing attributes from a preceding note or 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> parent in the same 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. Only information from <strong>@pname</strong>, <strong>@oct</strong> and <strong>@dur</strong> attributes can be gathered in this fashion. No other attributes can be treated this way.</p>
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> parent in the same 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. Only information from <strong>@pname</strong>, <strong>@oct</strong> and <strong>@dur</strong> attributes can be gathered in this fashion. No other attributes can be treated this way.</p>
 
 <p>The usual CMN-specific values for <strong>@dur</strong> are:</p>
 
@@ -1182,11 +1182,11 @@ signatures.</div>
   </h6>
 
 <p>The CMN module adds two optional attributes, <strong>@grace</strong> and <strong>@grace.time</strong>, to 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The presence of the <strong>@grace</strong> attribute indicates a grace note.</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The presence of the <strong>@grace</strong> attribute indicates a grace note.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmn/grace-300.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmn/grace-300.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Grace notes</figcaption>
 </figure>
 
@@ -1213,7 +1213,7 @@ signatures.</div>
 <p>The <strong>@grace.time</strong> attribute is only to be used in combination with the <strong>@grace</strong> attribute. It records the amount of time (as a percentage of the written duration) that the grace note should ‘steal’ from the preceding note (when <strong>@grace</strong>=’unacc’) or the following note (when <strong>@grace</strong>=’acc’).</p>
 
 <p>More information about grace notes in the context of other CMN ornaments is available in chapter 
-  <a href="/v3/content/cmnornaments.html">Common Music Notation Ornaments</a>.</p>
+  <a href="/guidelines/v3/content/cmnornaments.html">Common Music Notation Ornaments</a>.</p>
 
 <h6 id="cmnNotesStems">4.1.4.1.3. Stem Modifications
       
@@ -1238,15 +1238,15 @@ signatures.</div>
 <p class="gloss"><strong>z</strong>: Z placed on stem</p>
 
 <p>The <strong>@stem.mod</strong> attibute is normally used in accordance with practices described in section 
-  <a href="/v3/content/cmn.html#cmnTrem">Tremolandi</a>.</p>
+  <a href="/guidelines/v3/content/cmn.html#cmnTrem">Tremolandi</a>.</p>
 
 <p>The CMN module makes the 
-  <a href="/v3/attribute-classes/att.stems.cmn.html">att.stems.cmn</a> attribute class available, which adds the optional <strong>@stem.with</strong> attribute to 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The attribute <strong>@stem.with</strong> allows for the indication of a stem that joins notes on adjacent staves.</p>
+  <a href="/guidelines/v3/attribute-classes/att.stems.cmn.html">att.stems.cmn</a> attribute class available, which adds the optional <strong>@stem.with</strong> attribute to 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The attribute <strong>@stem.with</strong> allows for the indication of a stem that joins notes on adjacent staves.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmn/xchord-300.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmn/xchord-300.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Cross-staff chord</figcaption>
 </figure>
 
@@ -1272,9 +1272,9 @@ signatures.</div>
 </div>
 
 <p>Alternatively, the encoder may choose to treat the notes in the lower staff as logically belonging to the top staff and to ‘displace’ them using the <strong>@staff</strong> attribute on 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a>. Some use cases, however, may require filling the time that those notes would normally occupy using the 
-  <a href="/v3/elements/space.html" class="link_odd_elementSpec">space</a> element described in section 
-  <a href="/v3/content/shared.html#sharedNoteSpacing">Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a>. Some use cases, however, may require filling the time that those notes would normally occupy using the 
+  <a href="/guidelines/v3/elements/space.html" class="link_odd_elementSpec">space</a> element described in section 
+  <a href="/guidelines/v3/content/shared.html#sharedNoteSpacing">Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -1306,9 +1306,9 @@ signatures.</div>
   </h5>
 
 <p>The <strong>@dur</strong> attribute on 
-  <a href="/v3/elements/rest.html" class="link_odd_elementSpec">rest</a> captures the written duration of the rest and allows the same values as on 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The CMN module also makes three more elements available for special forms of rest:</p>
+  <a href="/guidelines/v3/elements/rest.html" class="link_odd_elementSpec">rest</a> captures the written duration of the rest and allows the same values as on 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The CMN module also makes three more elements available for special forms of rest:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -1319,7 +1319,7 @@ signatures.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/mrest.html">mRest</a>
+                <a href="/guidelines/v3/elements/mrest.html">mRest</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1339,7 +1339,7 @@ signatures.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/multirest.html">multiRest</a>
+                <a href="/guidelines/v3/elements/multirest.html">multiRest</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1359,7 +1359,7 @@ found in performer parts.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/mspace.html">mSpace</a>
+                <a href="/guidelines/v3/elements/mspace.html">mSpace</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1374,11 +1374,11 @@ found in performer parts.</div>
   </h6>
 
 <p>The 
-  <a href="/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a> (measure rest) element is used to indicate a complete measure rest, independent from the meter of the current 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>.</p>
+  <a href="/guidelines/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a> (measure rest) element is used to indicate a complete measure rest, independent from the meter of the current 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>.</p>
 
 <p>The <strong>@cutout</strong> attribute provides for the description of the rendition of the 
-  <a href="/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a>. If <strong>@cutout</strong> is set to ‘cutout’ (the only value allowed), then the complete staff including the staff lines will not be rendered for this measure.</p>
+  <a href="/guidelines/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a>. If <strong>@cutout</strong> is set to ‘cutout’ (the only value allowed), then the complete staff including the staff lines will not be rendered for this measure.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1392,21 +1392,21 @@ found in performer parts.</div>
 </div>
 
 <p>It is a semantic error to mix an 
-  <a href="/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a> with other events in the same 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. However, other ‘control events’, such as 
-  <a href="/v3/elements/fermata.html" class="link_odd_elementSpec">fermata</a>, may be used at the same time as 
-  <a href="/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a>.</p>
+  <a href="/guidelines/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a> with other events in the same 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. However, other ‘control events’, such as 
+  <a href="/guidelines/v3/elements/fermata.html" class="link_odd_elementSpec">fermata</a>, may be used at the same time as 
+  <a href="/guidelines/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a>.</p>
 
 <h6 id="cmnRestsMultiRest">4.1.4.2.2. Multiple-Measure Rests
       
   </h6>
 
 <p>The 
-  <a href="/v3/elements/multirest.html" class="link_odd_elementSpec">multiRest</a> (multiple measure rest) element is used to encode multiple measures of rest. It is commonly used in performer parts, but due to the problem of synchronicity with other staves, it is never found in scores. A numeric value, stored in the <strong>@num</strong> attribute, indicates the number of resting measures. The various visual forms displayed below are not captured by 
-  <a href="/v3/elements/multirest.html" class="link_odd_elementSpec">multiRest</a>, but may be created by rendering software.</p>
+  <a href="/guidelines/v3/elements/multirest.html" class="link_odd_elementSpec">multiRest</a> (multiple measure rest) element is used to encode multiple measures of rest. It is commonly used in performer parts, but due to the problem of synchronicity with other staves, it is never found in scores. A numeric value, stored in the <strong>@num</strong> attribute, indicates the number of resting measures. The various visual forms displayed below are not captured by 
+  <a href="/guidelines/v3/elements/multirest.html" class="link_odd_elementSpec">multiRest</a>, but may be created by rendering software.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/multirest.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/multirest.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Forms of multiple measure rests</figcaption>
 </figure>
 
@@ -1426,12 +1426,12 @@ found in performer parts.</div>
   </h6>
 
 <p>The 
-  <a href="/v3/elements/mspace.html" class="link_odd_elementSpec">mSpace</a> (measure space) element is closely related to the 
-  <a href="/v3/elements/space.html" class="link_odd_elementSpec">space</a> and 
-  <a href="/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a> elements. It is used to explicitly indicate that a layer has no content but that no information is missing from the encoding.</p>
+  <a href="/guidelines/v3/elements/mspace.html" class="link_odd_elementSpec">mSpace</a> (measure space) element is closely related to the 
+  <a href="/guidelines/v3/elements/space.html" class="link_odd_elementSpec">space</a> and 
+  <a href="/guidelines/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a> elements. It is used to explicitly indicate that a layer has no content but that no information is missing from the encoding.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/mspace-300-20100514.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/mspace-300-20100514.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Empty measure</figcaption>
 </figure>
 
@@ -1453,17 +1453,17 @@ found in performer parts.</div>
   </h4>
 
 <p>MEI offers multiple ways of defining onsets and offsets of timed musical events such as notes and slurs. The most common and most musician-friendly approach to this is through the use of a combination of the attributes <strong>@tstamp</strong> and <strong>@dur</strong>, which are made available by the attribute classes 
-  <a href="/v3/attribute-classes/att.timestamp.musical.html">att.timestamp.musical</a> (inherited by 
-  <a href="/v3/attribute-classes/att.controlevent.html">att.controlevent</a>) and 
-  <a href="/v3/attribute-classes/att.duration.musical.html">att.duration.musical</a>, both from the shared module.</p>
+  <a href="/guidelines/v3/attribute-classes/att.timestamp.musical.html">att.timestamp.musical</a> (inherited by 
+  <a href="/guidelines/v3/attribute-classes/att.controlevent.html">att.controlevent</a>) and 
+  <a href="/guidelines/v3/attribute-classes/att.duration.musical.html">att.duration.musical</a>, both from the shared module.</p>
 
 <p>The timestamp (<strong>@tstamp</strong>) of a musical event is calculated in relation to the meter of the current measure and resembles the so-called ‘beat’. In a common time measure with four quarter notes, the timestamp of each quarter equals its beat position in the measure: The first quarter has a timestamp of 1, the second has a timestamp of 2, and so on. MEI defines the value of <strong>@tstamp</strong> as a real number; the second eighth note position in a measure would thus be represented by the value of “1.5”. The range of possible values is defined as starting with zero and ending with the number of metrical units in a measure (the ‘numerator’ in a time signature) + 1. This allows the capture of all graphical positions starting from the left barline (‘0’) and ending with the right barline of the measure (‘5’, in the case of 4/4 time).</p>
 
 <p>For expressing durations, MEI offers the <strong>@dur</strong> attribute. This attribute is described in section 
-  <a href="/v3/content/cmn.html#cmnNotesBasic">Basic Usage of Notes in CMN</a>.</p>
+  <a href="/guidelines/v3/content/cmn.html#cmnNotesBasic">Basic Usage of Notes in CMN</a>.</p>
 
 <p>For ‘spanning’ elements like slurs, which are members of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, it is often more intuitive to record two timestamps – one for the onset of the event and one for its termination. Because the termination of the event may be in a succeeding measure, the second timestamp (<strong>@tstamp2</strong>) has a slightly different datatype than the one marking the initiation of the event. Its datatype is constrained to values following the formula “xm+y”, where x is the number of full measures that this particular feature lasts (or the number of bar lines crossed) and y is the timestamp in the target measure where the feature ends. The timestamp is expressed using the same logic as described above. For example, a value of “0m+3” in 4/4 time indicates that the element bearing this attribute, a slur for example, ends on beat 3 of the same measure where it started. A value of “1m+1.5” would indicate an end on the second eighth note of the following measure. In 6/8 time, the value “2m+3” means that the feature ends two measures later on the third eighth note.</p>
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, it is often more intuitive to record two timestamps – one for the onset of the event and one for its termination. Because the termination of the event may be in a succeeding measure, the second timestamp (<strong>@tstamp2</strong>) has a slightly different datatype than the one marking the initiation of the event. Its datatype is constrained to values following the formula “xm+y”, where x is the number of full measures that this particular feature lasts (or the number of bar lines crossed) and y is the timestamp in the target measure where the feature ends. The timestamp is expressed using the same logic as described above. For example, a value of “0m+3” in 4/4 time indicates that the element bearing this attribute, a slur for example, ends on beat 3 of the same measure where it started. A value of “1m+1.5” would indicate an end on the second eighth note of the following measure. In 6/8 time, the value “2m+3” means that the feature ends two measures later on the third eighth note.</p>
 
 <h3 id="cmnAdditionalMeasureContent">4.2. Advanced CMN Features
       
@@ -1486,7 +1486,7 @@ found in performer parts.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/beam.html">beam</a>
+                <a href="/guidelines/v3/elements/beam.html">beam</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1506,7 +1506,7 @@ within a measure.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/beamspan.html">beamSpan</a>
+                <a href="/guidelines/v3/elements/beamspan.html">beamSpan</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -1518,8 +1518,8 @@ which extend across bar lines.</div>
 </div>
 
 <p>Use of the 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element is straightforward. The beamed notes, rests, or chords are simply enclosed by the 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element:</p>
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element is straightforward. The beamed notes, rests, or chords are simply enclosed by the 
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element:</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -1551,11 +1551,11 @@ which extend across bar lines.</div>
 </div>
 
 <p>From the 19th century onwards, it became quite common to break secondary beams to increase readability of longer beamed passages. The optional <strong>@breaksec</strong> attribute on 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a>s and 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>s under the beam may be used to encode the breaking of secondary beams <em>after</em> the note or chord bearing the attribute. The value of <strong>@breaksec</strong> indicates the number of continuous beams. For example:</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a>s and 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>s under the beam may be used to encode the breaking of secondary beams <em>after</em> the note or chord bearing the attribute. The value of <strong>@breaksec</strong> indicates the number of continuous beams. For example:</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/beam-a-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/beam-a-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Primary and secondary beams</figcaption>
 </figure>
 
@@ -1613,7 +1613,7 @@ which extend across bar lines.</div>
 <p>The duration of notes, rests, or chords under a beam which carries the <strong>@rend</strong> attribute with a value of ‘acc’, ‘rit’, or ‘mixed’ must be treated specially. The first and last contained elements must specify a duration which matches the number of beams displayed at the point of these events. In the case of a ‘mixed’ beam, each event at the point of change in the number of secondary beams must carry a <strong>@dur</strong> attribute. Beams like this may be encoded thusly:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmn/beamAcc-Rit.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmn/beamAcc-Rit.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Accelerando beams</figcaption>
 </figure>
 
@@ -1644,12 +1644,12 @@ which extend across bar lines.</div>
 
 </div>
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/beam-c-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/beam-c-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Cross-staff beam</figcaption>
 </figure>
 
 <p>Beams that connect events on different staves may be encoded in two different ways. First, a single-layer approach may be taken that treats the events lying under the beam as logically belonging to the same layer as the initial event but visually ‘displaced’ to an adjacent staff. In the example below, the last two notes under the beam carry a <strong>@staff</strong> attribute value that contradicts the ‘normal’ staff placement indicated by the <strong>@n</strong> attribute on their ancestor 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a>.</p>
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a>.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1668,9 +1668,9 @@ which extend across bar lines.</div>
 </div>
 
 <p>Alternatively, a staff-by-staff methodology may be employed in which the notes are encoded according to the staff on which they appear. This encoding style requires that each 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element account for the total time encompassed by the beam; that is, each 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> must use one or more 
-  <a href="/v3/elements/space.html" class="link_odd_elementSpec">space</a> elements to account for the time occupied by notes on the opposing staff. For example, the time used by the first two notes of the beam must be represented on staff number 1 and the time taken by the last two notes of the beam must be filled on staff number 2.</p>
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element account for the total time encompassed by the beam; that is, each 
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> must use one or more 
+  <a href="/guidelines/v3/elements/space.html" class="link_odd_elementSpec">space</a> elements to account for the time occupied by notes on the opposing staff. For example, the time used by the first two notes of the beam must be represented on staff number 1 and the time taken by the last two notes of the beam must be filled on staff number 2.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1701,10 +1701,10 @@ which extend across bar lines.</div>
 <p>Downstream processing needs are the determining factor in the choice between the two alternative encoding methods.</p>
 
 <p>Due to the potential problem of overlapping hierarchies, the 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element only allows the encoding of beams that do not cross barlines. When beams cross barlines, the use of the 
-  <a href="/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a> element is required. Unlike 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a>, the 
-  <a href="/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a>element does not contain the beamed notes as its children. Instead, it references the <strong>@xml:id</strong> values of all affected notes in its <strong>@plist</strong> attribute and denotes the initial and terminal notes of the beam using <strong>@startid</strong> and <strong>@endid</strong> attributes. This configuration allows beams to cross measure boundaries. The following example demonstrates a typical example of such hierarchy-crossing beams:</p>
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element only allows the encoding of beams that do not cross barlines. When beams cross barlines, the use of the 
+  <a href="/guidelines/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a> element is required. Unlike 
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a>, the 
+  <a href="/guidelines/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a>element does not contain the beamed notes as its children. Instead, it references the <strong>@xml:id</strong> values of all affected notes in its <strong>@plist</strong> attribute and denotes the initial and terminal notes of the beam using <strong>@startid</strong> and <strong>@endid</strong> attributes. This configuration allows beams to cross measure boundaries. The following example demonstrates a typical example of such hierarchy-crossing beams:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1714,11 +1714,11 @@ which extend across bar lines.</div>
 </div>
 
 <p>In addition to the explicit encoding of beams accommodated by the 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> and 
-  <a href="/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a> elements and the <strong>@beam</strong> attribute, MEI allows for specification of default beaming behavior using the following attributes on 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, and 
-  <a href="/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a>:</p>
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> and 
+  <a href="/guidelines/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a> elements and the <strong>@beam</strong> attribute, MEI allows for specification of default beaming behavior using the following attributes on 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, and 
+  <a href="/guidelines/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a>:</p>
 
 <p class="gloss"><strong>beam.group</strong>: Provides an example of how automated beaming (including secondary beams) is to be performed.</p>
 
@@ -1727,11 +1727,11 @@ which extend across bar lines.</div>
 <p>The <strong>@beam.group</strong> attribute can be used to set a default beaming pattern to be used when no beaming is indicated at the layer level. It must contain a comma-separated list of time values that add up to a measure in the current meter, e.g., ‘4,4,4,4’ in 4/4 time indicates that each quarter note worth of shorter notes should be beamed together. Parentheses can be used to indicate sub-groupings of secondary beams. For example, ‘(4.,4.,4.)’ in 9/8 meter indicates one primary beam per measure with secondary beams broken at each dotted quarter duration, while ‘(4,4),(4,4)’ in 4/4 will result in a measure of 16th notes being rendered with a primary beam covering all the notes and secondary beams for each group of four 16th notes.</p>
 
 <p>The <strong>@beam.group</strong> attribute is available on 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, and 
-  <a href="/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> elements, making it possible to set different beaming patterns for each of these. Also, the beaming pattern can be changed anywhere score parameters may be changed, for example, at the start of sections. This beaming “directive” can be overridden by using 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a>, 
-  <a href="/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a>, or <strong>@beam</strong> attributes as described above. If none of these beaming specifications is used, then no beaming is implied. Default beaming can be explicitly ‘turned off’ by setting <strong>@beam.group</strong> to an empty string.</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, and 
+  <a href="/guidelines/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> elements, making it possible to set different beaming patterns for each of these. Also, the beaming pattern can be changed anywhere score parameters may be changed, for example, at the start of sections. This beaming “directive” can be overridden by using 
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a>, 
+  <a href="/guidelines/v3/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a>, or <strong>@beam</strong> attributes as described above. If none of these beaming specifications is used, then no beaming is implied. Default beaming can be explicitly ‘turned off’ by setting <strong>@beam.group</strong> to an empty string.</p>
 
 <h4 id="cmnSlurTies">4.2.2. Ties, Slurs and Phrase Marks
       
@@ -1742,8 +1742,8 @@ which extend across bar lines.</div>
 <p>A tie is a curved line connecting two notes of the same pitch. The purpose of a tie is to join the durations of both notes, so that the first note sounds for the combined duration. In other words, there is only one onset for both notes.</p>
 
 <p>In MEI, ties can be encoded in different ways, depending on the level of detail that the encoder wants to preserve. The simplest solution is to use the <strong>@tie</strong> attribute found on 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>.</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>.</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -1762,10 +1762,10 @@ which extend across bar lines.</div>
 <p class="gloss"><strong>t (terminal)</strong>: Marks the end of a tie</p>
 
 <p>The scope of the <strong>@tie</strong> attribute is the musical 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>; that is, a tie started in one layer may only be ended by a subsequent musical event with a <strong>@tie</strong> attribute with an <em>m</em> or <em>t</em> value in the same layer. The tie-terminating event may lie in the following measure.</p>
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>; that is, a tie started in one layer may only be ended by a subsequent musical event with a <strong>@tie</strong> attribute with an <em>m</em> or <em>t</em> value in the same layer. The tie-terminating event may lie in the following measure.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmn/finger-300.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmn/finger-300.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Ties across barlines</figcaption>
 </figure>
 
@@ -1856,13 +1856,13 @@ which extend across bar lines.</div>
 <p>A slur is a curved line that connects a group of notes of different pitch. It normally indicates that an instrument-specific performance technique should be applied to the affected notes. For example, in notation for winds, the notes should be played in one breath, while a single bow is indicated for string instruments.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/slur-300-20100514.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/slur-300-20100514.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Slurs</figcaption>
 </figure>
 
 <p>In MEI, slurs may be encoded in a similar way to ties: 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> bear a <strong>@slur</strong> attribute that allows the commencement or ending of a slur at this element. The allowed values, however, are slightly different: The <em>i</em>, <em>m</em> or <em>t</em> are followed by a single digit in the range 1 to 6, as in the following example:</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> bear a <strong>@slur</strong> attribute that allows the commencement or ending of a slur at this element. The allowed values, however, are slightly different: The <em>i</em>, <em>m</em> or <em>t</em> are followed by a single digit in the range 1 to 6, as in the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1944,18 +1944,18 @@ which extend across bar lines.</div>
 <p>Slurs and ties that cross system or page breaks are often split into two separate symbols for rendering. One slur or tie ends at the last barline, another one starts at the beginning of the new system. MEI expects this to be the default rendering behaviour, so that in situations like these, the regular <strong>@tie</strong> or <strong>@slur</strong> attributes are sufficient to describe both curved lines resulting from the split.</p>
 
 <p>Sometimes, however, one of these two symbols is missing in the document, or the encoder wants to provide additional (often visual) information about the slur or tie. In these cases, using an attribute is not an adequate solution. Therefore, MEI offers dedicated 
-  <a href="/v3/elements/tie.html" class="link_odd_elementSpec">tie</a> and 
-  <a href="/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> elements. A third element, 
-  <a href="/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a>, is used to identify a unified melodic idea (in German: <em>Phrasierungsbogen</em>), whereas the 
-  <a href="/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> element is used as a generic element for all curved lines (in German: <em>Bogensetzung</em>) except ties. All three elements have nearly identical models.</p>
+  <a href="/guidelines/v3/elements/tie.html" class="link_odd_elementSpec">tie</a> and 
+  <a href="/guidelines/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> elements. A third element, 
+  <a href="/guidelines/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a>, is used to identify a unified melodic idea (in German: <em>Phrasierungsbogen</em>), whereas the 
+  <a href="/guidelines/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> element is used as a generic element for all curved lines (in German: <em>Bogensetzung</em>) except ties. All three elements have nearly identical models.</p>
 
 <p>Another reason for using elements instead of attributes for ties, slurs, and phrase marks is that only elements may be combined with the functionality provided in chapters 
-  <a href="/v3/content/edittrans.html">Editorial Markup</a> and 
-  <a href="/v3/content/critapp.html">Critical Apparatus</a> of these Guidelines.</p>
+  <a href="/guidelines/v3/content/edittrans.html">Editorial Markup</a> and 
+  <a href="/guidelines/v3/content/critapp.html">Critical Apparatus</a> of these Guidelines.</p>
 
 <p>Although these elements are allowed within a 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> to accommodate unmeasured notation, by convention in CMN they are normally placed inside 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, after the encoding of staves, alongside other so-called ‘control events’.</p>
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> to accommodate unmeasured notation, by convention in CMN they are normally placed inside 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, after the encoding of staves, alongside other so-called ‘control events’.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1986,7 +1986,7 @@ which extend across bar lines.</div>
 </div>
 
 <p>For the ‘horizontal assignment’, the encoder may choose between two different mechanisms. The first uses two timestamp attributes as described in section 
-  <a href="/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:</p>
+  <a href="/guidelines/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -1998,29 +1998,29 @@ which extend across bar lines.</div>
 <p>By using <strong>@tstamp</strong> and <strong>@tstamp2</strong> attributes, the encoder denotes a rather loose connection – the slur (or tie) is attached to a certain position in the measure, not to a specific note or chord. If the encoder wants to specify a close connection to a particular event, the <strong>@startid</strong> and <strong>@endid</strong> attributes may be used instead. Here, the <strong>@xml:id</strong>s of the first and last note of the slur are referenced. This mechanism also allows the crossing of layers and staves.</p>
 
 <p>For human readability, it is recommended to encode 
-  <a href="/v3/elements/slur.html" class="link_odd_elementSpec">slur</a>, 
-  <a href="/v3/elements/tie.html" class="link_odd_elementSpec">tie</a> and 
-  <a href="/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a> features in the 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> where they begin; that is, in the measure that holds the element referenced by <strong>@startid</strong>. On the other hand, for machine processability, it may be desirable to place 
-  <a href="/v3/elements/slur.html" class="link_odd_elementSpec">slur</a>, 
-  <a href="/v3/elements/tie.html" class="link_odd_elementSpec">tie</a>, and 
-  <a href="/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a> elements in the measure <em>where they end</em> or even in the <em>last measure</em> regardless of their beginning and ending points in the music. This last option makes all references contained within these elements ‘back references’. Back references are necessary when using processing software that treats the encoded file as a stream; that is, programs that process the file without creating an in-memory representation of its contents.</p>
+  <a href="/guidelines/v3/elements/slur.html" class="link_odd_elementSpec">slur</a>, 
+  <a href="/guidelines/v3/elements/tie.html" class="link_odd_elementSpec">tie</a> and 
+  <a href="/guidelines/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a> features in the 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> where they begin; that is, in the measure that holds the element referenced by <strong>@startid</strong>. On the other hand, for machine processability, it may be desirable to place 
+  <a href="/guidelines/v3/elements/slur.html" class="link_odd_elementSpec">slur</a>, 
+  <a href="/guidelines/v3/elements/tie.html" class="link_odd_elementSpec">tie</a>, and 
+  <a href="/guidelines/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a> elements in the measure <em>where they end</em> or even in the <em>last measure</em> regardless of their beginning and ending points in the music. This last option makes all references contained within these elements ‘back references’. Back references are necessary when using processing software that treats the encoded file as a stream; that is, programs that process the file without creating an in-memory representation of its contents.</p>
 
 <p>When using the 
-  <a href="/v3/elements/tie.html" class="link_odd_elementSpec">tie</a>, 
-  <a href="/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> or 
-  <a href="/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a> elements, the curvature of the line may be described using the <strong>@curvedir</strong>, <strong>@bulge</strong> and <strong>@bezier</strong> attributes. Whereas the first attribute allows only specification of the slur’s vertical placement, the others give increasingly more precise control of the curve.</p>
+  <a href="/guidelines/v3/elements/tie.html" class="link_odd_elementSpec">tie</a>, 
+  <a href="/guidelines/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> or 
+  <a href="/guidelines/v3/elements/phrase.html" class="link_odd_elementSpec">phrase</a> elements, the curvature of the line may be described using the <strong>@curvedir</strong>, <strong>@bulge</strong> and <strong>@bezier</strong> attributes. Whereas the first attribute allows only specification of the slur’s vertical placement, the others give increasingly more precise control of the curve.</p>
 
 <p>If the encoder wishes to draw attention to the appearance of a slur or tie in a given source, the <strong>@facs</strong> attribute may be used instead of (or in addition to) the curve description attributes to point to a graphic image or a zone within an image (see 
-  <a href="/v3/content/facsimiles.html">Facsimiles</a>).</p>
+  <a href="/guidelines/v3/content/facsimiles.html">Facsimiles</a>).</p>
 
 <h4 id="cmnDynam">4.2.3. Dynamics in CMN
       
   </h4>
 
 <p>Common Music Notation provides two different methodologies for expressing the volume of a note, phrase, section, etc. The first is a verbal instruction providing such information in human language, possibly in an abbreviated form. An example is the word piano, indicating a quiet volume, often abbreviated as p. In MEI, verbal instructions like this are encoded using the 
-  <a href="/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> element from the Shared module (see chapter 
-  <a href="/v3/content/shared.html">Shared Elements, Models, and Attributes</a>):</p>
+  <a href="/guidelines/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> element from the Shared module (see chapter 
+  <a href="/guidelines/v3/content/shared.html">Shared Elements, Models, and Attributes</a>):</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -2029,12 +2029,12 @@ which extend across bar lines.</div>
 </div>
 
 <p>By convention, 
-  <a href="/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> elements, like 
-  <a href="/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> and other elements belonging to the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, are encoded at the end of the 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> to which they belong. This requires 
-  <a href="/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> to be assigned to a certain 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> using the <strong>@staff</strong> attribute, whose value refers to the target element’s <strong>@n</strong> attribute. In the absence of other information, all layers within the staff are assumed to have the same dynamic marking.</p>
+  <a href="/guidelines/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> elements, like 
+  <a href="/guidelines/v3/elements/slur.html" class="link_odd_elementSpec">slur</a> and other elements belonging to the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, are encoded at the end of the 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> to which they belong. This requires 
+  <a href="/guidelines/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> to be assigned to a certain 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> using the <strong>@staff</strong> attribute, whose value refers to the target element’s <strong>@n</strong> attribute. In the absence of other information, all layers within the staff are assumed to have the same dynamic marking.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2072,7 +2072,7 @@ which extend across bar lines.</div>
 </div>
 
 <p>Dynamics must also be associated with a particular time point in a measure, using the <strong>@tstamp</strong>, or with a particular event, using the <strong>@startid</strong> attribute. Linking a control event with measures and events is discussed in section 
-  <a href="/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a>:</p>
+  <a href="/guidelines/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a>:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2123,7 +2123,7 @@ which extend across bar lines.</div>
 </div>
 
 <p>All musical elements affected by the 
-  <a href="/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> may be explicitly specified using the <strong>@plist</strong> attribute, which contains <strong>@xml:id</strong> attribute value references:</p>
+  <a href="/guidelines/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> may be explicitly specified using the <strong>@plist</strong> attribute, which contains <strong>@xml:id</strong> attribute value references:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2135,9 +2135,9 @@ which extend across bar lines.</div>
 <p>It is recommended that the list of references in <strong>@plist</strong> include all participants in the dynamic marking, including the first and last notes as in the preceding example, even though they are duplicated by <strong>@startid</strong> and <strong>@endid</strong> attributes.</p>
 
 <p>In addition to verbal instructions, Common Music Notation uses graphical symbols to indicate ‘continuous’ dynamics. These crescendo and decrescendo (or diminuendo) symbols are encoded in MEI using the 
-  <a href="/v3/elements/hairpin.html" class="link_odd_elementSpec">hairpin</a> element. It also is a member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, which means it too is used just before the close of a 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> element, following the encoding of all staves. The required attribute <strong>@form</strong> specifies the direction of the symbol by taking one of two possible values: <em>cres</em> (growing louder) or <em>dim</em> (getting softer).</p>
+  <a href="/guidelines/v3/elements/hairpin.html" class="link_odd_elementSpec">hairpin</a> element. It also is a member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, which means it too is used just before the close of a 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> element, following the encoding of all staves. The required attribute <strong>@form</strong> specifies the direction of the symbol by taking one of two possible values: <em>cres</em> (growing louder) or <em>dim</em> (getting softer).</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2147,7 +2147,7 @@ which extend across bar lines.</div>
 </div>
 
 <p>Marking the logical extent of hairpins is possible using the same attributes as for 
-  <a href="/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a>. The following example shows a hairpin that begins on the second half of beat 2 (in the current measure) and ends on beat 1 (of the following measure).</p>
+  <a href="/guidelines/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a>. The following example shows a hairpin that begins on the second half of beat 2 (in the current measure) and ends on beat 1 (of the following measure).</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2185,22 +2185,22 @@ which extend across bar lines.</div>
 <p>Usually, however, tuplets are rendered with a bracket (<strong>@bracket.visible</strong>=”true”) and a single number (<strong>@num.format</strong>=”count” and <strong>@num.visible</strong>=”true”). However, the number-to-numbase ratio may be provided in addition to, or in some cases as a replacement for, the bracket. The <strong>@num.format</strong> attribute indicates whether a plain number (the value of <strong>@num</strong>) or a ratio (comprised of <strong>@num</strong> and <strong>@numbase</strong>, e.g., “3:2”) should be displayed and <strong>@num.visible</strong> indicates the general presence of such a number.</p>
 
 <p>In addition to 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> elements, 
-  <a href="/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> may contain other elements, such as 
-  <a href="/v3/elements/rest.html" class="link_odd_elementSpec">rest</a> or 
-  <a href="/v3/elements/space.html" class="link_odd_elementSpec">space</a>, to match the content of a source document or an intended rendering. In particular, the 
-  <a href="/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element is allowed so that custom beaming may be indicated, e.g., a septuplet may be divided into a group of three plus a group of four notes.</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> elements, 
+  <a href="/guidelines/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> may contain other elements, such as 
+  <a href="/guidelines/v3/elements/rest.html" class="link_odd_elementSpec">rest</a> or 
+  <a href="/guidelines/v3/elements/space.html" class="link_odd_elementSpec">space</a>, to match the content of a source document or an intended rendering. In particular, the 
+  <a href="/guidelines/v3/elements/beam.html" class="link_odd_elementSpec">beam</a> element is allowed so that custom beaming may be indicated, e.g., a septuplet may be divided into a group of three plus a group of four notes.</p>
 
 <p>The 
-  <a href="/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> element may also be used for repetition of the same pitch; that is, a single note or chord may be the only content of the tuplet. In some cases, optical music recognition software may treat these instances as bowed tremolandi due to the knowledge of the complete semantics of the notation at the time of recognition. However, marking these as tuplets is the recommended practice.</p>
+  <a href="/guidelines/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> element may also be used for repetition of the same pitch; that is, a single note or chord may be the only content of the tuplet. In some cases, optical music recognition software may treat these instances as bowed tremolandi due to the knowledge of the complete semantics of the notation at the time of recognition. However, marking these as tuplets is the recommended practice.</p>
 
 <p>In some situations, a tuplet is made up of events in different measures. As this raises the issue of non-concurrent hierarchies, it is not possible to encode such situations with the 
-  <a href="/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> element described above. Therefore, MEI offers the 
-  <a href="/v3/elements/tupletspan.html" class="link_odd_elementSpec">tupletSpan</a> element, which is member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class. It is nested inside of 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following all the measure’s 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> children. It uses the same attributes as 
-  <a href="/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> to describe tuplets, but instead of nesting all affected notes inside itself, it references the <strong>@xml:id</strong> values of all affected notes in its <strong>@plist</strong> attribute and the initial and terminal notes of the tuplet using <strong>@startid</strong> and <strong>@endid</strong> attributes. This configuration allows tuplets to cross measure boundaries. The following example demonstrates a typical example of such hierarchy-crossing tuplets:</p>
+  <a href="/guidelines/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> element described above. Therefore, MEI offers the 
+  <a href="/guidelines/v3/elements/tupletspan.html" class="link_odd_elementSpec">tupletSpan</a> element, which is member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class. It is nested inside of 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following all the measure’s 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> children. It uses the same attributes as 
+  <a href="/guidelines/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> to describe tuplets, but instead of nesting all affected notes inside itself, it references the <strong>@xml:id</strong> values of all affected notes in its <strong>@plist</strong> attribute and the initial and terminal notes of the tuplet using <strong>@startid</strong> and <strong>@endid</strong> attributes. This configuration allows tuplets to cross measure boundaries. The following example demonstrates a typical example of such hierarchy-crossing tuplets:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2214,8 +2214,8 @@ which extend across bar lines.</div>
   </h4>
 
 <p>This section introduces elements and attributes which may hold CMN-specific performance instructions. The functionality described herein is related to the <strong>@artic</strong> attribute and 
-  <a href="/v3/elements/artic.html" class="link_odd_elementSpec">artic</a> element introduced in 
-  <a href="/v3/content/shared.html">Shared Elements, Models, and Attributes</a>. The following elements are relevant in this context:</p>
+  <a href="/guidelines/v3/elements/artic.html" class="link_odd_elementSpec">artic</a> element introduced in 
+  <a href="/guidelines/v3/content/shared.html">Shared Elements, Models, and Attributes</a>. The following elements are relevant in this context:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -2226,7 +2226,7 @@ which extend across bar lines.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/bend.html">bend</a>
+                <a href="/guidelines/v3/elements/bend.html">bend</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2247,7 +2247,7 @@ note.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/btrem.html">bTrem</a>
+                <a href="/guidelines/v3/elements/btrem.html">bTrem</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2266,7 +2266,7 @@ note.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/ftrem.html">fTrem</a>
+                <a href="/guidelines/v3/elements/ftrem.html">fTrem</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2286,7 +2286,7 @@ between a note and a chord) that are (usually) farther apart than a major second
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/gliss.html">gliss</a>
+                <a href="/guidelines/v3/elements/gliss.html">gliss</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2306,7 +2306,7 @@ indicated by a straight or wavy line.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/arpeg.html">arpeg</a>
+                <a href="/guidelines/v3/elements/arpeg.html">arpeg</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2327,7 +2327,7 @@ rather than simultaneously, usually from lowest to highest. Sometimes called a
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/octave.html">octave</a>
+                <a href="/guidelines/v3/elements/octave.html">octave</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2348,7 +2348,7 @@ written pitch.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/fermata.html">fermata</a>
+                <a href="/guidelines/v3/elements/fermata.html">fermata</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2367,8 +2367,8 @@ section. Sometimes called a 'hold' or 'pause'.</div>
   </h5>
 
 <p>In CMN, the notes of a chord are sometimes performed successively rather than simultaneously. This behavior, called arpeggiation, is normally indicated using a wavy line preceding the chord. MEI offers the 
-  <a href="/v3/elements/arpeg.html" class="link_odd_elementSpec">arpeg</a> element to describe arpeggios. This element is a member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and, like other members of this class, uses the <strong>@staff</strong>, <strong>@layer</strong> and <strong>@tstamp</strong> or the <strong>@startid</strong> and <strong>@endid</strong> attributes to connect it to the affected chord.</p>
+  <a href="/guidelines/v3/elements/arpeg.html" class="link_odd_elementSpec">arpeg</a> element to describe arpeggios. This element is a member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and, like other members of this class, uses the <strong>@staff</strong>, <strong>@layer</strong> and <strong>@tstamp</strong> or the <strong>@startid</strong> and <strong>@endid</strong> attributes to connect it to the affected chord.</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -2410,21 +2410,21 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 <p>A third, and somewhat counter-intuitive, value for <strong>@order</strong>, “nonarp”, indicates that no arpeggio shall be performed. Normally rendered as a bracket instead of a wavy line, this form of arpeggio is used to indicate a non-arpeggiated chord intervening in a sequence of arpeggiated ones. This is common in music for the harp, where arpeggiation is the usual method of performing chords and deviation from the norm must be explicitly indicated.</p>
 
 <p>For arpeggios that involve chords spanning multiple staves as a continuous arpeggio (instead of two separate arpeggios), the <strong>@plist</strong> attribute may be used to point to all affected 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> elements’ <strong>@xml:id</strong> attributes.</p>
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> elements’ <strong>@xml:id</strong> attributes.</p>
 
 <p>Whereas an arpeggio ‘staggers’ the onset times of the notes of a chord, a glissando denotes a situation where the pitch ‘slides’ from one note to another. It makes no difference whether this slide produces distinct intermediate pitches (as on the piano) or not (as on the trombone), though the latter is sometimes referred to as portamento. The visual appearance of a glissando, which MEI encodes as 
-  <a href="/v3/elements/gliss.html" class="link_odd_elementSpec">gliss</a>, is normally a line connecting the two most distant notes in the glissando.</p>
+  <a href="/guidelines/v3/elements/gliss.html" class="link_odd_elementSpec">gliss</a>, is normally a line connecting the two most distant notes in the glissando.</p>
 
 <p>The 
-  <a href="/v3/elements/gliss.html" class="link_odd_elementSpec">gliss</a> element is a member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and therefore, like other control events, it occurs inside a measure after the staves and uses its <strong>@staff</strong>, <strong>@layer</strong>, <strong>@tstamp</strong>, <strong>@tstamp2</strong>, <strong>@startid</strong> and <strong>@endid</strong> attributes to connect it to the affected notes or chords. It is a semantic error not to specify a starting point attribute. The visual appearance of the indicating line may be recorded in the <strong>@rend</strong> attribute. Any text accompanying the line, such as “gliss.”, may be provided in the <strong>@text</strong> attribute.</p>
+  <a href="/guidelines/v3/elements/gliss.html" class="link_odd_elementSpec">gliss</a> element is a member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and therefore, like other control events, it occurs inside a measure after the staves and uses its <strong>@staff</strong>, <strong>@layer</strong>, <strong>@tstamp</strong>, <strong>@tstamp2</strong>, <strong>@startid</strong> and <strong>@endid</strong> attributes to connect it to the affected notes or chords. It is a semantic error not to specify a starting point attribute. The visual appearance of the indicating line may be recorded in the <strong>@rend</strong> attribute. Any text accompanying the line, such as “gliss.”, may be provided in the <strong>@text</strong> attribute.</p>
 
 <h5 id="cmnBend">4.2.5.2. Bend
       
   </h5>
 
 <p>A bend is a variation in pitch (often microtonal) upwards or downwards during the course of a note. Typically, the performer attacks the note at ‘true’ pitch, changes the intonation, then returns to true pitch. The 
-  <a href="/v3/elements/bend.html" class="link_odd_elementSpec">bend</a> element can also be used for so-called scoop, plop, falloff, and doit performance effects. It should not be used for laissez vibrer (l.v.) indications. As with other control events, the starting point of the bend may be indicated by either a tstamp, tstamp.ges, tstamp.real or startid attribute. It is a semantic error not to specify a starting attribute.</p>
+  <a href="/guidelines/v3/elements/bend.html" class="link_odd_elementSpec">bend</a> element can also be used for so-called scoop, plop, falloff, and doit performance effects. It should not be used for laissez vibrer (l.v.) indications. As with other control events, the starting point of the bend may be indicated by either a tstamp, tstamp.ges, tstamp.real or startid attribute. It is a semantic error not to specify a starting attribute.</p>
 
 <h5 id="cmnTrem">4.2.5.3. Tremolandi
       
@@ -2433,14 +2433,14 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 <p>CMN has two slightly different concepts which are both called tremolo. The first is a rapid repetition of a single pitch or chord, whereas the second is a rapid alternation between two different notes or chords. In addition, either species of tremolo may be measured or unmeasured. A measured tremolo is an abbreviation for written-out notation; that is, the tremolo is intended to be perceived as notes with distinct rhythmic values. On the other hand, in an unmeasured tremolo no specific number of alternations is intended.</p>
 
 <p>For the repetition of a single note or chord, MEI offers the 
-  <a href="/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a> (bowed tremolo) element, which is a member of the 
-  <a href="/v3/model-classes/model.eventlike.html">model.eventLike</a> class, meaning it is encoded following the normal course of musical events within a 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. It holds exactly one 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> element that is to be repeated.</p>
+  <a href="/guidelines/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a> (bowed tremolo) element, which is a member of the 
+  <a href="/guidelines/v3/model-classes/model.eventlike.html">model.eventLike</a> class, meaning it is encoded following the normal course of musical events within a 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. It holds exactly one 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> element that is to be repeated.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/btrem-a-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/btrem-a-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Bowed tremolandi</figcaption>
 </figure>
 
@@ -2454,8 +2454,8 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 </div>
 
 <p>The <strong>@measperf</strong> attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The stem modifier must also be explicity set on the child 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> element for a complete visual representation. The number of slashes present on the note may disagree with the number of slashes that should be present according to the <strong>@measperf</strong> attribute, especially in music manuscripts.</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> element for a complete visual representation. The number of slashes present on the note may disagree with the number of slashes that should be present according to the <strong>@measperf</strong> attribute, especially in music manuscripts.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2467,9 +2467,9 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a> element can be used as shorthand for a tuplet consisting of repetitions of a single note or chord. This kind of markup may be the result of an optical music recognition process in which complete semantics cannot be determined <em>a priori</em>. When used this way, the <strong>@num</strong> attribute on 
-  <a href="/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a> can record a number to be rendered along with the pseudo-tuplet. In spite of this capability, the 
-  <a href="/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> element is preferred.</p>
+  <a href="/guidelines/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a> element can be used as shorthand for a tuplet consisting of repetitions of a single note or chord. This kind of markup may be the result of an optical music recognition process in which complete semantics cannot be determined <em>a priori</em>. When used this way, the <strong>@num</strong> attribute on 
+  <a href="/guidelines/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a> can record a number to be rendered along with the pseudo-tuplet. In spite of this capability, the 
+  <a href="/guidelines/v3/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> element is preferred.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2481,10 +2481,10 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 </div>
 
 <p>In the case of alternating pitches, MEI offers the 
-  <a href="/v3/elements/ftrem.html" class="link_odd_elementSpec">fTrem</a> (fingered tremolo) element. While it mostly behaves the same as 
-  <a href="/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a>, a fingered tremolo requires exactly two child elements, either being a 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The <strong>@measperf</strong> attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., 4ths, 8ths, 16ths, etc. The number of slashes present in the source is captured by the <strong>@slash</strong> attribute. The number of slashes present may disagree with the rhythmic value indicated by the <strong>@measperf</strong> attribute, especially in manuscript sources.</p>
+  <a href="/guidelines/v3/elements/ftrem.html" class="link_odd_elementSpec">fTrem</a> (fingered tremolo) element. While it mostly behaves the same as 
+  <a href="/guidelines/v3/elements/btrem.html" class="link_odd_elementSpec">bTrem</a>, a fingered tremolo requires exactly two child elements, either being a 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. The <strong>@measperf</strong> attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., 4ths, 8ths, 16ths, etc. The number of slashes present in the source is captured by the <strong>@slash</strong> attribute. The number of slashes present may disagree with the rhythmic value indicated by the <strong>@measperf</strong> attribute, especially in manuscript sources.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2503,9 +2503,9 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 <p>A very common feature of music notation from the CMN period is the so-called ‘fermata’. It is usually written as a dot above or below an arc. It may stand above or below the staff it affects. If this symbol is used, its ‘open’ side always faces the staff. A fermata indicates that the note or rest under it should be held longer than its written duration would normally require. Sometimes, a fermata occurs over a barline to indicate the end of a phrase or section.</p>
 
 <p>In MEI, fermatas may be encoded using an attribute on 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a>, 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> or 
-  <a href="/v3/elements/rest.html" class="link_odd_elementSpec">rest</a>. This attribute allows placement of a fermata above or below the element to which it’s attached.</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a>, 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> or 
+  <a href="/guidelines/v3/elements/rest.html" class="link_odd_elementSpec">rest</a>. This attribute allows placement of a fermata above or below the element to which it’s attached.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2515,8 +2515,8 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 </div>
 
 <p>However, if there is further information about the fermata that should be addressed in the encoding, MEI offers the 
-  <a href="/v3/elements/fermata.html" class="link_odd_elementSpec">fermata</a> element. This element, which is a member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and therefore requires the use of such attributes as <strong>@staff</strong>, <strong>@layer</strong>, <strong>@tstamp</strong> and <strong>@startid</strong>, allows specification of the orientation of the fermata using its <strong>@form</strong> attribute. In addition, the <strong>@shape</strong> attribute may be used to indicate whether the fermata is rendered as a semicircle (“curved”) or semisquare (“square”). If the fermata should be rendered using some other symbol, a user-defined symbol may be referred to using the <strong>@altsym</strong> attribute.</p>
+  <a href="/guidelines/v3/elements/fermata.html" class="link_odd_elementSpec">fermata</a> element. This element, which is a member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and therefore requires the use of such attributes as <strong>@staff</strong>, <strong>@layer</strong>, <strong>@tstamp</strong> and <strong>@startid</strong>, allows specification of the orientation of the fermata using its <strong>@form</strong> attribute. In addition, the <strong>@shape</strong> attribute may be used to indicate whether the fermata is rendered as a semicircle (“curved”) or semisquare (“square”). If the fermata should be rendered using some other symbol, a user-defined symbol may be referred to using the <strong>@altsym</strong> attribute.</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -2531,10 +2531,10 @@ section. Sometimes called a 'hold' or 'pause'.</div>
   </h5>
 
 <p>An indication that a passage should be performed one or more octaves above or below its written pitch is represented by the 
-  <a href="/v3/elements/octave.html" class="link_odd_elementSpec">octave</a> element.</p>
+  <a href="/guidelines/v3/elements/octave.html" class="link_odd_elementSpec">octave</a> element.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/octave-a-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/octave-a-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Octave displacement</figcaption>
 </figure>
 
@@ -2551,8 +2551,8 @@ section. Sometimes called a 'hold' or 'pause'.</div>
   </h5>
 
 <p>A breath mark indicates a point at which the performer of a wind instrument or singer may breathe. It is sometimes also used to indicate a short pause or break for instruments not requiring breath, which allows it to also serve as a guide to phrasing. In MEI, breath marks are encoded using the 
-  <a href="/v3/elements/breath.html" class="link_odd_elementSpec">breath</a> element, which is a member of 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a>. It is a semantic error not to specify a starting point attribute.</p>
+  <a href="/guidelines/v3/elements/breath.html" class="link_odd_elementSpec">breath</a> element, which is a member of 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a>. It is a semantic error not to specify a starting point attribute.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2570,7 +2570,7 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 </div>
 
 <p>The usual sign for the breath mark is a comma; however, other visual forms of the breath mark may be indicated using the <strong>@altsym</strong> attribute (see chapter 
-  <a href="/v3/content/usersymbols.html">User-defined Symbols</a> for further details).</p>
+  <a href="/guidelines/v3/content/usersymbols.html">User-defined Symbols</a> for further details).</p>
 
 <h5 id="cmnHarp">4.2.6.2. Harp Pedals
       
@@ -2579,14 +2579,14 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 <p>Modern harps have seven pedals which allow adjustment of their strings to different pitches. The settings for these pedals occur at the beginning of the harp notation and/or whenever it is necessary to change the harp’s tuning. These settings may be rendered using letter pitches (in the order of the pedals from left to right) or in a diagrammatic fashion, such as the form invented by Carlos Salzedo.</p>
 
 <p>In MEI, harp pedal settings are encoded using the 
-  <a href="/v3/elements/harppedal.html" class="link_odd_elementSpec">harpPedal</a> element. It is a member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and is therefore placed within 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following all 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> children. The <strong>@staff</strong> and <strong>@layer</strong> attributes may be used to assign it to a certain 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> or 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. Either a <strong>@tstamp</strong> or <strong>@startid</strong> attribute must be used to indicate the placement within the measure (see 
-  <a href="/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a> and 
-  <a href="/v3/content/ptrref.html">Pointers and References</a> for further details about those linking mechanisms).</p>
+  <a href="/guidelines/v3/elements/harppedal.html" class="link_odd_elementSpec">harpPedal</a> element. It is a member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and is therefore placed within 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following all 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> children. The <strong>@staff</strong> and <strong>@layer</strong> attributes may be used to assign it to a certain 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> or 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>. Either a <strong>@tstamp</strong> or <strong>@startid</strong> attribute must be used to indicate the placement within the measure (see 
+  <a href="/guidelines/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a> and 
+  <a href="/guidelines/v3/content/ptrref.html">Pointers and References</a> for further details about those linking mechanisms).</p>
 
 <p>The musical intention of the element is described using the <strong>@c</strong>, <strong>@d</strong>, <strong>@e</strong>, <strong>@f</strong>, <strong>@g</strong>, <strong>@a</strong> and <strong>@b</strong> attributes, which affect the corresponding strings of the harp. All of these attributes may take the values “<em>f</em>” (flat), “<em>s</em>” (sharp) or “<em>n</em>” (natural), where “n” is the default value, which is assumed when one of these attributes is not specified.</p>
 
@@ -2607,11 +2607,11 @@ section. Sometimes called a 'hold' or 'pause'.</div>
   </h5>
 
 <p>Music for piano also often includes indications of the use of pedals. In MEI, these symbols are encoded using the 
-  <a href="/v3/elements/pedal.html" class="link_odd_elementSpec">pedal</a> element. As a member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, it is located within 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> and refers to a staff, layer and timestamp using the <strong>@staff</strong>, <strong>@layer</strong> and <strong>@tstamp</strong> attributes. Alternatively, the <strong>@startid</strong> attribute may be used to identify a 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
-  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> to which the mark should be assigned.</p>
+  <a href="/guidelines/v3/elements/pedal.html" class="link_odd_elementSpec">pedal</a> element. As a member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class, it is located within 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> and refers to a staff, layer and timestamp using the <strong>@staff</strong>, <strong>@layer</strong> and <strong>@tstamp</strong> attributes. Alternatively, the <strong>@startid</strong> attribute may be used to identify a 
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> or 
+  <a href="/guidelines/v3/elements/chord.html" class="link_odd_elementSpec">chord</a> to which the mark should be assigned.</p>
 
 <p>The meaning of the mark is captured using the <strong>@dir</strong> attribute, which provides the following values:</p>
 
@@ -2640,9 +2640,9 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 <p>The term ossia, Italian for “or”, denotes an alternative for a certain passage which is provided by the composer <em>without any preference</em> of one alternative over another. An ossia often provides a simpler (easier to perform) version of the original content. Another frequent use case for ossia is the provision of indications about performance practice, such as an alternative version with ornamentation written out in full. In all cases, it is up to the performer to choose between the alternatives.</p>
 
 <p>Most often an ossia is rendered above the main staff on a reduced-size staff. Sometimes, however, the alternate material occurs on the same staff as the primary text, but in a separate layer. In this case, the alternative material is usually rendered in small-sized notation on the normal-sized staff. For both situations, MEI offers the 
-  <a href="/v3/elements/ossia.html" class="link_odd_elementSpec">ossia</a> element, which may be nested either inside 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> to reflect an ossia on a separate staff, or inside 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> to reflect an inline ossia in a separate layer. The following example demonstrates an ossia on a separate staff:</p>
+  <a href="/guidelines/v3/elements/ossia.html" class="link_odd_elementSpec">ossia</a> element, which may be nested either inside 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> to reflect an ossia on a separate staff, or inside 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> to reflect an inline ossia in a separate layer. The following example demonstrates an ossia on a separate staff:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2667,14 +2667,14 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 </div>
 
 <p>The example above demonstrates that only one of the two 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within 
-  <a href="/v3/elements/ossia.html" class="link_odd_elementSpec">ossia</a> has an <strong>@n</strong> attribute. This mechanism allows one to distinguish between the “regular” and the “alternative” content: The one bearing the <strong>@n</strong> attribute goes in line with the preceding measure’s staff, the other one is printed in reduced size above. In this case, the vertical order of staves follows document order: The top-most staff is encoded as the first child, the lowest comes last. In combination with the presence of the <strong>@n</strong> attribute, this allows the capture of multiple simultaneous ossia staves.</p>
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within 
+  <a href="/guidelines/v3/elements/ossia.html" class="link_odd_elementSpec">ossia</a> has an <strong>@n</strong> attribute. This mechanism allows one to distinguish between the “regular” and the “alternative” content: The one bearing the <strong>@n</strong> attribute goes in line with the preceding measure’s staff, the other one is printed in reduced size above. In this case, the vertical order of staves follows document order: The top-most staff is encoded as the first child, the lowest comes last. In combination with the presence of the <strong>@n</strong> attribute, this allows the capture of multiple simultaneous ossia staves.</p>
 
 <p>All staves within 
-  <a href="/v3/elements/ossia.html" class="link_odd_elementSpec">ossia</a>, even the alternative ones without a direct reference, obey the definitions of the associated 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, which can be derived from the value of the <strong>@n</strong> attribute. Alternatively, a separate 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> may be given at the beginning of the contained 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> element(s).</p>
+  <a href="/guidelines/v3/elements/ossia.html" class="link_odd_elementSpec">ossia</a>, even the alternative ones without a direct reference, obey the definitions of the associated 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, which can be derived from the value of the <strong>@n</strong> attribute. Alternatively, a separate 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> may be given at the beginning of the contained 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> element(s).</p>
 
 <p>In case of an inline ossia, the whole setup of elements moves down one step in the hierarchy, as seen in the following example:</p>
 
@@ -2707,23 +2707,23 @@ section. Sometimes called a 'hold' or 'pause'.</div>
   </h4>
 
 <p>In CMN scores, there is often a large number of natural language instructions. Some of them concern the loudness and the speed of the performance, in which case MEI offers the elements 
-  <a href="/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> (described at 
-  <a href="/v3/content/cmn.html#cmnDynam">Dynamics in CMN</a>) and 
-  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>. In other cases, however, they provide other instructions for the performer. Instead of providing separate elements for all possible types of such directions, MEI offers the generic 
-  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> element. Although this element is not CMN specific (it is defined in 
-  <a href="/v3/content/shared.html">Shared Elements, Models, and Attributes</a>), it is especially important in this repertoire.</p>
+  <a href="/guidelines/v3/elements/dynam.html" class="link_odd_elementSpec">dynam</a> (described at 
+  <a href="/guidelines/v3/content/cmn.html#cmnDynam">Dynamics in CMN</a>) and 
+  <a href="/guidelines/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>. In other cases, however, they provide other instructions for the performer. Instead of providing separate elements for all possible types of such directions, MEI offers the generic 
+  <a href="/guidelines/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> element. Although this element is not CMN specific (it is defined in 
+  <a href="/guidelines/v3/content/shared.html">Shared Elements, Models, and Attributes</a>), it is especially important in this repertoire.</p>
 
 <p>A tempo or character indication is often provided above the topmost staff of the first measure of a score, movement, or section. This indication, such as “Allegro moderato” or “Andante maestoso”, may be regarded as a label. Though it is possible to label the movement, etc. using a <strong>@label</strong> attribute attached to the enclosing structural entity (that is, on 
-  <a href="/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> or 
-  <a href="/v3/elements/section.html" class="link_odd_elementSpec">section</a>), it is often required to capture the exact position, spelling, or other features of the label as found in the underlying source material. In these cases, an element is necessary.</p>
+  <a href="/guidelines/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> or 
+  <a href="/guidelines/v3/elements/section.html" class="link_odd_elementSpec">section</a>), it is often required to capture the exact position, spelling, or other features of the label as found in the underlying source material. In these cases, an element is necessary.</p>
 
 <p>Labels which address the tempo at which the music should be performed should be encoded using the 
-  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> element, which is a specialized form of 
-  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a>. 
-  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> is a member of the 
-  <a href="/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and as such occurs as a child of 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following all 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> children. Its <strong>@staff</strong>, <strong>@layer</strong> and <strong>@tstamp</strong> attributes are used to ensure correct semantic positioning, and <strong>@place</strong> indicates a visual position with respect to the staff.</p>
+  <a href="/guidelines/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> element, which is a specialized form of 
+  <a href="/guidelines/v3/elements/dir.html" class="link_odd_elementSpec">dir</a>. 
+  <a href="/guidelines/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> is a member of the 
+  <a href="/guidelines/v3/model-classes/model.controleventlike.html">model.controleventLike</a> class and as such occurs as a child of 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following all 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> children. Its <strong>@staff</strong>, <strong>@layer</strong> and <strong>@tstamp</strong> attributes are used to ensure correct semantic positioning, and <strong>@place</strong> indicates a visual position with respect to the staff.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -2736,14 +2736,14 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 </div>
 
 <p>Rehearsal marks are another specialized kind of directive. Consisting of letters, numbers, or a combination of both, rehearsal marks are used in scores and corresponding performer parts to identify convenient points to restart rehearsal after breaks or interruptions. For this reason, they are often visually emphasized by placing them within a square or circle. In MEI, they are encoded using the 
-  <a href="/v3/elements/reh.html" class="link_odd_elementSpec">reh</a> element, which holds the textual content of the rehearsal mark. The visual rendition of the rehearsal mark, including the surrounding shape, may be captured using the 
-  <a href="/v3/elements/rend.html" class="link_odd_elementSpec">rend</a> element described in chapter 
-  <a href="/v3/content/shared.html#sharedTextRendition">Text Rendition</a>.</p>
+  <a href="/guidelines/v3/elements/reh.html" class="link_odd_elementSpec">reh</a> element, which holds the textual content of the rehearsal mark. The visual rendition of the rehearsal mark, including the surrounding shape, may be captured using the 
+  <a href="/guidelines/v3/elements/rend.html" class="link_odd_elementSpec">rend</a> element described in chapter 
+  <a href="/guidelines/v3/content/shared.html#sharedTextRendition">Text Rendition</a>.</p>
 
 <p>The following detail from an edition of Hector Berlioz’ <em>Symphonie Fantastique</em> shows a typical example:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmn/reh_berlioz.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmn/reh_berlioz.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rehearsal mark</figcaption>
 </figure>
 
@@ -2790,9 +2790,9 @@ section. Sometimes called a 'hold' or 'pause'.</div>
   </h5>
 
 <p>Large-scale structural repetition, utilizing 
-  <a href="/v3/elements/section.html" class="link_odd_elementSpec">section</a> and 
-  <a href="/v3/elements/expansion.html" class="link_odd_elementSpec">expansion</a> elements, is discussed in section 
-  <a href="/v3/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>. This section will focus on repetition within sections.</p>
+  <a href="/guidelines/v3/elements/section.html" class="link_odd_elementSpec">section</a> and 
+  <a href="/guidelines/v3/elements/expansion.html" class="link_odd_elementSpec">expansion</a> elements, is discussed in section 
+  <a href="/guidelines/v3/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>. This section will focus on repetition within sections.</p>
 
 <h5 id="cmnRepSym">4.2.9.2. Measure-Level Repetition Symbols
       
@@ -2801,7 +2801,7 @@ section. Sometimes called a 'hold' or 'pause'.</div>
 <p>In addition to repetition at the section level, CMN includes a number of different symbols for measure-level repetitions. Many of these symbols are found in manuscripts and may be regarded as personal conventions of their respective authors. Some signs, however, have been widely adopted. For example, it is common to indicate the repetition of a single beat or an entire measure with one or more diagonal lines, sometimes with dots at the upper left and lower right, much like a percent sign. The illustration below contains the most common signs:</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/beatrpt-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/beatrpt-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Beat repeat signs</figcaption>
 </figure>
 
@@ -2816,7 +2816,7 @@ section. Sometimes called a 'hold' or 'pause'.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/beatrpt.html">beatRpt</a>
+                <a href="/guidelines/v3/elements/beatrpt.html">beatRpt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2836,7 +2836,7 @@ repeated.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/halfmrpt.html">halfmRpt</a>
+                <a href="/guidelines/v3/elements/halfmrpt.html">halfmRpt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2855,7 +2855,7 @@ repeated.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/mrpt.html">mRpt</a>
+                <a href="/guidelines/v3/elements/mrpt.html">mRpt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2874,7 +2874,7 @@ repeated.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/mrpt2.html">mRpt2</a>
+                <a href="/guidelines/v3/elements/mrpt2.html">mRpt2</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2894,7 +2894,7 @@ repeated.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/multirpt.html">multiRpt</a>
+                <a href="/guidelines/v3/elements/multirpt.html">multiRpt</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -2905,21 +2905,21 @@ repeated.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a> element is used to represent a single repeated beat. Its visual rendition can be recorded using the <strong>@rend</strong> attribute. This attribute indicates the number of slashes required to render the appropriate repeat symbol, which, as demonstrated in the preceding figure, depends on the rhythmic content of the beat being repeated. When a beat that consists of a single note or chord is repeated, the repetition sign is typically rendered as a single thick, slanting slash; therefore, the value ‘1’ should be used. The following values should be used when the beat is divided into even notes: 4ths or 8ths=1, 16ths=2, 32nds=3, 64ths=4, 128ths=5. When the beat is comprised of mixed duration values, the symbol is always rendered as 2 slashes and 2 dots.</p>
+  <a href="/guidelines/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a> element is used to represent a single repeated beat. Its visual rendition can be recorded using the <strong>@rend</strong> attribute. This attribute indicates the number of slashes required to render the appropriate repeat symbol, which, as demonstrated in the preceding figure, depends on the rhythmic content of the beat being repeated. When a beat that consists of a single note or chord is repeated, the repetition sign is typically rendered as a single thick, slanting slash; therefore, the value ‘1’ should be used. The following values should be used when the beat is divided into even notes: 4ths or 8ths=1, 16ths=2, 32nds=3, 64ths=4, 128ths=5. When the beat is comprised of mixed duration values, the symbol is always rendered as 2 slashes and 2 dots.</p>
 
 <p>In addition to its indication of a repeated beat, the beatRpt element is sometimes used in popular music notation, especially in guitar or percussion parts, to indicate a repeated rhythmic pattern. The 
-  <a href="/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a> element can be used, but when these parts require durations longer or shorter than a beat, note elements with appropriately-shaped note heads should be employed instead.</p>
+  <a href="/guidelines/v3/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a> element can be used, but when these parts require durations longer or shorter than a beat, note elements with appropriately-shaped note heads should be employed instead.</p>
 
 <p>The 
-  <a href="/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a> element is available for repetition of an entire measure. Like 
-  <a href="/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a>, it must be the sole child of 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>, no other events should be used. The <strong>@n</strong> attribute of 
-  <a href="/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a> should not be used to record the number displayed above the measure in the figure below. Instead, the numbering of repetitions of the written-out measure can be enabled using the <strong>@multi.number</strong> attribute available on the 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements.</p>
+  <a href="/guidelines/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a> element is available for repetition of an entire measure. Like 
+  <a href="/guidelines/v3/elements/mrest.html" class="link_odd_elementSpec">mRest</a>, it must be the sole child of 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>, no other events should be used. The <strong>@n</strong> attribute of 
+  <a href="/guidelines/v3/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a> should not be used to record the number displayed above the measure in the figure below. Instead, the numbering of repetitions of the written-out measure can be enabled using the <strong>@multi.number</strong> attribute available on the 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/mrpt-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/mrpt-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Measure repetition</figcaption>
 </figure>
 
@@ -2968,10 +2968,10 @@ repeated.</div>
 </div>
 
 <p>The 
-  <a href="/v3/elements/halfmrpt.html" class="link_odd_elementSpec">halfmRpt</a> element represents the incorrect, but frequently found, use of the measure repeat (or similar) sign to indicate repetition of half of a measure. This practice mostly occurs in hand-written notation and usually involves the repetition of the second half of a measure in duple time. This element is necessary because the function of the symbol, not the visual symbol itself, is of primary importance. The following example from the beginning of Beethoven’s <em>Waldstein</em> sonata illustrates such usage:</p>
+  <a href="/guidelines/v3/elements/halfmrpt.html" class="link_odd_elementSpec">halfmRpt</a> element represents the incorrect, but frequently found, use of the measure repeat (or similar) sign to indicate repetition of half of a measure. This practice mostly occurs in hand-written notation and usually involves the repetition of the second half of a measure in duple time. This element is necessary because the function of the symbol, not the visual symbol itself, is of primary importance. The following example from the beginning of Beethoven’s <em>Waldstein</em> sonata illustrates such usage:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/cmn/halfmRpt_beethoven.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/cmn/halfmRpt_beethoven.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Half-measure repeat</figcaption>
 </figure>
 
@@ -3012,28 +3012,28 @@ repeated.</div>
 <p>As seen in the example above, it is possible to continuously repeat half measures, even across barlines.</p>
 
 <p>The 
-  <a href="/v3/elements/mrpt2.html" class="link_odd_elementSpec">mRpt2</a> and 
-  <a href="/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a> elements (like the 
-  <a href="/v3/elements/multirest.html" class="link_odd_elementSpec">multiRest</a> element) never occur in scores, only in performer parts, where it is often necessary to abbreviate the notation due to page size limitations.</p>
+  <a href="/guidelines/v3/elements/mrpt2.html" class="link_odd_elementSpec">mRpt2</a> and 
+  <a href="/guidelines/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a> elements (like the 
+  <a href="/guidelines/v3/elements/multirest.html" class="link_odd_elementSpec">multiRest</a> element) never occur in scores, only in performer parts, where it is often necessary to abbreviate the notation due to page size limitations.</p>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/mrpt2-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/mrpt2-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Two-measure repetition</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/images/v3/ExampleImages/multirpt-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/ExampleImages/multirpt-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Multi-measure repetition</figcaption>
 </figure>
 
 <p>The 
-  <a href="/v3/elements/mrpt2.html" class="link_odd_elementSpec">mRpt2</a> element represents repetition of a 2-measure fragment, while 
-  <a href="/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a> is for repetition of fragments longer than two measures. In modern publishing practice, repeats of more than two measures are written out using repeat signs. This element is provided, however, for handling non-standard practices often found in manuscripts. The <strong>@num</strong> attribute on 
-  <a href="/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a> records the number of preceding measures to be repeated.</p>
+  <a href="/guidelines/v3/elements/mrpt2.html" class="link_odd_elementSpec">mRpt2</a> element represents repetition of a 2-measure fragment, while 
+  <a href="/guidelines/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a> is for repetition of fragments longer than two measures. In modern publishing practice, repeats of more than two measures are written out using repeat signs. This element is provided, however, for handling non-standard practices often found in manuscripts. The <strong>@num</strong> attribute on 
+  <a href="/guidelines/v3/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a> records the number of preceding measures to be repeated.</p>
 
 <p>All elements described above allow for association of the sign with a symbol in a digital facsimile (via the <strong>@facs</strong> attribute) and with a user-defined symbol (using <strong>@altsym</strong>). See 
-  <a href="/v3/content/facsimiles.html">Facsimiles</a> and 
-  <a href="/v3/content/usersymbols.html">User-defined Symbols</a> for further details. In addition, the <strong>@expand</strong> attribute is available on the foregoing elements to inform a rendering process whether to use the repeat symbol or the full content represented by it. A value of “true” indicates that the content should be displayed, while a “false” value means to show only the repeat symbol.</p>
+  <a href="/guidelines/v3/content/facsimiles.html">Facsimiles</a> and 
+  <a href="/guidelines/v3/content/usersymbols.html">User-defined Symbols</a> for further details. In addition, the <strong>@expand</strong> attribute is available on the foregoing elements to inform a rendering process whether to use the repeat symbol or the full content represented by it. A value of “true” indicates that the content should be displayed, while a “false” value means to show only the repeat symbol.</p>
 
 
 
@@ -3041,7 +3041,7 @@ repeated.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/cmn.html">
+        <form action="/guidelines/v3/content/cmn.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -3054,7 +3054,7 @@ repeated.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -3062,7 +3062,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -3070,7 +3070,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -3078,7 +3078,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -3086,7 +3086,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -3094,7 +3094,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3653,7 +3653,7 @@ repeated.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmn.html#cmnBasics">4.1. Basic Elements of CMN
+    <a class="level-2" href="/guidelines/v3/content/cmn.html#cmnBasics">4.1. Basic Elements of CMN
     </a>
   
 
@@ -3664,7 +3664,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnMeasures">4.1.1. The Role of the Measure Element
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnMeasures">4.1.1. The Role of the Measure Element
     </a>
   
 
@@ -3675,7 +3675,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnDefs">4.1.2. Defining Score Parameters for CMN
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnDefs">4.1.2. Defining Score Parameters for CMN
     </a>
   
 
@@ -3686,7 +3686,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnReDef">4.1.3. Redefinition of Score Parameters
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnReDef">4.1.3. Redefinition of Score Parameters
     </a>
   
 
@@ -3697,240 +3697,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnNotesChords">4.1.4. Notes, Chords and Rests in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnTstamp">4.1.5. Timestamps and Durations
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/v3/content/cmn.html#cmnAdditionalMeasureContent">4.2. Advanced CMN Features
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnBeams">4.2.1. Beams
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnSlurTies">4.2.2. Ties, Slurs and Phrase Marks
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnDynam">4.2.3. Dynamics in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnTuplets">4.2.4. Tuplets
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnArtic">4.2.5. Articulation and Performance Instructions in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnInstr">4.2.6. Instrument-specific Symbols in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnOssia">4.2.7. Ossia
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnDir">4.2.8. Directions and Rehearsal marks
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnRep">4.2.9. Repetition in CMN
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnNotesChords">4.1.4. Notes, Chords and Rests in CMN
     </a>
   
 
@@ -3997,6 +3764,239 @@ repeated.</div>
 
   
 
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnTstamp">4.1.5. Timestamps and Durations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/cmn.html#cmnAdditionalMeasureContent">4.2. Advanced CMN Features
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnBeams">4.2.1. Beams
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnSlurTies">4.2.2. Ties, Slurs and Phrase Marks
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnDynam">4.2.3. Dynamics in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnTuplets">4.2.4. Tuplets
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnArtic">4.2.5. Articulation and Performance Instructions in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnInstr">4.2.6. Instrument-specific Symbols in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnOssia">4.2.7. Ossia
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnDir">4.2.8. Directions and Rehearsal marks
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnRep">4.2.9. Repetition in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
 
   
   
@@ -4172,7 +4172,7 @@ repeated.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmn.html#cmnOrnamentsTurns">8.4. Turns
+    <a class="level-2" href="/guidelines/v3/content/cmn.html#cmnOrnamentsTurns">8.4. Turns
     </a>
   
 
@@ -4842,7 +4842,7 @@ repeated.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -4850,7 +4850,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -4858,7 +4858,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -4866,7 +4866,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -4874,7 +4874,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -4882,7 +4882,7 @@ repeated.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -5441,7 +5441,7 @@ repeated.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmn.html#cmnBasics">4.1. Basic Elements of CMN
+    <a class="level-2" href="/guidelines/v3/content/cmn.html#cmnBasics">4.1. Basic Elements of CMN
     </a>
   
 
@@ -5452,7 +5452,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnMeasures">4.1.1. The Role of the Measure Element
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnMeasures">4.1.1. The Role of the Measure Element
     </a>
   
 
@@ -5463,7 +5463,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnDefs">4.1.2. Defining Score Parameters for CMN
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnDefs">4.1.2. Defining Score Parameters for CMN
     </a>
   
 
@@ -5474,7 +5474,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnReDef">4.1.3. Redefinition of Score Parameters
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnReDef">4.1.3. Redefinition of Score Parameters
     </a>
   
 
@@ -5485,240 +5485,7 @@ repeated.</div>
 
   
 
-    <a class="level-3" href="/v3/content/cmn.html#cmnNotesChords">4.1.4. Notes, Chords and Rests in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnTstamp">4.1.5. Timestamps and Durations
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-2" href="/v3/content/cmn.html#cmnAdditionalMeasureContent">4.2. Advanced CMN Features
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnBeams">4.2.1. Beams
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnSlurTies">4.2.2. Ties, Slurs and Phrase Marks
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnDynam">4.2.3. Dynamics in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnTuplets">4.2.4. Tuplets
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnArtic">4.2.5. Articulation and Performance Instructions in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnInstr">4.2.6. Instrument-specific Symbols in CMN
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnOssia">4.2.7. Ossia
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnDir">4.2.8. Directions and Rehearsal marks
-    </a>
-  
-
-
-  
-  
-  
-
-  
-
-    <a class="level-3" href="/v3/content/cmn.html#cmnRep">4.2.9. Repetition in CMN
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnNotesChords">4.1.4. Notes, Chords and Rests in CMN
     </a>
   
 
@@ -5785,6 +5552,239 @@ repeated.</div>
 
   
 
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnTstamp">4.1.5. Timestamps and Durations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/guidelines/v3/content/cmn.html#cmnAdditionalMeasureContent">4.2. Advanced CMN Features
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnBeams">4.2.1. Beams
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnSlurTies">4.2.2. Ties, Slurs and Phrase Marks
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnDynam">4.2.3. Dynamics in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnTuplets">4.2.4. Tuplets
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnArtic">4.2.5. Articulation and Performance Instructions in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnInstr">4.2.6. Instrument-specific Symbols in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnOssia">4.2.7. Ossia
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnDir">4.2.8. Directions and Rehearsal marks
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/guidelines/v3/content/cmn.html#cmnRep">4.2.9. Repetition in CMN
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
 
   
   
@@ -5960,7 +5960,7 @@ repeated.</div>
 
   
 
-    <a class="level-2" href="/v3/content/cmn.html#cmnOrnamentsTurns">8.4. Turns
+    <a class="level-2" href="/guidelines/v3/content/cmn.html#cmnOrnamentsTurns">8.4. Turns
     </a>
   
 

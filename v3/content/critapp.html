@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/critapp.html">
+          <form action="/guidelines/v3/content/critapp.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -127,8 +127,8 @@
   </h2>
 
 <p>This chapter describes how to encode differences between multiple exemplars of the same musical work (often referred to in MEI as ‘sources’). The mechanisms and elements described in this chapter are closely related to their counterparts in the TEI guidelines. It is also important to refer to chapter 
-  <a href="/v3/content/edittrans.html">Editorial Markup</a> of these guidelines, especially concerning the 
-  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element described therein.</p>
+  <a href="/guidelines/v3/content/edittrans.html">Editorial Markup</a> of these guidelines, especially concerning the 
+  <a href="/guidelines/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element described therein.</p>
 
 <h3 id="critAppElements">10.1. General Usage
       
@@ -145,7 +145,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/app.html">app</a>
+                <a href="/guidelines/v3/elements/app.html">app</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -164,7 +164,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/lem.html">lem</a>
+                <a href="/guidelines/v3/elements/lem.html">lem</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -183,7 +183,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/rdg.html">rdg</a>
+                <a href="/guidelines/v3/elements/rdg.html">rdg</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -194,14 +194,14 @@
 </div>
 
 <p>An 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> element always encapsulates the differences between varying sources. Therefore, it must contain at least two child elements.  Possible child elements are 
-  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> and 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, which use the same model, but have a different meaning: Whereas 
-  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> is used for prioritizing one alternative, a 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> has no such additional meaning and simply indicates a reading as found in one or more sources. Accordingly, 
-  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> is allowed only once in 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a>, whereas 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> may appear as often as necessary.</p>
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a> element always encapsulates the differences between varying sources. Therefore, it must contain at least two child elements.  Possible child elements are 
+  <a href="/guidelines/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> and 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, which use the same model, but have a different meaning: Whereas 
+  <a href="/guidelines/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> is used for prioritizing one alternative, a 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> has no such additional meaning and simply indicates a reading as found in one or more sources. Accordingly, 
+  <a href="/guidelines/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> is allowed only once in 
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a>, whereas 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> may appear as often as necessary.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -221,8 +221,8 @@
 </div>
 
 <p>The 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> (and 
-  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a>) elements use the <strong>@source</strong> attribute to point to one or more descriptions of the bibliographic sources containing the material they mark:</p>
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> (and 
+  <a href="/guidelines/v3/elements/lem.html" class="link_odd_elementSpec">lem</a>) elements use the <strong>@source</strong> attribute to point to one or more descriptions of the bibliographic sources containing the material they mark:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -251,8 +251,8 @@
 </div>
 
 <p>The <strong>@seq</strong> attribute may be used on 
-  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> or 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> to record the sequence of a series of readings. In the following example, the material in source B is marked as sequential to (and perhaps derived from) the reading in source A:</p>
+  <a href="/guidelines/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> or 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> to record the sequence of a series of readings. In the following example, the material in source B is marked as sequential to (and perhaps derived from) the reading in source A:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -269,7 +269,7 @@
 </div>
 
 <p>If a source has additional content that is not found in other sources, an empty 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element may be used to indicate the lack of material in the other sources. In the following example, source 1 includes material that is not found in sources 2 and 3:</p>
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element may be used to indicate the lack of material in the other sources. In the following example, source 1 includes material that is not found in sources 2 and 3:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -284,14 +284,14 @@
 </div>
 
 <p>When working with a large number of sources, it might seem tedious to provide references for all sources. However, use of the 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element without <strong>@source</strong> is not recommended because such an encoding is not explicit and is therefore difficult to process.</p>
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element without <strong>@source</strong> is not recommended because such an encoding is not explicit and is therefore difficult to process.</p>
 
 <h3 id="critAppInContent">10.2. Variants in Musical Content
       
   </h3>
 
 <p>The 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> element may be used to accommodate textual variation at nearly any point in a musical text. For example, it may be used to indicate minor differences such as stem directions:</p>
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a> element may be used to accommodate textual variation at nearly any point in a musical text. For example, it may be used to indicate minor differences such as stem directions:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -333,31 +333,31 @@
 </div>
 
 <p>However, the flexibility in the location of 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> places a burden on the encoder to ensure that the 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a>, 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, and 
-  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> elements are used correctly; that is, the content of every 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> and 
-  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> has to be a valid replacement for its parent 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a>.</p>
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a> places a burden on the encoder to ensure that the 
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a>, 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, and 
+  <a href="/guidelines/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> elements are used correctly; that is, the content of every 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> and 
+  <a href="/guidelines/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> has to be a valid replacement for its parent 
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a>.</p>
 
 <h3 id="critAppInDefs">10.3. Variants in Score Definitions
       
   </h3>
 
 <p>In addition to its use for differentiation of the musical content of multiple sources, 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> may also be utilized to describe the layout of different scores, even when the musical content itself remains the same. An example of this is two sources that have the same content, but a different ordering of staves on which the content is written. By definition, the order of staves is derived from the order of 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements in 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, not from the order of 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within a 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>. The 
-  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> element in a measure points to its corresponding 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> using either 1) the same value for <strong>@n</strong> on both elements, or 2) a value in <strong>@def</strong> which is an explicit reference to a particular 
-  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> using its <strong>@xml:id</strong> value.</p>
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a> may also be utilized to describe the layout of different scores, even when the musical content itself remains the same. An example of this is two sources that have the same content, but a different ordering of staves on which the content is written. By definition, the order of staves is derived from the order of 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements in 
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, not from the order of 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within a 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>. The 
+  <a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> element in a measure points to its corresponding 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> using either 1) the same value for <strong>@n</strong> on both elements, or 2) a value in <strong>@def</strong> which is an explicit reference to a particular 
+  <a href="/guidelines/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> using its <strong>@xml:id</strong> value.</p>
 
 <p>When using the first of these two approaches, it is possible to point dynamically to the correct staff definition for a given source. The following example demonstrates how this can be accomplished for two sources, both presenting a two-staff score, but with differing staff order. No further 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> element is necessary within the 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> to describe the alternative score order of the sources.</p>
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a> element is necessary within the 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> to describe the alternative score order of the sources.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -393,8 +393,8 @@
 </div>
 
 <p>When unique values for <strong>@n</strong> on 
-  <a href="/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> and 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> are provided, it is possible to reallocate layers in the same fashion as staves.</p>
+  <a href="/guidelines/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> and 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> are provided, it is possible to reallocate layers in the same fashion as staves.</p>
 
 <p>This mechanism may also be used to describe not only differing page orientations, formats and margins, but also clefs and keys.</p>
 
@@ -403,7 +403,7 @@
   </h3>
 
 <p>In some situations, musical sources will agree at one level while differing at a lower level. For these cases, 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> elements may be nested to any level necessary. In the following example, there are three sources, two of which agree on the addition of a measure, but differ in the content of the added measure:</p>
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a> elements may be nested to any level necessary. In the following example, there are three sources, two of which agree on the addition of a measure, but differ in the content of the added measure:</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -435,9 +435,9 @@
 </div>
 
 <p>When nesting 
-  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> elements, it is important that the value(s) in the child 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> attribute must be a strict subset of the ancestor 
-  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> value.</p>
+  <a href="/guidelines/v3/elements/app.html" class="link_odd_elementSpec">app</a> elements, it is important that the value(s) in the child 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> attribute must be a strict subset of the ancestor 
+  <a href="/guidelines/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> value.</p>
 
 
 
@@ -445,7 +445,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/critapp.html">
+        <form action="/guidelines/v3/content/critapp.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -458,7 +458,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -466,7 +466,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -474,7 +474,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -482,7 +482,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -490,7 +490,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -498,7 +498,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1568,7 +1568,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppElements">10.1. General Usage
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppElements">10.1. General Usage
     </a>
   
 
@@ -1579,7 +1579,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppInContent">10.2. Variants in Musical Content
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppInContent">10.2. Variants in Musical Content
     </a>
   
 
@@ -1590,7 +1590,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppInDefs">10.3. Variants in Score Definitions
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppInDefs">10.3. Variants in Score Definitions
     </a>
   
 
@@ -1601,7 +1601,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppNesting">10.4. Nesting Apparati
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppNesting">10.4. Nesting Apparati
     </a>
   
 
@@ -2194,7 +2194,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2202,7 +2202,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2210,7 +2210,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2218,7 +2218,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2226,7 +2226,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2234,7 +2234,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3304,7 +3304,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppElements">10.1. General Usage
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppElements">10.1. General Usage
     </a>
   
 
@@ -3315,7 +3315,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppInContent">10.2. Variants in Musical Content
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppInContent">10.2. Variants in Musical Content
     </a>
   
 
@@ -3326,7 +3326,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppInDefs">10.3. Variants in Score Definitions
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppInDefs">10.3. Variants in Score Definitions
     </a>
   
 
@@ -3337,7 +3337,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/critapp.html#critAppNesting">10.4. Nesting Apparati
+    <a class="level-2" href="/guidelines/v3/content/critapp.html#critAppNesting">10.4. Nesting Apparati
     </a>
   
 

@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/figtable.html">
+          <form action="/guidelines/v3/content/figtable.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -129,10 +129,10 @@
 <p>Apart from music and text, musical documents, both historical and contemporary, may also contain material in graphical or tabular format. In such materials, details of layout and presentation may also be of comparatively greater significance or complexity than they are for running text. Although some types of graphical material can be represented directly with markup, it is more common practice to include such information by using a reference to an external entity (typically a URL) encoded in a suitable graphical format.</p>
 
 <p>The module defined by this chapter defines special purpose ‘container’ elements that can be used to encapsulate occurrences of such data within an MEI-conformant document in a portable way. Specific recommendations for the encoding of figures, figure descriptions and graphics as well as tables with their sub-elements 
-  <a href="/v3/elements/tr.html" class="link_odd_elementSpec">tr</a>, 
-  <a href="/v3/elements/td.html" class="link_odd_elementSpec">td</a> and 
-  <a href="/v3/elements/th.html" class="link_odd_elementSpec">th</a> are provided at the beginnig of this chapter. As there exists a wide variety of different graphic formats, a short list of formats that are widely used at the present time, is given in section 
-  <a href="/v3/content/figtable.html#figTableImages">Images</a>. Each one includes a very brief description. The chapter closes with attribute and model classes which are defined by the module.</p>
+  <a href="/guidelines/v3/elements/tr.html" class="link_odd_elementSpec">tr</a>, 
+  <a href="/guidelines/v3/elements/td.html" class="link_odd_elementSpec">td</a> and 
+  <a href="/guidelines/v3/elements/th.html" class="link_odd_elementSpec">th</a> are provided at the beginnig of this chapter. As there exists a wide variety of different graphic formats, a short list of formats that are widely used at the present time, is given in section 
+  <a href="/guidelines/v3/content/figtable.html#figTableImages">Images</a>. Each one includes a very brief description. The chapter closes with attribute and model classes which are defined by the module.</p>
 
 <p>The module described in this chapter makes available the following components:</p>
 
@@ -141,9 +141,9 @@
   </h3>
 
 <p>The 
-  <a href="/v3/elements/fig.html" class="link_odd_elementSpec">fig</a> element groups elements representing or containing graphic information such as an illustration or figure. This element is modelled on the figure element in the Text Encoding Initiative (TEI). The 
-  <a href="/v3/elements/fig.html" class="link_odd_elementSpec">fig</a> element is used to contain images, captions, and textual descriptions of the pictures. The images themselves are specified using the 
-  <a href="/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element, whose <strong>@target</strong> attribute provides the location of an image. For example:</p>
+  <a href="/guidelines/v3/elements/fig.html" class="link_odd_elementSpec">fig</a> element groups elements representing or containing graphic information such as an illustration or figure. This element is modelled on the figure element in the Text Encoding Initiative (TEI). The 
+  <a href="/guidelines/v3/elements/fig.html" class="link_odd_elementSpec">fig</a> element is used to contain images, captions, and textual descriptions of the pictures. The images themselves are specified using the 
+  <a href="/guidelines/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element, whose <strong>@target</strong> attribute provides the location of an image. For example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -172,7 +172,7 @@
   </h4>
 
 <p>The element 
-  <a href="/v3/elements/caption.html" class="link_odd_elementSpec">caption</a> may be used to transcribe (or supply) a title or descriptive heading for the graphic itself, as in the following example:</p>
+  <a href="/guidelines/v3/elements/caption.html" class="link_odd_elementSpec">caption</a> may be used to transcribe (or supply) a title or descriptive heading for the graphic itself, as in the following example:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -185,8 +185,8 @@
 </div>
 
 <p>The figure description (
-  <a href="/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>) element usually contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image, perhaps without displaying it. This element is intended for use as an alternative to the content of its parent 
-  <a href="/v3/elements/fig.html" class="link_odd_elementSpec">fig</a> element; for example, for display when the equipment in use cannot display graphic images. It may also be used for indexing or documentary purposes, in which case best practice suggests the use of controlled vocabulary terms.</p>
+  <a href="/guidelines/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>) element usually contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image, perhaps without displaying it. This element is intended for use as an alternative to the content of its parent 
+  <a href="/guidelines/v3/elements/fig.html" class="link_odd_elementSpec">fig</a> element; for example, for display when the equipment in use cannot display graphic images. It may also be used for indexing or documentary purposes, in which case best practice suggests the use of controlled vocabulary terms.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -200,11 +200,11 @@
 </div>
 
 <p>Occasionally, a figure description may have a complex structure. In this case, one or more textual component elements (
-  <a href="/v3/elements/p.html" class="link_odd_elementSpec">p</a> [paragraph], 
-  <a href="/v3/elements/table.html" class="link_odd_elementSpec">table</a>, 
-  <a href="/v3/elements/list.html" class="link_odd_elementSpec">list</a>, 
-  <a href="/v3/elements/quote.html" class="link_odd_elementSpec">quote</a>, or 
-  <a href="/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> [linegroup]) may be used to model the internal structure of the description:</p>
+  <a href="/guidelines/v3/elements/p.html" class="link_odd_elementSpec">p</a> [paragraph], 
+  <a href="/guidelines/v3/elements/table.html" class="link_odd_elementSpec">table</a>, 
+  <a href="/guidelines/v3/elements/list.html" class="link_odd_elementSpec">list</a>, 
+  <a href="/guidelines/v3/elements/quote.html" class="link_odd_elementSpec">quote</a>, or 
+  <a href="/guidelines/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> [linegroup]) may be used to model the internal structure of the description:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -225,7 +225,7 @@
   </h4>
 
 <p>The 
-  <a href="/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element indicates the location of an inline graphic, illustration, or figure. As noted above, there exists a wide variety of different graphics formats, and the following list is in no way exhaustive. Moreover, inclusion of any format in this list should not be taken as indicating endorsement by the MEI of this format or any products associated with it. Some of the formats listed here are proprietary to a greater or lesser extent and cannot therefore be regarded as standards in any meaningful sense. They are, however, widely used by many different vendors. The following formats are widely used at the present time, and are likely to remain supported by more than one vendor’s software:</p>
+  <a href="/guidelines/v3/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element indicates the location of an inline graphic, illustration, or figure. As noted above, there exists a wide variety of different graphics formats, and the following list is in no way exhaustive. Moreover, inclusion of any format in this list should not be taken as indicating endorsement by the MEI of this format or any products associated with it. Some of the formats listed here are proprietary to a greater or lesser extent and cannot therefore be regarded as standards in any meaningful sense. They are, however, widely used by many different vendors. The following formats are widely used at the present time, and are likely to remain supported by more than one vendor’s software:</p>
 
 <ul>
   <li>BMP: Microsoft bitmap format</li>
@@ -284,10 +284,10 @@
   </h3>
 
 <p>The element 
-  <a href="/v3/elements/table.html" class="link_odd_elementSpec">table</a> contains text displayed in tabular form, i.e., in rows and columns. A table is the least ‘graphic’ of the elements discussed in this chapter. Almost any text structure can be presented as a series of rows and columns: one might, for example, choose to show a glossary or other form of list in tabular form, without necessarily regarding it as a table. When tabular presentation is regarded as of less intrinsic importance, it is correspondingly simpler to encode descriptive or functional information about the contents of the table, for example to identify one cell as containing a name and another as containig a date, though the two methods may be combined.</p>
+  <a href="/guidelines/v3/elements/table.html" class="link_odd_elementSpec">table</a> contains text displayed in tabular form, i.e., in rows and columns. A table is the least ‘graphic’ of the elements discussed in this chapter. Almost any text structure can be presented as a series of rows and columns: one might, for example, choose to show a glossary or other form of list in tabular form, without necessarily regarding it as a table. When tabular presentation is regarded as of less intrinsic importance, it is correspondingly simpler to encode descriptive or functional information about the contents of the table, for example to identify one cell as containing a name and another as containig a date, though the two methods may be combined.</p>
 
 <p>The 
-  <a href="/v3/elements/table.html" class="link_odd_elementSpec">table</a> element may appear both within other components (such as paragraphs), or between them, provided that the module defined in this chapter has been enabled. It is to a large extent arbitrary whether a table should be regarded as a series of rows or as a series of columns. For compatibility with currently available systems, however, these Guidelines require a row-by-row description of a table.</p>
+  <a href="/guidelines/v3/elements/table.html" class="link_odd_elementSpec">table</a> element may appear both within other components (such as paragraphs), or between them, provided that the module defined in this chapter has been enabled. It is to a large extent arbitrary whether a table should be regarded as a series of rows or as a series of columns. For compatibility with currently available systems, however, these Guidelines require a row-by-row description of a table.</p>
 
 <p>While rows and columns are always encoded in top-to-bottom, left-to-right order, formatting properties such as those provided by CSS may be used to specify that they should be displayed differently.</p>
 
@@ -296,10 +296,10 @@
   </h4>
 
 <p>The 
-  <a href="/v3/elements/tr.html" class="link_odd_elementSpec">tr</a> (table row) element is a formatting element that contains one or more 
-  <a href="/v3/elements/td.html" class="link_odd_elementSpec">td</a> or 
-  <a href="/v3/elements/th.html" class="link_odd_elementSpec">th</a> elements (cells) in a 
-  <a href="/v3/elements/table.html" class="link_odd_elementSpec">table</a>. A cell is the intersection of a row and a column. The precise rendition of the table and its cells should be specified in a style steet.</p>
+  <a href="/guidelines/v3/elements/tr.html" class="link_odd_elementSpec">tr</a> (table row) element is a formatting element that contains one or more 
+  <a href="/guidelines/v3/elements/td.html" class="link_odd_elementSpec">td</a> or 
+  <a href="/guidelines/v3/elements/th.html" class="link_odd_elementSpec">th</a> elements (cells) in a 
+  <a href="/guidelines/v3/elements/table.html" class="link_odd_elementSpec">table</a>. A cell is the intersection of a row and a column. The precise rendition of the table and its cells should be specified in a style steet.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -370,7 +370,7 @@
   </h4>
 
 <p>The 
-  <a href="/v3/elements/td.html" class="link_odd_elementSpec">td</a> (table data) element designates a table cell that contains data as opposed to a cell that contains column or row heading information. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes provide tabular rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
+  <a href="/guidelines/v3/elements/td.html" class="link_odd_elementSpec">td</a> (table data) element designates a table cell that contains data as opposed to a cell that contains column or row heading information. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes provide tabular rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -415,7 +415,7 @@
 </div>
 
 <p>The 
-  <a href="/v3/elements/th.html" class="link_odd_elementSpec">th</a> (table header) element designates a table cell containing column or row heading information as opposed to one containing data. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes tabular display rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
+  <a href="/guidelines/v3/elements/th.html" class="link_odd_elementSpec">th</a> (table header) element designates a table cell containing column or row heading information as opposed to one containing data. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes tabular display rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -468,7 +468,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/figtable.html">
+        <form action="/guidelines/v3/content/figtable.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -481,7 +481,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -489,7 +489,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -497,7 +497,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -505,7 +505,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -513,7 +513,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -521,7 +521,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1703,7 +1703,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/figtable.html#figTableFigures">13.1. Figures
+    <a class="level-2" href="/guidelines/v3/content/figtable.html#figTableFigures">13.1. Figures
     </a>
   
 
@@ -1714,7 +1714,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableCaptionsDescriptions">13.1.1. Figure Captions and Descriptions
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableCaptionsDescriptions">13.1.1. Figure Captions and Descriptions
     </a>
   
 
@@ -1725,7 +1725,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableImages">13.1.2. Images
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableImages">13.1.2. Images
     </a>
   
 
@@ -1757,7 +1757,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/figtable.html#figTableTables">13.2. Tables
+    <a class="level-2" href="/guidelines/v3/content/figtable.html#figTableTables">13.2. Tables
     </a>
   
 
@@ -1768,7 +1768,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableTableRows">13.2.1. Rows
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableTableRows">13.2.1. Rows
     </a>
   
 
@@ -1779,7 +1779,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableTableCells">13.2.2. Cells
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableTableCells">13.2.2. Cells
     </a>
   
 
@@ -2225,7 +2225,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2233,7 +2233,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2241,7 +2241,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2249,7 +2249,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2257,7 +2257,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2265,7 +2265,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3447,7 +3447,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/figtable.html#figTableFigures">13.1. Figures
+    <a class="level-2" href="/guidelines/v3/content/figtable.html#figTableFigures">13.1. Figures
     </a>
   
 
@@ -3458,7 +3458,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableCaptionsDescriptions">13.1.1. Figure Captions and Descriptions
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableCaptionsDescriptions">13.1.1. Figure Captions and Descriptions
     </a>
   
 
@@ -3469,7 +3469,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableImages">13.1.2. Images
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableImages">13.1.2. Images
     </a>
   
 
@@ -3501,7 +3501,7 @@
 
   
 
-    <a class="level-2" href="/v3/content/figtable.html#figTableTables">13.2. Tables
+    <a class="level-2" href="/guidelines/v3/content/figtable.html#figTableTables">13.2. Tables
     </a>
   
 
@@ -3512,7 +3512,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableTableRows">13.2.1. Rows
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableTableRows">13.2.1. Rows
     </a>
   
 
@@ -3523,7 +3523,7 @@
 
   
 
-    <a class="level-3" href="/v3/content/figtable.html#figTableTableCells">13.2.2. Cells
+    <a class="level-3" href="/guidelines/v3/content/figtable.html#figTableTableCells">13.2.2. Cells
     </a>
   
 

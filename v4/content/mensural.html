@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v4.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v4/content/mensural.html">
+          <form action="/guidelines/v4/content/mensural.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -133,8 +133,8 @@
   </h3>
 
 <p>When the mensural module is included, <strong>@dur</strong> on 
-  <a href="/v4/elements/note.html" class="link_odd_elementSpec">note</a>, 
-  <a href="/v4/elements/rest.html" class="link_odd_elementSpec">rest</a>, and other elements can take the following values:</p>
+  <a href="/guidelines/v4/elements/note.html" class="link_odd_elementSpec">note</a>, 
+  <a href="/guidelines/v4/elements/rest.html" class="link_odd_elementSpec">rest</a>, and other elements can take the following values:</p>
 
 <ul>
   <li>maxima</li>
@@ -187,36 +187,36 @@
   </h3>
 
 <p>Using the mensural module, mensuration signs can be indicated with the attributes available on the 
-  <a href="/v4/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and 
-  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements. Mensuration signs encoded using attributes on 
-  <a href="/v4/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> are regarded as default values which may be overridden by values attached to individual 
-  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements.</p>
+  <a href="/guidelines/v4/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> and 
+  <a href="/guidelines/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements. Mensuration signs encoded using attributes on 
+  <a href="/guidelines/v4/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> are regarded as default values which may be overridden by values attached to individual 
+  <a href="/guidelines/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements.</p>
 
 <p>The division levels corresponding to <em>modus maior</em>, <em>modus minor</em>, <em>tempus</em>, and <em>prolatio</em> can be encoded in the <strong>@modusmaior</strong>, <strong>@modusminor</strong>, <strong>@tempus</strong>, and <strong>@prolatio</strong> attributes respectively. Their value must be 3 (perfect) or 2 (imperfect).</p>
 
 <p>The mensur signs themselves can be encoded in the <strong>@mensur.sign</strong> attribute with a possible value of “C” or “O”. Its orientation can be encoded in the <strong>@mensur.orient</strong> attribute, for example, with the value “reversed” for a flipped C sign. The number of slashes (up to 6) can be given in the <strong>@mensur.slash</strong> attribute. There is also a <strong>@mensur.dot</strong> attribute for indicating the presence of a dot through the boolean values “true” or “false”.</p>
 
-<p><a href="/v4/elements/mensur.html" class="link_odd_elementSpec">mensur</a> elements can also be used instead of 
-  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> and its attributes. In 
-  <a href="/v4/elements/mensur.html" class="link_odd_elementSpec">mensur</a>, the division levels are encoded with the same <strong>@modusmaior</strong>, <strong>@modusminor</strong>, <strong>@tempus</strong>, and <strong>@prolatio</strong> attributes, while the attributes to indicate the mensur signs are: <strong>@sign</strong>, <strong>@orient</strong>, <strong>@slash</strong>, and <strong>@dot</strong>.</p>
+<p><a href="/guidelines/v4/elements/mensur.html" class="link_odd_elementSpec">mensur</a> elements can also be used instead of 
+  <a href="/guidelines/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> and its attributes. In 
+  <a href="/guidelines/v4/elements/mensur.html" class="link_odd_elementSpec">mensur</a>, the division levels are encoded with the same <strong>@modusmaior</strong>, <strong>@modusminor</strong>, <strong>@tempus</strong>, and <strong>@prolatio</strong> attributes, while the attributes to indicate the mensur signs are: <strong>@sign</strong>, <strong>@orient</strong>, <strong>@slash</strong>, and <strong>@dot</strong>.</p>
 
 <h3 id="mensuralProportions">5.3. Proportions
       
   </h3>
 
 <p>Proportions can also be indicated within the 
-  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element. The <strong>@proport.num</strong> and <strong>@proport.numbase</strong> attributes are available for encoding the numerator and the denominator of the proportion, respectively. There is also a 
-  <a href="/v4/elements/proport.html" class="link_odd_elementSpec">proport</a> element that can be used as an alternative, with the corresponding <strong>@num</strong> and <strong>@numbase</strong> attributes.</p>
+  <a href="/guidelines/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element. The <strong>@proport.num</strong> and <strong>@proport.numbase</strong> attributes are available for encoding the numerator and the denominator of the proportion, respectively. There is also a 
+  <a href="/guidelines/v4/elements/proport.html" class="link_odd_elementSpec">proport</a> element that can be used as an alternative, with the corresponding <strong>@num</strong> and <strong>@numbase</strong> attributes.</p>
 
 <h3 id="mensuralLigatures">5.4. Ligatures
       
   </h3>
 
 <p>Ligatures can be encoded using the 
-  <a href="/v4/elements/ligature.html" class="link_odd_elementSpec">ligature</a> element. The <strong>@form</strong> attribute is available for specifying if the ligature is recta or obliqua.</p>
+  <a href="/guidelines/v4/elements/ligature.html" class="link_odd_elementSpec">ligature</a> element. The <strong>@form</strong> attribute is available for specifying if the ligature is recta or obliqua.</p>
 
 <figure class="figure">
-  <img src="/images/v4/modules/mensural/ex_ligatures01.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v4/modules/mensural/ex_ligatures01.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Recta and obliqua ligatures</figcaption>
 </figure>
 
@@ -237,10 +237,10 @@
 </div>
 
 <p>In cases where the ligature contains both recta and obliqua notes, the <strong>@lig</strong> attribute of the 
-  <a href="/v4/elements/note.html" class="link_odd_elementSpec">note</a> element can be used to specify the form of the ligature at the note level.</p>
+  <a href="/guidelines/v4/elements/note.html" class="link_odd_elementSpec">note</a> element can be used to specify the form of the ligature at the note level.</p>
 
 <figure class="figure">
-  <img src="/images/v4/modules/mensural/ex_ligatures02.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v4/modules/mensural/ex_ligatures02.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Ligature with more than two notes with recta and obliqua</figcaption>
 </figure>
 
@@ -263,11 +263,11 @@
   </h3>
 
 <p>The data organization based on 
-  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> elements that usually prevails in MEI is not appropriate for mensural notation because most music until 1600 was written in a non-measured manner. Even though it is not defined by the mensural module, a more suitable alternate data organization without measures is available: 
-  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> elements may occur directly within the 
-  <a href="/v4/elements/section.html" class="link_odd_elementSpec">section</a> element without being organized into measures first. The organization of events (notes, rests, etc.) within the 
-  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
-  <a href="/v4/elements/layer.html" class="link_odd_elementSpec">layer</a> elements remains unchanged.</p>
+  <a href="/guidelines/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> elements that usually prevails in MEI is not appropriate for mensural notation because most music until 1600 was written in a non-measured manner. Even though it is not defined by the mensural module, a more suitable alternate data organization without measures is available: 
+  <a href="/guidelines/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> elements may occur directly within the 
+  <a href="/guidelines/v4/elements/section.html" class="link_odd_elementSpec">section</a> element without being organized into measures first. The organization of events (notes, rests, etc.) within the 
+  <a href="/guidelines/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/guidelines/v4/elements/layer.html" class="link_odd_elementSpec">layer</a> elements remains unchanged.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -290,15 +290,15 @@
 </div>
 
 <p>This feature may also be used to encode measured music without using the 
-  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> element. That is, the same data organization described above may be used, but with the addition of barlines, indicated by the 
-  <a href="/v4/elements/barline.html" class="link_odd_elementSpec">barLine</a> element, for those situations where a measure-by-measure organization is not appropriate, for exampe, when measures are not coincident in all the staves of a score.</p>
+  <a href="/guidelines/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> element. That is, the same data organization described above may be used, but with the addition of barlines, indicated by the 
+  <a href="/guidelines/v4/elements/barline.html" class="link_odd_elementSpec">barLine</a> element, for those situations where a measure-by-measure organization is not appropriate, for exampe, when measures are not coincident in all the staves of a score.</p>
 
 <h3 id="notationtype">5.6. Notation Types
       
   </h3>
 
 <p>The <strong>@notationtype</strong> attribute, part of the MEI module, can be used within the 
-  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element to specify which dialect of mensural notation is in use. At the moment, three values are in use for mensural notation: “mensural”, “mensural.black”, and “mensural.white”. The values of the <strong>@notationtype</strong> attribute can indicate notation types other than mensural, such as common (Western) music notation, neume notation, and tablature.</p>
+  <a href="/guidelines/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element to specify which dialect of mensural notation is in use. At the moment, three values are in use for mensural notation: “mensural”, “mensural.black”, and “mensural.white”. The values of the <strong>@notationtype</strong> attribute can indicate notation types other than mensural, such as common (Western) music notation, neume notation, and tablature.</p>
 
 <p>The attribute <strong>@notationsubtype</strong> can be used, together with the <strong>@notationtype</strong> attribute, to provide more specificity regarding the type of notation encoded. This attribute can be used, for example, to specify if a piece in black mensural notation (notationtype = “mensural.black”) is written in Ars antiqua or Ars nova style. Currently, the values allowed in the <strong>@notationsubtype</strong> attribute consist of any sequence of characters provided by the user.</p>
 
@@ -310,7 +310,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/v4/content/mensural.html">
+        <form action="/guidelines/v4/content/mensural.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -323,7 +323,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -331,7 +331,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -339,7 +339,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -347,7 +347,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -355,7 +355,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -363,7 +363,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1517,7 +1517,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralNotes">5.1. Note and Rest Values
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralNotes">5.1. Note and Rest Values
     </a>
   
 
@@ -1528,7 +1528,7 @@
 
   
 
-    <a class="level-3" href="/v4/content/mensural.html#mensuralRules">5.1.1. Actual Duration with Alterations and Imperfections
+    <a class="level-3" href="/guidelines/v4/content/mensural.html#mensuralRules">5.1.1. Actual Duration with Alterations and Imperfections
     </a>
   
 
@@ -1539,7 +1539,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralSigns">5.2. Mensuration Signs
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralSigns">5.2. Mensuration Signs
     </a>
   
 
@@ -1550,7 +1550,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralProportions">5.3. Proportions
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralProportions">5.3. Proportions
     </a>
   
 
@@ -1561,7 +1561,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralLigatures">5.4. Ligatures
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralLigatures">5.4. Ligatures
     </a>
   
 
@@ -1572,7 +1572,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralData">5.5. Music Data Organization
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralData">5.5. Music Data Organization
     </a>
   
 
@@ -1583,7 +1583,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#notationtype">5.6. Notation Types
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#notationtype">5.6. Notation Types
     </a>
   
 
@@ -2393,7 +2393,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -2401,7 +2401,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -2409,7 +2409,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2417,7 +2417,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2425,7 +2425,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2433,7 +2433,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3587,7 +3587,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralNotes">5.1. Note and Rest Values
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralNotes">5.1. Note and Rest Values
     </a>
   
 
@@ -3598,7 +3598,7 @@
 
   
 
-    <a class="level-3" href="/v4/content/mensural.html#mensuralRules">5.1.1. Actual Duration with Alterations and Imperfections
+    <a class="level-3" href="/guidelines/v4/content/mensural.html#mensuralRules">5.1.1. Actual Duration with Alterations and Imperfections
     </a>
   
 
@@ -3609,7 +3609,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralSigns">5.2. Mensuration Signs
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralSigns">5.2. Mensuration Signs
     </a>
   
 
@@ -3620,7 +3620,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralProportions">5.3. Proportions
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralProportions">5.3. Proportions
     </a>
   
 
@@ -3631,7 +3631,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralLigatures">5.4. Ligatures
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralLigatures">5.4. Ligatures
     </a>
   
 
@@ -3642,7 +3642,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#mensuralData">5.5. Music Data Organization
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#mensuralData">5.5. Music Data Organization
     </a>
   
 
@@ -3653,7 +3653,7 @@
 
   
 
-    <a class="level-2" href="/v4/content/mensural.html#notationtype">5.6. Notation Types
+    <a class="level-2" href="/guidelines/v4/content/mensural.html#notationtype">5.6. Notation Types
     </a>
   
 

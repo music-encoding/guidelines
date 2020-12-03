@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/lyricsdesc.html">
+          <form action="/guidelines/v3/content/lyricsdesc.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -127,25 +127,25 @@
   </h2>
 
 <p>This chapter describes how to encode words and syllables in vocal notation. This text is typically written under a staff to indicate the text to be vocally performed. As such, this text should not be confused with other text on the score, for which see 
-  <a href="/v3/content/shared.html#sharedTextualElements">Shared Textual Elements</a> and 
-  <a href="/v3/content/text.html">Text in MEI</a></p>
+  <a href="/guidelines/v3/content/shared.html#sharedTextualElements">Shared Textual Elements</a> and 
+  <a href="/guidelines/v3/content/text.html">Text in MEI</a></p>
 
 <p>These guidelines suggest two methods for encoding text in vocal notation: encoding syllables 
-  <a href="/v3/content/lyricsdesc.html#lyricsInEvents">Vocally Performed Text Encoded Within Notes</a> and encoding performed text 
-  <a href="/v3/content/lyricsdesc.html#lyricsAfterEvents">Vocally Performed Text Encoded Separately</a> (and other staff events) either within 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> elements or within 
-  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> elements when available (for example in a Common Music Notation context). Each method may be more convenient depending on the source text and on the textual phenomena that the encoding intends to record.</p>
+  <a href="/guidelines/v3/content/lyricsdesc.html#lyricsInEvents">Vocally Performed Text Encoded Within Notes</a> and encoding performed text 
+  <a href="/guidelines/v3/content/lyricsdesc.html#lyricsAfterEvents">Vocally Performed Text Encoded Separately</a> (and other staff events) either within 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> elements or within 
+  <a href="/guidelines/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> elements when available (for example in a Common Music Notation context). Each method may be more convenient depending on the source text and on the textual phenomena that the encoding intends to record.</p>
 
 <p>Both methods eventually rely on the 
-  <a href="/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element, which is part of the ‘shared’ module and is therefore available in all MEI files. The following sections will begin by introducing the general use of 
-  <a href="/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> and then show in detail the two different encoding methods.</p>
+  <a href="/guidelines/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element, which is part of the ‘shared’ module and is therefore available in all MEI files. The following sections will begin by introducing the general use of 
+  <a href="/guidelines/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> and then show in detail the two different encoding methods.</p>
 
 <h3 id="lyricsSyl">15.1. Lyric Syllables
       
   </h3>
 
 <p>By ‘lyric syllable’, these guidelines mean a word or portion of a word that is to be performed vocally. Each syllable is encoded with the 
-  <a href="/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element, with which it is also possible to specify the position of the syllable in a word, the type of connectors between syllables, alignment adjustments, and the formatting for each syllable. These are the key components:</p>
+  <a href="/guidelines/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element, with which it is also possible to specify the position of the syllable in a word, the type of connectors between syllables, alignment adjustments, and the formatting for each syllable. These are the key components:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -156,7 +156,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/syl.html">syl</a>
+                <a href="/guidelines/v3/elements/syl.html">syl</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -175,7 +175,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.syl.log.html">@wordpos</a>
+                <a href="/guidelines/v3/attribute-classes/att.syl.log.html">@wordpos</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -193,7 +193,7 @@
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.syl.log.html">@con</a>
+                <a href="/guidelines/v3/attribute-classes/att.syl.log.html">@con</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -212,7 +212,7 @@ functions.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.horizontalalign.html">@halign</a>
+                <a href="/guidelines/v3/attribute-classes/att.horizontalalign.html">@halign</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -243,23 +243,23 @@ functions.</div>
 <p>Occasionally, a word or a final syllable needs to be extended across multiple notes. In this case an ‘extender’ is provided. An extender is a continuous line drawn at the text’s baseline from the end of the syllable associated with the first note until the last note to be sung with the syllable.</p>
 
 <p>The use of 
-  <a href="/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> described in this section is common to CMN and other notation systems, such as mensural notation. Other uses specific to certain types of notation and repertoires are addressed in other chapters. See for example 
-  <a href="/v3/content/neumes.html">Neume Notation</a>.</p>
+  <a href="/guidelines/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> described in this section is common to CMN and other notation systems, such as mensural notation. Other uses specific to certain types of notation and repertoires are addressed in other chapters. See for example 
+  <a href="/guidelines/v3/content/neumes.html">Neume Notation</a>.</p>
 
 <h3 id="lyricsInEvents">15.2. Vocally Performed Text Encoded Within Notes
       
   </h3>
 
 <p>Each lyric syllable can be encoded directly within an associated note, either by using the <strong>@syl</strong> attribute on 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> or the 
-  <a href="/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> element.</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> or the 
+  <a href="/guidelines/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> element.</p>
 
 <p>Using the <strong>@syl</strong> attribute on notes is the simplest way of encoding vocally performed text and is recommended only for simple situations or for those encodings which do not focus on vocally performed text.</p>
 
 <p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of <strong>@syl</strong>:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/lyrics/ex_syl_att.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/lyrics/ex_syl_att.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Handel, Messiah HWV 56, Halleluja</figcaption>
 </figure>
 
@@ -283,8 +283,8 @@ functions.</div>
 </div>
 
 <p>When there are multiple lines of vocally performed text, or the encoder wishes to be more specific about connectors, etc., the use of 
-  <a href="/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> and 
-  <a href="/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> is recommended.</p>
+  <a href="/guidelines/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> and 
+  <a href="/guidelines/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> is recommended.</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -295,7 +295,7 @@ functions.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/verse.html">verse</a>
+                <a href="/guidelines/v3/elements/verse.html">verse</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -314,7 +314,7 @@ functions.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.verse.log.html">@rhythm</a>
+                <a href="/guidelines/v3/attribute-classes/att.verse.log.html">@rhythm</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -326,7 +326,7 @@ on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.</div>
 </div>
 
 <p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of 
-  <a href="/v3/elements/verse.html" class="link_odd_elementSpec">verse</a>:</p>
+  <a href="/guidelines/v3/elements/verse.html" class="link_odd_elementSpec">verse</a>:</p>
 <div class="sampleCode" data-lang="true">
 
 
@@ -363,8 +363,8 @@ on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.</div>
 </div>
 
 <p>As it is common practice in written text, it is assumed that a space separates words. Many vocal texts, however, introduce elisions and connect two syllables into one unit. For example, the vocal text from Mozart’s <em>Don Giovanni</em> sung by Don Giovanni in Finale II, Ho fermo il core in petto introduces an elision between the word fermo and il and between core and in. An elision can be indicated by placing both syllables within the same 
-  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> and setting the 
-  <a href="/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element’s <strong>@con</strong> attribute value to ‘t’:</p>
+  <a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a> and setting the 
+  <a href="/guidelines/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element’s <strong>@con</strong> attribute value to ‘t’:</p>
 
 <div class="sampleCode" data-lang="true">
 
@@ -379,10 +379,10 @@ on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.</div>
 </div>
 
 <p>When there is more than one line of text, more than one 
-  <a href="/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> element can be used. The following example from a piano reduction of Wagner’s <em>Rheingold</em> has two lines of text, with an English translation on the second line. Note the use of the <strong>@xml:lang</strong> attribute to differentiate the two languages:</p>
+  <a href="/guidelines/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> element can be used. The following example from a piano reduction of Wagner’s <em>Rheingold</em> has two lines of text, with an English translation on the second line. Note the use of the <strong>@xml:lang</strong> attribute to differentiate the two languages:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/lyrics/ex_verse_m.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/lyrics/ex_verse_m.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example from Wagner's Rheingold with translated text.</figcaption>
 </figure>
 
@@ -454,8 +454,8 @@ on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.</div>
 </div>
 
 <p>Optionally, it is possible to include an 
-  <a href="/v3/elements/lb.html" class="link_odd_elementSpec">lb</a> element within 
-  <a href="/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> to explicitly encode line and line group endings. This is specifically meant to facilitate karaoke applications.</p>
+  <a href="/guidelines/v3/elements/lb.html" class="link_odd_elementSpec">lb</a> element within 
+  <a href="/guidelines/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> to explicitly encode line and line group endings. This is specifically meant to facilitate karaoke applications.</p>
 
 <p>Finally, the <strong>@rhythm</strong> attribute can be used to specify a rhythm for the syllable that differs from that of the notes on the staff.</p>
 
@@ -464,7 +464,7 @@ on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.</div>
   </h3>
 
 <p>Vocally performed text may also be encoded separately from the notes with the 
-  <a href="/v3/elements/lyrics.html" class="link_odd_elementSpec">lyrics</a> element. These are the main components:</p>
+  <a href="/guidelines/v3/elements/lyrics.html" class="link_odd_elementSpec">lyrics</a> element. These are the main components:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -475,7 +475,7 @@ on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/lyrics.html">lyrics</a>
+                <a href="/guidelines/v3/elements/lyrics.html">lyrics</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -494,7 +494,7 @@ on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.staffident.html">@staff</a>
+                <a href="/guidelines/v3/attribute-classes/att.staffident.html">@staff</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -513,7 +513,7 @@ applies. Mandatory when applicable.</div>
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v3/attribute-classes/att.layerident.html">@layer</a>
+                <a href="/guidelines/v3/attribute-classes/att.layerident.html">@layer</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -524,12 +524,12 @@ applies. Mandatory when applicable.</div>
 </div>
 
 <p>Since this element is separated from the encoding of the notes, it must be associated with a staff that will provide rhythm information when required for automated processing. The <strong>@staff</strong> attribute gives the associated staff and if there is more than one layer on that staff, the <strong>@layer</strong> attribute may be used to indicate the layer from which the rhythm should be taken. If there is any divergence between the rhythm of the vocally performed text and the notes, the <strong>@rhythm</strong> attribute on 
-  <a href="/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> may be used to specify the text’s rhythm.</p>
+  <a href="/guidelines/v3/elements/verse.html" class="link_odd_elementSpec">verse</a> may be used to specify the text’s rhythm.</p>
 
 <p>The following example from Carl Maria von Weber’s <em>Der Freischütz</em> illustrates this encoding method:</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/lyrics/ex_lyric.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/lyrics/ex_lyric.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Weber, Der Freischütz</figcaption>
 </figure>
 
@@ -577,7 +577,7 @@ applies. Mandatory when applicable.</div>
 </div>
 
 <p>In this encoding style, a 
-  <a href="/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element with its <strong>@con</strong> attribute set to ‘t’ and the following syllable are presumed to be associated with a single note. In the following example, the first two syllables occur on the first note and the third syllable occurs on the second note.</p>
+  <a href="/guidelines/v3/elements/syl.html" class="link_odd_elementSpec">syl</a> element with its <strong>@con</strong> attribute set to ‘t’ and the following syllable are presumed to be associated with a single note. In the following example, the first two syllables occur on the first note and the third syllable occurs on the second note.</p>
 
 <div class="sampleCode" data-lang="false">
 
@@ -605,7 +605,7 @@ applies. Mandatory when applicable.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/lyricsdesc.html">
+        <form action="/guidelines/v3/content/lyricsdesc.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -618,7 +618,7 @@ applies. Mandatory when applicable.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -626,7 +626,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -634,7 +634,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -642,7 +642,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -650,7 +650,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -658,7 +658,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1980,7 +1980,7 @@ applies. Mandatory when applicable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/lyricsdesc.html#lyricsSyl">15.1. Lyric Syllables
+    <a class="level-2" href="/guidelines/v3/content/lyricsdesc.html#lyricsSyl">15.1. Lyric Syllables
     </a>
   
 
@@ -1991,7 +1991,7 @@ applies. Mandatory when applicable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/lyricsdesc.html#lyricsInEvents">15.2. Vocally Performed Text Encoded Within Notes
+    <a class="level-2" href="/guidelines/v3/content/lyricsdesc.html#lyricsInEvents">15.2. Vocally Performed Text Encoded Within Notes
     </a>
   
 
@@ -2002,7 +2002,7 @@ applies. Mandatory when applicable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/lyricsdesc.html#lyricsAfterEvents">15.3. Vocally Performed Text Encoded Separately
+    <a class="level-2" href="/guidelines/v3/content/lyricsdesc.html#lyricsAfterEvents">15.3. Vocally Performed Text Encoded Separately
     </a>
   
 
@@ -2350,7 +2350,7 @@ applies. Mandatory when applicable.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2358,7 +2358,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2366,7 +2366,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2374,7 +2374,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2382,7 +2382,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2390,7 +2390,7 @@ applies. Mandatory when applicable.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3712,7 +3712,7 @@ applies. Mandatory when applicable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/lyricsdesc.html#lyricsSyl">15.1. Lyric Syllables
+    <a class="level-2" href="/guidelines/v3/content/lyricsdesc.html#lyricsSyl">15.1. Lyric Syllables
     </a>
   
 
@@ -3723,7 +3723,7 @@ applies. Mandatory when applicable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/lyricsdesc.html#lyricsInEvents">15.2. Vocally Performed Text Encoded Within Notes
+    <a class="level-2" href="/guidelines/v3/content/lyricsdesc.html#lyricsInEvents">15.2. Vocally Performed Text Encoded Within Notes
     </a>
   
 
@@ -3734,7 +3734,7 @@ applies. Mandatory when applicable.</div>
 
   
 
-    <a class="level-2" href="/v3/content/lyricsdesc.html#lyricsAfterEvents">15.3. Vocally Performed Text Encoded Separately
+    <a class="level-2" href="/guidelines/v3/content/lyricsdesc.html#lyricsAfterEvents">15.3. Vocally Performed Text Encoded Separately
     </a>
   
 

@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v4.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v4/content/facsimilesrecordings.html">
+          <form action="/guidelines/v4/content/facsimilesrecordings.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -143,7 +143,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/facsimile.html">facsimile</a>
+                <a href="/guidelines/v4/elements/facsimile.html">facsimile</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -163,7 +163,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/surface.html">surface</a>
+                <a href="/guidelines/v4/elements/surface.html">surface</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -184,7 +184,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/zone.html">zone</a>
+                <a href="/guidelines/v4/elements/zone.html">zone</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -195,8 +195,8 @@
 </div>
 
 <p>These element are used to add a separate subtree to MEI, starting with the 
-  <a href="/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element inside 
-  <a href="/v4/elements/music.html" class="link_odd_elementSpec">music</a>, as seen in the following example:</p>
+  <a href="/guidelines/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element inside 
+  <a href="/guidelines/v4/elements/music.html" class="link_odd_elementSpec">music</a>, as seen in the following example:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -218,9 +218,9 @@
 </div>
 
 <p>It is possible to have more than one 
-  <a href="/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element in this location. This is especially useful when multiple sources are encoded in the same file using the mechanisms described in chapter 
-  <a href="/v4/content/scholarlyediting.html#editTrans">Editorial Markup</a> of these Guidelines. In this case, the <strong>@decls</strong> (declarations) attribute of 
-  <a href="/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> may be used to refer to a source defined in the document’s header, as seen in the following example:</p>
+  <a href="/guidelines/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element in this location. This is especially useful when multiple sources are encoded in the same file using the mechanisms described in chapter 
+  <a href="/guidelines/v4/content/scholarlyediting.html#editTrans">Editorial Markup</a> of these Guidelines. In this case, the <strong>@decls</strong> (declarations) attribute of 
+  <a href="/guidelines/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> may be used to refer to a source defined in the document’s header, as seen in the following example:</p>
 
 <div class="sampleCode" data-lang="feasible">
 
@@ -245,15 +245,15 @@
 </div>
 
 <p>When using the FRBR model (see 
-  <a href="/v4/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a>), it is equally possible to reference a 
-  <a href="/v4/elements/manifestation.html" class="link_odd_elementSpec">manifestation</a> element instead of 
-  <a href="/v4/elements/source.html" class="link_odd_elementSpec">source</a>.</p>
+  <a href="/guidelines/v4/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a>), it is equally possible to reference a 
+  <a href="/guidelines/v4/elements/manifestation.html" class="link_odd_elementSpec">manifestation</a> element instead of 
+  <a href="/guidelines/v4/elements/source.html" class="link_odd_elementSpec">source</a>.</p>
 
 <p>Within a 
-  <a href="/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element, each page of the source is represented by a 
-  <a href="/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> element. Each surface may be assigned an identifying string utilizing the <strong>@label</strong> attribute. In addition, it may encapsulate more detailed metadata about itself in a 
-  <a href="/v4/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> element. The coordinate space of the surface may be recorded in abstract terms in the <strong>@ulx</strong>, <strong>@uly</strong>, <strong>@lrx</strong>, and <strong>@lry</strong> attributes. For navigation purposes, 
-  <a href="/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> has a <strong>@startid</strong> attribute that accommodates pointing to the first object appearing on this particular writing surface.</p>
+  <a href="/guidelines/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> element, each page of the source is represented by a 
+  <a href="/guidelines/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> element. Each surface may be assigned an identifying string utilizing the <strong>@label</strong> attribute. In addition, it may encapsulate more detailed metadata about itself in a 
+  <a href="/guidelines/v4/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> element. The coordinate space of the surface may be recorded in abstract terms in the <strong>@ulx</strong>, <strong>@uly</strong>, <strong>@lrx</strong>, and <strong>@lry</strong> attributes. For navigation purposes, 
+  <a href="/guidelines/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> has a <strong>@startid</strong> attribute that accommodates pointing to the first object appearing on this particular writing surface.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -265,10 +265,10 @@
 </div>
 
 <p>Within 
-  <a href="/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> elements, one may nest one or more 
-  <a href="/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements, each providing a reference to an image file that represents the writing surface. Multiple 
-  <a href="/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements are permitted in order to accommodate alternative versions (different resolutions or formats, for instance) of the surface image. In spite of changes in resolution or format, all images must contain the same content, i.e., the entire writing surface. A 
-  <a href="/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> may refer to a single page within a multi-page document, which is – at least for Adobe PDF documents – available through a #page=X suffix to the <strong>@target</strong> attribute.</p>
+  <a href="/guidelines/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> elements, one may nest one or more 
+  <a href="/guidelines/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements, each providing a reference to an image file that represents the writing surface. Multiple 
+  <a href="/guidelines/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements are permitted in order to accommodate alternative versions (different resolutions or formats, for instance) of the surface image. In spite of changes in resolution or format, all images must contain the same content, i.e., the entire writing surface. A 
+  <a href="/guidelines/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> may refer to a single page within a multi-page document, which is – at least for Adobe PDF documents – available through a #page=X suffix to the <strong>@target</strong> attribute.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -292,7 +292,7 @@
 </div>
 
 <p>The preceding markup will provide the basis for most page-turning applications. Often, however, it is desirable to focus attention on particular areas of the graphical representation of the surface. The 
-  <a href="/v4/elements/zone.html" class="link_odd_elementSpec">zone</a> element fulfills this purpose:</p>
+  <a href="/guidelines/v4/elements/zone.html" class="link_odd_elementSpec">zone</a> element fulfills this purpose:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -336,11 +336,11 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>A 
-  <a href="/v4/elements/zone.html" class="link_odd_elementSpec">zone</a> element may contain 
-  <a href="/v4/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> or 
-  <a href="/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements that provide detailed descriptive information about the zone and additional images, e.g., at a different/higher resolution, of the rectangle defined by the zone. The data objects contained within the zone may also be specified through the use of the <strong>@data</strong> attribute, which contains ID references to one more elements in the content tree of the MEI file, such as a 
-  <a href="/v4/elements/note.html" class="link_odd_elementSpec">note</a>, 
-  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a>, etc.</p>
+  <a href="/guidelines/v4/elements/zone.html" class="link_odd_elementSpec">zone</a> element may contain 
+  <a href="/guidelines/v4/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a> or 
+  <a href="/guidelines/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> elements that provide detailed descriptive information about the zone and additional images, e.g., at a different/higher resolution, of the rectangle defined by the zone. The data objects contained within the zone may also be specified through the use of the <strong>@data</strong> attribute, which contains ID references to one more elements in the content tree of the MEI file, such as a 
+  <a href="/guidelines/v4/elements/note.html" class="link_odd_elementSpec">note</a>, 
+  <a href="/guidelines/v4/elements/measure.html" class="link_odd_elementSpec">measure</a>, etc.</p>
 
 <div class="sampleCode" data-lang="feasible">
 
@@ -356,8 +356,8 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>Conversely, an element in the content may refer to the 
-  <a href="/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> subtree using its <strong>@facs</strong> attribute, which is made available by the 
-  <a href="/v4/attribute-classes/att.facsimile.html">att.facsimile</a> attribute class. The last example could therefore be encoded with pointers in the other direction:</p>
+  <a href="/guidelines/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> subtree using its <strong>@facs</strong> attribute, which is made available by the 
+  <a href="/guidelines/v4/attribute-classes/att.facsimile.html">att.facsimile</a> attribute class. The last example could therefore be encoded with pointers in the other direction:</p>
 
 <div class="sampleCode" data-lang="feasible">
 
@@ -373,19 +373,19 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>The 
-  <a href="/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> element defined in the 
-  <a href="/v4/content/shared.html">Shared Concepts in MEI</a> makes special use of the <strong>@facs</strong> attribute, in that it does not point to a 
-  <a href="/v4/elements/zone.html" class="link_odd_elementSpec">zone</a>, but a 
-  <a href="/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> element instead. A 
-  <a href="/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> marks the beginning of a page, so it can be concluded that all elements in the content tree which are encoded between any two 
-  <a href="/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> elements encode musical symbols written on the page (
-  <a href="/v4/elements/surface.html" class="link_odd_elementSpec">surface</a>) referenced by the first of these two 
-  <a href="/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> element’s <strong>@facs</strong> attribute.</p>
+  <a href="/guidelines/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> element defined in the 
+  <a href="/guidelines/v4/content/shared.html">Shared Concepts in MEI</a> makes special use of the <strong>@facs</strong> attribute, in that it does not point to a 
+  <a href="/guidelines/v4/elements/zone.html" class="link_odd_elementSpec">zone</a>, but a 
+  <a href="/guidelines/v4/elements/surface.html" class="link_odd_elementSpec">surface</a> element instead. A 
+  <a href="/guidelines/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> marks the beginning of a page, so it can be concluded that all elements in the content tree which are encoded between any two 
+  <a href="/guidelines/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> elements encode musical symbols written on the page (
+  <a href="/guidelines/v4/elements/surface.html" class="link_odd_elementSpec">surface</a>) referenced by the first of these two 
+  <a href="/guidelines/v4/elements/pb.html" class="link_odd_elementSpec">pb</a> element’s <strong>@facs</strong> attribute.</p>
 
 <p>The encoding of 
-  <a href="/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> elements is intended to support sequential display of page images. If an encoder wants to describe the physical setup of a source document, the 
-  <a href="/v4/elements/foliadesc.html" class="link_odd_elementSpec">foliaDesc</a> element is more appropriate. The difference of both approaches, and how to combine them, is described in chapter 
-  <a href="/v4/content/metadata.html#foliadesc">Description of folia</a>.</p>
+  <a href="/guidelines/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> elements is intended to support sequential display of page images. If an encoder wants to describe the physical setup of a source document, the 
+  <a href="/guidelines/v4/elements/foliadesc.html" class="link_odd_elementSpec">foliaDesc</a> element is more appropriate. The difference of both approaches, and how to combine them, is described in chapter 
+  <a href="/guidelines/v4/content/metadata.html#foliadesc">Description of folia</a>.</p>
 
 <h3 id="performances">12.2. Performances
       
@@ -408,7 +408,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/performance.html">performance</a>
+                <a href="/guidelines/v4/elements/performance.html">performance</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -427,7 +427,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/recording.html">recording</a>
+                <a href="/guidelines/v4/elements/recording.html">recording</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -446,7 +446,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/avfile.html">avFile</a>
+                <a href="/guidelines/v4/elements/avfile.html">avFile</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -465,7 +465,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/clip.html">clip</a>
+                <a href="/guidelines/v4/elements/clip.html">clip</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -485,7 +485,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v4/elements/when.html">when</a>
+                <a href="/guidelines/v4/elements/when.html">when</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -497,21 +497,21 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>The 
-  <a href="/v4/elements/performance.html" class="link_odd_elementSpec">performance</a> element begins a subtree of the 
-  <a href="/v4/elements/music.html" class="link_odd_elementSpec">music</a> element and appears alongside with, or instead of, 
-  <a href="/v4/elements/body.html" class="link_odd_elementSpec">body</a> (described in 
-  <a href="/v4/content/shared.html#sharedMusicElement">Music Element</a>) and 
-  <a href="/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> (described in 
-  <a href="/v4/content/facsimilesrecordings.html#facsimiles">Facsimiles</a>). A 
-  <a href="/v4/elements/performance.html" class="link_odd_elementSpec">performance</a> element represents one recorded performance event. As a performance may be recorded in multiple formats or by different personnel or using different equipment, the 
-  <a href="/v4/elements/performance.html" class="link_odd_elementSpec">performance</a> element may group one or more recordings of the event.</p>
+  <a href="/guidelines/v4/elements/performance.html" class="link_odd_elementSpec">performance</a> element begins a subtree of the 
+  <a href="/guidelines/v4/elements/music.html" class="link_odd_elementSpec">music</a> element and appears alongside with, or instead of, 
+  <a href="/guidelines/v4/elements/body.html" class="link_odd_elementSpec">body</a> (described in 
+  <a href="/guidelines/v4/content/shared.html#sharedMusicElement">Music Element</a>) and 
+  <a href="/guidelines/v4/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> (described in 
+  <a href="/guidelines/v4/content/facsimilesrecordings.html#facsimiles">Facsimiles</a>). A 
+  <a href="/guidelines/v4/elements/performance.html" class="link_odd_elementSpec">performance</a> element represents one recorded performance event. As a performance may be recorded in multiple formats or by different personnel or using different equipment, the 
+  <a href="/guidelines/v4/elements/performance.html" class="link_odd_elementSpec">performance</a> element may group one or more recordings of the event.</p>
 
 <p>The <strong>@decls</strong> attribute can be used to point to performance medium metadata for the performed work. See 
-  <a href="/v4/content/metadata.html#headerWorkMedium">Performance Medium</a> and 
-  <a href="/v4/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a> for more details.</p>
+  <a href="/guidelines/v4/content/metadata.html#headerWorkMedium">Performance Medium</a> and 
+  <a href="/guidelines/v4/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a> for more details.</p>
 
 <p>The 
-  <a href="/v4/elements/recording.html" class="link_odd_elementSpec">recording</a> element identifies a single recording event taking place within an absolute temporal space. The class  contains attributes that can be used to define this space:</p>
+  <a href="/guidelines/v4/elements/recording.html" class="link_odd_elementSpec">recording</a> element identifies a single recording event taking place within an absolute temporal space. The class  contains attributes that can be used to define this space:</p>
 
 <div class="tile tile-centered">
     <div class="tile-icon">
@@ -522,7 +522,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.mediabounds.html">@begin</a>
+                <a href="/guidelines/v4/attribute-classes/att.mediabounds.html">@begin</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -541,7 +541,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.mediabounds.html">@end</a>
+                <a href="/guidelines/v4/attribute-classes/att.mediabounds.html">@end</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -561,7 +561,7 @@ For example, the following would encode a zone where its contents are oriented 9
     <div class="tile-content">
         <div class="tile-title">
             
-                <a href="/v4/attribute-classes/att.mediabounds.html">@betype</a>
+                <a href="/guidelines/v4/attribute-classes/att.mediabounds.html">@betype</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -573,9 +573,9 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>The 
-  <a href="/v4/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element identifies an external file associated with a recording act. In the simplest case, the recording element will contain one 
-  <a href="/v4/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element identifying a file that represents it. The <strong>@target</strong> attribute contains the URI of the digital media file. Use of the <strong>@mimetype</strong> attribute is recommended for the 
-  <a href="/v4/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element. Its value should be a valid MIME media type defined by the Internet Engineering Task Force in RFC 2046. It is also recommended that all avFile elements have a recording or clip parent which bears the <strong>@begin</strong>, <strong>@end</strong>, and <strong>@betype</strong> attributes.</p>
+  <a href="/guidelines/v4/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element identifies an external file associated with a recording act. In the simplest case, the recording element will contain one 
+  <a href="/guidelines/v4/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element identifying a file that represents it. The <strong>@target</strong> attribute contains the URI of the digital media file. Use of the <strong>@mimetype</strong> attribute is recommended for the 
+  <a href="/guidelines/v4/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element. Its value should be a valid MIME media type defined by the Internet Engineering Task Force in RFC 2046. It is also recommended that all avFile elements have a recording or clip parent which bears the <strong>@begin</strong>, <strong>@end</strong>, and <strong>@betype</strong> attributes.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -603,7 +603,7 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>The 
-  <a href="/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> element identifies a temporal segment of a recording act. In the following example, the clip begins two minutes into the timeframe of the recording and ends 20 seconds later:</p>
+  <a href="/guidelines/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> element identifies a temporal segment of a recording act. In the following example, the clip begins two minutes into the timeframe of the recording and ends 20 seconds later:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -631,7 +631,7 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>A single performance may also be represented by multiple, <em>sequential</em> digital files, as when a complete work is recorded in several so-called ‘takes’. In this case, the files may be considered to be parts of a single recording act, the extent of which is the combined extent of the individual clips. For example, a series of 
-  <a href="/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> elements may be used to identify each movement of a piece and give start and end times for the movements in relation to the overall temporal space of the complete work:</p>
+  <a href="/guidelines/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> elements may be used to identify each movement of a piece and give start and end times for the movements in relation to the overall temporal space of the complete work:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -669,8 +669,8 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>A 
-  <a href="/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> may be used to define any region of interest, such as a cadenza or a modulation, a song verse, etc. The following example shows the use of 
-  <a href="/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> and its attributes to identify significant sections of a recording:</p>
+  <a href="/guidelines/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> may be used to define any region of interest, such as a cadenza or a modulation, a song verse, etc. The following example shows the use of 
+  <a href="/guidelines/v4/elements/clip.html" class="link_odd_elementSpec">clip</a> and its attributes to identify significant sections of a recording:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -718,7 +718,7 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>Clips can also be aligned with components of the musical text encoded in the 
-  <a href="/v4/elements/body.html" class="link_odd_elementSpec">body</a>. The <strong>@startid</strong> attribute can be used to specify the starting element in the sequence of events to which the clip corresponds. The following example shows the use of clip elements to identify the exposition of the first movement from Beethoven’s piano sonata Op. 14, no. 2 and its concluding ‘codetta’.</p>
+  <a href="/guidelines/v4/elements/body.html" class="link_odd_elementSpec">body</a>. The <strong>@startid</strong> attribute can be used to specify the starting element in the sequence of events to which the clip corresponds. The following example shows the use of clip elements to identify the exposition of the first movement from Beethoven’s piano sonata Op. 14, no. 2 and its concluding ‘codetta’.</p>
 
 <div class="sampleCode" data-lang="feasible">
 
@@ -790,10 +790,10 @@ For example, the following would encode a zone where its contents are oriented 9
 </div>
 
 <p>Associations between a feature of the encoding, such as a note, dynamic mark, or annotation, and a time point, may be created using 
-  <a href="/v4/elements/when.html" class="link_odd_elementSpec">when</a> elements and <strong>@when</strong> attributes.</p>
+  <a href="/guidelines/v4/elements/when.html" class="link_odd_elementSpec">when</a> elements and <strong>@when</strong> attributes.</p>
 
 <p>The 
-  <a href="/v4/elements/when.html" class="link_odd_elementSpec">when</a> element identifies a particular point in time during the playback of a media file, such as an audio recording.</p>
+  <a href="/guidelines/v4/elements/when.html" class="link_odd_elementSpec">when</a> element identifies a particular point in time during the playback of a media file, such as an audio recording.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -843,7 +843,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
     <div class="column col-4 hide-md">
 
-        <form action="/v4/content/facsimilesrecordings.html">
+        <form action="/guidelines/v4/content/facsimilesrecordings.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -856,7 +856,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -864,7 +864,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -872,7 +872,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -880,7 +880,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -888,7 +888,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -896,7 +896,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2708,7 +2708,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-2" href="/v4/content/facsimilesrecordings.html#facsimiles">12.1. Facsimiles
+    <a class="level-2" href="/guidelines/v4/content/facsimilesrecordings.html#facsimiles">12.1. Facsimiles
     </a>
   
 
@@ -2719,7 +2719,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-3" href="/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1. Elements of the Facsimile Module
+    <a class="level-3" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1. Elements of the Facsimile Module
     </a>
   
 
@@ -2730,7 +2730,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-2" href="/v4/content/facsimilesrecordings.html#performances">12.2. Performances
+    <a class="level-2" href="/guidelines/v4/content/facsimilesrecordings.html#performances">12.2. Performances
     </a>
   
 
@@ -2741,7 +2741,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-3" href="/v4/content/facsimilesrecordings.html#perfElements">12.2.1. Overview
+    <a class="level-3" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1. Overview
     </a>
   
 
@@ -2914,7 +2914,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v4/content/">Guidelines</a>
+                        <a href="/guidelines/v4/content/">Guidelines</a>
                     </li>
 
                     
@@ -2922,7 +2922,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/elements.html">Elements</a>
+                        <a href="/guidelines/v4/elements.html">Elements</a>
                     </li>
 
                     
@@ -2930,7 +2930,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v4/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2938,7 +2938,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v4/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2946,7 +2946,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/data-types.html">Data Types</a>
+                        <a href="/guidelines/v4/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2954,7 +2954,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
                     
                     <li class="nav-item">
-                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v4/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -4766,7 +4766,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-2" href="/v4/content/facsimilesrecordings.html#facsimiles">12.1. Facsimiles
+    <a class="level-2" href="/guidelines/v4/content/facsimilesrecordings.html#facsimiles">12.1. Facsimiles
     </a>
   
 
@@ -4777,7 +4777,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-3" href="/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1. Elements of the Facsimile Module
+    <a class="level-3" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1. Elements of the Facsimile Module
     </a>
   
 
@@ -4788,7 +4788,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-2" href="/v4/content/facsimilesrecordings.html#performances">12.2. Performances
+    <a class="level-2" href="/guidelines/v4/content/facsimilesrecordings.html#performances">12.2. Performances
     </a>
   
 
@@ -4799,7 +4799,7 @@ For example, the following would encode a zone where its contents are oriented 9
 
   
 
-    <a class="level-3" href="/v4/content/facsimilesrecordings.html#perfElements">12.2.1. Overview
+    <a class="level-3" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1. Overview
     </a>
   
 

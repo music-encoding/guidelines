@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_v3.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/v3/content/usersymbols.html">
+          <form action="/guidelines/v3/content/usersymbols.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -147,7 +147,7 @@
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/anchoredtext.html">anchoredText</a>
+                <a href="/guidelines/v3/elements/anchoredtext.html">anchoredText</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -167,7 +167,7 @@ made to the layout of the measures around it.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/curve.html">curve</a>
+                <a href="/guidelines/v3/elements/curve.html">curve</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -187,7 +187,7 @@ slur.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/line.html">line</a>
+                <a href="/guidelines/v3/elements/line.html">line</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -207,7 +207,7 @@ element.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/symbol.html">symbol</a>
+                <a href="/guidelines/v3/elements/symbol.html">symbol</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -226,7 +226,7 @@ element.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/symboldef.html">symbolDef</a>
+                <a href="/guidelines/v3/elements/symboldef.html">symbolDef</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -245,7 +245,7 @@ element.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/symboltable.html">symbolTable</a>
+                <a href="/guidelines/v3/elements/symboltable.html">symbolTable</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -276,7 +276,7 @@ element.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/model.graphicprimitivelike.html">model.graphicprimitiveLike</a>
+                <a href="/guidelines/v3/elements/model.graphicprimitivelike.html">model.graphicprimitiveLike</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -295,7 +295,7 @@ element.</div>
     <div class="tile-content">
         <div class="tile-title">
               
-                <a href="/v3/elements/model.symboltablelike.html">model.symbolTableLike</a>
+                <a href="/guidelines/v3/elements/model.symboltablelike.html">model.symbolTableLike</a>
             
         </div>
         <div class="tile-subtitle text-gray">
@@ -314,12 +314,12 @@ element.</div>
 <ol>
   <li>For defining lines, curves and text elements that cannot be represented by a more specific element.</li>
   <li>For defining reusable symbols and special graphical renditions.For this purpose, it provides three elements as graphic primitives, 
-  <a href="/v3/elements/line.html" class="link_odd_elementSpec">line</a>, 
-  <a href="/v3/elements/curve.html" class="link_odd_elementSpec">curve</a> and 
-  <a href="/v3/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Anywhere these elements are allowed, the 
-  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element can be used as well. The 
-  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element facilitates the re-use of symbols that were defined by 
-  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements.</li>
+  <a href="/guidelines/v3/elements/line.html" class="link_odd_elementSpec">line</a>, 
+  <a href="/guidelines/v3/elements/curve.html" class="link_odd_elementSpec">curve</a> and 
+  <a href="/guidelines/v3/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Anywhere these elements are allowed, the 
+  <a href="/guidelines/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element can be used as well. The 
+  <a href="/guidelines/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element facilitates the re-use of symbols that were defined by 
+  <a href="/guidelines/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements.</li>
 </ol>
 
 <h4 id="usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
@@ -327,27 +327,27 @@ element.</div>
   </h4>
 
 <p>The 
-  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> element uses SVG markup or the aforementioned graphic primitives to describe a symbol. A symbol definition may also use symbols defined by other 
-  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements by employing the 
-  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element.</p>
+  <a href="/guidelines/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> element uses SVG markup or the aforementioned graphic primitives to describe a symbol. A symbol definition may also use symbols defined by other 
+  <a href="/guidelines/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements by employing the 
+  <a href="/guidelines/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element.</p>
 
 <figure class="figure">
-  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Definition of a triangle percussion symbol using graphic primitives</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/images/v3/modules/usersymbols/triangle.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/usersymbols/triangle.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendition of the triangle defined above</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Symbol composed of the symbol defined above and additional graphics primitives</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/images/v3/modules/usersymbols/triangleWithStick.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/usersymbols/triangleWithStick.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendition of the composite triangle symbol</figcaption>
 </figure>
 
@@ -356,23 +356,23 @@ element.</div>
   </h4>
 
 <p>The graphics primitives and symbols can be used directly in the music to describe text and lines on a purely graphical level, without implying a specific logical meaning. If possible, however, more meaningful elements should be used. This means for example, “a tempo” or “da capo” should in general not be put inside 
-  <a href="/v3/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Instead, 
-  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> and 
-  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> should be used. Likewise, slurs and ties should be encoded using their respective elements, not using 
-  <a href="/v3/elements/curve.html" class="link_odd_elementSpec">curve</a>, and for glissandi, 
-  <a href="/v3/elements/gliss.html" class="link_odd_elementSpec">gliss</a> should be used instead of 
-  <a href="/v3/elements/line.html" class="link_odd_elementSpec">line</a>.</p>
+  <a href="/guidelines/v3/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Instead, 
+  <a href="/guidelines/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> and 
+  <a href="/guidelines/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> should be used. Likewise, slurs and ties should be encoded using their respective elements, not using 
+  <a href="/guidelines/v3/elements/curve.html" class="link_odd_elementSpec">curve</a>, and for glissandi, 
+  <a href="/guidelines/v3/elements/gliss.html" class="link_odd_elementSpec">gliss</a> should be used instead of 
+  <a href="/guidelines/v3/elements/line.html" class="link_odd_elementSpec">line</a>.</p>
 
 <p>An example usage for 
-  <a href="/v3/elements/line.html" class="link_odd_elementSpec">line</a> is the visualization of voice leading, which is not covered by a specific MEI element.</p>
+  <a href="/guidelines/v3/elements/line.html" class="link_odd_elementSpec">line</a> is the visualization of voice leading, which is not covered by a specific MEI element.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/usersymbols/mignon.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/usersymbols/mignon.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Voice leading visualization as found in an Edition Peters print of "Album für die Jugend" by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number is 10478.)</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Encoding of the Schumann example</figcaption>
 </figure>
 
@@ -381,36 +381,36 @@ element.</div>
   </h4>
 
 <p>Usersymbols can define the rendition of different elements in two ways. Some elements, for example 
-  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> and 
-  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>, can have user symbol elements as content. In the following example, the content of 
-  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> is used to provide pictograms of percussion instruments.</p>
+  <a href="/guidelines/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> and 
+  <a href="/guidelines/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>, can have user symbol elements as content. In the following example, the content of 
+  <a href="/guidelines/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> is used to provide pictograms of percussion instruments.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/usersymbols/percussion.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/usersymbols/percussion.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Indicating percussion instruments using pictograms</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Encoding of above example</figcaption>
 </figure>
 
 <p>A number of elements can point to an internally-defined symbol for rendering using the <strong>@altsym</strong> attribute.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/usersymbols/charpentier.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/usersymbols/charpentier.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Different treble clef renditions as written by Charpentier</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Defining two staffs, each using its own treble clef shape</figcaption>
 </figure>
 
 <p>Externally-defined symbols may be referenced using a <strong>@glyphname</strong> or <strong>@glyphnum</strong> attribute. Both attributes refer to Standard Music Font Layout (SMuFL) characters. Other character sets must be treated as internally-defined character sets.</p>
 
 <figure class="figure">
-  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Use of glyphname and glyphnum attributes</figcaption>
 </figure>
 
@@ -429,7 +429,7 @@ element.</div>
   </h4>
 
 <p>There are two types of units used by MEI: Staff units (data.MEASUREMENT) and units of the output coordinate system. Units of the output coordinate system can be translated to physical real world distances by means of the <strong>@vu.height</strong> and <strong>@page.scale</strong> of a 
-  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. Real world units are multiplied by the value of <strong>@page.scale</strong> to get the corresponding value in output coordinate units.</p>
+  <a href="/guidelines/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. Real world units are multiplied by the value of <strong>@page.scale</strong> to get the corresponding value in output coordinate units.</p>
 
 <p>If an element is scaled using the <strong>@scale</strong> attribute, the actual size of the units changes accordingly.</p>
 
@@ -446,7 +446,7 @@ element.</div>
 <ol>
   <li>If <strong>@startid</strong> is present, the origin of the referenced element;</li>
   <li>If the element is inside running text (e.g. inside 
-  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>), the end of the preceding text or element;</li>
+  <a href="/guidelines/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>), the end of the preceding text or element;</li>
   <li>Otherwise, the origin of the containing element.</li>
 </ol>
 
@@ -457,14 +457,14 @@ element.</div>
 <p>Examples of origins are:</p>
 
 <ul>
-  <li><a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
-  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>: The horizontal origin is the starting point of the measure, the vertical one is the bottom staff line;</li>
-  <li><a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a>: The horizontal origin is the left end of the notehead, the vertical one the center of the notehead;</li>
-  <li><a href="/v3/elements/clef.html" class="link_odd_elementSpec">clef</a>: The horizontal origin is the left end of the clef, the vertical one the line specified by 
-  <a href="/v3/elements/clef.html" class="link_odd_elementSpec">clef</a>/<strong>@line</strong> (or <strong>@clef.line</strong>);</li>
+  <li><a href="/guidelines/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/guidelines/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>: The horizontal origin is the starting point of the measure, the vertical one is the bottom staff line;</li>
+  <li><a href="/guidelines/v3/elements/note.html" class="link_odd_elementSpec">note</a>: The horizontal origin is the left end of the notehead, the vertical one the center of the notehead;</li>
+  <li><a href="/guidelines/v3/elements/clef.html" class="link_odd_elementSpec">clef</a>: The horizontal origin is the left end of the clef, the vertical one the line specified by 
+  <a href="/guidelines/v3/elements/clef.html" class="link_odd_elementSpec">clef</a>/<strong>@line</strong> (or <strong>@clef.line</strong>);</li>
   <li>For elements containing text: The left end of the baseline;</li>
-  <li><a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a>: As symbol definitions aren’t rendered directly, their coordinate system and origin are considered virtual. When they are referenced by 
-  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> or <strong>@altsym</strong>, the origin of the context, i.e. the referencing symbol, is used.</li>
+  <li><a href="/guidelines/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a>: As symbol definitions aren’t rendered directly, their coordinate system and origin are considered virtual. When they are referenced by 
+  <a href="/guidelines/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> or <strong>@altsym</strong>, the origin of the context, i.e. the referencing symbol, is used.</li>
 </ul>
 
 <p>If neither absolute nor relative coordinates are specified, determining visually suitable start and end points for <strong>@line</strong> and <strong>@curve</strong> attributes is left to the rendering application. A value of 0 is not always assumed for absent relative coordinates. A typical example where a rendering application may not choose the origins of absent relative start and end coordinates to be the start point as well is the line connecting two notes in the above Schumann example.</p>
@@ -478,14 +478,14 @@ element.</div>
 <p>The attributes <strong>@bezier</strong> and <strong>@bulge</strong> define the shape of a curve in two different ways. If both are present, a rendering application may choose either one. They override <strong>@curvedir</strong>.</p>
 
 <p><strong>@bezier</strong> defines the inner control points of a cubic Bézier curve, i.e., a Bézier curve with two inner control points. The coordinates are given by a space separated list, first x and y offsets for the first control point, then x and y offsets for the second one. The x and y offsets are given in staff units (or inside the context of 
-  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> in abstract units). The offsets for the first inner control point are relative to the start point, the ones for the second inner control point are relative to the end point.</p>
+  <a href="/guidelines/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> in abstract units). The offsets for the first inner control point are relative to the start point, the ones for the second inner control point are relative to the end point.</p>
 
 <p>The <strong>@bulge</strong> attribute allows specification of the curve shape by a number of interpolation points. The interpolation points are given by their distance from the line connecting the start and end point. The distance values are stored as a space separated list.</p>
 
 <p>The interpolation points are calculated as follows: If <strong>@bulge</strong> provides <em>n</em> distance values, the connection line is divided into <em>n+1</em> subsegments of equal length. The interpolation points are found by drawing a perpendicular line of the respective length at each subsegment joint. Positive distance values are drawn to the left of the connection line (left when traveling from start to end), negative ones to the right.</p>
 
 <figure class="figure">
-  <img src="/images/v3/modules/usersymbols/bulge.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/images/v3/modules/usersymbols/bulge.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendering a bulge attribute with value "-2 1"</figcaption>
 </figure>
 
@@ -532,7 +532,7 @@ element.</div>
 
     <div class="column col-4 hide-md">
 
-        <form action="/v3/content/usersymbols.html">
+        <form action="/guidelines/v3/content/usersymbols.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -545,7 +545,7 @@ element.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -553,7 +553,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -561,7 +561,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -569,7 +569,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -577,7 +577,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -585,7 +585,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -2145,7 +2145,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsOverview">22.1. Overview of the User Symbols Module
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsOverview">22.1. Overview of the User Symbols Module
     </a>
   
 
@@ -2156,7 +2156,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsElements">22.1.1. Elements
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsElements">22.1.1. Elements
     </a>
   
 
@@ -2167,7 +2167,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsAttributeClasses">22.1.2. Attribute Classes
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsAttributeClasses">22.1.2. Attribute Classes
     </a>
   
 
@@ -2178,7 +2178,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsModelClasses">22.1.3. Model Classes
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsModelClasses">22.1.3. Model Classes
     </a>
   
 
@@ -2189,7 +2189,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsModuleUses">22.2. Uses of the Usersymbols Module
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsModuleUses">22.2. Uses of the Usersymbols Module
     </a>
   
 
@@ -2200,7 +2200,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
     </a>
   
 
@@ -2211,7 +2211,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2. Elements Without Semantic Implications
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2. Elements Without Semantic Implications
     </a>
   
 
@@ -2222,7 +2222,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsGraphicalRendition">22.2.3. Defining a Specific Graphical Rendition for a Semantic Element
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsGraphicalRendition">22.2.3. Defining a Specific Graphical Rendition for a Semantic Element
     </a>
   
 
@@ -2233,7 +2233,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsPositioningCoordinates">22.3. Positioning and Coordinates
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsPositioningCoordinates">22.3. Positioning and Coordinates
     </a>
   
 
@@ -2244,7 +2244,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCoordinateSystem">22.3.1. Axis Orientation
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsCoordinateSystem">22.3.1. Axis Orientation
     </a>
   
 
@@ -2255,7 +2255,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsUnits">22.3.2. Units
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsUnits">22.3.2. Units
     </a>
   
 
@@ -2266,7 +2266,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsPositioning">22.3.3. Positioning
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsPositioning">22.3.3. Positioning
     </a>
   
 
@@ -2277,7 +2277,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCurveShape">22.3.4. Curve Shape
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsCurveShape">22.3.4. Curve Shape
     </a>
   
 
@@ -2288,7 +2288,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLineRendition">22.4. Line Rendition
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsLineRendition">22.4. Line Rendition
     </a>
   
 
@@ -2299,7 +2299,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLimitations">22.5. Limitations
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsLimitations">22.5. Limitations
     </a>
   
 
@@ -2325,7 +2325,7 @@ element.</div>
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/v3/content/">Guidelines</a>
+                        <a href="/guidelines/v3/content/">Guidelines</a>
                     </li>
 
                     
@@ -2333,7 +2333,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/elements.html">Elements</a>
+                        <a href="/guidelines/v3/elements.html">Elements</a>
                     </li>
 
                     
@@ -2341,7 +2341,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/v3/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2349,7 +2349,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/v3/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2357,7 +2357,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/data-types.html">Data Types</a>
+                        <a href="/guidelines/v3/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2365,7 +2365,7 @@ element.</div>
 
                     
                     <li class="nav-item">
-                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/v3/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3925,7 +3925,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsOverview">22.1. Overview of the User Symbols Module
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsOverview">22.1. Overview of the User Symbols Module
     </a>
   
 
@@ -3936,7 +3936,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsElements">22.1.1. Elements
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsElements">22.1.1. Elements
     </a>
   
 
@@ -3947,7 +3947,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsAttributeClasses">22.1.2. Attribute Classes
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsAttributeClasses">22.1.2. Attribute Classes
     </a>
   
 
@@ -3958,7 +3958,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsModelClasses">22.1.3. Model Classes
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsModelClasses">22.1.3. Model Classes
     </a>
   
 
@@ -3969,7 +3969,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsModuleUses">22.2. Uses of the Usersymbols Module
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsModuleUses">22.2. Uses of the Usersymbols Module
     </a>
   
 
@@ -3980,7 +3980,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
     </a>
   
 
@@ -3991,7 +3991,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2. Elements Without Semantic Implications
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2. Elements Without Semantic Implications
     </a>
   
 
@@ -4002,7 +4002,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsGraphicalRendition">22.2.3. Defining a Specific Graphical Rendition for a Semantic Element
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsGraphicalRendition">22.2.3. Defining a Specific Graphical Rendition for a Semantic Element
     </a>
   
 
@@ -4013,7 +4013,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsPositioningCoordinates">22.3. Positioning and Coordinates
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsPositioningCoordinates">22.3. Positioning and Coordinates
     </a>
   
 
@@ -4024,7 +4024,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCoordinateSystem">22.3.1. Axis Orientation
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsCoordinateSystem">22.3.1. Axis Orientation
     </a>
   
 
@@ -4035,7 +4035,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsUnits">22.3.2. Units
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsUnits">22.3.2. Units
     </a>
   
 
@@ -4046,7 +4046,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsPositioning">22.3.3. Positioning
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsPositioning">22.3.3. Positioning
     </a>
   
 
@@ -4057,7 +4057,7 @@ element.</div>
 
   
 
-    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCurveShape">22.3.4. Curve Shape
+    <a class="level-3" href="/guidelines/v3/content/usersymbols.html#usersymbolsCurveShape">22.3.4. Curve Shape
     </a>
   
 
@@ -4068,7 +4068,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLineRendition">22.4. Line Rendition
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsLineRendition">22.4. Line Rendition
     </a>
   
 
@@ -4079,7 +4079,7 @@ element.</div>
 
   
 
-    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLimitations">22.5. Limitations
+    <a class="level-2" href="/guidelines/v3/content/usersymbols.html#usersymbolsLimitations">22.5. Limitations
     </a>
   
 

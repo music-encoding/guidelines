@@ -14,20 +14,20 @@
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/tipuesearch/search_content_dev.js"></script>
-    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
-    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
-    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+    <script src="/guidelines/js/tipuesearch/search_content_dev.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
+    <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
 
     <!-- verovio -->
     <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
 
     <!-- script for handling verovio examples -->
-    <script src="/js/verovio-examples.js"></script>
+    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
-    <link rel="stylesheet" href="/js/highlight/styles/default.css">
-    <script src="/js/highlight/highlight.js"></script>
+    <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
+    <script src="/guidelines/js/highlight/highlight.js"></script>
 </head>
 
 
@@ -48,7 +48,7 @@
             
              <ul class="menu"> 
                 <li class="menu-item">
-                    <a href="/dev" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
                         development version
                     </a>
                 </li>
@@ -56,7 +56,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v4" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
                         4.0.1
                     </a>
                 </li>
@@ -64,7 +64,7 @@
             
             
                 <li class="menu-item">
-                    <a href="/v3" class="btn btn-link text-left menu-link">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
                         3.0.0
                     </a>
                 </li>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="searchbox">
-          <form action="/dev/content/tablature.html">
+          <form action="/guidelines/dev/content/tablature.html">
             <div class="tipue_search_group">
               <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
             </div>
@@ -139,12 +139,12 @@
 <p>The tablature module is used to record basic tablature notation. It is designed primarily for guitar and similar plucked-string instruments.</p>
 
 <p>The <strong>@lines</strong> attribute on the 
-  <a href="/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element is used to define the number of lines, courses, or strings, present in the tablature. The <strong>@tab.strings</strong> attribute is then used to enumerate the pitches of the open strings. It is important to note that this is given using the written pitch, not the sounding pitch. For example, the Western 6-string guitar, in standard tuning, sounds an octave below written pitch.</p>
+  <a href="/guidelines/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element is used to define the number of lines, courses, or strings, present in the tablature. The <strong>@tab.strings</strong> attribute is then used to enumerate the pitches of the open strings. It is important to note that this is given using the written pitch, not the sounding pitch. For example, the Western 6-string guitar, in standard tuning, sounds an octave below written pitch.</p>
 
 <p>The <strong>@tab.strings</strong> attribute gives the string tuning, ordered from highest to lowest pitch.</p>
 
 <p>For standard guitar tuning, the 
-  <a href="/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element might look like this:</p>
+  <a href="/guidelines/dev/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> element might look like this:</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -174,7 +174,7 @@
 </div>
 
 <p>The 
-  <a href="/dev/elements/note.html" class="link_odd_elementSpec">note</a> element is used to capture the specific events in the tablature. The <strong>@tab.string</strong> attribute is used to capture which string the note is to be played on. String order is the same as that given in the <strong>@tab.strings</strong> attribute. This attribute takes a positive integer in the range of 1-9.</p>
+  <a href="/guidelines/dev/elements/note.html" class="link_odd_elementSpec">note</a> element is used to capture the specific events in the tablature. The <strong>@tab.string</strong> attribute is used to capture which string the note is to be played on. String order is the same as that given in the <strong>@tab.strings</strong> attribute. This attribute takes a positive integer in the range of 1-9.</p>
 
 <div class="sampleCode" data-lang="">
 
@@ -201,7 +201,7 @@
 
     <div class="column col-4 hide-md">
 
-        <form action="/dev/content/tablature.html">
+        <form action="/guidelines/dev/content/tablature.html">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
@@ -214,7 +214,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -222,7 +222,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -230,7 +230,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -238,7 +238,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -246,7 +246,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -254,7 +254,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -1702,7 +1702,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/tablature.html#tablatureOverview">7.1. Overview of the Tablature Module
+    <a class="level-2" href="/guidelines/dev/content/tablature.html#tablatureOverview">7.1. Overview of the Tablature Module
     </a>
   
 
@@ -2463,7 +2463,7 @@
 
                      <ul class="nav"> 
                     <li class="nav-item">
-                        <a href="/dev/content/">Guidelines</a>
+                        <a href="/guidelines/dev/content/">Guidelines</a>
                     </li>
 
                     
@@ -2471,7 +2471,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/elements.html">Elements</a>
+                        <a href="/guidelines/dev/elements.html">Elements</a>
                     </li>
 
                     
@@ -2479,7 +2479,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                        <a href="/guidelines/dev/attribute-classes.html">Attribute Classes</a>
                     </li>
 
                     
@@ -2487,7 +2487,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/model-classes.html">Model Classes</a>
+                        <a href="/guidelines/dev/model-classes.html">Model Classes</a>
                     </li>
 
                     
@@ -2495,7 +2495,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/data-types.html">Data Types</a>
+                        <a href="/guidelines/dev/data-types.html">Data Types</a>
                     </li>
 
                     
@@ -2503,7 +2503,7 @@
 
                     
                     <li class="nav-item">
-                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                        <a href="/guidelines/dev/macro-groups.html">Macro Groups</a>
                     </li>
 
                      </ul> 
@@ -3951,7 +3951,7 @@
 
   
 
-    <a class="level-2" href="/dev/content/tablature.html#tablatureOverview">7.1. Overview of the Tablature Module
+    <a class="level-2" href="/guidelines/dev/content/tablature.html#tablatureOverview">7.1. Overview of the Tablature Module
     </a>
   
 
