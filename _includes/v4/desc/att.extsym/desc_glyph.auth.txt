@@ -1,2 +1,0 @@
-A name or label associated with the controlled vocabulary from which the value of
-            glyph.name or glyph.num is taken.

@@ -1,6 +1,0 @@
-
-<!-- In the facsimile subtree: --><zone xml:id="facsimile.zone2"></zone>
-<!-- somewhere in the content: -->
-<measure facs="#facsimile.zone2" xml:id="facsimile.measure2">
-   <!-- measure content -->
-</measure>

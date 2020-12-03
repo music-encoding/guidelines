@@ -1,1 +1,0 @@
-Specifies the number of ruled text lines per column.

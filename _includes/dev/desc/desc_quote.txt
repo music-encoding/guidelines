@@ -1,3 +1,0 @@
-(quoted material) – Contains a paragraph-like block of text attributed to an external
-      source, normally set off from the surrounding text by spacing or other typographic
-      distinction.

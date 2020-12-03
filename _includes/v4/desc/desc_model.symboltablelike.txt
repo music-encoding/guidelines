@@ -1,1 +1,0 @@
-Groups elements that group symbol definitions.

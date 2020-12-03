@@ -1,1 +1,0 @@
-Collects foliumlike elements.

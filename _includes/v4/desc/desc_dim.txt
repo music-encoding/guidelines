@@ -1,1 +1,0 @@
-(dimension) – Any single dimensional specification.

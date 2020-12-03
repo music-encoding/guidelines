@@ -1,2 +1,0 @@
-Contains a reference to a chordDef element elsewhere in the
-          document.

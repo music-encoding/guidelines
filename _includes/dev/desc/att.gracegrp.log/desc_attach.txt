@@ -1,2 +1,0 @@
-Records whether the grace note group is attached to the following event or to the
-          preceding one. The usual name for the latter is "Nachschlag".

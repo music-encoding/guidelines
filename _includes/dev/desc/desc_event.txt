@@ -1,1 +1,0 @@
-Contains a free-text event description.

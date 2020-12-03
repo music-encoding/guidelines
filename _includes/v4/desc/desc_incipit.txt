@@ -1,1 +1,0 @@
-Contains the opening words of the text proper, exclusive of any rubric which might precede it, of sufficient length to identify the work uniquely.

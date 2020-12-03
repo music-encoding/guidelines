@@ -1,3 +1,0 @@
-<bTrem>
-  <note dur="1" oct="4" pname="b" />
-</bTrem>

@@ -1,1 +1,0 @@
-<a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>

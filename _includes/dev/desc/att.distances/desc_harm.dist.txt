@@ -1,2 +1,0 @@
-Records the default distance from the staff of harmonic indications, such as guitar
-          chord grids or functional labels.

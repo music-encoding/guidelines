@@ -1,1 +1,0 @@
-Attributes for identification of the extent of editorial assertions.

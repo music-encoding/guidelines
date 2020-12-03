@@ -1,1 +1,0 @@
-Documents the usage of a specific attribute of the element.

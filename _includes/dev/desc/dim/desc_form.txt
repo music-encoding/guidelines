@@ -1,1 +1,0 @@
-Aspect of the object being measured.

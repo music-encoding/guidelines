@@ -1,1 +1,0 @@
-Records a MIDI channel value.

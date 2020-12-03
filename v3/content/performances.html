@@ -1,0 +1,4070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Performances</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/performances.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="performances">18. Performances
+      
+  </h2>
+
+<p>This chapter describes the ‘performance’ module, which can be used for organizing audio and video files of performances of a musical work. The elements provided allow the encoder to group different recordings of the same performance, identify temporal segments within the recordings, and encode simple alignments with a music text.</p>
+
+<h3 id="perfElements">18.1. Overview
+      
+  </h3>
+
+<p>The following elements are available to encode information about a recorded performance:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/performance.html">performance</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A presentation of one or more musical works.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/recording.html">recording</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A recorded performance.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/avfile.html">avFile</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (audio/video file) – References an external digital audio or video file.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/clip.html">clip</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Defines a time segment of interest within a recording or within a digital audio or
+video
+file.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/when.html">when</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates a point in time either absolutely (using the absolute attribute), or relative
+to another when element (using the since, interval and inttype attributes).</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v3/elements/performance.html" class="link_odd_elementSpec">performance</a> element begins a subtree of the 
+  <a href="/v3/elements/music.html" class="link_odd_elementSpec">music</a> element and appears alongside with, or instead of, 
+  <a href="/v3/elements/body.html" class="link_odd_elementSpec">body</a> (described in 
+  <a href="/v3/content/shared.html#sharedMusicElement">Music Element</a> and 
+  <a href="/v3/elements/facsimile.html" class="link_odd_elementSpec">facsimile</a> (described in 
+  <a href="/v3/content/facsimiles.html">Facsimiles</a>). A 
+  <a href="/v3/elements/performance.html" class="link_odd_elementSpec">performance</a> element represents one recorded performance event. As a performance may be recorded in multiple formats or by different personnel or or using different equipment, the 
+  <a href="/v3/elements/performance.html" class="link_odd_elementSpec">performance</a> element may group one or more recordings of the event.</p>
+
+<p>The <strong>@decls</strong> attribute can be used to point to performance medium metadata for the performed work. See 
+  <a href="/v3/content/header.html#headerWorkMedium">Performance Medium</a> for more details.</p>
+
+<p>The 
+  <a href="/v3/elements/recording.html" class="link_odd_elementSpec">recording</a> element identifies a single recording event taking place within an absolute temporal space. The class att.mediabounds contains attributes that can be used to define this space:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.mediabounds.html">@begin</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Specifies a point where the relevant content begins. A numerical value must be less
+and a time value must be earlier than that given by the end attribute.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.mediabounds.html">@end</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Specifies a point where the relevant content ends. If not specified, the end of the
+content is assumed to be the end point. A numerical value must be greater and a time
+value must be later than that given by the begin attribute.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.mediabounds.html">@betype</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Type of values used in the begin/end attributes. The begin and end attributes can
+only be interpreted meaningfully in conjunction with this attribute.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v3/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element identifies an external file associated with a recording act. In the simplest case, the recording element will contain one 
+  <a href="/v3/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element identifying a file that represents it. The <strong>@target</strong> attribute contains the URI of the digital media file. Use of the <strong>@mimetype</strong> attribute is recommended for the 
+  <a href="/v3/elements/avfile.html" class="link_odd_elementSpec">avFile</a> element. Its value should be a valid MIME media type defined by the Internet Engineering Task Force in RFC 2046. It is also recommended that all avFile elements have a recording or clip parent which bears the <strong>@begin</strong>, <strong>@end</strong>, and <strong>@betype</strong> attributes.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:03:10.00"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/wav"</span> <span class="na">target=</span><span class="s">"http://example.com/path/to/audio/recording"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Sometimes, multiple digital files are created in order to provide greater flexibility in redistribution and playback capabilities. In this case, multiple avFile elements may occur, each with a different mimetype. Keep in mind, however, that each file still represents the complete temporal extent of the recording act in spite of the change of file format:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:03:10.00"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/wav"</span> <span class="na">target=</span><span class="s">"http://example.com/path/to/audio/recording"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/mpeg"</span> <span class="na">target=</span><span class="s">"http://example.com/path/to/audio/recording"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/v3/elements/clip.html" class="link_odd_elementSpec">clip</a> element identifies a temporal segment of a recording act. In the following example, the clip begins two minutes into the timeframe of the recording and ends 20 seconds later:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:03:10.00"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:02:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:20:20.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+<span class="nt">&lt;/recording&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Beyond these relatively simple uses, complex situations may occur that require equally complex markup. For example, a single performance may be represented by multiple digital media files. Because they have differing durations, the media files must be the result of separate recording acts, even if these recording acts took place at the same time:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:03:10.00"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/wav"</span> <span class="na">target=</span><span class="s">"http://example.com/path/to/audio/recording"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:03:15.00"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/mpeg"</span> <span class="na">target=</span><span class="s">"http://example.com/path/to/audio/recording"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>A single performance may also be represented by multiple, <em>sequential</em> digital files, as when a complete work is recorded in several so-called ‘takes’. In this case, the files may be considered to be parts of a single recording act, the extent of which is the combined extent of the individual clips. For example, a series of 
+  <a href="/v3/elements/clip.html" class="link_odd_elementSpec">clip</a> elements may be used to identify each movement of a piece and give start and end times for the movements in relation to the overall temporal space of the complete work:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:07:00.00"</span> <span class="na">n=</span><span class="s">"mov1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/aiff"</span> <span class="na">target=</span><span class="s">"movement01.aiff"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+      <span class="nt">&lt;/clip&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:07:01.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:12:03.00"</span> <span class="na">n=</span><span class="s">"mov2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/aiff"</span> <span class="na">target=</span><span class="s">"movement02.aiff"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+      <span class="nt">&lt;/clip&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Similar markup is also applicable when a single file representing the entirety of a recording act is broken into segments later, as is often done for practical storage and distribution reasons. The file from which the clips are derived is indicated using an avFile element:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:12:03.00"</span> <span class="na">n=</span><span class="s">"completeWork"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/aiff"</span> <span class="na">target=</span><span class="s">"completeWork.aiff"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:07:00.00"</span> <span class="na">n=</span><span class="s">"mov1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/aiff"</span> <span class="na">target=</span><span class="s">"movement01.aiff"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+      <span class="nt">&lt;/clip&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:07:02.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:12:03.00"</span> <span class="na">n=</span><span class="s">"mov2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/aiff"</span> <span class="na">target=</span><span class="s">"movement02.aiff"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+      <span class="nt">&lt;/clip&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>A 
+  <a href="/v3/elements/clip.html" class="link_odd_elementSpec">clip</a> may be used to define any region of interest, such as a cadenza or a modulation, a song verse, etc. The following example shows the use of 
+  <a href="/v3/elements/clip.html" class="link_odd_elementSpec">clip</a> and its attributes to identify significant sections of a recording:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:05:21.00"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Exposition --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:01:41.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- Development --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:01:41.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:03:14.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- Recapitulation --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:03:14.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:04:28.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- Coda --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:04:28.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:05:21.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The preceding example also demonstrates that media files are not required in order to define the temporal space of a recording act or clip. This makes it possible to set the boundaries of these features, then use the content of the performance element as a rudimentary “edit decision list” to create the matching digital files.</p>
+
+<p>If an encoding of the notated text with which the media files are associated is included in the MEI file, the <strong>@startid</strong> attribute can be used to indicate the first element in the sequence of events to which the recording corresponds:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:07:00.00"</span> <span class="na">n=</span><span class="s">"mov1"</span> <span class="na">startid=</span><span class="s">"#performance.m1_1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/aiff"</span> <span class="na">target=</span><span class="s">"fullpiece.aiff"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span>
+<span class="c">&lt;!-- ... --&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+   <span class="nt">&lt;mdiv&gt;</span>
+      <span class="nt">&lt;score&gt;</span>
+         <span class="nt">&lt;section&gt;</span>
+            <span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">xml:id=</span><span class="s">"performance.m1_1"</span><span class="nt">&gt;</span>
+               <span class="c">&lt;!-- ... --&gt;</span>
+            <span class="nt">&lt;/measure&gt;</span>
+         <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;/score&gt;</span>
+   <span class="nt">&lt;/mdiv&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Clips can also be aligned with components of the musical text encoded in the 
+  <a href="/v3/elements/body.html" class="link_odd_elementSpec">body</a>. The <strong>@startid</strong> attribute can be used to specify the starting element in the sequence of events to which the clip corresponds. The following example shows the use of of clip elements to identify the exposition of the first movement from Beethoven’s piano sonata Op. 14, no. 2 and its concluding ‘codetta’.</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:05:21.00"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;avFile</span> <span class="na">mimetype=</span><span class="s">"audio/aiff"</span> <span class="na">target=</span><span class="s">"BeethovenOp14N2-Mov1.aiff"</span><span class="nt">&gt;&lt;/avFile&gt;</span>
+      <span class="c">&lt;!-- Exposition --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:0.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:01:41.00"</span> <span class="na">startid=</span><span class="s">"#performance.m1"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- Exposition's "codetta" --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:01:31.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:01:41.00"</span> <span class="na">startid=</span><span class="s">"#performance.m48"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span>
+<span class="c">&lt;!-- ... --&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+   <span class="nt">&lt;mdiv&gt;</span>
+      <span class="nt">&lt;score&gt;</span>
+         <span class="nt">&lt;section&gt;</span>
+            <span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">xml:id=</span><span class="s">"performance.m1"</span><span class="nt">&gt;</span>
+               <span class="c">&lt;!-- ... --&gt;</span>
+            <span class="nt">&lt;/measure&gt;</span>
+            <span class="c">&lt;!-- ... --&gt;</span>
+            <span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"48"</span> <span class="na">xml:id=</span><span class="s">"performance.m48"</span><span class="nt">&gt;</span>
+               <span class="c">&lt;!-- ... --&gt;</span>
+            <span class="nt">&lt;/measure&gt;</span>
+         <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;/score&gt;</span>
+   <span class="nt">&lt;/mdiv&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Please note that the begin and end times of clips may overlap. In the preceding example, the extent of the codetta is contained within that of the exposition. Overlapping beginning and ending points may also be used to provide additional performance context for a segment or because there is uncertainty with regard to precise values for these points.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:03:06.54"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- a section of interest --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:00:41.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- the following section starts a little before the end of the 
+         previous one to give some "adjustment" time --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:31.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:01:07.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- the boundaries of the following section are "fuzzy" --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:02:18.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:02:49.85"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>A bibliographic description of a recording or metadata explaining how clip boundaries were determined may be associated with the recording and clip elements via the <strong>@decls</strong> attribute:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;performance&gt;</span>
+   <span class="nt">&lt;recording</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">decls=</span><span class="s">"#performance.recBibDesc"</span> <span class="na">end=</span><span class="s">"00:03:06.54"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- a section of interest --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:00.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:00:41.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- the following section starts a little before the end of the 
+         previous one to give some "adjustment" time --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:00:31.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">decls=</span><span class="s">"#performance.clipDesc"</span> <span class="na">end=</span><span class="s">"00:01:07.00"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+      <span class="c">&lt;!-- the boundaries of the following section are "fuzzy" --&gt;</span>
+      <span class="nt">&lt;clip</span> <span class="na">begin=</span><span class="s">"00:02:18.00"</span> <span class="na">betype=</span><span class="s">"time"</span> <span class="na">end=</span><span class="s">"00:02:49.85"</span><span class="nt">&gt;&lt;/clip&gt;</span>
+   <span class="nt">&lt;/recording&gt;</span>
+<span class="nt">&lt;/performance&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Associations between a feature of the encoding, such as a note, dynamic mark, or annotation, and a time point, may be created using 
+  <a href="/v3/elements/when.html" class="link_odd_elementSpec">when</a> elements and <strong>@when</strong> attributes.</p>
+
+<p>The 
+  <a href="/v3/elements/when.html" class="link_odd_elementSpec">when</a> element identifies a particular point in time during the playback of a media file, such as an audio recording.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;when</span> <span class="na">absolute=</span><span class="s">"00:00:01.915291666"</span> <span class="na">xml:id=</span><span class="s">"t1"</span><span class="nt">&gt;&lt;/when&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Time points may be identified in absolute terms as above; that is, in hours, minutes, and seconds since the beginning of the recording, or in relative terms using the <strong>@interval</strong>, <strong>@inttype</strong>, and <strong>@since</strong> attributes. In the following example, the time point of interest happens 48 frames after the occurrence of the point labelled as “t1”.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;when</span> <span class="na">interval=</span><span class="s">"48"</span> <span class="na">inttype=</span><span class="s">"smpte-ndf29.97"</span> <span class="na">since=</span><span class="s">"#t1"</span> <span class="na">xml:id=</span><span class="s">"t1.1"</span><span class="nt">&gt;&lt;/when&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Having identified a point of interest, another feature of the encoding may be associated with this point using its <strong>@when</strong> attribute:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;annot</span> <span class="na">plist=</span><span class="s">"#LvB"</span> <span class="na">when=</span><span class="s">"#t1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;p&gt;</span>I like this part!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/annot&gt;</span></code></pre></figure>
+
+</div>
+
+<p>One use of the association created between the annotation and the time point is to display the text of the annotation as the recording or clip is played.</p>
+
+<p>The <strong>@when</strong> attributes allows only a single value, so only one-to-one relationships can be created using this mechanism. However, one-to-many relationships are accommodated in the opposite direction; that is, from a time point to other features of the markup. For example,</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;when</span> <span class="na">absolute=</span><span class="s">"00:00:01.915291666"</span> <span class="na">data=</span><span class="s">"#feature1 #feature2 #feature3"</span> <span class="na">xml:id=</span><span class="s">"t1.2"</span><span class="nt">&gt;&lt;/when&gt;</span></code></pre></figure>
+
+</div>
+
+<p>indicates that the entities identified in <strong>@data</strong> all occur at the same instant.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/performances.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/performances.html#perfElements">18.1. Overview
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/performances.html#perfElements">18.1. Overview
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

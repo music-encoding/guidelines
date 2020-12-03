@@ -1,2 +1,0 @@
-Indicates that the performance of the next musical division should begin immediately
-          following this one.

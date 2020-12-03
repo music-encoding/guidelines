@@ -1,6 +1,0 @@
-<facsimile xml:base="http://www.mySite.org/images/">
-   <surface>
-      <graphic target="myImage.jpg"></graphic>
-      <graphic target="myImage.tif"></graphic>
-   </surface>
-</facsimile>

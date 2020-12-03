@@ -1,1 +1,0 @@
-Provides attributes for describing the size of an entity.

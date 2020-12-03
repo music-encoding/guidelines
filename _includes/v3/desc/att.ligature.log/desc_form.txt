@@ -1,1 +1,0 @@
-Provides an indication of the function of the ligature.

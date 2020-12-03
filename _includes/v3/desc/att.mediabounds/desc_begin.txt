@@ -1,2 +1,0 @@
-Specifies a point where the relevant content begins. A numerical value must be less
-and a time value must be earlier than that given by the end attribute.

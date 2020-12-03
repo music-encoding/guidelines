@@ -1,1 +1,0 @@
-Records the position of the flag using the values provided by the data.FLAGPOS.mensural datatype.

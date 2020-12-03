@@ -1,2 +1,0 @@
-Provides a base URI reference with which applications can resolve relative URI
-          references into absolute URI references.

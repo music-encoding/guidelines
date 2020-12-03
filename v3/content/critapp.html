@@ -1,0 +1,3963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Critical Apparatus</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/critapp.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="critApp">10. Critical Apparatus
+      
+  </h2>
+
+<p>This chapter describes how to encode differences between multiple exemplars of the same musical work (often referred to in MEI as ‘sources’). The mechanisms and elements described in this chapter are closely related to their counterparts in the TEI guidelines. It is also important to refer to chapter 
+  <a href="/v3/content/edittrans.html">Editorial Markup</a> of these guidelines, especially concerning the 
+  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element described therein.</p>
+
+<h3 id="critAppElements">10.1. General Usage
+      
+  </h3>
+
+<p>The following elements are defined in the critApp Module:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/app.html">app</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (apparatus) – Contains one or more alternative encodings.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/lem.html">lem</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (lemma) – Contains the lemma, or base text, of a textual variation.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/rdg.html">rdg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (reading) – Contains a single reading within a textual variation.</div>
+    </div>
+</div>
+
+<p>An 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> element always encapsulates the differences between varying sources. Therefore, it must contain at least two child elements.  Possible child elements are 
+  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> and 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, which use the same model, but have a different meaning: Whereas 
+  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> is used for prioritizing one alternative, a 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> has no such additional meaning and simply indicates a reading as found in one or more sources. Accordingly, 
+  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> is allowed only once in 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a>, whereas 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> may appear as often as necessary.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;lem&gt;</span>
+      <span class="c">&lt;!-- preferred reading --&gt;</span>
+   <span class="nt">&lt;/lem&gt;</span>
+   <span class="nt">&lt;rdg&gt;</span>
+      <span class="c">&lt;!-- alternative reading --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg&gt;</span>
+      <span class="c">&lt;!-- alternative reading --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> (and 
+  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a>) elements use the <strong>@source</strong> attribute to point to one or more descriptions of the bibliographic sources containing the material they mark:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- In the document content: --&gt;</span><span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- reading of source 1 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2 #critApp.source3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- reading of sources 2 *and* 3 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span>
+<span class="c">&lt;!-- Earlier in the document header: --&gt;</span>
+<span class="nt">&lt;sourceDesc&gt;</span>
+   <span class="nt">&lt;source</span> <span class="na">xml:id=</span><span class="s">"critApp.source1"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- bibliographic description of source 1 --&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+   <span class="nt">&lt;source</span> <span class="na">xml:id=</span><span class="s">"critApp.source2"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- bibliographic description of source 2 --&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+   <span class="nt">&lt;source</span> <span class="na">xml:id=</span><span class="s">"critApp.source3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- bibliographic description of source 3 --&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+<span class="nt">&lt;/sourceDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The <strong>@seq</strong> attribute may be used on 
+  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> or 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> to record the sequence of a series of readings. In the following example, the material in source B is marked as sequential to (and perhaps derived from) the reading in source A:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">seq=</span><span class="s">"1"</span> <span class="na">source=</span><span class="s">"#critApp.sourceA"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- material in source 1 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">seq=</span><span class="s">"2"</span> <span class="na">source=</span><span class="s">"#critApp.sourceB"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- material in source 2 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span></code></pre></figure>
+
+</div>
+
+<p>If a source has additional content that is not found in other sources, an empty 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element may be used to indicate the lack of material in the other sources. In the following example, source 1 includes material that is not found in sources 2 and 3:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- additional content of source 1 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2 #critApp.source3"</span><span class="nt">&gt;&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When working with a large number of sources, it might seem tedious to provide references for all sources. However, use of the 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element without <strong>@source</strong> is not recommended because such an encoding is not explicit and is therefore difficult to process.</p>
+
+<h3 id="critAppInContent">10.2. Variants in Musical Content
+      
+  </h3>
+
+<p>The 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> element may be used to accommodate textual variation at nearly any point in a musical text. For example, it may be used to indicate minor differences such as stem directions:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;layer&gt;</span>
+   <span class="c">&lt;!-- preceding notes --&gt;</span>
+   <span class="nt">&lt;app&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;/app&gt;</span>
+   <span class="c">&lt;!-- following notes --&gt;</span>
+<span class="nt">&lt;/layer&gt;</span></code></pre></figure>
+
+</div>
+
+<p>or to indicate more significant differences, such as the insertion of extra measures:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;section&gt;</span>
+   <span class="nt">&lt;measure&gt;&lt;/measure&gt;</span>
+   <span class="nt">&lt;measure&gt;&lt;/measure&gt;</span>
+   <span class="nt">&lt;app&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;&lt;/rdg&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+         <span class="c">&lt;!-- source 2 has 2 measures not found in source 1 --&gt;</span>
+         <span class="nt">&lt;measure&gt;&lt;/measure&gt;</span>
+         <span class="nt">&lt;measure&gt;&lt;/measure&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;/app&gt;</span>
+   <span class="nt">&lt;measure&gt;&lt;/measure&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+</div>
+
+<p>However, the flexibility in the location of 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> places a burden on the encoder to ensure that the 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a>, 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, and 
+  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> elements are used correctly; that is, the content of every 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> and 
+  <a href="/v3/elements/lem.html" class="link_odd_elementSpec">lem</a> has to be a valid replacement for its parent 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a>.</p>
+
+<h3 id="critAppInDefs">10.3. Variants in Score Definitions
+      
+  </h3>
+
+<p>In addition to its use for differentiation of the musical content of multiple sources, 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> may also be utilized to describe the layout of different scores, even when the musical content itself remains the same. An example of this is two sources that have the same content, but a different ordering of staves on which the content is written. By definition, the order of staves is derived from the order of 
+  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements in 
+  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, not from the order of 
+  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within a 
+  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>. The 
+  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> element in a measure points to its corresponding 
+  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> using either 1) the same value for <strong>@n</strong> on both elements, or 2) a value in <strong>@def</strong> which is an explicit reference to a particular 
+  <a href="/v3/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> using its <strong>@xml:id</strong> value.</p>
+
+<p>When using the first of these two approaches, it is possible to point dynamically to the correct staff definition for a given source. The following example demonstrates how this can be accomplished for two sources, both presenting a two-staff score, but with differing staff order. No further 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> element is necessary within the 
+  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> to describe the alternative score order of the sources.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;score&gt;</span>
+   <span class="nt">&lt;app&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;scoreDef&gt;</span>
+            <span class="nt">&lt;staffGrp&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/staffDef&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/staffDef&gt;</span>
+            <span class="nt">&lt;/staffGrp&gt;</span>
+         <span class="nt">&lt;/scoreDef&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;scoreDef&gt;</span>
+            <span class="nt">&lt;staffGrp&gt;</span>
+               <span class="c">&lt;!-- The order of &lt;staffDef&gt; elements defines score order, not its @n attribute! --&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/staffDef&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/staffDef&gt;</span>
+            <span class="nt">&lt;/staffGrp&gt;</span>
+         <span class="nt">&lt;/scoreDef&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;/app&gt;</span>
+   <span class="nt">&lt;section&gt;</span>
+      <span class="nt">&lt;measure&gt;</span>
+         <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/staff&gt;</span>
+         <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/staff&gt;</span>
+      <span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/score&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When unique values for <strong>@n</strong> on 
+  <a href="/v3/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> and 
+  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> are provided, it is possible to reallocate layers in the same fashion as staves.</p>
+
+<p>This mechanism may also be used to describe not only differing page orientations, formats and margins, but also clefs and keys.</p>
+
+<h3 id="critAppNesting">10.4. Nesting Apparati
+      
+  </h3>
+
+<p>In some situations, musical sources will agree at one level while differing at a lower level. For these cases, 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> elements may be nested to any level necessary. In the following example, there are three sources, two of which agree on the addition of a measure, but differ in the content of the added measure:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;&lt;/measure&gt;</span>
+<span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2 critApp.#source3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- whereas source1 omits it, source2 and source3 have an additional measure --&gt;</span>
+      <span class="nt">&lt;measure&gt;</span>
+         <span class="nt">&lt;staff&gt;</span>
+            <span class="nt">&lt;layer&gt;</span>
+               <span class="nt">&lt;app&gt;</span>
+                  <span class="c">&lt;!-- while source2 provides a measure rest, source3 has a whole note --&gt;</span>
+                  <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;mRest&gt;&lt;/mRest&gt;</span>
+                  <span class="nt">&lt;/rdg&gt;</span>
+                  <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source3"</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"1"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+                  <span class="nt">&lt;/rdg&gt;</span>
+               <span class="nt">&lt;/app&gt;</span>
+            <span class="nt">&lt;/layer&gt;</span>
+         <span class="nt">&lt;/staff&gt;</span>
+      <span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span>
+<span class="nt">&lt;measure&gt;&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When nesting 
+  <a href="/v3/elements/app.html" class="link_odd_elementSpec">app</a> elements, it is important that the value(s) in the child 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> attribute must be a strict subset of the ancestor 
+  <a href="/v3/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> value.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/critapp.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppElements">10.1. General Usage
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppInContent">10.2. Variants in Musical Content
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppInDefs">10.3. Variants in Score Definitions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppNesting">10.4. Nesting Apparati
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppElements">10.1. General Usage
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppInContent">10.2. Variants in Musical Content
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppInDefs">10.3. Variants in Score Definitions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/critapp.html#critAppNesting">10.4. Nesting Apparati
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

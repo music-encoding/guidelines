@@ -1,1 +1,0 @@
-Records the degree of damage.

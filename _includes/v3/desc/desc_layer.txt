@@ -1,1 +1,0 @@
-An independent stream of events on a staff.

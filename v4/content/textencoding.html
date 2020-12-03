@@ -1,0 +1,7790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Text Encoding</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v4/content/textencoding.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="textencoding">9. Text Encoding
+      
+  </h2>
+
+<p>This chapter describes methods for encoding textual content with MEI. It is divided into section: One part deals with 
+  <a href="/v4/content/textencoding.html#textstructures">Text Structures</a> in MEI, the other with 
+  <a href="/v4/content/textencoding.html#text">Text in MEI</a>. While the first covers structures of textual documents such as front- and backmatter, the latter describes how to mark up features and various entities within a text, such as names, tables or quotes. These features may appear both within data (a 
+  <a href="/v4/elements/figure.html" class="link_odd_elementSpec">figure</a> scribbled as marginal 
+  <a href="/v4/elements/annot.html" class="link_odd_elementSpec">annot</a>ation into a score by a bored second violin…) and metadata (a number of 
+  <a href="/v4/elements/date.html" class="link_odd_elementSpec">date</a>s within a text about the 
+  <a href="/v4/elements/creation.html" class="link_odd_elementSpec">creation</a> of a work). Accordingly, many of the elements and models explained in this chapter are used to encode 
+  <a href="/v4/content/metadata.html">Metadata in MEI</a>. However, they should not be confused with the elements from the 
+  <a href="/v4/content/lyricsperfdir.html">Lyrics and Performance Directions</a> chapter, which deals with <em>performed</em> text in MEI.</p>
+
+<p>Most of the elements described here take inspiration from encoding formats that deal primarily with text, such as HTML and the Text Encoding Initiative (TEI). These elements are provided to encode relatively basic textual information. For deeper encoding of text, these Guidelines recommend consideration of other text-specific encoding formats with embedded MEI markup.</p>
+
+<h3 id="textstructures">9.1. Text Structures
+      
+  </h3>
+
+<p>This chapter focuses on the text that accompanies the score, i.e., paratext (prefatory material, back matter, appendices, etc.).</p>
+
+<h4 id="textDivisions">9.1.1. Organizing Text into Divisions
+      
+  </h4>
+
+<p>Text can be organized in different parts, for example in chapters or sections. The 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> element is used to encode such structural divisions.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/div.html">div</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (division) – Major structural division of text, such as a preface, chapter or
+      section.</div>
+    </div>
+</div>
+
+<p>For example, printed scores, before the actual notation, can have text that can be organized in multiple sections (e.g. a preface, a critical report, performance instructions, etc. for which see the following sections); each of these sections should be identified by a different 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> element. Text might also occur in between music sections (see 
+  <a href="/v4/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few pieces might be preceded or followed by poetry. Such text should be encoded with the 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> element, as demonstrated in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;mdiv&gt;</span>
+   <span class="nt">&lt;score&gt;</span>
+      <span class="nt">&lt;section&gt;</span>
+         <span class="c">&lt;!-- Score of Franz Liszt's "Sonetto 104 del Petrarca --&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+         <span class="c">&lt;!-- Text of Francesco Petrarca's Sonett n. 104. --&gt;</span>
+         <span class="nt">&lt;lg&gt;</span>
+            <span class="nt">&lt;l&gt;</span>L'aspectata vertù, che 'n voi fioriva<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>quando Amor cominciò darvi bataglia,<span class="nt">&lt;/l&gt;</span>
+            <span class="c">&lt;!-- ... --&gt;</span>
+         <span class="nt">&lt;/lg&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/score&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Textual divisions may have titles or other forms of introductory material, which are encoded with the 
+  <a href="/v4/elements/head.html" class="link_odd_elementSpec">head</a> element.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/head.html">head</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (heading) – Contains any heading, for example, the title of a section of text, or the
+      heading of a list.</div>
+    </div>
+</div>
+
+<p>The following example shows the encoding of a preface translated into three different languages, each with a different heading:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;front&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>Preface<span class="nt">&lt;/head&gt;</span>
+      <span class="c">&lt;!-- text --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">xml:lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>Vorwort<span class="nt">&lt;/head&gt;</span>
+      <span class="c">&lt;!-- text --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">xml:lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>Prefazione<span class="nt">&lt;/head&gt;</span>
+      <span class="c">&lt;!-- text --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/front&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Having said that 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> identifies any structural organization of text, it is often helpful to distinguish the typology of division. The <strong>@type</strong> attribute can be used for this purpose.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/div.html">@type</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Characterizes the textual division in some sense, using any convenient classification
+          scheme or typology that employs single-token labels.</div>
+    </div>
+</div>
+
+<p><strong>@type</strong> may contain any number of space-separated <em>tags</em> describing the nature of the 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> (or, in fact, any other element). The following example shows the use of <strong>@type</strong> (in combination with <strong>@n</strong>) to indicate three prefaces in English, German and Italian are columns on the same page.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;front&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">type=</span><span class="s">"column"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+         Preface
+      <span class="nt">&lt;/head&gt;</span>
+      <span class="c">&lt;!-- text --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">n=</span><span class="s">"2"</span> <span class="na">type=</span><span class="s">"column"</span> <span class="na">xml:lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>Vorwort<span class="nt">&lt;/head&gt;</span>
+      <span class="c">&lt;!-- text --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">n=</span><span class="s">"3"</span> <span class="na">type=</span><span class="s">"column"</span> <span class="na">xml:lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>Prefazione<span class="nt">&lt;/head&gt;</span>
+      <span class="c">&lt;!-- text --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;pb&gt;&lt;/pb&gt;</span>
+<span class="nt">&lt;/front&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="textFrontBack">9.1.2. Paratext
+      
+  </h4>
+
+<p>This section introduces paratextual material, such as title pages, prefaces, indexes and other text that precedes or follows the actual score.</p>
+
+<h5 id="textFront">9.1.2.1. Front Matter
+      
+  </h5>
+
+<p>By ‘front matter’ these Guidelines mean distinct sections of a text (usually, but not necessarily, a printed one), prefixed to it by way of introduction or identification as a part of its production. Features such as title pages or prefaces are clear examples; a less definite case might be the prologue attached to a dramatic work. The front matter of an encoded text should not be confused with the MEI header described in chapter , which provides metadata for the entire file.</p>
+
+<p>An encoder may choose simply to ignore the front matter in a text, if the original presentation of the work is of no interest. No specific tags are provided for the various kinds of subdivision which may appear within front matter: instead, generic 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> (“division”) elements may be used, which should not be confused with 
+  <a href="/v4/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> (“musical division”) elements. The following suggested values for the <strong>@type</strong> attribute may be used to distinguish various kinds of division characteristic of front matter:</p>
+
+<p class="gloss"><strong>‘preface’</strong>: A foreword or preface addressed to the reader in which the author or publisher explains the content, purpose, or origin of the text.</p>
+
+<p class="gloss"><strong>‘ack’</strong>: A formal declaration of acknowledgement by the author in which persons and institutions are thanked for their part in the creation of a text.</p>
+
+<p class="gloss"><strong>‘dedication’</strong>: A formal offering or dedication of a text to one or more persons or institutions by the author.</p>
+
+<p class="gloss"><strong>‘abstract’</strong>: A summary of the content of a text as continuous prose.</p>
+
+<p class="gloss"><strong>‘contents’</strong>: A table of contents, specifying the structure of a work and listing its constituents. The list element should be used to mark its structure.</p>
+
+<p class="gloss"><strong>‘frontispiece’</strong>: A pictorial frontispiece, possibly including some text.</p>
+
+<p>The following extended example demonstrates how various parts of the front matter of a text may be encoded. The front part begins with a title page, which is presented in section 
+  <a href="/v4/content/metadata.html#textTitlePages">Title Pages</a>, below. This is followed by a dedication and a preface, each of which is encoded as a distinct div:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;front&gt;</span>
+   <span class="nt">&lt;titlePage&gt;</span>
+      <span class="c">&lt;!-- transcription of title page --&gt;</span>
+   <span class="nt">&lt;/titlePage&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"dedication"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+         <span class="c">&lt;!-- Dedicatory text --&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"preface"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+         Preface
+      <span class="nt">&lt;/head&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+         <span class="c">&lt;!-- paragraph 1 --&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+         <span class="c">&lt;!-- paragraph 2 --&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="c">&lt;!-- additional material --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/front&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The front matter concludes with another 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> element, shown in the next example, this time containing a table of contents, which contains a 
+  <a href="/v4/elements/list.html" class="link_odd_elementSpec">list</a> element (as described in chapter 
+  <a href="/v4/content/textencoding.html#textLists">Lists</a>). Note the use of the 
+  <a href="/v4/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to provide page-references: the implication here is that the target identifiers (song1, song2, etc.) will correspond with identifiers used for the 
+  <a href="/v4/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements containing the individual songs. (For a description of the 
+  <a href="/v4/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element, see chapter 
+  <a href="/v4/content/linkingdata.html#ptrRef">Pointers and References</a>.)</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"contents"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      Contents
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="nt">&lt;list</span> <span class="na">form=</span><span class="s">"ordered"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;</span>On Wenlock Edge
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song1"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>From Far, From Eve and Morning
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song2"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Is My Team Ploughing?
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song3"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Oh, When I Was In Love With You
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song4"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Bredon Hill
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song5"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Clun
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song6"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/list&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, the pointers in the table of contents might link to the page breaks at which a song begins, assuming that these have been included in the markup:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;list</span> <span class="na">form=</span><span class="s">"ordered"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;li&gt;</span>On Wenlock Edge
+      <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"#song1-p1"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/ref&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;</span>From Far, From Eve and Morning
+      <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"#song2-p15"</span><span class="nt">&gt;</span>15<span class="nt">&lt;/ref&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="c">&lt;!-- .... --&gt;</span>
+<span class="nt">&lt;/list&gt;</span>
+<span class="c">&lt;!-- Later in the document --&gt;</span>
+<span class="nt">&lt;mdiv</span> <span class="na">type=</span><span class="s">"song"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;pb</span> <span class="na">xml:id=</span><span class="s">"song1-p1"</span><span class="nt">/&gt;</span>
+   <span class="c">&lt;!-- .... --&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span>
+<span class="nt">&lt;mdiv</span> <span class="na">type=</span><span class="s">"song"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;pb</span> <span class="na">xml:id=</span><span class="s">"song2-p15"</span><span class="nt">/&gt;</span>
+   <span class="c">&lt;!-- .... --&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span>
+<span class="c">&lt;!-- .... --&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="textBack">9.1.2.7. Back Matter
+      
+  </h5>
+
+<p>Conventions vary as to which elements are grouped as back matter and which as front. For example, some books place the table of contents at the front, and others at the back. For this reason, the content models of the 
+  <a href="/v4/elements/front.html" class="link_odd_elementSpec">front</a> and 
+  <a href="/v4/elements/back.html" class="link_odd_elementSpec">back</a> elements are identical.</p>
+
+<p>The following suggested values may be used for the <strong>@type</strong> attribute on all division elements, in order to distinguish various kinds of divisions characteristic of back matter:</p>
+
+<p class="gloss"><strong>‘appendix’</strong>: An ancillary self-contained section of a work, often providing additional but in some sense extra-canonical text.</p>
+
+<p class="gloss"><strong>‘glossary’</strong>: A list of terms associated with definition texts (‘glosses’).</p>
+
+<p class="gloss"><strong>‘notes’</strong>: A section in which textual notes are gathered together.</p>
+
+<p class="gloss"><strong>‘bibliography’</strong>: A list of bibliographic citations.</p>
+
+<p class="gloss"><strong>‘index’</strong>: Any form of index to the work.</p>
+
+<p class="gloss"><strong>‘colophon’</strong>: A statement appearing at the end of a book describing the conditions of its physical production.</p>
+
+<p>No additional elements are proposed for the encoding of back matter at present. Some characteristic examples follow; first, an index (for the case in which a printed index is of sufficient interest to merit transcription):</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;back&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+         Index
+      <span class="nt">&lt;/head&gt;</span>
+      <span class="nt">&lt;list</span> <span class="na">type=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;li&gt;</span>a2, a3, etc., 175-176<span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;</span>Abbreviations, 3
+            <span class="nt">&lt;list</span> <span class="na">type=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;li&gt;</span>Percussion, 205-213<span class="nt">&lt;/li&gt;</span>
+               <span class="nt">&lt;li&gt;</span>Strings, 307<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/list&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;</span>Afterbeats, 77<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/list&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/back&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Note that if the page breaks in the original source have also been explicitly encoded, and given identifiers, the references to them in the above index can more usefully be recorded as links. For example, assuming that the encoding of page 77 of the original source starts like this:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;pb</span> <span class="na">xml:id=</span><span class="s">"text.P77"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<p>then the last item above might be encoded more usefully in the following form:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;li&gt;</span>Afterbeats,
+   <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"#text.P77"</span><span class="nt">&gt;</span>77<span class="nt">&lt;/ref&gt;</span>
+<span class="nt">&lt;/li&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="text">9.2. Text in MEI
+      
+  </h3>
+
+<p>This chapter describes methods for encoding textual content with MEI. Textual information on scores has several different uses, although some text is closer to music notation than other kinds. For example, tempo marks, directives and lyrics are directly related to the functionality of the notated music and are, therefore, described in other chapters (see for example 
+  <a href="/v4/content/lyricsperfdir.html#lyricsDesc">Vocal Text</a> and 
+  <a href="/v4/content/shared.html#sharedTextDirectives">Text Directives</a>).</p>
+
+<p>Most of the elements described here take inspiration from encoding formats that deal primarily with text, such as HTML and the Text Encoding Initiative (TEI). These elements are provided to encode relatively basic textual information. For deeper encoding of text, these Guidelines recommend consideration of other text-specific encoding formats with embedded MEI markup.</p>
+
+<h4 id="sharedParagraphs">9.2.1. Paragraphs
+      
+  </h4>
+
+<p>Paragraphs are fundamental to prose text and typically group one or more sentences that form a logical passage. Usually, it is typographically distinct; that is, it usually begins on a new line and the first letter of the content is often indented, enlarged, or both. This element has a similar meaning as the corresponding elements in Encoded Archival Description (EAD), Text Encoding Initiative (TEI), and HTML.</p>
+
+<p>A paragraph is encoded with the 
+  <a href="/v4/elements/p.html" class="link_odd_elementSpec">p</a> element:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/p.html">p</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (paragraph) – One or more text phrases that form a logical prose passage.</div>
+    </div>
+</div>
+
+<p>Prose text is used for several different purposes within a MEI document, therefore 
+  <a href="/v4/elements/p.html" class="link_odd_elementSpec">p</a> can occur in many situations. For example, it may be used within metadata elements (see ):</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;samplingDecl&gt;</span>
+   <span class="nt">&lt;p&gt;</span>The encoding contains only the first 5 measures.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/samplingDecl&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, paragraphs may be part of the document contents (and therefore encoded within 
+  <a href="/v4/elements/music.html" class="link_odd_elementSpec">music</a>), either as 
+  <a href="/v4/content/textencoding.html#textFrontBack">Paratext</a> or within the music notation. In these cases, a paragraph will likely be contained by a 
+  <a href="/v4/elements/div.html" class="link_odd_elementSpec">div</a> or other elements containing prose (e.g. 
+  <a href="/v4/elements/annot.html" class="link_odd_elementSpec">annot</a>, 
+  <a href="/v4/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>, etc.).</p>
+
+<p>The following example shows a paragraph in a preface section:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;front&gt;</span>
+   <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+         The Preludes<span class="nt">&lt;lb/&gt;</span>
+         Symphonic Poem No.3 by F. Liszt.
+      <span class="nt">&lt;/head&gt;</span>
+      <span class="nt">&lt;p&gt;</span>What else is our life but a series of preludes to that unknown Hymn, the first and
+         solemn note of which is intoned by Death?
+      <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/front&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="sharedTextRendition">9.2.2. Text Rendition
+      
+  </h4>
+
+<p>Sometimes, it is desirable to capture the typographical qualities of a word or phrase without assigning it a special meaning. For this purpose, MEI offers the 
+  <a href="/v4/elements/rend.html" class="link_odd_elementSpec">rend</a> element, similar to TEI’s <em>hi</em> element. Using CSS-like values, its <strong>@rend</strong> attribute can be used to specify many typographic features, such as font style, font variants, and relative font size and weight. In addition, text decoration, direction, and enclosing ‘boxes’ may be captured. While <strong>@rend</strong> is used to record relative font size and weight, absolute values for these qualities (measured in printer’s points) should be specified using the <strong>@fontsize</strong> and <strong>@fontweight</strong> attributes. In addition to commonly found typographical qualities, MEI provides the <strong>@altrend</strong> attribute for the capture of additional, user-defined rendition information.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/rend.html">rend</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (render) – A formatting element indicating special visual rendering, e.g., bold or
+      italicized, of a text word or phrase.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.textrendition.html">@rend</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures the appearance of the element's contents using MEI-defined
+          descriptors.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.textrendition.html">@altrend</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to extend the values of the rend attribute.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.typography.html">@fontname</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Holds the name of a font.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.typography.html">@fontsize</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch,
+          relative terms, e.g., "small", "larger", etc., or percentage values relative to "normal"
+          size, e.g., "125%". </div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.typography.html">@fontstyle</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the style of a font, i.e, italic, oblique, or normal.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.typography.html">@fontweight</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to indicate bold type.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.horizontalalign.html">@halign</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records horizontal alignment.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.verticalalign.html">@valign</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records vertical alignment.</div>
+    </div>
+</div>
+
+<h4 id="figTableFigures">9.2.3. Figures
+      
+  </h4>
+
+<p>The 
+  <a href="/v4/elements/fig.html" class="link_odd_elementSpec">fig</a> element groups elements representing or containing graphic information such as an illustration or figure. This element is modelled on the figure element in the Text Encoding Initiative (TEI). The 
+  <a href="/v4/elements/fig.html" class="link_odd_elementSpec">fig</a> element is used to contain images, captions, and textual descriptions of the pictures. The images themselves are specified using the 
+  <a href="/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element, whose <strong>@target</strong> attribute provides the location of an image. For example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fig&gt;</span>
+   <span class="nt">&lt;graphic</span> <span class="na">target=</span><span class="s">"../samples/snippets/mei2012-30shortexamples/beam-grace/grace-300.png"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/fig&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The graphic element may occur multiple times within the markup of the figure in order to indicate the availablity of different image formats or resolutions:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fig&gt;</span>
+   <span class="nt">&lt;graphic</span> <span class="na">target=</span><span class="s">"../samples/snippets/mei2012-30shortexamples/beam-grace/grace-72.png"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;graphic</span> <span class="na">target=</span><span class="s">"../samples/snippets/mei2012-30shortexamples/beam-grace/grace-300.png"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;graphic</span> <span class="na">target=</span><span class="s">"../samples/snippets/mei2012-30shortexamples/beam-grace/grace-600.png"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/fig&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="figTableCaptionsDescriptions">9.2.3.1. Figure Captions and Descriptions
+      
+  </h5>
+
+<p>The element 
+  <a href="/v4/elements/caption.html" class="link_odd_elementSpec">caption</a> may be used to transcribe (or supply) a title or descriptive heading for the graphic itself, as in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fig&gt;</span>
+   <span class="nt">&lt;caption&gt;</span>Grace notes<span class="nt">&lt;/caption&gt;</span>
+   <span class="nt">&lt;graphic</span> <span class="na">target=</span><span class="s">"../samples/snippets/mei2012-30shortexamples/beam-grace/grace-300.png"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/fig&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The figure description (
+  <a href="/v4/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>) element usually contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image, perhaps without displaying it. This element is intended for use as an alternative to the content of its parent 
+  <a href="/v4/elements/fig.html" class="link_odd_elementSpec">fig</a> element; for example, for display when the equipment in use cannot display graphic images. It may also be used for indexing or documentary purposes, in which case best practice suggests the use of controlled vocabulary terms.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fig&gt;</span>
+   <span class="nt">&lt;graphic</span> <span class="na">target=</span><span class="s">"emblem1.png"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;caption&gt;</span>Emblemi d'Amore<span class="nt">&lt;/caption&gt;</span>
+   <span class="nt">&lt;figDesc&gt;</span>A pair of naked winged cupids, each holding a flaming torch, in a rural setting.<span class="nt">&lt;/figDesc&gt;</span>
+<span class="nt">&lt;/fig&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Occasionally, a figure description may have a complex structure. In this case, one or more textual component elements (
+  <a href="/v4/elements/p.html" class="link_odd_elementSpec">p</a> [paragraph], 
+  <a href="/v4/elements/table.html" class="link_odd_elementSpec">table</a>, 
+  <a href="/v4/elements/list.html" class="link_odd_elementSpec">list</a>, 
+  <a href="/v4/elements/quote.html" class="link_odd_elementSpec">quote</a>, or 
+  <a href="/v4/elements/lg.html" class="link_odd_elementSpec">lg</a> [linegroup]) may be used to model the internal structure of the description:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fig&gt;</span>
+   <span class="nt">&lt;caption&gt;</span>Grace notes<span class="nt">&lt;/caption&gt;</span>
+   <span class="nt">&lt;figDesc&gt;</span>
+      <span class="nt">&lt;p&gt;</span>The example shows grace notes within beams ...<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>This illustration was created by ...<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/figDesc&gt;</span>
+   <span class="nt">&lt;graphic</span> <span class="na">target=</span><span class="s">"../samples/snippets/mei2012-30shortexamples/beam-grace/grace-300.png"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/fig&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="figTableImages">9.2.3.2. Images
+      
+  </h5>
+
+<p>The 
+  <a href="/v4/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element indicates the location of an inline graphic, illustration, or figure. As noted above, there exists a wide variety of different graphics formats, and the following list is in no way exhaustive. Moreover, inclusion of any format in this list should not be taken as indicating endorsement by the MEI of this format or any products associated with it. Some of the formats listed here are proprietary to a greater or lesser extent and cannot therefore be regarded as standards in any meaningful sense. They are, however, widely used by many different vendors. The following formats are widely used at the present time, and are likely to remain supported by more than one vendor’s software:</p>
+
+<ul>
+  <li>BMP: Microsoft bitmap format</li>
+  <li>CGM: Computer Graphics Metafile</li>
+  <li>GIF: Graphics Interchange Format</li>
+  <li>JPEG: Joint Photographic Expert Group</li>
+  <li>PBM: Portable Bit Map</li>
+  <li>PCX: IBM PC raster format</li>
+  <li>PICT: Macintosh drawing format</li>
+  <li>PNG: Portable Network Graphics format</li>
+  <li>Photo-CD: Kodak Photo Compact Disk format</li>
+  <li>QuickTime: Apple real-time image system</li>
+  <li>SMIL: Synchronized Multimedia Integration Language format</li>
+  <li>SVG: Scalable Vector Graphics format</li>
+  <li>TIFF: Tagged Image File Format</li>
+</ul>
+
+<p>Brief descriptions of all the above are given below. Where possible, current addresses or other contact information are shown for the originator of each format. Many formal standards, especially those promulgated by the ISO and many related national organizations (ANSI, DIN, BSI, and many more), are available from those national organizations. Addresses may be found in any standard organizational directory for the country in question.</p>
+
+<h6 id="figTableVectorGraphicFormats">9.2.3.2.1. Vector Graphic Formats
+      
+  </h6>
+
+<p class="gloss"><strong>SVG: Scalable Vector Graphics format</strong>: SVG is a language for describing two-dimensional vector and mixed vector or raster graphics in XML. It is defined by the Scalable Vector Graphics (SVG) 1.0 Specification, W3C Recommendation, 04 September 2001, available at http://www.w3.org/TR/2001/REC-SVG-20010904/.</p>
+
+<p class="gloss"><strong>PICT: Macintosh drawing format</strong>: This format is universally supported on Macintosh (tm) systems, and readable by a limited range of software for other systems. Documentation is available from Apple Computer, Cupertino, California USA.</p>
+
+<p class="gloss"><strong>CGM: Computer Graphics Metafile</strong>: This vector graphics format is specified by an ISO standard, ISO 8632:1987, amended in 1990. It defines binary, character, and plain-text encodings; the non-binary forms are safer for blind interchange, especially over networks. Documentation is available from ISO and from its member national bodies, such as AFNOR, ANSI, BSI, DIN, JIS, etc.</p>
+
+<h6 id="figTableRasterGraphicFormats">9.2.3.2.2. Raster Graphic Formats
+      
+  </h6>
+
+<p class="gloss"><strong>PNG: Portable Network Graphics format</strong>: PNG is a non-proprietary raster format currently widely available. It provides an extensible file format for the losslessly compressed storage of raster images. Indexed-color, grayscale, and true-color images are supported, plus an optional alpha channel. Sample depths range from 1 to 16 bits. It is defined by IETF RFC 2083, March 1997.</p>
+
+<p class="gloss"><strong>TIFF: Tagged Image File Format</strong>: Currently the most widely supported raster image format, especially for black and white images, TIFF is also one of the few formats commonly supported on more than one operating system. The drawback to TIFF is that it actually is a wrapper for several formats, and some TIFF-supporting software does not support all variants. TIFF files may use LZW, CCITT Group 4, or PackBits compression methods, or may use no compression at all. Also, TIFF files may be monochrome, greyscale, or polychromatic. All such options should be specified in prose at the end of the encodingDesc section of the MEI header for any document including TIFF images. TIFF is owned by Aldus Corporation. Documentation on TIFF is available from the owner at Craigcook Castle, Craigcook Road, Edinburgh EH4 3UH, Scotland, or 411 First Avenue South, Seattle, Washington 98104 USA.</p>
+
+<p class="gloss"><strong>GIF: Graphics Interchange Format</strong>: Raster images are widely available in this form, which was created by CompuServe Information Services, but has by now been implemented for many other systems as well. Documentation is copyright by, and is available from, CompuServe Incorporated, Graphics Technology Department, 5000 Arlington Center Boulevard, Columbus, Ohio 43220 USA.</p>
+
+<p class="gloss"><strong>PBM: Portable Bit Map</strong>: PBM files are easy to process, eschewing all compression in favor of transparency of file format. PBM files can, of course, be compressed by generic file-compression tools for storage and transfer. Public domain software exists which will convert many other formats to and from PBM. Documentation of PBM is copyright by Jeff Poskanzer, and is available widely on the Internet.</p>
+
+<p class="gloss"><strong>PCX: IBM PC raster format</strong>: This format is used by most IBM PC paint programs, and supports both monochrome and polychromatic images. Documentation is available from ZSoft Corporation, Technical Support Department, ATTN: Technical Reference Manual, 450 Franklin Rd. Suite 100, Marietta, GA 30067 USA.</p>
+
+<p class="gloss"><strong>BMP: Microsoft bitmap format</strong>: This format is the standard raster format for computer using Microsoft Windows (tm) or Presentation Manager (tm). Documentation is available from Microsoft Corporation.</p>
+
+<h6 id="figTablePhotographicAndMotionVideoFormats">9.2.3.2.3. Photographic and Motion Video Formats
+      
+  </h6>
+
+<p class="gloss"><strong>JPEG: Joint Photographic Experts Group</strong>: This format is sponsored by CCITT and by ISO. It is ISO/IEC Draft International Standard 10918-1, and CCITT T.81. It handles monochrome and polychromatic images with a variety of compression techniques. JPEG per se, like CCITT Group IV, must be encapsulated before transmission; this can be done via TIFF, or via the JPEG File Interchange Format (JFIF), as commonly done for Internet delivery.</p>
+
+<p class="gloss"><strong>Photo-CD: Kodak Photo Compact Disk format</strong>: This format was introduced by Kodak for rasterizing photographs and storing them on CD-ROMs (about one hundred 35mm file images fit on one disk), for display on televisions or CD-I systems. Information on Photo-CD is available from Kodak Limited, Research and Development, Headstone Drive, Harrow, Middlesex HA1 4TY, UK.</p>
+
+<h4 id="textLists">9.2.4. Lists
+      
+  </h4>
+
+<p>When a text contains lists, they can be encoded with the following elements:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/list.html">list</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A formatting element that contains a series of items separated from one another and
+      arranged in a linear, often vertical, sequence.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/head.html">head</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (heading) – Contains any heading, for example, the title of a section of text, or the
+      heading of a list.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/item.html">item</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Single instance or exemplar of a source/manifestation.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v4/elements/list.html" class="link_odd_elementSpec">list</a> element can identify any kind of list; the <strong>@form</strong> attribute can be used to specify whether the list is ordered, unordered etc. Each item in the list is encoded with the 
+  <a href="/v4/elements/li.html" class="link_odd_elementSpec">li</a> element. The <strong>@n</strong> can be used to record a label for a list item, as in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>The modulation follows the following steps:
+   <span class="nt">&lt;list</span> <span class="na">form=</span><span class="s">"ordered"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>C major<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>A minor<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>D major seventh<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"4"</span><span class="nt">&gt;</span>G major<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/list&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Occasionally, lists have headers or titles, which can be encoded with 
+  <a href="/v4/elements/head.html" class="link_odd_elementSpec">head</a>:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;list&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      Ornaments in different languages
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"English"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>Turn<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"Italian"</span> <span class="na">xml:lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>Gruppetto<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"French"</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>Gruppetto<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"German"</span> <span class="na">xml:lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>Doppelschlag<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/list&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="figTableTables">9.2.5. Tables
+      
+  </h4>
+
+<p>The element 
+  <a href="/v4/elements/table.html" class="link_odd_elementSpec">table</a> contains text displayed in tabular form, i.e., in rows and columns. A table is the least ‘graphic’ of the elements discussed in this chapter. Almost any text structure can be presented as a series of rows and columns: one might, for example, choose to show a glossary or other form of list in tabular form, without necessarily regarding it as a table. When tabular presentation is regarded as of less intrinsic importance, it is correspondingly simpler to encode descriptive or functional information about the contents of the table, for example to identify one cell as containing a name and another as containing a date, though the two methods may be combined.</p>
+
+<p>The 
+  <a href="/v4/elements/table.html" class="link_odd_elementSpec">table</a> element may appear both within other components (such as paragraphs), or between them, provided that the module defined in this chapter has been enabled. It is to a large extent arbitrary whether a table should be regarded as a series of rows or as a series of columns. For compatibility with currently available systems, however, these Guidelines require a row-by-row description of a table.</p>
+
+<p>While rows and columns are always encoded in top-to-bottom, left-to-right order, formatting properties such as those provided by CSS may be used to specify that they should be displayed differently.</p>
+
+<h5 id="figTableTableRows">9.2.5.1. Rows
+      
+  </h5>
+
+<p>The 
+  <a href="/v4/elements/tr.html" class="link_odd_elementSpec">tr</a> (table row) element is a formatting element that contains one or more 
+  <a href="/v4/elements/td.html" class="link_odd_elementSpec">td</a> or 
+  <a href="/v4/elements/th.html" class="link_odd_elementSpec">th</a> elements (cells) in a 
+  <a href="/v4/elements/table.html" class="link_odd_elementSpec">table</a>. A cell is the intersection of a row and a column. The precise rendition of the table and its cells should be specified in a style steet.</p>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;table&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">"7"</span><span class="nt">&gt;</span>Besetzungen der Triosonate und ihrer Nachfolger<span class="nt">&lt;/th&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Triosonate
+         <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>Standardbes.
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Triosonate für
+         <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>Orgel (Bach)
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Sonate mit obl.
+         <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>Cembalo (Bach)
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Klaviertrio<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Streichquartett<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Streichtrio<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Oberstimme<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Violine<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Orgel r.H.<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Violine
+         <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>(Flöte, Gambe)
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Violine<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Violine<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Violine<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Oberstimme<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Violine<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Orgel l.H.<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cembalo r.H.<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Klavier r.H.<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Violine<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>harmonische Füllung<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cembalo r.H.<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Bratsche<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Bratsche<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Bass-Stimme<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cello<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Orgel Pedal<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cello<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cello<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cello<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cello<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="figTableTableCells">9.2.5.2. Cells
+      
+  </h5>
+
+<p>The 
+  <a href="/v4/elements/td.html" class="link_odd_elementSpec">td</a> (table data) element designates a table cell that contains data as opposed to a cell that contains column or row heading information. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes provide tabular rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;table&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">rowspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>unmittelbares Schlagen<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">rowspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>mittelbares Schlagen<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Gegenschlag<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Aufschlag<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Schütteln<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Schrapen<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Stäbe<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Stäbe<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Rahmen<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Raspeln<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Platten<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Röhren<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Gefäße<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Räder<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>3. Platten<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>3. Reihen<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>4. Gefäße<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/v4/elements/th.html" class="link_odd_elementSpec">th</a> (table header) element designates a table cell containing column or row heading information as opposed to one containing data. The <strong>@colspan</strong> and <strong>@rowspan</strong> attributes tabular display rendering information. They indicate that a particular cell or row of a table spans more than one row or column.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;table&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>Systematische Einteilung der Idiophone<span class="nt">&lt;/th&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>unmittelbares Schlagen<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>mittelbares Schlagen<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Gegenschlag<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Aufschlag<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Schütteln<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Schrapen<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Stäbe<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Stäbe<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Rahmen<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1. Raspeln<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Platten<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Röhren<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Gefäße<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2. Räder<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>3. Platten<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>3. Reihen<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>4. Gefäße<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="textQuote">9.2.6. Quotation
+      
+  </h4>
+
+<p>It is common, in many types of texts, to find quotations. A quotation is typically attributed to another text other than the one being encoded. Often, the quoted material is typographically distinct from the surrounding text; i.e., surrounded by so-called ‘quote marks’ or rendered as a separate block of text. The 
+  <a href="/v4/elements/quote.html" class="link_odd_elementSpec">quote</a> element is used to mark this function:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/quote.html">quote</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (quoted material) – Contains a paragraph-like block of text attributed to an external
+      source, normally set off from the surrounding text by spacing or other typographic
+      distinction.</div>
+    </div>
+</div>
+
+<p>The following examples show the use of 
+  <a href="/v4/elements/quote.html" class="link_odd_elementSpec">quote</a>.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>Hugh MacDonald has argued that Liszt's Symphonic Poems were meant to
+   <span class="nt">&lt;quote&gt;</span>display the traditional logic of symphonic thought<span class="nt">&lt;/quote&gt;</span>.
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>The majority of the works represented in this catalogue were purchased in Paris and
+   London between 1928 and 1934. After graduating from Harvard in 1924, Mackay-Smith
+   spent several years in Europe:
+   <span class="nt">&lt;quote&gt;</span>
+      <span class="nt">&lt;p&gt;</span>I bought my first early music from Harold Reeves in London in the summer of 1928 when
+         I was able to acquire virtually all the 18th century editions, particularly of trio
+         music, which he then had in stock, going back not only through his current but also
+         through earlier catalogues, picking out numbers which remained unsold. It is almost
+         a shame today to think of the prices at which such things were then available, one
+         or two pounds apiece.
+      <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/quote&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="textPoetry">9.2.7. Poetry
+      
+  </h4>
+
+<p>This 
+  <a href="/v4/elements/lg.html" class="link_odd_elementSpec">lg</a> (line group) element is used generically to encode any section of text that is organized as a group of lines. Following the recommendations of the Text Encoding Initiative, it is recommended to use it, along with the following elements, for marking up poetry:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/lg.html">lg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (line group) – May be used for any section of text that is organized as a group of lines;
+      however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a
+      stanza, refrain, verse paragraph, etc.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/head.html">head</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (heading) – Contains any heading, for example, the title of a section of text, or the
+      heading of a list.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/l.html">l</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (line of text) – Contains a single line of text within a line group.</div>
+    </div>
+</div>
+
+<p>Because 
+  <a href="/v4/elements/lg.html" class="link_odd_elementSpec">lg</a> groups verses, it can be used to encode additional stanzas not integrated into the music notation. In addition, it is common for a poem to include a title or a header, as is demonstrated by the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;mdiv&gt;</span>
+   <span class="nt">&lt;score&gt;</span>
+      <span class="nt">&lt;section&gt;</span>
+         <span class="c">&lt;!-- Score of Franz Liszt's "Sonetto 104 del Petrarca" --&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+         <span class="c">&lt;!-- Text of Francesco Petrarca's Sonett n. 104. --&gt;</span>
+         <span class="nt">&lt;lg&gt;</span>
+            <span class="nt">&lt;head&gt;</span>
+               Sonetto 104
+            <span class="nt">&lt;/head&gt;</span>
+            <span class="nt">&lt;l&gt;</span>L'aspectata vertù, che 'n voi fioriva<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>quando Amor cominciò darvi bataglia,<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>produce or frutto, che quel fiore aguaglia,<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>et che mia speme fa venire a riva.<span class="nt">&lt;/l&gt;</span>
+            <span class="c">&lt;!-- ... --&gt;</span>
+         <span class="nt">&lt;/lg&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/score&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="namesDates">9.2.8.1. Names and Dates
+      
+  </h5>
+
+<p>This chapter describes the MEI module used for the encoding of names (names of persons or corporations/organizations) or descriptive phrases for styles, periods or geographical indications.</p>
+
+<p>The chapter begins by discussing the elements provided for the encoding of names (
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a>) in general and finishes by addressing more specific elements for corporate names (
+  <a href="/v4/elements/corpname.html" class="link_odd_elementSpec">corpName</a>), geographic names (
+  <a href="/v4/elements/geogname.html" class="link_odd_elementSpec">geogName</a>), period names (
+  <a href="/v4/elements/periodname.html" class="link_odd_elementSpec">periodName</a>), personal names (
+  <a href="/v4/elements/persname.html" class="link_odd_elementSpec">persName</a>) and style names (
+  <a href="/v4/elements/stylename.html" class="link_odd_elementSpec">styleName</a>). In general it is recommended to use standardized forms of proper nouns and to record the names and web-accessible locations of the controlled vocabularies used. There are several commonly-referenced authority files, especially for geographical, organizational and personal names, such as the Gemeinsame Normdatei (GND), the Library of Congress Authorities, the Getty Thesaurus of Geographic Names (TGN), and the MARC code list for relators. Recommendations on which standards could be used can be found in the descriptions of the individual elements.</p>
+
+<h5 id="namesBasic">9.2.8.2. Basic Elements for Names
+      
+  </h5>
+
+<p>The basic element for capturing names and is defined in the shared module:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/name.html">name</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Proper noun or noun phrase.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> element contains the name of an entity that is difficult to tag more specifically as a 
+  <a href="/v4/elements/corpname.html" class="link_odd_elementSpec">corpName</a>, 
+  <a href="/v4/elements/geogname.html" class="link_odd_elementSpec">geogName</a>, 
+  <a href="/v4/elements/persname.html" class="link_odd_elementSpec">persName</a>, or 
+  <a href="/v4/elements/title.html" class="link_odd_elementSpec">title</a>. The 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> element may be used in place of the more specific elements when it is not known what kind of name is being described or when a high degree of precision is not necessary. For example, the 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> element might be used when it is not clear whether the name “Bach” refers to a person or a geographic feature. When name parts are needed, use 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements. The recommended values for the <strong>@type</strong> attribute are:</p>
+
+<p class="gloss"><strong>‘pers’</strong>: a personal name</p>
+
+<p class="gloss"><strong>‘corp’</strong>: the name of a corporate entity</p>
+
+<p class="gloss"><strong>‘place’</strong>: a geographic name</p>
+
+<p class="gloss"><strong>‘process’</strong>: the name of a process or mechanical agent</p>
+
+<p>Examples of the use of the <strong>@type</strong> attribute within the 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> element:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"pers"</span><span class="nt">&gt;</span>Henry VIII, King of England<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"corp"</span><span class="nt">&gt;</span>The Beatles<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"place"</span><span class="nt">&gt;</span>Orbach<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"process"</span><span class="nt">&gt;</span>OMR software<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The date sub-element is available within 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the <strong>@auth</strong> attribute.</p>
+
+<h5 id="namesspecialized">9.2.8.3. Specialized Name Elements
+      
+  </h5>
+
+<p>In addition to the generic 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> and 
+  <a href="/v4/elements/date.html" class="link_odd_elementSpec">date</a> elements provided by the shared module, the namesDates module provides for the markup of the specialized cases described below.</p>
+
+<h6 id="namesdatesCorpNames">9.2.8.3.1. Corporate Names
+      
+  </h6>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/corpname.html">corpName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (corporate name) – Identifies an organization or group of people that acts as a single
+      entity.</div>
+    </div>
+</div>
+
+<p>Corporate names are non-personal names which refer to structured bodies of one or more persons that act as a single entity. Typical examples include associations, businesses, projects or institutions (e.g., ‘the Royal College of Music’ or ‘the BBC’), but political factions or other groupings where these are regarded as forming a single agency. Organization names typically include some type of indicator or pattern or words that help identify them as non-personal names.</p>
+
+<p>The 
+  <a href="/v4/elements/corpname.html" class="link_odd_elementSpec">corpName</a> element is frequently used within the  of an MEI document. It is typically found in the 
+  <a href="/v4/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;respStmt&gt;</span>
+   <span class="nt">&lt;corpName&gt;</span>Library of Congress<span class="nt">&lt;/corpName&gt;</span>
+<span class="nt">&lt;/respStmt&gt;</span></code></pre></figure>
+
+</div>
+
+<p>It may also be used wherever it is necessary to mark a corporate name, for example when a corporation is responsible for a certain event in the history of a musical work:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;history&gt;</span>
+   <span class="nt">&lt;eventList&gt;</span>
+      <span class="nt">&lt;event&gt;</span>
+         <span class="nt">&lt;p&gt;</span>First performance by
+            <span class="nt">&lt;corpName&gt;</span>The Boston Symphony Orchestra<span class="nt">&lt;/corpName&gt;</span>,
+            <span class="nt">&lt;date&gt;</span>October 22, 1881<span class="nt">&lt;/date&gt;</span>.
+         <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/event&gt;</span>
+   <span class="nt">&lt;/eventList&gt;</span>
+<span class="nt">&lt;/history&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When it is necessary to provide structure for a name, the separate parts of the name may be encoded in 
+  <a href="/v4/elements/corpname.html" class="link_odd_elementSpec">corpName</a> sub-elements, for example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;corpName&gt;</span>Federal Research Division,
+   <span class="nt">&lt;corpName&gt;</span>Library of Congress<span class="nt">&lt;/corpName&gt;</span>
+<span class="nt">&lt;/corpName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Standard designations for corporate bodies can be taken from a controlled vocabulary, such as the Gemeinsame Normdatei (GND). If a controlled value is used, the list from which it is taken should be recorded. In this case, the following attributes are particularly relevant:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A name or label associated with a controlled vocabulary or other authoritative source
+          for this element or its content.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth.uri</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A web-accessible location of the controlled vocabulary or other authoritative source
+          of identification or definition for this element or its content. This attribute may
+          contain a complete URI or a partial URI which is completed by the value of the codedval
+          attribute.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.canonical.html">@codedval</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A value that represents or identifies other data. Often, it is a primary key in the
+          database or a unique value in the coded list identified by the auth or
+          auth.uri attributes.</div>
+    </div>
+</div>
+
+<h6 id="namesdatesGeogNames">9.2.8.3.2. Geographic Names
+      
+  </h6>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/geogname.html">geogName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (geographic name) – The proper noun designation for a place, natural feature, or political
+      jurisdiction.</div>
+    </div>
+</div>
+
+<p>Geographic names are proper noun designations for places (e.g., Baltimore, Maryland), natural features (e.g., Black Forest) or political jurisdictions (e.g., Quartier Latin, Paris).</p>
+
+<p>The element can be used, e.g., to label geographical names in titles:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;title&gt;</span>
+   <span class="nt">&lt;geogName&gt;</span>Bohemia<span class="nt">&lt;/geogName&gt;</span>: Folk Songs
+<span class="nt">&lt;/title&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;title&gt;</span>Music in the
+   <span class="nt">&lt;geogName&gt;</span>German Democratic Republic<span class="nt">&lt;/geogName&gt;</span>
+<span class="nt">&lt;/title&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Geographic name sub-parts may be encoded in 
+  <a href="/v4/elements/geogname.html" class="link_odd_elementSpec">geogName</a> sub-elements. For example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+   <span class="nt">&lt;geogName&gt;</span>
+      <span class="nt">&lt;geogName&gt;</span>Baltimore<span class="nt">&lt;/geogName&gt;</span>,
+      <span class="nt">&lt;geogName&gt;</span>Maryland<span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;geogName&gt;</span>
+      <span class="nt">&lt;geogName&gt;</span>French Quarter<span class="nt">&lt;/geogName&gt;</span>,
+      <span class="nt">&lt;geogName&gt;</span>New Orleans<span class="nt">&lt;/geogName&gt;</span>,
+      <span class="nt">&lt;geogName&gt;</span>Louisiana<span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;/geogName&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, geographic name sub-parts may be encoded using the following more specific elements:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/bloc.html">bloc</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains the name of a geopolitical unit consisting of two or more nation states or
+      countries.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/country.html">country</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains the name of a geopolitical unit, such as a nation, country, colony, or
+      commonwealth, larger than or administratively superior to a region and smaller than a
+      bloc.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/district.html">district</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or
+      other administrative or geographic unit.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/geogfeat.html">geogFeat</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (geographical feature name) – Contains a common noun identifying a geographical
+      feature.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/postbox.html">postBox</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (postal box or post office box) contains a number or other identifier for some postal
+      delivery point other than a street address.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/postcode.html">postCode</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (postal code) contains a numerical or alphanumeric code used as part of a postal address
+      to simplify sorting or delivery of mail.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/region.html">region</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains the name of an administrative unit such as a state, province, or county, larger
+      than a settlement, but smaller than a country.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/settlement.html">settlement</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains the name of a settlement such as a city, town, or village identified as a single
+      geopolitical or administrative unit.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/street.html">street</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            full street address including any name or number identifying a building as well as the
+      name of the street or route on which it is located.</div>
+    </div>
+</div>
+
+<p>In contrast to the way 
+  <a href="/v4/elements/addrline.html" class="link_odd_elementSpec">addrLine</a> is used to mark the physical arrangement of the parts of an address, these elements can be used to mark the semantic components of an address. For example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;address&gt;</span>
+   <span class="nt">&lt;street&gt;</span>21 Jump Street<span class="nt">&lt;/street&gt;</span>
+   <span class="nt">&lt;settlement&gt;</span>My Town<span class="nt">&lt;/settlement&gt;</span>
+   <span class="nt">&lt;region&gt;</span>My Prefecture<span class="nt">&lt;/region&gt;</span>
+   <span class="nt">&lt;region&gt;</span>My Province<span class="nt">&lt;/region&gt;</span>
+   <span class="nt">&lt;country&gt;</span>My Country<span class="nt">&lt;/country&gt;</span>
+   <span class="nt">&lt;postCode&gt;</span>A123B456C<span class="nt">&lt;/postCode&gt;</span>
+<span class="nt">&lt;/address&gt;</span></code></pre></figure>
+
+</div>
+
+<p>They may also be used to identify place name components within textual content:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;annot&gt;</span>Holmes and Watson live at
+   <span class="nt">&lt;street&gt;</span>
+      <span class="nt">&lt;num&gt;</span>221<span class="nt">&lt;/num&gt;</span>Baker St.
+   <span class="nt">&lt;/street&gt;</span>in
+   <span class="nt">&lt;settlement&gt;</span>London<span class="nt">&lt;/settlement&gt;</span>,
+   <span class="nt">&lt;country&gt;</span>England<span class="nt">&lt;/country&gt;</span>.
+<span class="nt">&lt;/annot&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;list&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      Oh, the places I want to go
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;settlement&gt;</span>London<span class="nt">&lt;/settlement&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;country&gt;</span>France<span class="nt">&lt;/country&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;region&gt;</span>Napa Valley<span class="nt">&lt;/region&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/list&gt;</span></code></pre></figure>
+
+</div>
+
+<p>To enable localization of an organization, or to specify names of places with identical names, the use of controlled vocabulary is recommend for names of administrative divisions, such as cities, states, and countries. In this case, the following attributes are particularly relevant:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A name or label associated with a controlled vocabulary or other authoritative source
+          for this element or its content.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth.uri</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A web-accessible location of the controlled vocabulary or other authoritative source
+          of identification or definition for this element or its content. This attribute may
+          contain a complete URI or a partial URI which is completed by the value of the codedval
+          attribute.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.canonical.html">@codedval</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A value that represents or identifies other data. Often, it is a primary key in the
+          database or a unique value in the coded list identified by the auth or
+          auth.uri attributes.</div>
+    </div>
+</div>
+
+<p>The encoder may use these attributes in combination. In case of the German city of Frankfurt, for example, a clarification whether Frankfurt am Main or Frankfurt an der Oder is meant can be achieved by referring to the ID of the TGN entry:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- Frankfurt am Main --&gt;</span>
+<span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">codedval=</span><span class="s">"7005293"</span><span class="nt">&gt;</span>Frankfurt<span class="nt">&lt;/geogName&gt;</span>
+
+<span class="c">&lt;!-- Frankfurt an der Oder --&gt;</span>
+<span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">codedval=</span><span class="s">"7005972"</span><span class="nt">&gt;</span>Frankfurt<span class="nt">&lt;/geogName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The names of places given within addresses can be marked with 
+  <a href="/v4/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements, for example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+   <span class="nt">&lt;corpName</span> <span class="na">authURI=</span><span class="s">"http://d-nb.info/gnd"</span> <span class="na">authority=</span><span class="s">"GND"</span> <span class="na">codedval=</span><span class="s">"2007744-0"</span><span class="nt">&gt;</span>German Research Foundation<span class="nt">&lt;/corpName&gt;</span>
+   <span class="nt">&lt;address&gt;</span>
+      <span class="nt">&lt;addrLine&gt;</span>Kennedyallee 40<span class="nt">&lt;/addrLine&gt;</span>
+      <span class="nt">&lt;addrLine&gt;</span>53175
+         <span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">codedval=</span><span class="s">"7005090"</span><span class="nt">&gt;</span>Bonn<span class="nt">&lt;/geogName&gt;</span>
+      <span class="nt">&lt;/addrLine&gt;</span>
+      <span class="nt">&lt;addrLine&gt;</span>
+         <span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">codedval=</span><span class="s">"7000084"</span><span class="nt">&gt;</span>Germany<span class="nt">&lt;/geogName&gt;</span>
+      <span class="nt">&lt;/addrLine&gt;</span>
+   <span class="nt">&lt;/address&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<h6 id="namesdatesPeriodNames">9.2.8.3.3. Time Period Names
+      
+  </h6>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/periodname.html">periodName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (period name) – A label that describes a period of time, such as 'Baroque' or '3rd Style
+      period'.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v4/elements/periodname.html" class="link_odd_elementSpec">periodName</a> element is for names which describe a particular period of time, for example, those which characterize obvious similarities in style, such as ‘Baroque’ or ‘3rd Style Period’:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName&gt;</span>Baroque<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The date sub-element is available within 
+  <a href="/v4/elements/periodname.html" class="link_odd_elementSpec">periodName</a> in order to record any dates associated with the name that should be captured in the text, for example, start and end dates of the named period:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName&gt;</span>Baroque (
+   <span class="nt">&lt;date&gt;</span>1600<span class="nt">&lt;/date&gt;</span>-
+   <span class="nt">&lt;date&gt;</span>1750<span class="nt">&lt;/date&gt;</span>)
+<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Recording start and end points of a certain period using the <strong>@startdate</strong> and <strong>@enddate</strong> attributes may prove to be better for machine processing:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName</span> <span class="na">enddate=</span><span class="s">"1750"</span> <span class="na">startdate=</span><span class="s">"1600"</span><span class="nt">&gt;</span>Baroque<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>If a controlled value is used, the list from which it is taken should be recorded. In this case the following attributes are relevant:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A name or label associated with a controlled vocabulary or other authoritative source
+          for this element or its content.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth.uri</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A web-accessible location of the controlled vocabulary or other authoritative source
+          of identification or definition for this element or its content. This attribute may
+          contain a complete URI or a partial URI which is completed by the value of the codedval
+          attribute.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.canonical.html">@codedval</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A value that represents or identifies other data. Often, it is a primary key in the
+          database or a unique value in the coded list identified by the auth or
+          auth.uri attributes.</div>
+    </div>
+</div>
+
+<h6 id="namesdatesPersNames">9.2.8.3.4. Personal Names
+      
+  </h6>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/persname.html">persName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (personal name) – Designation for an individual, including any or all of that individual's
+      forenames, surnames, honorific titles, and added names.</div>
+    </div>
+</div>
+
+<p>Personal names within an MEI document may simply be marked with the 
+  <a href="/v4/elements/persname.html" class="link_odd_elementSpec">persName</a> element containing a proper noun or proper noun phrase referring to an individual. For example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;sourceDesc&gt;</span>
+   <span class="nt">&lt;source&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Im wunderschönen Monat Mai<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;respStmt&gt;</span>
+            <span class="nt">&lt;persName</span> <span class="na">role=</span><span class="s">"composer"</span><span class="nt">&gt;</span>Robert Schumann<span class="nt">&lt;/persName&gt;</span>
+         <span class="nt">&lt;/respStmt&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+<span class="nt">&lt;/sourceDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Apart from the composer or originator of a musical work, there could be many other persons involved in the genesis of a musical work, such as librettists, lyricists, arrangers, editors, transcribers, printers, publishers, etc. In addition, sometimes a single individual may have multiple functions with regard to a musical work, e.g. composer and librettist. The <strong>@role</strong> attribute on 
+  <a href="/v4/elements/persname.html" class="link_odd_elementSpec">persName</a> may be used to capture a person’s responsibility. For example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName</span> <span class="na">role=</span><span class="s">"arranger"</span><span class="nt">&gt;</span>Wolfgang Amadeus Mozart<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName</span> <span class="na">role=</span><span class="s">"lyricist"</span><span class="nt">&gt;</span>Heinrich Heine<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The <a href="http://www.loc.gov/marc/relators/relaterm.html" class="link_ref">Marc code list for relators</a> offers a variety of controlled terms that may serve as values for this use of <strong>@role</strong>.</p>
+
+<p>Personal names often consist of several components, such as given names, surnames, inherited or life-time titles of nobility, honorific or academic prefixes, military ranks, and other traditional descriptive phrases. These components can be marked using 
+  <a href="/v4/elements/persname.html" class="link_odd_elementSpec">persName</a> sub-elements, the function of which may be indicated using the <strong>@type</strong> attribute with the following values:</p>
+
+<p class="gloss"><strong>‘forename’</strong>: contains a forename, given or baptismal name.</p>
+
+<p class="gloss"><strong>‘surname’</strong>: a family (inherited) name, as opposed to a given, baptismal, or nick name.</p>
+
+<p class="gloss"><strong>‘rolename’</strong>: contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank.</p>
+
+<p class="gloss"><strong>‘addname’ (additional name)</strong>: contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.</p>
+
+<p class="gloss"><strong>‘namelink’ (name link)</strong>: contains a connecting phrase or link used within a name but not regarded as part of it, such as van der or of.</p>
+
+<p class="gloss"><strong>‘genname’ (generational name)</strong>: contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named.</p>
+
+<p>However, the recommended practice is to employ the following sub-elements provided by the namesDates module:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/addname.html">addName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (additional name) – Contains an additional name component, such as a nickname, epithet, or
+      alias, or any other descriptive phrase used within a personal name.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/famname.html">famName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (family name) – Contains a family (inherited) name, as opposed to a given, baptismal, or
+      nick name.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/forename.html">foreName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains a forename, given or baptismal name.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/genname.html">genName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (generational name component) – Contains a name component used to distinguish otherwise
+      similar names on the basis of the relative ages or generations of the persons named.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/rolename.html">roleName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (role name) – Contains a name component which indicates that the referent has a particular
+      role or position in society, such as an official title or rank.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/model.namelike.html">model.nameLike</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Groups elements that contain names.</div>
+    </div>
+</div>
+
+<p>For example,</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName&gt;</span>
+   <span class="nt">&lt;foreName&gt;</span>Rob<span class="nt">&lt;/foreName&gt;</span>
+   <span class="nt">&lt;addName&gt;</span>The Bold<span class="nt">&lt;/addName&gt;</span>
+   <span class="nt">&lt;famName&gt;</span>Stark<span class="nt">&lt;/famName&gt;</span>
+   <span class="nt">&lt;genName&gt;</span>I<span class="nt">&lt;/genName&gt;</span>
+   <span class="nt">&lt;nameLink&gt;</span>of<span class="nt">&lt;/nameLink&gt;</span>
+   <span class="nt">&lt;geogName&gt;</span>Winterfell<span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;roleName&gt;</span>King in the North<span class="nt">&lt;/roleName&gt;</span>
+<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In the case of individuals with more than one forename, it is often sufficient to place all given names within a single 
+  <a href="/v4/elements/forename.html" class="link_odd_elementSpec">foreName</a> element:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName&gt;</span>
+   <span class="nt">&lt;famName&gt;</span>Mozart<span class="nt">&lt;/famName&gt;</span>,
+   <span class="nt">&lt;foreName&gt;</span>Johannes Chrysostomus Wolfgangus Theophilus<span class="nt">&lt;/foreName&gt;</span>
+<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>However, the advantage of marking names with specific name part elements instead of nested 
+  <a href="/v4/elements/persname.html" class="link_odd_elementSpec">persName</a> elements, is that it becomes possible to use the <strong>@type</strong> attribute to distinguish between multiple instances of the same generic name component. The following example indicates the function of each of the given names of Wolfgang Mozart:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName&gt;</span>
+   <span class="nt">&lt;famName&gt;</span>Mozart<span class="nt">&lt;/famName&gt;</span>,
+   <span class="nt">&lt;foreName</span> <span class="na">type=</span><span class="s">"baptismal"</span><span class="nt">&gt;</span>Johannes<span class="nt">&lt;/foreName&gt;</span>
+   <span class="nt">&lt;foreName</span> <span class="na">type=</span><span class="s">"baptismal"</span><span class="nt">&gt;</span>Chrysostomus<span class="nt">&lt;/foreName&gt;</span>
+   <span class="nt">&lt;foreName</span> <span class="na">type=</span><span class="s">"familiar"</span><span class="nt">&gt;</span>Wolfgangus<span class="nt">&lt;/foreName&gt;</span>
+   <span class="nt">&lt;foreName</span> <span class="na">type=</span><span class="s">"baptismal"</span><span class="nt">&gt;</span>Theophilus<span class="nt">&lt;/foreName&gt;</span>
+<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The use of a controlled list, such as the Gemeinsame Normdatei (GND) or the Library of Congress Name Authorities, is recommended for names, especially those occurring within the metadata header. When a controlled value is used, information about the the value should be recorded. The following attributes are provided for this purpose:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A name or label associated with a controlled vocabulary or other authoritative source
+          for this element or its content.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.authorized.html">@auth.uri</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A web-accessible location of the controlled vocabulary or other authoritative source
+          of identification or definition for this element or its content. This attribute may
+          contain a complete URI or a partial URI which is completed by the value of the codedval
+          attribute.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.canonical.html">@codedval</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A value that represents or identifies other data. Often, it is a primary key in the
+          database or a unique value in the coded list identified by the auth or
+          auth.uri attributes.</div>
+    </div>
+</div>
+
+<p>For maximal machine-processability, these three attributes may be used in combination. For example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName</span> <span class="na">authURI=</span><span class="s">"http://d-nb.info/gnd"</span> <span class="na">authority=</span><span class="s">"GND"</span> <span class="na">codedval=</span><span class="s">"118584596"</span> <span class="na">role=</span><span class="s">"composer"</span><span class="nt">&gt;</span>Wolfgang Amadeus Mozart<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<h6 id="namesdatesStyleNames">9.2.8.3.5. Style Names
+      
+  </h6>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/stylename.html">styleName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (style name) – A label for a characteristic style of writing or performance, such as
+      'bebop' or 'rock-n-roll'.</div>
+    </div>
+</div>
+
+<p>Music can be divided into different styles, genres, and forms. The term style denotes a mode of expression, or more particularly, the manner in which a work of art is executed:</p>
+
+<p>“In the discussion of music, which is orientated towards relationships rather than meanings, the term raises special difficulties; it may be used to denote music characterized of an individual composer, of a period, of a geographical area or center, or of a society or social function. For the aesthetician style concerns surface or appearance, though in music appearance and essence are ultimately inseparable. For the historian a style is a distinguishing and ordering concept, both consistent of and denoting generalities; he or she groups examples of music according to similarities between them.” (Source: “Style”, Grove Music Online, accessed: April 27, 2012)</p>
+
+<p>The name of a musical style can be marked by the 
+  <a href="/v4/elements/stylename.html" class="link_odd_elementSpec">styleName</a> element, for example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;styleName&gt;</span>bebop<span class="nt">&lt;/styleName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>It may be, e.g., used for recording a style name within a title:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;title&gt;</span>La voix du
+   <span class="nt">&lt;styleName&gt;</span>bebop<span class="nt">&lt;/styleName&gt;</span>
+<span class="nt">&lt;/title&gt;</span></code></pre></figure>
+
+</div>
+
+<p>or to record a style of a certain epoch by using the 
+  <a href="/v4/elements/stylename.html" class="link_odd_elementSpec">styleName</a> sub-element:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName&gt;</span>Modern
+   <span class="nt">&lt;styleName&gt;</span>Jazz<span class="nt">&lt;/styleName&gt;</span>
+<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Musical forms and genres must be distinguished from musical style. Form and genre are typically indicated using the 
+  <a href="/v4/elements/classification.html" class="link_odd_elementSpec">classification</a> element, described in chapter 
+  <a href="/v4/content/metadata.html#headerWorkClass">Classification</a>.</p>
+
+<h4 id="sharedNames">9.2.8. Names
+      
+  </h4>
+
+<p>The 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> element may be used to mark up portions of a text that function as name.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/name.html">name</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Proper noun or noun phrase.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> element is intended for generic applications and may be used to identify any named entity, such as a person, item, application, place, etc. Sometimes, however, a more specific encoding is desired, identifying the type of entity by using dedicated elements. MEI offers an (optional) module for this, which provides such elements for various types of names.</p>
+
+<h4 id="dates">9.2.9. Dates
+      
+  </h4>
+
+<p>The 
+  <a href="/v4/elements/date.html" class="link_odd_elementSpec">date</a> element may be used to mark up portions of a text that denote a date.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/date.html">date</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A string identifying a point in time or the time period between two such points.</div>
+    </div>
+</div>
+
+<p>The element 
+  <a href="/v4/elements/date.html" class="link_odd_elementSpec">date</a> contains a date in any format, including a date range. A date range may be expressed as textual content or, when intervening punctuation is present, as a combination of date sub-elements and text.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+   <span class="nt">&lt;date&gt;</span>5/3/05<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;date&gt;</span>May 30, 2012<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;date&gt;</span>March 1-21, 1812<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;date&gt;</span>
+      <span class="nt">&lt;date&gt;</span>March 1, 1812<span class="nt">&lt;/date&gt;</span>-
+      <span class="nt">&lt;date&gt;</span>March 21, 1812<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<p>To be more specific about the date, the attributes in the 
+  <a href="/v4/attribute-classes/att.datable.html">att.datable</a> and 
+  <a href="/v4/attribute-classes/att.calendared.html">att.calendared</a> classes can be used:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.datable.html">@startdate</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains the starting point of a date range in standard ISO form.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.datable.html">@enddate</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains the end point of a date range in standard ISO form.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.datable.html">@notbefore</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains a lower boundary, in standard ISO form, for an uncertain date.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.datable.html">@notafter</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains an upper boundary for an uncertain date in standard ISO form.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.datable.html">@isodate</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Provides the value of a textual date in standard ISO form.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.calendared.html">@calendar</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the calendar system to which a date belongs, for example, Gregorian, Julian,
+          Roman, Mosaic, Revolutionary, Islamic, etc.</div>
+    </div>
+</div>
+
+<p>In the following example, the ambiguous date text “5/3/05” is resolved using the <strong>@isodate</strong> attribute:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+   <span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"1905-05-03"</span><span class="nt">&gt;</span>5/3/05<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"2005-03-05"</span><span class="nt">&gt;</span>5/3/05<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="sharedNumbers">9.2.10. Numbers
+      
+  </h4>
+
+<p>The 
+  <a href="/v4/elements/num.html" class="link_odd_elementSpec">num</a> element may be used to identify any numeric information in a text. The <strong>@unit</strong> may be used to specify the unit of measurement.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/num.html">num</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (number) – Numeric information in any form.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.measurement.html">@unit</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the unit of measurement.</div>
+    </div>
+</div>
+
+<p>This element is useful when it is necessary to provide specific information about numeric data, such as the unit of measurement or the kind of quantity described, or when it should be displayed in a special manner.</p>
+
+<h4 id="sharedAddresses">9.2.11. Addresses
+      
+  </h4>
+
+<p>Addresses may be encoded using the 
+  <a href="/v4/elements/address.html" class="link_odd_elementSpec">address</a> element, which itself may hold an arbitrary number of 
+  <a href="/v4/elements/addrline.html" class="link_odd_elementSpec">addrLine</a> elements.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/address.html">address</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains a postal address, for example of a publisher, an organization, or an
+      individual.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/addrline.html">addrLine</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (address line) – Single line of a postal address.</div>
+    </div>
+</div>
+
+<p>It is important to note that the 
+  <a href="/v4/elements/address.html" class="link_odd_elementSpec">address</a> element does not hold a reference to the person or organization whose address is specified. This must be provided in a separate element, as in the following example:</p>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+   <span class="nt">&lt;corpName&gt;</span>Universität Paderborn<span class="nt">&lt;/corpName&gt;</span>
+   <span class="nt">&lt;address&gt;</span>
+      <span class="nt">&lt;addrLine&gt;</span>Warburger Straße 100<span class="nt">&lt;/addrLine&gt;</span>
+      <span class="nt">&lt;addrLine&gt;</span>33098 Paderborn<span class="nt">&lt;/addrLine&gt;</span>
+      <span class="nt">&lt;addrLine&gt;</span>Germany<span class="nt">&lt;/addrLine&gt;</span>
+   <span class="nt">&lt;/address&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="sharedBibliographicCitations">9.2.12. Bibliographic Citations and References
+      
+  </h4>
+
+<p>The following element is used in the encoding of bibliographic citations and references:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/bibl.html">bibl</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (bibliographic reference) – Provides a loosely-structured bibliographic citation in which
+      the sub-components may or may not be explicitly marked.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a> element may contain a mix of text and more specific elements, including the following:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/annot.html">annot</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (annotation) – Provides a statement explaining the text or indicating the basis for an
+      assertion.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/arranger.html">arranger</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A person or organization who transcribes a musical composition, usually for a different
+      medium from that of the original; in an arrangement the musical substance remains essentially
+      unchanged.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/author.html">author</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            The name of the creator of the intellectual content of a non-musical, literary
+      work.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/biblscope.html">biblScope</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (scope of citation) – Defines the scope of a bibliographic reference, for example as a
+      list of page numbers, or a named subdivision of a larger work.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/composer.html">composer</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            The name of the creator of the intellectual content of a musical work.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/creation.html">creation</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Non-bibliographic details of the creation of an intellectual entity, in narrative form,
+      such as the date, place, and circumstances of its composition. More detailed information may
+      be captured within the history element.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/date.html">date</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A string identifying a point in time or the time period between two such points.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/distributor.html">distributor</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Person or agency, other than a publisher, from which access (including electronic access)
+      to a bibliographic entity may be obtained.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/edition.html">edition</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (edition designation) – A word or text phrase that indicates a difference in either
+      content or form between the item being described and a related item previously issued by the
+      same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by
+      either the same publisher/distributor or another publisher/distributor (e.g. large print
+      edition, British edition, etc.).</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/editor.html">editor</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            The name of the individual(s), institution(s) or organization(s) acting in an editorial
+      capacity.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/extent.html">extent</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to express size in terms other than physical dimensions, such as number of pages,
+      records, bytes, physical components, etc.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/funder.html">funder</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Names of individuals, institutions, or organizations responsible for funding. Funders
+      provide financial support for a project; they are distinct from sponsors, who provide
+      intellectual support and authority.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/genre.html">genre</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Term or terms that designate a category characterizing a particular style, form, or
+      content.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/identifier.html">identifier</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            An alpha-numeric string that establishes the identity of the described material.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/imprint.html">imprint</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Information relating to the publication or distribution of a bibliographic item.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/librettist.html">librettist</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Person or organization who is a writer of the text of an opera, oratorio, etc.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/lyricist.html">lyricist</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Person or organization who is a writer of the text of a song.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/physloc.html">physLoc</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (physical location) – Groups information about the current physical location of a
+      bibliographic item, such as the repository in which it is located and its shelf mark(s), and
+      its previous locations.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/publisher.html">publisher</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Name of the organization responsible for the publication of a bibliographic item.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/pubplace.html">pubPlace</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (publication place) – Name of the place where a bibliographic item was published.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/recipient.html">recipient</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            The name of the individual(s), institution(s) or organization(s) receiving
+      correspondence.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/relateditem.html">relatedItem</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (related item) – Contains or references another bibliographic item which is related to the
+      present one.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/repository.html">repository</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Institution, agency, or individual which holds a bibliographic item.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/respstmt.html">respStmt</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (responsibility statement) – Transcription of text that names one or more individuals,
+      groups, or in rare cases, mechanical processes, responsible for creation, realization,
+      production, funding, or distribution of the intellectual or artistic content.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/series.html">series</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains information about the serial publication in which a bibliographic item has
+      appeared.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/sponsor.html">sponsor</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Names of sponsoring individuals, organizations or institutions. Sponsors give their
+      intellectual authority to a project; they are to be distinguished from funders, who provide
+      the funding but do not necessarily take intellectual responsibility.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/textlang.html">textLang</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (text language) – Identifies the languages and writing systems within the work described
+      by a bibliographic description, not the language of the description.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/title.html">title</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Title of a bibliographic entity.</div>
+    </div>
+</div>
+
+<p>These elements fall into the following categories:</p>
+<ul>
+  <li>identification of the bibliographic entity and those responsible for its intellectual content</li>
+  <li>publication and distribution data for the bibliographic entity</li>
+  <li>description of the physical characteristics of the item</li>
+  <li>annotation of the bibliographic citation and additional details regarding the item’s intellectual content</li>
+</ul>
+
+<p>The elements 
+  <a href="/v4/elements/title.html" class="link_odd_elementSpec">title</a>, 
+  <a href="/v4/elements/edition.html" class="link_odd_elementSpec">edition</a>, 
+  <a href="/v4/elements/series.html" class="link_odd_elementSpec">series</a>, and 
+  <a href="/v4/elements/identifier.html" class="link_odd_elementSpec">identifier</a> fall into the first category as do the elements 
+  <a href="/v4/elements/arranger.html" class="link_odd_elementSpec">arranger</a>, 
+  <a href="/v4/elements/author.html" class="link_odd_elementSpec">author</a>, 
+  <a href="/v4/elements/composer.html" class="link_odd_elementSpec">composer</a>, 
+  <a href="/v4/elements/librettist.html" class="link_odd_elementSpec">librettist</a>, 
+  <a href="/v4/elements/lyricist.html" class="link_odd_elementSpec">lyricist</a>, 
+  <a href="/v4/elements/funder.html" class="link_odd_elementSpec">funder</a>, 
+  <a href="/v4/elements/sponsor.html" class="link_odd_elementSpec">sponsor</a>, and 
+  <a href="/v4/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a>. The respStmt element is provided for marking responsibility roles that cannot be recorded using more specific elements. The 
+  <a href="/v4/elements/biblscope.html" class="link_odd_elementSpec">biblScope</a> element also carries information of an identifying nature.</p>
+
+<p>The 
+  <a href="/v4/elements/identifier.html" class="link_odd_elementSpec">identifier</a> for a given item may be an International Standard Book/Music Number, Library of Congress Control Number, a publisher’s or plate number, a personal identification number, an entry in a bibliography or catalog, etc.</p>
+
+<p>To classify the 
+  <a href="/v4/elements/title.html" class="link_odd_elementSpec">title</a> according to some convenient typology, the <strong>@type</strong> attribute may be used. Sample values include: main (main title), subordinate (subtitle, title of part), abbreviated (abbreviated form of title), alternative (alternate title by which the work is also known), translated (translated form of title), uniform (collective title). The <strong>@type</strong> attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single 
+  <a href="/v4/elements/title.html" class="link_odd_elementSpec">title</a> element. Title parts may be encoded in 
+  <a href="/v4/elements/title.html" class="link_odd_elementSpec">title</a> sub-elements. The name of the list from which a controlled value is taken may be recorded using the <strong>@authority</strong> attribute.</p>
+
+<p>Publication and distribution data may be captured using 
+  <a href="/v4/elements/pubplace.html" class="link_odd_elementSpec">pubPlace</a>, 
+  <a href="/v4/elements/publisher.html" class="link_odd_elementSpec">publisher</a>, 
+  <a href="/v4/elements/distributor.html" class="link_odd_elementSpec">distributor</a>, and 
+  <a href="/v4/elements/date.html" class="link_odd_elementSpec">date</a> elements directly inside 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a> when the citation is unstructured. However, these elements should be grouped within 
+  <a href="/v4/elements/imprint.html" class="link_odd_elementSpec">imprint</a> whenever practical.</p>
+
+<p>The physical characteristics of the cited item may be described using the 
+  <a href="/v4/elements/extent.html" class="link_odd_elementSpec">extent</a> element.</p>
+
+<p>Annotation of the bibliographic citation and the provision of other pertinent details are addressed by several elements. Commentary on the bibliographic item or citation is accommodated by the 
+  <a href="/v4/elements/annot.html" class="link_odd_elementSpec">annot</a> and 
+  <a href="/v4/elements/creation.html" class="link_odd_elementSpec">creation</a> elements. The 
+  <a href="/v4/elements/annot.html" class="link_odd_elementSpec">annot</a> element is provided for generic comments, while 
+  <a href="/v4/elements/creation.html" class="link_odd_elementSpec">creation</a> is intended to hold information about the context of the creation of the cited item. Terms by which the bibliographic item can be classified may be placed in 
+  <a href="/v4/elements/genre.html" class="link_odd_elementSpec">genre</a>. For letters and other correspondence, 
+  <a href="/v4/elements/recipient.html" class="link_odd_elementSpec">recipient</a> captures the name of the person or organization to whom the item was addressed. The natural language(s) of the item may be recorded in one or more 
+  <a href="/v4/elements/textlang.html" class="link_odd_elementSpec">textLang</a> elements. Finally, a holding institution may be documented using the 
+  <a href="/v4/elements/repository.html" class="link_odd_elementSpec">repository</a> element directly within 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a>, but 
+  <a href="/v4/elements/physloc.html" class="link_odd_elementSpec">physLoc</a> should be used whenever possible as a grouping mechanism for location and shelfmark information. To identify sub-units of the holding institution, 
+  <a href="/v4/elements/repository.html" class="link_odd_elementSpec">repository</a> sub-elements may be used. The name of the list from which a controlled value for the agency name is taken may be recorded using the <strong>@authority</strong> attribute.</p>
+
+<p>When supplied with a <strong>@target</strong> attribute, 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a> may function as a hypertext reference to an external electronic resource. In addition, other related bibliographic items may be described or referenced using the 
+  <a href="/v4/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> element.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;bibl&gt;</span>
+   <span class="nt">&lt;genre&gt;</span>letter<span class="nt">&lt;/genre&gt;</span>
+   <span class="nt">&lt;author&gt;</span>Carl Nielsen<span class="nt">&lt;/author&gt;</span>
+   <span class="nt">&lt;recipient&gt;</span>Gustav Hetsch<span class="nt">&lt;/recipient&gt;</span>
+   <span class="nt">&lt;creation&gt;</span>
+      <span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"1915-04-08"</span><span class="nt">&gt;</span>1915-04-08<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;/creation&gt;</span>
+   <span class="nt">&lt;physLoc&gt;</span>
+      <span class="nt">&lt;repository&gt;</span>
+         <span class="nt">&lt;identifier</span> <span class="na">auth.uri=</span><span class="s">"http://www.rism.info/"</span> <span class="na">auth=</span><span class="s">"RISM"</span><span class="nt">&gt;</span>DK-Kk<span class="nt">&lt;/identifier&gt;</span>
+      <span class="nt">&lt;/repository&gt;</span>
+      <span class="nt">&lt;identifier&gt;</span>CNA IAc<span class="nt">&lt;/identifier&gt;</span>
+   <span class="nt">&lt;/physLoc&gt;</span>
+   <span class="nt">&lt;relatedItem</span> <span class="na">rel=</span><span class="s">"host"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;bibl</span> <span class="na">xml:id=</span><span class="s">"shared.bibl_d1e380372"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;title&gt;</span>CNB<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;biblScope&gt;</span>V/210<span class="nt">&lt;/biblScope&gt;</span>
+      <span class="nt">&lt;/bibl&gt;</span>
+   <span class="nt">&lt;/relatedItem&gt;</span>
+<span class="nt">&lt;/bibl&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Please consult 
+  <a href="/v4/content/textencoding.html#sharedNames">Names</a> and 
+  <a href="/v4/content/textencoding.html#dates">Dates</a> for more information about recording the names and dates frequently found in bibliographic citations.</p>
+
+<h5 id="sharedRelatedItemDesc">9.2.12.1. Related Items
+      
+  </h5>
+
+<p>In some situations it is necessary to provide references from one bibliographic item to another. For these situations, MEI offers the 
+  <a href="/v4/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> element. A 
+  <a href="/v4/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> may be used inside of 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a>, and may either point to a different entity using its <strong>@target</strong> attribute, or may hold the related item as a child.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;bibl&gt;</span>
+   <span class="nt">&lt;genre&gt;</span>letter<span class="nt">&lt;/genre&gt;</span>
+   <span class="nt">&lt;author&gt;</span>Carl Nielsen<span class="nt">&lt;/author&gt;</span>
+   <span class="nt">&lt;recipient&gt;</span>Gustav Hetsch<span class="nt">&lt;/recipient&gt;</span>
+   <span class="nt">&lt;creation&gt;</span>
+      <span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"1915-04-08"</span><span class="nt">&gt;</span>1915-04-08<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;/creation&gt;</span>
+   <span class="nt">&lt;physLoc&gt;</span>
+      <span class="nt">&lt;repository&gt;</span>
+         <span class="nt">&lt;identifier</span> <span class="na">auth.uri=</span><span class="s">"http://www.rism.info/"</span> <span class="na">auth=</span><span class="s">"RISM"</span><span class="nt">&gt;</span>DK-Kk<span class="nt">&lt;/identifier&gt;</span>
+      <span class="nt">&lt;/repository&gt;</span>
+      <span class="nt">&lt;identifier&gt;</span>CNA IAc<span class="nt">&lt;/identifier&gt;</span>
+   <span class="nt">&lt;/physLoc&gt;</span>
+   <span class="nt">&lt;relatedItem</span> <span class="na">rel=</span><span class="s">"host"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;bibl</span> <span class="na">xml:id=</span><span class="s">"shared.bibl_d1e380372"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;title&gt;</span>CNB<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;biblScope&gt;</span>V/210<span class="nt">&lt;/biblScope&gt;</span>
+      <span class="nt">&lt;/bibl&gt;</span>
+   <span class="nt">&lt;/relatedItem&gt;</span>
+<span class="nt">&lt;/bibl&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In this example, the nested 
+  <a href="/v4/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> / 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a> provides information about the ‘container’ where the outer 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a> may be found. The kind of relation is expressed using the <strong>@rel</strong> attribute. It describes the relationship of the child 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a> to the 
+  <a href="/v4/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>’s parent 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a>.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/relateditem.html">@rel</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Describes the relationship between the entity identified by the relatedItem element and the resource described in the parent element, i.e., bibl, source or relatedItem.</div>
+    </div>
+</div>
+
+<p>In these relations, the subject is always the relatedItem, and the object is always the parent of the relatedItem. Thus, a value of <strong>@rel</strong>=”preceding” indicates that the resource described within the relatedItem (or referenced by its <strong>@target</strong> attribute) precedes the 
+  <a href="/v4/elements/bibl.html" class="link_odd_elementSpec">bibl</a> containing the 
+  <a href="/v4/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a>. Following MODS, both values of “preceding” and “succeeding” indicate a temporal order.</p>
+
+<p>It is important not to confuse 
+  <a href="/v4/elements/relateditem.html" class="link_odd_elementSpec">relatedItem</a> with the concepts of 
+  <a href="/v4/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a>; see 
+  <a href="/v4/content/metadata.html#headerRelatedItemVsFRBR">RelatedItem vs. FRBR</a>.</p>
+
+<h4 id="sharedAnnotations">9.2.13. Annotations
+      
+  </h4>
+
+<p>Annotations are one of the most versatile features of MEI. They are provided using the 
+  <a href="/v4/elements/annot.html" class="link_odd_elementSpec">annot</a> element.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/annot.html">annot</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (annotation) – Provides a statement explaining the text or indicating the basis for an
+      assertion.</div>
+    </div>
+</div>
+
+<p>This element may be contained by a wide range of other elements and may contain a large number of other elements. While this offers great flexibility in addressing the wide variety of textual features that might occur within an annotation, it may lead to markup that cannot be effectively processed mechanistically.</p>
+
+<p>In all cases, 
+  <a href="/v4/elements/annot.html" class="link_odd_elementSpec">annot</a> provides a comment upon a feature of the encoding, but never contains textual transcription. Depending on its context, an annotation will deal with either its parent element, or, more usually, with the element(s) specified in its <strong>@plist</strong> attribute. This attribute uses URI references to link to one or more other elements using their <strong>@xml:id</strong> attribute values, as in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;note</span> <span class="na">xml:id=</span><span class="s">"shared.someInterestingNote"</span><span class="nt">&gt;&lt;/note&gt;</span>
+<span class="c">&lt;!-- elsewhere in the document: --&gt;</span>
+<span class="nt">&lt;annot</span> <span class="na">plist=</span><span class="s">"#shared.someInterestingNote"</span><span class="nt">&gt;</span>
+   <span class="c">&lt;!-- additional information about this note --&gt;</span>
+<span class="nt">&lt;/annot&gt;</span></code></pre></figure>
+
+</div>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v4/content/textencoding.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/textencoding.html#textstructures">9.1. Text Structures
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textDivisions">9.1.1. Organizing Text into Divisions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textFrontBack">9.1.2. Paratext
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/textencoding.html#text">9.2. Text in MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedParagraphs">9.2.1. Paragraphs
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedTextRendition">9.2.2. Text Rendition
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#figTableFigures">9.2.3. Figures
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textLists">9.2.4. Lists
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#figTableTables">9.2.5. Tables
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textQuote">9.2.6. Quotation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textPoetry">9.2.7. Poetry
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedNames">9.2.8. Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#dates">9.2.9. Dates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedNumbers">9.2.10. Numbers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedAddresses">9.2.11. Addresses
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedBibliographicCitations">9.2.12. Bibliographic Citations and References
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedAnnotations">9.2.13. Annotations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/textencoding.html#textstructures">9.1. Text Structures
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textDivisions">9.1.1. Organizing Text into Divisions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textFrontBack">9.1.2. Paratext
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/textencoding.html#text">9.2. Text in MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedParagraphs">9.2.1. Paragraphs
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedTextRendition">9.2.2. Text Rendition
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#figTableFigures">9.2.3. Figures
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textLists">9.2.4. Lists
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#figTableTables">9.2.5. Tables
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textQuote">9.2.6. Quotation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#textPoetry">9.2.7. Poetry
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedNames">9.2.8. Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#dates">9.2.9. Dates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedNumbers">9.2.10. Numbers
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedAddresses">9.2.11. Addresses
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedBibliographicCitations">9.2.12. Bibliographic Citations and References
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/textencoding.html#sharedAnnotations">9.2.13. Annotations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/5e43035f61b41ba0a117a5aabe4c426921fc8376'>Version 5e43035</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

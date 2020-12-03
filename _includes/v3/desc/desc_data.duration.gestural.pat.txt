@@ -1,1 +1,0 @@
-Pattern for ppq, beats, seconds, etc.

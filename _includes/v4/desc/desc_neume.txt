@@ -1,1 +1,0 @@
-Sign representing one or more musical pitches.

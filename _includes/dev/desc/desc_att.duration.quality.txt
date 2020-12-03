@@ -1,1 +1,0 @@
-Attribute that expresses duration for a given mensural note symbol.

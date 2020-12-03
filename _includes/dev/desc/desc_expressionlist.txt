@@ -1,1 +1,0 @@
-Gathers bibliographic expression entities.

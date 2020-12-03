@@ -1,7 +1,0 @@
-{%- if include.elem %}
-  [{{ include.elem }}]({{ site.baseurl }}/{{ page.version }}/elements/{{ include.elem | downcase }}.html){:.link_odd_elementSpec}
-{%- elsif include.att %}
-  [att.{{ include.att }}]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.{{ include.att | downcase }}.html)
-{%- elsif include.model %}
-  [model.{{ include.model }}]({{ site.baseurl }}/{{ page.version }}/model-classes/model.{{ include.model | downcase }}.html)
-{%- else %}{% include link-section id=include.id %}{%- endif %}

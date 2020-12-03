@@ -1,1 +1,0 @@
-Captures the nature of the content of a list.

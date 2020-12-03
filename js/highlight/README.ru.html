@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Highlight.js</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI ()
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <h1 id="highlightjs">Highlight.js</h1>
+
+<p>Highlight.js — это инструмент для подсветки синтаксиса, написанный на JavaScript. Он работает
+и в браузере, и на сервере. Он работает с практически любой HTML разметкой, не
+зависит от каких-либо фреймворков и умеет автоматически определять язык.</p>
+
+<h2 id="начало-работы">Начало работы</h2>
+
+<p>Минимум, что нужно сделать для использования highlight.js на веб-странице — это
+подключить библиотеку, CSS-стили и вызывать <a href="http://highlightjs.readthedocs.io/en/latest/api.html#inithighlightingonload"><code class="language-plaintext highlighter-rouge">initHighlightingOnLoad</code></a>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/styles/default.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/highlight.pack.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span><span class="nx">hljs</span><span class="p">.</span><span class="nx">initHighlightingOnLoad</span><span class="p">();</span><span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Библиотека найдёт и раскрасит код внутри тегов <code class="language-plaintext highlighter-rouge">&lt;pre&gt;&lt;code&gt;</code>, попытавшись
+автоматически определить язык. Когда автоопределение не срабатывает, можно явно
+указать язык в атрибуте class:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"html"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<p>Список поддерживаемых классов языков доступен в <a href="http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html">справочнике по классам</a>.
+Класс также можно предварить префиксами <code class="language-plaintext highlighter-rouge">language-</code> или <code class="language-plaintext highlighter-rouge">lang-</code>.</p>
+
+<p>Чтобы отключить подсветку для какого-то блока, используйте класс <code class="language-plaintext highlighter-rouge">nohighlight</code>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"nohighlight"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<h2 id="инициализация-вручную">Инициализация вручную</h2>
+
+<p>Чтобы иметь чуть больше контроля за инициализацией подсветки, вы можете
+использовать функции <a href="http://highlightjs.readthedocs.io/en/latest/api.html#highlightblock-block"><code class="language-plaintext highlighter-rouge">highlightBlock</code></a> и <a href="http://highlightjs.readthedocs.io/en/latest/api.html#configure-options"><code class="language-plaintext highlighter-rouge">configure</code></a>. Таким образом
+можно управлять тем, <em>что</em> и <em>когда</em> подсвечивать.</p>
+
+<p>Вот пример инициализации, эквивалентной вызову <a href="http://highlightjs.readthedocs.io/en/latest/api.html#inithighlightingonload"><code class="language-plaintext highlighter-rouge">initHighlightingOnLoad</code></a>, но
+с использованием <code class="language-plaintext highlighter-rouge">document.addEventListener</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">DOMContentLoaded</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">pre code</span><span class="dl">'</span><span class="p">).</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">block</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightBlock</span><span class="p">(</span><span class="nx">block</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Вы можете использовать любые теги разметки вместо <code class="language-plaintext highlighter-rouge">&lt;pre&gt;&lt;code&gt;</code>. Если
+используете контейнер, не сохраняющий переводы строк, вам нужно сказать
+highlight.js использовать для них тег <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">hljs</span><span class="p">.</span><span class="nx">configure</span><span class="p">({</span><span class="na">useBR</span><span class="p">:</span> <span class="kc">true</span><span class="p">});</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">div.code</span><span class="dl">'</span><span class="p">).</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">block</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightBlock</span><span class="p">(</span><span class="nx">block</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Другие опции можно найти в документации функции <a href="http://highlightjs.readthedocs.io/en/latest/api.html#configure-options"><code class="language-plaintext highlighter-rouge">configure</code></a>.</p>
+
+<h2 id="web-workers">Web Workers</h2>
+
+<p>Подсветку можно запустить внутри web worker’а, чтобы окно
+браузера не подтормаживало при работе с большими кусками кода.</p>
+
+<p>В основном скрипте:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">load</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">code</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#code</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">worker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Worker</span><span class="p">(</span><span class="dl">'</span><span class="s1">worker.js</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">onmessage</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">code</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span> <span class="p">}</span>
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="nx">code</span><span class="p">.</span><span class="nx">textContent</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>В worker.js:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">onmessage</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">importScripts</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;path&gt;/highlight.pack.js</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightAuto</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+  <span class="nx">postMessage</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="установка-библиотеки">Установка библиотеки</h2>
+
+<p>Highlight.js можно использовать в браузере прямо с CDN хостинга или скачать
+индивидуальную сборку, а также установив модуль на сервере. На
+<a href="https://highlightjs.org/download/">странице загрузки</a> подробно описаны все варианты.</p>
+
+<p><strong>Не подключайте GitHub напрямую.</strong> Библиотека не предназначена для
+использования в виде исходного кода, а требует отдельной сборки. Если вам не
+подходит ни один из готовых вариантов, читайте <a href="http://highlightjs.readthedocs.io/en/latest/building-testing.html">документацию по сборке</a>.</p>
+
+<p><strong>Файл на CDN содержит не все языки.</strong> Иначе он будет слишком большого размера.
+Если нужного вам языка нет в <a href="https://highlightjs.org/download/">категории “Common”</a>, можно дообавить его
+вручную:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Про Almond.</strong> Нужно задать имя модуля в оптимизаторе, например:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>r.js -o name=hljs paths.hljs=/path/to/highlight out=highlight.js
+</code></pre></div></div>
+
+<h2 id="лицензия">Лицензия</h2>
+
+<p>Highlight.js распространяется под лицензией BSD. Подробнее читайте файл
+<a href="https://github.com/highlightjs/highlight.js/blob/master/LICENSE">LICENSE</a>.</p>
+
+<h2 id="ссылки">Ссылки</h2>
+
+<p>Официальный сайт билиотеки расположен по адресу <a href="https://highlightjs.org/">https://highlightjs.org/</a>.</p>
+
+<p>Более подробная документация по API и другим темам расположена на
+<a href="http://highlightjs.readthedocs.io/">http://highlightjs.readthedocs.io/</a>.</p>
+
+<p>Авторы и контрибьюторы перечислены в файле <a href="https://github.com/highlightjs/highlight.js/blob/master/AUTHORS.ru.txt">AUTHORS.ru.txt</a> file.</p>
+
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small></small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

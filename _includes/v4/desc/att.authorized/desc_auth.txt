@@ -1,2 +1,0 @@
-A name or label associated with a controlled vocabulary or other authoritative source
-          for this element or its content.

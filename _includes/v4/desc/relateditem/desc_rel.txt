@@ -1,1 +1,0 @@
-Describes the relationship between the entity identified by the relatedItem element and the resource described in the parent element, i.e., bibl, source or relatedItem.

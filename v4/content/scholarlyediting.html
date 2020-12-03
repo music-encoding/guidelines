@@ -1,0 +1,5839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Scholarly Editing with MEI</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v4/content/scholarlyediting.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="scholarlyediting">11. Scholarly Editing with MEI
+      
+  </h2>
+
+<p>This chapter introduces markup targeting at digital scholarly editions of music.
+In 
+  <a href="/v4/content/scholarlyediting.html#critApp">Critical Apparatus</a>, the alignment of multiple sources / witnesses of the same musical text is discussed. 
+  <a href="/v4/content/scholarlyediting.html#editTrans">Editorial Markup</a> covers editorial observations in and interventions to the text. 
+  <a href="/v4/content/scholarlyediting.html#genetic">Genetic Markup</a> finally deals with the special requirements and needs of genetic editions in music.</p>
+
+<h3 id="critApp">11.1. Critical Apparatus
+      
+  </h3>
+
+<p>This chapter describes how to encode differences between multiple exemplars of the same musical work (often referred to in MEI as ‘sources’). The mechanisms and elements described in this chapter are closely related to their counterparts in the TEI guidelines. It is also important to refer to chapter 
+  <a href="/v4/content/scholarlyediting.html#editTrans">Editorial Markup</a> of these guidelines, especially concerning the 
+  <a href="/v4/elements/choice.html" class="link_odd_elementSpec">choice</a> element described therein.</p>
+
+<h4 id="critAppElements">11.1.1. General Usage
+      
+  </h4>
+
+<p>The following elements are defined in the critApp Module:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/app.html">app</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (apparatus) – Contains one or more alternative encodings.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/lem.html">lem</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (lemma) – Contains the lemma, or base text, of a textual variation.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/rdg.html">rdg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (reading) – Contains a single reading within a textual variation.</div>
+    </div>
+</div>
+
+<p>An 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> element always encapsulates the differences between varying sources. Therefore, it must contain at least two child elements.  Possible child elements are 
+  <a href="/v4/elements/lem.html" class="link_odd_elementSpec">lem</a> and 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, which use the same model, but have a different meaning: Whereas 
+  <a href="/v4/elements/lem.html" class="link_odd_elementSpec">lem</a> is used for prioritizing one alternative, a 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> has no such additional meaning and simply indicates a reading as found in one or more sources. Accordingly, 
+  <a href="/v4/elements/lem.html" class="link_odd_elementSpec">lem</a> is allowed only once in 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a>, whereas 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> may appear as often as necessary.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;lem&gt;</span>
+      <span class="c">&lt;!-- preferred reading --&gt;</span>
+   <span class="nt">&lt;/lem&gt;</span>
+   <span class="nt">&lt;rdg&gt;</span>
+      <span class="c">&lt;!-- alternative reading --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg&gt;</span>
+      <span class="c">&lt;!-- alternative reading --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> (and 
+  <a href="/v4/elements/lem.html" class="link_odd_elementSpec">lem</a>) elements use the <strong>@source</strong> attribute to point to one or more descriptions of the bibliographic sources containing the material they mark:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- In the document content: --&gt;</span>
+<span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- reading of source 1 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2 #critApp.source3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- reading of sources 2 *and* 3 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- Earlier in the document header: --&gt;</span>
+<span class="nt">&lt;sourceDesc&gt;</span>
+   <span class="nt">&lt;source</span> <span class="na">xml:id=</span><span class="s">"critApp.source1"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- bibliographic description of source 1 --&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+   <span class="nt">&lt;source</span> <span class="na">xml:id=</span><span class="s">"critApp.source2"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- bibliographic description of source 2 --&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+   <span class="nt">&lt;source</span> <span class="na">xml:id=</span><span class="s">"critApp.source3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- bibliographic description of source 3 --&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+<span class="nt">&lt;/sourceDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The <strong>@seq</strong> attribute may be used on 
+  <a href="/v4/elements/lem.html" class="link_odd_elementSpec">lem</a> or 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> to record the sequence of a series of readings. In the following example, the material in source B is marked as sequential to (and perhaps derived from) the reading in source A:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">seq=</span><span class="s">"1"</span> <span class="na">source=</span><span class="s">"#critApp.sourceA"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- material in source 1 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">seq=</span><span class="s">"2"</span> <span class="na">source=</span><span class="s">"#critApp.sourceB"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- material in source 2 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span></code></pre></figure>
+
+</div>
+
+<p>If interested in modeling such dependencies between witnesses, using markup from 
+  <a href="/v4/content/metadata.html#FRBR">Functional Requirements for Bibliographic Records (FRBR)</a> is generally recommendable.</p>
+
+<p>If a source has additional content that is not found in other sources, an empty 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element may be used to indicate the lack of material in the other sources. In the following example, source 1 includes material that is not found in sources 2 and 3:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;app&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- additional content of source 1 --&gt;</span>
+   <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2 #critApp.source3"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/app&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When working with a large number of sources, it might seem tedious to provide references for all sources. However, use of the 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element without <strong>@source</strong> is not recommended because such an encoding is not explicit and is therefore difficult to process.</p>
+
+<h4 id="critAppInContent">11.1.2. Variants in Musical Content
+      
+  </h4>
+
+<p>The 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> element may be used to accommodate textual variation at nearly any point in a musical text. For example, it may be used to indicate minor differences such as stem directions:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;layer&gt;</span>
+   <span class="c">&lt;!-- preceding notes --&gt;</span>
+   <span class="nt">&lt;app&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;/app&gt;</span>
+   <span class="c">&lt;!-- following notes --&gt;</span>
+<span class="nt">&lt;/layer&gt;</span></code></pre></figure>
+
+</div>
+
+<p>or to indicate more significant differences, such as the insertion of extra measures:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;section&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>…<span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>…<span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;app&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+         <span class="c">&lt;!-- source 2 has 2 measures not found in source 1 --&gt;</span>
+         <span class="nt">&lt;measure&gt;</span>…<span class="nt">&lt;/measure&gt;</span>
+         <span class="nt">&lt;measure&gt;</span>…<span class="nt">&lt;/measure&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;/app&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>…<span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+</div>
+
+<p>However, the flexibility in the location of 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> places a burden on the encoder to ensure that the 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a>, 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a>, and 
+  <a href="/v4/elements/lem.html" class="link_odd_elementSpec">lem</a> elements are used correctly; that is, the content of every 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> and 
+  <a href="/v4/elements/lem.html" class="link_odd_elementSpec">lem</a> has to be a valid replacement for its parent 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a>, even though this cannot be controlled effectively by the MEI schema.</p>
+
+<h4 id="critAppInDefs">11.1.3. Variants in Score Definitions
+      
+  </h4>
+
+<p>In addition to its use for differentiation of the musical content of multiple sources, 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> may also be utilized to describe the layout of different scores, even when the musical content itself remains the same. An example of this is two sources that have the same content, but a different ordering of staves on which the content is written. By definition, the order of staves in MEI is described in and derived from the order of 
+  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements in 
+  <a href="/v4/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a>, not from the order of 
+  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> elements within a 
+  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a>. The 
+  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> element in a measure points to its corresponding 
+  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> using the same value for <strong>@n</strong> on both elements.</p>
+
+<p>This rather loose mechanism makes it possible to point dynamically to the correct staff definition for a given source. The following example demonstrates how this can be accomplished for two sources, both presenting a two-staff score, but with differing staff order. No further 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> element is necessary within the 
+  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> to describe the alternative score order of the sources.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;score&gt;</span>
+   <span class="nt">&lt;app&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;scoreDef&gt;</span>
+            <span class="nt">&lt;staffGrp&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/staffGrp&gt;</span>
+         <span class="nt">&lt;/scoreDef&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;scoreDef&gt;</span>
+            <span class="nt">&lt;staffGrp&gt;</span>
+               <span class="c">&lt;!-- The order of &lt;staffDef&gt; elements defines score order, not its @n attribute! --&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">/&gt;</span>
+               <span class="nt">&lt;staffDef</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/staffGrp&gt;</span>
+         <span class="nt">&lt;/scoreDef&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;/app&gt;</span>
+   <span class="nt">&lt;section&gt;</span>
+      <span class="nt">&lt;measure&gt;</span>
+         <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>…<span class="nt">&lt;/staff&gt;</span>
+         <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>…<span class="nt">&lt;/staff&gt;</span>
+      <span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/score&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When unique values for <strong>@n</strong> on 
+  <a href="/v4/elements/layerdef.html" class="link_odd_elementSpec">layerDef</a> and 
+  <a href="/v4/elements/layer.html" class="link_odd_elementSpec">layer</a> are provided, it is possible to reallocate layers in the same fashion as staves.</p>
+
+<p>This mechanism may also be used to describe not only differing page orientations, formats and margins, but also clefs and keys.</p>
+
+<p>The use of 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> in conjunction with 
+  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> illustrates the greater flexibility of connecting 
+  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> by a shared <strong>@n</strong> value. A technically more robust alternative to <strong>@n</strong> would be to use the <strong>@def</strong> attribute on 
+  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a>, which points to the <strong>@xml:id</strong> of a 
+  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>. However, this strong connection would be tied to one specific 
+  <a href="/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a>, and would not allow to pick one alternative out of an 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a>.</p>
+
+<h4 id="critAppNesting">11.1.4. Nesting Apparati
+      
+  </h4>
+
+<p>In some situations, musical sources will agree at one level while differing at a lower level. For these cases, 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> elements may be nested to any level necessary. In the following example, there are three sources, two of which agree on the addition of a measure, but differ in the content of the added measure:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;section&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>…<span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;app&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source1"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2 critApp.#source3"</span><span class="nt">&gt;</span>
+         <span class="c">&lt;!-- whereas source1 omits it, source2 and source3 have an additional measure --&gt;</span>
+         <span class="nt">&lt;measure&gt;</span>
+            <span class="nt">&lt;staff&gt;</span>
+               <span class="nt">&lt;layer&gt;</span>
+                  <span class="nt">&lt;app&gt;</span>
+                     <span class="c">&lt;!-- while source2 provides a measure rest, source3 has a whole note --&gt;</span>
+                     <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source2"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;mRest/&gt;</span>
+                     <span class="nt">&lt;/rdg&gt;</span>
+                     <span class="nt">&lt;rdg</span> <span class="na">source=</span><span class="s">"#critApp.source3"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"1"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+                     <span class="nt">&lt;/rdg&gt;</span>
+                  <span class="nt">&lt;/app&gt;</span>
+               <span class="nt">&lt;/layer&gt;</span>
+            <span class="nt">&lt;/staff&gt;</span>
+         <span class="nt">&lt;/measure&gt;</span>
+      <span class="nt">&lt;/rdg&gt;</span>
+   <span class="nt">&lt;/app&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>…<span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When nesting 
+  <a href="/v4/elements/app.html" class="link_odd_elementSpec">app</a> elements, it is important that the value(s) in the child 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> attribute must be a strict subset of the ancestor 
+  <a href="/v4/elements/rdg.html" class="link_odd_elementSpec">rdg</a> element’s <strong>@source</strong> value.</p>
+
+<h3 id="editTrans">11.2. Editorial Markup
+      
+  </h3>
+
+<p>It is often necessary to render an account of any changes made to a musical text during its creation (and any subsequent editing) and to accommodate editorial comment necessitated by an editorial process. The elements and attributes described in this chapter may be used to record such editorial interventions, whether made by the composer, the copyists of the manuscript, the editor of an earlier edition used as a copy text, or the current encoder/editor.</p>
+
+<p>The scope of the elements described herein is therefore the description of features relating to the genesis, later revision and editorial interpretation of a text. Mechanisms for describing multiple sources are described in chapter 
+  <a href="/v4/content/scholarlyediting.html#critApp">Critical Apparatus</a> of these Guidelines, while the full setup for genetic editions is described in chapter 
+  <a href="/v4/content/scholarlyediting.html#genetic">Genetic Markup</a>.</p>
+
+<p>The elements described in this chapter may be contained by a wide range of other MEI elements and, in turn, may contain a variety of elements. The encoder must assume responsibility for the appropriateness of the markup; that is, a great many combinations of editorial and transcriptional markup are technically possible, but care must be taken to see that the encoding does not contravene the rationale of these Guidelines. In general, it should be ensured that a file would be valid if the editorial markup would be omitted, as such a validation cannot be ensured in an efficient way by the MEI schema.</p>
+
+<p>For most of the elements discussed here, some encoders may wish to indicate both a responsibility; that is, a coded value indicating the person or agency responsible for making the editorial intervention in question, and an indication of the degree of certainty which the encoder wishes to associate with the intervention. The elements discussed here thus may potentially carry the following optional attributes:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.evidence.html">@cert</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Signifies the degree of certainty or precision associated with a feature.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.responsibility.html">@resp</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the agent(s) responsible for some aspect of the text's transcription,
+          editing, or encoding. Its value must point to one or more identifiers declared in the
+          document header.</div>
+    </div>
+</div>
+
+<p>They are available through the generic attribute class 
+  <a href="/v4/attribute-classes/att.common.html">att.common</a>, which is a member of 
+  <a href="/v4/attribute-classes/att.responsibility.html">att.responsibility</a>, and the attribute class 
+  <a href="/v4/attribute-classes/att.edit.html">att.edit</a>, to which these elements subscribe.</p>
+
+<p>Many of the elements discussed here can be used in two ways. Their primary purpose is to indicate that their content represents an editorial intervention (or, in some cases, the lack of intervention) of a specific kind. Sometimes, pairs or other meaningful groupings of such elements can be recorded, then wrapped within the special purpose 
+  <a href="/v4/elements/choice.html" class="link_odd_elementSpec">choice</a> element:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/choice.html">choice</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Groups a number of alternative encodings for the same point in a text.</div>
+    </div>
+</div>
+
+<p>Wrapping elements this way enables the encoder to represent, for example, a text in its ‘original’, uncorrected form alongside the same text in one or more ‘edited’ forms. Making use of this style of representation, software may dynamically switch between the ‘Urtext view’ of the text and one or more ‘views’ of the text after the application of the encoded editorial interventions.</p>
+
+<p>Elements which can be combined in this way constitute the 
+  <a href="/v4/model-classes/model.choicepart.html">model.choicePart</a> class. The default members of this class are 
+  <a href="/v4/elements/sic.html" class="link_odd_elementSpec">sic</a>, 
+  <a href="/v4/elements/corr.html" class="link_odd_elementSpec">corr</a>, 
+  <a href="/v4/elements/reg.html" class="link_odd_elementSpec">reg</a>, 
+  <a href="/v4/elements/orig.html" class="link_odd_elementSpec">orig</a>, and 
+  <a href="/v4/elements/unclear.html" class="link_odd_elementSpec">unclear</a>. As 
+  <a href="/v4/model-classes/model.editlike.html">model.editLike</a> and 
+  <a href="/v4/model-classes/model.editoriallike.html">model.editorialLike</a> are members of 
+  <a href="/v4/model-classes/model.choicepart.html">model.choicePart</a>, 
+  <a href="/v4/elements/choice.html" class="link_odd_elementSpec">choice</a>, 
+  <a href="/v4/elements/subst.html" class="link_odd_elementSpec">subst</a>, 
+  <a href="/v4/elements/abbr.html" class="link_odd_elementSpec">abbr</a>, and 
+  <a href="/v4/elements/expan.html" class="link_odd_elementSpec">expan</a> can also be combined with the other elements. All of their functions and usage are described in greater detail below.</p>
+
+<p>Three categories of editorial intervention are discussed by the remainder of this chapter:</p>
+
+<ul>
+  <li>indication or correction of apparent errors;</li>
+  <li>indication of regularization of variant, irregular, non-standard, or eccentric forms; and</li>
+  <li>editorial additions, suppressions, and omissions.</li>
+</ul>
+
+<h4 id="edittransAbbrev">11.2.1. Abbreviations
+      
+  </h4>
+
+<p>MEI offers methods for marking abbreviations in prose, as in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+  ... the next passage shall be performed in<span class="nt">&lt;abbr&gt;</span>pno:<span class="nt">&lt;/abbr&gt;</span>...
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<p>or abbreviations in the music itself, as in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;abbr&gt;</span>
+  <span class="nt">&lt;bTrem</span> <span class="na">unitdur=</span><span class="s">"16"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.mod=</span><span class="s">"2slash"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/bTrem&gt;</span>
+<span class="nt">&lt;/abbr&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The generic <strong>@type</strong> attribute may be used to classify the abbreviation according to a convenient typology. Sample values include:</p>
+
+<p class="gloss"><strong>suspension</strong>: the abbreviation provides the first letter(s) of the word or phrase, omitting the remainder;</p>
+
+<p class="gloss"><strong>contraction</strong>: the abbreviation omits some letter(s) in the middle;</p>
+
+<p class="gloss"><strong>brevigraph</strong>: the abbreviation comprises a special symbol or mark;</p>
+
+<p class="gloss"><strong>superscription</strong>: the abbreviation includes writing above the line;</p>
+
+<p class="gloss"><strong>acronym</strong>: the abbreviation comprises the initial letters of the words of a phrase;</p>
+
+<p class="gloss"><strong>title</strong>: the abbreviation is for a title of address (Dr, Ms, Mr, …);</p>
+
+<p class="gloss"><strong>organization</strong>: the abbreviation is for the name of an organization;</p>
+
+<p class="gloss"><strong>geographic</strong>: the abbreviation is for a geographic name.</p>
+
+<p>This tag is the mirror image of the 
+  <a href="/v4/elements/expan.html" class="link_odd_elementSpec">expan</a> tag (not to be confused with the 
+  <a href="/v4/elements/expansion.html" class="link_odd_elementSpec">expansion</a> element described in 
+  <a href="/v4/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>). Both 
+  <a href="/v4/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
+  <a href="/v4/elements/expan.html" class="link_odd_elementSpec">expan</a> allow the encoder to transcribe an abbreviation and its expansion. In the case of 
+  <a href="/v4/elements/abbr.html" class="link_odd_elementSpec">abbr</a>, the original is transcribed as the content of the element and the expansion as an attribute value, while 
+  <a href="/v4/elements/expan.html" class="link_odd_elementSpec">expan</a> reverses this. The choice between the two is up to the user. For example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;div&gt;</span>
+   <span class="c">&lt;!-- using abbr --&gt;</span>
+   <span class="nt">&lt;p&gt;</span>
+     … the next passage shall be performed in<span class="nt">&lt;abbr</span> <span class="na">expan=</span><span class="s">"piano"</span><span class="nt">&gt;</span>pno:<span class="nt">&lt;/abbr&gt;</span>…
+   <span class="nt">&lt;/p&gt;</span>
+   <span class="c">&lt;!-- using expan --&gt;</span>
+   <span class="nt">&lt;p&gt;</span>… the next passage shall be performed in
+      <span class="nt">&lt;expan</span> <span class="na">abbr=</span><span class="s">"pno:"</span><span class="nt">&gt;</span>piano<span class="nt">&lt;/expan&gt;</span>…
+   <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/v4/elements/abbr.html" class="link_odd_elementSpec">abbr</a> tag is not required; if appropriate, the encoder may transcribe abbreviations in the source text silently, without tagging them. If abbreviations are not transcribed directly but expanded silently, then the MEI header should indicate this is the case. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the expansion of the abbreviation. The <strong>@expan</strong> attribute gives an expansion of the abbreviation. The <strong>@resp</strong> attribute contains an ID reference to an element containing the name of the editor or transcriber responsible for supplying the expansion of the abbreviation.</p>
+
+<p>When the content of the <strong>@abbr</strong> or <strong>@expan</strong> attributes requires additional markup, an attribute cannot be used. In this case, the abbreviated and expanded forms must be presented within elements. Furthermore, as alternatives to each other, the 
+  <a href="/v4/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
+  <a href="/v4/elements/expan.html" class="link_odd_elementSpec">expan</a> elements must be wrapped by the 
+  <a href="/v4/elements/choice.html" class="link_odd_elementSpec">choice</a> element, as described above. The previous example, where the ‘o:’ in ‘pno:’ is written as superscript, would be encoded as:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>… the next passage shall be performed in
+   <span class="nt">&lt;choice&gt;</span>
+       <span class="nt">&lt;abbr&gt;</span>pn<span class="nt">&lt;rend</span> <span class="na">rend=</span><span class="s">"sup"</span><span class="nt">&gt;</span>o:<span class="nt">&lt;/rend&gt;&lt;/abbr&gt;</span>
+       <span class="nt">&lt;expan&gt;</span>piano<span class="nt">&lt;/expan&gt;</span>
+   <span class="nt">&lt;/choice&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="edittranscpMark">11.2.1.1.  Instructions
+      
+  </h5>
+
+<p>Many musical scores make use of various kinds of shorthand notation which omit some parts of the score that have already been written elsewhere. Typical examples for this are symbols that indicate repetition of the preceding measure or beat. In MEI, these symbols can be encoded using the 
+  <a href="/v4/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a> and 
+  <a href="/v4/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a> elements respectively. Often, similar graphical symbols (often one or two slashes, “//”) are used to mean that the current staff should have the same or similar content as another staff.</p>
+
+<p><em>colla parte</em> directives have a less strictly-defined scope than the ‘Rpt elements’ (
+  <a href="/v4/elements/beatrpt.html" class="link_odd_elementSpec">beatRpt</a>, 
+  <a href="/v4/elements/halfmrpt.html" class="link_odd_elementSpec">halfmRpt</a>, 
+  <a href="/v4/elements/mrpt.html" class="link_odd_elementSpec">mRpt</a>, 
+  <a href="/v4/elements/mrpt2.html" class="link_odd_elementSpec">mRpt2</a>, 
+  <a href="/v4/elements/multirpt.html" class="link_odd_elementSpec">multiRpt</a>). That is, rather than specifying the repetition of content of a particular duration, like a measure or beat, <em>colla parte</em> instructions can refer to material of any length. In order to encode such scribal shorthand, MEI offers the 
+  <a href="/v4/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element, which allows filling of blank spaces in the score with horizontally and/or vertically distant material.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/cpmark.html">cpMark</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (copy/colla parte mark) – A verbal or graphical indication to copy musical material
+      written elsewhere.</div>
+    </div>
+</div>
+
+<p>Like any other ‘controlEvent’ (see 
+  <a href="/v4/content/introduction.html#eventsControlevents">Events and Controlevents</a>), 
+  <a href="/v4/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> is placed in the score using the <strong>@staff</strong> and <strong>@tstamp</strong> attributes. The end point of the mark itself, when necessary, may be indicated using the <strong>@tstamp2</strong> attribute. The source material, which is intended to be inserted in the space indicated by the copy mark, can be identified by the attributes <strong>@origin.tstamp</strong>, <strong>@origin.tstamp2</strong>, <strong>@origin.staff</strong> and <strong>@origin.layer</strong>. While <strong>@origin.tstamp</strong> provides the relative distance from the beginning of the “gap”, <strong>@origin.tstamp</strong> is relative to the position identified by <strong>@origin.tstamp</strong>. However, <strong>@origin.tstamp</strong> defaults to the same value as <strong>@tstamp2</strong> and should only be provided when necessary. When neither <strong>@origin.staff</strong> nor <strong>@origin.tstamp</strong> are provided, they take the same values as the cpMark’s <strong>@staff</strong> and <strong>@tstamp</strong> attributes; that is, they indicate a strict ‘vertical’ or ‘horizontal’ copy.</p>
+
+<figure class="figure">
+  <img src="/images/v4/ExampleImages/cpMark_2.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Copy marks in the first and second violin of C.M.v.Weber's Freischütz, Autograph, Nr.3 (Walzer), measures 223-231</figcaption>
+</figure>
+
+<p>In the example above, there are no less than three different copy instructions, which need to be encoded with four 
+  <a href="/v4/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> elements. First, Weber inserts characters from “a” to “f” in red ink to identify filled measures. Then, he repeats the same characters in <em>empty</em> measures, which indicates that the content from the <em>filled</em> measures should be copied here. While one could try to encode this with just one 
+  <a href="/v4/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element, it is both clearer and easier to process when using two elements.</p>
+
+<p>The second and third shorthand indications are written in the second violin (lower staff). Here, Weber writes “unis.[ono]”, silently omitting the reference to the first violin. His next shorthand (“in 8va”) additionally instructs the copyist to double the written material in another octave. This information can be captured using the <strong>@dis</strong> and <strong>@dis.place</strong> attributes on 
+  <a href="/v4/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a>.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;cpMark</span> <span class="na">origin.tstamp=</span><span class="s">"-6m+1"</span> <span class="na">staff=</span><span class="s">"8"</span> <span class="na">tstamp=</span><span class="s">"1"</span> <span class="na">tstamp2=</span><span class="s">"5m+4"</span><span class="nt">&gt;</span>a. b. c. d. e. f. g.<span class="nt">&lt;/cpMark&gt;</span>
+<span class="nt">&lt;cpMark</span> <span class="na">origin.tstamp=</span><span class="s">"-6m+1"</span> <span class="na">staff=</span><span class="s">"9"</span> <span class="na">tstamp=</span><span class="s">"1"</span> <span class="na">tstamp2=</span><span class="s">"5m+4"</span><span class="nt">&gt;</span>a. b. c. d. e. f. g.<span class="nt">&lt;/cpMark&gt;</span>
+<span class="nt">&lt;cpMark</span> <span class="na">origin.staff=</span><span class="s">"8"</span> <span class="na">staff=</span><span class="s">"9"</span> <span class="na">tstamp=</span><span class="s">"1.5"</span> <span class="na">tstamp2=</span><span class="s">"1m+3.5"</span><span class="nt">&gt;</span>unis:<span class="nt">&lt;/cpMark&gt;</span>
+<span class="nt">&lt;cpMark</span> <span class="na">dis=</span><span class="s">"8"</span> <span class="na">dis.place=</span><span class="s">"below"</span> <span class="na">origin.staff=</span><span class="s">"8"</span> <span class="na">staff=</span><span class="s">"9"</span> <span class="na">tstamp=</span><span class="s">"2"</span> <span class="na">tstamp2=</span><span class="s">"2m+3.5"</span><span class="nt">&gt;</span>in 8va<span class="nt">&lt;/cpMark&gt;</span></code></pre></figure>
+
+</div>
+<figure class="figure">
+  <img src="/images/v4/ExampleImages/cpMark_3.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">A transcription of the example above with all shorthand resolved and colored</figcaption>
+</figure>
+
+<p>Text used as a copy mark, like the letters in the Weber example, may be encoded as content of the 
+  <a href="/v4/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> element. In the case of non-text marks, the <strong>@altsym</strong> and <strong>@facs</strong> attributes may be used to refer to a graphical surrogate.</p>
+
+<p>Depending on the purpose of the encoding, the omitted parts in the score may be filled with 
+  <a href="/v4/elements/space.html" class="link_odd_elementSpec">space</a> and 
+  <a href="/v4/elements/mspace.html" class="link_odd_elementSpec">mSpace</a> elements of appropriate duration or silently overwritten with the content that the 
+  <a href="/v4/elements/cpmark.html" class="link_odd_elementSpec">cpMark</a> identifies. Also, these two options may be combined through the use a 
+  <a href="/v4/elements/choice.html" class="link_odd_elementSpec">choice</a> element whose 
+  <a href="/v4/elements/abbr.html" class="link_odd_elementSpec">abbr</a> and 
+  <a href="/v4/elements/expan.html" class="link_odd_elementSpec">expan</a> children explicitly encode a transcription of the original ‘gap’ (in abbr) and the result of the insertion of the indicated material (in expan, see 
+  <a href="/v4/content/scholarlyediting.html#edittransAbbrev">Abbreviations</a>).</p>
+
+<h4 id="edittransErrors">11.2.2. Apparent Errors
+      
+  </h4>
+
+<p>When the source material to be encoded is manifestly faulty, an encoder or transcriber may elect simply to correct it without comment, although for scholarly purposes it will often be more generally useful to record both the correction and the original state of the text. The elements described here enable all three approaches, and allows the last to be done in a way that makes it easy for software to present either the original or the correction.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/sic.html">sic</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains apparently incorrect or inaccurate material.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/corr.html">corr</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (correction) – Contains the correct form of an apparent erroneous passage.</div>
+    </div>
+</div>
+
+<p>The following examples show alternative treatment of the same material. The text to be encoded contains a chord (c4, e4, g4, a4), where c4, e4, and a4 are quarter notes, but g4 is incorrectly written as a half note.</p>
+
+<p>An encoder may choose to silently correct the engraver’s error:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;chord&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/chord&gt;</span></code></pre></figure>
+
+</div>
+
+<p>or the correction may be made explicit:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;chord&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;corr&gt;</span>
+      <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/corr&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/chord&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, the encoder may simply record the typographic error without correcting it, either without comment or with a 
+  <a href="/v4/elements/sic.html" class="link_odd_elementSpec">sic</a> element to indicate the error is not a transcription error in the encoding:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;chord&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;sic&gt;</span>
+      <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/sic&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/chord&gt;</span></code></pre></figure>
+
+</div>
+
+<p>If the encoder elects to record the original source text and provide a correction for the sake of transparency, both 
+  <a href="/v4/elements/sic.html" class="link_odd_elementSpec">sic</a> and 
+  <a href="/v4/elements/corr.html" class="link_odd_elementSpec">corr</a> may be used, wrapped in a 
+  <a href="/v4/elements/choice.html" class="link_odd_elementSpec">choice</a> element. The order of the 
+  <a href="/v4/elements/sic.html" class="link_odd_elementSpec">sic</a> and 
+  <a href="/v4/elements/corr.html" class="link_odd_elementSpec">corr</a> elements is not significant:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;chord&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;choice&gt;</span>
+      <span class="nt">&lt;sic&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/sic&gt;</span>
+      <span class="nt">&lt;corr&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/corr&gt;</span>
+   <span class="nt">&lt;/choice&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/chord&gt;</span></code></pre></figure>
+
+</div>
+
+<p>An indication of the person or agency responsible for the emendation can be provided as follows:</p>
+
+<div class="sampleCode" data-lang="feasible">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- within the header for this document: --&gt;</span>
+<span class="nt">&lt;respStmt&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">role=</span><span class="s">"editor"</span> <span class="na">xml:id=</span><span class="s">"editTrans.JK"</span><span class="nt">&gt;</span>Johannes Kepper<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/respStmt&gt;</span>
+<span class="c">&lt;!-- … --&gt;</span>
+<span class="nt">&lt;chord&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;choice&gt;</span>
+      <span class="nt">&lt;sic&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/sic&gt;</span>
+      <span class="nt">&lt;corr</span> <span class="na">resp=</span><span class="s">"#editTrans.JK"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/corr&gt;</span>
+   <span class="nt">&lt;/choice&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/chord&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Here the <strong>@resp</strong> attribute has been used to indicate responsibility for the correction. Its value (<em>#editTrans.JK</em>) is an example of the pointer values discussed in section 
+  <a href="/v4/content/linkingdata.html#ptrRef">Pointers and References</a>. In this case, the <strong>@resp</strong> attribute points to a 
+  <a href="/v4/elements/name.html" class="link_odd_elementSpec">name</a> element within the metadata header, but any element might be indicated in this way, if the correction has been taken from some other source. The <strong>@resp</strong> attribute is available for all elements which are members of the 
+  <a href="/v4/attribute-classes/att.common.html">att.common</a> class (through 
+  <a href="/v4/attribute-classes/att.responsibility.html">att.responsibility</a>). The 
+  <a href="/v4/attribute-classes/att.edit.html">att.edit</a> class makes available a <strong>@cert</strong> attribute (through 
+  <a href="/v4/attribute-classes/att.evidence.html">att.evidence</a>), which may be used to indicate the degree of editorial confidence in a particular correction, as in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;chord&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;choice&gt;</span>
+      <span class="nt">&lt;sic&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/sic&gt;</span>
+      <span class="nt">&lt;corr</span> <span class="na">cert=</span><span class="s">"high"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/corr&gt;</span>
+   <span class="nt">&lt;/choice&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/chord&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Where, as here, the correction takes the form of amending information present in the text being encoded, the encoder should use the 
+  <a href="/v4/elements/corr.html" class="link_odd_elementSpec">corr</a> element. Where the correction is present in the text being encoded, and consists of some combination of visible additions and deletions, the elements 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a> and / or 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a> should be used. For additional information on the use of 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a> and 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a>, see section 
+  <a href="/v4/content/scholarlyediting.html#edittransAddDel">Additions and Deletions</a>. Where the correction takes the form of an addition of material not present in the original because of physical damage or illegibility, the 
+  <a href="/v4/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element may be used. Where the ‘correction’ is simply a matter of expanding abbreviated notation, the 
+  <a href="/v4/elements/expan.html" class="link_odd_elementSpec">expan</a> element may be used.</p>
+
+<h4 id="edittransReg">11.2.3. Regularization and Normalization
+      
+  </h4>
+
+<p>When the musical source makes extensive use of unusual symbol shapes or non-standard notation features, it may be desirable for a number of reasons to regularize it; that is, provide ‘standard’ or ‘regularized’ forms that are equivalent to the non-standard forms.</p>
+
+<p>As with other such changes to the source text, the changes may be made silently (in which case the MEI header should still specify the types of silent changes made) or may be explicitly marked using the following elements:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/reg.html">reg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (regularization) – Contains material which has been regularized or normalized in some
+      sense.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/orig.html">orig</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (original) – Contains material which is marked as following the original, rather than
+      being normalized or corrected.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/choice.html">choice</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Groups a number of alternative encodings for the same point in a text.</div>
+    </div>
+</div>
+
+<p>Consider this traditional soprano clef appearing somewhere in the course of a musical piece:</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/edittrans/schütz_sopranoclef.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Soprano clef from the begin of Heinrich Schütz' St. Matthew's Passion.</figcaption>
+</figure>
+
+<p>An encoder may choose to preserve this original clef, but flag it as nonstandard from the perspective of current practice by using the 
+  <a href="/v4/elements/orig.html" class="link_odd_elementSpec">orig</a> element with no attributes specified, as follows:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;orig&gt;</span>
+   <span class="nt">&lt;clef</span> <span class="na">line=</span><span class="s">"1"</span> <span class="na">shape=</span><span class="s">"C"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/orig&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, the encoder may indicate that the clef has been modernized into a G-clef by using the 
+  <a href="/v4/elements/reg.html" class="link_odd_elementSpec">reg</a> element with no attributes specified, as follows:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;reg&gt;</span>
+   <span class="nt">&lt;clef</span> <span class="na">line=</span><span class="s">"2"</span> <span class="na">shape=</span><span class="s">"G"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/reg&gt;</span></code></pre></figure>
+
+</div>
+
+<p>As another alternative, the encoder may encode both the old and modernized shapes, so that applications may render both at the reader’s will:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;choice&gt;</span>
+   <span class="nt">&lt;orig&gt;</span>
+      <span class="nt">&lt;clef</span> <span class="na">line=</span><span class="s">"1"</span> <span class="na">shape=</span><span class="s">"C"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/orig&gt;</span>
+   <span class="nt">&lt;reg&gt;</span>
+      <span class="nt">&lt;clef</span> <span class="na">line=</span><span class="s">"2"</span> <span class="na">shape=</span><span class="s">"G"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/reg&gt;</span>
+<span class="nt">&lt;/choice&gt;</span></code></pre></figure>
+
+</div>
+
+<p>As described above, the <strong>@resp</strong> attribute may be used to specify the agent responsible for the regularization.</p>
+
+<h4 id="edittransAddDelOmissions">11.2.4. Additions, Deletions, and Omissions
+      
+  </h4>
+
+<p>The following elements are used to indicate when single notational symbols have been omitted from, added to, or marked for deletion from, a musical text. Like the other editorial elements described in this chapter, they allow for a wide range of editorial practices:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/gap.html">gap</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates a point where material has been omitted in a transcription, whether as part of
+      sampling practice or for editorial reasons described in the MEI header.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/unclear.html">unclear</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains material that cannot be transcribed with certainty because it is illegible or
+      inaudible in the source.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.reasonident.html">@reason</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Holds a short phrase describing the reason for missing textual material (gap), why
+          material is supplied (supplied), or why transcription is difficult (unclear).</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/add.html">add</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (addition) – Marks an addition to the text.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/del.html">del</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (deletion) – Contains information deleted, marked as deleted, or otherwise indicated as
+      superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</div>
+    </div>
+</div>
+
+<h5 id="edittransOmission">11.2.4.1. Omissions, Unclear Readings, Damage, and Supplied Readings
+      
+  </h5>
+
+<p>Encoders may choose to omit parts of the source for reasons ranging from illegibility, (making transcription difficult or impossible), to editorial policy, e.g., systematic exclusion of poetry or prose from an encoding. The full details of the policy decisions concerned should be documented in the MEI header (see section 
+  <a href="/v4/content/metadata.html#headerEncodingDescription">Encoding Description</a>). Each place in the text at which omission has taken place should be marked with a 
+  <a href="/v4/elements/gap.html" class="link_odd_elementSpec">gap</a> element, optionally with further information about the reason for the omission, its extent, and the person or agency responsible for it, as in the following examples:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;gap</span> <span class="na">extent=</span><span class="s">"2"</span> <span class="na">reason=</span><span class="s">"illegible"</span> <span class="na">unit=</span><span class="s">"quarter_note"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;gap</span> <span class="na">extent=</span><span class="s">"several notes"</span> <span class="na">reason=</span><span class="s">"overwriting illegible"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Note that the extent of the gap may be marked precisely using attributes <strong>@unit</strong> and <strong>@extent</strong>.</p>
+
+<p>Unlike TEI, MEI does not offer a <em>desc</em> element for further description of the reason for a gap. Instead, an 
+  <a href="/v4/elements/annot.html" class="link_odd_elementSpec">annot</a> may refer to the gap via its <strong>@startid</strong>, <strong>@endid</strong>, or <strong>@plist</strong> attributes and provide additional information.</p>
+
+<p>The 
+  <a href="/v4/elements/unclear.html" class="link_odd_elementSpec">unclear</a> element is used to mark passages in the original which cannot be read with confidence, or about which the transcriber is uncertain for other reasons, as for example when transcribing an illegible source. Its <strong>@reason</strong> and <strong>@resp</strong> attributes are used, as with the 
+  <a href="/v4/elements/gap.html" class="link_odd_elementSpec">gap</a> element, to indicate the cause of uncertainty and the person responsible for the conjectured reading.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;unclear</span> <span class="na">reason=</span><span class="s">"ink blot"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;artic</span> <span class="na">artic=</span><span class="s">"acc"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/unclear&gt;</span>
+<span class="nt">&lt;/note&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Where the difficulty in transcription arises from an identifiable cause, the <strong>@agent</strong> attribute signifies the causative agent. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the transcription of the text contained within the 
+  <a href="/v4/elements/unclear.html" class="link_odd_elementSpec">unclear</a> element. Where the difficulty in transcription arises from action (partial deletion, etc.) assignable to an identifiable hand, the <strong>@hand</strong> attribute may record the hand responsible for the action.</p>
+
+<p>When the reason for a gap in the encoding is damage of the document carrier (the paper on which the document is written, for example), the 
+  <a href="/v4/elements/damage.html" class="link_odd_elementSpec">damage</a> element should be used instead of the 
+  <a href="/v4/elements/gap.html" class="link_odd_elementSpec">gap</a> element. In the case of damage resulting from an identifiable cause, the <strong>@agent</strong> attribute signifies the causative agent. The <strong>@degree</strong> attribute signifies the degree of damage according to a convenient scale. A 
+  <a href="/v4/elements/damage.html" class="link_odd_elementSpec">damage</a> tag with this attribute should only be used where the text may be read with some confidence; data supplied from other sources should be tagged as 
+  <a href="/v4/elements/supplied.html" class="link_odd_elementSpec">supplied</a>. The <strong>@extent</strong> attribute indicates approximately how much text is in the damaged area, in notes, measures, inches, or any appropriate unit, where this cannot be deduced from the contents of the tag. For example, the damage may span structural divisions in the text so that the tag must then be empty of content. In the case of damage (deliberate defacement, etc.) assignable to an identifiable hand, the <strong>@hand</strong> attribute signifies the hand responsible for the damage.</p>
+
+<p>Sometimes the editor provides information not present in the source material. These conjectures or emendations are marked up in MEI using the 
+  <a href="/v4/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element.</p>
+
+<p>The following example demonstrates the use of the 
+  <a href="/v4/elements/supplied.html" class="link_odd_elementSpec">supplied</a> element in combination with 
+  <a href="/v4/elements/gap.html" class="link_odd_elementSpec">gap</a> within 
+  <a href="/v4/elements/subst.html" class="link_odd_elementSpec">subst</a>:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;beam&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;subst&gt;</span>
+      <span class="nt">&lt;gap</span> <span class="na">extent=</span><span class="s">"two eighth notes"</span> <span class="na">reason=</span><span class="s">"missing notes"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;supplied&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/supplied&gt;</span>
+   <span class="nt">&lt;/subst&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/beam&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When the presumed loss of text arises from an identifiable cause, <strong>@agent</strong> signifies the causative agent. When the presumed loss of text arises from action (partial deletion, etc.) assignable to an identifiable hand, the <strong>@hand</strong> attribute signifies the hand responsible for the action. The <strong>@reason</strong> attribute indicates why the text has to be supplied, e.g. ‘overbinding’, ‘faded ink’, ‘lost folio’, ‘omitted in original’, etc. The <strong>@source</strong> attribute contains the source of the supplied text. The editor(s) responsible for supplied material may be recorded in the <strong>@resp</strong> attribute. The value of <strong>@resp</strong> must point to one or more identifiers declared in the document header. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the supplied material.</p>
+
+<h5 id="edittransAddDel">11.2.4.2. Additions and Deletions
+      
+  </h5>
+
+<p>The 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a> and 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a> elements may be used to record where material has been added or deleted in the source material.</p>
+
+<p>The following example demonstrates the usage of 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a> to mark up a note being added to an existing chord:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;chord&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;add&gt;</span>
+      <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"f"</span> <span class="na">pname=</span><span class="s">"b"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/add&gt;</span>
+<span class="nt">&lt;/chord&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The next example shows how 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a> may be used to capture the information that two measures have been cancelled. As seen in this example, the <strong>@rend</strong> attribute is used to specify the method of deletion.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;section&gt;</span>
+    <span class="nt">&lt;measure&gt;</span>
+        <span class="c">&lt;!-- … --&gt;</span>
+    <span class="nt">&lt;/measure&gt;</span>
+    <span class="nt">&lt;measure&gt;</span>
+        <span class="c">&lt;!-- … --&gt;</span>
+    <span class="nt">&lt;/measure&gt;</span>
+    <span class="nt">&lt;del</span> <span class="na">rend=</span><span class="s">"strike"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;measure&gt;</span>
+            <span class="c">&lt;!-- … --&gt;</span>
+        <span class="nt">&lt;/measure&gt;</span>
+        <span class="nt">&lt;measure&gt;</span>
+            <span class="c">&lt;!-- … --&gt;</span>
+        <span class="nt">&lt;/measure&gt;</span>
+    <span class="nt">&lt;/del&gt;</span>
+    <span class="nt">&lt;measure&gt;</span>
+        <span class="c">&lt;!-- … --&gt;</span>
+    <span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Additional information for both elements may be specified using attributes. Whereas the <strong>@hand</strong> attribute marks responsibility for the textual change, the <strong>@resp</strong> attribute is used to refer to the editor who identified this textual change as such. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the identification of the hand of the deletion or addition.</p>
+
+<p>The 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a> element should not be used to mark editorial changes, such as supplying a note omitted by mistake from the source text or a passage present in another source. In these cases, either the 
+  <a href="/v4/elements/corr.html" class="link_odd_elementSpec">corr</a> or 
+  <a href="/v4/elements/supplied.html" class="link_odd_elementSpec">supplied</a> tags should be used instead.</p>
+
+<h5 id="edittransSubst">11.2.4.3. Substitutions, Restorations, and Handshifts
+      
+  </h5>
+
+<p>When several interventions to the musical text are to be regarded as a single action, they may be grouped using the 
+  <a href="/v4/elements/subst.html" class="link_odd_elementSpec">subst</a> element. The most common combination is a replacement of portions of the musical text using both the 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a> and 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a> element, as seen in the following example:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;layer&gt;</span>
+    <span class="c">&lt;!-- preceding content --&gt;</span>
+    <span class="nt">&lt;subst&gt;</span>
+        <span class="nt">&lt;del&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/del&gt;</span>
+        <span class="nt">&lt;add&gt;</span>
+            <span class="nt">&lt;beam&gt;</span>
+                <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/beam&gt;</span>
+        <span class="nt">&lt;/add&gt;</span>
+    <span class="nt">&lt;/subst&gt;</span>
+   <span class="c">&lt;!-- subsequent content --&gt;</span>
+<span class="nt">&lt;/layer&gt;</span></code></pre></figure>
+
+</div>
+
+<p>An intervention closely related to substitution is the restoration of a previously deleted section. For this purpose MEI offers the 
+  <a href="/v4/elements/restore.html" class="link_odd_elementSpec">restore</a> element, which may contain a 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a> or other content directly.</p>
+
+<p>The following example illustrates an instance where a lyric was cancelled and later restored by overwriting it:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;syl&gt;</span>
+      <span class="nt">&lt;restore</span> <span class="na">desc=</span><span class="s">"overwritten"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;del&gt;</span>God<span class="nt">&lt;/del&gt;</span>
+      <span class="nt">&lt;/restore&gt;</span>
+   <span class="nt">&lt;/syl&gt;</span>
+<span class="nt">&lt;/note&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The <strong>@desc</strong> attribute gives a prose description of the means of restoration. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the identification of the hand of the restoration. The <strong>@type</strong> attribute may be used to indicate the action cancelled by the restoration. The <strong>@resp</strong> attribute contains an ID reference to an element containing the name of the editor or transcriber responsible for identifying the hand of the restoration. The <strong>@hand</strong> attribute signifies the hand of the agent which made the restoration.</p>
+
+<p>MEI offers a 
+  <a href="/v4/elements/handshift.html" class="link_odd_elementSpec">handShift</a> milestone element that can be used to mark a change of scribe or scribal style.</p>
+
+<p>The <strong>@character</strong> attribute describes characteristics of the hand, particularly those related to the quality of the writing, e.g., ‘shaky’, ‘thick’, regular’. A description of the tint or type of ink, e.g., ‘brown’ or the writing medium, e.g., ‘pencil’, may be placed in the <strong>@medium</strong> attribute.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;layer&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;handShift</span> <span class="na">medium=</span><span class="s">"blue ink"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;note</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/layer&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The new hand may be identified using the <strong>@new</strong> attribute, while the previous hand may be recorded in the <strong>@old</strong> attribute. The <strong>@resp</strong> attribute contains an ID reference to an element containing the name of the editor or transcriber responsible for identifying the change of hand. The <strong>@cert</strong> attribute signifies the degree of certainty ascribed to the identification of the new hand.</p>
+
+<p>When using this element within a layer, it is important to ensure that all layers and staves are considered. Every 
+  <a href="/v4/elements/handshift.html" class="link_odd_elementSpec">handShift</a> affects only the content of its own layer and staff, even in the following measures. Therefore, there must be a separate 
+  <a href="/v4/elements/handshift.html" class="link_odd_elementSpec">handShift</a> for every 
+  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/v4/elements/layer.html" class="link_odd_elementSpec">layer</a>. This mechanism allows the description of shifts at timestamps that differ between each staff.</p>
+
+<h3 id="genetic">11.3. Genetic Markup
+      
+  </h3>
+
+<p>Genetic editions try to trace the creation of a (musical) work in all its recorded details, from the first sketches to the ‘final’ complete text. The aim of genetic textual criticism is to investigate compositional working and thinking processes - the genesis of compositions. In contrast to traditional scholarly editions, which focus on the constitution of a performable text of a work, Genetic Textual Criticism focuses on the process of production, the gradual elaboration of musical thoughts while writing. It is dependent on the availability of comprehensible traces of these writing processes. Genetic editions often have to deal with significant uncertainties, and they require a considerable amount of markup, as detailed below.</p>
+
+<h4 id="geneticStates">11.3.1. Encoding Genetic States
+      
+  </h4>
+
+<p>Leaving aside temporary breaks, a compositional process is continuous: the composer’s writing operations have happened in a strict order, which could be specified if his working would have been filmed. However, this exact order is rarely ever recoverable from the surviving mansucripts, prints or other materials. Instead, relative statements can be made – the red pencil must have been written after the brown ink etc. Instead of a continuous movie, scholars are often only able to reconstruct a slide show, reflecting certain recoverable states of the composition. Very often, those states have a local range only – the order of two states on one page may be known, as is the order of two other states on a second page. This doesn’t necessarily allow to identify the succession of all four states.</p>
+
+<p>MEI utilizes the 
+  <a href="/v4/elements/gendesc.html" class="link_odd_elementSpec">genDesc</a> element to describe the recoverable genetic states of a work. It is nested inside 
+  <a href="/v4/elements/music.html" class="link_odd_elementSpec">music</a> and may contain a number of 
+  <a href="/v4/elements/genstate.html" class="link_odd_elementSpec">genState</a> elements.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/gendesc.html">genDesc</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (genetic description) - Bundles information about the textual development of a
+      work.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/genstate.html">genState</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Describes a distinctive state in the textual development of a work.</div>
+    </div>
+</div>
+
+<p>A genetic description is used to bundle all known states of a work. The <strong>@ordered</strong> attribute may be used to specify whether the order of child elements of the 
+  <a href="/v4/elements/gendesc.html" class="link_odd_elementSpec">genDesc</a> matches their temporal order, or if their temporal order is unknown. As 
+  <a href="/v4/elements/gendesc.html" class="link_odd_elementSpec">genDesc</a> may be self-nested, it is possible to specify the order of some states within a larger unordered set of genetic states, or to position a set of states with unknown temporal order in a larger ordered set.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;genDesc</span> <span class="na">ordered=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;genState</span> <span class="na">label=</span><span class="s">"State A"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;genState</span> <span class="na">label=</span><span class="s">"State B"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;genDesc</span> <span class="na">ordered=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;genState</span> <span class="na">label=</span><span class="s">"State C1"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;genState</span> <span class="na">label=</span><span class="s">"State C2"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;genState</span> <span class="na">label=</span><span class="s">"State C3"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/genDesc&gt;</span>
+<span class="nt">&lt;/genDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In the above example, the temporal relation of states A, B and all of C is not known, but it is known that C1 precedes C2 and C3.</p>
+
+<p>Even when the temporal order of a set of states is not fully recoverable, some arguments about relative chronology may be available. It is possible to encode these statements with the precision the editor feels comfortable with, utilizing the attributes <strong>@next</strong> and <strong>@prev</strong> (for immediate successors / predecessors), and <strong>@precedes</strong> and <strong>@follows</strong> (for relative successors / predecessors).</p>
+
+<p>Genetic states can be further described by using any combination of the 
+  <a href="/v4/elements/desc.html" class="link_odd_elementSpec">desc</a>, 
+  <a href="/v4/elements/date.html" class="link_odd_elementSpec">date</a>, and 
+  <a href="/v4/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> children of 
+  <a href="/v4/elements/genstate.html" class="link_odd_elementSpec">genState</a>.</p>
+
+<h4 id="geneticReferences">11.3.2. Referencing Genetic States
+      
+  </h4>
+
+<p>While the (relative) chronology of genetic states may be encoded using the 
+  <a href="/v4/elements/gendesc.html" class="link_odd_elementSpec">genDesc</a> element (see 
+  <a href="/v4/content/scholarlyediting.html#geneticStates">Encoding Genetic States</a>), the textual operations they manifest in are encoded using the regular 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a>, 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a>, etc. elements are used (see 
+  <a href="/v4/content/scholarlyediting.html#edittransAddDelOmissions">Additions, Deletions, and Omissions</a>). However, for a genetic edition these elements are linked to their corresponding 
+  <a href="/v4/elements/genstate.html" class="link_odd_elementSpec">genState</a> element using the <strong>@state</strong> attribute.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- definition of a state within genDesc --&gt;</span>
+<span class="nt">&lt;genState</span> <span class="na">xml:id=</span><span class="s">"genetic.stateX"</span><span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- somewhere later in the musical text: --&gt;</span>
+<span class="nt">&lt;subst</span> <span class="na">state=</span><span class="s">"#genetic.stateX"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;del&gt;</span>
+    <span class="nt">&lt;clef</span> <span class="na">shape=</span><span class="s">"C"</span> <span class="na">line=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/del&gt;</span>
+  <span class="nt">&lt;add&gt;</span>
+    <span class="nt">&lt;clef</span> <span class="na">shape=</span><span class="s">"G"</span> <span class="na">line=</span><span class="s">"2"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/add&gt;</span>
+<span class="nt">&lt;/subst&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In the example above, state X of the encoded work is established by the change from a C clef to a G clef. Other states preceding state X will read a C clef, while state X and succeeding states read a G clef. A genetic state of the work is constituted by performing all textual operations referencing that state, i.e. by carrying out all additions, deletions and restorations.</p>
+
+<p>The <strong>@instant</strong> attribute on 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a> etc. allows to specify that corresponding modification has been carried out immediately after writing the original text, so that no separate genetic state has been established.</p>
+
+<p>It is up to encoder to identify the appropriate level of granularity: In an ideal world, the writing or cancellation of a single note would constitute a new state. In practice, this level of detail isn’t feasible, and the combination of multiple writing operations into larger logical operations seems inevitable. However, this may range from very large tasks (‘replacing the second movement of a symphony’) to very small ones (‘adding the slurs for the viola in measures 22 and 23’), depending on the intentions and scope of the encoding.</p>
+
+<h4 id="metatexts">11.3.3. Encoding Metatexts
+      
+  </h4>
+
+<p>The arguments used to establish a chronological order of genetic states are sometimes found in external sources like letters, but very often they are to be found in the witnesses holding the musical text, even though they are typically not part of the text itself. Examples for such arguments are the writing medium, spacing, marginal notes, among others.</p>
+
+<p>Some of these so-called ‘metatexts’ can be encoded using MEI, namely those that are written into the relevant sources. For this purpose, MEI offers the 
+  <a href="/v4/elements/metamark.html" class="link_odd_elementSpec">metaMark</a> element, as known from the TEI.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/metamark.html">metaMark</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A graphical or textual statement with additional / explanatory information about the
+      musical text. The textual consequences of this intervention are encoded independently via
+      other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc.</div>
+    </div>
+</div>
+
+<p>A metaMark is provided as a ‘controlEvent’ (see 
+  <a href="/v4/content/introduction.html#eventsControlevents">Events and Controlevents</a>); as such, by convention, it should be encoded at the end of the 
+  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> where it first occurs. It is highly recommended to specify the function of the metaMark using its <strong>@function</strong> attribute, which may take the following values:</p>
+
+<ul>
+  <li><em>confirmation</em>: confirmation of a previous textual decision; i.e., cancellation of a deleted passage in a different writing medium.</li>
+  <li><em>addition</em>: denoted material is to be inserted in the musical text.</li>
+  <li><em>deletion</em>: denoted material is no longer part of the musical text.</li>
+  <li><em>substitution</em>: denoted material is replaced, either by the musical text pointed at with the <strong>@target</strong> attribute or the musical content of the metaMark element itself.</li>
+  <li><em>clarification</em>: attempt to clarify a potentially illegible or otherwise unclear part of the musical text.</li>
+  <li><em>question</em>: marks a section of the musical text which is to be considered further.</li>
+  <li><em>investigation</em>: marks a section of the musical text as an investigation of the consequences of certain compositional decisions or potential alternatives.</li>
+  <li><em>restoration</em>: declares a formerly cancelled part of the musical text as valid again.</li>
+  <li><em>navigation</em>: clarification of the reading order of the musical text.</li>
+</ul>
+
+<p>Some metaMarks may have actual content, like marginal notes. This content may be transcribed inside the 
+  <a href="/v4/elements/metamark.html" class="link_odd_elementSpec">metaMark</a> element. It also has a <strong>@facs</strong> attribute to refer back to the corresponding sections of a facsimile.</p>
+
+<p>It is important to keep in mind that 
+  <a href="/v4/elements/metamark.html" class="link_odd_elementSpec">metaMark</a> elements do not encode the textual consequences they transport – this is an encoding of the sign, not of its meaning, which can be encoded in other elements like 
+  <a href="/v4/elements/restore.html" class="link_odd_elementSpec">restore</a>.</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/edittrans/metamarks_Beethoven_op59.3.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">metaMarks in Beethoven's op.59.3, p.18</figcaption>
+</figure>
+
+<p>The above excerpt from a Beethoven manuscript holds a number of different metaMarks, some of which are encoded in the following examples:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;metaMark</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">place=</span><span class="s">"below"</span> <span class="na">function=</span><span class="s">"restoration"</span><span class="nt">&gt;</span>gut<span class="nt">&lt;/metaMark&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The metaMark above captures the word ‘gut’ (good) Beethoven wrote below the red pencil, which indicates that the formerly deleted text of the two measures shown shall be kept.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;metaMark</span> <span class="na">function=</span><span class="s">"clarification"</span><span class="nt">&gt;</span>
+  Nb: diese<span class="nt">&lt;lb/&gt;</span>Zwei Täkte<span class="nt">&lt;lb/&gt;</span>sind gut, und<span class="nt">&lt;lb/&gt;</span>bleiben
+<span class="nt">&lt;/metaMark&gt;</span></code></pre></figure>
+
+</div>
+
+<p>This 
+  <a href="/v4/elements/metamark.html" class="link_odd_elementSpec">metaMark</a> transcribes Beethoven’s marginal note explaining the same situation as above.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;metaMark</span> <span class="na">staff=</span><span class="s">"3"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">tstamp=</span><span class="s">"4"</span> <span class="na">function=</span><span class="s">"clarification"</span><span class="nt">&gt;</span>g<span class="nt">&lt;/metaMark&gt;</span></code></pre></figure>
+
+</div>
+
+<p>This third metaMark covers one of the letters Beethoven inserted to clarify the pitch of that given note.</p>
+
+<h4 id="geneticPageChanges">11.3.4. Genetic Changes at the Page Level
+      
+  </h4>
+
+<p>In genetic editions, it may also be of interest to trace when pages are added and / or removed from manuscripts. The general information about pages can be encoded using the 
+  <a href="/v4/elements/foliadesc.html" class="link_odd_elementSpec">foliaDesc</a> element, as described in 
+  <a href="/v4/content/metadata.html#foliadesc">Description of folia</a>. It is possible to wrap the elements used there, including 
+  <a href="/v4/elements/patch.html" class="link_odd_elementSpec">patch</a> and 
+  <a href="/v4/elements/cutout.html" class="link_odd_elementSpec">cutout</a> with editorial markup like 
+  <a href="/v4/elements/add.html" class="link_odd_elementSpec">add</a> and 
+  <a href="/v4/elements/del.html" class="link_odd_elementSpec">del</a>. These elements can then be used to reference 
+  <a href="/v4/elements/genstate.html" class="link_odd_elementSpec">genState</a> as described in 
+  <a href="/v4/content/scholarlyediting.html#geneticReferences">Referencing Genetic States</a>.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v4/content/scholarlyediting.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/scholarlyediting.html#critApp">11.1. Critical Apparatus
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppElements">11.1.1. General Usage
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppInContent">11.1.2. Variants in Musical Content
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppInDefs">11.1.3. Variants in Score Definitions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppNesting">11.1.4. Nesting Apparati
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/scholarlyediting.html#editTrans">11.2. Editorial Markup
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransAbbrev">11.2.1. Abbreviations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransErrors">11.2.2. Apparent Errors
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransReg">11.2.3. Regularization and Normalization
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4. Additions, Deletions, and Omissions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/scholarlyediting.html#genetic">11.3. Genetic Markup
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#geneticStates">11.3.1. Encoding Genetic States
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#geneticReferences">11.3.2. Referencing Genetic States
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#metatexts">11.3.3. Encoding Metatexts
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#geneticPageChanges">11.3.4. Genetic Changes at the Page Level
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/scholarlyediting.html#critApp">11.1. Critical Apparatus
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppElements">11.1.1. General Usage
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppInContent">11.1.2. Variants in Musical Content
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppInDefs">11.1.3. Variants in Score Definitions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#critAppNesting">11.1.4. Nesting Apparati
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/scholarlyediting.html#editTrans">11.2. Editorial Markup
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransAbbrev">11.2.1. Abbreviations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransErrors">11.2.2. Apparent Errors
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransReg">11.2.3. Regularization and Normalization
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4. Additions, Deletions, and Omissions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/scholarlyediting.html#genetic">11.3. Genetic Markup
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#geneticStates">11.3.1. Encoding Genetic States
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#geneticReferences">11.3.2. Referencing Genetic States
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#metatexts">11.3.3. Encoding Metatexts
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v4/content/scholarlyediting.html#geneticPageChanges">11.3.4. Genetic Changes at the Page Level
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/5e43035f61b41ba0a117a5aabe4c426921fc8376'>Version 5e43035</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

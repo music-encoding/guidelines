@@ -1,2 +1,0 @@
-<!-- URL with fragment identifier -->
-<ptr target="http://www.w3.org/TR/xptr-xpointer/#xpointer(id('chum')/quote)"/>

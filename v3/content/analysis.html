@@ -1,0 +1,4618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Analytical Information</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/analysis.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="analysis">7. Analytical Information
+      
+  </h2>
+
+<p>This chapter describes the use of attributes that capture data which may be useful for analytical purposes. The analysis module provides attributes that record relationships between entities found in the encoding. These attributes may be used differently by different users, depending on the purpose of the analysis. These Guidelines recommend that encoders employ commonly accepted analytical practices, such as “functional analysis” or “Schenkerian analysis”, and document their use in the 
+  <a href="/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a> described in section 
+  <a href="/v3/content/header.html#headerEncodingDescription">Encoding Description</a>. For general information on musical analysis, please consult Grove Music Online, “<a href="http://www.oxfordmusiconline.com/subscriber/article/grove/music/41862pg1#S41862.1" class="link_ref">Analysis</a>”.</p>
+
+<h3 id="analysisDescribingRelationships">7.1. General Relationships Between Elements
+      
+  </h3>
+
+<p>The relationships between event elements, such as note, chord, and rest, are the basic material of musical analysis; the attributes described below ensure a closed network of these relations and provide the opportunity to record data useful for common analytical tasks. In the context of a formal analysis, for instance, the attributes presented here can be useful in the capture information about the structure of a musical work.</p>
+
+<p>The analysis module offers several attributes in the 
+  <a href="/v3/attribute-classes/att.common.anl.html">att.common.anl</a> class for the description of basic relationships:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.common.anl.html">@copyof</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to an element of which the current element is a copy.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.common.anl.html">@corresp</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to point to other elements that correspond to this one in a generic
+fashion.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.common.anl.html">@next</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to point to the next event(s) in a user-defined collection.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.common.anl.html">@prev</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to the previous event(s) in a user-defined collection.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.common.anl.html">@sameas</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to an element that is the same as the current element but is not a literal
+copy of the current element.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.common.anl.html">@synch</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to elements that are synchronous with the current element.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v3/attribute-classes/att.alignment.html">att.alignment</a> class also contains an attribute for describing temporal relationships:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.alignment.html">@when</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the point of occurrence of this feature along a time line. Its value must
+be the ID of a  element elsewhere in the document.</div>
+    </div>
+</div>
+
+<p>These attributes accommodate the encoding of linkages between the element carrying the attribute and one or more other elements. All of them use URIs to establish the connection. While the examples below illustrate relationships between musical events, their use is not restricted to musical events. On the contrary, these attributes can be used to capture information about relations between any elements.</p>
+
+<p>Using these attributes makes it possible to create relationships between events, which are often widely-spaced in both encoded order and time. The attributes allow a large number of connections, enhancing the informational content, and therefore the potential usefulness, of the encoding.</p>
+
+<p>The <strong>@copyof</strong> attribute points to an element of which the current element is a copy. It can be used to repeat a note, for example, without encoding the whole 
+  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> element again. The copy is a ‘deep’one; that is, the <strong>@copyof</strong> attribute copies all attributes and child elements which belong to the copied element, such as the <strong>@dur</strong> and <strong>@oct</strong> attributes of a copied 
+  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a>. The value of the <strong>@copyof</strong> attribute must be a URI, which usually refers to an element in the current document. The following example demonstrates use of the <strong>@copyof</strong> attribute:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.note1_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">copyof=</span><span class="s">"#analysis.note1_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In this example. the 
+  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> in the second measure has exactly the same characteristics as the 
+  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> in the first 
+  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>.</p>
+
+<p>Using <strong>@copyof</strong> is not limited to copying events. The <strong>@copyof</strong> attribute can also be used to copy an entire 
+  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> or 
+  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a>. When there are many repeated features, the use of the <strong>@copyof</strong> greatly reduces encoding effort. The image and the following encoding of the beginning of Schubert’s <em>Erlkönig</em> illustrates the benefit of using the <strong>@copyof</strong> attribute.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/analysis/schubert_erlkonig_op1_m1.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">First measure of Schubert's Erlkönig</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;mRest&gt;&lt;/mRest&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">num=</span><span class="s">"3"</span> <span class="na">num.visible=</span><span class="s">"true"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;chord</span> <span class="na">dur=</span><span class="s">"8"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;/chord&gt;</span>
+            <span class="nt">&lt;chord</span> <span class="na">dur=</span><span class="s">"8"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;/chord&gt;</span>
+            <span class="nt">&lt;chord</span> <span class="na">dur=</span><span class="s">"8"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;/chord&gt;</span>
+         <span class="nt">&lt;/tuplet&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">copyof=</span><span class="s">"#analysis.tup1"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup2"</span><span class="nt">&gt;&lt;/tuplet&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">copyof=</span><span class="s">"#analysis.tup1"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup3"</span><span class="nt">&gt;&lt;/tuplet&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">copyof=</span><span class="s">"#analysis.tup1"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup4"</span><span class="nt">&gt;&lt;/tuplet&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;mRest&gt;&lt;/mRest&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>This example can be reduced further by using <strong>@copyof</strong> inside the initial tuplet to represent the repeated chords:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;mRest&gt;&lt;/mRest&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">num=</span><span class="s">"3"</span> <span class="na">num.visible=</span><span class="s">"true"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup5"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;chord</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">xml:id=</span><span class="s">"analysis.t1c1"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;/chord&gt;</span>
+            <span class="nt">&lt;chord</span> <span class="na">copyof=</span><span class="s">"#analysis.t1c1"</span><span class="nt">&gt;&lt;/chord&gt;</span>
+            <span class="nt">&lt;chord</span> <span class="na">copyof=</span><span class="s">"#analysis.t1c1"</span><span class="nt">&gt;&lt;/chord&gt;</span>
+         <span class="nt">&lt;/tuplet&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">copyof=</span><span class="s">"#analysis.tup5"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup6"</span><span class="nt">&gt;&lt;/tuplet&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">copyof=</span><span class="s">"#analysis.tup5"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup7"</span><span class="nt">&gt;&lt;/tuplet&gt;</span>
+         <span class="nt">&lt;tuplet</span> <span class="na">copyof=</span><span class="s">"#analysis.tup5"</span> <span class="na">xml:id=</span><span class="s">"analysis.tup8"</span><span class="nt">&gt;&lt;/tuplet&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;mRest&gt;&lt;/mRest&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>While <strong>@copyof</strong> signifies a duplicate copy of an element, the <strong>@sameas</strong> indicates that the current element represents exactly the same entity as the one referenced in <strong>@sameas</strong>. Use of <strong>@sameas</strong> is used for describing the same entity from multiple perspectives, e.g., the same event in two layers. The following example illustrates the sharing of one note head between two voices in the first full measure of a chorale:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/analysis/chor003_m1-2.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Bach Chorale, "Ach Gott, vom Himmel sieh' darein", m. 1-2</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">xml:id=</span><span class="s">"analysis.m_sc_22"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_23_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_24_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">sameas=</span><span class="s">"analysis.n_sc_25_2"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_25_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_26_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_23_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"s"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_24_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">sameas=</span><span class="s">"analysis.n_sc_25_3"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_25_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_26_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_27_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_23_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_24_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_25_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_26_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_27_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"n_sc_23_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"n_sc_24_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"n_sc_25_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"n_sc_26_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"n_sc_27_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>While <strong>@copyof</strong> and <strong>@sameas</strong> have defined semantics, the <strong>@corresp</strong> may be used to create user-defined relationships between elements. The example below demonstrates the encoding of a relationship between #note3 and the fermata, even though the fermata is not placed directly above the note.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">right=</span><span class="s">"end"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.note1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"analysis.note2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.note3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;fermata</span> <span class="na">corresp=</span><span class="s">"#analysis.note3"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">tstamp=</span><span class="s">"4.75"</span><span class="nt">&gt;&lt;/fermata&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The <strong>@corresp</strong> attribute only marks the correspondence between the current element and one or more other entities. To describe the nature of the correspondence, one must use 
+  <a href="/v3/elements/annot.html" class="link_odd_elementSpec">annot</a>.</p>
+
+<p>The <strong>@next</strong> and <strong>@prev</strong> attributes point to elements which follow or precede the current element in some fashion other than that indicated by encoding order. The use of these attributes helps to avoid confusion in the sequence of events, for example, in voice leading across layers or staves, when the encoding reflects the physical arrangement of voices. In the second measure of the following example, the target of the next attribute occurs after the pointing element in time, but before it in encoding order:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/analysis/chor003_m6-7.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Bach Chorale, "Ach Gott, vom Himmel sieh' darein", m. 6-7</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"6"</span> <span class="na">xml:id=</span><span class="s">"analysis.m_sc_62"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_63_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_65_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">fermata=</span><span class="s">"above"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_67_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_68_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_63_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_64_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_65_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_66_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"s"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">next=</span><span class="s">"analysis.n_sc_67_0"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_67_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_68_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"n"</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_69_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_63_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_65_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_67_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_68_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"n_sc_63_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"n_sc_64_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"n_sc_65_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">fermata=</span><span class="s">"below"</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"n_sc_67_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"n_sc_68_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"7"</span> <span class="na">xml:id=</span><span class="s">"m_sc_70"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_71_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_72_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_73_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_75_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_76_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_77_3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_71_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_72_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_73_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"s"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_75_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_76_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;space</span> <span class="na">dur=</span><span class="s">"4"</span><span class="nt">&gt;&lt;/space&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_73_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_75_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_76_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_77_1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">next=</span><span class="s">"analysis.n_sc_73_2"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.n_sc_71_2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"n"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">xml:id=</span><span class="s">"n_sc_71_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"n_sc_73_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">xml:id=</span><span class="s">"n_sc_74_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"n_sc_75_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"n_sc_76_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">xml:id=</span><span class="s">"n_sc_77_0"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>This attribute may also be useful to clarify a sequence of entites which occurs across some form of interruption, in this case, notes before and after a system or page break where there is no custos or direct in the source:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">next=</span><span class="s">"analysis.m1s1e2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"up"</span> <span class="na">xml:id=</span><span class="s">"analysis.m1s1e1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;pb&gt;&lt;/pb&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">next=</span><span class="s">"m1s1e3"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">prev=</span><span class="s">"analysis.m1s1e1"</span> <span class="na">stem.dir=</span><span class="s">"up"</span> <span class="na">xml:id=</span><span class="s">"analysis.m1s1e2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">prev=</span><span class="s">"analysis.m1s1e2"</span> <span class="na">stem.dir=</span><span class="s">"up"</span> <span class="na">xml:id=</span><span class="s">"analysis.m1s1e3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>A one-to-many relationship between the current element and the entities being referred to can be expressed by using a list of space-separated URIs in <strong>@corresp</strong>.</p>
+
+<p>The <strong>@synch</strong> attribute points to an element that is synchronous with; that is, begins at the same moment in time, as the current element. It is useful when the encoding order differs from the order in which entities occur in time.</p>
+
+<p>The <strong>@when</strong> attribute may be used to indicate the point of occurrence of the feature bearing this attribute along a time line. Its value must be the ID of a 
+  <a href="/v3/elements/when.html" class="link_odd_elementSpec">when</a> element. For more detailed information regarding the use of <strong>@when</strong>, please see 
+  <a href="/v3/content/performances.html">Performances</a>.</p>
+
+<h3 id="analysisSpecificAttrs">7.2. Event-Specific Analytical Information
+      
+  </h3>
+
+<p>In addition to the common analytical attributes, the analysis module also offers other, more specific attributes on certain musical elements:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.intervalharmonic.html">@inth</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Encodes the harmonic interval between pitches occurring at the same time.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.intervalmelodic.html">@intm</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Encodes the melodic interval from the previous pitch. The value may be a general
+directional indication (u, d, s), an indication of diatonic interval direction, quality,
+and size, or a precise numeric value in half steps.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.melodicfunction.html">@mfunc</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Describes melodic function using Humdrum **embel syntax.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.harmonicfunction.html">@deg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures relative scale degree information using Humdrum **deg syntax -- an optional
+indicator of melodic approach (^ = ascending approach, v = descending approach), a
+scale
+degree value (1 = tonic ... 7 = leading tone), and an optional indication of chromatic
+alteration. The amount of chromatic alternation is not indicated.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.pitchclass.html">@pclass</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Holds pitch class information.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.solfa.html">@psolfa</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
+Do
+system.</div>
+    </div>
+</div>
+
+<h4 id="analysisMelodicIntervals">7.2.1. Melodic Intervals
+      
+  </h4>
+
+<p>The<strong>@intm</strong> attribute offers several methods for encoding the melodic interval from a preceding pitch. First, Parsons Code allows for description of the contour of the melody in very general terms; that is, as up, down, or same note. Parsons Code is helpful for identifying musical works with clearly defined melodies and analyzing the relationship between successive notes of monophonic tunes. For more information about the Parsons Code, please see the “The Directory of Tunes and Musical Themes” by Denys Parsons (2002). The next example shows interval relationships indicated by the Parsons Code:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"u"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"u"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"u"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">intm=</span><span class="s">"u"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">intm=</span><span class="s">"s"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"d"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, diatonic interval quality and size may be indicated by a letter signifying the interval quality (A= augmented, d= diminished, M = major, m = minor, P = perfect) followed by a number indicating the size of the interval. The interval direction may be encoded using a leading plus (+) or minus (-) sign:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"+M2"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"-M2"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"-m2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"-P8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"b"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>As a third option, signed integers may be used to record the difference in half steps between the previous pitch and the current one. Decimal values accommodate the description of microtonal intervals:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"1.1"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"7.9"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">intm=</span><span class="s">"-2.334"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="analysisMelodicFunction">7.2.2. Melodic Function
+      
+  </h4>
+
+<p>The <strong>@mfunc</strong> attribute describes melodic function of a 
+  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> or neume using the Humdrum **embel syntax. In the following example, the note B is labeled as a lower neighbor while all other notes are labeled as chord tones:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;chord</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">stem.dir=</span><span class="s">"up"</span> <span class="na">xml:id=</span><span class="s">"analysis.chord1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">mfunc=</span><span class="s">"ct"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">xml:id=</span><span class="s">"analysis.m2e1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">mfunc=</span><span class="s">"ct"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">xml:id=</span><span class="s">"analysis.m2e2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">mfunc=</span><span class="s">"ct"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.m2e3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/chord&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"f"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">mfunc=</span><span class="s">"ln"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"down"</span> <span class="na">xml:id=</span><span class="s">"analysis.m2e4"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;chord</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">stem.dir=</span><span class="s">"up"</span> <span class="na">xml:id=</span><span class="s">"analysis.chord2"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">mfunc=</span><span class="s">"ct"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.m3e5"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">mfunc=</span><span class="s">"ct"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.m3e6"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">mfunc=</span><span class="s">"ct"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.m3e7"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/chord&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="analysisHarmonicIntervals">7.2.3. Harmonic Intervals
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.intervalharmonic.html">@inth</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Encodes the harmonic interval between pitches occurring at the same time.</div>
+    </div>
+</div>
+
+<p>In contrast with <strong>@intm</strong>, which characterizes melodic (sequential) intervals, the <strong>@inth</strong> attribute is used to encode the harmonic interval between the current note and other pitches occurring at the same moment in time. The notes of interest may or may not be marked as a 
+  <a href="/v3/elements/chord.html" class="link_odd_elementSpec">chord</a>. In the markup below, for example, the values of <strong>@inth</strong> capture the harmonic intervals between notes distributed across multiple staves and layers.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">inth=</span><span class="s">"M3 P5"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"analysis.e1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">inth=</span><span class="s">"M3 m3"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">xml:id=</span><span class="s">"analysis.e2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">inth=</span><span class="s">"P5 m3"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">xml:id=</span><span class="s">"analysis.e3"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Use of the <strong>@inth</strong> permits detailed specification of intervallic information for every note and its function in relation to other simultaneously-occurring notes and hence about the harmonic nature of the musical work.</p>
+
+<h4 id="analysisScaleDegrees">7.2.4. Scale Degrees
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.harmonicfunction.html">@deg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures relative scale degree information using Humdrum **deg syntax -- an optional
+indicator of melodic approach (^ = ascending approach, v = descending approach), a
+scale
+degree value (1 = tonic ... 7 = leading tone), and an optional indication of chromatic
+alteration. The amount of chromatic alternation is not indicated.</div>
+    </div>
+</div>
+
+<p>The <strong>@deg</strong> attribute can be used to represent key-dependent scale-degree information for music in major or minor keys.</p>
+
+<p>Scale-degree values are relative to the prevailing major or minor key. In the case of minor keys, scale degrees are characterized with respect to the harmonic minor scale. For example, the pitch F in the key of A minor is the submediant (6), but F is the lowered submediant (6-) in the key of A major.</p>
+
+<p>Melodic approach can be indicated by a leading caret (^) or lowercase v, representing ascending and descending approaches, respectively.</p>
+
+<p>Chromatic alteration of the scale degree can be represented using a trailing plus (+) or minus (-) signs, signifying raised or lowered scale degree, respectively. The actual amount of chromatic alteration is not indicated.</p>
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- Fifth scale degree in the prevailing scale --&gt;</span><span class="nt">&lt;note</span> <span class="na">deg=</span><span class="s">"5"</span><span class="nt">&gt;&lt;/note&gt;</span>
+<span class="c">&lt;!-- Augmented 5th --&gt;</span>
+<span class="nt">&lt;note</span> <span class="na">deg=</span><span class="s">"5+"</span><span class="nt">&gt;&lt;/note&gt;</span>
+<span class="c">&lt;!-- Lowered 6 scale degree approached from below --&gt;</span>
+<span class="nt">&lt;note</span> <span class="na">deg=</span><span class="s">"^6-"</span><span class="nt">&gt;&lt;/note&gt;</span>
+<span class="c">&lt;!-- Leading tone approached from above --&gt;</span>
+<span class="nt">&lt;note</span> <span class="na">deg=</span><span class="s">"v7"</span><span class="nt">&gt;&lt;/note&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="analysisPitchClass">7.2.5. Pitch Class
+      
+  </h4>
+
+<p>The <strong>@pclass</strong> attribute can be used to encode information about the pitch class to which a note belongs. The attribute’s value must be an integer less than or equal to 11. It is only allowed on the 
+  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> element. The <strong>@pclass</strong> attribute comes from “musical set theory” elaborated first by Howard Hanson and Allen Forte as a new method for organizing tones. It provides a concept for categorizing musical objects (notes) and describing their relationships. It is a kind of grouping and combining, mostly developed in connection with atonal music. However, the concept of set theory is general and can also be applied to tonal music. A pitch class means the summary of every pitch with specific characteristics that means a pitch class set is an unordered collection of pitches, e.g., every pitch with the name C.</p>
+
+<p>A pitch class may contain a large number of pitches, because different octaves and enharmonic spellings of pitch make no difference. The notes C, E, and G would be 0, 4 and 7 in pitch class notation, for example, regardless of the octave in which they are performed. The example below contains the same pitch in four different enharmonic spellings, but all are part of the same pitch class.</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pclass=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+<span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pclass=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+<span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"ss"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">pclass=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+<span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"ff"</span> <span class="na">dur=</span><span class="s">"1"</span> <span class="na">pclass=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">&gt;&lt;/note&gt;</span></code></pre></figure>
+
+</div>
+
+<p>For further information on pitch class set theory, please consult the following sources:</p>
+
+<ul>
+  <li><a href="http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html" class="link_ref">http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html</a></li>
+  <li>“Analyzing Atonal Music: Pitch Class Set Theory and its Contexts” by Michael Schuijler (2008)</li>
+  <li>Cohen, Allen Laurence (2004). Howard Hanson in Theory and Practice</li>
+</ul>
+
+<h4 id="analysisSolmization">7.2.6. Solmization
+      
+  </h4>
+
+<p>Solmization is a system which associates a syllable with each note of a musical scale. There are various forms of solmization used throughout the world. In Europe and North America, solfège is the most common practice. In this system, the seven syllables for a major scale are do, re, mi, fa, so, la and ti. In the ‘fixed-do’ system, the syllable “do” is always associated with the pitch “c”, while in the ‘movable-do’ system, “do” is associated with the tonic note. The <strong>@psolfa</strong> attribute is only allowed on 
+  <a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a> and 
+  <a href="/v3/elements/uneume.html" class="link_odd_elementSpec">uneume</a> elements. Its value is unconstrained in order to accommodate various solmization systems.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">psolfa=</span><span class="s">"do"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">psolfa=</span><span class="s">"re"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">psolfa=</span><span class="s">"mi"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">psolfa=</span><span class="s">"fa"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="analysisMetricalConformance">7.3. Metrical Conformance
+      
+  </h3>
+
+<p>It is often helpful to record whether a given staff, layer, or measure obeys the meter established for it. The following attributes are provided for this purpose:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.meterconformance.html">@metcon</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the relationship between the content of a staff or layer and the
+prevailing meter.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.meterconformance.bar.html">@metcon</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the relationship between the content of a measure and the prevailing
+meter.</div>
+    </div>
+</div>
+
+<p>When used on 
+  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> or 
+  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a> elements, the <strong>@metcon</strong> attribute can be used to indicate if the duration of the contained events is equal to (“c”), less than (“i”), or greater than (“o”) that predicted by the time signature. When used on the 
+  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a> element, <strong>@metcon</strong> takes a boolean value, where “true” indicates conformance by all staff and layer descendants of the measure.</p>
+
+<p>In the first example below, the layer, staff, and measure all match the prevailing meter. In the second example, however, the first layer does not comply with the meter, making the staff containing it and measure as a whole non-compliant. When there is a single layer or when all the layers on a staff agree with each other, metrical compliance can be indicated on the 
+  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> element. When, however, not all layers have the same value for <strong>@metcon</strong>, then it is necessary to omit <strong>@metcon</strong> at the staff level. The value of <strong>@metcon</strong> on the measure level can usually be computed based on the values of its layer and staff sub-elements.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- in 2/4 --&gt;</span><span class="nt">&lt;measure</span> <span class="na">metcon=</span><span class="s">"true"</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- in 2/4 --&gt;</span><span class="nt">&lt;measure</span> <span class="na">metcon=</span><span class="s">"false"</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">metcon=</span><span class="s">"i"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">metcon=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/analysis.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/analysis.html#analysisDescribingRelationships">7.1. General Relationships Between Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/analysis.html#analysisSpecificAttrs">7.2. Event-Specific Analytical Information
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisMelodicIntervals">7.2.1. Melodic Intervals
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisMelodicFunction">7.2.2. Melodic Function
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisHarmonicIntervals">7.2.3. Harmonic Intervals
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisScaleDegrees">7.2.4. Scale Degrees
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisPitchClass">7.2.5. Pitch Class
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisSolmization">7.2.6. Solmization
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/analysis.html#analysisMetricalConformance">7.3. Metrical Conformance
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/analysis.html#analysisDescribingRelationships">7.1. General Relationships Between Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/analysis.html#analysisSpecificAttrs">7.2. Event-Specific Analytical Information
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisMelodicIntervals">7.2.1. Melodic Intervals
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisMelodicFunction">7.2.2. Melodic Function
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisHarmonicIntervals">7.2.3. Harmonic Intervals
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisScaleDegrees">7.2.4. Scale Degrees
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisPitchClass">7.2.5. Pitch Class
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/analysis.html#analysisSolmization">7.2.6. Solmization
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/analysis.html#analysisMetricalConformance">7.3. Metrical Conformance
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

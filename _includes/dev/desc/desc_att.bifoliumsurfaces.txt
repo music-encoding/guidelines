@@ -1,2 +1,0 @@
-Attributes that link a bifolium element with a surface
-      element.

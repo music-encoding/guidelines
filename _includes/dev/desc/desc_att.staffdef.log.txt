@@ -1,1 +1,0 @@
-Logical domain attributes for staffDef.

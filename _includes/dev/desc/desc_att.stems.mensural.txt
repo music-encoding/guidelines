@@ -1,1 +1,0 @@
-Attributes that describe the properties of stemmed features specific to mensural repertoires.

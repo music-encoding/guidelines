@@ -1,0 +1,3914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>data.ARTICULATION</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/data-types/data.articulation.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        <div class="macroSpec">
+   <h3 id="data.ARTICULATION">data.ARTICULATION</h3>
+   <table class="wovenodd">
+      <tr>
+         <td colspan="2" class="wovenodd-col2">The following list of articulations mostly corresponds to symbols from the Western
+            Musical Symbols portion of the Unicode Standard. The dot and stroke values may be
+            used in
+            cases where interpretation is difficult or undesirable.
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
+         <td class="wovenodd-col2">MEI</td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Used by</strong></td>
+         <td class="wovenodd-col2">
+            <div class="parent"><a class="link_odd_classSpec" href="/v3/attribute-classes/att.articulation.html">att.articulation</a> (@artic), <a class="link_odd_classSpec" href="/v3/attribute-classes/att.articulation.performed.html">att.articulation.performed</a> (@artic.ges)
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Allowed values</strong></td>
+         <td class="wovenodd-col2">
+            <dl>
+               <dt>acc</dt>
+               <dd>Accent (Unicode 1D17B).</dd>
+               <dt>stacc</dt>
+               <dd>Staccato (Unicode 1D17C).</dd>
+               <dt>ten</dt>
+               <dd>Tenuto (Unicode 1D17D).</dd>
+               <dt>stacciss</dt>
+               <dd>Staccatissimo (Unicode 1D17E).</dd>
+               <dt>marc</dt>
+               <dd>Marcato (Unicode 1D17F).</dd>
+               <dt>marc-stacc</dt>
+               <dd>Marcato + staccato (Unicode 1D180).</dd>
+               <dt>spicc</dt>
+               <dd>Spiccato.</dd>
+               <dt>doit</dt>
+               <dd>Main note followed by short slide to higher, indeterminate pitch (Unicode
+                  1D185).
+               </dd>
+               <dt>scoop</dt>
+               <dd>Main note preceded by short slide from lower, indeterminate pitch (Unicode
+                  1D186).
+               </dd>
+               <dt>rip</dt>
+               <dd>Main note preceded by long slide from lower, often indeterminate pitch; also known
+                  as "squeeze".
+               </dd>
+               <dt>plop</dt>
+               <dd>Main note preceded by "slide" from higher, indeterminate pitch.</dd>
+               <dt>fall</dt>
+               <dd>Main note followed by short "slide" to lower, indeterminate pitch.</dd>
+               <dt>longfall</dt>
+               <dd>Main note followed by long "slide" to lower, indeterminate pitch.</dd>
+               <dt>bend</dt>
+               <dd>"lip slur" to lower pitch, then return to written pitch.</dd>
+               <dt>flip</dt>
+               <dd>Main note followed by quick upward rise, then descent in pitch (Unicode
+                  1D187).
+               </dd>
+               <dt>smear</dt>
+               <dd>(Unicode 1D188).</dd>
+               <dt>shake</dt>
+               <dd>Alternation between written pitch and next highest overtone (brass instruments) or
+                  note minor third higher (woodwinds).
+               </dd>
+               <dt>dnbow</dt>
+               <dd>Down bow (Unicode 1D1AA).</dd>
+               <dt>upbow</dt>
+               <dd>Up bow (Unicode 1D1AB).</dd>
+               <dt>harm</dt>
+               <dd>Harmonic (Unicode 1D1AC).</dd>
+               <dt>snap</dt>
+               <dd>Snap pizzicato (Unicode 1D1AD).</dd>
+               <dt>fingernail</dt>
+               <dd>Fingernail (Unicode 1D1B3).</dd>
+               <dt>ten-stacc</dt>
+               <dd>Tenuto + staccato (Unicode 1D182).</dd>
+               <dt>damp</dt>
+               <dd>Stop harp string from sounding (Unicode 1D1B4).</dd>
+               <dt>dampall</dt>
+               <dd>Stop all harp strings from sounding (Unicode 1D1B5).</dd>
+               <dt>open</dt>
+               <dd>Full (as opposed to stopped) tone.</dd>
+               <dt>stop</dt>
+               <dd>"muffled" tone.</dd>
+               <dt>dbltongue</dt>
+               <dd>Double tongue (Unicode 1D18A).</dd>
+               <dt>trpltongue</dt>
+               <dd>Triple tongue (Unicode 1D18B).</dd>
+               <dt>heel</dt>
+               <dd>Use heel (organ pedal).</dd>
+               <dt>toe</dt>
+               <dd>Use toe (organ pedal).</dd>
+               <dt>tap</dt>
+               <dd>Percussive effect on guitar string(s).</dd>
+               <dt>lhpizz</dt>
+               <dd>Left-hand pizzicato.</dd>
+               <dt>dot</dt>
+               <dd>Uninterpreted dot.</dd>
+               <dt>stroke</dt>
+               <dd>Uninterpreted stroke.</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
+         <td class="wovenodd-col2">
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Accent (Unicode 1D17B).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stacc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Staccato (Unicode 1D17C).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ten"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tenuto (Unicode 1D17D).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stacciss"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Staccatissimo (Unicode 1D17E).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato (Unicode 1D17F).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc-stacc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato + staccato (Unicode 1D180).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"spicc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Spiccato.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"doit"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by short slide to higher, indeterminate pitch (Unicode
+                              1D185).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"scoop"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by short slide from lower, indeterminate pitch (Unicode
+                              1D186).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"rip"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by long slide from lower, often indeterminate pitch; also known
+                              as "squeeze".<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"plop"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by "slide" from higher, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fall"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by short "slide" to lower, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"longfall"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by long "slide" to lower, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"bend"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"lip slur" to lower pitch, then return to written pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"flip"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by quick upward rise, then descent in pitch (Unicode
+                              1D187).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"smear"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>(Unicode 1D188).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"shake"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Alternation between written pitch and next highest overtone (brass instruments) or
+                              note minor third higher (woodwinds).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dnbow"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Down bow (Unicode 1D1AA).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"upbow"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Up bow (Unicode 1D1AB).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"harm"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Harmonic (Unicode 1D1AC).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"snap"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Snap pizzicato (Unicode 1D1AD).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fingernail"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Fingernail (Unicode 1D1B3).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ten-stacc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tenuto + staccato (Unicode 1D182).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"damp"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Stop harp string from sounding (Unicode 1D1B4).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dampall"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Stop all harp strings from sounding (Unicode 1D1B5).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"open"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Full (as opposed to stopped) tone.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stop"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"muffled" tone.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dbltongue"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Double tongue (Unicode 1D18A).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"trpltongue"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Triple tongue (Unicode 1D18B).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"heel"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Use heel (organ pedal).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"toe"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Use toe (organ pedal).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tap"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Percussive effect on guitar string(s).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"lhpizz"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Left-hand pizzicato.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dot"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Uninterpreted dot.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stroke"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Uninterpreted stroke.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
+         </td>
+      </tr>
+   </table>
+</div>
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/data-types/data.articulation.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

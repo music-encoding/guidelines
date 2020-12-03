@@ -1,1 +1,0 @@
-Used to point to the next event(s) in a user-defined collection.

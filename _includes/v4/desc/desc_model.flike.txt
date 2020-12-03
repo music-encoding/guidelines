@@ -1,1 +1,0 @@
-Groups elements that represent single figured bass elements.

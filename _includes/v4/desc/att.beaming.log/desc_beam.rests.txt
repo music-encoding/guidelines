@@ -1,2 +1,0 @@
-Indicates whether automatically-drawn beams should include rests shorter than a
-          quarter note duration.

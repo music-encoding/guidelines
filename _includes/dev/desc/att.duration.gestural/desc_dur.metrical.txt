@@ -1,1 +1,0 @@
-Duration as a count of units provided in the time signature denominator.

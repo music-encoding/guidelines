@@ -1,1 +1,0 @@
-States whether a bracket should be rendered with a tuplet.

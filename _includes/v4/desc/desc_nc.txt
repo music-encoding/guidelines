@@ -1,2 +1,0 @@
-Sign representing a single pitched event, although the exact pitch may not be
-      known.

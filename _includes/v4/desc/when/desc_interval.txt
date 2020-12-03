@@ -1,3 +1,0 @@
-Specifies the time interval between this time point and the one designated by the
-          since attribute. This attribute can only be interpreted meaningfully in conjunction with
-          the inttype attribute.

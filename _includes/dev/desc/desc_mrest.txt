@@ -1,1 +1,0 @@
-(measure rest) – Complete measure rest in any meter.  

@@ -1,1 +1,0 @@
-(decoration description) – Contains a description of the decoration of an item.

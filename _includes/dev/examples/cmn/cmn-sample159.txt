@@ -1,4 +1,0 @@
-<measure n="1">
-  <!-- all staves omitted -->
-  <tempo place="above" staff="1" tstamp="1">Allegro moderato</tempo>
-</measure>

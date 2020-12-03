@@ -1,2 +1,0 @@
-<ptr mimetype="application/pdf" target="myFile1"/>
-<ptr mimetype="application/x-myApplicationSpecificFile" target="myFile2"/>

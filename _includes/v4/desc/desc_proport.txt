@@ -1,1 +1,0 @@
-(proportion) – Description of note duration as arithmetic ratio.

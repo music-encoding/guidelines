@@ -1,1 +1,0 @@
-(key accidental) – Accidental in a key signature.

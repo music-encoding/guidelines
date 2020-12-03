@@ -1,1 +1,0 @@
-Records which string is to be played.

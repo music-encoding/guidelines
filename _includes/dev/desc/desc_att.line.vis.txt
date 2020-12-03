@@ -1,1 +1,0 @@
-Attributes for describing the visual appearance of a line.

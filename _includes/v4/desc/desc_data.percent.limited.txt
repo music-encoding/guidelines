@@ -1,1 +1,0 @@
-Positive decimal number between 0 and 100, followed by a percent sign "%".

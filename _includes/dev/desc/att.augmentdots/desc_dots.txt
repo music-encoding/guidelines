@@ -1,1 +1,0 @@
-Records the number of augmentation dots required by a written dotted duration.

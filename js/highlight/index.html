@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Highlight.js</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI ()
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <h1 id="highlightjs">Highlight.js</h1>
+
+<p><a href="https://travis-ci.org/highlightjs/highlight.js"><img src="https://travis-ci.org/highlightjs/highlight.js.svg?branch=master" alt="Build Status" /></a> <a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/highlightjs/highlight.js.svg" alt="Greenkeeper badge" /></a> <a href="https://packagephobia.now.sh/result?p=highlight.js"><img src="https://packagephobia.now.sh/badge?p=highlight.js" alt="install size" /></a></p>
+
+<p>Highlight.js is a syntax highlighter written in JavaScript. It works in
+the browser as well as on the server. It works with pretty much any
+markup, doesn’t depend on any framework, and has automatic language
+detection.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>The bare minimum for using highlight.js on a web page is linking to the
+library along with one of the styles and calling
+<a href="http://highlightjs.readthedocs.io/en/latest/api.html#inithighlightingonload"><code class="language-plaintext highlighter-rouge">initHighlightingOnLoad</code></a>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/styles/default.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/highlight.pack.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span><span class="nx">hljs</span><span class="p">.</span><span class="nx">initHighlightingOnLoad</span><span class="p">();</span><span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>This will find and highlight code inside of <code class="language-plaintext highlighter-rouge">&lt;pre&gt;&lt;code&gt;</code> tags; it tries
+to detect the language automatically. If automatic detection doesn’t
+work for you, you can specify the language in the <code class="language-plaintext highlighter-rouge">class</code> attribute:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"html"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<p>Classes may also be prefixed with either <code class="language-plaintext highlighter-rouge">language-</code> or <code class="language-plaintext highlighter-rouge">lang-</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"language-html"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<h3 id="plaintext-and-disabling-highlighting">Plaintext and Disabling Highlighting</h3>
+
+<p>To style arbitrary text like code, but without any highlighting, use the
+<code class="language-plaintext highlighter-rouge">plaintext</code> class:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"plaintext"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<p>To disable highlighting of a tag completely, use the <code class="language-plaintext highlighter-rouge">nohighlight</code> class:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"nohighlight"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<h3 id="supported-languages">Supported Languages</h3>
+
+<p>The table below shows the full list of supported languages (and corresponding classes) that are bundled with the library.  Note: Which languages are available may depend on how you’ve built or included the library in your app. See <a href="#getting-the-library">Getting the Library</a> below.</p>
+
+<details>
+<summary>Reveal the full list of languages...</summary>
+
+| Language                | Classes                | Package |
+| :-----------------------| :--------------------- | :------ |
+| 1C                      | 1c                     |         |
+| ABNF                    | abnf                   |         |
+| Access logs             | accesslog              |         |
+| Ada                     | ada                    |         |
+| ARM assembler           | armasm, arm            |         |
+| AVR assembler           | avrasm                 |         |
+| ActionScript            | actionscript, as       |         |
+| Alan                    | alan, i                | [highlightjs-alan](https://github.com/highlightjs/highlightjs-alan) |
+| AngelScript             | angelscript, asc       |         |
+| Apache                  | apache, apacheconf     |         |
+| AppleScript             | applescript, osascript |         |
+| Arcade                  | arcade                 |         |
+| AsciiDoc                | asciidoc, adoc         |         |
+| AspectJ                 | aspectj                |         |
+| AutoHotkey              | autohotkey             |         |
+| AutoIt                  | autoit                 |         |
+| Awk                     | awk, mawk, nawk, gawk  |         |
+| Axapta                  | axapta                 |         |
+| Bash                    | bash, sh, zsh          |         |
+| Basic                   | basic                  |         |
+| BNF                     | bnf                    |         |
+| Brainfuck               | brainfuck, bf          |         |
+| C#                      | cs, csharp             |         |
+| C++                     | cpp, c, cc, h, c++, h++, hpp |   |
+| C/AL                    | cal                    |         |
+| Cache Object Script     | cos, cls               |         |
+| CMake                   | cmake, cmake.in        |         |
+| Coq                     | coq                    |         |
+| CSP                     | csp                    |         |
+| CSS                     | css                    |         |
+| Cap’n Proto             | capnproto, capnp       |         |
+| Clojure                 | clojure, clj           |         |
+| CoffeeScript            | coffeescript, coffee, cson, iced | |
+| Crmsh                   | crmsh, crm, pcmk       |         |
+| Crystal                 | crystal, cr            |         |
+| Cypher (Neo4j)          | cypher                 | [highlightjs-cypher](https://github.com/highlightjs/highlightjs-cypher) |
+| D                       | d                      |         |
+| DNS Zone file           | dns, zone, bind        |         |
+| DOS                     | dos, bat, cmd          |         |
+| Dart                    | dart                   |         |
+| Delphi                  | delphi, dpr, dfm, pas, pascal, freepascal, lazarus, lpr, lfm | |
+| Diff                    | diff, patch            |         |
+| Django                  | django, jinja          |         |
+| Dockerfile              | dockerfile, docker     |         |
+| dsconfig                | dsconfig               |         |
+| DTS (Device Tree)       | dts                    |         |
+| Dust                    | dust, dst              |         |
+| Dylan                   | dylan                  | [highlight-dylan](https://github.com/highlightjs/highlight-dylan) |
+| EBNF                    | ebnf                   |         |
+| Elixir                  | elixir                 |         |
+| Elm                     | elm                    |         |
+| Erlang                  | erlang, erl            |         |
+| Excel                   | excel, xls, xlsx       |         |
+| Extempore               | extempore, xtlang, xtm | [highlightjs-xtlang](https://github.com/highlightjs/highlightjs-xtlang) |
+| F#                      | fsharp, fs             |         |
+| FIX                     | fix                    |         |
+| Fortran                 | fortran, f90, f95      |         |
+| G-Code                  | gcode, nc              |         |
+| Gams                    | gams, gms              |         |
+| GAUSS                   | gauss, gss             |         |
+| GDScript                | godot, gdscript        | [highlightjs-gdscript](https://github.com/highlightjs/highlightjs-gdscript) |
+| Gherkin                 | gherkin                |         |
+| GN for Ninja            | gn, gni                | [highlightjs-GN](https://github.com/highlightjs/highlightjs-GN/blob/master/gn.js) |
+| Go                      | go, golang             |         |
+| Grammatical Framework   | gf                     | [highlightjs-gf](https://github.com/johnjcamilleri/highlightjs-gf) |
+| Golo                    | golo, gololang         |         |
+| Gradle                  | gradle                 |         |
+| Groovy                  | groovy                 |         |
+| HTML, XML               | xml, html, xhtml, rss, atom, xjb, xsd, xsl, plist, svg | |
+| HTTP                    | http, https            |         |
+| Haml                    | haml                   |         |
+| Handlebars              | handlebars, hbs, html.hbs, html.handlebars        | |
+| Haskell                 | haskell, hs            |         |
+| Haxe                    | haxe, hx               |         |
+| Hy                      | hy, hylang             |         |
+| Ini, TOML               | ini, toml              |         |
+| Inform7                 | inform7, i7            |         |
+| IRPF90                  | irpf90                 |         |
+| JSON                    | json                   |         |
+| Java                    | java, jsp              |         |
+| JavaScript              | javascript, js, jsx    |         |
+| Kotlin                  | kotlin, kt             |         |
+| Leaf                    | leaf                   |         |
+| Lasso                   | lasso, ls, lassoscript |         |
+| Less                    | less                   |         |
+| LDIF                    | ldif                   |         |
+| Lisp                    | lisp                   |         |
+| LiveCode Server         | livecodeserver         |         |
+| LiveScript              | livescript, ls         |         |
+| Lua                     | lua                    |         |
+| Makefile                | makefile, mk, mak      |         |
+| Markdown                | markdown, md, mkdown, mkd |      |
+| Mathematica             | mathematica, mma, wl   |         |
+| Matlab                  | matlab                 |         |
+| Maxima                  | maxima                 |         |
+| Maya Embedded Language  | mel                    |         |
+| Mercury                 | mercury                |         |
+| mIRC Scripting Language | mirc, mrc              | [highlightjs-mirc](https://github.com/highlightjs/highlightjs-mirc) |
+| Mizar                   | mizar                  |         |
+| Mojolicious             | mojolicious            |         |
+| Monkey                  | monkey                 |         |
+| Moonscript              | moonscript, moon       |         |
+| N1QL                    | n1ql                   |         |
+| NSIS                    | nsis                   |         |
+| Nginx                   | nginx, nginxconf       |         |
+| Nimrod                  | nimrod, nim            |         |
+| Nix                     | nix                    |         |
+| OCaml                   | ocaml, ml              |         |
+| Objective C             | objectivec, mm, objc, obj-c |    |
+| OpenGL Shading Language | glsl                   |         |
+| OpenSCAD                | openscad, scad         |         |
+| Oracle Rules Language   | ruleslanguage          |         |
+| Oxygene                 | oxygene                |         |
+| PF                      | pf, pf.conf            |         |
+| PHP                     | php, php3, php4, php5, php6, php7 |    |
+| Parser3                 | parser3                |         |
+| Perl                    | perl, pl, pm           |         |
+| Plaintext: no highlight | plaintext              |         |
+| Pony                    | pony                   |         |
+| PostgreSQL &amp; PL/pgSQL   | pgsql, postgres, postgresql |    |
+| PowerShell              | powershell, ps, ps1    |         |
+| Processing              | processing             |         |
+| Prolog                  | prolog                 |         |
+| Properties              | properties             |         |
+| Protocol Buffers        | protobuf               |         |
+| Puppet                  | puppet, pp             |         |
+| Python                  | python, py, gyp        |         |
+| Python profiler results | profile                |         |
+| Q                       | k, kdb                 |         |
+| QML                     | qml                    |         |
+| R                       | r                      |         |
+| Razor CSHTML            | cshtml, razor, razor-cshtml | [highlightjs-cshtml-razor](https://github.com/highlightjs/highlightjs-cshtml-razor) |
+| ReasonML                | reasonml, re           |         |
+| RenderMan RIB           | rib                    |         |
+| RenderMan RSL           | rsl                    |         |
+| Roboconf                | graph, instances       |         |
+| Robot Framework         | robot, rf              | [highlightjs-robot](https://github.com/highlightjs/highlightjs-robot) |
+| RPM spec files          | rpm-specfile, rpm, spec, rpm-spec, specfile | [highlightjs-rpm-specfile](https://github.com/highlightjs/highlightjs-rpm-specfile) |
+| Ruby                    | ruby, rb, gemspec, podspec, thor, irb | |
+| Rust                    | rust, rs               |         |
+| SAS                     | SAS, sas               |         |
+| SCSS                    | scss                   |         |
+| SQL                     | sql                    |         |
+| STEP Part 21            | p21, step, stp         |         |
+| Scala                   | scala                  |         |
+| Scheme                  | scheme                 |         |
+| Scilab                  | scilab, sci            |         |
+| Shape Expressions       | shexc                  | [highlightjs-shexc](https://github.com/highlightjs/highlightjs-shexc) |
+| Shell                   | shell, console         |         |
+| Smali                   | smali                  |         |
+| Smalltalk               | smalltalk, st          |         |
+| Solidity                | solidity, sol          | [highlightjs-solidity](https://github.com/highlightjs/highlightjs-solidity) |
+| Stan                    | stan, stanfuncs        |         |
+| Stata                   | stata                  |         |
+| Structured Text         | iecst, scl, stl, structured-text | [highlightjs-structured-text](https://github.com/highlightjs/highlightjs-structured-text) |
+| Stylus                  | stylus, styl           |         |
+| SubUnit                 | subunit                |         |
+| Supercollider           | supercollider, sc      | [highlightjs-supercollider](https://github.com/highlightjs/highlightjs-supercollider) |
+| Swift                   | swift                  |         |
+| Tcl                     | tcl, tk                |         |
+| Terraform (HCL)         | terraform, tf, hcl     | [highlightjs-terraform](https://github.com/highlightjs/highlightjs-terraform) |
+| Test Anything Protocol  | tap                    |         |
+| TeX                     | tex                    |         |
+| Thrift                  | thrift                 |         |
+| TP                      | tp                     |         |
+| Twig                    | twig, craftcms         |         |
+| TypeScript              | typescript, ts         |         |
+| VB.Net                  | vbnet, vb              |         |
+| VBScript                | vbscript, vbs          |         |
+| VHDL                    | vhdl                   |         |
+| Vala                    | vala                   |         |
+| Verilog                 | verilog, v             |         |
+| Vim Script              | vim                    |         |
+| x86 Assembly            | x86asm                 |         |
+| XL                      | xl, tao                |         |
+| XQuery                  | xquery, xpath, xq      |         |
+| YAML                    | yml, yaml              |         |
+| Zephir                  | zephir, zep            |         |
+
+Languages with the specified package name are defined in separate repositories
+and not included in `highlight.pack.js`.
+</details>
+
+<h2 id="custom-initialization">Custom Initialization</h2>
+
+<p>When you need a bit more control over the initialization of
+highlight.js, you can use the <a href="http://highlightjs.readthedocs.io/en/latest/api.html#highlightblock-block"><code class="language-plaintext highlighter-rouge">highlightBlock</code></a> and <a href="http://highlightjs.readthedocs.io/en/latest/api.html#configure-options"><code class="language-plaintext highlighter-rouge">configure</code></a>
+functions. This allows you to control <em>what</em> to highlight and <em>when</em>.</p>
+
+<p>Here’s an equivalent way to calling <a href="http://highlightjs.readthedocs.io/en/latest/api.html#inithighlightingonload"><code class="language-plaintext highlighter-rouge">initHighlightingOnLoad</code></a> using
+vanilla JS:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">DOMContentLoaded</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">pre code</span><span class="dl">'</span><span class="p">).</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">block</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightBlock</span><span class="p">(</span><span class="nx">block</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>You can use any tags instead of <code class="language-plaintext highlighter-rouge">&lt;pre&gt;&lt;code&gt;</code> to mark up your code. If
+you don’t use a container that preserves line breaks you will need to
+configure highlight.js to use the <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> tag:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">hljs</span><span class="p">.</span><span class="nx">configure</span><span class="p">({</span><span class="na">useBR</span><span class="p">:</span> <span class="kc">true</span><span class="p">});</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">div.code</span><span class="dl">'</span><span class="p">).</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">block</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightBlock</span><span class="p">(</span><span class="nx">block</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>For other options refer to the documentation for <a href="http://highlightjs.readthedocs.io/en/latest/api.html#configure-options"><code class="language-plaintext highlighter-rouge">configure</code></a>.</p>
+
+<h2 id="web-workers">Web Workers</h2>
+
+<p>You can run highlighting inside a web worker to avoid freezing the browser
+window while dealing with very big chunks of code.</p>
+
+<p>In your main script:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">load</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">code</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#code</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">worker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Worker</span><span class="p">(</span><span class="dl">'</span><span class="s1">worker.js</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">onmessage</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">code</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span> <span class="p">}</span>
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="nx">code</span><span class="p">.</span><span class="nx">textContent</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>In worker.js:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">onmessage</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">importScripts</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;path&gt;/highlight.pack.js</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightAuto</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+  <span class="nx">postMessage</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="nodejs">Node.js</h2>
+
+<p>You can use highlight.js with node to highlight content before sending it to the browser. 
+Make sure to use the <code class="language-plaintext highlighter-rouge">.value</code> property to get the formatted html. 
+For more info about the returned object refer to the api docs https://highlightjs.readthedocs.io/en/latest/api.html</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// require the highlight.js library including all languages</span>
+<span class="kd">const</span> <span class="nx">hljs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./highlight.js</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">highlightedCode</span> <span class="o">=</span> <span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightAuto</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;span&gt;Hello World!&lt;/span&gt;</span><span class="dl">'</span><span class="p">).</span><span class="nx">value</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// require the highlight.js library without languages</span>
+<span class="kd">const</span> <span class="nx">hljs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">highlight.js/lib/highlight.js</span><span class="dl">"</span><span class="p">);</span>
+<span class="c1">// separately require languages</span>
+<span class="nx">hljs</span><span class="p">.</span><span class="nx">registerLanguage</span><span class="p">(</span><span class="dl">'</span><span class="s1">html</span><span class="dl">'</span><span class="p">,</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">highlight.js/lib/languages/html</span><span class="dl">'</span><span class="p">));</span>
+<span class="nx">hljs</span><span class="p">.</span><span class="nx">registerLanguage</span><span class="p">(</span><span class="dl">'</span><span class="s1">sql</span><span class="dl">'</span><span class="p">,</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">highlight.js/lib/languages/sql</span><span class="dl">'</span><span class="p">));</span>
+<span class="c1">// highlight with providing the language</span>
+<span class="kd">const</span> <span class="nx">highlightedCode</span> <span class="o">=</span> <span class="nx">hljs</span><span class="p">.</span><span class="nx">highlight</span><span class="p">(</span><span class="dl">'</span><span class="s1">html</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">&lt;span&gt;Hello World!&lt;/span&gt;</span><span class="dl">'</span><span class="p">).</span><span class="nx">value</span>
+</code></pre></div></div>
+
+<h2 id="getting-the-library">Getting the Library</h2>
+
+<p>You can get highlight.js as a hosted, or custom-build, browser script or
+as a server module. Right out of the box the browser script supports
+both AMD and CommonJS, so if you wish you can use RequireJS or
+Browserify without having to build from source. The server module also
+works perfectly fine with Browserify, but there is the option to use a
+build specific to browsers rather than something meant for a server.
+Head over to the <a href="https://highlightjs.org/download/">download page</a> for all the options.</p>
+
+<p><strong>Don’t link to GitHub directly.</strong> The library is not supposed to work straight
+from the source, it requires building. If none of the pre-packaged options
+work for you refer to the <a href="http://highlightjs.readthedocs.io/en/latest/building-testing.html">building documentation</a>.</p>
+
+<p><strong>The CDN-hosted package doesn’t have all the languages.</strong> Otherwise it’d be
+too big. If you don’t see the language you need in the <a href="https://highlightjs.org/download/">“Common” section</a>,
+it can be added manually:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script
+ </span><span class="na">charset=</span><span class="s">"UTF-8"</span>
+ <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/languages/go.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p><strong>On Almond.</strong> You need to use the optimizer to give the module a name. For
+example:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>r.js <span class="nt">-o</span> <span class="nv">name</span><span class="o">=</span>hljs paths.hljs<span class="o">=</span>/path/to/highlight <span class="nv">out</span><span class="o">=</span>highlight.js
+</code></pre></div></div>
+
+<h3 id="commonjs">CommonJS</h3>
+
+<p>You can import Highlight.js as a CommonJS-module:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>highlight.js <span class="nt">--save</span>
+</code></pre></div></div>
+
+<p>In your application:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">hljs</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">highlight.js</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The default import imports all languages! Therefore it is likely to be more efficient to import only the library and the languages you need:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">hljs</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">highlight.js/lib/highlight</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">javascript</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">highlight.js/lib/languages/javascript</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">hljs</span><span class="p">.</span><span class="nx">registerLanguage</span><span class="p">(</span><span class="dl">'</span><span class="s1">javascript</span><span class="dl">'</span><span class="p">,</span> <span class="nx">javascript</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>To set the syntax highlighting style, if your build tool processes CSS from your JavaScript entry point, you can import the stylesheet directly into your CommonJS-module:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">hljs</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">highlight.js/lib/highlight</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">highlight.js/styles/github.css</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="license">License</h2>
+
+<p>Highlight.js is released under the BSD License. See <a href="https://github.com/highlightjs/highlight.js/blob/master/LICENSE">LICENSE</a> file
+for details.</p>
+
+<h2 id="links">Links</h2>
+
+<p>The official site for the library is at <a href="https://highlightjs.org/">https://highlightjs.org/</a>.</p>
+
+<p>Further in-depth documentation for the API and other topics is at
+<a href="http://highlightjs.readthedocs.io/">http://highlightjs.readthedocs.io/</a>.</p>
+
+<p>Authors and contributors are listed in the <a href="https://github.com/highlightjs/highlight.js/blob/master/AUTHORS.en.txt">AUTHORS.en.txt</a> file.</p>
+
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small></small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

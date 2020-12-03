@@ -1,8 +1,0 @@
-
-<!-- default visualization and performance --><arpeg staff="2" tstamp="3"></arpeg>
-<!-- downward arpeggio with arrow added to visual symbol -->
-<arpeg arrow="true" order="down" staff="2" tstamp="3"></arpeg>
-<!-- default rendition with (redundant) arrow added to the top of the visual symbol -->
-<arpeg arrow="true" staff="2" tstamp="3"></arpeg>
-<!-- downward arpeggio with no visual indication of order -->
-<arpeg order="down" staff="2" tstamp="3"></arpeg>

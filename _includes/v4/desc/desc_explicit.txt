@@ -1,2 +1,0 @@
-Contains the explicit of a manuscript item; that is, the closing words of the text proper,
-      exclusive of any rubric or colophon which might follow it.

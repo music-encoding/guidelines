@@ -1,2 +1,0 @@
-(main language) supplies a code which identifies the chief language used in the
-          bibliographic work.

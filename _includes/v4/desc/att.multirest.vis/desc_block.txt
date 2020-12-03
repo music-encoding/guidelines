@@ -1,3 +1,0 @@
-When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms
-          (Read, p. 104) should be rendered instead of the modern form or an alternative
-          symbol.

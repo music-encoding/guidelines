@@ -1,3 +1,0 @@
-<ptr mimetype="application/pdf" target="my.pdf"/>
-<ptr mimetype="text/xml" target="my.xml"/>
-<ptr mimetype="image/png" target="my.png"/>

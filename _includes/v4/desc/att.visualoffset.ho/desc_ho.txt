@@ -1,3 +1,0 @@
-Records a horizontal adjustment to a feature's programmatically-determined location in
-          terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-          staff lines.

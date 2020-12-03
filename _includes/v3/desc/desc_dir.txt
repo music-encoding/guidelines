@@ -1,7 +1,0 @@
-(directive) – An instruction expressed as a combination of text and symbols — such
-as
-segno and coda symbols, fermatas over a bar line, etc., typically above, below, or
-between
-staves, but not on the staff — that is not encoded elsewhere in more specific elements,
-like
-&lt;tempo&gt; or &lt;dynam&gt;.

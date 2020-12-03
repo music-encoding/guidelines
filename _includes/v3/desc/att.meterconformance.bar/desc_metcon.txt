@@ -1,2 +1,0 @@
-Indicates the relationship between the content of a measure and the prevailing
-meter.

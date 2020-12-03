@@ -1,1 +1,0 @@
-Contains a description of a watermark or similar device.

@@ -1,2 +1,0 @@
-Holds a reference to the first element in a sequence of events to which the feature
-applies.

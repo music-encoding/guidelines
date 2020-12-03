@@ -1,1 +1,0 @@
-Logical domain attributes that describe the properties of a plica in the mensural repertoire.

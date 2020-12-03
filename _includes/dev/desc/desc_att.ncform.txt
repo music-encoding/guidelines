@@ -1,1 +1,0 @@
-Attributes that record visual details of neume notation.

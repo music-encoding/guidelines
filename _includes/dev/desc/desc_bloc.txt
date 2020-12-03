@@ -1,2 +1,0 @@
-Contains the name of a geopolitical unit consisting of two or more nation states or
-      countries.

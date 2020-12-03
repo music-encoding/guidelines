@@ -1,0 +1,4138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>User-defined Symbols</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/usersymbols.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="userSymbols">22. User-defined Symbols
+      
+  </h2>
+
+<p>This chapter describes the elements, model classes, and attribute classes that are part of the MEI.usersymbols module.</p>
+
+<h3 id="usersymbolsOverview">22.1. Overview of the User Symbols Module
+      
+  </h3>
+
+<p>The module described in this chapter makes available the following components:</p>
+
+<h4 id="usersymbolsElements">22.1.1. Elements
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/anchoredtext.html">anchoredText</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Container for text that is fixed to a particular page location, regardless of changes
+made to the layout of the measures around it.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/curve.html">curve</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A curved line that cannot be represented by a more specific element, such as a
+slur.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/line.html">line</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A visual line that cannot be represented by a more specific; i.e., semantic,
+element.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/symbol.html">symbol</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A reference to a previously defined symbol.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/symboldef.html">symbolDef</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (symbol definition) – Declaration of an individual symbol in a symbolTable.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/symboltable.html">symbolTable</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains a set of user-defined symbols.</div>
+    </div>
+</div>
+
+<h4 id="usersymbolsAttributeClasses">22.1.2. Attribute Classes
+      
+  </h4>
+
+<p>No attribute classes are defined in this module.</p>
+
+<h4 id="usersymbolsModelClasses">22.1.3. Model Classes
+      
+  </h4>
+
+<p>The usersymbols module defines the following model classes:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/model.graphicprimitivelike.html">model.graphicprimitiveLike</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Groups elements that function as drawing primitives.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/model.symboltablelike.html">model.symbolTableLike</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Groups elements that group symbol definitions.</div>
+    </div>
+</div>
+
+<h3 id="usersymbolsModuleUses">22.2. Uses of the Usersymbols Module
+      
+  </h3>
+
+<p>The elements provided by the usersymbols module may be used in two ways:</p>
+
+<ol>
+  <li>For defining lines, curves and text elements that cannot be represented by a more specific element.</li>
+  <li>For defining reusable symbols and special graphical renditions.For this purpose, it provides three elements as graphic primitives, 
+  <a href="/v3/elements/line.html" class="link_odd_elementSpec">line</a>, 
+  <a href="/v3/elements/curve.html" class="link_odd_elementSpec">curve</a> and 
+  <a href="/v3/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Anywhere these elements are allowed, the 
+  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element can be used as well. The 
+  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element facilitates the re-use of symbols that were defined by 
+  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements.</li>
+</ol>
+
+<h4 id="usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
+      
+  </h4>
+
+<p>The 
+  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> element uses SVG markup or the aforementioned graphic primitives to describe a symbol. A symbol definition may also use symbols defined by other 
+  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements by employing the 
+  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element.</p>
+
+<figure class="figure">
+  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Definition of a triangle percussion symbol using graphic primitives</figcaption>
+</figure>
+
+<figure class="figure">
+  <img src="/images/v3/modules/usersymbols/triangle.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Rendition of the triangle defined above</figcaption>
+</figure>
+
+<figure class="figure">
+  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Symbol composed of the symbol defined above and additional graphics primitives</figcaption>
+</figure>
+
+<figure class="figure">
+  <img src="/images/v3/modules/usersymbols/triangleWithStick.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Rendition of the composite triangle symbol</figcaption>
+</figure>
+
+<h4 id="usersymbolsSemanticImplications">22.2.2. Elements Without Semantic Implications
+      
+  </h4>
+
+<p>The graphics primitives and symbols can be used directly in the music to describe text and lines on a purely graphical level, without implying a specific logical meaning. If possible, however, more meaningful elements should be used. This means for example, “a tempo” or “da capo” should in general not be put inside 
+  <a href="/v3/elements/anchoredtext.html" class="link_odd_elementSpec">anchoredText</a>. Instead, 
+  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a> and 
+  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> should be used. Likewise, slurs and ties should be encoded using their respective elements, not using 
+  <a href="/v3/elements/curve.html" class="link_odd_elementSpec">curve</a>, and for glissandi, 
+  <a href="/v3/elements/gliss.html" class="link_odd_elementSpec">gliss</a> should be used instead of 
+  <a href="/v3/elements/line.html" class="link_odd_elementSpec">line</a>.</p>
+
+<p>An example usage for 
+  <a href="/v3/elements/line.html" class="link_odd_elementSpec">line</a> is the visualization of voice leading, which is not covered by a specific MEI element.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/usersymbols/mignon.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Voice leading visualization as found in an Edition Peters print of "Album für die Jugend" by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number is 10478.)</figcaption>
+</figure>
+
+<figure class="figure">
+  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Encoding of the Schumann example</figcaption>
+</figure>
+
+<h4 id="usersymbolsGraphicalRendition">22.2.3. Defining a Specific Graphical Rendition for a Semantic Element
+      
+  </h4>
+
+<p>Usersymbols can define the rendition of different elements in two ways. Some elements, for example 
+  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> and 
+  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>, can have user symbol elements as content. In the following example, the content of 
+  <a href="/v3/elements/dir.html" class="link_odd_elementSpec">dir</a> is used to provide pictograms of percussion instruments.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/usersymbols/percussion.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Indicating percussion instruments using pictograms</figcaption>
+</figure>
+
+<figure class="figure">
+  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Encoding of above example</figcaption>
+</figure>
+
+<p>A number of elements can point to an internally-defined symbol for rendering using the <strong>@altsym</strong> attribute.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/usersymbols/charpentier.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Different treble clef renditions as written by Charpentier</figcaption>
+</figure>
+
+<figure class="figure">
+  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Defining two staffs, each using its own treble clef shape</figcaption>
+</figure>
+
+<p>Externally-defined symbols may be referenced using a <strong>@glyphname</strong> or <strong>@glyphnum</strong> attribute. Both attributes refer to Standard Music Font Layout (SMuFL) characters. Other character sets must be treated as internally-defined character sets.</p>
+
+<figure class="figure">
+  <img src="/images/v3/" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Use of glyphname and glyphnum attributes</figcaption>
+</figure>
+
+<h3 id="usersymbolsPositioningCoordinates">22.3. Positioning and Coordinates
+      
+  </h3>
+
+<h4 id="usersymbolsCoordinateSystem">22.3.1. Axis Orientation
+      
+  </h4>
+
+<p>MEI uses the classic axis directions where the x-axis points from left to right and the y-axis points from bottom up. (This is compatible with PostScript’s axis orientation, while SVG’s y-axis points in the opposite direction.)</p>
+
+<h4 id="usersymbolsUnits">22.3.2. Units
+      
+  </h4>
+
+<p>There are two types of units used by MEI: Staff units (data.MEASUREMENT) and units of the output coordinate system. Units of the output coordinate system can be translated to physical real world distances by means of the <strong>@vu.height</strong> and <strong>@page.scale</strong> of a 
+  <a href="/v3/elements/scoredef.html" class="link_odd_elementSpec">scoreDef</a> element. Real world units are multiplied by the value of <strong>@page.scale</strong> to get the corresponding value in output coordinate units.</p>
+
+<p>If an element is scaled using the <strong>@scale</strong> attribute, the actual size of the units changes accordingly.</p>
+
+<h4 id="usersymbolsPositioning">22.3.3. Positioning
+      
+  </h4>
+
+<p>An element may be positioned using either absolute or relative coordinates. If absolute start point coordinates are specified using <strong>@x</strong>/<strong>@y</strong> coordinates (or their relatives <strong>@x2</strong>/<strong>@y2</strong> for endpoints) they take precedence over relative positions specified by <strong>@ho</strong>/<strong>@vo</strong>/<strong>@to</strong> (or <strong>@startho</strong>/<strong>@startvo</strong>/<strong>@startto</strong>). Analogously, <strong>@x2</strong>/<strong>@y2</strong> override <strong>@endho</strong><strong>@endvo</strong>/<strong>@endto</strong>.</p>
+
+<p>If <strong>@to</strong>/<strong>@startto</strong>/<strong>@endto</strong> attributes are used, the start or end point is x-aligned with the indicated timestamp.</p>
+
+<p>If relative start coordinates (<strong>@ho</strong>/<strong>@vo</strong> or <strong>@startho</strong>/<strong>@startvo</strong>) are used, the origin of the coordinate system to be used for the start point is the first one found by the following search schema:</p>
+
+<ol>
+  <li>If <strong>@startid</strong> is present, the origin of the referenced element;</li>
+  <li>If the element is inside running text (e.g. inside 
+  <a href="/v3/elements/tempo.html" class="link_odd_elementSpec">tempo</a>), the end of the preceding text or element;</li>
+  <li>Otherwise, the origin of the containing element.</li>
+</ol>
+
+<p>The start point is offset from this origin by the value of the start coordinates (<strong>@ho</strong>/<strong>@vo</strong> or <strong>@startho</strong>/<strong>@startvo</strong>), using staff units.</p>
+
+<p>Analogously, the endpoint is determined using end coordinates (<strong>@endho</strong>/<strong>@endvo</strong>). If <strong>@endid</strong> is specified, it takes precedence over <strong>@startid</strong>.</p>
+
+<p>Examples of origins are:</p>
+
+<ul>
+  <li><a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> and 
+  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>: The horizontal origin is the starting point of the measure, the vertical one is the bottom staff line;</li>
+  <li><a href="/v3/elements/note.html" class="link_odd_elementSpec">note</a>: The horizontal origin is the left end of the notehead, the vertical one the center of the notehead;</li>
+  <li><a href="/v3/elements/clef.html" class="link_odd_elementSpec">clef</a>: The horizontal origin is the left end of the clef, the vertical one the line specified by 
+  <a href="/v3/elements/clef.html" class="link_odd_elementSpec">clef</a>/<strong>@line</strong> (or <strong>@clef.line</strong>);</li>
+  <li>For elements containing text: The left end of the baseline;</li>
+  <li><a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a>: As symbol definitions aren’t rendered directly, their coordinate system and origin are considered virtual. When they are referenced by 
+  <a href="/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> or <strong>@altsym</strong>, the origin of the context, i.e. the referencing symbol, is used.</li>
+</ul>
+
+<p>If neither absolute nor relative coordinates are specified, determining visually suitable start and end points for <strong>@line</strong> and <strong>@curve</strong> attributes is left to the rendering application. A value of 0 is not always assumed for absent relative coordinates. A typical example where a rendering application may not choose the origins of absent relative start and end coordinates to be the start point as well is the line connecting two notes in the above Schumann example.</p>
+
+<h4 id="usersymbolsCurveShape">22.3.4. Curve Shape
+      
+  </h4>
+
+<p>If neither a <strong>@bezier</strong> nor <strong>@bulge</strong> attribute is present, the renderer determines a suitable shape. However, if <strong>@curvedir</strong> is present, the curve must respect the curvature direction specified there.</p>
+
+<p>The attributes <strong>@bezier</strong> and <strong>@bulge</strong> define the shape of a curve in two different ways. If both are present, a rendering application may choose either one. They override <strong>@curvedir</strong>.</p>
+
+<p><strong>@bezier</strong> defines the inner control points of a cubic Bézier curve, i.e., a Bézier curve with two inner control points. The coordinates are given by a space separated list, first x and y offsets for the first control point, then x and y offsets for the second one. The x and y offsets are given in staff units (or inside the context of 
+  <a href="/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> in abstract units). The offsets for the first inner control point are relative to the start point, the ones for the second inner control point are relative to the end point.</p>
+
+<p>The <strong>@bulge</strong> attribute allows specification of the curve shape by a number of interpolation points. The interpolation points are given by their distance from the line connecting the start and end point. The distance values are stored as a space separated list.</p>
+
+<p>The interpolation points are calculated as follows: If <strong>@bulge</strong> provides <em>n</em> distance values, the connection line is divided into <em>n+1</em> subsegments of equal length. The interpolation points are found by drawing a perpendicular line of the respective length at each subsegment joint. Positive distance values are drawn to the left of the connection line (left when traveling from start to end), negative ones to the right.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/usersymbols/bulge.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Rendering a bulge attribute with value "-2 1"</figcaption>
+</figure>
+
+<p>The interpolation algorithm used by the rendering application is implementation dependent.</p>
+
+<h3 id="usersymbolsLineRendition">22.4. Line Rendition
+      
+  </h3>
+
+<p>The <strong>@form</strong> attribute of lines may take the following values:</p>
+
+<ul>
+  <li>dashed</li>
+  <li>dotted</li>
+  <li>solid</li>
+  <li>wavy</li>
+</ul>
+
+<p>These attribute values are only qualitative. Actual dash length and dot and dash spacing are implementation dependent.</p>
+
+<p>The <strong>@width</strong> attribute may take the following values:</p>
+
+<ul>
+  <li>narrow</li>
+  <li>medium</li>
+  <li>wide</li>
+</ul>
+
+<p>These values are also qualitative, however, they are also relative. That is, ‘narrow’ is the default value, ‘medium’ is twice as wide as ‘narrow’, and ‘wide’ is twice as wide as ‘medium’.</p>
+
+<p>In addition to these textual values, the width attribute may contain a numeric value and an optional unit value, “2mm” for example. If the unit value is not provided, staff interline units are presumed.</p>
+
+<p>The <strong>@lstartsym</strong> and <strong>@lendsym</strong> attributes name the symbol that may start and/or end a line, while <strong>@lstartsymsize</strong> and <strong>@lendsymsize</strong> indicate the relative size of the symbol using a numeric value in the range from 1 to 9.</p>
+
+<h3 id="usersymbolsLimitations">22.5. Limitations
+      
+  </h3>
+
+<p>The usersymbols module does not currently support continuous composite lines or filled areas. As mentioned above, the rendition of lines is highly implementation dependent. Coordinate system transforms are restricted to scaling using <strong>@scale</strong>.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/usersymbols.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsOverview">22.1. Overview of the User Symbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsElements">22.1.1. Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsAttributeClasses">22.1.2. Attribute Classes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsModelClasses">22.1.3. Model Classes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsModuleUses">22.2. Uses of the Usersymbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2. Elements Without Semantic Implications
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsGraphicalRendition">22.2.3. Defining a Specific Graphical Rendition for a Semantic Element
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsPositioningCoordinates">22.3. Positioning and Coordinates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCoordinateSystem">22.3.1. Axis Orientation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsUnits">22.3.2. Units
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsPositioning">22.3.3. Positioning
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCurveShape">22.3.4. Curve Shape
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLineRendition">22.4. Line Rendition
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLimitations">22.5. Limitations
+    </a>
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsOverview">22.1. Overview of the User Symbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsElements">22.1.1. Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsAttributeClasses">22.1.2. Attribute Classes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsModelClasses">22.1.3. Model Classes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsModuleUses">22.2. Uses of the Usersymbols Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsReusableSymbols">22.2.1. Defining Reusable Symbols
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2. Elements Without Semantic Implications
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsGraphicalRendition">22.2.3. Defining a Specific Graphical Rendition for a Semantic Element
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsPositioningCoordinates">22.3. Positioning and Coordinates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCoordinateSystem">22.3.1. Axis Orientation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsUnits">22.3.2. Units
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsPositioning">22.3.3. Positioning
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/usersymbols.html#usersymbolsCurveShape">22.3.4. Curve Shape
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLineRendition">22.4. Line Rendition
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/usersymbols.html#usersymbolsLimitations">22.5. Limitations
+    </a>
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

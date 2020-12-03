@@ -1,1 +1,0 @@
-Signifies the degree of certainty or precision associated with a feature.

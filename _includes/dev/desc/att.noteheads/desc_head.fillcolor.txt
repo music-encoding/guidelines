@@ -1,1 +1,0 @@
-Captures the fill color of a notehead if different from the overall note color.

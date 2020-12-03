@@ -1,1 +1,0 @@
-Attributes that describe default typography of lyrics.

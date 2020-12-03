@@ -1,2 +1,0 @@
-Contains a representation of a written source in the form of a set of images rather than
-      as transcribed or encoded text.

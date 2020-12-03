@@ -1,0 +1,5397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Linking Data</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_dev.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for the development version of MEI
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/dev/content/linkingdata.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="linkingdata">13. Linking Data
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h2>
+
+<p>This chapter describes the use of elements in MEI for linking and referencing. This includes the elements, models, and attributes that are part of the <code class="language-plaintext highlighter-rouge">MEI.ptrref</code> module. This module contains declarations, techniques and approaches to establish references within a single MEI document, or to link out from one MEI document to another or to other external sources. This chapter also addresses possibilities to link into an MEI document from external sources which makes MEI highly interoperable and serviceable in the context of Linked (Open) Data approaches.</p>
+
+<h3 id="links">13.1. Links
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/01-links.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h3>
+
+<p>An element is a ‘link’ when it has an attribute whose value is a reference to the ID of one or more other elements (cross-reference). These link elements indicate an association between themselves (or one of their ancestors) and one or more other entities, either inside the same document or elsewhere. An association between two elements in the same document is said to be an ‘internal’ link, while an association that involves an entity outside the current document is called an ‘external’ link. However, either of the elements discussed in the following section can be used for either purpose.</p>
+
+<h3 id="linkFromMei">13.2. Linking from MEI
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-linkfrommei.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h3>
+
+<p>This section describes techniques and approaches to establish references within a single MEI document, or to link out from one MEI document to another or to other external sources.</p>
+
+<h4 id="ptrRef">13.2.1. Pointers and References
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-ptrref/01-ptrref.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h4>
+
+<p>The link elements discussed in this section are the 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and the 
+  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> elements which are declared in the <code class="language-plaintext highlighter-rouge">MEI.ptrref</code> module.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/dev/elements/ptr.html">ptr</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (pointer) – Defines a traversible pointer to another location, using only attributes to
+      describe the destination.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/dev/elements/ref.html">ref</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (reference) – Defines a traversible reference to another location. May contain text and
+      sub-elements that describe the destination.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element is a traversible pointer to another location. It is an empty linking element that uses only attributes to describe its link destination. It cannot contain text or sub-elements to describe the referenced object. The next example shows the use of the 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to target a certain identifier (here e.g. a page number, or more precisely, page break elements, 
+  <a href="/dev/elements/pb.html" class="link_odd_elementSpec">pb</a>, bearing these identifiers) from within a 
+  <a href="/dev/elements/list.html" class="link_odd_elementSpec">list</a> of item descriptions:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;list&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="c">&lt;!-- item description --&gt;</span>
+    <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#p123"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="c">&lt;!-- item description --&gt;</span>
+    <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#p124"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/list&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> element defines a traversible reference to another location. While 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> cannot contain other markup, the 
+  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> element can include text or sub-elements that further specify the link destination:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"http://path.to.target/repo1.xml"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>…<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;address&gt;</span>
+      <span class="nt">&lt;addrLine&gt;</span>…<span class="nt">&lt;/addrLine&gt;</span>
+    <span class="nt">&lt;/address&gt;</span>
+    <span class="nt">&lt;identifier&gt;</span>…<span class="nt">&lt;/identifier&gt;</span>
+  <span class="nt">&lt;/ref&gt;</span>
+<span class="nt">&lt;/repository&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="ptrrefModule">13.2.2. Specifying Link Elements
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-ptrref/02-ptrrefmodule.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h4>
+
+<p>The 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
+  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> elements share a set of common attributes that are inherited from the 
+  <a href="/dev/attribute-classes/att.pointing.html">att.pointing</a> class (a more detailed explanation is provided below):</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.pointing.html">@target</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Identifies passive participants in a relationship; that is, the entities pointed
+          "to".</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.pointing.html">@targettype</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Characterization of target resource(s) using any convenient classification scheme or
+          typology.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.pointing.html">@xlink:actuate</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Defines whether a link occurs automatically or must be requested by the user.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.pointing.html">@xlink:show</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Defines how a remote resource is rendered.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.pointing.html">@xlink:role</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Characterization of the relationship between resources. The value of the role
+          attribute must be a URI.</div>
+    </div>
+</div>
+
+<p>In addition to the attributes in the 
+  <a href="/dev/attribute-classes/att.pointing.html">att.pointing</a> class, the <strong>@mimetype</strong> attribute from the 
+  <a href="/dev/attribute-classes/att.internetmedia.html">att.internetMedia</a> class is also available on 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
+  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a> (a more detailed explanation is provided below):</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.internetmedia.html">@mimetype</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Specifies the applicable MIME (multimedia internet mail extension) type. The value
+          should be a valid MIME media type defined by the Internet Engineering Task Force in RFC
+          2046.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/dev/attribute-classes/att.linking.html">att.linking</a> class provides another set of common attributes (a more detailed explanation is provided in 
+  <a href="/dev/content/analysisharm.html">Analysis Markup and Harmonies</a>: 
+  <a href="/dev/content/analysisharm.html#analysisDescribingRelationships">General Relationships Between Elements</a>):</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@copyof</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to an element of which the current element is a copy.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@corresp</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to point to other elements that correspond to this one in a generic
+          fashion.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@follows</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            points to one or more events in a user-defined collection that are known to be
+          predecessors of the current element.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@next</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to point to the next event(s) in a user-defined collection.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@precedes</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to one or more events in a user-defined collection that are known to be
+          successors of the current element.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@prev</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to the previous event(s) in a user-defined collection.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@sameas</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to an element that is the same as the current element but is not a literal copy
+          of the current element.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.linking.html">@synch</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Points to elements that are synchronous with the current element.</div>
+    </div>
+</div>
+
+<p>Additionally, the following attributes are also available on 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> and 
+  <a href="/dev/elements/ref.html" class="link_odd_elementSpec">ref</a>:</p>
+
+<p>Via the 
+  <a href="/dev/attribute-classes/att.metadatapointing.html">att.metadataPointing</a> class:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.metadatapointing.html">@decls</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Identifies one or more metadata elements (other than classification terms) within the
+          header, which are understood to apply to the element bearing this attribute and its
+          content.</div>
+    </div>
+</div>
+
+<p>Via the 
+  <a href="/dev/attribute-classes/att.classed.html">att.classed</a> class:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.classed.html">@class</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains one or more URIs which denote classification terms that apply to the entity
+          bearing this attribute.</div>
+    </div>
+</div>
+
+<p>Via the 
+  <a href="/dev/attribute-classes/att.responsibility.html">att.responsibility</a> class:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/dev/attribute-classes/att.responsibility.html">@resp</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the agent(s) responsible for some aspect of the text's transcription,
+          editing, or encoding. Its value must point to one or more identifiers declared in the
+          document header.</div>
+    </div>
+</div>
+
+<h5 id="ptrRefTarget">13.2.2.1. Define the link element's target (XPointer mechanism)
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-ptrref/02-ptrrefmodule/01-ptrreftarget.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h5>
+
+<p>The <strong>@target</strong> attribute specifies the destination of a pointer or reference using a method standardized by the W3C consortium, known as the XPointer mechanism. The XPointer framework is described at <a href="http://www.w3.org/TR/xptr-framework/" class="link_ref">http://www.w3.org/TR/xptr-framework/</a>. This mechanism permits a range of complexity, from the very simple (a reference to the value of the target element’s <strong>@xml:id</strong> attribute) to the more complex usage of a full URI with embedded XPointers:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- element ID --&gt;</span>
+<span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#SA"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- relative URL --&gt;</span>
+<span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"myFile.xml"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- absolute URL --&gt;</span>
+<span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"http://www.w3.org/TR/xptr-framework/"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- URL with fragment identifier --&gt;</span>
+<span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"http://www.w3.org/TR/xptr-xpointer/#xpointer(id('chum')/quote)"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- URN --&gt;</span>
+<span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"urn:isan:0000-0000-9E59-0000-O-0000-0000-2"</span><span class="nt">&gt;</span>Spider-Man<span class="nt">&lt;/ref&gt;</span></code></pre></figure>
+
+</div>
+
+<p>A <strong>@target</strong> attribute is not required in order to mark the textual content as a cross-reference, as demonstrated in the example below; however, without this attribute the reference will not be resolvable.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>See <span class="nt">&lt;ref&gt;</span>Hankinson, Roland, Fujinaga (2011)<span class="nt">&lt;/ref&gt;</span>.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="ptrRefTargettype">13.2.2.2. Define the type of a link element's target
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-ptrref/02-ptrrefmodule/02-ptrreftargettype.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h5>
+
+<p>The <strong>@targettype</strong> attribute allows the target resource to be characterized using any convenient classification scheme or typology. This is often useful when the target requires special processing, e.g., for display purposes. The pointers in the examples below may be formatted differently, e.g., the bibliographic citation may result in special typography while the pointer to the audio file may be used to embed an audio player:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#cit1"</span> <span class="na">targettype=</span><span class="s">"biblioCitation"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"http://path.to.resource/myAudio.aiff"</span> <span class="na">targettype=</span><span class="s">"audioClip"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="ptrRefMimetype">13.2.2.3. Define the mimetype of a link element's target
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-ptrref/02-ptrrefmodule/03-ptrrefmimetype.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h5>
+
+<p>The function of the <strong>@mimetype</strong> attribute is similar to that of <strong>@targettype</strong> in that they both allow classification of the destination. Unlike <strong>@targettype</strong>, however, <strong>@mimetype</strong> explicitly defines the destination type using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail Extension) type as defined by the Internet Engineering Task Force (IETF) in RFC 2046, available at <a href="http://www.ietf.org/rfc/rfc2046.txt" class="link_ref">http://www.ietf.org/rfc/rfc2046.txt</a>. The following are all valid mimetype values:</p>
+
+<div class="sampleCode" data-lang="feasible">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ptr</span> <span class="na">mimetype=</span><span class="s">"application/pdf"</span> <span class="na">target=</span><span class="s">"my.pdf"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;ptr</span> <span class="na">mimetype=</span><span class="s">"text/xml"</span> <span class="na">target=</span><span class="s">"my.xml"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;ptr</span> <span class="na">mimetype=</span><span class="s">"image/png"</span> <span class="na">target=</span><span class="s">"my.png"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<p>As shown above, the 
+  <a href="/dev/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element can be used to ‘point to’ a digital image (<code class="language-plaintext highlighter-rouge">target="my.png"</code>). However, when the intention is to <em>display</em> a digital image as part of the rendering of an MEI file, the 
+  <a href="/dev/elements/graphic.html" class="link_odd_elementSpec">graphic</a> element provides a convenient and recommended alternative:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;graphic</span> <span class="na">mimetype=</span><span class="s">"image/png"</span> <span class="na">target=</span><span class="s">"my.png"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The <strong>@mimetype</strong> attribute is particularly useful for documenting the nature of the destination when the value of <strong>@target</strong> does not provide a filename extension or when the destination is a non-standard file type:</p>
+
+<div class="sampleCode" data-lang="feasible">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ptr</span> <span class="na">mimetype=</span><span class="s">"application/pdf"</span> <span class="na">target=</span><span class="s">"myFile1"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;ptr</span> <span class="na">mimetype=</span><span class="s">"application/x-myApplicationSpecificFile"</span> <span class="na">target=</span><span class="s">"myFile2"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="ptrRefXlinkActuateShow">13.2.2.4. Determine the link element's behaviour
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-ptrref/02-ptrrefmodule/04-ptrrefxlinkactuateshow.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h5>
+
+<p>The <strong>@xlink:actuate</strong> and <strong>@xlink:show</strong> attributes are used in conjunction to determine the link’s behavior.</p>
+
+<p>The <strong>@xlink:actuate</strong> attribute defines whether the resolution of a link occurs automatically or must be requested by the user.</p>
+
+<p>The following values are allowed for the <strong>@xlink:actuate</strong> attribute:</p>
+
+<p class="gloss"><strong>‘onLoad’</strong>: load the target resource(s) immediately</p>
+
+<p class="gloss"><strong>‘onRequest’</strong>: load the target resource(s) upon user request, e.g., after a mouse click</p>
+
+<p class="gloss"><strong>‘none’</strong>: do not permit loading of the target resource(s); no other markup is provided to determine appropriate behavior</p>
+
+<p class="gloss"><strong>‘other’</strong>: behavior other than permitted by the other values of this attribute; application should look for other markup to determine appropriate behavior</p>
+
+<p>The value “none” may be used to indicate that the link is un-traversable and no other markup is provided to determine appropriate behavior; it may or may not render the link invisible to the user. When the value of <strong>@xlink:actuate</strong> is “other”, an application must base a determination of appropriate behavior on factors other than the value of <strong>@xlink:actuate</strong>.</p>
+
+<p>The <strong>@xlink:show</strong> attribute defines how a remote resource is to be rendered. The following values are permitted:</p>
+
+<p class="gloss"><strong>‘new’</strong>: target of the link appears in a new window</p>
+
+<p class="gloss"><strong>‘replace’</strong>: target of the link replaces the current resource in the same window</p>
+
+<p class="gloss"><strong>‘embed’</strong>: the content of the target appears at the point of the link</p>
+
+<p class="gloss"><strong>‘none’</strong>: do not permit traversal to the target resource(s); no other markup is provided to determine appropriate behavior</p>
+
+<p class="gloss"><strong>‘other’</strong>: behavior other than permitted by the other values of this attribute; application should look for other markup to determine appropriate behavior</p>
+
+<p>The value “none” may be used to indicate a link that is not displayed or is not displayable and no other markup is provided to determine appropriate behavior. When the value of <strong>@xlink:show</strong> is “other”, an application must base a determination of appropriate behavior on factors other than the value of <strong>@xlink:show</strong>.</p>
+
+<p>The following example illustrates a pointer that results in the automatic creation of a new window with the content of the target loaded in it:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ptr</span> <span class="na">xmlns=</span><span class="s">"http://www.tei-c.org/ns/Examples"</span>
+     <span class="na">xmlns:xlink=</span><span class="s">"http://www.w3.org/1999/xlink"</span>
+     <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span>
+     <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span>
+     <span class="na">mimetype=</span><span class="s">"text"</span>
+     <span class="na">target=</span><span class="s">"http://www.ietf.org/rfc/rfc2046.txt"</span>
+     <span class="na">xlink:actuate=</span><span class="s">"onLoad"</span>
+     <span class="na">xlink:show=</span><span class="s">"new"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<h5 id="ptrRefXlinkRole">13.2.2.5. Determine the link element's role
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/02-ptrref/02-ptrrefmodule/05-ptrrefxlinkrole.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h5>
+
+<p>The <strong>@xlink:role</strong> attribute describes the meaning of resources within the context of a link. It is used to label or describe a link or resource in a human- and machine-readable fashion. The value of <strong>@xlink:role</strong> must be an absolute URI (Uniform Resource Identifier) reference as defined by the Internet Engineering Task Force (IETF) in RFC 3986, available at <a href="http://tools.ietf.org/html/rfc3986" class="link_ref">http://tools.ietf.org/html/rfc3986</a>. The URI reference identifies a resource that describes the intended property. When no value is supplied, no particular role value is to be inferred.</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ptr</span> <span class="na">xmlns=</span><span class="s">"http://www.tei-c.org/ns/Examples"</span>
+     <span class="na">xmlns:xlink=</span><span class="s">"http://www.w3.org/1999/xlink"</span>
+     <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span>
+     <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span>
+     <span class="na">target=</span><span class="s">"joe.xml"</span>
+     <span class="na">xlink:role=</span><span class="s">"http://www.example.com/linkprops/student"</span> <span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ptr</span> <span class="na">xmlns=</span><span class="s">"http://www.tei-c.org/ns/Examples"</span>
+     <span class="na">xmlns:xlink=</span><span class="s">"http://www.w3.org/1999/xlink"</span>
+     <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span>
+     <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span>
+     <span class="na">target=</span><span class="s">"joe.xml"</span>
+     <span class="na">xlink:role=</span><span class="s">"http://www.example.com/linkprops/instructor"</span> <span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In the preceding examples, the value of the <strong>@xlink:role</strong> attribute may be used to specify the value of the link target’s role.</p>
+
+<h3 id="linkAlign">13.3. Linking and Alignment
+      
+      <a href="https://github.com/music-encoding/guidelines/blob/master/_guidelines-dev/13-linkingdata/03-linkalign.md" target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      
+  </h3>
+
+<p>The linkAlign module has been deprecated in MEI v3.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/dev/content/linkingdata.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/dev/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/dev/content/linkingdata.html#links">13.1. Links
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/dev/content/linkingdata.html#linkFromMei">13.2. Linking from MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/dev/content/linkingdata.html#ptrRef">13.2.1. Pointers and References
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/dev/content/linkingdata.html#ptrrefModule">13.2.2. Specifying Link Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/dev/content/linkingdata.html#linkAlign">13.3. Linking and Alignment
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/dev/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/dev/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/dev/content/linkingdata.html#links">13.1. Links
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/dev/content/linkingdata.html#linkFromMei">13.2. Linking from MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/dev/content/linkingdata.html#ptrRef">13.2.1. Pointers and References
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/dev/content/linkingdata.html#ptrrefModule">13.2.2. Specifying Link Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/dev/content/linkingdata.html#linkAlign">13.3. Linking and Alignment
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/d976b37fa4253672d82d263df8484000d8ddd7cd'>Version d976b37</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

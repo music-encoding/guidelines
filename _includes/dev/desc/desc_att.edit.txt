@@ -1,2 +1,0 @@
-Attributes describing the nature of an encoded scholarly intervention or
-      interpretation.

@@ -1,1 +1,0 @@
-Holds a pitch-to-number mapping, a base-40 or MIDI note number, for example.

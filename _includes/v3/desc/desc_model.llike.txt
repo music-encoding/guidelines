@@ -1,1 +1,0 @@
-Groups elements representing metrical components such as verse lines.

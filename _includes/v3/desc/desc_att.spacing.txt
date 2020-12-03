@@ -1,1 +1,0 @@
-Attributes that capture notation spacing information.

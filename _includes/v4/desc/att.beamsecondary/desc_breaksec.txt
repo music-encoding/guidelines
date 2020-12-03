@@ -1,3 +1,0 @@
-Presence of this attribute indicates that the secondary beam should be broken
-          following this note/chord. The value of the attribute records the number of beams which
-          should remain unbroken.

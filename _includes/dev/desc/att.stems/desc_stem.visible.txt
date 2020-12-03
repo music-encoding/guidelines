@@ -1,1 +1,0 @@
-Determines whether a stem should be displayed.

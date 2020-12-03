@@ -1,5 +1,0 @@
-(carrier form) – The specific class of material to which the physical carrier of the
-      source/manifestation belongs (e.g., sound cassette, videodisc, microfilm cartridge,
-      transparency, etc.). The carrier for a manifestation comprising multiple physical components
-      may include more than one form (e.g., a filmstrip with an accompanying booklet, a separate
-      sound disc carrying the sound track for a film, etc.).

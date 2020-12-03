@@ -1,8 +1,0 @@
-
-<!-- Fifth scale degree in the prevailing scale --><note deg="5"></note>
-<!-- Augmented 5th -->
-<note deg="5+"></note>
-<!-- Lowered 6 scale degree approached from below -->
-<note deg="^6-"></note>
-<!-- Leading tone approached from above -->
-<note deg="v7"></note>

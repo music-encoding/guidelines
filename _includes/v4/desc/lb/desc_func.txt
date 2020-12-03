@@ -1,1 +1,0 @@
-States whether the line break follows a single line or a line group.

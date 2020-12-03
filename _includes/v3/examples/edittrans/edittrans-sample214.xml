@@ -1,8 +1,0 @@
-<chord>
-   <note dur="4" oct="4" pname="c"></note>
-   <note dur="4" oct="4" pname="e"></note>
-   <sic>
-      <note dur="2" oct="4" pname="g"></note>
-   </sic>
-   <note dur="4" oct="4" pname="a"></note>
-</chord>

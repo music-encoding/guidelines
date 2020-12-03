@@ -1,3 +1,0 @@
-Points to a note element in a different layer whose stem is shared. 
-          The linked notes should be rendered like a chord though they are part of different layers.
-        

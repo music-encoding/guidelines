@@ -1,1 +1,0 @@
-States the length of a barline. Must be greater than 0 and less than or equal to (2 times number of staff lines) + 2, e.g., between 0 and 12 for a 5-line staff.

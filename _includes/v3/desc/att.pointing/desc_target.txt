@@ -1,2 +1,0 @@
-Allows the use of one or more previously-undeclared URIs to identify passive
-participants in a relationship; that is, the entities pointed "to".

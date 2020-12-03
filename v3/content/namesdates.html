@@ -1,0 +1,4243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Names and Dates</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/namesdates.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="namesDates">17. Names and Dates
+      
+  </h2>
+
+<p>This chapter describes the MEI module used for the encoding of names (names of persons or corporations/organizations) or descriptive phrases for styles, periods or geographical indications. In section 
+  <a href="/v3/content/shared.html#sharedNamesNumbersDates">Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the elements provided in the core module allow an encoder to specify that a given text segment is a proper noun. The elements provided by the present module allow the encoder to supply a detailed sub-structure for such proper nouns, and to distinguish explicitly between persons and organizations, and between stylistic, periodical or geographical indications.</p>
+
+<p>The chapter begins by discussing the elements provided for the encoding of names (
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a>) and dates (
+  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a>) in general and finishes by addressing more specific elements for corporate names (
+  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a>), geographic names (
+  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a>), period names (
+  <a href="/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a>), personal names (
+  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>) and style names (
+  <a href="/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a>). In general it is recommended to use standardized forms of proper nouns and to record the names and web-accessible locations of the controlled vocabularies used. There are several commonly-referenced authority files, especially for geographical, organizational and personal names, such as the Gemeinsame Normdatei (GND), the Library of Congress Authorities, the Getty Thesaurus of Geographic Names (TGN), and the MARC code list for relators. Recommendations on which standards could be used can be found in the descriptions of the individual elements.</p>
+
+<h3 id="namesdatesBasic">17.1. Basic Elements for Names and Dates
+      
+  </h3>
+
+<p>The basic elements for capturing names and dates are defined in the shared module:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/name.html">name</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Proper noun or noun phrase.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/date.html">date</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A string identifying a point in time or the time period between two such points.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element contains the name of an entity that is difficult to tag more specifically as a 
+  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a>, 
+  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a>, 
+  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>, or 
+  <a href="/v3/elements/title.html" class="link_odd_elementSpec">title</a>. In section 
+  <a href="/v3/content/shared.html#sharedNamesNumbersDates">Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element may be used in place of the more specific elements when it is not known what kind of name is being described or when a high degree of precision is not necessary. For example, the 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element might be used when it is not clear whether the name “Bach” refers to a person or a geographic feature. When name parts are needed, use 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements. The recommended values for the <strong>@type</strong> attribute are:</p>
+
+<p class="gloss"><strong>‘pers’</strong>: a personal name</p>
+
+<p class="gloss"><strong>‘corp’</strong>: the name of a corporate entity</p>
+
+<p class="gloss"><strong>‘place’</strong>: a geographic name</p>
+
+<p class="gloss"><strong>‘process’</strong>: the name of a process or mechanical agent</p>
+
+<p>The date sub-element is available within 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the authority attribute.</p>
+
+<p>Examples of the use of the 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> element:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"pers"</span><span class="nt">&gt;</span>Henry VIII, King of England<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"corp"</span><span class="nt">&gt;</span>The Beatles<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"place"</span><span class="nt">&gt;</span>Orbach<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"process"</span><span class="nt">&gt;</span>OMR software<span class="nt">&lt;/name&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The element 
+  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a> contains a date in any format, including a date range. A date range may be expressed as textual content or, when intervening punctuation is present, as a combination of date sub-elements and text.</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;date&gt;</span>5/3/05<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;date&gt;</span>May 30, 2012<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;date&gt;</span>March 1-21, 1812<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;date&gt;</span>
+   <span class="nt">&lt;date&gt;</span>March 1, 1812<span class="nt">&lt;/date&gt;</span>-
+   <span class="nt">&lt;date&gt;</span>March 21, 1812<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;/date&gt;</span></code></pre></figure>
+
+</div>
+
+<p>To be more specific about the date, the attributes in the 
+  <a href="/v3/attribute-classes/att.datable.html">att.datable</a> class can be used:</p>
+
+<p class="gloss"><strong>startdate</strong>: contains the starting point of a date range in standard ISO form</p>
+
+<p class="gloss"><strong>enddate</strong>: contains the end point of a date range in standard ISO form</p>
+
+<p class="gloss"><strong>notbefore</strong>: contains a lower boundary for an uncertain date</p>
+
+<p class="gloss"><strong>notafter</strong>: contains an upper boundary for an uncertain date</p>
+
+<p class="gloss"><strong>isodate</strong>: gives the value of a textual date in standard ISO form</p>
+
+<p class="gloss"><strong>calendar</strong>: indicates the system or calendar to which a date belongs, for example, Gregorian, Julian, Roman, Mosaic, Revolutionary, Islamic, etc.</p>
+
+<p class="gloss"><strong>cert</strong>: signifies the degree of certainty or precision associated with a feature (high, medium, low, unknown)</p>
+
+<p>In the following example, the ambiguous date text “5/3/05” is resolved using the <strong>@isodate</strong> attribute:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"1905-05-03"</span><span class="nt">&gt;</span>5/3/05<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"2005-03-05"</span><span class="nt">&gt;</span>5/3/05<span class="nt">&lt;/date&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="namesdatesSpecialized">17.2. Specialized Name and Date Elements
+      
+  </h3>
+
+<p>In addition to the generic 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> and 
+  <a href="/v3/elements/date.html" class="link_odd_elementSpec">date</a> elements provided by the shared module, the namesDates module provides for the markup of the specialized cases described below.</p>
+
+<h4 id="namesdatesCorpNames">17.2.1. Corporate Names
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/corpname.html">corpName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (corporate name) – Identifies an organization or group of people that acts as a single
+entity.</div>
+    </div>
+</div>
+
+<p>Corporate names are non-personal names which refer to structured bodies of one or more persons that act as a single entity. Typical examples include associations, businesses, projects or institutions (e.g.,. ‘the Royal College of Music’ or ‘the BBC’), but also racial or ethnic groupings or political factions where these are regarded as forming a single agency. Organization names typically include some type of indicator or pattern or words that help identify them as non-personal names.</p>
+
+<p>The 
+  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> element is frequently used within the 
+  <a href="/v3/content/header.html">The MEI Header</a> of an MEI document. It is typically found in the 
+  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;respStmt&gt;</span>
+   <span class="nt">&lt;corpName&gt;</span>Library of Congress<span class="nt">&lt;/corpName&gt;</span>
+<span class="nt">&lt;/respStmt&gt;</span></code></pre></figure>
+
+</div>
+
+<p>It may also be used wherever it is necessary to mark a corporate name, for example when a corporation is responsible for a certain event in the history of a musical work:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;history&gt;</span>
+   <span class="nt">&lt;eventList&gt;</span>
+      <span class="nt">&lt;event&gt;</span>
+         <span class="nt">&lt;p&gt;</span>First performance by
+            <span class="nt">&lt;corpName&gt;</span>The Boston Symphony Orchestra<span class="nt">&lt;/corpName&gt;</span>,
+            <span class="nt">&lt;date&gt;</span>October 22, 1881<span class="nt">&lt;/date&gt;</span>.
+         <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/event&gt;</span>
+   <span class="nt">&lt;/eventList&gt;</span>
+<span class="nt">&lt;/history&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When it is necessary to provide structure for a name, the separate parts of the name may be encoded in 
+  <a href="/v3/elements/corpname.html" class="link_odd_elementSpec">corpName</a> sub-elements, for example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;corpName&gt;</span>Federal Research Division,
+   <span class="nt">&lt;corpName&gt;</span>Library of Congress<span class="nt">&lt;/corpName&gt;</span>
+<span class="nt">&lt;/corpName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Standard designations for corporate bodies can be taken from a controlled vocabulary, such as the Gemeinsame Normdatei (GND). If a controlled value is used, the list from which it is taken should be recorded. In this case, the following attributes are particularly relevant:</p>
+
+<p class="gloss"><strong>authority</strong>: to record the list from which a controlled value is taken,</p>
+
+<p class="gloss"><strong>authURI (authority URI)</strong>: to record the web-accessible location of the controlled vocabulary from which the value is taken,</p>
+
+<p class="gloss"><strong>dbkey (database key)</strong>: to record a value which serves as a primary key in an external database.</p>
+
+<h4 id="namesdatesGeogNames">17.2.2. Geographic Names
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/geogname.html">geogName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (geographic name) – The proper noun designation for a place, natural feature, or
+political jurisdiction.</div>
+    </div>
+</div>
+
+<p>Geographic names are proper noun designations for places (e.g.,. Baltimore, Maryland), natural features (e.g.,. Black Forest) or political jurisdictions (e.g.,. Quartier Latin, Paris).</p>
+
+<p>The element can be used, e.g., to label geographical names in titles:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;title&gt;</span>
+   <span class="nt">&lt;geogName&gt;</span>Bohemia<span class="nt">&lt;/geogName&gt;</span>: Folk Songs
+<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;title&gt;</span>Music in the
+   <span class="nt">&lt;geogName&gt;</span>German Democratic Republic<span class="nt">&lt;/geogName&gt;</span>
+<span class="nt">&lt;/title&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Geographic name sub-parts may be encoded in 
+  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> sub-elements. For example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>
+   <span class="nt">&lt;geogName&gt;</span>
+      <span class="nt">&lt;geogName&gt;</span>Baltimore<span class="nt">&lt;/geogName&gt;</span>,
+      <span class="nt">&lt;geogName&gt;</span>Maryland<span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;geogName&gt;</span>
+      <span class="nt">&lt;geogName&gt;</span>French Quarter<span class="nt">&lt;/geogName&gt;</span>,
+      <span class="nt">&lt;geogName&gt;</span>New Orleans<span class="nt">&lt;/geogName&gt;</span>,
+      <span class="nt">&lt;geogName&gt;</span>Louisiana<span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;/geogName&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<p>To enable localization of an organization, or to specify names of places with identical names, the use of controlled vocabulary is recommend for names of administrative divisions, such as cities, states, and countries. In this case, the following attributes are particularly relevant:</p>
+
+<p class="gloss"><strong>authority</strong>: records the list from which a controlled value is taken, e.g., the Thesaurus of Geographic Names (TGN),</p>
+
+<p class="gloss"><strong>authURI (authority URI)</strong>: records the web-accessible location of the controlled vocabulary from which the value is taken,</p>
+
+<p class="gloss"><strong>dbkey (database key)</strong>: records a value which serves as a primary key in an external database.</p>
+
+<p>The encoder may use these attributes in combination. In case of the German city of Frankfurt, for example, a clarification whether Frankfurt am Main or Frankfurt an der Oder is meant can be achieved by referring to the ID of the TGN entry:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- Frankfurt am Main --&gt;</span><span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">dbkey=</span><span class="s">"7005293"</span><span class="nt">&gt;</span>Frankfurt<span class="nt">&lt;/geogName&gt;</span>
+<span class="c">&lt;!-- Frankfurt an der Oder --&gt;</span>
+<span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">dbkey=</span><span class="s">"7005972"</span><span class="nt">&gt;</span>Frankfurt<span class="nt">&lt;/geogName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The names of places given within addresses can be marked with 
+  <a href="/v3/elements/geogname.html" class="link_odd_elementSpec">geogName</a> elements, for example:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;corpName</span> <span class="na">authURI=</span><span class="s">"http://d-nb.info/gnd"</span> <span class="na">authority=</span><span class="s">"GND"</span> <span class="na">dbkey=</span><span class="s">"2007744-0"</span><span class="nt">&gt;</span>German Research Foundation<span class="nt">&lt;/corpName&gt;</span>
+<span class="nt">&lt;address&gt;</span>
+   <span class="nt">&lt;addrLine&gt;</span>Kennedyallee 40<span class="nt">&lt;/addrLine&gt;</span>
+   <span class="nt">&lt;addrLine&gt;</span>53175
+      <span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">dbkey=</span><span class="s">"7005090"</span><span class="nt">&gt;</span>Bonn<span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;/addrLine&gt;</span>
+   <span class="nt">&lt;addrLine&gt;</span>
+      <span class="nt">&lt;geogName</span> <span class="na">authURI=</span><span class="s">"www.getty.edu/research/tools/vocabularies/tgn"</span> <span class="na">authority=</span><span class="s">"TGN"</span> <span class="na">dbkey=</span><span class="s">"7000084"</span><span class="nt">&gt;</span>Germany<span class="nt">&lt;/geogName&gt;</span>
+   <span class="nt">&lt;/addrLine&gt;</span>
+<span class="nt">&lt;/address&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="namesdatesPeriodNames">17.2.3. Time Period Names
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/periodname.html">periodName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (period name) – A label that describes a period of time, such as 'Baroque' or '3rd
+Style
+period'.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a> element is for names which describe a particular period of time, for example, those which characterize obvious similarities in style, such as ‘Baroque’ or ‘3rd Style Period’:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName&gt;</span>Baroque<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The date sub-element is available within 
+  <a href="/v3/elements/periodname.html" class="link_odd_elementSpec">periodName</a> in order to record any dates associated with the name that should be captured in the text, for example, start and end dates of the named period:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName&gt;</span>Baroque (
+   <span class="nt">&lt;date&gt;</span>1600<span class="nt">&lt;/date&gt;</span>-
+   <span class="nt">&lt;date&gt;</span>1750<span class="nt">&lt;/date&gt;</span>)
+<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Recording start and end points of a certain period using the <strong>@startdate</strong> and <strong>@enddate</strong> attributes may prove to be better for machine processing:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName</span> <span class="na">enddate=</span><span class="s">"1750"</span> <span class="na">startdate=</span><span class="s">"1600"</span><span class="nt">&gt;</span>Baroque<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>If a controlled value is used, the list from which it is taken should be recorded. In this case the following attributes are relevant:</p>
+
+<p class="gloss"><strong>authority</strong>: to record the list from which a controlled value is taken,</p>
+
+<p class="gloss"><strong>authURI (authority URI)</strong>: to record the web-accessible location of the controlled vocabulary from which the value is taken,</p>
+
+<p class="gloss"><strong>dbkey (database key)</strong>: to record a value which serves as a primary key in an external database.</p>
+
+<h4 id="namesdatesPersNames">17.2.4. Personal Names
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/persname.html">persName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (personal name) – Designation for an individual, including any or all of that
+individual's forenames, surnames, honorific titles, and added names.</div>
+    </div>
+</div>
+
+<p>Personal names within an MEI document may simply be marked with the 
+  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element containing a proper noun or proper noun phrase referring to an individual. Personal names, however, often consist of several components, like forenames and surnames, but also other components, such as inherited or life-time titles of nobility, honorific or academic prefixes, military ranks or traditional descriptive phrases. These components may be marked using 
+  <a href="/v3/elements/name.html" class="link_odd_elementSpec">name</a> sub-elements, the function of which may be indicated using the <strong>@type</strong> attribute. In this case, <strong>@type</strong> attribute may take the following values:</p>
+
+<p class="gloss"><strong>‘forename’</strong>: contains a forename, given or baptismal name.</p>
+
+<p class="gloss"><strong>‘surname’</strong>: a family (inherited) name, as opposed to a given, baptismal, or nick name.</p>
+
+<p class="gloss"><strong>‘rolename’</strong>: contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank.</p>
+
+<p class="gloss"><strong>‘addname’ (additional name)</strong>: contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.</p>
+
+<p class="gloss"><strong>‘namelink’ (name link)</strong>: contains a connecting phrase or link used within a name but not regarded as part of it, such as van der or of.</p>
+
+<p class="gloss"><strong>‘genname’ (generational name)</strong>: contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named.</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"forename"</span><span class="nt">&gt;</span>Henry<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"genname"</span><span class="nt">&gt;</span>VIII<span class="nt">&lt;/name&gt;</span>,
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"rolename"</span><span class="nt">&gt;</span>King of England<span class="nt">&lt;/name&gt;</span>,
+   <span class="nt">&lt;date&gt;</span>1491-1547<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;/persName&gt;</span>
+<span class="nt">&lt;persName&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"surname"</span><span class="nt">&gt;</span>Kilmarnock<span class="nt">&lt;/name&gt;</span>,
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"forename"</span><span class="nt">&gt;</span>William<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"forename"</span><span class="nt">&gt;</span>Boyd<span class="nt">&lt;/name&gt;</span>,
+   <span class="nt">&lt;name</span> <span class="na">type=</span><span class="s">"rolename"</span><span class="nt">&gt;</span>Earl of<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element is often enclosed in the 
+  <a href="/v3/elements/respstmt.html" class="link_odd_elementSpec">respStmt</a> element which may occur within 
+  <a href="/v3/elements/titlestmt.html" class="link_odd_elementSpec">titleStmt</a>, 
+  <a href="/v3/elements/pubstmt.html" class="link_odd_elementSpec">pubStmt</a>, 
+  <a href="/v3/elements/seriesstmt.html" class="link_odd_elementSpec">seriesStmt</a> and 
+  <a href="/v3/elements/change.html" class="link_odd_elementSpec">change</a>. This usage of the 
+  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a> element typical looks like this:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;sourceDesc&gt;</span>
+   <span class="nt">&lt;source&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Im wunderschönen Monat Mai<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;respStmt&gt;</span>
+            <span class="nt">&lt;persName&gt;</span>Robert Schumann<span class="nt">&lt;/persName&gt;</span>
+         <span class="nt">&lt;/respStmt&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;/source&gt;</span>
+<span class="nt">&lt;/sourceDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Apart from the composer or originator of a musical work, however, there could be many other persons involved in the genesis of a musical work, such as librettists, lyricists, arrangers, editors, transcribers, printers, publishers, etc. The special roles of these persons may be marked using the <strong>@role</strong> attribute on 
+  <a href="/v3/elements/persname.html" class="link_odd_elementSpec">persName</a>. For example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName</span> <span class="na">role=</span><span class="s">"arranger"</span><span class="nt">&gt;</span>Wolfgang Amadeus Mozart<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName</span> <span class="na">role=</span><span class="s">"lyricist"</span><span class="nt">&gt;</span>Heinrich Heine<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The <a href="http://www.loc.gov/marc/relators/relaterm.html" class="link_ref">Marc code list for relators</a> offers a variety of controlled terms that may serve as values for this use of <strong>@role</strong>.</p>
+
+<p>For names in the metadata header, the use of a controlled list, such as the Gemeinsame Normdatei (GND) or the Library of Congress Name Authorities, is recommended.  The name and web-accessible location of the list may be recorded using the <strong>@authority</strong> and <strong>@authURI</strong> attributes, respectively. To record a value which serves as a primary key in an external database, the <strong>@dbkey</strong> attribute may be used.</p>
+
+<p>For maximal machine-processability, these three attributes may be used in combination. For example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;persName</span> <span class="na">authURI=</span><span class="s">"http://d-nb.info/gnd"</span> <span class="na">authority=</span><span class="s">"GND"</span> <span class="na">dbkey=</span><span class="s">"118584596"</span> <span class="na">role=</span><span class="s">"composer"</span><span class="nt">&gt;</span>Wolfgang Amadeus Mozart<span class="nt">&lt;/persName&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="namesdatesStyleNames">17.2.5. Style Names
+      
+  </h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/stylename.html">styleName</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (style name) – A label for a characteristic style of writing or performance, such
+as
+'bebop' or 'rock-n-roll'.</div>
+    </div>
+</div>
+
+<p>Music can be divided into different styles, genres, and forms. The term style denotes a mode of expression, or more particularly, the manner in which a work of art is executed:</p>
+
+<p>“In the discussion of music, which is orientated towards relationships rather than meanings, the term raises special difficulties; it may be used to denote music characterized of an individual composer, of a period, of a geographical area or center, or of a society or social function. For the aesthetician style concerns surface or appearance, though in music appearance and essence are ultimately inseparable. For the historian a style is a distinguishing and ordering concept, both consistent of and denoting generalities; he or she groups examples of music according to similarities between them.” (Source: “Style”, Grove Music Online, accessed: April 27, 2012)</p>
+
+<p>The name of a musical style can be marked by the 
+  <a href="/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a> element, for example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;styleName&gt;</span>bebop<span class="nt">&lt;/styleName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>It may be, e.g., used for recording a style name within a title:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;title&gt;</span>La voix du
+   <span class="nt">&lt;styleName&gt;</span>bebop<span class="nt">&lt;/styleName&gt;</span>
+<span class="nt">&lt;/title&gt;</span></code></pre></figure>
+
+</div>
+
+<p>or to record a style of a certain epoch by using the 
+  <a href="/v3/elements/stylename.html" class="link_odd_elementSpec">styleName</a> sub-element:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;periodName&gt;</span>Modern
+   <span class="nt">&lt;styleName&gt;</span>Jazz<span class="nt">&lt;/styleName&gt;</span>
+<span class="nt">&lt;/periodName&gt;</span></code></pre></figure>
+
+</div>
+
+<p>If a controlled value is used, the list, from which it is taken should be recorded. In this case the following attributes are particularly relevant:</p>
+
+<ul>
+  <li><strong>@authority</strong>: records the list from which a controlled value is taken,</li>
+  <li><strong>@authURI</strong> (authority URI): indicates the web-accessible location of the controlled vocabulary from which the value is taken,</li>
+  <li><strong>@dbkey</strong> (database key): holds a value which serves as a primary key in an external database.</li>
+</ul>
+
+<p>Musical forms and genres must be distinguished from musical style. Form and genre are typically indicated using the 
+  <a href="/v3/elements/classification.html" class="link_odd_elementSpec">classification</a> element, described in chapter 
+  <a href="/v3/content/header.html#headerWorkClass">Classification</a>.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/namesdates.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/namesdates.html#namesdatesBasic">17.1. Basic Elements for Names and Dates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/namesdates.html#namesdatesSpecialized">17.2. Specialized Name and Date Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesCorpNames">17.2.1. Corporate Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesGeogNames">17.2.2. Geographic Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPeriodNames">17.2.3. Time Period Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPersNames">17.2.4. Personal Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesStyleNames">17.2.5. Style Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/namesdates.html#namesdatesBasic">17.1. Basic Elements for Names and Dates
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/namesdates.html#namesdatesSpecialized">17.2. Specialized Name and Date Elements
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesCorpNames">17.2.1. Corporate Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesGeogNames">17.2.2. Geographic Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPeriodNames">17.2.3. Time Period Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesPersNames">17.2.4. Personal Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/namesdates.html#namesdatesStyleNames">17.2.5. Style Names
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

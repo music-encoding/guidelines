@@ -1,3 +1,0 @@
-Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
-          as a quarter note, *not the numerator of the time signature or the metronomic
-          indication*.

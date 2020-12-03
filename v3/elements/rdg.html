@@ -1,0 +1,3979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>rdg</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/elements/rdg.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        <div class="elementSpec">
+   <h3 id="rdg">&lt;rdg&gt;</h3>
+   <table class="wovenodd">
+      <tr>
+         <td colspan="2" class="wovenodd-col2">(reading) – Contains a single reading within a textual variation.</td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
+         <td class="wovenodd-col2">MEI.critapp</td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Attributes</strong></td>
+         <td class="wovenodd-col2">
+            <table class="table table-striped">
+               <thead>
+                  <tr>
+                     <th></th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@cause</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Classifies the cause for the variant reading, according to any appropriate typology
+                              of possible origins.</span>
+                           Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.crit.html">att.crit</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@copyof</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to an element of which the current element is a copy.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.anl.html">att.common.anl</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@corresp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to point to other elements that correspond to this one in a generic
+                              fashion.</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.anl.html">att.common.anl</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@evaluate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the intended meaning when a participant in a relationship is itself a
+                              pointer.</span>
+                           Allowed values are:
+                           "<span style="font-weight: 500;">all</span>" <i>(If an element pointed to is itself a pointer, then the target of that pointer
+                              will be taken, and so on, until an element is found which is not a pointer.)</i>,  "<span style="font-weight: 500;">one</span>" <i>(If an element pointed to is itself a pointer, then its target (whether a pointer
+                              or not) is taken as the target of this pointer.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(No further evaluation of targets is carried out beyond that needed to find the
+                              element(s) specified in plist or target attribute.)</i><span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.targeteval.html">att.targeteval</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@hand</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Signifies the hand responsible for an action. The value must be the ID of a
+                              &lt;hand&gt; element declared in the header.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.handident.html">att.handident</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@label</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
+                           Value of datatype <span style="font-weight: 500;">string</span>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@n</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a number-like designation for an element.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/token.html">token</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.html">att.common</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@next</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.anl.html">att.common.anl</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.anl.html">att.common.anl</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@resp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures information regarding responsibility for some aspect of the text's
+                              creation, transcription, editing, or encoding. Its value must point to one or more
+                              identifiers declared in the document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.responsibility.html">att.responsibility</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@sameas</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to an element that is the same as the current element but is not a literal
+                              copy of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.anl.html">att.common.anl</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@seq</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to assign a sequence number related to the order in which the encoded features
+                              carrying this attribute are believed to have occurred.</span>
+                           Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.sequence.html">att.sequence</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@source</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains a list of one or more pointers indicating the sources which attest to a
+                              given reading. Each value should correspond to the ID of a &lt;source&gt; element
+                              located in the document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.source.html">att.source</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@subtype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provide any sub-classification for the element, additional to that given by its type
+                              attribute.</span>
+                           Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.typed.html">att.typed</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@synch</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.common.anl.html">att.common.anl</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@target</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Allows the use of one or more previously-undeclared URIs to identify passive
+                              participants in a relationship; that is, the entities pointed "to".</span>
+                           One or more values from <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@targettype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Characterization of target resource(s) using any convenient classification scheme
+                              or
+                              typology.</span>
+                           Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@type</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Characterizes the element in some sense, using any convenient classification scheme
+                              or typology.</span>
+                           Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.typed.html">att.typed</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@when</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
+                              be the ID of a <a class="link_odd_elementSpec" href="/v3/elements/when.html">when</a> element elsewhere in the document.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.alignment.html">att.alignment</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@xlink:actuate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Defines whether a link occurs automatically or must be requested by the user.</span>
+                           Allowed values are:
+                           "<span style="font-weight: 500;">onLoad</span>" <i>(Load the target resource(s) immediately.)</i>,  "<span style="font-weight: 500;">onRequest</span>" <i>(Load the target resource(s) upon user request.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(Do not permit loading of the target resource(s).)</i>,  "<span style="font-weight: 500;">other</span>" <i>(Behavior other than allowed by the other values of this attribute.)</i><span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@xlink:role</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Characterization of the relationship between resources. The value of the role
+                              attribute must be a URI.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@xlink:show</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Defines how a remote resource is rendered.</span>
+                           Allowed values are:
+                           "<span style="font-weight: 500;">new</span>" <i>(Open in a new window.)</i>,  "<span style="font-weight: 500;">replace</span>" <i>(Load the referenced resource in the same window.)</i>,  "<span style="font-weight: 500;">embed</span>" <i>(Embed the referenced resource at the point of the link.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(Do not permit traversal to the referenced resource.)</i>,  "<span style="font-weight: 500;">other</span>" <i>(Behavior other than permitted by the other values of this attribute.)</i><span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@xml:base</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
+                              references into absolute URI references.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="/v3/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@xml:id</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
+                              and other resources. Each id attribute within a document must have a unique
+                              value.</span>
+                           Value of datatype <span style="font-weight: 500;">ID</span>.
+                           <span class="attributeClasses"><a class="link_odd" href="/v3/attribute-classes/att.id.html">att.id</a></span></div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Member of</strong></td>
+         <td class="wovenodd-col2">
+            <div class="parent"></div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Contained by</strong></td>
+         <td class="wovenodd-col2">
+            <div class="parent">
+               <div class="specChildren">
+                  <div class="specChild"><span class="specChildModule">MEI.critapp</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/app.html">app</a></span></div>
+               </div>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>May contain</strong></td>
+         <td class="wovenodd-col2">
+            <div class="specChildren">
+               <div class="specChild"><span class="specChildModule">MEI.cmn</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/arpeg.html">arpeg</a> <a class="link_odd_elementSpec" href="/v3/elements/beam.html">beam</a> <a class="link_odd_elementSpec" href="/v3/elements/beamspan.html">beamSpan</a> <a class="link_odd_elementSpec" href="/v3/elements/beatrpt.html">beatRpt</a> <a class="link_odd_elementSpec" href="/v3/elements/bend.html">bend</a> <a class="link_odd_elementSpec" href="/v3/elements/breath.html">breath</a> <a class="link_odd_elementSpec" href="/v3/elements/btrem.html">bTrem</a> <a class="link_odd_elementSpec" href="/v3/elements/fermata.html">fermata</a> <a class="link_odd_elementSpec" href="/v3/elements/ftrem.html">fTrem</a> <a class="link_odd_elementSpec" href="/v3/elements/gliss.html">gliss</a> <a class="link_odd_elementSpec" href="/v3/elements/hairpin.html">hairpin</a> <a class="link_odd_elementSpec" href="/v3/elements/halfmrpt.html">halfmRpt</a> <a class="link_odd_elementSpec" href="/v3/elements/harppedal.html">harpPedal</a> <a class="link_odd_elementSpec" href="/v3/elements/measure.html">measure</a> <a class="link_odd_elementSpec" href="/v3/elements/metersig.html">meterSig</a> <a class="link_odd_elementSpec" href="/v3/elements/metersiggrp.html">meterSigGrp</a> <a class="link_odd_elementSpec" href="/v3/elements/mrest.html">mRest</a> <a class="link_odd_elementSpec" href="/v3/elements/mrpt.html">mRpt</a> <a class="link_odd_elementSpec" href="/v3/elements/mrpt2.html">mRpt2</a> <a class="link_odd_elementSpec" href="/v3/elements/mspace.html">mSpace</a> <a class="link_odd_elementSpec" href="/v3/elements/multirest.html">multiRest</a> <a class="link_odd_elementSpec" href="/v3/elements/multirpt.html">multiRpt</a> <a class="link_odd_elementSpec" href="/v3/elements/octave.html">octave</a> <a class="link_odd_elementSpec" href="/v3/elements/pedal.html">pedal</a> <a class="link_odd_elementSpec" href="/v3/elements/reh.html">reh</a> <a class="link_odd_elementSpec" href="/v3/elements/slur.html">slur</a> <a class="link_odd_elementSpec" href="/v3/elements/tie.html">tie</a> <a class="link_odd_elementSpec" href="/v3/elements/tuplet.html">tuplet</a> <a class="link_odd_elementSpec" href="/v3/elements/tupletspan.html">tupletSpan</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.cmnOrnaments</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/mordent.html">mordent</a> <a class="link_odd_elementSpec" href="/v3/elements/trill.html">trill</a> <a class="link_odd_elementSpec" href="/v3/elements/turn.html">turn</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.critapp</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/app.html">app</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.edittrans</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/add.html">add</a> <a class="link_odd_elementSpec" href="/v3/elements/choice.html">choice</a> <a class="link_odd_elementSpec" href="/v3/elements/corr.html">corr</a> <a class="link_odd_elementSpec" href="/v3/elements/cpmark.html">cpMark</a> <a class="link_odd_elementSpec" href="/v3/elements/damage.html">damage</a> <a class="link_odd_elementSpec" href="/v3/elements/del.html">del</a> <a class="link_odd_elementSpec" href="/v3/elements/gap.html">gap</a> <a class="link_odd_elementSpec" href="/v3/elements/handshift.html">handShift</a> <a class="link_odd_elementSpec" href="/v3/elements/orig.html">orig</a> <a class="link_odd_elementSpec" href="/v3/elements/reg.html">reg</a> <a class="link_odd_elementSpec" href="/v3/elements/restore.html">restore</a> <a class="link_odd_elementSpec" href="/v3/elements/sic.html">sic</a> <a class="link_odd_elementSpec" href="/v3/elements/subst.html">subst</a> <a class="link_odd_elementSpec" href="/v3/elements/supplied.html">supplied</a> <a class="link_odd_elementSpec" href="/v3/elements/unclear.html">unclear</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.fingering</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/fing.html">fing</a> <a class="link_odd_elementSpec" href="/v3/elements/finggrp.html">fingGrp</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.harmony</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/harm.html">harm</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.lyrics</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/lyrics.html">lyrics</a> <a class="link_odd_elementSpec" href="/v3/elements/verse.html">verse</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.mensural</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/ligature.html">ligature</a> <a class="link_odd_elementSpec" href="/v3/elements/mensur.html">mensur</a> <a class="link_odd_elementSpec" href="/v3/elements/proport.html">proport</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.midi</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/midi.html">midi</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.neumes</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/ineume.html">ineume</a> <a class="link_odd_elementSpec" href="/v3/elements/syllable.html">syllable</a> <a class="link_odd_elementSpec" href="/v3/elements/uneume.html">uneume</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.shared</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/accid.html">accid</a> <a class="link_odd_elementSpec" href="/v3/elements/annot.html">annot</a> <a class="link_odd_elementSpec" href="/v3/elements/artic.html">artic</a> <a class="link_odd_elementSpec" href="/v3/elements/barline.html">barLine</a> <a class="link_odd_elementSpec" href="/v3/elements/chord.html">chord</a> <a class="link_odd_elementSpec" href="/v3/elements/clef.html">clef</a> <a class="link_odd_elementSpec" href="/v3/elements/clefgrp.html">clefGrp</a> <a class="link_odd_elementSpec" href="/v3/elements/custos.html">custos</a> <a class="link_odd_elementSpec" href="/v3/elements/dir.html">dir</a> <a class="link_odd_elementSpec" href="/v3/elements/div.html">div</a> <a class="link_odd_elementSpec" href="/v3/elements/dot.html">dot</a> <a class="link_odd_elementSpec" href="/v3/elements/dynam.html">dynam</a> <a class="link_odd_elementSpec" href="/v3/elements/ending.html">ending</a> <a class="link_odd_elementSpec" href="/v3/elements/expansion.html">expansion</a> <a class="link_odd_elementSpec" href="/v3/elements/keysig.html">keySig</a> <a class="link_odd_elementSpec" href="/v3/elements/layer.html">layer</a> <a class="link_odd_elementSpec" href="/v3/elements/note.html">note</a> <a class="link_odd_elementSpec" href="/v3/elements/ornam.html">ornam</a> <a class="link_odd_elementSpec" href="/v3/elements/pad.html">pad</a> <a class="link_odd_elementSpec" href="/v3/elements/pb.html">pb</a> <a class="link_odd_elementSpec" href="/v3/elements/phrase.html">phrase</a> <a class="link_odd_elementSpec" href="/v3/elements/rest.html">rest</a> <a class="link_odd_elementSpec" href="/v3/elements/sb.html">sb</a> <a class="link_odd_elementSpec" href="/v3/elements/scoredef.html">scoreDef</a> <a class="link_odd_elementSpec" href="/v3/elements/section.html">section</a> <a class="link_odd_elementSpec" href="/v3/elements/space.html">space</a> <a class="link_odd_elementSpec" href="/v3/elements/staff.html">staff</a> <a class="link_odd_elementSpec" href="/v3/elements/staffdef.html">staffDef</a> <a class="link_odd_elementSpec" href="/v3/elements/staffgrp.html">staffGrp</a> <a class="link_odd_elementSpec" href="/v3/elements/syl.html">syl</a> <a class="link_odd_elementSpec" href="/v3/elements/tempo.html">tempo</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.usersymbols</span><span class="specChildElements"><a class="link_odd_elementSpec" href="/v3/elements/anchoredtext.html">anchoredText</a> <a class="link_odd_elementSpec" href="/v3/elements/curve.html">curve</a> <a class="link_odd_elementSpec" href="/v3/elements/line.html">line</a></span></div>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
+         <td class="wovenodd-col2">
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.common.html">att.common</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.crit.html">att.crit</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.pointing.html">att.pointing</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.rdg.anl.html">att.rdg.anl</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.rdg.ges.html">att.rdg.ges</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.rdg.log.html">att.rdg.log</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.rdg.vis.html">att.rdg.vis</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.targeteval.html">att.targeteval</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="/v3/attribute-classes/att.typed.html">att.typed</a>"</span></span>/&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/elements/expansion.html">expansion</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.applike.html">model.appLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.divlike.html">model.divLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.milestonelike.music.html">model.milestoneLike.music</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.staffgrplike.html">model.staffGrpLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.annotlike.html">model.annotLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.graphicprimitivelike.html">model.graphicprimitiveLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.editlike.html">model.editLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.transcriptionlike.html">model.transcriptionLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.rdgpart.critapp.html">model.rdgPart.critapp</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="/v3/model-classes/model.sectionpart.html">model.sectionPart</a>"</span></span>
+                                 /&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Remarks</strong></td>
+         <td class="wovenodd-col2">
+            <p>Since a reading can be a multi-measure section, the <a class="link_odd_elementSpec" href="/v3/elements/scoredef.html">scoreDef</a>
+               element is allowed so that a reading may have its own meta-data without incurring
+               the
+               overhead of child <a class="link_odd_elementSpec" href="/v3/elements/section.html">section</a> elements. The <a class="link_odd_elementSpec" href="/v3/elements/app.html">app</a>
+               sub-element is permitted in order to allow nested sub-variants.This element is modelled
+               on an element in the Text Encoding Initiative (TEI)
+               standard.
+            </p>
+         </td>
+      </tr>
+   </table>
+</div>
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/elements/rdg.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -1,1 +1,0 @@
-Indicates the function of the right bar line and is structurally important.

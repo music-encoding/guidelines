@@ -1,1 +1,0 @@
-Attributes that capture the placement of bar lines.

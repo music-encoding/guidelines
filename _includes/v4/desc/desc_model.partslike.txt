@@ -1,1 +1,0 @@
-Groups elements that collect separate performer parts.

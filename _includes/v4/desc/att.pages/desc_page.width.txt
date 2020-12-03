@@ -1,2 +1,0 @@
-Describes the width of the page; may be expressed in real-world units or staff
-          steps.

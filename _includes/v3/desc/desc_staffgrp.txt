@@ -1,1 +1,0 @@
-(staff group) – A group of bracketed or braced staves.

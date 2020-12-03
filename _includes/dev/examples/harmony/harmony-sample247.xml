@@ -1,7 +1,0 @@
-<chordDef xml:id="harmonychordA2">
-   <chordMember oct="2" pname="a"></chordMember>
-   <chordMember inth="7"></chordMember>
-   <chordMember inth="16"></chordMember>
-   <chordMember inth="19"></chordMember>
-   <chordMember inth="24"></chordMember>
-</chordDef>

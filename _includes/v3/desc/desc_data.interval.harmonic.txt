@@ -1,1 +1,0 @@
-A token indicating diatonic interval quality and size.

@@ -1,1 +1,0 @@
-Attributes describing the amount and direction of octave displacement.

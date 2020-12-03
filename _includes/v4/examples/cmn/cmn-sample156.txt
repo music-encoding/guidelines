@@ -1,4 +1,0 @@
-<measure>
-  <!-- staves omitted -->
-  <pedal dir="down" staff="2" tstamp="1" />
-</measure>

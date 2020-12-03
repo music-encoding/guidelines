@@ -1,2 +1,0 @@
-Describes the visual appearance of the fermata; that is, whether it occurs as
-upright or inverted.

@@ -1,1 +1,0 @@
-Holds the pitch name of the tonic key, e.g. 'c' for the key of C.

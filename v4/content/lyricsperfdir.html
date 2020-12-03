@@ -1,0 +1,4764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Lyrics and Performance Directions</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v4/content/lyricsperfdir.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="lyricsperfdir">8. Lyrics and Performance Directions
+      
+  </h2>
+
+<p>This chapter describes how to encode words and syllables in vocal notation. This text is typically written under a staff to indicate the text to be vocally performed. As such, this text should not be confused with other text on the score, for which see chapter 
+  <a href="/v4/content/textencoding.html">Text Encoding</a>.</p>
+
+<h3 id="lyricsDesc">8.1. Vocal Text
+      
+  </h3>
+
+<p>These guidelines suggest two methods for encoding text in vocal notation: encoding syllables as 
+  <a href="/v4/content/lyricsperfdir.html#lyricsInEvents">Vocally Performed Text Encoded Within Notes</a> and encoding performed text as 
+  <a href="/v4/content/lyricsperfdir.html#lyricsAfterEvents">Vocally Performed Text Encoded Separately</a> after the notes (and other staff events) either within 
+  <a href="/v4/elements/layer.html" class="link_odd_elementSpec">layer</a> elements or within 
+  <a href="/v4/elements/measure.html" class="link_odd_elementSpec">measure</a> elements when available (for example in a Common Music Notation context). Each method may be more convenient depending on the source text and on the textual phenomena that the encoding intends to record.</p>
+
+<p>Both methods eventually rely on the 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> element, which is part of the ‘shared’ module and is therefore available in all MEI files. The following sections will begin by introducing the general use of 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> and then show in detail the two different encoding methods.</p>
+
+<h3 id="lyricsSyl">8.2. Lyric Syllables
+      
+  </h3>
+
+<p>By ‘lyric syllable’, these guidelines mean a word or portion of a word that is to be performed vocally. Each syllable is encoded with the 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> element, with which it is also possible to specify the position of the syllable in a word, the type of connectors between syllables, alignment adjustments, and the formatting for each syllable. These are the key components:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/syl.html">syl</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (syllable) – Individual lyric syllable.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.syl.log.html">@wordpos</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the position of a syllable within a word.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.syl.log.html">@con</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Describes the symbols typically used to indicate breaks between syllables and their
+          functions.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.horizontalalign.html">@halign</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records horizontal alignment.</div>
+    </div>
+</div>
+
+<p>The attribute <strong>@wordpos</strong> is used to specify the position of the marked-up lyric syllable in a word. It allows the following values:</p>
+
+<p class="gloss"><strong>i</strong>: Indicates that the current syllable’s position is initial; that is, at the beginning of a word;</p>
+
+<p class="gloss"><strong>m</strong>: Indicates that the current syllable is in the middle of a word;</p>
+
+<p class="gloss"><strong>t</strong>: Indicates that the syllable’s position is terminal; that is, at the end of a word.</p>
+
+<p>When a syllable is at the beginning or in the middle of a word (in which case it will have the <strong>@wordpos</strong> attribute set to ‘i’ or ‘m’), it is recommended to specify the type of connector written between the current and the following syllable. This is expressed with the <strong>@con</strong> attribute, which takes the following values:</p>
+
+<p class="gloss"><strong>s</strong>: A space is used as a connector between syllables;</p>
+
+<p class="gloss"><strong>d</strong>: A dash is used as a connector between syllables;</p>
+
+<p class="gloss"><strong>u</strong>: An underscore sign (indicating prologation of the syllable) is used as a connector between syllables;</p>
+
+<p class="gloss"><strong>t</strong>: A tilde is used to indicate elision with the following syllable. This is typically rendered as a small curved line between the syllables.</p>
+
+<p>Occasionally, a word or a final syllable needs to be extended across multiple notes. In this case an ‘extender’ is provided. An extender is a continuous line drawn at the text’s baseline from the end of the syllable associated with the first note until the last note to be sung with the syllable.</p>
+
+<p>The use of 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> described in this section is common to CMN and other notation systems, such as mensural notation. Other uses specific to certain types of notation and repertoires are addressed in other chapters. See for example 
+  <a href="/v4/content/neumes.html">Repertoire: Neume Notation</a>.</p>
+
+<h3 id="lyricsInEvents">8.3. Vocally Performed Text Encoded Within Notes
+      
+  </h3>
+
+<p>Each lyric syllable can be encoded directly within an associated note, either by using the <strong>@syl</strong> attribute on 
+  <a href="/v4/elements/note.html" class="link_odd_elementSpec">note</a> or the 
+  <a href="/v4/elements/verse.html" class="link_odd_elementSpec">verse</a> element.</p>
+
+<p>Using the <strong>@syl</strong> attribute on notes is the simplest way of encoding vocally performed text and is recommended only for simple situations or for those encodings which do not focus on vocally performed text.</p>
+
+<p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of <strong>@syl</strong>:</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/lyrics/ex_syl_att.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Handel, Messiah HWV 56, Halleluja</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">syl=</span><span class="s">"Hal-"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">syl=</span><span class="s">"le-"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">syl=</span><span class="s">"lu-"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">syl=</span><span class="s">"jah,"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;rest</span> <span class="na">dur=</span><span class="s">"4"</span><span class="nt">&gt;&lt;/rest&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When there are multiple lines of vocally performed text, or the encoder wishes to be more specific about connectors, etc., the use of 
+  <a href="/v4/elements/verse.html" class="link_odd_elementSpec">verse</a> and 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> is recommended.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/verse.html">verse</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Division of a poem or song lyrics, sometimes having a fixed length, meter or rhyme scheme;
+      a stanza.</div>
+    </div>
+</div>
+
+<p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of 
+  <a href="/v4/elements/verse.html" class="link_odd_elementSpec">verse</a>:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;syl</span> <span class="na">con=</span><span class="s">"d"</span> <span class="na">wordpos=</span><span class="s">"i"</span><span class="nt">&gt;</span>Hal<span class="nt">&lt;/syl&gt;</span>
+            <span class="nt">&lt;/verse&gt;</span>
+         <span class="nt">&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;syl</span> <span class="na">con=</span><span class="s">"d"</span> <span class="na">wordpos=</span><span class="s">"m"</span><span class="nt">&gt;</span>le<span class="nt">&lt;/syl&gt;</span>
+            <span class="nt">&lt;/verse&gt;</span>
+         <span class="nt">&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl</span> <span class="na">con=</span><span class="s">"d"</span> <span class="na">wordpos=</span><span class="s">"m"</span><span class="nt">&gt;</span>lu<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl</span> <span class="na">wordpos=</span><span class="s">"t"</span><span class="nt">&gt;</span>jah,<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;rest</span> <span class="na">dur=</span><span class="s">"4"</span><span class="nt">&gt;&lt;/rest&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>As it is common practice in written text, it is assumed that a space separates words. Many vocal texts, however, introduce elisions and connect two syllables into one unit. For example, the vocal text from Mozart’s <em>Don Giovanni</em> sung by Don Giovanni in Finale II, Ho fermo il core in petto introduces an elision between the word fermo and il and between core and in. An elision can be indicated by placing both syllables within the same 
+  <a href="/v4/elements/note.html" class="link_odd_elementSpec">note</a> and setting the 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> element’s <strong>@con</strong> attribute value to ‘t’:</p>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;note&gt;</span>
+   <span class="nt">&lt;verse&gt;</span>
+      <span class="nt">&lt;syl</span> <span class="na">con=</span><span class="s">"t"</span> <span class="na">wordpos=</span><span class="s">"t"</span><span class="nt">&gt;</span>re<span class="nt">&lt;/syl&gt;</span>
+      <span class="nt">&lt;syl</span> <span class="na">wordpos=</span><span class="s">"i"</span><span class="nt">&gt;</span>in<span class="nt">&lt;/syl&gt;</span>
+   <span class="nt">&lt;/verse&gt;</span>
+<span class="nt">&lt;/note&gt;</span></code></pre></figure>
+
+</div>
+
+<p>When there is more than one line of text, more than one 
+  <a href="/v4/elements/verse.html" class="link_odd_elementSpec">verse</a> element can be used. The following example from a piano reduction of Wagner’s <em>Rheingold</em> has two lines of text, with an English translation on the second line. Note the use of the <strong>@xml:lang</strong> attribute to differentiate the two languages:</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/lyrics/ex_verse_m.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example from Wagner's Rheingold with translated text.</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="feasible">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;scoreDef&gt;</span>
+   <span class="nt">&lt;staffGrp&gt;</span>
+      <span class="nt">&lt;staffDef</span> <span class="na">clef.line=</span><span class="s">"4"</span> <span class="na">clef.shape=</span><span class="s">"F"</span> <span class="na">key.sig=</span><span class="s">"4s"</span> <span class="na">lines=</span><span class="s">"5"</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/staffDef&gt;</span>
+   <span class="nt">&lt;/staffGrp&gt;</span>
+<span class="nt">&lt;/scoreDef&gt;</span>
+<span class="nt">&lt;section&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>
+      <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">xml:lang=</span><span class="s">"ger"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl</span> <span class="na">con=</span><span class="s">"d"</span> <span class="na">wordpos=</span><span class="s">"i"</span><span class="nt">&gt;</span>Rei<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"2"</span> <span class="na">xml:lang=</span><span class="s">"eng"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl&gt;</span>thinks<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl</span> <span class="na">wordpos=</span><span class="s">"t"</span><span class="nt">&gt;</span>fes<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl&gt;</span>it<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl&gt;</span>zu<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl&gt;</span>were<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+         <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>
+      <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;layer&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl</span> <span class="na">con=</span><span class="s">"d"</span> <span class="na">wordpos=</span><span class="s">"i"</span><span class="nt">&gt;</span>wal<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl&gt;</span>wise<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;accid</span> <span class="na">accid=</span><span class="s">"n"</span><span class="nt">&gt;&lt;/accid&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl</span> <span class="na">wordpos=</span><span class="s">"t"</span><span class="nt">&gt;</span>ten,<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+               <span class="nt">&lt;verse</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;syl&gt;</span>now<span class="nt">&lt;/syl&gt;</span>
+               <span class="nt">&lt;/verse&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+            <span class="nt">&lt;rest</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">dur.ges=</span><span class="s">"8p"</span><span class="nt">&gt;&lt;/rest&gt;</span>
+         <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Optionally, it is possible to include an 
+  <a href="/v4/elements/lb.html" class="link_odd_elementSpec">lb</a> element within 
+  <a href="/v4/elements/verse.html" class="link_odd_elementSpec">verse</a> to explicitly encode line and line group endings. This is specifically meant to facilitate karaoke applications.</p>
+
+<p>Finally, the <strong>@rhythm</strong> attribute can be used to specify a rhythm for the syllable that differs from that of the notes on the staff.</p>
+
+<h3 id="lyricsAfterEvents">8.4. Vocally Performed Text Encoded Separately
+      
+  </h3>
+
+<p>Vocally performed text may also be encoded separately from the notes with the 
+  <a href="/v4/elements/lg.html" class="link_odd_elementSpec">lg</a> element. These are the main components:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/lg.html">lg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (line group) – May be used for any section of text that is organized as a group of lines;
+      however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a
+      stanza, refrain, verse paragraph, etc.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.staffident.html">@staff</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Signifies the staff on which a notated event occurs or to which a control event
+          applies. Mandatory when applicable.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.layerident.html">@layer</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Identifies the layer to which a feature applies.</div>
+    </div>
+</div>
+
+<p>Since this element is separated from the encoding of the notes, it must be associated with a staff that will provide rhythm information when required for automated processing. The <strong>@staff</strong> attribute gives the associated staff and if there is more than one layer on that staff, the <strong>@layer</strong> attribute may be used to indicate the layer from which the rhythm should be taken. If there is any divergence between the rhythm of the vocally performed text and the notes, the <strong>@rhythm</strong> attribute on 
+  <a href="/v4/elements/verse.html" class="link_odd_elementSpec">verse</a> may be used to specify the text’s rhythm.</p>
+
+<p>The following example from Carl Maria von Weber’s <em>Der Freischütz</em> illustrates this encoding method:</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/lyrics/ex_lyric.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Weber, Der Freischütz</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="feasible">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;section&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>
+      <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;artic</span> <span class="na">artic=</span><span class="s">"acc"</span><span class="nt">&gt;&lt;/artic&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;artic</span> <span class="na">artic=</span><span class="s">"acc"</span><span class="nt">&gt;&lt;/artic&gt;</span>
+            <span class="nt">&lt;/note&gt;</span>
+         <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;/staff&gt;</span>
+      <span class="nt">&lt;lyrics</span> <span class="na">staff=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;verse&gt;</span>
+            <span class="nt">&lt;syl&gt;</span>Sturm<span class="nt">&lt;/syl&gt;</span>
+            <span class="nt">&lt;syl&gt;</span>und<span class="nt">&lt;/syl&gt;</span>
+         <span class="nt">&lt;/verse&gt;</span>
+      <span class="nt">&lt;/lyrics&gt;</span>
+   <span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>
+      <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">tie=</span><span class="s">"i"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;/staff&gt;</span>
+      <span class="nt">&lt;lyrics</span> <span class="na">staff=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;verse&gt;</span>
+            <span class="nt">&lt;syl&gt;</span>Nacht!<span class="nt">&lt;/syl&gt;</span>
+         <span class="nt">&lt;/verse&gt;</span>
+      <span class="nt">&lt;/lyrics&gt;</span>
+   <span class="nt">&lt;/measure&gt;</span>
+   <span class="nt">&lt;measure&gt;</span>
+      <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">tie=</span><span class="s">"t"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In this encoding style, a 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> element with its <strong>@con</strong> attribute set to ‘t’ and the following syllable are presumed to be associated with a single note. In the following example, the first two syllables occur on the first note and the third syllable occurs on the second note.</p>
+
+<div class="sampleCode" data-lang="feasible">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;staff&gt;</span>
+   <span class="nt">&lt;layer&gt;</span>
+      <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">&gt;&lt;/note&gt;</span>
+   <span class="nt">&lt;/layer&gt;</span>
+<span class="nt">&lt;/staff&gt;</span>
+<span class="c">&lt;!-- later --&gt;</span>
+<span class="nt">&lt;lyrics</span> <span class="na">staff=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;verse&gt;</span>
+      <span class="nt">&lt;syl</span> <span class="na">con=</span><span class="s">"t"</span> <span class="na">wordpos=</span><span class="s">"t"</span><span class="nt">&gt;</span>re<span class="nt">&lt;/syl&gt;</span>
+      <span class="nt">&lt;syl</span> <span class="na">wordpos=</span><span class="s">"i"</span><span class="nt">&gt;</span>il<span class="nt">&lt;/syl&gt;</span>
+      <span class="nt">&lt;syl</span> <span class="na">wordpos=</span><span class="s">"i"</span><span class="nt">&gt;</span>pet<span class="nt">&lt;/syl&gt;</span>
+   <span class="nt">&lt;/verse&gt;</span>
+<span class="nt">&lt;/lyrics&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="drama">8.5. Drama
+      
+  </h3>
+
+<p>This section is supposed to explain stage directions and speeches in MEI drama.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v4/content/lyricsperfdir.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsDesc">8.1. Vocal Text
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsSyl">8.2. Lyric Syllables
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsInEvents">8.3. Vocally Performed Text Encoded Within Notes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsAfterEvents">8.4. Vocally Performed Text Encoded Separately
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#drama">8.5. Drama
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsDesc">8.1. Vocal Text
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsSyl">8.2. Lyric Syllables
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsInEvents">8.3. Vocally Performed Text Encoded Within Notes
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#lyricsAfterEvents">8.4. Vocally Performed Text Encoded Separately
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/lyricsperfdir.html#drama">8.5. Drama
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/5e43035f61b41ba0a117a5aabe4c426921fc8376'>Version 5e43035</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

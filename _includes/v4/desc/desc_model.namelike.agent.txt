@@ -1,1 +1,0 @@
-Groups elements which contain names of individuals or corporate bodies.

@@ -1,1 +1,0 @@
-Records whether all staff lines are visible.

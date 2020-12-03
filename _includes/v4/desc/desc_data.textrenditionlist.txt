@@ -1,1 +1,0 @@
-Closed list of text rendition values.

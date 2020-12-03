@@ -1,1 +1,0 @@
-Specifies a generic MEI version label.

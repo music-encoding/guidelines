@@ -1,2 +1,0 @@
-Contains an accidental for the tonic key, if one is required, e.g., if key.pname
-          equals 'c' and key.accid equals 's', then a tonic of C# is indicated.

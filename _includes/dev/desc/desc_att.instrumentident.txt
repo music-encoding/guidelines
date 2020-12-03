@@ -1,1 +1,0 @@
-Attributes which identify a MIDI instrument.

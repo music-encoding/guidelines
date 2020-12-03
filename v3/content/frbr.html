@@ -1,0 +1,4304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Functional Requirements for Bibliographic Records (FRBR)</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/frbr.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="FRBR">3. Functional Requirements for Bibliographic Records (FRBR)
+      
+  </h2>
+
+<p>MEI header information may refer to different levels of description of the encoded work: Some information may apply the work in all its various forms and realizations, e.g., the name of its composer. Other information may describe a certain version of the work, or a source such as the printed first edition, or only a single copy of that source. Core MEI limits the header information to two such levels of description: work and source, respectively.</p>
+
+<p>However, when the FRBR module is available more detailed descriptions are possible. With certain limitations, mainly due to the musical nature of the works encoded in MEI, the FRBR module adapts the Functional Requirements for Bibliographic Records (FRBR) as recommended by the International Federation of Library Associations and Institutions (IFLA) [<a href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records" class="link_ref">http://www.ifla.org/publications/functional-requirements-for-bibliographic-records</a>].</p>
+
+<p>The IFLA’s FRBR model distinguishes four levels of abstraction, or entities:</p>
+
+<p class="gloss"><strong>Work</strong>: FRBR defines a work as a “distinct intellectual or artistic creation”, an abstract entity because there is no single material object one can point to as the work.</p>
+
+<p class="gloss"><strong>Expression</strong>: An expression is defined as “the intellectual or artistic realization of a work in the form of […] notation, sound, image, object, movement, etc., or any combination of such forms”. Expressions are also abstract entities.</p>
+
+<p class="gloss"><strong>Manifestation</strong>: A manifestation is defined as “the physical embodiment of an expression of a work”, including, for instance, manuscripts, books, sound recordings, films, video recordings, CD-ROMs, multimedia kits, etc. The manifestation represents all the physical objects that
+bear the same characteristics, with respect to both intellectual content and physical form.</p>
+
+<p class="gloss"><strong>Item</strong>: A single exemplar of a manifestation is called an item, e.g., a specific copy of a printed score. With manuscripts, item and manifestation levels are nearly identical. A manuscript may be regarded as a manifestation having only one item.</p>
+
+<h3 id="FRBRentities">3.1. FRBR Entities in MEI
+      
+  </h3>
+
+<p>When the FRBR module is available, MEI offers four elements corresponding to the FRBR entities:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/work.html">work</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Provides a detailed description of a work, specifically its history, language use,
+and
+high-level musical attributes: key, tempo, meter, medium of performance, and intended
+duration.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/expression.html">expression</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Intellectual or artistic realization of a work.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/source.html">source</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A bibliographic description of a source used in the creation of the electronic
+file.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/item.html">item</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Single instance or exemplar of a source/manifestation.</div>
+    </div>
+</div>
+
+<p>The names of the MEI entities generally follow those of FRBR: the 
+  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a> element is a container for description at the FRBR “work” level, 
+  <a href="/v3/elements/expression.html" class="link_odd_elementSpec">expression</a> is for description at the FRBR “expression” level, and 
+  <a href="/v3/elements/item.html" class="link_odd_elementSpec">item</a> holds FRBR “item” level description. The 
+  <a href="/v3/elements/source.html" class="link_odd_elementSpec">source</a> element, however, is the MEI equivalent to FRBR “manifestation” level description. The name “source” is used because it is both shorter and more familiar than “manifestation” to users of existing bibliographic markup schemes.</p>
+
+<p>The 
+  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a> element has an optional child element to hold the expression elements:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/expressionlist.html">expressionList</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Gathers bibliographic expression entities.</div>
+    </div>
+</div>
+
+<p>As 
+  <a href="/v3/elements/expressionlist.html" class="link_odd_elementSpec">expressionList</a> is a container element for descriptions of different expressions of the same work, it may contain only 
+  <a href="/v3/elements/expression.html" class="link_odd_elementSpec">expression</a> elements.</p>
+
+<p>The content model of 
+  <a href="/v3/elements/expression.html" class="link_odd_elementSpec">expression</a> is similar to that of 
+  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a>. It does not, however, permit 
+  <a href="/v3/elements/expressionlist.html" class="link_odd_elementSpec">expressionList</a> and 
+  <a href="/v3/elements/audience.html" class="link_odd_elementSpec">audience</a> elements. But it adds elements that aid identification and description of specific versions of a work:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/extent.html">extent</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Used to express size in terms other than physical dimensions, such as number of pages,
+number of records in file, number of bytes, performance duration for music, audio
+recordings
+and visual projections, etc.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/scoreformat.html">scoreFormat</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Describes the type of score used to represent a musical composition (e.g., short score,
+full score, condensed score, close score, etc.).</div>
+    </div>
+</div>
+
+<p>Since expressions, like works, are abstractions, their titles are often nebulous. Usually, however, the title of an expression is the same as the work it represents. When the relationship between a work and an expression is encoded hierarchically, the expression’s title element may be omitted with the assumption that it will be inherited from the work. If no title is provided for an expression, distinguishing characteristics must be provided in other elements, such as 
+  <a href="/v3/elements/perfmedium.html" class="link_odd_elementSpec">perfMedium</a>, as in the following example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;work</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titleStmt&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Pavane pour une infante défunte<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;expressionList&gt;</span>
+      <span class="nt">&lt;expression&gt;</span>
+         <span class="nt">&lt;perfMedium&gt;</span>
+            <span class="nt">&lt;perfResList&gt;</span>
+               <span class="nt">&lt;perfRes&gt;</span>piano<span class="nt">&lt;/perfRes&gt;</span>
+            <span class="nt">&lt;/perfResList&gt;</span>
+         <span class="nt">&lt;/perfMedium&gt;</span>
+      <span class="nt">&lt;/expression&gt;</span>
+      <span class="nt">&lt;expression&gt;</span>
+         <span class="nt">&lt;perfMedium&gt;</span>
+            <span class="nt">&lt;perfResList&gt;</span>
+               <span class="nt">&lt;perfRes&gt;</span>orchestra<span class="nt">&lt;/perfRes&gt;</span>
+            <span class="nt">&lt;/perfResList&gt;</span>
+         <span class="nt">&lt;/perfMedium&gt;</span>
+      <span class="nt">&lt;/expression&gt;</span>
+   <span class="nt">&lt;/expressionList&gt;</span>
+<span class="nt">&lt;/work&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Programmatic concatenation of the work title and one or more characteristics of the expression can be used to provide identification for the expression. For example, the expressions above may be identified by “Pavane pour une infante défunte (piano)” and “Pavane pour une infante défunte (orchestra)”. In some cases, it may be helpful to assign a descriptive title to the expression, as illustrated below. The carrier of the manifestation is often a good source of this kind of descriptive text.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;work</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titleStmt&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Pavane pour une infante défunte<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;expressionList&gt;</span>
+      <span class="nt">&lt;expression&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Version for piano<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+         <span class="nt">&lt;perfMedium&gt;</span>
+            <span class="nt">&lt;perfResList&gt;</span>
+               <span class="nt">&lt;perfRes&gt;</span>piano<span class="nt">&lt;/perfRes&gt;</span>
+            <span class="nt">&lt;/perfResList&gt;</span>
+         <span class="nt">&lt;/perfMedium&gt;</span>
+      <span class="nt">&lt;/expression&gt;</span>
+      <span class="nt">&lt;expression&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Version for orchestra<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+         <span class="nt">&lt;perfMedium&gt;</span>
+            <span class="nt">&lt;perfResList&gt;</span>
+               <span class="nt">&lt;perfRes&gt;</span>orchestra<span class="nt">&lt;/perfRes&gt;</span>
+            <span class="nt">&lt;/perfResList&gt;</span>
+         <span class="nt">&lt;/perfMedium&gt;</span>
+      <span class="nt">&lt;/expression&gt;</span>
+   <span class="nt">&lt;/expressionList&gt;</span>
+<span class="nt">&lt;/work&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;work</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titleStmt&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Sonata No. 2<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;expressionList&gt;</span>
+      <span class="nt">&lt;expression&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Live recording at Carnegie Hall<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;/expression&gt;</span>
+      <span class="nt">&lt;expression&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Studio recording<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;/expression&gt;</span>
+   <span class="nt">&lt;/expressionList&gt;</span>
+<span class="nt">&lt;/work&gt;</span></code></pre></figure>
+
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/itemlist.html">itemList</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Gathers bibliographic item entities.</div>
+    </div>
+</div>
+
+<p>The itemList element provides functionality similar to that of expressionList; that is, it can be used to group descriptions of individual items (exemplars) of the parent source. Just like 
+  <a href="/v3/elements/expressionlist.html" class="link_odd_elementSpec">expressionList</a>, which can only hold 
+  <a href="/v3/elements/expression.html" class="link_odd_elementSpec">expression</a> sub-components, 
+  <a href="/v3/elements/itemlist.html" class="link_odd_elementSpec">itemList</a> may only contain 
+  <a href="/v3/elements/item.html" class="link_odd_elementSpec">item</a> elements.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;source</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titleStmt&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Trois trios pour le piano-forte violon, et violoncelle<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;itemList&gt;</span>
+      <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">"Copy at Stanford"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;physLoc&gt;</span>
+            <span class="nt">&lt;repository&gt;</span>
+               <span class="nt">&lt;corpName&gt;</span>Stanford University Library<span class="nt">&lt;/corpName&gt;</span>
+            <span class="nt">&lt;/repository&gt;</span>
+         <span class="nt">&lt;/physLoc&gt;</span>
+      <span class="nt">&lt;/item&gt;</span>
+      <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">"Copy at Dresden"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;physLoc&gt;</span>
+            <span class="nt">&lt;repository&gt;</span>
+               <span class="nt">&lt;corpName&gt;</span>Dresden, Sächsische Landesbibliothek - Staats- und Universitätsbibliothek<span class="nt">&lt;/corpName&gt;</span>
+            <span class="nt">&lt;/repository&gt;</span>
+         <span class="nt">&lt;/physLoc&gt;</span>
+      <span class="nt">&lt;/item&gt;</span>
+   <span class="nt">&lt;/itemList&gt;</span>
+<span class="nt">&lt;/source&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="FRBRcomponents">3.2. Component Parts in MEI
+      
+  </h3>
+
+<p>Each of the four MEI elements corresponding to FRBR entities may contain a list of constituent parts. All four entities utilize the same element:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/componentgrp.html">componentGrp</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (component group) – Container for components of a bibliographic entity.</div>
+    </div>
+</div>
+
+<p>However, the child elements of a component group must be the same type as the group’s parent. This allows for a more detailed description than is possible using the core MEI 
+  <a href="/v3/elements/contents.html" class="link_odd_elementSpec">contents</a> element. For example, a work element’s 
+  <a href="/v3/elements/componentgrp.html" class="link_odd_elementSpec">componentGrp</a> element can only contain 
+  <a href="/v3/elements/work.html" class="link_odd_elementSpec">work</a> elements, etc. In this way, the 
+  <a href="/v3/elements/componentgrp.html" class="link_odd_elementSpec">componentGrp</a> element may be employed to describe composite works, as in the example below:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;work</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titleStmt&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Der Ring des Nibelungen<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;componentGrp&gt;</span>
+      <span class="nt">&lt;work&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Das Rheingold<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;/work&gt;</span>
+      <span class="nt">&lt;work&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Die Walküre<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;/work&gt;</span>
+      <span class="nt">&lt;work&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Siegfried<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;/work&gt;</span>
+      <span class="nt">&lt;work&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Götterdämmerung<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;/work&gt;</span>
+   <span class="nt">&lt;/componentGrp&gt;</span>
+<span class="nt">&lt;/work&gt;</span></code></pre></figure>
+
+</div>
+
+<p>This technique can also be applied when a single intellectual source is comprised of multiple physical parts. In the following example, the choral parts were published in four physically separate “signatures”:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;source</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span> <span class="na">xml:id=</span><span class="s">"source.printed_choral_parts"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titleStmt&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Printed choral parts<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;pubStmt&gt;</span>
+      <span class="nt">&lt;publisher&gt;</span>Horneman <span class="ni">&amp;amp;</span> Erslev<span class="nt">&lt;/publisher&gt;</span>
+      <span class="nt">&lt;pubPlace&gt;</span>Copenhagen<span class="nt">&lt;/pubPlace&gt;</span>
+      <span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"1871"</span><span class="nt">&gt;</span>1871<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;/pubStmt&gt;</span>
+   <span class="nt">&lt;componentGrp&gt;</span>
+      <span class="nt">&lt;source&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Soprani<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+         <span class="nt">&lt;physDesc&gt;</span>
+            <span class="nt">&lt;extent</span> <span class="na">unit=</span><span class="s">"pages"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/extent&gt;</span>
+         <span class="nt">&lt;/physDesc&gt;</span>
+      <span class="nt">&lt;/source&gt;</span>
+      <span class="nt">&lt;source&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Alti<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+         <span class="nt">&lt;physDesc&gt;</span>
+            <span class="nt">&lt;extent</span> <span class="na">unit=</span><span class="s">"pages"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/extent&gt;</span>
+         <span class="nt">&lt;/physDesc&gt;</span>
+      <span class="nt">&lt;/source&gt;</span>
+      <span class="nt">&lt;source&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Tenori<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+         <span class="nt">&lt;physDesc&gt;</span>
+            <span class="nt">&lt;extent</span> <span class="na">unit=</span><span class="s">"pages"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/extent&gt;</span>
+         <span class="nt">&lt;/physDesc&gt;</span>
+      <span class="nt">&lt;/source&gt;</span>
+      <span class="nt">&lt;source&gt;</span>
+         <span class="nt">&lt;titleStmt&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Bassi<span class="nt">&lt;/title&gt;</span>
+         <span class="nt">&lt;/titleStmt&gt;</span>
+         <span class="nt">&lt;physDesc&gt;</span>
+            <span class="nt">&lt;extent</span> <span class="na">unit=</span><span class="s">"pages"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/extent&gt;</span>
+         <span class="nt">&lt;/physDesc&gt;</span>
+      <span class="nt">&lt;/source&gt;</span>
+   <span class="nt">&lt;/componentGrp&gt;</span>
+<span class="nt">&lt;/source&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="FRBRrelations">3.3. FRBR Relationships
+      
+  </h3>
+
+<p>FRBR defines a number of terms that describe how the basic entities relate to each other. MEI provides the following elements for this purpose.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/relationlist.html">relationList</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Gathers bibliographic relation elements.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/relation.html">relation</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A relation element describes the relationship between its parent and the object
+referenced by the relation element's target attribute.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.rel.html">@rel</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Describes the relationship between the current entity and the target entity. The
+values follow FRBR (see
+http://www.ifla.org/files/assets/cataloguing/frbr/frbr_2008.pdf).</div>
+    </div>
+</div>
+
+<p>Each of the four FRBR entity equivalents – the work, expression, source, and item elements – allows a list of such relationship descriptions as its last child element. 
+  <a href="/v3/elements/relationlist.html" class="link_odd_elementSpec">relationList</a> provides a container for individual 
+  <a href="/v3/elements/relation.html" class="link_odd_elementSpec">relation</a> elements. The nature of the relationship must be specified by the <strong>@rel</strong> attribute and the target of the relationship must be identified by the <strong>@target</strong> attribute.</p>
+
+<p>Since relations are bidirectional, they may be defined on both entities involved, using pairs of oppositely-directed relation descriptors. The following FRBR relations are allowed in MEI as values of the relation element’s @rel attribute (shown in pairs for clarity):</p>
+<ul>
+  <li>hasSuccessor / isSuccessorOf</li>
+  <li>hasSupplement / isSupplementOf</li>
+  <li>hasComplement / isComplementOf</li>
+  <li>hasSummarization / isSummarizationOf</li>
+  <li>hasAdaptation / isAdaptationOf</li>
+  <li>hasTransformation / isTransformationOf</li>
+  <li>hasImitation / isImitationOf</li>
+  <li>hasPart / isPartOf</li>
+  <li>hasReproduction / isReproductionOf</li>
+  <li>hasAbridgement / isAbridgementOf</li>
+  <li>hasRevision / isRevisionOf</li>
+  <li>hasTranslation / isTranslationOf</li>
+  <li>hasArrangement / isArrangementOf</li>
+  <li>hasAlternate / isAlternateOf</li>
+  <li>hasReconfiguration / isReconfigurationOf</li>
+  <li>hasRealization / isRealizationOf</li>
+  <li>hasEmbodiment / isEmbodimentOf</li>
+  <li>hasExemplar / isExemplarOf</li>
+</ul>
+
+<p>Some of these relationships are already implicitly expressed by the MEI structural model: FRBR defines an expression entity as a realization of a work, but as this relation is implied by the expressionList element’s child relationship to its parent work element, the hasRealization/isRealizationOf relation does not need to be explicitly declared. Likewise, it is not necessary to specify by means of relation elements that an item is an exemplar of the source described by its parent source element. This resembles the FRBR model, which knows 1:n relationships both between works and expressions, and manifestations and items.</p>
+
+<p>However, as FRBR allows n:n relations between expressions and manifestations (in MEI: sources), a hierarchical model based on the strucutre of XML is clearly insufficient to express all possible expression / manifestation combinations. It is therefore required to declare these relations explicitly. In FRBR terms, a manifestation / source is an embodiment of an expression.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;source</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titleStmt&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Score, first edition<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;/titleStmt&gt;</span>
+   <span class="nt">&lt;relationList&gt;</span>
+      <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"isEmbodimentOf"</span> <span class="na">target=</span><span class="s">"#version_for_orchestra"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+   <span class="nt">&lt;/relationList&gt;</span>
+<span class="nt">&lt;/source&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Within the 
+  <a href="/v3/elements/componentgrp.html" class="link_odd_elementSpec">componentGrp</a> element, the order of child elements implicitly describes a hasSuccessor/isSuccessorOf relationship between components, i.e. it defines a certain sequence such as the movements of a work. In other cases, 
+  <a href="/v3/elements/relation.html" class="link_odd_elementSpec">relation</a> elements may be needed to explicitly encode relationships not otherwise defined by encoding order or hierarchy. For instance, the hasReproduction/isReproductionOf relationship may be used to indicate that one source is a reprint of another.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;source</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;pubStmt&gt;</span>
+      <span class="nt">&lt;publisher&gt;</span>Horneman <span class="ni">&amp;amp;</span> Erslev<span class="nt">&lt;/publisher&gt;</span>
+      <span class="nt">&lt;pubPlace&gt;</span>Copenhagen<span class="nt">&lt;/pubPlace&gt;</span>
+      <span class="nt">&lt;date</span> <span class="na">isodate=</span><span class="s">"1874"</span><span class="nt">&gt;</span>1874<span class="nt">&lt;/date&gt;</span>
+   <span class="nt">&lt;/pubStmt&gt;</span>
+   <span class="nt">&lt;relationList&gt;</span>
+      <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"isReproductionOf"</span> <span class="na">target=</span><span class="s">"#source.printed_choral_parts"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+   <span class="nt">&lt;/relationList&gt;</span>
+<span class="nt">&lt;/source&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Moreover, the use of 
+  <a href="/v3/elements/componentgrp.html" class="link_odd_elementSpec">componentGrp</a> implicitly defines a hasPart/isPartOf relationship between the componentGrp element’s parent and its child elements. Using the 
+  <a href="/v3/elements/relationlist.html" class="link_odd_elementSpec">relationList</a> and relation elements to define their relationship, the four component works in the “Der Ring des Nibelungen” example above could alternatively be encoded as sibling work elements to the “Ring” work element.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;workDesc</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;work</span> <span class="na">xml:id=</span><span class="s">"theRing"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Der Ring des Nibelungen<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;relationList&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"#rheingold"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"#walkuere"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"#siegfried"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"#goetterdaemmerung"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+      <span class="nt">&lt;/relationList&gt;</span>
+   <span class="nt">&lt;/work&gt;</span>
+   <span class="nt">&lt;work</span> <span class="na">xml:id=</span><span class="s">"rheingold"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Das Rheingold<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;relationList&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"isPartOf"</span> <span class="na">target=</span><span class="s">"#theRing"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+      <span class="nt">&lt;/relationList&gt;</span>
+   <span class="nt">&lt;/work&gt;</span>
+   <span class="nt">&lt;work</span> <span class="na">xml:id=</span><span class="s">"walkuere"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Die Walküre<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;relationList&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"isPartOf"</span> <span class="na">target=</span><span class="s">"#theRing"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+      <span class="nt">&lt;/relationList&gt;</span>
+   <span class="nt">&lt;/work&gt;</span>
+   <span class="nt">&lt;work</span> <span class="na">xml:id=</span><span class="s">"siegfried"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Siegfried<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;relationList&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"isPartOf"</span> <span class="na">target=</span><span class="s">"#theRing"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+      <span class="nt">&lt;/relationList&gt;</span>
+   <span class="nt">&lt;/work&gt;</span>
+   <span class="nt">&lt;work</span> <span class="na">xml:id=</span><span class="s">"goetterdaemmerung"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Götterdämmerung<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;relationList&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"isPartOf"</span> <span class="na">target=</span><span class="s">"#theRing"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+      <span class="nt">&lt;/relationList&gt;</span>
+   <span class="nt">&lt;/work&gt;</span>
+<span class="nt">&lt;/workDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Relations may also be used to point to external resources. For instance, each of the individual component works of the “Ring” could be encoded in separate files, with relations pointing to them.</p>
+
+<p>In the file “ring.xml”:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;workDesc</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;work&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Der Ring des Nibelungen<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;relationList&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"rheingold.xml"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"walkuere.xml"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"siegfried.xml"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"hasPart"</span> <span class="na">target=</span><span class="s">"goetterdaemmerung.xml"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+      <span class="nt">&lt;/relationList&gt;</span>
+   <span class="nt">&lt;/work&gt;</span>
+<span class="nt">&lt;/workDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In the file “rheingold.xml”:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;workDesc</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;work&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+         <span class="nt">&lt;title&gt;</span>Das Rheingold<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;/titleStmt&gt;</span>
+      <span class="nt">&lt;relationList&gt;</span>
+         <span class="nt">&lt;relation</span> <span class="na">rel=</span><span class="s">"isPartOf"</span> <span class="na">target=</span><span class="s">"ring.xml"</span><span class="nt">&gt;&lt;/relation&gt;</span>
+      <span class="nt">&lt;/relationList&gt;</span>
+   <span class="nt">&lt;/work&gt;</span>
+<span class="nt">&lt;/workDesc&gt;</span></code></pre></figure>
+
+</div>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/frbr.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/frbr.html#FRBRentities">3.1. FRBR Entities in MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/frbr.html#FRBRcomponents">3.2. Component Parts in MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/frbr.html#FRBRrelations">3.3. FRBR Relationships
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/frbr.html#FRBRentities">3.1. FRBR Entities in MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/frbr.html#FRBRcomponents">3.2. Component Parts in MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/frbr.html#FRBRrelations">3.3. FRBR Relationships
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

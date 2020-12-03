@@ -1,1 +1,0 @@
-Attributes that indicate the calendar system of a date or other datable element.

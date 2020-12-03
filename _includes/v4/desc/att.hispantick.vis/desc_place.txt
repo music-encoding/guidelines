@@ -1,2 +1,0 @@
-Captures the placement of the tick mark with respect to the neume or neume component
-          with which it is associated.

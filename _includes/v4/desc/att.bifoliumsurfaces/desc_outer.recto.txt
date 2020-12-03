@@ -1,2 +1,0 @@
-A reference to a surface element positioned on the outer recto
-          side of a (folded) sheet.

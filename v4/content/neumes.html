@@ -1,0 +1,6008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Repertoire: Neume Notation</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v4.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v4/content/neumes.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="neumes">6. Repertoire: Neume Notation
+      
+  </h2>
+
+<p>This chapter describes the elements, model classes, and attribute classes that are part of the MEI.neumes module.</p>
+
+<h3 id="neumesRepertoire">6.1. Overview of the Neumes Module
+      
+  </h3>
+
+<p>The MEI Neumes Module represents the community’s attempt to create a standardized set of rules that encapsulate in a logical, systematic, and unequivocal way the musical information represented and conveyed by Western European neumatic notations (beginning with the late ninth century and continuing to the printed books of the twentieth). Most neume notation is used to set music to an existing text. The syllable is the fundamental unit of structure, with the neumes themselves serving as a means of “sonifying” the text. A syllable may be expressed via one or more neumes, with the particular neume shape chosen depending on the pitch contour that is being employed and the desired interpretation.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">syllable</code> element is used as the primary organizational element for neume notation within a <code class="language-plaintext highlighter-rouge">layer</code> element. Within <code class="language-plaintext highlighter-rouge">syllable</code>, the <code class="language-plaintext highlighter-rouge">syl</code> element defined in the <code class="language-plaintext highlighter-rouge">MEI.shared</code> module is used for encoding the textual content, while the <code class="language-plaintext highlighter-rouge">neume</code> and <code class="language-plaintext highlighter-rouge">nc</code> elements are used to encode the neumes themselves. Within these Neumes Module elements, other standard MEI mechanisms are available to accommodate, for example, editorial or critical markup.</p>
+
+<h3 id="basic-four-elements">Basic four elements:</h3>
+
+<p>The following four elements are the fundamental components of the Neumes Module:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/syllable.html">syllable</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Neume notation can be thought of as "neumed text". Therefore, the syllable element
+      provides high-level organization in this repertoire.</div>
+    </div>
+</div>
+
+<p>Neume notation can be thought of as “neumed text”. Therefore, the syllable element provides high-level organization in this repertoire.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/syl.html">syl</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (syllable) – Individual lyric syllable.</div>
+    </div>
+</div>
+
+<p>(syllable) – Individual lyric syllable.</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/syllable.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/neume.html">neume</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Sign representing one or more musical pitches.</div>
+    </div>
+</div>
+
+<p>Sign representing one or more musical pitches. As such, a 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> consists of one or more 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> element(s):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Connected</th>
+      <th style="text-align: center">Non-connected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/guidelines/images/v4/modules/neumes/NEUME-con.png" alt="Connected" /></td>
+      <td style="text-align: center"><img src="/guidelines/images/v4/modules/neumes/NEUME-non-con.png" alt="Non-connected" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v4/elements/nc.html">nc</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Sign representing a single pitched event, although the exact pitch may not be
+      known.</div>
+    </div>
+</div>
+
+<p>Sign representing a single pitched event, although the exact pitch may not be known. Examples of neume components are:</p>
+
+<style>table {width:100%;}</style>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Example 1</th>
+      <th style="text-align: center">Example 2</th>
+      <th style="text-align: center">Example 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/guidelines/images/v4/modules/neumes/NC-rhombusNEW.png" alt="nc-1" /></td>
+      <td style="text-align: center"><img src="/guidelines/images/v4/modules/neumes/NC-squareNEW.png" alt="nc-2" /></td>
+      <td style="text-align: center"><img src="/guidelines/images/v4/modules/neumes/NC-squaretailNEW.png" alt="nc-3" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="neumesBackground">6.2. Neumes Module Background
+      
+  </h3>
+
+<p>Neume encoding in MEI was initially developed as part of the <a href="https://www.dimused.uni-tuebingen.de/tuebingen_e.php">Hildegard von Bingen project</a> at the University of Tübingen. MEI was chosen as the basic representation format after a <a href="http://www.dimused.uni-tuebingen.de/tuebingen_phase1_e.php">comparison of existing music encoding formats</a>. The initial work on this module was performed by Gregor Schräder <a href="http://www.dimused.uni-tuebingen.de/downloads/studienarbeit.pdf">(Ein XML-Datenformat zur Repräsentation kritischer Musikedition unter besonderer Berücksichtigung von Neumennotation)</a>, supervised by Prof. Stefan Morent.
+Since 2012 a group of scholars has been working on the development of a new version of the MEI schema for neume notations (Ichiro Fujinaga, Jennifer Bain, Debra Lacoste, Kate Helsen, and Inga Behrendt). Afterwards, other chant scholars joined the group bringing further expertise on other kinds of early music notations (namely <a href="https://sites.google.com/fcsh.unl.pt/elsadeluca/">Elsa De Luca</a>, Alessandra Ignesti, and Sarah A. Long).</p>
+
+<h3 id="neumesNotation">6.3. Neume Notation and MEI
+      
+  </h3>
+
+<p>There are four main challenges in encoding Western European early music. The first relates to the fact that early notation was just a mnemonic aid that helped the readers to recall the music they already knew by heart and, as such, it conveys only partial musical information (Bain, Behrendt, &amp; Helsen 2014; Helsen, Behrendt, &amp; Bain 2017). Indeed, it is only with the invention of staff lines in the eleventh century that the system of musical transmission gradually changed, relying more on the written record rather than on orality. The second challenge refers to the existence of different regional styles of early notation; early-music manuscripts display a great graphical variety of musical signs, which include both neumes and other notational elements conveying further musical information (e.g., significative letters, Old Hispanic ticks, etc.). Thirdly, some of those regional notational styles occasionally share graphically similar shapes; these similar shapes within the different notational styles are understood by modern scholars to represent the same, a similar, or even a <em>different</em> musical meaning. Finally, while on occasion the neume shapes appear to mirror graphically the musical characteristics of the sound being represented (e.g., pen-stroke going up = rising melody), in many instances it is generally understood that the meaning attached to the neumes (or the other notational elements) may not be so straight-forward, but instead was ruled by conventions shared by the people who knew orally the musical repertory being fixed in written form by means of notation.</p>
+
+<p><em>What do these challenges entail for modern encoders?</em></p>
+
+<p>Firstly, sometimes we have to deal with written signs whose meaning is obscure to us and, while we can infer the meaning of some of those signs from the study of later manuscripts with the same melodies and a more precise notation, in other cases we need to turn to music palaeographers who examine the recurrence of those written signs and the context where they were used. By analysing scribal hands in particular manuscripts, palaeographers can often work out if a written sign is a meaningless scribal variant or a graphical feature conveying musical meaning to the medieval reader. Secondly, since a neume shape could either mirror on the page the aural event or bear some other musical meaning attached by convention, the encoding sometimes relies on the visual level or on the semantic level, and this distinction has to be made on a case-by-case basis. Moreover, since the same written sign could have multiple interpretations according to the style of notation where it was employed, it is crucial to be aware of the conventions of each regional notational alphabet in order to capture the musical information conveyed by that sign in the contexts where it is found.</p>
+
+<p>See two examples of shapes found in different regional styles that are not captured with the same encoding:</p>
+
+<p><strong>Example 1</strong></p>
+
+<p><strong>St Gall notation</strong> Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called <em>salicus</em> in the literature).</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/salicus.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc/&gt;</span>
+  <span class="nt">&lt;nc&gt;</span>
+    <span class="nt">&lt;oriscus/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<p><strong>Old Hispanic notation</strong>: Two-note downward melodic gesture.</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/NLneumeOH.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"c"</span> <span class="na">tilt=</span><span class="s">"s"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<p><strong>Example 2</strong></p>
+
+<p><strong>Old Hispanic notation:</strong> Four-note neutral-low-high-low melodic gesture.</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/MneumeOH.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<p><strong>Aquitanian notation:</strong> Three-note rising neume with oriscus on the second note.</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/LIQUESCENT-ExampleB.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc/&gt;</span>
+  <span class="nt">&lt;nc&gt;</span>
+    <span class="nt">&lt;oriscus/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<p>A further complication is that while the music encoding aims to narrow down and capture the meaning of the neumes in a logical and coherent system, occasionally the significance of some neumes is under debate (e.g., 
+  <a href="/v4/elements/quilisma.html" class="link_odd_elementSpec">quilisma</a>) and, despite its aim for accuracy, the encoding must remain open for future interpretations. From all these challenges has arisen the need for an early music encoding standardisation, that is, a set of rules that work for the description of any neume across all early notations regardless of the different methodologies applied to the study of individual notations and their idiosyncrasies.</p>
+
+<p>Broadly speaking, Western early notations belong to two categories. On one side we have notations where two or more notes were represented by a single pen-stroke, while on the other side there are notations where the notes are graphically separated by means of discrete dots or short pen-strokes. These distinctions have been described even within single notational styles as interrupted neumes <code class="language-plaintext highlighter-rouge">&lt;ineume&gt;</code> or uninterrupted <code class="language-plaintext highlighter-rouge">&lt;uneume&gt;</code> (Morent &amp; Schräder 2008; Morent 2011; MEI Guidelines, 6: Neume Notation, version 3.0), and now as gapped or not gapped (Behrendt, Bain, &amp; Helsen 2017; MEI Guidelines, 6: Neume Notation, version 4.0). To date, the MEI Neumes Module has been tested mainly on stroke notations (St. Gall, Old Hispanic, etc.), but also on Aquitanian point-notation.</p>
+
+<h3 id="neumesExamples">6.4. Samples of MEI encodings
+      
+  </h3>
+
+<h4 id="elements">Elements:</h4>
+
+<p><a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> and 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> are the most common elements used in the MEI Neumes module. In the following examples we can see how these elements 
+are used to describe sung gestures of 1, 2, and 4 notes in square notation.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>One pitch - Staff notation. Example A</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">oct=</span><span class="s">"3"</span><span class="nt">/&gt;</span> 
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>One pitch - Staff notation. Example B</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"3"</span><span class="nt">/&gt;</span> 
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Two pitches - Staff notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/two-pitchesSN.png" alt="Two pitches" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">tilt=</span><span class="s">"n"</span><span class="nt">/&gt;</span> 
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"3"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Four pitches - Staff notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/four-pitchesSN.png" alt="Four pitches" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">oct=</span><span class="s">"3"</span><span class="nt">/&gt;</span> 
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">oct=</span><span class="s">"3"</span><span class="nt">/&gt;</span> 
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">con=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">con=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<p>In addition to 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> and 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> the following elements are also frequently used in the MEI Neumes Module: 
+  <a href="/v4/elements/custos.html" class="link_odd_elementSpec">custos</a>, 
+  <a href="/v4/elements/episema.html" class="link_odd_elementSpec">episema</a>, 
+  <a href="/v4/elements/hispantick.html" class="link_odd_elementSpec">hispanTick</a>, 
+  <a href="/v4/elements/liquescent.html" class="link_odd_elementSpec">liquescent</a>, 
+  <a href="/v4/elements/ncgrp.html" class="link_odd_elementSpec">ncGrp</a>, 
+  <a href="/v4/elements/oriscus.html" class="link_odd_elementSpec">oriscus</a>, 
+  <a href="/v4/elements/quilisma.html" class="link_odd_elementSpec">quilisma</a>, 
+  <a href="/v4/elements/signiflet.html" class="link_odd_elementSpec">signifLet</a>, 
+  <a href="/v4/elements/strophicus.html" class="link_odd_elementSpec">strophicus</a>. Note that 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a>, 
+  <a href="/v4/elements/episema.html" class="link_odd_elementSpec">episema</a>, 
+  <a href="/v4/elements/hispantick.html" class="link_odd_elementSpec">hispanTick</a>, and 
+  <a href="/v4/elements/signiflet.html" class="link_odd_elementSpec">signifLet</a> are 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> elements. Instead 
+  <a href="/v4/elements/oriscus.html" class="link_odd_elementSpec">oriscus</a>, 
+  <a href="/v4/elements/liquescent.html" class="link_odd_elementSpec">liquescent</a>, 
+  <a href="/v4/elements/quilisma.html" class="link_odd_elementSpec">quilisma</a>, and 
+  <a href="/v4/elements/strophicus.html" class="link_odd_elementSpec">strophicus</a> are elements that must be part of a 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> element. The 
+  <a href="/v4/elements/custos.html" class="link_odd_elementSpec">custos</a> is an element that is encoded inside the 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a> element. Furthermore, there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.</p>
+
+<p><a href="/v4/elements/custos.html" class="link_odd_elementSpec">custos</a>: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a “direct” (see MEI encoding of 
+  <a href="/v4/elements/custos.html" class="link_odd_elementSpec">custos</a> below).</p>
+
+<!-- 
+  [mdiv](/v4/elements/mdiv.html){:.link_odd_elementSpec}: to indicate pause between neumes
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/division.png" class="img-responsive" alt="musical example"/>
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+ -->
+
+<p><a href="/v4/elements/episema.html" class="link_odd_elementSpec">episema</a>: to indicate an episema (see MEI encoding of 
+  <a href="/v4/elements/episema.html" class="link_odd_elementSpec">episema</a> below).</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/episema.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<p><a href="/v4/elements/hispantick.html" class="link_odd_elementSpec">hispanTick</a>: to indicate Old Hispanic ticks (see MEI encoding of 
+  <a href="/v4/elements/hispantick.html" class="link_odd_elementSpec">hispanTick</a> below).</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/hispanTick.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<p><a href="/v4/elements/liquescent.html" class="link_odd_elementSpec">liquescent</a>: to indicate a liquescent (see MEI encoding of 
+  <a href="/v4/elements/liquescent.html" class="link_odd_elementSpec">liquescent</a> neumes below).</p>
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/liquescent2NEW.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<p><a href="/v4/elements/ncgrp.html" class="link_odd_elementSpec">ncGrp</a>: to indicate multiple 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a>s.</p>
+
+<p><a href="/v4/elements/oriscus.html" class="link_odd_elementSpec">oriscus</a>: to indicate an oriscus.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>ORISCUS - Square notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/oriscus.png" alt="Oriscus1" title="Oriscus1" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;oriscus/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>ORISCUS - St Gall notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/salicus.png" alt="Oriscus2" title="Oriscus2" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc/&gt;</span>
+  <span class="nt">&lt;nc&gt;</span>
+    <span class="nt">&lt;oriscus/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<p><a href="/v4/elements/quilisma.html" class="link_odd_elementSpec">quilisma</a>: to indicate a quilisma (see MEI encoding of 
+  <a href="/v4/elements/quilisma.html" class="link_odd_elementSpec">quilisma</a> below).</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/quilisma.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<p><a href="/v4/elements/signiflet.html" class="link_odd_elementSpec">signifLet</a>: element indicates significative letter(s) attached to a 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> or a 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> (see MEI encoding of 
+  <a href="/v4/elements/signiflet.html" class="link_odd_elementSpec">signifLet</a> below).</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/signifLet.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<p><a href="/v4/elements/strophicus.html" class="link_odd_elementSpec">strophicus</a>: to indicate a strophicus</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>STROPHICUS - Square notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/strophicusNEW.png" alt="Strophicus" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">ligated=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">ligated=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;strophicus/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;strophicus/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="neume-component-attributes">Neume component attributes:</h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.nc.log.html">@pname</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains a written pitch name.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{[a-g]</td>
+      <td>unknown} (pitch name)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.nc.log.html">@oct</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures written octave information.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{[0-9]</td>
+      <td>unknown} (octave number)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.intervalmelodic.html">@intm</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Encodes the melodic interval from the previous pitch. The value may be a general
+          directional indication (u, d, s, etc.), an indication of diatonic interval direction,
+          quality, and size, or a precise numeric value in half steps.</div>
+    </div>
+</div>
+
+<p>(interval melodic; relative to the previous 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a>) {u | d | s | n | su | sd} (u = up, d = down, s = same, n = neutral/unknown, su = same or higher (but not lower), sd = same or lower (but not higher)). In addition, diatonic intervals (distance on the staff, regardless of the scale) can be indicated, by adding an “S” after a positive or negative single-digit integer, e.g., “-2S” would mean two diatonic steps below (a major or minor third below)</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@con</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Connection to the previous component within the same neume; this attribute should not
+          be used for the first component of a neume.</div>
+    </div>
+</div>
+
+<p>{g | l | e} (gapped, looped, extended) (connection to the previous<br />
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> within the same 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a>).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>GAPPED CONNECTION - Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/gapped.png" alt="Gapped" title="Gapped" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">rellen=</span><span class="s">"l"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>LOOPED CONNECTION - Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/looped.png" alt="Looped" title="Looped" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">s-shape=</span><span class="s">"s"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">con=</span><span class="s">"l"</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>EXTENDED CONNECTION - Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/extended.png" alt="Extended" title="Extended" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"c"</span> <span class="na">con=</span><span class="s">"e"</span> <span class="na">tilt=</span><span class="s">"sw"</span> <span class="na">rellen=</span><span class="s">"s"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Nota bene: the following neume has a similar shape but the neumatic connection is <em>not</em> extended.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>NON-EXTENDED CONNECTION - Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/non-extended.png" alt="Non-extended" title="Non-extended connection" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"n"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"c"</span> <span class="na">tilt=</span><span class="s">"s"</span> <span class="na">rellen=</span><span class="s">"s"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@curve</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records direction of curvature.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{a</td>
+      <td>c} (anticlockwise, clockwise) (pen-stroke either anticlockwise or clockwise curve).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>CURVE - Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/curve.png" alt="Curve" title="Curve" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">curve=</span><span class="s">"a"</span> <span class="na">intm=</span><span class="s">"s"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@angled</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            </div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{true</td>
+      <td>false} (pen-stroke with a sharp corner; sudden change in the pen direction).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>ANGLED - Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/angled.png" alt="Angled" title="Angled" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">angled=</span><span class="s">"true"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">angled=</span><span class="s">"true"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">rellen=</span><span class="s">"l"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@hooked</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Pen stroke has an extension; specific to Hispanic notation.</div>
+    </div>
+</div>
+
+<p>{true | false} (pen-stroke extension found at the end of a 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a>).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>HOOK – Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/hooked.png" alt="Hook" title="Hook" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">hooked=</span><span class="s">"true"</span> <span class="na">rellen=</span><span class="s">"s"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@ligated</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates participation in a ligature.</div>
+    </div>
+</div>
+
+<p>{true | false} if this 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> is part of a ligature.
+See the encoding of the 
+  <a href="/v4/elements/strophicus.html" class="link_odd_elementSpec">strophicus</a> example, above.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@rellen</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Length of the pen stroke relative to the previous component within the same neume;
+          this attribute should not be used for the first component of a neume.</div>
+    </div>
+</div>
+
+<p>{s | l} (shorter, longer) (the relative length of the pen-stroke compared to the previous 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a>, this is optional and to be used only if necessary; it should not be used for the first 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> within a 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a>).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>RELATIVE LENGTH – Old Hispanic notation. Example A</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/rellenA.png" alt="Relative-Length-A" title="Example A" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">rellen=</span><span class="s">"s"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>RELATIVE LENGTH – Old Hispanic notation. Example B</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/rellenL.png" alt="Relative-Length-B" title="Example B" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">rellen=</span><span class="s">"l"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@tilt</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Direction of the pen stroke.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{n</td>
+      <td>ne</td>
+      <td>e</td>
+      <td>se</td>
+      <td>s</td>
+      <td>sw</td>
+      <td>w</td>
+      <td>nw} (north, northeast, etc.) (the direction of the pen-stroke).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>TILT – Old Hispanic / St Gall notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/tilt.png" alt="Tilt" title="Tilt" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.ncform.html">@s-shape</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Direction of the initial direction for an s-shaped pen stroke; i.e., "w" for the
+          standard letter S, "e" for its mirror image, "s" for the letter S turned 90-degrees
+          anti-clockwise, and "n" for its mirror image.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{n</td>
+      <td>e</td>
+      <td>s</td>
+      <td>w} (s-shaped pen-stroke: north, east, south, west; the direction of the initial pen-stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>S-SHAPE – Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/s-shapeA.png" alt="S-shape-A" title="Example A" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">s-shape=</span><span class="s">"s"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>S-SHAPE – St Gall notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/s-shapeB.png" alt="S-shape-B" title="Example B" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">s-shape=</span><span class="s">"w"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;oriscus/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="custos-attributes">Custos attributes:</h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.pitch.html">@pname</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains a written pitch name.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.octave.html">@oct</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures written octave information.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.staffloc.html">@loc</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Holds the staff location of the feature.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>CUSTOS - Staff notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/custos.EX1.png" alt="Custos1" title="Custos1" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;custos</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">oct=</span><span class="s">"3"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>CUSTOS - Late Aquitanian notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/custos.EX2.png" alt="Custos2" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;custos</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>CUSTOS - Aquitanian notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/custos.EX3.png" alt="Custos3" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;custos</span> <span class="na">loc=</span><span class="s">"+3"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>CUSTOS - Aquitanian notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/custos.EX4.png" alt="Custos4" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;custos</span> <span class="na">loc=</span><span class="s">"0"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>CUSTOS - Aquitanian notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/custos-and-lozenged-punctum.png" alt="Custos5" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;custos</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">/&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Nota bene: in the last example we can read the exact pitch of the custos because the lozenged punctum (placed one step below the line) signals the lower note of the semitone E-F. This information, combined with the identification of the finalis of the piece, allows us to decipher the mode of this piece, that is the 4th.</p>
+
+<h4 id="episema-attributes">Episema attributes:</h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.episema.vis.html">@form</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            </div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{v</td>
+      <td>h} (whether it is vertical or horizontal).</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.episema.vis.html">@place</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures the placement of the episema with respect to the neume or neume component
+          with which it is associated.</div>
+    </div>
+</div>
+
+<p>{above | below | left | right | above-left | above-right | below-left | below-right}  signals the placement of the episema with respect to the 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> or 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> with which it is associated. </p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>EPISEMA – Staff notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/episema.png" alt="Episema-A" title="Example A" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">tilt=</span><span class="s">"s"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;episema</span> <span class="na">form=</span><span class="s">"h"</span> <span class="na">place=</span><span class="s">"above"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>EPISEMA - St Gall notation. Example A</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/episemaB.png" alt="Pes rotundus episema" title="Example B" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">intm=</span><span class="s">"u"</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">rellen=</span><span class="s">"l"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;episema</span> <span class="na">form=</span><span class="s">"h"</span> <span class="na">place=</span><span class="s">"above-right"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>EPISEMA - St Gall notation. Example B</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/episemaC.png" alt="Pes quadratus episema" title="Example C" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">intm=</span><span class="s">"u"</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">rellen=</span><span class="s">"l"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;episema</span> <span class="na">form=</span><span class="s">"h"</span> <span class="na">place=</span><span class="s">"above-right"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>EPISEMA - St Gall notation. Example C</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/episemaD.png" alt="Pes quassus episema" title="Example D" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">s-shape=</span><span class="s">"w"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">intm=</span><span class="s">"u"</span> <span class="na">tilt=</span><span class="s">"ne"</span> <span class="na">rellen=</span><span class="s">"l"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;episema</span> <span class="na">form=</span><span class="s">"v"</span> <span class="na">place=</span><span class="s">"above-right"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="liquescent-attributes">Liquescent attributes:</h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.liquescent.vis.html">@curve</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records direction of curvature.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{a</td>
+      <td>c} (anticlockwise, clockwise).</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.liquescent.vis.html">@looped</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates whether curve is closed.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{true</td>
+      <td>false} (true if the curve is closed).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>LIQUESCENT - Staff notation. Example A</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/liquescent2NEW.png" alt="Liquescent.Ex.A." /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"a"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">oct=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;liquescent/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>LIQUESCENT - Staff notation. Example B</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/liquescent1NEW.png" alt="Liquescent.Ex.B" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"c"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">tilt=</span><span class="s">"n"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;liquescent/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>LIQUESCENT - Aquitanian notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/Aquitanian_liquescent.png" alt="Liquescent" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"c"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;liquescent/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="old-hispanic-tick-attributes">Old Hispanic tick attributes:</h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.hispantick.vis.html">@tilt</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Direction toward which the mark points.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{n</td>
+      <td>ne</td>
+      <td>e</td>
+      <td>se</td>
+      <td>s</td>
+      <td>sw</td>
+      <td>w</td>
+      <td>nw} indicates the direction of the pen-stroke, e.g. north, northeast, etc.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.hispantick.vis.html">@place</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures the placement of the tick mark with respect to the neume or neume component
+          with which it is associated.</div>
+    </div>
+</div>
+
+<p>{above | below | left | right | above-left | above-right | below-left | below-right}  indicates the location of the tick relative to the 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> or 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> with which it is associated.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>HISPAN TICK - Old Hispanic notation.</strong> The following encoding refers to the neume signalled by the arrow on the left.</td>
+      <td><img src="/guidelines/images/v4/modules/neumes/hispanTick.png" alt="Hispan tick" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">curve=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">intm=</span><span class="s">"u"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;hispanTick</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">place=</span><span class="s">"above-right"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="quilisma-attribute">Quilisma attribute:</h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.quilisma.vis.html">@waves</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Number of "crests" of a wavy line.</div>
+    </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>{2</td>
+      <td>3</td>
+      <td>4} the number of quilisma waves; only used in non-staff notations.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>QUILISMA - Staff notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/quilisma.png" alt="Quilisma" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;quilisma/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">oct=</span><span class="s">"4"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>QUILISMA - Old Hispanic notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/quilismaOH.png" alt="Quilisma2" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc&gt;</span>
+    <span class="nt">&lt;quilisma</span> <span class="na">waves=</span> <span class="s">"2"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span> <span class="s">"n"</span> <span class="na">intm=</span> <span class="s">"u"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span> <span class="s">"se"</span> <span class="na">rellen=</span> <span class="s">"l"</span> <span class="na">intm=</span> <span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="significative-letters-attribute">Significative letters attribute:</h4>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v4/attribute-classes/att.signiflet.vis.html">@place</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures the placement of the sequence of characters with respect to the neume or
+          neume component with which it is associated.</div>
+    </div>
+</div>
+
+<p>{above | below | left | right | above-left | above-right | below-left | below-right } the location of the letters relative to the 
+  <a href="/v4/elements/neume.html" class="link_odd_elementSpec">neume</a> or the 
+  <a href="/v4/elements/syl.html" class="link_odd_elementSpec">syl</a>.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>SIGNIFICATIVE LETTERS - St Gall notation</strong></td>
+      <td><img src="/guidelines/images/v4/modules/neumes/signifLet.png" alt="Significative Letters" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;neume&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"ne"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;signifLet</span> <span class="na">place=</span><span class="s">"above-right"</span><span class="nt">&gt;</span>c<span class="nt">&lt;/signifLet&gt;</span>
+  <span class="nt">&lt;/nc&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">rellen=</span><span class="s">"s"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;nc</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">tilt=</span><span class="s">"e"</span> <span class="na">rellen=</span><span class="s">"l"</span> <span class="na">intm=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/neume&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="note">Note:</h4>
+<p>Other articulation marks such as ictus, circulus, semicirculus, accentus, and other fonts in <a href="https://www.smufl.org/fonts/">SMuFL</a> can be encoded using: glyph.auth, glyph.name, glyph.num, and glyph.uri.</p>
+
+<h4 id="basic-encoding--syllable">Basic Encoding – Syllable</h4>
+<p>The following example illustrates the MEI encoding of the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. This example provides the basic MEI skeleton to have a valid MEI file and it may be used for reference for scholars willing to start encoding early music (and its text) in MEI. Information about the 
+  <a href="/v4/elements/staff.html" class="link_odd_elementSpec">staff</a> has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively.</p>
+
+<figure class="figure">
+  <img src="/images/v4/modules/neumes/O-splendidissima.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption"></figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;music</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">meiversion=</span><span class="s">"4.0.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;mdiv&gt;</span>
+      <span class="nt">&lt;score&gt;</span>
+        <span class="nt">&lt;section&gt;</span>
+          <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;layer&gt;</span>
+              <span class="nt">&lt;syllable&gt;</span>
+                <span class="nt">&lt;syl</span> <span class="na">n=</span><span class="s">"initial"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;rend</span> <span class="na">color=</span><span class="s">"red"</span><span class="nt">&gt;</span>O<span class="nt">&lt;/rend&gt;</span>
+                <span class="nt">&lt;/syl&gt;</span>
+                <span class="nt">&lt;neume&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/neume&gt;</span>
+              <span class="nt">&lt;/syllable&gt;</span>
+              <span class="nt">&lt;syllable&gt;</span>
+                <span class="nt">&lt;syl&gt;</span>splen_<span class="nt">&lt;/syl&gt;</span>
+                <span class="nt">&lt;neume&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"g"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/neume&gt;</span>
+                <span class="nt">&lt;neume&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/neume&gt;</span>
+              <span class="nt">&lt;/syllable&gt;</span>
+              <span class="nt">&lt;syllable&gt;</span>
+                <span class="nt">&lt;syl&gt;</span>di_<span class="nt">&lt;/syl&gt;</span>
+                <span class="nt">&lt;neume&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"f"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"se"</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/neume&gt;</span>
+              <span class="nt">&lt;/syllable&gt;</span>
+              <span class="nt">&lt;syllable&gt;</span>
+                <span class="nt">&lt;syl&gt;</span>dis_<span class="nt">&lt;/syl&gt;</span>
+                <span class="nt">&lt;neume&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"e"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/neume&gt;</span>
+              <span class="nt">&lt;/syllable&gt;</span>
+              <span class="nt">&lt;syllable&gt;</span>
+                <span class="nt">&lt;syl&gt;</span>si_<span class="nt">&lt;/syl&gt;</span>
+                <span class="nt">&lt;neume&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"b"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">con=</span><span class="s">"g"</span> <span class="na">tilt=</span><span class="s">"n"</span> <span class="na">oct=</span><span class="s">"3"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/neume&gt;</span>
+              <span class="nt">&lt;/syllable&gt;</span>
+              <span class="nt">&lt;syllable&gt;</span>
+                <span class="nt">&lt;syl&gt;</span>ma <span class="nt">&lt;/syl&gt;</span>
+                <span class="nt">&lt;neume&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"b"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;nc</span> <span class="na">oct=</span><span class="s">"2"</span> <span class="na">pname=</span><span class="s">"a"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/neume&gt;</span>
+              <span class="nt">&lt;/syllable&gt;</span>
+            <span class="nt">&lt;/layer&gt;</span>
+          <span class="nt">&lt;/staff&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;/score&gt;</span>
+    <span class="nt">&lt;/mdiv&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/music&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="manuscripts">Manuscripts</h4>
+
+<p>Samples of MEI of St Gall notation are taken from the winter volume of the so-called ”Hartker Antiphonary” <a href="https://www.e-codices.unifr.ch/en/list/one/csg/0359">CH-SGs Cod. Sang. 390</a>.</p>
+
+<p>Samples of MEI of Old Hispanic notation are taken from the ”León Antiphoner” <a href="https://bvpb.mcu.es/es/catalogo_imagenes/grupo.cmd?path=26408">E-L MS 8</a>.</p>
+
+<p>Samples of MEI of Aquitanian notation are taken from sources on the <a href="http://pemdatabase.eu">Portuguese Early Music Database</a>.</p>
+
+<h4 id="bibliographic-references">Bibliographic References</h4>
+
+<p>Bain, Jennifer, Inga Behrendt, and Kate Helsen. 2014. “Linienlose Neumen und ihre Repräsentation mit MEI Schema, Herausforderungen in der Arbeit im Optical Neume Recognition Project (ONRP).” <em>Digitale Rekonstruktionen mittelalterlicher Bibliotheken</em>. Edited by Sabine Philippi and Philipp Vanscheidt. <em>Trierer Beiträge zu den historischen Kulturwissenschaften</em> 12: 119–32.</p>
+
+<p>Behrendt, Inga, Jennifer Bain, and Kate Helsen. 2017. “MEI Kodierung der frühesten Notation in linienlosen Neumen.” <em>Kodikologie und Paläographie im Digitalen Zeitalter 4 / Codicology and Palaeography in the Digital Age</em>. Vol. 4. Edited by Hannah Busch, Franz Fischer, and Patrick Sahle, with the cooperation of Philip Hegel and Celiz Krause, Norderstedt 2016. Köln: Institut für Dokumentologie und Editorik e.V, 2017, 281–96.</p>
+
+<p><a href="https://sites.google.com/fcsh.unl.pt/elsadeluca/">De Luca, Elsa</a>, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti, Debra Lacoste, and Sarah Long. 2019. <a href="https://music-encoding.org/conference/2019/abstracts_mec2019/MEI%202019_De%20Luca%20et%20alii.pdf">”Cantus Ultimus’ MEI Neume Module and its Interoperability Across Chant Notations”</a>. Music Encoding Conference, Vienna.</p>
+
+<p><a href="https://sites.google.com/fcsh.unl.pt/elsadeluca/">De Luca, Elsa</a>, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti, Debra Lacoste, and Sarah Long. “Capturing Early Notations in MEI: The Case of Old Hispanic Neumes”. <em>Musiktheorie-Zeitschrift für Musikwissenschaft 2</em>, 2019: 229-49.</p>
+
+<p>Helsen, Kate, Inga Behrendt, and Jennifer Bain. 2017. “<a href="https://hrcak.srce.hr/index.php?show=clanak&amp;id_clanak_jezik=284211">A Morphology of Medieval Notations in the Optical Neume Recognition Project</a>.” <em>Arti musices: Croatian Musicological Review</em> 48/2: 241–266.</p>
+
+<p>MEI Guidelines, 6: Neume Notation <a href="https://music-encoding.org/guidelines/v3/content/neumes.html">Guidelines for MEI 3.0.0</a>.</p>
+
+<p>MEI Guidelines, 6: Neume Notation <a href="https://music-encoding.org/guidelines/v4/content/neumes.html">Guidelines for MEI 4.0.0</a> introducing 
+  <a href="/v4/elements/nc.html" class="link_odd_elementSpec">nc</a> as “neume component”.</p>
+
+<p>Morent, Stefan and Gregor Schräder. 2008. Demo: <a href="http://www.dimused.uni-tuebingen.de/hildegard/?SCREEN=1560x686">MEI Neumes Viewer Hildegard</a>.</p>
+
+<p>Morent, Stefan. 2011. “Digitalisierungskonzepte für Neumen-Notationen - die Projekte TüBingen und e-sequence.” <em>Perspektiven Digitaler Musikedition. Die Tonkunst</em> 3: 277–83.</p>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v4/content/neumes.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesRepertoire">6.1. Overview of the Neumes Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesBackground">6.2. Neumes Module Background
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesNotation">6.3. Neume Notation and MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesExamples">6.4. Samples of MEI encodings
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v4/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v4/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesRepertoire">6.1. Overview of the Neumes Module
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesBackground">6.2. Neumes Module Background
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesNotation">6.3. Neume Notation and MEI
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v4/content/neumes.html#neumesExamples">6.4. Samples of MEI encodings
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/5e43035f61b41ba0a117a5aabe4c426921fc8376'>Version 5e43035</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

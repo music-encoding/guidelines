@@ -1,0 +1,4565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Text in MEI</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/text.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="text">21. Text in MEI
+      
+  </h2>
+
+<p>This chapter describes methods for encoding textual content with MEI. Textual information on scores has several different uses, although some text is closer to music notation than other kinds. For example, tempo marks, directives and lyrics are directly related to the functionality of the notated music and are, therefore, described in other chapters (see for example 
+  <a href="/v3/content/lyricsdesc.html">Vocal Text</a> and 
+  <a href="/v3/content/shared.html#sharedTextDirectives">Text Directives</a>). This chapter, on the other hand, focuses on the text that accompanies the score, i.e., paratext (prefatory material, title pages, back matter, appendices, etc.), titles, prose, poetry, etc.</p>
+
+<p>Most of the elements described here take inspiration from encoding formats that deal primarily with text, such as HTML and the Text Encoding Initiative (TEI). These elements are provided to encode relatively basic textual information. For deeper encoding of text, these Guidelines recommend consideration of other text-specific encoding formats with embedded MEI markup.</p>
+
+<h3 id="textDivisions">21.1. Organizing Text into Divisions
+      
+  </h3>
+
+<p>Text can be organized in different parts, for example in chapters or sections. The 
+  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element is used to encode such structural divisions.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/div.html">div</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (division) – Major structural division of text, such as a preface, chapter or
+section.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/div.html">@type</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Characterizes the element in some sense, using any convenient classification scheme
+or typology.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/div.html">@subtype</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Provide any sub-classification for the element, additional to that given by its type
+attribute.</div>
+    </div>
+</div>
+
+<p>For example, printed scores, before the actual notation, can have text that can be organized in multiple sections (e.g. a preface, a critical report, performance instructions, etc. for which see the following sections); each of these sections should be identified by a different 
+  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element. Text might also occur in between music sections (see 
+  <a href="/v3/content/shared.html#sharedMdivContent">Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few pieces might be preceded or followed by poetry. Such text should be encoded with the 
+  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element, as demonstrated in the following example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;mdiv&gt;</span>
+   <span class="nt">&lt;score&gt;</span>
+      <span class="nt">&lt;section&gt;</span>
+         <span class="c">&lt;!-- Score of Franz Liszt's "Sonetto 104 del Petrarca --&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+         <span class="c">&lt;!-- Text of Francesco Petrarca's Sonett n. 104. --&gt;</span>
+         <span class="nt">&lt;lg&gt;</span>
+            <span class="nt">&lt;l&gt;</span>L'aspectata vertù, che 'n voi fioriva<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>quando Amor cominciò darvi bataglia,<span class="nt">&lt;/l&gt;</span>
+            <span class="c">&lt;!-- ... --&gt;</span>
+         <span class="nt">&lt;/lg&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/score&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Textual divisions may have titles or other forms of introductory material, which are encoded with the 
+  <a href="/v3/elements/head.html" class="link_odd_elementSpec">head</a> element.</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/head.html">head</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (heading) – Contains any heading, for example, the title of a section of text, or
+the
+heading of a list.</div>
+    </div>
+</div>
+
+<p>The following example shows the encoding of a preface translated into three different languages, each with a different heading:</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>Preface
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="c">&lt;!-- text --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">xml:lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>Vorwort<span class="nt">&lt;/head&gt;</span>
+   <span class="c">&lt;!-- text --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">xml:lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>Prefazione<span class="nt">&lt;/head&gt;</span>
+   <span class="c">&lt;!-- text --&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Having said that 
+  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> identifies any structural organization of text, it is often helpful to distinguish the typology of division. The attributes <strong>@type</strong> and <strong>@subtype</strong> can be used for this purpose. It is required that <strong>@type</strong> be present when <strong>@subtype</strong> is used, though their values can be freely set by the encoder.</p>
+
+<p>The following example shows the use of <strong>@type</strong> to indicate three prefaces in English, German and Italian are columns on the same page.</p>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">type=</span><span class="s">"column"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>Preface
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="c">&lt;!-- text --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">n=</span><span class="s">"2"</span> <span class="na">type=</span><span class="s">"column"</span> <span class="na">xml:lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>Vorwort<span class="nt">&lt;/head&gt;</span>
+   <span class="c">&lt;!-- text --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">n=</span><span class="s">"3"</span> <span class="na">type=</span><span class="s">"column"</span> <span class="na">xml:lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>Prefazione<span class="nt">&lt;/head&gt;</span>
+   <span class="c">&lt;!-- text --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;pb&gt;&lt;/pb&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="textProse">21.2. Paragraphs
+      
+  </h3>
+
+<p>Paragraphs are fundamental to prose text and typically group one or more sentences that form a logical passage. A paragraph is usually typographically distinct: The text begins on a new line and the first letter of the content is often indented, enlarged, or both.</p>
+
+<p>A paragraph is encoded with the 
+  <a href="/v3/elements/p.html" class="link_odd_elementSpec">p</a> element:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/p.html">p</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (paragraph) – One or more text phrases that form a logical prose passage.</div>
+    </div>
+</div>
+
+<p>Prose text is used for several different purposes within a MEI document, therefore 
+  <a href="/v3/elements/p.html" class="link_odd_elementSpec">p</a> can occur in many situations. For example, it may be used within metadata elements (see 
+  <a href="/v3/content/header.html">The MEI Header</a>):</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;samplingDecl&gt;</span>
+   <span class="nt">&lt;p&gt;</span>The encoding contains only the first 5 measures.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/samplingDecl&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, paragraphs may be part of the document contents (and therefore encoded within 
+  <a href="/v3/elements/music.html" class="link_odd_elementSpec">music</a>), either as 
+  <a href="/v3/content/text.html#textFrontBack">Paratext</a> or within the music notation. In these cases, a paragraph will likely be contained by a 
+  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> or other elements containing prose (e.g. 
+  <a href="/v3/elements/annot.html" class="link_odd_elementSpec">annot</a>, 
+  <a href="/v3/elements/figdesc.html" class="link_odd_elementSpec">figDesc</a>, etc.).</p>
+
+<p>The following example shows a paragraph in a preface section:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;front&gt;</span>
+   <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+         <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>The Preludes
+         <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>Symphonic Poem No.3 by F. Liszt.
+      <span class="nt">&lt;/head&gt;</span>
+      <span class="nt">&lt;p&gt;</span>What else is our life but a series of preludes to that unknown Hymn, the first and
+         solemn note of which is intoned by Death?
+      <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/front&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="textLists">21.3. Lists
+      
+  </h3>
+
+<p>When a text contains lists, they can be encoded with the following elements:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/list.html">list</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A formatting element that contains a series of items separated from one another and
+arranged in a linear, often vertical, sequence.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/list.html">@type</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Captures the nature of the content of a list.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/head.html">head</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (heading) – Contains any heading, for example, the title of a section of text, or
+the
+heading of a list.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/item.html">item</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Single instance or exemplar of a source/manifestation.</div>
+    </div>
+</div>
+
+<p>The 
+  <a href="/v3/elements/list.html" class="link_odd_elementSpec">list</a> element can identify any kind of list; the <strong>@form</strong> attribute can be used to specify whether the list is ordered, unordered etc. Each item in the list is encoded with the 
+  <a href="/v3/elements/li.html" class="link_odd_elementSpec">li</a> element. The <strong>@n</strong> can be used to record a label for a list item, as in the following example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>The modulation follows the following steps:
+   <span class="nt">&lt;list</span> <span class="na">form=</span><span class="s">"ordered"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>C major<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>A minor<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>D major seventh<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"4"</span><span class="nt">&gt;</span>G major<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/list&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Occasionally, lists have headers or titles, which can be encoded with 
+  <a href="/v3/elements/head.html" class="link_odd_elementSpec">head</a>:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;list&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>Ornaments in different languages
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"English"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>Turn<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"Italian"</span> <span class="na">xml:lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>Gruppetto<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"French"</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>Gruppetto<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">n=</span><span class="s">"German"</span> <span class="na">xml:lang=</span><span class="s">"de"</span><span class="nt">&gt;</span>Doppelschlag<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/list&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="textQuote">21.4. Quotation
+      
+  </h3>
+
+<p>It is common, in many types of texts, to find quotations. A quotation is typically attributed to another text other than the one being encoded. Often, the quoted material is typographically distinct from the surrounding text; i.e., surrounded by so-called ‘quote marks’ or rendered as a separate block of text. The 
+  <a href="/v3/elements/quote.html" class="link_odd_elementSpec">quote</a> element is used to mark this function:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/quote.html">quote</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (block quote) – A formatting element that designates an extended quotation; that is,
+a
+passage attributed to a source external to the text and normally set off from the
+text by
+spacing or other typographic distinction.</div>
+    </div>
+</div>
+
+<p>The following examples show the use of 
+  <a href="/v3/elements/quote.html" class="link_odd_elementSpec">quote</a>.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>Hugh MacDonald has argued that Liszt's Symphonic Poems were meant to
+   <span class="nt">&lt;quote&gt;</span>display the traditional logic of symphonic thought<span class="nt">&lt;/quote&gt;</span>.
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;p&gt;</span>The majority of the works represented in this catalogue were purchased in Paris and
+   London between 1928 and 1934. After graduating from Harvard in 1924, Mackay-Smith
+   spent several years in Europe:
+   <span class="nt">&lt;quote&gt;</span>
+      <span class="nt">&lt;p&gt;</span>I bought my first early music from Harold Reeves in London in the summer of 1928 when
+         I was able to acquire virtually all the 18th century editions, particularly of trio
+         music, which he then had in stock, going back not only through his current but also
+         through earlier catalogues, picking out numbers which remained unsold. It is almost
+         a shame today to think of the prices at which such things were then available, one
+         or two pounds apiece.
+      <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/quote&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="textPoetry">21.5. Poetry
+      
+  </h3>
+
+<p>This 
+  <a href="/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> (line group) element is used generically to encode any section of text that is organized as a group of lines. Following the recommendations of the Text Encoding Initiative, it is recommended to use it, along with the following elements, for marking up poetry:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/lg.html">lg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (line group) – May be used for any section of text that is organized as a group of
+lines; however, it is most often used for a group of verse lines functioning as a
+formal
+unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/head.html">head</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (heading) – Contains any heading, for example, the title of a section of text, or
+the
+heading of a list.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/l.html">l</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (line of text) – Contains a single line of text within a line group.</div>
+    </div>
+</div>
+
+<p>Because 
+  <a href="/v3/elements/lg.html" class="link_odd_elementSpec">lg</a> groups verses, it can be used to encode additional stanzas not integrated into the music notation. In addition, it is common for a poem to include a title or a header, as is demonstrated by the following example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;mdiv&gt;</span>
+   <span class="nt">&lt;score&gt;</span>
+      <span class="nt">&lt;section&gt;</span>
+         <span class="c">&lt;!-- Score of Franz Liszt's "Sonetto 104 del Petrarca" --&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+         <span class="c">&lt;!-- Text of Francesco Petrarca's Sonett n. 104. --&gt;</span>
+         <span class="nt">&lt;lg&gt;</span>
+            <span class="nt">&lt;head&gt;</span>
+               <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>Sonetto 104
+            <span class="nt">&lt;/head&gt;</span>
+            <span class="nt">&lt;l&gt;</span>L'aspectata vertù, che 'n voi fioriva<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>quando Amor cominciò darvi bataglia,<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>produce or frutto, che quel fiore aguaglia,<span class="nt">&lt;/l&gt;</span>
+            <span class="nt">&lt;l&gt;</span>et che mia speme fa venire a riva.<span class="nt">&lt;/l&gt;</span>
+            <span class="c">&lt;!-- ... --&gt;</span>
+         <span class="nt">&lt;/lg&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/score&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="textFrontBack">21.6. Paratext
+      
+  </h3>
+
+<p>This section introduces paratextual material, such as title pages, prefaces, indexes and other text that precedes or follows the actual score.</p>
+
+<h4 id="textFront">21.6.1. Front Matter
+      
+  </h4>
+
+<p>By ‘front matter’ these Guidelines mean distinct sections of a text (usually, but not necessarily, a printed one), prefixed to it by way of introduction or identification as a part of its production. Features such as title pages or prefaces are clear examples; a less definite case might be the prologue attached to a dramatic work. The front matter of an encoded text should not be confused with the MEI header described in chapter 
+  <a href="/v3/content/header.html">The MEI Header</a>, which provides metadata for the entire file.</p>
+
+<p>An encoder may choose simply to ignore the front matter in a text, if the original presentation of the work is of no interest. No specific tags are provided for the various kinds of subdivision which may appear within front matter: instead, generic 
+  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> (“division”) elements may be used, which should not be confused with 
+  <a href="/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> (“musical division”) elements. The following suggested values for the <strong>@type</strong> attribute may be used to distinguish various kinds of division characteristic of front matter:</p>
+
+<p class="gloss"><strong>‘preface’</strong>: A foreword or preface addressed to the reader in which the author or publisher explains the content, purpose, or origin of the text.</p>
+
+<p class="gloss"><strong>‘ack’</strong>: A formal declaration of acknowledgement by the author in which persons and institutions are thanked for their part in the creation of a text.</p>
+
+<p class="gloss"><strong>‘dedication’</strong>: A formal offering or dedication of a text to one or more persons or institutions by the author.</p>
+
+<p class="gloss"><strong>‘abstract’</strong>: A summary of the content of a text as continuous prose.</p>
+
+<p class="gloss"><strong>‘contents’</strong>: A table of contents, specifying the structure of a work and listing its constituents. The list element should be used to mark its structure.</p>
+
+<p class="gloss"><strong>‘frontispiece’</strong>: A pictorial frontispiece, possibly including some text.</p>
+
+<p>The following extended example demonstrates how various parts of the front matter of a text may be encoded. The front part begins with a title page, which is presented in section 
+  <a href="/v3/content/text.html#textTitlePages">Title Pages</a>, below. This is followed by a dedication and a preface, each of which is encoded as a distinct div:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;front</span> <span class="na">xmlns=</span><span class="s">"http://www.music-encoding.org/ns/mei"</span> <span class="na">xmlns:rng=</span><span class="s">"http://relaxng.org/ns/structure/1.0"</span> <span class="na">xmlns:sch=</span><span class="s">"http://purl.oclc.org/dsdl/schematron"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;titlePage&gt;</span>
+      <span class="c">&lt;!-- transcription of title page --&gt;</span>
+   <span class="nt">&lt;/titlePage&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"dedication"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+         <span class="c">&lt;!-- Dedicatory text --&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"preface"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+         <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>Preface
+      <span class="nt">&lt;/head&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+         <span class="c">&lt;!-- paragraph 1 --&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+         <span class="c">&lt;!-- paragraph 2 --&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="c">&lt;!-- additional material --&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/front&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The front matter concludes with another 
+  <a href="/v3/elements/div.html" class="link_odd_elementSpec">div</a> element, shown in the next example, this time containing a table of contents, which contains a 
+  <a href="/v3/elements/list.html" class="link_odd_elementSpec">list</a> element (as described in chapter 
+  <a href="/v3/content/text.html#textLists">Lists</a>). Note the use of the 
+  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element to provide page-references: the implication here is that the target identifiers (song1, song2, etc.) will correspond with identifiers used for the 
+  <a href="/v3/elements/mdiv.html" class="link_odd_elementSpec">mdiv</a> elements containing the individual songs. (For a description of the 
+  <a href="/v3/elements/ptr.html" class="link_odd_elementSpec">ptr</a> element, see chapter 
+  <a href="/v3/content/ptrref.html">Pointers and References</a>.)</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"contents"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>Contents
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="nt">&lt;list</span> <span class="na">form=</span><span class="s">"ordered"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;</span>On Wenlock Edge
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song1"</span><span class="nt">&gt;&lt;/ptr&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>From Far, From Eve and Morning
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song2"</span><span class="nt">&gt;&lt;/ptr&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Is My Team Ploughing?
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song3"</span><span class="nt">&gt;&lt;/ptr&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Oh, When I Was In Love With You
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song4"</span><span class="nt">&gt;&lt;/ptr&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Bredon Hill
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song5"</span><span class="nt">&gt;&lt;/ptr&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Clun
+         <span class="nt">&lt;ptr</span> <span class="na">target=</span><span class="s">"#song6"</span><span class="nt">&gt;&lt;/ptr&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/list&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, the pointers in the table of contents might link to the page breaks at which a song begins, assuming that these have been included in the markup:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;list</span> <span class="na">form=</span><span class="s">"ordered"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;li&gt;</span>On Wenlock Edge
+      <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"#song1-p1"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/ref&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;</span>From Far, From Eve and Morning
+      <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"#song2-p15"</span><span class="nt">&gt;</span>15<span class="nt">&lt;/ref&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="c">&lt;!-- .... --&gt;</span>
+<span class="nt">&lt;/list&gt;</span>
+<span class="c">&lt;!-- Later in the document --&gt;</span>
+<span class="nt">&lt;mdiv</span> <span class="na">type=</span><span class="s">"song"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;pb</span> <span class="na">xml:id=</span><span class="s">"song1-p1"</span><span class="nt">&gt;&lt;/pb&gt;</span>
+   <span class="c">&lt;!-- .... --&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span>
+<span class="nt">&lt;mdiv</span> <span class="na">type=</span><span class="s">"song"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;pb</span> <span class="na">xml:id=</span><span class="s">"song2-p15"</span><span class="nt">&gt;&lt;/pb&gt;</span>
+   <span class="c">&lt;!-- .... --&gt;</span>
+<span class="nt">&lt;/mdiv&gt;</span>
+<span class="c">&lt;!-- .... --&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="textTitlePages">21.6.2. Title Pages
+      
+  </h4>
+
+<p>Detailed analysis of the title page and other preliminaries of older printed books and manuscripts is of major importance in descriptive bibliography and the cataloging of printed books; such analysis, however, requires a more detailed approach than the general one described here. The following elements are suggested as a means of encoding the major features of most title pages for faithful rendition:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/titlepage.html">titlePage</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains a transcription of the title page of a text.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/p.html">p</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (paragraph) – One or more text phrases that form a logical prose passage.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/table.html">table</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Contains text displayed in tabular form.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/list.html">list</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            A formatting element that contains a series of items separated from one another and
+arranged in a linear, often vertical, sequence.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/quote.html">quote</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (block quote) – A formatting element that designates an extended quotation; that is,
+a
+passage attributed to a source external to the text and normally set off from the
+text by
+spacing or other typographic distinction.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/lg.html">lg</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            (line group) – May be used for any section of text that is organized as a group of
+lines; however, it is most often used for a group of verse lines functioning as a
+formal
+unit, e.g. a stanza, refrain, verse paragraph, etc.</div>
+    </div>
+</div>
+
+<p>The following example shows the encoding of the title page of Vaughan Williams’ <em>On Wenlock Edge</em>. Note the use of the 
+  <a href="/v3/elements/lb.html" class="link_odd_elementSpec">lb</a> element to mark the line breaks present in the original.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;titlePage&gt;</span>
+   <span class="nt">&lt;p&gt;</span>ON WENLOCK EDGE<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;p&gt;</span>A CYCLE OF SIX SONGS
+      <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>FOR TENOR VOICE ___ WITH ACCOMPANIMENT OF
+      <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>Pianoforte and String Quartet (ad lib)
+      <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>THE WORDS BY A. E. HOUSMAN
+      <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>(FROM "A SHROPSHIRE LAD")
+   <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;p&gt;</span>
+      <span class="nt">&lt;fig&gt;&lt;/fig&gt;</span>
+   <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;p&gt;</span>MUSIC BY
+      <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>R. VAUGHAN
+      <span class="nt">&lt;lb&gt;&lt;/lb&gt;</span>WILLIAMS
+   <span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;list&gt;</span>
+      <span class="nt">&lt;li&gt;</span>PRICE $3.75<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>(COMPLETE WITH SET OF STRING PARTS $5.00<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>STRING PARTS SEPARATELY $1.00<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/list&gt;</span>
+   <span class="nt">&lt;p&gt;</span>Boosey <span class="ni">&amp;amp;</span> Hawkes, Inc.<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;p&gt;</span>New York, U.S.A.<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;p&gt;</span>London · Toronto · Sydney · Capetown<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/titlePage&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The physical rendition of title page information is often of considerable importance. One approach to this requirement would be to use the 
+  <a href="/v3/elements/rend.html" class="link_odd_elementSpec">rend</a> element, described in chapter 
+  <a href="/v3/content/shared.html#sharedTextRendition">Text Rendition</a> to specify the rendition of each of the components of the title page. Another would be to employ a CSS stylesheet. Finally, a module customized for the description of typographic entities such as pages, lines, rules, etc., bearing special-purpose attributes to describe line-height, leading, degree of kerning, font, etc. could be employed.</p>
+
+<h3 id="textBack">21.7. Back Matter
+      
+  </h3>
+
+<p>Conventions vary as to which elements are grouped as back matter and which as front. For example, some books place the table of contents at the front, and others at the back. For this reason, the content models of the 
+  <a href="/v3/elements/front.html" class="link_odd_elementSpec">front</a> and 
+  <a href="/v3/elements/back.html" class="link_odd_elementSpec">back</a> elements are identical.</p>
+
+<p>The following suggested values may be used for the <strong>@type</strong> attribute on all division elements, in order to distinguish various kinds of divisions characteristic of back matter:</p>
+
+<p class="gloss"><strong>‘appendix’</strong>: An ancillary self-contained section of a work, often providing additional but in some sense extra-canonical text.</p>
+
+<p class="gloss"><strong>‘glossary’</strong>: A list of terms associated with definition texts (‘glosses’).</p>
+
+<p class="gloss"><strong>‘notes’</strong>: A section in which textual notes are gathered together.</p>
+
+<p class="gloss"><strong>‘bibliography’</strong>: A list of bibliographic citations.</p>
+
+<p class="gloss"><strong>‘index’</strong>: Any form of index to the work.</p>
+
+<p class="gloss"><strong>‘colophon’</strong>: A statement appearing at the end of a book describing the conditions of its physical production.</p>
+
+<p>No additional elements are proposed for the encoding of back matter at present. Some characteristic examples follow; first, an index (for the case in which a printed index is of sufficient interest to merit transcription):</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;back&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+         <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;&lt;/meta&gt;</span>Index
+      <span class="nt">&lt;/head&gt;</span>
+      <span class="nt">&lt;list</span> <span class="na">type=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;li&gt;</span>a2, a3, etc., 175-176<span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;</span>Abbreviations, 3
+            <span class="nt">&lt;list</span> <span class="na">type=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;li&gt;</span>Percussion, 205-213<span class="nt">&lt;/li&gt;</span>
+               <span class="nt">&lt;li&gt;</span>Strings, 307<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/list&gt;</span>
+         <span class="nt">&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;</span>Afterbeats, 77<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/list&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/back&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Note that if the page breaks in the original source have also been explicitly encoded, and given identifiers, the references to them in the above index can more usefully be recorded as links. For example, assuming that the encoding of page 77 of the original source starts like this:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;pb</span> <span class="na">xml:id=</span><span class="s">"text.P77"</span><span class="nt">&gt;&lt;/pb&gt;</span></code></pre></figure>
+
+</div>
+
+<p>then the last item above might be encoded more usefully in the following form:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;li&gt;</span>Afterbeats,
+   <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"#text.P77"</span><span class="nt">&gt;</span>77<span class="nt">&lt;/ref&gt;</span>
+<span class="nt">&lt;/li&gt;</span></code></pre></figure>
+
+</div>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/text.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textDivisions">21.1. Organizing Text into Divisions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textProse">21.2. Paragraphs
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textLists">21.3. Lists
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textQuote">21.4. Quotation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textPoetry">21.5. Poetry
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textFrontBack">21.6. Paratext
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/text.html#textFront">21.6.1. Front Matter
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/text.html#textTitlePages">21.6.2. Title Pages
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textBack">21.7. Back Matter
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textDivisions">21.1. Organizing Text into Divisions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textProse">21.2. Paragraphs
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textLists">21.3. Lists
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textQuote">21.4. Quotation
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textPoetry">21.5. Poetry
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textFrontBack">21.6. Paratext
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/text.html#textFront">21.6.1. Front Matter
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/text.html#textTitlePages">21.6.2. Title Pages
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/text.html#textBack">21.7. Back Matter
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

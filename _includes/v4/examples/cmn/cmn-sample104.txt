@@ -1,5 +1,0 @@
-<staff>
-  <layer>
-    <multiRest num="9" />
-  </layer>
-</staff>

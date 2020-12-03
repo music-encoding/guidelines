@@ -1,1 +1,0 @@
-finger – An individual finger in a fingering indication.

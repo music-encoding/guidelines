@@ -1,2 +1,0 @@
-<!-- Fifth scale degree in the prevailing scale -->
-<note deg="5"/>

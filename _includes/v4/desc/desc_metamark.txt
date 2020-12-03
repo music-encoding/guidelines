@@ -1,3 +1,0 @@
-A graphical or textual statement with additional / explanatory information about the
-      musical text. The textual consequences of this intervention are encoded independently via
-      other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc.

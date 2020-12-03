@@ -1,2 +1,0 @@
-(genetic description) - Bundles information about the textual development of a
-      work.

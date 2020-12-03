@@ -1,1 +1,0 @@
-Used to override the head shape normally used for the given duration.

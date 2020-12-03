@@ -1,2 +1,0 @@
-Provides a way of pointing to a MIDI instrument definition. It must contain the ID of
-          an instrDef element elsewhere in the document.

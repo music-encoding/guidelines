@@ -1,2 +1,0 @@
-(unpublished) – Used to explicitly indicate that a bibliographic resource is
-      unpublished.

@@ -1,1 +1,0 @@
-Determines how far from the staff to render text elements.

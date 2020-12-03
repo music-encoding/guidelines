@@ -1,1 +1,0 @@
-The performed duration of an individual note in a measured tremolo.

@@ -1,2 +1,0 @@
-Indicates the part in which the current feature should appear. Use '%all' when the
-          feature should occur in every part.

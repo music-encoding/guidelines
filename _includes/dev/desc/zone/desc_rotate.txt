@@ -1,4 +1,0 @@
-
-          Indicates the amount by which the contents of this zone have been rotated clockwise, with respect
-          to the normal orientation of the parent surface. The orientation is expressed in arc degrees.
-        

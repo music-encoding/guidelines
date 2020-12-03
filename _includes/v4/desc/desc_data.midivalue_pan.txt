@@ -1,1 +1,0 @@
-data.MIDIVALUE or data.PERCENT.LIMITED values.

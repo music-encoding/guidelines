@@ -1,1 +1,0 @@
-<img class="smufl" src="https://edirom.de/smufl-browser/{{ include.code }}.png" title="SMuFL glyph U+{{ include.code }}"/>

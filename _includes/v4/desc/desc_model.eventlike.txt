@@ -1,1 +1,0 @@
-Groups event elements that occur in all notational repertoires.

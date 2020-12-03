@@ -1,2 +1,0 @@
-<!-- downward arpeggio with no visual indication of order -->
-<arpeg order="down" staff="2" tstamp="3" />

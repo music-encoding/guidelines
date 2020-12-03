@@ -1,1 +1,0 @@
-Attributes for linking metadata to data.

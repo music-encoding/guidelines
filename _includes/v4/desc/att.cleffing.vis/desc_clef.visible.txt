@@ -1,1 +1,0 @@
-Determines whether the clef is to be displayed.

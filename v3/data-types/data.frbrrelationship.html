@@ -1,0 +1,3952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>data.FRBRRELATIONSHIP</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/data-types/data.frbrrelationship.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        <div class="macroSpec">
+   <h3 id="data.FRBRRELATIONSHIP">data.FRBRRELATIONSHIP</h3>
+   <table class="wovenodd">
+      <tr>
+         <td colspan="2" class="wovenodd-col2">Relationships between FRBR entities.</td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
+         <td class="wovenodd-col2">MEI.frbr</td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Used by</strong></td>
+         <td class="wovenodd-col2">
+            <div class="parent"><a class="link_odd_classSpec" href="/v3/attribute-classes/att.rel.html">att.rel</a> (@rel)
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Allowed values</strong></td>
+         <td class="wovenodd-col2">
+            <dl>
+               <dt>hasAbridgement</dt>
+               <dd>Target is an abridgement, condensation, or expurgation of the current
+                  entity.
+               </dd>
+               <dt>isAbridgementOf</dt>
+               <dd>Reciprocal relationship of hasAbridgement.</dd>
+               <dt>hasAdaptation</dt>
+               <dd>Target is an adaptation, paraphrase, free translation, variation (music),
+                  harmonization (music), or fantasy (music) of the current entity.
+               </dd>
+               <dt>isAdaptationOf</dt>
+               <dd>Reciprocal relationship of hasAdaptation.</dd>
+               <dt>hasAlternate</dt>
+               <dd>Target is an alternate format or simultaneously released edition of the current
+                  entity.
+               </dd>
+               <dt>isAlternateOf</dt>
+               <dd>Reciprocal relationship of hasAlternate.</dd>
+               <dt>hasArrangement</dt>
+               <dd>Target is an arrangement (music) of the current entity.</dd>
+               <dt>isArrangementOf</dt>
+               <dd>Reciprocal relationship of hasArrangement.</dd>
+               <dt>hasComplement</dt>
+               <dd>Target is a cadenza, libretto, choreography, ending for unfinished work,
+                  incidental music, or musical setting of a text of the current entity.
+               </dd>
+               <dt>isComplementOf</dt>
+               <dd>Reciprocal relationship of hasComplement.</dd>
+               <dt>hasEmbodiment</dt>
+               <dd>Target is a physical embodiment of the current abstract entity; describes the
+                  expression-to-manifestation relationship.
+               </dd>
+               <dt>isEmbodimentOf</dt>
+               <dd>Reciprocal relationship of hasEmbodiment.</dd>
+               <dt>hasExemplar</dt>
+               <dd>Target is an exemplar of the class of things represented by the current entity;
+                  describes the manifestation-to-item relationship.
+               </dd>
+               <dt>isExemplarOf</dt>
+               <dd>Reciprocal relationship of hasExamplar.</dd>
+               <dt>hasImitation</dt>
+               <dd>Target is a parody, imitation, or travesty of the current entity.</dd>
+               <dt>isImitationOf</dt>
+               <dd>Reciprocal relationship of hasImitation.</dd>
+               <dt>hasPart</dt>
+               <dd>Target is a chapter, section, part, etc.; volume of a multivolume manifestation;
+                  volume/issue of serial; intellectual part of a multipart work; illustration for a
+                  text; sound aspect of a film; soundtrack for a film on separate medium; soundtrack
+                  for
+                  a film embedded in film; monograph in a series; physical component of a particular
+                  copy; the binding of a book of the current entity.
+               </dd>
+               <dt>isPartOf</dt>
+               <dd>Reciprocal relationship of hasPart.</dd>
+               <dt>hasRealization</dt>
+               <dd>Target is a realization of the current entity; describes the work-to-expression
+                  relationship.
+               </dd>
+               <dt>isRealizationOf</dt>
+               <dd>Reciprocal relationship of hasRealization.</dd>
+               <dt>hasReconfiguration</dt>
+               <dd>Target has been reconfigured: bound with, split into, extracted from the current
+                  entity.
+               </dd>
+               <dt>isReconfigurationOf</dt>
+               <dd>Reciprocal relationship of hasReconfiguration.</dd>
+               <dt>hasReproduction</dt>
+               <dd>Target is a reproduction, microreproduction, macroreproduction, reprint,
+                  photo-offset reprint, or facsimile of the current entity.
+               </dd>
+               <dt>isReproductionOf</dt>
+               <dd>Reciprocal relationship of hasReproduction.</dd>
+               <dt>hasRevision</dt>
+               <dd>Target is a revised edition, enlarged edition, or new state (graphic) of the
+                  current entity.
+               </dd>
+               <dt>isRevisionOf</dt>
+               <dd>Reciprocal relationship of hasRevision.</dd>
+               <dt>hasSuccessor</dt>
+               <dd>Target is a sequel or succeeding work of the current entity.</dd>
+               <dt>isSuccessorOf</dt>
+               <dd>Reciprocal relationship of hasSuccessor.</dd>
+               <dt>hasSummarization</dt>
+               <dd>Target is a digest or abstract of the current entity.</dd>
+               <dt>isSummarizationOf</dt>
+               <dd>Reciprocal relationship of hasSummarization.</dd>
+               <dt>hasSupplement</dt>
+               <dd>Target is an index, concordance, teacher's guide, gloss, supplement, or appendix
+                  of the current entity.
+               </dd>
+               <dt>isSupplementOf</dt>
+               <dd>Reciprocal relationship of hasSupplement.</dd>
+               <dt>hasTransformation</dt>
+               <dd>Target is a dramatization, novelization, versification, or screenplay of the
+                  current entity.
+               </dd>
+               <dt>isTransformationOf</dt>
+               <dd>Reciprocal relationship of hasTransformation.</dd>
+               <dt>hasTranslation</dt>
+               <dd>Target is a literal translation or transcription (music) of the current
+                  entity.
+               </dd>
+               <dt>isTranslationOf</dt>
+               <dd>Reciprocal relationship of hasTranslation.</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
+         <td class="wovenodd-col2">
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasAbridgement"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is an abridgement, condensation, or expurgation of the current
+                              entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isAbridgementOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasAbridgement.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasAdaptation"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is an adaptation, paraphrase, free translation, variation (music),
+                              harmonization (music), or fantasy (music) of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isAdaptationOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasAdaptation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasAlternate"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is an alternate format or simultaneously released edition of the current
+                              entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isAlternateOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasAlternate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasArrangement"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is an arrangement (music) of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isArrangementOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasArrangement.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasComplement"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a cadenza, libretto, choreography, ending for unfinished work,
+                              incidental music, or musical setting of a text of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isComplementOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasComplement.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasEmbodiment"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a physical embodiment of the current abstract entity; describes the
+                              expression-to-manifestation relationship.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isEmbodimentOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasEmbodiment.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasExemplar"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is an exemplar of the class of things represented by the current entity;
+                              describes the manifestation-to-item relationship.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isExemplarOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasExamplar.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasImitation"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a parody, imitation, or travesty of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isImitationOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasImitation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasPart"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a chapter, section, part, etc.; volume of a multivolume manifestation;
+                              volume/issue of serial; intellectual part of a multipart work; illustration for a
+                              text; sound aspect of a film; soundtrack for a film on separate medium; soundtrack
+                              for
+                              a film embedded in film; monograph in a series; physical component of a particular
+                              copy; the binding of a book of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isPartOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasPart.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasRealization"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a realization of the current entity; describes the work-to-expression
+                              relationship.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isRealizationOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasRealization.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasReconfiguration"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target has been reconfigured: bound with, split into, extracted from the current
+                              entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isReconfigurationOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasReconfiguration.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasReproduction"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a reproduction, microreproduction, macroreproduction, reprint,
+                              photo-offset reprint, or facsimile of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isReproductionOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasReproduction.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasRevision"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a revised edition, enlarged edition, or new state (graphic) of the
+                              current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isRevisionOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasRevision.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasSuccessor"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a sequel or succeeding work of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isSuccessorOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasSuccessor.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasSummarization"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a digest or abstract of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isSummarizationOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasSummarization.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasSupplement"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is an index, concordance, teacher's guide, gloss, supplement, or appendix
+                              of the current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isSupplementOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasSupplement.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasTransformation"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a dramatization, novelization, versification, or screenplay of the
+                              current entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isTransformationOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasTransformation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hasTranslation"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Target is a literal translation or transcription (music) of the current
+                              entity.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"isTranslationOf"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Reciprocal relationship of hasTranslation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
+         </td>
+      </tr>
+   </table>
+</div>
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/data-types/data.frbrrelationship.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

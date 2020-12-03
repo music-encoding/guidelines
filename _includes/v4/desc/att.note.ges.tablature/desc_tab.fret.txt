@@ -1,1 +1,0 @@
-Records the fret at which a string should be stopped.

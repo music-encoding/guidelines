@@ -1,4 +1,0 @@
-
-<!-- using the tstamp2 attribute --><dynam place="above" staff="2" tstamp="2.5" tstamp2="1m+1">cresc. poco a poco</dynam>
-<!-- using the endid attribute -->
-<dynam endid="ID_of_ending_note" place="above" staff="2" tstamp="2.5">cresc. poco a poco</dynam>

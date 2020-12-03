@@ -1,2 +1,0 @@
-(2-measure repeat) – An indication that the previous two measures should be
-      repeated.

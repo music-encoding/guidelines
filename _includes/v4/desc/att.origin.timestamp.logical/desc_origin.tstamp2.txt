@@ -1,3 +1,0 @@
-encodes the ending point of musical material in terms of musical time, i.e., a count
-          of measures plus a beat location. The values are relative to the measure identified by
-          origin.tstamp.

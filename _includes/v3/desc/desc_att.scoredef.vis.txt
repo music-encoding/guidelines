@@ -1,1 +1,0 @@
-Visual domain attributes for scoreDef in the CMN repertoire.

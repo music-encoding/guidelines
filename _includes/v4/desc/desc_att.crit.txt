@@ -1,1 +1,0 @@
-Attributes common to all elements representing variant readings.

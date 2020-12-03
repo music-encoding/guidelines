@@ -1,2 +1,0 @@
-Analytical domain attributes in the CMN repertoire. Use the n attribute to explicitly
-      encode this measure's position in a string of measures containing only mRest elements.

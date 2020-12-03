@@ -1,1 +1,0 @@
-Groups elements that may appear inline when the msdesc module is active.

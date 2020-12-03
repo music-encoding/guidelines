@@ -1,1 +1,0 @@
-Collection of one or more neume components.

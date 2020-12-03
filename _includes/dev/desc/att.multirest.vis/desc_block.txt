@@ -1,2 +1,0 @@
-The block attribute controls whether the multimeasure rest should be rendered as a block rest 
-          or as church rests ("Kirchenpausen"), that are combinations of longa, breve and semibreve rests.

@@ -1,1 +1,0 @@
-Attributes supplying pointers to user-defined symbols.

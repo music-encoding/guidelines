@@ -1,1 +1,0 @@
-Records the onset time in terms of ISO time.

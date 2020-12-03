@@ -1,1 +1,0 @@
-Provides a label for members of a vertically aligned group.

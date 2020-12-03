@@ -1,0 +1,4475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Common Music Notation Ornaments</title>
+    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+
+    <!-- search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/tipuesearch/search_content_v3.js"></script>
+    <link rel="stylesheet" href="/js/tipuesearch/tipuesearch.css">
+    <script src="/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/js/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- verovio -->
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+
+    <!-- script for handling verovio examples -->
+    <script src="/js/verovio-examples.js"></script>
+
+    <!-- xml highlighting -->
+    <link rel="stylesheet" href="/js/highlight/styles/default.css">
+    <script src="/js/highlight/highlight.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.github.io/">
+      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
+                Guidelines versions <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/dev" class="btn btn-link text-left menu-link">
+                        development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v4" class="btn btn-link text-left menu-link">
+                        4.0.1
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/v3" class="btn btn-link text-left menu-link">
+                        3.0.0
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+
+  </div>
+  
+  <div class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for an older version of MEI (3.0.0)
+    </div>
+  </div>
+  
+  <div class="navbar-section">
+    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
+      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+</header>
+
+
+    <div class="container-fluid content">
+        <div class="columns specsLayout">
+
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="/v3/content/cmnornaments.html">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
+
+        <div id="tipue_search_content"></div>
+
+        
+<h2 id="cmnOrnaments">8. Common Music Notation Ornaments
+      
+  </h2>
+
+<p>This module includes elements and attributes for the encoding of ornaments typical of ‘Common Music Notation’ (CMN). Ornaments are formulae of embellishment that can be realized by adding supplementary notes to one or more notes of the melody. In written form, these are usually expressed as symbols written above or below a note, though some have a more complex written expression, such as those that involve multiple notes and/or include grace notes.</p>
+
+<p>These symbols may have different resolutions depending on a large number of factors, such as historical context, national boundaries, composer, scribe, etc. The elements described here, therefore, are not bound to a specific symbol; they are, instead, meant to encode the encoder’s interpretation of a symbol and its position on the staff.</p>
+
+<p>Nonetheless, in order to establish common ground, the guidelines suggest commonly accepted symbols and realizations for the ornaments supported by MEI.</p>
+
+<p>The following sections will introduce each element in detail for all types of ornaments supported.</p>
+
+<h3 id="cmnOrnamentsAll">8.1. Encoding Common To All Ornaments
+      
+  </h3>
+
+<p>When encoding CMN, ornaments should be encoded within a 
+  <a href="/v3/elements/measure.html" class="link_odd_elementSpec">measure</a>, following the 
+  <a href="/v3/elements/staff.html" class="link_odd_elementSpec">staff</a> elements, and connected to events on the staff via attributes. The <strong>@startid</strong> attribute is used to refer to the <strong>@xml:id</strong> of the starting note. Additionally, if the ornament involves more than one events on the staff, the <strong>@endid</strong> attribute can be used to anchor the ornament to a concluding event.</p>
+
+<p>The following example demonstrates the encoding of an inverted mordent over a middle C:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">xml:id=</span><span class="s">"cmnOrnaments.co_1_n1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;mordent</span> <span class="na">form=</span><span class="s">"inv"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">startid=</span><span class="s">"co_1_n1"</span><span class="nt">&gt;&lt;/mordent&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, the relationship of an ornament to a note can be expressed in terms of beats with the attribute <strong>@tstamp</strong>. If the ornament involves more than one event on the staff, the <strong>@tstamp2</strong> attribute can be used to indicate the ending time stamp, as is explained in section 
+  <a href="/v3/content/cmn.html#cmnTstamp">Timestamps and Durations</a>. These methods may also be utilized simultaneously.</p>
+
+<p>The following example shows the use of <strong>@tstamp</strong> for an ornament. Assuming that the following measure is in 2/2, the ornament (in this case, a mordent) is related to the note on the second beat.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;mordent</span> <span class="na">form=</span><span class="s">"inv"</span> <span class="na">place=</span><span class="s">"below"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/mordent&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The relationship between an ornament and the notes on staff must always be encoded. It is, in fact, a semantic error not to specify a starting event or time stamp for an ornament.</p>
+
+<p>In their resolution, ornaments will involve auxiliary notes, which typically follow the key signature or the scale of the current key. When the ornament involves other chromatic auxiliaries, an accidental is expressed next to or above the ornament sign. The attributes <strong>@accidlower</strong> and <strong>@accidupper</strong>, available on all ornaments described in this chapter, can be used to record this accidental. The attribute values ‘upper’ and ‘lower’ indicate whether the accidental is associated with an upper or lower auxiliary note, not the position of the accidental sign.</p>
+
+<h4 id="cmnOrnamentsOverride">8.1.1. Overriding Default Resolutions
+      
+  </h4>
+
+<p>The symbols and sounded resolutions suggested for each ornament in this chapter are to be considered defaults. Nevertheless, because of the great historical and geographical variance in the notation of ornaments, the encoder is given methods to override the default resolutions.</p>
+
+<p>It is possible, for example, to specify in the 
+  <a href="/v3/elements/meihead.html" class="link_odd_elementSpec">meiHead</a> a new default sounded resolution for an ornament. As discussed in the section 
+  <a href="/v3/content/header.html#headerEncodingDescription">Encoding Description</a>, the element 
+  <a href="/v3/elements/encodingdesc.html" class="link_odd_elementSpec">encodingDesc</a> holds a description (optional, but recommended) of the methods and editorial principles which govern the transcription or encoding of the source material. Let us take a trill as an example. The section regarding 
+  <a href="/v3/content/cmnornaments.html#cmnOrnamentsTrills">Trills</a> does not set a specific number of alternations between the principal and secondary notes; the encoder, however, may specify an exact number in the encoding description.</p>
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;encodingDesc&gt;</span>
+   <span class="nt">&lt;editorialDecl&gt;</span>
+      <span class="nt">&lt;p&gt;</span>All trills should be resolved by playing three alternations.<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/editorialDecl&gt;</span>
+<span class="nt">&lt;/encodingDesc&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Alternatively, resolutions can be defined on a case-by-case basis by encoding a specific resolution using the 
+  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element. See the section 
+  <a href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">Special Cases</a> below for an example of a specific resolution of a trill.</p>
+
+<h3 id="cmnOrnamentsMordents">8.2. Mordents
+      
+  </h3>
+
+<p>A mordent is an ornament that involves an auxiliary note a step above or below the principal note. The presence of a mordent is encoded with the 
+  <a href="/v3/elements/mordent.html" class="link_odd_elementSpec">mordent</a> element and its attributes:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/mordent.html">mordent</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            An ornament indicating rapid alternation of the main note with a secondary note, usually
+a step below, but sometimes a step above. 
+</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.mordent.log.html">@form</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Traditionally, the 'normal' mordent is written as a short wavy line with a vertical
+line through it and the inverted mordent is written without the vertical line. However,
+the meaning of these signs is sometimes reversed. See Read, p. 245-246. Another
+attribute in the visual domain would be necessary in order to be completely explicit
+about which visual symbol is actually to be rendered.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.mordent.log.html">@long</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            When the long attribute is set to 'yes', a double or long mordent, consisting of 5
+notes, is indicated.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the written accidental associated with a lower neighboring note.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the written accidental associated with an upper neighboring note.</div>
+    </div>
+</div>
+
+<p>It is recommended, but not required, to use the attribute <strong>@form</strong> to encode the typology of mordents. Two common types are supported: those mordents that involve a note lower than the principal note, and those that involve a note higher than the principal note.</p>
+
+<p>The attribute <strong>@form</strong> accepts the following values:</p>
+
+<p class="gloss"><strong>norm</strong>: usually corresponding to the symbol: . This mordent is commonly performed as the principal note, followed by its lower neighbor, with a return to the principal note.</p>
+
+<p class="gloss"><strong>inv</strong>: usually corresponding to the symbol: . This mordent is commonly performed as the principal note, followed by its upper neighbor, with a return to the principal note.</p>
+
+<p>The following example demonstrates the encoding of simple mordents:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_mordent.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example of simple mordent</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;mordent</span> <span class="na">form=</span><span class="s">"inv"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/mordent&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Occasionally, mordents can be longer, employing five notes instead of three. The <strong>@long</strong> attribute can be used to identify mordents of this type. The following example shows the encoding of a long mordent:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example of a long mordent</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;mordent</span> <span class="na">form=</span><span class="s">"inv"</span> <span class="na">long=</span><span class="s">"true"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/mordent&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="cmnOrnamentsTrills">8.3. Trills
+      
+  </h3>
+
+<p>Trills are a type of ornament that consists of a rapid alternation of a note with one a semitone or tone above. A trill is encoded with the 
+  <a href="/v3/elements/trill.html" class="link_odd_elementSpec">trill</a> element and its attributes:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+              
+                <a href="/v3/elements/trill.html">trill</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Rapid alternation of a note with another (usually at the interval of a second
+above).</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the written accidental associated with a lower neighboring note.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the written accidental associated with an upper neighboring note.</div>
+    </div>
+</div>
+
+<p>Trills in modern notation are usually expressed with the abbreviation “tr” above a note on the staff. Often the abbreviation is followed by a wavy line that indicates the length of the trill.</p>
+
+<p>The following example demonstrates the encoding of simple trills:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_tr.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example of simple trills.</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;rest</span> <span class="na">dur=</span><span class="s">"8"</span><span class="nt">&gt;&lt;/rest&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"f"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"3.5"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"s"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"4"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>It has been specified earlier that it is a semantic error not to encode a starting event or time stamp for an ornament. This starting point of a trill can be expressed with the <strong>@startid</strong> attribute and/or with the <strong>@tstamp</strong> attribute. Specifying the end point is not required, although the <strong>@tstamp2</strong> attribute can be used to indicate the use of a wavy line extender as shown in this example:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example of trills followed by wavy lines.</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="false">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;scoreDef&gt;</span>
+   <span class="nt">&lt;staffGrp&gt;</span>
+      <span class="nt">&lt;staffDef</span> <span class="na">clef.line=</span><span class="s">"2"</span> <span class="na">clef.shape=</span><span class="s">"G"</span> <span class="na">key.sig=</span><span class="s">"2f"</span> <span class="na">lines=</span><span class="s">"5"</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/staffDef&gt;</span>
+   <span class="nt">&lt;/staffGrp&gt;</span>
+<span class="nt">&lt;/scoreDef&gt;</span>
+<span class="nt">&lt;section&gt;</span>
+   <span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/layer&gt;</span>
+      <span class="nt">&lt;/staff&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span> <span class="na">tstamp2=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"2"</span> <span class="na">tstamp2=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"n"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"3"</span> <span class="na">tstamp2=</span><span class="s">"4"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"f"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"4"</span> <span class="na">tstamp2=</span><span class="s">"5"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;/measure&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Chromatic alterations of auxiliary notes are occasionally expressed on the staff using small notes enclosed in parentheses, as shown in the example below. However, the attribute <strong>@accidupper</strong> is still to be used to encode the alteration. Display of the auxiliary note in this ‘cautionary’ manner is left to down-stream rendering processes.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example alterations expressed on the staff.</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"f"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Some trills may be introduced by a turn or followed by an inverted turn leading to the next note (see Le garzantine, Musica 2003, p. 911). In such cases, the trill is encoded as in previous examples and associated with the principal note. Starting or concluding turns are notated on the staff (in 
+  <a href="/v3/elements/layer.html" class="link_odd_elementSpec">layer</a>) as 
+  <a href="/v3/content/cmn.html#cmnNotesGrace">Grace Notes</a>.</p>
+
+<p>The following example, from a keyboard sonata by Joseph Haydn, shows a trill with concluding grace notes:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"2"</span> <span class="na">xml:id=</span><span class="s">"cmnOrnaments.d1e412"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">accid.ges=</span><span class="s">"s"</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">grace=</span><span class="s">"unacc"</span> <span class="na">oct=</span><span class="s">"6"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"up"</span> <span class="na">xml:id=</span><span class="s">"cmnOrnaments.d1e414"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"2"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"down"</span> <span class="na">xml:id=</span><span class="s">"cmnOrnaments.d1e432"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">grace=</span><span class="s">"unacc"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">grace=</span><span class="s">"unacc"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"b"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">ho=</span><span class="s">"+1"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span> <span class="na">tstamp2=</span><span class="s">"2.5"</span> <span class="na">vo=</span><span class="s">"6.5"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<h4 id="cmnOrnamentsTrillsSpecial">8.3.1. Special Cases
+      
+  </h4>
+
+<p>Symbols and abbreviations for trills have changed and evolved considerably throughout history. Strategies to clarify the encoding and interpretation of ornaments have been discussed in section 
+  <a href="/v3/content/cmnornaments.html#cmnOrnamentsOverride">Overriding Default Resolutions</a> above. However, in order to aid the encoder in making educated choices in the encoding of non-standard trills, this section shows two examples diverging from modern standard use.</p>
+
+<p>The abbreviation “tr” followed by a wavy line spanning multiple notes is sometimes used to indicate multiple trills:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example of multiple trills.</figcaption>
+</figure>
+
+<p>The encoding of this kind of trill may vary depending on the purpose of the encoding. For representation of the source, a single trill is sufficient:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;rest</span> <span class="na">dur=</span><span class="s">"8"</span><span class="nt">&gt;&lt;/rest&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span> <span class="na">tstamp2=</span><span class="s">"0m+4"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>To support analytical and aural rendering applications, however, each trill may be explicitly encoded, as the following example demonstrates:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;rest</span> <span class="na">dur=</span><span class="s">"8"</span><span class="nt">&gt;&lt;/rest&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"f"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"3.5"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"s"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"4"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>However, when it is necessary to support multiple outputs, use of the 
+  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a> element and appropriate sub-elements is recommended. In this case, the 
+  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> and 
+  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> elements can be used to represent the original source and a regularization provided by the editor, respectively:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;choice&gt;</span>
+   <span class="nt">&lt;orig&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span> <span class="na">tstamp2=</span><span class="s">"0m+4"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;/orig&gt;</span>
+   <span class="nt">&lt;reg&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"f"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"3.5"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;trill</span> <span class="na">accidupper=</span><span class="s">"s"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"4"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+   <span class="nt">&lt;/reg&gt;</span>
+<span class="nt">&lt;/choice&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Another situation that requires disambiguation of an ornament’s name and its potential rendition is due to the fact that the symbols for trills and mordents have been often used interchangeably in the past. The following example, taken from <em>Klavierbüchlein für Wilhelm Friedemann Bach</em> (1720), shows a trill (Trillo) identified by the symbol associated with a mordent in modern practice. Nonetheless, J.S. Bach’s suggested resolution should be encoded with a variant of the procedure presented above.</p>
+
+<p>In the example below, the child elements of 
+  <a href="/v3/elements/choice.html" class="link_odd_elementSpec">choice</a>; that is, 
+  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> and 
+  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a>, represent non-exclusive options; that is, both may be processed by applications that aim to support both visual and aural renditions.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Trill transcribed from J.S. Bach's "Klavierbüchlein für Wilhelm Friedemann Bach" (1720)</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;choice&gt;</span>
+      <span class="nt">&lt;orig&gt;</span>
+         <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;/orig&gt;</span>
+      <span class="nt">&lt;reg&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"16"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/reg&gt;</span>
+   <span class="nt">&lt;/choice&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Depending on the purpose of the encoding, it may be more convenient to encode the regularized text within the stream of events, along with a corresponding choice with regard to the existence of the trill marking, as in the following example:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff&gt;</span>
+      <span class="nt">&lt;layer&gt;</span>
+         <span class="nt">&lt;choice&gt;</span>
+            <span class="nt">&lt;orig&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;/orig&gt;</span>
+            <span class="nt">&lt;reg&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span><span class="nt">&gt;&lt;/note&gt;</span>
+               <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"16"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;/reg&gt;</span>
+         <span class="nt">&lt;/choice&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;choice&gt;</span>
+      <span class="nt">&lt;orig&gt;</span>
+         <span class="nt">&lt;trill</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/trill&gt;</span>
+      <span class="nt">&lt;/orig&gt;</span>
+      <span class="nt">&lt;reg&gt;&lt;/reg&gt;</span>
+   <span class="nt">&lt;/choice&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>The 
+  <a href="/v3/elements/orig.html" class="link_odd_elementSpec">orig</a> element contains the single-note-with-trill transcription of the original text, while the 
+  <a href="/v3/elements/reg.html" class="link_odd_elementSpec">reg</a> element represents the realization-without-trill version.</p>
+
+<p>This approach facilitates substitution of the realization of the trill for the original written note (as well as the opposite procedure) and is therefore the recommended markup for applications where exchange of this kind is desirable.</p>
+
+<h3 id="cmnOrnamentsTurns">8.4. Turns
+      
+  </h3>
+
+<p>A turn is an ornament that typically consists of four notes: the upper neighbor of the principal note, the principal note, the lower neighbor, and the principal note again.</p>
+
+<p>The presence of a turn is encoded with the 
+  <a href="/v3/elements/turn.html" class="link_odd_elementSpec">turn</a> element and its attributes:</p>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.turn.log.html">@form</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Indicates the style of the turn.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.turn.log.html">@delayed</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            When the delayed attribute is set to 'true', the turn begins on the second half of
+the beat. See Read, p. 246.</div>
+    </div>
+</div>
+
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidlower</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the written accidental associated with a lower neighboring note.</div>
+    </div>
+</div>
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-resize-horiz centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            
+                <a href="/v3/attribute-classes/att.ornamentaccid.html">@accidupper</a>
+            
+        </div>
+        <div class="tile-subtitle text-gray">
+            
+            
+            Records the written accidental associated with an upper neighboring note.</div>
+    </div>
+</div>
+
+<p>It is recommended, but not required, to use the attribute <strong>@form</strong> to encode the typology of the turn.</p>
+
+<p>The attribute <strong>@form</strong> accepts the following values:</p>
+
+<p class="gloss"><strong>norm</strong>: usually corresponding to the symbol: . This turn is commonly performed beginning on a note higher than the principal note.</p>
+
+<p class="gloss"><strong>inv</strong>: usually corresponding to the symbol: . This turn is commonly performed beginning on a note lower than the principal note.</p>
+
+<p>The following example shows the encoding of a simple turn:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_turn.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example of a simple turn.</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;turn</span> <span class="na">form=</span><span class="s">"norm"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/turn&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<p>Turns can sometimes be performed after the principal note (usually on the second half of the beat, see Read 1979, p. 246) and leading to the following event. To indicate this, the turn symbol is typically written in between the principal note and the next. These kind of turns are encoded with the attribute <strong>@delayed</strong>.</p>
+
+<p>The following example from Beethoven’s piano sonata no. 1 in F minor, op. 2, no. 1, mvmt. 2 demonstrates the encoding of turns with the <strong>@delayed</strong> attribute. Note that the <strong>@tstamp</strong> attribute indicates the actual starting point in time, while <strong>@startid</strong> points to the principal note.</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Delayed turn.</figcaption>
+</figure>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"down"</span> <span class="na">tie=</span><span class="s">"i"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dots=</span><span class="s">"1"</span> <span class="na">dur=</span><span class="s">"16"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"down"</span> <span class="na">tie=</span><span class="s">"t"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"32"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"a"</span> <span class="na">stem.dir=</span><span class="s">"down"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;turn</span> <span class="na">accidlower=</span><span class="s">"s"</span> <span class="na">place=</span><span class="s">"above"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">tstamp=</span><span class="s">"2.75"</span><span class="nt">&gt;&lt;/turn&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+<h3 id="cmnOrnamentsOther">8.5. Other Ornaments
+      
+  </h3>
+
+<p>CMN ornaments that are not mordents, trills, or turns can be encoded with a generic 
+  <a href="/v3/elements/ornam.html" class="link_odd_elementSpec">ornam</a>.</p>
+
+<p>This element allows the encoder to represent ornaments as textual strings (e.g. with a Unicode symbol) or with a user defined symbol. Chromatic auxiliaries can be represented with <strong>@accidlower</strong> and <strong>@accidupper</strong>. The 
+  <a href="/v3/elements/ornam.html" class="link_odd_elementSpec">ornam</a> element can also be a control element. That is, it can be linked via its attributes to other events. The starting point of the directive may be indicated by either a tstamp, tstamp.ges, tstamp.real or startid attribute, while the ending point may be recorded by either a tstamp2, dur, dur.ges or endid attribute. It is a semantic error not to specify a starting point attribute.</p>
+
+<p>For example, Johann Sebastian Bach used non-standard ornaments in the <em>Klavierbüchlein für Wilhelm Friedemann Bach</em>:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm Friedemann Bach</figcaption>
+</figure>
+
+<p>The ornament for (5) doppelt-cadence could be encoded in the following way, by adopting the Unicode code-points defined by the SMuFL standard:</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ornament</span> <span class="na">tstamp=</span><span class="s">"1"</span><span class="nt">&gt;</span><span class="ni">&amp;amp;</span>#xe5c0;<span class="nt">&lt;/ornament&gt;</span></code></pre></figure>
+
+</div>
+
+<p>A resolution, or expansion of the ornament can be provided as discussed in 
+  <a href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">Special Cases</a> below.</p>
+
+<h3 id="cmnOrnamentsMultiple">8.6. Ornaments in Combinations
+      
+  </h3>
+
+<p>Particularly in baroque keyboard music, but also in the early classical period, various combinations of ornaments can be found. Despite being written vertically above the same note, they are to be performed in sequence.</p>
+
+<p>The following example from C.P.E. Bach’s sonata W.62/1 shows a turn followed by a inverted mordent:</p>
+
+<figure class="figure">
+  <img src="/images/v3/modules/cmnOrnaments/ex_multi_orn.png" class="img-responsive" alt="musical example" />
+  <figcaption class="figure-caption">Example of multiple ornaments. From C.P.E. Bach's sonata W.62/1.</figcaption>
+</figure>
+
+<p>When encoding the example above, both ornaments will be positioned above the same note. The encoded order of the elements, moreover, should correspond to the performed sequence, which in this example is top to bottom: first the turn, then the mordent.</p>
+
+<div class="sampleCode" data-lang="true">
+
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;measure</span> <span class="na">n=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;staff</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;layer</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">grace=</span><span class="s">"unknown"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">stem.dir=</span><span class="s">"down"</span> <span class="na">xml:id=</span><span class="s">"cmnOrnaments.co_m_1_n1"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;beam&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"16"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">accid=</span><span class="s">"s"</span> <span class="na">dur=</span><span class="s">"16"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"f"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"16"</span> <span class="na">oct=</span><span class="s">"4"</span> <span class="na">pname=</span><span class="s">"g"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+            <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"16"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"e"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;/beam&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"8"</span> <span class="na">grace=</span><span class="s">"unknown"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"d"</span> <span class="na">stem.dir=</span><span class="s">"up"</span><span class="nt">&gt;&lt;/note&gt;</span>
+         <span class="nt">&lt;note</span> <span class="na">dur=</span><span class="s">"4"</span> <span class="na">oct=</span><span class="s">"5"</span> <span class="na">pname=</span><span class="s">"c"</span> <span class="na">stem.dir=</span><span class="s">"up"</span> <span class="na">xml:id=</span><span class="s">"cmnOrnaments.co_m_1_n2"</span><span class="nt">&gt;&lt;/note&gt;</span>
+      <span class="nt">&lt;/layer&gt;</span>
+   <span class="nt">&lt;/staff&gt;</span>
+   <span class="nt">&lt;turn</span> <span class="na">form=</span><span class="s">"norm"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">startid=</span><span class="s">"#co_m_1_n1"</span><span class="nt">&gt;&lt;/turn&gt;</span>
+   <span class="nt">&lt;mordent</span> <span class="na">form=</span><span class="s">"inv"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">startid=</span><span class="s">"#co_1_m_n1"</span><span class="nt">&gt;&lt;/mordent&gt;</span>
+   <span class="nt">&lt;turn</span> <span class="na">form=</span><span class="s">"norm"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">startid=</span><span class="s">"#co_m_1_n2"</span><span class="nt">&gt;&lt;/turn&gt;</span>
+   <span class="nt">&lt;mordent</span> <span class="na">form=</span><span class="s">"inv"</span> <span class="na">staff=</span><span class="s">"1"</span> <span class="na">startid=</span><span class="s">"#co_m_1_n2"</span><span class="nt">&gt;&lt;/mordent&gt;</span>
+<span class="nt">&lt;/measure&gt;</span></code></pre></figure>
+
+</div>
+
+
+
+    </div>
+
+    <div class="column col-4 hide-md">
+
+        <form action="/v3/content/cmnornaments.html">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+          </div>
+        </form>
+
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsAll">8.1. Encoding Common To All Ornaments
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsOverride">8.1.1. Overriding Default Resolutions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMordents">8.2. Mordents
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTrills">8.3. Trills
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">8.3.1. Special Cases
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTurns">8.4. Turns
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsOther">8.5. Other Ornaments
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMultiple">8.6. Ornaments in Combinations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+    </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        
+            
+
+                
+
+                     <ul class="nav"> 
+                    <li class="nav-item">
+                        <a href="/v3/content/">Guidelines</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/elements.html">Elements</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/attribute-classes.html">Attribute Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/model-classes.html">Model Classes</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/data-types.html">Data Types</a>
+                    </li>
+
+                    
+                
+
+                    
+                    <li class="nav-item">
+                        <a href="/v3/macro-groups.html">Macro Groups</a>
+                    </li>
+
+                     </ul> 
+                
+            
+        
+
+        <div class="divider"></div>
+
+        
+
+<p class="sectionToc sticky">
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsAll">8.1. Encoding Common To All Ornaments
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsOverride">8.1.1. Overriding Default Resolutions
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMordents">8.2. Mordents
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTrills">8.3. Trills
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-3" href="/v3/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">8.3.1. Special Cases
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsTurns">8.4. Turns
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsOther">8.5. Other Ornaments
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+    <a class="level-2" href="/v3/content/cmnornaments.html#cmnOrnamentsMultiple">8.6. Ornaments in Combinations
+    </a>
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+  
+  
+  
+
+  
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        showURL: false,
+        descriptiveWords: 25
+    });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+});
+</script>
+
+    </div>
+
+    <footer>
+
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
+          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
+    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
+</small>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

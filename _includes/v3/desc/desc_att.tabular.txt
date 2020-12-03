@@ -1,1 +1,0 @@
-Attributes shared by table cells.

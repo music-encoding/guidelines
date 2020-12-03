@@ -1,1 +1,0 @@
-Attributes that describe the properties of stems in the mensural repertoire.

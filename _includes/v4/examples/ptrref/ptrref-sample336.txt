@@ -1,2 +1,0 @@
-<!-- element ID -->
-<ptr target="#SA"/>

@@ -1,1 +1,0 @@
-Used to link metadata elements to one or more data-containing elements.

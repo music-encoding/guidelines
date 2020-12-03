@@ -1,3 +1,0 @@
-Indicates that this element participates in a glissando. If visual information about
-          the glissando needs to be recorded, then a gliss element should be
-          employed instead.

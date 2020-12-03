@@ -1,3 +1,0 @@
-Specifies a point where the relevant content ends. If not specified, the end of the
-          content is assumed to be the end point. A numerical value must be greater and a time value
-          must be later than that given by the begin attribute.

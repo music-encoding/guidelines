@@ -1,2 +1,0 @@
-(reference) – Defines a traversible reference to another location. May contain text and
-      sub-elements that describe the destination.

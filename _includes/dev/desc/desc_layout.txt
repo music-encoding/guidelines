@@ -1,2 +1,0 @@
-Describes how text is laid out on the page, including information about any ruling,
-      pricking, or other evidence of page-preparation techniques.

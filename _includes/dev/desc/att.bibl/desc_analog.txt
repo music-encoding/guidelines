@@ -1,2 +1,0 @@
-Contains a reference to a field or element in another descriptive encoding system to
-          which this MEI element is comparable.

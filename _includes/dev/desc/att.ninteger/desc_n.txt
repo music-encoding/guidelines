@@ -1,2 +1,0 @@
-Provides a numeric designation that indicates an element's position in a sequence of
-          similar elements. Its value must be a non-negative integer.
