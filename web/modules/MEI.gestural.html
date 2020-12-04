@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?><html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-04"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <header class="navbar">
+         <div class="navbar-section"><a class="navbar-brand" href="http://music-encoding.org"><img src="http://music-encoding.org/pix/meilogo-inverted.png" alt="MEI logo"></img></a><div class="hide-lg">
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/about" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">About</a></div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">Community<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/projects-users.html" class="btn btn-link text-left menu-link">Projects / Users</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/news-events.html" class="btn btn-link text-left menu-link">News / Events</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html" class="btn btn-link text-left menu-link">Community Contacts</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html" class="btn btn-link text-left menu-link">Interest Groups</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/technical-team.html" class="btn btn-link text-left menu-link">Technical Team</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-board.html" class="btn btn-link text-left menu-link">MEI Board</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html" class="btn btn-link text-left menu-link">MEI By-laws</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">Conference<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/past.html" class="btn btn-link text-left menu-link">Past Conferences</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/proceedings.html" class="btn btn-link text-left menu-link">Proceedings</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html" class="btn btn-link text-left menu-link">Hosting Guidelines</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">Resources<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="5">Documentation<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/archive" class="btn btn-link dropdown-toggle top-menu-link" tabindex="6">Archive</a></div>
+            </div>
+         </div>
+         <div class="navbar-section" id="socialLinks"><a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding"><img src="http://music-encoding.org/pix/twitter.png" alt="Twitter" class="logo"></img></a><a class="githubLink" target="_blank" href="https://github.com/music-encoding"><img src="http://music-encoding.org/pix/github.png" alt="GitHub" class="logo"></img></a><a class="slackLink" target="_blank" href="https://music-encoding.slack.com/"><img src="http://music-encoding.org/pix/slack.png" alt="Slack" class="logo"></img></a></div>
+         <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+            <div class="accordion"><input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-toggle"><i class="icon icon-menu"></i></label><div class="accordion-body">
+                  <ul class="menu menu-nav">
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/about">About</a></label></div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Community</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/projects-users.html">Projects / Users</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/news-events.html">News / Events</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html">Community Contacts</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html">Interest Groups</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/technical-team.html">Technical Team</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-board.html">MEI Board</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html">MEI By-laws</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Conference</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/past.html">Past Conferences</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/proceedings.html">Proceedings</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html">Hosting Guidelines</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Resources</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Documentation</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/archive">Archive</a></label></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="specPage moduleSpec">
+                  <h2 id="MEI.gestural">MEI.gestural</h2>
+                  <div class="specs">
+                     <div class="desc">Gestural component declarations.</div>
+                     <div class="contentListBox">
+                        <h3>Elements in MEI.gestural</h3>
+                        <div class="contents"><span class="placeholder">– no elements defined in MEI.gestural – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Model Classes in MEI.gestural</h3>
+                        <div class="contents"><span class="placeholder">– no model classes defined in MEI.gestural – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Macro Groups in MEI.gestural</h3>
+                        <div class="contents"><span class="placeholder">– no macro groups defined in MEI.gestural – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Attribute Classes in MEI.gestural</h3>
+                        <div class="contents"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.accid.ges.html" title="Gestural domain attributes.">att.accid.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.accidental.gestural.html" title="Attributes for capturing momentary pitch inflection in the gestural domain.">att.accidental.gestural</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ambNote.ges.html" title="Gestural domain attributes.">att.ambNote.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.annot.ges.html" title="Gestural domain attributes.">att.annot.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.arpeg.ges.html" title="Gestural domain attributes.">att.arpeg.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.artic.ges.html" title="Gestural domain attributes.">att.artic.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.articulation.gestural.html" title="Attributes describing the method of performance.">att.articulation.gestural</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.attacca.ges.html" title="Gestural domain attributes.">att.attacca.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.barLine.ges.html" title="Gestural domain attributes.">att.barLine.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beam.ges.html" title="Gestural domain attributes.">att.beam.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beamSpan.ges.html" title="Gestural domain attributes.">att.beamSpan.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beatRpt.ges.html" title="Gestural domain attributes.">att.beatRpt.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bend.ges.html" title="Gestural domain attributes.">att.bend.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bracketSpan.ges.html" title="Gestural domain attributes.">att.bracketSpan.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.breath.ges.html" title="Gestural domain attributes.">att.breath.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bTrem.ges.html" title="Gestural domain attributes.">att.bTrem.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.caesura.ges.html" title="Gestural domain attributes.">att.caesura.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chord.ges.html" title="Gestural domain attributes.">att.chord.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chordDef.ges.html" title="Gestural domain attributes.">att.chordDef.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chordMember.ges.html" title="Gestural domain attributes.">att.chordMember.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.clef.ges.html" title="Gestural domain attributes.">att.clef.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.clefGrp.ges.html" title="Gestural domain attributes.">att.clefGrp.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.cpMark.ges.html" title="Gestural domain attributes.">att.cpMark.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.curve.ges.html" title="Gestural domain attributes.">att.curve.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.custos.ges.html" title="Gestural domain attributes.">att.custos.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mdiv.ges.html" title="Gestural domain attributes.">att.mdiv.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dir.ges.html" title="Gestural domain attributes.">att.dir.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dot.ges.html" title="Gestural domain attributes.">att.dot.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.gestural.html" title="Attributes that record performed duration that differs from a feature's written duration.">att.duration.gestural</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dynam.ges.html" title="Gestural domain attributes.">att.dynam.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ending.ges.html" title="Gestural domain attributes.">att.ending.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.episema.ges.html" title="Gestural domain attributes.">att.episema.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.f.ges.html" title="Gestural domain attributes.">att.f.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fermata.ges.html" title="Gestural domain attributes.">att.fermata.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fing.ges.html" title="Gestural domain attributes.">att.fing.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fingGrp.ges.html" title="Gestural domain attributes.">att.fingGrp.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fTrem.ges.html" title="Gestural domain attributes.">att.fTrem.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.gliss.ges.html" title="Gestural domain attributes.">att.gliss.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.grpSym.ges.html" title="Gestural domain attributes.">att.grpSym.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.hairpin.ges.html" title="Gestural domain attributes.">att.hairpin.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.halfmRpt.ges.html" title="Gestural domain attributes.">att.halfmRpt.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.ges.html" title="Gestural domain attributes.">att.harm.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harpPedal.ges.html" title="Gestural domain attributes.">att.harpPedal.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.hispanTick.ges.html" title="Gestural domain attributes.">att.hispanTick.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.instrDef.ges.html" title="Gestural domain attributes.">att.instrDef.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keyAccid.ges.html" title="Gestural domain attributes.">att.keyAccid.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySig.ges.html" title="Gestural domain attributes.">att.keySig.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.ges.html" title="Gestural domain attributes.">att.layer.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.layerDef.ges.html" title="Gestural domain attributes.">att.layerDef.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ligature.ges.html" title="Gestural domain attributes.">att.ligature.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.line.ges.html" title="Attributes for describing the performed components of a line.">att.line.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.liquescent.ges.html" title="Gestural domain attributes.">att.liquescent.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.lv.ges.html" title="Gestural domain attributes.">att.lv.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.lyrics.ges.html" title="Gestural domain attributes.">att.lyrics.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.measure.ges.html" title="Gestural domain attributes. The tstamp.ges and tstamp.real attributes encode the onset time of the measure. In reality, this is usually the same as the onset time of the first event in the measure.">att.measure.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensur.ges.html" title="Gestural domain attributes.">att.mensur.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSig.ges.html" title="Gestural domain attributes.">att.meterSig.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSigGrp.ges.html" title="Gestural domain attributes.">att.meterSigGrp.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.midi.ges.html" title="Gestural domain attributes.">att.midi.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mordent.ges.html" title="Gestural domain attributes.">att.mordent.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRest.ges.html" title="Gestural domain attributes.">att.mRest.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRpt.ges.html" title="Gestural domain attributes.">att.mRpt.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRpt2.ges.html" title="Gestural domain attributes.">att.mRpt2.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mSpace.ges.html" title="Gestural domain attributes.">att.mSpace.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.multiRest.ges.html" title="Gestural domain attributes.">att.multiRest.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.multiRpt.ges.html" title="Gestural domain attributes.">att.multiRpt.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.nc.ges.html" title="Gestural domain attributes.">att.nc.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncGrp.ges.html" title="Gestural domain attributes.">att.ncGrp.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.neume.ges.html" title="Gestural domain attributes.">att.neume.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.note.ges.html" title="Gestural domain attributes.">att.note.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.octave.ges.html" title="Gestural domain attributes.">att.octave.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.oriscus.ges.html" title="Gestural domain attributes.">att.oriscus.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ornam.ges.html" title="Gestural domain attributes.">att.ornam.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ossia.ges.html" title="Gestural domain attributes.">att.ossia.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pad.ges.html" title="Gestural domain attributes.">att.pad.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.part.ges.html" title="Gestural domain attributes.">att.part.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.parts.ges.html" title="Gestural domain attributes.">att.parts.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pb.ges.html" title="Gestural domain attributes.">att.pb.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pedal.ges.html" title="Gestural domain attributes.">att.pedal.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.phrase.ges.html" title="Gestural domain attributes.">att.phrase.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.proport.ges.html" title="Gestural domain attributes.">att.proport.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.quilisma.ges.html" title="Gestural domain attributes.">att.quilisma.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.rdg.ges.html" title="Gestural domain attributes.">att.rdg.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.refrain.ges.html" title="Gestural domain attributes.">att.refrain.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.reh.ges.html" title="Gestural domain attributes.">att.reh.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.rest.ges.html" title="Gestural domain attributes.">att.rest.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.sb.ges.html" title="Gestural domain attributes.">att.sb.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.score.ges.html" title="Gestural domain attributes.">att.score.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.ges.html" title="Gestural domain attributes for scoreDef. The values set in these attributes act as score-wide defaults for attributes that are not set in descendant elements. For example, the grace attribute value here applies to all the grace attribute values in the score (or, more accurately, until the next scoreDef element) without having to individually set each note's grace attribute value. The midi.* attributes function as default values when creating sounding output. The tune.* attributes provide the capability of recording a tuning reference pitch.">att.scoreDef.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.section.ges.html" title="Gestural domain attributes.">att.section.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.signifLet.ges.html" title="Gestural domain attributes.">att.signifLet.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.ges.html" title="Gestural domain attributes.">att.slur.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.soundLocation.html" title="Attributes that locate a sound source within 3-D space.">att.soundLocation</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.sp.ges.html" title="Gestural domain attributes.">att.sp.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.space.ges.html" title="Gestural domain attributes.">att.space.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staff.ges.html" title="Gestural domain attributes.">att.staff.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.ges.html" title="Gestural domain attributes for staffDef in the CMN repertoire.">att.staffDef.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffGrp.ges.html" title="Gestural domain attributes.">att.staffGrp.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stageDir.ges.html" title="Gestural domain attributes.">att.stageDir.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.strophicus.ges.html" title="Gestural domain attributes.">att.strophicus.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.syl.ges.html" title="Gestural domain attributes.">att.syl.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.syllable.ges.html" title="Gestural domain attributes.">att.syllable.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.symbol.ges.html" title="Gestural domain attributes.">att.symbol.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tempo.ges.html" title="Gestural domain attributes.">att.tempo.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tie.ges.html" title="Gestural domain attributes.">att.tie.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp.gestural.html" title="Attributes that record a performed (as opposed to notated) time stamp.">att.timestamp.gestural</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp2.gestural.html" title="Attributes that record a performed (as opposed to notated) time stamp for the end of an event.">att.timestamp2.gestural</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.trill.ges.html" title="Gestural domain attributes.">att.trill.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuplet.ges.html" title="Gestural domain attributes.">att.tuplet.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tupletSpan.ges.html" title="Gestural domain attributes.">att.tupletSpan.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.turn.ges.html" title="Gestural domain attributes.">att.turn.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.verse.ges.html" title="Gestural domain attributes.">att.verse.ges</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.volta.ges.html" title="Gestural domain attributes.">att.volta.ges</a></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Data Typess in MEI.gestural</h3>
+                        <div class="contents"><span class="placeholder">– no data types defined in MEI.gestural – </span></div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                $(document).ready(function() {
+                                    $('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>

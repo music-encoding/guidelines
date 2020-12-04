@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?><html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-04"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <header class="navbar">
+         <div class="navbar-section"><a class="navbar-brand" href="http://music-encoding.org"><img src="http://music-encoding.org/pix/meilogo-inverted.png" alt="MEI logo"></img></a><div class="hide-lg">
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/about" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">About</a></div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">Community<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/projects-users.html" class="btn btn-link text-left menu-link">Projects / Users</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/news-events.html" class="btn btn-link text-left menu-link">News / Events</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html" class="btn btn-link text-left menu-link">Community Contacts</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html" class="btn btn-link text-left menu-link">Interest Groups</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/technical-team.html" class="btn btn-link text-left menu-link">Technical Team</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-board.html" class="btn btn-link text-left menu-link">MEI Board</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html" class="btn btn-link text-left menu-link">MEI By-laws</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">Conference<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/past.html" class="btn btn-link text-left menu-link">Past Conferences</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/proceedings.html" class="btn btn-link text-left menu-link">Proceedings</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html" class="btn btn-link text-left menu-link">Hosting Guidelines</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">Resources<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="5">Documentation<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/archive" class="btn btn-link dropdown-toggle top-menu-link" tabindex="6">Archive</a></div>
+            </div>
+         </div>
+         <div class="navbar-section" id="socialLinks"><a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding"><img src="http://music-encoding.org/pix/twitter.png" alt="Twitter" class="logo"></img></a><a class="githubLink" target="_blank" href="https://github.com/music-encoding"><img src="http://music-encoding.org/pix/github.png" alt="GitHub" class="logo"></img></a><a class="slackLink" target="_blank" href="https://music-encoding.slack.com/"><img src="http://music-encoding.org/pix/slack.png" alt="Slack" class="logo"></img></a></div>
+         <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+            <div class="accordion"><input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-toggle"><i class="icon icon-menu"></i></label><div class="accordion-body">
+                  <ul class="menu menu-nav">
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/about">About</a></label></div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Community</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/projects-users.html">Projects / Users</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/news-events.html">News / Events</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html">Community Contacts</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html">Interest Groups</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/technical-team.html">Technical Team</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-board.html">MEI Board</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html">MEI By-laws</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Conference</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/past.html">Past Conferences</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/proceedings.html">Proceedings</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html">Hosting Guidelines</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Resources</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Documentation</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/archive">Archive</a></label></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="specPage modelClassSpec">
+                  <h2 id="model.editorialLike">model.editorialLike</h2>
+                  <div class="specs">
+                     <div class="desc">Groups editorial intervention elements.
+                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/scholarlyediting.html#editTrans" title="11.2 Editorial Markup">11.2 Editorial Markup</a></div>
+                     </div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text">MEI.shared</div>
+                     </div>
+                     <div id="attributes" class="facet attributes">
+                        <div class="label">Attributes</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"></div>
+                           <div id="attributes_full" class="facetTabbedContent full" data-label="full definition"></div>
+                           <div id="attributes_class" class="facetTabbedContent class" data-label="by class"></div>
+                           <div id="attributes_module" class="facetTabbedContent module" data-label="by module"></div>
+                        </div>
+                     </div>
+                     <div id="memberships" class="facet memberships">
+                        <div class="label">Member of</div>
+                        <div class="statement memberships">
+                           <div class="memberOf"><a class="link_odd link_odd_modelClass" href="../model-classes/model.textPhraseLike.limited.html">model.textPhraseLike.limited</a><span class="groupDesc">Groups textual elements that occur at the level of individual words or phrases. This
+                                 class is equivalent to the model.textPhraseLike class without the pb element.</span></div>
+                           <div class="memberOf"><a class="link_odd link_odd_modelClass" href="../model-classes/model.choicePart.html">model.choicePart</a><span class="groupDesc">Groups elements that may appear as part of the content of a choice element.</span></div>
+                        </div>
+                     </div>
+                     <div id="members" class="facet members">
+                        <div class="label">Members</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="members_compact" id="members_compact_tab" href="#members_compact" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="members_module" id="members_module_tab" href="#members_module" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="members_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation.">abbr</a>, <a class="link_odd link_odd_elementSpec" href="../elements/expan.html" title="(expansion) – Contains the expansion of an abbreviation.">expan</a></div>
+                           <div id="members_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.edittrans">
+                                 <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc">Editorial and transcriptional component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a></span><span class="desc"><span class="desc">(abbreviation) – A generic element for 1) a shortened form of a word, including an
+                                             acronym
+                                             or 2) a shorthand notation.</span></span></div>
+                                    <div class="def"><span class="ident" title="(expansion) – Contains the expansion of an abbreviation."><a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a></span><span class="desc"><span class="desc">(expansion) – Contains the expansion of an abbreviation.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="containedBy" class="facet containedBy">
+                        <div class="label">Contained By</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="containedBy_compact" id="containedBy_compact_tab" href="#containedBy_compact" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="containedBy_class" id="containedBy_class_tab" href="#containedBy_class" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="containedBy_module" id="containedBy_module_tab" href="#containedBy_module" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation.">abbr</a>, <a class="link_odd link_odd_elementSpec" href="../elements/actor.html" title="Name of an actor appearing within a cast list.">actor</a>, <a class="link_odd link_odd_elementSpec" href="../elements/add.html" title="(addition) – Marks an addition to the text.">add</a>, <a class="link_odd link_odd_elementSpec" href="../elements/addName.html" title="(additional name) – Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.">addName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/addrLine.html" title="(address line) – Single line of a postal address.">addrLine</a>, <a class="link_odd link_odd_elementSpec" href="../elements/anchoredText.html" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it.">anchoredText</a>, <a class="link_odd link_odd_elementSpec" href="../elements/annot.html" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion.">annot</a>, <a class="link_odd link_odd_elementSpec" href="../elements/arranger.html" title="A person or organization who transcribes a musical composition, usually for a different medium from that of the original; in an arrangement the musical substance remains essentially unchanged.">arranger</a>, <a class="link_odd link_odd_elementSpec" href="../elements/attacca.html" title="An instruction to begin the next section or movement of a composition without pause.">attacca</a>, <a class="link_odd link_odd_elementSpec" href="../elements/author.html" title="The name of the creator of the intellectual content of a non-musical, literary work.">author</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bibl.html" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked.">bibl</a>, <a class="link_odd link_odd_elementSpec" href="../elements/biblScope.html" title="(scope of citation) – Defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work.">biblScope</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bindingDesc.html" title="(binding description) – Describes the present and former bindings of an item.">bindingDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bloc.html" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries.">bloc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bracketSpan.html" title="Marks a sequence of notational events grouped by a bracket.">bracketSpan</a>, <a class="link_odd link_odd_elementSpec" href="../elements/byline.html" title="Contains the primary statement of responsibility given for a work on its title page.">byline</a>, <a class="link_odd link_odd_elementSpec" href="../elements/caption.html" title="A label which accompanies an illustration or a table.">caption</a>, <a class="link_odd link_odd_elementSpec" href="../elements/choice.html" title="Groups a number of alternative encodings for the same point in a text.">choice</a>, <a class="link_odd link_odd_elementSpec" href="../elements/composer.html" title="The name of the creator of the intellectual content of a musical work.">composer</a>, <a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html" title="Contains a single entry within a content description element.">contentItem</a>, <a class="link_odd link_odd_elementSpec" href="../elements/contributor.html" title="Names of individuals, institutions, or organizations responsible for contributions to the intellectual content of a work, where the specialized elements for authors, editors, etc. do not suffice or do not apply.">contributor</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corpName.html" title="(corporate name) – Identifies an organization or group of people that acts as a single entity.">corpName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corr.html" title="(correction) – Contains the correct form of an apparent erroneous passage.">corr</a>, <a class="link_odd link_odd_elementSpec" href="../elements/country.html" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc.">country</a>, <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html" title="(copy/colla parte mark) – A verbal or graphical indication to copy musical material written elsewhere.">cpMark</a>, <a class="link_odd link_odd_elementSpec" href="../elements/creation.html" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element.">creation</a>, <a class="link_odd link_odd_elementSpec" href="../elements/damage.html" title="Contains an area of damage to the physical medium.">damage</a>, <a class="link_odd link_odd_elementSpec" href="../elements/date.html" title="A string identifying a point in time or the time period between two such points.">date</a>, <a class="link_odd link_odd_elementSpec" href="../elements/decoDesc.html" title="(decoration description) – Contains a description of the decoration of an item.">decoDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/decoNote.html" title="(decoration note) – Contains a description of one or more decorative features of an item.">decoNote</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dedicatee.html" title="Entity to whom a creative work is formally offered.">dedicatee</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dedication.html" title="Contains a dedicatory statement.">dedication</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.">del</a>, <a class="link_odd link_odd_elementSpec" href="../elements/depth.html" title="Description of a measurement taken through a three-dimensional object.">depth</a>, <a class="link_odd link_odd_elementSpec" href="../elements/desc.html" title="(description) – Container for text that briefly describes the feature to which it is attached, including its intended usage, purpose, or application as appropriate.">desc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dim.html" title="(dimension) – Any single dimensional specification.">dim</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dir.html" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam .">dir</a>, <a class="link_odd link_odd_elementSpec" href="../elements/distributor.html" title="Person or agency, other than a publisher, from which access (including electronic access) to a bibliographic entity may be obtained.">distributor</a>, <a class="link_odd link_odd_elementSpec" href="../elements/district.html" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit.">district</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html" title="(dynamic) – Indication of the volume of a note, phrase, or section of music.">dynam</a>, <a class="link_odd link_odd_elementSpec" href="../elements/edition.html" title="(edition designation) – A word or text phrase that indicates a difference in either content or form between the item being described and a related item previously issued by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by either the same publisher/distributor or another publisher/distributor (e.g. large print edition, British edition, etc.).">edition</a>, <a class="link_odd link_odd_elementSpec" href="../elements/editor.html" title="The name of the individual(s), institution(s) or organization(s) acting in an editorial capacity.">editor</a>, <a class="link_odd link_odd_elementSpec" href="../elements/epigraph.html" title="Contains a quotation, anonymous or attributed, appearing on a title page.">epigraph</a>, <a class="link_odd link_odd_elementSpec" href="../elements/expan.html" title="(expansion) – Contains the expansion of an abbreviation.">expan</a>, <a class="link_odd link_odd_elementSpec" href="../elements/extent.html" title="Used to express size in terms other than physical dimensions, such as number of pages, records, bytes, physical components, etc.">extent</a>, <a class="link_odd link_odd_elementSpec" href="../elements/f.html" title="(figure) – Single element of a figured bass indication.">f</a>, <a class="link_odd link_odd_elementSpec" href="../elements/famName.html" title="(family name) – Contains a family (inherited) name, as opposed to a given, baptismal, or nick name.">famName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html" title="(figure description) – Contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it.">figDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/fing.html" title="finger – An individual finger in a fingering indication.">fing</a>, <a class="link_odd link_odd_elementSpec" href="../elements/foreName.html" title="Contains a forename, given or baptismal name.">foreName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/funder.html" title="Names of individuals, institutions, or organizations responsible for funding. Funders provide financial support for a project; they are distinct from sponsors, who provide intellectual support and authority.">funder</a>, <a class="link_odd link_odd_elementSpec" href="../elements/genName.html" title="(generational name component) – Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named.">genName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/genre.html" title="Term or terms that designate a category characterizing a particular style, form, or content.">genre</a>, <a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html" title="(geographical feature name) – Contains a common noun identifying a geographical feature.">geogFeat</a>, <a class="link_odd link_odd_elementSpec" href="../elements/geogName.html" title="(geographic name) – The proper noun designation for a place, natural feature, or political jurisdiction.">geogName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/gliss.html" title="(glissando) – A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line.">gliss</a>, <a class="link_odd link_odd_elementSpec" href="../elements/hand.html" title="Defines a distinct scribe or handwriting style.">hand</a>, <a class="link_odd link_odd_elementSpec" href="../elements/harm.html" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass.">harm</a>, <a class="link_odd link_odd_elementSpec" href="../elements/head.html" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list.">head</a>, <a class="link_odd link_odd_elementSpec" href="../elements/height.html" title="Description of the vertical size of an object.">height</a>, <a class="link_odd link_odd_elementSpec" href="../elements/identifier.html" title="An alpha-numeric string that establishes the identity of the described material.">identifier</a>, <a class="link_odd link_odd_elementSpec" href="../elements/imprimatur.html" title="Contains a formal statement authorizing the publication of a work, sometimes required to appear on a title page or its verso.">imprimatur</a>, <a class="link_odd link_odd_elementSpec" href="../elements/imprint.html" title="Information relating to the publication or distribution of a bibliographic item.">imprint</a>, <a class="link_odd link_odd_elementSpec" href="../elements/l.html" title="(line of text) – Contains a single line of text within a line group.">l</a>, <a class="link_odd link_odd_elementSpec" href="../elements/label.html" title="A container for document text that identifies the feature to which it is attached. For a &#34;tool tip&#34; or other generated label, use the label attribute.">label</a>, <a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html" title="A label on the pages following the first.">labelAbbr</a>, <a class="link_odd link_odd_elementSpec" href="../elements/language.html" title="Description of a language used in the document.">language</a>, <a class="link_odd link_odd_elementSpec" href="../elements/layoutDesc.html" title="(layout description) – Collects layout descriptions.">layoutDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/lem.html" title="(lemma) – Contains the lemma, or base text, of a textual variation.">lem</a>, <a class="link_odd link_odd_elementSpec" href="../elements/li.html" title="(list item) – Single item in a list .">li</a>, <a class="link_odd link_odd_elementSpec" href="../elements/librettist.html" title="Person or organization who is a writer of the text of an opera, oratorio, etc.">librettist</a>, <a class="link_odd link_odd_elementSpec" href="../elements/line.html" title="A visual line that cannot be represented by a more specific; i.e., semantic, element.">line</a>, <a class="link_odd link_odd_elementSpec" href="../elements/lyricist.html" title="Person or organization who is a writer of the text of a song.">lyricist</a>, <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc.">metaMark</a>, <a class="link_odd link_odd_elementSpec" href="../elements/name.html" title="Proper noun or noun phrase.">name</a>, <a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html" title="(name link) – Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc.">nameLink</a>, <a class="link_odd link_odd_elementSpec" href="../elements/num.html" title="(number) – Numeric information in any form.">num</a>, <a class="link_odd link_odd_elementSpec" href="../elements/octave.html" title="An indication that a passage should be performed one or more octaves above or below its written pitch.">octave</a>, <a class="link_odd link_odd_elementSpec" href="../elements/orig.html" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected.">orig</a>, <a class="link_odd link_odd_elementSpec" href="../elements/ornam.html" title="An element indicating an ornament that is not a mordent, turn, or trill.">ornam</a>, <a class="link_odd link_odd_elementSpec" href="../elements/p.html" title="(paragraph) – One or more text phrases that form a logical prose passage.">p</a>, <a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html" title="(performance resource) – Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation.">perfRes</a>, <a class="link_odd link_odd_elementSpec" href="../elements/periodName.html" title="(period name) – A label that describes a period of time, such as 'Baroque' or '3rd Style period'.">periodName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/persName.html" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names.">persName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/pgFoot.html" title="(page footer) – A running footer on the first page. Also, used to temporarily override a running footer on individual pages.">pgFoot</a>, <a class="link_odd link_odd_elementSpec" href="../elements/pgFoot2.html" title="(page footer 2) – A running footer on the pages following the first.">pgFoot2</a>, <a class="link_odd link_odd_elementSpec" href="../elements/pgHead.html" title="(page header) – A running header on the first page. Also, used to temporarily override a running header on individual pages.">pgHead</a>, <a class="link_odd link_odd_elementSpec" href="../elements/pgHead2.html" title="(page header 2) – A running header on the pages following the first.">pgHead2</a>, <a class="link_odd link_odd_elementSpec" href="../elements/price.html" title="The cost of access to a bibliographic item.">price</a>, <a class="link_odd link_odd_elementSpec" href="../elements/provenance.html" title="The record of ownership or custodianship of an item.">provenance</a>, <a class="link_odd link_odd_elementSpec" href="../elements/pubPlace.html" title="(publication place) – Name of the place where a bibliographic item was published.">pubPlace</a>, <a class="link_odd link_odd_elementSpec" href="../elements/publisher.html" title="Name of the organization responsible for the publication of a bibliographic item.">publisher</a>, <a class="link_odd link_odd_elementSpec" href="../elements/q.html" title="(quoted) – Contains material which is distinguished from the surrounding phrase-level text using quotation marks or a similar method. Use quote for block-level quotations.">q</a>, <a class="link_odd link_odd_elementSpec" href="../elements/quote.html" title="(quoted material) – Contains a paragraph-like block of text attributed to an external source, normally set off from the surrounding text by spacing or other typographic distinction.">quote</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html" title="(reading) – Contains a single reading within a textual variation.">rdg</a>, <a class="link_odd link_odd_elementSpec" href="../elements/recipient.html" title="The name of the individual(s), institution(s) or organization(s) receiving correspondence.">recipient</a>, <a class="link_odd link_odd_elementSpec" href="../elements/ref.html" title="(reference) – Defines a traversible reference to another location. May contain text and sub-elements that describe the destination.">ref</a>, <a class="link_odd link_odd_elementSpec" href="../elements/reg.html" title="(regularization) – Contains material which has been regularized or normalized in some sense.">reg</a>, <a class="link_odd link_odd_elementSpec" href="../elements/region.html" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country.">region</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rend.html" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase.">rend</a>, <a class="link_odd link_odd_elementSpec" href="../elements/repository.html" title="Institution, agency, or individual which holds a bibliographic item.">repository</a>, <a class="link_odd link_odd_elementSpec" href="../elements/resp.html" title="(responsibility) – A phrase describing the nature of intellectual responsibility.">resp</a>, <a class="link_odd link_odd_elementSpec" href="../elements/restore.html" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction.">restore</a>, <a class="link_odd link_odd_elementSpec" href="../elements/role.html" title="Name of a dramatic role, as given in a cast list.">role</a>, <a class="link_odd link_odd_elementSpec" href="../elements/roleDesc.html" title="(role description) – Describes a character's role in a drama.">roleDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/roleName.html" title="(role name) – Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank.">roleName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/scriptDesc.html" title="(script description) – Contains a description of the letters or characters used in an autographic item.">scriptDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/seal.html" title="A single seal or similar attachment.">seal</a>, <a class="link_odd link_odd_elementSpec" href="../elements/sealDesc.html" title="(seal description) – Describes the seals or similar external attachments applied to an item.">sealDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/seg.html" title="(arbitrary segment) represents any segmentation of text below the &#34;text component&#34; level.">seg</a>, <a class="link_odd link_odd_elementSpec" href="../elements/settlement.html" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit.">settlement</a>, <a class="link_odd link_odd_elementSpec" href="../elements/sic.html" title="Contains apparently incorrect or inaccurate material.">sic</a>, <a class="link_odd link_odd_elementSpec" href="../elements/signifLet.html" title="Significantive letter(s).">signifLet</a>, <a class="link_odd link_odd_elementSpec" href="../elements/soundChan.html" title="(sound channels) – Reflects the number of apparent sound channels in the playback of a recording (monaural, stereophonic, quadraphonic, etc.).">soundChan</a>, <a class="link_odd link_odd_elementSpec" href="../elements/speaker.html" title="Contains a specialized form of heading or label, giving the name of one or more speakers in a dramatic text or fragment.">speaker</a>, <a class="link_odd link_odd_elementSpec" href="../elements/sponsor.html" title="Names of sponsoring individuals, organizations or institutions. Sponsors give their intellectual authority to a project; they are to be distinguished from funders, who provide the funding but do not necessarily take intellectual responsibility.">sponsor</a>, <a class="link_odd link_odd_elementSpec" href="../elements/stack.html" title="(stacked text) – An inline table with a single column.">stack</a>, <a class="link_odd link_odd_elementSpec" href="../elements/stageDir.html" title="(stage direction) – Contains any kind of stage direction within a dramatic text or fragment.">stageDir</a>, <a class="link_odd link_odd_elementSpec" href="../elements/street.html" title="full street address including any name or number identifying a building as well as the name of the street or route on which it is located.">street</a>, <a class="link_odd link_odd_elementSpec" href="../elements/styleName.html" title="(style name) – A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'.">styleName</a>, <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html" title="Contains material supplied by the transcriber or editor for any reason.">supplied</a>, <a class="link_odd link_odd_elementSpec" href="../elements/supportDesc.html" title="(support description) – Groups elements describing the physical support material of an item.">supportDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/syl.html" title="(syllable) – Individual lyric syllable.">syl</a>, <a class="link_odd link_odd_elementSpec" href="../elements/td.html" title="(table data) – Designates a table cell that contains data as opposed to a cell that contains column or row heading information.">td</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html" title="Text and symbols descriptive of tempo, mood, or style, e.g., &#34;allarg.&#34;, &#34;a tempo&#34;, &#34;cantabile&#34;, &#34;Moderato&#34;, &#34;♩=60&#34;, &#34;Moderato ♩ =60&#34;).">tempo</a>, <a class="link_odd link_odd_elementSpec" href="../elements/term.html" title="Keyword or phrase which describes a resource.">term</a>, <a class="link_odd link_odd_elementSpec" href="../elements/textLang.html" title="(text language) – Identifies the languages and writing systems within the work described by a bibliographic description, not the language of the description.">textLang</a>, <a class="link_odd link_odd_elementSpec" href="../elements/th.html" title="(table header) – Designates a table cell containing column or row heading information as opposed to one containing data.">th</a>, <a class="link_odd link_odd_elementSpec" href="../elements/typeDesc.html" title="(type description) – Contains a description of the typefaces or other aspects of the printing of a printed source.">typeDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source.">unclear</a>, <a class="link_odd link_odd_elementSpec" href="../elements/width.html" title="Description of the horizontal size of an object.">width</a></div>
+                           <div id="containedBy_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="model.editorialLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.editorialLike.html">model.editorialLike</a></label><span class="classDesc">(MEI.shared) Groups editorial intervention elements.</span></div>
+                                 <div class="classContent">
+                                    <div class="classBox" title="model.choicePart">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.choicePart.html">model.choicePart</a></label><span class="classDesc">(MEI.edittrans) Groups elements that may appear as part of the content of a choice
+                                             element.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a></span><span class="desc">Groups a number of alternative encodings for the same point in a text.</span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="model.textPhraseLike.limited">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.textPhraseLike.limited.html">model.textPhraseLike.limited</a></label><span class="classDesc">(MEI.shared) Groups textual elements that occur at the level of individual words or
+                                             phrases. This class is equivalent to the model.textPhraseLike class without the pb
+                                             element.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Name of an actor appearing within a cast list."><a class="link_odd link_odd_elementSpec" href="../elements/actor.html">actor</a></span><span class="desc">Name of an actor appearing within a cast list.</span></div>
+                                          <div class="def"><span class="ident" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd link_odd_elementSpec" href="../elements/anchoredText.html">anchoredText</a></span><span class="desc">Container for text that is fixed to a particular page location, regardless of changes
+                                                made
+                                                to the layout of the measures around it.</span></div>
+                                          <div class="def"><span class="ident" title="A person or organization who transcribes a musical composition, usually for a different medium from that of the original; in an arrangement the musical substance remains essentially unchanged."><a class="link_odd link_odd_elementSpec" href="../elements/arranger.html">arranger</a></span><span class="desc">A person or organization who transcribes a musical composition, usually for a different
+                                                medium from that of the original; in an arrangement the musical substance remains
+                                                essentially
+                                                unchanged.</span></div>
+                                          <div class="def"><span class="ident" title="An instruction to begin the next section or movement of a composition without pause."><a class="link_odd link_odd_elementSpec" href="../elements/attacca.html">attacca</a></span><span class="desc">An instruction to begin the next section or movement of a composition without
+                                                pause.</span></div>
+                                          <div class="def"><span class="ident" title="The name of the creator of the intellectual content of a non-musical, literary work."><a class="link_odd link_odd_elementSpec" href="../elements/author.html">author</a></span><span class="desc">The name of the creator of the intellectual content of a non-musical, literary
+                                                work.</span></div>
+                                          <div class="def"><span class="ident" title="(scope of citation) – Defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work."><a class="link_odd link_odd_elementSpec" href="../elements/biblScope.html">biblScope</a></span><span class="desc">(scope of citation) – Defines the scope of a bibliographic reference, for example
+                                                as a
+                                                list of page numbers, or a named subdivision of a larger work.</span></div>
+                                          <div class="def"><span class="ident" title="(binding description) – Describes the present and former bindings of an item."><a class="link_odd link_odd_elementSpec" href="../elements/bindingDesc.html">bindingDesc</a></span><span class="desc">(binding description) – Describes the present and former bindings of an item.</span></div>
+                                          <div class="def"><span class="ident" title="Marks a sequence of notational events grouped by a bracket."><a class="link_odd link_odd_elementSpec" href="../elements/bracketSpan.html">bracketSpan</a></span><span class="desc">Marks a sequence of notational events grouped by a bracket.</span></div>
+                                          <div class="def"><span class="ident" title="Contains the primary statement of responsibility given for a work on its title page."><a class="link_odd link_odd_elementSpec" href="../elements/byline.html">byline</a></span><span class="desc">Contains the primary statement of responsibility given for a work on its title
+                                                page.</span></div>
+                                          <div class="def"><span class="ident" title="The name of the creator of the intellectual content of a musical work."><a class="link_odd link_odd_elementSpec" href="../elements/composer.html">composer</a></span><span class="desc">The name of the creator of the intellectual content of a musical work.</span></div>
+                                          <div class="def"><span class="ident" title="Names of individuals, institutions, or organizations responsible for contributions to the intellectual content of a work, where the specialized elements for authors, editors, etc. do not suffice or do not apply."><a class="link_odd link_odd_elementSpec" href="../elements/contributor.html">contributor</a></span><span class="desc">Names of individuals, institutions, or organizations responsible for contributions
+                                                to the
+                                                intellectual content of a work, where the specialized elements for authors, editors,
+                                                etc. do
+                                                not suffice or do not apply.</span></div>
+                                          <div class="def"><span class="ident" title="(copy/colla parte mark) – A verbal or graphical indication to copy musical material written elsewhere."><a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a></span><span class="desc">(copy/colla parte mark) – A verbal or graphical indication to copy musical material
+                                                written elsewhere.</span></div>
+                                          <div class="def"><span class="ident" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element."><a class="link_odd link_odd_elementSpec" href="../elements/creation.html">creation</a></span><span class="desc">Non-bibliographic details of the creation of an intellectual entity, in narrative
+                                                form,
+                                                such as the date, place, and circumstances of its composition. More detailed information
+                                                may
+                                                be captured within the history element.</span></div>
+                                          <div class="def"><span class="ident" title="(decoration description) – Contains a description of the decoration of an item."><a class="link_odd link_odd_elementSpec" href="../elements/decoDesc.html">decoDesc</a></span><span class="desc">(decoration description) – Contains a description of the decoration of an item.</span></div>
+                                          <div class="def"><span class="ident" title="(decoration note) – Contains a description of one or more decorative features of an item."><a class="link_odd link_odd_elementSpec" href="../elements/decoNote.html">decoNote</a></span><span class="desc">(decoration note) – Contains a description of one or more decorative features of an
+                                                item.</span></div>
+                                          <div class="def"><span class="ident" title="Entity to whom a creative work is formally offered."><a class="link_odd link_odd_elementSpec" href="../elements/dedicatee.html">dedicatee</a></span><span class="desc">Entity to whom a creative work is formally offered.</span></div>
+                                          <div class="def"><span class="ident" title="Contains a dedicatory statement."><a class="link_odd link_odd_elementSpec" href="../elements/dedication.html">dedication</a></span><span class="desc">Contains a dedicatory statement.</span></div>
+                                          <div class="def"><span class="ident" title="Description of a measurement taken through a three-dimensional object."><a class="link_odd link_odd_elementSpec" href="../elements/depth.html">depth</a></span><span class="desc">Description of a measurement taken through a three-dimensional object.</span></div>
+                                          <div class="def"><span class="ident" title="(description) – Container for text that briefly describes the feature to which it is attached, including its intended usage, purpose, or application as appropriate."><a class="link_odd link_odd_elementSpec" href="../elements/desc.html">desc</a></span><span class="desc">(description) – Container for text that briefly describes the feature to which it
+                                                is
+                                                attached, including its intended usage, purpose, or application as appropriate.</span></div>
+                                          <div class="def"><span class="ident" title="(dimension) – Any single dimensional specification."><a class="link_odd link_odd_elementSpec" href="../elements/dim.html">dim</a></span><span class="desc">(dimension) – Any single dimensional specification.</span></div>
+                                          <div class="def"><span class="ident" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam ."><a class="link_odd link_odd_elementSpec" href="../elements/dir.html">dir</a></span><span class="desc">(directive) – An instruction expressed as a combination of text and symbols — such
+                                                as
+                                                segno and coda symbols, fermatas over a bar line, etc., typically above, below, or
+                                                between
+                                                staves, but not on the staff — that is not encoded elsewhere in more specific elements,
+                                                like
+                                                <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a> or <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a>.</span></div>
+                                          <div class="def"><span class="ident" title="Person or agency, other than a publisher, from which access (including electronic access) to a bibliographic entity may be obtained."><a class="link_odd link_odd_elementSpec" href="../elements/distributor.html">distributor</a></span><span class="desc">Person or agency, other than a publisher, from which access (including electronic
+                                                access)
+                                                to a bibliographic entity may be obtained.</span></div>
+                                          <div class="def"><span class="ident" title="(dynamic) – Indication of the volume of a note, phrase, or section of music."><a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a></span><span class="desc">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span></div>
+                                          <div class="def"><span class="ident" title="(edition designation) – A word or text phrase that indicates a difference in either content or form between the item being described and a related item previously issued by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by either the same publisher/distributor or another publisher/distributor (e.g. large print edition, British edition, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/edition.html">edition</a></span><span class="desc">(edition designation) – A word or text phrase that indicates a difference in either
+                                                content or form between the item being described and a related item previously issued
+                                                by the
+                                                same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously
+                                                issued by
+                                                either the same publisher/distributor or another publisher/distributor (e.g. large
+                                                print
+                                                edition, British edition, etc.).</span></div>
+                                          <div class="def"><span class="ident" title="The name of the individual(s), institution(s) or organization(s) acting in an editorial capacity."><a class="link_odd link_odd_elementSpec" href="../elements/editor.html">editor</a></span><span class="desc">The name of the individual(s), institution(s) or organization(s) acting in an editorial
+                                                capacity.</span></div>
+                                          <div class="def"><span class="ident" title="Used to express size in terms other than physical dimensions, such as number of pages, records, bytes, physical components, etc."><a class="link_odd link_odd_elementSpec" href="../elements/extent.html">extent</a></span><span class="desc">Used to express size in terms other than physical dimensions, such as number of pages,
+                                                records, bytes, physical components, etc.</span></div>
+                                          <div class="def"><span class="ident" title="(figure) – Single element of a figured bass indication."><a class="link_odd link_odd_elementSpec" href="../elements/f.html">f</a></span><span class="desc">(figure) – Single element of a figured bass indication.</span></div>
+                                          <div class="def"><span class="ident" title="(figure description) – Contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it."><a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">figDesc</a></span><span class="desc">(figure description) – Contains a brief prose description of the appearance or content
+                                                of
+                                                a graphic figure, for use when documenting an image without displaying it.</span></div>
+                                          <div class="def"><span class="ident" title="finger – An individual finger in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fing.html">fing</a></span><span class="desc">finger – An individual finger in a fingering indication.</span></div>
+                                          <div class="def"><span class="ident" title="Names of individuals, institutions, or organizations responsible for funding. Funders provide financial support for a project; they are distinct from sponsors, who provide intellectual support and authority."><a class="link_odd link_odd_elementSpec" href="../elements/funder.html">funder</a></span><span class="desc">Names of individuals, institutions, or organizations responsible for funding. Funders
+                                                provide financial support for a project; they are distinct from sponsors, who provide
+                                                intellectual support and authority.</span></div>
+                                          <div class="def"><span class="ident" title="Term or terms that designate a category characterizing a particular style, form, or content."><a class="link_odd link_odd_elementSpec" href="../elements/genre.html">genre</a></span><span class="desc">Term or terms that designate a category characterizing a particular style, form, or
+                                                content.</span></div>
+                                          <div class="def"><span class="ident" title="(glissando) – A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line."><a class="link_odd link_odd_elementSpec" href="../elements/gliss.html">gliss</a></span><span class="desc">(glissando) – A continuous or sliding movement from one pitch to another, usually
+                                                indicated by a straight or wavy line.</span></div>
+                                          <div class="def"><span class="ident" title="Defines a distinct scribe or handwriting style."><a class="link_odd link_odd_elementSpec" href="../elements/hand.html">hand</a></span><span class="desc">Defines a distinct scribe or handwriting style.</span></div>
+                                          <div class="def"><span class="ident" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a></span><span class="desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+                                                analysis, figured bass.</span></div>
+                                          <div class="def"><span class="ident" title="Description of the vertical size of an object."><a class="link_odd link_odd_elementSpec" href="../elements/height.html">height</a></span><span class="desc">Description of the vertical size of an object.</span></div>
+                                          <div class="def"><span class="ident" title="A container for document text that identifies the feature to which it is attached. For a &#34;tool tip&#34; or other generated label, use the label attribute."><a class="link_odd link_odd_elementSpec" href="../elements/label.html">label</a></span><span class="desc">A container for document text that identifies the feature to which it is attached.
+                                                For a
+                                                "tool tip" or other generated label, use the <span class="att">label</span> attribute.</span></div>
+                                          <div class="def"><span class="ident" title="A label on the pages following the first."><a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html">labelAbbr</a></span><span class="desc">A label on the pages following the first.</span></div>
+                                          <div class="def"><span class="ident" title="Description of a language used in the document."><a class="link_odd link_odd_elementSpec" href="../elements/language.html">language</a></span><span class="desc">Description of a language used in the document.</span></div>
+                                          <div class="def"><span class="ident" title="(layout description) – Collects layout descriptions."><a class="link_odd link_odd_elementSpec" href="../elements/layoutDesc.html">layoutDesc</a></span><span class="desc">(layout description) – Collects layout descriptions.</span></div>
+                                          <div class="def"><span class="ident" title="Person or organization who is a writer of the text of an opera, oratorio, etc."><a class="link_odd link_odd_elementSpec" href="../elements/librettist.html">librettist</a></span><span class="desc">Person or organization who is a writer of the text of an opera, oratorio, etc.</span></div>
+                                          <div class="def"><span class="ident" title="A visual line that cannot be represented by a more specific; i.e., semantic, element."><a class="link_odd link_odd_elementSpec" href="../elements/line.html">line</a></span><span class="desc">A visual line that cannot be represented by a more specific; i.e., semantic,
+                                                element.</span></div>
+                                          <div class="def"><span class="ident" title="Person or organization who is a writer of the text of a song."><a class="link_odd link_odd_elementSpec" href="../elements/lyricist.html">lyricist</a></span><span class="desc">Person or organization who is a writer of the text of a song.</span></div>
+                                          <div class="def"><span class="ident" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">metaMark</a></span><span class="desc">A graphical or textual statement with additional / explanatory information about the
+                                                musical text. The textual consequences of this intervention are encoded independently
+                                                via
+                                                other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc.</span></div>
+                                          <div class="def"><span class="ident" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd link_odd_elementSpec" href="../elements/octave.html">octave</a></span><span class="desc">An indication that a passage should be performed one or more octaves above or below
+                                                its
+                                                written pitch.</span></div>
+                                          <div class="def"><span class="ident" title="An element indicating an ornament that is not a mordent, turn, or trill."><a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">ornam</a></span><span class="desc">An element indicating an ornament that is not a mordent, turn, or trill. </span></div>
+                                          <div class="def"><span class="ident" title="(performance resource) – Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation."><a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">perfRes</a></span><span class="desc">(performance resource) – Name of an instrument on which a performer plays, a performer's
+                                                voice range, or a standard performing ensemble designation.</span></div>
+                                          <div class="def"><span class="ident" title="(page footer) – A running footer on the first page. Also, used to temporarily override a running footer on individual pages."><a class="link_odd link_odd_elementSpec" href="../elements/pgFoot.html">pgFoot</a></span><span class="desc">(page footer) – A running footer on the first page. Also, used to temporarily override
+                                                a
+                                                running footer on individual pages.</span></div>
+                                          <div class="def"><span class="ident" title="(page footer 2) – A running footer on the pages following the first."><a class="link_odd link_odd_elementSpec" href="../elements/pgFoot2.html">pgFoot2</a></span><span class="desc">(page footer 2) – A running footer on the pages following the first.</span></div>
+                                          <div class="def"><span class="ident" title="(page header) – A running header on the first page. Also, used to temporarily override a running header on individual pages."><a class="link_odd link_odd_elementSpec" href="../elements/pgHead.html">pgHead</a></span><span class="desc">(page header) – A running header on the first page. Also, used to temporarily override
+                                                a
+                                                running header on individual pages.</span></div>
+                                          <div class="def"><span class="ident" title="(page header 2) – A running header on the pages following the first."><a class="link_odd link_odd_elementSpec" href="../elements/pgHead2.html">pgHead2</a></span><span class="desc">(page header 2) – A running header on the pages following the first.</span></div>
+                                          <div class="def"><span class="ident" title="The cost of access to a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/price.html">price</a></span><span class="desc">The cost of access to a bibliographic item.</span></div>
+                                          <div class="def"><span class="ident" title="The record of ownership or custodianship of an item."><a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">provenance</a></span><span class="desc">The record of ownership or custodianship of an item.</span></div>
+                                          <div class="def"><span class="ident" title="(publication place) – Name of the place where a bibliographic item was published."><a class="link_odd link_odd_elementSpec" href="../elements/pubPlace.html">pubPlace</a></span><span class="desc">(publication place) – Name of the place where a bibliographic item was published.</span></div>
+                                          <div class="def"><span class="ident" title="Name of the organization responsible for the publication of a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/publisher.html">publisher</a></span><span class="desc">Name of the organization responsible for the publication of a bibliographic item.</span></div>
+                                          <div class="def"><span class="ident" title="The name of the individual(s), institution(s) or organization(s) receiving correspondence."><a class="link_odd link_odd_elementSpec" href="../elements/recipient.html">recipient</a></span><span class="desc">The name of the individual(s), institution(s) or organization(s) receiving
+                                                correspondence.</span></div>
+                                          <div class="def"><span class="ident" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/repository.html">repository</a></span><span class="desc">Institution, agency, or individual which holds a bibliographic item.</span></div>
+                                          <div class="def"><span class="ident" title="(responsibility) – A phrase describing the nature of intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/resp.html">resp</a></span><span class="desc">(responsibility) – A phrase describing the nature of intellectual responsibility.</span></div>
+                                          <div class="def"><span class="ident" title="Name of a dramatic role, as given in a cast list."><a class="link_odd link_odd_elementSpec" href="../elements/role.html">role</a></span><span class="desc">Name of a dramatic role, as given in a cast list.</span></div>
+                                          <div class="def"><span class="ident" title="(role description) – Describes a character's role in a drama."><a class="link_odd link_odd_elementSpec" href="../elements/roleDesc.html">roleDesc</a></span><span class="desc">(role description) – Describes a character's role in a drama.</span></div>
+                                          <div class="def"><span class="ident" title="(script description) – Contains a description of the letters or characters used in an autographic item."><a class="link_odd link_odd_elementSpec" href="../elements/scriptDesc.html">scriptDesc</a></span><span class="desc">(script description) – Contains a description of the letters or characters used in
+                                                an
+                                                autographic item.</span></div>
+                                          <div class="def"><span class="ident" title="A single seal or similar attachment."><a class="link_odd link_odd_elementSpec" href="../elements/seal.html">seal</a></span><span class="desc">A single seal or similar attachment.</span></div>
+                                          <div class="def"><span class="ident" title="(seal description) – Describes the seals or similar external attachments applied to an item."><a class="link_odd link_odd_elementSpec" href="../elements/sealDesc.html">sealDesc</a></span><span class="desc">(seal description) – Describes the seals or similar external attachments applied to
+                                                an
+                                                item.</span></div>
+                                          <div class="def"><span class="ident" title="Significantive letter(s)."><a class="link_odd link_odd_elementSpec" href="../elements/signifLet.html">signifLet</a></span><span class="desc">Significantive letter(s).</span></div>
+                                          <div class="def"><span class="ident" title="(sound channels) – Reflects the number of apparent sound channels in the playback of a recording (monaural, stereophonic, quadraphonic, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/soundChan.html">soundChan</a></span><span class="desc">(sound channels) – Reflects the number of apparent sound channels in the playback
+                                                of a
+                                                recording (monaural, stereophonic, quadraphonic, etc.).</span></div>
+                                          <div class="def"><span class="ident" title="Contains a specialized form of heading or label, giving the name of one or more speakers in a dramatic text or fragment."><a class="link_odd link_odd_elementSpec" href="../elements/speaker.html">speaker</a></span><span class="desc">Contains a specialized form of heading or label, giving the name of one or more speakers
+                                                in a dramatic text or fragment.</span></div>
+                                          <div class="def"><span class="ident" title="Names of sponsoring individuals, organizations or institutions. Sponsors give their intellectual authority to a project; they are to be distinguished from funders, who provide the funding but do not necessarily take intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/sponsor.html">sponsor</a></span><span class="desc">Names of sponsoring individuals, organizations or institutions. Sponsors give their
+                                                intellectual authority to a project; they are to be distinguished from funders, who
+                                                provide
+                                                the funding but do not necessarily take intellectual responsibility.</span></div>
+                                          <div class="def"><span class="ident" title="(stacked text) – An inline table with a single column."><a class="link_odd link_odd_elementSpec" href="../elements/stack.html">stack</a></span><span class="desc">(stacked text) – An inline table with a single column.</span></div>
+                                          <div class="def"><span class="ident" title="(stage direction) – Contains any kind of stage direction within a dramatic text or fragment."><a class="link_odd link_odd_elementSpec" href="../elements/stageDir.html">stageDir</a></span><span class="desc">(stage direction) – Contains any kind of stage direction within a dramatic text or
+                                                fragment.</span></div>
+                                          <div class="def"><span class="ident" title="(support description) – Groups elements describing the physical support material of an item."><a class="link_odd link_odd_elementSpec" href="../elements/supportDesc.html">supportDesc</a></span><span class="desc">(support description) – Groups elements describing the physical support material of
+                                                an
+                                                item.</span></div>
+                                          <div class="def"><span class="ident" title="(syllable) – Individual lyric syllable."><a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a></span><span class="desc">(syllable) – Individual lyric syllable.</span></div>
+                                          <div class="def"><span class="ident" title="Text and symbols descriptive of tempo, mood, or style, e.g., &#34;allarg.&#34;, &#34;a tempo&#34;, &#34;cantabile&#34;, &#34;Moderato&#34;, &#34;♩=60&#34;, &#34;Moderato ♩ =60&#34;)."><a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a></span><span class="desc">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+                                                "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</span></div>
+                                          <div class="def"><span class="ident" title="Keyword or phrase which describes a resource."><a class="link_odd link_odd_elementSpec" href="../elements/term.html">term</a></span><span class="desc">Keyword or phrase which describes a resource.</span></div>
+                                          <div class="def"><span class="ident" title="(text language) – Identifies the languages and writing systems within the work described by a bibliographic description, not the language of the description."><a class="link_odd link_odd_elementSpec" href="../elements/textLang.html">textLang</a></span><span class="desc">(text language) – Identifies the languages and writing systems within the work described
+                                                by a bibliographic description, not the language of the description.</span></div>
+                                          <div class="def"><span class="ident" title="(type description) – Contains a description of the typefaces or other aspects of the printing of a printed source."><a class="link_odd link_odd_elementSpec" href="../elements/typeDesc.html">typeDesc</a></span><span class="desc">(type description) – Contains a description of the typefaces or other aspects of the
+                                                printing of a printed source.</span></div>
+                                          <div class="def"><span class="ident" title="Description of the horizontal size of an object."><a class="link_odd link_odd_elementSpec" href="../elements/width.html">width</a></span><span class="desc">Description of the horizontal size of an object.</span></div>
+                                          <div class="classBox" title="model.rdgPart.text">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.rdgPart.text.html">model.rdgPart.text</a></label><span class="classDesc">(MEI.critapp) Groups elements that may appear as part of a textual variant.</span></div>
+                                             <div class="classContent">
+                                                <div class="classBox" title="model.rdgPart">
+                                                   <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.rdgPart.html">model.rdgPart</a></label><span class="classDesc">(MEI.critapp) Groups elements that may appear as part of a textual or musical variant.</span></div>
+                                                   <div class="classContent">
+                                                      <div class="def"><span class="ident" title="(lemma) – Contains the lemma, or base text, of a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a></span><span class="desc">(lemma) – Contains the lemma, or base text, of a textual variation.</span></div>
+                                                      <div class="def"><span class="ident" title="(reading) – Contains a single reading within a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a></span><span class="desc">(reading) – Contains a single reading within a textual variation.</span></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="classBox" title="model.editTransPart.text">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.editTransPart.text.html">model.editTransPart.text</a></label><span class="classDesc">(MEI.edittrans) Groups elements that may appear as part of editorial and transcription
+                                                   elements in prose.</span></div>
+                                             <div class="classContent">
+                                                <div class="classBox" title="model.editTransPart">
+                                                   <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.editTransPart.html">model.editTransPart</a></label><span class="classDesc">(MEI.edittrans) Groups elements that may appear as part of editorial and transcription
+                                                         elements.</span></div>
+                                                   <div class="classContent">
+                                                      <div class="def"><span class="ident" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a></span><span class="desc">(abbreviation) – A generic element for 1) a shortened form of a word, including an
+                                                            acronym
+                                                            or 2) a shorthand notation.</span></div>
+                                                      <div class="def"><span class="ident" title="(addition) – Marks an addition to the text."><a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a></span><span class="desc">(addition) – Marks an addition to the text.</span></div>
+                                                      <div class="def"><span class="ident" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a></span><span class="desc">(correction) – Contains the correct form of an apparent erroneous passage.</span></div>
+                                                      <div class="def"><span class="ident" title="Contains an area of damage to the physical medium."><a class="link_odd link_odd_elementSpec" href="../elements/damage.html">damage</a></span><span class="desc">Contains an area of damage to the physical medium.</span></div>
+                                                      <div class="def"><span class="ident" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a></span><span class="desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+                                                            as
+                                                            superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                                                      <div class="def"><span class="ident" title="(expansion) – Contains the expansion of an abbreviation."><a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a></span><span class="desc">(expansion) – Contains the expansion of an abbreviation.</span></div>
+                                                      <div class="def"><span class="ident" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">orig</a></span><span class="desc">(original) – Contains material which is marked as following the original, rather than
+                                                            being normalized or corrected.</span></div>
+                                                      <div class="def"><span class="ident" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">reg</a></span><span class="desc">(regularization) – Contains material which has been regularized or normalized in some
+                                                            sense.</span></div>
+                                                      <div class="def"><span class="ident" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd link_odd_elementSpec" href="../elements/restore.html">restore</a></span><span class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                                                            or
+                                                            authorial marking or instruction.</span></div>
+                                                      <div class="def"><span class="ident" title="Contains apparently incorrect or inaccurate material."><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">sic</a></span><span class="desc">Contains apparently incorrect or inaccurate material.</span></div>
+                                                      <div class="def"><span class="ident" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a></span><span class="desc">Contains material supplied by the transcriber or editor for any reason.</span></div>
+                                                      <div class="def"><span class="ident" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">unclear</a></span><span class="desc">Contains material that cannot be transcribed with certainty because it is illegible
+                                                            or
+                                                            inaudible in the source.</span></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="classBox" title="model.textPhraseLike">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.textPhraseLike.html">model.textPhraseLike</a></label><span class="classDesc">(MEI.shared) Groups textual elements that occur at the level of individual words or
+                                                   phrases.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="(additional name) – Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name."><a class="link_odd link_odd_elementSpec" href="../elements/addName.html">addName</a></span><span class="desc">(additional name) – Contains an additional name component, such as a nickname, epithet,
+                                                      or
+                                                      alias, or any other descriptive phrase used within a personal name.</span></div>
+                                                <div class="def"><span class="ident" title="(address line) – Single line of a postal address."><a class="link_odd link_odd_elementSpec" href="../elements/addrLine.html">addrLine</a></span><span class="desc">(address line) – Single line of a postal address.</span></div>
+                                                <div class="def"><span class="ident" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">annot</a></span><span class="desc">(annotation) – Provides a statement explaining the text or indicating the basis for
+                                                      an
+                                                      assertion.</span></div>
+                                                <div class="def"><span class="ident" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd link_odd_elementSpec" href="../elements/bibl.html">bibl</a></span><span class="desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                                                      which
+                                                      the sub-components may or may not be explicitly marked.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd link_odd_elementSpec" href="../elements/bloc.html">bloc</a></span><span class="desc">Contains the name of a geopolitical unit consisting of two or more nation states or
+                                                      countries.</span></div>
+                                                <div class="def"><span class="ident" title="A label which accompanies an illustration or a table."><a class="link_odd link_odd_elementSpec" href="../elements/caption.html">caption</a></span><span class="desc">A label which accompanies an illustration or a table.</span></div>
+                                                <div class="def"><span class="ident" title="Contains a single entry within a content description element."><a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">contentItem</a></span><span class="desc">Contains a single entry within a content description element.</span></div>
+                                                <div class="def"><span class="ident" title="(corporate name) – Identifies an organization or group of people that acts as a single entity."><a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">corpName</a></span><span class="desc">(corporate name) – Identifies an organization or group of people that acts as a single
+                                                      entity.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd link_odd_elementSpec" href="../elements/country.html">country</a></span><span class="desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or
+                                                      commonwealth, larger than or administratively superior to a region and smaller than
+                                                      a
+                                                      bloc.</span></div>
+                                                <div class="def"><span class="ident" title="A string identifying a point in time or the time period between two such points."><a class="link_odd link_odd_elementSpec" href="../elements/date.html">date</a></span><span class="desc">A string identifying a point in time or the time period between two such points.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd link_odd_elementSpec" href="../elements/district.html">district</a></span><span class="desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+                                                      or
+                                                      other administrative or geographic unit.</span></div>
+                                                <div class="def"><span class="ident" title="(family name) – Contains a family (inherited) name, as opposed to a given, baptismal, or nick name."><a class="link_odd link_odd_elementSpec" href="../elements/famName.html">famName</a></span><span class="desc">(family name) – Contains a family (inherited) name, as opposed to a given, baptismal,
+                                                      or
+                                                      nick name.</span></div>
+                                                <div class="def"><span class="ident" title="Contains a forename, given or baptismal name."><a class="link_odd link_odd_elementSpec" href="../elements/foreName.html">foreName</a></span><span class="desc">Contains a forename, given or baptismal name.</span></div>
+                                                <div class="def"><span class="ident" title="(generational name component) – Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named."><a class="link_odd link_odd_elementSpec" href="../elements/genName.html">genName</a></span><span class="desc">(generational name component) – Contains a name component used to distinguish otherwise
+                                                      similar names on the basis of the relative ages or generations of the persons named.</span></div>
+                                                <div class="def"><span class="ident" title="(geographical feature name) – Contains a common noun identifying a geographical feature."><a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html">geogFeat</a></span><span class="desc">(geographical feature name) – Contains a common noun identifying a geographical
+                                                      feature.</span></div>
+                                                <div class="def"><span class="ident" title="(geographic name) – The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd link_odd_elementSpec" href="../elements/geogName.html">geogName</a></span><span class="desc">(geographic name) – The proper noun designation for a place, natural feature, or political
+                                                      jurisdiction.</span></div>
+                                                <div class="def"><span class="ident" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd link_odd_elementSpec" href="../elements/head.html">head</a></span><span class="desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                                                      the
+                                                      heading of a list.</span></div>
+                                                <div class="def"><span class="ident" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd link_odd_elementSpec" href="../elements/identifier.html">identifier</a></span><span class="desc">An alpha-numeric string that establishes the identity of the described material.</span></div>
+                                                <div class="def"><span class="ident" title="Information relating to the publication or distribution of a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/imprint.html">imprint</a></span><span class="desc">Information relating to the publication or distribution of a bibliographic item.</span></div>
+                                                <div class="def"><span class="ident" title="(line of text) – Contains a single line of text within a line group."><a class="link_odd link_odd_elementSpec" href="../elements/l.html">l</a></span><span class="desc">(line of text) – Contains a single line of text within a line group.</span></div>
+                                                <div class="def"><span class="ident" title="(list item) – Single item in a list ."><a class="link_odd link_odd_elementSpec" href="../elements/li.html">li</a></span><span class="desc">(list item) – Single item in a <a class="link_odd link_odd_elementSpec" href="../elements/list.html">list</a>.</span></div>
+                                                <div class="def"><span class="ident" title="Proper noun or noun phrase."><a class="link_odd link_odd_elementSpec" href="../elements/name.html">name</a></span><span class="desc">Proper noun or noun phrase.</span></div>
+                                                <div class="def"><span class="ident" title="(name link) – Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html">nameLink</a></span><span class="desc">(name link) – Contains a connecting phrase or link used within a name but not regarded
+                                                      as
+                                                      part of it, such as "van der" or "of", "from", etc.</span></div>
+                                                <div class="def"><span class="ident" title="(number) – Numeric information in any form."><a class="link_odd link_odd_elementSpec" href="../elements/num.html">num</a></span><span class="desc">(number) – Numeric information in any form.</span></div>
+                                                <div class="def"><span class="ident" title="(period name) – A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd link_odd_elementSpec" href="../elements/periodName.html">periodName</a></span><span class="desc">(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
+                                                      Style
+                                                      period'.</span></div>
+                                                <div class="def"><span class="ident" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd link_odd_elementSpec" href="../elements/persName.html">persName</a></span><span class="desc">(personal name) – Designation for an individual, including any or all of that individual's
+                                                      forenames, surnames, honorific titles, and added names.</span></div>
+                                                <div class="def"><span class="ident" title="(quoted) – Contains material which is distinguished from the surrounding phrase-level text using quotation marks or a similar method. Use quote for block-level quotations."><a class="link_odd link_odd_elementSpec" href="../elements/q.html">q</a></span><span class="desc">(quoted) – Contains material which is distinguished from the surrounding phrase-level
+                                                      text
+                                                      using quotation marks or a similar method. Use <a class="link_odd link_odd_elementSpec" href="../elements/quote.html">quote</a> for block-level
+                                                      quotations.</span></div>
+                                                <div class="def"><span class="ident" title="(reference) – Defines a traversible reference to another location. May contain text and sub-elements that describe the destination."><a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a></span><span class="desc">(reference) – Defines a traversible reference to another location. May contain text
+                                                      and
+                                                      sub-elements that describe the destination.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd link_odd_elementSpec" href="../elements/region.html">region</a></span><span class="desc">Contains the name of an administrative unit such as a state, province, or county,
+                                                      larger
+                                                      than a settlement, but smaller than a country.</span></div>
+                                                <div class="def"><span class="ident" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="link_odd link_odd_elementSpec" href="../elements/rend.html">rend</a></span><span class="desc">(render) – A formatting element indicating special visual rendering, e.g., bold or
+                                                      italicized, of a text word or phrase.</span></div>
+                                                <div class="def"><span class="ident" title="(role name) – Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank."><a class="link_odd link_odd_elementSpec" href="../elements/roleName.html">roleName</a></span><span class="desc">(role name) – Contains a name component which indicates that the referent has a particular
+                                                      role or position in society, such as an official title or rank.</span></div>
+                                                <div class="def"><span class="ident" title="(arbitrary segment) represents any segmentation of text below the &#34;text component&#34; level."><a class="link_odd link_odd_elementSpec" href="../elements/seg.html">seg</a></span><span class="desc">(arbitrary segment) represents any segmentation of text below the "text component"
+                                                      level.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd link_odd_elementSpec" href="../elements/settlement.html">settlement</a></span><span class="desc">Contains the name of a settlement such as a city, town, or village identified as a
+                                                      single
+                                                      geopolitical or administrative unit.</span></div>
+                                                <div class="def"><span class="ident" title="full street address including any name or number identifying a building as well as the name of the street or route on which it is located."><a class="link_odd link_odd_elementSpec" href="../elements/street.html">street</a></span><span class="desc">full street address including any name or number identifying a building as well as
+                                                      the
+                                                      name of the street or route on which it is located.</span></div>
+                                                <div class="def"><span class="ident" title="(style name) – A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd link_odd_elementSpec" href="../elements/styleName.html">styleName</a></span><span class="desc">(style name) – A label for a characteristic style of writing or performance, such
+                                                      as
+                                                      'bebop' or 'rock-n-roll'.</span></div>
+                                                <div class="def"><span class="ident" title="(table data) – Designates a table cell that contains data as opposed to a cell that contains column or row heading information."><a class="link_odd link_odd_elementSpec" href="../elements/td.html">td</a></span><span class="desc">(table data) – Designates a table cell that contains data as opposed to a cell that
+                                                      contains column or row heading information.</span></div>
+                                                <div class="def"><span class="ident" title="(table header) – Designates a table cell containing column or row heading information as opposed to one containing data."><a class="link_odd link_odd_elementSpec" href="../elements/th.html">th</a></span><span class="desc">(table header) – Designates a table cell containing column or row heading information
+                                                      as
+                                                      opposed to one containing data.</span></div>
+                                                <div class="classBox" title="model.paracontentPart">
+                                                   <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.paracontentPart.html">model.paracontentPart</a></label><span class="classDesc">(MEI.shared) Groups elements which may appear as part of the paragraph content model.
+                                                         A paragraph may contain inline elements and all other block-level elements except
+                                                         itself.</span></div>
+                                                   <div class="classContent">
+                                                      <div class="def"><span class="ident" title="Contains a quotation, anonymous or attributed, appearing on a title page."><a class="link_odd link_odd_elementSpec" href="../elements/epigraph.html">epigraph</a></span><span class="desc">Contains a quotation, anonymous or attributed, appearing on a title page.</span></div>
+                                                      <div class="def"><span class="ident" title="Contains a formal statement authorizing the publication of a work, sometimes required to appear on a title page or its verso."><a class="link_odd link_odd_elementSpec" href="../elements/imprimatur.html">imprimatur</a></span><span class="desc">Contains a formal statement authorizing the publication of a work, sometimes required
+                                                            to
+                                                            appear on a title page or its verso.</span></div>
+                                                      <div class="def"><span class="ident" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd link_odd_elementSpec" href="../elements/p.html">p</a></span><span class="desc">(paragraph) – One or more text phrases that form a logical prose passage.</span></div>
+                                                      <div class="def"><span class="ident" title="(quoted material) – Contains a paragraph-like block of text attributed to an external source, normally set off from the surrounding text by spacing or other typographic distinction."><a class="link_odd link_odd_elementSpec" href="../elements/quote.html">quote</a></span><span class="desc">(quoted material) – Contains a paragraph-like block of text attributed to an external
+                                                            source, normally set off from the surrounding text by spacing or other typographic
+                                                            distinction.</span></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="containedBy_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc">Common Music Notation (CMN) repertoire component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="An instruction to begin the next section or movement of a composition without pause."><a class="link_odd link_odd_elementSpec" href="../elements/attacca.html">attacca</a></span><span class="desc">An instruction to begin the next section or movement of a composition without
+                                          pause.</span></div>
+                                    <div class="def"><span class="ident" title="Marks a sequence of notational events grouped by a bracket."><a class="link_odd link_odd_elementSpec" href="../elements/bracketSpan.html">bracketSpan</a></span><span class="desc">Marks a sequence of notational events grouped by a bracket.</span></div>
+                                    <div class="def"><span class="ident" title="(glissando) – A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line."><a class="link_odd link_odd_elementSpec" href="../elements/gliss.html">gliss</a></span><span class="desc">(glissando) – A continuous or sliding movement from one pitch to another, usually
+                                          indicated by a straight or wavy line.</span></div>
+                                    <div class="def"><span class="ident" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd link_odd_elementSpec" href="../elements/octave.html">octave</a></span><span class="desc">An indication that a passage should be performed one or more octaves above or below
+                                          its
+                                          written pitch.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.critapp">
+                                 <div class="classHeading"><label class="classLabel">MEI.critapp</label><span class="classDesc">Critical apparatus component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(lemma) – Contains the lemma, or base text, of a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a></span><span class="desc">(lemma) – Contains the lemma, or base text, of a textual variation.</span></div>
+                                    <div class="def"><span class="ident" title="(reading) – Contains a single reading within a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a></span><span class="desc">(reading) – Contains a single reading within a textual variation.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.drama">
+                                 <div class="classHeading"><label class="classLabel">MEI.drama</label><span class="classDesc">Dramatic text component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(stage direction) – Contains any kind of stage direction within a dramatic text or fragment."><a class="link_odd link_odd_elementSpec" href="../elements/stageDir.html">stageDir</a></span><span class="desc">(stage direction) – Contains any kind of stage direction within a dramatic text or
+                                          fragment.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.edittrans">
+                                 <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc">Editorial and transcriptional component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a></span><span class="desc">(abbreviation) – A generic element for 1) a shortened form of a word, including an
+                                          acronym
+                                          or 2) a shorthand notation.</span></div>
+                                    <div class="def"><span class="ident" title="(addition) – Marks an addition to the text."><a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a></span><span class="desc">(addition) – Marks an addition to the text.</span></div>
+                                    <div class="def"><span class="ident" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a></span><span class="desc">Groups a number of alternative encodings for the same point in a text.</span></div>
+                                    <div class="def"><span class="ident" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a></span><span class="desc">(correction) – Contains the correct form of an apparent erroneous passage.</span></div>
+                                    <div class="def"><span class="ident" title="(copy/colla parte mark) – A verbal or graphical indication to copy musical material written elsewhere."><a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a></span><span class="desc">(copy/colla parte mark) – A verbal or graphical indication to copy musical material
+                                          written elsewhere.</span></div>
+                                    <div class="def"><span class="ident" title="Contains an area of damage to the physical medium."><a class="link_odd link_odd_elementSpec" href="../elements/damage.html">damage</a></span><span class="desc">Contains an area of damage to the physical medium.</span></div>
+                                    <div class="def"><span class="ident" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a></span><span class="desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+                                          as
+                                          superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                                    <div class="def"><span class="ident" title="(expansion) – Contains the expansion of an abbreviation."><a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a></span><span class="desc">(expansion) – Contains the expansion of an abbreviation.</span></div>
+                                    <div class="def"><span class="ident" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">metaMark</a></span><span class="desc">A graphical or textual statement with additional / explanatory information about the
+                                          musical text. The textual consequences of this intervention are encoded independently
+                                          via
+                                          other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc.</span></div>
+                                    <div class="def"><span class="ident" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">orig</a></span><span class="desc">(original) – Contains material which is marked as following the original, rather than
+                                          being normalized or corrected.</span></div>
+                                    <div class="def"><span class="ident" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">reg</a></span><span class="desc">(regularization) – Contains material which has been regularized or normalized in some
+                                          sense.</span></div>
+                                    <div class="def"><span class="ident" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd link_odd_elementSpec" href="../elements/restore.html">restore</a></span><span class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                                          or
+                                          authorial marking or instruction.</span></div>
+                                    <div class="def"><span class="ident" title="Contains apparently incorrect or inaccurate material."><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">sic</a></span><span class="desc">Contains apparently incorrect or inaccurate material.</span></div>
+                                    <div class="def"><span class="ident" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a></span><span class="desc">Contains material supplied by the transcriber or editor for any reason.</span></div>
+                                    <div class="def"><span class="ident" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">unclear</a></span><span class="desc">Contains material that cannot be transcribed with certainty because it is illegible
+                                          or
+                                          inaudible in the source.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.figtable">
+                                 <div class="classHeading"><label class="classLabel">MEI.figtable</label><span class="classDesc">Figures and tables component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(figure description) – Contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it."><a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">figDesc</a></span><span class="desc">(figure description) – Contains a brief prose description of the appearance or content
+                                          of
+                                          a graphic figure, for use when documenting an image without displaying it.</span></div>
+                                    <div class="def"><span class="ident" title="(table data) – Designates a table cell that contains data as opposed to a cell that contains column or row heading information."><a class="link_odd link_odd_elementSpec" href="../elements/td.html">td</a></span><span class="desc">(table data) – Designates a table cell that contains data as opposed to a cell that
+                                          contains column or row heading information.</span></div>
+                                    <div class="def"><span class="ident" title="(table header) – Designates a table cell containing column or row heading information as opposed to one containing data."><a class="link_odd link_odd_elementSpec" href="../elements/th.html">th</a></span><span class="desc">(table header) – Designates a table cell containing column or row heading information
+                                          as
+                                          opposed to one containing data.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.fingering">
+                                 <div class="classHeading"><label class="classLabel">MEI.fingering</label><span class="classDesc">Fingering component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="finger – An individual finger in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fing.html">fing</a></span><span class="desc">finger – An individual finger in a fingering indication.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.harmony">
+                                 <div class="classHeading"><label class="classLabel">MEI.harmony</label><span class="classDesc">Harmony component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(figure) – Single element of a figured bass indication."><a class="link_odd link_odd_elementSpec" href="../elements/f.html">f</a></span><span class="desc">(figure) – Single element of a figured bass indication.</span></div>
+                                    <div class="def"><span class="ident" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a></span><span class="desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+                                          analysis, figured bass.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.header">
+                                 <div class="classHeading"><label class="classLabel">MEI.header</label><span class="classDesc">Metadata header component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains the primary statement of responsibility given for a work on its title page."><a class="link_odd link_odd_elementSpec" href="../elements/byline.html">byline</a></span><span class="desc">Contains the primary statement of responsibility given for a work on its title
+                                          page.</span></div>
+                                    <div class="def"><span class="ident" title="Contains a single entry within a content description element."><a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">contentItem</a></span><span class="desc">Contains a single entry within a content description element.</span></div>
+                                    <div class="def"><span class="ident" title="Contains a dedicatory statement."><a class="link_odd link_odd_elementSpec" href="../elements/dedication.html">dedication</a></span><span class="desc">Contains a dedicatory statement.</span></div>
+                                    <div class="def"><span class="ident" title="Defines a distinct scribe or handwriting style."><a class="link_odd link_odd_elementSpec" href="../elements/hand.html">hand</a></span><span class="desc">Defines a distinct scribe or handwriting style.</span></div>
+                                    <div class="def"><span class="ident" title="Description of a language used in the document."><a class="link_odd link_odd_elementSpec" href="../elements/language.html">language</a></span><span class="desc">Description of a language used in the document.</span></div>
+                                    <div class="def"><span class="ident" title="(performance resource) – Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation."><a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">perfRes</a></span><span class="desc">(performance resource) – Name of an instrument on which a performer plays, a performer's
+                                          voice range, or a standard performing ensemble designation.</span></div>
+                                    <div class="def"><span class="ident" title="The cost of access to a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/price.html">price</a></span><span class="desc">The cost of access to a bibliographic item.</span></div>
+                                    <div class="def"><span class="ident" title="The record of ownership or custodianship of an item."><a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">provenance</a></span><span class="desc">The record of ownership or custodianship of an item.</span></div>
+                                    <div class="def"><span class="ident" title="(sound channels) – Reflects the number of apparent sound channels in the playback of a recording (monaural, stereophonic, quadraphonic, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/soundChan.html">soundChan</a></span><span class="desc">(sound channels) – Reflects the number of apparent sound channels in the playback
+                                          of a
+                                          recording (monaural, stereophonic, quadraphonic, etc.).</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.msDesc">
+                                 <div class="classHeading"><label class="classLabel">MEI.msDesc</label><span class="classDesc">Manuscript description component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(binding description) – Describes the present and former bindings of an item."><a class="link_odd link_odd_elementSpec" href="../elements/bindingDesc.html">bindingDesc</a></span><span class="desc">(binding description) – Describes the present and former bindings of an item.</span></div>
+                                    <div class="def"><span class="ident" title="(decoration description) – Contains a description of the decoration of an item."><a class="link_odd link_odd_elementSpec" href="../elements/decoDesc.html">decoDesc</a></span><span class="desc">(decoration description) – Contains a description of the decoration of an item.</span></div>
+                                    <div class="def"><span class="ident" title="(decoration note) – Contains a description of one or more decorative features of an item."><a class="link_odd link_odd_elementSpec" href="../elements/decoNote.html">decoNote</a></span><span class="desc">(decoration note) – Contains a description of one or more decorative features of an
+                                          item.</span></div>
+                                    <div class="def"><span class="ident" title="(layout description) – Collects layout descriptions."><a class="link_odd link_odd_elementSpec" href="../elements/layoutDesc.html">layoutDesc</a></span><span class="desc">(layout description) – Collects layout descriptions.</span></div>
+                                    <div class="def"><span class="ident" title="(script description) – Contains a description of the letters or characters used in an autographic item."><a class="link_odd link_odd_elementSpec" href="../elements/scriptDesc.html">scriptDesc</a></span><span class="desc">(script description) – Contains a description of the letters or characters used in
+                                          an
+                                          autographic item.</span></div>
+                                    <div class="def"><span class="ident" title="A single seal or similar attachment."><a class="link_odd link_odd_elementSpec" href="../elements/seal.html">seal</a></span><span class="desc">A single seal or similar attachment.</span></div>
+                                    <div class="def"><span class="ident" title="(seal description) – Describes the seals or similar external attachments applied to an item."><a class="link_odd link_odd_elementSpec" href="../elements/sealDesc.html">sealDesc</a></span><span class="desc">(seal description) – Describes the seals or similar external attachments applied to
+                                          an
+                                          item.</span></div>
+                                    <div class="def"><span class="ident" title="(support description) – Groups elements describing the physical support material of an item."><a class="link_odd link_odd_elementSpec" href="../elements/supportDesc.html">supportDesc</a></span><span class="desc">(support description) – Groups elements describing the physical support material of
+                                          an
+                                          item.</span></div>
+                                    <div class="def"><span class="ident" title="(type description) – Contains a description of the typefaces or other aspects of the printing of a printed source."><a class="link_odd link_odd_elementSpec" href="../elements/typeDesc.html">typeDesc</a></span><span class="desc">(type description) – Contains a description of the typefaces or other aspects of the
+                                          printing of a printed source.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.namesdates">
+                                 <div class="classHeading"><label class="classLabel">MEI.namesdates</label><span class="classDesc">Names and dates component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(additional name) – Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name."><a class="link_odd link_odd_elementSpec" href="../elements/addName.html">addName</a></span><span class="desc">(additional name) – Contains an additional name component, such as a nickname, epithet,
+                                          or
+                                          alias, or any other descriptive phrase used within a personal name.</span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd link_odd_elementSpec" href="../elements/bloc.html">bloc</a></span><span class="desc">Contains the name of a geopolitical unit consisting of two or more nation states or
+                                          countries.</span></div>
+                                    <div class="def"><span class="ident" title="(corporate name) – Identifies an organization or group of people that acts as a single entity."><a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">corpName</a></span><span class="desc">(corporate name) – Identifies an organization or group of people that acts as a single
+                                          entity.</span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd link_odd_elementSpec" href="../elements/country.html">country</a></span><span class="desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or
+                                          commonwealth, larger than or administratively superior to a region and smaller than
+                                          a
+                                          bloc.</span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd link_odd_elementSpec" href="../elements/district.html">district</a></span><span class="desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+                                          or
+                                          other administrative or geographic unit.</span></div>
+                                    <div class="def"><span class="ident" title="(family name) – Contains a family (inherited) name, as opposed to a given, baptismal, or nick name."><a class="link_odd link_odd_elementSpec" href="../elements/famName.html">famName</a></span><span class="desc">(family name) – Contains a family (inherited) name, as opposed to a given, baptismal,
+                                          or
+                                          nick name.</span></div>
+                                    <div class="def"><span class="ident" title="Contains a forename, given or baptismal name."><a class="link_odd link_odd_elementSpec" href="../elements/foreName.html">foreName</a></span><span class="desc">Contains a forename, given or baptismal name.</span></div>
+                                    <div class="def"><span class="ident" title="(generational name component) – Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named."><a class="link_odd link_odd_elementSpec" href="../elements/genName.html">genName</a></span><span class="desc">(generational name component) – Contains a name component used to distinguish otherwise
+                                          similar names on the basis of the relative ages or generations of the persons named.</span></div>
+                                    <div class="def"><span class="ident" title="(geographical feature name) – Contains a common noun identifying a geographical feature."><a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html">geogFeat</a></span><span class="desc">(geographical feature name) – Contains a common noun identifying a geographical
+                                          feature.</span></div>
+                                    <div class="def"><span class="ident" title="(geographic name) – The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd link_odd_elementSpec" href="../elements/geogName.html">geogName</a></span><span class="desc">(geographic name) – The proper noun designation for a place, natural feature, or political
+                                          jurisdiction.</span></div>
+                                    <div class="def"><span class="ident" title="(name link) – Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html">nameLink</a></span><span class="desc">(name link) – Contains a connecting phrase or link used within a name but not regarded
+                                          as
+                                          part of it, such as "van der" or "of", "from", etc.</span></div>
+                                    <div class="def"><span class="ident" title="(period name) – A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd link_odd_elementSpec" href="../elements/periodName.html">periodName</a></span><span class="desc">(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
+                                          Style
+                                          period'.</span></div>
+                                    <div class="def"><span class="ident" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd link_odd_elementSpec" href="../elements/persName.html">persName</a></span><span class="desc">(personal name) – Designation for an individual, including any or all of that individual's
+                                          forenames, surnames, honorific titles, and added names.</span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd link_odd_elementSpec" href="../elements/region.html">region</a></span><span class="desc">Contains the name of an administrative unit such as a state, province, or county,
+                                          larger
+                                          than a settlement, but smaller than a country.</span></div>
+                                    <div class="def"><span class="ident" title="(role name) – Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank."><a class="link_odd link_odd_elementSpec" href="../elements/roleName.html">roleName</a></span><span class="desc">(role name) – Contains a name component which indicates that the referent has a particular
+                                          role or position in society, such as an official title or rank.</span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd link_odd_elementSpec" href="../elements/settlement.html">settlement</a></span><span class="desc">Contains the name of a settlement such as a city, town, or village identified as a
+                                          single
+                                          geopolitical or administrative unit.</span></div>
+                                    <div class="def"><span class="ident" title="full street address including any name or number identifying a building as well as the name of the street or route on which it is located."><a class="link_odd link_odd_elementSpec" href="../elements/street.html">street</a></span><span class="desc">full street address including any name or number identifying a building as well as
+                                          the
+                                          name of the street or route on which it is located.</span></div>
+                                    <div class="def"><span class="ident" title="(style name) – A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd link_odd_elementSpec" href="../elements/styleName.html">styleName</a></span><span class="desc">(style name) – A label for a characteristic style of writing or performance, such
+                                          as
+                                          'bebop' or 'rock-n-roll'.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.neumes">
+                                 <div class="classHeading"><label class="classLabel">MEI.neumes</label><span class="classDesc">Neume repertoire component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Significantive letter(s)."><a class="link_odd link_odd_elementSpec" href="../elements/signifLet.html">signifLet</a></span><span class="desc">Significantive letter(s).</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.ptrref">
+                                 <div class="classHeading"><label class="classLabel">MEI.ptrref</label><span class="classDesc">Pointer and reference component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(reference) – Defines a traversible reference to another location. May contain text and sub-elements that describe the destination."><a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a></span><span class="desc">(reference) – Defines a traversible reference to another location. May contain text
+                                          and
+                                          sub-elements that describe the destination.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Name of an actor appearing within a cast list."><a class="link_odd link_odd_elementSpec" href="../elements/actor.html">actor</a></span><span class="desc">Name of an actor appearing within a cast list.</span></div>
+                                    <div class="def"><span class="ident" title="(address line) – Single line of a postal address."><a class="link_odd link_odd_elementSpec" href="../elements/addrLine.html">addrLine</a></span><span class="desc">(address line) – Single line of a postal address.</span></div>
+                                    <div class="def"><span class="ident" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">annot</a></span><span class="desc">(annotation) – Provides a statement explaining the text or indicating the basis for
+                                          an
+                                          assertion.</span></div>
+                                    <div class="def"><span class="ident" title="A person or organization who transcribes a musical composition, usually for a different medium from that of the original; in an arrangement the musical substance remains essentially unchanged."><a class="link_odd link_odd_elementSpec" href="../elements/arranger.html">arranger</a></span><span class="desc">A person or organization who transcribes a musical composition, usually for a different
+                                          medium from that of the original; in an arrangement the musical substance remains
+                                          essentially
+                                          unchanged.</span></div>
+                                    <div class="def"><span class="ident" title="The name of the creator of the intellectual content of a non-musical, literary work."><a class="link_odd link_odd_elementSpec" href="../elements/author.html">author</a></span><span class="desc">The name of the creator of the intellectual content of a non-musical, literary
+                                          work.</span></div>
+                                    <div class="def"><span class="ident" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd link_odd_elementSpec" href="../elements/bibl.html">bibl</a></span><span class="desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                                          which
+                                          the sub-components may or may not be explicitly marked.</span></div>
+                                    <div class="def"><span class="ident" title="(scope of citation) – Defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work."><a class="link_odd link_odd_elementSpec" href="../elements/biblScope.html">biblScope</a></span><span class="desc">(scope of citation) – Defines the scope of a bibliographic reference, for example
+                                          as a
+                                          list of page numbers, or a named subdivision of a larger work.</span></div>
+                                    <div class="def"><span class="ident" title="A label which accompanies an illustration or a table."><a class="link_odd link_odd_elementSpec" href="../elements/caption.html">caption</a></span><span class="desc">A label which accompanies an illustration or a table.</span></div>
+                                    <div class="def"><span class="ident" title="The name of the creator of the intellectual content of a musical work."><a class="link_odd link_odd_elementSpec" href="../elements/composer.html">composer</a></span><span class="desc">The name of the creator of the intellectual content of a musical work.</span></div>
+                                    <div class="def"><span class="ident" title="Names of individuals, institutions, or organizations responsible for contributions to the intellectual content of a work, where the specialized elements for authors, editors, etc. do not suffice or do not apply."><a class="link_odd link_odd_elementSpec" href="../elements/contributor.html">contributor</a></span><span class="desc">Names of individuals, institutions, or organizations responsible for contributions
+                                          to the
+                                          intellectual content of a work, where the specialized elements for authors, editors,
+                                          etc. do
+                                          not suffice or do not apply.</span></div>
+                                    <div class="def"><span class="ident" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element."><a class="link_odd link_odd_elementSpec" href="../elements/creation.html">creation</a></span><span class="desc">Non-bibliographic details of the creation of an intellectual entity, in narrative
+                                          form,
+                                          such as the date, place, and circumstances of its composition. More detailed information
+                                          may
+                                          be captured within the history element.</span></div>
+                                    <div class="def"><span class="ident" title="A string identifying a point in time or the time period between two such points."><a class="link_odd link_odd_elementSpec" href="../elements/date.html">date</a></span><span class="desc">A string identifying a point in time or the time period between two such points.</span></div>
+                                    <div class="def"><span class="ident" title="Entity to whom a creative work is formally offered."><a class="link_odd link_odd_elementSpec" href="../elements/dedicatee.html">dedicatee</a></span><span class="desc">Entity to whom a creative work is formally offered.</span></div>
+                                    <div class="def"><span class="ident" title="Description of a measurement taken through a three-dimensional object."><a class="link_odd link_odd_elementSpec" href="../elements/depth.html">depth</a></span><span class="desc">Description of a measurement taken through a three-dimensional object.</span></div>
+                                    <div class="def"><span class="ident" title="(description) – Container for text that briefly describes the feature to which it is attached, including its intended usage, purpose, or application as appropriate."><a class="link_odd link_odd_elementSpec" href="../elements/desc.html">desc</a></span><span class="desc">(description) – Container for text that briefly describes the feature to which it
+                                          is
+                                          attached, including its intended usage, purpose, or application as appropriate.</span></div>
+                                    <div class="def"><span class="ident" title="(dimension) – Any single dimensional specification."><a class="link_odd link_odd_elementSpec" href="../elements/dim.html">dim</a></span><span class="desc">(dimension) – Any single dimensional specification.</span></div>
+                                    <div class="def"><span class="ident" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam ."><a class="link_odd link_odd_elementSpec" href="../elements/dir.html">dir</a></span><span class="desc">(directive) – An instruction expressed as a combination of text and symbols — such
+                                          as
+                                          segno and coda symbols, fermatas over a bar line, etc., typically above, below, or
+                                          between
+                                          staves, but not on the staff — that is not encoded elsewhere in more specific elements,
+                                          like
+                                          <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a> or <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a>.</span></div>
+                                    <div class="def"><span class="ident" title="Person or agency, other than a publisher, from which access (including electronic access) to a bibliographic entity may be obtained."><a class="link_odd link_odd_elementSpec" href="../elements/distributor.html">distributor</a></span><span class="desc">Person or agency, other than a publisher, from which access (including electronic
+                                          access)
+                                          to a bibliographic entity may be obtained.</span></div>
+                                    <div class="def"><span class="ident" title="(dynamic) – Indication of the volume of a note, phrase, or section of music."><a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a></span><span class="desc">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span></div>
+                                    <div class="def"><span class="ident" title="(edition designation) – A word or text phrase that indicates a difference in either content or form between the item being described and a related item previously issued by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by either the same publisher/distributor or another publisher/distributor (e.g. large print edition, British edition, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/edition.html">edition</a></span><span class="desc">(edition designation) – A word or text phrase that indicates a difference in either
+                                          content or form between the item being described and a related item previously issued
+                                          by the
+                                          same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously
+                                          issued by
+                                          either the same publisher/distributor or another publisher/distributor (e.g. large
+                                          print
+                                          edition, British edition, etc.).</span></div>
+                                    <div class="def"><span class="ident" title="The name of the individual(s), institution(s) or organization(s) acting in an editorial capacity."><a class="link_odd link_odd_elementSpec" href="../elements/editor.html">editor</a></span><span class="desc">The name of the individual(s), institution(s) or organization(s) acting in an editorial
+                                          capacity.</span></div>
+                                    <div class="def"><span class="ident" title="Used to express size in terms other than physical dimensions, such as number of pages, records, bytes, physical components, etc."><a class="link_odd link_odd_elementSpec" href="../elements/extent.html">extent</a></span><span class="desc">Used to express size in terms other than physical dimensions, such as number of pages,
+                                          records, bytes, physical components, etc.</span></div>
+                                    <div class="def"><span class="ident" title="Names of individuals, institutions, or organizations responsible for funding. Funders provide financial support for a project; they are distinct from sponsors, who provide intellectual support and authority."><a class="link_odd link_odd_elementSpec" href="../elements/funder.html">funder</a></span><span class="desc">Names of individuals, institutions, or organizations responsible for funding. Funders
+                                          provide financial support for a project; they are distinct from sponsors, who provide
+                                          intellectual support and authority.</span></div>
+                                    <div class="def"><span class="ident" title="Term or terms that designate a category characterizing a particular style, form, or content."><a class="link_odd link_odd_elementSpec" href="../elements/genre.html">genre</a></span><span class="desc">Term or terms that designate a category characterizing a particular style, form, or
+                                          content.</span></div>
+                                    <div class="def"><span class="ident" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd link_odd_elementSpec" href="../elements/head.html">head</a></span><span class="desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                                          the
+                                          heading of a list.</span></div>
+                                    <div class="def"><span class="ident" title="Description of the vertical size of an object."><a class="link_odd link_odd_elementSpec" href="../elements/height.html">height</a></span><span class="desc">Description of the vertical size of an object.</span></div>
+                                    <div class="def"><span class="ident" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd link_odd_elementSpec" href="../elements/identifier.html">identifier</a></span><span class="desc">An alpha-numeric string that establishes the identity of the described material.</span></div>
+                                    <div class="def"><span class="ident" title="Information relating to the publication or distribution of a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/imprint.html">imprint</a></span><span class="desc">Information relating to the publication or distribution of a bibliographic item.</span></div>
+                                    <div class="def"><span class="ident" title="A container for document text that identifies the feature to which it is attached. For a &#34;tool tip&#34; or other generated label, use the label attribute."><a class="link_odd link_odd_elementSpec" href="../elements/label.html">label</a></span><span class="desc">A container for document text that identifies the feature to which it is attached.
+                                          For a
+                                          "tool tip" or other generated label, use the <span class="att">label</span> attribute.</span></div>
+                                    <div class="def"><span class="ident" title="A label on the pages following the first."><a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html">labelAbbr</a></span><span class="desc">A label on the pages following the first.</span></div>
+                                    <div class="def"><span class="ident" title="Person or organization who is a writer of the text of an opera, oratorio, etc."><a class="link_odd link_odd_elementSpec" href="../elements/librettist.html">librettist</a></span><span class="desc">Person or organization who is a writer of the text of an opera, oratorio, etc.</span></div>
+                                    <div class="def"><span class="ident" title="Person or organization who is a writer of the text of a song."><a class="link_odd link_odd_elementSpec" href="../elements/lyricist.html">lyricist</a></span><span class="desc">Person or organization who is a writer of the text of a song.</span></div>
+                                    <div class="def"><span class="ident" title="Proper noun or noun phrase."><a class="link_odd link_odd_elementSpec" href="../elements/name.html">name</a></span><span class="desc">Proper noun or noun phrase.</span></div>
+                                    <div class="def"><span class="ident" title="(number) – Numeric information in any form."><a class="link_odd link_odd_elementSpec" href="../elements/num.html">num</a></span><span class="desc">(number) – Numeric information in any form.</span></div>
+                                    <div class="def"><span class="ident" title="An element indicating an ornament that is not a mordent, turn, or trill."><a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">ornam</a></span><span class="desc">An element indicating an ornament that is not a mordent, turn, or trill. </span></div>
+                                    <div class="def"><span class="ident" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd link_odd_elementSpec" href="../elements/p.html">p</a></span><span class="desc">(paragraph) – One or more text phrases that form a logical prose passage.</span></div>
+                                    <div class="def"><span class="ident" title="(page footer) – A running footer on the first page. Also, used to temporarily override a running footer on individual pages."><a class="link_odd link_odd_elementSpec" href="../elements/pgFoot.html">pgFoot</a></span><span class="desc">(page footer) – A running footer on the first page. Also, used to temporarily override
+                                          a
+                                          running footer on individual pages.</span></div>
+                                    <div class="def"><span class="ident" title="(page footer 2) – A running footer on the pages following the first."><a class="link_odd link_odd_elementSpec" href="../elements/pgFoot2.html">pgFoot2</a></span><span class="desc">(page footer 2) – A running footer on the pages following the first.</span></div>
+                                    <div class="def"><span class="ident" title="(page header) – A running header on the first page. Also, used to temporarily override a running header on individual pages."><a class="link_odd link_odd_elementSpec" href="../elements/pgHead.html">pgHead</a></span><span class="desc">(page header) – A running header on the first page. Also, used to temporarily override
+                                          a
+                                          running header on individual pages.</span></div>
+                                    <div class="def"><span class="ident" title="(page header 2) – A running header on the pages following the first."><a class="link_odd link_odd_elementSpec" href="../elements/pgHead2.html">pgHead2</a></span><span class="desc">(page header 2) – A running header on the pages following the first.</span></div>
+                                    <div class="def"><span class="ident" title="(publication place) – Name of the place where a bibliographic item was published."><a class="link_odd link_odd_elementSpec" href="../elements/pubPlace.html">pubPlace</a></span><span class="desc">(publication place) – Name of the place where a bibliographic item was published.</span></div>
+                                    <div class="def"><span class="ident" title="Name of the organization responsible for the publication of a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/publisher.html">publisher</a></span><span class="desc">Name of the organization responsible for the publication of a bibliographic item.</span></div>
+                                    <div class="def"><span class="ident" title="The name of the individual(s), institution(s) or organization(s) receiving correspondence."><a class="link_odd link_odd_elementSpec" href="../elements/recipient.html">recipient</a></span><span class="desc">The name of the individual(s), institution(s) or organization(s) receiving
+                                          correspondence.</span></div>
+                                    <div class="def"><span class="ident" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="link_odd link_odd_elementSpec" href="../elements/rend.html">rend</a></span><span class="desc">(render) – A formatting element indicating special visual rendering, e.g., bold or
+                                          italicized, of a text word or phrase.</span></div>
+                                    <div class="def"><span class="ident" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/repository.html">repository</a></span><span class="desc">Institution, agency, or individual which holds a bibliographic item.</span></div>
+                                    <div class="def"><span class="ident" title="(responsibility) – A phrase describing the nature of intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/resp.html">resp</a></span><span class="desc">(responsibility) – A phrase describing the nature of intellectual responsibility.</span></div>
+                                    <div class="def"><span class="ident" title="Name of a dramatic role, as given in a cast list."><a class="link_odd link_odd_elementSpec" href="../elements/role.html">role</a></span><span class="desc">Name of a dramatic role, as given in a cast list.</span></div>
+                                    <div class="def"><span class="ident" title="(role description) – Describes a character's role in a drama."><a class="link_odd link_odd_elementSpec" href="../elements/roleDesc.html">roleDesc</a></span><span class="desc">(role description) – Describes a character's role in a drama.</span></div>
+                                    <div class="def"><span class="ident" title="Contains a specialized form of heading or label, giving the name of one or more speakers in a dramatic text or fragment."><a class="link_odd link_odd_elementSpec" href="../elements/speaker.html">speaker</a></span><span class="desc">Contains a specialized form of heading or label, giving the name of one or more speakers
+                                          in a dramatic text or fragment.</span></div>
+                                    <div class="def"><span class="ident" title="Names of sponsoring individuals, organizations or institutions. Sponsors give their intellectual authority to a project; they are to be distinguished from funders, who provide the funding but do not necessarily take intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/sponsor.html">sponsor</a></span><span class="desc">Names of sponsoring individuals, organizations or institutions. Sponsors give their
+                                          intellectual authority to a project; they are to be distinguished from funders, who
+                                          provide
+                                          the funding but do not necessarily take intellectual responsibility.</span></div>
+                                    <div class="def"><span class="ident" title="(stacked text) – An inline table with a single column."><a class="link_odd link_odd_elementSpec" href="../elements/stack.html">stack</a></span><span class="desc">(stacked text) – An inline table with a single column.</span></div>
+                                    <div class="def"><span class="ident" title="(syllable) – Individual lyric syllable."><a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a></span><span class="desc">(syllable) – Individual lyric syllable.</span></div>
+                                    <div class="def"><span class="ident" title="Text and symbols descriptive of tempo, mood, or style, e.g., &#34;allarg.&#34;, &#34;a tempo&#34;, &#34;cantabile&#34;, &#34;Moderato&#34;, &#34;♩=60&#34;, &#34;Moderato ♩ =60&#34;)."><a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a></span><span class="desc">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+                                          "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</span></div>
+                                    <div class="def"><span class="ident" title="Keyword or phrase which describes a resource."><a class="link_odd link_odd_elementSpec" href="../elements/term.html">term</a></span><span class="desc">Keyword or phrase which describes a resource.</span></div>
+                                    <div class="def"><span class="ident" title="(text language) – Identifies the languages and writing systems within the work described by a bibliographic description, not the language of the description."><a class="link_odd link_odd_elementSpec" href="../elements/textLang.html">textLang</a></span><span class="desc">(text language) – Identifies the languages and writing systems within the work described
+                                          by a bibliographic description, not the language of the description.</span></div>
+                                    <div class="def"><span class="ident" title="Description of the horizontal size of an object."><a class="link_odd link_odd_elementSpec" href="../elements/width.html">width</a></span><span class="desc">Description of the horizontal size of an object.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.text">
+                                 <div class="classHeading"><label class="classLabel">MEI.text</label><span class="classDesc">Text component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains a quotation, anonymous or attributed, appearing on a title page."><a class="link_odd link_odd_elementSpec" href="../elements/epigraph.html">epigraph</a></span><span class="desc">Contains a quotation, anonymous or attributed, appearing on a title page.</span></div>
+                                    <div class="def"><span class="ident" title="Contains a formal statement authorizing the publication of a work, sometimes required to appear on a title page or its verso."><a class="link_odd link_odd_elementSpec" href="../elements/imprimatur.html">imprimatur</a></span><span class="desc">Contains a formal statement authorizing the publication of a work, sometimes required
+                                          to
+                                          appear on a title page or its verso.</span></div>
+                                    <div class="def"><span class="ident" title="(line of text) – Contains a single line of text within a line group."><a class="link_odd link_odd_elementSpec" href="../elements/l.html">l</a></span><span class="desc">(line of text) – Contains a single line of text within a line group.</span></div>
+                                    <div class="def"><span class="ident" title="(list item) – Single item in a list ."><a class="link_odd link_odd_elementSpec" href="../elements/li.html">li</a></span><span class="desc">(list item) – Single item in a <a class="link_odd link_odd_elementSpec" href="../elements/list.html">list</a>.</span></div>
+                                    <div class="def"><span class="ident" title="(quoted) – Contains material which is distinguished from the surrounding phrase-level text using quotation marks or a similar method. Use quote for block-level quotations."><a class="link_odd link_odd_elementSpec" href="../elements/q.html">q</a></span><span class="desc">(quoted) – Contains material which is distinguished from the surrounding phrase-level
+                                          text
+                                          using quotation marks or a similar method. Use <a class="link_odd link_odd_elementSpec" href="../elements/quote.html">quote</a> for block-level
+                                          quotations.</span></div>
+                                    <div class="def"><span class="ident" title="(quoted material) – Contains a paragraph-like block of text attributed to an external source, normally set off from the surrounding text by spacing or other typographic distinction."><a class="link_odd link_odd_elementSpec" href="../elements/quote.html">quote</a></span><span class="desc">(quoted material) – Contains a paragraph-like block of text attributed to an external
+                                          source, normally set off from the surrounding text by spacing or other typographic
+                                          distinction.</span></div>
+                                    <div class="def"><span class="ident" title="(arbitrary segment) represents any segmentation of text below the &#34;text component&#34; level."><a class="link_odd link_odd_elementSpec" href="../elements/seg.html">seg</a></span><span class="desc">(arbitrary segment) represents any segmentation of text below the "text component"
+                                          level.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.usersymbols">
+                                 <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc">User-defined symbols component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd link_odd_elementSpec" href="../elements/anchoredText.html">anchoredText</a></span><span class="desc">Container for text that is fixed to a particular page location, regardless of changes
+                                          made
+                                          to the layout of the measures around it.</span></div>
+                                    <div class="def"><span class="ident" title="A visual line that cannot be represented by a more specific; i.e., semantic, element."><a class="link_odd link_odd_elementSpec" href="../elements/line.html">line</a></span><span class="desc">A visual line that cannot be represented by a more specific; i.e., semantic,
+                                          element.</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.editorialLike"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>Groups editorial intervention elements.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.textPhraseLike.limited.html">model.textPhraseLike.limited</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.choicePart.html">model.choicePart</a>"</span>/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                $(document).ready(function() {
+                                    $('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>

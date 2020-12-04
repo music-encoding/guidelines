@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?><html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-04"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <header class="navbar">
+         <div class="navbar-section"><a class="navbar-brand" href="http://music-encoding.org"><img src="http://music-encoding.org/pix/meilogo-inverted.png" alt="MEI logo"></img></a><div class="hide-lg">
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/about" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">About</a></div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">Community<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/projects-users.html" class="btn btn-link text-left menu-link">Projects / Users</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/news-events.html" class="btn btn-link text-left menu-link">News / Events</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html" class="btn btn-link text-left menu-link">Community Contacts</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html" class="btn btn-link text-left menu-link">Interest Groups</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/technical-team.html" class="btn btn-link text-left menu-link">Technical Team</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-board.html" class="btn btn-link text-left menu-link">MEI Board</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html" class="btn btn-link text-left menu-link">MEI By-laws</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">Conference<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/past.html" class="btn btn-link text-left menu-link">Past Conferences</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/proceedings.html" class="btn btn-link text-left menu-link">Proceedings</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html" class="btn btn-link text-left menu-link">Hosting Guidelines</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">Resources<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="5">Documentation<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/archive" class="btn btn-link dropdown-toggle top-menu-link" tabindex="6">Archive</a></div>
+            </div>
+         </div>
+         <div class="navbar-section" id="socialLinks"><a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding"><img src="http://music-encoding.org/pix/twitter.png" alt="Twitter" class="logo"></img></a><a class="githubLink" target="_blank" href="https://github.com/music-encoding"><img src="http://music-encoding.org/pix/github.png" alt="GitHub" class="logo"></img></a><a class="slackLink" target="_blank" href="https://music-encoding.slack.com/"><img src="http://music-encoding.org/pix/slack.png" alt="Slack" class="logo"></img></a></div>
+         <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+            <div class="accordion"><input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-toggle"><i class="icon icon-menu"></i></label><div class="accordion-body">
+                  <ul class="menu menu-nav">
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/about">About</a></label></div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Community</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/projects-users.html">Projects / Users</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/news-events.html">News / Events</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html">Community Contacts</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html">Interest Groups</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/technical-team.html">Technical Team</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-board.html">MEI Board</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html">MEI By-laws</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Conference</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/past.html">Past Conferences</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/proceedings.html">Proceedings</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html">Hosting Guidelines</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Resources</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Documentation</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/archive">Archive</a></label></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <div class="specPage overview">
+                  <h2>Data Types</h2>
+                  <div class="letterSelection">
+                     <ul class="pagination">
+                        <li class="page-item"><a href="#letterFacet_A">A</a></li>
+                        <li class="page-item"><a href="#letterFacet_B">B</a></li>
+                        <li class="page-item"><a href="#letterFacet_C">C</a></li>
+                        <li class="page-item"><a href="#letterFacet_D">D</a></li>
+                        <li class="page-item"><a href="#letterFacet_E">E</a></li>
+                        <li class="page-item"><a href="#letterFacet_F">F</a></li>
+                        <li class="page-item"><a href="#letterFacet_G">G</a></li>
+                        <li class="page-item"><a href="#letterFacet_H">H</a></li>
+                        <li class="page-item"><a href="#letterFacet_I">I</a></li>
+                        <li class="page-item"><a href="#letterFacet_K">K</a></li>
+                        <li class="page-item"><a href="#letterFacet_L">L</a></li>
+                        <li class="page-item"><a href="#letterFacet_M">M</a></li>
+                        <li class="page-item"><a href="#letterFacet_N">N</a></li>
+                        <li class="page-item"><a href="#letterFacet_O">O</a></li>
+                        <li class="page-item"><a href="#letterFacet_P">P</a></li>
+                        <li class="page-item"><a href="#letterFacet_R">R</a></li>
+                        <li class="page-item"><a href="#letterFacet_S">S</a></li>
+                        <li class="page-item"><a href="#letterFacet_T">T</a></li>
+                        <li class="page-item"><a href="#letterFacet_U">U</a></li>
+                        <li class="page-item"><a href="#letterFacet_V">V</a></li>
+                        <li class="page-item"><a href="#letterFacet_W">W</a></li>
+                     </ul>
+                  </div>
+                  <div id="letterFacet_A" class="letter facet overview">
+                     <div class="label">A</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Gestural/performed accidental values." data-initial="A" data-ident="data.ACCIDENTAL.GESTURAL" href="./data-types/data.ACCIDENTAL.GESTURAL.html">data.ACCIDENTAL.GESTURAL</a><a class="overviewLink datatype" title="Written accidental values." data-initial="A" data-ident="data.ACCIDENTAL.WRITTEN" href="./data-types/data.ACCIDENTAL.WRITTEN.html">data.ACCIDENTAL.WRITTEN</a><a class="overviewLink datatype" title="Written Arel-Ezgi-Uzdilek (AEU) accidental values." data-initial="A" data-ident="data.ACCIDENTAL.WRITTEN.aeu" href="./data-types/data.ACCIDENTAL.WRITTEN.aeu.html">data.ACCIDENTAL.WRITTEN.aeu</a><a class="overviewLink datatype" title="Written standard accidental values." data-initial="A" data-ident="data.ACCIDENTAL.WRITTEN.basic" href="./data-types/data.ACCIDENTAL.WRITTEN.basic.html">data.ACCIDENTAL.WRITTEN.basic</a><a class="overviewLink datatype" title="Written quarter-tone accidental values." data-initial="A" data-ident="data.ACCIDENTAL.WRITTEN.extended" href="./data-types/data.ACCIDENTAL.WRITTEN.extended.html">data.ACCIDENTAL.WRITTEN.extended</a><a class="overviewLink datatype" title="The following list of articulations mostly corresponds to symbols from the Western Musical Symbols portion of the Unicode Standard. The dot and stroke values may be used in cases where interpretation is difficult or undesirable." data-initial="A" data-ident="data.ARTICULATION" href="./data-types/data.ARTICULATION.html">data.ARTICULATION</a><a class="overviewLink datatype" title="Dots attribute values (number of augmentation dots) (Read, 113-119, ex. 8-21)." data-initial="A" data-ident="data.AUGMENTDOT" href="./data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a></div>
+                  </div>
+                  <div id="letterFacet_B" class="letter facet overview">
+                     <div class="label">B</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Records where bar lines are drawn. The value 'staff' describes the traditional placement of bar lines." data-initial="B" data-ident="data.BARMETHOD" href="./data-types/data.BARMETHOD.html">data.BARMETHOD</a><a class="overviewLink datatype" title="Renderings of bar lines. Some values correspond to the Western Musical Symbols portion of the Unicode Standard." data-initial="B" data-ident="data.BARRENDITION" href="./data-types/data.BARRENDITION.html">data.BARRENDITION</a><a class="overviewLink datatype" title="Beam attribute values: initial, medial, terminal. Nested beaming is permitted." data-initial="B" data-ident="data.BEAM" href="./data-types/data.BEAM.html">data.BEAM</a><a class="overviewLink datatype" title="Location of a beam relative to the events it affects." data-initial="B" data-ident="data.BEAMPLACE" href="./data-types/data.BEAMPLACE.html">data.BEAMPLACE</a><a class="overviewLink datatype" title="A beat location, i.e., [0-9]+(\.?[0-9]*)? The value must fall between 0 and the numerator of the time signature + 1, where 0 represents the left bar line and the upper boundary represents the right bar line. For example, in 12/8 the value must be in the range from 0 to 13." data-initial="B" data-ident="data.BEAT" href="./data-types/data.BEAT.html">data.BEAT</a><a class="overviewLink datatype" title="Visual and performance information for a repeated beat symbol." data-initial="B" data-ident="data.BEATRPT.REND" href="./data-types/data.BEATRPT.REND.html">data.BEATRPT.REND</a><a class="overviewLink datatype" title="Either an integer value, a decimal value, or a token. Fractional values are limited to .25, .5, .75, while the token value is restricted to 'full'." data-initial="B" data-ident="data.BEND.AMOUNT" href="./data-types/data.BEND.AMOUNT.html">data.BEND.AMOUNT</a><a class="overviewLink datatype" title="Datatypes for values in begin, end, abstype and inttype attributes." data-initial="B" data-ident="data.BETYPE" href="./data-types/data.BETYPE.html">data.BETYPE</a><a class="overviewLink datatype" title="Boolean attribute values." data-initial="B" data-ident="data.BOOLEAN" href="./data-types/data.BOOLEAN.html">data.BOOLEAN</a></div>
+                  </div>
+                  <div id="letterFacet_C" class="letter facet overview">
+                     <div class="label">C</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Values for certainty attribute. Certainty may be expressed by one of the values 'high', 'medium', or 'low'. The value 'unknown' should be used in cases where the encoder does not wish to assert an opinion." data-initial="C" data-ident="data.CERTAINTY" href="./data-types/data.CERTAINTY.html">data.CERTAINTY</a><a class="overviewLink datatype" title="Clef line attribute values. The value must be in the range between 1 and the number of lines on the staff. The numbering of lines starts with the lowest line of the staff." data-initial="C" data-ident="data.CLEFLINE" href="./data-types/data.CLEFLINE.html">data.CLEFLINE</a><a class="overviewLink datatype" title="Clef shape attribute values (Read, p.53-56). Some values correspond to the Unicode Standard." data-initial="C" data-ident="data.CLEFSHAPE" href="./data-types/data.CLEFSHAPE.html">data.CLEFSHAPE</a><a class="overviewLink datatype" title="Tone-cluster rendition." data-initial="C" data-ident="data.CLUSTER" href="./data-types/data.CLUSTER.html">data.CLUSTER</a><a class="overviewLink datatype" title="A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal AARRGGBB, 3) CSS RGB, 4) CSS RGBA, 5) HSL, 6) HSLA, or 7) HTML 4.01 color name." data-initial="C" data-ident="data.COLOR" href="./data-types/data.COLOR.html">data.COLOR</a><a class="overviewLink datatype" title="List of named colors from CSS Color Module Level 4." data-initial="C" data-ident="data.COLORNAMES" href="./data-types/data.COLORNAMES.html">data.COLORNAMES</a><a class="overviewLink datatype" title="Parameterized color values" data-initial="C" data-ident="data.COLORVALUES" href="./data-types/data.COLORVALUES.html">data.COLORVALUES</a><a class="overviewLink datatype" title="Description of direction with respect to an imaginary compass." data-initial="C" data-ident="data.COMPASSDIRECTION" href="./data-types/data.COMPASSDIRECTION.html">data.COMPASSDIRECTION</a><a class="overviewLink datatype" title="Basic compass directions." data-initial="C" data-ident="data.COMPASSDIRECTION.basic" href="./data-types/data.COMPASSDIRECTION.basic.html">data.COMPASSDIRECTION.basic</a><a class="overviewLink datatype" title="Additional compass directions." data-initial="C" data-ident="data.COMPASSDIRECTION.extended" href="./data-types/data.COMPASSDIRECTION.extended.html">data.COMPASSDIRECTION.extended</a><a class="overviewLink datatype" title="Confidence is expressed as a real number between 0 and 1; 0 representing certainly false and 1 representing certainly true." data-initial="C" data-ident="data.CONFIDENCE" href="./data-types/data.CONFIDENCE.html">data.CONFIDENCE</a></div>
+                  </div>
+                  <div id="letterFacet_D" class="letter facet overview">
+                     <div class="label">D</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="360th-unit measure of a circle's circumference; optionally signed decimal number between -360 and 360." data-initial="D" data-ident="data.DEGREES" href="./data-types/data.DEGREES.html">data.DEGREES</a><a class="overviewLink datatype" title="Divisio values." data-initial="D" data-ident="data.DIVISIO" href="./data-types/data.DIVISIO.html">data.DIVISIO</a><a class="overviewLink datatype" title="Logical, that is, written, duration attribute values." data-initial="D" data-ident="data.DURATION" href="./data-types/data.DURATION.html">data.DURATION</a><a class="overviewLink datatype" title="Logical, that is, written, duration attribute values for the CMN repertoire." data-initial="D" data-ident="data.DURATION.cmn" href="./data-types/data.DURATION.cmn.html">data.DURATION.cmn</a><a class="overviewLink datatype" title="Performed duration attribute values." data-initial="D" data-ident="data.DURATION.gestural" href="./data-types/data.DURATION.gestural.html">data.DURATION.gestural</a><a class="overviewLink datatype" title="Logical, that is, written, note-shape (or note symbol) attribute values for the mensural repertoire." data-initial="D" data-ident="data.DURATION.mensural" href="./data-types/data.DURATION.mensural.html">data.DURATION.mensural</a><a class="overviewLink datatype" title="Logical, that is, written, duration attribute values for rests." data-initial="D" data-ident="data.DURATIONRESTS" href="./data-types/data.DURATIONRESTS.html">data.DURATIONRESTS</a><a class="overviewLink datatype" title="Logical, that is, written, duration attribute values for mensural rests." data-initial="D" data-ident="data.DURATIONRESTS.mensural" href="./data-types/data.DURATIONRESTS.mensural.html">data.DURATIONRESTS.mensural</a><a class="overviewLink datatype" title="Duration attribute values of a given note symbol for the mensural repertoire." data-initial="D" data-ident="data.DURQUALITY.mensural" href="./data-types/data.DURQUALITY.mensural.html">data.DURQUALITY.mensural</a></div>
+                  </div>
+                  <div id="letterFacet_E" class="letter facet overview">
+                     <div class="label">E</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Enclosures for editorial notes and accidentals." data-initial="E" data-ident="data.ENCLOSURE" href="./data-types/data.ENCLOSURE.html">data.ENCLOSURE</a><a class="overviewLink datatype" title="Location of musical material relative to a symbol on a staff instead of the staff." data-initial="E" data-ident="data.EVENTREL" href="./data-types/data.EVENTREL.html">data.EVENTREL</a><a class="overviewLink datatype" title="Location of musical material relative to a symbol other than a staff." data-initial="E" data-ident="data.EVENTREL.basic" href="./data-types/data.EVENTREL.basic.html">data.EVENTREL.basic</a><a class="overviewLink datatype" title="Location of musical material relative to a symbol other than a staff." data-initial="E" data-ident="data.EVENTREL.extended" href="./data-types/data.EVENTREL.extended.html">data.EVENTREL.extended</a></div>
+                  </div>
+                  <div id="letterFacet_F" class="letter facet overview">
+                     <div class="label">F</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Describes how a graphical object, such as a note head, should be filled. The relative values — top, bottom, left, and right — indicate these locations *after* rotation is applied." data-initial="F" data-ident="data.FILL" href="./data-types/data.FILL.html">data.FILL</a><a class="overviewLink datatype" title="In a guitar chord diagram, a label indicating which finger, if any, should be used to play an individual string. The index, middle, ring, and little fingers are represented by the values 1-4, while 't' is for the thumb. The values 'x' and 'o' indicate stopped and open strings, respectively." data-initial="F" data-ident="data.FINGER.FRET" href="./data-types/data.FINGER.FRET.html">data.FINGER.FRET</a><a class="overviewLink datatype" title="Form of the flag." data-initial="F" data-ident="data.FLAGFORM.mensural" href="./data-types/data.FLAGFORM.mensural.html">data.FLAGFORM.mensural</a><a class="overviewLink datatype" title="Position of the flag relative to the stem." data-initial="F" data-ident="data.FLAGPOS.mensural" href="./data-types/data.FLAGPOS.mensural.html">data.FLAGPOS.mensural</a><a class="overviewLink datatype" title="Font family (for text) attribute values." data-initial="F" data-ident="data.FONTFAMILY" href="./data-types/data.FONTFAMILY.html">data.FONTFAMILY</a><a class="overviewLink datatype" title="Font name (for text) attribute values." data-initial="F" data-ident="data.FONTNAME" href="./data-types/data.FONTNAME.html">data.FONTNAME</a><a class="overviewLink datatype" title="Font size expressions." data-initial="F" data-ident="data.FONTSIZE" href="./data-types/data.FONTSIZE.html">data.FONTSIZE</a><a class="overviewLink datatype" title="Font size expressed as numbers; i.e. points or virtual units." data-initial="F" data-ident="data.FONTSIZENUMERIC" href="./data-types/data.FONTSIZENUMERIC.html">data.FONTSIZENUMERIC</a><a class="overviewLink datatype" title="Relative size of symbol that may begin/end a line." data-initial="F" data-ident="data.FONTSIZESCALE" href="./data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a><a class="overviewLink datatype" title="Font size expressed as relative term." data-initial="F" data-ident="data.FONTSIZETERM" href="./data-types/data.FONTSIZETERM.html">data.FONTSIZETERM</a><a class="overviewLink datatype" title="Font style (for text) attribute values." data-initial="F" data-ident="data.FONTSTYLE" href="./data-types/data.FONTSTYLE.html">data.FONTSTYLE</a><a class="overviewLink datatype" title="Font weight (for text) attribute values." data-initial="F" data-ident="data.FONTWEIGHT" href="./data-types/data.FONTWEIGHT.html">data.FONTWEIGHT</a><a class="overviewLink datatype" title="Relationships between FRBR entities." data-initial="F" data-ident="data.FRBRRELATIONSHIP" href="./data-types/data.FRBRRELATIONSHIP.html">data.FRBRRELATIONSHIP</a><a class="overviewLink datatype" title="In string tablature, the fret number. The value '0' (zero) indicates the open string." data-initial="F" data-ident="data.FRETNUMBER" href="./data-types/data.FRETNUMBER.html">data.FRETNUMBER</a><a class="overviewLink datatype" title="In a guitar chord diagram, the fret where the finger should be placed. Since guitar chord diagrams are limited to the range of frets that fall under the hand, the values here are a subset of those available in data.FRETNUMBER. The pos (position) attribute on the chordDef element must be used to indicate at which fret this range begins." data-initial="F" data-ident="data.FRETNUMBER.limited" href="./data-types/data.FRETNUMBER.limited.html">data.FRETNUMBER.limited</a></div>
+                  </div>
+                  <div id="letterFacet_G" class="letter facet overview">
+                     <div class="label">G</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Analytical glissando attribute values." data-initial="G" data-ident="data.GLISSANDO" href="./data-types/data.GLISSANDO.html">data.GLISSANDO</a><a class="overviewLink datatype" title="Do grace notes get time from the current (acc) or previous (unacc) one?" data-initial="G" data-ident="data.GRACE" href="./data-types/data.GRACE.html">data.GRACE</a></div>
+                  </div>
+                  <div id="letterFacet_H" class="letter facet overview">
+                     <div class="label">H</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Note head shapes." data-initial="H" data-ident="data.HEADSHAPE" href="./data-types/data.HEADSHAPE.html">data.HEADSHAPE</a><a class="overviewLink datatype" title="Enumerated note head shapes." data-initial="H" data-ident="data.HEADSHAPE.list" href="./data-types/data.HEADSHAPE.list.html">data.HEADSHAPE.list</a><a class="overviewLink datatype" title="Hexadecimal number." data-initial="H" data-ident="data.HEXNUM" href="./data-types/data.HEXNUM.html">data.HEXNUM</a><a class="overviewLink datatype" title="Data values for attributes that capture horizontal alignment." data-initial="H" data-ident="data.HORIZONTALALIGNMENT" href="./data-types/data.HORIZONTALALIGNMENT.html">data.HORIZONTALALIGNMENT</a></div>
+                  </div>
+                  <div id="letterFacet_I" class="letter facet overview">
+                     <div class="label">I</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="An ID reference." data-initial="I" data-ident="data.IDREF" href="./data-types/data.IDREF.html">data.IDREF</a><a class="overviewLink datatype" title="Interrupted neume forms." data-initial="I" data-ident="data.INEUMEFORM" href="./data-types/data.INEUMEFORM.html">data.INEUMEFORM</a><a class="overviewLink datatype" title="Interrupted neume, i.e. neume written as 2 or more sub-neumes." data-initial="I" data-ident="data.INEUMENAME" href="./data-types/data.INEUMENAME.html">data.INEUMENAME</a><a class="overviewLink datatype" title="A token indicating diatonic interval quality and size." data-initial="I" data-ident="data.INTERVAL.HARMONIC" href="./data-types/data.INTERVAL.HARMONIC.html">data.INTERVAL.HARMONIC</a><a class="overviewLink datatype" title="A token indicating direction of the interval but not its precise value, a diatonic interval (with optional direction and quality), or a decimal value in half steps. Decimal values are permitted to accommodate micro-tuning." data-initial="I" data-ident="data.INTERVAL.MELODIC" href="./data-types/data.INTERVAL.MELODIC.html">data.INTERVAL.MELODIC</a><a class="overviewLink datatype" title="ISO date formats." data-initial="I" data-ident="data.ISODATE" href="./data-types/data.ISODATE.html">data.ISODATE</a><a class="overviewLink datatype" title="ISO 24-hour time format: HH:MM:SS.ss, i.e., [0-9][0-9]:[0-9][0-9]:[0-9][0-9](\.?[0-9]*)?." data-initial="I" data-ident="data.ISOTIME" href="./data-types/data.ISOTIME.html">data.ISOTIME</a></div>
+                  </div>
+                  <div id="letterFacet_K" class="letter facet overview">
+                     <div class="label">K</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Indicates the location of the tonic in the circle of fifths." data-initial="K" data-ident="data.KEYFIFTHS" href="./data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a></div>
+                  </div>
+                  <div id="letterFacet_L" class="letter facet overview">
+                     <div class="label">L</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Indicates how stems should be drawn when more than one layer is present and stem directions are not indicated on the notes/chords themselves. '1' indicates that there is only a single layer on a staff. '2o' means there are two layers with opposing stems. '2f' indicates two 'free' layers; that is, opposing stems will be drawn unless one of the layers has 'space'. In that case, stem direction in the remaining layer will be determined as if there were only one layer. '3o' and '3f' are analogous to '2o' and '2f' with three layers allowed." data-initial="L" data-ident="data.LAYERSCHEME" href="./data-types/data.LAYERSCHEME.html">data.LAYERSCHEME</a><a class="overviewLink datatype" title="Ligature forms." data-initial="L" data-ident="data.LIGATUREFORM" href="./data-types/data.LIGATUREFORM.html">data.LIGATUREFORM</a><a class="overviewLink datatype" title="Visual form of a line." data-initial="L" data-ident="data.LINEFORM" href="./data-types/data.LINEFORM.html">data.LINEFORM</a><a class="overviewLink datatype" title="Symbol that may begin/end a line." data-initial="L" data-ident="data.LINESTARTENDSYMBOL" href="./data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a><a class="overviewLink datatype" title="Datatype of line width measurements." data-initial="L" data-ident="data.LINEWIDTH" href="./data-types/data.LINEWIDTH.html">data.LINEWIDTH</a><a class="overviewLink datatype" title="Relative width of a line." data-initial="L" data-ident="data.LINEWIDTHTERM" href="./data-types/data.LINEWIDTHTERM.html">data.LINEWIDTHTERM</a></div>
+                  </div>
+                  <div id="letterFacet_M" class="letter facet overview">
+                     <div class="label">M</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="A count of measures plus a beat location, i.e., [0-9]+m *\+ *[0-9]+(\.?[0-9]*)?. The measure count is the number of barlines crossed by the event, while the beat location is a timestamp expressed as a beat with an optional fractional part. For example, &#34;1m+3.5&#34; indicates a point in the next measure on the second half of beat 3. The measure number must be in the range of 0 to the number of remaining measures, while the beat number must be in the range from 0 to the numerator of the time signature plus 1. For example, in 6/8 the beat number must be within the range from 0 (the left barline) to 7 (the right barline). A value with a measure number of &#34;0&#34;, such as &#34;0m+2&#34;, indicates a point within the current measure." data-initial="M" data-ident="data.MEASUREBEAT" href="./data-types/data.MEASUREBEAT.html">data.MEASUREBEAT</a><a class="overviewLink datatype" title="A count of measures plus a beat location, i.e., (\+|-)?[0-9]+m\+[0-9]+(\.?[0-9]*)?. The measure count is the number of barlines crossed by the event, while the beat location is a timestamp expressed as a beat with an optional fractional part. The measure number must be in the range of preceding measures to the number of remaining measures. A value with a positive measure number, such as &#34;1m+3&#34;, indicates a point in the following measure, while a value with a negative measure number, such as &#34;-1m+3&#34;, marks a point in the preceding measure. The beat number must be in the range from 0 to the numerator of the time signature plus 1. For example, in 6/8 the beat number must be within the range from 0 (the left barline) to 7 (the right barline). A value with a measure number of &#34;0&#34;, such as &#34;0m+2&#34;, indicates a point within the current measure." data-initial="M" data-ident="data.MEASUREBEATOFFSET" href="./data-types/data.MEASUREBEATOFFSET.html">data.MEASUREBEATOFFSET</a><a class="overviewLink datatype" title="Measurement expressed in real-world (e.g., centimeters, millimeters, inches, points, picas, or pixels) or virtual units (vu). 'vu' is the default value. Unlike data.MEASUREMENTREL, which may be used to express relative measures, only positive values are allowed." data-initial="M" data-ident="data.MEASUREMENTABS" href="./data-types/data.MEASUREMENTABS.html">data.MEASUREMENTABS</a><a class="overviewLink datatype" title="Measurement expressed in real-world (e.g., centimeters, millimeters, inches, points, picas, or pixels) or virtual units (vu). 'vu' is the default value. Unlike data.MEASUREMENTABS, in which only positive values are allowed, both positive and negative values are permitted." data-initial="M" data-ident="data.MEASUREMENTREL" href="./data-types/data.MEASUREMENTREL.html">data.MEASUREMENTREL</a><a class="overviewLink datatype" title="Indication of melodic function, i.e., anticipation, lower neighbor, escape tone, etc." data-initial="M" data-ident="data.MELODICFUNCTION" href="./data-types/data.MELODICFUNCTION.html">data.MELODICFUNCTION</a><a class="overviewLink datatype" title="Mensuration signs attribute values." data-initial="M" data-ident="data.MENSURATIONSIGN" href="./data-types/data.MENSURATIONSIGN.html">data.MENSURATIONSIGN</a><a class="overviewLink datatype" title="Contains an indication of how a meter signature should be rendered." data-initial="M" data-ident="data.METERFORM" href="./data-types/data.METERFORM.html">data.METERFORM</a><a class="overviewLink datatype" title="Meter.sym attribute values for CMN." data-initial="M" data-ident="data.METERSIGN" href="./data-types/data.METERSIGN.html">data.METERSIGN</a><a class="overviewLink datatype" title="Tempo expressed as &#34;beats&#34; per minute, where &#34;beat&#34; is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*." data-initial="M" data-ident="data.MIDIBPM" href="./data-types/data.MIDIBPM.html">data.MIDIBPM</a><a class="overviewLink datatype" title="MIDI channel number. One-based values must be followed by a lower-case letter &#34;o&#34;." data-initial="M" data-ident="data.MIDICHANNEL" href="./data-types/data.MIDICHANNEL.html">data.MIDICHANNEL</a><a class="overviewLink datatype" title="Tempo expressed as microseconds per &#34;beat&#34;, where &#34;beat&#34; is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*." data-initial="M" data-ident="data.MIDIMSPB" href="./data-types/data.MIDIMSPB.html">data.MIDIMSPB</a><a class="overviewLink datatype" title="General MIDI instrument names." data-initial="M" data-ident="data.MIDINAMES" href="./data-types/data.MIDINAMES.html">data.MIDINAMES</a><a class="overviewLink datatype" title="Generic MIDI value. One-based values must be followed by a lower-case letter &#34;o&#34;." data-initial="M" data-ident="data.MIDIVALUE" href="./data-types/data.MIDIVALUE.html">data.MIDIVALUE</a><a class="overviewLink datatype" title="data.MIDIVALUE or data.NCName values." data-initial="M" data-ident="data.MIDIVALUE_NAME" href="./data-types/data.MIDIVALUE_NAME.html">data.MIDIVALUE_NAME</a><a class="overviewLink datatype" title="data.MIDIVALUE or data.PERCENT.LIMITED.SIGNED values." data-initial="M" data-ident="data.MIDIVALUE_PAN" href="./data-types/data.MIDIVALUE_PAN.html">data.MIDIVALUE_PAN</a><a class="overviewLink datatype" title="data.MIDIVALUE or data.PERCENT.LIMITED values." data-initial="M" data-ident="data.MIDIVALUE_PERCENT" href="./data-types/data.MIDIVALUE_PERCENT.html">data.MIDIVALUE_PERCENT</a><a class="overviewLink datatype" title="Modes." data-initial="M" data-ident="data.MODE" href="./data-types/data.MODE.html">data.MODE</a><a class="overviewLink datatype" title="Common modes." data-initial="M" data-ident="data.MODE.cmn" href="./data-types/data.MODE.cmn.html">data.MODE.cmn</a><a class="overviewLink datatype" title="Modern modes." data-initial="M" data-ident="data.MODE.extended" href="./data-types/data.MODE.extended.html">data.MODE.extended</a><a class="overviewLink datatype" title="Gregorian modes." data-initial="M" data-ident="data.MODE.gregorian" href="./data-types/data.MODE.gregorian.html">data.MODE.gregorian</a><a class="overviewLink datatype" title="Bibliographic relationship values based on MODS version 3.4." data-initial="M" data-ident="data.MODSRELATIONSHIP" href="./data-types/data.MODSRELATIONSHIP.html">data.MODSRELATIONSHIP</a><a class="overviewLink datatype" title="Maxima-long relationship values." data-initial="M" data-ident="data.MODUSMAIOR" href="./data-types/data.MODUSMAIOR.html">data.MODUSMAIOR</a><a class="overviewLink datatype" title="Long-breve relationship values." data-initial="M" data-ident="data.MODUSMINOR" href="./data-types/data.MODUSMINOR.html">data.MODUSMINOR</a><a class="overviewLink datatype" title="Logical, that is, written, duration attribute values for multi-breve rests in the mensural repertoire." data-initial="M" data-ident="data.MULTIBREVERESTS.mensural" href="./data-types/data.MULTIBREVERESTS.mensural.html">data.MULTIBREVERESTS.mensural</a><a class="overviewLink datatype" title="Music font family." data-initial="M" data-ident="data.MUSICFONT" href="./data-types/data.MUSICFONT.html">data.MUSICFONT</a></div>
+                  </div>
+                  <div id="letterFacet_N" class="letter facet overview">
+                     <div class="label">N</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="&#34;Convenience&#34; datatype that permits combining enumerated values with a user-supplied name." data-initial="N" data-ident="data.NCNAME" href="./data-types/data.NCNAME.html">data.NCNAME</a><a class="overviewLink datatype" title="&#34;Convenience&#34; datatype that permits combining enumerated values with user-supplied values." data-initial="N" data-ident="data.NMTOKEN" href="./data-types/data.NMTOKEN.html">data.NMTOKEN</a><a class="overviewLink datatype" title="Non-staff location." data-initial="N" data-ident="data.NONSTAFFPLACE" href="./data-types/data.NONSTAFFPLACE.html">data.NONSTAFFPLACE</a><a class="overviewLink datatype" title="Notation type and subtype" data-initial="N" data-ident="data.NOTATIONTYPE" href="./data-types/data.NOTATIONTYPE.html">data.NOTATIONTYPE</a><a class="overviewLink datatype" title="Captures any notehead &#34;modifiers&#34;; that is, symbols added to the notehead, such as slashes, lines, text, and enclosures, etc." data-initial="N" data-ident="data.NOTEHEADMODIFIER" href="./data-types/data.NOTEHEADMODIFIER.html">data.NOTEHEADMODIFIER</a><a class="overviewLink datatype" title="Enumerated note head modifier values." data-initial="N" data-ident="data.NOTEHEADMODIFIER.list" href="./data-types/data.NOTEHEADMODIFIER.list.html">data.NOTEHEADMODIFIER.list</a><a class="overviewLink datatype" title="Captures text rendered in the center of the notehead." data-initial="N" data-ident="data.NOTEHEADMODIFIER.pat" href="./data-types/data.NOTEHEADMODIFIER.pat.html">data.NOTEHEADMODIFIER.pat</a></div>
+                  </div>
+                  <div id="letterFacet_O" class="letter facet overview">
+                     <div class="label">O</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Oct attribute values. The default values conform to Acoustical Society of America representation. Read, p. 44." data-initial="O" data-ident="data.OCTAVE" href="./data-types/data.OCTAVE.html">data.OCTAVE</a><a class="overviewLink datatype" title="The amount of octave displacement; that is, '8' (as in '8va' for 1 octave), '15' (for 2 octaves), or rarely '22' (for 3 octaves)." data-initial="O" data-ident="data.OCTAVE.DIS" href="./data-types/data.OCTAVE.DIS.html">data.OCTAVE.DIS</a><a class="overviewLink datatype" title="Rotation or reflection of base symbol values." data-initial="O" data-ident="data.ORIENTATION" href="./data-types/data.ORIENTATION.html">data.ORIENTATION</a><a class="overviewLink datatype" title="CMN ornam attribute values: A = appogiatura (upper neighbor); a = acciaccatura (lower neighbor); b = bebung; I = ascending slide; i = descending slide; k = delayed turn; K = 5-note turn; m = mordent (alternation with lower neighbor); M = inverted mordent (alternation with upper neighbor); N = Nachschlag (upper neighbor); n = Nachschlag (lower neighbor); S = turn; s = inverted turn; t = trill commencing on auxiliary note; T = trill commencing on principal note; O = generic / unspecified ornament." data-initial="O" data-ident="data.ORNAM.cmn" href="./data-types/data.ORNAM.cmn.html">data.ORNAM.cmn</a><a class="overviewLink datatype" title="For musical material designated to appear on another staff, the location of the staff relative to the current one; i.e., the staff above or the staff below." data-initial="O" data-ident="data.OTHERSTAFF" href="./data-types/data.OTHERSTAFF.html">data.OTHERSTAFF</a></div>
+                  </div>
+                  <div id="letterFacet_P" class="letter facet overview">
+                     <div class="label">P</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="The number of panels per page." data-initial="P" data-ident="data.PAGE.PANELS" href="./data-types/data.PAGE.PANELS.html">data.PAGE.PANELS</a><a class="overviewLink datatype" title="Positive decimal number plus '%', i.e., [0-9]+(\.?[0-9]*)?\%." data-initial="P" data-ident="data.PERCENT" href="./data-types/data.PERCENT.html">data.PERCENT</a><a class="overviewLink datatype" title="Positive decimal number between 0 and 100, followed by a percent sign &#34;%&#34;." data-initial="P" data-ident="data.PERCENT.LIMITED" href="./data-types/data.PERCENT.LIMITED.html">data.PERCENT.LIMITED</a><a class="overviewLink datatype" title="Positive decimal number between -100 and 100, followed by a percent sign &#34;%&#34;." data-initial="P" data-ident="data.PERCENT.LIMITED.SIGNED" href="./data-types/data.PERCENT.LIMITED.SIGNED.html">data.PERCENT.LIMITED.SIGNED</a><a class="overviewLink datatype" title="Page scale factor; a percentage of the values in page.height and page.width." data-initial="P" data-ident="data.PGSCALE" href="./data-types/data.PGSCALE.html">data.PGSCALE</a><a class="overviewLink datatype" title="Pclass (pitch class) attribute values." data-initial="P" data-ident="data.PITCHCLASS" href="./data-types/data.PITCHCLASS.html">data.PITCHCLASS</a><a class="overviewLink datatype" title="The pitch names (gamut) used within a single octave. The default values conform to Acoustical Society of America representation." data-initial="P" data-ident="data.PITCHNAME" href="./data-types/data.PITCHNAME.html">data.PITCHNAME</a><a class="overviewLink datatype" title="Gestural pitch names need an additional value for when the notated pitch is not to be sounded." data-initial="P" data-ident="data.PITCHNAME.GES" href="./data-types/data.PITCHNAME.GES.html">data.PITCHNAME.GES</a><a class="overviewLink datatype" title="Pnum (pitch number, e.g. MIDI) attribute values." data-initial="P" data-ident="data.PITCHNUMBER" href="./data-types/data.PITCHNUMBER.html">data.PITCHNUMBER</a><a class="overviewLink datatype" title="Location information." data-initial="P" data-ident="data.PLACEMENT" href="./data-types/data.PLACEMENT.html">data.PLACEMENT</a><a class="overviewLink datatype" title="Semibreve-minim relationship values." data-initial="P" data-ident="data.PROLATIO" href="./data-types/data.PROLATIO.html">data.PROLATIO</a></div>
+                  </div>
+                  <div id="letterFacet_R" class="letter facet overview">
+                     <div class="label">R</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="A ratio, i.e., [0-9]+(\.?[0-9]*)?:[0-9]+(\.?[0-9]*)? For example, &#34;40:7.2319&#34;." data-initial="R" data-ident="data.RATIO" href="./data-types/data.RATIO.html">data.RATIO</a><a class="overviewLink datatype" title="General-purpose relationships" data-initial="R" data-ident="data.RELATIONSHIP" href="./data-types/data.RELATIONSHIP.html">data.RELATIONSHIP</a><a class="overviewLink datatype" title="Rotation." data-initial="R" data-ident="data.ROTATION" href="./data-types/data.ROTATION.html">data.ROTATION</a><a class="overviewLink datatype" title="Rotation term." data-initial="R" data-ident="data.ROTATIONDIRECTION" href="./data-types/data.ROTATIONDIRECTION.html">data.ROTATIONDIRECTION</a></div>
+                  </div>
+                  <div id="letterFacet_S" class="letter facet overview">
+                     <div class="label">S</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Scale degree values." data-initial="S" data-ident="data.SCALEDEGREE" href="./data-types/data.SCALEDEGREE.html">data.SCALEDEGREE</a><a class="overviewLink datatype" title="The number of slashes to be rendered for tremolandi." data-initial="S" data-ident="data.SLASH" href="./data-types/data.SLASH.html">data.SLASH</a><a class="overviewLink datatype" title="i=initial, m=medial, t=terminal. Number is used to match endpoints of the slur when slurs are nested or overlap." data-initial="S" data-ident="data.SLUR" href="./data-types/data.SLUR.html">data.SLUR</a><a class="overviewLink datatype" title="Items that may be printed above, below, or between staves." data-initial="S" data-ident="data.STAFFITEM" href="./data-types/data.STAFFITEM.html">data.STAFFITEM</a><a class="overviewLink datatype" title="Items in all repertoires that may be printed near a staff." data-initial="S" data-ident="data.STAFFITEM.basic" href="./data-types/data.STAFFITEM.basic.html">data.STAFFITEM.basic</a><a class="overviewLink datatype" title="Items in the CMN repertoire that may be printed near a staff." data-initial="S" data-ident="data.STAFFITEM.cmn" href="./data-types/data.STAFFITEM.cmn.html">data.STAFFITEM.cmn</a><a class="overviewLink datatype" title="Items in the Mensural repertoire that may be printed near a staff." data-initial="S" data-ident="data.STAFFITEM.mensural" href="./data-types/data.STAFFITEM.mensural.html">data.STAFFITEM.mensural</a><a class="overviewLink datatype" title="Items in the Neume repertoire that may be printed near a staff." data-initial="S" data-ident="data.STAFFITEM.neumes" href="./data-types/data.STAFFITEM.neumes.html">data.STAFFITEM.neumes</a><a class="overviewLink datatype" title="Staff location. The value '0' indicates the bottom line of the current staff; positive values are used for positions above the bottom line and negative values for the positions below. For example, in treble clef, 1 = F4, 2 = G4, 3 = A4, etc. and -1 = D4, -2 = C4, and so on." data-initial="S" data-ident="data.STAFFLOC" href="./data-types/data.STAFFLOC.html">data.STAFFLOC</a><a class="overviewLink datatype" title="Location of musical material relative to a staff." data-initial="S" data-ident="data.STAFFREL" href="./data-types/data.STAFFREL.html">data.STAFFREL</a><a class="overviewLink datatype" title="Location of symbol relative to a staff." data-initial="S" data-ident="data.STAFFREL.basic" href="./data-types/data.STAFFREL.basic.html">data.STAFFREL.basic</a><a class="overviewLink datatype" title="Location of symbol relative to a staff." data-initial="S" data-ident="data.STAFFREL.extended" href="./data-types/data.STAFFREL.extended.html">data.STAFFREL.extended</a><a class="overviewLink datatype" title="Stem direction." data-initial="S" data-ident="data.STEMDIRECTION" href="./data-types/data.STEMDIRECTION.html">data.STEMDIRECTION</a><a class="overviewLink datatype" title="Common stem directions." data-initial="S" data-ident="data.STEMDIRECTION.basic" href="./data-types/data.STEMDIRECTION.basic.html">data.STEMDIRECTION.basic</a><a class="overviewLink datatype" title="Additional stem directions." data-initial="S" data-ident="data.STEMDIRECTION.extended" href="./data-types/data.STEMDIRECTION.extended.html">data.STEMDIRECTION.extended</a><a class="overviewLink datatype" title="Form of the stem attached to the note." data-initial="S" data-ident="data.STEMFORM.mensural" href="./data-types/data.STEMFORM.mensural.html">data.STEMFORM.mensural</a><a class="overviewLink datatype" title="Stem modification." data-initial="S" data-ident="data.STEMMODIFIER" href="./data-types/data.STEMMODIFIER.html">data.STEMMODIFIER</a><a class="overviewLink datatype" title="Position of a note's stem relative to the head of the note." data-initial="S" data-ident="data.STEMPOSITION" href="./data-types/data.STEMPOSITION.html">data.STEMPOSITION</a><a class="overviewLink datatype" title="In string tablature, the number of the string to be played, i.e., [1-9]+." data-initial="S" data-ident="data.STRINGNUMBER" href="./data-types/data.STRINGNUMBER.html">data.STRINGNUMBER</a></div>
+                  </div>
+                  <div id="letterFacet_T" class="letter facet overview">
+                     <div class="label">T</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Temperament or tuning system." data-initial="T" data-ident="data.TEMPERAMENT" href="./data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a><a class="overviewLink datatype" title="Beats (meter signature denominator) per minute, e.g. 120." data-initial="T" data-ident="data.TEMPOVALUE" href="./data-types/data.TEMPOVALUE.html">data.TEMPOVALUE</a><a class="overviewLink datatype" title="Breve-semibreve relationship values." data-initial="T" data-ident="data.TEMPUS" href="./data-types/data.TEMPUS.html">data.TEMPUS</a><a class="overviewLink datatype" title="Text rendition values." data-initial="T" data-ident="data.TEXTRENDITION" href="./data-types/data.TEXTRENDITION.html">data.TEXTRENDITION</a><a class="overviewLink datatype" title="Closed list of text rendition values." data-initial="T" data-ident="data.TEXTRENDITIONLIST" href="./data-types/data.TEXTRENDITIONLIST.html">data.TEXTRENDITIONLIST</a><a class="overviewLink datatype" title="Parameterized text rendition values." data-initial="T" data-ident="data.TEXTRENDITIONPAR" href="./data-types/data.TEXTRENDITIONPAR.html">data.TEXTRENDITIONPAR</a><a class="overviewLink datatype" title="Tie attribute values: initial, medial, terminal." data-initial="T" data-ident="data.TIE" href="./data-types/data.TIE.html">data.TIE</a><a class="overviewLink datatype" title="A positive or negative offset from the value given in the tstamp attribute in terms of musical time, i.e., beats[.fractional beat part]." data-initial="T" data-ident="data.TSTAMPOFFSET" href="./data-types/data.TSTAMPOFFSET.html">data.TSTAMPOFFSET</a><a class="overviewLink datatype" title="Tuplet attribute values: initial, medial, terminal." data-initial="T" data-ident="data.TUPLET" href="./data-types/data.TUPLET.html">data.TUPLET</a></div>
+                  </div>
+                  <div id="letterFacet_U" class="letter facet overview">
+                     <div class="label">U</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Basic, i.e., single, uninterrupted, neume forms." data-initial="U" data-ident="data.UNEUMEFORM" href="./data-types/data.UNEUMEFORM.html">data.UNEUMEFORM</a><a class="overviewLink datatype" title="Basic, i.e., single, uninterrupted, neume names." data-initial="U" data-ident="data.UNEUMENAME" href="./data-types/data.UNEUMENAME.html">data.UNEUMENAME</a><a class="overviewLink datatype" title="A Uniform Resource Identifier, see [RFC2396]." data-initial="U" data-ident="data.URI" href="./data-types/data.URI.html">data.URI</a></div>
+                  </div>
+                  <div id="letterFacet_V" class="letter facet overview">
+                     <div class="label">V</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="Data values for attributes that capture vertical alignment." data-initial="V" data-ident="data.VERTICALALIGNMENT" href="./data-types/data.VERTICALALIGNMENT.html">data.VERTICALALIGNMENT</a></div>
+                  </div>
+                  <div id="letterFacet_W" class="letter facet overview">
+                     <div class="label">W</div>
+                     <div class="statement compact list"><a class="overviewLink datatype" title="A single &#34;word&#34; that contains only letters, digits, punctuation characters, or symbols. It cannot contain whitespace." data-initial="W" data-ident="data.WORD" href="./data-types/data.WORD.html">data.WORD</a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                $(document).ready(function() {
+                                    $('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>
