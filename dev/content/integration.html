@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?><html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-04"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <header class="navbar">
+         <div class="navbar-section"><a class="navbar-brand" href="http://music-encoding.org"><img src="http://music-encoding.org/pix/meilogo-inverted.png" alt="MEI logo"></img></a><div class="hide-lg">
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/about" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">About</a></div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">Community<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/projects-users.html" class="btn btn-link text-left menu-link">Projects / Users</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/news-events.html" class="btn btn-link text-left menu-link">News / Events</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html" class="btn btn-link text-left menu-link">Community Contacts</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html" class="btn btn-link text-left menu-link">Interest Groups</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/technical-team.html" class="btn btn-link text-left menu-link">Technical Team</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-board.html" class="btn btn-link text-left menu-link">MEI Board</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html" class="btn btn-link text-left menu-link">MEI By-laws</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">Conference<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/past.html" class="btn btn-link text-left menu-link">Past Conferences</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/proceedings.html" class="btn btn-link text-left menu-link">Proceedings</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html" class="btn btn-link text-left menu-link">Hosting Guidelines</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">Resources<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="5">Documentation<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/archive" class="btn btn-link dropdown-toggle top-menu-link" tabindex="6">Archive</a></div>
+            </div>
+         </div>
+         <div class="navbar-section" id="socialLinks"><a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding"><img src="http://music-encoding.org/pix/twitter.png" alt="Twitter" class="logo"></img></a><a class="githubLink" target="_blank" href="https://github.com/music-encoding"><img src="http://music-encoding.org/pix/github.png" alt="GitHub" class="logo"></img></a><a class="slackLink" target="_blank" href="https://music-encoding.slack.com/"><img src="http://music-encoding.org/pix/slack.png" alt="Slack" class="logo"></img></a></div>
+         <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+            <div class="accordion"><input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-toggle"><i class="icon icon-menu"></i></label><div class="accordion-body">
+                  <ul class="menu menu-nav">
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/about">About</a></label></div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Community</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/projects-users.html">Projects / Users</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/news-events.html">News / Events</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html">Community Contacts</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html">Interest Groups</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/technical-team.html">Technical Team</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-board.html">MEI Board</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html">MEI By-laws</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Conference</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/past.html">Past Conferences</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/proceedings.html">Proceedings</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html">Hosting Guidelines</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Resources</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Documentation</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/archive">Archive</a></label></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="div1">
+                  
+                  <h1 id="integration"><span class="headingNumber">14</span><span class="head">Integrating MEI with other Standards and Formats</span></h1>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="tei"><span class="headingNumber">14.1</span><span class="head">TEI</span></h2>
+                     
+                     <p>This chapter will explain the combined use of MEI and TEI.</p>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="iiif"><span class="headingNumber">14.2</span><span class="head">IIIF</span></h2>
+                     
+                     <p>This chapter will explain how to use MEI in an IIIF-compatible way.</p>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="smufl"><span class="headingNumber">14.3</span><span class="head">SMuFL</span></h2>
+                     
+                     <p>This section describes how to use MEI with the Standard Music Font Layout (SMuFL,
+                        <a class="link_ref link_external" href="https://www.smufl.org/">https://www.smufl.org/</a>) specification.</p>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="svg"><span class="headingNumber">14.4</span><span class="head">SVG</span></h2>
+                     
+                     <p>This chapter explains how and where to embed SVG in MEI.</p>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="midiGuidelines"><span class="headingNumber">14.5</span><span class="head">Musical Instrument Digital Interface (MIDI)</span></h2>
+                     
+                     <p>This chapter describes the MIDI encoding functionality present in MEI. The purpose
+                        of this module is to allow for integrating MIDI data into MEI-encoded notation, to
+                        both aid software in translating MEI to MIDI, and to permit the capture of information
+                        in files that have been translated from MIDI to MEI. The MIDI model in MEI is similar
+                        to that of Mup, and the user is directed to the <a class="link_ref link_external" href="http://www.arkkra.com/doc/uguide.ps">Mup User Guide</a> for further reading.</p>
+                     
+                     <p>The MIDI module defines certain generally-accepted MIDI units that may be used outside
+                        of a MIDI context. For example, the <span class="att">dur.ppq</span> attribute accepts MIDI <em>ppq</em> (Pulses Per Quarter) as a valid measurement of duration. Similarly, the <span class="att">pnum</span> attribute allows MIDI note numbers for specifying a pitch value.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="midi.scoreDefppq"><span class="headingNumber">14.5.1</span><span class="head">PPQ in scoreDef and staffDef</span></h3>
+                        
+                        <p>To define the MIDI resolution of a score, the <span class="att">ppq</span> attribute may be used on the <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a> element. This value can be used to interpret the values found in the <span class="att">dur.ppq</span> attribute on elements in the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.gestural.html">att.duration.gestural</a> class.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;scoreDef <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">meter.count=</span><span class="attributevalue">"4"</span> <span class="attribute">meter.sym=</span><span class="attributevalue">"common"</span> <span class="attribute">meter.unit=</span><span class="attributevalue">"4"</span> <span class="attribute">ppq=</span><span class="attributevalue">"48"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffGrp&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P1"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P2"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P3"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staffGrp&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/scoreDef&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- snip --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">dur.ges=</span><span class="attributevalue">"24p"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"up"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.d1e40"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- 8th note --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;rest <span class="attribute">dur=</span><span class="attributevalue">"32"</span> <span class="attribute">dur.ges=</span><span class="attributevalue">"6p"</span> <span class="attribute">vo=</span><span class="attributevalue">"4"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.d1e58"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- 32nd note --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- snip --&gt;</span></div>
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 405. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The <span class="att">ppq</span> attribute is also available on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element in order to aid in the conversion to MEI from other representations that
+                           allow a different time base for each staff. However, these independent values for
+                           <span class="att">ppq</span> are only interpretable in terms of a common time base. Therefore, the <span class="att">ppq</span> attribute is required on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a> when the values of <span class="att">ppq</span> on the staff definitions differ. In the following example, the values of the <span class="att">ppq</span> attributes on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> elements are all factors of the value of <span class="att">ppq</span> attached to <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a>.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;scoreDef <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">meter.count=</span><span class="attributevalue">"4"</span> <span class="attribute">meter.sym=</span><span class="attributevalue">"common"</span> <span class="attribute">meter.unit=</span><span class="attributevalue">"4"</span> <span class="attribute">ppq=</span><span class="attributevalue">"48"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffGrp&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">ppq=</span><span class="attributevalue">"2"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P1"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">ppq=</span><span class="attributevalue">"16"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P2"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">ppq=</span><span class="attributevalue">"24"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P3"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staffGrp&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/scoreDef&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 406. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="midiInstruments"><span class="headingNumber">14.5.2</span><span class="head">Recording General MIDI Instrumentation</span></h3>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">instrDef</a> element can be used to record MIDI instrument names or numbers using the <span class="att">midi.instrname</span> and <span class="att">midi.instrnum</span> attributes. The <span class="att">midi.instrname</span> attribute must contain an instrument name from the list provided by the data.MIDINAMES
+                           data type. By default, data.MIDINAMES contains General MIDI Instrument designations.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;scoreDef <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">meter.count=</span><span class="attributevalue">"4"</span> <span class="attribute">meter.sym=</span><span class="attributevalue">"common"</span> <span class="attribute">meter.unit=</span><span class="attributevalue">"4"</span> <span class="attribute">ppq=</span><span class="attributevalue">"48"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffGrp&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P5"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrname=</span><span class="attributevalue">"Violin"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P6"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrname=</span><span class="attributevalue">"Violin"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"3"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"C"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P7"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrname=</span><span class="attributevalue">"Viola"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P8"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrname=</span><span class="attributevalue">"Cello"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staffGrp&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/scoreDef&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 407. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The <span class="att">midi.instrnum</span> is provided for those cases when an instrument number is needed. It must contain
+                           valid MIDI values; that is, 0-127. In these cases, a General MIDI Instrument name
+                           is redundant.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;scoreDef <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span> <span class="attribute">meter.count=</span><span class="attributevalue">"4"</span> <span class="attribute">meter.sym=</span><span class="attributevalue">"common"</span> <span class="attribute">meter.unit=</span><span class="attributevalue">"4"</span> <span class="attribute">ppq=</span><span class="attributevalue">"48"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffGrp&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P5"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrnum=</span><span class="attributevalue">"41"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P6"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrnum=</span><span class="attributevalue">"41"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"3"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"C"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P7"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrnum=</span><span class="attributevalue">"42"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"midi.P8"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrnum=</span><span class="attributevalue">"43"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staffGrp&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/scoreDef&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 408. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="midiData"><span class="headingNumber">14.5.3</span><span class="head">Recording MIDI Event Data</span></h3>
+                        
+                        <p>MIDI messages are encapsulated in the <a class="link_odd link_odd_elementSpec" href="../elements/midi.html">midi</a> element, which is typically used in contexts like <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> and <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>. In earlier versions of MEI, the <a class="link_odd link_odd_elementSpec" href="../elements/noteOn.html">noteOn</a> and <a class="link_odd link_odd_elementSpec" href="../elements/noteOff.html">noteOff</a> elements were used to record MIDI note on/off events. The use of these elements is
+                           now discouraged in favor of using the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element directly. MIDI duration should be recorded using the <span class="att">dur.ges</span> attribute, and MIDI pitch information should be recorded using the <span class="att">pnum</span> attribute.</p>
+                        
+                        <p>MIDI control changes (<a class="link_odd link_odd_elementSpec" href="../elements/cc.html">cc</a>) are encoded using the <span class="att">num</span> and <span class="att">val</span> attributes. Control change numbers are specified in the General MIDI documentation.
+                           In the example below, the <a class="link_odd link_odd_elementSpec" href="../elements/cc.html">cc</a> elements encode increasing controller event 7 (volume) values, or in musical terms,
+                           a crescendo. Other MIDI event messages follow this same pattern, using the <span class="att">num</span> and <span class="att">val</span> attributes to record the raw MIDI data.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur.ges=</span><span class="attributevalue">"8"</span> <span class="attribute">pnum=</span><span class="attributevalue">"45"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur.ges=</span><span class="attributevalue">"8"</span> <span class="attribute">pnum=</span><span class="attributevalue">"42"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur.ges=</span><span class="attributevalue">"8"</span> <span class="attribute">pnum=</span><span class="attributevalue">"43"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur.ges=</span><span class="attributevalue">"8"</span> <span class="attribute">pnum=</span><span class="attributevalue">"44"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;midi <span class="attribute">layer=</span><span class="attributevalue">"1"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">tstamp=</span><span class="attributevalue">".5"</span> <span class="attribute">val=</span><span class="attributevalue">"50"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1.5"</span> <span class="attribute">val=</span><span class="attributevalue">"55"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"2"</span> <span class="attribute">val=</span><span class="attributevalue">"60"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"2.5"</span> <span class="attribute">val=</span><span class="attributevalue">"65"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/midi&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 409. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>In the preceding example, each control change is associated with a time stamp. The
+                           <span class="att">tstamp</span> attribute is required in order to indicate when the MIDI event should take place.
+                           It is often necessary to indicate a time stamp slightly earlier than the affected
+                           notes to compensate for MIDI delay.</p>
+                        
+                        <p>For better legibility and error checking, the <a class="link_odd link_odd_elementSpec" href="../elements/midi.html">midi</a> element may be used, as in the following example, to group MIDI parameter changes.
+                           Even so, the <span class="att">tstamp</span> attribute is required on all parameters in order to associate them with their point
+                           of actuation:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;midi <span class="attribute">layer=</span><span class="attributevalue">"1"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">tstamp=</span><span class="attributevalue">".5"</span> <span class="attribute">val=</span><span class="attributevalue">"50"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"64"</span> <span class="attribute">tstamp=</span><span class="attributevalue">".5"</span> <span class="attribute">val=</span><span class="attributevalue">"64"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/midi&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 410. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="midiNonCMN"><span class="headingNumber">14.5.4</span><span class="head">MIDI in Mensural and Neume Notation</span></h3>
+                        
+                        <p>In mensural, neume, and other historical or non-Western repertoires, there is often
+                           no measure-based time stamp with which to associate MIDI controller data. Therefore,
+                           in these notations MIDI controller data is assumed to be associated with the event
+                           that immediately follows in the same layer. Thus, a crescendo in mensural notation
+                           may be encoded like so:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staff&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;layer&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;midi&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">val=</span><span class="attributevalue">"50"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/midi&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"fusa"</span> <span class="attribute">dur.ges=</span><span class="attributevalue">"8p"</span> <span class="attribute">pnum=</span><span class="attributevalue">"42"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;midi&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">val=</span><span class="attributevalue">"55"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/midi&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"fusa"</span> <span class="attribute">dur.ges=</span><span class="attributevalue">"8p"</span> <span class="attribute">pnum=</span><span class="attributevalue">"43"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;midi&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">val=</span><span class="attributevalue">"60"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/midi&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"fusa"</span> <span class="attribute">dur.ges=</span><span class="attributevalue">"8p"</span> <span class="attribute">pnum=</span><span class="attributevalue">"44"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;midi&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;cc <span class="attribute">num=</span><span class="attributevalue">"7"</span> <span class="attribute">val=</span><span class="attributevalue">"65"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/midi&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"fusa"</span> <span class="attribute">dur.ges=</span><span class="attributevalue">"8p"</span> <span class="attribute">pnum=</span><span class="attributevalue">"45"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/layer&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staff&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 411. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     </div>
+                  </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+               <p class="sectionToc sticky"><a class="level-2" href="#tei">14.1 TEI</a><a class="level-2" href="#iiif">14.2 IIIF</a><a class="level-2" href="#smufl">14.3 SMuFL</a><a class="level-2" href="#svg">14.4 SVG</a><a class="level-2" href="#midiGuidelines">14.5 Musical Instrument Digital Interface (MIDI)</a><a class="level-3" href="#midi.scoreDefppq">14.5.1 PPQ in scoreDef and staffDef</a><a class="level-3" href="#midiInstruments">14.5.2 Recording General MIDI Instrumentation</a><a class="level-3" href="#midiData">14.5.3 Recording MIDI Event Data</a><a class="level-3" href="#midiNonCMN">14.5.4 MIDI in Mensural and Neume Notation</a></p>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                     <p class="sectionToc sticky"><a class="level-2" href="#tei">14.1 TEI</a><a class="level-2" href="#iiif">14.2 IIIF</a><a class="level-2" href="#smufl">14.3 SMuFL</a><a class="level-2" href="#svg">14.4 SVG</a><a class="level-2" href="#midiGuidelines">14.5 Musical Instrument Digital Interface (MIDI)</a><a class="level-3" href="#midi.scoreDefppq">14.5.1 PPQ in scoreDef and staffDef</a><a class="level-3" href="#midiInstruments">14.5.2 Recording General MIDI Instrumentation</a><a class="level-3" href="#midiData">14.5.3 Recording MIDI Event Data</a><a class="level-3" href="#midiNonCMN">14.5.4 MIDI in Mensural and Neume Notation</a></p>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                $(document).ready(function() {
+                                    $('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>

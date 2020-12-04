@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?><html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-04"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <header class="navbar">
+         <div class="navbar-section"><a class="navbar-brand" href="http://music-encoding.org"><img src="http://music-encoding.org/pix/meilogo-inverted.png" alt="MEI logo"></img></a><div class="hide-lg">
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/about" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">About</a></div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">Community<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/projects-users.html" class="btn btn-link text-left menu-link">Projects / Users</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/news-events.html" class="btn btn-link text-left menu-link">News / Events</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html" class="btn btn-link text-left menu-link">Community Contacts</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html" class="btn btn-link text-left menu-link">Interest Groups</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/technical-team.html" class="btn btn-link text-left menu-link">Technical Team</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-board.html" class="btn btn-link text-left menu-link">MEI Board</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html" class="btn btn-link text-left menu-link">MEI By-laws</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">Conference<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/past.html" class="btn btn-link text-left menu-link">Past Conferences</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/proceedings.html" class="btn btn-link text-left menu-link">Proceedings</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html" class="btn btn-link text-left menu-link">Hosting Guidelines</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">Resources<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="5">Documentation<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/archive" class="btn btn-link dropdown-toggle top-menu-link" tabindex="6">Archive</a></div>
+            </div>
+         </div>
+         <div class="navbar-section" id="socialLinks"><a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding"><img src="http://music-encoding.org/pix/twitter.png" alt="Twitter" class="logo"></img></a><a class="githubLink" target="_blank" href="https://github.com/music-encoding"><img src="http://music-encoding.org/pix/github.png" alt="GitHub" class="logo"></img></a><a class="slackLink" target="_blank" href="https://music-encoding.slack.com/"><img src="http://music-encoding.org/pix/slack.png" alt="Slack" class="logo"></img></a></div>
+         <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+            <div class="accordion"><input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-toggle"><i class="icon icon-menu"></i></label><div class="accordion-body">
+                  <ul class="menu menu-nav">
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/about">About</a></label></div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Community</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/projects-users.html">Projects / Users</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/news-events.html">News / Events</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html">Community Contacts</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html">Interest Groups</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/technical-team.html">Technical Team</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-board.html">MEI Board</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html">MEI By-laws</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Conference</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/past.html">Past Conferences</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/proceedings.html">Proceedings</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html">Hosting Guidelines</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Resources</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Documentation</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/archive">Archive</a></label></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="specPage moduleSpec">
+                  <h2 id="MEI.analytical">MEI.analytical</h2>
+                  <div class="specs">
+                     <div class="desc">Analytical component declarations.</div>
+                     <div class="contentListBox">
+                        <h3>Elements in MEI.analytical</h3>
+                        <div class="contents"><span class="placeholder">– no elements defined in MEI.analytical – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Model Classes in MEI.analytical</h3>
+                        <div class="contents"><span class="placeholder">– no model classes defined in MEI.analytical – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Macro Groups in MEI.analytical</h3>
+                        <div class="contents"><span class="placeholder">– no macro groups defined in MEI.analytical – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Attribute Classes in MEI.analytical</h3>
+                        <div class="contents"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.accid.anl.html" title="Analytical domain attributes.">att.accid.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ambNote.anl.html" title="Analytical domain attributes.">att.ambNote.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.annot.anl.html" title="Analytical domain attributes.">att.annot.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.arpeg.anl.html" title="Analytical domain attributes.">att.arpeg.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.artic.anl.html" title="Analytical domain attributes.">att.artic.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.attacca.anl.html" title="Analytical domain attributes.">att.attacca.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.barLine.anl.html" title="Analytical domain attributes.">att.barLine.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beam.anl.html" title="Analytical domain attributes.">att.beam.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beamSpan.anl.html" title="Analytical domain attributes.">att.beamSpan.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beatRpt.anl.html" title="Analytical domain attributes.">att.beatRpt.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bend.anl.html" title="Analytical domain attributes.">att.bend.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bracketSpan.anl.html" title="Analytical domain attributes.">att.bracketSpan.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.breath.anl.html" title="Analytical domain attributes.">att.breath.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bTrem.anl.html" title="Analytical domain attributes.">att.bTrem.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.caesura.anl.html" title="Analytical domain attributes.">att.caesura.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chord.anl.html" title="Analytical domain attributes.">att.chord.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chordDef.anl.html" title="Analytical domain attributes.">att.chordDef.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chordMember.anl.html" title="Analytical domain attributes.">att.chordMember.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.clef.anl.html" title="Analytical domain attributes.">att.clef.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.clefGrp.anl.html" title="Analytical domain attributes.">att.clefGrp.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.cpMark.anl.html" title="Analytical domain attributes.">att.cpMark.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.curve.anl.html" title="Analytical domain attributes.">att.curve.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.custos.anl.html" title="Analytical domain attributes.">att.custos.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mdiv.anl.html" title="Analytical domain attributes.">att.mdiv.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dir.anl.html" title="Analytical domain attributes.">att.dir.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dot.anl.html" title="Analytical domain attributes.">att.dot.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dynam.anl.html" title="Analytical domain attributes.">att.dynam.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ending.anl.html" title="Analytical domain attributes.">att.ending.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.episema.anl.html" title="Analytical domain attributes.">att.episema.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.f.anl.html" title="Analytical domain attributes.">att.f.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fermata.anl.html" title="Analytical domain attributes.">att.fermata.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fing.anl.html" title="Analytical domain attributes.">att.fing.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fingGrp.anl.html" title="Analytical domain attributes.">att.fingGrp.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fTrem.anl.html" title="Analytical domain attributes.">att.fTrem.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.gliss.anl.html" title="Analytical domain attributes.">att.gliss.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.grpSym.anl.html" title="Analytical domain attributes.">att.grpSym.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.hairpin.anl.html" title="Analytical domain attributes.">att.hairpin.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.halfmRpt.anl.html" title="Analytical domain attributes.">att.halfmRpt.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.anl.html" title="Analytical domain attributes.">att.harm.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harmonicFunction.html" title="Attributes describing the harmonic function of a single pitch.">att.harmonicFunction</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harpPedal.anl.html" title="Analytical domain attributes.">att.harpPedal.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.hispanTick.anl.html" title="Analytical domain attributes.">att.hispanTick.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.instrDef.anl.html" title="Analytical domain attributes.">att.instrDef.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html" title="Attributes that describe harmonic intervals.">att.intervalHarmonic</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalMelodic.html" title="Attributes that provide for description of intervallic content.">att.intervalMelodic</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervallicDesc.html" title="Attributes that provide for description of intervallic content.">att.intervallicDesc</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keyAccid.anl.html" title="Analytical domain attributes.">att.keyAccid.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySig.anl.html" title="Analytical domain attributes.">att.keySig.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySigDefault.anl.html" title="Used by staffDef and scoreDef to provide default values for attributes in the analytical domain that are related to key signatures.">att.keySigDefault.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.anl.html" title="Analytical domain attributes.">att.layer.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.layerDef.anl.html" title="Analytical domain attributes.">att.layerDef.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ligature.anl.html" title="Analytical domain attributes.">att.ligature.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.line.anl.html" title="Analytical domain attributes.">att.line.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.liquescent.anl.html" title="Analytical domain attributes.">att.liquescent.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.lv.anl.html" title="Analytical domain attributes.">att.lv.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.lyrics.anl.html" title="Analytical domain attributes.">att.lyrics.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.measure.anl.html" title="Analytical domain attributes.">att.measure.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.melodicFunction.html" title="Attributes describing melodic function.">att.melodicFunction</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensur.anl.html" title="Analytical domain attributes.">att.mensur.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSig.anl.html" title="Analytical domain attributes.">att.meterSig.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSigGrp.anl.html" title="Analytical domain attributes.">att.meterSigGrp.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.midi.anl.html" title="Analytical domain attributes.">att.midi.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mordent.anl.html" title="Analytical domain attributes.">att.mordent.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRest.anl.html" title="Analytical domain attributes in the CMN repertoire.">att.mRest.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRpt.anl.html" title="Analytical domain attributes.">att.mRpt.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRpt2.anl.html" title="Analytical domain attributes.">att.mRpt2.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mSpace.anl.html" title="Analytical domain attributes in the CMN repertoire. Use the n attribute to explicitly encode this measure's position in a string of measures containing only mRest elements.">att.mSpace.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.multiRest.anl.html" title="Analytical domain attributes.">att.multiRest.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.multiRpt.anl.html" title="Analytical domain attributes.">att.multiRpt.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.nc.anl.html" title="Analytical domain attributes.">att.nc.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncGrp.anl.html" title="Analytical domain attributes.">att.ncGrp.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.neume.anl.html" title="Analytical domain attributes.">att.neume.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.note.anl.html" title="Analytical domain attributes.">att.note.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.octave.anl.html" title="Analytical domain attributes.">att.octave.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ornam.anl.html" title="Analytical domain attributes.">att.ornam.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.oriscus.anl.html" title="Analytical domain attributes.">att.oriscus.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ossia.anl.html" title="Analytical domain attributes.">att.ossia.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pad.anl.html" title="Analytical domain attributes.">att.pad.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.part.anl.html" title="Analytical domain attributes.">att.part.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.parts.anl.html" title="Analytical domain attributes.">att.parts.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pb.anl.html" title="Analytical domain attributes.">att.pb.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pedal.anl.html" title="Analytical domain attributes.">att.pedal.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.phrase.anl.html" title="Analytical domain attributes.">att.phrase.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pitchClass.html" title="Attributes that describe pitch class.">att.pitchClass</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.proport.anl.html" title="Analytical domain attributes.">att.proport.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.quilisma.anl.html" title="Analytical domain attributes.">att.quilisma.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.rdg.anl.html" title="Analytical domain attributes.">att.rdg.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.refrain.anl.html" title="Analytical domain attributes.">att.refrain.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.reh.anl.html" title="Analytical domain attributes.">att.reh.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.rest.anl.html" title="Analytical domain attributes.">att.rest.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.sb.anl.html" title="Analytical domain attributes.">att.sb.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.score.anl.html" title="Analytical domain attributes.">att.score.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.anl.html" title="Analytical domain attributes.">att.scoreDef.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.section.anl.html" title="Analytical domain attributes.">att.section.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.anl.html" title="Analytical domain attributes.">att.slur.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.signifLet.anl.html" title="Analytical domain attributes.">att.signifLet.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.solfa.html" title="Attributes that specify pitch using sol-fa.">att.solfa</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.sp.anl.html" title="Analytical domain attributes.">att.sp.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.space.anl.html" title="Analytical domain attributes.">att.space.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staff.anl.html" title="Analytical domain attributes.">att.staff.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.anl.html" title="Analytical domain attributes.">att.staffDef.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffGrp.anl.html" title="Analytical domain attributes.">att.staffGrp.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stageDir.anl.html" title="Analytical domain attributes.">att.stageDir.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.strophicus.anl.html" title="Analytical domain attributes.">att.strophicus.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.syl.anl.html" title="Analytical domain attributes.">att.syl.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.syllable.anl.html" title="Analytical domain attributes.">att.syllable.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.symbol.anl.html" title="Analytical domain attributes.">att.symbol.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tempo.anl.html" title="Analytical domain attributes.">att.tempo.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tie.anl.html" title="Analytical domain attributes.">att.tie.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.trill.anl.html" title="Analytical domain attributes.">att.trill.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuplet.anl.html" title="Analytical domain attributes.">att.tuplet.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tupletSpan.anl.html" title="Analytical domain attributes.">att.tupletSpan.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.turn.anl.html" title="Analytical domain attributes.">att.turn.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.verse.anl.html" title="Analytical domain attributes.">att.verse.anl</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.volta.anl.html" title="Analytical domain attributes.">att.volta.anl</a></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Data Typess in MEI.analytical</h3>
+                        <div class="contents"><span class="placeholder">– no data types defined in MEI.analytical – </span></div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                $(document).ready(function() {
+                                    $('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>

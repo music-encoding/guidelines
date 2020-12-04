@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?><html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-04"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <header class="navbar">
+         <div class="navbar-section"><a class="navbar-brand" href="http://music-encoding.org"><img src="http://music-encoding.org/pix/meilogo-inverted.png" alt="MEI logo"></img></a><div class="hide-lg">
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/about" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">About</a></div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">Community<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/projects-users.html" class="btn btn-link text-left menu-link">Projects / Users</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/news-events.html" class="btn btn-link text-left menu-link">News / Events</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html" class="btn btn-link text-left menu-link">Community Contacts</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html" class="btn btn-link text-left menu-link">Interest Groups</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/technical-team.html" class="btn btn-link text-left menu-link">Technical Team</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-board.html" class="btn btn-link text-left menu-link">MEI Board</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html" class="btn btn-link text-left menu-link">MEI By-laws</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">Conference<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/2021" class="btn btn-link text-left menu-link">MEC 2021</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/past.html" class="btn btn-link text-left menu-link">Past Conferences</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/proceedings.html" class="btn btn-link text-left menu-link">Proceedings</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html" class="btn btn-link text-left menu-link">Hosting Guidelines</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">Resources<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/background.html" class="btn btn-link text-left menu-link">Background</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/bibliography.html" class="btn btn-link text-left menu-link">Bibliography</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/schemas.html" class="btn btn-link text-left menu-link">Schemas and Namespace</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tools.html" class="btn btn-link text-left menu-link">Tools</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/tutorials.html" class="btn btn-link text-left menu-link">Tutorials</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="5">Documentation<i class="icon icon-caret"></i></a><ul class="menu">
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4" class="btn btn-link text-left menu-link">MEI 4 (latest release)</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev" class="btn btn-link text-left menu-link">Development version</a></li>
+                     <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3" class="btn btn-link text-left menu-link">MEI 3</a></li>
+                  </ul>
+               </div>
+               <div class="dropdown dropdownCustomMenuToggle"><a href="https://music-encoding.org/archive" class="btn btn-link dropdown-toggle top-menu-link" tabindex="6">Archive</a></div>
+            </div>
+         </div>
+         <div class="navbar-section" id="socialLinks"><a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding"><img src="http://music-encoding.org/pix/twitter.png" alt="Twitter" class="logo"></img></a><a class="githubLink" target="_blank" href="https://github.com/music-encoding"><img src="http://music-encoding.org/pix/github.png" alt="GitHub" class="logo"></img></a><a class="slackLink" target="_blank" href="https://music-encoding.slack.com/"><img src="http://music-encoding.org/pix/slack.png" alt="Slack" class="logo"></img></a></div>
+         <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+            <div class="accordion"><input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-toggle"><i class="icon icon-menu"></i></label><div class="accordion-body">
+                  <ul class="menu menu-nav">
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/about">About</a></label></div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Community</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/projects-users.html">Projects / Users</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/news-events.html">News / Events</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/community-contacts.html">Community Contacts</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/interest-groups.html">Interest Groups</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/technical-team.html">Technical Team</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-board.html">MEI Board</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/mei-by-laws.html">MEI By-laws</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Conference</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/2021">MEC 2021</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/past.html">Past Conferences</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/proceedings.html">Proceedings</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/hosting-guidelines.html">Hosting Guidelines</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Resources</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/background.html">Background</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/bibliography.html">Bibliography</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/schemas.html">Schemas and Namespace</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tools.html">Tools</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/tutorials.html">Tutorials</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About">Documentation</label><div class="accordion-body">
+                              <ul class="menu menu-nav">
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v4">MEI 4 (latest release)</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/dev">Development version</a></li>
+                                 <li class="menu-item"><a href="https://music-encoding.org/guidelines/v3">MEI 3</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item">
+                        <div class="accordion menu"><input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""></input><label class="accordion-header c-hand" for="accordion-About"><a href="https://music-encoding.org/archive">Archive</a></label></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="specPage moduleSpec">
+                  <h2 id="MEI.visual">MEI.visual</h2>
+                  <div class="specs">
+                     <div class="desc">Visual component declarations.</div>
+                     <div class="contentListBox">
+                        <h3>Elements in MEI.visual</h3>
+                        <div class="contents"><span class="placeholder">– no elements defined in MEI.visual – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Model Classes in MEI.visual</h3>
+                        <div class="contents"><span class="placeholder">– no model classes defined in MEI.visual – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Macro Groups in MEI.visual</h3>
+                        <div class="contents"><span class="placeholder">– no macro groups defined in MEI.visual – </span></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Attribute Classes in MEI.visual</h3>
+                        <div class="contents"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.accid.vis.html" title="Visual domain attributes.">att.accid.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ambNote.vis.html" title="Visual domain attributes.">att.ambNote.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.annot.vis.html" title="Visual domain attributes.">att.annot.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.arpeg.vis.html" title="Visual domain attributes.">att.arpeg.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.artic.vis.html" title="Visual domain attributes.">att.artic.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.attacca.vis.html" title="Visual domain attributes.">att.attacca.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.barLine.vis.html" title="Visual domain attributes.">att.barLine.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beam.vis.html" title="Visual domain attributes.">att.beam.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beaming.vis.html" title="Used by layerDef, staffDef, and scoreDef to provide default values for attributes in the visual domain related to beaming.">att.beaming.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beamSpan.vis.html" title="Visual domain attributes.">att.beamSpan.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.beatRpt.vis.html" title="Visual domain attributes.">att.beatRpt.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bend.vis.html" title="Visual domain attributes. If the bulge or bezier attributes are present, the bend should be rendered as a curve. Otherwise, it should be rendered using lines. The ho and vo attributes describe the visual offset of the entire rendered bend. The endho, endvo and startho, startvo attribute pairs may be used to encode start and end points relative to their programmatic placement. For exact placement of the endpoints of the bend, use the x and y attributes.">att.bend.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bracketSpan.vis.html" title="Visual domain attributes.">att.bracketSpan.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.breath.vis.html" title="Visual domain attributes.">att.breath.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.bTrem.vis.html" title="Visual domain attributes.">att.bTrem.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.caesura.vis.html" title="Visual domain attributes.">att.caesura.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chord.vis.html" title="Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and tie.rend attributes here are syntactic sugar for these attributes on each of the chord's individual notes. The values here apply to all the notes in the chord. If some notes are slurred or tied while others aren't, then the individual note attributes must be used.">att.chord.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chordDef.vis.html" title="Visual domain attributes.">att.chordDef.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.chordMember.vis.html" title="Visual domain attributes.">att.chordMember.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.clef.vis.html" title="Visual domain attributes.">att.clef.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.cleffing.vis.html" title="Used by staffDef and scoreDef to provide default values for attributes in the visual domain related to clefs.">att.cleffing.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.clefGrp.vis.html" title="Visual domain attributes.">att.clefGrp.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.cpMark.vis.html" title="Visual domain attributes.">att.cpMark.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.curve.vis.html" title="Visual domain attributes.">att.curve.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.custos.vis.html" title="Visual domain attributes.">att.custos.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mdiv.vis.html" title="Visual domain attributes.">att.mdiv.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dir.vis.html" title="Visual domain attributes.">att.dir.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dot.vis.html" title="Visual domain attributes.">att.dot.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dynam.vis.html" title="Visual domain attributes.">att.dynam.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ending.vis.html" title="Visual domain attributes.">att.ending.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.episema.vis.html" title="Visual domain attributes.">att.episema.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.f.vis.html" title="Visual domain attributes.">att.f.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fermata.vis.html" title="Visual domain attributes.">att.fermata.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fing.vis.html" title="Visual domain attributes.">att.fing.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fingGrp.vis.html" title="Visual domain attributes.">att.fingGrp.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.fTrem.vis.html" title="Visual domain attributes.">att.fTrem.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.gliss.vis.html" title="Visual domain attributes.">att.gliss.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.grpSym.vis.html" title="Visual domain attributes.">att.grpSym.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.hairpin.vis.html" title="Visual domain attributes. The startho and startvo attributes record the horizontal and vertical offsets of the left end, endho and endvo record the horizontal and vertical offsets of the right end, and the opening attribute records the width of the opening in staff inter-line units. The x and y attributes give the absolute coordinates of the left end point, and x2 and y2 the right end point, of an imaginary line that defines the length of the hairpin and horizontally bifurcates it. The so-called &#34;pitch&#34; of hairpin may be controlled by use of the startho, endho, startvo, and endvo attributes, while the placement of the entire rendered mark may be controlled by use of the ho and vo attributes.">att.hairpin.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.halfmRpt.vis.html" title="Visual domain attributes.">att.halfmRpt.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.vis.html" title="Visual domain attributes.">att.harm.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harpPedal.vis.html" title="Visual domain attributes.">att.harpPedal.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.hispanTick.vis.html" title="Visual domain attributes.">att.hispanTick.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.instrDef.vis.html" title="Visual domain attributes.">att.instrDef.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keyAccid.vis.html" title="Visual domain attributes.">att.keyAccid.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySig.vis.html" title="Visual domain attributes.">att.keySig.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySigDefault.vis.html" title="Used by staffDef and scoreDef to provide default values for attributes in the visual domain related to key signatures.">att.keySigDefault.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.vis.html" title="Visual domain attributes.">att.layer.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.layerDef.vis.html" title="Visual domain attributes.">att.layerDef.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ligature.vis.html" title="Visual domain attributes.">att.ligature.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.line.vis.html" title="Attributes for describing the visual appearance of a line.">att.line.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.liquescent.vis.html" title="Visual domain attributes.">att.liquescent.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.lv.vis.html" title="Visual domain attributes. The vo attribute is the vertical offset (from its normal position) of the entire rendered tie. The startho, startvo, endho, and endvo attributes describe the horizontal and vertical offsets of the start and end points of the sign in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines. Startto and endto describe the start and end points in terms of time; that is, beats.">att.lv.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.lyrics.vis.html" title="Visual domain attributes.">att.lyrics.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.measure.vis.html" title="Visual domain attributes.">att.measure.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensur.vis.html" title="Visual domain attributes. These attributes describe the physical appearance of the mensuration sign/time signature of mensural notation.">att.mensur.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensural.vis.html" title="Used by staffDef and scoreDef to provide default values for attributes in the visual domain related to mensuration.">att.mensural.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSig.vis.html" title="Visual domain attributes.">att.meterSig.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSigDefault.vis.html" title="Used by staffDef and scoreDef to provide default values for attributes in the visual domain related to meter signature.">att.meterSigDefault.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSigGrp.vis.html" title="Visual domain attributes.">att.meterSigGrp.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.midi.vis.html" title="Visual domain attributes.">att.midi.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mordent.vis.html" title="Visual domain attributes.">att.mordent.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRest.vis.html" title="Visual domain attributes.">att.mRest.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRpt.vis.html" title="Visual domain attributes.">att.mRpt.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRpt2.vis.html" title="Visual domain attributes.">att.mRpt2.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mSpace.vis.html" title="Visual domain attributes.">att.mSpace.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.multiRest.vis.html" title="Visual domain attributes.">att.multiRest.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.multiRpt.vis.html" title="Visual domain attributes.">att.multiRpt.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.nc.vis.html" title="Visual domain attributes.">att.nc.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncGrp.vis.html" title="Visual domain attributes.">att.ncGrp.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.neume.vis.html" title="Visual domain attributes.">att.neume.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.note.vis.html" title="Visual domain attributes.">att.note.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.octave.vis.html" title="Visual domain attributes.">att.octave.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.oriscus.vis.html" title="Visual domain attributes.">att.oriscus.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ornam.vis.html" title="Visual domain attributes.">att.ornam.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.ossia.vis.html" title="Visual domain attributes.">att.ossia.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pad.vis.html" title="Visual domain attributes.">att.pad.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.part.vis.html" title="Visual domain attributes.">att.part.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.parts.vis.html" title="Visual domain attributes.">att.parts.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pb.vis.html" title="Visual domain attributes.">att.pb.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pedal.vis.html" title="Visual domain attributes. The place attribute captures the placement of the pedal marking with respect to the staff with which it is associated. Modern publishing standards require the place to be 'below'; however, for transcriptions of manuscript works, this attribute class allows the full range of values.">att.pedal.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.phrase.vis.html" title="Visual domain attributes.">att.phrase.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.proport.vis.html" title="Visual domain attributes.">att.proport.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.quilisma.vis.html" title="Visual domain attributes.">att.quilisma.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.rdg.vis.html" title="Visual domain attributes.">att.rdg.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.refrain.vis.html" title="Visual domain attributes.">att.refrain.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.reh.vis.html" title="Visual domain attributes.">att.reh.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.rest.vis.html" title="Visual domain attributes.">att.rest.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.sb.vis.html" title="Visual domain attributes.">att.sb.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.score.vis.html" title="Visual domain attributes.">att.score.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html" title="Visual domain attributes for scoreDef in the CMN repertoire.">att.scoreDef.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.section.vis.html" title="Visual domain attributes.">att.section.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.signifLet.vis.html" title="Visual domain attributes.">att.signifLet.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html" title="Visual domain attributes for slur. The vo attribute is the vertical offset (from its normal position) of the entire rendered slur/phrase mark.">att.slur.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.sp.vis.html" title="Visual domain attributes.">att.sp.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.space.vis.html" title="Visual domain attributes.">att.space.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staff.vis.html" title="Visual domain attributes.">att.staff.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.vis.html" title="Visual domain attributes for staffDef.">att.staffDef.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffGrp.vis.html" title="Visual domain attributes.">att.staffGrp.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stageDir.vis.html" title="Visual domain attributes.">att.stageDir.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.strophicus.vis.html" title="Visual domain attributes.">att.strophicus.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.syl.vis.html" title="Visual domain attributes.">att.syl.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.syllable.vis.html" title="Visual domain attributes.">att.syllable.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.symbol.vis.html" title="Visual domain attributes.">att.symbol.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tempo.vis.html" title="Visual domain attributes.">att.tempo.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tie.vis.html" title="Visual domain attributes. The vo attribute is the vertical offset (from its normal position) of the entire rendered tie. The startho, startvo, endho, and endvo attributes describe the horizontal and vertical offsets of the start and end points of the tie in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines. Startto and endto describe the start and end points in terms of time; that is, beats.">att.tie.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.trill.vis.html" title="Visual domain attributes.">att.trill.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuplet.vis.html" title="Visual domain attributes.">att.tuplet.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tupletSpan.vis.html" title="Visual domain attributes.">att.tupletSpan.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.turn.vis.html" title="Visual domain attributes.">att.turn.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.verse.vis.html" title="Visual domain attributes.">att.verse.vis</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.volta.vis.html" title="Visual domain attributes.">att.volta.vis</a></div>
+                     </div>
+                     <div class="contentListBox">
+                        <h3>Data Typess in MEI.visual</h3>
+                        <div class="contents"><span class="placeholder">– no data types defined in MEI.visual – </span></div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                $(document).ready(function() {
+                                    $('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>
