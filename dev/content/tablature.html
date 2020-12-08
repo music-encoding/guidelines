@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>&lt;!DOCTYPE html&gt;<html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-08"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="div1">
+                  
+                  <h1 id="tablature"><span class="headingNumber">7</span><span class="head">Repertoire: String Tablature</span></h1>
+                  
+                  <p>This chapter describes the attribute classes that are part of the MEI.tablature module.</p>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="tablatureOverview"><span class="headingNumber">7.1</span><span class="head">Overview of the Tablature Module</span></h2>
+                     
+                     <p>The tablature module is used to record basic tablature notation. It is designed primarily
+                        for guitar and similar plucked-string instruments.</p>
+                     
+                     <p>The <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element is used to define the number of lines, courses, or strings, present in the
+                        tablature. The <span class="att">tab.strings</span> attribute is then used to enumerate the pitches of the open strings. It is important
+                        to note that this is given using the written pitch, not the sounding pitch. For example,
+                        the Western 6-string guitar, in standard tuning, sounds an octave below written pitch.</p>
+                     
+                     <p>The <span class="att">tab.strings</span> attribute gives the string tuning, ordered from highest to lowest pitch.</p>
+                     
+                     <p>For standard guitar tuning, the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element might look like this:</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.strings=</span><span class="attributevalue">"e5 b4 g4 d4 a3 e3"</span>/&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 265. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>Chromatic alteration of the open string's pitch may be indicated with the '-' or 'f'
+                        (flat), or the '#' or 's' (sharp). Multiple sharps and flats are not permitted.</p>
+                     
+                     <p>A guitar in E-flat tuning might look like this:</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.strings=</span><span class="attributevalue">"ef5 bf4 gf4 df4 af3 ef3"</span>/&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 266. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>Some instruments, like the 12-string guitar, have the four lowest strings tuned an
+                        octave above but are still written on a 6-line tablature staff. In this case, you
+                        may enumerate the open string pitches while maintaining 6 lines.</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.strings=</span><span class="attributevalue">"e4 e3 a4 a3 d4 d3 g5 g4 b4 b4 e5 e5"</span>/&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 267. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>The <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element is used to capture the specific events in the tablature. The <span class="att">tab.string</span> attribute is used to capture which string the note is to be played on. String order
+                        is the same as that given in the <span class="att">tab.strings</span> attribute. This attribute takes a positive integer in the range of 1-9.</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tab.string=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 268. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>In the case of fretted instruments, the fret number may be captured using the <span class="att">tab.fret</span> attribute. An open string may be indicated using the value "0" (zero).</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.string=</span><span class="attributevalue">"6"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.string=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/layer&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 269. </figcaption>
+                        </figure>
+                        </p>
+                     </div>
+                  </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">4.0.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/29ce50c4c4eb0633cb85e1bf7349c12b4d7b4a66" target="_blank" rel="noopener noreferrer">29ce50c4c4eb0633cb85e1bf7349c12b4d7b4a66</a>)</span></div>
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+               <p class="sectionToc sticky"><a class="level-2" href="#tablatureOverview">7.1 Overview of the Tablature Module</a></p>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                     <p class="sectionToc sticky"><a class="level-2" href="#tablatureOverview">7.1 Overview of the Tablature Module</a></p>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    /*$('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });*/
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '4.0.1'
+                                        const version = 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')'); 
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar')
+                                                console.log('good so far')
+                                                console.log(menu)
+                                                headerBar.parentNode.replaceChild(menu, headerBar)
+                                                console.log('done')
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>&lt;!DOCTYPE html&gt;<html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-08"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="specPage attClassSpec">
+                  <h2 id="att.extender">att.extender</h2>
+                  <div class="specs">
+                     <div class="desc">Attributes that describe extension symbols, typically lines. Members of this class
+                        are
+                        also typically members of the att.lineRend class.
+                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/analysisharm.html#harmonyMusicText" title="10.2.1.3 Indications of Harmony in the Music Text">10.2.1.3 Indications of Harmony in the Music Text</a>, <a class="chapterLink" href="../content/analysisharm.html#harmonyFigbass" title="10.2.1.3.1 Figured Bass">10.2.1.3.1 Figured Bass</a></div>
+                     </div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text">MEI.shared</div>
+                     </div>
+                     <div id="attributes" class="facet attributes">
+                        <div class="label">Attributes</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span>, <span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span>, <span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span>, <span class="ident attribute" title="Describes the line style of a line.">lform</span>, <span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span>, <span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span>, <span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span>, <span class="ident attribute" title="Width of a line.">lwidth</span></div>
+                           <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step">direct childs</span><span class="step end">@extender</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lendsym</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lendsym.size</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lform</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                                       or
+                                       the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                                       maximum, respectively) provides a range between which a rendering system-supplied
+                                       value
+                                       may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                                       and
+                                       maximum values are equal.</span><span class="attributeValues">
+                                       One or two values of datatype <span style="font-weight: 500;">
+                                          a positive integer no smaller than 2</span>, separated by a space.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lsegs</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lstartsym</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lstartsym.size</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.extender&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lwidth</span></div>
+                              </div>
+                           </div>
+                           <div id="attributes_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="direct childs">
+                                 <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.lineRend">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></label><span class="classDesc">(MEI.shared) Attributes that record the visual rendition of lines.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                             </span></span></div>
+                                    <div class="classBox" title="att.lineRend.base">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></label><span class="classDesc">(MEI.shared) Attributes that record the basic visual rendition of lines.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                                                   or
+                                                   the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                                                   maximum, respectively) provides a range between which a rendering system-supplied
+                                                   value
+                                                   may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                                                   and
+                                                   maximum values are equal.</span><span class="attributeValues">
+                                                   One or two values of datatype <span style="font-weight: 500;">
+                                                      a positive integer no smaller than 2</span>, separated by a space.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                                   </span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="attributes_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                                             or
+                                             the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                                             maximum, respectively) provides a range between which a rendering system-supplied
+                                             value
+                                             may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                                             and
+                                             maximum values are equal.</span><span class="attributeValues">
+                                             One or two values of datatype <span style="font-weight: 500;">
+                                                a positive integer no smaller than 2</span>, separated by a space.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="availableAt" class="facet availableAt">
+                        <div class="label">Available at</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/attacca.html" title="An instruction to begin the next section or movement of a composition without pause.">attacca</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dir.html" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam .">dir</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html" title="(dynamic) – Indication of the volume of a note, phrase, or section of music.">dynam</a>, <a class="link_odd link_odd_elementSpec" href="../elements/f.html" title="(figure) – Single element of a figured bass indication.">f</a>, <a class="link_odd link_odd_elementSpec" href="../elements/fing.html" title="finger – An individual finger in a fingering indication.">fing</a>, <a class="link_odd link_odd_elementSpec" href="../elements/fingGrp.html" title="(finger group)– A group of individual fingers in a fingering indication.">fingGrp</a>, <a class="link_odd link_odd_elementSpec" href="../elements/harm.html" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass.">harm</a>, <a class="link_odd link_odd_elementSpec" href="../elements/octave.html" title="An indication that a passage should be performed one or more octaves above or below its written pitch.">octave</a>, <a class="link_odd link_odd_elementSpec" href="../elements/trill.html" title="Rapid alternation of a note with another (usually at the interval of a second above).">trill</a></div>
+                           <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="att.extender">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="classBox" title="att.attacca.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.attacca.vis.html">att.attacca.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An instruction to begin the next section or movement of a composition without pause."><a class="link_odd link_odd_elementSpec" href="../elements/attacca.html">attacca</a></span><span class="desc"><span class="desc">An instruction to begin the next section or movement of a composition without
+                                                   pause.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.dir.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.dir.vis.html">att.dir.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam ."><a class="link_odd link_odd_elementSpec" href="../elements/dir.html">dir</a></span><span class="desc"><span class="desc">(directive) – An instruction expressed as a combination of text and symbols — such
+                                                   as
+                                                   segno and coda symbols, fermatas over a bar line, etc., typically above, below, or
+                                                   between
+                                                   staves, but not on the staff — that is not encoded elsewhere in more specific elements,
+                                                   like
+                                                   <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a> or <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a>.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.dynam.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.dynam.vis.html">att.dynam.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="(dynamic) – Indication of the volume of a note, phrase, or section of music."><a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a></span><span class="desc"><span class="desc">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.f.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.f.vis.html">att.f.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="(figure) – Single element of a figured bass indication."><a class="link_odd link_odd_elementSpec" href="../elements/f.html">f</a></span><span class="desc"><span class="desc">(figure) – Single element of a figured bass indication.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.fing.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.fing.vis.html">att.fing.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="finger – An individual finger in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fing.html">fing</a></span><span class="desc"><span class="desc">finger – An individual finger in a fingering indication.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.fingGrp.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.fingGrp.vis.html">att.fingGrp.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="(finger group)– A group of individual fingers in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fingGrp.html">fingGrp</a></span><span class="desc"><span class="desc">(finger group)– A group of individual fingers in a fingering indication.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.harm.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.vis.html">att.harm.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a></span><span class="desc"><span class="desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+                                                   analysis, figured bass.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.octave.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.octave.vis.html">att.octave.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd link_odd_elementSpec" href="../elements/octave.html">octave</a></span><span class="desc"><span class="desc">An indication that a passage should be performed one or more octaves above or below
+                                                   its
+                                                   written pitch.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.trill.vis">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.trill.vis.html">att.trill.vis</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Rapid alternation of a note with another (usually at the interval of a second above)."><a class="link_odd link_odd_elementSpec" href="../elements/trill.html">trill</a></span><span class="desc"><span class="desc">Rapid alternation of a note with another (usually at the interval of a second
+                                                   above).</span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="availableAt_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc">Common Music Notation (CMN) repertoire component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="An instruction to begin the next section or movement of a composition without pause."><a class="link_odd link_odd_elementSpec" href="../elements/attacca.html">attacca</a></span><span class="desc"><span class="desc">An instruction to begin the next section or movement of a composition without
+                                             pause.</span></span></div>
+                                    <div class="def"><span class="ident" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd link_odd_elementSpec" href="../elements/octave.html">octave</a></span><span class="desc"><span class="desc">An indication that a passage should be performed one or more octaves above or below
+                                             its
+                                             written pitch.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.cmnOrnaments">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmnOrnaments</label><span class="classDesc">CMN ornament component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Rapid alternation of a note with another (usually at the interval of a second above)."><a class="link_odd link_odd_elementSpec" href="../elements/trill.html">trill</a></span><span class="desc"><span class="desc">Rapid alternation of a note with another (usually at the interval of a second
+                                             above).</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.fingering">
+                                 <div class="classHeading"><label class="classLabel">MEI.fingering</label><span class="classDesc">Fingering component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="finger – An individual finger in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fing.html">fing</a></span><span class="desc"><span class="desc">finger – An individual finger in a fingering indication.</span></span></div>
+                                    <div class="def"><span class="ident" title="(finger group)– A group of individual fingers in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fingGrp.html">fingGrp</a></span><span class="desc"><span class="desc">(finger group)– A group of individual fingers in a fingering indication.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.harmony">
+                                 <div class="classHeading"><label class="classLabel">MEI.harmony</label><span class="classDesc">Harmony component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(figure) – Single element of a figured bass indication."><a class="link_odd link_odd_elementSpec" href="../elements/f.html">f</a></span><span class="desc"><span class="desc">(figure) – Single element of a figured bass indication.</span></span></div>
+                                    <div class="def"><span class="ident" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a></span><span class="desc"><span class="desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+                                             analysis, figured bass.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam ."><a class="link_odd link_odd_elementSpec" href="../elements/dir.html">dir</a></span><span class="desc"><span class="desc">(directive) – An instruction expressed as a combination of text and symbols — such
+                                             as
+                                             segno and coda symbols, fermatas over a bar line, etc., typically above, below, or
+                                             between
+                                             staves, but not on the staff — that is not encoded elsewhere in more specific elements,
+                                             like
+                                             <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a> or <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a>.</span></span></div>
+                                    <div class="def"><span class="ident" title="(dynamic) – Indication of the volume of a note, phrase, or section of music."><a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a></span><span class="desc"><span class="desc">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"att.extender"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that describe extension symbols, typically lines. Members of this class
+                                       are
+                                       also typically members of the att.lineRend class.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a>"</span>/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"extender"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the presence of an extension symbol, typically a line.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">4.0.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/29ce50c4c4eb0633cb85e1bf7349c12b4d7b4a66" target="_blank" rel="noopener noreferrer">29ce50c4c4eb0633cb85e1bf7349c12b4d7b4a66</a>)</span></div>
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    /*$('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });*/
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '4.0.1'
+                                        const version = 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')'); 
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar')
+                                                console.log('good so far')
+                                                console.log(menu)
+                                                headerBar.parentNode.replaceChild(menu, headerBar)
+                                                console.log('done')
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>

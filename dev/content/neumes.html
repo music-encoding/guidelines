@@ -1,0 +1,2619 @@
+<?xml version="1.0" encoding="UTF-8"?>&lt;!DOCTYPE html&gt;<html xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <meta name="author" content="Johannes Kepper"></meta>
+      <meta name="author" content="Perry D. Roland"></meta>
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
+      <meta name="date" content="2020-12-08"></meta>
+      <meta name="generator" content="MEI XSLT stylesheets"></meta>
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
+      <meta name="DC.Type" content="Text"></meta>
+      <meta name="DC.Format" content="text/html"></meta>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/tipuesearch.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css"></link>
+      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"></link>
+   </head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container-fluid content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form action="/guidelines/dev/content/metadata.html">
+                        <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="tipue-search-content"></div>
+               <section class="div1">
+                  
+                  <h1 id="neumes"><span class="headingNumber">6</span><span class="head">Repertoire: Neume Notation</span></h1>
+                  
+                  <p>This chapter describes the elements, model classes, and attribute classes that are
+                     part of the MEI.neumes module.</p>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="neumesRepertoire"><span class="headingNumber">6.1</span><span class="head">Overview of the Neumes Module</span></h2>
+                     
+                     <p>The MEI Neumes Module represents the community’s attempt to create a standardized
+                        set of rules that encapsulate in a logical, systematic, and unequivocal way the musical
+                        information represented and conveyed by Western European neumatic notations (beginning
+                        with the late ninth century and continuing to the printed books of the twentieth).
+                        Most neume notation is used to set music to an existing text. The syllable is the
+                        fundamental unit of structure, with the neumes themselves serving as a means of “sonifying”
+                        the text. A syllable may be expressed via one or more neumes, with the particular
+                        neume shape chosen depending on the pitch contour that is being employed and the desired
+                        interpretation.</p>
+                     
+                     <p>The `syllable` element is used as the primary organizational element for neume notation
+                        within a `layer` element. Within `syllable`, the `syl` element defined in the `MEI.shared`
+                        module is used for encoding the textual content, while the `neume` and `nc` elements
+                        are used to encode the neumes themselves. Within these Neumes Module elements, other
+                        standard MEI mechanisms are available to accommodate, for example, editorial or critical
+                        markup.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="basicfourelements"><span class="headingNumber">6.1.1</span><span class="head">Basic four elements</span></h3>
+                        
+                        <p>The following four elements are the fundamental components of the Neumes Module:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/syllable.html">syllable</a></span></div>
+                                 <div class="tile-subtitle text-gray">Neume notation can be thought of as "neumed text". Therefore, the syllable element
+                                    provides high-level organization in this repertoire.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>Neume notation can be thought of as "neumed text". Therefore, the syllable element
+                           provides high-level organization in this repertoire.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a></span></div>
+                                 <div class="tile-subtitle text-gray">(syllable) – Individual lyric syllable.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>(syllable) – Individual lyric syllable. 
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/syllable.png"></img><figcaption class="caption">Figure 55. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/neume.html">neume</a></span></div>
+                                 <div class="tile-subtitle text-gray">Sign representing one or more musical pitches.</div>
+                              </div>
+                           </div> Sign representing one or more musical pitches. As such, a <a class="link_odd link_odd_elementSpec" href="../elements/neume.html">neume</a> consists of one or more <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> element(s):</p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>Connected</td>
+                              
+                              <td>Non-connected</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>:---------:</td>
+                              
+                              <td>:---------:</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/NEUME-con.png">Connected</a>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/NEUME-non-con.png">Non-connected</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a></span></div>
+                                 <div class="tile-subtitle text-gray">Sign representing a single pitched event, although the exact pitch may not be
+                                    known.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>Sign representing a single pitched event, although the exact pitch may not be known.
+                           Examples of neume components are:</p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>Example 1</td>
+                              
+                              <td>Example 2</td>
+                              
+                              <td>Example 3</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 
+                                 <figure class="figure"><img class="graphic" src="../images/v4/modules/neumes/NC-rhombusNEW.png"></img><figcaption class="caption">Figure 56. nc-1</figcaption>
+                                 </figure>
+                                 </td>
+                              
+                              <td>
+                                 
+                                 <figure class="figure"><img class="graphic" src="../images/v4/modules/neumes/NC-squareNEW.png"></img><figcaption class="caption">Figure 57. nc-2</figcaption>
+                                 </figure>
+                                 </td>
+                              
+                              <td>
+                                 
+                                 <figure class="figure"><img class="graphic" src="../images/v4/modules/neumes/NC-squaretailNEW.png"></img><figcaption class="caption">Figure 58. nc-3</figcaption>
+                                 </figure>
+                                 </td>
+                              </tr>
+                           </table>
+                        </div>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="neumesBackground"><span class="headingNumber">6.2</span><span class="head">Neumes Module Background</span></h2>
+                     
+                     <p>Neume encoding in MEI was initially developed as part of the <a class="link_ref link_external" href="https://www.dimused.uni-tuebingen.de/tuebingen_e.php">Hildegard von Bingen project</a> at the University of Tübingen. MEI was chosen as the basic representation format
+                        after a <a class="link_ref link_external" href="http://www.dimused.uni-tuebingen.de/tuebingen_phase1_e.php">comparison of existing music encoding formats</a>. The initial work on this module was performed by Gregor Schräder <a class="link_ref link_external" href="http://www.dimused.uni-tuebingen.de/downloads/studienarbeit.pdf">(Ein XML-Datenformat zur Repräsentation kritischer Musikedition unter besonderer Berücksichtigung
+                           von Neumennotation)</a>, supervised by Prof. Stefan Morent. Since 2012 a group of scholars has been working
+                        on the development of a new version of the MEI schema for neume notations (Ichiro
+                        Fujinaga, Jennifer Bain, Debra Lacoste, Kate Helsen, and Inga Behrendt). Afterwards,
+                        other chant scholars joined the group bringing further expertise on other kinds of
+                        early music notations (namely <a class="link_ref link_external" href="https://sites.google.com/fcsh.unl.pt/elsadeluca/">Elsa De Luca</a>, Alessandra Ignesti, and Sarah A. Long).</p>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="neumesNotation"><span class="headingNumber">6.3</span><span class="head">Neume Notation and MEI</span></h2>
+                     
+                     <p>There are four main challenges in encoding Western European early music. The first
+                        relates to the fact that early notation was just a mnemonic aid that helped the readers
+                        to recall the music they already knew by heart and, as such, it conveys only partial
+                        musical information (Bain, Behrendt, &amp; Helsen 2014; Helsen, Behrendt, &amp; Bain 2017).
+                        Indeed, it is only with the invention of staff lines in the eleventh century that
+                        the system of musical transmission gradually changed, relying more on the written
+                        record rather than on orality. The second challenge refers to the existence of different
+                        regional styles of early notation; early-music manuscripts display a great graphical
+                        variety of musical signs, which include both neumes and other notational elements
+                        conveying further musical information (e.g., significative letters, Old Hispanic ticks,
+                        etc.). Thirdly, some of those regional notational styles occasionally share graphically
+                        similar shapes; these similar shapes within the different notational styles are understood
+                        by modern scholars to represent the same, a similar, or even a _different_ musical
+                        meaning. Finally, while on occasion the neume shapes appear to mirror graphically
+                        the musical characteristics of the sound being represented (e.g., pen-stroke going
+                        up = rising melody), in many instances it is generally understood that the meaning
+                        attached to the neumes (or the other notational elements) may not be so straight-forward,
+                        but instead was ruled by conventions shared by the people who knew orally the musical
+                        repertory being fixed in written form by means of notation.</p>
+                     
+                     <p>_What do these challenges entail for modern encoders?_</p>
+                     
+                     <p>Firstly, sometimes we have to deal with written signs whose meaning is obscure to
+                        us and, while we can infer the meaning of some of those signs from the study of later
+                        manuscripts with the same melodies and a more precise notation, in other cases we
+                        need to turn to music palaeographers who examine the recurrence of those written signs
+                        and the context where they were used. By analysing scribal hands in particular manuscripts,
+                        palaeographers can often work out if a written sign is a meaningless scribal variant
+                        or a graphical feature conveying musical meaning to the medieval reader. Secondly,
+                        since a neume shape could either mirror on the page the aural event or bear some other
+                        musical meaning attached by convention, the encoding sometimes relies on the visual
+                        level or on the semantic level, and this distinction has to be made on a case-by-case
+                        basis. Moreover, since the same written sign could have multiple interpretations according
+                        to the style of notation where it was employed, it is crucial to be aware of the conventions
+                        of each regional notational alphabet in order to capture the musical information conveyed
+                        by that sign in the contexts where it is found.</p>
+                     
+                     <p>See two examples of shapes found in different regional styles that are not captured
+                        with the same encoding:</p>
+                     
+                     <p>
+                        <em>Example 1</em>
+                        </p>
+                     
+                     <p>
+                        <em>St Gall notation</em> Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note
+                        raising gesture (commonly called _salicus_ in the literature). 
+                        <figure class="figure"><img class="graphic" src="../images/modules/neumes/salicus.png"></img><figcaption class="caption">Figure 59. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;oriscus/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 225. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>
+                        <em>Old Hispanic notation</em>: Two-note downward melodic gesture. 
+                        <figure class="figure"><img class="graphic" src="../images/modules/neumes/NLneumeOH.png"></img><figcaption class="caption">Figure 60. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"c"</span> <span class="attribute">tilt=</span><span class="attributevalue">"s"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 226. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>
+                        <em>Example 2</em>
+                        </p>
+                     
+                     <p>
+                        <em>Old Hispanic notation:</em> Four-note neutral-low-high-low melodic gesture. 
+                        <figure class="figure"><img class="graphic" src="../images/modules/neumes/MneumeOH.png"></img><figcaption class="caption">Figure 61. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 227. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>
+                        <em>Aquitanian notation:</em> Three-note rising neume with oriscus on the second note. 
+                        <figure class="figure"><img class="graphic" src="../images/modules/neumes/LIQUESCENT-ExampleB.png"></img><figcaption class="caption">Figure 62. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;oriscus/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="caption">Listing 228. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>A further complication is that while the music encoding aims to narrow down and capture
+                        the meaning of the neumes in a logical and coherent system, occasionally the significance
+                        of some neumes is under debate (e.g., <a class="link_odd link_odd_elementSpec" href="../elements/quilisma.html">quilisma</a>) and, despite its aim for accuracy, the encoding must remain open for future interpretations.
+                        From all these challenges has arisen the need for an early music encoding standardisation,
+                        that is, a set of rules that work for the description of any neume across all early
+                        notations regardless of the different methodologies applied to the study of individual
+                        notations and their idiosyncrasies.</p>
+                     
+                     <p>Broadly speaking, Western early notations belong to two categories. On one side we
+                        have notations where two or more notes were represented by a single pen-stroke, while
+                        on the other side there are notations where the notes are graphically separated by
+                        means of discrete dots or short pen-strokes. These distinctions have been described
+                        even within single notational styles as interrupted neumes `&lt;ineume&gt;` or uninterrupted
+                        `&lt;uneume&gt;` (Morent &amp; Schräder 2008; Morent 2011; MEI Guidelines, 6: Neume Notation,
+                        version 3.0), and now as gapped or not gapped (Behrendt, Bain, &amp; Helsen 2017; MEI
+                        Guidelines, 6: Neume Notation, version 4.0). To date, the MEI Neumes Module has been
+                        tested mainly on stroke notations (St. Gall, Old Hispanic, etc.), but also on Aquitanian
+                        point-notation.</p>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="neumesExamples"><span class="headingNumber">6.4</span><span class="head">Samples of MEI encodings</span></h2>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="elements"><span class="headingNumber">6.4.1</span><span class="head">Elements</span></h3>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/neume.html">neume</a> and <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> are the most common elements used in the MEI Neumes module. In the following examples
+                           we can see how these elements are used to describe sung gestures of 1, 2, and 4 notes
+                           in square notation.</p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>One pitch - Staff notation. Example A</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 229. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>One pitch - Staff notation. Example B</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 230. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>Two pitches - Staff notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/two-pitchesSN.png" alt="Two pitches"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">tilt=</span><span class="attributevalue">"n"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 231. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>Four pitches - Staff notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/four-pitchesSN.png" alt="Four pitches"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">con=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">con=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 232. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>In addition to <a class="link_odd link_odd_elementSpec" href="../elements/neume.html">neume</a> and <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> the following elements are also frequently used in the MEI Neumes Module: <a class="link_odd link_odd_elementSpec" href="../elements/custos.html">custos</a>, <a class="link_odd link_odd_elementSpec" href="../elements/episema.html">episema</a>, <a class="link_odd link_odd_elementSpec" href="../elements/hispanTick.html">hispanTick</a>, <a class="link_odd link_odd_elementSpec" href="../elements/liquescent.html">liquescent</a>, <a class="link_odd link_odd_elementSpec" href="../elements/ncGrp.html">ncGrp</a>, <a class="link_odd link_odd_elementSpec" href="../elements/oriscus.html">oriscus</a>, <a class="link_odd link_odd_elementSpec" href="../elements/quilisma.html">quilisma</a>, <a class="link_odd link_odd_elementSpec" href="../elements/signifLet.html">signifLet</a>, <a class="link_odd link_odd_elementSpec" href="../elements/strophicus.html">strophicus</a>. Note that <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/episema.html">episema</a>, <a class="link_odd link_odd_elementSpec" href="../elements/hispanTick.html">hispanTick</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/signifLet.html">signifLet</a> are <a class="link_odd link_odd_elementSpec" href="../elements/neume.html">neume</a> elements. Instead <a class="link_odd link_odd_elementSpec" href="../elements/oriscus.html">oriscus</a>, <a class="link_odd link_odd_elementSpec" href="../elements/liquescent.html">liquescent</a>, <a class="link_odd link_odd_elementSpec" href="../elements/quilisma.html">quilisma</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/strophicus.html">strophicus</a> are elements that must be part of a <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> element. The <a class="link_odd link_odd_elementSpec" href="../elements/custos.html">custos</a> is an element that is encoded inside the <a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a> element. Furthermore, there are many other elements such as Editorial and Metadata
+                           elements that are not specific to Neumes and are not listed here.</p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/custos.html">custos</a>: to indicate a symbol placed at the end of a line of music to indicate the first
+                           note of the next line. Sometimes called a "direct" (see MEI encoding of <a class="link_odd link_odd_elementSpec" href="../elements/custos.html">custos</a> below).</p>
+                        
+                        <p>&lt;!-- <a class="link_odd link_odd_elementSpec" href="../elements/mdiv.html">mdiv</a>: to indicate pause between neumes 
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/division.png"></img><figcaption class="caption">Figure 63. </figcaption>
+                           </figure> --&gt;</p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/episema.html">episema</a>: to indicate an episema (see MEI encoding of <a class="link_odd link_odd_elementSpec" href="../elements/episema.html">episema</a> below). 
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/episema.png"></img><figcaption class="caption">Figure 64. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/hispanTick.html">hispanTick</a>: to indicate Old Hispanic ticks (see MEI encoding of <a class="link_odd link_odd_elementSpec" href="../elements/hispanTick.html">hispanTick</a> below). 
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/hispanTick.png"></img><figcaption class="caption">Figure 65. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/liquescent.html">liquescent</a>: to indicate a liquescent (see MEI encoding of <a class="link_odd link_odd_elementSpec" href="../elements/liquescent.html">liquescent</a> neumes below). 
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/liquescent2NEW.png"></img><figcaption class="caption">Figure 66. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/ncGrp.html">ncGrp</a>: to indicate multiple <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a>s.</p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/oriscus.html">oriscus</a>: to indicate an oriscus.</p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>ORISCUS - Square notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/oriscus.png &#34;Oriscus1&#34;">Oriscus1</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;oriscus/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 233. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>ORISCUS - St Gall notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/salicus.png &#34;Oriscus2&#34;">Oriscus2</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;oriscus/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 234. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/quilisma.html">quilisma</a>: to indicate a quilisma (see MEI encoding of <a class="link_odd link_odd_elementSpec" href="../elements/quilisma.html">quilisma</a> below).</p>
+                        
+                        <p>
+                           
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/quilisma.png"></img><figcaption class="caption">Figure 67. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/signifLet.html">signifLet</a>: element indicates significative letter(s) attached to a <a class="link_odd link_odd_elementSpec" href="../elements/neume.html">neume</a> or a <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> (see MEI encoding of <a class="link_odd link_odd_elementSpec" href="../elements/signifLet.html">signifLet</a> below).</p>
+                        
+                        <p>
+                           
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/signifLet.png"></img><figcaption class="caption">Figure 68. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           <a class="link_odd link_odd_elementSpec" href="../elements/strophicus.html">strophicus</a>: to indicate a strophicus</p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>STROPHICUS - Square notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/strophicusNEW.png" alt="Strophicus"
+                                 width="200"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">ligated=</span><span class="attributevalue">"true"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">ligated=</span><span class="attributevalue">"true"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;strophicus/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;strophicus/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 235. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="neumecomponentattributes"><span class="headingNumber">6.4.2</span><span class="head">Neume component attributes</span></h3>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">pname</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.nc.log.html">att.nc.log</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Contains a written pitch name.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">oct</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.nc.log.html">att.nc.log</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Captures written octave information.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">intm</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalMelodic.html">att.intervalMelodic</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Encodes the melodic interval from the previous pitch. The value may be a general
+                                    directional indication (u, d, s, etc.), an indication of diatonic interval direction,
+                                    quality, and size, or a precise numeric value in half steps.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">con</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Connection to the previous component within the same neume; this attribute should
+                                    not
+                                    be used for the first component of a neume.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>GAPPED CONNECTION - Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/gapped.png &#34;Gapped&#34;">Gapped</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 236. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>LOOPED CONNECTION - Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/looped.png &#34;Looped&#34;">Looped</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">s-shape=</span><span class="attributevalue">"s"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">con=</span><span class="attributevalue">"l"</span> <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 237. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>EXTENDED CONNECTION - Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/extended.png &#34;Extended&#34;">Extended</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"c"</span> <span class="attribute">con=</span><span class="attributevalue">"e"</span> <span class="attribute">tilt=</span><span class="attributevalue">"sw"</span> <span class="attribute">rellen=</span><span class="attributevalue">"s"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 238. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Nota bene: the following neume has a similar shape but the neumatic connection is
+                           _not_ extended.</p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>NON-EXTENDED CONNECTION - Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/non-extended.png &#34;Non-extended connection&#34;">Non-extended</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"n"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"c"</span> <span class="attribute">tilt=</span><span class="attributevalue">"s"</span> <span class="attribute">rellen=</span><span class="attributevalue">"s"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 239. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">curve</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Records direction of curvature.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>CURVE - Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/curve.png &#34;Curve&#34;">Curve</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">curve=</span><span class="attributevalue">"a"</span> <span class="attribute">intm=</span><span class="attributevalue">"s"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 240. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">angled</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray"></div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>ANGLED - Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/angled.png &#34;Angled&#34;">Angled</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">angled=</span><span class="attributevalue">"true"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">angled=</span><span class="attributevalue">"true"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 241. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">hooked</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Pen stroke has an extension; specific to Hispanic notation.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>HOOK – Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/hooked.png &#34;Hook&#34;">Hook</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">hooked=</span><span class="attributevalue">"true"</span> <span class="attribute">rellen=</span><span class="attributevalue">"s"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 242. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">ligated</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Indicates participation in a ligature.</div>
+                              </div>
+                           </div> {true | false} if this <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> is part of a ligature. See the encoding of the <a class="link_odd link_odd_elementSpec" href="../elements/strophicus.html">strophicus</a> example, above.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">rellen</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Length of the pen stroke relative to the previous component within the same neume;
+                                    this attribute should not be used for the first component of a neume.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>RELATIVE LENGTH – Old Hispanic notation. Example A</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/rellenA.png &#34;Example A&#34;">Relative-Length-A</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">rellen=</span><span class="attributevalue">"s"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 243. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>RELATIVE LENGTH – Old Hispanic notation. Example B</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/rellenL.png &#34;Example B&#34;">Relative-Length-B</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 244. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">tilt</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Direction of the pen stroke.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>TILT – Old Hispanic / St Gall notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/tilt.png &#34;Tilt&#34;">Tilt</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 245. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">s-shape</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.ncForm.html">att.ncForm</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Direction of the initial direction for an s-shaped pen stroke; i.e., "w" for the
+                                    standard letter S, "e" for its mirror image, "s" for the letter S turned 90-degrees
+                                    anti-clockwise, and "n" for its mirror image.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>S-SHAPE – Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/s-shapeA.png &#34;Example A&#34;">S-shape-A</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">s-shape=</span><span class="attributevalue">"s"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 246. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>S-SHAPE – St Gall notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/s-shapeB.png &#34;Example B&#34;">S-shape-B</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">s-shape=</span><span class="attributevalue">"w"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;oriscus/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 247. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="custosattributes"><span class="headingNumber">6.4.3</span><span class="head">Custos attributes</span></h3>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">pname</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pitch.html">att.pitch</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Contains a written pitch name.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">oct</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.octave.html">att.octave</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Captures written octave information.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">loc</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffLoc.html">att.staffLoc</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Holds the staff location of the feature.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>CUSTOS - Staff notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/custos.EX1.png &#34;Custos1&#34;">Custos1</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;custos <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 248. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>CUSTOS - Late Aquitanian notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/custos.EX2.png" alt="Custos2" width="200"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;custos <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 249. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>CUSTOS - Aquitanian notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/custos.EX3.png" alt="Custos3" width="200"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;custos <span class="attribute">loc=</span><span class="attributevalue">"+3"</span>/&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 250. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>CUSTOS - Aquitanian notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/custos.EX4.png" alt="Custos4" width="200"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;custos <span class="attribute">loc=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 251. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>CUSTOS - Aquitanian notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/custos-and-lozenged-punctum.png" alt="Custos5"
+                                 width="200"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;custos <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 252. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Nota bene: in the last example we can read the exact pitch of the custos because the
+                           lozenged punctum (placed one step below the line) signals the lower note of the semitone
+                           E-F. This information, combined with the identification of the finalis of the piece,
+                           allows us to decipher the mode of this piece, that is the 4th.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="episemaattributes"><span class="headingNumber">6.4.4</span><span class="head">Episema attributes</span></h3>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">form</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.episema.vis.html">att.episema.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray"></div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">place</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.episema.vis.html">att.episema.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Captures the placement of the episema with respect to the neume or neume component
+                                    with which it is associated.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>EPISEMA – Staff notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/episema.png &#34;Example A&#34;">Episema-A</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">tilt=</span><span class="attributevalue">"s"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;episema <span class="attribute">form=</span><span class="attributevalue">"h"</span> <span class="attribute">place=</span><span class="attributevalue">"above"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 253. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>EPISEMA - St Gall notation. Example A</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/episemaB.png &#34;Example B&#34;">Pes rotundus episema</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">intm=</span><span class="attributevalue">"u"</span> <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;episema <span class="attribute">form=</span><span class="attributevalue">"h"</span> <span class="attribute">place=</span><span class="attributevalue">"above-right"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 254. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>EPISEMA - St Gall notation. Example B</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/episemaC.png &#34;Example C&#34;">Pes quadratus episema</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">intm=</span><span class="attributevalue">"u"</span> <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;episema <span class="attribute">form=</span><span class="attributevalue">"h"</span> <span class="attribute">place=</span><span class="attributevalue">"above-right"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 255. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>EPISEMA - St Gall notation. Example C</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/episemaD.png &#34;Example D&#34;">Pes quassus episema</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">s-shape=</span><span class="attributevalue">"w"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">intm=</span><span class="attributevalue">"u"</span> <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;episema <span class="attribute">form=</span><span class="attributevalue">"v"</span> <span class="attribute">place=</span><span class="attributevalue">"above-right"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 256. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="liquescentattributes"><span class="headingNumber">6.4.5</span><span class="head">Liquescent attributes</span></h3>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">curve</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.liquescent.vis.html">att.liquescent.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Records direction of curvature.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">looped</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.liquescent.vis.html">att.liquescent.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Indicates whether curve is closed.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>-----------+----------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>:---------:</td>
+                              
+                              <td>:---------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>LIQUESCENT - Staff notation. Example A</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/liquescent2NEW.png">Liquescent.Ex.A.</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"a"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;liquescent/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 257. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>-----------+----------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>:---------:</td>
+                              
+                              <td>:---------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>LIQUESCENT - Staff notation. Example B</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/liquescent1NEW.png">Liquescent.Ex.B</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"c"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">tilt=</span><span class="attributevalue">"n"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;liquescent/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 258. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>-----------+----------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>:---------:</td>
+                              
+                              <td>:---------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>LIQUESCENT - Aquitanian notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/Aquitanian_liquescent.png">Liquescent</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"c"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;liquescent/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 259. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="oldhispanictickattributes"><span class="headingNumber">6.4.6</span><span class="head">Old Hispanic tick attributes</span></h3>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">tilt</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.hispanTick.vis.html">att.hispanTick.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Direction toward which the mark points.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">place</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.hispanTick.vis.html">att.hispanTick.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Captures the placement of the tick mark with respect to the neume or neume component
+                                    with which it is associated.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>HISPAN TICK - Old Hispanic notation.</em> The following encoding refers to the neume signalled by the arrow on the left.</td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/hispanTick.png" alt="Hispan tick" width="200"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">curve=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;hispanTick <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">place=</span><span class="attributevalue">"above-right"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 260. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="quilismaattribute"><span class="headingNumber">6.4.7</span><span class="head">Quilisma attribute</span></h3>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">waves</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.quilisma.vis.html">att.quilisma.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Number of "crests" of a wavy line.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>-----------+----------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>:---------:</td>
+                              
+                              <td>:---------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>QUILISMA - Staff notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/quilisma.png">Quilisma</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;quilisma/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 261. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>-----------+----------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>:---------:</td>
+                              
+                              <td>:---------</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>QUILISMA - Old Hispanic notation</em>
+                                 </td>
+                              
+                              <td>!<a class="link_ref link_external" href="/guidelines/images/v4/modules/neumes/quilismaOH.png">Quilisma2</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;quilisma <span class="attribute">waves=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 262. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="significativelettersattribute"><span class="headingNumber">6.4.8</span><span class="head">Significative letters attribute</span></h3>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">place</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.signifLet.vis.html">att.signifLet.vis</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Captures the placement of the sequence of characters with respect to the neume or
+                                    neume component with which it is associated.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <table>
+                           
+                           <tr>
+                              
+                              <td>:-:</td>
+                              
+                              <td>:-</td>
+                              </tr>
+                           
+                           <tr>
+                              
+                              <td>
+                                 <em>SIGNIFICATIVE LETTERS - St Gall notation</em>
+                                 </td>
+                              
+                              <td>&lt;img src="/guidelines/images/v4/modules/neumes/signifLet.png" alt="Significative Letters"
+                                 width="200"&gt;</td>
+                              </tr>
+                           </table>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;neume&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"ne"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;signifLet <span class="attribute">place=</span><span class="attributevalue">"above-right"</span>&gt;</span>c<span data-indentation="3" class="element">&lt;/signifLet&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/nc&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">rellen=</span><span class="attributevalue">"s"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;nc <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">tilt=</span><span class="attributevalue">"e"</span> <span class="attribute">rellen=</span><span class="attributevalue">"l"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/neume&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 263. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="note"><span class="headingNumber">6.4.9</span><span class="head">Note</span></h3>
+                        
+                        <p>Other articulation marks such as ictus, circulus, semicirculus, accentus, and other
+                           fonts in <a class="link_ref link_external" href="https://www.smufl.org/fonts/">SMuFL</a> can be encoded using: glyph.auth, glyph.name, glyph.num, and glyph.uri.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="basicencodingsyllable"><span class="headingNumber">6.4.10</span><span class="head">Basic Encoding – Syllable</span></h3>
+                        
+                        <p>The following example illustrates the MEI encoding of the opening of Hildegarde’s
+                           “O Splendidissima Gemma” with the text “O splendidissima”. This example provides the
+                           basic MEI skeleton to have a valid MEI file and it may be used for reference for scholars
+                           willing to start encoding early music (and its text) in MEI. Information about the
+                           <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> has been omitted for brevity, but it was originally encoded on a 5-line staff with
+                           two clefs, a “C” and a “F” on lines 5 and 3, respectively.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure"><img class="graphic" src="../images/modules/neumes/O-splendidissima.png"></img><figcaption class="caption">Figure 69. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;music <span class="attribute">meiversion=</span><span class="attributevalue">"4.0.0"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;body&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;mdiv&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;score&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;section&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;layer&gt;</span>
+                                                         
+                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;syllable&gt;</span>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;syl <span class="attribute">n=</span><span class="attributevalue">"initial"</span>&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;rend <span class="attribute">color=</span><span class="attributevalue">"red"</span>&gt;</span>O<span data-indentation="10" class="element">&lt;/rend&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/syl&gt;</span></div>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;neume&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/neume&gt;</span></div>
+                                                            <span data-indentation="8" class="element">&lt;/syllable&gt;</span></div>
+                                                         
+                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;syllable&gt;</span>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;syl&gt;</span>splen_<span data-indentation="9" class="element">&lt;/syl&gt;</span></div>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;neume&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/neume&gt;</span></div>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;neume&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/neume&gt;</span></div>
+                                                            <span data-indentation="8" class="element">&lt;/syllable&gt;</span></div>
+                                                         
+                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;syllable&gt;</span>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;syl&gt;</span>di_<span data-indentation="9" class="element">&lt;/syl&gt;</span></div>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;neume&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"se"</span> <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/neume&gt;</span></div>
+                                                            <span data-indentation="8" class="element">&lt;/syllable&gt;</span></div>
+                                                         
+                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;syllable&gt;</span>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;syl&gt;</span>dis_<span data-indentation="9" class="element">&lt;/syl&gt;</span></div>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;neume&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/neume&gt;</span></div>
+                                                            <span data-indentation="8" class="element">&lt;/syllable&gt;</span></div>
+                                                         
+                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;syllable&gt;</span>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;syl&gt;</span>si_<span data-indentation="9" class="element">&lt;/syl&gt;</span></div>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;neume&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">con=</span><span class="attributevalue">"g"</span> <span class="attribute">tilt=</span><span class="attributevalue">"n"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/neume&gt;</span></div>
+                                                            <span data-indentation="8" class="element">&lt;/syllable&gt;</span></div>
+                                                         
+                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;syllable&gt;</span>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;syl&gt;</span>ma <span data-indentation="9" class="element">&lt;/syl&gt;</span></div>
+                                                            
+                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;neume&gt;</span>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span>/&gt;</span></div>
+                                                               
+                                                               <div class="indent indent10"><span data-indentation="10" class="element">&lt;nc <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                                               <span data-indentation="9" class="element">&lt;/neume&gt;</span></div>
+                                                            <span data-indentation="8" class="element">&lt;/syllable&gt;</span></div>
+                                                         <span data-indentation="7" class="element">&lt;/layer&gt;</span></div>
+                                                      <span data-indentation="6" class="element">&lt;/staff&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/section&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/score&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/mdiv&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/body&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/music&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 264. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="manuscripts"><span class="headingNumber">6.4.11</span><span class="head">Manuscripts</span></h3>
+                        
+                        <p>Samples of MEI of St Gall notation are taken from the winter volume of the so-called
+                           ”Hartker Antiphonary” <a class="link_ref link_external" href="https://www.e-codices.unifr.ch/en/list/one/csg/0359">CH-SGs Cod. Sang. 390</a>.</p>
+                        
+                        <p>Samples of MEI of Old Hispanic notation are taken from the ”León Antiphoner” <a class="link_ref link_external" href="https://bvpb.mcu.es/es/catalogo_imagenes/grupo.cmd?path=26408">E-L MS 8</a>.</p>
+                        
+                        <p>Samples of MEI of Aquitanian notation are taken from sources on the <a class="link_ref link_external" href="http://pemdatabase.eu">Portuguese Early Music Database</a>.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="bibliographicreferences"><span class="headingNumber">6.4.12</span><span class="head">Bibliographic References</span></h3>
+                        
+                        <p>Bain, Jennifer, Inga Behrendt, and Kate Helsen. 2014. “Linienlose Neumen und ihre
+                           Repräsentation mit MEI Schema, Herausforderungen in der Arbeit im Optical Neume Recognition
+                           Project (ONRP).” _Digitale Rekonstruktionen mittelalterlicher Bibliotheken_. Edited
+                           by Sabine Philippi and Philipp Vanscheidt. _Trierer Beiträge zu den historischen Kulturwissenschaften_
+                           12: 119–32.</p>
+                        
+                        <p>Behrendt, Inga, Jennifer Bain, and Kate Helsen. 2017. “MEI Kodierung der frühesten
+                           Notation in linienlosen Neumen.” _Kodikologie und Paläographie im Digitalen Zeitalter
+                           4 / Codicology and Palaeography in the Digital Age_. Vol. 4. Edited by Hannah Busch,
+                           Franz Fischer, and Patrick Sahle, with the cooperation of Philip Hegel and Celiz Krause,
+                           Norderstedt 2016. Köln: Institut für Dokumentologie und Editorik e.V, 2017, 281–96.</p>
+                        
+                        <p>
+                           <a class="link_ref link_external" href="https://sites.google.com/fcsh.unl.pt/elsadeluca/">De Luca, Elsa</a>, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti,
+                           Debra Lacoste, and Sarah Long. 2019. <a class="link_ref link_external" href="https://music-encoding.org/conference/2019/abstracts_mec2019/MEI%202019_De%20Luca%20et%20alii.pdf">”Cantus Ultimus’ MEI Neume Module and its Interoperability Across Chant Notations”</a>. Music Encoding Conference, Vienna.</p>
+                        
+                        <p>
+                           <a class="link_ref link_external" href="https://sites.google.com/fcsh.unl.pt/elsadeluca/">De Luca, Elsa</a>, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti,
+                           Debra Lacoste, and Sarah Long. “Capturing Early Notations in MEI: The Case of Old
+                           Hispanic Neumes”. _Musiktheorie-Zeitschrift für Musikwissenschaft 2_, 2019: 229-49.</p>
+                        
+                        <p>Helsen, Kate, Inga Behrendt, and Jennifer Bain. 2017. “<a class="link_ref link_external" href="https://hrcak.srce.hr/index.php?show=clanak&amp;id_clanak_jezik=284211">A Morphology of Medieval Notations in the Optical Neume Recognition Project</a>.” _Arti musices: Croatian Musicological Review_ 48/2: 241–266.</p>
+                        
+                        <p>MEI Guidelines, 6: Neume Notation <a class="link_ref link_external" href="https://music-encoding.org/guidelines/v3/content/neumes.html">Guidelines for MEI 3.0.0</a>.</p>
+                        
+                        <p>MEI Guidelines, 6: Neume Notation <a class="link_ref link_external" href="https://music-encoding.org/guidelines/v4/content/neumes.html">Guidelines for MEI 4.0.0</a> introducing <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> as “neume component”.</p>
+                        
+                        <p>Morent, Stefan and Gregor Schräder. 2008. Demo: <a class="link_ref link_external" href="http://www.dimused.uni-tuebingen.de/hildegard/?SCREEN=1560x686">MEI Neumes Viewer Hildegard</a>.</p>
+                        
+                        <p>Morent, Stefan. 2011. “Digitalisierungskonzepte für Neumen-Notationen - die Projekte
+                           TüBingen und e-sequence.” _Perspektiven Digitaler Musikedition. Die Tonkunst_ 3: 277–83.</p>
+                        </div>
+                     </div>
+                  </section>
+            </div>
+            <div class="column col-4 col-hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">4.0.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/29ce50c4c4eb0633cb85e1bf7349c12b4d7b4a66" target="_blank" rel="noopener noreferrer">29ce50c4c4eb0633cb85e1bf7349c12b4d7b4a66</a>)</span></div>
+               <form action="/guidelines/dev/content/metadata.html">
+                  <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+               <p class="sectionToc sticky"><a class="level-2" href="#neumesRepertoire">6.1 Overview of the Neumes Module</a><a class="level-3" href="#basicfourelements">6.1.1 Basic four elements</a><a class="level-2" href="#neumesBackground">6.2 Neumes Module Background</a><a class="level-2" href="#neumesNotation">6.3 Neume Notation and MEI</a><a class="level-2" href="#neumesExamples">6.4 Samples of MEI encodings</a><a class="level-3" href="#elements">6.4.1 Elements</a><a class="level-3" href="#neumecomponentattributes">6.4.2 Neume component attributes</a><a class="level-3" href="#custosattributes">6.4.3 Custos attributes</a><a class="level-3" href="#episemaattributes">6.4.4 Episema attributes</a><a class="level-3" href="#liquescentattributes">6.4.5 Liquescent attributes</a><a class="level-3" href="#oldhispanictickattributes">6.4.6 Old Hispanic tick attributes</a><a class="level-3" href="#quilismaattribute">6.4.7 Quilisma attribute</a><a class="level-3" href="#significativelettersattribute">6.4.8 Significative letters attribute</a><a class="level-3" href="#note">6.4.9 Note</a><a class="level-3" href="#basicencodingsyllable">6.4.10 Basic Encoding – Syllable</a><a class="level-3" href="#manuscripts">6.4.11 Manuscripts</a><a class="level-3" href="#bibliographicreferences">6.4.12 Bibliographic References</a></p>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                     <p class="sectionToc sticky"><a class="level-2" href="#neumesRepertoire">6.1 Overview of the Neumes Module</a><a class="level-3" href="#basicfourelements">6.1.1 Basic four elements</a><a class="level-2" href="#neumesBackground">6.2 Neumes Module Background</a><a class="level-2" href="#neumesNotation">6.3 Neume Notation and MEI</a><a class="level-2" href="#neumesExamples">6.4 Samples of MEI encodings</a><a class="level-3" href="#elements">6.4.1 Elements</a><a class="level-3" href="#neumecomponentattributes">6.4.2 Neume component attributes</a><a class="level-3" href="#custosattributes">6.4.3 Custos attributes</a><a class="level-3" href="#episemaattributes">6.4.4 Episema attributes</a><a class="level-3" href="#liquescentattributes">6.4.5 Liquescent attributes</a><a class="level-3" href="#oldhispanictickattributes">6.4.6 Old Hispanic tick attributes</a><a class="level-3" href="#quilismaattribute">6.4.7 Quilisma attribute</a><a class="level-3" href="#significativelettersattribute">6.4.8 Significative letters attribute</a><a class="level-3" href="#note">6.4.9 Note</a><a class="level-3" href="#basicencodingsyllable">6.4.10 Basic Encoding – Syllable</a><a class="level-3" href="#manuscripts">6.4.11 Manuscripts</a><a class="level-3" href="#bibliographicreferences">6.4.12 Bibliographic References</a></p>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    /*$('#tipue_search_input').tipuesearch({
+                                        showURL: false,
+                                        descriptiveWords: 25
+                                    });*/
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '4.0.1'
+                                        const version = 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')'); 
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar')
+                                                console.log('good so far')
+                                                console.log(menu)
+                                                headerBar.parentNode.replaceChild(menu, headerBar)
+                                                console.log('done')
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div><script type="text/javascript">
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const style = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with style ' + style)
+                                setTabs(facetId,style)
+                            }
+                            
+                            console.log('Javascript is working…')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetElem.id,defaultValue);
+                                } else {
+                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }                            
+                            }
+                            
+                            function setTabs(facetId, style) {                            
+                                const storageName = 'meiSpecs_' + facetId + '_display';
+                                localStorage.setItem(storageName,style);
+                                
+                                //console.log('setting tabs, storageName: ' + storageName + ', facetId: ' + facetId + ', style: ' + style)
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                //console.log(facetElem)
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                oldTab.classList.remove('active');
+                                
+                                //console.log('trying to find newTab: "' + style + '_tab"');
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                newTab.classList.add('active');
+                                
+                                //console.log('\noldTab / newTab:')
+                                //console.log(oldTab)
+                                //console.log(newTab)
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                oldBox.classList.remove('active');
+                                oldBox.style.display = 'none';
+                                
+                                const newBox = document.getElementById(style);
+                                newBox.classList.add('active');
+                                newBox.style.display = 'block';      
+                                
+                                //console.log('\noldBox / newBox:')
+                                //console.log(oldBox)
+                                //console.log(newBox)
+                            }
+                        </script></body>
+</html>
