@@ -119,17 +119,26 @@
                               <div xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
-                                    &lt;staffDef n="3" xml:id="cmn_staffDef1" /&gt;
-                                    &lt;!-- later in the file: --&gt;
-                                    &lt;staff def="#cmn_staffDef1"&gt;
-                                    &lt;!-- @def refers to staffDef with this identifier --&gt;
-                                    &lt;!-- staff content --&gt;
-                                    &lt;/staff&gt;
-                                    &lt;!-- or: --&gt;
-                                    &lt;staff n="3"&gt;
-                                    &lt;!-- @n refers to staffDef with this numeric label --&gt;
-                                    &lt;!-- staff content --&gt;
-                                    &lt;/staff&gt;
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"cmn_staffDef1"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- later in the file: --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staff <span class="attribute">def=</span><span class="attributevalue">"#cmn_staffDef1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- @def refers to staffDef with this identifier --&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- staff content --&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staff&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- or: --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- @n refers to staffDef with this numeric label --&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- staff content --&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staff&gt;</span></div>
                                     
                                     
                                     </code>
@@ -1858,43 +1867,70 @@
                               <div xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
-                                    &lt;measure n="1"&gt;
-                                    &lt;!-- staff 1 omitted --&gt;
-                                    &lt;staff n="2"&gt;
-                                    &lt;layer n="1"&gt;
-                                    &lt;chord dur="16"&gt;
-                                    &lt;note oct="2" pname="f" /&gt;
-                                    &lt;note oct="1" pname="f" /&gt;
-                                    &lt;/chord&gt;
-                                    &lt;beam&gt;
-                                    &lt;note oct="2" pname="f" tie="i" /&gt;
-                                    &lt;note oct="2" pname="a" tie="i" /&gt;
-                                    &lt;note oct="3" pname="c" tie="i" /&gt;
-                                    &lt;/beam&gt;
-                                    &lt;chord dur="4"&gt;
-                                    &lt;note oct="3" pname="f" tie="i" /&gt;
-                                    &lt;note oct="3" pname="c" tie="m" /&gt;
-                                    &lt;note oct="2" pname="a" tie="m" /&gt;
-                                    &lt;note oct="2" pname="f" tie="m" /&gt;
-                                    &lt;/chord&gt;
-                                    &lt;/layer&gt;
-                                    &lt;/staff&gt;
-                                    &lt;/measure&gt;
-                                    &lt;measure n="2"&gt;
-                                    &lt;!-- staff 1 omitted --&gt;
-                                    &lt;staff n="2"&gt;
-                                    &lt;layer n="1"&gt;
-                                    &lt;chord dur="16"&gt;
-                                    &lt;note oct="3" pname="f" tie="t" /&gt;
-                                    &lt;note oct="3" pname="c" tie="t" /&gt;
-                                    &lt;note oct="2" pname="a" tie="t" /&gt;
-                                    &lt;note oct="2" pname="f" tie="t" /&gt;
-                                    &lt;/chord&gt;
-                                    &lt;!-- … --&gt;
-                                    &lt;/layer&gt;
-                                    &lt;/staff&gt;
-                                    &lt;/measure&gt;
-                                    &lt;!-- measures 3 and 4 omitted --&gt;
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- staff 1 omitted --&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"1"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/chord&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">tie=</span><span class="attributevalue">"i"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tie=</span><span class="attributevalue">"i"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">tie=</span><span class="attributevalue">"i"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">tie=</span><span class="attributevalue">"i"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">tie=</span><span class="attributevalue">"m"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tie=</span><span class="attributevalue">"m"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">tie=</span><span class="attributevalue">"m"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/chord&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- staff 1 omitted --&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">tie=</span><span class="attributevalue">"t"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">tie=</span><span class="attributevalue">"t"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tie=</span><span class="attributevalue">"t"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">tie=</span><span class="attributevalue">"t"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/chord&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!-- … --&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- measures 3 and 4 omitted --&gt;</span></div>
                                     
                                     
                                     </code>
@@ -2862,8 +2898,10 @@
                                  <div xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
-                                       &lt;arpeg xml:id="ex-0149852838" plist="#ex-0731379794 #ex-1553574041" /&gt;
-                                       &lt;arpeg xml:id="ex-1483377242" plist="#ex-1474174387 #ex-0553655856" /&gt;
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;arpeg <span class="attribute">xml:id=</span><span class="attributevalue">"ex-0149852838"</span> <span class="attribute">plist=</span><span class="attributevalue">"#ex-0731379794 #ex-1553574041"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;arpeg <span class="attribute">xml:id=</span><span class="attributevalue">"ex-1483377242"</span> <span class="attribute">plist=</span><span class="attributevalue">"#ex-1474174387 #ex-0553655856"</span>/&gt;</span></div>
                                        
                                        
                                        </code>
@@ -5399,7 +5437,7 @@
                   </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/bc46a8818b08195cfa3709a58fa4bc032068b63c" target="_blank" rel="noopener noreferrer">#bc46a88</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/bb423a4c10f470e48c93268709806bec162f8c9c" target="_blank" rel="noopener noreferrer">#bb423a4</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>

@@ -2065,42 +2065,24 @@
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>Typical examples are 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;foreign&gt;</span>colla parte<span data-indentation="4" class="element">&lt;/foreign&gt;</span></div> instructions (such as "col Basso") or
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>Typical examples are <span data-indentation="4" class="element">&lt;foreign&gt;</span>colla parte<span data-indentation="4" class="element">&lt;/foreign&gt;</span> instructions (such as "col Basso") or
                                           other indications intended to result in filling gaps in the score with material written
                                           elsewhere. It is recommended to capture the position of the indication itself with
                                           the
-                                          attributes 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span></div> and 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>staff<span data-indentation="4" class="element">&lt;/att&gt;</span></div>. The area to be filled should contain 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>space<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> or 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>mSpace<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> elements. The material to be used to
-                                          fill the gap can be identified by the attributes 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span></div>,
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp2<span data-indentation="4" class="element">&lt;/att&gt;</span></div>, 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.staff<span data-indentation="4" class="element">&lt;/att&gt;</span></div>, and 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.layer<span data-indentation="4" class="element">&lt;/att&gt;</span></div>. If
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp2<span data-indentation="4" class="element">&lt;/att&gt;</span></div> is not provided, a duration similar to that of the local omission
-                                          (as encoded in the combination of 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span></div> and 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>tstamp2<span data-indentation="4" class="element">&lt;/att&gt;</span></div>) is assumed. Any
+                                          attributes <span data-indentation="4" class="element">&lt;att&gt;</span>tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span> and <span data-indentation="4" class="element">&lt;att&gt;</span>staff<span data-indentation="4" class="element">&lt;/att&gt;</span>. The area to be filled should contain <span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>space<span data-indentation="4" class="element">&lt;/gi&gt;</span> or <span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>mSpace<span data-indentation="4" class="element">&lt;/gi&gt;</span> elements. The material to be used to
+                                          fill the gap can be identified by the attributes <span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span>,
+                                          <span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp2<span data-indentation="4" class="element">&lt;/att&gt;</span>, <span data-indentation="4" class="element">&lt;att&gt;</span>origin.staff<span data-indentation="4" class="element">&lt;/att&gt;</span>, and <span data-indentation="4" class="element">&lt;att&gt;</span>origin.layer<span data-indentation="4" class="element">&lt;/att&gt;</span>. If
+                                          <span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp2<span data-indentation="4" class="element">&lt;/att&gt;</span> is not provided, a duration similar to that of the local omission
+                                          (as encoded in the combination of <span data-indentation="4" class="element">&lt;att&gt;</span>tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span> and <span data-indentation="4" class="element">&lt;att&gt;</span>tstamp2<span data-indentation="4" class="element">&lt;/att&gt;</span>) is assumed. Any
                                           missing @origin.* attributes are assumed to take the same values as information associated
-                                          with the cpMark. For example, when only the 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.staff<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute is provided,
+                                          with the cpMark. For example, when only the <span data-indentation="4" class="element">&lt;att&gt;</span>origin.staff<span data-indentation="4" class="element">&lt;/att&gt;</span> attribute is provided,
                                           it is assumed that the referenced part comes from a different staff in the same measure.
                                           If
-                                          a different measure is provided by 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span></div>, but no 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>origin.staff<span data-indentation="4" class="element">&lt;/att&gt;</span></div>
+                                          a different measure is provided by <span data-indentation="4" class="element">&lt;att&gt;</span>origin.tstamp<span data-indentation="4" class="element">&lt;/att&gt;</span>, but no <span data-indentation="4" class="element">&lt;att&gt;</span>origin.staff<span data-indentation="4" class="element">&lt;/att&gt;</span>
                                           is given, then it is assumed that the material is to be taken from the same staff.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>Textual instructions are encoded as text content of the cpMark, while graphical
-                                          instructions may use the 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>altsym<span data-indentation="4" class="element">&lt;/att&gt;</span></div>, 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>facs<span data-indentation="4" class="element">&lt;/att&gt;</span></div>, or 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;att&gt;</span>extsym<span data-indentation="4" class="element">&lt;/att&gt;</span></div>
+                                          instructions may use the <span data-indentation="4" class="element">&lt;att&gt;</span>altsym<span data-indentation="4" class="element">&lt;/att&gt;</span>, <span data-indentation="4" class="element">&lt;att&gt;</span>facs<span data-indentation="4" class="element">&lt;/att&gt;</span>, or <span data-indentation="4" class="element">&lt;att&gt;</span>extsym<span data-indentation="4" class="element">&lt;/att&gt;</span>
                                           attributes.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                                     <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
@@ -2110,7 +2092,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/bc46a8818b08195cfa3709a58fa4bc032068b63c" target="_blank" rel="noopener noreferrer">#bc46a88</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/bb423a4c10f470e48c93268709806bec162f8c9c" target="_blank" rel="noopener noreferrer">#bb423a4</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
