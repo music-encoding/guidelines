@@ -94,11 +94,13 @@
                               <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/note.html" title="A single pitched event.">note</a></div>
+                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/note.html" title="A single pitched event.">note</a>, <a class="link_odd link_odd_elementSpec" href="../elements/space.html" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure.">space</a></div>
                            <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="att.duration.quality">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.quality.html">att.duration.quality</a></label><span class="classDesc"></span></div>
                                  <div class="classContent">
+                                    <div class="def"><span class="ident" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure."><a class="link_odd link_odd_elementSpec" href="../elements/space.html">space</a></span><span class="desc"><span class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
+                                             combined duration of the events equals the number of beats in the measure.</span></span></div>
                                     <div class="classBox" title="att.note.log">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.note.log.html">att.note.log</a></label><span class="classDesc"></span></div>
                                        <div class="classContent">
@@ -113,6 +115,8 @@
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="ident" title="A single pitched event."><a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a></span><span class="desc"><span class="desc">A single pitched event. <!-- (Read, p. 63) --> </span></span></div>
+                                    <div class="def"><span class="ident" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure."><a class="link_odd link_odd_elementSpec" href="../elements/space.html">space</a></span><span class="desc"><span class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
+                                             combined duration of the events equals the number of beats in the measure.</span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -124,8 +128,10 @@
                            <p>
                               <div class="constraint">
                                  <div class="schematronText">Duplex quality can only be used with longas (in Ars antiqua).</div>
+                                 <div class="schematronText">Duplex quality can only be used with longas (in Ars antiqua).</div>
                               </div>
                               <div class="constraint">
+                                 <div class="schematronText">Maior / minor quality can only be used with semibreves (in Ars antiqua).</div>
                                  <div class="schematronText">Maior / minor quality can only be used with semibreves (in Ars antiqua).</div>
                               </div>
                            </p>
@@ -165,6 +171,16 @@
                                                 <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:space[@dur.quality='duplex']"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@dur='longa'"</span>&gt;</span>
+                                                Duplex quality can only be used with longas (in Ars antiqua).
+                                                <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_maiorminor_quality"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
@@ -172,6 +188,16 @@
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:note[@dur.quality='maior' or @dur.quality='minor']"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@dur='semibrevis'"</span>&gt;</span>
+                                                Maior / minor quality can only be used with semibreves (in Ars antiqua).
+                                                <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:space[@dur.quality='maior' or @dur.quality='minor']"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@dur='semibrevis'"</span>&gt;</span>
                                                 Maior / minor quality can only be used with semibreves (in Ars antiqua).
@@ -186,7 +212,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f72ed5f4d5b4c7fb3389a604d4d53cdd24d2b5f8" target="_blank" rel="noopener noreferrer">#f72ed5f</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1fb2e94c597ff77d95e58a636c7c5d7bafd77b92" target="_blank" rel="noopener noreferrer">#1fb2e94</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
