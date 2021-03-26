@@ -35,7 +35,7 @@
                <section class="specPage dataTypeSpec">
                   <h2 id="data.ACCIDENTAL.GESTURAL">&lt;data.ACCIDENTAL.GESTURAL&gt;</h2>
                   <div class="specs">
-                     <div class="desc">Gestural/performed accidental values.</div>
+                     <div class="desc">Gestural/performed standard accidental values.</div>
                      <div id="module" class="facet module">
                         <div class="label">Module</div>
                         <div class="statement text">MEI</div>
@@ -46,77 +46,24 @@
                            <ul class="tab"></ul>
                         </div>
                      </div>
-                     <div id="allowedValues" class="facet allowedValues">
-                        <div class="label">Allowed Values</div>
-                        <div class="statement list">
-                           <div class="dataValueBox" id="s"><span class="dataValue ident">s</span><span class="dataValue desc"><span class="desc">Sharp.</span></span></div>
-                           <div class="dataValueBox" id="f"><span class="dataValue ident">f</span><span class="dataValue desc"><span class="desc">Flat.</span></span></div>
-                           <div class="dataValueBox" id="ss"><span class="dataValue ident">ss</span><span class="dataValue desc"><span class="desc">Double sharp.</span></span></div>
-                           <div class="dataValueBox" id="ff"><span class="dataValue ident">ff</span><span class="dataValue desc"><span class="desc">Double flat.</span></span></div>
-                           <div class="dataValueBox" id="n"><span class="dataValue ident">n</span><span class="dataValue desc"><span class="desc">Natural.</span></span></div>
-                           <div class="dataValueBox" id="su"><span class="dataValue ident">su</span><span class="dataValue desc"><span class="desc">Three quarter-tones sharp.</span></span></div>
-                           <div class="dataValueBox" id="sd"><span class="dataValue ident">sd</span><span class="dataValue desc"><span class="desc">Quarter-tone sharp.</span></span></div>
-                           <div class="dataValueBox" id="fu"><span class="dataValue ident">fu</span><span class="dataValue desc"><span class="desc">Quarter-tone flat.</span></span></div>
-                           <div class="dataValueBox" id="fd"><span class="dataValue ident">fd</span><span class="dataValue desc"><span class="desc">Three quarter-tones flat.</span></span></div>
-                        </div>
-                     </div>
                      <div id="declaration" class="facet declaration">
                         <div class="label">Declaration</div>
                         <div class="statement declaration">
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">ident=</span><span class="attributevalue">"data.ACCIDENTAL.GESTURAL"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>Gestural/performed accidental values.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>Gestural/performed standard accidental values.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;alternate&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"s"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Sharp.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;macroRef <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ACCIDENTAL.GESTURAL.basic.html">data.ACCIDENTAL.GESTURAL.basic</a>"</span>/&gt;</span></div>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"f"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;macroRef <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ACCIDENTAL.GESTURAL.extended.html">data.ACCIDENTAL.GESTURAL.extended</a>"</span>/&gt;</span></div>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ss"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Double sharp.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ff"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Double flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"n"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"su"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Three quarter-tones sharp.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"sd"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Quarter-tone sharp.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fu"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Quarter-tone flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fd"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Three quarter-tones flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;macroRef <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ACCIDENTAL.aeu.html">data.ACCIDENTAL.aeu</a>"</span>/&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/alternate&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
                                     <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
                         </div>
@@ -125,7 +72,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/55ea9a3debd50fa2773e17892e1bf069a0e44047" target="_blank" rel="noopener noreferrer">#55ea9a3</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f58c154f221ddb506777196e4c33154b82a4c6c5" target="_blank" rel="noopener noreferrer">#f58c154</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
