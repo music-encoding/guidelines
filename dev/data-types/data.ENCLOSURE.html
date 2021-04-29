@@ -35,7 +35,7 @@
                <section class="specPage dataTypeSpec">
                   <h2 id="data.ENCLOSURE">&lt;data.ENCLOSURE&gt;</h2>
                   <div class="specs">
-                     <div class="desc">Enclosures for editorial notes and accidentals.</div>
+                     <div class="desc">Enclosures for editorial notes, accidentals, articulations, etc.</div>
                      <div id="module" class="facet module">
                         <div class="label">Module</div>
                         <div class="statement text">MEI</div>
@@ -51,6 +51,8 @@
                         <div class="statement list">
                            <div class="dataValueBox" id="paren"><span class="dataValue ident">paren</span><span class="dataValue desc"><span class="desc">Parentheses: ( and ).</span></span></div>
                            <div class="dataValueBox" id="brack"><span class="dataValue ident">brack</span><span class="dataValue desc"><span class="desc">Square brackets: [ and ].</span></span></div>
+                           <div class="dataValueBox" id="box"><span class="dataValue ident">box</span><span class="dataValue desc"><span class="desc">Box.</span></span></div>
+                           <div class="dataValueBox" id="none"><span class="dataValue ident">none</span><span class="dataValue desc"><span class="desc">None.</span></span></div>
                         </div>
                      </div>
                      <div id="declaration" class="facet declaration">
@@ -59,7 +61,7 @@
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">ident=</span><span class="attributevalue">"data.ENCLOSURE"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>Enclosures for editorial notes and accidentals.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>Enclosures for editorial notes, accidentals, articulations, etc.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
                                        
@@ -74,6 +76,16 @@
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Square brackets: [ and ].<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"box"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Box.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"none"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>None.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
                                     <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
@@ -83,7 +95,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/fd4d2dc40c88a452ce1a299251db40706d96bf64" target="_blank" rel="noopener noreferrer">#fd4d2dc</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/41c9a4e1c9868545f76f45f98198687e0bc57037" target="_blank" rel="noopener noreferrer">#41c9a4e</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
