@@ -37,7 +37,7 @@
                   <h1 id="linkingdata"><span class="headingNumber">13</span><span class="head">Linking Data</span></h1>
                   
                   <p>This chapter describes the use of elements in MEI for linking and referencing. This
-                     includes the elements, models, and attributes that are part of the `MEI.ptrref` module.
+                     includes the elements, models, and attributes that are part of the 'MEI.ptrref' module.
                      This module contains declarations, techniques and approaches to establish references
                      within a single MEI document, or to link out from one MEI document to another or to
                      other external sources. This chapter also addresses possibilities to link into an
@@ -64,6 +64,740 @@
                      <p>This section describes techniques and approaches to establish references within a
                         single MEI document, or to link out from one MEI document to another or to other external
                         sources.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="ptrRef"><span class="headingNumber">13.2.1</span><span class="head">Pointers and References</span></h3>
+                        
+                        <p>The link elements discussed in this section are the <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> and the <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a> elements which are declared in the MEI.ptrref module.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a></span></div>
+                                 <div class="tile-subtitle text-gray">(pointer) – Defines a traversible pointer to another location, using only attributes
+                                    to
+                                    describe the destination.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a></span></div>
+                                 <div class="tile-subtitle text-gray">(reference) – Defines a traversible reference to another location. May contain text
+                                    and
+                                    sub-elements that describe the destination.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>
+                           The <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> element is a traversible pointer to another location. It is an empty linking element
+                           that uses only attributes to describe its link destination. It cannot contain text
+                           or sub-elements to describe the referenced object. The next example shows the use
+                           of the <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> element to target a certain identifier (here e.g. a page number, or more precisely,
+                           page break elements, <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a>, bearing these identifiers) from within a <a class="link_odd link_odd_elementSpec" href="../elements/list.html">list</a> of item descriptions:
+                           </p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;list&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;li&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- item description --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"#p123"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/li&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;li&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- item description --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"#p124"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/li&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/list&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 404. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>
+                           The <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a> element defines a traversible reference to another location. While <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> cannot contain other markup, the <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a> element can include text or sub-elements that further specify the link destination:
+                           </p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;repository&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://path.to.target/repo1.xml"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;title&gt;</span>…<span data-indentation="3" class="element">&lt;/title&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;address&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;addrLine&gt;</span>…<span data-indentation="4" class="element">&lt;/addrLine&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/address&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;identifier&gt;</span>…<span data-indentation="3" class="element">&lt;/identifier&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/ref&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/repository&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 405. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="ptrrefModule"><span class="headingNumber">13.2.2</span><span class="head">Specifying Link Elements</span></h3>
+                        
+                        <p>
+                           The <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> and <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a> elements share a set of common attributes that are inherited from the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a> class (a more detailed explanation is provided below):
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">target</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Identifies passive participants in a relationship; that is, the entities pointed
+                                    "to".</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">targettype</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Characterization of target resource(s) using any convenient classification scheme
+                                    or
+                                    typology.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">xlink:actuate</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Defines whether a link occurs automatically or must be requested by the user.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">xlink:show</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Defines how a remote resource is rendered.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">xlink:role</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Characterization of the relationship between resources. The value of the role
+                                    attribute must be a URI.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>
+                           In addition to the attributes in the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a> class, the <strong>@mimetype</strong> attribute from the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.internetMedia.html">att.internetMedia</a> class is also available on <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> and <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a> (a more detailed explanation is provided below):
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">mimetype</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.internetMedia.html">att.internetMedia</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Specifies the applicable MIME (multimedia internet mail extension) type. The value
+                                    should be a valid MIME media type defined by the Internet Engineering Task Force in
+                                    RFC
+                                    2046.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>
+                           The <a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a> class provides another set of common attributes (a more detailed explanation is provided
+                           in <a class="link_ptr chapterLink" title="Analysis Markup and Harmonies" href="../content/analysisharm.html">10 Analysis Markup and Harmonies</a>: <a class="link_ptr chapterLink" title="General Relationships Between Elements" href="../content/analysisharm.html#analysisDescribingRelationships">10.1.1 General Relationships Between Elements</a>):
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">copyof</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to an element of which the current element is a copy.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">corresp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Used to point to other elements that correspond to this one in a generic
+                                    fashion.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">follows</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">points to one or more events in a user-defined collection that are known to be
+                                    predecessors of the current element.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">next</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Used to point to the next event(s) in a user-defined collection.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">precedes</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to one or more events in a user-defined collection that are known to be
+                                    successors of the current element.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">prev</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to the previous event(s) in a user-defined collection.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">sameas</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to an element that is the same as the current element but is not a literal
+                                    copy
+                                    of the current element.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">synch</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to elements that are synchronous with the current element.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>
+                           Additionally, the following attributes are also available on <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> and <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">ref</a>:
+                           </p>
+                        
+                        <p>
+                           Via the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.metadataPointing.html">att.metadataPointing</a> class:
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">decls</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.metadataPointing.html">att.metadataPointing</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Identifies one or more metadata elements (other than classification terms) within
+                                    the
+                                    header, which are understood to apply to the element bearing this attribute and its
+                                    content.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>
+                           Via the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a> class:
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">class</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Contains one or more URIs which denote classification terms that apply to the entity
+                                    bearing this attribute.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>
+                           Via the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a> class:
+                           </p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">resp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                                    editing, or encoding. Its value must point to one or more identifiers declared in
+                                    the
+                                    document header.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="ptrRefTarget"><span class="headingNumber">13.2.2.1</span><span class="head">Define the link element's target (XPointer mechanism)</span></h4>
+                           
+                           <p>
+                              The <span class="att">target</span> attribute specifies the destination of a pointer or reference using a method standardized
+                              by the W3C consortium, known as the XPointer mechanism. The XPointer framework is
+                              described at <a class="link_ref link_external" href="http://www.w3.org/TR/xptr-framework/">http://www.w3.org/TR/xptr-framework/</a>. This mechanism permits a range of complexity, from the very simple (a reference
+                              to the value of the target element’s <span class="att">xml:id</span> attribute) to the more complex usage of a full URI with embedded XPointers:
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- element ID --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"#SA"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 406. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- relative URL --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"myFile.xml"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 407. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- absolute URL --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"http://www.w3.org/TR/xptr-framework/"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 408. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- URL with fragment identifier --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"http://www.w3.org/TR/xptr-xpointer/#xpointer(id('chum')/quote)"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 409. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- URN --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"urn:isan:0000-0000-9E59-0000-O-0000-0000-2"</span>&gt;</span>Spider-Man<span data-indentation="1" class="element">&lt;/ref&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 410. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              A <span class="att">target</span> attribute is not required in order to mark the textual content as a cross-reference,
+                              as demonstrated in the example below; however, without this attribute the reference
+                              will not be resolvable.
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;p&gt;</span>See 
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;ref&gt;</span>Hankinson, Roland, Fujinaga (2011)<span data-indentation="2" class="element">&lt;/ref&gt;</span></div>.<span data-indentation="1" class="element">&lt;/p&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 411. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="ptrRefTargettype"><span class="headingNumber">13.2.2.2</span><span class="head">Define the type of a link element's target</span></h4>
+                           
+                           <p>
+                              The <span class="att">targettype</span> attribute allows the target resource to be characterized using any convenient classification
+                              scheme or typology. This is often useful when the target requires special processing,
+                              e.g., for display purposes. The pointers in the examples below may be formatted differently,
+                              e.g., the bibliographic citation may result in special typography while the pointer
+                              to the audio file may be used to embed an audio player:
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"#cit1"</span> <span class="attribute">targettype=</span><span class="attributevalue">"biblioCitation"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 412. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"http://path.to.resource/myAudio.aiff"</span> <span class="attribute">targettype=</span><span class="attributevalue">"audioClip"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 413. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="ptrRefMimetype"><span class="headingNumber">13.2.2.3</span><span class="head">Define the mimetype of a link element's target</span></h4>
+                           
+                           <p>
+                              The function of the <span class="att">mimetype</span> attribute is similar to that of <span class="att">targettype</span> in that they both allow classification of the destination. Unlike <span class="att">targettype</span>, however, <span class="att">mimetype</span> explicitly defines the destination type using a standard taxonomy. Its value should
+                              be a valid MIME (Multimedia Internet Mail Extension) type as defined by the Internet
+                              Engineering Task Force (IETF) in RFC 2046, available at <a class="link_ref link_external" href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a>. The following are all valid mimetype values:
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">mimetype=</span><span class="attributevalue">"application/pdf"</span> <span class="attribute">target=</span><span class="attributevalue">"my.pdf"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">mimetype=</span><span class="attributevalue">"text/xml"</span> <span class="attribute">target=</span><span class="attributevalue">"my.xml"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">mimetype=</span><span class="attributevalue">"image/png"</span> <span class="attribute">target=</span><span class="attributevalue">"my.png"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 414. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              As shown above, the <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">ptr</a> element can be used to ‘point to’ a digital image (<code class="">target="my.png"</code>). However, when the intention is to <em>display</em> a digital image as part of the rendering of an MEI file, the <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">graphic</a> element provides a convenient and recommended alternative:
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;graphic <span class="attribute">mimetype=</span><span class="attributevalue">"image/png"</span> <span class="attribute">target=</span><span class="attributevalue">"my.png"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 415. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              The <span class="att">mimetype</span> attribute is particularly useful for documenting the nature of the destination when
+                              the value of <span class="att">target</span> does not provide a filename extension or when the destination is a non-standard file
+                              type:
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">mimetype=</span><span class="attributevalue">"application/pdf"</span> <span class="attribute">target=</span><span class="attributevalue">"myFile1"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">mimetype=</span><span class="attributevalue">"application/x-myApplicationSpecificFile"</span> <span class="attribute">target=</span><span class="attributevalue">"myFile2"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 416. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="ptrRefXlinkActuateShow"><span class="headingNumber">13.2.2.4</span><span class="head">Determine the link element's behaviour</span></h4>
+                           
+                           <p>
+                              The <span class="att">xlink:actuate</span> and <span class="att">xlink:show</span> attributes are used in conjunction to determine the link’s behavior.
+                              </p>
+                           
+                           <p>
+                              The <span class="att">xlink:actuate</span> attribute defines whether the resolution of a link occurs automatically or must be
+                              requested by the user.
+                              </p>
+                           
+                           <p>
+                              The following values are allowed for the <span class="att">xlink:actuate</span> attribute:
+                              </p>
+                           
+                           <p>
+                              
+                              <p class="gloss"><strong><span>‘onLoad’</span></strong>:
+                                 load the target resource(s) immediately</p>
+                              <p class="gloss"><strong><span>‘onRequest’</span></strong>:
+                                 load the target resource(s) upon user request, e.g., after a mouse click</p>
+                              <p class="gloss"><strong><span>‘none’</span></strong>:
+                                 do not permit loading of the target resource(s); no other markup is provided to determine
+                                 appropriate behavior</p>
+                              <p class="gloss"><strong><span>‘other’</span></strong>:
+                                 behavior other than permitted by the other values of this attribute; application should
+                                 look for other markup to determine appropriate behavior</p>
+                              </p>
+                           
+                           <p>
+                              The value “none” may be used to indicate that the link is un-traversable and no other
+                              markup is provided to determine appropriate behavior; it may or may not render the
+                              link invisible to the user. When the value of <span class="att">xlink:actuate</span> is “other”, an application must base a determination of appropriate behavior on factors
+                              other than the value of <span class="att">xlink:actuate</span>.
+                              </p>
+                           
+                           <p>
+                              The <span class="att">xlink:show</span> attribute defines how a remote resource is to be rendered. The following values are
+                              permitted:
+                              </p>
+                           
+                           <p>
+                              
+                              <p class="gloss"><strong><span>‘new’</span></strong>:
+                                 target of the link appears in a new window</p>
+                              <p class="gloss"><strong><span>‘replace’</span></strong>:
+                                 target of the link replaces the current resource in the same window</p>
+                              <p class="gloss"><strong><span>‘embed’</span></strong>:
+                                 the content of the target appears at the point of the link</p>
+                              <p class="gloss"><strong><span>‘none’</span></strong>:
+                                 do not permit traversal to the target resource(s); no other markup is provided to
+                                 determine appropriate behavior</p>
+                              <p class="gloss"><strong><span>‘other’</span></strong>:
+                                 behavior other than permitted by the other values of this attribute; application should
+                                 look for other markup to determine appropriate behavior</p>
+                              </p>
+                           
+                           <p>
+                              The value “none” may be used to indicate a link that is not displayed or is not displayable
+                              and no other markup is provided to determine appropriate behavior. When the value
+                              of <span class="att">xlink:show</span> is “other”, an application must base a determination of appropriate behavior on factors
+                              other than the value of <span class="att">xlink:show</span>.
+                              </p>
+                           
+                           <p>
+                              The following example illustrates a pointer that results in the automatic creation
+                              of a new window with the content of the target loaded in it:
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">mimetype=</span><span class="attributevalue">"text"</span> <span class="attribute">target=</span><span class="attributevalue">"http://www.ietf.org/rfc/rfc2046.txt"</span> <span class="attribute">xlink:actuate=</span><span class="attributevalue">"onLoad"</span> <span class="attribute">xlink:show=</span><span class="attributevalue">"new"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 417. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="ptrRefXlinkRole"><span class="headingNumber">13.2.2.5</span><span class="head">Determine the link element's role</span></h4>
+                           
+                           <p>
+                              The <span class="att">xlink:role</span> attribute describes the meaning of resources within the context of a link. It is
+                              used to label or describe a link or resource in a human- and machine-readable fashion.
+                              The value of <span class="att">xlink:role</span> must be an absolute URI (Uniform Resource Identifier) reference as defined by the
+                              Internet Engineering Task Force (IETF) in RFC 3986, available at <a class="link_ref link_external" href="http://tools.ietf.org/html/rfc3986">http://tools.ietf.org/html/rfc3986</a>. The URI reference identifies a resource that describes the intended property. When
+                              no value is supplied, no particular role value is to be inferred.
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"joe.xml"</span> <span class="attribute">xlink:role=</span><span class="attributevalue">"http://www.example.com/linkprops/student"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 418. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"joe.xml"</span> <span class="attribute">xlink:role=</span><span class="attributevalue">"http://www.example.com/linkprops/instructor"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="caption">Listing 419. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              In the preceding examples, the value of the <span class="att">xlink:role</span> attribute may be used to specify the value of the link target’s role.
+                              </p>
+                           </div>
+                        </div>
                      </div>
                   
                   <div class="div2">
@@ -75,7 +809,7 @@
                   </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f5d2960fa316d828e5d07e5c0b965237e245be2c" target="_blank" rel="noopener noreferrer">#f5d2960</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/fd4d2dc40c88a452ce1a299251db40706d96bf64" target="_blank" rel="noopener noreferrer">#fd4d2dc</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
@@ -89,7 +823,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-3" href="#ptrRef">13.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">13.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -107,7 +841,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-3" href="#ptrRef">13.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">13.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
                   </div>
                </div>
             </div>
