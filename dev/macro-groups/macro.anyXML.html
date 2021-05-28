@@ -69,8 +69,27 @@
                      </div>
                      <div id="mayContain" class="facet mayContain">
                         <div class="label">May Contain</div>
-                        <div class="statement text">
-                           any XML element, with any attribute <span class="emptyStatement">(<em>macro.anyXML is self-nested</em>)</span></div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="mayContain_compact" id="mayContain_compact_tab" href="#mayContain_compact" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="mayContain_class" id="mayContain_class_tab" href="#mayContain_class" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="mayContain_module" id="mayContain_module_tab" href="#mayContain_module" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="mayContain_compact" class="facetTabbedContent compact active" data-label="compact"><span class="textualContent" title="textual content">textual content, </span></div>
+                           <div id="mayContain_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="textualContent" title="textual content">
+                                 textual content
+                                 </div>
+                              <div class="classBox" title="macro.anyXML">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_macroGroup" href="../macro-groups/macro.anyXML.html">macro.anyXML</a></label><span class="classDesc">(MEI.shared) Permits any XML elements except those from the MEI or SVG namespace.</span></div>
+                                 <div class="classContent"></div>
+                              </div>
+                           </div>
+                           <div id="mayContain_module" class="facetTabbedContent module" data-label="by module">
+                              <text></text>
+                              <div class="textualContent" title="textual content">textual content</div>
+                           </div>
+                        </div>
                      </div>
                      <div id="declaration" class="facet declaration">
                         <div class="label">Declaration</div>
@@ -120,7 +139,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7bdbc66da27896e2a8bf63b9e81807ddf25579f5" target="_blank" rel="noopener noreferrer">#7bdbc66</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/948d3134b87dfa36eaa3213797642c80afc15f2b" target="_blank" rel="noopener noreferrer">#948d313</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
