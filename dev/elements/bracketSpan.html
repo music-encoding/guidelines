@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland"></meta>
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
-      <meta name="date" content="2021-06-02"></meta>
+      <meta name="date" content="2021-06-15"></meta>
       <meta name="generator" content="MEI XSLT stylesheets"></meta>
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
       <meta name="DC.Type" content="Text"></meta>
@@ -219,7 +219,7 @@
                                  <div class="desc"><span class="ident attribute" title="Describes the function of the bracketed event sequence.">func</span><span class="attributeUsage">(required)</span><span class="attributeDesc desc">Describes the function of the bracketed event sequence.</span><span class="attributeValues">
                                        Allowed values are:
                                        "<span style="font-weight: 500;">coloration</span>" <i>(Represents coloration in the mensural notation source material.)</i>,  "<span style="font-weight: 500;">cross-rhythm</span>" <i>(Marks a sequence which does not match the current meter.)</i>,  "<span style="font-weight: 500;">ligature</span>" <i>(Represents a ligature in the mensural notation source material.)</i></span></div>
-                                 <div class="breadcrumb"><span class="step start">&lt;bracketSpan&gt;</span><span class="step">direct children</span><span class="step end">@func</span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;bracketSpan&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.bracketSpan.log.html">att.bracketSpan.log</a></span><span class="step end">@func</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="glyph.name glyph.num A name or label associated with the controlled vocabulary from which the value of or is taken.">glyph.auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with the controlled vocabulary from which the value of
@@ -550,14 +550,6 @@
                               </div>
                            </div>
                            <div id="attributes_class" class="facetTabbedContent class" data-label="by class">
-                              <div class="classBox" title="direct children">
-                                 <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
-                                 <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the function of the bracketed event sequence.">func</span><span class="attributeUsage">(required)</span><span class="attributeDesc desc">Describes the function of the bracketed event sequence.</span><span class="attributeValues">
-                                             Allowed values are:
-                                             "<span style="font-weight: 500;">coloration</span>" <i>(Represents coloration in the mensural notation source material.)</i>,  "<span style="font-weight: 500;">cross-rhythm</span>" <i>(Marks a sequence which does not match the current meter.)</i>,  "<span style="font-weight: 500;">ligature</span>" <i>(Represents a ligature in the mensural notation source material.)</i></span></span></div>
-                                 </div>
-                              </div>
                               <div class="classBox" title="att.common">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></label><span class="classDesc">(MEI.shared) Attributes common to many elements.</span></div>
                                  <div class="classContent">
@@ -668,6 +660,9 @@
                               <div class="classBox" title="att.bracketSpan.log">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.bracketSpan.log.html">att.bracketSpan.log</a></label><span class="classDesc">(MEI.cmn) Logical domain attributes.</span></div>
                                  <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the function of the bracketed event sequence.">func</span><span class="attributeUsage">(required)</span><span class="attributeDesc desc">Describes the function of the bracketed event sequence.</span><span class="attributeValues">
+                                             Allowed values are:
+                                             "<span style="font-weight: 500;">coloration</span>" <i>(Represents coloration in the mensural notation source material.)</i>,  "<span style="font-weight: 500;">cross-rhythm</span>" <i>(Marks a sequence which does not match the current meter.)</i>,  "<span style="font-weight: 500;">ligature</span>" <i>(Represents a ligature in the mensural notation source material.)</i></span></span></div>
                                     <div class="classBox" title="att.controlEvent">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></label><span class="classDesc">(MEI.shared) Attributes shared by events which rely on other events for their existence.
                                              For example, a slur/phrase marking must be drawn between or over a group of notes.
@@ -2026,37 +2021,6 @@
                                           <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"func"</span> <span class="attribute">usage=</span><span class="attributevalue">"req"</span>&gt;</span>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>Describes the function of the bracketed event sequence.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKENS"</span>/&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"semi"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"coloration"</span>&gt;</span>
-                                                
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc&gt;</span>Represents coloration in the mensural notation source material.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
-                                                <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"cross-rhythm"</span>&gt;</span>
-                                                
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc&gt;</span>Marks a sequence which does not match the current meter.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
-                                                <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ligature"</span>&gt;</span>
-                                                
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc&gt;</span>Represents a ligature in the mensural notation source material.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
-                                                <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valList&gt;</span></div>
-                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
-                                       <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
-                                    
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>Text that interrupts the bracket used to mark the event group may be captured as the
@@ -2073,7 +2037,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/79f36a5d7c6247c859e9eeb25b02100ce790d934" target="_blank" rel="noopener noreferrer">#79f36a5</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/2a04895ad82af730a741a4b431f8c7d1bc0f8256" target="_blank" rel="noopener noreferrer">#2a04895</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
