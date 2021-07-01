@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland"></meta>
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
-      <meta name="date" content="2021-06-30"></meta>
+      <meta name="date" content="2021-07-01"></meta>
       <meta name="generator" content="MEI XSLT stylesheets"></meta>
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
       <meta name="DC.Type" content="Text"></meta>
@@ -47,7 +47,39 @@
                      <div id="usedBy" class="facet usedBy">
                         <div class="label">Used by</div>
                         <div class="statement classes">
-                           <ul class="tab"></ul>
+                           <div class="classBox" title="Attribute Classes">
+                              <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.MEASUREMENTABS</span></div>
+                              <div class="classContent">
+                                 <div class="def"><span class="ident" title="Encodes the stem length."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plica.vis.html">att.plica.vis</a>/<span title="Encodes the stem length.">@len</span></span><span class="desc"><span class="desc">Encodes the stem length.</span></span></div>
+                                 <div class="def"><span class="ident" title="Encodes the stem length."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.stem.vis.html">att.stem.vis</a>/<span title="Encodes the stem length.">@len</span></span><span class="desc"><span class="desc">Encodes the stem length.</span></span></div>
+                                 <div class="def"><span class="ident" title="Measurement of the vertical dimension of an entity."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.height.html">att.height</a>/<span title="Measurement of the vertical dimension of an entity.">@height</span></span><span class="desc"><span class="desc">Measurement of the vertical dimension of an entity.</span></span></div>
+                                 <div class="def"><span class="ident" title="Specifies the height of the page; may be expressed in real-world units or staff steps."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.pages.html">att.pages</a>/<span title="Specifies the height of the page; may be expressed in real-world units or staff steps.">@page.height</span></span><span class="desc"><span class="desc">Specifies the height of the page; may be expressed in real-world units or staff
+                                          steps.</span></span></div>
+                                 <div class="def"><span class="ident" title="Describes the width of the page; may be expressed in real-world units or staff steps."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.pages.html">att.pages</a>/<span title="Describes the width of the page; may be expressed in real-world units or staff steps.">@page.width</span></span><span class="desc"><span class="desc">Describes the width of the page; may be expressed in real-world units or staff
+                                          steps.</span></span></div>
+                                 <div class="def"><span class="ident" title="Indicates the amount of whitespace at the top of a page."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.pages.html">att.pages</a>/<span title="Indicates the amount of whitespace at the top of a page.">@page.topmar</span></span><span class="desc"><span class="desc">Indicates the amount of whitespace at the top of a page.</span></span></div>
+                                 <div class="def"><span class="ident" title="Indicates the amount of whitespace at the bottom of a page."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.pages.html">att.pages</a>/<span title="Indicates the amount of whitespace at the bottom of a page.">@page.botmar</span></span><span class="desc"><span class="desc">Indicates the amount of whitespace at the bottom of a page.</span></span></div>
+                                 <div class="def"><span class="ident" title="Indicates the amount of whitespace at the left side of a page."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.pages.html">att.pages</a>/<span title="Indicates the amount of whitespace at the left side of a page.">@page.leftmar</span></span><span class="desc"><span class="desc">Indicates the amount of whitespace at the left side of a page.</span></span></div>
+                                 <div class="def"><span class="ident" title="Indicates the amount of whitespace at the right side of a page."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.pages.html">att.pages</a>/<span title="Indicates the amount of whitespace at the right side of a page.">@page.rightmar</span></span><span class="desc"><span class="desc">Indicates the amount of whitespace at the right side of a page.</span></span></div>
+                                 <div class="def"><span class="ident" title="Encodes the stem length."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.stems.html">att.stems</a>/<span title="Encodes the stem length.">@stem.len</span></span><span class="desc"><span class="desc">Encodes the stem length.</span></span></div>
+                                 <div class="def"><span class="ident" title="Describes the amount of whitespace at the left system margin relative to page.leftmar."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.systems.html">att.systems</a>/<span title="Describes the amount of whitespace at the left system margin relative to page.leftmar.">@system.leftmar</span></span><span class="desc"><span class="desc">Describes the amount of whitespace at the left system margin relative to
+                                          page.leftmar.</span></span></div>
+                                 <div class="def"><span class="ident" title="Describes the amount of whitespace at the right system margin relative to page.rightmar."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.systems.html">att.systems</a>/<span title="Describes the amount of whitespace at the right system margin relative to page.rightmar.">@system.rightmar</span></span><span class="desc"><span class="desc">Describes the amount of whitespace at the right system margin relative to
+                                          page.rightmar.</span></span></div>
+                                 <div class="def"><span class="ident" title="Describes the distance from page's top edge to the first system; used for first page only."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.systems.html">att.systems</a>/<span title="Describes the distance from page's top edge to the first system; used for first page only.">@system.topmar</span></span><span class="desc"><span class="desc">Describes the distance from page's top edge to the first system; used for first page
+                                          only.</span></span></div>
+                                 <div class="def"><span class="ident" title="Measurement of the horizontal dimension of an entity."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.width.html">att.width</a>/<span title="Measurement of the horizontal dimension of an entity.">@width</span></span><span class="desc"><span class="desc">Measurement of the horizontal dimension of an entity.</span></span></div>
+                                 <div class="def"><span class="ident" title="Records the amount of separation between floating beams and stems."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.fTrem.vis.html">att.fTrem.vis</a>/<span title="Records the amount of separation between floating beams and stems.">@float.gap</span></span><span class="desc"><span class="desc">Records the amount of separation between floating beams and stems.</span></span></div>
+                                 <div class="def"><span class="ident" title="Specifies the distance between the lines at the open end of a hairpin dynamic mark."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.hairpin.vis.html">att.hairpin.vis</a>/<span title="Specifies the distance between the lines at the open end of a hairpin dynamic mark.">@opening</span></span><span class="desc"><span class="desc">Specifies the distance between the lines at the open end of a hairpin dynamic
+                                          mark.</span></span></div>
+                              </div>
+                           </div>
+                           <div class="classBox" title="Data Types">
+                              <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.MEASUREMENTABS</span></div>
+                              <div class="classContent">
+                                 <div class="def"><span class="ident" title="Datatype of line width measurements."><a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a></span><span class="desc"><span class="desc">Datatype of line width measurements.</span></span></div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                      <div id="declaration" class="facet declaration">
@@ -76,7 +108,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/81a89efbc3c99d101bcecd346cf4933ab00284f6" target="_blank" rel="noopener noreferrer">#81a89ef</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/96166b37a2911d2a97911ede87e1ad20c581875f" target="_blank" rel="noopener noreferrer">#96166b3</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>

@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland"></meta>
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model"></meta>
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval"></meta>
-      <meta name="date" content="2021-06-30"></meta>
+      <meta name="date" content="2021-07-01"></meta>
       <meta name="generator" content="MEI XSLT stylesheets"></meta>
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines"></meta>
       <meta name="DC.Type" content="Text"></meta>
@@ -43,7 +43,27 @@
                      <div id="usedBy" class="facet usedBy">
                         <div class="label">Used by</div>
                         <div class="statement classes">
-                           <ul class="tab"></ul>
+                           <div class="classBox" title="Attribute Classes">
+                              <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.PERCENT</span></div>
+                              <div class="classContent">
+                                 <div class="def"><span class="ident" title="Records the amount of time to be &#34;stolen&#34; from a non-grace note/chord."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.graced.html">att.graced</a>/<span title="Records the amount of time to be &#34;stolen&#34; from a non-grace note/chord.">@grace.time</span></span><span class="desc"><span class="desc">Records the amount of time to be "stolen" from a non-grace note/chord.</span></span></div>
+                                 <div class="def"><span class="ident" title="Describes a curve as one or more pairs of values with respect to an imaginary line connecting the starting and ending points of the curve. The first value captures a distance to the left (positive value) or right (negative value) of the line, expressed in virtual units. The second value of each pair represents a point along the line, expressed as a percentage of the line's length. N.B. An MEI virtual unit (VU) is half the distance between adjacent staff lines."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.curvature.html">att.curvature</a>/<span title="Describes a curve as one or more pairs of values with respect to an imaginary line connecting the starting and ending points of the curve. The first value captures a distance to the left (positive value) or right (negative value) of the line, expressed in virtual units. The second value of each pair represents a point along the line, expressed as a percentage of the line's length. N.B. An MEI virtual unit (VU) is half the distance between adjacent staff lines.">@bulge</span></span><span class="desc"><span class="desc">Describes a curve as one or more pairs of values with respect to an imaginary line
+                                          connecting the starting and ending points of the curve. The first value captures a
+                                          distance to the left (positive value) or right (negative value) of the line, expressed
+                                          in
+                                          virtual units. The second value of each pair represents a point along the line, expressed
+                                          as a percentage of the line's length. N.B. An MEI virtual unit (VU) is half the distance
+                                          between adjacent staff lines.</span></span></div>
+                                 <div class="def"><span class="ident" title="Scale factor to be applied to the feature to make it the desired display size."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scalable.html">att.scalable</a>/<span title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span></span><span class="desc"><span class="desc">Scale factor to be applied to the feature to make it the desired display size.</span></span></div>
+                              </div>
+                           </div>
+                           <div class="classBox" title="Data Types">
+                              <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.PERCENT</span></div>
+                              <div class="classContent">
+                                 <div class="def"><span class="ident" title="Font size expressions."><a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZE.html">data.FONTSIZE</a></span><span class="desc"><span class="desc">Font size expressions.</span></span></div>
+                                 <div class="def"><span class="ident" title="Page scale factor; a percentage of the values in page.height and page.width."><a class="link_odd link_odd_dataType" href="../data-types/data.PGSCALE.html">data.PGSCALE</a></span><span class="desc"><span class="desc">Page scale factor; a percentage of the values in page.height and page.width.</span></span></div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                      <div id="declaration" class="facet declaration">
@@ -68,7 +88,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/81a89efbc3c99d101bcecd346cf4933ab00284f6" target="_blank" rel="noopener noreferrer">#81a89ef</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/96166b37a2911d2a97911ede87e1ad20c581875f" target="_blank" rel="noopener noreferrer">#96166b3</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
