@@ -36,7 +36,7 @@
                   <h2 id="layerDef">&lt;layerDef&gt;</h2>
                   <div class="specs">
                      <div class="desc">(layer definition) – Container for layer meta-information.
-                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/shared.html#sharedScoreAndParts" title="2.2.1 Score and Parts">2.2.1 Score and Parts</a>, <a class="chapterLink" href="../content/cmn.html#cmnMeasures" title="4.2.1 The Role of the Measure Element">4.2.1 The Role of the Measure Element</a>, <a class="chapterLink" href="../content/cmn.html#cmnDefs" title="4.2.2 Defining Score Parameters for CMN">4.2.2 Defining Score Parameters for CMN</a>, <a class="chapterLink" href="../content/cmn.html#cmnBeams" title="4.3.1 Beams">4.3.1 Beams</a>, <a class="chapterLink" href="../content/scholarlyediting.html#critAppInDefs" title="11.1.3 Variants in Score Definitions">11.1.3 Variants in Score Definitions</a></div>
+                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/shared.html#sharedScoreAndParts" title="2.2.1 Score and Parts">2.2.1 Score and Parts</a>, <a class="chapterLink" href="../content/cmn.html#cmnMeasures" title="4.2.1 The Role of the Measure Element">4.2.1 The Role of the Measure Element</a>, <a class="chapterLink" href="../content/cmn.html#cmnDefs" title="4.2.2 Defining Score Parameters for CMN">4.2.2 Defining Score Parameters for CMN</a>, <a class="chapterLink" href="../content/cmn.html#cmnDefsSepecial" title="4.2.3 Special cases in staff definitions">4.2.3 Special cases in staff definitions</a>, <a class="chapterLink" href="../content/cmn.html#cmnBeams" title="4.3.1 Beams">4.3.1 Beams</a>, <a class="chapterLink" href="../content/scholarlyediting.html#critAppInDefs" title="11.1.3 Variants in Score Definitions">11.1.3 Variants in Score Definitions</a></div>
                      </div>
                      <div id="module" class="facet module">
                         <div class="label">Module</div>
@@ -762,7 +762,7 @@
                               <li class="tab-item"><a data-display="mayContain_class" id="mayContain_class_tab" href="#mayContain_class" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="mayContain_module" id="mayContain_module_tab" href="#mayContain_module" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="mayContain_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/ambitus.html" title="Range of a voice, instrument or piece.">ambitus</a>, <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html" title="(instrument definition) – MIDI instrument declaration.">instrDef</a>, <a class="link_odd link_odd_elementSpec" href="../elements/label.html" title="A container for document text that identifies the feature to which it is attached. For a &#34;tool tip&#34; or other generated label, use the label attribute.">label</a>, <a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html" title="A label on the pages following the first.">labelAbbr</a></div>
+                           <div id="mayContain_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/ambitus.html" title="Range of a voice, instrument or piece.">ambitus</a>, <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html" title="(instrument definition) – MIDI instrument declaration.">instrDef</a>, <a class="link_odd link_odd_elementSpec" href="../elements/label.html" title="A container for document text that identifies the feature to which it is attached. For a &#34;tool tip&#34; or other generated label, use the label attribute.">label</a>, <a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html" title="A label on the pages following the first.">labelAbbr</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html" title="(meter signature) – Written meter signature.">meterSig</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html" title="(meter signature group) – Used to capture alternating, interchanging, and mixed meter signatures.">meterSigGrp</a></div>
                            <div id="mayContain_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="direct children">
                                  <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
@@ -785,8 +785,24 @@
                                     <div class="def"><span class="ident" title="A label on the pages following the first."><a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html">labelAbbr</a></span><span class="desc"><span class="desc">A label on the pages following the first.</span></span></div>
                                  </div>
                               </div>
+                              <div class="classBox" title="model.meterSigLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.meterSigLike.html">model.meterSigLike</a></label><span class="classDesc">(MEI.shared) Groups elements that represent a meter signature.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(meter signature) – Written meter signature."><a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">meterSig</a></span><span class="desc"><span class="desc">(meter signature) – Written meter signature.</span></span></div>
+                                    <div class="def"><span class="ident" title="(meter signature group) – Used to capture alternating, interchanging, and mixed meter signatures."><a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html">meterSigGrp</a></span><span class="desc"><span class="desc">(meter signature group) – Used to capture alternating, interchanging, and mixed meter
+                                             signatures.</span></span></div>
+                                 </div>
+                              </div>
                            </div>
                            <div id="mayContain_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc">Common Music Notation (CMN) repertoire component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(meter signature) – Written meter signature."><a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">meterSig</a></span><span class="desc"><span class="desc">(meter signature) – Written meter signature.</span></span></div>
+                                    <div class="def"><span class="ident" title="(meter signature group) – Used to capture alternating, interchanging, and mixed meter signatures."><a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html">meterSigGrp</a></span><span class="desc"><span class="desc">(meter signature group) – Used to capture alternating, interchanging, and mixed meter
+                                             signatures.</span></span></div>
+                                 </div>
+                              </div>
                               <div class="classBox" title="MEI.midi">
                                  <div class="classHeading"><label class="classLabel">MEI.midi</label><span class="classDesc">MIDI component declarations.</span></div>
                                  <div class="classContent">
@@ -845,15 +861,17 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.labelLike.html">model.labelLike</a>"</span>/&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.labelLike.html">model.labelLike</a>"</span>/&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.instrDefLike.html">model.instrDefLike</a>"</span>/&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.instrDefLike.html">model.instrDefLike</a>"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.meterSigLike.html">model.meterSigLike</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;rng:optional&gt;</span>
@@ -868,7 +886,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7886862df4009a2949a6a84dd2df27bc055f7260" target="_blank" rel="noopener noreferrer">#7886862</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9d799a6b163283b9516605f23093cece7654b494" target="_blank" rel="noopener noreferrer">#9d799a6</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>

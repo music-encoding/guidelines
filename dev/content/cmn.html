@@ -727,7 +727,62 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnReDef"><span class="headingNumber">4.2.3</span><span class="head">Redefinition of Score Parameters</span></h3>
+                        <h3 id="cmnDefsSepecial"><span class="headingNumber">4.2.3</span><span class="head">Special cases in staff definitions</span></h3>
+                        
+                        <p>Usually <a class="link_odd link_odd_elementSpec" href="../elements/clef.html">clef</a>, <a class="link_odd link_odd_elementSpec" href="../elements/key.html">key</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">meterSig</a> apply to a whole staff.</p>
+                        
+                        <p>In some rare cases one can find different meters in different layers, as seen in Maurice
+                           Ravel's <em>Oiseaux tristes</em>.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmn/Ravel-layerMeter.png"></img><figcaption class="caption">Figure 10. Different meters in different layers on the upper staff</figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>In these cases it is necessary to encode each <a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">meterSig</a> for the staff as child of the corresponding <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">layerDef</a>:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_valid">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffGrp <span class="attribute">bar.thru=</span><span class="attributevalue">"true"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layerDef <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;meterSig <span class="attribute">count=</span><span class="attributevalue">"4"</span> <span class="attribute">unit=</span><span class="attributevalue">"4"</span> <span class="attribute">sym=</span><span class="attributevalue">"common"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layerDef&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layerDef <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;meterSig <span class="attribute">count=</span><span class="attributevalue">"12"</span> <span class="attribute">unit=</span><span class="attributevalue">"8"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layerDef&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staffDef&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layerDef <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;meterSig <span class="attribute">count=</span><span class="attributevalue">"4"</span> <span class="attribute">unit=</span><span class="attributevalue">"4"</span> <span class="attribute">sym=</span><span class="attributevalue">"common"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layerDef&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staffDef&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staffGrp&gt;</span></div>
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 112. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="cmnReDef"><span class="headingNumber">4.2.4</span><span class="head">Redefinition of Score Parameters</span></h3>
                         
                         <p>Sometimes it is necessary to provide the parameters of a score or a staff with new
                            values. For example. a score may change keys, gain or lose staves, use different layout
@@ -754,11 +809,11 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnNotesChords"><span class="headingNumber">4.2.4</span><span class="head">Notes, Chords and Rests in CMN</span></h3>
+                        <h3 id="cmnNotesChords"><span class="headingNumber">4.2.5</span><span class="head">Notes, Chords and Rests in CMN</span></h3>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnNotes"><span class="headingNumber">4.2.4.1</span><span class="head">Notes</span></h4>
+                           <h4 id="cmnNotes"><span class="headingNumber">4.2.5.1</span><span class="head">Notes</span></h4>
                            
                            <p>Undoubtedly, the most important element for any music notation representation is the
                               <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element, which is defined in section <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a>. This section describes the usage of <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> in the CMN repertoire as well as CMN-specific additions to the basic definition in
@@ -766,7 +821,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnNotesBasic"><span class="headingNumber">4.2.4.1.1</span><span class="head">Basic Usage of Notes in CMN</span></h5>
+                              <h5 id="cmnNotesBasic"><span class="headingNumber">4.2.5.1.1</span><span class="head">Basic Usage of Notes in CMN</span></h5>
                               
                               <p>In CMN, notes are determined by three basic parameters:</p>
                               
@@ -787,7 +842,7 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 112. </figcaption>
+                                    <figcaption class="caption">Listing 113. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -841,20 +896,20 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 113. </figcaption>
+                                    <figcaption class="caption">Listing 114. </figcaption>
                                  </figure>
                                  </p>
                               </div>
                            
                            <div class="div5">
                               
-                              <h5 id="cmnNotesGrace"><span class="headingNumber">4.2.4.1.2</span><span class="head">Grace Notes</span></h5>
+                              <h5 id="cmnNotesGrace"><span class="headingNumber">4.2.5.1.2</span><span class="head">Grace Notes</span></h5>
                               
                               <p>The CMN module adds two optional attributes, <span class="att">grace</span> and <span class="att">grace.time</span>, to <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a>. The presence of the <span class="att">grace</span> attribute indicates a grace note or chord.</p>
                               
                               <p>
                                  
-                                 <figure class="figure"><img class="graphic" src="../images/modules/cmn/grace-300.png"></img><figcaption class="caption">Figure 10. Grace notes</figcaption>
+                                 <figure class="figure"><img class="graphic" src="../images/modules/cmn/grace-300.png"></img><figcaption class="caption">Figure 11. Grace notes</figcaption>
                                  </figure>
                                  </p>
                               
@@ -885,7 +940,7 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 114. </figcaption>
+                                    <figcaption class="caption">Listing 115. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -915,7 +970,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnChords"><span class="headingNumber">4.2.4.2</span><span class="head">Chords</span></h4>
+                           <h4 id="cmnChords"><span class="headingNumber">4.2.5.2</span><span class="head">Chords</span></h4>
                            
                            <p>Often we find multiple notes that are not sounding in succession but sounding simultaneously.
                               These chords in MEI are basically defined as a container of notes that are stemmed
@@ -923,7 +978,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnChordsBasic"><span class="headingNumber">4.2.4.2.1</span><span class="head">Chords in CMN</span></h5>
+                              <h5 id="cmnChordsBasic"><span class="headingNumber">4.2.5.2.1</span><span class="head">Chords in CMN</span></h5>
                               
                               <p>A chord is any set of pitches consisting of multiple notes that are to be played simultaneously
                                  and are usually grouped together visually with a single stem. In MEI the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element functions as a container for all participating notes. Also it features many
@@ -935,7 +990,7 @@
                               
                               <p>
                                  
-                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/RachmaninoffPrelude.png"></img><figcaption class="caption">Figure 11. Chords in Rachmaninoff's Prelude in C-sharp minor, Op. 3, No. 2</figcaption>
+                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/RachmaninoffPrelude.png"></img><figcaption class="caption">Figure 12. Chords in Rachmaninoff's Prelude in C-sharp minor, Op. 3, No. 2</figcaption>
                                  </figure>
                                  
                                  <figure class="figure specPage">
@@ -986,14 +1041,14 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 115. </figcaption>
+                                    <figcaption class="caption">Listing 116. </figcaption>
                                  </figure>
                                  </p>
                               </div>
                            
                            <div class="div5">
                               
-                              <h5 id="cmnChordsStems"><span class="headingNumber">4.2.4.2.2</span><span class="head">Stem Modifications</span></h5>
+                              <h5 id="cmnChordsStems"><span class="headingNumber">4.2.5.2.2</span><span class="head">Stem Modifications</span></h5>
                               
                               <p>The <span class="att">stem.mod</span> attribute accommodates various stem modifiers found in the CMN repertoire. These
                                  symbols are placed on a note or chord's stem and generally indicate different types
@@ -1022,7 +1077,7 @@
                               
                               <p>
                                  
-                                 <figure class="figure"><img class="graphic" src="../images/modules/cmn/xchord-300.png"></img><figcaption class="caption">Figure 12. Cross-staff chord</figcaption>
+                                 <figure class="figure"><img class="graphic" src="../images/modules/cmn/xchord-300.png"></img><figcaption class="caption">Figure 13. Cross-staff chord</figcaption>
                                  </figure>
                                  </p>
                               
@@ -1063,7 +1118,7 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 116. </figcaption>
+                                    <figcaption class="caption">Listing 117. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -1109,7 +1164,7 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 117. </figcaption>
+                                    <figcaption class="caption">Listing 118. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -1129,7 +1184,7 @@
                               
                               <p>
                                  
-                                 <figure class="figure"><img class="graphic" src="../images/modules/cmn/K543_m1-3_exc.png"></img><figcaption class="caption">Figure 13. Shared stems</figcaption>
+                                 <figure class="figure"><img class="graphic" src="../images/modules/cmn/K543_m1-3_exc.png"></img><figcaption class="caption">Figure 14. Shared stems</figcaption>
                                  </figure>
                                  </p>
                               
@@ -1199,7 +1254,7 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 118. </figcaption>
+                                    <figcaption class="caption">Listing 119. </figcaption>
                                  </figure>
                                  </p>
                               </div>
@@ -1207,7 +1262,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnRests"><span class="headingNumber">4.2.4.3</span><span class="head">Rests</span></h4>
+                           <h4 id="cmnRests"><span class="headingNumber">4.2.5.3</span><span class="head">Rests</span></h4>
                            
                            <p>The <span class="att">dur</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> captures the written duration of the rest and allows the same values as on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a>. The CMN module also makes three more elements available for special forms of rest:</p>
                            
@@ -1245,7 +1300,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnRestsMRest"><span class="headingNumber">4.2.4.3.1</span><span class="head">Measure Rests</span></h5>
+                              <h5 id="cmnRestsMRest"><span class="headingNumber">4.2.5.3.1</span><span class="head">Measure Rests</span></h5>
                               
                               <p>The <a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">mRest</a> (measure rest) element is used to indicate a complete measure rest, independent from
                                  the meter of the current</p>
@@ -1274,7 +1329,7 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 119. </figcaption>
+                                    <figcaption class="caption">Listing 120. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -1283,7 +1338,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnRestsMultiRest"><span class="headingNumber">4.2.4.3.2</span><span class="head">Multiple-Measure Rests</span></h5>
+                              <h5 id="cmnRestsMultiRest"><span class="headingNumber">4.2.5.3.2</span><span class="head">Multiple-Measure Rests</span></h5>
                               
                               <p>The <a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html">multiRest</a> (multiple measure rest) element is used to encode multiple measures of rest. It is
                                  commonly used in performer parts, but due to the problem of synchronicity with other
@@ -1293,7 +1348,7 @@
                               
                               <p>
                                  
-                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/multirest.png"></img><figcaption class="caption">Figure 14. Forms of multiple measure rests</figcaption>
+                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/multirest.png"></img><figcaption class="caption">Figure 15. Forms of multiple measure rests</figcaption>
                                  </figure>
                                  
                                  <figure class="figure specPage">
@@ -1312,21 +1367,21 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 120. </figcaption>
+                                    <figcaption class="caption">Listing 121. </figcaption>
                                  </figure>
                                  </p>
                               </div>
                            
                            <div class="div5">
                               
-                              <h5 id="cmnRestsMSpace"><span class="headingNumber">4.2.4.3.3</span><span class="head">Empty Measures</span></h5>
+                              <h5 id="cmnRestsMSpace"><span class="headingNumber">4.2.5.3.3</span><span class="head">Empty Measures</span></h5>
                               
                               <p>The <a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">mSpace</a> (measure space) element is closely related to the <a class="link_odd link_odd_elementSpec" href="../elements/space.html">space</a> and <a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">mRest</a> elements. It is used to explicitly indicate that a layer has no content but that
                                  no information is missing from the encoding.</p>
                               
                               <p>
                                  
-                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/mspace.1.png"></img><figcaption class="caption">Figure 15. Empty measure</figcaption>
+                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/mspace.1.png"></img><figcaption class="caption">Figure 16. Empty measure</figcaption>
                                  </figure>
                                  
                                  <figure class="figure specPage">
@@ -1348,7 +1403,7 @@
                                           
                                           </code>
                                        </div>
-                                    <figcaption class="caption">Listing 121. </figcaption>
+                                    <figcaption class="caption">Listing 122. </figcaption>
                                  </figure>
                                  </p>
                               </div>
@@ -1357,7 +1412,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnTstamp"><span class="headingNumber">4.2.5</span><span class="head">Timestamps and Durations</span></h3>
+                        <h3 id="cmnTstamp"><span class="headingNumber">4.2.6</span><span class="head">Timestamps and Durations</span></h3>
                         
                         <p>MEI offers multiple ways of defining onsets and offsets of timed musical events such
                            as notes and slurs. The most common and most musician-friendly approach to this is
@@ -1374,7 +1429,7 @@
                            left barline ('0') and ending with the right barline of the measure ('5', in the case
                            of 4/4 time).</p>
                         
-                        <p>For expressing durations, MEI offers the <span class="att">dur</span> attribute. This attribute is described in section <a class="link_ptr chapterLink" title="Basic Usage of Notes in CMN" href="../content/cmn.html#cmnNotesBasic">4.2.4.1.1 Basic Usage of Notes in CMN</a>.</p>
+                        <p>For expressing durations, MEI offers the <span class="att">dur</span> attribute. This attribute is described in section <a class="link_ptr chapterLink" title="Basic Usage of Notes in CMN" href="../content/cmn.html#cmnNotesBasic">4.2.5.1.1 Basic Usage of Notes in CMN</a>.</p>
                         
                         <p>For ‘spanning’ elements like slurs, which are members of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, it is often more intuitive to record two timestamps – one for the onset of
                            the event and one for its termination. Because the termination of the event may be
@@ -1454,7 +1509,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 122. </figcaption>
+                              <figcaption class="caption">Listing 123. </figcaption>
                            </figure>
                            </p>
                         
@@ -1493,7 +1548,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 123. </figcaption>
+                              <figcaption class="caption">Listing 124. </figcaption>
                            </figure>
                            </p>
                         
@@ -1502,7 +1557,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/beam-a-20100510.png"></img><figcaption class="caption">Figure 16. Primary and secondary beams</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/beam-a-20100510.png"></img><figcaption class="caption">Figure 17. Primary and secondary beams</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -1540,7 +1595,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 124. </figcaption>
+                              <figcaption class="caption">Listing 125. </figcaption>
                            </figure>
                            </p>
                         
@@ -1590,7 +1645,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 125. </figcaption>
+                              <figcaption class="caption">Listing 126. </figcaption>
                            </figure>
                            </p>
                         
@@ -1601,7 +1656,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmn/beamAcc-Rit.png"></img><figcaption class="caption">Figure 17. Feathered beaming</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmn/beamAcc-Rit.png"></img><figcaption class="caption">Figure 18. Feathered beaming</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -1651,13 +1706,13 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 126. </figcaption>
+                              <figcaption class="caption">Listing 127. </figcaption>
                            </figure>
                            </p>
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/cross-staff.1.png"></img><figcaption class="caption">Figure 18. Two measures from No. 4 of Moszkowski's 12 Pianoforte Studies for the left
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/cross-staff.1.png"></img><figcaption class="caption">Figure 19. Two measures from No. 4 of Moszkowski's 12 Pianoforte Studies for the left
                                  hand</figcaption>
                            </figure>
                            </p>
@@ -1700,7 +1755,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 127. </figcaption>
+                              <figcaption class="caption">Listing 128. </figcaption>
                            </figure>
                            </p>
                         
@@ -1754,7 +1809,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 128. </figcaption>
+                              <figcaption class="caption">Listing 129. </figcaption>
                            </figure>
                            </p>
                         
@@ -1769,7 +1824,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/beamspan.1.png"></img><figcaption class="caption">Figure 19. Cross-measure beam in the third movement of Schulhoff's Sonata</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/beamspan.1.png"></img><figcaption class="caption">Figure 20. Cross-measure beam in the third movement of Schulhoff's Sonata</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -1782,7 +1837,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 129. </figcaption>
+                              <figcaption class="caption">Listing 130. </figcaption>
                            </figure>
                            </p>
                         
@@ -1842,7 +1897,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 130. </figcaption>
+                              <figcaption class="caption">Listing 131. </figcaption>
                            </figure>
                            </p>
                         
@@ -1860,7 +1915,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmn/finger-300.png"></img><figcaption class="caption">Figure 20. Ties across barlines</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmn/finger-300.png"></img><figcaption class="caption">Figure 21. Ties across barlines</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -1935,7 +1990,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 131. </figcaption>
+                              <figcaption class="caption">Listing 132. </figcaption>
                            </figure>
                            </p>
                         
@@ -1977,7 +2032,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 132. </figcaption>
+                              <figcaption class="caption">Listing 133. </figcaption>
                            </figure>
                            </p>
                         
@@ -2017,7 +2072,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 133. </figcaption>
+                              <figcaption class="caption">Listing 134. </figcaption>
                            </figure>
                            </p>
                         
@@ -2028,7 +2083,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/slur-300-20100514.png"></img><figcaption class="caption">Figure 21. Slurs</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/slur-300-20100514.png"></img><figcaption class="caption">Figure 22. Slurs</figcaption>
                            </figure>
                            </p>
                         
@@ -2054,7 +2109,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 134. </figcaption>
+                              <figcaption class="caption">Listing 135. </figcaption>
                            </figure>
                            </p>
                         
@@ -2098,7 +2153,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 135. </figcaption>
+                              <figcaption class="caption">Listing 136. </figcaption>
                            </figure>
                            </p>
                         
@@ -2136,7 +2191,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 136. </figcaption>
+                              <figcaption class="caption">Listing 137. </figcaption>
                            </figure>
                            </p>
                         
@@ -2186,7 +2241,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 137. </figcaption>
+                              <figcaption class="caption">Listing 138. </figcaption>
                            </figure>
                            </p>
                         
@@ -2240,7 +2295,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 138. </figcaption>
+                              <figcaption class="caption">Listing 139. </figcaption>
                            </figure>
                            </p>
                         
@@ -2260,12 +2315,12 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 139. </figcaption>
+                              <figcaption class="caption">Listing 140. </figcaption>
                            </figure>
                            </p>
                         
                         <p>For the ‘horizontal assignment’, the encoder may choose between two different mechanisms.
-                           The first uses two timestamp attributes as described in section <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.5 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:</p>
+                           The first uses two timestamp attributes as described in section <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:</p>
                         
                         <p>
                            
@@ -2279,7 +2334,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 140. </figcaption>
+                              <figcaption class="caption">Listing 141. </figcaption>
                            </figure>
                            </p>
                         
@@ -2320,7 +2375,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 141. </figcaption>
+                              <figcaption class="caption">Listing 142. </figcaption>
                            </figure>
                            </p>
                         
@@ -2339,7 +2394,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 142. </figcaption>
+                              <figcaption class="caption">Listing 143. </figcaption>
                            </figure>
                            </p>
                         
@@ -2362,7 +2417,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 143. </figcaption>
+                              <figcaption class="caption">Listing 144. </figcaption>
                            </figure>
                            </p>
                         
@@ -2380,7 +2435,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 144. </figcaption>
+                              <figcaption class="caption">Listing 145. </figcaption>
                            </figure>
                            </p>
                         
@@ -2399,13 +2454,13 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 145. </figcaption>
+                              <figcaption class="caption">Listing 146. </figcaption>
                            </figure>
                            </p>
                         
                         <p>Dynamics must also be associated with a particular time point in a measure, using
                            the <span class="att">tstamp</span>, or with a particular event, using the <span class="att">startid</span> attribute. Linking a control event with measures and events is discussed in section
-                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.5 Timestamps and Durations</a>:</p>
+                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a>:</p>
                         
                         <p>
                            
@@ -2444,7 +2499,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 146. </figcaption>
+                              <figcaption class="caption">Listing 147. </figcaption>
                            </figure>
                            </p>
                         
@@ -2469,7 +2524,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 147. </figcaption>
+                              <figcaption class="caption">Listing 148. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2483,7 +2538,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 148. </figcaption>
+                              <figcaption class="caption">Listing 149. </figcaption>
                            </figure>
                            </p>
                         
@@ -2504,7 +2559,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 149. </figcaption>
+                              <figcaption class="caption">Listing 150. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2518,7 +2573,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 150. </figcaption>
+                              <figcaption class="caption">Listing 151. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2532,7 +2587,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 151. </figcaption>
+                              <figcaption class="caption">Listing 152. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2546,7 +2601,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 152. </figcaption>
+                              <figcaption class="caption">Listing 153. </figcaption>
                            </figure>
                            </p>
                         
@@ -2564,7 +2619,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 153. </figcaption>
+                              <figcaption class="caption">Listing 154. </figcaption>
                            </figure>
                            </p>
                         
@@ -2587,7 +2642,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 154. </figcaption>
+                              <figcaption class="caption">Listing 155. </figcaption>
                            </figure>
                            </p>
                         
@@ -2606,7 +2661,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 155. </figcaption>
+                              <figcaption class="caption">Listing 156. </figcaption>
                            </figure>
                            </p>
                         
@@ -2617,7 +2672,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/dynamics.1.png"></img><figcaption class="caption">Figure 22. A diminuendo in Bartók's In Phrygian Mode</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/dynamics.1.png"></img><figcaption class="caption">Figure 23. A diminuendo in Bartók's In Phrygian Mode</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2630,7 +2685,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 156. </figcaption>
+                              <figcaption class="caption">Listing 157. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -2651,7 +2706,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/tuplets.1.png"></img><figcaption class="caption">Figure 23. Tuplet rhythms from Maurice Ravel's Boléro</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/tuplets.1.png"></img><figcaption class="caption">Figure 24. Tuplet rhythms from Maurice Ravel's Boléro</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2671,7 +2726,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 157. </figcaption>
+                              <figcaption class="caption">Listing 158. </figcaption>
                            </figure>
                            </p>
                         
@@ -2702,7 +2757,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 158. </figcaption>
+                              <figcaption class="caption">Listing 159. </figcaption>
                            </figure>
                            </p>
                         
@@ -2733,7 +2788,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/tuplets.2.png"></img><figcaption class="caption">Figure 24. Hierarchy-crossing tuplets</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/tuplets.2.png"></img><figcaption class="caption">Figure 25. Hierarchy-crossing tuplets</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2746,7 +2801,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 159. </figcaption>
+                              <figcaption class="caption">Listing 160. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -2881,7 +2936,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 160. </figcaption>
+                                 <figcaption class="caption">Listing 161. </figcaption>
                               </figure>
                               </p>
                            
@@ -2891,7 +2946,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/LisztMazeppa.png"></img><figcaption class="caption">Figure 25. Spanning arpeggios in Liszt's Mazeppa study</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/LisztMazeppa.png"></img><figcaption class="caption">Figure 26. Spanning arpeggios in Liszt's Mazeppa study</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -2906,7 +2961,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 161. </figcaption>
+                                 <figcaption class="caption">Listing 162. </figcaption>
                               </figure>
                               </p>
                            
@@ -2943,7 +2998,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 162. </figcaption>
+                                 <figcaption class="caption">Listing 163. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -2957,7 +3012,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 163. </figcaption>
+                                 <figcaption class="caption">Listing 164. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -2972,7 +3027,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 164. </figcaption>
+                                 <figcaption class="caption">Listing 165. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -2986,7 +3041,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 165. </figcaption>
+                                 <figcaption class="caption">Listing 166. </figcaption>
                               </figure>
                               </p>
                            
@@ -3004,7 +3059,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/TarregaAlborada.png"></img><figcaption class="caption">Figure 26. A simple glissando in Tárrega's Alborada from a leading grace note</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/TarregaAlborada.png"></img><figcaption class="caption">Figure 27. A simple glissando in Tárrega's Alborada from a leading grace note</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3017,7 +3072,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 166. </figcaption>
+                                 <figcaption class="caption">Listing 167. </figcaption>
                               </figure>
                               </p>
                            
@@ -3054,7 +3109,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/SchubertD887.png"></img><figcaption class="caption">Figure 27. Bowed tremolandi in Schubert's last string quartet</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/SchubertD887.png"></img><figcaption class="caption">Figure 28. Bowed tremolandi in Schubert's last string quartet</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3102,7 +3157,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 167. </figcaption>
+                                 <figcaption class="caption">Listing 168. </figcaption>
                               </figure>
                               </p>
                            
@@ -3129,7 +3184,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 168. </figcaption>
+                                 <figcaption class="caption">Listing 169. </figcaption>
                               </figure>
                               </p>
                            
@@ -3158,7 +3213,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 169. </figcaption>
+                                 <figcaption class="caption">Listing 170. </figcaption>
                               </figure>
                               </p>
                            
@@ -3183,7 +3238,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 170. </figcaption>
+                                 <figcaption class="caption">Listing 171. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3202,7 +3257,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 171. </figcaption>
+                                 <figcaption class="caption">Listing 172. </figcaption>
                               </figure>
                               </p>
                            
@@ -3212,7 +3267,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/tremolos.2.png"></img><figcaption class="caption">Figure 28. Fingered tremolos</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/tremolos.2.png"></img><figcaption class="caption">Figure 29. Fingered tremolos</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3230,7 +3285,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 172. </figcaption>
+                                 <figcaption class="caption">Listing 173. </figcaption>
                               </figure>
                               </p>
                            
@@ -3240,7 +3295,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/tremolos.3.png"></img><figcaption class="caption">Figure 29. Tremolos with floating beams</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/tremolos.3.png"></img><figcaption class="caption">Figure 30. Tremolos with floating beams</figcaption>
                               </figure>
                               </p>
                            </div>
@@ -3258,7 +3313,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Beethoven.png"></img><figcaption class="caption">Figure 30. The probably most famous fermatas in history from Beethoven's fifth symphony</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Beethoven.png"></img><figcaption class="caption">Figure 31. The probably most famous fermatas in history from Beethoven's fifth symphony</figcaption>
                               </figure>
                               </p>
                            
@@ -3267,7 +3322,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/MozartK428.4.png"></img><figcaption class="caption">Figure 31. Fermatas in Mozart's String quartet K. 428 indicating general pauses</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/MozartK428.4.png"></img><figcaption class="caption">Figure 32. Fermatas in Mozart's String quartet K. 428 indicating general pauses</figcaption>
                               </figure>
                               </p>
                            
@@ -3283,7 +3338,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 173. </figcaption>
+                                 <figcaption class="caption">Listing 174. </figcaption>
                               </figure>
                               </p>
                            
@@ -3304,7 +3359,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 174. </figcaption>
+                                 <figcaption class="caption">Listing 175. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3317,7 +3372,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 175. </figcaption>
+                                 <figcaption class="caption">Listing 176. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -3597,7 +3652,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 176. </figcaption>
+                                 <figcaption class="caption">Listing 177. </figcaption>
                               </figure>
                               </p>
                            
@@ -3650,7 +3705,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 177. </figcaption>
+                                 <figcaption class="caption">Listing 178. </figcaption>
                               </figure>
                               </p>
                            
@@ -3668,7 +3723,7 @@
                               rendered using letter pitches (in the order of the pedals from left to right) or in
                               a diagrammatic fashion, such as the form invented by <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Carlos_Salzedo">Carlos Salzedo</a>.</p>
                            
-                           <p>In MEI, harp pedal settings are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html">harpPedal</a> element. It is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class and is therefore placed within <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> children. The <span class="att">staff</span> and <span class="att">layer</span> attributes may be used to assign it to a certain <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a>. Either a <span class="att">tstamp</span> or <span class="att">startid</span> attribute must be used to indicate the placement within the measure (see <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.5 Timestamps and Durations</a> and <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">13 Linking Data</a> for further details about those linking mechanisms).</p>
+                           <p>In MEI, harp pedal settings are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html">harpPedal</a> element. It is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class and is therefore placed within <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> children. The <span class="att">staff</span> and <span class="att">layer</span> attributes may be used to assign it to a certain <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a>. Either a <span class="att">tstamp</span> or <span class="att">startid</span> attribute must be used to indicate the placement within the measure (see <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a> and <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">13 Linking Data</a> for further details about those linking mechanisms).</p>
                            
                            <p>The musical intention of the element is described using the <span class="att">c</span>, <span class="att">d</span>, <span class="att">e</span>, <span class="att">f</span>, <span class="att">g</span>, <span class="att">a</span> and <span class="att">b</span> attributes, which affect the corresponding strings of the harp. All of these attributes
                               may take the values "<em>f</em>" (flat), "<em>s</em>" (sharp) or "<em>n</em>" (natural), where "n" is the default value, which is assumed when one of these attributes
@@ -3676,7 +3731,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/harppedal.1.png"></img><figcaption class="caption">Figure 32. Harp pedal diagrams</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/harppedal.1.png"></img><figcaption class="caption">Figure 33. Harp pedal diagrams</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3694,7 +3749,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 178. </figcaption>
+                                 <figcaption class="caption">Listing 179. </figcaption>
                               </figure>
                               </p>
                            
@@ -3738,7 +3793,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 179. </figcaption>
+                                 <figcaption class="caption">Listing 180. </figcaption>
                               </figure>
                               </p>
                            
@@ -3774,7 +3829,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Hanon.21.png"></img><figcaption class="caption">Figure 33. Fingering in Hanon's exercise no. 21</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Hanon.21.png"></img><figcaption class="caption">Figure 34. Fingering in Hanon's exercise no. 21</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3787,7 +3842,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 180. </figcaption>
+                                 <figcaption class="caption">Listing 181. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3800,7 +3855,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 181. </figcaption>
+                                 <figcaption class="caption">Listing 182. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -3860,7 +3915,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 182. </figcaption>
+                              <figcaption class="caption">Listing 183. </figcaption>
                            </figure>
                            </p>
                         
@@ -3915,7 +3970,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 183. </figcaption>
+                              <figcaption class="caption">Listing 184. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -3961,7 +4016,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 184. </figcaption>
+                                 <figcaption class="caption">Listing 185. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -3982,7 +4037,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/reh_berlioz.png"></img><figcaption class="caption">Figure 34. Rehearsal mark</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/reh_berlioz.png"></img><figcaption class="caption">Figure 35. Rehearsal mark</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -4016,7 +4071,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 185. </figcaption>
+                                 <figcaption class="caption">Listing 186. </figcaption>
                               </figure>
                               </p>
                            
@@ -4043,7 +4098,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 186. </figcaption>
+                                 <figcaption class="caption">Listing 187. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -4081,7 +4136,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/beatrpt-20100510.png"></img><figcaption class="caption">Figure 35. Beat repeat signs</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/beatrpt-20100510.png"></img><figcaption class="caption">Figure 36. Beat repeat signs</figcaption>
                               </figure>
                               </p>
                            
@@ -4161,7 +4216,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt-20100510.png"></img><figcaption class="caption">Figure 36. Measure repetition</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt-20100510.png"></img><figcaption class="caption">Figure 37. Measure repetition</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -4237,7 +4292,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 187. </figcaption>
+                                 <figcaption class="caption">Listing 188. </figcaption>
                               </figure>
                               </p>
                            
@@ -4250,7 +4305,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/halfmRpt_beethoven.png"></img><figcaption class="caption">Figure 37. Half-measure repeat</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/halfmRpt_beethoven.png"></img><figcaption class="caption">Figure 38. Half-measure repeat</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -4317,7 +4372,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 188. </figcaption>
+                                 <figcaption class="caption">Listing 189. </figcaption>
                               </figure>
                               </p>
                            
@@ -4329,10 +4384,10 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt2-20100510.png"></img><figcaption class="caption">Figure 38. Two-measure repetition</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt2-20100510.png"></img><figcaption class="caption">Figure 39. Two-measure repetition</figcaption>
                               </figure>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/multirpt-20100510.png"></img><figcaption class="caption">Figure 39. Multi-measure repetition</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/multirpt-20100510.png"></img><figcaption class="caption">Figure 40. Multi-measure repetition</figcaption>
                               </figure>
                               </p>
                            
@@ -4404,13 +4459,13 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 189. </figcaption>
+                              <figcaption class="caption">Listing 190. </figcaption>
                            </figure>
                            </p>
                         
                         <p>Alternatively, the relationship of an ornament to a note can be expressed in terms
                            of beats with the attribute <span class="att">tstamp</span>. If the ornament involves more than one event on the staff, the <span class="att">tstamp2</span> attribute can be used to indicate the ending time stamp, as is explained in section
-                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.5 Timestamps and Durations</a>. These methods may also be utilized simultaneously.</p>
+                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a>. These methods may also be utilized simultaneously.</p>
                         
                         <p>The following example shows the use of <span class="att">tstamp</span> for an ornament. Assuming that the following measure is in 2/2, the ornament (in
                            this case, a mordent) is related to the note on the second beat.</p>
@@ -4440,7 +4495,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 190. </figcaption>
+                              <figcaption class="caption">Listing 191. </figcaption>
                            </figure>
                            </p>
                         
@@ -4488,7 +4543,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 191. </figcaption>
+                                 <figcaption class="caption">Listing 192. </figcaption>
                               </figure>
                               </p>
                            
@@ -4580,7 +4635,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent.png"></img><figcaption class="caption">Figure 40. Example of simple mordent</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent.png"></img><figcaption class="caption">Figure 41. Example of simple mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4610,7 +4665,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 192. </figcaption>
+                              <figcaption class="caption">Listing 193. </figcaption>
                            </figure>
                            </p>
                         
@@ -4619,7 +4674,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent_l.png"></img><figcaption class="caption">Figure 41. Example of a long mordent</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent_l.png"></img><figcaption class="caption">Figure 42. Example of a long mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4649,7 +4704,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 193. </figcaption>
+                              <figcaption class="caption">Listing 194. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -4703,7 +4758,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr.png"></img><figcaption class="caption">Figure 42. Example of simple trills.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr.png"></img><figcaption class="caption">Figure 43. Example of simple trills.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4741,7 +4796,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 194. </figcaption>
+                              <figcaption class="caption">Listing 195. </figcaption>
                            </figure>
                            </p>
                         
@@ -4751,7 +4806,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_trill_wavy.png"></img><figcaption class="caption">Figure 43. Example of trills followed by wavy lines.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_trill_wavy.png"></img><figcaption class="caption">Figure 44. Example of trills followed by wavy lines.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4801,7 +4856,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 195. </figcaption>
+                              <figcaption class="caption">Listing 196. </figcaption>
                            </figure>
                            </p>
                         
@@ -4815,7 +4870,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_accid.png"></img><figcaption class="caption">Figure 44. Example alterations expressed on the staff.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_accid.png"></img><figcaption class="caption">Figure 45. Example alterations expressed on the staff.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4839,21 +4894,21 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 196. </figcaption>
+                              <figcaption class="caption">Listing 197. </figcaption>
                            </figure>
                            </p>
                         
                         <p>Some trills may be introduced by a turn or followed by an inverted turn leading to
                            the next note (see Le garzantine, Musica 2003, p. 911). In such cases, the trill is
                            encoded as in previous examples and associated with the principal note. Starting or
-                           concluding turns are notated on the staff (in <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a>) as <a class="link_ptr chapterLink" title="Grace Notes" href="../content/cmn.html#cmnNotesGrace">4.2.4.1.2 Grace Notes</a>.</p>
+                           concluding turns are notated on the staff (in <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a>) as <a class="link_ptr chapterLink" title="Grace Notes" href="../content/cmn.html#cmnNotesGrace">4.2.5.1.2 Grace Notes</a>.</p>
                         
                         <p>The following example, from a keyboard sonata by Joseph Haydn, shows a trill with
                            concluding grace notes (called <em>Nachschlag</em>):</p>
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_grace.png"></img><figcaption class="caption">Figure 45. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_grace.png"></img><figcaption class="caption">Figure 46. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4889,7 +4944,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 197. </figcaption>
+                              <figcaption class="caption">Listing 198. </figcaption>
                            </figure>
                            </p>
                         
@@ -4908,7 +4963,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_multi.png"></img><figcaption class="caption">Figure 46. Example of multiple trills.</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_multi.png"></img><figcaption class="caption">Figure 47. Example of multiple trills.</figcaption>
                               </figure>
                               </p>
                            
@@ -4946,7 +5001,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 198. </figcaption>
+                                 <figcaption class="caption">Listing 199. </figcaption>
                               </figure>
                               </p>
                            
@@ -4990,7 +5045,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 199. </figcaption>
+                                 <figcaption class="caption">Listing 200. </figcaption>
                               </figure>
                               </p>
                            
@@ -5026,7 +5081,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 200. </figcaption>
+                                 <figcaption class="caption">Listing 201. </figcaption>
                               </figure>
                               </p>
                            
@@ -5043,7 +5098,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/ExplicationBach.png"></img><figcaption class="caption">Figure 47. Trill transcribed from J. S. Bach's Klavierbüchlein für Wilhelm Friedemann
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/ExplicationBach.png"></img><figcaption class="caption">Figure 48. Trill transcribed from J. S. Bach's Klavierbüchlein für Wilhelm Friedemann
                                     Bach</figcaption>
                               </figure>
                               
@@ -5089,7 +5144,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 201. </figcaption>
+                                 <figcaption class="caption">Listing 202. </figcaption>
                               </figure>
                               </p>
                            
@@ -5150,7 +5205,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 202. </figcaption>
+                                 <figcaption class="caption">Listing 203. </figcaption>
                               </figure>
                               </p>
                            
@@ -5232,7 +5287,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn.png"></img><figcaption class="caption">Figure 48. Example of a simple turn.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn.png"></img><figcaption class="caption">Figure 49. Example of a simple turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -5262,7 +5317,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 203. </figcaption>
+                              <figcaption class="caption">Listing 204. </figcaption>
                            </figure>
                            </p>
                         
@@ -5276,7 +5331,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn_d.png"></img><figcaption class="caption">Figure 49. Delayed turn.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn_d.png"></img><figcaption class="caption">Figure 50. Delayed turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -5307,7 +5362,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 204. </figcaption>
+                              <figcaption class="caption">Listing 205. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5331,7 +5386,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/JSBtableofornaments.jpg"></img><figcaption class="caption">Figure 50. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/JSBtableofornaments.jpg"></img><figcaption class="caption">Figure 51. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
                                  für Wilhelm Friedemann Bach</figcaption>
                            </figure>
                            </p>
@@ -5354,7 +5409,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 205. </figcaption>
+                              <figcaption class="caption">Listing 206. </figcaption>
                            </figure>
                            </p>
                         
@@ -5373,7 +5428,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/CPEB_Dorinde.png"></img><figcaption class="caption">Figure 51. Combined ornaments in C.P.E. Bach's song Dorinde</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/CPEB_Dorinde.png"></img><figcaption class="caption">Figure 52. Combined ornaments in C.P.E. Bach's song Dorinde</figcaption>
                            </figure>
                            </p>
                         
@@ -5429,7 +5484,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 206. </figcaption>
+                              <figcaption class="caption">Listing 207. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5437,7 +5492,7 @@
                   </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7886862df4009a2949a6a84dd2df27bc055f7260" target="_blank" rel="noopener noreferrer">#7886862</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9d799a6b163283b9516605f23093cece7654b494" target="_blank" rel="noopener noreferrer">#9d799a6</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
@@ -5451,7 +5506,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnReDef">4.2.3 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.4 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.5 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnDir">4.3.8 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.9 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnDir">4.3.8 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.9 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -5469,7 +5524,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnReDef">4.2.3 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.4 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.5 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnDir">4.3.8 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.9 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnDir">4.3.8 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.9 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
                   </div>
                </div>
             </div>
