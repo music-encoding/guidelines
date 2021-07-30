@@ -63,6 +63,10 @@
                         <div class="label">Allowed Values</div>
                         <div class="statement list">
                            <div class="dataValueBox" id="acc"><span class="dataValue ident">acc</span><span class="dataValue desc"><span class="desc">Accent (Unicode 1D17B).</span></span></div>
+                           <div class="dataValueBox" id="acc-inv"><span class="dataValue ident">acc-inv</span><span class="dataValue desc"><span class="desc">Inverted accent.</span></span></div>
+                           <div class="dataValueBox" id="acc-long"><span class="dataValue ident">acc-long</span><span class="dataValue desc"><span class="desc">Long accent, used to indicate an elongated accent mark. It is the responsibility of
+                                    the encoder to distinguish between accents and hairpins.</span></span></div>
+                           <div class="dataValueBox" id="acc-soft"><span class="dataValue ident">acc-soft</span><span class="dataValue desc"><span class="desc">Soft accent, see SMuFL Articulation supplement (U+ED40–U+ED4F).</span></span></div>
                            <div class="dataValueBox" id="stacc"><span class="dataValue ident">stacc</span><span class="dataValue desc"><span class="desc">Staccato (Unicode 1D17C).</span></span></div>
                            <div class="dataValueBox" id="ten"><span class="dataValue ident">ten</span><span class="dataValue desc"><span class="desc">Tenuto (Unicode 1D17D).</span></span></div>
                            <div class="dataValueBox" id="stacciss"><span class="dataValue ident">stacciss</span><span class="dataValue desc"><span class="desc">Staccatissimo (Unicode 1D17E).</span></span></div>
@@ -132,6 +136,22 @@
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Accent (Unicode 1D17B).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc-inv"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Inverted accent.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc-long"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Long accent, used to indicate an elongated accent mark. It is the responsibility of
+                                                the encoder to distinguish between accents and hairpins.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc-soft"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Soft accent, see SMuFL Articulation supplement (U+ED40–U+ED4F).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stacc"</span>&gt;</span>
@@ -325,7 +345,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9d799a6b163283b9516605f23093cece7654b494" target="_blank" rel="noopener noreferrer">#9d799a6</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/463459245c3b85df415a354becd6f753cfe8bff9" target="_blank" rel="noopener noreferrer">#4634592</a>)</span></div>
                <form action="/guidelines/dev/content/metadata.html">
                   <div class="tipue_search_group"><input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"></input><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button></div>
                </form>
