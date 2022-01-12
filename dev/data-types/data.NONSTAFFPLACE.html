@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2021-11-02">
+      <meta name="date" content="2022-01-12">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -57,17 +57,17 @@
                            <div class="dataValueBox" id="topmar"><span class="dataValue ident">topmar</span><span class="dataValue desc"><span class="desc">At the top of the page.</span></span></div>
                            <div class="dataValueBox" id="leftmar"><span class="dataValue ident">leftmar</span><span class="dataValue desc"><span class="desc">At the left of the page.</span></span></div>
                            <div class="dataValueBox" id="rightmar"><span class="dataValue ident">rightmar</span><span class="dataValue desc"><span class="desc">At the right of the page.</span></span></div>
-                           <div class="dataValueBox" id="facing"><span class="dataValue ident">facing</span><span class="dataValue desc"><span class="desc">On the opposite, i.e. facing, page.</span></span></div>
+                           <div class="dataValueBox" id="facing"><span class="dataValue ident">facing</span><span class="dataValue desc"><span class="desc">On the opposite, <span class="abbr">i.e.</span>, facing, page.</span></span></div>
                            <div class="dataValueBox" id="overleaf"><span class="dataValue ident">overleaf</span><span class="dataValue desc"><span class="desc">On the other side of the leaf.</span></span></div>
-                           <div class="dataValueBox" id="end"><span class="dataValue ident">end</span><span class="dataValue desc"><span class="desc">At the end of this division; e.g., chapter, volume, etc.</span></span></div>
-                           <div class="dataValueBox" id="inter"><span class="dataValue ident">inter</span><span class="dataValue desc"><span class="desc">Within a line text; i.e., an insertion.</span></span></div>
+                           <div class="dataValueBox" id="end"><span class="dataValue ident">end</span><span class="dataValue desc"><span class="desc">At the end of this division; <span class="abbr">e.g.</span>, chapter, volume, etc.</span></span></div>
+                           <div class="dataValueBox" id="inter"><span class="dataValue ident">inter</span><span class="dataValue desc"><span class="desc">Within a line text; <span class="abbr">i.e.</span>, an insertion.</span></span></div>
                            <div class="dataValueBox" id="intra"><span class="dataValue ident">intra</span><span class="dataValue desc"><span class="desc">Between the lines of text, less exact than "sub" or "super".</span></span></div>
                            <div class="dataValueBox" id="super"><span class="dataValue ident">super</span><span class="dataValue desc"><span class="desc">Above a line of text, more exact than "intra(linear)". Do not confuse with
                                     superscript rendition.</span></span></div>
                            <div class="dataValueBox" id="sub"><span class="dataValue ident">sub</span><span class="dataValue desc"><span class="desc">Below a line of text, more exact than "intra(linear)". Do not confuse with subscript
                                     rendition.</span></span></div>
-                           <div class="dataValueBox" id="inspace"><span class="dataValue ident">inspace</span><span class="dataValue desc"><span class="desc">In a predefined space; i.e., that left by an earlier scribe.</span></span></div>
-                           <div class="dataValueBox" id="superimposed"><span class="dataValue ident">superimposed</span><span class="dataValue desc"><span class="desc">Obscures original text; e.g., via overstrike, addition of new writing surface
+                           <div class="dataValueBox" id="inspace"><span class="dataValue ident">inspace</span><span class="dataValue desc"><span class="desc">In a predefined space; <span class="abbr">i.e.</span>, that left by an earlier scribe.</span></span></div>
+                           <div class="dataValueBox" id="superimposed"><span class="dataValue ident">superimposed</span><span class="dataValue desc"><span class="desc">Obscures original text; <span class="abbr">e.g.</span>, via overstrike, addition of new writing surface
                                     material, etc.</span></span></div>
                         </div>
                      </div>
@@ -105,7 +105,8 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"facing"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>On the opposite, i.e. facing, page.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>On the opposite, 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>i.e.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, facing, page.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"overleaf"</span>&gt;</span>
@@ -115,12 +116,14 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"end"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>At the end of this division; e.g., chapter, volume, etc.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>At the end of this division; 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, chapter, volume, etc.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"inter"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Within a line text; i.e., an insertion.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Within a line text; 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>i.e.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, an insertion.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"intra"</span>&gt;</span>
@@ -142,12 +145,14 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"inspace"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>In a predefined space; i.e., that left by an earlier scribe.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>In a predefined space; 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>i.e.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, that left by an earlier scribe.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"superimposed"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Obscures original text; e.g., via overstrike, addition of new writing surface
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Obscures original text; 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, via overstrike, addition of new writing surface
                                                 material, etc.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
@@ -159,7 +164,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/2488e9263a417310e16eabcad1fa0d07469e88f3" target="_blank" rel="noopener noreferrer">#2488e92</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b318a5d9c9631a9bc98d85d24ab99b34be5dd86a" target="_blank" rel="noopener noreferrer">#b318a5d</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

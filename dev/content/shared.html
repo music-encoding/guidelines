@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2021-11-02">
+      <meta name="date" content="2022-01-12">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -52,9 +52,8 @@
                         
                         <h3 id="sharedDocumentElements"><span class="headingNumber">2.1.1</span><span class="head">Document Root Elements</span></h3>
                         
-                        <p>MEI defines four elements qualifying as root elements (i.e. the element containing
-                           everything else) of an MEI document; the most common of these are defined in the MEI.shared
-                           module:</p>
+                        <p>MEI defines four elements qualifying as root elements (<span class="abbr">i.e.</span>, the element containing everything else) of an MEI document; the most common of these
+                           are defined in the MEI.shared module:</p>
                         
                         <p>
                            
@@ -123,7 +122,7 @@
                            </p>
                         
                         <p>A document with <a class="link_odd link_odd_elementSpec" href="../elements/music.html">music</a> as root element provides music notation markup without metadata, and could serve
-                           embedding MEI within other kinds of markup, e.g. TEI (see <a class="link_ptr chapterLink" title="TEI" href="../content/integration.html#tei">14.1 TEI</a>).</p>
+                           embedding MEI within other kinds of markup, <span class="abbr">e.g.</span>, TEI (see <a class="link_ptr chapterLink" title="TEI" href="../content/integration.html#tei">14.1 TEI</a>).</p>
                         
                         <p>The below example shows the basic structure of an MEI file with <a class="link_odd link_odd_elementSpec" href="../elements/music.html">music</a> as root element. Basically this already represents a valid MEI file, although without
                            any contents:</p>
@@ -340,11 +339,10 @@
                            </p>
                         
                         <p>While <a class="link_odd link_odd_elementSpec" href="../elements/body.html">body</a> holds the contents of a single musical text, <a class="link_odd link_odd_elementSpec" href="../elements/group.html">group</a> allows the textual body to consists of a series of (subordinate) musical texts or
-                           other e.g. to represent a collection of independent musical texts which is to be regarded
-                           as a single unit for processing or other purposes. It is provided to simplify the
-                           encoding of collections, anthologies, and cyclic works. It can also be used to record
-                           the potentially complex internal structure of corpora, covered more fully in chapter
-                           <a class="link_ptr chapterLink" title="Musical Corpora" href="../content/metadata.html#corpus">3.8.5 Musical Corpora</a>. Whether the musical text being encoded should be structured one way or the other
+                           other <span class="abbr">e.g.</span>, to represent a collection of independent musical texts which is to be regarded as
+                           a single unit for processing or other purposes. It is provided to simplify the encoding
+                           of collections, anthologies, and cyclic works. It can also be used to record the potentially
+                           complex internal structure of corpora, covered more fully in chapter <a class="link_ptr chapterLink" title="Musical Corpora" href="../content/metadata.html#corpus">3.8.5 Musical Corpora</a>. Whether the musical text being encoded should be structured one way or the other
                            is not to be decided here. For example, a collection of songs might be regarded as
                            a single item in some circumstances, or as a number of distinct items in others. In
                            such borderline cases, the encoder must choose whether to treat the text as unitary
@@ -826,8 +824,8 @@
                            <p>
                               <a class="link_odd link_odd_elementSpec" href="../elements/section.html">section</a> elements are often used as a scoping mechanism for clef signs, key and meter signatures,
                               as well as metronome, tempo, and expression markings. Using <a class="link_odd link_odd_elementSpec" href="../elements/section.html">section</a> elements can help to minimize the need for backward scanning to establish context
-                              when the starting point for access is not at the beginning of the score. <a class="link_odd link_odd_elementSpec" href="../elements/section.html">section</a> elements may also be used for other user-defined, i.e., analytical or editorial,
-                              purposes and may therefore be arbitrarily nested to any desired level.</p>
+                              when the starting point for access is not at the beginning of the score. <a class="link_odd link_odd_elementSpec" href="../elements/section.html">section</a> elements may also be used for other user-defined, <span class="abbr">i.e.</span>, analytical or editorial, purposes and may therefore be arbitrarily nested to any
+                              desired level.</p>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/ending.html">ending</a> element shares the same model as the <a class="link_odd link_odd_elementSpec" href="../elements/section.html">section</a> element. Unlike <a class="link_odd link_odd_elementSpec" href="../elements/section.html">section</a>, however, it may not be recursively nested.</p>
                            
@@ -839,7 +837,7 @@
                                  </div>
                                  <div class="tile-content">
                                     <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/ending.html">ending</a></span></div>
-                                    <div class="tile-subtitle text-gray">Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta,
+                                    <div class="tile-subtitle text-gray">Alternative ending for a repeated passage of music; , prima volta, seconda volta,
                                        etc.</div>
                                  </div>
                               </div>
@@ -1011,8 +1009,8 @@
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> element can be used to mark page beginnings. When transcribing an existing document
                            the <span class="att">n</span> attribute should be used to record the page number displayed in the source. It need
-                           not be an integer, e.g., 'iv', or 'p17-3'. The logical page number can be calculated
-                           by counting previous <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> ancestor elements. When used in a score context, a page beginning implies an accompanying
+                           not be an integer, <span class="abbr">e.g.</span>, 'iv', or 'p17-3'. The logical page number can be calculated by counting previous
+                           <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> ancestor elements. When used in a score context, a page beginning implies an accompanying
                            system beginning. This element is modelled on an element in the Text Encoding Initiative
                            (TEI) standard.</p>
                         
@@ -1198,7 +1196,7 @@
                                  <div class="tile-subtitle text-gray">(line group) – May be used for any section of text that is organized as a group of
                                     lines;
                                     however, it is most often used for a group of verse lines functioning as a formal
-                                    unit, e.g. a
+                                    unit, , a
                                     stanza, refrain, verse paragraph, etc.</div>
                               </div>
                            </div>
@@ -1582,7 +1580,7 @@
                            
                            <h4 id="sharedBarlines"><span class="headingNumber">2.2.4.2</span><span class="head">Bar Lines and Custos Signs</span></h4>
                            
-                           <p>Measure separators, i.e., bar lines, and custos signs are also considered to be events.</p>
+                           <p>Measure separators, <span class="abbr">i.e.</span>, bar lines, and custos signs are also considered to be events.</p>
                            
                            <p>
                               
@@ -1904,7 +1902,7 @@
                                  </div>
                                  <div class="tile-content">
                                     <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a></span></div>
-                                    <div class="tile-subtitle text-gray">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+                                    <div class="tile-subtitle text-gray">Text and symbols descriptive of tempo, mood, or style, , "allarg.", "a tempo",
                                        "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</div>
                                  </div>
                               </div>
@@ -2037,9 +2035,7 @@
                            <h4 id="sharedDynamics"><span class="headingNumber">2.2.5.3</span><span class="head">Dynamics</span></h4>
                            
                            <p>Dynamics, or dynamic marks, are terms, abbreviations, and symbols that indicate the
-                              specific degrees of volume of a note, phrase, or section of music, e.g., "piano",
-                              "forte". Transitions from one volume level to another, e.g., "crescendo", "diminuendo",
-                              are also specified through dynamic marks.</p>
+                              specific degrees of volume of a note, phrase, or section of music, <span class="abbr">e.g.</span>, "piano", "forte". Transitions from one volume level to another, <span class="abbr">e.g.</span>, "crescendo", "diminuendo", are also specified through dynamic marks.</p>
                            
                            <p>
                               
@@ -2118,8 +2114,7 @@
                            <p>MEI provides a generic element for encoding an ornament symbol that is not a mordent,
                               turn, or trill. For those common CMN ornaments, please refer to <a class="link_ptr chapterLink" title="Common Music Notation Ornaments" href="../content/cmn.html#cmnOrnaments">4.4 Common Music Notation Ornaments</a>.</p>
                            
-                           <p>Ornaments can be represented as textual strings (e.g. with a Unicode symbol) or with
-                              a user defined symbol (for the latter also see <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.4 User-defined Symbols</a>).</p>
+                           <p>Ornaments can be represented as textual strings (<span class="abbr">e.g.</span>, with a Unicode symbol) or with a user defined symbol (for the latter also see <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.4 User-defined Symbols</a>).</p>
                            
                            <p>Ornamentsmay also be encoded as so called control events (see also: <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.2.2 Events and Controlevents</a>). That is, they be can linked via their attributes to other events. It is a semantic
                               error not to specify a starting point attribute with either <span class="att">tstamp</span> or <span class="att">startid</span>.</p>
@@ -2133,7 +2128,7 @@
                      
                      <p>The following attributes, all of which are defined in separate attribute classes but
                         are also provided through the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a> attribute class, are available on nearly all elements in an MEI encoding. They provide
-                        e.g. the means to identify, label, or reference elements in MEI-encoded files.</p>
+                        <span class="abbr">e.g.</span>, the means to identify, label, or reference elements in MEI-encoded files.</p>
                      
                      <div class="div3">
                         
@@ -2341,8 +2336,8 @@
                            </div>
                            </p>
                         
-                        <p>While <span class="att">xml:lang</span> attribute may be used to encode the language of an element's contents, the <span class="att">xml:space</span> attribute lets you define the handling of whitespace, i.e. whitespace being important
-                           content (<span class="att">xml:space="preserve"</span>) of negligible (<span class="att">xml:space="default"</span>). With the latter also being the default value if no <em>xml:space</em> attribute is present.</p>
+                        <p>While <span class="att">xml:lang</span> attribute may be used to encode the language of an element's contents, the <span class="att">xml:space</span> attribute lets you define the handling of whitespace, <span class="abbr">i.e.</span>, whitespace being important content ("preserve") or negligible ("default"). With
+                           the latter also being the default value if no <em>xml:space</em> attribute is present.</p>
                         </div>
                      
                      <div class="div3">
@@ -2617,7 +2612,7 @@
                                  </div>
                                  <div class="tile-content">
                                     <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/line.html">line</a></span></div>
-                                    <div class="tile-subtitle text-gray">A visual line that cannot be represented by a more specific; i.e., semantic,
+                                    <div class="tile-subtitle text-gray">A visual line that cannot be represented by a more specific; , semantic,
                                        element.</div>
                                  </div>
                               </div>
@@ -3090,7 +3085,7 @@
                            
                            <ul>
                               <li class="item">If <span class="att">startid</span> is present, the origin of the referenced element;</li>
-                              <li class="item">If the element is inside running text (e.g. inside <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a>), the end of the preceding text or element;</li>
+                              <li class="item">If the element is inside running text (<span class="abbr">e.g.</span>, inside <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">tempo</a>), the end of the preceding text or element;</li>
                               <li class="item">Otherwise, the origin of the containing element.</li>
                            </ul>
                            
@@ -3116,9 +3111,8 @@
                                  are considered virtual.</li>
                            </ul>
                            
-                           <p>When they are referenced by <a class="link_odd link_odd_elementSpec" href="../elements/symbol.html">symbol</a> or <span class="att">altsym</span>, the origin of the context, i.e. the referencing symbol, is used. If neither absolute
-                              nor relative coordinates are specified, determining visually suitable start and end
-                              points for <span class="att">line</span> and <span class="att">curve</span> attributes is left to the rendering application. A value of 0 is not always assumed
+                           <p>When they are referenced by <a class="link_odd link_odd_elementSpec" href="../elements/symbol.html">symbol</a> or <span class="att">altsym</span>, the origin of the context, <span class="abbr">i.e.</span>, the referencing symbol, is used. If neither absolute nor relative coordinates are
+                              specified, determining visually suitable start and end points for <span class="att">line</span> and <span class="att">curve</span> attributes is left to the rendering application. A value of 0 is not always assumed
                               for absent relative coordinates. A typical example where a rendering application may
                               not choose the origins of absent relative start and end coordinates to be the start
                               point as well is the line connecting two notes in the above Schumann example.</p>
@@ -3134,10 +3128,10 @@
                               application may choose either one. They override <span class="att">curvedir</span>.</p>
                            
                            <p>
-                              <span class="att">bezier</span> defines the inner control points of a cubic Bézier curve, i.e., a Bézier curve with
-                              two inner control points. The coordinates are given by a space separated list, first
-                              x and y offsets for the first control point, then x and y offsets for the second one.
-                              The x and y offsets are given in staff units (or inside the context of <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">symbolDef</a> in abstract units). The offsets for the first inner control point are relative to
+                              <span class="att">bezier</span> defines the inner control points of a cubic Bézier curve, <span class="abbr">i.e.</span>, a Bézier curve with two inner control points. The coordinates are given by a space
+                              separated list, first x and y offsets for the first control point, then x and y offsets
+                              for the second one. The x and y offsets are given in staff units (or inside the context
+                              of <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">symbolDef</a> in abstract units). The offsets for the first inner control point are relative to
                               the start point, the ones for the second inner control point are relative to the end
                               point.</p>
                            
@@ -3208,7 +3202,7 @@
                   </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/2488e9263a417310e16eabcad1fa0d07469e88f3" target="_blank" rel="noopener noreferrer">#2488e92</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b318a5d9c9631a9bc98d85d24ab99b34be5dd86a" target="_blank" rel="noopener noreferrer">#b318a5d</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2021-11-02">
+      <meta name="date" content="2022-01-12">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -67,23 +67,23 @@
                            <div class="dataValueBox" id="tbox"><span class="dataValue ident">tbox</span><span class="dataValue desc"><span class="desc">Enclosed in triangle.</span></span></div>
                            <div class="dataValueBox" id="bslash"><span class="dataValue ident">bslash</span><span class="dataValue desc"><span class="desc">Struck through by '\' (back slash).</span></span></div>
                            <div class="dataValueBox" id="fslash"><span class="dataValue ident">fslash</span><span class="dataValue desc"><span class="desc">Struck through by '/' (forward slash).</span></span></div>
-                           <div class="dataValueBox" id="line-through"><span class="dataValue ident">line-through</span><span class="dataValue desc"><span class="desc">Struck through by '-'; may be qualified to indicate multiple parallel lines, e.g.
+                           <div class="dataValueBox" id="line-through"><span class="dataValue ident">line-through</span><span class="dataValue desc"><span class="desc">Struck through by '-'; may be qualified to indicate multiple parallel lines, <span class="abbr">e.g.</span>,
                                     line-through(2).</span></span></div>
                            <div class="dataValueBox" id="none"><span class="dataValue ident">none</span><span class="dataValue desc"><span class="desc">Not rendered, invisible.</span></span></div>
-                           <div class="dataValueBox" id="overline"><span class="dataValue ident">overline</span><span class="dataValue desc"><span class="desc">Line above the text; may be qualified to indicate multiple parallel lines, e.g.
+                           <div class="dataValueBox" id="overline"><span class="dataValue ident">overline</span><span class="dataValue desc"><span class="desc">Line above the text; may be qualified to indicate multiple parallel lines, <span class="abbr">e.g.</span>,
                                     overline(3).</span></span></div>
                            <div class="dataValueBox" id="overstrike"><span class="dataValue ident">overstrike</span><span class="dataValue desc"><span class="desc">Use for deleted text fully or partially obscured by other text (such as 'XXXXX') or
                                     musical symbols (such as notes, rests, etc.).</span></span></div>
                            <div class="dataValueBox" id="strike"><span class="dataValue ident">strike</span><span class="dataValue desc"><span class="desc">Struck through by '-'; equivalent to line-through; may be qualified to indicate
-                                    multiple parallel lines, e.g. strike(3).</span></span></div>
+                                    multiple parallel lines, <span class="abbr">e.g.</span>, strike(3).</span></span></div>
                            <div class="dataValueBox" id="sub"><span class="dataValue ident">sub</span><span class="dataValue desc"><span class="desc">Subscript.</span></span></div>
                            <div class="dataValueBox" id="sup"><span class="dataValue ident">sup</span><span class="dataValue desc"><span class="desc">Superscript.</span></span></div>
                            <div class="dataValueBox" id="superimpose"><span class="dataValue ident">superimpose</span><span class="dataValue desc"><span class="desc">Use for added text or musical symbols that fully or partially obscure text from an
                                     earlier writing stage.</span></span></div>
-                           <div class="dataValueBox" id="underline"><span class="dataValue ident">underline</span><span class="dataValue desc"><span class="desc">Underlined; may be qualified to indicate multiple parallel lines, e.g.
+                           <div class="dataValueBox" id="underline"><span class="dataValue ident">underline</span><span class="dataValue desc"><span class="desc">Underlined; may be qualified to indicate multiple parallel lines, <span class="abbr">e.g.</span>,
                                     underline(2).</span></span></div>
                            <div class="dataValueBox" id="x-through"><span class="dataValue ident">x-through</span><span class="dataValue desc"><span class="desc">Crossed-out; equivalent to 'bslash' (\) plus 'fslash' (/); that is, a hand-written
-                                    'X'; may be qualified to indicate multiple parallel lines, e.g. x-through(2).</span></span></div>
+                                    'X'; may be qualified to indicate multiple parallel lines, <span class="abbr">e.g.</span>, x-through(2).</span></span></div>
                            <div class="dataValueBox" id="ltr"><span class="dataValue ident">ltr</span><span class="dataValue desc"><span class="desc">Left-to-right (BIDI embed).</span></span></div>
                            <div class="dataValueBox" id="rtl"><span class="dataValue ident">rtl</span><span class="dataValue desc"><span class="desc">Right-to-left (BIDI embed).</span></span></div>
                            <div class="dataValueBox" id="lro"><span class="dataValue ident">lro</span><span class="dataValue desc"><span class="desc">Left-to-right (BIDI override).</span></span></div>
@@ -174,7 +174,8 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"line-through"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Struck through by '-'; may be qualified to indicate multiple parallel lines, e.g.
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Struck through by '-'; may be qualified to indicate multiple parallel lines, 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>,
                                                 line-through(2).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
@@ -185,7 +186,8 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"overline"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Line above the text; may be qualified to indicate multiple parallel lines, e.g.
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Line above the text; may be qualified to indicate multiple parallel lines, 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>,
                                                 overline(3).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
@@ -198,7 +200,8 @@
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"strike"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Struck through by '-'; equivalent to line-through; may be qualified to indicate
-                                                multiple parallel lines, e.g. strike(3).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                                multiple parallel lines, 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, strike(3).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"sub"</span>&gt;</span>
@@ -219,14 +222,16 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"underline"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Underlined; may be qualified to indicate multiple parallel lines, e.g.
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Underlined; may be qualified to indicate multiple parallel lines, 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>,
                                                 underline(2).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"x-through"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc&gt;</span>Crossed-out; equivalent to 'bslash' (\) plus 'fslash' (/); that is, a hand-written
-                                                'X'; may be qualified to indicate multiple parallel lines, e.g. x-through(2).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                                'X'; may be qualified to indicate multiple parallel lines, 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, x-through(2).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ltr"</span>&gt;</span>
@@ -257,7 +262,7 @@
                </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/2488e9263a417310e16eabcad1fa0d07469e88f3" target="_blank" rel="noopener noreferrer">#2488e92</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b318a5d9c9631a9bc98d85d24ab99b34be5dd86a" target="_blank" rel="noopener noreferrer">#b318a5d</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
