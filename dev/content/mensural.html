@@ -859,7 +859,7 @@
                            (<em>brevis</em>-<em>semibrevis</em> and <em>semibrevis</em>-<em>minima</em>). This means that the <em>breves</em> in <em>Ars antiqua</em> do not have a "perfecta" / "imperfecta" quality, and this is why there is no <span class="att">dur.quality</span> attribute for the <em>breves</em> in the previous example. However, the <em>brevis</em> can have a ternary division (indicated by <em>tempus=”3”</em>), being divided either into three (equal) <em>minor semibreves</em> or into a <em>minor</em>-<em>maior</em> pair of <em>semibreves</em>. The encoding also allows for the possibility of encoding a binary division of the
                            breve in <em>Ars antiqua</em> notations: the indication <em>tempus=”2”</em> indicates the breve is divided into two equal <em>semibreves</em>. This is why in this example with <em>tempus="3"</em>, the <em>semibreves</em> do have a <span class="att">dur.quality</span> attribute (with values "minor" or "maior").</p>
                         
-                        <p>An alternative encoding---removing the <span class="att">dur.quality</span> attributes for notes which lengths are not modified from their default values (<span class="abbr">i.e.</span>, the perfect long and the minor <em>semibreves</em>)---would be: 
+                        <p>An alternative encoding---removing the <span class="att">dur.quality</span> attributes for notes which lengths are not modified from their default values (<abbr>i.e.</abbr>, the perfect long and the minor <em>semibreves</em>)---would be: 
                            <figure class="figure specPage">
                               <div xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
@@ -895,7 +895,7 @@
                            </p>
                         
                         <p>The conjunct use of the <span class="att">dur</span> and <span class="att">dur.quality</span> attributes is generally enough to encode the duration of a note—and, as indicated
-                           before, one could even remove <span class="att">dur.quality</span> when its value is in agreement with the mensuration. However, there are cases (<span class="abbr">e.g.</span>, partial imperfection) where the values of <span class="att">dur.quality</span> are not enough to provide the note's duration.</p>
+                           before, one could even remove <span class="att">dur.quality</span> when its value is in agreement with the mensuration. However, there are cases (<abbr>e.g.</abbr>, partial imperfection) where the values of <span class="att">dur.quality</span> are not enough to provide the note's duration.</p>
                         </div>
                      
                      <div class="div3">
@@ -903,7 +903,7 @@
                         <h3 id="partialImp"><span class="headingNumber">5.1.2</span><span class="head">Partial Imperfection</span></h3>
                         
                         <p>In opposition to regular imperfection, which is caused by a note of the next smaller
-                           degree (<span class="abbr">e.g.</span>, a perfect <em>brevis</em> imperfected by a following/preceding <em>semibrevis</em>), partial imperfection is caused by a note of two or even three orders apart. As
+                           degree (<abbr>e.g.</abbr>, a perfect <em>brevis</em> imperfected by a following/preceding <em>semibrevis</em>), partial imperfection is caused by a note of two or even three orders apart. As
                            an example, consider an imperfect <em>longa</em> made up of two perfect <em>breves</em>. This <em>longa</em> can be "partially imperfected" by a following/preceding <em>semibrevis</em>. This <em>semibrevis</em> causes part of the <em>longa</em>—one of its perfect <em>breves</em>—to be imperfected, taking away one-third of one of its two halves. In this case,
                            the <em>longa</em>'s value changes from 6 <em>semibreves</em> (two perfect <em>breves</em>) into 5 <em>semibreves</em>. Partial imperfection is not supported by the <span class="att">dur.quality</span> attribute—because there can be many cases of partial imperfection, as will be seen
                            in the following examples. To encode a partial imperfection, the <span class="att">num</span> and <span class="att">numbase</span> pair of attributes are used instead. Given the change in the <em>longa</em>'s value from 6 <em>semibreves</em> to 5 <em>semibreves</em>, the corresponding attributes to encode this particular case of partial imperfection
@@ -2299,7 +2299,7 @@
                   </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/35c4166f693289e929c4db7ab8ce8d3abe615954" target="_blank" rel="noopener noreferrer">#35c4166</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/43aaa55b23e3f78111dfc5686a22fcf57f1daff6" target="_blank" rel="noopener noreferrer">#43aaa55</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

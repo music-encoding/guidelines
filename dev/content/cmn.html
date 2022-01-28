@@ -44,7 +44,7 @@
                      
                      <h2 id="cmnintro"><span class="headingNumber">4.1</span><span class="head">Introduction</span></h2>
                      
-                     <p>This chapter is supposed to frame the repertoire target by the module, <span class="abbr">i.e.</span>, what is Common Music Notation?</p>
+                     <p>This chapter is supposed to frame the repertoire target by the module, <abbr>i.e.</abbr>, what is Common Music Notation?</p>
                      </div>
                   
                   <div class="div2">
@@ -251,7 +251,7 @@
                            </div>
                            </p>
                         
-                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a> element is used to specify the common parameters of a score, <span class="abbr">e.g.</span>, key and meter. The most important attributes for this purpose are:</p>
+                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a> element is used to specify the common parameters of a score, <abbr>e.g.</abbr>, key and meter. The most important attributes for this purpose are:</p>
                         
                         <p>
                            
@@ -983,7 +983,7 @@
                               
                               <p>A chord is any set of pitches consisting of multiple notes that are to be played simultaneously
                                  and are usually grouped together visually with a single stem. In MEI the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element functions as a container for all participating notes. Also it features many
-                                 attributes that are allowed for notes, <span class="abbr">e.g.</span>, usually all notes in a chord have a common duration, so it can be applied to the
+                                 attributes that are allowed for notes, <abbr>e.g.</abbr>, usually all notes in a chord have a common duration, so it can be applied to the
                                  whole chord within it's <span class="att">dur</span> attribute.</p>
                               
                               <p>Some notational features like articulations or lyrics are connected to a whole chord
@@ -1854,7 +1854,7 @@
                         
                         <p>The <span class="att">beam.group</span> attribute can be used to set a default beaming pattern to be used when no beaming
                            is indicated at the layer level. It must contain a comma-separated list of time values
-                           that add up to a measure in the current meter, <span class="abbr">e.g.</span>, '4,4,4,4' in 4/4 time indicates that each quarter note worth of shorter notes should
+                           that add up to a measure in the current meter, <abbr>e.g.</abbr>, '4,4,4,4' in 4/4 time indicates that each quarter note worth of shorter notes should
                            be beamed together. Parentheses can be used to indicate sub-groupings of secondary
                            beams. For example, '(4.,4.,4.)' in 9/8 meter indicates one primary beam per measure
                            with secondary beams broken at each dotted quarter duration, while '(4,4),(4,4)' in
@@ -2731,7 +2731,7 @@
                            </p>
                         
                         <p>The duration of the entire tuplet may be encoded using the usual ‘power of 2’ values,
-                           <span class="abbr">e.g.</span>, 1, 2, 4, etc., in the <span class="att">dur</span> attribute if necessary.</p>
+                           <abbr>e.g.</abbr>, 1, 2, 4, etc., in the <span class="att">dur</span> attribute if necessary.</p>
                         
                         <p>
                            
@@ -2765,13 +2765,13 @@
                            presence and position of these brackets can be encoded using the <span class="att">bracket.place</span> (above / below) and <span class="att">bracket.visible</span> (true / false) attributes.</p>
                         
                         <p>Usually, however, tuplets are rendered with a bracket (<span class="att">bracket.visible</span>="true") and a single number (<span class="att">num.format</span>="count" and <span class="att">num.visible</span>="true"), as seen in the example above. However, the number-to-numbase ratio may be
-                           provided in addition to, or in some cases as a replacement for, the bracket. The <span class="att">num.format</span> attribute indicates whether a plain number (the value of <span class="att">num</span>) or a ratio (comprised of <span class="att">num</span> and <span class="att">numbase</span>, <span class="abbr">e.g.</span>, "3:2") should be displayed and <span class="att">num.visible</span> indicates the general presence of such a number.</p>
+                           provided in addition to, or in some cases as a replacement for, the bracket. The <span class="att">num.format</span> attribute indicates whether a plain number (the value of <span class="att">num</span>) or a ratio (comprised of <span class="att">num</span> and <span class="att">numbase</span>, <abbr>e.g.</abbr>, "3:2") should be displayed and <span class="att">num.visible</span> indicates the general presence of such a number.</p>
                         
                         <p>Further visual control comes with the <span class="att">num.place</span> and <span class="att">bracket.place</span> attributes, that allow specific placement of the number and the bracket "above" or
                            "below" the staff.</p>
                         
                         <p>In addition to <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements, <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> may contain other elements, such as <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> or <a class="link_odd link_odd_elementSpec" href="../elements/space.html">space</a>, to match the content of a source document or an intended rendering. In particular,
-                           the <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a> element is allowed so that custom beaming may be indicated, <span class="abbr">e.g.</span>, a septuplet may be divided into a group of three plus a group of four notes.</p>
+                           the <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a> element is allowed so that custom beaming may be indicated, <abbr>e.g.</abbr>, a septuplet may be divided into a group of three plus a group of four notes.</p>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> element may also be used for repetition of the same pitch; that is, a single note
                            or chord may be the only content of the tuplet. In some cases, optical music recognition
@@ -3161,7 +3161,7 @@
                               </p>
                            
                            <p>The <span class="att">unitdur</span> attribute value indicates the exact note values in an aural rendition of a measured
-                              tremolo, <span class="abbr">i.e.</span>, quarters, 8ths, and so on. The <span class="att">stem.mod</span> attribute must also be explicity set on the child <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> or <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element for a complete visual representation. The example above shows a short excerpt
+                              tremolo, <abbr>i.e.</abbr>, quarters, 8ths, and so on. The <span class="att">stem.mod</span> attribute must also be explicity set on the child <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> or <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element for a complete visual representation. The example above shows a short excerpt
                               from the second movement of <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Franz_Schubert">Franz Schubert's</a>
                               <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert">String Quartet in G major, D. 887</a>).</p>
                            
@@ -3261,7 +3261,7 @@
                               </p>
                            
                            <p>In the case of alternating pitches, MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/fTrem.html">fTrem</a> (fingered tremolo) element. While it mostly behaves the same as <a class="link_odd link_odd_elementSpec" href="../elements/bTrem.html">bTrem</a>, a fingered tremolo requires exactly two child elements, either being a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> or <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a>. The <span class="att">unitdur</span> attribute value indicates the exact note values in an aural rendition of a measured
-                              tremolo, <span class="abbr">i.e.</span>, 4ths, 8ths, 16ths, etc. The number of beams present in the source is captured by
+                              tremolo, <abbr>i.e.</abbr>, 4ths, 8ths, 16ths, etc. The number of beams present in the source is captured by
                               the <span class="att">beams</span> attribute.</p>
                            
                            <p>
@@ -4579,7 +4579,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">form</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mordent.log.html">att.mordent.log</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Records semantic meaning, <span class="abbr">i.e.</span>, intended performance, of the mordent. The
+                                 <div class="tile-subtitle text-gray">Records semantic meaning, <abbr>i.e.</abbr>, intended performance, of the mordent. The
                                     <span class="att">altsym</span>, <span class="att">glyph.name</span>, or <span class="att">glyph.num</span> attributes may be used
                                     to specify the appropriate symbol.</div>
                               </div>
@@ -5236,7 +5236,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">form</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.turn.log.html">att.turn.log</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Records meaning; <span class="abbr">i.e.</span>, intended performance, of the turn. The <span class="att">altsym</span>,
+                                 <div class="tile-subtitle text-gray">Records meaning; <abbr>i.e.</abbr>, intended performance, of the turn. The <span class="att">altsym</span>,
                                     <span class="att">glyph.name</span>, or <span class="att">glyph.num</span> attributes may be used to specify the
                                     appropriate symbol.</div>
                               </div>
@@ -5373,7 +5373,7 @@
                         <p>CMN ornaments that are not mordents, trills, or turns can be encoded with a generic
                            <a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">ornam</a>.</p>
                         
-                        <p>This element allows the encoder to represent ornaments as textual strings (<span class="abbr">e.g.</span>, with a Unicode symbol) or with a user defined symbol. Chromatic auxiliaries can
+                        <p>This element allows the encoder to represent ornaments as textual strings (<abbr>e.g.</abbr>, with a Unicode symbol) or with a user defined symbol. Chromatic auxiliaries can
                            be represented with <span class="att">accidlower</span> and <span class="att">accidupper</span>. The <a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">ornam</a> element can also be a control element. That is, it can be linked via its attributes
                            to other events. The starting point of the directive may be indicated by either a
                            tstamp, tstamp.ges, tstamp.real or startid attribute, while the ending point may be
@@ -5490,7 +5490,7 @@
                   </section>
             </div>
             <div class="column col-4 col-hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/35c4166f693289e929c4db7ab8ce8d3abe615954" target="_blank" rel="noopener noreferrer">#35c4166</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/43aaa55b23e3f78111dfc5686a22fcf57f1daff6" target="_blank" rel="noopener noreferrer">#43aaa55</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
