@@ -264,22 +264,47 @@ element.</div>
   <a href="/guidelines/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> element uses SVG markup or the aforementioned graphic primitives to describe a symbol. A symbol definition may also use symbols defined by other 
   <a href="/guidelines/v3/elements/symboldef.html" class="link_odd_elementSpec">symbolDef</a> elements by employing the 
   <a href="/guidelines/v3/elements/symbol.html" class="link_odd_elementSpec">symbol</a> element.</p>
-
-<figure class="figure">
-  <img src="/guidelines/v3/images/" class="img-responsive" alt="musical example" />
-  <figcaption class="figure-caption">Definition of a triangle percussion symbol using graphic primitives</figcaption>
-</figure>
-
+  <figure class="figure specPage">
+    <div xml:space="preserve" class="pre code egXML_feasible">
+       <code>
+          
+          
+          <div class="indent indent1"><span data-indentation="1" class="element">&lt;symbolDef <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.triangleSymbol3"</span>&gt;</span>
+             
+             <div class="indent indent2"><span data-indentation="2" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"0"</span> <span class="attribute">x2=</span><span class="attributevalue">"2.55"</span> <span class="attribute">y=</span><span class="attributevalue">"0"</span> <span class="attribute">y2=</span><span class="attributevalue">"4.25"</span>/&gt;</span></div>
+             
+             <div class="indent indent2"><span data-indentation="2" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"2.55"</span> <span class="attribute">x2=</span><span class="attributevalue">"5.1"</span> <span class="attribute">y=</span><span class="attributevalue">"4.25"</span> <span class="attribute">y2=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+             
+             <div class="indent indent2"><span data-indentation="2" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"5.1"</span> <span class="attribute">x2=</span><span class="attributevalue">"0.85"</span> <span class="attribute">y=</span><span class="attributevalue">"0"</span> <span class="attribute">y2=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+             <span data-indentation="1" class="element">&lt;/symbolDef&gt;</span></div>
+          
+          
+          </code>
+       </div>
+    <figcaption class="figure-caption">Definition of a triangle percussion symbol using graphic primitives</figcaption>
+ </figure>
 <figure class="figure">
   <img src="/guidelines/v3/images/modules/usersymbols/triangle.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendition of the triangle defined above</figcaption>
 </figure>
 
-<figure class="figure">
-  <img src="/guidelines/v3/images/" class="img-responsive" alt="musical example" />
+<figure class="figure specPage">
+  <div xml:space="preserve" class="pre code egXML_feasible">
+     <code>
+        
+        
+        <div class="indent indent1"><span data-indentation="1" class="element">&lt;symbolDef <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.triangleSymbolWithStick"</span>&gt;</span>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;symbol <span class="attribute">ref=</span><span class="attributevalue">"#userSymbols.triangleSymbol3"</span>/&gt;</span></div>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"2.55"</span> <span class="attribute">x2=</span><span class="attributevalue">"5.95"</span> <span class="attribute">y=</span><span class="attributevalue">"1.25"</span> <span class="attribute">y2=</span><span class="attributevalue">"3.4"</span>/&gt;</span></div>
+           <span data-indentation="1" class="element">&lt;/symbolDef&gt;</span></div>
+        
+        
+        </code>
+     </div>
   <figcaption class="figure-caption">Symbol composed of the symbol defined above and additional graphics primitives</figcaption>
 </figure>
-
 <figure class="figure">
   <img src="/guidelines/v3/images/modules/usersymbols/triangleWithStick.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rendition of the composite triangle symbol</figcaption>
@@ -305,8 +330,66 @@ element.</div>
   <figcaption class="figure-caption">Voice leading visualization as found in an Edition Peters print of "Album für die Jugend" by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number is 10478.)</figcaption>
 </figure>
 
-<figure class="figure">
-  <img src="/guidelines/v3/images/" class="img-responsive" alt="musical example" />
+<figure class="figure specPage">
+  <div xml:space="preserve" class="pre code egXML_feasible">
+     <code>
+        
+        
+        <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"6"</span>&gt;</span>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;rest <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.r1"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n1"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n2"</span>/&gt;</span></div>
+                    <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n3"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n4"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n5"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n6"</span>/&gt;</span></div>
+                    <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;slur <span class="attribute">curvedir=</span><span class="attributevalue">"above"</span> <span class="attribute">endid=</span><span class="attributevalue">"#userSymbols.n6"</span> <span class="attribute">startid=</span><span class="attributevalue">"#userSymbols.n1"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;rest <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">next=</span><span class="attributevalue">"#userSymbols.n9"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n7"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+              <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dots=</span><span class="attributevalue">"1"</span> <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n8"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">prev=</span><span class="attributevalue">"#userSymbols.n7 #userSymbols.n8"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.n9"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;slur <span class="attribute">curvedir=</span><span class="attributevalue">"above"</span> <span class="attribute">endid=</span><span class="attributevalue">"#userSymbols.n9"</span> <span class="attribute">startid=</span><span class="attributevalue">"#userSymbols.n8"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+              <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;line <span class="attribute">endid=</span><span class="attributevalue">"#userSymbols.n9"</span> <span class="attribute">rend=</span><span class="attributevalue">"dotted"</span> <span class="attribute">startid=</span><span class="attributevalue">"#userSymbols.n7"</span>/&gt;</span></div>
+           <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+        
+        
+        </code>
+     </div>
   <figcaption class="figure-caption">Encoding of the Schumann example</figcaption>
 </figure>
 
@@ -324,8 +407,100 @@ element.</div>
   <figcaption class="figure-caption">Indicating percussion instruments using pictograms</figcaption>
 </figure>
 
-<figure class="figure">
-  <img src="/guidelines/v3/images/" class="img-responsive" alt="musical example" />
+<figure class="figure specPage">
+  <div xml:space="preserve" class="pre code egXML_valid">
+     <code>
+        
+        
+        <div class="indent indent1"><span data-indentation="1" class="element">&lt;section&gt;</span>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;scoreDef <span class="attribute">meter.count=</span><span class="attributevalue">"4"</span> <span class="attribute">meter.unit=</span><span class="attributevalue">"4"</span>&gt;</span>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;symbolTable&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;symbolDef <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.triangleSymbol1"</span>&gt;</span>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"0"</span> <span class="attribute">x2=</span><span class="attributevalue">"2.55"</span> <span class="attribute">y=</span><span class="attributevalue">"0"</span> <span class="attribute">y2=</span><span class="attributevalue">"4.25"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"2.55"</span> <span class="attribute">x2=</span><span class="attributevalue">"5.1"</span> <span class="attribute">y=</span><span class="attributevalue">"4.25"</span> <span class="attribute">y2=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"5.1"</span> <span class="attribute">x2=</span><span class="attributevalue">"0.85"</span> <span class="attribute">y=</span><span class="attributevalue">"0"</span> <span class="attribute">y2=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"2.55"</span> <span class="attribute">x2=</span><span class="attributevalue">"5.95"</span> <span class="attribute">y=</span><span class="attributevalue">"1.25"</span> <span class="attribute">y2=</span><span class="attributevalue">"3.4"</span>/&gt;</span></div>
+                    <span data-indentation="4" class="element">&lt;/symbolDef&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;symbolDef <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.cowbellSymbol"</span>&gt;</span>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"1"</span> <span class="attribute">x2=</span><span class="attributevalue">"1.8"</span> <span class="attribute">y=</span><span class="attributevalue">"0"</span> <span class="attribute">y2=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"1.8"</span> <span class="attribute">x2=</span><span class="attributevalue">"4.2"</span> <span class="attribute">y=</span><span class="attributevalue">"4"</span> <span class="attribute">y2=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"4.2"</span> <span class="attribute">x2=</span><span class="attributevalue">"5"</span> <span class="attribute">y=</span><span class="attributevalue">"4"</span> <span class="attribute">y2=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;line <span class="attribute">x=</span><span class="attributevalue">"5"</span> <span class="attribute">x2=</span><span class="attributevalue">"1"</span> <span class="attribute">y=</span><span class="attributevalue">"0"</span> <span class="attribute">y2=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"0 1.5 0 1.5"</span> <span class="attribute">endho=</span><span class="attributevalue">"3"</span> <span class="attribute">endvo=</span><span class="attributevalue">"4"</span> <span class="attribute">startho=</span><span class="attributevalue">"1"</span> <span class="attribute">startvo=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                    <span data-indentation="4" class="element">&lt;/symbolDef&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/symbolTable&gt;</span></div>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffGrp&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;staffDef <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/staffGrp&gt;</span></div>
+              <span data-indentation="2" class="element">&lt;/scoreDef&gt;</span></div>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrname=</span><span class="attributevalue">"Open_Triangle"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;dir <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>
+                       
+                       <div class="indent indent6"><span data-indentation="6" class="element">&lt;symbol <span class="attribute">ref=</span><span class="attributevalue">"#userSymbols.triangleSymbol2"</span>/&gt;</span></div>
+                       <span data-indentation="5" class="element">&lt;/dir&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                    <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+              <span data-indentation="2" class="element">&lt;/measure&gt;</span></div>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;instrDef <span class="attribute">midi.instrname=</span><span class="attributevalue">"Cowbell"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;dir <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>
+                       
+                       <div class="indent indent6"><span data-indentation="6" class="element">&lt;symbol <span class="attribute">ref=</span><span class="attributevalue">"#userSymbols.cowbellSymbol"</span>/&gt;</span></div>
+                       <span data-indentation="5" class="element">&lt;/dir&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                    
+                    <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                    <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+              <span data-indentation="2" class="element">&lt;/measure&gt;</span></div>
+           <span data-indentation="1" class="element">&lt;/section&gt;</span></div>
+        
+        
+        </code>
+     </div>
   <figcaption class="figure-caption">Encoding of above example</figcaption>
 </figure>
 
@@ -336,15 +511,74 @@ element.</div>
   <figcaption class="figure-caption">Different treble clef renditions as written by Charpentier</figcaption>
 </figure>
 
-<figure class="figure">
-  <img src="/guidelines/v3/images/" class="img-responsive" alt="musical example" />
+<figure class="figure specPage">
+  <div xml:space="preserve" class="pre code egXML_feasible">
+     <code>
+        
+        
+        <div class="indent indent1"><span data-indentation="1" class="element">&lt;scoreDef&gt;</span>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;symbolTable&gt;</span>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;symbolDef <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.clefA"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"-1.2 0.1 -0.9 -0.8"</span> <span class="attribute">endho=</span><span class="attributevalue">"1.1"</span> <span class="attribute">endvo=</span><span class="attributevalue">"6.6"</span> <span class="attribute">startho=</span><span class="attributevalue">"1.2"</span> <span class="attribute">startvo=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"1 0.9 0.1 1.6"</span> <span class="attribute">endho=</span><span class="attributevalue">"3"</span> <span class="attribute">endvo=</span><span class="attributevalue">"5.3"</span> <span class="attribute">startho=</span><span class="attributevalue">"1.1"</span> <span class="attribute">startvo=</span><span class="attributevalue">"6.6"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"-0.1 -2.6 0 2.3"</span> <span class="attribute">endho=</span><span class="attributevalue">"0.6"</span> <span class="attribute">endvo=</span><span class="attributevalue">"-0.1"</span> <span class="attribute">startho=</span><span class="attributevalue">"3"</span> <span class="attribute">startvo=</span><span class="attributevalue">" 5.3"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"0.07 -1.3 -0.2 -1.63"</span> <span class="attribute">endho=</span><span class="attributevalue">"2.4"</span> <span class="attribute">endvo=</span><span class="attributevalue">"0.23"</span> <span class="attribute">startho=</span><span class="attributevalue">"0.6"</span> <span class="attribute">startvo=</span><span class="attributevalue">"-0.1"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"0.2 1.3 0.5 0.62"</span> <span class="attribute">endho=</span><span class="attributevalue">"0.8"</span> <span class="attribute">endvo=</span><span class="attributevalue">"0.81"</span> <span class="attribute">startho=</span><span class="attributevalue">"2.4"</span> <span class="attribute">startvo=</span><span class="attributevalue">"0.23"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/symbolDef&gt;</span></div>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;symbolDef <span class="attribute">xml:id=</span><span class="attributevalue">"userSymbols.clefB"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"-0.7 0.1 0.3 0.92"</span> <span class="attribute">endho=</span><span class="attributevalue">"0.7"</span> <span class="attribute">endvo=</span><span class="attributevalue">"-0.2"</span> <span class="attribute">startho=</span><span class="attributevalue">"2.5"</span> <span class="attribute">startvo=</span><span class="attributevalue">" 1.3 "</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"-0.27 -0.76 -1.25 -1.26"</span> <span class="attribute">endho=</span><span class="attributevalue">"2"</span> <span class="attribute">endvo=</span><span class="attributevalue">"-0.74"</span> <span class="attribute">startho=</span><span class="attributevalue">"0.7"</span> <span class="attribute">startvo=</span><span class="attributevalue">"-0.2"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"1.4 1.8 0.4 -1"</span> <span class="attribute">endho=</span><span class="attributevalue">"1.6"</span> <span class="attribute">endvo=</span><span class="attributevalue">"4.36"</span> <span class="attribute">startho=</span><span class="attributevalue">"2"</span> <span class="attribute">startvo=</span><span class="attributevalue">"-0.74"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"-0.89 2.2 -1.1 1.6"</span> <span class="attribute">endho=</span><span class="attributevalue">"3.5"</span> <span class="attribute">endvo=</span><span class="attributevalue">"6.06"</span> <span class="attribute">startho=</span><span class="attributevalue">"1.6"</span> <span class="attribute">startvo=</span><span class="attributevalue">"4.36"</span>/&gt;</span></div>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;curve <span class="attribute">bezier=</span><span class="attributevalue">"0.8 -1.2 0 0"</span> <span class="attribute">endho=</span><span class="attributevalue">"3.7"</span> <span class="attribute">endvo=</span><span class="attributevalue">"2.66"</span> <span class="attribute">startho=</span><span class="attributevalue">"3.5"</span> <span class="attribute">startvo=</span><span class="attributevalue">"6.06"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/symbolDef&gt;</span></div>
+              <span data-indentation="2" class="element">&lt;/symbolTable&gt;</span></div>
+           
+           <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffGrp&gt;</span>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;clef <span class="attribute">altsym=</span><span class="attributevalue">"#userSymbols.clefA"</span> <span class="attribute">line=</span><span class="attributevalue">"2"</span> <span class="attribute">shape=</span><span class="attributevalue">"G"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+              
+              <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                 
+                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;clef <span class="attribute">altsym=</span><span class="attributevalue">"#userSymbols.clefB"</span> <span class="attribute">line=</span><span class="attributevalue">"2"</span> <span class="attribute">shape=</span><span class="attributevalue">"G"</span>/&gt;</span></div>
+                 <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+              <span data-indentation="2" class="element">&lt;/staffGrp&gt;</span></div>
+           <span data-indentation="1" class="element">&lt;/scoreDef&gt;</span></div>
+        
+        
+        </code>
+     </div>
   <figcaption class="figure-caption">Defining two staffs, each using its own treble clef shape</figcaption>
 </figure>
 
 <p>Externally-defined symbols may be referenced using a <strong>@glyphname</strong> or <strong>@glyphnum</strong> attribute. Both attributes refer to Standard Music Font Layout (SMuFL) characters. Other character sets must be treated as internally-defined character sets.</p>
 
-<figure class="figure">
-  <img src="/guidelines/v3/images/" class="img-responsive" alt="musical example" />
+<figure class="figure specPage">
+  <div xml:space="preserve" class="pre code egXML_feasible">
+     <code>
+        
+        
+        <div class="indent indent1"><span data-indentation="1" class="element">&lt;meterSig <span class="attribute">count=</span><span class="attributevalue">"2"</span> <span class="attribute">form=</span><span class="attributevalue">"norm"</span> <span class="attribute">glyphname=</span><span class="attributevalue">"timeSigCutCommon"</span> <span class="attribute">glyphnum=</span><span class="attributevalue">"U+E08B"</span> <span class="attribute">sym=</span><span class="attributevalue">"cut"</span> <span class="attribute">unit=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+        
+        
+        </code>
+     </div>
   <figcaption class="figure-caption">Use of glyphname and glyphnum attributes</figcaption>
 </figure>
 
