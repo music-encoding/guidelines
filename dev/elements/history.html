@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-02-14">
+      <meta name="date" content="2022-02-24">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -365,7 +365,8 @@
                      <div id="memberships" class="facet memberships">
                         <div class="label">Member of</div>
                         <div class="statement memberships">
-                           <div class="memberOf"><span class="groupDesc">(history isn't member of any model class)</span></div>
+                           <div class="memberOf"><a class="link_odd link_odd_modelClass" href="../model-classes/model.physDescPart.html">model.physDescPart</a><span class="groupDesc">Groups elements that may appear as part of the physical description of a bibliographic
+                                 item.</span></div>
                         </div>
                      </div>
                      <div id="containedBy" class="facet containedBy">
@@ -376,7 +377,7 @@
                               <li class="tab-item"><a data-display="containedBy_class" id="containedBy_class_tab" href="#containedBy_class" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="containedBy_module" id="containedBy_module_tab" href="#containedBy_module" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/expression.html" title="Intellectual or artistic realization of a work.">expression</a>, <a class="link_odd link_odd_elementSpec" href="../elements/item.html" title="Single instance or exemplar of a source/manifestation.">item</a>, <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html" title="A bibliographic description of a physical embodiment of an expression of a work.">manifestation</a>, <a class="link_odd link_odd_elementSpec" href="../elements/physLoc.html" title="(physical location) – Groups information about the current physical location of a bibliographic item, such as the repository in which it is located and its shelf mark(s), and its previous locations.">physLoc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/work.html" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes ( e.g. , key, tempo, meter, medium of performance, and intended duration).">work</a></div>
+                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/expression.html" title="Intellectual or artistic realization of a work.">expression</a>, <a class="link_odd link_odd_elementSpec" href="../elements/item.html" title="Single instance or exemplar of a source/manifestation.">item</a>, <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html" title="A bibliographic description of a physical embodiment of an expression of a work.">manifestation</a>, <a class="link_odd link_odd_elementSpec" href="../elements/physDesc.html" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation.">physDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/physLoc.html" title="(physical location) – Groups information about the current physical location of a bibliographic item, such as the repository in which it is located and its shelf mark(s), and its previous locations.">physLoc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/work.html" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes ( e.g. , key, tempo, meter, medium of performance, and intended duration).">work</a></div>
                            <div id="containedBy_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="elements having history as direct children">
                                  <div class="classHeading"><label class="classLabel">elements having history as direct children</label><span class="classDesc"></span></div>
@@ -394,6 +395,17 @@
                                           meter, medium of performance, and intended duration).</span></div>
                                  </div>
                               </div>
+                              <div class="classBox" title="model.physDescPart">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.physDescPart.html">model.physDescPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of the physical description of
+                                       a bibliographic item.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd link_odd_elementSpec" href="../elements/physDesc.html">physDesc</a></span><span class="desc">(physical description) – Container for information about the appearance, construction,
+                                          or
+                                          handling of physical materials, such as their dimension, quantity, color, style, and
+                                          technique
+                                          of creation.</span></div>
+                                 </div>
+                              </div>
                            </div>
                            <div id="containedBy_module" class="facetTabbedContent module" data-label="by module">
                               <div class="classBox" title="MEI.frbr">
@@ -407,6 +419,11 @@
                               <div class="classBox" title="MEI.header">
                                  <div class="classHeading"><label class="classLabel">MEI.header</label><span class="classDesc">Metadata header component declarations.</span></div>
                                  <div class="classContent">
+                                    <div class="def"><span class="ident" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd link_odd_elementSpec" href="../elements/physDesc.html">physDesc</a></span><span class="desc">(physical description) – Container for information about the appearance, construction,
+                                          or
+                                          handling of physical materials, such as their dimension, quantity, color, style, and
+                                          technique
+                                          of creation.</span></div>
                                     <div class="def"><span class="ident" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes ( e.g. , key, tempo, meter, medium of performance, and intended duration)."><a class="link_odd link_odd_elementSpec" href="../elements/work.html">work</a></span><span class="desc">Provides a detailed description of a work — a distinct intellectual or artistic creation
                                           —
                                           specifically its history, language use, and high-level musical attributes (<abbr>e.g.</abbr>, key, tempo,
@@ -433,14 +450,20 @@
                               <li class="tab-item"><a data-display="mayContain_class" id="mayContain_class_tab" href="#mayContain_class" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="mayContain_module" id="mayContain_module_tab" href="#mayContain_module" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="mayContain_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html" title="Records information concerning the process by which an item was acquired by the holding institution.">acquisition</a>, <a class="link_odd link_odd_elementSpec" href="../elements/biblList.html" title="List of bibliographic references.">biblList</a>, <a class="link_odd link_odd_elementSpec" href="../elements/castList.html" title="Contains a single cast list or dramatis personae.">castList</a>, <a class="link_odd link_odd_elementSpec" href="../elements/div.html" title="(division) – Major structural division of text, such as a preface, chapter or section.">div</a>, <a class="link_odd link_odd_elementSpec" href="../elements/eventList.html" title="Contains historical information given as a sequence of significant past events.">eventList</a>, <a class="link_odd link_odd_elementSpec" href="../elements/head.html" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list.">head</a>, <a class="link_odd link_odd_elementSpec" href="../elements/lg.html" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. , a stanza, refrain, verse paragraph, etc.">lg</a>, <a class="link_odd link_odd_elementSpec" href="../elements/list.html" title="A formatting element that contains a series of items separated from one another and arranged in a linear, often vertical, sequence.">list</a>, <a class="link_odd link_odd_elementSpec" href="../elements/p.html" title="(paragraph) – One or more text phrases that form a logical prose passage.">p</a>, <a class="link_odd link_odd_elementSpec" href="../elements/provenance.html" title="The record of ownership or custodianship of an item.">provenance</a>, <a class="link_odd link_odd_elementSpec" href="../elements/quote.html" title="(quoted material) – Contains a paragraph-like block of text attributed to an external source, normally set off from the surrounding text by spacing or other typographic distinction.">quote</a>, <a class="link_odd link_odd_elementSpec" href="../elements/table.html" title="Contains text displayed in tabular form.">table</a></div>
+                           <div id="mayContain_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html" title="Records information concerning the process by which an item was acquired by the holding institution.">acquisition</a>, <a class="link_odd link_odd_elementSpec" href="../elements/biblList.html" title="List of bibliographic references.">biblList</a>, <a class="link_odd link_odd_elementSpec" href="../elements/castList.html" title="Contains a single cast list or dramatis personae.">castList</a>, <a class="link_odd link_odd_elementSpec" href="../elements/div.html" title="(division) – Major structural division of text, such as a preface, chapter or section.">div</a>, <a class="link_odd link_odd_elementSpec" href="../elements/eventList.html" title="Contains historical information given as a sequence of significant past events.">eventList</a>, <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html" title="(exhibition history) – A record of public exhibitions, including dates, venues, etc.">exhibHist</a>, <a class="link_odd link_odd_elementSpec" href="../elements/head.html" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list.">head</a>, <a class="link_odd link_odd_elementSpec" href="../elements/lg.html" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. , a stanza, refrain, verse paragraph, etc.">lg</a>, <a class="link_odd link_odd_elementSpec" href="../elements/list.html" title="A formatting element that contains a series of items separated from one another and arranged in a linear, often vertical, sequence.">list</a>, <a class="link_odd link_odd_elementSpec" href="../elements/p.html" title="(paragraph) – One or more text phrases that form a logical prose passage.">p</a>, <a class="link_odd link_odd_elementSpec" href="../elements/provenance.html" title="The record of ownership or custodianship of an item.">provenance</a>, <a class="link_odd link_odd_elementSpec" href="../elements/quote.html" title="(quoted material) – Contains a paragraph-like block of text attributed to an external source, normally set off from the surrounding text by spacing or other typographic distinction.">quote</a>, <a class="link_odd link_odd_elementSpec" href="../elements/table.html" title="Contains text displayed in tabular form.">table</a>, <a class="link_odd link_odd_elementSpec" href="../elements/treatHist.html" title="(treatment history) – A record of the treatment the item has undergone ( e.g. , de-acidification, restoration, etc.).">treatHist</a>, <a class="link_odd link_odd_elementSpec" href="../elements/treatSched.html" title="(treatment scheduled) – Scheduled treatment, e.g. , de-acidification, restoration, etc., for an item.">treatSched</a></div>
                            <div id="mayContain_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="direct children">
                                  <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="ident" title="Records information concerning the process by which an item was acquired by the holding institution."><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html">acquisition</a></span><span class="desc"><span class="desc">Records information concerning the process by which an item was acquired by the holding
                                              institution.</span></span></div>
+                                    <div class="def"><span class="ident" title="(exhibition history) – A record of public exhibitions, including dates, venues, etc."><a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">exhibHist</a></span><span class="desc"><span class="desc">(exhibition history) – A record of public exhibitions, including dates, venues,
+                                             etc.</span></span></div>
                                     <div class="def"><span class="ident" title="The record of ownership or custodianship of an item."><a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">provenance</a></span><span class="desc"><span class="desc">The record of ownership or custodianship of an item.</span></span></div>
+                                    <div class="def"><span class="ident" title="(treatment history) – A record of the treatment the item has undergone ( e.g. , de-acidification, restoration, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/treatHist.html">treatHist</a></span><span class="desc"><span class="desc">(treatment history) – A record of the treatment the item has undergone (<abbr>e.g.</abbr>,
+                                             de-acidification, restoration, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="(treatment scheduled) – Scheduled treatment, e.g. , de-acidification, restoration, etc., for an item."><a class="link_odd link_odd_elementSpec" href="../elements/treatSched.html">treatSched</a></span><span class="desc"><span class="desc">(treatment scheduled) – Scheduled treatment, <abbr>e.g.</abbr>, de-acidification, restoration, etc., for
+                                             an item.</span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="model.headLike">
@@ -517,7 +540,13 @@
                                  <div class="classContent">
                                     <div class="def"><span class="ident" title="Records information concerning the process by which an item was acquired by the holding institution."><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html">acquisition</a></span><span class="desc"><span class="desc">Records information concerning the process by which an item was acquired by the holding
                                              institution.</span></span></div>
+                                    <div class="def"><span class="ident" title="(exhibition history) – A record of public exhibitions, including dates, venues, etc."><a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">exhibHist</a></span><span class="desc"><span class="desc">(exhibition history) – A record of public exhibitions, including dates, venues,
+                                             etc.</span></span></div>
                                     <div class="def"><span class="ident" title="The record of ownership or custodianship of an item."><a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">provenance</a></span><span class="desc"><span class="desc">The record of ownership or custodianship of an item.</span></span></div>
+                                    <div class="def"><span class="ident" title="(treatment history) – A record of the treatment the item has undergone ( e.g. , de-acidification, restoration, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/treatHist.html">treatHist</a></span><span class="desc"><span class="desc">(treatment history) – A record of the treatment the item has undergone (<abbr>e.g.</abbr>,
+                                             de-acidification, restoration, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="(treatment scheduled) – Scheduled treatment, e.g. , de-acidification, restoration, etc., for an item."><a class="link_odd link_odd_elementSpec" href="../elements/treatSched.html">treatSched</a></span><span class="desc"><span class="desc">(treatment scheduled) – Scheduled treatment, <abbr>e.g.</abbr>, de-acidification, restoration, etc., for
+                                             an item.</span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="MEI.shared">
@@ -587,6 +616,8 @@
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a>"</span>/&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.bibl.html">att.bibl</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.physDescPart.html">model.physDescPart</a>"</span>/&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
@@ -602,7 +633,13 @@
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html">acquisition</a>"</span>/&gt;</span></div>
                                              
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">exhibHist</a>"</span>/&gt;</span></div>
+                                             
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">provenance</a>"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_elementSpec" href="../elements/treatHist.html">treatHist</a>"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_elementSpec" href="../elements/treatSched.html">treatSched</a>"</span>/&gt;</span></div>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.divLike.html">model.divLike</a>"</span>/&gt;</span></div>
                                              
@@ -637,7 +674,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/564fa3f09e107e566cf555b408cd5775230302af" target="_blank" rel="noopener noreferrer">#564fa3f</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/fc4216122b98b647373f997a1c90e4940720c2ed" target="_blank" rel="noopener noreferrer">#fc42161</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
