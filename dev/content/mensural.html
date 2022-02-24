@@ -895,7 +895,7 @@
                            </p>
                         
                         <p>The conjunct use of the <span class="att">dur</span> and <span class="att">dur.quality</span> attributes is generally enough to encode the duration of a note—and, as indicated
-                           before, one could even remove <span class="att">dur.quality</span> when its value is in agreement with the mensuration. However, there are cases (<abbr>e.g.</abbr>, partial imperfection) where the values of <span class="att">dur.quality</span> are not enough to provide the note's duration.</p>
+                           before, one could even remove <span class="att">dur.quality</span> when its value is in agreement with the mensuration. However, there are cases (<abbr>e.g.</abbr>, partial imperfection) where the values of <span class="att">dur.quality</span> are not enough to provide the note’s duration.</p>
                         </div>
                      
                      <div class="div3">
@@ -904,9 +904,9 @@
                         
                         <p>In opposition to regular imperfection, which is caused by a note of the next smaller
                            degree (<abbr>e.g.</abbr>, a perfect <em>brevis</em> imperfected by a following/preceding <em>semibrevis</em>), partial imperfection is caused by a note of two or even three orders apart. As
-                           an example, consider an imperfect <em>longa</em> made up of two perfect <em>breves</em>. This <em>longa</em> can be "partially imperfected" by a following/preceding <em>semibrevis</em>. This <em>semibrevis</em> causes part of the <em>longa</em>—one of its perfect <em>breves</em>—to be imperfected, taking away one-third of one of its two halves. In this case,
-                           the <em>longa</em>'s value changes from 6 <em>semibreves</em> (two perfect <em>breves</em>) into 5 <em>semibreves</em>. Partial imperfection is not supported by the <span class="att">dur.quality</span> attribute—because there can be many cases of partial imperfection, as will be seen
-                           in the following examples. To encode a partial imperfection, the <span class="att">num</span> and <span class="att">numbase</span> pair of attributes are used instead. Given the change in the <em>longa</em>'s value from 6 <em>semibreves</em> to 5 <em>semibreves</em>, the corresponding attributes to encode this particular case of partial imperfection
+                           an example, consider an imperfect <em>longa</em> made up of two perfect <em>breves</em>. This <em>longa</em> can be ‘partially imperfected’ by a following/preceding <em>semibrevis</em>. This <em>semibrevis</em> causes part of the <em>longa</em>—one of its perfect <em>breves</em>—to be imperfected, taking away one-third of one of its two halves. In this case,
+                           the <em>longa</em>’s value changes from 6 <em>semibreves</em> (two perfect <em>breves</em>) into 5 <em>semibreves</em>. Partial imperfection is not supported by the <span class="att">dur.quality</span> attribute—because there can be many cases of partial imperfection, as will be seen
+                           in the following examples. To encode a partial imperfection, the <span class="att">num</span> and <span class="att">numbase</span> pair of attributes are used instead. Given the change in the <em>longa</em>’s value from 6 <em>semibreves</em> to 5 <em>semibreves</em>, the corresponding attributes to encode this particular case of partial imperfection
                            would be <em>num="6"</em> and <em>numbase="5"</em> as shown below in the code snippet and its rendering.</p>
                         
                         <p>
@@ -1681,7 +1681,7 @@
                         
                         <p>It is common in <em>Ars antiqua</em> and some <em>Ars nova</em> pieces to have no mensuration signs. In this case, the mensuration—the division levels
                            corresponding to <em>modus maior</em>, <em>modus minor</em>, <em>tempus</em>, and <em>prolatio</em>—is given by the context. The next example shows the incipit of a four-voice piece,
-                           Josquin's <em>Tu solus qui facis mirabilia</em>, where only two of the voices (<em>Cantus</em> and <em>Tenor</em>) have a mensuration sign. The other two (<em>Altus</em> and <em>Bassus</em>) have <em>no mensuration signs</em>, and the <em>mensura is given by the context</em>. Therefore, while only the <em>Cantus</em> and the <em>Tenor</em> have attributes for encoding the mensuration sign (in this case, <span class="att">mensur.sign</span> and <span class="att">mensur.slash</span>), all four voices include attributes to encode the <em>mensura</em> (<span class="att">tempus</span> and <span class="att">prolatio</span>). 
+                           Josquin’s <em>Tu solus qui facis mirabilia</em>, where only two of the voices (<em>Cantus</em> and <em>Tenor</em>) have a mensuration sign. The other two (<em>Altus</em> and <em>Bassus</em>) have <em>no mensuration signs</em>, and the <em>mensura is given by the context</em>. Therefore, while only the <em>Cantus</em> and the <em>Tenor</em> have attributes for encoding the mensuration sign (in this case, <span class="att">mensur.sign</span> and <span class="att">mensur.slash</span>), all four voices include attributes to encode the <em>mensura</em> (<span class="att">tempus</span> and <span class="att">prolatio</span>). 
                            <figure class="figure specPage">
                               <div xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
@@ -2074,7 +2074,7 @@
                         
                         <h3 id="stems"><span class="headingNumber">5.6.2</span><span class="head">Stems</span></h3>
                         
-                        <p>The characteristics of a note's stem can be encoded within the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element, using the attributes:</p>
+                        <p>The characteristics of a note’s stem can be encoded within the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element, using the attributes:</p>
                         
                         <p>
                            
@@ -2299,7 +2299,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/fc4216122b98b647373f997a1c90e4940720c2ed" target="_blank" rel="noopener noreferrer">#fc42161</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a2a781e44589ad9780a4dfaf96e89f548158fc84" target="_blank" rel="noopener noreferrer">#a2a781e</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

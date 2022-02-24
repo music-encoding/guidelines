@@ -733,7 +733,7 @@
                         <p>Usually <a class="link_odd link_odd_elementSpec" href="../elements/clef.html">clef</a>, <a class="link_odd link_odd_elementSpec" href="../elements/key.html">key</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">meterSig</a> apply to a whole staff.</p>
                         
                         <p>In some rare cases one can find different meters in different layers, as seen in Maurice
-                           Ravel's <em>Oiseaux tristes</em>.</p>
+                           Ravel’s <em>Oiseaux tristes</em>.</p>
                         
                         <p>
                            
@@ -949,21 +949,21 @@
                                  </figure>
                                  </p>
                               
-                              <p>Grace notes are not counted when determining the measure's conformance to the current
+                              <p>Grace notes are not counted when determining the measure’s conformance to the current
                                  time signature. Therefore, the <span class="att">dur</span> attribute records only the <em>written</em> rhythmic value of the grace note. The time necessary for the performance of grace
                                  notes can be unspecified, calculated based on taking time from other non-grace notes,
                                  or specified precisely using the <span class="att">dur.ges</span> attribute.</p>
                               
                               <p>The values of <span class="att">grace</span> indicate from which note time is ‘borrowed’ to perform the grace note: The preceding
-                                 note, in which case the value 'unacc' (unaccented) is used, or the following note,
-                                 when the value 'acc' (accented) is appropriate. Technically, this value determines
+                                 note, in which case the value ‘unacc’ (unaccented) is used, or the following note,
+                                 when the value ‘acc’ (accented) is appropriate. Technically, this value determines
                                  if the note following the grace will keep its original onset time or will be slightly
                                  delayed to allow the grace note itself to be accented. Sometimes it is not clear how
-                                 to perform a grace; in these situations the value 'unknown' allows one to indicate
+                                 to perform a grace; in these situations the value ‘unknown’ allows one to indicate
                                  a grace note while unambiguously stating that its performed duration remains unknown.</p>
                               
                               <p>The <span class="att">grace.time</span> attribute is only to be used in combination with the <span class="att">grace</span> attribute. It records the amount of time (as a percentage of the written duration)
-                                 that the grace note should ‘steal’ from the preceding note (when <span class="att">grace</span>='unacc') or the following note (when <span class="att">grace</span>='acc').</p>
+                                 that the grace note should ‘steal’ from the preceding note (when <span class="att">grace</span>="unacc") or the following note (when <span class="att">grace</span>="acc").</p>
                               
                               <p>Grace notes can be placed within a <a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">graceGrp</a> element, which itself allows all values for <span class="att">grace</span> as explained above. The optional <span class="att">attach</span> attribute is used to record whether the grace note group is attached to the following
                                  event or to the preceding one. The <a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">graceGrp</a> element can be used with single or mutliple grace notes.</p>
@@ -988,14 +988,14 @@
                               <p>A chord is any set of pitches consisting of multiple notes that are to be played simultaneously
                                  and are usually grouped together visually with a single stem. In MEI the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element functions as a container for all participating notes. Also it features many
                                  attributes that are allowed for notes, <abbr>e.g.</abbr>, usually all notes in a chord have a common duration, so it can be applied to the
-                                 whole chord within it's <span class="att">dur</span> attribute.</p>
+                                 whole chord within it’s <span class="att">dur</span> attribute.</p>
                               
                               <p>Some notational features like articulations or lyrics are connected to a whole chord
-                                 instead of a single note. Therefore elements like <a class="link_odd link_odd_elementSpec" href="../elements/artic.html">artic</a> or <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> are also allowed as children of <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> elements. In the follwing example from Sergei Rachmaninoff's <em>Prelude in C-sharp minor</em>, Op. 3, No. 2 all chords carry an accent.</p>
+                                 instead of a single note. Therefore elements like <a class="link_odd link_odd_elementSpec" href="../elements/artic.html">artic</a> or <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> are also allowed as children of <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> elements. In the follwing example from Sergei Rachmaninoff’s <em>Prelude in C-sharp minor</em>, Op. 3, No. 2 all chords carry an accent.</p>
                               
                               <p>
                                  
-                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/RachmaninoffPrelude.png"><figcaption class="caption">Figure 12. Chords in Rachmaninoff's Prelude in C-sharp minor, Op. 3, No. 2</figcaption>
+                                 <figure class="figure"><img class="graphic" src="../images/ExampleImages/RachmaninoffPrelude.png"><figcaption class="caption">Figure 12. Chords in Rachmaninoff’s Prelude in C-sharp minor, Op. 3, No. 2</figcaption>
                                  </figure>
                                  
                                  <figure class="figure specPage">
@@ -1056,7 +1056,7 @@
                               <h5 id="cmnChordsStems"><span class="headingNumber">4.2.5.2.2</span><span class="head">Stem Modifications</span></h5>
                               
                               <p>The <span class="att">stem.mod</span> attribute accommodates various stem modifiers found in the CMN repertoire. These
-                                 symbols are placed on a note or chord's stem and generally indicate different types
+                                 symbols are placed on a note or chord’s stem and generally indicate different types
                                  of tremolo and Sprechstimme. The following values are allowed:</p>
                               
                               <p class="gloss"><strong><span>1slash</span></strong>:
@@ -1654,9 +1654,9 @@
                            </figure>
                            </p>
                         
-                        <p>The duration of notes, rests, or chords under a beam which carries the <span class="att">form</span> attribute with a value of 'acc', 'rit', or 'mixed' must be treated specially. The
+                        <p>The duration of notes, rests, or chords under a beam which carries the <span class="att">form</span> attribute with a value of ‘acc’, ‘rit’, or ‘mixed’ must be treated specially. The
                            first and last contained elements must specify a duration which matches the number
-                           of beams displayed at the point of these events. In the case of a 'mixed' beam, each
+                           of beams displayed at the point of these events. In the case of a ‘mixed’ beam, each
                            event at the point of change in the number of secondary beams must carry a <span class="att">dur</span> attribute. Beams like this may be encoded thusly:</p>
                         
                         <p>
@@ -1717,7 +1717,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/cross-staff.1.png"><figcaption class="caption">Figure 19. Two measures from No. 4 of Moszkowski's 12 Pianoforte Studies for the left
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/cross-staff.1.png"><figcaption class="caption">Figure 19. Two measures from No. 4 of Moszkowski’s 12 Pianoforte Studies for the left
                                  hand</figcaption>
                            </figure>
                            </p>
@@ -1725,7 +1725,7 @@
                         <p>Beams that connect events on different staves may be encoded in two different ways.
                            First, a single-layer approach may be taken that treats the events lying under the
                            beam as logically belonging to the same layer as the initial event but visually ‘displaced’
-                           to an adjacent staff. In the example above from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Moritz_Moszkowski">Moritz Moszkowski's</a>
+                           to an adjacent staff. In the example above from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Moritz_Moszkowski">Moritz Moszkowski’s</a>
                            <em>12 Pianoforte Studies for the left hand</em>, Op. 92, MoszWV 117 this method makes even from a semantic perspective perfect sense.
                            It can be achieved with an additional <span class="att">staff</span> attribute value that contradicts the ‘normal’ staff placement indicated by the <span class="att">n</span> attribute of their ancestor <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a>.</p>
                         
@@ -1824,12 +1824,12 @@
                         <p>Due to the potential problem of overlapping hierarchies, the <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a> element only allows the encoding of beams that do not cross barlines. When beams
                            cross barlines, the use of the <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">beamSpan</a> element is required. Unlike <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>, the <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">beamSpan</a> element does not contain the beamed notes as its children. Instead, it references
                            the <span class="att">xml:id</span> values of all affected notes in its <span class="att">plist</span> attribute and denotes the initial and terminal notes of the beam using <span class="att">startid</span> and <span class="att">endid</span> attributes. This configuration allows beams to cross measure boundaries. The following
-                           example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Erwin_Schulhoff">Erwin Schulhoff's</a>
+                           example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Erwin_Schulhoff">Erwin Schulhoff’s</a>
                            <em>Violin Sonata</em> demonstrates a typical example of such hierarchy-crossing beams:</p>
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/beamspan.1.png"><figcaption class="caption">Figure 20. Cross-measure beam in the third movement of Schulhoff's Sonata</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/beamspan.1.png"><figcaption class="caption">Figure 20. Cross-measure beam in the third movement of Schulhoff’s Sonata</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -1858,10 +1858,10 @@
                         
                         <p>The <span class="att">beam.group</span> attribute can be used to set a default beaming pattern to be used when no beaming
                            is indicated at the layer level. It must contain a comma-separated list of time values
-                           that add up to a measure in the current meter, <abbr>e.g.</abbr>, '4,4,4,4' in 4/4 time indicates that each quarter note worth of shorter notes should
+                           that add up to a measure in the current meter, <abbr>e.g.</abbr>, ‘4,4,4,4’ in 4/4 time indicates that each quarter note worth of shorter notes should
                            be beamed together. Parentheses can be used to indicate sub-groupings of secondary
-                           beams. For example, '(4.,4.,4.)' in 9/8 meter indicates one primary beam per measure
-                           with secondary beams broken at each dotted quarter duration, while '(4,4),(4,4)' in
+                           beams. For example, ‘(4.,4.,4.)’ in 9/8 meter indicates one primary beam per measure
+                           with secondary beams broken at each dotted quarter duration, while ‘(4,4),(4,4)’ in
                            4/4 will result in a measure of 16th notes being rendered with a primary beam covering
                            all the notes and secondary beams for each group of four 16th notes.</p>
                         
@@ -1869,7 +1869,7 @@
                            Also, the beaming pattern can be changed anywhere score parameters may be changed,
                            for example, at the start of sections. This beaming "directive" can be overridden
                            by using <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>, <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">beamSpan</a>, or <span class="att">beam</span> attributes as described above. If none of these beaming specifications is used, then
-                           no beaming is implied. Default beaming can be explicitly 'turned off' by setting <span class="att">beam.group</span> to an empty string.</p>
+                           no beaming is implied. Default beaming can be explicitly ‘turned off’ by setting <span class="att">beam.group</span> to an empty string.</p>
                         </div>
                      
                      <div class="div3">
@@ -2119,7 +2119,7 @@
                         
                         <p>The reason for this difference is that slurs, unlike ties, may overlap, so that a
                            second slur may start while the first slur is still ongoing. The digit indicates the
-                           level of nesting of slurs on the note; '1' indicates no nesting, while '2' indicates
+                           level of nesting of slurs on the note; ‘1’ indicates no nesting, while ‘2’ indicates
                            the existence of 2 slurs in which this note participates, and so on. In the example
                            below, the second and third quarter notes lie under 2 slurs. The second note is covered
                            by the slur that begins on the preceding note and by the one that it starts. The third
@@ -2353,7 +2353,7 @@
                            that is, programs that process the file without creating an in-memory representation
                            of its contents.</p>
                         
-                        <p>When using the <a class="link_odd link_odd_elementSpec" href="../elements/tie.html">tie</a>, <a class="link_odd link_odd_elementSpec" href="../elements/slur.html">slur</a> or <a class="link_odd link_odd_elementSpec" href="../elements/phrase.html">phrase</a> elements, the curvature of the line may be described using the <span class="att">curvedir</span>, <span class="att">bulge</span> and <span class="att">bezier</span> attributes. Whereas the first attribute allows only specification of the slur's vertical
+                        <p>When using the <a class="link_odd link_odd_elementSpec" href="../elements/tie.html">tie</a>, <a class="link_odd link_odd_elementSpec" href="../elements/slur.html">slur</a> or <a class="link_odd link_odd_elementSpec" href="../elements/phrase.html">phrase</a> elements, the curvature of the line may be described using the <span class="att">curvedir</span>, <span class="att">bulge</span> and <span class="att">bezier</span> attributes. Whereas the first attribute allows only specification of the slur’s vertical
                            placement, the others give increasingly more precise control of the curve.</p>
                         
                         <p>If the encoder wishes to draw attention to the appearance of a slur or tie in a given
@@ -2383,7 +2383,7 @@
                            </figure>
                            </p>
                         
-                        <p>By convention, <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a> elements, like <a class="link_odd link_odd_elementSpec" href="../elements/slur.html">slur</a> and other elements belonging to the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, are encoded at the end of the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> to which they belong. This requires <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a> to be assigned to a certain <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> using the <span class="att">staff</span> attribute, whose value refers to the target element's <span class="att">n</span> attribute. In the absence of other information, all layers within the staff are assumed
+                        <p>By convention, <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a> elements, like <a class="link_odd link_odd_elementSpec" href="../elements/slur.html">slur</a> and other elements belonging to the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, are encoded at the end of the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> to which they belong. This requires <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">dynam</a> to be assigned to a certain <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> using the <span class="att">staff</span> attribute, whose value refers to the target element’s <span class="att">n</span> attribute. In the absence of other information, all layers within the staff are assumed
                            to have the same dynamic marking.</p>
                         
                         <p>
@@ -2669,14 +2669,14 @@
                            </figure>
                            </p>
                         
-                        <p>The following example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/B%C3%A9la_Bart%C3%B3k">Béla Bartók's</a>
+                        <p>The following example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/B%C3%A9la_Bart%C3%B3k">Béla Bartók’s</a>
                            <em>Mikrokosmos</em>, Sz.107 shows a <em>diminuendo</em> between two staves that begins on the first beat (in the current measure) and ends
                            on the first one in the penultimate measure. The duration is highlighted with a dashed
                            line, which can be indicated with the <span class="att">extender</span> attribute.</p>
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/dynamics.1.png"><figcaption class="caption">Figure 23. A diminuendo in Bartók's In Phrygian Mode</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/dynamics.1.png"><figcaption class="caption">Figure 23. A diminuendo in Bartók’s In Phrygian Mode</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2710,7 +2710,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/tuplets.1.png"><figcaption class="caption">Figure 24. Tuplet rhythms from Maurice Ravel's Boléro</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/tuplets.1.png"><figcaption class="caption">Figure 24. Tuplet rhythms from Maurice Ravel’s Boléro</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2785,7 +2785,7 @@
                         
                         <p>In some situations, a tuplet is made up of events in different measures. As this raises
                            the issue of non-concurrent hierarchies, it is not possible to encode such situations
-                           with the <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> element described above. Therefore, MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/tupletSpan.html">tupletSpan</a> element, which is member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class. It is nested inside of <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>, following all the measure's <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> children. It uses the same attributes as <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> to describe tuplets, but instead of nesting all affected notes inside itself, it
+                           with the <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> element described above. Therefore, MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/tupletSpan.html">tupletSpan</a> element, which is member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class. It is nested inside of <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>, following all the measure’s <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> children. It uses the same attributes as <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> to describe tuplets, but instead of nesting all affected notes inside itself, it
                            references the <span class="att">xml:id</span> values of all affected notes in its <span class="att">plist</span> attribute and the initial and terminal notes of the tuplet using <span class="att">startid</span> and <span class="att">endid</span> attributes. This configuration allows tuplets to cross beams or measure boundaries.
                            The following example demonstrates a typical example of such hierarchy-crossing tuplets:</p>
                         
@@ -2944,12 +2944,12 @@
                               </p>
                            
                            <p>For arpeggios that involve chords spanning multiple staves as a continuous arpeggio
-                              (instead of two separate arpeggios), the <span class="att">plist</span> attribute should be used to point to all affected <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> and single <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements' <span class="att">xml:id</span> attributes. Therefore, the use of the <span class="att">plist</span> attribute is sufficient in many cases, so that other attributes from above may be
+                              (instead of two separate arpeggios), the <span class="att">plist</span> attribute should be used to point to all affected <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> and single <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements’ <span class="att">xml:id</span> attributes. Therefore, the use of the <span class="att">plist</span> attribute is sufficient in many cases, so that other attributes from above may be
                               omitted.</p>
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/LisztMazeppa.png"><figcaption class="caption">Figure 26. Spanning arpeggios in Liszt's Mazeppa study</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/LisztMazeppa.png"><figcaption class="caption">Figure 26. Spanning arpeggios in Liszt’s Mazeppa study</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3062,7 +3062,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/TarregaAlborada.png"><figcaption class="caption">Figure 27. A simple glissando in Tárrega's Alborada from a leading grace note</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/TarregaAlborada.png"><figcaption class="caption">Figure 27. A simple glissando in Tárrega’s Alborada from a leading grace note</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3112,7 +3112,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/SchubertD887.png"><figcaption class="caption">Figure 28. Bowed tremolandi in Schubert's last string quartet</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/SchubertD887.png"><figcaption class="caption">Figure 28. Bowed tremolandi in Schubert’s last string quartet</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3166,7 +3166,7 @@
                            
                            <p>The <span class="att">unitdur</span> attribute value indicates the exact note values in an aural rendition of a measured
                               tremolo, <abbr>i.e.</abbr>, quarters, 8ths, and so on. The <span class="att">stem.mod</span> attribute must also be explicity set on the child <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> or <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element for a complete visual representation. The example above shows a short excerpt
-                              from the second movement of <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Franz_Schubert">Franz Schubert's</a>
+                              from the second movement of <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Franz_Schubert">Franz Schubert’s</a>
                               <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert">String Quartet in G major, D. 887</a>).</p>
                            
                            <p>However, the number of slashes present on the note may disagree with the number of
@@ -3223,7 +3223,7 @@
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/bTrem.html">bTrem</a> element can be used as shorthand for a tuplet consisting of repetitions of a single
                               note or chord. This kind of markup may be the result of an optical music recognition
                               process in which complete semantics cannot be determined <em>a priori</em>. When used this way, the <span class="att">num</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/bTrem.html">bTrem</a> can record a number to be rendered along with the pseudo-tuplet. In spite of this
-                              capability, the <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> element is preferred. This makes the following examples' visual appearance equal,
+                              capability, the <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> element is preferred. This makes the following examples’ visual appearance equal,
                               but not necessarily their semantics.</p>
                            
                            <p>
@@ -3293,7 +3293,7 @@
                               </p>
                            
                            <p>Similar to <a class="link_odd link_odd_elementSpec" href="../elements/bTrem.html">bTrem</a>, here the number of beams present may disagree with the rhythmic value indicated
-                              by the <span class="att">unitdur</span> attribute, especially in manuscript sources. The number of so-called "floating" beams,
+                              by the <span class="att">unitdur</span> attribute, especially in manuscript sources. The number of so-called ‘floating’ beams,
                               which are not attached to stems, may be encoded in the <span class="att">beams.float</span> attribute.</p>
                            
                            <p>
@@ -3316,16 +3316,16 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Beethoven.png"><figcaption class="caption">Figure 31. The probably most famous fermatas in history from Beethoven's fifth symphony</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Beethoven.png"><figcaption class="caption">Figure 31. The probably most famous fermatas in history from Beethoven’s fifth symphony</figcaption>
                               </figure>
                               </p>
                            
                            <p>In MEI, fermatas may be encoded using an attribute on elements like <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>, <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> or <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a>. This attribute allows placement of a fermata above or below the element to which
-                              it's attached.</p>
+                              it’s attached.</p>
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/MozartK428.4.png"><figcaption class="caption">Figure 32. Fermatas in Mozart's String quartet K. 428 indicating general pauses</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/MozartK428.4.png"><figcaption class="caption">Figure 32. Fermatas in Mozart’s String quartet K. 428 indicating general pauses</figcaption>
                               </figure>
                               </p>
                            
@@ -3722,7 +3722,7 @@
                            
                            <p>Modern harps have seven pedals which allow adjustment of their strings to different
                               pitches. The settings for these pedals occur at the beginning of the harp notation
-                              and/or whenever it is necessary to change the harp's tuning. These settings may be
+                              and/or whenever it is necessary to change the harp’s tuning. These settings may be
                               rendered using letter pitches (in the order of the pedals from left to right) or in
                               a diagrammatic fashion, such as the form invented by <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Carlos_Salzedo">Carlos Salzedo</a>.</p>
                            
@@ -3827,12 +3827,12 @@
                            <p>A common feature for keyboard music is fingering, indicating the finger, which should
                               be used to play a single note. Basic fingering can be encoded in MEI using the <a class="link_odd link_odd_elementSpec" href="../elements/fing.html">fing</a> element, which is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.fingeringLike.html">model.fingeringLike</a> class, and thus part of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class.</p>
                            
-                           <p>The following example, taken from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Charles-Louis_Hanon">Charles-Louis Hanon's</a>
+                           <p>The following example, taken from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Charles-Louis_Hanon">Charles-Louis Hanon’s</a>
                               <em>Le Pianiste virtuose</em>, shows typical fingering:</p>
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Hanon.21.png"><figcaption class="caption">Figure 34. Fingering in Hanon's exercise no. 21</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/Hanon.21.png"><figcaption class="caption">Figure 34. Fingering in Hanon’s exercise no. 21</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -3923,7 +3923,7 @@
                            </p>
                         
                         <p>The example above demonstrates that only one of the two <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> elements within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">ossia</a> has an <span class="att">n</span> attribute. This mechanism allows one to distinguish between the "regular" and the
-                           "alternative" content: The one bearing the <span class="att">n</span> attribute goes in line with the preceding measure's staff, the other one is printed
+                           "alternative" content: The one bearing the <span class="att">n</span> attribute goes in line with the preceding measure’s staff, the other one is printed
                            in reduced size above. In this case, the vertical order of staves follows document
                            order: The top-most staff is encoded as the first child, the lowest comes last. In
                            combination with the presence of the <span class="att">n</span> attribute, this allows the capture of multiple simultaneous ossia staves.</p>
@@ -4036,7 +4036,7 @@
                               the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class. The visual rendition of the rehearsal mark, including the surrounding shape,
                               may be captured using the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">rend</a> element described in chapter <a class="link_ptr chapterLink" title="Text Rendition" href="../content/textencoding.html#sharedTextRendition">9.2.2 Text Rendition</a>.</p>
                            
-                           <p>The following detail from an edition of Hector Berlioz' <em>Symphonie Fantastique</em> shows a typical example:</p>
+                           <p>The following detail from an edition of Hector Berlioz’ <em>Symphonie Fantastique</em> shows a typical example:</p>
                            
                            <p>
                               
@@ -4203,7 +4203,7 @@
                               appropriate repeat symbol, which, as demonstrated in the preceding figure, depends
                               on the rhythmic content of the beat being repeated. When a beat that consists of a
                               single note or chord is repeated, the repetition sign is typically rendered as a single
-                              thick, slanting slash; therefore, the value '1' should be used. The following values
+                              thick, slanting slash; therefore, the value ‘1’ should be used. The following values
                               should be used when the beat is divided into even notes: 4ths or 8ths=1, 16ths=2,
                               32nds=3, 64ths=4, 128ths=5. When the beat is comprised of mixed duration values, the
                               symbol is always rendered as 2 slashes and 2 dots.</p>
@@ -4304,7 +4304,7 @@
                               occurs in hand-written notation and usually involves the repetition of the second
                               half of a measure in duple time. This element is necessary because the function of
                               the symbol, not the visual symbol itself, is of primary importance. The following
-                              example from the beginning of Beethoven's <em>Waldstein</em> sonata illustrates such usage:</p>
+                              example from the beginning of Beethoven’s <em>Waldstein</em> sonata illustrates such usage:</p>
                            
                            <p>
                               
@@ -4422,7 +4422,7 @@
                      <p>These symbols may have different resolutions depending on a large number of factors,
                         such as historical context, national boundaries, composer, scribe, etc. The elements
                         described here, therefore, are not bound to a specific symbol; they are, instead,
-                        meant to encode the encoder's interpretation of a symbol and its position on the staff.</p>
+                        meant to encode the encoder’s interpretation of a symbol and its position on the staff.</p>
                      
                      <p>Nonetheless, in order to establish common ground, the guidelines suggest commonly
                         accepted symbols and realizations for the ornaments supported by MEI.</p>
@@ -5088,12 +5088,12 @@
                               </figure>
                               </p>
                            
-                           <p>Another situation that requires disambiguation of an ornament's name and its potential
+                           <p>Another situation that requires disambiguation of an ornament’s name and its potential
                               rendition is due to the fact that the symbols for trills and mordents have been often
                               used interchangeably in the past. The following example, taken from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Klavierb%C3%BCchlein_f%C3%BCr_Wilhelm_Friedemann_Bach">
                                  <em>Klavierbüchlein für Wilhelm Friedemann Bach</em>
                                  </a> (1720), shows a trill (<em>Trillo</em>) identified by the symbol associated with a mordent in modern practice. Nonetheless,
-                              J.S. Bach's suggested resolution should be encoded with a variant of the procedure
+                              J.S. Bach’s suggested resolution should be encoded with a variant of the procedure
                               presented above.</p>
                            
                            <p>In the example below, the child elements of <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a>; that is, <a class="link_odd link_odd_elementSpec" href="../elements/orig.html">orig</a> and <a class="link_odd link_odd_elementSpec" href="../elements/reg.html">reg</a>, represent non-exclusive options; that is, both may be processed by applications
@@ -5101,7 +5101,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/ExplicationBach.png"><figcaption class="caption">Figure 48. Trill transcribed from J. S. Bach's Klavierbüchlein für Wilhelm Friedemann
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/ExplicationBach.png"><figcaption class="caption">Figure 48. Trill transcribed from J. S. Bach’s Klavierbüchlein für Wilhelm Friedemann
                                     Bach</figcaption>
                               </figure>
                               
@@ -5329,7 +5329,7 @@
                            this, the turn symbol is typically written in between the principal note and the next.
                            These kind of turns are encoded with the attribute <span class="att">delayed</span>.</p>
                         
-                        <p>The following example from Beethoven's piano sonata no. 1 in F minor, op. 2, no. 1,
+                        <p>The following example from Beethoven’s piano sonata no. 1 in F minor, op. 2, no. 1,
                            mvmt. 2 demonstrates the encoding of turns with the <span class="att">delayed</span> attribute. Note that the <span class="att">tstamp</span> attribute indicates the actual starting point in time, while <span class="att">startid</span> points to the principal note.</p>
                         
                         <p>
@@ -5426,11 +5426,11 @@
                            combinations of ornaments can be found. Despite being written vertically above the
                            same note, they are to be performed in sequence.</p>
                         
-                        <p>The following example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach">Carl Philipp Emanuel Bach's</a> song <em>Dorinde</em> Wq 199/7 shows a turn followed by a inverted mordent:</p>
+                        <p>The following example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach">Carl Philipp Emanuel Bach’s</a> song <em>Dorinde</em> Wq 199/7 shows a turn followed by a inverted mordent:</p>
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/CPEB_Dorinde.png"><figcaption class="caption">Figure 52. Combined ornaments in C.P.E. Bach's song Dorinde</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/CPEB_Dorinde.png"><figcaption class="caption">Figure 52. Combined ornaments in C.P.E. Bach’s song Dorinde</figcaption>
                            </figure>
                            </p>
                         
@@ -5494,7 +5494,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/fc4216122b98b647373f997a1c90e4940720c2ed" target="_blank" rel="noopener noreferrer">#fc42161</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a2a781e44589ad9780a4dfaf96e89f548158fc84" target="_blank" rel="noopener noreferrer">#a2a781e</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
