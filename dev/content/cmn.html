@@ -855,8 +855,8 @@
                                  the musical note name of a pitch, and the numbers 0–9 indicate the octave range to
                                  which a note belongs. <span class="att">pname</span> values differ from this convention only by using lower case values for pitches (a–g
                                  instead of A-G). The value for <span class="att">oct</span> changes between B and C, that is, octave ranges go from C, D, …, G, A, to B. For
-                                 example, <em>middle C</em> or <em>c'</em> (the C in the middle, i.e. fourth C key from left, on a standard 88-key piano keyboard)
-                                 is represented on the first ledger line in G clef notation and labelled as <em>C4</em>, in the naming convention of SPN. The note one semitone below would be labelled <em>B3</em>, and <em>A4</em> would refer to the first A above <em>C4</em>.</p>
+                                 example, <em>middle C</em> or <em>c'</em> (the C in the middle, <abbr>i.e.</abbr>, fourth C key from left, on a standard 88-key piano keyboard) is represented on the
+                                 first ledger line in G clef notation and labelled as <em>C4</em>, in the naming convention of SPN. The note one semitone below would be labelled <em>B3</em>, and <em>A4</em> would refer to the first A above <em>C4</em>.</p>
                               
                               <p>The usual CMN-specific values for <span class="att">dur</span> are:</p>
                               
@@ -3980,7 +3980,140 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnDir"><span class="headingNumber">4.3.8</span><span class="head">Directives and Rehearsal marks</span></h3>
+                        <h3 id="cmnCue"><span class="headingNumber">4.3.8</span><span class="head">Cue</span></h3>
+                        
+                        <p>Cue notes are smaller notes that usually occur in an orchestral or vocal part and
+                           are not to be played or sung by the corresponding musician, but by other instruments
+                           or singers. Cue notes are used for orientation, <abbr>i.e.</abbr>, to follow the music during longer pauses and to find the correct re-entry point
+                           more easily. In MEI the <span class="att">cue</span> attribute is available to indicate such notes.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;rest <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">cue=</span><span class="attributevalue">"true"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">cue=</span><span class="attributevalue">"true"</span>/&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 185. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Most often cue notes occur in a group rather than one by one. This is because usually
+                           a whole layer of another part is inserted as a cue. Therefore, a complete <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> can also be marked as cue.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmn/Brahms-flutePart.png"><figcaption class="caption">Figure 35. Cue notes in the flute part of Brahms’ <em>Ein deutsches Requiem</em>.</figcaption>
+                           </figure>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_valid">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;score&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;scoreDef&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffGrp&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;clef <span class="attribute">shape=</span><span class="attributevalue">"G"</span> <span class="attribute">line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;keySig <span class="attribute">sig=</span><span class="attributevalue">"5f"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;meterSig <span class="attribute">count=</span><span class="attributevalue">"3"</span> <span class="attribute">unit=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/staffDef&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffGrp&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/scoreDef&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;section&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;measure <span class="attribute">metcon=</span><span class="attributevalue">"false"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;rest <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/layer&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">cue=</span><span class="attributevalue">"true"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;clef <span class="attribute">shape=</span><span class="attributevalue">"F"</span> <span class="attribute">line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;mRest/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/layer&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">cue=</span><span class="attributevalue">"true"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">accid.ges=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;rest <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;rest <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;clef <span class="attribute">shape=</span><span class="attributevalue">"G"</span> <span class="attribute">line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">accid.ges=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/layer&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">cue=</span><span class="attributevalue">"true"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">accid.ges=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/measure&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/section&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/score&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 186. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>If the voice from which the cue notes originate is also encoded, they should refer
+                           to their sounding counterpart with the <span class="att">corresp</span> attribute.</p>
+                        
+                        <p>Cue notes must not be confused with other small notes such as grace notes or <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Fioritura">fiorituras</a>.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="cmnDir"><span class="headingNumber">4.3.9</span><span class="head">Directives and Rehearsal marks</span></h3>
                         
                         <p>In CMN scores, there is often a large number of natural language instructions. Some
                            of them concern the loudness and the speed of the performance, in which case MEI offers
@@ -3990,7 +4123,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnTempo"><span class="headingNumber">4.3.8.1</span><span class="head">Tempo changes and other directives</span></h4>
+                           <h4 id="cmnTempo"><span class="headingNumber">4.3.9.1</span><span class="head">Tempo changes and other directives</span></h4>
                            
                            <p>A tempo or character indication is often provided above the topmost staff of the first
                               measure of a score, movement, or section. This indication, such as "Allegro moderato"
@@ -4019,14 +4152,14 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 185. </figcaption>
+                                 <figcaption class="caption">Listing 187. </figcaption>
                               </figure>
                               </p>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnReh"><span class="headingNumber">4.3.8.2</span><span class="head">Rehearsal marks</span></h4>
+                           <h4 id="cmnReh"><span class="headingNumber">4.3.9.2</span><span class="head">Rehearsal marks</span></h4>
                            
                            <p>Rehearsal marks are another specialized kind of directive. Consisting of letters,
                               numbers, or a combination of both, rehearsal marks are used in scores and corresponding
@@ -4040,7 +4173,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/reh_berlioz.png"><figcaption class="caption">Figure 35. Rehearsal mark</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/reh_berlioz.png"><figcaption class="caption">Figure 36. Rehearsal mark</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -4074,7 +4207,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 186. </figcaption>
+                                 <figcaption class="caption">Listing 188. </figcaption>
                               </figure>
                               </p>
                            
@@ -4101,7 +4234,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 187. </figcaption>
+                                 <figcaption class="caption">Listing 189. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -4109,7 +4242,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnRep"><span class="headingNumber">4.3.9</span><span class="head">Repetition in CMN</span></h3>
+                        <h3 id="cmnRep"><span class="headingNumber">4.3.10</span><span class="head">Repetition in CMN</span></h3>
                         
                         <p>Repetition is a characteristic feature of music. Many musical forms rely on repetition
                            (sometimes with modification) of distinct sections of the music. Repetition in this
@@ -4120,14 +4253,14 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnRepStruct"><span class="headingNumber">4.3.9.1</span><span class="head">Structural Repetition</span></h4>
+                           <h4 id="cmnRepStruct"><span class="headingNumber">4.3.10.1</span><span class="head">Structural Repetition</span></h4>
                            
                            <p>Large-scale structural repetition, utilizing <a class="link_odd link_odd_elementSpec" href="../elements/section.html">section</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expansion.html">expansion</a> elements, is discussed in section <a class="link_ptr chapterLink" title="Content of Musical Divisions" href="../content/shared.html#sharedMdivContent">2.1.2.2 Content of Musical Divisions</a>. This section will focus on repetition within sections.</p>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnRepSym"><span class="headingNumber">4.3.9.2</span><span class="head">Measure-Level Repetition Symbols</span></h4>
+                           <h4 id="cmnRepSym"><span class="headingNumber">4.3.10.2</span><span class="head">Measure-Level Repetition Symbols</span></h4>
                            
                            <p>In addition to repetition at the section level, CMN includes a number of different
                               symbols for measure-level repetitions. Many of these symbols are found in manuscripts
@@ -4139,7 +4272,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/beatrpt-20100510.png"><figcaption class="caption">Figure 36. Beat repeat signs</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/beatrpt-20100510.png"><figcaption class="caption">Figure 37. Beat repeat signs</figcaption>
                               </figure>
                               </p>
                            
@@ -4219,7 +4352,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt-20100510.png"><figcaption class="caption">Figure 37. Measure repetition</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt-20100510.png"><figcaption class="caption">Figure 38. Measure repetition</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -4295,7 +4428,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 188. </figcaption>
+                                 <figcaption class="caption">Listing 190. </figcaption>
                               </figure>
                               </p>
                            
@@ -4308,7 +4441,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/halfmRpt_beethoven.png"><figcaption class="caption">Figure 38. Half-measure repeat</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/modules/cmn/halfmRpt_beethoven.png"><figcaption class="caption">Figure 39. Half-measure repeat</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
@@ -4375,7 +4508,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 189. </figcaption>
+                                 <figcaption class="caption">Listing 191. </figcaption>
                               </figure>
                               </p>
                            
@@ -4387,10 +4520,10 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt2-20100510.png"><figcaption class="caption">Figure 39. Two-measure repetition</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/mrpt2-20100510.png"><figcaption class="caption">Figure 40. Two-measure repetition</figcaption>
                               </figure>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/multirpt-20100510.png"><figcaption class="caption">Figure 40. Multi-measure repetition</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/multirpt-20100510.png"><figcaption class="caption">Figure 41. Multi-measure repetition</figcaption>
                               </figure>
                               </p>
                            
@@ -4462,7 +4595,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 190. </figcaption>
+                              <figcaption class="caption">Listing 192. </figcaption>
                            </figure>
                            </p>
                         
@@ -4498,7 +4631,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 191. </figcaption>
+                              <figcaption class="caption">Listing 193. </figcaption>
                            </figure>
                            </p>
                         
@@ -4546,7 +4679,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 192. </figcaption>
+                                 <figcaption class="caption">Listing 194. </figcaption>
                               </figure>
                               </p>
                            
@@ -4638,7 +4771,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent.png"><figcaption class="caption">Figure 41. Example of simple mordent</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent.png"><figcaption class="caption">Figure 42. Example of simple mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4668,7 +4801,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 193. </figcaption>
+                              <figcaption class="caption">Listing 195. </figcaption>
                            </figure>
                            </p>
                         
@@ -4677,7 +4810,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent_l.png"><figcaption class="caption">Figure 42. Example of a long mordent</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_mordent_l.png"><figcaption class="caption">Figure 43. Example of a long mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4707,7 +4840,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 194. </figcaption>
+                              <figcaption class="caption">Listing 196. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -4761,7 +4894,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr.png"><figcaption class="caption">Figure 43. Example of simple trills.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr.png"><figcaption class="caption">Figure 44. Example of simple trills.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4799,7 +4932,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 195. </figcaption>
+                              <figcaption class="caption">Listing 197. </figcaption>
                            </figure>
                            </p>
                         
@@ -4809,7 +4942,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_trill_wavy.png"><figcaption class="caption">Figure 44. Example of trills followed by wavy lines.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_trill_wavy.png"><figcaption class="caption">Figure 45. Example of trills followed by wavy lines.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4859,7 +4992,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 196. </figcaption>
+                              <figcaption class="caption">Listing 198. </figcaption>
                            </figure>
                            </p>
                         
@@ -4873,7 +5006,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_accid.png"><figcaption class="caption">Figure 45. Example alterations expressed on the staff.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_accid.png"><figcaption class="caption">Figure 46. Example alterations expressed on the staff.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4897,7 +5030,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 197. </figcaption>
+                              <figcaption class="caption">Listing 199. </figcaption>
                            </figure>
                            </p>
                         
@@ -4911,7 +5044,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_grace.png"><figcaption class="caption">Figure 46. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_grace.png"><figcaption class="caption">Figure 47. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -4947,7 +5080,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 198. </figcaption>
+                              <figcaption class="caption">Listing 200. </figcaption>
                            </figure>
                            </p>
                         
@@ -4966,7 +5099,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_multi.png"><figcaption class="caption">Figure 47. Example of multiple trills.</figcaption>
+                              <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_tr_multi.png"><figcaption class="caption">Figure 48. Example of multiple trills.</figcaption>
                               </figure>
                               </p>
                            
@@ -5004,7 +5137,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 199. </figcaption>
+                                 <figcaption class="caption">Listing 201. </figcaption>
                               </figure>
                               </p>
                            
@@ -5048,7 +5181,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 200. </figcaption>
+                                 <figcaption class="caption">Listing 202. </figcaption>
                               </figure>
                               </p>
                            
@@ -5084,7 +5217,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 201. </figcaption>
+                                 <figcaption class="caption">Listing 203. </figcaption>
                               </figure>
                               </p>
                            
@@ -5101,7 +5234,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/ExplicationBach.png"><figcaption class="caption">Figure 48. Trill transcribed from J. S. Bach’s Klavierbüchlein für Wilhelm Friedemann
+                              <figure class="figure"><img class="graphic" src="../images/ExampleImages/ExplicationBach.png"><figcaption class="caption">Figure 49. Trill transcribed from J. S. Bach’s Klavierbüchlein für Wilhelm Friedemann
                                     Bach</figcaption>
                               </figure>
                               
@@ -5147,7 +5280,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 202. </figcaption>
+                                 <figcaption class="caption">Listing 204. </figcaption>
                               </figure>
                               </p>
                            
@@ -5208,7 +5341,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 203. </figcaption>
+                                 <figcaption class="caption">Listing 205. </figcaption>
                               </figure>
                               </p>
                            
@@ -5290,7 +5423,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn.png"><figcaption class="caption">Figure 49. Example of a simple turn.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn.png"><figcaption class="caption">Figure 50. Example of a simple turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -5320,7 +5453,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 204. </figcaption>
+                              <figcaption class="caption">Listing 206. </figcaption>
                            </figure>
                            </p>
                         
@@ -5334,7 +5467,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn_d.png"><figcaption class="caption">Figure 50. Delayed turn.</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/ex_turn_d.png"><figcaption class="caption">Figure 51. Delayed turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -5365,7 +5498,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 205. </figcaption>
+                              <figcaption class="caption">Listing 207. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5388,7 +5521,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/JSBtableofornaments.jpg"><figcaption class="caption">Figure 51. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
+                           <figure class="figure"><img class="graphic" src="../images/modules/cmnOrnaments/JSBtableofornaments.jpg"><figcaption class="caption">Figure 52. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
                                  für Wilhelm Friedemann Bach</figcaption>
                            </figure>
                            </p>
@@ -5411,7 +5544,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 206. </figcaption>
+                              <figcaption class="caption">Listing 208. </figcaption>
                            </figure>
                            </p>
                         
@@ -5430,7 +5563,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/CPEB_Dorinde.png"><figcaption class="caption">Figure 52. Combined ornaments in C.P.E. Bach’s song Dorinde</figcaption>
+                           <figure class="figure"><img class="graphic" src="../images/ExampleImages/CPEB_Dorinde.png"><figcaption class="caption">Figure 53. Combined ornaments in C.P.E. Bach’s song Dorinde</figcaption>
                            </figure>
                            </p>
                         
@@ -5486,7 +5619,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 207. </figcaption>
+                              <figcaption class="caption">Listing 209. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5494,7 +5627,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a2a781e44589ad9780a4dfaf96e89f548158fc84" target="_blank" rel="noopener noreferrer">#a2a781e</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/6e8bde5ea93fbf52dddccf5f3841c463bcd7f76c" target="_blank" rel="noopener noreferrer">#6e8bde5</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -5508,7 +5641,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnDir">4.3.8 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.9 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnCue">4.3.8 Cue</a><a class="level-3" href="#cmnDir">4.3.9 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.10 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -5526,7 +5659,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnDir">4.3.8 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.9 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Redefinition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnCue">4.3.8 Cue</a><a class="level-3" href="#cmnDir">4.3.9 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.10 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
                   </div>
                </div>
             </div>
