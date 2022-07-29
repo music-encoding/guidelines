@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-07-21">
+      <meta name="date" content="2022-07-29">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -410,7 +410,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">system.topmar</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.systems.html">att.systems</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Describes the distance from page's top edge to the first system; used for first page
+                                 <div class="tile-subtitle text-gray">Describes the distance from page’s top edge to the first system; used for first page
                                     only.</div>
                               </div>
                            </div>
@@ -827,9 +827,9 @@
                               <p>In CMN, notes are determined by three basic parameters:</p>
                               
                               <ul>
-                                 <li class="item">pitch name (using @pname)</li>
-                                 <li class="item">octave (using @oct)</li>
-                                 <li class="item">duration (using @dur)</li>
+                                 <li class="item">pitch name (using <span class="att">pname</span>)</li>
+                                 <li class="item">octave (using <span class="att">oct</span>)</li>
+                                 <li class="item">duration (using <span class="att">dur</span>)</li>
                               </ul>
                               
                               <p>A single note, in this case a quarter note C4, is therefore encoded as: 
@@ -955,12 +955,11 @@
                                  or specified precisely using the <span class="att">dur.ges</span> attribute.</p>
                               
                               <p>The values of <span class="att">grace</span> indicate from which note time is ‘borrowed’ to perform the grace note: The preceding
-                                 note, in which case the value ‘unacc’ (unaccented) is used, or the following note,
-                                 when the value ‘acc’ (accented) is appropriate. Technically, this value determines
-                                 if the note following the grace will keep its original onset time or will be slightly
-                                 delayed to allow the grace note itself to be accented. Sometimes it is not clear how
-                                 to perform a grace; in these situations the value ‘unknown’ allows one to indicate
-                                 a grace note while unambiguously stating that its performed duration remains unknown.</p>
+                                 note, in which case the value <span class="val">unacc</span> (unaccented) is used, or the following note, when the value <span class="val">acc</span> (accented) is appropriate. Technically, this value determines if the note following
+                                 the grace will keep its original onset time or will be slightly delayed to allow the
+                                 grace note itself to be accented. Sometimes it is not clear how to perform a grace;
+                                 in these situations the value <span class="val">unknown</span> allows one to indicate a grace note while unambiguously stating that its performed
+                                 duration remains unknown.</p>
                               
                               <p>The <span class="att">grace.time</span> attribute is only to be used in combination with the <span class="att">grace</span> attribute. It records the amount of time (as a percentage of the written duration)
                                  that the grace note should ‘steal’ from the preceding note (when <span class="att">grace</span>="unacc") or the following note (when <span class="att">grace</span>="acc").</p>
@@ -1858,12 +1857,11 @@
                         
                         <p>The <span class="att">beam.group</span> attribute can be used to set a default beaming pattern to be used when no beaming
                            is indicated at the layer level. It must contain a comma-separated list of time values
-                           that add up to a measure in the current meter, <abbr>e.g.</abbr>, ‘4,4,4,4’ in 4/4 time indicates that each quarter note worth of shorter notes should
-                           be beamed together. Parentheses can be used to indicate sub-groupings of secondary
-                           beams. For example, ‘(4.,4.,4.)’ in 9/8 meter indicates one primary beam per measure
-                           with secondary beams broken at each dotted quarter duration, while ‘(4,4),(4,4)’ in
-                           4/4 will result in a measure of 16th notes being rendered with a primary beam covering
-                           all the notes and secondary beams for each group of four 16th notes.</p>
+                           that add up to a measure in the current meter, <abbr>e.g.</abbr>, <span class="val">4,4,4,4</span> in 4/4 time indicates that each quarter note worth of shorter notes should be beamed
+                           together. Parentheses can be used to indicate sub-groupings of secondary beams. For
+                           example, <span class="val">(4.,4.,4.)</span> in 9/8 meter indicates one primary beam per measure with secondary beams broken at
+                           each dotted quarter duration, while <span class="val">(4,4),(4,4)</span> in 4/4 will result in a measure of 16th notes being rendered with a primary beam
+                           covering all the notes and secondary beams for each group of four 16th notes.</p>
                         
                         <p>The <span class="att">beam.group</span> attribute is available on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a>, <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">layerDef</a> elements, making it possible to set different beaming patterns for each of these.
                            Also, the beaming pattern can be changed anywhere score parameters may be changed,
@@ -1915,7 +1913,7 @@
                            Marks the end of a tie</p>
                         
                         <p>The scope of the <span class="att">tie</span> attribute is the musical <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a>; that is, a tie started in one layer may only be ended by a subsequent musical event
-                           with a <span class="att">tie</span> attribute with an <em>m</em> or <em>t</em> value in the same layer. The tie-terminating event may lie in the following measure.</p>
+                           with a <span class="att">tie</span> attribute with an <span class="val">m</span> or <span class="val">t</span> value in the same layer. The tie-terminating event may lie in the following measure.</p>
                         
                         <p>
                            
@@ -2444,7 +2442,7 @@
                            </p>
                         
                         <p>The location of a dynamic marking in relation to a staff may be specified using the
-                           <span class="att">place</span> attribute, which may be given as <em>above</em>, <em>within</em>, or <em>below</em> the staff:</p>
+                           <span class="att">place</span> attribute, which may be given as <span class="val">above</span>, <span class="val">within</span>, or <span class="val">below</span> the staff:</p>
                         
                         <p>
                            
@@ -2632,7 +2630,7 @@
                         
                         <p>In addition to verbal instructions, Common Music Notation uses graphical symbols to
                            indicate ‘continuous’ dynamics. These crescendo and decrescendo (or diminuendo) symbols
-                           are encoded in MEI using the <a class="link_odd link_odd_elementSpec" href="../elements/hairpin.html">hairpin</a> element. It also is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, which means it too is used just before the close of a <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> element, following the encoding of all staves. The required attribute <span class="att">form</span> specifies the direction of the symbol by taking one of two possible values: <em>cres</em> (growing louder) or <em>dim</em> (getting softer).</p>
+                           are encoded in MEI using the <a class="link_odd link_odd_elementSpec" href="../elements/hairpin.html">hairpin</a> element. It also is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, which means it too is used just before the close of a <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> element, following the encoding of all staves. The required attribute <span class="att">form</span> specifies the direction of the symbol by taking one of two possible values: <span class="val">cres</span> (growing louder) or <span class="val">dim</span> (getting softer).</p>
                         
                         <p>
                            
@@ -2771,8 +2769,7 @@
                         <p>Usually, however, tuplets are rendered with a bracket (<span class="att">bracket.visible</span>="true") and a single number (<span class="att">num.format</span>="count" and <span class="att">num.visible</span>="true"), as seen in the example above. However, the number-to-numbase ratio may be
                            provided in addition to, or in some cases as a replacement for, the bracket. The <span class="att">num.format</span> attribute indicates whether a plain number (the value of <span class="att">num</span>) or a ratio (comprised of <span class="att">num</span> and <span class="att">numbase</span>, <abbr>e.g.</abbr>, "3:2") should be displayed and <span class="att">num.visible</span> indicates the general presence of such a number.</p>
                         
-                        <p>Further visual control comes with the <span class="att">num.place</span> and <span class="att">bracket.place</span> attributes, that allow specific placement of the number and the bracket "above" or
-                           "below" the staff.</p>
+                        <p>Further visual control comes with the <span class="att">num.place</span> and <span class="att">bracket.place</span> attributes, that allow specific placement of the number and the bracket <span class="val">above</span> or <span class="val">below</span> the staff.</p>
                         
                         <p>In addition to <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements, <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> may contain other elements, such as <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> or <a class="link_odd link_odd_elementSpec" href="../elements/space.html">space</a>, to match the content of a source document or an intended rendering. In particular,
                            the <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a> element is allowed so that custom beaming may be indicated, <abbr>e.g.</abbr>, a septuplet may be divided into a group of three plus a group of four notes.</p>
@@ -3048,11 +3045,11 @@
                               </figure>
                               </p>
                            
-                           <p>A third, and somewhat counter-intuitive, value for <span class="att">order</span>, "nonarp", indicates that no arpeggio shall be performed. Normally rendered as a
-                              bracket instead of a wavy line, this form of arpeggio is used to indicate a non-arpeggiated
-                              chord intervening in a sequence of arpeggiated ones. This is common in music for the
-                              harp, where arpeggiation is the usual method of performing chords and deviation from
-                              the norm must be explicitly indicated.</p>
+                           <p>A third, and somewhat counter-intuitive, value for <span class="att">order</span>, <span class="val">nonarp</span>, indicates that no arpeggio shall be performed. Normally rendered as a bracket instead
+                              of a wavy line, this form of arpeggio is used to indicate a non-arpeggiated chord
+                              intervening in a sequence of arpeggiated ones. This is common in music for the harp,
+                              where arpeggiation is the usual method of performing chords and deviation from the
+                              norm must be explicitly indicated.</p>
                            
                            <p>Whereas an arpeggio ‘staggers’ the onset times of the notes of a chord, a glissando
                               denotes a situation where the pitch ‘slides’ from one note to another. It makes no
@@ -3729,8 +3726,8 @@
                            <p>In MEI, harp pedal settings are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html">harpPedal</a> element. It is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class and is therefore placed within <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> children. The <span class="att">staff</span> and <span class="att">layer</span> attributes may be used to assign it to a certain <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a>. Either a <span class="att">tstamp</span> or <span class="att">startid</span> attribute must be used to indicate the placement within the measure (see <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a> and <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">13 Linking Data</a> for further details about those linking mechanisms).</p>
                            
                            <p>The musical intention of the element is described using the <span class="att">c</span>, <span class="att">d</span>, <span class="att">e</span>, <span class="att">f</span>, <span class="att">g</span>, <span class="att">a</span> and <span class="att">b</span> attributes, which affect the corresponding strings of the harp. All of these attributes
-                              may take the values "<em>f</em>" (flat), "<em>s</em>" (sharp) or "<em>n</em>" (natural), where "n" is the default value, which is assumed when one of these attributes
-                              is not specified.</p>
+                              may take the values <span class="val">f</span> (flat), <span class="val">s</span> (sharp) or <span class="val">n</span> (natural), where a natural is the default value, which is assumed when one of these
+                              attributes is not specified.</p>
                            
                            <p>
                               
@@ -4336,10 +4333,10 @@
                               appropriate repeat symbol, which, as demonstrated in the preceding figure, depends
                               on the rhythmic content of the beat being repeated. When a beat that consists of a
                               single note or chord is repeated, the repetition sign is typically rendered as a single
-                              thick, slanting slash; therefore, the value ‘1’ should be used. The following values
-                              should be used when the beat is divided into even notes: 4ths or 8ths=1, 16ths=2,
-                              32nds=3, 64ths=4, 128ths=5. When the beat is comprised of mixed duration values, the
-                              symbol is always rendered as 2 slashes and 2 dots.</p>
+                              thick, slanting slash; therefore, the value <span class="val">1</span> should be used. The following values should be used when the beat is divided into
+                              even notes: 4ths or 8ths=1, 16ths=2, 32nds=3, 64ths=4, 128ths=5. When the beat is
+                              comprised of mixed duration values, the symbol is always rendered as 2 slashes and
+                              2 dots.</p>
                            
                            <p>In addition to its indication of a repeated beat, the beatRpt element is sometimes
                               used in popular music notation, especially in guitar or percussion parts, to indicate
@@ -4534,9 +4531,7 @@
                            
                            <p>All elements described above allow for association of the sign with a symbol in a
                               digital facsimile (via the <span class="att">facs</span> attribute) and with a user-defined symbol (using <span class="att">altsym</span>). See <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesrecordings.html#facsimiles">12.1 Facsimiles</a> and <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.4 User-defined Symbols</a> for further details. In addition, the <span class="att">expand</span> attribute is available on the foregoing elements to inform a rendering process whether
-                              to use the repeat symbol or the full content represented by it. A value of "true"
-                              indicates that the content should be displayed, while a "false" value means to show
-                              only the repeat symbol.</p>
+                              to use the repeat symbol or the full content represented by it. A value of <span class="val">true</span> indicates that the content should be displayed, while a <span class="val">false</span> value means to show only the repeat symbol.</p>
                            </div>
                         </div>
                      </div>
@@ -5627,7 +5622,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/38823c9ad3f0e298d8613011dfa2ff49bfe759cd" target="_blank" rel="noopener noreferrer">#38823c9</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a57fac06d4e6e14669e522a7d45fced066df7a47" target="_blank" rel="noopener noreferrer">#a57fac0</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

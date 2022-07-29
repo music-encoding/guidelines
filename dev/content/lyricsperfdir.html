@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-07-21">
+      <meta name="date" content="2022-07-29">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -110,12 +110,12 @@
                         the following values:</p>
                      
                      <p class="gloss"><strong><span>i</span></strong>:
-                        Indicates that the current syllable's position is initial; that is, at the beginning
+                        Indicates that the current syllable’s position is initial; that is, at the beginning
                         of a word;</p>
                      <p class="gloss"><strong><span>m</span></strong>:
                         Indicates that the current syllable is in the middle of a word;</p>
                      <p class="gloss"><strong><span>t</span></strong>:
-                        Indicates that the syllable's position is terminal; that is, at the end of a word.</p>
+                        Indicates that the syllable’s position is terminal; that is, at the end of a word.</p>
                      
                      <p>When a syllable is at the beginning or in the middle of a word (in which case it will
                         have the <span class="att">wordpos</span> attribute set to ‘i’ or ‘m’), it is recommended to specify the type of connector
@@ -135,7 +135,7 @@
                      
                      <p>Occasionally, a word or a final syllable needs to be extended across multiple notes.
                         In this case an ‘extender’ is provided. An extender is a continuous line drawn at
-                        the text's baseline from the end of the syllable associated with the first note until
+                        the text’s baseline from the end of the syllable associated with the first note until
                         the last note to be sung with the syllable.</p>
                      
                      <p>The use of <a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a> described in this section is common to CMN and other notation systems, such as mensural
@@ -154,7 +154,7 @@
                         recommended only for simple situations or for those encodings which do not focus on
                         vocally performed text.</p>
                      
-                     <p>The following example from Handel's <em>Messiah</em> (HWV 56) shows the use of <span class="att">syl</span>:</p>
+                     <p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of <span class="att">syl</span>:</p>
                      
                      <p>
                         
@@ -213,7 +213,7 @@
                         </div>
                         </p>
                      
-                     <p>The following example from Handel's <em>Messiah</em> (HWV 56) shows the use of <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a>:</p>
+                     <p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a>:</p>
                      
                      <p>
                         
@@ -277,9 +277,9 @@
                      
                      <p>As it is common practice in written text, it is assumed that a space separates words.
                         Many vocal texts, however, introduce elisions and connect two syllables into one unit.
-                        For example, the vocal text from Mozart's <em>Don Giovanni</em> sung by Don Giovanni in Finale II, Ho fermo il core in petto introduces an elision
+                        For example, the vocal text from Mozart’s <em>Don Giovanni</em> sung by Don Giovanni in Finale II, Ho fermo il core in petto introduces an elision
                         between the word fermo and il and between core and in. An elision can be indicated
-                        by placing both syllables within the same <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> and setting the <a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a> element's <span class="att">con</span> attribute value to 't':</p>
+                        by placing both syllables within the same <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> and setting the <a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a> element’s <span class="att">con</span> attribute value to 't':</p>
                      
                      <p>
                         
@@ -305,12 +305,12 @@
                         </figure>
                         </p>
                      
-                     <p>When there is more than one line of text, more than one <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> element can be used. The following example from a piano reduction of Wagner's <em>Rheingold</em> has two lines of text, with an English translation on the second line. Note the use
+                     <p>When there is more than one line of text, more than one <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> element can be used. The following example from a piano reduction of Wagner’s <em>Rheingold</em> has two lines of text, with an English translation on the second line. Note the use
                         of the <span class="att">xml:lang</span> attribute to differentiate the two languages:</p>
                      
                      <p>
                         
-                        <figure class="figure"><img alt="example" class="graphic" src="../images/modules/lyrics/ex_verse_m.png"><figcaption class="caption">Figure 110. Example from Wagner's Rheingold with translated text.</figcaption>
+                        <figure class="figure"><img alt="example" class="graphic" src="../images/modules/lyrics/ex_verse_m.png"><figcaption class="caption">Figure 110. Example from Wagner’s Rheingold with translated text.</figcaption>
                         </figure>
                         
                         <figure class="figure specPage">
@@ -478,9 +478,9 @@
                         The <span class="att">staff</span> attribute gives the associated staff and if there is more than one layer on that
                         staff, the <span class="att">layer</span> attribute may be used to indicate the layer from which the rhythm should be taken.
                         If there is any divergence between the rhythm of the vocally performed text and the
-                        notes, the <span class="att">rhythm</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> may be used to specify the text's rhythm.</p>
+                        notes, the <span class="att">rhythm</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> may be used to specify the text’s rhythm.</p>
                      
-                     <p>The following example from Carl Maria von Weber's <em>Der Freischütz</em> illustrates this encoding method:</p>
+                     <p>The following example from Carl Maria von Weber’s <em>Der Freischütz</em> illustrates this encoding method:</p>
                      
                      <p>
                         
@@ -612,7 +612,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/38823c9ad3f0e298d8613011dfa2ff49bfe759cd" target="_blank" rel="noopener noreferrer">#38823c9</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a57fac06d4e6e14669e522a7d45fced066df7a47" target="_blank" rel="noopener noreferrer">#a57fac0</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

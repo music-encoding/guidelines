@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-07-21">
+      <meta name="date" content="2022-07-29">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -1001,7 +1001,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">n</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.nNumberLike.html">att.nNumberLike</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Provides a number-like designation that indicates an element's position in a sequence
+                                 <div class="tile-subtitle text-gray">Provides a number-like designation that indicates an element’s position in a sequence
                                     of similar elements. May not contain space characters.</div>
                               </div>
                            </div>
@@ -1502,7 +1502,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">stem.x</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stems.html">att.stems</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Records the output x coordinate of the stem's attachment point.</div>
+                                 <div class="tile-subtitle text-gray">Records the output x coordinate of the stem’s attachment point.</div>
                               </div>
                            </div>
                            <div class="tile tile-centered">
@@ -1512,7 +1512,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">stem.y</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stems.html">att.stems</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Records the output y coordinate of the stem's attachment point.</div>
+                                 <div class="tile-subtitle text-gray">Records the output y coordinate of the stem’s attachment point.</div>
                               </div>
                            </div>
                            </p>
@@ -2314,11 +2314,11 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">xml:lang</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.lang.html">att.lang</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Identifies the language of the element's content. The values for this attribute are
+                                 <div class="tile-subtitle text-gray">Identifies the language of the element’s content. The values for this attribute are
                                     language 'tags' as defined in BCP 47. All language tags that make use of private use
                                     sub-tags must be documented in a corresponding language element in the MEI header
                                     whose id
-                                    attribute is the same as the language tag's value.</div>
+                                    attribute is the same as the language tag’s value.</div>
                               </div>
                            </div>
                            <div class="tile tile-centered">
@@ -2328,7 +2328,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">xml:space</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.whitespace.html">att.whitespace</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Allows one to signal to an application whether an element's white space is
+                                 <div class="tile-subtitle text-gray">Allows one to signal to an application whether an element’s white space is
                                     "significant". The behavior of xml:space cascades to all descendant elements, but
                                     it can
                                     be turned off locally by setting the xml:space attribute to the value "default".</div>
@@ -2336,8 +2336,7 @@
                            </div>
                            </p>
                         
-                        <p>While <span class="att">xml:lang</span> attribute may be used to encode the language of an element's contents, the <span class="att">xml:space</span> attribute lets you define the handling of whitespace, <abbr>i.e.</abbr>, whitespace being important content ("preserve") or negligible ("default"). With
-                           the latter also being the default value if no <em>xml:space</em> attribute is present.</p>
+                        <p>While <span class="att">xml:lang</span> attribute may be used to encode the language of an element's contents, the <span class="att">xml:space</span> attribute lets you define the handling of whitespace, <abbr>i.e.</abbr>, whitespace being important content (<span class="val">preserve</span>) or negligible (<span class="val">default</span>). With the latter also being the default value if no <span class="att">xml:space</span> attribute is present.</p>
                         </div>
                      
                      <div class="div3">
@@ -2353,7 +2352,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">label</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.labelled.html">att.labelled</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Captures text to be used to generate a label for the element to which it's attached,
+                                 <div class="tile-subtitle text-gray">Captures text to be used to generate a label for the element to which it’s attached,
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</div>
@@ -2366,7 +2365,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">n</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.nNumberLike.html">att.nNumberLike</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Provides a number-like designation that indicates an element's position in a sequence
+                                 <div class="tile-subtitle text-gray">Provides a number-like designation that indicates an element’s position in a sequence
                                     of similar elements. May not contain space characters.</div>
                               </div>
                            </div>
@@ -2377,7 +2376,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">n</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.nInteger.html">att.nInteger</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Provides a numeric designation that indicates an element's position in a sequence
+                                 <div class="tile-subtitle text-gray">Provides a numeric designation that indicates an element’s position in a sequence
                                     of
                                     similar elements. Its value must be a non-negative integer.</div>
                               </div>
@@ -2459,7 +2458,7 @@
                               <div class="tile-content">
                                  <div class="tile-title"><span class="att">resp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a>)
                                     </div>
-                                 <div class="tile-subtitle text-gray">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                                 <div class="tile-subtitle text-gray">Indicates the agent(s) responsible for some aspect of the text’s transcription,
                                     editing, or encoding. Its value must point to one or more identifiers declared in
                                     the
                                     document header.</div>
@@ -3183,8 +3182,7 @@
                            wide as 'medium'.</p>
                         
                         <p>In addition to these textual values, the width attribute may contain a numeric value
-                           and an optional unit value, "2mm" for example. If the unit value is not provided,
-                           staff interline units are presumed.</p>
+                           and an optional unit value, <span class="val">2mm</span> for example. If the unit value is not provided, staff interline units are presumed.</p>
                         
                         <p>The <span class="att">lstartsym</span> and <span class="att">lendsym</span> attributes name the symbol that may start and/or end a line, while <span class="att">lstartsymsize</span> and <span class="att">lendsymsize</span> indicate the relative size of the symbol using a numeric value in the range from
                            1 to 9.</p>
@@ -3202,7 +3200,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/38823c9ad3f0e298d8613011dfa2ff49bfe759cd" target="_blank" rel="noopener noreferrer">#38823c9</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a57fac06d4e6e14669e522a7d45fced066df7a47" target="_blank" rel="noopener noreferrer">#a57fac0</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
