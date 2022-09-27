@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-09-23">
+      <meta name="date" content="2022-09-27">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -596,8 +596,9 @@
                         <div class="statement constraints">
                            <p>
                               <div class="constraint">
-                                 <div class="schematronText">The acquisition and provenance elements are not permitted in the work or expression
-                                    context.</div>
+                                 <div class="schematronText">The elements acquisition, provenance, exhibHist, treatHist and treatSched are not
+                                    permitted at the work or expression level and are only permitted at the manifestation
+                                    level, if the manifestation is a manifestation singleton.</div>
                               </div>
                            </p>
                         </div>
@@ -652,10 +653,11 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:history[parent::mei:work or parent::mei:expression]"</span>&gt;</span>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:history[parent::mei:work or parent::mei:expression or parent::mei:manifestation[not(@singleton='true')]]"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not(mei:acquisition or mei:provenance)"</span>&gt;</span>The acquisition and provenance
-                                                elements are not permitted in the work or expression context.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not(mei:acquisition or mei:provenance or mei:exhibHist or mei:treatHist or mei:treatSched)"</span>&gt;</span>The elements acquisition, provenance, exhibHist, treatHist and treatSched are not
+                                                permitted at the work or expression level and are only permitted at the manifestation
+                                                level, if the manifestation is a manifestation singleton.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
@@ -674,7 +676,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/650951ec913650e54235f01e89050bcb303d01f0" target="_blank" rel="noopener noreferrer">#650951e</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b7e479ca4d784556dd7f026f1286d7efe0f9c57d" target="_blank" rel="noopener noreferrer">#b7e479c</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
