@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-09-27">
+      <meta name="date" content="2022-10-01">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -327,12 +327,12 @@
                               <li class="tab-item"><a data-display="containedBy_class" id="containedBy_class_tab" href="#containedBy_class" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="containedBy_module" id="containedBy_module_tab" href="#containedBy_module" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/symProp.html" title="(symbol property) – Provides a name and value for some property of the parent symbol.">symProp</a></div>
+                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/symProp.html" title="Provides a name and value for some property of the parent symbol.">symProp</a></div>
                            <div id="containedBy_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="elements having propName as direct children">
                                  <div class="classHeading"><label class="classLabel">elements having propName as direct children</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="ident" title="(symbol property) – Provides a name and value for some property of the parent symbol."><a class="link_odd link_odd_elementSpec" href="../elements/symProp.html">symProp</a></span><span class="desc">(symbol property) – Provides a name and value for some property of the parent
+                                    <div class="def"><span class="ident" title="Provides a name and value for some property of the parent symbol."><a class="link_odd link_odd_elementSpec" href="../elements/symProp.html">symProp</a></span><span class="desc">Provides a name and value for some property of the parent
                                           symbol.</span></div>
                                  </div>
                               </div>
@@ -341,7 +341,7 @@
                               <div class="classBox" title="MEI.usersymbols">
                                  <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc">User-defined symbols component declarations.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="ident" title="(symbol property) – Provides a name and value for some property of the parent symbol."><a class="link_odd link_odd_elementSpec" href="../elements/symProp.html">symProp</a></span><span class="desc">(symbol property) – Provides a name and value for some property of the parent
+                                    <div class="def"><span class="ident" title="Provides a name and value for some property of the parent symbol."><a class="link_odd link_odd_elementSpec" href="../elements/symProp.html">symProp</a></span><span class="desc">Provides a name and value for some property of the parent
                                           symbol.</span></div>
                                  </div>
                               </div>
@@ -373,7 +373,9 @@
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">ident=</span><span class="attributevalue">"propName"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.usersymbols"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>(property name) – Name of a property of the symbol.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2022-05-18"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>property name<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Name of a property of the symbol.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                                        
@@ -397,18 +399,18 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"type"</span> <span class="attribute">usage=</span><span class="attributevalue">"req"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>Characterizes the property name.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Characterizes the property name.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"unicode"</span>&gt;</span>
                                                 
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc&gt;</span>A registered Unicode normative or informative property name.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A registered Unicode normative or informative property name.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                                 <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"local"</span>&gt;</span>
                                                 
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc&gt;</span>A locally defined name.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A locally defined name.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                                 <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valList&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
@@ -420,7 +422,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b7e479ca4d784556dd7f026f1286d7efe0f9c57d" target="_blank" rel="noopener noreferrer">#b7e479c</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e3cecc01de047cabdf651e4a3e5a2399b1f9faa8" target="_blank" rel="noopener noreferrer">#e3cecc0</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

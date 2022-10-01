@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-09-27">
+      <meta name="date" content="2022-10-01">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -154,7 +154,7 @@
                               <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/surface.html" title="Defines a writing surface in terms of a rectangular coordinate space, optionally grouping one or more graphic representations of that space, and rectangular zones of interest within it.">surface</a>, <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html" title="(symbol definition) – Declaration of an individual symbol in a symbolTable.">symbolDef</a>, <a class="link_odd link_odd_elementSpec" href="../elements/zone.html" title="Defines an area of interest within a surface or graphic file.">zone</a></div>
+                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/surface.html" title="Defines a writing surface in terms of a rectangular coordinate space, optionally grouping one or more graphic representations of that space, and rectangular zones of interest within it.">surface</a>, <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html" title="Declaration of an individual symbol in a symbolTable.">symbolDef</a>, <a class="link_odd link_odd_elementSpec" href="../elements/zone.html" title="Defines an area of interest within a surface or graphic file.">zone</a></div>
                            <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="att.coordinated">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.coordinated.html">att.coordinated</a></label><span class="classDesc"></span></div>
@@ -163,7 +163,7 @@
                                              one or more graphic representations of that space, and rectangular zones of interest
                                              within
                                              it.</span></span></div>
-                                    <div class="def"><span class="ident" title="(symbol definition) – Declaration of an individual symbol in a symbolTable."><a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">symbolDef</a></span><span class="desc"><span class="desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></span></div>
+                                    <div class="def"><span class="ident" title="Declaration of an individual symbol in a symbolTable."><a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">symbolDef</a></span><span class="desc"><span class="desc">Declaration of an individual symbol in a symbolTable.</span></span></div>
                                     <div class="def"><span class="ident" title="Defines an area of interest within a surface or graphic file."><a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a></span><span class="desc"><span class="desc">Defines an area of interest within a surface or graphic file.</span></span></div>
                                  </div>
                               </div>
@@ -182,7 +182,7 @@
                               <div class="classBox" title="MEI.usersymbols">
                                  <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc">User-defined symbols component declarations.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="ident" title="(symbol definition) – Declaration of an individual symbol in a symbolTable."><a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">symbolDef</a></span><span class="desc"><span class="desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></span></div>
+                                    <div class="def"><span class="ident" title="Declaration of an individual symbol in a symbolTable."><a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">symbolDef</a></span><span class="desc"><span class="desc">Declaration of an individual symbol in a symbolTable.</span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -194,14 +194,14 @@
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"att.coordinated"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>This attribute class records the position of a feature within a two-dimensional coordinate
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>This attribute class records the position of a feature within a two-dimensional coordinate
                                        system.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"ulx"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the upper-left corner x coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Indicates the upper-left corner x coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                              
@@ -211,7 +211,7 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"uly"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the upper-left corner y coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Indicates the upper-left corner y coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                              
@@ -221,7 +221,7 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"lrx"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the lower-right corner x coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Indicates the lower-right corner x coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                              
@@ -231,7 +231,7 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"lry"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the lower-left corner x coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Indicates the lower-left corner x coordinate.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                              
@@ -241,7 +241,7 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"rotate"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>
                                              Indicates the amount by which the contents of this element have been rotated clockwise
                                              or, if applicable, how the orientation of
                                              the element self should be interpreted, with respect to the normal orientation of
@@ -256,7 +256,7 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;defaultVal&gt;</span>0<span data-indentation="4" class="element">&lt;/defaultVal&gt;</span></div>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;remarks <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;p&gt;</span>This attribute is based on the TEI attribute of the same name.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>
@@ -269,7 +269,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b7e479ca4d784556dd7f026f1286d7efe0f9c57d" target="_blank" rel="noopener noreferrer">#b7e479c</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e3cecc01de047cabdf651e4a3e5a2399b1f9faa8" target="_blank" rel="noopener noreferrer">#e3cecc0</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
