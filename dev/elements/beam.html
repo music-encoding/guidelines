@@ -979,8 +979,8 @@
                         <div class="statement constraints">
                            <p>
                               <div class="constraint">
-                                 <div class="schematronText">A beam without a copyof attribute must have at least 2 note, rest, chord, or space
-                                    descendants.</div>
+                                 <div class="schematronText">A beam that contains neither a copyof nor sameas attribute must have at least 2 note,
+                                    rest, chord, or space descendants.</div>
                               </div>
                            </p>
                         </div>
@@ -1035,10 +1035,11 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:beam[not(@copyof)]"</span>&gt;</span>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:beam[not(@copyof or @sameas)]"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(descendant::*[local-name()='note' or local-name()='rest' or               local-name()='chord'
-                                                      or local-name()='space']) &gt; 1"</span>&gt;</span>A beam without a copyof attribute must have at least 2 note, rest, chord, or space
+                                                      or local-name()='space']) &gt; 1"</span>&gt;</span>A beam that contains neither a copyof nor sameas attribute must have at least 2 note,
+                                                rest, chord, or space
                                                 descendants.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
@@ -1060,7 +1061,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/5074891bc79a39f91737854dbad58243be831c23" target="_blank" rel="noopener noreferrer">#5074891</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/58a0eabf5a5da4e2f13d2a821fa80e6573f630ab" target="_blank" rel="noopener noreferrer">#58a0eab</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
