@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-10-24">
+      <meta name="date" content="2022-10-27">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -302,7 +302,7 @@
                                  <div class="classContent"></div>
                               </div>
                               <div class="classBox" title="att.plica.vis">
-                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plica.vis.html">att.plica.vis</a></label><span class="classDesc">(MEI.mensural) Visual domain attributes that describe the properties of a plica stem
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plica.vis.html">att.plica.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes that describe the properties of a plica stem
                                        in the mensural repertoire.</span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes the direction of a stem.">dir</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the direction of a stem.</span><span class="attributeValues">
@@ -314,12 +314,12 @@
                                  </div>
                               </div>
                               <div class="classBox" title="att.plica.ges">
-                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plica.ges.html">att.plica.ges</a></label><span class="classDesc">(MEI.mensural) Gestural domain attributes that describe the properties of a plica
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plica.ges.html">att.plica.ges</a></label><span class="classDesc">(MEI.gestural) Gestural domain attributes that describe the properties of a plica
                                        in the mensural repertoire.</span></div>
                                  <div class="classContent"></div>
                               </div>
                               <div class="classBox" title="att.plica.anl">
-                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plica.anl.html">att.plica.anl</a></label><span class="classDesc">(MEI.mensural) Analytical domain attributes that describe the properties of a plica
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plica.anl.html">att.plica.anl</a></label><span class="classDesc">(MEI.analytical) Analytical domain attributes that describe the properties of a plica
                                        in the mensural repertoire.</span></div>
                                  <div class="classContent"></div>
                               </div>
@@ -331,17 +331,6 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Permits the current element to reference a facsimile surface or image zone which corresponds to it.">facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Permits the current element to reference a facsimile surface or image zone which
                                              corresponds to it.</span><span class="attributeValues">
                                              One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
-                                             </span></span></div>
-                                 </div>
-                              </div>
-                              <div class="classBox" title="MEI.mensural">
-                                 <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
-                                 <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the direction of a stem.">dir</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the direction of a stem.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STEMDIRECTION.basic.html">data.STEMDIRECTION.basic</a>.
-                                             </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Encodes the stem length.">len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the stem length.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTUNSIGNED.html">data.MEASUREMENTUNSIGNED</a>.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -408,6 +397,17 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                              and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
                                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.visual">
+                                 <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the direction of a stem.">dir</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the direction of a stem.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STEMDIRECTION.basic.html">data.STEMDIRECTION.basic</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Encodes the stem length.">len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the stem length.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTUNSIGNED.html">data.MEASUREMENTUNSIGNED</a>.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -502,7 +502,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/15cbec8833d92b03ad615eed0ff69322b2d4542d" target="_blank" rel="noopener noreferrer">#15cbec8</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1115f51d626b64fa30691e2f6850731e166b7fa9" target="_blank" rel="noopener noreferrer">#1115f51</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
