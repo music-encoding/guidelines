@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-10-27">
+      <meta name="date" content="2022-11-25">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -4533,7 +4533,10 @@
                               </figure>
                               </p>
                            
-                           <p>Music for a single player should, however, never use the <span class="att">solo</span> attribute.</p>
+                           <p>Music for a single player does not have to be marked as solo with the <span class="att">solo</span> attribute.</p>
+                           
+                           <p>An <em>ad libitum</em> part, i.e. not essential for the performance of the work, may be marked with the
+                              <span class="att">adlib</span> attribute.</p>
                            
                            <p>
                               
@@ -4542,10 +4545,17 @@
                                     <code>
                                        
                                        
-                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- This is an example of what not to do --&gt;</span></div>
                                        <div class="indent indent1"><span data-indentation="1" class="element">&lt;perfResList&gt;</span>
                                           
-                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;perfRes <span class="attribute">solo=</span><span class="attributevalue">"true"</span>&gt;</span>Piano<span data-indentation="2" class="element">&lt;/perfRes&gt;</span></div>
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;perfRes&gt;</span>Soprano<span data-indentation="2" class="element">&lt;/perfRes&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;perfRes&gt;</span>Alto<span data-indentation="2" class="element">&lt;/perfRes&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;perfRes&gt;</span>Tenor<span data-indentation="2" class="element">&lt;/perfRes&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;perfRes&gt;</span>Bass<span data-indentation="2" class="element">&lt;/perfRes&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;perfRes <span class="attribute">adlib=</span><span class="attributevalue">"true"</span>&gt;</span>Organ<span data-indentation="2" class="element">&lt;/perfRes&gt;</span></div>
                                           <span data-indentation="1" class="element">&lt;/perfResList&gt;</span></div>
                                        
                                        
@@ -6676,7 +6686,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/60b7eec639ad0ee53399459b632e7936ac4c6c7b" target="_blank" rel="noopener noreferrer">#60b7eec</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/dde014f3ad3b378af662cdd20485d79104e54302" target="_blank" rel="noopener noreferrer">#dde014f</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
