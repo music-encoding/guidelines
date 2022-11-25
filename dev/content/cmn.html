@@ -516,7 +516,7 @@
                         <p>When content is provided for <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a>, it must contain a <a class="link_odd link_odd_elementSpec" href="../elements/staffGrp.html">staffGrp</a> element. This element is used to gather individual staves and other staff groups.
                            This is useful for collecting instrumental or vocal groups in a large score, such
                            as woodwinds, brasses, etc., and for assigning a shared label to the group, using
-                           the <a class="link_odd link_odd_elementSpec" href="../elements/label.html">label</a> and <a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html">labelAbbr</a> subelements. The <a class="link_odd link_odd_elementSpec" href="../elements/staffGrp.html">staffGrp</a> element is also used for the two staves of a grand staff. The <span class="att">bar.thru</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffGrp.html">staffGrp</a> allows one to specify whether barlines are drawn across the space between staves
+                           the <a class="link_odd link_odd_elementSpec" href="../elements/label.html">label</a> and <a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html">labelAbbr</a> subelements. The <a class="link_odd link_odd_elementSpec" href="../elements/staffGrp.html">staffGrp</a> element is also used for the two staves of a grand staff. The <span class="att">bar.thru</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffGrp.html">staffGrp</a> allows one to specify whether bar lines are drawn across the space between staves
                            of that group or only on the staves themselves.</p>
                         
                         <p>A <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element is used to describe an individual staff of a <a class="link_odd link_odd_elementSpec" href="../elements/score.html">score</a> or performer <a class="link_odd link_odd_elementSpec" href="../elements/part.html">part</a>. It bears most of the attributes described above. The <a class="link_odd link_odd_elementSpec" href="../elements/label.html">label</a> and <a class="link_odd link_odd_elementSpec" href="../elements/labelAbbr.html">labelAbbr</a> subelements may be used for providing staff labels for the first and subsequent systems.</p>
@@ -1429,8 +1429,8 @@
                            by the value of "1.5". The range of possible values is defined as starting with zero
                            and ending with the number of metrical units in a measure (the ‘numerator’ in a time
                            signature) + 1. This allows the capture of all graphical positions starting from the
-                           left barline ('0') and ending with the right barline of the measure ('5', in the case
-                           of 4/4 time).</p>
+                           left bar line ('0') and ending with the right bar line of the measure ('5', in the
+                           case of 4/4 time).</p>
                         
                         <p>For expressing durations, MEI offers the <span class="att">dur</span> attribute. This attribute is described in section <a class="link_ptr chapterLink" title="Basic Usage of Notes in CMN" href="../content/cmn.html#cmnNotesBasic">4.2.5.1.1 Basic Usage of Notes in CMN</a>.</p>
                         
@@ -1818,8 +1818,8 @@
                         <p>Downstream processing needs are the determining factor in the choice between the two
                            alternative encoding methods.</p>
                         
-                        <p>Due to the potential problem of overlapping hierarchies, the <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a> element only allows the encoding of beams that do not cross barlines. When beams
-                           cross barlines, the use of the <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">beamSpan</a> element is required. Unlike <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>, the <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">beamSpan</a> element does not contain the beamed notes as its children. Instead, it references
+                        <p>Due to the potential problem of overlapping hierarchies, the <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a> element only allows the encoding of beams that do not cross bar lines. When beams
+                           cross bar lines, the use of the <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">beamSpan</a> element is required. Unlike <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>, the <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">beamSpan</a> element does not contain the beamed notes as its children. Instead, it references
                            the <span class="att">xml:id</span> values of all affected notes in its <span class="att">plist</span> attribute and denotes the initial and terminal notes of the beam using <span class="att">startid</span> and <span class="att">endid</span> attributes. This configuration allows beams to cross measure boundaries. The following
                            example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Erwin_Schulhoff">Erwin Schulhoff’s</a>
                            <em>Violin Sonata</em> demonstrates a typical example of such hierarchy-crossing beams:</p>
@@ -1915,7 +1915,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../images/modules/cmn/finger-300.png"><figcaption class="figure-caption">Figure 21. Ties across barlines</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../images/modules/cmn/finger-300.png"><figcaption class="figure-caption">Figure 21. Ties across bar lines</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
@@ -2246,7 +2246,7 @@
                            </p>
                         
                         <p>Slurs and ties that cross system or page breaks are often split into two separate
-                           symbols for rendering. One slur or tie ends at the last barline, another one starts
+                           symbols for rendering. One slur or tie ends at the last bar line, another one starts
                            at the beginning of the new system. MEI expects this to be the default rendering behaviour,
                            so that in situations like these, the regular <span class="att">tie</span> or <span class="att">slur</span> attributes are sufficient to describe both curved lines resulting from the split.</p>
                         
@@ -3307,7 +3307,7 @@
                               may stand above or below the staff it affects with its ‘open’ side usually facing
                               towards the staff. A fermata indicates that a related note or rest should be held
                               longer than its written duration would normally require. Sometimes, a fermata occurs
-                              over or under a barline to indicate a pause or even the end of a phrase or section.</p>
+                              over or under a bar line to indicate a pause or even the end of a phrase or section.</p>
                            
                            <p>
                               
@@ -4508,7 +4508,7 @@
                               </p>
                            
                            <p>As seen in the example above, it is possible to continuously repeat half measures,
-                              even across barlines.</p>
+                              even across bar lines.</p>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/mRpt2.html">mRpt2</a> and <a class="link_odd link_odd_elementSpec" href="../elements/multiRpt.html">multiRpt</a> elements (like the <a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html">multiRest</a> element) never occur in scores, only in performer parts, where it is often necessary
                               to abbreviate the notation due to page size limitations.</p>
@@ -5620,7 +5620,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/ca0e2dda87fbac8c60f17ad26fc0b96f38e2f89d" target="_blank" rel="noopener noreferrer">#ca0e2dd</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/6721499dce9ef0b66b717c9141eef974155a143d" target="_blank" rel="noopener noreferrer">#6721499</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
