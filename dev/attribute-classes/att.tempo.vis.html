@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-12-08">
+      <meta name="date" content="2022-12-22">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -48,7 +48,7 @@
                               <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined end point.">endho</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature’s programmatically-determined end point.">endto</span>, <span class="ident attribute" title="Records a horizontal adjustment to a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span>, <span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span>, <span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined start point.">startho</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature’s programmatically-determined start point.">startto</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature’s programmatically-determined location in terms of musical time; that is, beats.">to</span>, <span class="ident attribute" title="Provides a label for members of a vertically aligned group.">vgrp</span>, <span class="ident attribute" title="Records the vertical adjustment of a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span>, <span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span>, <span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span></div>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined end point.">endho</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature’s programmatically-determined end point.">endto</span>, <span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span>, <span class="ident attribute" title="Records a horizontal adjustment to a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span>, <span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span>, <span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span>, <span class="ident attribute" title="Describes the line style of a line.">lform</span>, <span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span>, <span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span>, <span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span>, <span class="ident attribute" title="Width of a line.">lwidth</span>, <span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span>, <span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined start point.">startho</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature’s programmatically-determined start point.">startto</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature’s programmatically-determined location in terms of musical time; that is, beats.">to</span>, <span class="ident attribute" title="Provides a label for members of a vertically aligned group.">vgrp</span>, <span class="ident attribute" title="Records the vertical adjustment of a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span>, <span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span>, <span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined end point.">endho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the horizontal adjustment of a feature’s programmatically-determined end
@@ -65,6 +65,12 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.to.html">att.visualOffset2.to</a></span><span class="step end">@endto</span></div>
                               </div>
                               <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step end">@extender</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records a horizontal adjustment to a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature’s programmatically-determined location
                                        in
                                        terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
@@ -72,6 +78,56 @@
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset.html">att.visualOffset</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset.ho.html">att.visualOffset.ho</a></span><span class="step end">@ho</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lendsym</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lendsym.size</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lform</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                                       or
+                                       the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                                       maximum, respectively) provides a range between which a rendering system-supplied
+                                       value
+                                       may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                                       and
+                                       maximum values are equal.</span><span class="attributeValues">
+                                       One or two values of datatype <span style="font-weight: 500;">
+                                          a positive integer no smaller than 2</span>, separated by a space.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lsegs</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lstartsym</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step end">@lstartsym.size</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.tempo.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lwidth</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the placement of the item with respect to the staff with which it is
@@ -135,6 +191,54 @@
                               </div>
                            </div>
                            <div id="attributes_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="att.extender">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a></label><span class="classDesc">(MEI.shared) Attributes that describe extension symbols, typically lines. Members
+                                       of this class are also typically members of the att.lineRend class.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
+                                    <div class="classBox" title="att.lineRend">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.html">att.lineRend</a></label><span class="classDesc">(MEI.shared) Attributes that record the visual rendition of lines.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                                   </span></span></div>
+                                          <div class="classBox" title="att.lineRend.base">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></label><span class="classDesc">(MEI.shared) Attributes that record the basic visual rendition of lines.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="desc"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                                         </span></span></div>
+                                                <div class="def"><span class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                                                         or
+                                                         the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                                                         maximum, respectively) provides a range between which a rendering system-supplied
+                                                         value
+                                                         may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                                                         and
+                                                         maximum values are equal.</span><span class="attributeValues">
+                                                         One or two values of datatype <span style="font-weight: 500;">
+                                                            a positive integer no smaller than 2</span>, separated by a space.
+                                                         </span></span></div>
+                                                <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                                         </span></span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                               <div class="classBox" title="att.placementRelStaff">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.placementRelStaff.html">att.placementRelStaff</a></label><span class="classDesc">(MEI.shared) Attributes capturing placement information with respect to the staff.</span></div>
                                  <div class="classContent">
@@ -250,11 +354,43 @@
                                              point.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TSTAMPOFFSET.html">data.TSTAMPOFFSET</a>.
                                              </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records a horizontal adjustment to a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature’s programmatically-determined location
                                              in
                                              terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
                                              staff lines.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                                             or
+                                             the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                                             maximum, respectively) provides a range between which a rendering system-supplied
+                                             value
+                                             may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                                             and
+                                             maximum values are equal.</span><span class="attributeValues">
+                                             One or two values of datatype <span style="font-weight: 500;">
+                                                a positive integer no smaller than 2</span>, separated by a space.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZESCALE.html">data.FONTSIZESCALE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the placement of the item with respect to the staff with which it is
                                              associated.</span><span class="attributeValues">
@@ -336,6 +472,8 @@
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                                        
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a>"</span>/&gt;</span></div>
+                                       
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.placementRelStaff.html">att.placementRelStaff</a>"</span>/&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.verticalGroup.html">att.verticalGroup</a>"</span>/&gt;</span></div>
@@ -355,7 +493,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/337edebafdcd479ffeba1df01a30238622324aec" target="_blank" rel="noopener noreferrer">#337edeb</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/6b4554a7fe33af30852d44ebd60c27d174879ca3" target="_blank" rel="noopener noreferrer">#6b4554a</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
