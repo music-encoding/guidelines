@@ -7,14 +7,14 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-04-27">
+      <meta name="date" content="2023-05-23">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
       <meta name="DC.Format" content="text/html">
-      <link rel="stylesheet" media="screen" type="text/css" href="../css/search.css">
-      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-website.css">
-      <link rel="stylesheet" media="screen" type="text/css" href="../css/mei-screen.css"><script src="../search/searchIndex.js"></script><script src="../search/fuse.min.js"></script></head>
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
    <body class="simple" id="TOP">
       <div class="headerBar"></div>
       <div class="container-fluid content">
@@ -2401,7 +2401,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/163b671c61b63ae1e552c10908a1b2375b10f9b4" target="_blank" rel="noopener noreferrer">#163b671</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/382f64072f53dc6062283383c1d80c7d9b00dbf1" target="_blank" rel="noopener noreferrer">#382f640</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -2453,7 +2453,7 @@
                                     function getMenu() {
                                         const fullVersion = '5.0.0-dev'
                                         const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
-                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')'); 
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
                                         
                                         const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
                                         
@@ -2507,10 +2507,10 @@
                                 
                                 for(let tab of tabs) {
                                     tab.addEventListener('click',tabClick);
-                                }                            
+                                }
                             }
                             
-                            function setTabs(facetId, style) {                            
+                            function setTabs(facetId, style) {
                                 const storageName = 'meiSpecs_' + facetId + '_display';
                                 localStorage.setItem(storageName,style);
                                 
