@@ -56,12 +56,24 @@
                         <div class="label">Allowed Values</div>
                         <div class="statement list">
                            <div class="dataValueBox" id="G"><span class="dataValue ident">G</span><span class="dataValue desc"><span class="desc">G clef (Unicode 1D11E).</span></span></div>
-                           <div class="dataValueBox" id="GG"><span class="dataValue ident">GG</span><span class="dataValue desc"><span class="desc">Double G clef.</span></span></div>
+                           <div class="dataValueBox" id="GG"><span class="dataValue ident">GG</span><span class="dataValue desc"><span class="desc">Double G clef. Sounds one octave lower than G clef. (See remarks on usage below.)</span></span></div>
                            <div class="dataValueBox" id="F"><span class="dataValue ident">F</span><span class="dataValue desc"><span class="desc">F clef (Unicode 1D122).</span></span></div>
                            <div class="dataValueBox" id="C"><span class="dataValue ident">C</span><span class="dataValue desc"><span class="desc">C clef (Unicode 1D121).</span></span></div>
                            <div class="dataValueBox" id="perc"><span class="dataValue ident">perc</span><span class="dataValue desc"><span class="desc">Drum clef (Unicode 1D125 or Unicode 1D126).</span></span></div>
                            <div class="dataValueBox" id="TAB"><span class="dataValue ident">TAB</span><span class="dataValue desc"><span class="desc">Tablature "clef"; <abbr>i.e.</abbr>, usually "TAB" rendered vertically.</span></span></div>
                         </div>
+                     </div>
+                     <div id="remarks" class="facet remarks">
+                        <div class="label">Remarks</div>
+                        <div class="statement remarks">
+                           
+                           <p>Double-G clefs sound one octave lower, so do not combine with <span class="att">dis</span>/
+                              <span class="att">dis.place</span>/<span class="att">clef.dis</span>/<span class="att">clef.dis.place</span>. In some cases
+                              the double G clef may be used to indicate that two voices share one staff and 
+                              does not sound one octave lower. In this case the <span class="att">oct</span> attribute may be 
+                              used to clarify the sounding octave of the instruments for the clef.
+                              </p>
+                           </div>
                      </div>
                      <div id="declaration" class="facet declaration">
                         <div class="label">Declaration</div>
@@ -83,7 +95,7 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"GG"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Double G clef.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Double G clef. Sounds one octave lower than G clef. (See remarks on usage below.)<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"F"</span>&gt;</span>
@@ -108,6 +120,16 @@
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;remarks <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>Double-G clefs sound one octave lower, so do not combine with <span data-indentation="4" class="element">&lt;att&gt;</span>dis<span data-indentation="4" class="element">&lt;/att&gt;</span>/
+                                          <span data-indentation="4" class="element">&lt;att&gt;</span>dis.place<span data-indentation="4" class="element">&lt;/att&gt;</span>/<span data-indentation="4" class="element">&lt;att&gt;</span>clef.dis<span data-indentation="4" class="element">&lt;/att&gt;</span>/<span data-indentation="4" class="element">&lt;att&gt;</span>clef.dis.place<span data-indentation="4" class="element">&lt;/att&gt;</span>. In some cases
+                                          the double G clef may be used to indicate that two voices share one staff and 
+                                          does not sound one octave lower. In this case the <span data-indentation="4" class="element">&lt;att&gt;</span>oct<span data-indentation="4" class="element">&lt;/att&gt;</span> attribute may be 
+                                          used to clarify the sounding octave of the instruments for the clef.
+                                          <span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                                     <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
                         </div>
                      </div>
@@ -115,7 +137,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a10f5d6c9fdb8e1abfd876d23bab96e4c9edd2a3" target="_blank" rel="noopener noreferrer">#a10f5d6</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/95ee518652cc9140562c063370a99a94d1d77d94" target="_blank" rel="noopener noreferrer">#95ee518</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
