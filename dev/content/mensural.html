@@ -43,21 +43,22 @@
                      as in CMN, and the mensural module introduces no modification to MEI regarding how
                      pitches are encoded.</p>
                   
-                  <p>There are a certain number of differences, however, regarding the representation of
-                     duration in mensural notation. The mensural module introduces specific attribute values
-                     for notes and rests for appropriately encoding mensural durations. One of the main
-                     particularities is that the actual duration of a note is not given only by its symbol
-                     but also by position and the context in which the symbol appears. The general context
-                     is given by one of the 16 mensural <em>species</em> provide four levels of division: <em>modus major</em>, <em>modus minor</em>, <em>tempus</em> and <em>prolatio</em>. Depending on the context, certain rules must be applied in order to determine the
-                     duration of a note. In these cases, encoding both the sign and its actual duration
-                     is highly desirable.</p>
+                  <p>There are a number of differences, however, in the representation of duration in mensural
+                     notation. The mensural module introduces specific attribute values for notes and rests
+                     for appropriately encoding mensural durations. One of the main differences is that
+                     the duration of a note is not determined by its symbol, but also by the meter and
+                     the context in which the symbol appears in relation to other notes and rests in the
+                     same voice. The meter is given by one of the 16 mensural <em>species</em> provided by four levels of division: <em>modus major</em>, <em>modus minor</em>, <em>tempus</em> and <em>prolatio</em>. In the case of triple meter and depending on the specific context where the note
+                     is positioned, certain rules must be applied in order to determine the duration of
+                     a note. In these cases, encoding both the sign and its actual duration is highly recommended
+                     (as will be shown in <a class="link_ptr chapterLink" title="Durations" href="../content/mensural.html#mensuralNotes">5.1 Durations</a>).</p>
                   
-                  <p>Another particularity of mensural notation is the use of proportions that are indicated
-                     by numeric proportions or by specific mensuration signs. The proportions indicate
-                     that the durations have to be modified accordingly and they can be combined in a very
-                     complex manner. Over time, proportions and mensuration signs were simplified and became
-                     time signatures in CMN. The attributes and elements that are necessary for encoding
-                     proportions and mensural signs are made available by the module.</p>
+                  <p>Another difference is the use of proportions that are indicated by numeric ratios
+                     or by specific mensuration signs. The proportions indicate that the durations have
+                     to be modified and they may be combined. Proportions and mensuration signs were eventually
+                     simplified and became time signatures in CMN. The attributes and elements available
+                     in this module for encoding mensural signs and proportions can be found below (see
+                     <a class="link_ptr chapterLink" title="Mensuration" href="../content/mensural.html#mensuralSigns">5.2 Mensuration</a> and <a class="link_ptr chapterLink" title="Proportions" href="../content/mensural.html#mensuralProportions">5.3 Proportions</a>).</p>
                   
                   <p>In mensural notation, notes can also be notated in ligatures that regroup two or more
                      notes. Ligatures were a legacy from an earlier notation system that were still widely
@@ -89,7 +90,7 @@
                      
                      <p>
                         
-                        <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12452.mei.svg"><div id="d19e12452" xml:space="preserve" class="pre code egXML_feasible verovio">
+                        <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12460.mei.svg"><div id="d19e12460" xml:space="preserve" class="pre code egXML_feasible verovio">
                               <code>
                                  
                                  
@@ -166,14 +167,15 @@
                      <p>
                         
                         <figure class="figure specPage">
-                           <div id="d19e12521" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d19e12529" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
-                                 <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!--With @modusminor equal to "3" in the &lt;staffDef&gt; element--&gt;</span></div>
+                                 <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 3 --&gt;</span></div>
+                                 
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!--First system in the image--&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- First system in the image --&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- ... --&gt;</span></div>
                                     
@@ -231,7 +233,7 @@
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!--Next system in the image--&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- Next system in the image --&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"longa"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
                                     
@@ -295,16 +297,18 @@
                         <p class="gloss"><strong><span>duplex</span></strong>:
                            One of the three categories of a longa in Ars antiqua ('duplex', 'perfecta', and 'imperfecta')</p>
                         
-                        <p>The last three values are to be used exclusively in <em>Ars antiqua</em> mensural notation, where <span class="val">maior</span>and <span class="val">minor</span>refer to types of <em>semibreves</em>, and <span class="val">duplex</span>refers to a type of <em>longa</em>. Examples of each of these six values are presented below. In these examples, the
+                        <p>The last three values are to be used exclusively in <em>Ars antiqua</em> mensural notation, where <span class="val">maior</span> and <span class="val">minor</span> refer to types of <em>semibreves</em>, and <span class="val">duplex</span> refers to a type of <em>longa</em>. Examples of each of these six values are presented below. In these examples, the
                            ‘voice’ staff renders the notes in the code snippet, and the ‘reference’ staff, together
                            with the dotted bar lines, are shown to help to visualize the relative values of the
                            notes in the ‘voice’ staff.</p>
                         
                         <p>The following example illustrates an <em>alteration</em> (the second <em>brevis</em>) in <em>modus minor perfectus</em>. Notice that the second <em>brevis</em> has doubled its regular value, it has been altered, unlike the first one. 
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12607.mei.svg"><div id="d19e12607" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12615.mei.svg"><div id="d19e12615" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 3 --&gt;</span></div>
                                     
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
@@ -335,11 +339,12 @@
                         <p>It is possible to omit the <span class="att">dur.quality</span> attribute in a note when the performed duration of the note is the default value
                            provided by the mensuration. In this case, the <em>longas</em> are perfect, just as the mensuration (<em>perfect modus minor</em>) indicates. Therefore, the <span class="att">dur.quality</span> attribute can be omitted for the two <em>longas</em>. 
                            <figure class="figure specPage">
-                              <div id="d19e12633" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d19e12641" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
-                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!--With @modusminor equal to "3" in the &lt;staffDef&gt; element--&gt;</span></div>
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 3 --&gt;</span></div>
+                                    
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer&gt;</span>
                                        
                                        <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"longa"</span>/&gt;</span></div>
@@ -357,12 +362,14 @@
                               <figcaption class="figure-caption">Listing 214. </figcaption>
                            </figure> The same applies to the examples that follow.</p>
                         
-                        <p>The following example illustrates an <em>imperfection</em> (the two <em>longae</em>) in <em>modus minor perfectus</em> with the same <em>longa</em>-<em>brevis</em>-<em>brevis</em>-<em>longa</em> sequence but with an additional <em>dot of division</em> between the two <em>breves</em>. Notice that here the <em>longae</em> have been imperfected, unlike the previous example in which they kept the perfect
+                        <p>The following example illustrates an <em>imperfection</em> (the two <em>longae</em>) in <em>modus minor perfectus</em> with the same <em>longa</em>-<em>brevis</em>-<em>brevis</em>-<em>longa</em> sequence but with an additional <em>dot of division</em> between the two <em>breves</em> (see <a class="link_ptr chapterLink" title="Dots" href="../content/mensural.html#dots">5.6.4 Dots</a> for more details). Notice that here the <em>longae</em> have been imperfected, unlike the previous example in which they kept the perfect
                            value indicated by the mensuration. 
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12675.mei.svg"><div id="d19e12675" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12686.mei.svg"><div id="d19e12686" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 3 --&gt;</span></div>
                                     
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
@@ -392,12 +399,15 @@
                            </figure>
                            </p>
                         
-                        <p>The following example in <em>modus minor imperfectus</em> illustrates the use of a dot of augmentation following the <em>longa</em>. Notice that the <em>longa</em>, which is supposed to be imperfect according to the mensuration, has a perfect value
+                        <p>The following example in <em>modus minor imperfectus</em> illustrates the use of a dot of augmentation following the <em>longa</em> (see <a class="link_ptr chapterLink" title="Dots" href="../content/mensural.html#dots">5.6.4 Dots</a> for more details). Notice that the <em>longa</em>, which is supposed to be imperfect according to the mensuration, has a perfect value
                            due to the augmentation dot. 
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12695.mei.svg"><div id="d19e12695" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12708.mei.svg"><div id="d19e12708" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 2 and @tempus
+                                          = 2 --&gt;</span></div>
                                     
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
@@ -421,10 +431,13 @@
                         
                         <p>Finally, the following example illustrates the <span class="att">dur.quality</span> values related to the <em>Ars antiqua</em> style, for <em>perfect modus</em>, with the breve equivalents notated in the lower staff for reference (as in the previous
                            examples). 
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12714.mei.svg"><div id="d19e12714" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12727.mei.svg"><div id="d19e12727" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 3 and @tempus
+                                          = 3 --&gt;</span></div>
                                     
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
@@ -471,11 +484,13 @@
                         
                         <p>An alternative encoding---removing the <span class="att">dur.quality</span> attributes for notes which lengths are not modified from their default values (<abbr>i.e.</abbr>, the perfect long and the minor <em>semibreves</em>)---would be: 
                            <figure class="figure specPage">
-                              <div id="d19e12816" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d19e12829" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
-                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!--With @modusminor and @tempus equal to "3" in the &lt;staffDef&gt; element--&gt;</span></div>
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 3 and @tempus
+                                          = 3 --&gt;</span></div>
+                                    
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer&gt;</span>
                                        
                                        <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"longa"</span>/&gt;</span></div>
@@ -521,10 +536,13 @@
                         
                         <p>
                            
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12914.mei.svg"><div id="d19e12914" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12927.mei.svg"><div id="d19e12927" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 2 and @tempus
+                                          = 3 --&gt;</span></div>
                                     
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
@@ -548,10 +566,13 @@
                         
                         <p>
                            
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12927.mei.svg"><div id="d19e12927" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12940.mei.svg"><div id="d19e12940" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 2 and @tempus
+                                          = 3 --&gt;</span></div>
                                     
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
@@ -580,117 +601,24 @@
                         
                         <p>
                            
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12951.mei.svg"><div id="d19e12951" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12964.mei.svg"><div id="d19e12964" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
                                     
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 2, @tempus
+                                          = 2, and @prolatio = 3 --&gt;</span></div>
                                     
-                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;mei <span class="attribute">meiversion=</span><span class="attributevalue">"5.0.0-dev"</span>&gt;</span>
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
-                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;meiHead&gt;</span>
-                                          
-                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;fileDesc&gt;</span>
-                                             
-                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;titleStmt&gt;</span>
-                                                
-                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;title&gt;</span>Example of "partial imperfection of a remote part" (ad partem remotam)<span data-indentation="5" class="element">&lt;/title&gt;</span></div>
-                                                <span data-indentation="4" class="element">&lt;/titleStmt&gt;</span></div>
-                                             
-                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;pubStmt&gt;</span>
-                                                
-                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;date&gt;</span>2020-03-03<span data-indentation="5" class="element">&lt;/date&gt;</span></div>
-                                                <span data-indentation="4" class="element">&lt;/pubStmt&gt;</span></div>
-                                             
-                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;notesStmt&gt;</span>
-                                                
-                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;annot&gt;</span>The bottom staff, together with the dotted and dashed barlines, is used here to help
-                                                   visualizing the durational values of the notes in the upper staff. Dotted barlines
-                                                   in the bottom staff show the minim groups equivalent to a semibreve, and the dashed
-                                                   barlines show the groups of semibreves equivalent to a breve.<span data-indentation="5" class="element">&lt;/annot&gt;</span></div>
-                                                <span data-indentation="4" class="element">&lt;/notesStmt&gt;</span></div>
-                                             <span data-indentation="3" class="element">&lt;/fileDesc&gt;</span></div>
-                                          <span data-indentation="2" class="element">&lt;/meiHead&gt;</span></div>
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"longa"</span> <span class="attribute">num=</span><span class="attributevalue">"12"</span> <span class="attribute">numbase=</span><span class="attributevalue">"11"</span>/&gt;</span></div>
                                        
-                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;music&gt;</span>
-                                          
-                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;body&gt;</span>
-                                             
-                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;mdiv&gt;</span>
-                                                
-                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;score&gt;</span>
-                                                   
-                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;scoreDef&gt;</span>
-                                                      
-                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;staffGrp&gt;</span>
-                                                         
-                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;staffDef <span class="attribute">label=</span><span class="attributevalue">"voice"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">modusminor=</span><span class="attributevalue">"2"</span> <span class="attribute">prolatio=</span><span class="attributevalue">"3"</span> <span class="attribute">tempus=</span><span class="attributevalue">"2"</span> <span class="attribute">mensur.dot=</span><span class="attributevalue">"true"</span> <span class="attribute">mensur.sign=</span><span class="attributevalue">"C"</span> <span class="attribute">mensur.slash=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
-                                                         
-                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;staffDef <span class="attribute">label=</span><span class="attributevalue">"reference"</span> <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span> <span class="attribute">modusminor=</span><span class="attributevalue">"2"</span> <span class="attribute">prolatio=</span><span class="attributevalue">"3"</span> <span class="attribute">tempus=</span><span class="attributevalue">"2"</span> <span class="attribute">mensur.dot=</span><span class="attributevalue">"true"</span> <span class="attribute">mensur.sign=</span><span class="attributevalue">"C"</span> <span class="attribute">mensur.slash=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
-                                                         <span data-indentation="7" class="element">&lt;/staffGrp&gt;</span></div>
-                                                      <span data-indentation="6" class="element">&lt;/scoreDef&gt;</span></div>
-                                                   
-                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;section&gt;</span>
-                                                      
-                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
-                                                         
-                                                         
-                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"longa"</span> <span class="attribute">num=</span><span class="attributevalue">"12"</span> <span class="attribute">numbase=</span><span class="attributevalue">"11"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dotted"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dashed"</span>/&gt;</span></div>
-                                                            <span data-indentation="8" class="element">&lt;/layer&gt;</span></div>
-                                                         
-                                                         <span data-indentation="7" class="element">&lt;/staff&gt;</span></div>
-                                                      
-                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
-                                                         
-                                                         <div class="indent indent8"><span data-indentation="8" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dotted"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dashed"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dotted"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
-                                                            
-                                                            <div class="indent indent9"><span data-indentation="9" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dashed"</span>/&gt;</span></div>
-                                                            <span data-indentation="8" class="element">&lt;/layer&gt;</span></div>
-                                                         <span data-indentation="7" class="element">&lt;/staff&gt;</span></div>
-                                                      <span data-indentation="6" class="element">&lt;/section&gt;</span></div>
-                                                   <span data-indentation="5" class="element">&lt;/score&gt;</span></div>
-                                                <span data-indentation="4" class="element">&lt;/mdiv&gt;</span></div>
-                                             <span data-indentation="3" class="element">&lt;/body&gt;</span></div>
-                                          <span data-indentation="2" class="element">&lt;/music&gt;</span></div>
-                                       <span data-indentation="1" class="element">&lt;/mei&gt;</span></div>
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dotted"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"minima"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;barLine <span class="attribute">form=</span><span class="attributevalue">"dashed"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/layer&gt;</span></div>
                                     
                                     
                                     </code>
@@ -703,10 +631,13 @@
                         
                         <p>
                            
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12985.mei.svg"><div id="d19e12985" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e12998.mei.svg"><div id="d19e12998" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- mensuration encoded in &lt;staffDef&gt; element indicates @modusminor = 3, @tempus
+                                          = 2, and @prolatio = 3 --&gt;</span></div>
                                     
                                     <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
@@ -940,7 +871,7 @@
                         
                         <p>The following example illustrates a <em>change in mensuration</em>. In this case, the element <a class="link_odd link_odd_elementSpec" href="../elements/mensur.html">mensur</a> is used within the <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> element, preceding the stream of notes affected by the new mensuration defined by
                            it. 
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e13156.mei.svg"><div id="d19e13156" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e13169.mei.svg"><div id="d19e13169" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
@@ -994,20 +925,102 @@
                         <p>It is common in <em>Ars antiqua</em> and some <em>Ars nova</em> pieces to have no mensuration signs. In this case, the mensuration—the division levels
                            corresponding to <em>modus maior</em>, <em>modus minor</em>, <em>tempus</em>, and <em>prolatio</em>—is given by the context. The next example shows the incipit of a four-voice piece,
                            Josquin’s <em>Tu solus qui facis mirabilia</em>, where only two of the voices (<em>Cantus</em> and <em>Tenor</em>) have a mensuration sign. The other two (<em>Altus</em> and <em>Bassus</em>) have <em>no mensuration signs</em>, and the <em>mensura is given by the context</em>. Therefore, while only the <em>Cantus</em> and the <em>Tenor</em> have attributes for encoding the mensuration sign (in this case, <span class="att">mensur.sign</span> and <span class="att">mensur.slash</span>), all four voices include attributes to encode the <em>mensura</em> (<span class="att">tempus</span> and <span class="att">prolatio</span>). 
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e13232.mei.svg"><div id="d19e13232" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e13245.mei.svg"><div id="d19e13245" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
                                     
-                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;scoreDef&gt;</span>
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;score&gt;</span>
                                        
-                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffGrp&gt;</span>
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;scoreDef <span class="attribute">key.sig=</span><span class="attributevalue">"1f"</span>&gt;</span>
                                           
-                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">label=</span><span class="attributevalue">"voice"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffGrp&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">label=</span><span class="attributevalue">"Cantus"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"C"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"1"</span> <span class="attribute">mensur.sign=</span><span class="attributevalue">"C"</span> <span class="attribute">mensur.slash=</span><span class="attributevalue">"1"</span> <span class="attribute">prolatio=</span><span class="attributevalue">"2"</span> <span class="attribute">tempus=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">label=</span><span class="attributevalue">"Tenor"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"C"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">mensur.sign=</span><span class="attributevalue">"C"</span> <span class="attribute">mensur.slash=</span><span class="attributevalue">"1"</span> <span class="attribute">prolatio=</span><span class="attributevalue">"2"</span> <span class="attribute">tempus=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">label=</span><span class="attributevalue">"Altus"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"C"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"3"</span> <span class="attribute">prolatio=</span><span class="attributevalue">"2"</span> <span class="attribute">tempus=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"4"</span> <span class="attribute">label=</span><span class="attributevalue">"Bassus"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span> <span class="attribute">prolatio=</span><span class="attributevalue">"2"</span> <span class="attribute">tempus=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staffGrp&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/scoreDef&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;section&gt;</span>
                                           
-                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">label=</span><span class="attributevalue">"reference"</span> <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"mensural.white"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"G"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
-                                          <span data-indentation="2" class="element">&lt;/staffGrp&gt;</span></div>
-                                       <span data-indentation="1" class="element">&lt;/scoreDef&gt;</span></div>
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">dur=</span><span class="attributevalue">"brevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">dur=</span><span class="attributevalue">"semibrevis"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/section&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/score&gt;</span></div>
                                     
                                     
                                     </code>
@@ -1075,7 +1088,7 @@
                         </figure>
                         
                         <figure class="figure specPage">
-                           <div id="d19e13368" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d19e13381" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
@@ -1111,7 +1124,7 @@
                         </figure>
                         
                         <figure class="figure specPage">
-                           <div id="d19e13400" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d19e13413" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
@@ -1151,7 +1164,7 @@
                      <p>
                         
                         <figure class="figure specPage">
-                           <div id="d19e13434" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d19e13447" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
@@ -1324,7 +1337,8 @@
                            </div>
                            </p>
                         
-                        <p>PLACE-HOLDER FOR EXAMPLE OF ONE NOTE WITH ONE STEM: IMAGE &amp; ITS ENCODING</p>
+                        <p>[include example (image and code) of a note with one stem that includes many of these
+                           attributes]</p>
                         
                         <p>Sometimes notes have two stems. In this case, the <a class="link_odd link_odd_elementSpec" href="../elements/stem.html">stem</a> element can be used as a child of <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> to define the individual characteristics of each stem with the following attributes:</p>
                         
@@ -1432,7 +1446,7 @@
                            </div>
                            </p>
                         
-                        <p>PLACE-HOLDER FOR EXAMPLE OF A NOTE WITH TWO STEMS: IMAGE &amp; ITS ENCODING</p>
+                        <p>[include example (image and code) of a note with two stems]</p>
                         </div>
                      
                      <div class="div3">
@@ -1478,12 +1492,60 @@
                               </div>
                            </div>
                            </p>
+                        
+                        <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/mensural/ex_plicae.png"><figcaption class="figure-caption">Figure 57. Encoding and rendering of plicas</figcaption>
+                        </figure>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="dots"><span class="headingNumber">5.6.4</span><span class="head">Dots</span></h3>
+                        
+                        <p>Dots of division and augmentation can be encoded by using the <a class="link_odd link_odd_elementSpec" href="../elements/dot.html">dot</a> element (provided by the MEI.shared module). This element is meant to be used as
+                           a child of <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> following the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> or <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> after which it appears in the original source.</p> 
+                        
+                        <p>Dots in mensural notation are not encoded as children of notes or rests, but rather
+                           as a sibling of these. They are also not encoded as attributes (the use of the <span class="att">dot</span> attribute in a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> or <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> element is only acceptable in Common Music Notation, not mensural).</p>
+                        
+                        <p>To indicate the nature of the dot (as a dot of division or augmentation), the <a class="link_odd link_odd_elementSpec" href="../elements/dot.html">dot</a> element has an attribute <span class="att">form</span>, which can take on the following values:</p>
+                        
+                        <p class="gloss"><strong><span>aug</span></strong>:
+                           Value of the form attribute for a dot of augmentation (this is a dot that adds half
+                           the value to the previous note, like a dotted note in common Western music notation)</p>
+                        <p class="gloss"><strong><span>div</span></strong>:
+                           Value of the form attribute for a dot of division (this is a dot that modifies the
+                           perfect groupings of the notes, thus, changing some notes' duration in the process)</p>
+                        The actual effect of these dots (<em>augmenting</em> a note and making it perfect, or dividing a sequence of notes in different groupings
+                        by <em>imperfecting</em> some notes or <em>altering</em> others) is encoded with the <span class="att">dur.quality</span> attribute of the correspoding <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements. Examples of the use of dots of division and augmentation can be found in
+                        the <a class="link_ptr chapterLink" title="Alteration and Imperfection" href="../content/mensural.html#mensuralRules">5.1.1 Alteration and Imperfection</a> section.
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="accidentals"><span class="headingNumber">5.6.5</span><span class="head">Accidentals</span></h3>
+                        
+                        <p>[explain that accidentals are usually encoded as independent elements and that accid.ges
+                           can be used within notes]</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="coloration"><span class="headingNumber">5.6.6</span><span class="head">Coloration</span></h3>
+                        
+                        <p>[explain where/how coloration can be encoded]</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="custos"><span class="headingNumber">5.6.7</span><span class="head">Custos</span></h3>
+                        
+                        <p>[explain that there is a custos element available]</p>
                         </div>
                      </div>
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/fd4cc118a94cdb0ea6422c3cf54b88f1f00822fc" target="_blank" rel="noopener noreferrer">#fd4cc11</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/17f1091611ef075b87cc9b0ec2dc2b16aa900d05" target="_blank" rel="noopener noreferrer">#17f1091</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1497,7 +1559,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#mensuralNotes">5.1 Durations</a><a class="level-3" href="#mensuralRules">5.1.1 Alteration and Imperfection</a><a class="level-3" href="#partialImp">5.1.2 Partial Imperfection</a><a class="level-2" href="#mensuralSigns">5.2 Mensuration</a><a class="level-3" href="#changeinmensuration">5.2.1 Change in mensuration</a><a class="level-3" href="#implicitmensuration">5.2.2 Implicit mensuration</a><a class="level-3" href="#italianMensur">5.2.3 Italian Divisiones</a><a class="level-2" href="#mensuralProportions">5.3 Proportions</a><a class="level-2" href="#mensuralLigatures">5.4 Ligatures</a><a class="level-2" href="#mensuralData">5.5 Music Data Organization</a><a class="level-2" href="#otherFeatures">5.6 Other Features</a><a class="level-3" href="#notationtype">5.6.1 Notation Type</a><a class="level-3" href="#stems">5.6.2 Stems</a><a class="level-3" href="#plicas">5.6.3 Plicas</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#mensuralNotes">5.1 Durations</a><a class="level-3" href="#mensuralRules">5.1.1 Alteration and Imperfection</a><a class="level-3" href="#partialImp">5.1.2 Partial Imperfection</a><a class="level-2" href="#mensuralSigns">5.2 Mensuration</a><a class="level-3" href="#changeinmensuration">5.2.1 Change in mensuration</a><a class="level-3" href="#implicitmensuration">5.2.2 Implicit mensuration</a><a class="level-3" href="#italianMensur">5.2.3 Italian Divisiones</a><a class="level-2" href="#mensuralProportions">5.3 Proportions</a><a class="level-2" href="#mensuralLigatures">5.4 Ligatures</a><a class="level-2" href="#mensuralData">5.5 Music Data Organization</a><a class="level-2" href="#otherFeatures">5.6 Other Features</a><a class="level-3" href="#notationtype">5.6.1 Notation Type</a><a class="level-3" href="#stems">5.6.2 Stems</a><a class="level-3" href="#plicas">5.6.3 Plicas</a><a class="level-3" href="#dots">5.6.4 Dots</a><a class="level-3" href="#accidentals">5.6.5 Accidentals</a><a class="level-3" href="#coloration">5.6.6 Coloration</a><a class="level-3" href="#custos">5.6.7 Custos</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -1515,7 +1577,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#mensuralNotes">5.1 Durations</a><a class="level-3" href="#mensuralRules">5.1.1 Alteration and Imperfection</a><a class="level-3" href="#partialImp">5.1.2 Partial Imperfection</a><a class="level-2" href="#mensuralSigns">5.2 Mensuration</a><a class="level-3" href="#changeinmensuration">5.2.1 Change in mensuration</a><a class="level-3" href="#implicitmensuration">5.2.2 Implicit mensuration</a><a class="level-3" href="#italianMensur">5.2.3 Italian Divisiones</a><a class="level-2" href="#mensuralProportions">5.3 Proportions</a><a class="level-2" href="#mensuralLigatures">5.4 Ligatures</a><a class="level-2" href="#mensuralData">5.5 Music Data Organization</a><a class="level-2" href="#otherFeatures">5.6 Other Features</a><a class="level-3" href="#notationtype">5.6.1 Notation Type</a><a class="level-3" href="#stems">5.6.2 Stems</a><a class="level-3" href="#plicas">5.6.3 Plicas</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#mensuralNotes">5.1 Durations</a><a class="level-3" href="#mensuralRules">5.1.1 Alteration and Imperfection</a><a class="level-3" href="#partialImp">5.1.2 Partial Imperfection</a><a class="level-2" href="#mensuralSigns">5.2 Mensuration</a><a class="level-3" href="#changeinmensuration">5.2.1 Change in mensuration</a><a class="level-3" href="#implicitmensuration">5.2.2 Implicit mensuration</a><a class="level-3" href="#italianMensur">5.2.3 Italian Divisiones</a><a class="level-2" href="#mensuralProportions">5.3 Proportions</a><a class="level-2" href="#mensuralLigatures">5.4 Ligatures</a><a class="level-2" href="#mensuralData">5.5 Music Data Organization</a><a class="level-2" href="#otherFeatures">5.6 Other Features</a><a class="level-3" href="#notationtype">5.6.1 Notation Type</a><a class="level-3" href="#stems">5.6.2 Stems</a><a class="level-3" href="#plicas">5.6.3 Plicas</a><a class="level-3" href="#dots">5.6.4 Dots</a><a class="level-3" href="#accidentals">5.6.5 Accidentals</a><a class="level-3" href="#coloration">5.6.6 Coloration</a><a class="level-3" href="#custos">5.6.7 Custos</a></p>
                   </div>
                </div>
             </div>
