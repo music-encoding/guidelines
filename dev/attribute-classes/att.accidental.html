@@ -43,10 +43,10 @@
                         <div class="label">Attributes</div>
                         <div class="statement classes">
                            <ul class="tab">
-                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact" class="displayTab active">compact</a></li>
-                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full" class="displayTab">full definition</a></li>
-                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class" class="displayTab">by class</a></li>
-                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module" class="displayTab">by module</a></li>
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
                            <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Captures a written accidental.">accid</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
@@ -83,9 +83,9 @@
                         <div class="label">Available at</div>
                         <div class="statement classes">
                            <ul class="tab">
-                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact" class="displayTab active">compact</a></li>
-                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class" class="displayTab">by class</a></li>
-                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module" class="displayTab">by module</a></li>
+                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module_tab" class="displayTab">by module</a></li>
                            </ul>
                            <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/accid.html" title="Records a temporary alteration to the pitch of a note.">accid</a>, <a class="link_odd link_odd_elementSpec" href="../elements/ambNote.html" title="Highest or lowest pitch in a score, staff, or layer.">ambNote</a>, <a class="link_odd link_odd_elementSpec" href="../elements/custos.html" title="Symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a &#34;direct&#34;.">custos</a>, <a class="link_odd link_odd_elementSpec" href="../elements/key.html" title="Key captures information about tonal center and mode.">key</a>, <a class="link_odd link_odd_elementSpec" href="../elements/keyAccid.html" title="Accidental in a key signature.">keyAccid</a>, <a class="link_odd link_odd_elementSpec" href="../elements/keySig.html" title="Written key signature.">keySig</a>, <a class="link_odd link_odd_elementSpec" href="../elements/note.html" title="A single pitched event.">note</a></div>
                            <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
@@ -184,7 +184,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e711c399ec010cdca006d59fc721b6543cc3a576" target="_blank" rel="noopener noreferrer">#e711c39</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b996ff7b9fb7d08890c0f0ce7feacf5d2d0a573e" target="_blank" rel="noopener noreferrer">#b996ff7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -266,24 +266,24 @@
                             const tabbedFacets = document.querySelectorAll('.facet ul.tab');
                             
                             const tabClick = function(e) {
-                                const style = e.target.getAttribute('data-display');
+                                const targetDataDisplay = e.target.getAttribute('data-display');
                                 const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
-                                //console.log('clicked at ' + facetId + ' with style ' + style)
-                                setTabs(facetId,style)
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
                             }
                             
                             console.log('[INFO] Javascript initialized')
                             
                             for(let facetUl of tabbedFacets) {
-                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetElem = facetUl.parentNode?.parentNode;
                                 const facetId = facetElem.id;
-                                const storageName = 'meiSpecs_' + facetId + '_display';
-                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
                                 
                                 if(localStorage.getItem(storageName) === null) {
-                                    setTabs(facetElem.id,defaultValue);
+                                    setTabs(facetId,defaultDataDisplay?.trim());
                                 } else {
-                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                    setTabs(facetId,localStorage.getItem(storageName)?.trim());
                                 }
                                 
                                 const tabs = facetUl.querySelectorAll('.tab-item a');
@@ -292,26 +292,45 @@
                                     tab.addEventListener('click',tabClick);
                                 }
                             }
-                            
+
+                            function getDisplayStyle(dataDisplay) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full']
+                                const [, displayStyle = ''] = dataDisplay.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
                             function setTabs(facetId, style) {
-                                const storageName = 'meiSpecs_' + facetId + '_display';
-                                localStorage.setItem(storageName,style);
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
                                 
                                 const facetElem = document.getElementById(facetId);
                                 
                                 const oldTab = facetElem.querySelector('.displayTab.active');
-                                oldTab.classList.remove('active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
                                 
                                 const newTab = document.getElementById(style + '_tab');
-                                newTab.classList.add('active');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
                                 
                                 const oldBox = facetElem.querySelector('.active.facetTabbedContent');
-                                oldBox.classList.remove('active');
-                                oldBox.style.display = 'none';
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
                                 
                                 const newBox = document.getElementById(style);
-                                newBox.classList.add('active');
-                                newBox.style.display = 'block';
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
                             }
                             
                             const reducedLevels = false;

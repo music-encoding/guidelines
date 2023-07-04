@@ -45,10 +45,10 @@
                         <div class="label">Attributes</div>
                         <div class="statement classes">
                            <ul class="tab">
-                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact" class="displayTab active">compact</a></li>
-                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full" class="displayTab">full definition</a></li>
-                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class" class="displayTab">by class</a></li>
-                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module" class="displayTab">by module</a></li>
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
                            <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="">angled</span>, <span class="ident attribute" title="Connection to the previous component within the same neume; this attribute should not be used for the first component of a neume.">con</span>, <span class="ident attribute" title="Records direction of curvature.">curve</span>, <span class="ident attribute" title="Pen stroke has an extension; specific to Hispanic notation.">hooked</span>, <span class="ident attribute" title="Indicates participation in a ligature.">ligated</span>, <span class="ident attribute" title="Length of the pen stroke relative to the previous component within the same neume; this attribute should not be used for the first component of a neume.">rellen</span>, <span class="ident attribute" title="i.e. Direction of the initial direction for an s-shaped pen stroke; , &#34;w&#34; for the standard letter S, &#34;e&#34; for its mirror image, &#34;s&#34; for the letter S turned 90-degrees anti-clockwise, and &#34;n&#34; for its mirror image.">s-shape</span>, <span class="ident attribute" title="Direction of the pen stroke.">tilt</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
@@ -184,9 +184,9 @@
                         <div class="label">Available at</div>
                         <div class="statement classes">
                            <ul class="tab">
-                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact" class="displayTab active">compact</a></li>
-                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class" class="displayTab">by class</a></li>
-                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module" class="displayTab">by module</a></li>
+                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module_tab" class="displayTab">by module</a></li>
                            </ul>
                            <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/nc.html" title="Sign representing a single pitched event, although the exact pitch may not be known.">nc</a></div>
                            <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
@@ -346,7 +346,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e711c399ec010cdca006d59fc721b6543cc3a576" target="_blank" rel="noopener noreferrer">#e711c39</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b996ff7b9fb7d08890c0f0ce7feacf5d2d0a573e" target="_blank" rel="noopener noreferrer">#b996ff7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -428,24 +428,24 @@
                             const tabbedFacets = document.querySelectorAll('.facet ul.tab');
                             
                             const tabClick = function(e) {
-                                const style = e.target.getAttribute('data-display');
+                                const targetDataDisplay = e.target.getAttribute('data-display');
                                 const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
-                                //console.log('clicked at ' + facetId + ' with style ' + style)
-                                setTabs(facetId,style)
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
                             }
                             
                             console.log('[INFO] Javascript initialized')
                             
                             for(let facetUl of tabbedFacets) {
-                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetElem = facetUl.parentNode?.parentNode;
                                 const facetId = facetElem.id;
-                                const storageName = 'meiSpecs_' + facetId + '_display';
-                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
                                 
                                 if(localStorage.getItem(storageName) === null) {
-                                    setTabs(facetElem.id,defaultValue);
+                                    setTabs(facetId,defaultDataDisplay?.trim());
                                 } else {
-                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                    setTabs(facetId,localStorage.getItem(storageName)?.trim());
                                 }
                                 
                                 const tabs = facetUl.querySelectorAll('.tab-item a');
@@ -454,26 +454,45 @@
                                     tab.addEventListener('click',tabClick);
                                 }
                             }
-                            
+
+                            function getDisplayStyle(dataDisplay) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full']
+                                const [, displayStyle = ''] = dataDisplay.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
                             function setTabs(facetId, style) {
-                                const storageName = 'meiSpecs_' + facetId + '_display';
-                                localStorage.setItem(storageName,style);
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
                                 
                                 const facetElem = document.getElementById(facetId);
                                 
                                 const oldTab = facetElem.querySelector('.displayTab.active');
-                                oldTab.classList.remove('active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
                                 
                                 const newTab = document.getElementById(style + '_tab');
-                                newTab.classList.add('active');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
                                 
                                 const oldBox = facetElem.querySelector('.active.facetTabbedContent');
-                                oldBox.classList.remove('active');
-                                oldBox.style.display = 'none';
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
                                 
                                 const newBox = document.getElementById(style);
-                                newBox.classList.add('active');
-                                newBox.style.display = 'block';
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
                             }
                             
                             const reducedLevels = false;

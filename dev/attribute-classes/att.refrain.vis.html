@@ -43,10 +43,10 @@
                         <div class="label">Attributes</div>
                         <div class="statement classes">
                            <ul class="tab">
-                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact" class="displayTab active">compact</a></li>
-                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full" class="displayTab">full definition</a></li>
-                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class" class="displayTab">by class</a></li>
-                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module" class="displayTab">by module</a></li>
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
                            <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span>, <span class="ident attribute" title="Contains the name of a font-family.">fontfam</span>, <span class="ident attribute" title="Holds the name of a font.">fontname</span>, <span class="ident attribute" title="i.e. e.g. small larger etc. normal e.g. 125% Indicates the size of a font expressed in printers' points, , 1/72nd of an inch, relative terms, , , , , or percentage values relative to size, , .">fontsize</span>, <span class="ident attribute" title="i.e. italic oblique normal Records the style of a font, , , , or .">fontstyle</span>, <span class="ident attribute" title="Used to indicate bold type.">fontweight</span>, <span class="ident attribute" title="Indicates letter spacing (aka tracking) in analogy to the CSS letter-spacing property.">letterspacing</span>, <span class="ident attribute" title="Indicates line height in analogy to the CSS line-height property.">lineheight</span>, <span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature’s programmatically-determined location in terms of musical time; that is, beats.">to</span>, <span class="ident attribute" title="Records the vertical adjustment of a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span>, <span class="ident attribute" title="Specifies the symbol used to group lyrics.">voltasym</span>, <span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span>, <span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
@@ -317,9 +317,9 @@
                         <div class="label">Available at</div>
                         <div class="statement classes">
                            <ul class="tab">
-                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact" class="displayTab active">compact</a></li>
-                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class" class="displayTab">by class</a></li>
-                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module" class="displayTab">by module</a></li>
+                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module_tab" class="displayTab">by module</a></li>
                            </ul>
                            <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/refrain.html" title="Recurring lyrics, especially at the end of each verse or stanza of a poem or song lyrics; a chorus.">refrain</a></div>
                            <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
@@ -375,7 +375,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e711c399ec010cdca006d59fc721b6543cc3a576" target="_blank" rel="noopener noreferrer">#e711c39</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b996ff7b9fb7d08890c0f0ce7feacf5d2d0a573e" target="_blank" rel="noopener noreferrer">#b996ff7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -457,24 +457,24 @@
                             const tabbedFacets = document.querySelectorAll('.facet ul.tab');
                             
                             const tabClick = function(e) {
-                                const style = e.target.getAttribute('data-display');
+                                const targetDataDisplay = e.target.getAttribute('data-display');
                                 const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
-                                //console.log('clicked at ' + facetId + ' with style ' + style)
-                                setTabs(facetId,style)
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
                             }
                             
                             console.log('[INFO] Javascript initialized')
                             
                             for(let facetUl of tabbedFacets) {
-                                const facetElem = facetUl.parentNode.parentNode;
+                                const facetElem = facetUl.parentNode?.parentNode;
                                 const facetId = facetElem.id;
-                                const storageName = 'meiSpecs_' + facetId + '_display';
-                                const defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
                                 
                                 if(localStorage.getItem(storageName) === null) {
-                                    setTabs(facetElem.id,defaultValue);
+                                    setTabs(facetId,defaultDataDisplay?.trim());
                                 } else {
-                                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                                    setTabs(facetId,localStorage.getItem(storageName)?.trim());
                                 }
                                 
                                 const tabs = facetUl.querySelectorAll('.tab-item a');
@@ -483,26 +483,45 @@
                                     tab.addEventListener('click',tabClick);
                                 }
                             }
-                            
+
+                            function getDisplayStyle(dataDisplay) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full']
+                                const [, displayStyle = ''] = dataDisplay.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
                             function setTabs(facetId, style) {
-                                const storageName = 'meiSpecs_' + facetId + '_display';
-                                localStorage.setItem(storageName,style);
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
                                 
                                 const facetElem = document.getElementById(facetId);
                                 
                                 const oldTab = facetElem.querySelector('.displayTab.active');
-                                oldTab.classList.remove('active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
                                 
                                 const newTab = document.getElementById(style + '_tab');
-                                newTab.classList.add('active');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
                                 
                                 const oldBox = facetElem.querySelector('.active.facetTabbedContent');
-                                oldBox.classList.remove('active');
-                                oldBox.style.display = 'none';
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
                                 
                                 const newBox = document.getElementById(style);
-                                newBox.classList.add('active');
-                                newBox.style.display = 'block';
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
                             }
                             
                             const reducedLevels = false;
