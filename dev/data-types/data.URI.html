@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-07-07">
+      <meta name="date" content="2023-07-10">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -55,18 +55,6 @@
                                           children
                                           belong.</span></span><div class="attributeRef"><span class="ident attribute">name</span><span class="desc"><span class="desc">Formal namespace identifier; that is, a uniform resource identifier (URI).</span></span></div>
                                  </div>
-                                 <div class="def"><span class="ident" title="Defines a location within a manuscript or manuscript component, usually as a (possibly discontinuous) sequence of folio references."><a class="link_odd link_odd_elementSpec" href="../elements/locus.html">locus</a></span><span class="desc"><span class="desc">Defines a location within a manuscript or manuscript component, usually as a (possibly
-                                          discontinuous) sequence of folio references.</span></span><div class="attributeRef"><span class="ident attribute">scheme</span><span class="desc"><span class="desc">Identifies the foliation scheme in terms of which the location is being specified
-                                             by
-                                             pointing to some foliation element defining it, or to some other equivalent
-                                             resource.</span></span></div>
-                                 </div>
-                                 <div class="def"><span class="ident" title="Groups locations which together form a distinct but discontinuous item within a manuscript or manuscript part, according to a specific foliation."><a class="link_odd link_odd_elementSpec" href="../elements/locusGrp.html">locusGrp</a></span><span class="desc"><span class="desc">Groups locations which together form a distinct but discontinuous item
-                                          within a manuscript or manuscript part, according to a specific foliation.</span></span><div class="attributeRef"><span class="ident attribute">scheme</span><span class="desc"><span class="desc">Identifies the foliation scheme in terms of which the location is being specified
-                                             by
-                                             pointing to some foliation element defining it, or to some other equivalent
-                                             resource.</span></span></div>
-                                 </div>
                                  <div class="def"><span class="ident" title="Indicates a point in time either absolutely (using the absolute attribute), or relative to another when element (using the since, interval and inttype attributes)."><a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a></span><span class="desc"><span class="desc">Indicates a point in time either absolutely (using the absolute attribute), or relative
                                           to
                                           another when element (using the since, interval and inttype attributes).</span></span><div class="attributeRef"><span class="ident attribute">since</span><span class="desc"><span class="desc">Identifies the reference point for determining the time of the current when element,
@@ -103,6 +91,10 @@
                                  <div class="def"><span class="ident" title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an instrDef element elsewhere in the document."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.instrumentIdent.html">att.instrumentIdent</a>/<span title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an instrDef element elsewhere in the document.">@instr</span></span><span class="desc"><span class="desc">Provides a way of pointing to a MIDI instrument definition. It must contain the ID
                                           of
                                           an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">instrDef</a> element elsewhere in the document.</span></span></div>
+                                 <div class="def"><span class="ident" title="Identifies the foliation scheme in terms of which the location is being specified by pointing to some foliation element defining it, or to some other equivalent resource."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.foliation.scheme.html">att.foliation.scheme</a>/<span title="Identifies the foliation scheme in terms of which the location is being specified by pointing to some foliation element defining it, or to some other equivalent resource.">@scheme</span></span><span class="desc"><span class="desc">Identifies the foliation scheme in terms of which the location is being specified
+                                          by
+                                          pointing to some foliation element defining it, or to some other equivalent
+                                          resource.</span></span></div>
                                  <div class="def"><span class="ident" title="Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a when element elsewhere in the document."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.alignment.html">att.alignment</a>/<span title="Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a when element elsewhere in the document.">@when</span></span><span class="desc"><span class="desc">Indicates the point of occurrence of this feature along a time line. Its value must
                                           be
                                           the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a> element elsewhere in the document.</span></span></div>
@@ -200,7 +192,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/784d34fa6317992b5e5a63032a3bd9c322df329a" target="_blank" rel="noopener noreferrer">#784d34f</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7ce8ecd8323033400bca92e0ed853778c7a2df0e" target="_blank" rel="noopener noreferrer">#7ce8ecd</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-07-07">
+      <meta name="date" content="2023-07-10">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -140,7 +140,7 @@
                                  <div class="desc"><span class="ident attribute" title="Determines whether to display guitar chord grids.">grid.show</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether to display guitar chord grids.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
                                        </span></div>
-                                 <div class="breadcrumb"><span class="step start">&lt;att.staffDef.vis&gt;</span><span class="step">direct children</span><span class="step end">@grid.show</span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.staffDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.guitarGrid.vis.html">att.guitarGrid.vis</a></span><span class="step end">@grid.show</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records the default distance from the staff of harmonic indications, such as guitar chord grids or functional labels.">harm.dist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the default distance from the staff of harmonic indications, such as guitar
@@ -420,9 +420,6 @@
                               <div class="classBox" title="direct children">
                                  <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Determines whether to display guitar chord grids.">grid.show</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether to display guitar chord grids.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
-                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of layers and their stem directions.">layerscheme</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of layers and their stem directions.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LAYERSCHEME.html">data.LAYERSCHEME</a>.
                                              </span></span></div>
@@ -487,6 +484,14 @@
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the default distance from the staff for tempo marks.">tempo.dist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the default distance from the staff for tempo marks.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.guitarGrid.vis">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.guitarGrid.vis.html">att.guitarGrid.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Determines whether to display guitar chord grids.">grid.show</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether to display guitar chord grids.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -986,6 +991,8 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.distances.html">att.distances</a>"</span>/&gt;</span></div>
                                        
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.guitarGrid.vis.html">att.guitarGrid.vis</a>"</span>/&gt;</span></div>
+                                       
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySigDefault.vis.html">att.keySigDefault.vis</a>"</span>/&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.lyricStyle.html">att.lyricStyle</a>"</span>/&gt;</span></div>
@@ -1012,16 +1019,6 @@
                                        <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"grid.show"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Determines whether to display guitar chord grids.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>"</span>/&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
-                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"layerscheme"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
@@ -1082,7 +1079,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/784d34fa6317992b5e5a63032a3bd9c322df329a" target="_blank" rel="noopener noreferrer">#784d34f</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7ce8ecd8323033400bca92e0ed853778c7a2df0e" target="_blank" rel="noopener noreferrer">#7ce8ecd</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
