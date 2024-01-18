@@ -54,6 +54,758 @@
                         in the same document is said to be an ‘internal’ link, while an association that involves
                         an entity outside the current document is called an ‘external’ link. However, either
                         of the elements discussed in the following section can be used for either purpose.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="linkingDescribingRelationships"><span class="headingNumber">13.1.1</span><span class="head">General Relationships Between Elements</span></h3>
+                        
+                        <p>MEI offers several attributes in the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a> class for the description of basic relationships:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">copyof</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to an element of which the current element is a copy.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">sameas</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to an element that is the same as the current element but is not a literal
+                                    copy
+                                    of the current element.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">corresp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Used to point to other elements that correspond to this one in a generic
+                                    fashion.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">next</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Used to point to the next event(s) in a user-defined collection.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">prev</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to the previous event(s) in a user-defined collection.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">precedes</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to one or more events in a user-defined collection that are known to be
+                                    successors of the current element.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">follows</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">points to one or more events in a user-defined collection that are known to be
+                                    predecessors of the current element.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">synch</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to elements that are synchronous with the current element.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>The <a class="link_odd link_odd_attClass" href="../attribute-classes/att.alignment.html">att.alignment</a> class contains an attribute for describing temporal relationships:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">when</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.alignment.html">att.alignment</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Indicates the point of occurrence of this feature along a time line. Its value must
+                                    be
+                                    the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a> element elsewhere in the document.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>The <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dataPointing.html">att.dataPointing</a> class provides an attribute for pointing from the header into the music content:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">data</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.dataPointing.html">att.dataPointing</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Used to link metadata elements to one or more data-containing elements.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>To reference images, the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a> class provides an attribute for pointing to <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a> and <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a> elements:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">facs</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Points to one or more images, portions of an image, or surfaces which correspond to
+                                    the current element.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        
+                        <p>These attributes accommodate the encoding of linkages between the element carrying
+                           the attribute and one or more other elements. All of them use URIs to establish the
+                           connection. While the examples below illustrate relationships between musical events,
+                           the use of the aforementioned attributes is not restricted to musical events. On the
+                           contrary, these attributes can be used to capture information about relations between
+                           any elements.</p>
+                        
+                        <p>Using the attributes above makes it possible to create relationships between events,
+                           which are often widely-spaced in both encoded order and time. The attributes allow
+                           a large number of connections, enhancing the informational content, and therefore
+                           the potential usefulness, of the encoding.</p>
+                        
+                        <p>The <span class="att">copyof</span> attribute points to an element of which the current element is a copy. It can be
+                           used to repeat a note, for example, without encoding the whole <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element again. The copy is a ‘deep’ one; that is, the <span class="att">copyof</span> attribute copies all attributes and child elements which belong to the copied element,
+                           such as the <span class="att">dur</span> and <span class="att">oct</span> attributes of a copied <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>. The value of the <span class="att">copyof</span> attribute must be a URI, which usually refers to an element in the current document.
+                           The following example demonstrates use of the <span class="att">copyof</span> attribute:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d19e22550" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;section&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.note1_1"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/measure&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.note1_1"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/measure&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/section&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 420. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>In this example, the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> in the second measure has exactly the same characteristics as the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> in the first <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>.</p>
+                        
+                        <p>Using <span class="att">copyof</span> is not limited to copying events. The <span class="att">copyof</span> attribute can also be used to copy an entire <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> or <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a>. When there are many repeated features, the use of the <span class="att">copyof</span> greatly reduces encoding effort. The image and the following encoding of the beginning
+                           of Schubert’s <em>Erlkönig</em> illustrates the benefit of using the <span class="att">copyof</span> attribute.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/analysis/schubert_erlkonig_op1_m1.png"><figcaption class="figure-caption">Figure 128. First measure of Schubert’s Erlkönig</figcaption>
+                           </figure>
+                           
+                           <figure class="figure specPage">
+                              <div id="d19e22601" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">num=</span><span class="attributevalue">"3"</span> <span class="attribute">num.visible=</span><span class="attributevalue">"true"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/chord&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/chord&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/chord&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tuplet&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.tup1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.tup1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup3"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.tup1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup4"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 421. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>This example can be reduced further by using <span class="att">copyof</span> inside the initial tuplet to represent the repeated chords:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d19e22618" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;mRest/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">num=</span><span class="attributevalue">"3"</span> <span class="attribute">num.visible=</span><span class="attributevalue">"true"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup5"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.t1c1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/chord&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.t1c1"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.t1c1"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tuplet&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.tup5"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup6"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.tup5"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup7"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">copyof=</span><span class="attributevalue">"#analysis.tup5"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.tup8"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;mRest/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 422. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>While <span class="att">copyof</span> signifies a duplicate copy of an element, the <span class="att">sameas</span> indicates that the current element represents exactly the same entity as the one
+                           referenced in <span class="att">sameas</span>. Use of <span class="att">sameas</span> is used for describing the same entity from multiple perspectives, <abbr>e.g.</abbr>, the same event in two layers.</p>
+                        
+                        <p>While <span class="att">copyof</span> and <span class="att">sameas</span> have defined semantics, the <span class="att">corresp</span> may be used to create user-defined relationships between elements. The example below
+                           demonstrates the encoding of a relationship between the third note and the fermata,
+                           even though the fermata is not placed directly above the note.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d19e22651" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">right=</span><span class="attributevalue">"end"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.note1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.note2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.note3"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;fermata <span class="attribute">corresp=</span><span class="attributevalue">"#analysis.note3"</span> <span class="attribute">place=</span><span class="attributevalue">"above"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"4.75"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 423. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The <span class="att">corresp</span> attribute only marks the correspondence between the current element and one or more
+                           other entities. To describe the nature of the correspondence, one must use <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">annot</a>.</p>
+                        
+                        <p>One possible usage of <span class="att">corresp</span> is to link related editorial markup. Because of the hierarchical nature of XML it
+                           may be necessary to split related editorial markup into multiple elements. In the
+                           following example, <span class="att">corresp</span> is used to encode the relationship between those elements.</p>
+                        
+                        <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d19e22676.mei.svg"><div id="d19e22676" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <code>
+                                 
+                                 
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;mei <span class="attribute">meiversion=</span><span class="attributevalue">"5.1-dev"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;meiHead&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;fileDesc&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;titleStmt&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;title&gt;</span>Example of attribute corresp<span data-indentation="5" class="element">&lt;/title&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/titleStmt&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;pubStmt&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;date <span class="attribute">isodate=</span><span class="attributevalue">"2024"</span>&gt;</span>2024<span data-indentation="5" class="element">&lt;/date&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;respStmt&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;corpName&gt;</span>Music Encoding Initiative (MEI)<span data-indentation="6" class="element">&lt;/corpName&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/respStmt&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;availability&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;useRestrict <span class="attribute">label=</span><span class="attributevalue">"license"</span> <span class="attribute">auth=</span><span class="attributevalue">"https://spdx.org/licenses/"</span> <span class="attribute">codedval=</span><span class="attributevalue">"ECL-2.0"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;p&gt;</span>Educational Community License v2.0<span data-indentation="7" class="element">&lt;/p&gt;</span></div>
+                                                   <span data-indentation="6" class="element">&lt;/useRestrict&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/availability&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/pubStmt&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;seriesStmt&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;title&gt;</span>MEI guidelines examples<span data-indentation="5" class="element">&lt;/title&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/seriesStmt&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;notesStmt&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;annot&gt;</span>Usage of attribute corresp with editorial markup.<span data-indentation="5" class="element">&lt;/annot&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/notesStmt&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/fileDesc&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/meiHead&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;music&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;body&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;mdiv&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;score <span class="attribute">xml:id=</span><span class="attributevalue">"score-1286820719"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;scoreDef <span class="attribute">xml:id=</span><span class="attributevalue">"scoredef-1058976644"</span> <span class="attribute">key.mode=</span><span class="attributevalue">"major"</span> <span class="attribute">keysig=</span><span class="attributevalue">"1s"</span> <span class="attribute">meter.count=</span><span class="attributevalue">"6"</span> <span class="attribute">meter.unit=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;staffGrp <span class="attribute">xml:id=</span><span class="attributevalue">"staffgrp-0664100862"</span> <span class="attribute">bar.thru=</span><span class="attributevalue">"true"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent8"><span data-indentation="8" class="element">&lt;staffDef <span class="attribute">xml:id=</span><span class="attributevalue">"staffdef-1106436456"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">clef.shape=</span><span class="attributevalue">"F"</span> <span class="attribute">clef.line=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent9"><span data-indentation="9" class="element">&lt;instrDef <span class="attribute">xml:id=</span><span class="attributevalue">"instrdef-0137914882"</span> <span class="attribute">midi.channel=</span><span class="attributevalue">"0"</span> <span class="attribute">midi.instrnum=</span><span class="attributevalue">"0"</span> <span class="attribute">midi.volume=</span><span class="attributevalue">"68.00%"</span>/&gt;</span></div>
+                                                         <span data-indentation="8" class="element">&lt;/staffDef&gt;</span></div>
+                                                      <span data-indentation="7" class="element">&lt;/staffGrp&gt;</span></div>
+                                                   <span data-indentation="6" class="element">&lt;/scoreDef&gt;</span></div>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;section <span class="attribute">xml:id=</span><span class="attributevalue">"Tema"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;measure <span class="attribute">xml:id=</span><span class="attributevalue">"measure-2058315290"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent8"><span data-indentation="8" class="element">&lt;staff <span class="attribute">xml:id=</span><span class="attributevalue">"staff-0363750297"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent9"><span data-indentation="9" class="element">&lt;layer <span class="attribute">xml:id=</span><span class="attributevalue">"layer-1609584463"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                            
+                                                            <div class="indent indent10"><span data-indentation="10" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-0434568382"</span> <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                                            
+                                                            <div class="indent indent10"><span data-indentation="10" class="element">&lt;unclear <span class="attribute">xml:id=</span><span class="attributevalue">"uu01ius1"</span> <span class="attribute">corresp=</span><span class="attributevalue">"#uvvet6x2"</span>&gt;</span>
+                                                               
+                                                               <div class="indent indent11"><span data-indentation="11" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-1576381641"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                                               <span data-indentation="10" class="element">&lt;/unclear&gt;</span></div>
+                                                            
+                                                            <div class="indent indent10"><span data-indentation="10" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-0740487248"</span> <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                                            
+                                                            <div class="indent indent10"><span data-indentation="10" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-2110615453"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                                            <span data-indentation="9" class="element">&lt;/layer&gt;</span></div>
+                                                         <span data-indentation="8" class="element">&lt;/staff&gt;</span></div>
+                                                      
+                                                      <div class="indent indent8"><span data-indentation="8" class="element">&lt;slur <span class="attribute">xml:id=</span><span class="attributevalue">"slur-0198912827"</span> <span class="attribute">startid=</span><span class="attributevalue">"#note-0434568382"</span> <span class="attribute">endid=</span><span class="attributevalue">"#note-1576381641"</span> <span class="attribute">curvedir=</span><span class="attributevalue">"above"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent8"><span data-indentation="8" class="element">&lt;unclear <span class="attribute">xml:id=</span><span class="attributevalue">"uvvet6x2"</span> <span class="attribute">corresp=</span><span class="attributevalue">"#uu01ius1"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent9"><span data-indentation="9" class="element">&lt;dynam <span class="attribute">xml:id=</span><span class="attributevalue">"dynam-1643328657"</span> <span class="attribute">place=</span><span class="attributevalue">"below"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"2.000000"</span> <span class="attribute">vgrp=</span><span class="attributevalue">"40"</span>&gt;</span>sf<span data-indentation="9" class="element">&lt;/dynam&gt;</span></div>
+                                                         <span data-indentation="8" class="element">&lt;/unclear&gt;</span></div>
+                                                      
+                                                      <div class="indent indent8"><span data-indentation="8" class="element">&lt;slur <span class="attribute">xml:id=</span><span class="attributevalue">"slur-0701442771"</span> <span class="attribute">startid=</span><span class="attributevalue">"#note-0740487248"</span> <span class="attribute">endid=</span><span class="attributevalue">"#note-2110615453"</span> <span class="attribute">curvedir=</span><span class="attributevalue">"above"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent8"><span data-indentation="8" class="element">&lt;dynam <span class="attribute">xml:id=</span><span class="attributevalue">"dynam-1610913814"</span> <span class="attribute">place=</span><span class="attributevalue">"below"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"5.000000"</span> <span class="attribute">vgrp=</span><span class="attributevalue">"40"</span>&gt;</span>sf<span data-indentation="8" class="element">&lt;/dynam&gt;</span></div>
+                                                      <span data-indentation="7" class="element">&lt;/measure&gt;</span></div>
+                                                   <span data-indentation="6" class="element">&lt;/section&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/score&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/mdiv&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/body&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/music&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/mei&gt;</span></div>
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="figure-caption">Listing 424. </figcaption>
+                        </figure>
+                        
+                        <figure class="figure specPage">
+                           <div id="d19e22684" xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-0000000434568382"</span> <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;unclear <span class="attribute">xml:id=</span><span class="attributevalue">"uu01ius1"</span> <span class="attribute">corresp=</span><span class="attributevalue">"#uvvet6x2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-0000001576381641"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/unclear&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-0000000740487248"</span> <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"note-0000002110615453"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;slur <span class="attribute">startid=</span><span class="attributevalue">"#note-0000000434568382"</span> <span class="attribute">endid=</span><span class="attributevalue">"#note-0000001576381641"</span> <span class="attribute">curvedir=</span><span class="attributevalue">"above"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;unclear <span class="attribute">xml:id=</span><span class="attributevalue">"uvvet6x2"</span> <span class="attribute">corresp=</span><span class="attributevalue">"#uu01ius1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;dynam <span class="attribute">place=</span><span class="attributevalue">"below"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span>&gt;</span>sf<span data-indentation="3" class="element">&lt;/dynam&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/unclear&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;slur <span class="attribute">startid=</span><span class="attributevalue">"#note-0000000740487248"</span> <span class="attribute">endid=</span><span class="attributevalue">"#note-0000002110615453"</span> <span class="attribute">curvedir=</span><span class="attributevalue">"above"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;dynam <span class="attribute">place=</span><span class="attributevalue">"below"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span>&gt;</span>sf<span data-indentation="2" class="element">&lt;/dynam&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                 
+                                 </code>
+                              </div>
+                           <figcaption class="figure-caption">Listing 425. </figcaption>
+                        </figure>
+                        
+                        <p>The <span class="att">next</span> and <span class="att">prev</span> attributes point to elements which follow or precede the current element in some
+                           fashion other than that indicated by encoding order. The use of these attributes helps
+                           to avoid confusion in the sequence of events, for example, in voice leading across
+                           layers or staves, when the encoding reflects the physical arrangement of voices. In
+                           the second measure of the following example, the target of the next attribute occurs
+                           after the pointing element in time, but before it in encoding order:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/analysis/chor003_m6-7.png"><figcaption class="figure-caption">Figure 129. Bach Chorale, Ach Gott, vom Himmel sieh' darein, m. 6-7</figcaption>
+                           </figure>
+                           
+                           <figure class="figure specPage">
+                              <div id="d19e22708" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"6"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m_sc_62"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_63_3"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_65_3"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">fermata=</span><span class="attributevalue">"above"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_67_3"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_68_3"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_63_2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_64_2"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_65_2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_66_2"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">accid=</span><span class="attributevalue">"s"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">next=</span><span class="attributevalue">"#analysis.n_sc_68_2"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_67_2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_68_1"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">accid=</span><span class="attributevalue">"n"</span> <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_69_1"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_63_1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_65_1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_67_1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_68_2"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_63_0"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_64_0"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_65_0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">fermata=</span><span class="attributevalue">"below"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_67_0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_68_0"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"7"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"m_sc_70"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_71_3"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_72_3"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_73_3"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_75_3"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_76_3"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_77_3"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;space <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_73_2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">accid=</span><span class="attributevalue">"s"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_75_2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_76_2"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_71_1"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_72_1"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_73_1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_75_1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_76_1"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_77_1"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">next=</span><span class="attributevalue">"#analysis.n_sc_73_2"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.n_sc_71_2"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">accid=</span><span class="attributevalue">"n"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_71_0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_73_0"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_74_0"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_75_0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_76_0"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n_sc_77_0"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 426. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>This attribute may also be useful to clarify a sequence of entities which occurs across
+                           some form of interruption, in this case, notes before and after a system or page break
+                           where there is no custos or direct in the source:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d19e22721" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">next=</span><span class="attributevalue">"#analysis.m1s1e2"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"up"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m1s1e1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;pb/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">next=</span><span class="attributevalue">"#analysis.m1s1e3"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">prev=</span><span class="attributevalue">"#analysis.m1s1e1"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"up"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m1s1e2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">prev=</span><span class="attributevalue">"#analysis.m1s1e2"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"up"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m1s1e3"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 427. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>A one-to-many relationship between the current element and the entities being referred
+                           to can be expressed by using a list of space-separated URIs in <span class="att">corresp</span>.</p>
+                        
+                        <p>The <span class="att">synch</span> attribute points to an element that is synchronous with; that is, begins at the same
+                           moment in time, as the current element. It is useful when the encoding order differs
+                           from the order in which entities occur in time.</p>
+                        
+                        <p>The <span class="att">when</span> attribute may be used to indicate the point of occurrence of the feature bearing
+                           this attribute along a time line. Its value must be the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a> element. For more detailed information regarding the use of <span class="att">when</span>, please see <a class="link_ptr chapterLink" title="Performances" href="../content/facsimilesrecordings.html#performances">12.2 Performances</a>.</p>
+                        </div>
                      </div>
                   
                   <div class="div2">
@@ -104,7 +856,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d19e22744" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d19e22803" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -128,7 +880,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="figure-caption">Listing 426. </figcaption>
+                              <figcaption class="figure-caption">Listing 428. </figcaption>
                            </figure>
                            </p>
                         
@@ -139,7 +891,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d19e22768" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d19e22827" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -161,7 +913,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="figure-caption">Listing 427. </figcaption>
+                              <figcaption class="figure-caption">Listing 429. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -254,97 +1006,7 @@
                            </p>
                         
                         <p>
-                           The <a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a> class provides another set of common attributes (a more detailed explanation is provided
-                           in <a class="link_ptr chapterLink" title="Analysis Markup and Harmonies" href="../content/analysisharm.html">10 Analysis Markup and Harmonies</a>: <a class="link_ptr chapterLink" title="General Relationships Between Elements" href="../content/analysisharm.html#analysisDescribingRelationships">10.1.1 General Relationships Between Elements</a>):
-                           </p>
-                        
-                        <p>
-                           
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">copyof</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">Points to an element of which the current element is a copy.</div>
-                              </div>
-                           </div>
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">corresp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">Used to point to other elements that correspond to this one in a generic
-                                    fashion.</div>
-                              </div>
-                           </div>
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">follows</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">points to one or more events in a user-defined collection that are known to be
-                                    predecessors of the current element.</div>
-                              </div>
-                           </div>
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">next</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">Used to point to the next event(s) in a user-defined collection.</div>
-                              </div>
-                           </div>
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">precedes</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">Points to one or more events in a user-defined collection that are known to be
-                                    successors of the current element.</div>
-                              </div>
-                           </div>
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">prev</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">Points to the previous event(s) in a user-defined collection.</div>
-                              </div>
-                           </div>
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">sameas</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">Points to an element that is the same as the current element but is not a literal
-                                    copy
-                                    of the current element.</div>
-                              </div>
-                           </div>
-                           <div class="tile tile-centered">
-                              <div class="tile-icon">
-                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
-                              </div>
-                              <div class="tile-content">
-                                 <div class="tile-title"><span class="att">synch</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>)
-                                    </div>
-                                 <div class="tile-subtitle text-gray">Points to elements that are synchronous with the current element.</div>
-                              </div>
-                           </div>
+                           The <a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a> class provides another set of common attributes for linking (see <a class="link_ptr chapterLink" title="General Relationships Between Elements" href="../content/linkingdata.html#linkingDescribingRelationships">13.1.1 General Relationships Between Elements</a>):
                            </p>
                         
                         <p>
@@ -426,49 +1088,13 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e22914" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e22963" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
                                        <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- element ID --&gt;</span></div>
                                        
                                        <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"#SA"</span>/&gt;</span></div>
-                                       
-                                       
-                                       </code>
-                                    </div>
-                                 <figcaption class="figure-caption">Listing 428. </figcaption>
-                              </figure>
-                              </p>
-                           
-                           <p>
-                              
-                              <figure class="figure specPage">
-                                 <div id="d19e22925" xml:space="preserve" class="pre code egXML_feasible">
-                                    <code>
-                                       
-                                       
-                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- relative URL --&gt;</span></div>
-                                       
-                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"myFile.xml"</span>/&gt;</span></div>
-                                       
-                                       
-                                       </code>
-                                    </div>
-                                 <figcaption class="figure-caption">Listing 429. </figcaption>
-                              </figure>
-                              </p>
-                           
-                           <p>
-                              
-                              <figure class="figure specPage">
-                                 <div id="d19e22936" xml:space="preserve" class="pre code egXML_feasible">
-                                    <code>
-                                       
-                                       
-                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- absolute URL --&gt;</span></div>
-                                       
-                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"http://www.w3.org/TR/xptr-framework/"</span>/&gt;</span></div>
                                        
                                        
                                        </code>
@@ -480,13 +1106,13 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e22948" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e22974" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
-                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- URL with fragment identifier --&gt;</span></div>
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- relative URL --&gt;</span></div>
                                        
-                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"http://www.w3.org/TR/xptr-xpointer/#xpointer(id('chum')/quote)"</span>/&gt;</span></div>
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"myFile.xml"</span>/&gt;</span></div>
                                        
                                        
                                        </code>
@@ -498,7 +1124,43 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e22959" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e22985" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- absolute URL --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"http://www.w3.org/TR/xptr-framework/"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 432. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d19e22997" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- URL with fragment identifier --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;ptr <span class="attribute">target=</span><span class="attributevalue">"http://www.w3.org/TR/xptr-xpointer/#xpointer(id('chum')/quote)"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 433. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d19e23008" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -509,7 +1171,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 432. </figcaption>
+                                 <figcaption class="figure-caption">Listing 434. </figcaption>
                               </figure>
                               </p>
                            
@@ -522,7 +1184,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e22975" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23024" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -532,7 +1194,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 433. </figcaption>
+                                 <figcaption class="figure-caption">Listing 435. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -552,7 +1214,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23000" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23049" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -561,14 +1223,14 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 434. </figcaption>
+                                 <figcaption class="figure-caption">Listing 436. </figcaption>
                               </figure>
                               </p>
                            
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23011" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23060" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -577,7 +1239,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 435. </figcaption>
+                                 <figcaption class="figure-caption">Listing 437. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -595,7 +1257,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23041" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23090" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -608,7 +1270,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 436. </figcaption>
+                                 <figcaption class="figure-caption">Listing 438. </figcaption>
                               </figure>
                               </p>
                            
@@ -619,7 +1281,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23066" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23115" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -628,7 +1290,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 437. </figcaption>
+                                 <figcaption class="figure-caption">Listing 439. </figcaption>
                               </figure>
                               </p>
                            
@@ -641,7 +1303,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23085" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23134" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -652,7 +1314,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 438. </figcaption>
+                                 <figcaption class="figure-caption">Listing 440. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -730,7 +1392,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23202" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23250" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -739,7 +1401,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 439. </figcaption>
+                                 <figcaption class="figure-caption">Listing 441. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -759,7 +1421,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23228" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23277" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -768,14 +1430,14 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 440. </figcaption>
+                                 <figcaption class="figure-caption">Listing 442. </figcaption>
                               </figure>
                               </p>
                            
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d19e23239" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d19e23288" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -784,7 +1446,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="figure-caption">Listing 441. </figcaption>
+                                 <figcaption class="figure-caption">Listing 443. </figcaption>
                               </figure>
                               </p>
                            
@@ -804,7 +1466,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/291ed0bdfd17f1b82eec4adad002c76de186853a" target="_blank" rel="noopener noreferrer">#291ed0b</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1c6205d13892bbfa9d51e2c212377fdd85e0d606" target="_blank" rel="noopener noreferrer">#1c6205d</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -818,7 +1480,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-3" href="#ptrRef">13.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">13.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-3" href="#linkingDescribingRelationships">13.1.1 General Relationships Between Elements</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-3" href="#ptrRef">13.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">13.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -836,7 +1498,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-3" href="#ptrRef">13.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">13.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#links">13.1 Links</a><a class="level-3" href="#linkingDescribingRelationships">13.1.1 General Relationships Between Elements</a><a class="level-2" href="#linkFromMei">13.2 Linking from MEI</a><a class="level-3" href="#ptrRef">13.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">13.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">13.3 Linking and Alignment</a></p>
                   </div>
                </div>
             </div>
