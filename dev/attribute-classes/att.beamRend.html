@@ -168,7 +168,7 @@
                         <div class="statement constraints">
                            <p>
                               <div class="constraint">
-                                 <div class="schematronText">Stem direction must be specified for all notes and chords under the beam.</div>
+                                 <div class="schematronText">Stem directions should be specified for all notes and chords under the beam.</div>
                                  <div class="schematronText">Opposing stem directions are required for a beam with @place="mixed".</div>
                                  <div class="schematronText">Opposing stem directions are required for a beam with @place="mixed".</div>
                               </div>
@@ -242,21 +242,21 @@
                                                          eq 'chord'][@staff != ancestor::mei:staff/@n])]"</span>&gt;</span>
                                                    
                                                    <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(descendant::mei:*[local-name() eq 'note' or local-name() eq 'chord'][@stem.dir])
-                                                            = count(descendant::mei:*[local-name() eq 'note' or local-name() eq 'chord'])"</span>&gt;</span>Stem direction must be specified for all notes and chords under the
+                                                            = count(descendant::mei:*[local-name() eq 'note' or local-name() eq 'chord'])"</span> <span class="attribute">role=</span><span class="attributevalue">"warning"</span>&gt;</span>Stem directions should be specified for all notes and chords under the
                                                       beam.<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
                                                    
                                                    <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(distinct-values(descendant::mei:*[local-name() eq 'note' or local-name() eq
-                                                            'chord']/@stem.dir)) &gt; 1"</span>&gt;</span>Opposing stem directions are required for a beam with @place="mixed".<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
+                                                            'chord']/@stem.dir)) != 1"</span>&gt;</span>Opposing stem directions are required for a beam with @place="mixed".<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
                                                    <span data-indentation="6" class="element">&lt;/sch:rule&gt;</span></div>
                                                 
                                                 <div class="indent indent6"><span data-indentation="6" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:beam[@place eq 'mixed' and (descendant::mei:*[local-name() eq 'note' or local-name()
                                                          eq 'chord'][@staff != ./@staff] or descendant::mei:*[local-name() eq 'note' or local-name()
-                                                         eq 'chord'][@staff != ancestor::mei:staff/@n])                 and count(descendant::mei:*[local-name()
-                                                         eq 'note' or local-name() eq 'chord'][@stem.dir]) = count(descendant::mei:*[local-name()
+                                                         eq 'chord'][@staff != ancestor::mei:staff/@n]) and count(descendant::mei:*[local-name()
+                                                         eq 'note' or local-name() eq 'chord']/@stem.dir) = count(descendant::mei:*[local-name()
                                                          eq 'note' or local-name() eq 'chord'])]"</span>&gt;</span>
                                                    
                                                    <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(distinct-values(descendant::mei:*[local-name() eq 'note' or local-name() eq
-                                                            'chord']/@stem.dir)) &gt; 1"</span>&gt;</span>Opposing stem directions are required for a beam with @place="mixed".<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
+                                                            'chord']/@stem.dir)) != 1"</span>&gt;</span>Opposing stem directions are required for a beam with @place="mixed".<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
                                                    <span data-indentation="6" class="element">&lt;/sch:rule&gt;</span></div>
                                                 <span data-indentation="5" class="element">&lt;/constraint&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/constraintSpec&gt;</span></div>
@@ -289,7 +289,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0e9b0a87911586f9c7ff9704e71206d24915a4e2" target="_blank" rel="noopener noreferrer">#0e9b0a8</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/90f34a5715aedc8631d4cab147ab1973fa6f0c7c" target="_blank" rel="noopener noreferrer">#90f34a5</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
