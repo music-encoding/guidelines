@@ -8,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2024-07-18">
+      <meta name="date" content="2024-07-26">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -36,137 +36,384 @@
                   
                   <h1 id="tablature"><span class="headingNumber">7</span><span class="head">Repertoire: String Tablature</span></h1>
                   
-                  <p>This chapter describes the attribute classes that are part of the MEI.tablature module.</p>
+                  <p>This chapter describes the MEI.stringtab module (which will be renamed to MEI.tablature
+                     in a future version). The MEI.stringtab module is used to record basic tablature notation.
+                     It is designed primarily for plucked-string instruments, such as guitar and lute.</p>
                   
                   <div class="div2">
                      
-                     <h2 id="tablatureOverview"><span class="headingNumber">7.1</span><span class="head">Overview of the Tablature Module</span></h2>
+                     <h2 id="tablature-staffdef"><span class="headingNumber">7.1</span><span class="head">The Staff Definition</span></h2>
                      
-                     <p>The tablature module is used to record basic tablature notation. It is designed primarily
-                        for guitar and similar plucked-string instruments.</p>
-                     
-                     <p>The <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element is used to define the number of lines, courses, or strings, present in the
-                        tablature. The <span class="att">tab.strings</span> attribute is then used to enumerate the pitches of the open strings. It is important
-                        to note that this is given using the written pitch, not the sounding pitch. For example,
-                        the Western 6-string guitar, in standard tuning, sounds an octave below written pitch.</p>
-                     
-                     <p>The <span class="att">tab.strings</span> attribute gives the string tuning, ordered from highest to lowest pitch.</p>
-                     
-                     <p>For standard guitar tuning, the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element might look like this:</p>
-                     
-                     <p>
+                     <div class="div3">
                         
-                        <figure class="figure specPage">
-                           <div id="d18e16981" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.strings=</span><span class="attributevalue">"e5 b4 g4 d4 a3 e3"</span>/&gt;</span></div>
-                                 
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 283. </figcaption>
-                        </figure>
-                        </p>
-                     
-                     <p>Chromatic alteration of the open string’s pitch may be indicated with the '-' or 'f'
-                        (flat), or the '#' or 's' (sharp). Multiple sharps and flats are not permitted.</p>
-                     
-                     <p>A guitar in E-flat tuning might look like this:</p>
-                     
-                     <p>
+                        <h3 id="tablature-def"><span class="headingNumber">7.1.1</span><span class="head">Defining the Notation</span></h3>
                         
-                        <figure class="figure specPage">
-                           <div id="d18e16996" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.strings=</span><span class="attributevalue">"ef5 bf4 gf4 df4 af3 ef3"</span>/&gt;</span></div>
-                                 
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 284. </figcaption>
-                        </figure>
-                        </p>
-                     
-                     <p>Some instruments, like the 12-string guitar, have the four lowest strings tuned an
-                        octave above but are still written on a 6-line tablature staff. In this case, you
-                        may enumerate the open string pitches while maintaining 6 lines.</p>
-                     
-                     <p>
+                        <p>Tablatures come in a variety of types or notations, varying according to instrument
+                           but also according to historical context. The notation used is defined on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element using the <span class="att">notationtype</span> attribute. Possible values are: <span class="val">tab.guitar</span>, <span class="val">tab.lute.italian</span>, <span class="val">tab.lute.french</span> and <span class="val">tab.lute.german</span>.</p>
                         
-                        <figure class="figure specPage">
-                           <div id="d18e17009" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.strings=</span><span class="attributevalue">"e4 e3 a4 a3 d4 d3 g5 g4 b4 b4 e5 e5"</span>/&gt;</span></div>
-                                 
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 285. </figcaption>
-                        </figure>
-                        </p>
-                     
-                     <p>The <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element is used to capture the specific events in the tablature. The <span class="att">tab.string</span> attribute is used to capture which string the note is to be played on. String order
-                        is the same as that given in the <span class="att">tab.strings</span> attribute. This attribute takes a positive integer in the range of 1-9.</p>
-                     
-                     <p>
+                        <p>The <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element is used to define the number of horizontal lines used in a staff.</p> 
                         
-                        <figure class="figure specPage">
-                           <div id="d18e17031" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tab.string=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
-                                 
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 286. </figcaption>
-                        </figure>
-                        </p>
-                     
-                     <p>In the case of fretted instruments, the fret number may be captured using the <span class="att">tab.fret</span> attribute. An open string may be indicated using the value <span class="val">0</span> (zero).</p>
-                     
-                     <p>
-                        
-                        <figure class="figure specPage">
-                           <div id="d18e17049" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;layer&gt;</span>
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e16986" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.string=</span><span class="attributevalue">"6"</span>/&gt;</span></div>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.string=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
-                                    <span data-indentation="1" class="element">&lt;/layer&gt;</span></div>
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.guitar"</span>&gt;</span>
+                                       ...
+                                       <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 283. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="tablature-tuning"><span class="headingNumber">7.1.2</span><span class="head">The Instrument Setup and Tuning</span></h3>
+                        
+                        <p>Because string tablatures specify which frets and strings to play on the instrument,
+                           rather than abstract pitches, it is necessary to know the tuning and setup of the
+                           instrument.</p>
+                        
+                        <p>Guitar-like instruments can be described in terms of the number of strings they have,
+                           but often the strings are grouped and notated as if those groups were a single string.
+                           Examples include mandolins and 12-string guitars. To make this distinction explicit,
+                           we use "string" exclusively to refer to physical strings. To refer to the notated
+                           version, which may consist of one or more physical strings, we use the historical
+                           term, "course". Thus, both a 6-string and a 12-string guitar are 6-course instruments.</p>
+                        
+                        <p>The course tuning for 6- and 12-string guitars are the same – so they can both play
+                           from the same tablatures. Our tuning specification supports indicating course tunings
+                           on their own, or string tunings as well.</p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">tuning</a> element is used inside <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> to describe the pitches of the open strings of the instrument. In the simplest cases,
+                           the tuning can be named from a standard list. For example, to specify the most common
+                           tuning of the guitar:</p> 
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17018" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.guitar"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tuning <span class="attribute">tuning.standard=</span><span class="attributevalue">"guitar.standard"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 284. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>or, for six-course lute:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17031" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.lute.french"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tuning <span class="attribute">tuning.standard=</span><span class="attributevalue">"lute.renaissance.6"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 285. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Custom tuning may be needed when no existing <span class="att">tuning.standard</span> value applies. The <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> element gives the tuning of each course. <span class="att">n</span> captures the course number (counting from the course closest to the player's feet
+                           when the instrument is played), <span class="att">pname</span> the pitch information and <span class="att">oct</span> the octave information.</p>                
+                        
+                        <p>For standard classical guitar tuning, the <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">tuning</a> element might look like this:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17062" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;tuning&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"6"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/tuning&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 286. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Chromatic alteration of the open string’s pitch may be indicated by adding the <span class="att">accid</span>. For example, a guitar in E-flat tuning might look like this:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17079" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">lines=</span><span class="attributevalue">"6"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.guitar"</span>&gt;</span>
+                                       	
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tuning&gt;</span>
+                                          		
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                          		
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                          		
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                          		
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                          		
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"5"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                          		
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"5"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                          	<span data-indentation="2" class="element">&lt;/tuning&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 287. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Where the specific instrumental setup is important, the stringing of the instrument
+                           can also be specified. The example below is a common way to string and tune a 6-course
+                           renaissance lute. The pitch on <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> indicates how the resulting note would normally be transcribed in score, and would
+                           often be derived from the lowest sounding pitch.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17096" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;tuning&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/course&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/course&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/course&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/course&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/course&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"6"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;string <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/course&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/tuning&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 288. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="tablature-basics"><span class="headingNumber">7.2</span><span class="head">Encoding Tablatures</span></h2>
+                     
+                     <p>Unlike CMN, <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements in tablature do not have an explicit pitch, but indicate playing instructions
+                        (<abbr>i.e.</abbr>, where to place fingers on the fingerboard and when to play the strings). The <span class="att">tab.course</span> attribute is used to capture which course is to be struck, and <span class="att">tab.fret</span> specifies on which fret of the fretboard the player should stop the course. A value
+                        of <span class="val">0</span> for <span class="att">tab.fret</span> refers to an unstopped, open course; a value of <span class="val">1</span> refers to the first fret; and so on. Course order is the same as that given in the
+                        <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> elements.</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div id="d18e17135" xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"6"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              
+                              </div>
+                           <figcaption class="figure-caption">Listing 289. </figcaption>
+                        </figure>
+                        </p>               
+                     
+                     <p>A set of vertically-aligned symbols is indicated by <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>, <abbr>i.e.</abbr>, a chord whose notes are played at the same time, and have the same (minimum) notated
+                        duration. The duration of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> may be indicated visually with a rhythm symbol, whose presence is encoded using the
+                        <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> element. In many cases, the rhythm sign is omitted where it would repeat the previous
+                        value. For this reason <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> is optional, and the durational value of the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is encoded as <span class="att">dur</span>.</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div id="d18e17169" xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"6"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              
+                              </div>
+                           <figcaption class="figure-caption">Listing 290. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>As with CMN, rhythm flags joined together can be indicated using <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>. Since every note in a beam group always has a rhythm sign, <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> should be used for beamed notes.</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div id="d18e17190" xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
                                  
                                  
                                  
                                  </code>
                               
                               </div>
-                           <figcaption class="figure-caption">Listing 287. </figcaption>
+                           <figcaption class="figure-caption">Listing 291. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>Tablatures usually indicate a rest by a rhythm sign that has no symbols for notes
+                        underneath. We can encode this with a <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> that is the only element of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div id="d18e17210" xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              
+                              </div>
+                           <figcaption class="figure-caption">Listing 292. </figcaption>
+                        </figure>
+                        </p>
+                     
+                     <p>In some rare cases, special rest symbols may also appear below the rhythm sign. This
+                        can be encoded by adding a <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> to the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
+                     
+                     <p>
+                        
+                        <figure class="figure specPage">
+                           <div id="d18e17230" xml:space="preserve" class="pre code egXML_feasible">
+                              <code>
+                                 
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;rest/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                 
+                                 
+                                 </code>
+                              
+                              </div>
+                           <figcaption class="figure-caption">Listing 293. </figcaption>
                         </figure>
                         </p>
                      </div>
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/6fbf81e8ec5df531ff67158d7af868b54c6fbf97" target="_blank" rel="noopener noreferrer">#6fbf81e</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/6a9b3b0df7fbd936e7ec43f8d3a4b3bae1a3bad2" target="_blank" rel="noopener noreferrer">#6a9b3b0</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -180,7 +427,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#tablatureOverview">7.1 Overview of the Tablature Module</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-basics">7.2 Encoding Tablatures</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -198,7 +445,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#tablatureOverview">7.1 Overview of the Tablature Module</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-basics">7.2 Encoding Tablatures</a></p>
                   </div>
                </div>
             </div>
