@@ -8,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2024-09-27">
+      <meta name="date" content="2024-10-18">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -88,7 +88,7 @@
                            version, which may consist of one or more physical strings, we use the historical
                            term, "course". Thus, both a 6-string and a 12-string guitar are 6-course instruments.</p>
                         
-                        <p>The course tuning for 6- and 12-string guitars are the same – so they can both play
+                        <p>The course tuning for 6- and 12-string guitars are the same — so they can both play
                            from the same tablatures. Our tuning specification supports indicating course tunings
                            on their own, or string tunings as well.</p>
                         
@@ -138,7 +138,7 @@
                            </figure>
                            </p>
                         
-                        <p>Custom tuning may be needed when no existing <span class="att">tuning.standard</span> value applies. The <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> element gives the tuning of each course. <span class="att">n</span> captures the course number (counting from the course closest to the player's feet
+                        <p>Custom tuning may be needed when no existing <span class="att">tuning.standard</span> value applies. The <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> element gives the tuning of each course. <span class="att">n</span> captures the course number (counting from the course closest to the player’s feet
                            when the instrument is played), <span class="att">pname</span> the pitch information and <span class="att">oct</span> the octave information.</p>                
                         
                         <p>For standard classical guitar tuning, the <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">tuning</a> element might look like this:</p>
@@ -196,7 +196,7 @@
                                           		
                                           <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"5"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
                                           		
-                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"5"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;course <span class="attribute">n=</span><span class="attributevalue">"6"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
                                           	<span data-indentation="2" class="element">&lt;/tuning&gt;</span></div>
                                        <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
                                     
@@ -274,146 +274,935 @@
                   
                   <div class="div2">
                      
-                     <h2 id="tablature-basics"><span class="headingNumber">7.2</span><span class="head">Encoding Tablatures</span></h2>
+                     <h2 id="tablature-encoding"><span class="headingNumber">7.2</span><span class="head">Encoding Tablatures</span></h2>
                      
-                     <p>Unlike CMN, <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements in tablature do not have an explicit pitch, but indicate playing instructions
-                        (<abbr>i.e.</abbr>, where to place fingers on the fingerboard and when to play the strings). The <span class="att">tab.course</span> attribute is used to capture which course is to be struck, and <span class="att">tab.fret</span> specifies on which fret of the fretboard the player should stop the course. A value
-                        of <span class="val">0</span> for <span class="att">tab.fret</span> refers to an unstopped, open course; a value of <span class="val">1</span> refers to the first fret; and so on. Course order is the same as that given in the
-                        <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> elements.</p>
-                     
-                     <p>
+                     <div class="div3">
                         
-                        <figure class="figure specPage">
-                           <div id="d18e17135" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"6"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 289. </figcaption>
-                        </figure>
-                        </p>               
-                     
-                     <p>A set of vertically-aligned symbols is indicated by <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>, <abbr>i.e.</abbr>, a chord whose notes are played at the same time, and have the same (minimum) notated
-                        duration. The duration of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> may be indicated visually with a rhythm symbol, whose presence is encoded using the
-                        <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> element. In many cases, the rhythm sign is omitted where it would repeat the previous
-                        value. For this reason <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> is optional, and the durational value of the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is encoded as <span class="att">dur</span>.</p>
-                     
-                     <p>
+                        <h3 id="tablature-basics"><span class="headingNumber">7.2.1</span><span class="head">Basic Structure</span></h3>
                         
-                        <figure class="figure specPage">
-                           <div id="d18e17169" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
-                                    
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
-                                    
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
-                                    
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"6"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
-                                    <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 290. </figcaption>
-                        </figure>
-                        </p>
-                     
-                     <p>As with CMN, rhythm flags joined together can be indicated using <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>. Since every note in a beam group always has a rhythm sign, <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> should be used for beamed notes.</p>
-                     
-                     <p>
+                        <p>Unlike CMN, <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements in tablature do not have an explicit pitch, but indicate playing instructions
+                           (<abbr>i.e.</abbr>, where to place fingers on the fingerboard and when to play the strings). The <span class="att">tab.course</span> attribute is used to capture which course is to be struck, and <span class="att">tab.fret</span> specifies on which fret of the fretboard the player should stop the course. A value
+                           of <span class="val">0</span> for <span class="att">tab.fret</span> refers to an unstopped, open course; a value of <span class="val">1</span> refers to the first fret; and so on. Course order is the same as that given in the
+                           <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> elements.</p>
                         
-                        <figure class="figure specPage">
-                           <div id="d18e17190" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17139" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"6"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 289. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>A set of vertically-aligned symbols is indicated by <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>, <abbr>i.e.</abbr>, a chord whose notes are played at the same time, and have the same (minimum) notated
+                           duration. The duration of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> may be indicated visually with a rhythm symbol, whose presence is encoded using the
+                           <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> element. In many cases, the rhythm sign is omitted where it would repeat the previous
+                           value. For this reason <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> is optional, and the durational value of the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is encoded as <span class="att">dur</span>.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17173" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
-                                       <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"6"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
-                                       <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
-                                    <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                    
+                                    </code>
                                  
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 291. </figcaption>
-                        </figure>
-                        </p>
-                     
-                     <p>Tablatures usually indicate a rest by a rhythm sign that has no symbols for notes
-                        underneath. We can encode this with a <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> that is the only element of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
-                     
-                     <p>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 290. </figcaption>
+                           </figure>
+                           </p>
                         
-                        <figure class="figure specPage">
-                           <div id="d18e17210" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
-                                    
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
-                                    <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
-                                 
-                                 
-                                 </code>
-                              
-                              </div>
-                           <figcaption class="figure-caption">Listing 292. </figcaption>
-                        </figure>
-                        </p>
-                     
-                     <p>In some rare cases, special rest symbols may also appear below the rhythm sign. This
-                        can be encoded by adding a <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> to the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
-                     
-                     <p>
+                        <p>As with CMN, rhythm flags joined together can be indicated using <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>. Since every note in a beam group always has a rhythm sign, <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> should be used for beamed notes.</p>
                         
-                        <figure class="figure specPage">
-                           <div id="d18e17230" xml:space="preserve" class="pre code egXML_feasible">
-                              <code>
-                                 
-                                 
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17194" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;rest/&gt;</span></div>
-                                    <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
                                  
+                                 </div>
+                              <figcaption class="figure-caption">Listing 291. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Tablatures usually indicate a rest by a rhythm sign that has no symbols for notes
+                           underneath. We can encode this with a <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> that is the only element of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17214" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                    
+                                    
+                                    </code>
                                  
-                                 </code>
+                                 </div>
+                              <figcaption class="figure-caption">Listing 292. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>In some rare cases, special rest symbols may also appear below the rhythm sign. This
+                           can be encoded by adding a <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> to the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17234" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;rest/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 293. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="tablature-vertical-org"><span class="headingNumber">7.2.2</span><span class="head">Vertical Organisation in German Lute Tablature</span></h3>
+                        
+                        <p>Unlike other types of lute tablature, German lute tablature encodes the course and
+                           the fret information simultaneously, and in that sense is different from the staff-based
+                           (<abbr>i.e.</abbr>, Italian and French) lute tablature types. Vertical positioning thus does not correspond
+                           to the course to be played, and may instead reflect aesthetic or layout conventions
+                           or, in some cases, indicate voice leading. Mechanisms for encoding vertical organisation
+                           of the tablature notes in horizontal strands (<abbr>i.e.</abbr>, ‘rows’ or ‘lines’) are thus required.</p>
+                        
+                        <ul>
+                           <li class="item">The <span class="att">tab.align</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> specifies the vertical alignment of the tablature notes. It typically takes two of
+                              the four data.VERTICALALIGNMENT values (<span class="val">top</span> and <span class="val">bottom</span>), and can be used to encode a consistent alignment of the tablature notes towards
+                              the top row or the bottom row. As with <span class="att">valign</span>, <span class="val">top</span> is the default value for <span class="att">tab.align</span>. Therefore, in practice, <span class="att">tab.align</span> is only required in the ‘bottom’ scenario.</li>
+                           <li class="item">The <span class="att">lines</span> attribute, also on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, is used to specify the number of horizontal strands. These lines are conceptual
+                              rather than visible. Following general MEI practice, lines are counted from bottom
+                              to top, starting at 1.</li>
+                           <li class="item">In specific cases, <span class="att">tab.anchorline</span> is also needed on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>. It is used where the vertical alignment of tablature notes is consistent but cannot
+                              be identified using a typical value of <span class="att">tab.align</span> (<abbr>i.e.</abbr>, <span class="val">top</span> or <span class="val">bottom</span>). It specifies the horizontal strand corresponding to the <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> that anchors the vertical position of notes. Note that the usage of <span class="att">tab.anchorline</span> always implies top alignment (see examples below).</li>
+                           <li class="item">The <span class="att">tab.line</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>, which also corresponds to the <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, is used to indicate position of the note on one of these strands — where this deviates
+                              from the default positioning suggested by <span class="att">tab.align</span> and/or <span class="att">tab.anchorline</span>.</li>
+                        </ul>
+                        
+                        <p>The mechanisms presented in this section may be used to encode German lute tablature
+                           according to the following four scenarios. Note that, in the encoding, the order of
+                           notes in <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is significant — the first encoded note is the top symbol drawn in the chord, while
+                           the last encoded note that is a child of <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is the bottom symbol in the chord.</p>
+                        
+                        <ul>
+                           <li class="item">Alignment from the top.
                               
-                              </div>
-                           <figcaption class="figure-caption">Listing 293. </figcaption>
-                        </figure>
-                        </p>
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/tablature/tab-top-aligned.png"><figcaption class="figure-caption">Figure 110. A-Wn Mus.Hs. 18688, <abbr>fol.</abbr> 7v, [Elslein], <abbr>m.</abbr> 3.</figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Example encoding:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e17361" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.lute.german"</span>&gt;</span>
+                                             ...
+                                             <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                          ...
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 294. </figcaption>
+                                 </figure>
+                                 </p>
+                              </li>
+                           <li class="item">Alignment from the bottom.
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/tablature/tab-bottom-aligned.png"><figcaption class="figure-caption">Figure 111. A-Wn Mus.Hs. 18688, <abbr>fol.</abbr> 24v, Elseleyn, <abbr>m.</abbr> 4.</figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Example encoding — note the usage of <span class="att">tab.align</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e17398" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.align=</span><span class="attributevalue">"bottom"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.lute.german"</span>&gt;</span>
+                                             ...
+                                             <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                          ...
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"7"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"7"</span>/&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"7"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 295. </figcaption>
+                                 </figure>
+                                 </p>
+                              </li>
+                           <li class="item">Alignment from the top, with deviating anchorline. The anchorline, usually the second
+                              line from the top or bottom, is used as the vertical starting position when stacking
+                              notes into chords. Single notes simply occupy this position; chords ‘grow upwards’
+                              from this position. If the chord extends further than the number of available horizontal
+                              strands above the anchorline, the entire chord is shifted downward until its top note
+                              is positioned on the top-most line.
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/tablature/tab-anchorline.png"><figcaption class="figure-caption">Figure 112. Melchior Neusidler, <em>Teütsch Lautenbuch</em> (1574), <abbr>fol.</abbr> 4r, Benedicta es coeloru[m], <abbr>mm.</abbr> 22–25.</figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Example encoding (<abbr>m.</abbr> 1) — note the usage of <span class="att">lines</span> and <span class="att">tab.anchorline</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e17442" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.anchorline=</span><span class="attributevalue">"4"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.lute.german"</span>&gt;</span>
+                                             ...
+                                             <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                          ...
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>    
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>    
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"32"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabDurSym/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"6"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/tabGrp&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 296. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/tablature/tab-anchorline-2.png"><figcaption class="figure-caption">Figure 113. Wolff Heckel, <em>Discant. Lautten Bůch</em> (1562), <abbr>p.</abbr> 3, Ich klag den tag und alle stund, <abbr>mm.</abbr> 3–6.</figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Example encoding (<abbr>m.</abbr> 1) — note the usage of <span class="att">lines</span> and <span class="att">tab.anchorline</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e17484" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">lines=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.anchorline=</span><span class="attributevalue">"2"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.lute.german"</span>&gt;</span>
+                                             ...
+                                             <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                          ...
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span>/&gt;</span></div>    
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span>/&gt;</span></div>    
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 297. </figcaption>
+                                 </figure>
+                                 </p>
+                              </li>
+                           <li class="item">Irregular alignment. In cases where the alignment provided by <span class="att">tab.align</span> or <span class="att">tab.anchorline</span> are insufficient, <abbr>i.e.</abbr>, because the scribe is placing the symbols according to an imagined grid, this may
+                              be specified in the encoding. To do this, the <span class="att">lines</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> should be used to specify the number of horizontal strands, and the <span class="att">tab.line</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> is to indicate the position of the note on one of these strands — but only where
+                              this deviates from the positioning suggested by <span class="att">tab.align</span>.
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/tablature/tab-irregularly-aligned.png"><figcaption class="figure-caption">Figure 114. Sebastian Ochsenkun, <em>Tabulaturbuch auff die Lauten</em> (1558), <abbr>fol.</abbr> LVIIIr, Herr Gott laß dich erbarmen, <abbr>mm.</abbr> 1–4.</figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Example encoding (<abbr>mm.</abbr> 1–3) — note the usage of <span class="att">lines</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> and <span class="att">tab.line</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>s.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e17550" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">lines=</span><span class="attributevalue">"4"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.lute.german"</span>&gt;</span>
+                                             ...
+                                             <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                          ...
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>                                    	                        
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">dot=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 298. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>In the above example, it is the case that the vertical positioning is suggestive of
+                                 voice-leading. To explicitly capture this information, layers can be specified via
+                                 <span class="att">layer</span> on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>. These can be associated with a layer definition in the <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">layerDef</a> within the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> if desired.</p>
+                              
+                              <p>Example encoding (<abbr>m.</abbr> 3) — note the usage of <span class="att">layer</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>s.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e17586" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">lines=</span><span class="attributevalue">"4"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.lute.german"</span>&gt;</span>
+                                             	
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;layerDef <span class="attribute">n=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;layerDef <span class="attribute">n=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;layerDef <span class="attribute">n=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;layerDef <span class="attribute">n=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             ...
+                                             <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                          ...
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"5"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span> <span class="attribute">layer=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span> <span class="attribute">layer=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span> <span class="attribute">layer=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span> <span class="attribute">layer=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">dot=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"4"</span> <span class="attribute">layer=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"1"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"2"</span> <span class="attribute">layer=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"4"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"1"</span> <span class="attribute">layer=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"3"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"0"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      
+                                                      <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                         
+                                                         <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">tab.course=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.fret=</span><span class="attributevalue">"2"</span> <span class="attribute">tab.line=</span><span class="attributevalue">"3"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                                         <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                      <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 299. </figcaption>
+                                 </figure>
+                                 </p>
+                              </li>
+                        </ul>
+                        </div>
                      </div>
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7e1ec2712fbd702b9b8668a33df840aa6fd4364c" target="_blank" rel="noopener noreferrer">#7e1ec27</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/a7d370080b3bf13937658e9216c396d2c8c1a450" target="_blank" rel="noopener noreferrer">#a7d3700</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -427,7 +1216,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-basics">7.2 Encoding Tablatures</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-encoding">7.2 Encoding Tablatures</a><a class="level-3" href="#tablature-basics">7.2.1 Basic Structure</a><a class="level-3" href="#tablature-vertical-org">7.2.2 Vertical Organisation in German Lute Tablature</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -445,7 +1234,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-basics">7.2 Encoding Tablatures</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-encoding">7.2 Encoding Tablatures</a><a class="level-3" href="#tablature-basics">7.2.1 Basic Structure</a><a class="level-3" href="#tablature-vertical-org">7.2.2 Vertical Organisation in German Lute Tablature</a></p>
                   </div>
                </div>
             </div>
