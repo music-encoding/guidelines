@@ -8,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2024-10-21">
+      <meta name="date" content="2024-11-13">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -51,29 +51,8 @@
                               <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="i.e. top bottom Attribute that describes the vertical alignment of tablature symbols. Only applicable in cases where the symbols' vertical position does not communicate other information, such as courses ( , only in German lute tablature). Typical values are and .">tab.align</span>, <span class="ident attribute" title="tab.align i.e. top bottom lines staffDef Used in German lute tablature where the vertical alignment of tab notes is consistent but cannot be identified using a typical value of ( , or ). Specifies the horizontal strand corresponding to the attribute on that anchors the vertical position of tab notes. This anchorline is used as the vertical starting position when stacking tab notes into chords. Single tab notes simply occupy this position. Chords &#34; grow upwards &#34; from this position. If the chord extends further than the number of available horizontal strands ( &#34; lines &#34; ) above the anchorline, the entire chord is shifted downward until its top tab note is positioned on the top-most line. (Note that in German lute tablature, the lines are conceptual rather than visible).">tab.anchorline</span>, <span class="ident attribute" title="Records which course is to be played.">tab.course</span>, <span class="ident attribute" title="t x o This attribute is deprecated and will be removed in a future version. Indicates which finger, if any, should be used to play an individual string. The index, middle, ring, and little fingers are represented by the values 1-4, while is for the thumb. The values and indicate muffled and open strings, respectively.">tab.fing</span>, <span class="ident attribute" title="Records the location at which a string should be stopped against a fret.">tab.fret</span>, <span class="ident attribute" title="tab.align lines staffDef Used in German lute tablature in cases where vertical positioning deviates from the norm which can be specified by . Indicates the position of the tab note on one of the horizontal strands corresponding to the attribute on . (Note that in this case, the lines are conceptual rather than visible).">tab.line</span>, <span class="ident attribute" title="tab.course This attribute is deprecated in favor of and will be removed in a future version. Records which string is to be played.">tab.string</span></div>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Records which course is to be played.">tab.course</span>, <span class="ident attribute" title="t x o This attribute is deprecated and will be removed in a future version. Indicates which finger, if any, should be used to play an individual string. The index, middle, ring, and little fingers are represented by the values 1-4, while is for the thumb. The values and indicate muffled and open strings, respectively.">tab.fing</span>, <span class="ident attribute" title="Records the location at which a string should be stopped against a fret.">tab.fret</span>, <span class="ident attribute" title="tab.align lines staffDef Used in German lute tablature in cases where vertical positioning deviates from the norm which can be specified by . Indicates the position of the tab note on one of the horizontal strands corresponding to the attribute on . (Note that in this case, the lines are conceptual rather than visible).">tab.line</span>, <span class="ident attribute" title="tab.course This attribute is deprecated in favor of and will be removed in a future version. Records which string is to be played.">tab.string</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
-                              <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="i.e. top bottom Attribute that describes the vertical alignment of tablature symbols. Only applicable in cases where the symbols' vertical position does not communicate other information, such as courses ( , only in German lute tablature). Typical values are and .">tab.align</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Attribute that describes the vertical alignment of tablature symbols. Only applicable
-                                       in cases where the symbols' vertical position does not communicate other information,
-                                       such as courses (<abbr>i.e.</abbr>, only in German lute tablature). Typical values are <span class="val">top</span> and <span class="val">bottom</span>.</span><span class="attributeValues">
-                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.VERTICALALIGNMENT.html">data.VERTICALALIGNMENT</a>.
-                                       </span></div>
-                                 <div class="breadcrumb"><span class="step start">&lt;att.stringtab&gt;</span><span class="step">direct children</span><span class="step end">@tab.align</span></div>
-                              </div>
-                              <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="tab.align i.e. top bottom lines staffDef Used in German lute tablature where the vertical alignment of tab notes is consistent but cannot be identified using a typical value of ( , or ). Specifies the horizontal strand corresponding to the attribute on that anchors the vertical position of tab notes. This anchorline is used as the vertical starting position when stacking tab notes into chords. Single tab notes simply occupy this position. Chords &#34; grow upwards &#34; from this position. If the chord extends further than the number of available horizontal strands ( &#34; lines &#34; ) above the anchorline, the entire chord is shifted downward until its top tab note is positioned on the top-most line. (Note that in German lute tablature, the lines are conceptual rather than visible).">tab.anchorline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used in German lute tablature where the vertical alignment of tab notes is consistent
-                                       but cannot be identified using a typical value of <span class="att">tab.align</span> (<abbr>i.e.</abbr>, <span class="val">top</span> or <span class="val">bottom</span>). Specifies the horizontal strand corresponding to the <span class="att">lines</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> that anchors the vertical position of tab notes. This anchorline is used as the vertical
-                                       starting position when stacking tab notes into chords. Single tab notes simply occupy
-                                       this position. Chords "grow upwards" from this position. If the chord extends further
-                                       than the number of available horizontal strands ("lines") above the anchorline, the
-                                       entire chord is shifted downward until its top tab note is positioned on the top-most
-                                       line. (Note that in German lute tablature, the lines are conceptual rather than visible).
-                                       </span><span class="attributeValues">
-                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
-                                       </span></div>
-                                 <div class="breadcrumb"><span class="step start">&lt;att.stringtab&gt;</span><span class="step">direct children</span><span class="step end">@tab.anchorline</span></div>
-                              </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records which course is to be played.">tab.course</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records which course is to be played.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COURSENUMBER.html">data.COURSENUMBER</a>.
@@ -113,21 +92,6 @@
                               <div class="classBox" title="direct children">
                                  <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. top bottom Attribute that describes the vertical alignment of tablature symbols. Only applicable in cases where the symbols' vertical position does not communicate other information, such as courses ( , only in German lute tablature). Typical values are and .">tab.align</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Attribute that describes the vertical alignment of tablature symbols. Only applicable
-                                             in cases where the symbols' vertical position does not communicate other information,
-                                             such as courses (<abbr>i.e.</abbr>, only in German lute tablature). Typical values are <span class="val">top</span> and <span class="val">bottom</span>.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.VERTICALALIGNMENT.html">data.VERTICALALIGNMENT</a>.
-                                             </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="tab.align i.e. top bottom lines staffDef Used in German lute tablature where the vertical alignment of tab notes is consistent but cannot be identified using a typical value of ( , or ). Specifies the horizontal strand corresponding to the attribute on that anchors the vertical position of tab notes. This anchorline is used as the vertical starting position when stacking tab notes into chords. Single tab notes simply occupy this position. Chords &#34; grow upwards &#34; from this position. If the chord extends further than the number of available horizontal strands ( &#34; lines &#34; ) above the anchorline, the entire chord is shifted downward until its top tab note is positioned on the top-most line. (Note that in German lute tablature, the lines are conceptual rather than visible).">tab.anchorline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used in German lute tablature where the vertical alignment of tab notes is consistent
-                                             but cannot be identified using a typical value of <span class="att">tab.align</span> (<abbr>i.e.</abbr>, <span class="val">top</span> or <span class="val">bottom</span>). Specifies the horizontal strand corresponding to the <span class="att">lines</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> that anchors the vertical position of tab notes. This anchorline is used as the vertical
-                                             starting position when stacking tab notes into chords. Single tab notes simply occupy
-                                             this position. Chords "grow upwards" from this position. If the chord extends further
-                                             than the number of available horizontal strands ("lines") above the anchorline, the
-                                             entire chord is shifted downward until its top tab note is positioned on the top-most
-                                             line. (Note that in German lute tablature, the lines are conceptual rather than visible).
-                                             </span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
-                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="t x o This attribute is deprecated and will be removed in a future version. Indicates which finger, if any, should be used to play an individual string. The index, middle, ring, and little fingers are represented by the values 1-4, while is for the thumb. The values and indicate muffled and open strings, respectively.">tab.fing</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">This attribute is deprecated and will be removed in a future version. Indicates which
                                              finger, if any, should be used to play an individual string. The index, middle, ring,
                                              and little fingers are represented by the values 1-4, while <span class="val">t</span> is for the thumb. The values <span class="val">x</span> and <span class="val">o</span> indicate muffled and open strings, respectively.</span><span class="attributeValues">
@@ -154,21 +118,6 @@
                               <div class="classBox" title="MEI.stringtab">
                                  <div class="classHeading"><label class="classLabel">MEI.stringtab</label><span class="classDesc">Tablature component declarations.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. top bottom Attribute that describes the vertical alignment of tablature symbols. Only applicable in cases where the symbols' vertical position does not communicate other information, such as courses ( , only in German lute tablature). Typical values are and .">tab.align</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Attribute that describes the vertical alignment of tablature symbols. Only applicable
-                                             in cases where the symbols' vertical position does not communicate other information,
-                                             such as courses (<abbr>i.e.</abbr>, only in German lute tablature). Typical values are <span class="val">top</span> and <span class="val">bottom</span>.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.VERTICALALIGNMENT.html">data.VERTICALALIGNMENT</a>.
-                                             </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="tab.align i.e. top bottom lines staffDef Used in German lute tablature where the vertical alignment of tab notes is consistent but cannot be identified using a typical value of ( , or ). Specifies the horizontal strand corresponding to the attribute on that anchors the vertical position of tab notes. This anchorline is used as the vertical starting position when stacking tab notes into chords. Single tab notes simply occupy this position. Chords &#34; grow upwards &#34; from this position. If the chord extends further than the number of available horizontal strands ( &#34; lines &#34; ) above the anchorline, the entire chord is shifted downward until its top tab note is positioned on the top-most line. (Note that in German lute tablature, the lines are conceptual rather than visible).">tab.anchorline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used in German lute tablature where the vertical alignment of tab notes is consistent
-                                             but cannot be identified using a typical value of <span class="att">tab.align</span> (<abbr>i.e.</abbr>, <span class="val">top</span> or <span class="val">bottom</span>). Specifies the horizontal strand corresponding to the <span class="att">lines</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> that anchors the vertical position of tab notes. This anchorline is used as the vertical
-                                             starting position when stacking tab notes into chords. Single tab notes simply occupy
-                                             this position. Chords "grow upwards" from this position. If the chord extends further
-                                             than the number of available horizontal strands ("lines") above the anchorline, the
-                                             entire chord is shifted downward until its top tab note is positioned on the top-most
-                                             line. (Note that in German lute tablature, the lines are conceptual rather than visible).
-                                             </span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
-                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records which course is to be played.">tab.course</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records which course is to be played.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COURSENUMBER.html">data.COURSENUMBER</a>.
                                              </span></span></div>
@@ -254,46 +203,6 @@
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"tab.align"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Attribute that describes the vertical alignment of tablature symbols. Only applicable
-                                             in cases where the symbols' vertical position does not communicate other information,
-                                             such as courses (
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;abbr&gt;</span>i.e.<span data-indentation="5" class="element">&lt;/abbr&gt;</span></div>, only in German lute tablature). Typical values are 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;val&gt;</span>top<span data-indentation="5" class="element">&lt;/val&gt;</span></div> and 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;val&gt;</span>bottom<span data-indentation="5" class="element">&lt;/val&gt;</span></div>.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.VERTICALALIGNMENT.html">data.VERTICALALIGNMENT</a>"</span>/&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
-                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"tab.anchorline"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Used in German lute tablature where the vertical alignment of tab notes is consistent
-                                             but cannot be identified using a typical value of 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;att&gt;</span>tab.align<span data-indentation="5" class="element">&lt;/att&gt;</span></div> (
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;abbr&gt;</span>i.e.<span data-indentation="5" class="element">&lt;/abbr&gt;</span></div>, 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;val&gt;</span>top<span data-indentation="5" class="element">&lt;/val&gt;</span></div> or 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;val&gt;</span>bottom<span data-indentation="5" class="element">&lt;/val&gt;</span></div>). Specifies the horizontal strand corresponding to the 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;att&gt;</span>lines<span data-indentation="5" class="element">&lt;/att&gt;</span></div> attribute on 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>staffDef<span data-indentation="5" class="element">&lt;/gi&gt;</span></div> that anchors the vertical position of tab notes. This anchorline is used as the vertical
-                                             starting position when stacking tab notes into chords. Single tab notes simply occupy
-                                             this position. Chords 
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;q&gt;</span>grow upwards<span data-indentation="5" class="element">&lt;/q&gt;</span></div> from this position. If the chord extends further than the number of available horizontal
-                                             strands (
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;q&gt;</span>lines<span data-indentation="5" class="element">&lt;/q&gt;</span></div>) above the anchorline, the entire chord is shifted downward until its top tab note
-                                             is positioned on the top-most line. (Note that in German lute tablature, the lines
-                                             are conceptual rather than visible).
-                                             <span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>"</span>/&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
-                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
-                                       
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"tab.fing"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>This attribute is deprecated and will be removed in a future version. Indicates which
@@ -362,7 +271,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/dba05a0d3ee8507267d1f85323a9c48bbd2bd843" target="_blank" rel="noopener noreferrer">#dba05a0</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/584c3b80568b9535abe266a4961f04ac2545b2ca" target="_blank" rel="noopener noreferrer">#584c3b8</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
