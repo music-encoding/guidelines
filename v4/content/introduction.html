@@ -388,7 +388,7 @@ A technically very stable connection between <em>ControlEvents</em> and <em>Even
 </div>
 
 <p>Sometimes, timestamps are used to indicate positions where no music <em>Events</em> are located (see 
-  <a href="/guidelines/v4/content/introduction.html#eventsControlevents">Events and Controlevents</a>). Therefore, the allowed range of timestamps stretches from 0 to the current meter count + 1. By definition, a timestamp of 1 indicates the position of the left barline, while a timestamp of 5 (in case of a 4/4 meter) indicates the right barline. This makes it possible to encode open-ended slurs in a graphical way. However, it should be kept in mind that such timestamps may not be converted to <em>@startid</em> and <em>@endid</em>, and not every application may be able to render them correctly, even though they are perfectly valid MEI, and sometimes are necessary to faithfully transcribe a source.</p>
+  <a href="/guidelines/v4/content/introduction.html#eventsControlevents">Events and Controlevents</a>). Therefore, the allowed range of timestamps stretches from 0 to the current meter count + 1. By definition, a timestamp of 0 indicates the position of the left barline, while a timestamp of 5 (in case of a 4/4 meter) indicates the right barline. This makes it possible to encode open-ended slurs in a graphical way. However, it should be kept in mind that such timestamps may not be converted to <em>@startid</em> and <em>@endid</em>, and not every application may be able to render them correctly, even though they are perfectly valid MEI, and sometimes are necessary to faithfully transcribe a source.</p>
 
 <h4 id="meiprofiles">1.2.4. MEI Profiles
       
