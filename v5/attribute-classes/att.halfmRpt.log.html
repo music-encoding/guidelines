@@ -1,4 +1,5 @@
-<!DOCTYPE HTML><html lang="en">
+<!DOCTYPE HTML>
+<html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
@@ -7,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-09-05">
+      <meta name="date" content="2025-01-22">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -48,15 +49,14 @@
                               <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Records the duration of a feature using the relative durational values provided by the data.DURATION datatype.">dur</span>, <span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span>, <span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span>, <span class="ident attribute" title="i.e. Encodes the onset time in terms of musical time, , beats[.fractional beat part], as expressed in the written time signature.">tstamp</span>, <span class="ident attribute" title="i.e. Encodes the onset time in terms of musical time, , beats[.fractional beat part], as expressed in the written time signature.">tstamp.ges</span>, <span class="ident attribute" title="Records the onset time in terms of ISO time.">tstamp.real</span>, <span class="ident attribute" title="when Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a element elsewhere in the document.">when</span></div>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="When a duration cannot be represented as a single power-of-two value, multiple space-separated values that add up to the total duration may be used.">dur</span>, <span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span>, <span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span>, <span class="ident attribute" title="i.e. Encodes the onset time in terms of musical time, , beats[.fractional beat part], as expressed in the written time signature.">tstamp</span>, <span class="ident attribute" title="i.e. Encodes the onset time in terms of musical time, , beats[.fractional beat part], as expressed in the written time signature.">tstamp.ges</span>, <span class="ident attribute" title="Records the onset time in terms of ISO time.">tstamp.real</span>, <span class="ident attribute" title="when Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a element elsewhere in the document.">when</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records the duration of a feature using the relative durational values provided by the data.DURATION datatype.">dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the duration of a feature using the relative durational values provided by
-                                       the
-                                       data.DURATION datatype.</span><span class="attributeValues">
-                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>.
+                                 <div class="desc"><span class="ident attribute" title="When a duration cannot be represented as a single power-of-two value, multiple space-separated values that add up to the total duration may be used.">dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When a duration cannot be represented as a single power-of-two value, multiple
+                                       space-separated values that add up to the total duration may be used.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>, separated by spaces.
                                        </span></div>
-                                 <div class="breadcrumb"><span class="step start">&lt;att.halfmRpt.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.log.html">att.duration.log</a></span><span class="step end">@dur</span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.halfmRpt.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.additive.html">att.duration.additive</a></span><span class="step end">@dur</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
@@ -65,7 +65,7 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.halfmRpt.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.event.html">att.event</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layerIdent.html">att.layerIdent</a></span><span class="step end">@layer</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                                 <div class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                        applies. Mandatory when applicable.</span><span class="attributeValues">
                                        One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                        </span></div>
@@ -125,7 +125,7 @@
                                     <div class="classBox" title="att.staffIdent">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffIdent.html">att.staffIdent</a></label><span class="classDesc">(MEI.shared) Attributes for identifying the staff associated with the current feature.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                                    applies. Mandatory when applicable.</span><span class="attributeValues">
                                                    One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                                    </span></span></div>
@@ -155,13 +155,12 @@
                                     </div>
                                  </div>
                               </div>
-                              <div class="classBox" title="att.duration.log">
-                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.log.html">att.duration.log</a></label><span class="classDesc">(MEI.shared) Attributes that express duration in musical terms.</span></div>
+                              <div class="classBox" title="att.duration.additive">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.additive.html">att.duration.additive</a></label><span class="classDesc">(MEI.shared) Attributes that permit total duration to be represented by multiple values.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the duration of a feature using the relative durational values provided by the data.DURATION datatype.">dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the duration of a feature using the relative durational values provided by
-                                             the
-                                             data.DURATION datatype.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>.
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="When a duration cannot be represented as a single power-of-two value, multiple space-separated values that add up to the total duration may be used.">dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When a duration cannot be represented as a single power-of-two value, multiple
+                                             space-separated values that add up to the total duration may be used.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>, separated by spaces.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -192,15 +191,14 @@
                               <div class="classBox" title="MEI.shared">
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the duration of a feature using the relative durational values provided by the data.DURATION datatype.">dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the duration of a feature using the relative durational values provided by
-                                             the
-                                             data.DURATION datatype.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>.
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="When a duration cannot be represented as a single power-of-two value, multiple space-separated values that add up to the total duration may be used.">dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When a duration cannot be represented as a single power-of-two value, multiple
+                                             space-separated values that add up to the total duration may be used.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>, separated by spaces.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                                              One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                              applies. Mandatory when applicable.</span><span class="attributeValues">
                                              One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                              </span></span></div>
@@ -252,7 +250,7 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.event.html">att.event</a>"</span>/&gt;</span></div>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.log.html">att.duration.log</a>"</span>/&gt;</span></div>
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.additive.html">att.duration.additive</a>"</span>/&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                                     <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
                         </div>
@@ -261,7 +259,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/eb14650d73d4a33e8da5b122e79b023be618bc30" target="_blank" rel="noopener noreferrer">#eb14650</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e0144b751aab77c4c19a559832f7473a073ea36d" target="_blank" rel="noopener noreferrer">#e0144b7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -311,7 +309,7 @@
                                     })
                                     
                                     function getMenu() {
-                                        const fullVersion = '5.0'
+                                        const fullVersion = '5.1'
                                         const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
                                         console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
                                         
@@ -457,7 +455,7 @@
                 
                 searchResultsBox.innerHTML = '';
                 
-                document.querySelector('#searchPattern').innerHTML = pattern;
+                document.querySelector('#searchPattern').innerText = pattern;
                 
                 const pathAdjust = (reducedLevels) ? './' : '../';
                 

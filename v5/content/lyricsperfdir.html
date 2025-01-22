@@ -1,4 +1,5 @@
-<!DOCTYPE HTML><html lang="en">
+<!DOCTYPE HTML>
+<html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
@@ -7,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-09-05">
+      <meta name="date" content="2025-01-22">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -70,7 +71,7 @@
                            </div>
                            <div class="tile-content">
                               <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a></span></div>
-                              <div class="tile-subtitle text-gray">Individual lyric syllable.</div>
+                              <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Individual lyric syllable.</span></div>
                            </div>
                         </div>
                         <div class="tile tile-centered">
@@ -154,15 +155,15 @@
                         recommended only for simple situations or for those encodings which do not focus on
                         vocally performed text.</p>
                      
-                     <p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of <span class="att">syl</span>:</p>
+                     <p>The following example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/George_Frideric_Handel">Handel’s</a> <em>Messiah</em> (HWV 56) shows the use of <span class="att">syl</span>:</p>
                      
                      <p>
                         
-                        <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/lyrics/ex_syl_att.png"><figcaption class="figure-caption">Figure 110. Handel, Messiah HWV 56, Hallelujah</figcaption>
+                        <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/lyrics/ex_syl_att.png"><figcaption class="figure-caption">Figure 115. Handel, Messiah HWV 56, Hallelujah</figcaption>
                         </figure>
                         
                         <figure class="figure specPage">
-                           <div id="d19e17192" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d18e17904" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
@@ -189,9 +190,11 @@
                                     <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
                                  
                                  
+                                 
                                  </code>
+                              
                               </div>
-                           <figcaption class="figure-caption">Listing 288. </figcaption>
+                           <figcaption class="figure-caption">Listing 301. </figcaption>
                         </figure>
                         </p>
                      
@@ -206,19 +209,19 @@
                            </div>
                            <div class="tile-content">
                               <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a></span></div>
-                              <div class="tile-subtitle text-gray">Division of a poem or song lyrics, sometimes having a fixed length, meter or rhyme
-                                 scheme;
-                                 a stanza.</div>
+                              <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Division of a poem or song lyrics, sometimes having a fixed length, meter or rhyme
+                                    scheme;
+                                    a stanza.</span></div>
                            </div>
                         </div>
                         </p>
                      
-                     <p>The following example from Handel’s <em>Messiah</em> (HWV 56) shows the use of <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a>:</p>
+                     <p>The following example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/George_Frideric_Handel">Handel’s</a> <em>Messiah</em> (HWV 56) shows the use of <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a>:</p>
                      
                      <p>
                         
                         <figure class="figure specPage">
-                           <div id="d19e17230" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d18e17945" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
@@ -269,22 +272,24 @@
                                     <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
                                  
                                  
+                                 
                                  </code>
+                              
                               </div>
-                           <figcaption class="figure-caption">Listing 289. </figcaption>
+                           <figcaption class="figure-caption">Listing 302. </figcaption>
                         </figure>
                         </p>
                      
                      <p>As it is common practice in written text, it is assumed that a space separates words.
                         Many vocal texts, however, introduce elisions and connect two syllables into one unit.
-                        For example, the vocal text from Mozart’s <em>Don Giovanni</em> sung by Don Giovanni in Finale II, Ho fermo il core in petto introduces an elision
+                        For example, the vocal text from Mozart’s <em>Don Giovanni</em> sung by Don Giovanni in Finale II, "Ho fermo il core in petto" introduces an elision
                         between the word fermo and il and between core and in. An elision can be indicated
                         by placing both syllables within the same <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> and setting the <a class="link_odd link_odd_elementSpec" href="../elements/syl.html">syl</a> element’s <span class="att">con</span> attribute value to 't':</p>
                      
                      <p>
                         
                         <figure class="figure specPage">
-                           <div id="d19e17255" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d18e17972" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
@@ -299,9 +304,11 @@
                                     <span data-indentation="1" class="element">&lt;/note&gt;</span></div>
                                  
                                  
+                                 
                                  </code>
+                              
                               </div>
-                           <figcaption class="figure-caption">Listing 290. </figcaption>
+                           <figcaption class="figure-caption">Listing 303. </figcaption>
                         </figure>
                         </p>
                      
@@ -310,11 +317,11 @@
                      
                      <p>
                         
-                        <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/lyrics/ex_verse_m.png"><figcaption class="figure-caption">Figure 111. Example from Wagner’s Rheingold with translated text.</figcaption>
+                        <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/lyrics/ex_verse_m.png"><figcaption class="figure-caption">Figure 116. Example from Wagner’s Rheingold with translated text.</figcaption>
                         </figure>
                         
                         <figure class="figure specPage">
-                           <div id="d19e17285" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d18e18002" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
@@ -416,17 +423,19 @@
                                        <span data-indentation="2" class="element">&lt;/measure&gt;</span></div>
                                     <span data-indentation="1" class="element">&lt;/section&gt;</span></div>
                                  
+                                 
                                  </code>
+                              
                               </div>
-                           <figcaption class="figure-caption">Listing 291. </figcaption>
+                           <figcaption class="figure-caption">Listing 304. </figcaption>
                         </figure>
                         </p>
                      
-                     <p>Optionally, it is possible to include an <a class="link_odd link_odd_elementSpec" href="../elements/lb.html">lb</a> element within <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> to explicitly encode line and line group endings. This is specifically meant to facilitate
-                        karaoke applications.</p>
+                     <p>Optionally, it is possible to include an <a class="link_odd link_odd_elementSpec" href="../elements/lb.html">lb</a> element within <a class="link_odd link_odd_elementSpec" href="../elements/verse.html">verse</a> to explicitly encode line and line group beginnings. This is specifically meant to
+                        facilitate karaoke applications.</p>
                      
-                     <p>Finally, the <span class="att">rhythm</span> attribute can be used to specify a rhythm for the syllable that differs from that
-                        of the notes on the staff.</p>
+                     <p>Finally, the <span class="att">rhythm</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/l.html">l</a> can be used to specify a rhythm for the syllable that differs from that of the notes
+                        on the staff (see <a class="link_ptr chapterLink" title="Vocally Performed Text Encoded Separately" href="../content/lyricsperfdir.html#lyricsAfterEvents">8.4 Vocally Performed Text Encoded Separately</a>).</p>
                      </div>
                   
                   <div class="div2">
@@ -443,10 +452,10 @@
                            </div>
                            <div class="tile-content">
                               <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/lg.html">lg</a></span></div>
-                              <div class="tile-subtitle text-gray">May be used for any section of text that is organized as a group of lines;
-                                 however, it is most often used for a group of verse lines functioning as a formal
-                                 unit, , a
-                                 stanza, refrain, verse paragraph, etc.</div>
+                              <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">May be used for any section of text that is organized as a group of lines;
+                                    however, it is most often used for a group of verse lines functioning as a formal
+                                    unit, <abbr>e.g.</abbr>, a
+                                    stanza, refrain, verse paragraph, etc.</span></div>
                            </div>
                         </div>
                         <div class="tile tile-centered">
@@ -455,7 +464,7 @@
                            </div>
                            <div class="tile-content">
                               <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/l.html">l</a></span></div>
-                              <div class="tile-subtitle text-gray">Contains a single line of text within a line group.</div>
+                              <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains a single line of text within a line group.</span></div>
                            </div>
                         </div>
                         <div class="tile tile-centered">
@@ -491,34 +500,103 @@
                      <p>
                         
                         <figure class="figure specPage">
-                           <div id="d19e17348" xml:space="preserve" class="pre code egXML_feasible">
+                           <div id="d18e18070" xml:space="preserve" class="pre code egXML_feasible">
                               <code>
                                  
                                  
                                  
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">metcon=</span><span class="attributevalue">"false"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;tuplet <span class="attribute">num=</span><span class="attributevalue">"3"</span> <span class="attribute">numbase=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">accid.ges=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
-                                          <span data-indentation="3" class="element">&lt;/tuplet&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl&gt;</span>Es<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;tuplet <span class="attribute">num=</span><span class="attributevalue">"3"</span> <span class="attribute">numbase=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl&gt;</span>war<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
-                                          <span data-indentation="3" class="element">&lt;/tuplet&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl&gt;</span>ein<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dots=</span><span class="attributevalue">"1"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"n8zcqth"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl <span class="attribute">con=</span><span class="attributevalue">"d"</span> <span class="attribute">wordpos=</span><span class="attributevalue">"i"</span>&gt;</span>Kö<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"nibn3m21"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl <span class="attribute">wordpos=</span><span class="attributevalue">"t"</span>&gt;</span>nig<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl&gt;</span>in<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;tie <span class="attribute">endid=</span><span class="attributevalue">"#nibn3m21"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">startid=</span><span class="attributevalue">"#n8zcqth"</span> <span class="attribute">lform=</span><span class="attributevalue">"dashed"</span>/&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                 
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">accid.ges=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
-                                       <span data-indentation="2" class="element">&lt;/layer&gt;</span></div>
-                                    <span data-indentation="1" class="element">&lt;/staff&gt;</span></div>
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dots=</span><span class="attributevalue">"1"</span> <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl <span class="attribute">con=</span><span class="attributevalue">"d"</span> <span class="attribute">wordpos=</span><span class="attributevalue">"i"</span>&gt;</span>Thu<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"up"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;verse <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;syl <span class="attribute">wordpos=</span><span class="attributevalue">"t"</span>&gt;</span>le,<span data-indentation="6" class="element">&lt;/syl&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/verse&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/note&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
                                  
                                  <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- later --&gt;</span></div>
                                  
@@ -526,28 +604,25 @@
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;lg <span class="attribute">staff=</span><span class="attributevalue">"1"</span>&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;l&gt;</span><div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>Or<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>let<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl <span class="attribute">con=</span><span class="attributevalue">"d"</span>&gt;</span>Au<span data-indentation="4" class="element">&lt;/syl&gt;</span></div>
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>tumn<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>fall<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>on<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>me<span data-indentation="4" class="element">&lt;/syl&gt;</span></div><span data-indentation="3" class="element">&lt;/l&gt;</span></div>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;l&gt;</span><div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>Where<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl <span class="attribute">con=</span><span class="attributevalue">"d"</span>&gt;</span>a<span data-indentation="4" class="element">&lt;/syl&gt;</span></div>
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>field<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>I<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>lin<span data-indentation="4" class="element">&lt;/syl&gt;</span></div>
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>ger<span data-indentation="4" class="element">&lt;/syl&gt;</span></div><span data-indentation="3" class="element">&lt;/l&gt;</span></div>
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;l <span class="attribute">rhythm=</span><span class="attributevalue">"4 2 4 2 4 2. 2"</span>&gt;</span> 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>Es<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>ging<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>ihm<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl&gt;</span>nichts<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl <span class="attribute">con=</span><span class="attributevalue">"d"</span> <span class="attribute">wordpos=</span><span class="attributevalue">"i"</span>&gt;</span>dar<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl <span class="attribute">con=</span><span class="attributevalue">"d"</span> <span class="attribute">wordpos=</span><span class="attributevalue">"m"</span>&gt;</span>ü<span data-indentation="4" class="element">&lt;/syl&gt;</span></div> 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;syl <span class="attribute">wordpos=</span><span class="attributevalue">"t"</span>&gt;</span>ber,<span data-indentation="4" class="element">&lt;/syl&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/l&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/lg&gt;</span></div>
                                     <span data-indentation="1" class="element">&lt;/div&gt;</span></div>
                                  
                                  
                                  
+                                 
                                  </code>
+                              
                               </div>
-                           <figcaption class="figure-caption">Listing 292. </figcaption>
+                           <figcaption class="figure-caption">Listing 305. </figcaption>
                         </figure>
                         </p>
                      </div>
@@ -561,7 +636,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/eb14650d73d4a33e8da5b122e79b023be618bc30" target="_blank" rel="noopener noreferrer">#eb14650</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e0144b751aab77c4c19a559832f7473a073ea36d" target="_blank" rel="noopener noreferrer">#e0144b7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -613,7 +688,7 @@
                                     })
                                     
                                     function getMenu() {
-                                        const fullVersion = '5.0'
+                                        const fullVersion = '5.1'
                                         const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
                                         console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
                                         
@@ -759,7 +834,7 @@
                 
                 searchResultsBox.innerHTML = '';
                 
-                document.querySelector('#searchPattern').innerHTML = pattern;
+                document.querySelector('#searchPattern').innerText = pattern;
                 
                 const pathAdjust = (reducedLevels) ? './' : '../';
                 

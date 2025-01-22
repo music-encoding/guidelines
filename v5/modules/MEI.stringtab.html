@@ -1,4 +1,5 @@
-<!DOCTYPE HTML><html lang="en">
+<!DOCTYPE HTML>
+<html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
@@ -7,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-09-05">
+      <meta name="date" content="2025-01-22">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -37,7 +38,7 @@
                      <div class="desc">Tablature component declarations.</div>
                      <div class="contentListBox">
                         <h3>Elements in MEI.stringtab</h3>
-                        <div class="contents"><a class="link_odd link_odd_elementSpec" href="../elements/barre.html" title="A barre in a chord tablature grid.">barre</a></div>
+                        <div class="contents"><a class="link_odd link_odd_elementSpec" href="../elements/barre.html" title="A barre in a chord tablature grid.">barre</a>, <a class="link_odd link_odd_elementSpec" href="../elements/course.html" title="Describes the tuning of a course on a stringed instrument ( e.g. , guitar, lute).">course</a>, <a class="link_odd link_odd_elementSpec" href="../elements/string.html" title="Used to modify tuning information given by the course element. Describes the tuning of an individual string within a course on a stringed instrument ( e.g. , guitar, lute).">string</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html" title="A visual indication of the duration of a tabGrp .">tabDurSym</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html" title="A group of simultaneous tab notes, comparable to a chord in CMN. Rarely, may also contain rests, as in some &#34;German&#34; lute tablatures.">tabGrp</a></div>
                      </div>
                      <div class="contentListBox">
                         <h3>Model Classes in MEI.stringtab</h3>
@@ -49,17 +50,17 @@
                      </div>
                      <div class="contentListBox">
                         <h3>Attribute Classes in MEI.stringtab</h3>
-                        <div class="contents"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html" title="String tablature string and fret information.">att.stringtab</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.position.html" title="String tablature position information.">att.stringtab.position</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.tuning.html" title="String tablature tuning information.">att.stringtab.tuning</a></div>
+                        <div class="contents"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.course.log.html" title="Logical domain attributes.">att.course.log</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.tablature.html" title="Visual domain attributes for scoreDef in the tablature repertoire.">att.scoreDef.vis.tablature</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.vis.tablature.html" title="Visual domain attributes for staffDef in the tablature repertoire.">att.staffDef.vis.tablature</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html" title="String tablature string and fret information.">att.stringtab</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.position.html" title="String tablature position information.">att.stringtab.position</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.tuning.html" title="This collection of attributes is deprecated in favor of the new tuning element and will be removed in a future version. String tablature tuning information.">att.stringtab.tuning</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tabDurSym.log.html" title="Logical domain attributes.">att.tabDurSym.log</a>, <a class="link_odd link_odd_attClass" href="../attribute-classes/att.tabGrp.log.html" title="Logical domain attributes.">att.tabGrp.log</a></div>
                      </div>
                      <div class="contentListBox">
                         <h3>Data Types in MEI.stringtab</h3>
-                        <div class="contents"><span class="placeholder">– no data types defined in MEI.stringtab –&nbsp;</span></div>
+                        <div class="contents"><a class="link_odd link_odd_dataType" href="../data-types/data.COURSENUMBER.html" title="In string tablature, the number of the course to be played.">data.COURSENUMBER</a>, <a class="link_odd link_odd_dataType" href="../data-types/data.COURSETUNING.html" title="Standard course tunings.">data.COURSETUNING</a></div>
                      </div>
                   </div>
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/eb14650d73d4a33e8da5b122e79b023be618bc30" target="_blank" rel="noopener noreferrer">#eb14650</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e0144b751aab77c4c19a559832f7473a073ea36d" target="_blank" rel="noopener noreferrer">#e0144b7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -109,7 +110,7 @@
                                     })
                                     
                                     function getMenu() {
-                                        const fullVersion = '5.0'
+                                        const fullVersion = '5.1'
                                         const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
                                         console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
                                         
@@ -255,7 +256,7 @@
                 
                 searchResultsBox.innerHTML = '';
                 
-                document.querySelector('#searchPattern').innerHTML = pattern;
+                document.querySelector('#searchPattern').innerText = pattern;
                 
                 const pathAdjust = (reducedLevels) ? './' : '../';
                 

@@ -1,4 +1,5 @@
-<!DOCTYPE HTML><html lang="en">
+<!DOCTYPE HTML>
+<html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
@@ -7,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-09-05">
+      <meta name="date" content="2025-01-22">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -446,14 +447,32 @@
                               <li class="tab-item"><a data-display="containedBy_class" id="containedBy_class_tab" href="#containedBy_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="containedBy_module" id="containedBy_module_tab" href="#containedBy_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"></div>
+                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/music.html" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos.">music</a></div>
                            <div id="containedBy_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="model.frontLike">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.frontLike.html">model.frontLike</a></label><span class="classDesc">(MEI.text) Groups elements that may contain front matter.</span></div>
-                                 <div class="classContent"></div>
+                                 <div class="classContent">
+                                    <div class="classBox" title="macro.musicPart">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_macroGroup" href="../macro-groups/macro.musicPart.html">macro.musicPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of the music element.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd link_odd_elementSpec" href="../elements/music.html">music</a></span><span class="desc">Contains a single musical text of any kind, whether unitary or composite, for example,
+                                                an
+                                                etude, opera, song cycle, symphony, or anthology of piano solos.</span></div>
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
-                           <div id="containedBy_module" class="facetTabbedContent module" data-label="by module"></div>
+                           <div id="containedBy_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd link_odd_elementSpec" href="../elements/music.html">music</a></span><span class="desc">Contains a single musical text of any kind, whether unitary or composite, for example,
+                                          an
+                                          etude, opera, song cycle, symphony, or anthology of piano solos.</span></div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                      <div id="mayContain" class="facet mayContain">
@@ -543,7 +562,6 @@
                               as textual divisions; that is, as <a class="link_odd link_odd_elementSpec" href="../elements/div.html">div</a> elements, with an optional <a class="link_odd link_odd_elementSpec" href="../elements/head.html">head</a> sub-element describing the nature of the division. The <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> element is allowed here in order to accommodate page images, <abbr>e.g.</abbr>,
                               cover, endpapers, etc. before and after the actual textual matter.</p>
                            
-                           
                            <p>The model of this element is based on the <a class="link_ref link_external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html">front</a> element of the Text Encoding Initiative (TEI).</p>
                            </div>
                      </div>
@@ -553,7 +571,7 @@
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">ident=</span><span class="attributevalue">"front"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.text"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2022-05-18"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>front matter<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>front matter<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Bundles prefatory text found before the start of the musical text.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     
@@ -595,9 +613,6 @@
                                           as textual divisions; that is, as <span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>div<span data-indentation="4" class="element">&lt;/gi&gt;</span> elements, with an optional <span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>head<span data-indentation="4" class="element">&lt;/gi&gt;</span> sub-element describing the nature of the division. The <span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>pb<span data-indentation="4" class="element">&lt;/gi&gt;</span> element is allowed here in order to accommodate page images, 
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="4" class="element">&lt;/abbr&gt;</span></div>,
                                           cover, endpapers, etc. before and after the actual textual matter.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
-                                       <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
-                                    
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;remarks <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>The model of this element is based on the <span data-indentation="4" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html"</span>&gt;</span>front<span data-indentation="4" class="element">&lt;/ref&gt;</span> element of the Text Encoding Initiative (TEI).<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
@@ -608,7 +623,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/eb14650d73d4a33e8da5b122e79b023be618bc30" target="_blank" rel="noopener noreferrer">#eb14650</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e0144b751aab77c4c19a559832f7473a073ea36d" target="_blank" rel="noopener noreferrer">#e0144b7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -658,7 +673,7 @@
                                     })
                                     
                                     function getMenu() {
-                                        const fullVersion = '5.0'
+                                        const fullVersion = '5.1'
                                         const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
                                         console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
                                         
@@ -804,7 +819,7 @@
                 
                 searchResultsBox.innerHTML = '';
                 
-                document.querySelector('#searchPattern').innerHTML = pattern;
+                document.querySelector('#searchPattern').innerText = pattern;
                 
                 const pathAdjust = (reducedLevels) ? './' : '../';
                 

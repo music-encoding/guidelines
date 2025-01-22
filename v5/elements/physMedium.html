@@ -1,4 +1,5 @@
-<!DOCTYPE HTML><html lang="en">
+<!DOCTYPE HTML>
+<html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
@@ -7,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2023-09-05">
+      <meta name="date" content="2025-01-22">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -922,7 +923,6 @@
                            <p>All materials may be described in a single <a class="link_odd link_odd_elementSpec" href="../elements/physMedium.html">physMedium</a> element or
                               multiple elements may be used, one for each medium.</p>
                            
-                           
                            <p>The model of this element is based on respective elements of the Encoded Archival
                               Description (EAD). It
                               has the same function as the <a class="link_ref link_external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-material.html">material</a> element of the Text Encoding Initiative (TEI).</p>
@@ -934,7 +934,7 @@
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">ident=</span><span class="attributevalue">"physMedium"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.header"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2022-05-18"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>physical medium<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>physical medium<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Records the physical materials used in the source, such as ink and
                                        paper.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
@@ -961,9 +961,6 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>All materials may be described in a single <span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>physMedium<span data-indentation="4" class="element">&lt;/gi&gt;</span> element or
                                           multiple elements may be used, one for each medium.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
-                                       <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
-                                    
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;remarks <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>The model of this element is based on respective elements of the Encoded Archival
                                           Description (EAD). It
@@ -976,7 +973,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/eb14650d73d4a33e8da5b122e79b023be618bc30" target="_blank" rel="noopener noreferrer">#eb14650</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.1</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/e0144b751aab77c4c19a559832f7473a073ea36d" target="_blank" rel="noopener noreferrer">#e0144b7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1026,7 +1023,7 @@
                                     })
                                     
                                     function getMenu() {
-                                        const fullVersion = '5.0'
+                                        const fullVersion = '5.1'
                                         const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
                                         console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
                                         
@@ -1172,7 +1169,7 @@
                 
                 searchResultsBox.innerHTML = '';
                 
-                document.querySelector('#searchPattern').innerHTML = pattern;
+                document.querySelector('#searchPattern').innerText = pattern;
                 
                 const pathAdjust = (reducedLevels) ? './' : '../';
                 
