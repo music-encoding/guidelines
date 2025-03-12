@@ -8,7 +8,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-03-06">
+      <meta name="date" content="2025-03-12">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -52,7 +52,7 @@
                            <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Indicates the method employed to mark corrections and normalizations.">method</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Indicates the method employed to mark corrections and normalizations.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the method employed to mark corrections and normalizations.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">silent</span>" <i>(Corrections and normalizations made silently.)</i>,  "<span style="font-weight: 500;">tags</span>" <i>(Corrections and normalizations indicated using elements.)</i></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Indicates the method employed to mark corrections and normalizations.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the method employed to mark corrections and normalizations.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">silent</span>" <i>(Corrections and normalizations made silently.)</i>,  "<span style="font-weight: 500;">markup</span>" <i>(Corrections and normalizations represented using markup.)</i></span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.regularMethod&gt;</span><span class="step">direct children</span><span class="step end">@method</span></div>
                               </div>
                            </div>
@@ -60,7 +60,7 @@
                               <div class="classBox" title="direct children">
                                  <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the method employed to mark corrections and normalizations.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the method employed to mark corrections and normalizations.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">silent</span>" <i>(Corrections and normalizations made silently.)</i>,  "<span style="font-weight: 500;">tags</span>" <i>(Corrections and normalizations indicated using elements.)</i></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the method employed to mark corrections and normalizations.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the method employed to mark corrections and normalizations.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">silent</span>" <i>(Corrections and normalizations made silently.)</i>,  "<span style="font-weight: 500;">markup</span>" <i>(Corrections and normalizations represented using markup.)</i></span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -68,7 +68,7 @@
                               <div class="classBox" title="MEI.header">
                                  <div class="classHeading"><label class="classLabel">MEI.header</label><span class="classDesc">Metadata header component declarations.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the method employed to mark corrections and normalizations.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the method employed to mark corrections and normalizations.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">silent</span>" <i>(Corrections and normalizations made silently.)</i>,  "<span style="font-weight: 500;">tags</span>" <i>(Corrections and normalizations indicated using elements.)</i></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the method employed to mark corrections and normalizations.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the method employed to mark corrections and normalizations.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">silent</span>" <i>(Corrections and normalizations made silently.)</i>,  "<span style="font-weight: 500;">markup</span>" <i>(Corrections and normalizations represented using markup.)</i></span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -113,7 +113,9 @@
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"att.regularMethod"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.header"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
                                     
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Attributes that describe correction and normalization methods.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span> <span class="attribute">versionDate=</span><span class="attributevalue">"2024-07-22"</span>&gt;</span>regularization method<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span> <span class="attribute">versionDate=</span><span class="attributevalue">"2024-07-22"</span>&gt;</span>Attributes that describe correction and normalization methods.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                                        
@@ -128,9 +130,9 @@
                                                 <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Corrections and normalizations made silently.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                                 <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tags"</span>&gt;</span>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"markup"</span>&gt;</span>
                                                 
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Corrections and normalizations indicated using elements.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Corrections and normalizations represented using markup.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                                 <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valList&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
@@ -142,7 +144,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/43079331d8aa4e4670a3b100768f10e7826eeae7" target="_blank" rel="noopener noreferrer">#4307933</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1f69117673fa8821be37a85d345082322029c28c" target="_blank" rel="noopener noreferrer">#1f69117</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
