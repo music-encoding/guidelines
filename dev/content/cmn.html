@@ -4139,8 +4139,8 @@
                         
                         <h3 id="cmnOssia"><span class="headingNumber">4.3.7</span><span class="head">Ossia</span></h3>
                         
-                        <p>The term ossia, Italian for "or", denotes an alternative for a certain passage which
-                           is provided by the composer <em>without any preference</em> of one alternative over another. An ossia often provides a simpler (easier to perform)
+                        <p>The term <span class="term">ossia</span>, Italian for "or", denotes an alternative for a certain passage which is provided
+                           by the composer <em class="mentioned">without any preference</em> one alternative over another. An ossia often provides a simpler (easier to perform)
                            version of the original content. Another frequent use case for ossia is the provision
                            of indications about performance practice, such as an alternative version with ornamentation
                            written out in full. In all cases, it is up to the performer to choose between the
@@ -4156,7 +4156,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12902" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12903" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4169,10 +4169,10 @@
                                        
                                        <div class="indent indent2"><span data-indentation="2" class="element">&lt;ossia&gt;</span>
                                           
-                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff&gt;</span>
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;oStaff&gt;</span>
                                              
                                              <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!-- alternative content on reduced-size staff --&gt;</span></div>
-                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/oStaff&gt;</span></div>
                                           
                                           <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
                                              
@@ -4195,22 +4195,19 @@
                            </figure>
                            </p>
                         
-                        <p>The example above demonstrates that only one of the two <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> elements within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">ossia</a> has an <span class="att">n</span> attribute. This mechanism allows one to distinguish between the "regular" and the
-                           "alternative" content: The one bearing the <span class="att">n</span> attribute goes in line with the preceding measure’s staff, the other one is printed
-                           in reduced size above. In this case, the vertical order of staves follows document
-                           order: The top-most staff is encoded as the first child, the lowest comes last. In
-                           combination with the presence of the <span class="att">n</span> attribute, this allows the capture of multiple simultaneous ossia staves.</p>
+                        <p>The example above shows a <a class="link_odd link_odd_elementSpec" href="../elements/oStaff.html">oStaff</a> element and a <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> element within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">ossia</a>. This mechanism allows one to distinguish between the "regular" and the "alternative"
+                           content: The "normal" staff goes in line with the preceding measure’s staff, the <a class="link_odd link_odd_elementSpec" href="../elements/oStaff.html">oStaff</a> contains the alternative and is printed in reduced size above. In combination with
+                           the presence of an <span class="att">n</span> attribute multiple simultaneous ossia staves may be encoded.</p>
                         
                         <p>All staves within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">ossia</a>, even the alternative ones without a direct reference, obey the definitions of the
                            associated <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, which can be derived from the value of the <span class="att">n</span> attribute. Alternatively, a separate <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> may be given at the beginning of the contained <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> element(s).</p>
                         
-                        <p>In case of an inline ossia, the whole setup of elements moves down one step in the
-                           hierarchy, as seen in the following example:</p>
+                        <p>In case of an inline ossia, the alternative content is held in an <a class="link_odd link_odd_elementSpec" href="../elements/oLayer.html">oLayer</a> element, as seen in the following example:</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12948" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12958" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4230,10 +4227,10 @@
                                                 <div class="indent indent5"><span data-indentation="5" class="comment">&lt;!-- original content in regular layer --&gt;</span></div>
                                                 <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
                                              
-                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;oLayer&gt;</span>
                                                 
                                                 <div class="indent indent5"><span data-indentation="5" class="comment">&lt;!-- alternative content in separate layer --&gt;</span></div>
-                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/oLayer&gt;</span></div>
                                              <span data-indentation="3" class="element">&lt;/ossia&gt;</span></div>
                                           <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
                                        
@@ -4265,7 +4262,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12971" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12981" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4291,7 +4288,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12999" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e13009" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -4417,7 +4414,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13088" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13098" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4458,7 +4455,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13131" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13141" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4503,7 +4500,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13156" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13166" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4637,7 +4634,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13269.mei.svg"><div id="d18e13269" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13279.mei.svg"><div id="d18e13279" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -4729,7 +4726,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13296" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13306" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4859,7 +4856,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13409" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13419" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4895,7 +4892,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13435" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13445" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4952,7 +4949,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13474" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13484" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5065,7 +5062,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13554" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13564" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5106,7 +5103,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13577" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13587" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5192,7 +5189,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13621" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13631" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5242,7 +5239,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13650" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13660" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5308,7 +5305,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13683" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13693" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5348,7 +5345,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13716" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13726" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5411,7 +5408,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13751" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13761" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5451,7 +5448,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13764" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13774" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5497,7 +5494,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13787" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13797" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5547,7 +5544,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13830" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13840" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5601,7 +5598,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13843" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13853" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5739,7 +5736,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13926" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e13936" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5785,7 +5782,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13959" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e13969" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5848,7 +5845,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14012" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14022" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5894,7 +5891,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14067" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14077" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5947,7 +5944,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7f7c30462dfdba6bcada40943807569f7aca767e" target="_blank" rel="noopener noreferrer">#7f7c304</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/ed89edb09e2f313eebf667134a7870b27a01d70d" target="_blank" rel="noopener noreferrer">#ed89edb</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
