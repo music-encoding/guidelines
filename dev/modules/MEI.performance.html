@@ -38,7 +38,7 @@
                      <div class="desc">Performance component declarations.</div>
                      <div class="contentListBox">
                         <h3>Elements in MEI.performance</h3>
-                        <div class="contents"><a class="link_odd link_odd_elementSpec" href="../elements/avFile.html" title="References an external digital audio or video file.">avFile</a>, <a class="link_odd link_odd_elementSpec" href="../elements/clip.html" title="Defines a time segment of interest within a recording or within a digital audio or video file.">clip</a>, <a class="link_odd link_odd_elementSpec" href="../elements/performance.html" title="A presentation of one or more musical works.">performance</a>, <a class="link_odd link_odd_elementSpec" href="../elements/recording.html" title="A recorded performance.">recording</a>, <a class="link_odd link_odd_elementSpec" href="../elements/when.html" title="Indicates a point in time either absolutely (using the absolute attribute), or relative to another when element (using the since, interval and inttype attributes).">when</a></div>
+                        <div class="contents"><a class="link_odd link_odd_elementSpec" href="../elements/avFile.html" title="References an external digital audio or video file.">&lt;avFile&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/clip.html" title="Defines a time segment of interest within a recording or within a digital audio or video file.">&lt;clip&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/performance.html" title="A presentation of one or more musical works.">&lt;performance&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/recording.html" title="A recorded performance.">&lt;recording&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/when.html" title="Indicates a point in time either absolutely (using the absolute attribute), or relative to another when element (using the since, interval and inttype attributes).">&lt;when&gt;</a></div>
                      </div>
                      <div class="contentListBox">
                         <h3>Model Classes in MEI.performance</h3>
@@ -60,7 +60,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -268,8 +268,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

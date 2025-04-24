@@ -68,19 +68,19 @@
                               <li class="tab-item"><a data-display="members_compact" id="members_compact_tab" href="#members_compact_tab" class="displayTab active">compact</a></li>
                               <li class="tab-item"><a data-display="members_module" id="members_module_tab" href="#members_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="members_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/appInfo.html" title="Groups information about applications which have acted upon the MEI file.">appInfo</a>, <a class="link_odd link_odd_elementSpec" href="../elements/editorialDecl.html" title="Used to provide details of editorial principles and practices applied during the encoding of musical text.">editorialDecl</a>, <a class="link_odd link_odd_elementSpec" href="../elements/projectDesc.html" title="Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected.">projectDesc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html" title="Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection.">samplingDecl</a></div>
+                           <div id="members_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/appInfo.html" title="Groups information about applications which have acted upon the MEI file.">&lt;appInfo&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/editorialDecl.html" title="Used to provide details of editorial principles and practices applied during the encoding of musical text.">&lt;editorialDecl&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/projectDesc.html" title="Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected.">&lt;projectDesc&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html" title="Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection.">&lt;samplingDecl&gt;</a></div>
                            <div id="members_module" class="facetTabbedContent module" data-label="by module">
                               <div class="classBox" title="MEI.header">
                                  <div class="classHeading"><label class="classLabel">MEI.header</label><span class="classDesc">Metadata header component declarations.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="ident" title="Groups information about applications which have acted upon the MEI file."><a class="link_odd link_odd_elementSpec" href="../elements/appInfo.html">appInfo</a></span><span class="desc"><span class="desc">Groups information about applications which have acted upon
+                                    <div class="def"><span class="ident" title="Groups information about applications which have acted upon the MEI file."><a class="link_odd link_odd_elementSpec" href="../elements/appInfo.html">&lt;appInfo&gt;</a></span><span class="desc"><span class="desc">Groups information about applications which have acted upon
                                              the MEI file.</span></span></div>
-                                    <div class="def"><span class="ident" title="Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd link_odd_elementSpec" href="../elements/editorialDecl.html">editorialDecl</a></span><span class="desc"><span class="desc">Used to provide details of editorial principles and practices
+                                    <div class="def"><span class="ident" title="Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd link_odd_elementSpec" href="../elements/editorialDecl.html">&lt;editorialDecl&gt;</a></span><span class="desc"><span class="desc">Used to provide details of editorial principles and practices
                                              applied during the encoding of musical text.</span></span></div>
-                                    <div class="def"><span class="ident" title="Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected."><a class="link_odd link_odd_elementSpec" href="../elements/projectDesc.html">projectDesc</a></span><span class="desc"><span class="desc">Project-level meta-data describing the aim or purpose for which
+                                    <div class="def"><span class="ident" title="Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected."><a class="link_odd link_odd_elementSpec" href="../elements/projectDesc.html">&lt;projectDesc&gt;</a></span><span class="desc"><span class="desc">Project-level meta-data describing the aim or purpose for which
                                              the electronic file was encoded, funding agencies, etc. together with any other relevant
                                              information concerning the process by which it was assembled or collected.</span></span></div>
-                                    <div class="def"><span class="ident" title="Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection."><a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">samplingDecl</a></span><span class="desc"><span class="desc">Contains a prose description of the rationale and methods used in
+                                    <div class="def"><span class="ident" title="Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection."><a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">&lt;samplingDecl&gt;</a></span><span class="desc"><span class="desc">Contains a prose description of the rationale and methods used in
                                              sampling texts in the creation of a corpus or collection.</span></span></div>
                                  </div>
                               </div>
@@ -120,7 +120,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -328,8 +328,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

@@ -68,7 +68,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains a representation of a written source in the form of a set of images rather
                                        than
                                        as transcribed or encoded text.</span></div>
@@ -79,7 +79,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
                                        one or more graphic representations of that space, and rectangular zones of interest
                                        within
@@ -91,13 +91,13 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a></span></div>
-                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Defines an area of interest within a <a class="link_odd link_odd_elementSpec" href="#surface">surface</a> or graphic file.</span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Defines an area of interest within a <a class="link_odd link_odd_elementSpec" href="#surface">&lt;surface&gt;</a> or graphic file.</span></div>
                               </div>
                            </div>
                            </p>
                         
-                        <p>These element are used to add a separate subtree to MEI, starting with the <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a> element inside <a class="link_odd link_odd_elementSpec" href="../elements/music.html">music</a>, as seen in the following example:</p>
+                        <p>These element are used to add a separate subtree to MEI, starting with the <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element inside <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a>, as seen in the following example:</p>
                         
                         <p>
                            
@@ -136,8 +136,8 @@
                            </figure>
                            </p>
                         
-                        <p>It is possible to have more than one <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a> element in this location. This is especially useful when multiple sources are encoded
-                           in the same file using the mechanisms described in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> of these Guidelines. In this case, the <span class="att">decls</span> (declarations) attribute of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a> may be used to refer to a source defined in the document’s header, as seen in the
+                        <p>It is possible to have more than one <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element in this location. This is especially useful when multiple sources are encoded
+                           in the same file using the mechanisms described in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> of these Guidelines. In this case, the <span class="att">@decls</span> (declarations) attribute of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> may be used to refer to a source defined in the document’s header, as seen in the
                            following example:</p>
                         
                         <p>
@@ -181,11 +181,11 @@
                            </figure>
                            </p>
                         
-                        <p>When using the FRBR model (see <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a>), it is equally possible to reference a <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">manifestation</a> element instead of <a class="link_odd link_odd_elementSpec" href="../elements/source.html">source</a>.</p>
+                        <p>When using the FRBR model (see <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a>), it is equally possible to reference a <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> element instead of <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a>.</p>
                         
-                        <p>Within a <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a> element, each page of the source is represented by a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a> element. Each surface may be assigned an identifying string utilizing the <span class="att">label</span> attribute. In addition, it may encapsulate more detailed metadata about itself in
-                           a <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">figDesc</a> element. The coordinate space of the surface may be recorded in abstract terms in
-                           the <span class="att">ulx</span>, <span class="att">uly</span>, <span class="att">lrx</span>, and <span class="att">lry</span> attributes. For navigation purposes, <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a> has a <span class="att">startid</span> attribute that accommodates pointing to the first object appearing on this particular
+                        <p>Within a <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element, each page of the source is represented by a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> element. Each surface may be assigned an identifying string utilizing the <span class="att">@label</span> attribute. In addition, it may encapsulate more detailed metadata about itself in
+                           a <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">&lt;figDesc&gt;</a> element. The coordinate space of the surface may be recorded in abstract terms in
+                           the <span class="att">@ulx</span>, <span class="att">@uly</span>, <span class="att">@lrx</span>, and <span class="att">@lry</span> attributes. For navigation purposes, <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> has a <span class="att">@startid</span> attribute that accommodates pointing to the first object appearing on this particular
                            writing surface.</p>
                         
                         <p>
@@ -209,11 +209,11 @@
                            </figure>
                            </p>
                         
-                        <p>Within <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a> elements, one may nest one or more <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">graphic</a> elements, each providing a reference to an image file that represents the writing
-                           surface. Multiple <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">graphic</a> elements are permitted in order to accommodate alternative versions (different resolutions
+                        <p>Within <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> elements, one may nest one or more <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> elements, each providing a reference to an image file that represents the writing
+                           surface. Multiple <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> elements are permitted in order to accommodate alternative versions (different resolutions
                            or formats, for instance) of the surface image. In spite of changes in resolution
-                           or format, all images must contain the same content, <abbr>i.e.</abbr>, the entire writing surface. A <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">graphic</a> may refer to a single page within a multi-page document, which is – at least for
-                           Adobe PDF documents – available through a #page=X suffix to the <span class="att">target</span> attribute.</p>
+                           or format, all images must contain the same content, <abbr>i.e.</abbr>, the entire writing surface. A <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> may refer to a single page within a multi-page document, which is – at least for
+                           Adobe PDF documents – available through a #page=X suffix to the <span class="att">@target</span> attribute.</p>
                         
                         <p>
                            
@@ -258,7 +258,7 @@
                         
                         <p>The preceding markup will provide the basis for most page-turning applications. Often,
                            however, it is desirable to focus attention on particular areas of the graphical representation
-                           of the surface. The <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a> element fulfills this purpose:</p>
+                           of the surface. The <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a> element fulfills this purpose:</p>
                         
                         <p>
                            
@@ -324,11 +324,11 @@
                            </figure>
                            </p>
                         
-                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">figDesc</a> or <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">graphic</a> elements that provide detailed descriptive information about the zone and additional
+                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">&lt;figDesc&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> elements that provide detailed descriptive information about the zone and additional
                            images, e.g., at a different/higher resolution, of the rectangle defined by the zone.
                            The data objects contained within the zone may also be specified through the use of
-                           the <span class="att">data</span> attribute, which contains ID references to one more elements in the content tree
-                           of the MEI file, such as a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>, <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>, etc.</p>
+                           the <span class="att">@data</span> attribute, which contains ID references to one more elements in the content tree
+                           of the MEI file, such as a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>, etc.</p>
                         
                         <p>
                            
@@ -359,7 +359,7 @@
                            </figure>
                            </p>
                         
-                        <p>Conversely, an element in the content may refer to the <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a> subtree using its <span class="att">facs</span> attribute, which is made available by the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a> attribute class. The last example could therefore be encoded with pointers in the
+                        <p>Conversely, an element in the content may refer to the <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> subtree using its <span class="att">@facs</span> attribute, which is made available by the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a> attribute class. The last example could therefore be encoded with pointers in the
                            other direction:</p>
                         
                         <p>
@@ -391,11 +391,11 @@
                            </figure>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> element defined in the <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">2 Shared Concepts in MEI</a> makes special use of the <span class="att">facs</span> attribute, in that it does not point to a <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a>, but a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a> element instead. A <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> marks the beginning of a page, so it can be concluded that all elements in the content
-                           tree which are encoded between any two <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> elements encode musical symbols written on the page (<a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a>) referenced by the first of these two <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">pb</a> element’s <span class="att">facs</span> attribute.</p>
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> element defined in the <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">2 Shared Concepts in MEI</a> makes special use of the <span class="att">@facs</span> attribute, in that it does not point to a <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a>, but a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> element instead. A <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> marks the beginning of a page, so it can be concluded that all elements in the content
+                           tree which are encoded between any two <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> elements encode musical symbols written on the page (<a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a>) referenced by the first of these two <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> element’s <span class="att">@facs</span> attribute.</p>
                         
-                        <p>The encoding of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a> elements is intended to support sequential display of page images. If an encoder
-                           wants to describe the physical setup of a source document, the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">foliaDesc</a> element is more appropriate. The difference of both approaches, and how to combine
+                        <p>The encoding of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> elements is intended to support sequential display of page images. If an encoder
+                           wants to describe the physical setup of a source document, the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> element is more appropriate. The difference of both approaches, and how to combine
                            them, is described in chapter <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.7.1.5 Description of Folia</a>.</p>
                         </div>
                      </div>
@@ -422,7 +422,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/performance.html">performance</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A presentation of one or more musical works.</span></div>
                               </div>
                            </div>
@@ -431,7 +431,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/recording.html">recording</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/recording.html">&lt;recording&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A recorded performance.</span></div>
                               </div>
                            </div>
@@ -440,7 +440,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">avFile</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">References an external digital audio or video file.</span></div>
                               </div>
                            </div>
@@ -449,7 +449,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/clip.html">clip</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Defines a time segment of interest within a recording or within a digital audio or
                                        video
                                        file.</span></div>
@@ -460,7 +460,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Indicates a point in time either absolutely (using the absolute attribute), or relative
                                        to
                                        another when element (using the since, interval and inttype attributes).</span></div>
@@ -468,13 +468,13 @@
                            </div>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">performance</a> element begins a subtree of the <a class="link_odd link_odd_elementSpec" href="../elements/music.html">music</a> element and appears alongside with, or instead of, <a class="link_odd link_odd_elementSpec" href="../elements/body.html">body</a> (described in <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.2 General Music Structure Elements</a>) and <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">facsimile</a> (described in <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">12.1 Facsimiles</a>). A <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">performance</a> element represents one recorded performance event. As a performance may be recorded
-                           in multiple formats or by different personnel or using different equipment, the <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">performance</a> element may group one or more recordings of the event.</p>
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element begins a subtree of the <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> element and appears alongside with, or instead of, <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a> (described in <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.2 General Music Structure Elements</a>) and <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> (described in <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">12.1 Facsimiles</a>). A <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element represents one recorded performance event. As a performance may be recorded
+                           in multiple formats or by different personnel or using different equipment, the <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element may group one or more recordings of the event.</p>
                         
-                        <p>The <span class="att">decls</span> attribute can be used to point to performance medium metadata for the performed work.
+                        <p>The <span class="att">@decls</span> attribute can be used to point to performance medium metadata for the performed work.
                            See <a class="link_ptr chapterLink" title="Performance Medium" href="../content/metadata.html#headerWorkMedium">3.6.7 Performance Medium</a> and <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> for more details.</p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/recording.html">recording</a> element identifies a single recording event taking place within an absolute temporal
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/recording.html">&lt;recording&gt;</a> element identifies a single recording event taking place within an absolute temporal
                            space. The class <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a> contains attributes that can be used to define this space:</p>
                         
                         <p>
@@ -484,7 +484,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">begin</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
+                                 <div class="tile-title"><span class="att">@begin</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Specifies a point where the relevant content begins. A numerical value must be less
                                     and a time value must be earlier than that given by the end attribute.</div>
@@ -495,7 +495,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">end</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
+                                 <div class="tile-title"><span class="att">@end</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Specifies a point where the relevant content ends. If not specified, the end of the
                                     content is assumed to be the end point. A numerical value must be greater and a time
@@ -508,7 +508,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">betype</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
+                                 <div class="tile-title"><span class="att">@betype</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Type of values used in the begin/end attributes. The begin and end attributes can
                                     only
@@ -517,10 +517,10 @@
                            </div>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">avFile</a> element identifies an external file associated with a recording act. In the simplest
-                           case, the recording element will contain one <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">avFile</a> element identifying a file that represents it. The <span class="att">target</span> attribute contains the URI of the digital media file. Use of the <span class="att">mimetype</span> attribute is recommended for the <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">avFile</a> element. Its value should be a valid MIME media type defined by the Internet Engineering
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a> element identifies an external file associated with a recording act. In the simplest
+                           case, the recording element will contain one <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a> element identifying a file that represents it. The <span class="att">@target</span> attribute contains the URI of the digital media file. Use of the <span class="att">@mimetype</span> attribute is recommended for the <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a> element. Its value should be a valid MIME media type defined by the Internet Engineering
                            Task Force in RFC 2046. It is also recommended that all avFile elements have a recording
-                           or clip parent which bears the <span class="att">begin</span>, <span class="att">end</span>, and <span class="att">betype</span> attributes.</p>
+                           or clip parent which bears the <span class="att">@begin</span>, <span class="att">@end</span>, and <span class="att">@betype</span> attributes.</p>
                         
                         <p>
                            
@@ -578,7 +578,7 @@
                            </figure>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">clip</a> element identifies a temporal segment of a recording act. In the following example,
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> element identifies a temporal segment of a recording act. In the following example,
                            the clip begins two minutes into the timeframe of the recording and ends 20 seconds
                            later:</p>
                         
@@ -640,7 +640,7 @@
                         <p>A single performance may also be represented by multiple, <em>sequential</em> digital files, as when a complete work is recorded in several so-called ‘takes’.
                            In this case, the files may be considered to be parts of a single recording act, the
                            extent of which is the combined extent of the individual clips. For example, a series
-                           of <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">clip</a> elements may be used to identify each movement of a piece and give start and end
+                           of <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> elements may be used to identify each movement of a piece and give start and end
                            times for the movements in relation to the overall temporal space of the complete
                            work:</p>
                         
@@ -715,8 +715,8 @@
                            </figure>
                            </p>
                         
-                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">clip</a> may be used to define any region of interest, such as a cadenza or a modulation,
-                           a song verse, etc. The following example shows the use of <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">clip</a> and its attributes to identify significant sections of a recording:</p>
+                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> may be used to define any region of interest, such as a cadenza or a modulation,
+                           a song verse, etc. The following example shows the use of <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> and its attributes to identify significant sections of a recording:</p>
                         
                         <p>
                            
@@ -762,7 +762,7 @@
                            as a rudimentary "edit decision list" to create the matching digital files.</p>
                         
                         <p>If an encoding of the notated text with which the media files are associated is included
-                           in the MEI file, the <span class="att">startid</span> attribute can be used to indicate the first element in the sequence of events to
+                           in the MEI file, the <span class="att">@startid</span> attribute can be used to indicate the first element in the sequence of events to
                            which the recording corresponds:</p>
                         
                         <p>
@@ -808,7 +808,7 @@
                            </figure>
                            </p>
                         
-                        <p>Clips can also be aligned with components of the musical text encoded in the <a class="link_odd link_odd_elementSpec" href="../elements/body.html">body</a>. The <span class="att">startid</span> attribute can be used to specify the starting element in the sequence of events to
+                        <p>Clips can also be aligned with components of the musical text encoded in the <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a>. The <span class="att">@startid</span> attribute can be used to specify the starting element in the sequence of events to
                            which the clip corresponds. The following example shows the use of clip elements to
                            identify the exposition of the first movement from Beethoven’s piano sonata Op. 14,
                            no. 2 and its concluding ‘codetta’.</p>
@@ -913,7 +913,7 @@
                            </p>
                         
                         <p>A bibliographic description of a recording or metadata explaining how clip boundaries
-                           were determined may be associated with the recording and clip elements via the <span class="att">decls</span> attribute:</p>
+                           were determined may be associated with the recording and clip elements via the <span class="att">@decls</span> attribute:</p>
                         
                         <p>
                            
@@ -951,9 +951,9 @@
                            </p>
                         
                         <p>Associations between a feature of the encoding, such as a note, dynamic mark, or annotation,
-                           and a time point, may be created using <a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a> elements and <span class="att">when</span> attributes.</p>
+                           and a time point, may be created using <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> elements and <span class="att">@when</span> attributes.</p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a> element identifies a particular point in time during the playback of a media file,
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> element identifies a particular point in time during the playback of a media file,
                            such as an audio recording.</p>
                         
                         <p>
@@ -975,7 +975,7 @@
                            </p>
                         
                         <p>Time points may be identified in absolute terms as above; that is, in hours, minutes,
-                           and seconds since the beginning of the recording, or in relative terms using the <span class="att">interval</span>, <span class="att">inttype</span>, and <span class="att">since</span> attributes. In the following example, the time point of interest happens 48 frames
+                           and seconds since the beginning of the recording, or in relative terms using the <span class="att">@interval</span>, <span class="att">@inttype</span>, and <span class="att">@since</span> attributes. In the following example, the time point of interest happens 48 frames
                            after the occurrence of the point labelled as "t1".</p>
                         
                         <p>
@@ -997,7 +997,7 @@
                            </p>
                         
                         <p>Having identified a point of interest, another feature of the encoding may be associated
-                           with this point using its <span class="att">when</span> attribute:</p>
+                           with this point using its <span class="att">@when</span> attribute:</p>
                         
                         <p>
                            
@@ -1023,7 +1023,7 @@
                         <p>One use of the association created between the annotation and the time point is to
                            display the text of the annotation as the recording or clip is played.</p>
                         
-                        <p>The <span class="att">when</span> attributes allows only a single value, so only one-to-one relationships can be created
+                        <p>The <span class="att">@when</span> attributes allows only a single value, so only one-to-one relationships can be created
                            using this mechanism. However, one-to-many relationships are accommodated in the opposite
                            direction; that is, from a time point to other features of the markup. For example,</p>
                         
@@ -1045,12 +1045,12 @@
                            </figure>
                            </p>
                         
-                        <p>indicates that the entities identified in <span class="att">data</span> all occur at the same instant.</p>
+                        <p>indicates that the entities identified in <span class="att">@data</span> all occur at the same instant.</p>
                         
-                        <p><a class="link_odd link_odd_elementSpec" href="../elements/extData.html">extData</a> is a container for holding non-MEI data formats, similar to <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">extMeta</a> but available in <a class="link_odd link_odd_elementSpec" href="../elements/when.html">when</a> rather than in <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">meiHead</a>. <a class="link_odd link_odd_elementSpec" href="../elements/extData.html">extData</a> allows for data from audio or other sources to be linked to notes or other score
+                        <p><a class="link_odd link_odd_elementSpec" href="../elements/extData.html">&lt;extData&gt;</a> is a container for holding non-MEI data formats, similar to <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a> but available in <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> rather than in <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a>. <a class="link_odd link_odd_elementSpec" href="../elements/extData.html">&lt;extData&gt;</a> allows for data from audio or other sources to be linked to notes or other score
                            events. Data should be enclosed in a CDATA tag.</p>
                         
-                        <p>The following example shows JSON formatted performance data encoded with <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">extMeta</a> for a single note (presumed to be defined elsewhere in the document as with the ID
+                        <p>The following example shows JSON formatted performance data encoded with <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a> for a single note (presumed to be defined elsewhere in the document as with the ID
                            "note_1"). Both single-value summaries (<abbr>e.g.</abbr>, pitch) and time series values (<abbr>e.g.</abbr>, contF0) are encoded.</p>
                         
                         <p>
@@ -1083,7 +1083,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1293,8 +1293,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

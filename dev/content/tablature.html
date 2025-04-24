@@ -49,9 +49,9 @@
                         <h3 id="tablature-def"><span class="headingNumber">7.1.1</span><span class="head">Defining the Notation</span></h3>
                         
                         <p>Tablatures come in a variety of types or notations, varying according to instrument
-                           but also according to historical context. The notation used is defined on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element using the <span class="att">notationtype</span> attribute. Possible values are: <span class="val">tab.guitar</span>, <span class="val">tab.lute.italian</span>, <span class="val">tab.lute.french</span> and <span class="val">tab.lute.german</span>.</p>
+                           but also according to historical context. The notation used is defined on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> element using the <span class="att">@notationtype</span> attribute. Possible values are: <span class="val">tab.guitar</span>, <span class="val">tab.lute.italian</span>, <span class="val">tab.lute.french</span> and <span class="val">tab.lute.german</span>.</p>
                         
-                        <p>The <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element is used to define the number of horizontal lines used in a staff.</p>
+                        <p>The <span class="att">@lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> element is used to define the number of horizontal lines used in a staff.</p>
                         
                         <p>
                            
@@ -92,7 +92,7 @@
                            from the same tablatures. Our tuning specification supports indicating course tunings
                            on their own, or string tunings as well.</p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">tuning</a> element is used inside <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> to describe the pitches of the open strings of the instrument. In the simplest cases,
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">&lt;tuning&gt;</a> element is used inside <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> to describe the pitches of the open strings of the instrument. In the simplest cases,
                            the tuning can be named from a standard list. For example, to specify the most common
                            tuning of the guitar:</p>
                         
@@ -138,10 +138,10 @@
                            </figure>
                            </p>
                         
-                        <p>Custom tuning may be needed when no existing <span class="att">tuning.standard</span> value applies. The <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> element gives the tuning of each course. <span class="att">n</span> captures the course number (counting from the course closest to the player’s feet
-                           when the instrument is played), <span class="att">pname</span> the pitch information and <span class="att">oct</span> the octave information.</p>
+                        <p>Custom tuning may be needed when no existing <span class="att">@tuning.standard</span> value applies. The <a class="link_odd link_odd_elementSpec" href="../elements/course.html">&lt;course&gt;</a> element gives the tuning of each course. <span class="att">@n</span> captures the course number (counting from the course closest to the player’s feet
+                           when the instrument is played), <span class="att">@pname</span> the pitch information and <span class="att">@oct</span> the octave information.</p>
                         
-                        <p>For standard classical guitar tuning, the <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">tuning</a> element might look like this:</p>
+                        <p>For standard classical guitar tuning, the <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">&lt;tuning&gt;</a> element might look like this:</p>
                         
                         <p>
                            
@@ -173,7 +173,7 @@
                            </figure>
                            </p>
                         
-                        <p>Chromatic alteration of the open string’s pitch may be indicated by adding the <span class="att">accid</span>. For example, a guitar in E-flat tuning might look like this:</p>
+                        <p>Chromatic alteration of the open string’s pitch may be indicated by adding the <span class="att">@accid</span>. For example, a guitar in E-flat tuning might look like this:</p>
                         
                         <p>
                            
@@ -211,7 +211,7 @@
                         
                         <p>Where the specific instrumental setup is important, the stringing of the instrument
                            can also be specified. The example below is a common way to string and tune a 6-course
-                           renaissance lute. The pitch on <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> indicates how the resulting note would normally be transcribed in score, and would
+                           renaissance lute. The pitch on <a class="link_odd link_odd_elementSpec" href="../elements/course.html">&lt;course&gt;</a> indicates how the resulting note would normally be transcribed in score, and would
                            often be derived from the lowest sounding pitch.</p>
                         
                         <p>
@@ -280,10 +280,10 @@
                         
                         <h3 id="tablature-basics"><span class="headingNumber">7.2.1</span><span class="head">Basic Structure</span></h3>
                         
-                        <p>Unlike CMN, <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> elements in tablature do not have an explicit pitch, but indicate playing instructions
-                           (<abbr>i.e.</abbr>, where to place fingers on the fingerboard and when to play the strings). The <span class="att">tab.course</span> attribute is used to capture which course is to be struck, and <span class="att">tab.fret</span> specifies on which fret of the fretboard the player should stop the course. A value
-                           of <span class="val">0</span> for <span class="att">tab.fret</span> refers to an unstopped, open course; a value of <span class="val">1</span> refers to the first fret; and so on. Course order is the same as that given in the
-                           <a class="link_odd link_odd_elementSpec" href="../elements/course.html">course</a> elements.</p>
+                        <p>Unlike CMN, <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> elements in tablature do not have an explicit pitch, but indicate playing instructions
+                           (<abbr>i.e.</abbr>, where to place fingers on the fingerboard and when to play the strings). The <span class="att">@tab.course</span> attribute is used to capture which course is to be struck, and <span class="att">@tab.fret</span> specifies on which fret of the fretboard the player should stop the course. A value
+                           of <span class="val">0</span> for <span class="att">@tab.fret</span> refers to an unstopped, open course; a value of <span class="val">1</span> refers to the first fret; and so on. Course order is the same as that given in the
+                           <a class="link_odd link_odd_elementSpec" href="../elements/course.html">&lt;course&gt;</a> elements.</p>
                         
                         <p>
                            
@@ -302,10 +302,10 @@
                            </figure>
                            </p>
                         
-                        <p>A set of vertically-aligned symbols is indicated by <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>, <abbr>i.e.</abbr>, a chord whose notes are played at the same time, and have the same (minimum) notated
-                           duration. The duration of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> may be indicated visually with a rhythm symbol, whose presence is encoded using the
-                           <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> element. In many cases, the rhythm sign is omitted where it would repeat the previous
-                           value. For this reason <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> is optional, and the durational value of the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is encoded as <span class="att">dur</span>.</p>
+                        <p>A set of vertically-aligned symbols is indicated by <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a>, <abbr>i.e.</abbr>, a chord whose notes are played at the same time, and have the same (minimum) notated
+                           duration. The duration of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a> may be indicated visually with a rhythm symbol, whose presence is encoded using the
+                           <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">&lt;tabDurSym&gt;</a> element. In many cases, the rhythm sign is omitted where it would repeat the previous
+                           value. For this reason <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">&lt;tabDurSym&gt;</a> is optional, and the durational value of the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a> is encoded as <span class="att">@dur</span>.</p>
                         
                         <p>
                            
@@ -331,7 +331,7 @@
                            </figure>
                            </p>
                         
-                        <p>As with CMN, rhythm flags joined together can be indicated using <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">beam</a>. Since every note in a beam group always has a rhythm sign, <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> should be used for beamed notes.</p>
+                        <p>As with CMN, rhythm flags joined together can be indicated using <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">&lt;beam&gt;</a>. Since every note in a beam group always has a rhythm sign, <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">&lt;tabDurSym&gt;</a> should be used for beamed notes.</p>
                         
                         <p>
                            
@@ -367,7 +367,7 @@
                            </p>
                         
                         <p>Tablatures usually indicate a rest by a rhythm sign that has no symbols for notes
-                           underneath. We can encode this with a <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">tabDurSym</a> that is the only element of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
+                           underneath. We can encode this with a <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">&lt;tabDurSym&gt;</a> that is the only element of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a>.</p>
                         
                         <p>
                            
@@ -390,7 +390,7 @@
                            </p>
                         
                         <p>In some rare cases, special rest symbols may also appear below the rhythm sign. This
-                           can be encoded by adding a <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">rest</a> to the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a>.</p>
+                           can be encoded by adding a <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a> to the <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a>.</p>
                         
                         <p>
                            
@@ -427,22 +427,22 @@
                            of the tablature notes in horizontal strands (<abbr>i.e.</abbr>, ‘rows’ or ‘lines’) are thus required.</p>
                         
                         <ul>
-                           <li class="item">The <span class="att">tab.align</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> specifies the vertical alignment of the tablature notes. It typically takes two of
+                           <li class="item">The <span class="att">@tab.align</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> specifies the vertical alignment of the tablature notes. It typically takes two of
                               the four data.VERTICALALIGNMENT values (<span class="val">top</span> and <span class="val">bottom</span>), and can be used to encode a consistent alignment of the tablature notes towards
-                              the top row or the bottom row. As with <span class="att">valign</span>, <span class="val">top</span> is the default value for <span class="att">tab.align</span>. Therefore, in practice, <span class="att">tab.align</span> is only required in the ‘bottom’ scenario.</li>
-                           <li class="item">The <span class="att">lines</span> attribute, also on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, is used to specify the number of horizontal strands. These lines are conceptual
+                              the top row or the bottom row. As with <span class="att">@valign</span>, <span class="val">top</span> is the default value for <span class="att">@tab.align</span>. Therefore, in practice, <span class="att">@tab.align</span> is only required in the ‘bottom’ scenario.</li>
+                           <li class="item">The <span class="att">@lines</span> attribute, also on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>, is used to specify the number of horizontal strands. These lines are conceptual
                               rather than visible. Following general MEI practice, lines are counted from bottom
                               to top, starting at 1.</li>
-                           <li class="item">In specific cases, <span class="att">tab.anchorline</span> is also needed on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>. It is used where the vertical alignment of tablature notes is consistent but cannot
-                              be identified using a typical value of <span class="att">tab.align</span> (<abbr>i.e.</abbr>, <span class="val">top</span> or <span class="val">bottom</span>). It specifies the horizontal strand corresponding to the <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> that anchors the vertical position of notes. Note that the usage of <span class="att">tab.anchorline</span> always implies top alignment (see examples below).</li>
-                           <li class="item">The <span class="att">tab.line</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>, which also corresponds to the <span class="att">lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, is used to indicate position of the note on one of these strands — where this deviates
-                              from the default positioning suggested by <span class="att">tab.align</span> and/or <span class="att">tab.anchorline</span>.</li>
+                           <li class="item">In specific cases, <span class="att">@tab.anchorline</span> is also needed on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>. It is used where the vertical alignment of tablature notes is consistent but cannot
+                              be identified using a typical value of <span class="att">@tab.align</span> (<abbr>i.e.</abbr>, <span class="val">top</span> or <span class="val">bottom</span>). It specifies the horizontal strand corresponding to the <span class="att">@lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> that anchors the vertical position of notes. Note that the usage of <span class="att">@tab.anchorline</span> always implies top alignment (see examples below).</li>
+                           <li class="item">The <span class="att">@tab.line</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>, which also corresponds to the <span class="att">@lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>, is used to indicate position of the note on one of these strands — where this deviates
+                              from the default positioning suggested by <span class="att">@tab.align</span> and/or <span class="att">@tab.anchorline</span>.</li>
                         </ul>
                         
                         <p>The mechanisms presented in this section may be used to encode German lute tablature
                            according to the following four scenarios. Note that, in the encoding, the order of
-                           notes in <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is significant — the first encoded note is the top symbol drawn in the chord, while
-                           the last encoded note that is a child of <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">tabGrp</a> is the bottom symbol in the chord.</p>
+                           notes in <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a> is significant — the first encoded note is the top symbol drawn in the chord, while
+                           the last encoded note that is a child of <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a> is the bottom symbol in the chord.</p>
                         
                         <ul>
                            <li class="item">Alignment from the top.
@@ -546,7 +546,7 @@
                                  </figure>
                                  </p>
                               
-                              <p>Example encoding — note the usage of <span class="att">tab.align</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>:</p>
+                              <p>Example encoding — note the usage of <span class="att">@tab.align</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>:</p>
                               
                               <p>
                                  
@@ -652,7 +652,7 @@
                                  </figure>
                                  </p>
                               
-                              <p>Example encoding (<abbr>m.</abbr> 1) — note the usage of <span class="att">lines</span> and <span class="att">tab.anchorline</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>:</p>
+                              <p>Example encoding (<abbr>m.</abbr> 1) — note the usage of <span class="att">@lines</span> and <span class="att">@tab.anchorline</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>:</p>
                               
                               <p>
                                  
@@ -774,7 +774,7 @@
                                  </figure>
                                  </p>
                               
-                              <p>Example encoding (<abbr>m.</abbr> 1) — note the usage of <span class="att">lines</span> and <span class="att">tab.anchorline</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>:</p>
+                              <p>Example encoding (<abbr>m.</abbr> 1) — note the usage of <span class="att">@lines</span> and <span class="att">@tab.anchorline</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>:</p>
                               
                               <p>
                                  
@@ -837,9 +837,9 @@
                                  </figure>
                                  </p>
                               </li>
-                           <li class="item">Irregular alignment. In cases where the alignment provided by <span class="att">tab.align</span> or <span class="att">tab.anchorline</span> are insufficient, <abbr>i.e.</abbr>, because the scribe is placing the symbols according to an imagined grid, this may
-                              be specified in the encoding. To do this, the <span class="att">lines</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> should be used to specify the number of horizontal strands, and the <span class="att">tab.line</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> is to indicate the position of the note on one of these strands — but only where
-                              this deviates from the positioning suggested by <span class="att">tab.align</span>.
+                           <li class="item">Irregular alignment. In cases where the alignment provided by <span class="att">@tab.align</span> or <span class="att">@tab.anchorline</span> are insufficient, <abbr>i.e.</abbr>, because the scribe is placing the symbols according to an imagined grid, this may
+                              be specified in the encoding. To do this, the <span class="att">@lines</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> should be used to specify the number of horizontal strands, and the <span class="att">@tab.line</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> is to indicate the position of the note on one of these strands — but only where
+                              this deviates from the positioning suggested by <span class="att">@tab.align</span>.
                               
                               <p>
                                  
@@ -847,7 +847,7 @@
                                  </figure>
                                  </p>
                               
-                              <p>Example encoding (<abbr>mm.</abbr> 1–3) — note the usage of <span class="att">lines</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> and <span class="att">tab.line</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>s.</p>
+                              <p>Example encoding (<abbr>mm.</abbr> 1–3) — note the usage of <span class="att">@lines</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> and <span class="att">@tab.line</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>s.</p>
                               
                               <p>
                                  
@@ -1067,9 +1067,9 @@
                               
                               <p>In the above example, it is the case that the vertical positioning is suggestive of
                                  voice-leading. To explicitly capture this information, layers can be specified via
-                                 <span class="att">layer</span> on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>. These can be associated with a layer definition in the <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">layerDef</a> within the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> if desired.</p>
+                                 <span class="att">@layer</span> on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>. These can be associated with a layer definition in the <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">&lt;layerDef&gt;</a> within the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> if desired.</p>
                               
-                              <p>Example encoding (<abbr>m.</abbr> 3) — note the usage of <span class="att">layer</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a>s.</p>
+                              <p>Example encoding (<abbr>m.</abbr> 3) — note the usage of <span class="att">@layer</span> on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>s.</p>
                               
                               <p>
                                  
@@ -1202,7 +1202,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1412,8 +1412,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

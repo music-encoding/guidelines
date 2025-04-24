@@ -47,7 +47,7 @@
                      <p>This chapter describes how to encode differences between multiple exemplars of the
                         same musical work (often referred to in MEI as ‘sources’). The mechanisms and elements
                         described in this chapter are closely related to their counterparts in the TEI guidelines.
-                        It is also important to refer to chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> of these guidelines, especially concerning the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a> element described therein.</p>
+                        It is also important to refer to chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> of these guidelines, especially concerning the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element described therein.</p>
                      
                      <div class="div3">
                         
@@ -62,7 +62,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains one or more alternative encodings.</span></div>
                               </div>
                            </div>
@@ -71,7 +71,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains the lemma, or base text, of a textual variation.</span></div>
                               </div>
                            </div>
@@ -80,15 +80,15 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains a single reading within a textual variation.</span></div>
                               </div>
                            </div>
                            </p>
                         
-                        <p>An <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> element always encapsulates the differences between varying sources. Therefore, it
-                           must contain at least two child elements. Possible child elements are <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a> and <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a>, which use the same model, but have a different meaning: Whereas <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a> is used for prioritizing one alternative, a <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> has no such additional meaning and simply indicates a reading as found in one or
-                           more sources. Accordingly, <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a> is allowed only once in <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a>, whereas <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> may appear as often as necessary.</p>
+                        <p>An <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> element always encapsulates the differences between varying sources. Therefore, it
+                           must contain at least two child elements. Possible child elements are <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a>, which use the same model, but have a different meaning: Whereas <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a> is used for prioritizing one alternative, a <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> has no such additional meaning and simply indicates a reading as found in one or
+                           more sources. Accordingly, <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a> is allowed only once in <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a>, whereas <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> may appear as often as necessary.</p>
                         
                         <p>
                            
@@ -124,7 +124,7 @@
                            </figure>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> (and <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a>) elements use the <span class="att">source</span> attribute to point to one or more descriptions of the bibliographic sources containing
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> (and <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a>) elements use the <span class="att">@source</span> attribute to point to one or more descriptions of the bibliographic sources containing
                            the material they mark:</p>
                         
                         <p>
@@ -189,7 +189,7 @@
                            </figure>
                            </p>
                         
-                        <p>The <span class="att">seq</span> attribute may be used on <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a> or <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> to record the sequence of a series of readings. In the following example, the material
+                        <p>The <span class="att">@seq</span> attribute may be used on <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> to record the sequence of a series of readings. In the following example, the material
                            in source B is marked as sequential to (and perhaps derived from) the reading in source
                            A:</p>
                         
@@ -224,7 +224,7 @@
                         
                         <p>If interested in modeling such dependencies between witnesses, using markup from <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> is generally recommendable.</p>
                         
-                        <p>If a source has additional content that is not found in other sources, an empty <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> element may be used to indicate the lack of material in the other sources. In the
+                        <p>If a source has additional content that is not found in other sources, an empty <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> element may be used to indicate the lack of material in the other sources. In the
                            following example, source 1 includes material that is not found in sources 2 and 3:</p>
                         
                         <p>
@@ -254,7 +254,7 @@
                            </p>
                         
                         <p>When working with a large number of sources, it might seem tedious to provide references
-                           for all sources. However, use of the <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> element without <span class="att">source</span> is not recommended because such an encoding is not explicit and is therefore difficult
+                           for all sources. However, use of the <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> element without <span class="att">@source</span> is not recommended because such an encoding is not explicit and is therefore difficult
                            to process.</p>
                         </div>
                      
@@ -262,7 +262,7 @@
                         
                         <h3 id="critAppInContent"><span class="headingNumber">11.1.2</span><span class="head">Variants in Musical Content</span></h3>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> element may be used to accommodate textual variation at nearly any point in a musical
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> element may be used to accommodate textual variation at nearly any point in a musical
                            text. For example, it may be used to indicate minor differences such as stem directions:</p>
                         
                         <p>
@@ -342,7 +342,7 @@
                            </figure>
                            </p>
                         
-                        <p>However, the flexibility in the location of <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> places a burden on the encoder to ensure that the <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a> elements are used correctly; that is, the content of every <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> and <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">lem</a> has to be a valid replacement for its parent <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a>, even though this cannot be controlled effectively by the MEI schema.</p>
+                        <p>However, the flexibility in the location of <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> places a burden on the encoder to ensure that the <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a> elements are used correctly; that is, the content of every <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a> has to be a valid replacement for its parent <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a>, even though this cannot be controlled effectively by the MEI schema.</p>
                         </div>
                      
                      <div class="div3">
@@ -350,15 +350,15 @@
                         <h3 id="critAppInDefs"><span class="headingNumber">11.1.3</span><span class="head">Variants in Score Definitions</span></h3>
                         
                         <p>In addition to its use for differentiation of the musical content of multiple sources,
-                           <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> may also be utilized to describe the layout of different scores, even when the musical
+                           <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> may also be utilized to describe the layout of different scores, even when the musical
                            content itself remains the same. An example of this is two sources that have the same
                            content, but a different ordering of staves on which the content is written. By definition,
-                           the order of staves in MEI is described in and derived from the order of <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> elements in <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a>, not from the order of <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> elements within a <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>. The <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> element in a measure points to its corresponding <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> using the same value for <span class="att">n</span> on both elements.</p>
+                           the order of staves in MEI is described in and derived from the order of <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> elements in <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a>, not from the order of <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> elements within a <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>. The <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> element in a measure points to its corresponding <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> using the same value for <span class="att">@n</span> on both elements.</p>
                         
                         <p>This rather loose mechanism makes it possible to point dynamically to the correct
                            staff definition for a given source. The following example demonstrates how this can
                            be accomplished for two sources, both presenting a two-staff score, but with differing
-                           staff order. No further <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> element is necessary within the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> to describe the alternative score order of the sources.</p>
+                           staff order. No further <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> element is necessary within the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> to describe the alternative score order of the sources.</p>
                         
                         <p>
                            
@@ -420,12 +420,12 @@
                            </figure>
                            </p>
                         
-                        <p>When unique values for <span class="att">n</span> on <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">layerDef</a> and <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> are provided, it is possible to reallocate layers in the same fashion as staves.</p>
+                        <p>When unique values for <span class="att">@n</span> on <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">&lt;layerDef&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> are provided, it is possible to reallocate layers in the same fashion as staves.</p>
                         
                         <p>This mechanism may also be used to describe not only differing page orientations,
                            formats and margins, but also clefs and keys.</p>
                         
-                        <p>The use of <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> in conjunction with <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> illustrates the greater flexibility of connecting <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> and <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> by a shared <span class="att">n</span> value. A technically more robust alternative to <span class="att">n</span> would be to use the <span class="att">def</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a>, which points to the <span class="att">xml:id</span> of a <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>. However, this strong connection would be tied to one specific <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, and would not allow to pick one alternative out of an <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a>.</p>
+                        <p>The use of <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> in conjunction with <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> illustrates the greater flexibility of connecting <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> by a shared <span class="att">@n</span> value. A technically more robust alternative to <span class="att">@n</span> would be to use the <span class="att">@def</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a>, which points to the <span class="att">@xml:id</span> of a <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>. However, this strong connection would be tied to one specific <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>, and would not allow to pick one alternative out of an <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a>.</p>
                         </div>
                      
                      <div class="div3">
@@ -433,7 +433,7 @@
                         <h3 id="critAppNesting"><span class="headingNumber">11.1.4</span><span class="head">Nesting Apparati</span></h3>
                         
                         <p>In some situations, musical sources will agree at one level while differing at a lower
-                           level. For these cases, <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> elements may be nested to any level necessary. In the following example, there are
+                           level. For these cases, <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> elements may be nested to any level necessary. In the following example, there are
                            three sources, two of which agree on the addition of a measure, but differ in the
                            content of the added measure:</p>
                         
@@ -494,7 +494,7 @@
                            </figure>
                            </p>
                         
-                        <p>When nesting <a class="link_odd link_odd_elementSpec" href="../elements/app.html">app</a> elements, it is important that the value(s) in the child <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> element’s <span class="att">source</span> attribute must be a strict subset of the ancestor <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">rdg</a> element’s <span class="att">source</span> value.</p>
+                        <p>When nesting <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> elements, it is important that the value(s) in the child <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> element’s <span class="att">@source</span> attribute must be a strict subset of the ancestor <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> element’s <span class="att">@source</span> value.</p>
                         </div>
                      </div>
                   
@@ -536,7 +536,7 @@
                               <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                            </div>
                            <div class="tile-content">
-                              <div class="tile-title"><span class="att">cert</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.evidence.html">att.evidence</a>)
+                              <div class="tile-title"><span class="att">@cert</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.evidence.html">att.evidence</a>)
                                  </div>
                               <div class="tile-subtitle text-gray">Signifies the degree of certainty or precision associated with a feature.</div>
                            </div>
@@ -546,7 +546,7 @@
                               <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                            </div>
                            <div class="tile-content">
-                              <div class="tile-title"><span class="att">resp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a>)
+                              <div class="tile-title"><span class="att">@resp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a>)
                                  </div>
                               <div class="tile-subtitle text-gray">Indicates the agent(s) responsible for some aspect of the text’s transcription,
                                  editing, or encoding. Its value must point to one or more identifiers declared in
@@ -562,7 +562,7 @@
                         is to indicate that their content represents an editorial intervention (or, in some
                         cases, the lack of intervention) of a specific kind. Sometimes, pairs or other meaningful
                         groupings of such elements can be recorded, then wrapped within the special purpose
-                        <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a> element:</p>
+                        <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element:</p>
                      
                      <p>
                         
@@ -571,7 +571,7 @@
                               <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                            </div>
                            <div class="tile-content">
-                              <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a></span></div>
+                              <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a></span></div>
                               <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Groups a number of alternative encodings for the same point in a text.</span></div>
                            </div>
                         </div>
@@ -583,7 +583,7 @@
                         the ‘Urtext view’ of the text and one or more ‘views’ of the text after the application
                         of the encoded editorial interventions.</p>
                      
-                     <p>Elements which can be combined in this way constitute the <a class="link_odd link_odd_modelClass" href="../model-classes/model.choicePart.html">model.choicePart</a> class. The default members of this class are <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">sic</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a>, <a class="link_odd link_odd_elementSpec" href="../elements/reg.html">reg</a>, <a class="link_odd link_odd_elementSpec" href="../elements/orig.html">orig</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">unclear</a>. As <a class="link_odd link_odd_modelClass" href="../model-classes/model.editLike.html">model.editLike</a> and <a class="link_odd link_odd_modelClass" href="../model-classes/model.editorialLike.html">model.editorialLike</a> are members of <a class="link_odd link_odd_modelClass" href="../model-classes/model.choicePart.html">model.choicePart</a>, <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a>, <a class="link_odd link_odd_elementSpec" href="../elements/subst.html">subst</a>, <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a> can also be combined with the other elements. All of their functions and usage are
+                     <p>Elements which can be combined in this way constitute the <a class="link_odd link_odd_modelClass" href="../model-classes/model.choicePart.html">model.choicePart</a> class. The default members of this class are <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/orig.html">&lt;orig&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a>. As <a class="link_odd link_odd_modelClass" href="../model-classes/model.editLike.html">model.editLike</a> and <a class="link_odd link_odd_modelClass" href="../model-classes/model.editorialLike.html">model.editorialLike</a> are members of <a class="link_odd link_odd_modelClass" href="../model-classes/model.choicePart.html">model.choicePart</a>, <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/subst.html">&lt;subst&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> can also be combined with the other elements. All of their functions and usage are
                         described in greater detail below.</p>
                      
                      <p>Three categories of editorial intervention are discussed by the remainder of this
@@ -649,7 +649,7 @@
                            </figure>
                            </p>
                         
-                        <p>The generic <span class="att">type</span> attribute may be used to classify the abbreviation according to a convenient typology.
+                        <p>The generic <span class="att">@type</span> attribute may be used to classify the abbreviation according to a convenient typology.
                            Sample values include:</p>
                         
                         <p class="gloss"><strong><span>suspension</span></strong>:
@@ -670,9 +670,9 @@
                         <p class="gloss"><strong><span>geographic</span></strong>:
                            the abbreviation is for a geographic name.</p>
                         
-                        <p>This tag is the mirror image of the <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a> tag (not to be confused with the <a class="link_odd link_odd_elementSpec" href="../elements/expansion.html">expansion</a> element described in <a class="link_ptr chapterLink" title="Content of Musical Divisions" href="../content/shared.html#sharedMdivContent">2.1.2.2 Content of Musical Divisions</a>). Both <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a> allow the encoder to transcribe an abbreviation and its expansion. In the case of
-                           <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a>, the original is transcribed as the content of the element and the expansion as an
-                           attribute value, while <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a> reverses this. The choice between the two is up to the user. For example:</p>
+                        <p>This tag is the mirror image of the <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> tag (not to be confused with the <a class="link_odd link_odd_elementSpec" href="../elements/expansion.html">&lt;expansion&gt;</a> element described in <a class="link_ptr chapterLink" title="Content of Musical Divisions" href="../content/shared.html#sharedMdivContent">2.1.2.2 Content of Musical Divisions</a>). Both <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> allow the encoder to transcribe an abbreviation and its expansion. In the case of
+                           <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a>, the original is transcribed as the content of the element and the expansion as an
+                           attribute value, while <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> reverses this. The choice between the two is up to the user. For example:</p>
                         
                         <p>
                            
@@ -707,16 +707,16 @@
                            </figure>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a> tag is not required; if appropriate, the encoder may transcribe abbreviations in
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a> tag is not required; if appropriate, the encoder may transcribe abbreviations in
                            the source text silently, without tagging them. If abbreviations are not transcribed
                            directly but expanded silently, then the MEI header should indicate this is the case.
-                           The <span class="att">cert</span> attribute signifies the degree of certainty ascribed to the expansion of the abbreviation.
-                           The <span class="att">expan</span> attribute gives an expansion of the abbreviation. The <span class="att">resp</span> attribute contains an ID reference to an element containing the name of the editor
+                           The <span class="att">@cert</span> attribute signifies the degree of certainty ascribed to the expansion of the abbreviation.
+                           The <span class="att">@expan</span> attribute gives an expansion of the abbreviation. The <span class="att">@resp</span> attribute contains an ID reference to an element containing the name of the editor
                            or transcriber responsible for supplying the expansion of the abbreviation.</p>
                         
-                        <p>When the content of the <span class="att">abbr</span> or <span class="att">expan</span> attributes requires additional markup, an attribute cannot be used. In this case,
+                        <p>When the content of the <span class="att">@abbr</span> or <span class="att">@expan</span> attributes requires additional markup, an attribute cannot be used. In this case,
                            the abbreviated and expanded forms must be presented within elements. Furthermore,
-                           as alternatives to each other, the <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a> elements must be wrapped by the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a> element, as described above. The previous example, where the 'o:' in 'pno:' is written
+                           as alternatives to each other, the <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> elements must be wrapped by the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element, as described above. The previous example, where the 'o:' in 'pno:' is written
                            as superscript, would be encoded as:</p>
                         
                         <p>
@@ -754,14 +754,14 @@
                            <p>Many musical scores make use of various kinds of shorthand notation which omit some
                               parts of the score that have already been written elsewhere. Typical examples for
                               this are symbols that indicate repetition of the preceding measure or beat. In MEI,
-                              these symbols can be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/mRpt.html">mRpt</a> and <a class="link_odd link_odd_elementSpec" href="../elements/beatRpt.html">beatRpt</a> elements respectively. Often, similar graphical symbols (often one or two slashes,
+                              these symbols can be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/mRpt.html">&lt;mRpt&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/beatRpt.html">&lt;beatRpt&gt;</a> elements respectively. Often, similar graphical symbols (often one or two slashes,
                               "//") are used to mean that the current staff should have the same or similar content
                               as another staff.</p>
                            
                            <p>
-                              <em>colla parte</em> directives have a less strictly-defined scope than the ‘Rpt elements’ (<a class="link_odd link_odd_elementSpec" href="../elements/beatRpt.html">beatRpt</a>, <a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html">halfmRpt</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRpt.html">mRpt</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRpt2.html">mRpt2</a>, <a class="link_odd link_odd_elementSpec" href="../elements/multiRpt.html">multiRpt</a>). That is, rather than specifying the repetition of content of a particular duration,
+                              <em>colla parte</em> directives have a less strictly-defined scope than the ‘Rpt elements’ (<a class="link_odd link_odd_elementSpec" href="../elements/beatRpt.html">&lt;beatRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html">&lt;halfmRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRpt.html">&lt;mRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRpt2.html">&lt;mRpt2&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/multiRpt.html">&lt;multiRpt&gt;</a>). That is, rather than specifying the repetition of content of a particular duration,
                               like a measure or beat, <em>colla parte</em> instructions can refer to material of any length. In order to encode such scribal
-                              shorthand, MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a> element, which allows filling of blank spaces in the score with horizontally and/or
+                              shorthand, MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> element, which allows filling of blank spaces in the score with horizontally and/or
                               vertically distant material.</p>
                            
                            <p>
@@ -771,16 +771,16 @@
                                     <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a></span></div>
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a></span></div>
                                     <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A verbal or graphical indication to copy musical material
                                           written elsewhere.</span></div>
                                  </div>
                               </div>
                               </p>
                            
-                           <p>Like any other ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>), <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a> is placed in the score using the <span class="att">staff</span> and <span class="att">tstamp</span> attributes. The end point of the mark itself, when necessary, may be indicated using
-                              the <span class="att">tstamp2</span> attribute. The source material, which is intended to be inserted in the space indicated
-                              by the copy mark, can be identified by the attributes <span class="att">origin.tstamp</span>, <span class="att">origin.tstamp2</span>, <span class="att">origin.staff</span> and <span class="att">origin.layer</span>. While <span class="att">origin.tstamp</span> provides the relative distance from the beginning of the "gap", <span class="att">origin.tstamp</span> is relative to the position identified by <span class="att">origin.tstamp</span>. However, <span class="att">origin.tstamp</span> defaults to the same value as <span class="att">tstamp2</span> and should only be provided when necessary. When neither <span class="att">origin.staff</span> nor <span class="att">origin.tstamp</span> are provided, they take the same values as the cpMark’s <span class="att">staff</span> and <span class="att">tstamp</span> attributes; that is, they indicate a strict ‘vertical’ or ‘horizontal’ copy.</p>
+                           <p>Like any other ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>), <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> is placed in the score using the <span class="att">@staff</span> and <span class="att">@tstamp</span> attributes. The end point of the mark itself, when necessary, may be indicated using
+                              the <span class="att">@tstamp2</span> attribute. The source material, which is intended to be inserted in the space indicated
+                              by the copy mark, can be identified by the attributes <span class="att">@origin.tstamp</span>, <span class="att">@origin.tstamp2</span>, <span class="att">@origin.staff</span> and <span class="att">@origin.layer</span>. While <span class="att">@origin.tstamp</span> provides the relative distance from the beginning of the "gap", <span class="att">@origin.tstamp</span> is relative to the position identified by <span class="att">@origin.tstamp</span>. However, <span class="att">@origin.tstamp</span> defaults to the same value as <span class="att">@tstamp2</span> and should only be provided when necessary. When neither <span class="att">@origin.staff</span> nor <span class="att">@origin.tstamp</span> are provided, they take the same values as the cpMark’s <span class="att">@staff</span> and <span class="att">@tstamp</span> attributes; that is, they indicate a strict ‘vertical’ or ‘horizontal’ copy.</p>
                            
                            <p>
                               
@@ -790,15 +790,15 @@
                               </p>
                            
                            <p>In the example above, there are no less than three different copy instructions, which
-                              need to be encoded with four <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a> elements. First, Weber inserts characters from "a" to "f" in red ink to identify
+                              need to be encoded with four <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> elements. First, Weber inserts characters from "a" to "f" in red ink to identify
                               filled measures. Then, he repeats the same characters in <em>empty</em> measures, which indicates that the content from the <em>filled</em> measures should be copied here. While one could try to encode this with just one
-                              <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a> element, it is both clearer and easier to process when using two elements.</p>
+                              <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> element, it is both clearer and easier to process when using two elements.</p>
                            
                            <p>The second and third shorthand indications are written in the second violin (lower
                               staff). Here, Weber writes "unis.[ono]", silently omitting the reference to the first
                               violin. His next shorthand ("in 8va") additionally instructs the copyist to double
                               the written material in another octave. This information can be captured using the
-                              <span class="att">dis</span> and <span class="att">dis.place</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a>.</p>
+                              <span class="att">@dis</span> and <span class="att">@dis.place</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a>.</p>
                            
                            <p>
                               
@@ -827,11 +827,11 @@
                               </p>
                            
                            <p>Text used as a copy mark, like the letters in the Weber example, may be encoded as
-                              content of the <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a> element. In the case of non-text marks, the <span class="att">altsym</span> and <span class="att">facs</span> attributes may be used to refer to a graphical surrogate.</p>
+                              content of the <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> element. In the case of non-text marks, the <span class="att">@altsym</span> and <span class="att">@facs</span> attributes may be used to refer to a graphical surrogate.</p>
                            
                            <p>Depending on the purpose of the encoding, the omitted parts in the score may be filled
-                              with <a class="link_odd link_odd_elementSpec" href="../elements/space.html">space</a> and <a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">mSpace</a> elements of appropriate duration or silently overwritten with the content that the
-                              <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">cpMark</a> identifies. Also, these two options may be combined through the use a <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a> element whose <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">abbr</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a> children explicitly encode a transcription of the original ‘gap’ (in abbr) and the
+                              with <a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">&lt;mSpace&gt;</a> elements of appropriate duration or silently overwritten with the content that the
+                              <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> identifies. Also, these two options may be combined through the use a <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element whose <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> children explicitly encode a transcription of the original ‘gap’ (in abbr) and the
                               result of the insertion of the indicated material (in expan, see <a class="link_ptr chapterLink" title="Abbreviations" href="../content/scholarlyediting.html#edittransAbbrev">11.2.1 Abbreviations</a>).</p>
                            </div>
                         </div>
@@ -854,7 +854,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">sic</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains apparently incorrect or inaccurate material.</span></div>
                               </div>
                            </div>
@@ -863,7 +863,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains the correct form of an apparent erroneous passage.</span></div>
                               </div>
                            </div>
@@ -935,7 +935,7 @@
                            </p>
                         
                         <p>Alternatively, the encoder may simply record the typographic error without correcting
-                           it, either without comment or with a <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">sic</a> element to indicate the error is not a transcription error in the encoding:</p>
+                           it, either without comment or with a <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a> element to indicate the error is not a transcription error in the encoding:</p>
                         
                         <p>
                            
@@ -968,7 +968,7 @@
                            </p>
                         
                         <p>If the encoder elects to record the original source text and provide a correction
-                           for the sake of transparency, both <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">sic</a> and <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a> may be used, wrapped in a <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a> element. The order of the <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">sic</a> and <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a> elements is not significant:</p>
+                           for the sake of transparency, both <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a> may be used, wrapped in a <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element. The order of the <a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a> elements is not significant:</p>
                         
                         <p>
                            
@@ -1059,9 +1059,9 @@
                            </figure>
                            </p>
                         
-                        <p>Here the <span class="att">resp</span> attribute has been used to indicate responsibility for the correction. Its value
-                           (<span class="val">#editTrans.JK</span>) is an example of the pointer values discussed in section <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">13 Linking Data</a>. In this case, the <span class="att">resp</span> attribute points to a <a class="link_odd link_odd_elementSpec" href="../elements/name.html">name</a> element within the metadata header, but any element might be indicated in this way,
-                           if the correction has been taken from some other source. The <span class="att">resp</span> attribute is available for all elements which are members of the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a> class (through <a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a>). The <a class="link_odd link_odd_attClass" href="../attribute-classes/att.edit.html">att.edit</a> class makes available a <span class="att">cert</span> attribute (through <a class="link_odd link_odd_attClass" href="../attribute-classes/att.evidence.html">att.evidence</a>), which may be used to indicate the degree of editorial confidence in a particular
+                        <p>Here the <span class="att">@resp</span> attribute has been used to indicate responsibility for the correction. Its value
+                           (<span class="val">#editTrans.JK</span>) is an example of the pointer values discussed in section <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">13 Linking Data</a>. In this case, the <span class="att">@resp</span> attribute points to a <a class="link_odd link_odd_elementSpec" href="../elements/name.html">&lt;name&gt;</a> element within the metadata header, but any element might be indicated in this way,
+                           if the correction has been taken from some other source. The <span class="att">@resp</span> attribute is available for all elements which are members of the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a> class (through <a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a>). The <a class="link_odd link_odd_attClass" href="../attribute-classes/att.edit.html">att.edit</a> class makes available a <span class="att">@cert</span> attribute (through <a class="link_odd link_odd_attClass" href="../attribute-classes/att.evidence.html">att.evidence</a>), which may be used to indicate the degree of editorial confidence in a particular
                            correction, as in the following example:</p>
                         
                         <p>
@@ -1103,10 +1103,10 @@
                            </p>
                         
                         <p>Where, as here, the correction takes the form of amending information present in the
-                           text being encoded, the encoder should use the <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a> element. Where the correction is present in the text being encoded, and consists
-                           of some combination of visible additions and deletions, the elements <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a> and / or <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a> should be used. For additional information on the use of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a>, see section <a class="link_ptr chapterLink" title="Additions and Deletions" href="../content/scholarlyediting.html#edittransAddDel">11.2.4.3 Additions and Deletions</a>. Where the correction takes the form of an addition of material not present in the
-                           original because of physical damage or illegibility, the <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a> element may be used. Where the ‘correction’ is simply a matter of expanding abbreviated
-                           notation, the <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">expan</a> element may be used.</p>
+                           text being encoded, the encoder should use the <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a> element. Where the correction is present in the text being encoded, and consists
+                           of some combination of visible additions and deletions, the elements <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and / or <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> should be used. For additional information on the use of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, see section <a class="link_ptr chapterLink" title="Additions and Deletions" href="../content/scholarlyediting.html#edittransAddDel">11.2.4.3 Additions and Deletions</a>. Where the correction takes the form of an addition of material not present in the
+                           original because of physical damage or illegibility, the <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a> element may be used. Where the ‘correction’ is simply a matter of expanding abbreviated
+                           notation, the <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> element may be used.</p>
                         </div>
                      
                      <div class="div3">
@@ -1129,7 +1129,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">reg</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains material which has been regularized or normalized in some
                                        sense.</span></div>
                               </div>
@@ -1139,7 +1139,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">orig</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">&lt;orig&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains material which is marked as following the original, rather than
                                        being normalized or corrected.</span></div>
                               </div>
@@ -1149,7 +1149,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">choice</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Groups a number of alternative encodings for the same point in a text.</span></div>
                               </div>
                            </div>
@@ -1165,7 +1165,7 @@
                            </p>
                         
                         <p>An encoder may choose to preserve this original clef, but flag it as nonstandard from
-                           the perspective of current practice by using the <a class="link_odd link_odd_elementSpec" href="../elements/orig.html">orig</a> element with no attributes specified, as follows:</p>
+                           the perspective of current practice by using the <a class="link_odd link_odd_elementSpec" href="../elements/orig.html">&lt;orig&gt;</a> element with no attributes specified, as follows:</p>
                         
                         <p>
                            
@@ -1189,7 +1189,7 @@
                            </p>
                         
                         <p>Alternatively, the encoder may indicate that the clef has been modernized into a G-clef
-                           by using the <a class="link_odd link_odd_elementSpec" href="../elements/reg.html">reg</a> element with no attributes specified, as follows:</p>
+                           by using the <a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a> element with no attributes specified, as follows:</p>
                         
                         <p>
                            
@@ -1244,7 +1244,7 @@
                            </figure>
                            </p>
                         
-                        <p>As described above, the <span class="att">resp</span> attribute may be used to specify the agent responsible for the regularization.</p>
+                        <p>As described above, the <span class="att">@resp</span> attribute may be used to specify the agent responsible for the regularization.</p>
                         </div>
                      
                      <div class="div3">
@@ -1263,7 +1263,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/gap.html">gap</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Indicates a point where material has been omitted in a transcription, whether as part
                                        of
                                        sampling practice or for editorial reasons described in the MEI header.</span></div>
@@ -1274,7 +1274,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">unclear</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains material that cannot be transcribed with certainty because it is illegible
                                        or
                                        inaudible in the source.</span></div>
@@ -1285,7 +1285,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">reason</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.reasonIdent.html">att.reasonIdent</a>)
+                                 <div class="tile-title"><span class="att">@reason</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.reasonIdent.html">att.reasonIdent</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Holds a short phrase describing the reason for missing textual material (gap), why
                                     material is supplied (supplied), or why transcription is difficult (unclear).</div>
@@ -1296,7 +1296,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Marks an addition to the text.</span></div>
                               </div>
                            </div>
@@ -1305,7 +1305,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains information deleted, marked as deleted, or otherwise indicated as
                                        superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
                               </div>
@@ -1319,7 +1319,7 @@
                            <p>Encoders may choose to omit parts of the source for reasons ranging from illegibility,
                               (making transcription difficult or impossible), to editorial policy, <abbr>e.g.</abbr>, systematic exclusion of poetry or prose from an encoding. The full details of the
                               policy decisions concerned should be documented in the MEI header (see section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>). Each place in the text at which omission has taken place should be marked with
-                              a <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">gap</a> element, optionally with further information about the reason for the omission, its
+                              a <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a> element, optionally with further information about the reason for the omission, its
                               extent, and the person or agency responsible for it, as in the following examples:</p>
                            
                            <p>
@@ -1355,13 +1355,13 @@
                               </figure>
                               </p>
                            
-                           <p>Note that the extent of the gap may be marked precisely using attributes <span class="att">unit</span> and <span class="att">extent</span>.</p>
+                           <p>Note that the extent of the gap may be marked precisely using attributes <span class="att">@unit</span> and <span class="att">@extent</span>.</p>
                            
-                           <p>Unlike TEI, MEI does not offer a <em>desc</em> element for further description of the reason for a gap. Instead, an <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">annot</a> may refer to the gap via its <span class="att">startid</span>, <span class="att">endid</span>, or <span class="att">plist</span> attributes and provide additional information.</p>
+                           <p>Unlike TEI, MEI does not offer a <em>desc</em> element for further description of the reason for a gap. Instead, an <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> may refer to the gap via its <span class="att">@startid</span>, <span class="att">@endid</span>, or <span class="att">@plist</span> attributes and provide additional information.</p>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">unclear</a> element is used to mark passages in the original which cannot be read with confidence,
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a> element is used to mark passages in the original which cannot be read with confidence,
                               or about which the transcriber is uncertain for other reasons, as for example when
-                              transcribing an illegible source. Its <span class="att">reason</span> and <span class="att">resp</span> attributes are used, as with the <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">gap</a> element, to indicate the cause of uncertainty and the person responsible for the
+                              transcribing an illegible source. Its <span class="att">@reason</span> and <span class="att">@resp</span> attributes are used, as with the <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a> element, to indicate the cause of uncertainty and the person responsible for the
                               conjectured reading.</p>
                            
                            <p>
@@ -1388,22 +1388,22 @@
                               </figure>
                               </p>
                            
-                           <p>Where the difficulty in transcription arises from an identifiable cause, the <span class="att">agent</span> attribute signifies the causative agent. The <span class="att">cert</span> attribute signifies the degree of certainty ascribed to the transcription of the
-                              text contained within the <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">unclear</a> element. Where the difficulty in transcription arises from action (partial deletion,
-                              etc.) assignable to an identifiable hand, the <span class="att">hand</span> attribute may record the hand responsible for the action.</p>
+                           <p>Where the difficulty in transcription arises from an identifiable cause, the <span class="att">@agent</span> attribute signifies the causative agent. The <span class="att">@cert</span> attribute signifies the degree of certainty ascribed to the transcription of the
+                              text contained within the <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a> element. Where the difficulty in transcription arises from action (partial deletion,
+                              etc.) assignable to an identifiable hand, the <span class="att">@hand</span> attribute may record the hand responsible for the action.</p>
                            
                            <p>When the reason for a gap in the encoding is damage of the document carrier (the paper
-                              on which the document is written, for example), the <a class="link_odd link_odd_elementSpec" href="../elements/damage.html">damage</a> element should be used instead of the <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">gap</a> element. In the case of damage resulting from an identifiable cause, the <span class="att">agent</span> attribute signifies the causative agent. The <span class="att">degree</span> attribute signifies the degree of damage according to a convenient scale. A <a class="link_odd link_odd_elementSpec" href="../elements/damage.html">damage</a> tag with this attribute should only be used where the text may be read with some
-                              confidence; data supplied from other sources should be tagged as <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a>. The <span class="att">extent</span> attribute indicates approximately how much text is in the damaged area, in notes,
+                              on which the document is written, for example), the <a class="link_odd link_odd_elementSpec" href="../elements/damage.html">&lt;damage&gt;</a> element should be used instead of the <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a> element. In the case of damage resulting from an identifiable cause, the <span class="att">@agent</span> attribute signifies the causative agent. The <span class="att">@degree</span> attribute signifies the degree of damage according to a convenient scale. A <a class="link_odd link_odd_elementSpec" href="../elements/damage.html">&lt;damage&gt;</a> tag with this attribute should only be used where the text may be read with some
+                              confidence; data supplied from other sources should be tagged as <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a>. The <span class="att">@extent</span> attribute indicates approximately how much text is in the damaged area, in notes,
                               measures, inches, or any appropriate unit, where this cannot be deduced from the contents
                               of the tag. For example, the damage may span structural divisions in the text so that
                               the tag must then be empty of content. In the case of damage (deliberate defacement,
-                              etc.) assignable to an identifiable hand, the <span class="att">hand</span> attribute signifies the hand responsible for the damage.</p>
+                              etc.) assignable to an identifiable hand, the <span class="att">@hand</span> attribute signifies the hand responsible for the damage.</p>
                            
                            <p>Sometimes the editor provides information not present in the source material. These
-                              conjectures or emendations are marked up in MEI using the <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a> element.</p>
+                              conjectures or emendations are marked up in MEI using the <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a> element.</p>
                            
-                           <p>The following example demonstrates the use of the <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a> element in combination with <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">gap</a> within <a class="link_odd link_odd_elementSpec" href="../elements/subst.html">subst</a>:</p>
+                           <p>The following example demonstrates the use of the <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a> element in combination with <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a> within <a class="link_odd link_odd_elementSpec" href="../elements/subst.html">&lt;subst&gt;</a>:</p>
                            
                            <p>
                               
@@ -1444,9 +1444,9 @@
                               </figure>
                               </p>
                            
-                           <p>When the presumed loss of text arises from an identifiable cause, <span class="att">agent</span> signifies the causative agent. When the presumed loss of text arises from action
-                              (partial deletion, etc.) assignable to an identifiable hand, the <span class="att">hand</span> attribute signifies the hand responsible for the action. The <span class="att">reason</span> attribute indicates why the text has to be supplied, <abbr>e.g.</abbr>, 'overbinding', 'faded ink', 'lost folio', 'omitted in original', etc. The <span class="att">source</span> attribute contains the source of the supplied text. The editor(s) responsible for
-                              supplied material may be recorded in the <span class="att">resp</span> attribute. The value of <span class="att">resp</span> must point to one or more identifiers declared in the document header. The <span class="att">cert</span> attribute signifies the degree of certainty ascribed to the supplied material.</p>
+                           <p>When the presumed loss of text arises from an identifiable cause, <span class="att">@agent</span> signifies the causative agent. When the presumed loss of text arises from action
+                              (partial deletion, etc.) assignable to an identifiable hand, the <span class="att">@hand</span> attribute signifies the hand responsible for the action. The <span class="att">@reason</span> attribute indicates why the text has to be supplied, <abbr>e.g.</abbr>, 'overbinding', 'faded ink', 'lost folio', 'omitted in original', etc. The <span class="att">@source</span> attribute contains the source of the supplied text. The editor(s) responsible for
+                              supplied material may be recorded in the <span class="att">@resp</span> attribute. The value of <span class="att">@resp</span> must point to one or more identifiers declared in the document header. The <span class="att">@cert</span> attribute signifies the degree of certainty ascribed to the supplied material.</p>
                            </div>
                         
                         <div class="div4">
@@ -1454,7 +1454,7 @@
                            <h4 id="edittransVisual"><span class="headingNumber">11.2.4.2</span><span class="head">Visual appearance of editorial decisions</span></h4>
                            
                            <p>Material added by the editors is often highlighted in the sheet music, either by brackets
-                              or small print. In addition to the semantic markup by elements like <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a>, the visual appearance can be encoded using the attributes <span class="att">enclose</span> and <span class="att">fontsize</span>, which are available on many elements.</p>
+                              or small print. In addition to the semantic markup by elements like <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a>, the visual appearance can be encoded using the attributes <span class="att">@enclose</span> and <span class="att">@fontsize</span>, which are available on many elements.</p>
                            
                            <p>
                               
@@ -1509,10 +1509,10 @@
                            
                            <h4 id="edittransAddDel"><span class="headingNumber">11.2.4.3</span><span class="head">Additions and Deletions</span></h4>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a> elements may be used to record where material has been added or deleted in the source
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> elements may be used to record where material has been added or deleted in the source
                               material.</p>
                            
-                           <p>The following example demonstrates the usage of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a> to mark up a note being added to an existing chord:</p>
+                           <p>The following example demonstrates the usage of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> to mark up a note being added to an existing chord:</p>
                            
                            <p>
                               
@@ -1544,8 +1544,8 @@
                               </figure>
                               </p>
                            
-                           <p>The next example shows how <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a> may be used to capture the information that two measures have been cancelled. As
-                              seen in this example, the <span class="att">rend</span> attribute is used to specify the method of deletion.</p>
+                           <p>The next example shows how <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> may be used to capture the information that two measures have been cancelled. As
+                              seen in this example, the <span class="att">@rend</span> attribute is used to specify the method of deletion.</p>
                            
                            <p>
                               
@@ -1595,13 +1595,13 @@
                               </p>
                            
                            <p>Additional information for both elements may be specified using attributes. Whereas
-                              the <span class="att">hand</span> attribute marks responsibility for the textual change, the <span class="att">resp</span> attribute is used to refer to the editor who identified this textual change as such.
-                              The <span class="att">cert</span> attribute signifies the degree of certainty ascribed to the identification of the
+                              the <span class="att">@hand</span> attribute marks responsibility for the textual change, the <span class="att">@resp</span> attribute is used to refer to the editor who identified this textual change as such.
+                              The <span class="att">@cert</span> attribute signifies the degree of certainty ascribed to the identification of the
                               hand of the deletion or addition.</p>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a> element should not be used to mark editorial changes, such as supplying a note omitted
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> element should not be used to mark editorial changes, such as supplying a note omitted
                               by mistake from the source text or a passage present in another source. In these cases,
-                              either the <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">corr</a> or <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">supplied</a> tags should be used instead.</p>
+                              either the <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a> tags should be used instead.</p>
                            </div>
                         
                         <div class="div4">
@@ -1609,8 +1609,8 @@
                            <h4 id="edittransSubst"><span class="headingNumber">11.2.4.4</span><span class="head">Substitutions, Restorations, and Handshifts</span></h4>
                            
                            <p>When several interventions to the musical text are to be regarded as a single action,
-                              they may be grouped using the <a class="link_odd link_odd_elementSpec" href="../elements/subst.html">subst</a> element. The most common combination is a replacement of portions of the musical
-                              text using both the <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a> element, as seen in the following example:</p>
+                              they may be grouped using the <a class="link_odd link_odd_elementSpec" href="../elements/subst.html">&lt;subst&gt;</a> element. The most common combination is a replacement of portions of the musical
+                              text using both the <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> element, as seen in the following example:</p>
                            
                            <p>
                               
@@ -1654,7 +1654,7 @@
                               </p>
                            
                            <p>An intervention closely related to substitution is the restoration of a previously
-                              deleted section. For this purpose MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/restore.html">restore</a> element, which may contain a <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a> or other content directly.</p>
+                              deleted section. For this purpose MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/restore.html">&lt;restore&gt;</a> element, which may contain a <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> or other content directly.</p>
                            
                            <p>The following example illustrates an instance where a lyric was cancelled and later
                               restored by overwriting it:</p>
@@ -1686,14 +1686,14 @@
                               </figure>
                               </p>
                            
-                           <p>The <span class="att">desc</span> attribute gives a prose description of the means of restoration. The <span class="att">cert</span> attribute signifies the degree of certainty ascribed to the identification of the
-                              hand of the restoration. The <span class="att">type</span> attribute may be used to indicate the action cancelled by the restoration. The <span class="att">resp</span> attribute contains an ID reference to an element containing the name of the editor
-                              or transcriber responsible for identifying the hand of the restoration. The <span class="att">hand</span> attribute signifies the hand of the agent which made the restoration.</p>
+                           <p>The <span class="att">@desc</span> attribute gives a prose description of the means of restoration. The <span class="att">@cert</span> attribute signifies the degree of certainty ascribed to the identification of the
+                              hand of the restoration. The <span class="att">@type</span> attribute may be used to indicate the action cancelled by the restoration. The <span class="att">@resp</span> attribute contains an ID reference to an element containing the name of the editor
+                              or transcriber responsible for identifying the hand of the restoration. The <span class="att">@hand</span> attribute signifies the hand of the agent which made the restoration.</p>
                            
-                           <p>MEI offers a <a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">handShift</a> milestone element that can be used to mark a change of scribe or scribal style.</p>
+                           <p>MEI offers a <a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">&lt;handShift&gt;</a> milestone element that can be used to mark a change of scribe or scribal style.</p>
                            
-                           <p>The <span class="att">character</span> attribute describes characteristics of the hand, particularly those related to the
-                              quality of the writing, <abbr>e.g.</abbr>, 'shaky', 'thick', regular'. A description of the tint or type of ink, <abbr>e.g.</abbr>, 'brown' or the writing medium, <abbr>e.g.</abbr>, 'pencil', may be placed in the <span class="att">medium</span> attribute.</p>
+                           <p>The <span class="att">@character</span> attribute describes characteristics of the hand, particularly those related to the
+                              quality of the writing, <abbr>e.g.</abbr>, 'shaky', 'thick', regular'. A description of the tint or type of ink, <abbr>e.g.</abbr>, 'brown' or the writing medium, <abbr>e.g.</abbr>, 'pencil', may be placed in the <span class="att">@medium</span> attribute.</p>
                            
                            <p>
                               
@@ -1724,13 +1724,13 @@
                               </figure>
                               </p>
                            
-                           <p>The new hand may be identified using the <span class="att">new</span> attribute, while the previous hand may be recorded in the <span class="att">old</span> attribute. The <span class="att">resp</span> attribute contains an ID reference to an element containing the name of the editor
-                              or transcriber responsible for identifying the change of hand. The <span class="att">cert</span> attribute signifies the degree of certainty ascribed to the identification of the
+                           <p>The new hand may be identified using the <span class="att">@new</span> attribute, while the previous hand may be recorded in the <span class="att">@old</span> attribute. The <span class="att">@resp</span> attribute contains an ID reference to an element containing the name of the editor
+                              or transcriber responsible for identifying the change of hand. The <span class="att">@cert</span> attribute signifies the degree of certainty ascribed to the identification of the
                               new hand.</p>
                            
                            <p>When using this element within a layer, it is important to ensure that all layers
-                              and staves are considered. Every <a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">handShift</a> affects only the content of its own layer and staff, even in the following measures.
-                              Therefore, there must be a separate <a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">handShift</a> for every <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> and <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a>. This mechanism allows the description of shifts at timestamps that differ between
+                              and staves are considered. Every <a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">&lt;handShift&gt;</a> affects only the content of its own layer and staff, even in the following measures.
+                              Therefore, there must be a separate <a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">&lt;handShift&gt;</a> for every <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>. This mechanism allows the description of shifts at timestamps that differ between
                               each staff.</p>
                            </div>
                         </div>
@@ -1765,8 +1765,8 @@
                            two other states on a second page. This doesn't necessarily allow to identify the
                            succession of all four states.</p>
                         
-                        <p>MEI utilizes the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">genDesc</a> element to describe the recoverable genetic states of a work. It is nested inside
-                           <a class="link_odd link_odd_elementSpec" href="../elements/music.html">music</a> and may contain a number of <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">genState</a> elements.</p>
+                        <p>MEI utilizes the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> element to describe the recoverable genetic states of a work. It is nested inside
+                           <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> and may contain a number of <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a> elements.</p>
                         
                         <p>
                            
@@ -1775,7 +1775,7 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">genDesc</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Bundles information about the textual development of a
                                        work.</span></div>
                               </div>
@@ -1785,13 +1785,13 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/genState.html">genState</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Describes a distinctive state in the textual development of a work.</span></div>
                               </div>
                            </div>
                            </p>
                         
-                        <p>A genetic description is used to bundle all known states of a work. The <span class="att">ordered</span> attribute may be used to specify whether the order of child elements of the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">genDesc</a> matches their temporal order, or if their temporal order is unknown. As <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">genDesc</a> may be self-nested, it is possible to specify the order of some states within a larger
+                        <p>A genetic description is used to bundle all known states of a work. The <span class="att">@ordered</span> attribute may be used to specify whether the order of child elements of the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> matches their temporal order, or if their temporal order is unknown. As <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> may be self-nested, it is possible to specify the order of some states within a larger
                            unordered set of genetic states, or to position a set of states with unknown temporal
                            order in a larger ordered set.</p>
                         
@@ -1832,17 +1832,17 @@
                         
                         <p>Even when the temporal order of a set of states is not fully recoverable, some arguments
                            about relative chronology may be available. It is possible to encode these statements
-                           with the precision the editor feels comfortable with, utilizing the attributes <span class="att">next</span> and <span class="att">prev</span> (for immediate successors / predecessors), and <span class="att">precedes</span> and <span class="att">follows</span> (for relative successors / predecessors).</p>
+                           with the precision the editor feels comfortable with, utilizing the attributes <span class="att">@next</span> and <span class="att">@prev</span> (for immediate successors / predecessors), and <span class="att">@precedes</span> and <span class="att">@follows</span> (for relative successors / predecessors).</p>
                         
-                        <p>Genetic states can be further described by using any combination of the <a class="link_odd link_odd_elementSpec" href="../elements/desc.html">desc</a>, <a class="link_odd link_odd_elementSpec" href="../elements/date.html">date</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">respStmt</a> children of <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">genState</a>.</p>
+                        <p>Genetic states can be further described by using any combination of the <a class="link_odd link_odd_elementSpec" href="../elements/desc.html">&lt;desc&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/date.html">&lt;date&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a> children of <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a>.</p>
                         </div>
                      
                      <div class="div3">
                         
                         <h3 id="geneticReferences"><span class="headingNumber">11.3.2</span><span class="head">Referencing Genetic States</span></h3>
                         
-                        <p>While the (relative) chronology of genetic states may be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">genDesc</a> element (see <a class="link_ptr chapterLink" title="Encoding Genetic States" href="../content/scholarlyediting.html#geneticStates">11.3.1 Encoding Genetic States</a>), the textual operations they manifest in are encoded using the regular <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a>, etc. elements are used (see <a class="link_ptr chapterLink" title="Additions, Deletions, and Omissions" href="../content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a>). However, for a genetic edition these elements are linked to their corresponding
-                           <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">genState</a> element using the <span class="att">state</span> attribute.</p>
+                        <p>While the (relative) chronology of genetic states may be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> element (see <a class="link_ptr chapterLink" title="Encoding Genetic States" href="../content/scholarlyediting.html#geneticStates">11.3.1 Encoding Genetic States</a>), the textual operations they manifest in are encoded using the regular <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, etc. elements are used (see <a class="link_ptr chapterLink" title="Additions, Deletions, and Omissions" href="../content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a>). However, for a genetic edition these elements are linked to their corresponding
+                           <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a> element using the <span class="att">@state</span> attribute.</p>
                         
                         <p>
                            
@@ -1885,7 +1885,7 @@
                            X and succeeding states read a G clef. A genetic state of the work is constituted
                            by performing all textual operations referencing that state, <abbr>i.e.</abbr>, by carrying out all additions, deletions and restorations.</p>
                         
-                        <p>The <span class="att">instant</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a> etc. allows to specify that corresponding modification has been carried out immediately
+                        <p>The <span class="att">@instant</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> etc. allows to specify that corresponding modification has been carried out immediately
                            after writing the original text, so that no separate genetic state has been established.</p>
                         
                         <p>It is up to encoder to identify the appropriate level of granularity: In an ideal
@@ -1908,7 +1908,7 @@
                            notes, among others.</p>
                         
                         <p>Some of these so-called ‘metatexts’ can be encoded using MEI, namely those that are
-                           written into the relevant sources. For this purpose, MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">metaMark</a> element, as known from the TEI.</p>
+                           written into the relevant sources. For this purpose, MEI offers the <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a> element, as known from the TEI.</p>
                         
                         <p>
                            
@@ -1917,17 +1917,17 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">metaMark</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A graphical or textual statement with additional / explanatory information about the
                                        musical text. The textual consequences of this intervention are encoded independently
                                        via
-                                       other means; that is, with elements such as <a class="link_odd link_odd_elementSpec" href="#add">add</a>, <a class="link_odd link_odd_elementSpec" href="#del">del</a>, etc.</span></div>
+                                       other means; that is, with elements such as <a class="link_odd link_odd_elementSpec" href="#add">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="#del">&lt;del&gt;</a>, etc.</span></div>
                               </div>
                            </div>
                            </p>
                         
-                        <p>A metaMark is provided as a ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>); as such, by convention, it should be encoded at the end of the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> where it first occurs. It is highly recommended to specify the function of the metaMark
-                           using its <span class="att">function</span> attribute, which may take the following values:</p>
+                        <p>A metaMark is provided as a ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>); as such, by convention, it should be encoded at the end of the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> where it first occurs. It is highly recommended to specify the function of the metaMark
+                           using its <span class="att">@function</span> attribute, which may take the following values:</p>
                         
                         <ul>
                            <li class="item">
@@ -1937,7 +1937,7 @@
                            <li class="item">
                               <em>deletion</em>: denoted material is no longer part of the musical text.</li>
                            <li class="item">
-                              <em>substitution</em>: denoted material is replaced, either by the musical text pointed at with the <span class="att">target</span>  attribute or the musical content of the metaMark element itself.</li>
+                              <em>substitution</em>: denoted material is replaced, either by the musical text pointed at with the <span class="att">@target</span>  attribute or the musical content of the metaMark element itself.</li>
                            <li class="item">
                               <em>clarification</em>: attempt to clarify a potentially illegible or otherwise unclear part of the musical
                               text.</li>
@@ -1953,10 +1953,10 @@
                         </ul>
                         
                         <p>Some metaMarks may have actual content, like marginal notes. This content may be transcribed
-                           inside the <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">metaMark</a> element. It also has a <span class="att">facs</span> attribute to refer back to the corresponding sections of a facsimile.</p>
+                           inside the <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a> element. It also has a <span class="att">@facs</span> attribute to refer back to the corresponding sections of a facsimile.</p>
                         
-                        <p>It is important to keep in mind that <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">metaMark</a> elements do not encode the textual consequences they transport – this is an encoding
-                           of the sign, not of its meaning, which can be encoded in other elements like <a class="link_odd link_odd_elementSpec" href="../elements/restore.html">restore</a>.</p>
+                        <p>It is important to keep in mind that <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a> elements do not encode the textual consequences they transport – this is an encoding
+                           of the sign, not of its meaning, which can be encoded in other elements like <a class="link_odd link_odd_elementSpec" href="../elements/restore.html">&lt;restore&gt;</a>.</p>
                         
                         <p>
                            
@@ -2012,7 +2012,7 @@
                            </figure>
                            </p>
                         
-                        <p>This <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">metaMark</a> transcribes Beethoven’s marginal note explaining the same situation as above.</p>
+                        <p>This <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a> transcribes Beethoven’s marginal note explaining the same situation as above.</p>
                         
                         <p>
                            
@@ -2042,13 +2042,13 @@
                         
                         <p>In genetic editions, it may also be of interest to trace when pages are added and
                            / or removed from manuscripts. The general information about pages can be encoded
-                           using the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">foliaDesc</a> element, as described in <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.7.1.5 Description of Folia</a>. It is possible to wrap the elements used there, including <a class="link_odd link_odd_elementSpec" href="../elements/patch.html">patch</a> and <a class="link_odd link_odd_elementSpec" href="../elements/cutout.html">cutout</a> with editorial markup like <a class="link_odd link_odd_elementSpec" href="../elements/add.html">add</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">del</a>. These elements can then be used to reference <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">genState</a> as described in <a class="link_ptr chapterLink" title="Referencing Genetic States" href="../content/scholarlyediting.html#geneticReferences">11.3.2 Referencing Genetic States</a>.</p>
+                           using the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> element, as described in <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.7.1.5 Description of Folia</a>. It is possible to wrap the elements used there, including <a class="link_odd link_odd_elementSpec" href="../elements/patch.html">&lt;patch&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/cutout.html">&lt;cutout&gt;</a> with editorial markup like <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>. These elements can then be used to reference <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a> as described in <a class="link_ptr chapterLink" title="Referencing Genetic States" href="../content/scholarlyediting.html#geneticReferences">11.3.2 Referencing Genetic States</a>.</p>
                         </div>
                      </div>
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -2258,8 +2258,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

@@ -50,7 +50,7 @@
                      
                      <p>These Guidelines recommend that encoders employ commonly accepted analytical practices,
                         such as ‘functional analysis’ or ‘Schenkerian analysis’, and document their use in
-                        the <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">encodingDesc</a> described in section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>. For general information on musical analysis, please consult Grove Music Online,
+                        the <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a> described in section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>. For general information on musical analysis, please consult Grove Music Online,
                         ‘<a class="link_ref link_external" href="https://doi.org/10.1093/gmo/9781561592630.article.41862">Analysis</a>’.</p>
                      
                      <p>The relationships between event elements, such as note, chord, and rest, are the basic
@@ -74,7 +74,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
+                                 <div class="tile-title"><span class="att">@inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Encodes the harmonic interval between pitches occurring at the same time.</div>
                               </div>
@@ -84,7 +84,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">intm</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalMelodic.html">att.intervalMelodic</a>)
+                                 <div class="tile-title"><span class="att">@intm</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalMelodic.html">att.intervalMelodic</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Encodes the melodic interval from the previous pitch. The value may be a general
                                     directional indication (u, d, s, etc.), an indication of diatonic interval direction,
@@ -96,7 +96,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">mfunc</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.melodicFunction.html">att.melodicFunction</a>)
+                                 <div class="tile-title"><span class="att">@mfunc</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.melodicFunction.html">att.melodicFunction</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Describes melodic function using <a class="link_ref link_external" href="https://www.humdrum.org/rep/embel/">Humdrum **embel syntax</a>.</div>
                               </div>
@@ -106,7 +106,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">deg</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harmonicFunction.html">att.harmonicFunction</a>)
+                                 <div class="tile-title"><span class="att">@deg</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harmonicFunction.html">att.harmonicFunction</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Captures scale degree information using <a class="link_ref link_external" href="https://www.humdrum.org/rep/deg/">Humdrum **deg syntax</a> -- an optional indicator
                                     of melodic approach (^ = ascending approach, v = descending approach), a scale degree
@@ -120,7 +120,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">pclass</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pitchClass.html">att.pitchClass</a>)
+                                 <div class="tile-title"><span class="att">@pclass</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pitchClass.html">att.pitchClass</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Holds pitch class information.</div>
                               </div>
@@ -130,7 +130,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">psolfa</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.solfa.html">att.solfa</a>)
+                                 <div class="tile-title"><span class="att">@psolfa</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.solfa.html">att.solfa</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Contains sol-fa designation, <abbr>e.g.</abbr>, do, re, mi, etc., in either a fixed or movable Do
                                     system.</div>
@@ -142,7 +142,7 @@
                            
                            <h4 id="analysisMelodicIntervals"><span class="headingNumber">10.1.1.1</span><span class="head">Melodic Intervals</span></h4>
                            
-                           <p>The <span class="att">intm</span> attribute offers several methods for encoding the melodic interval from a preceding
+                           <p>The <span class="att">@intm</span> attribute offers several methods for encoding the melodic interval from a preceding
                               pitch. First, Parsons Code allows for description of the contour of the melody in
                               very general terms; that is, as up, down, or same note. Parsons Code is helpful for
                               identifying musical works with clearly defined melodies and analyzing the relationship
@@ -271,7 +271,7 @@
                            
                            <h4 id="analysisMelodicFunction"><span class="headingNumber">10.1.1.2</span><span class="head">Melodic Function</span></h4>
                            
-                           <p>The <span class="att">mfunc</span> attribute describes melodic function of a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> or neume using the <a class="link_ref link_external" href="https://www.humdrum.org/rep/embel/">Humdrum **embel syntax</a>. In the following example, the note B is labeled as a lower neighbor while all other
+                           <p>The <span class="att">@mfunc</span> attribute describes melodic function of a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> or neume using the <a class="link_ref link_external" href="https://www.humdrum.org/rep/embel/">Humdrum **embel syntax</a>. In the following example, the note B is labeled as a lower neighbor while all other
                               notes are labeled as chord tones: 
                               <figure class="figure specPage">
                                  <div id="d18e21005" xml:space="preserve" class="pre code egXML_feasible">
@@ -340,16 +340,16 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
+                                    <div class="tile-title"><span class="att">@inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">Encodes the harmonic interval between pitches occurring at the same time.</div>
                                  </div>
                               </div>
                               </p>
                            
-                           <p>In contrast with <span class="att">intm</span>, which characterizes melodic (sequential) intervals, the <span class="att">inth</span> attribute is used to encode the harmonic interval between the current note and other
+                           <p>In contrast with <span class="att">@intm</span>, which characterizes melodic (sequential) intervals, the <span class="att">@inth</span> attribute is used to encode the harmonic interval between the current note and other
                               pitches occurring at the same moment in time. The notes of interest may or may not
-                              be marked as a <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a>. In the markup below, for example, the values of <span class="att">inth</span> capture the harmonic intervals between notes distributed across multiple staves and
+                              be marked as a <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. In the markup below, for example, the values of <span class="att">@inth</span> capture the harmonic intervals between notes distributed across multiple staves and
                               layers.</p>
                            
                            <p>
@@ -392,7 +392,7 @@
                               </figure>
                               </p>
                            
-                           <p>Use of the <span class="att">inth</span> permits detailed specification of intervallic information for every note and its
+                           <p>Use of the <span class="att">@inth</span> permits detailed specification of intervallic information for every note and its
                               function in relation to other simultaneously-occurring notes and hence about the harmonic
                               nature of the musical work.</p>
                            </div>
@@ -408,7 +408,7 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">deg</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harmonicFunction.html">att.harmonicFunction</a>)
+                                    <div class="tile-title"><span class="att">@deg</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harmonicFunction.html">att.harmonicFunction</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">Captures scale degree information using <a class="link_ref link_external" href="https://www.humdrum.org/rep/deg/">Humdrum **deg syntax</a> -- an optional indicator
                                        of melodic approach (^ = ascending approach, v = descending approach), a scale degree
@@ -419,7 +419,7 @@
                               </div>
                               </p>
                            
-                           <p>The <span class="att">deg</span> attribute can be used to represent key-dependent scale-degree information for music
+                           <p>The <span class="att">@deg</span> attribute can be used to represent key-dependent scale-degree information for music
                               in major or minor keys.</p>
                            
                            <p>Scale-degree values are relative to the prevailing major or minor key. In the case
@@ -506,9 +506,9 @@
                            
                            <h4 id="analysisPitchClass"><span class="headingNumber">10.1.1.5</span><span class="head">Pitch Class</span></h4>
                            
-                           <p>The <span class="att">pclass</span> attribute can be used to encode information about the pitch class to which a note
+                           <p>The <span class="att">@pclass</span> attribute can be used to encode information about the pitch class to which a note
                               belongs. The attribute’s value must be an integer less than or equal to 11. It is
-                              only allowed on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element. The <span class="att">pclass</span> attribute comes from "musical set theory" elaborated first by Howard Hanson and Allen
+                              only allowed on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> element. The <span class="att">@pclass</span> attribute comes from "musical set theory" elaborated first by Howard Hanson and Allen
                               Forte as a new method for organizing tones. It provides a concept for categorizing
                               musical objects (notes) and describing their relationships. It is a kind of grouping
                               and combining, mostly developed in connection with atonal music. However, the concept
@@ -567,7 +567,7 @@
                               America, solfège is the most common practice. In this system, the seven syllables
                               for a major scale are do, re, mi, fa, so, la and ti. In the ‘fixed-do’ system, the
                               syllable "do" is always associated with the pitch "c", while in the ‘movable-do’ system,
-                              "do" is associated with the tonic note. The <span class="att">psolfa</span> attribute is only allowed on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> and <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">nc</a> elements. Its value is unconstrained in order to accommodate various solmization
+                              "do" is associated with the tonic note. The <span class="att">@psolfa</span> attribute is only allowed on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">&lt;nc&gt;</a> elements. Its value is unconstrained in order to accommodate various solmization
                               systems. 
                               <figure class="figure specPage">
                                  <div id="d18e21176" xml:space="preserve" class="pre code egXML_feasible">
@@ -616,7 +616,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">metcon</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.html">att.meterConformance</a>)
+                                 <div class="tile-title"><span class="att">@metcon</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.html">att.meterConformance</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Indicates the relationship between the content of a staff or layer and the prevailing
                                     meter.</div>
@@ -627,7 +627,7 @@
                                  <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="att">metcon</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.bar.html">att.meterConformance.bar</a>)
+                                 <div class="tile-title"><span class="att">@metcon</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.bar.html">att.meterConformance.bar</a>)
                                     </div>
                                  <div class="tile-subtitle text-gray">Indicates the relationship between the content of a measure and the prevailing
                                     meter.</div>
@@ -635,14 +635,14 @@
                            </div>
                            </p>
                         
-                        <p>When used on <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> elements, the <span class="att">metcon</span> attribute can be used to indicate if the duration of the contained events is equal
-                           to (<span class="val">c</span>), less than (<span class="val">i</span>), or greater than (<span class="val">o</span>) that predicted by the time signature. When used on the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> element, <span class="att">metcon</span> takes a boolean value, where <span class="val">true</span> indicates conformance by all staff and layer descendants of the measure.</p>
+                        <p>When used on <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> elements, the <span class="att">@metcon</span> attribute can be used to indicate if the duration of the contained events is equal
+                           to (<span class="val">c</span>), less than (<span class="val">i</span>), or greater than (<span class="val">o</span>) that predicted by the time signature. When used on the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> element, <span class="att">@metcon</span> takes a boolean value, where <span class="val">true</span> indicates conformance by all staff and layer descendants of the measure.</p>
                         
                         <p>In the first example below, the layer, staff, and measure all match the prevailing
                            meter. In the second example, however, the first layer does not comply with the meter,
                            making the staff containing it and measure as a whole non-compliant. When there is
                            a single layer or when all the layers on a staff agree with each other, metrical compliance
-                           can be indicated on the <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> element. When, however, not all layers have the same value for <span class="att">metcon</span>, then it is necessary to omit <span class="att">metcon</span> at the staff level. The value of <span class="att">metcon</span> on the measure level can usually be computed based on the values of its layer and
+                           can be indicated on the <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> element. When, however, not all layers have the same value for <span class="att">@metcon</span>, then it is necessary to omit <span class="att">@metcon</span> at the staff level. The value of <span class="att">@metcon</span> on the measure level can usually be computed based on the values of its layer and
                            staff sub-elements.</p>
                         
                         <p>
@@ -728,7 +728,7 @@
                         
                         <h3 id="harmonyDetails"><span class="headingNumber">10.2.1</span><span class="head">Indications of Harmony</span></h3>
                         
-                        <p>On the most basic level, chords in the musical text can be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element:</p>
+                        <p>On the most basic level, chords in the musical text can be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element:</p>
                         
                         <p>
                            
@@ -737,14 +737,14 @@
                                  <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                               </div>
                               <div class="tile-content">
-                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a></span></div>
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a></span></div>
                                  <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A simultaneous sounding of two or more notes in the same layer *with the same
                                        duration*.</span></div>
                               </div>
                            </div>
                            </p>
                         
-                        <p>Additional information on the use of the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">chord</a> element is available in <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a> and <a class="link_ptr chapterLink" title="Notes, Chords and Rests in CMN" href="../content/cmn.html#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a>.</p>
+                        <p>Additional information on the use of the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element is available in <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a> and <a class="link_ptr chapterLink" title="Notes, Chords and Rests in CMN" href="../content/cmn.html#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a>.</p>
                         
                         <p>With only this kind of markup, harmonic information is implicit in the notes themselves.
                            The elements and attributes of this module, however, provide for the encoding of explicit
@@ -772,7 +772,7 @@
                                     <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordTable.html">chordTable</a></span></div>
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordTable.html">&lt;chordTable&gt;</a></span></div>
                                     <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Chord/tablature look-up table.</span></div>
                                  </div>
                               </div>
@@ -781,7 +781,7 @@
                                     <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">chordDef</a></span></div>
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a></span></div>
                                     <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Chord tablature definition.</span></div>
                                  </div>
                               </div>
@@ -790,7 +790,7 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">tab.pos</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.position.html">att.stringtab.position</a>)
+                                    <div class="tile-title"><span class="att">@tab.pos</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.position.html">att.stringtab.position</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">Records fret position.</div>
                                  </div>
@@ -800,8 +800,8 @@
                                     <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">chordMember</a></span></div>
-                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">An individual pitch in a chord defined by a <a class="link_odd link_odd_elementSpec" href="#chordDef">chordDef</a> element.</span></div>
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a></span></div>
+                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">An individual pitch in a chord defined by a <a class="link_odd link_odd_elementSpec" href="#chordDef">&lt;chordDef&gt;</a> element.</span></div>
                                  </div>
                               </div>
                               <div class="tile tile-centered">
@@ -809,7 +809,7 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
+                                    <div class="tile-title"><span class="att">@inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">Encodes the harmonic interval between pitches occurring at the same time.</div>
                                  </div>
@@ -819,7 +819,7 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">tab.fing</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
+                                    <div class="tile-title"><span class="att">@tab.fing</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">This attribute is deprecated and will be removed in a future version. Indicates which
                                        finger, if any, should be used to play an individual string. The index, middle, ring,
@@ -831,7 +831,7 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">tab.fret</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
+                                    <div class="tile-title"><span class="att">@tab.fret</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">Records the location at which a string should be stopped against a fret.</div>
                                  </div>
@@ -841,7 +841,7 @@
                                     <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a></span></div>
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a></span></div>
                                     <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A barre in a chord tablature grid.</span></div>
                                  </div>
                               </div>
@@ -850,24 +850,24 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">fret</span> (<a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a>)
+                                    <div class="tile-title"><span class="att">@fret</span> (<a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a>)
                                        </div>
-                                    <div class="tile-subtitle text-gray">This attribute is deprecated in favor of <span class="att">tab.fret</span>, and will be removed in a future version. Records the location at which the strings
+                                    <div class="tile-subtitle text-gray">This attribute is deprecated in favor of <span class="att">@tab.fret</span>, and will be removed in a future version. Records the location at which the strings
                                        should be stopped against a fret in a fretboard diagram. This may or may not be the
                                        same as the actual location on the fretboard of the instrument in performance.</div>
                                  </div>
                               </div>
                               </p>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordTable.html">chordTable</a> element is a container for a set of chord definitions, while the <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">chordDef</a> element defines a single chord. Chord definitions may be created <em>a priori</em> or as the result of analysis of the pitch content of the music at hand, for instance,
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordTable.html">&lt;chordTable&gt;</a> element is a container for a set of chord definitions, while the <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> element defines a single chord. Chord definitions may be created <em>a priori</em> or as the result of analysis of the pitch content of the music at hand, for instance,
                               by examination of the notes occurring on the downbeat of each measure. In this way,
                               the chord definitions serve as a record of the analysis.</p>
                            
-                           <p>Even though it is not required by the schema, an <span class="att">xml:id</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">chordDef</a> is necessary to permit the creation of associations between harmonic indications
-                              in the musical text with the chord defined here. The <span class="att">xml:id</span> attribute provides a unique identifier for the chord definition that can be referenced
-                              by the <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a> element’s <span class="att">chordref</span> attribute.</p>
+                           <p>Even though it is not required by the schema, an <span class="att">@xml:id</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> is necessary to permit the creation of associations between harmonic indications
+                              in the musical text with the chord defined here. The <span class="att">@xml:id</span> attribute provides a unique identifier for the chord definition that can be referenced
+                              by the <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element’s <span class="att">@chordref</span> attribute.</p>
                            
-                           <p>Individual pitches of a chord are encoded using <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">chordMember</a>. The <span class="att">inth</span> attribute provides the means for indicating the number of half steps of the chord
+                           <p>Individual pitches of a chord are encoded using <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a>. The <span class="att">@inth</span> attribute provides the means for indicating the number of half steps of the chord
                               note above the bass note.</p>
                            
                            <p>These simple resources allow for the detailed specification and interpretation of
@@ -946,7 +946,7 @@
                               create playable chord annotations. For more generic uses, however, the encoding can
                               be taken one step further; that is, it can be reduced to its minimum intervallic content
                               by eliminating octave duplications and expressing all chord members, including the
-                              bass note, using intervals above the bass. Of course, the <span class="att">inth</span> attribute for the bass note itself should be set to P1. For example:</p>
+                              bass note, using intervals above the bass. Of course, the <span class="att">@inth</span> attribute for the bass note itself should be set to P1. For example:</p>
                            
                            <p>
                               
@@ -978,13 +978,13 @@
                            
                            <h4 id="harmonyTablatureGrids"><span class="headingNumber">10.2.1.2</span><span class="head">Chord Tablature Grids</span></h4>
                            
-                           <p>The <span class="att">pos</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">chordDef</a>, the <span class="att">fing</span> and <span class="att">fret</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">chordMember</a>, and the <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a> element child of <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">chordDef</a> are provided in order to create displayable and performable chord tablature grids
+                           <p>The <span class="att">@pos</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a>, the <span class="att">@fing</span> and <span class="att">@fret</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a>, and the <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> element child of <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> are provided in order to create displayable and performable chord tablature grids
                               for guitar and other fretted string instruments. The fret at which a finger should
-                              be placed is recorded in the <span class="att">fret</span> attribute, while <span class="att">fing</span> indicates which finger, if any, should be used to play an individual string. The
+                              be placed is recorded in the <span class="att">@fret</span> attribute, while <span class="att">@fing</span> indicates which finger, if any, should be used to play an individual string. The
                               values x and o are used to indicate muffled and open strings, respectively.</p>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">chordDef</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a> sub-elements when a single finger is used to stop multiple strings. Here the <span class="att">fret</span> attribute gives the fret position at which the barre should be created, while the
-                              <span class="att">startid</span> and <span class="att">endid</span> attributes are used to indicate the <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">chordMember</a> elements on which the barre starts and finishes.</p>
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> sub-elements when a single finger is used to stop multiple strings. Here the <span class="att">@fret</span> attribute gives the fret position at which the barre should be created, while the
+                              <span class="att">@startid</span> and <span class="att">@endid</span> attributes are used to indicate the <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a> elements on which the barre starts and finishes.</p>
                            </div>
                         
                         <div class="div4">
@@ -993,7 +993,7 @@
                            
                            <p>With regard to indications of harmony, MEI attempts to strike a balance between very
                               precise (interpreted) and very loose (uninterpreted) markup needs. Therefore, various
-                              kinds of harmonic labels are accommodated by the <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a> element. While some are more structured than others, in the final analysis they all
+                              kinds of harmonic labels are accommodated by the <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element. While some are more structured than others, in the final analysis they all
                               function as <em>labels</em>. Therefore, MEI provides only a single element for the capture of harmonic indications
                               of all kinds:</p>
                            
@@ -1004,7 +1004,7 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">extender</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a>)
+                                    <div class="tile-title"><span class="att">@extender</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">Indicates the presence of an extension symbol, typically a line.</div>
                                  </div>
@@ -1014,14 +1014,14 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">rendgrid</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.vis.html">att.harm.vis</a>)
+                                    <div class="tile-title"><span class="att">@rendgrid</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.vis.html">att.harm.vis</a>)
                                        </div>
                                     <div class="tile-subtitle text-gray">Describes how the harmonic indication should be rendered.</div>
                                  </div>
                               </div>
                               </p>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a> element can be used to capture chord labels that consist entirely of text: 
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element can be used to capture chord labels that consist entirely of text: 
                               <figure class="figure specPage">
                                  <div id="d18e21494" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
@@ -1089,11 +1089,11 @@
                               </figure>
                               </p>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">harm</a> element must define a point of attachment using one of the following attributes:
-                              <span class="att">startid</span>, <span class="att">tstamp</span>, <span class="att">tstamp.ges</span> or <span class="att">tstamp.real</span>. The most commonly-used of these are <span class="att">startid</span> and <span class="att">tstamp</span>.</p>
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element must define a point of attachment using one of the following attributes:
+                              <span class="att">@startid</span>, <span class="att">@tstamp</span>, <span class="att">@tstamp.ges</span> or <span class="att">@tstamp.real</span>. The most commonly-used of these are <span class="att">@startid</span> and <span class="att">@tstamp</span>.</p>
                            
-                           <p>The <span class="att">dur</span> attribute encodes the logical and visual duration of the harmony. Please note that
-                              the <span class="att">dur</span> attribute here is not a true duration, but rather a time stamp for the end point
+                           <p>The <span class="att">@dur</span> attribute encodes the logical and visual duration of the harmony. Please note that
+                              the <span class="att">@dur</span> attribute here is not a true duration, but rather a time stamp for the end point
                               of the harmony.</p>
                            
                            <p>Precise placement of the harmonic label can be controlled through the use of attributes
@@ -1114,7 +1114,7 @@
                                        <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
                                     </div>
                                     <div class="tile-content">
-                                       <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/fb.html">fb</a></span></div>
+                                       <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/fb.html">&lt;fb&gt;</a></span></div>
                                        <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Symbols added to a bass line that indicate harmony. Used to improvise a
                                              chordal accompaniment. Sometimes called Generalbass, thoroughbass, or basso continuo.</span></div>
                                     </div>
@@ -1124,7 +1124,7 @@
                                        <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                     </div>
                                     <div class="tile-content">
-                                       <div class="tile-title"><span class="att">extender</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a>)
+                                       <div class="tile-title"><span class="att">@extender</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a>)
                                           </div>
                                        <div class="tile-subtitle text-gray">Indicates the presence of an extension symbol, typically a line.</div>
                                     </div>
@@ -1217,10 +1217,10 @@
                                  </figure>
                                  </p>
                               
-                              <p>Encoding order of the component <a class="link_odd link_odd_elementSpec" href="../elements/f.html">f</a> elements is significant as is the encoding order of the characters within each component.
+                              <p>Encoding order of the component <a class="link_odd link_odd_elementSpec" href="../elements/f.html">&lt;f&gt;</a> elements is significant as is the encoding order of the characters within each component.
                                  In the preceding example, the entire figured bass sign is encoded from top to bottom,
                                  in other words, just as the figure appears on the page. In the following examples,
-                                 the encoding order of the characters in <a class="link_odd link_odd_elementSpec" href="../elements/f.html">f</a> explicitly locates the accidentals:</p>
+                                 the encoding order of the characters in <a class="link_odd link_odd_elementSpec" href="../elements/f.html">&lt;f&gt;</a> explicitly locates the accidentals:</p>
                               
                               <p>
                                  
@@ -1279,7 +1279,7 @@
                               
                               <p>You may use 6\ and 6/ for numerals that should be shown with a backslash and slash,
                                  respectively. An alternative would be to use the "bslash" (backward slash) and "fslash"
-                                 (forward slash) on the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">rend</a> element.</p>
+                                 (forward slash) on the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">&lt;rend&gt;</a> element.</p>
                               
                               <p>
                                  
@@ -1312,8 +1312,8 @@
                                  </figure>
                                  </p>
                               
-                              <p>Each component of the figured bass sign may use the <span class="att">extender</span> attribute to indicate that horizontal lines are used to mark the extent of the figure’s
-                                 harmonic influence. The <span class="att">altsym</span> attribute can be used to point to a user-defined symbol that better represents the
+                              <p>Each component of the figured bass sign may use the <span class="att">@extender</span> attribute to indicate that horizontal lines are used to mark the extent of the figure’s
+                                 harmonic influence. The <span class="att">@altsym</span> attribute can be used to point to a user-defined symbol that better represents the
                                  figure component, for example, the combined "2" and "+" below. Similar to the slash
                                  in the preceding example before, the small curve over the "5" in example 6 can be
                                  represented by the Unicode COMBINING INVERTED BREVE.</p>
@@ -1453,7 +1453,7 @@
                                  </figure>
                                  </p>
                               
-                              <p>Using <span class="att">extender</span> attributes for this example may make it easier to render the figured bass symbol,
+                              <p>Using <span class="att">@extender</span> attributes for this example may make it easier to render the figured bass symbol,
                                  but it is less explicit with regard to the intended harmony. For example, it is difficult
                                  to ascertain what harmony should be sounding on beat 4 and its after-beat.</p>
                               
@@ -1504,11 +1504,11 @@
                                  </figure>
                                  </p>
                               
-                              <p>The primary goal of <a class="link_odd link_odd_elementSpec" href="../elements/fb.html">fb</a> is not the capture all the visual idiosyncracies that can be found in printed and
+                              <p>The primary goal of <a class="link_odd link_odd_elementSpec" href="../elements/fb.html">&lt;fb&gt;</a> is not the capture all the visual idiosyncracies that can be found in printed and
                                  manuscript scores throughout the centuries, but to provide a more-or-less standardized
                                  label. The markup below, or any markup in fact, cannot capture the exact look of the
-                                 figured bass signs. The <span class="att">altsym</span> attribute may be used to provide access to a user-defined symbol for precise rendition.
-                                 Similarly, the <span class="att">facs</span> attribute may be employed to point to the symbol as it occurs in the encoding source
+                                 figured bass signs. The <span class="att">@altsym</span> attribute may be used to provide access to a user-defined symbol for precise rendition.
+                                 Similarly, the <span class="att">@facs</span> attribute may be employed to point to the symbol as it occurs in the encoding source
                                  material.</p>
                               
                               <p>
@@ -1632,7 +1632,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1842,8 +1842,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

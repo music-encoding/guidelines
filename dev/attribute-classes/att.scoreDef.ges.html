@@ -40,7 +40,7 @@
                         the
                         grace attribute value here applies to all the grace attribute values in the score
                         (or, more
-                        accurately, until the next <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a> element) without having to
+                        accurately, until the next <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a> element) without having to
                         individually set each note’s grace attribute value. The midi.* attributes function
                         as default
                         values when creating sounding output. The tune.* attributes provide the capability
@@ -59,10 +59,10 @@
                               <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">midi.bpm</span>, <span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span>, <span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">midi.duty</span>, <span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">midi.mspb</span>, <span class="ident attribute" title="Sets the MIDI port value.">midi.port</span>, <span class="ident attribute" title="Sets the MIDI track.">midi.track</span>, <span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span>, <span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">mm.dots</span>, <span class="ident attribute" title="Captures the metronomic unit.">mm.unit</span>, <span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">ppq</span>, <span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">tune.Hz</span>, <span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">tune.pname</span>, <span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">tune.temper</span></div>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@midi.bpm</span>, <span class="ident attribute" title="Records a MIDI channel value.">@midi.channel</span>, <span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">@midi.duty</span>, <span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">@midi.mspb</span>, <span class="ident attribute" title="Sets the MIDI port value.">@midi.port</span>, <span class="ident attribute" title="Sets the MIDI track.">@midi.track</span>, <span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@mm</span>, <span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">@mm.dots</span>, <span class="ident attribute" title="Captures the metronomic unit.">@mm.unit</span>, <span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span>, <span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">@tune.Hz</span>, <span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">@tune.pname</span>, <span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">@tune.temper</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">midi.bpm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
+                                 <div class="desc"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@midi.bpm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
                                        as a quarter note, *not the numerator of the time signature or the metronomic
                                        indication*.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIBPM.html">data.MIDIBPM</a>.
@@ -70,19 +70,19 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.midiTempo.html">att.midiTempo</a></span><span class="step end">@midi.bpm</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="Records a MIDI channel value.">@midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDICHANNEL.html">data.MIDICHANNEL</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.channelized.html">att.channelized</a></span><span class="step end">@midi.channel</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">@midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PERCENT.LIMITED.html">data.PERCENT.LIMITED</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.channelized.html">att.channelized</a></span><span class="step end">@midi.duty</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">midi.mspb</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
+                                 <div class="desc"><span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">@midi.mspb</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
                                        defined as a quarter note, *not the numerator of the time signature or the metronomic
                                        indication*. At 120 quarter notes per minute, each quarter note will last 500,000
                                        microseconds.</span><span class="attributeValues">
@@ -91,19 +91,19 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.midiTempo.html">att.midiTempo</a></span><span class="step end">@midi.mspb</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Sets the MIDI port value.">midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="Sets the MIDI port value.">@midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIVALUE_NAME.html">data.MIDIVALUE_NAME</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.channelized.html">att.channelized</a></span><span class="step end">@midi.port</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
                                        Value is a positive integer.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.channelized.html">att.channelized</a></span><span class="step end">@midi.track</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                                 <div class="desc"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
                                        minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm
                                        or
                                        midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
@@ -114,19 +114,19 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mmTempo.html">att.mmTempo</a></span><span class="step end">@mm</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">mm.dots</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of augmentation dots required by a dotted metronome unit.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">@mm.dots</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of augmentation dots required by a dotted metronome unit.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mmTempo.html">att.mmTempo</a></span><span class="step end">@mm.dots</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Captures the metronomic unit.">mm.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the metronomic unit.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="Captures the metronomic unit.">@mm.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the metronomic unit.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mmTempo.html">att.mmTempo</a></span><span class="step end">@mm.unit</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
+                                 <div class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
                                        quarter note. Unlike MIDI, MEI permits different values for a score and individual
                                        staves.</span><span class="attributeValues">
                                        Value is a positive integer.
@@ -134,19 +134,19 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timeBase.html">att.timeBase</a></span><span class="step end">@ppq</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
                                        Value is a decimal number.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></span><span class="step end">@tune.Hz</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></span><span class="step end">@tune.pname</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
+                                 <div class="desc"><span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.ges&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></span><span class="step end">@tune.temper</span></div>
@@ -156,16 +156,16 @@
                               <div class="classBox" title="att.channelized">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.channelized.html">att.channelized</a></label><span class="classDesc">(MEI.midi) Attributes that record MIDI channel information.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records a MIDI channel value.">@midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDICHANNEL.html">data.MIDICHANNEL</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">@midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PERCENT.LIMITED.html">data.PERCENT.LIMITED</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI port value.">midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI port value.">@midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIVALUE_NAME.html">data.MIDIVALUE_NAME</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
                                              Value is a positive integer.
                                              </span></span></div>
                                  </div>
@@ -173,7 +173,7 @@
                               <div class="classBox" title="att.timeBase">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timeBase.html">att.timeBase</a></label><span class="classDesc">(MEI.midi) Attributes that record time-base information.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
                                              quarter note. Unlike MIDI, MEI permits different values for a score and individual
                                              staves.</span><span class="attributeValues">
                                              Value is a positive integer.
@@ -183,13 +183,13 @@
                               <div class="classBox" title="att.tuning">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></label><span class="classDesc">(MEI.shared) Attributes that describe tuning.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
                                              Value is a decimal number.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>.
                                              </span></span></div>
                                  </div>
@@ -197,12 +197,12 @@
                               <div class="classBox" title="att.midiTempo">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.midiTempo.html">att.midiTempo</a></label><span class="classDesc">(MEI.midi) Attributes that record MIDI tempo information.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">midi.bpm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@midi.bpm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
                                              as a quarter note, *not the numerator of the time signature or the metronomic
                                              indication*.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIBPM.html">data.MIDIBPM</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">midi.mspb</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">@midi.mspb</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
                                              defined as a quarter note, *not the numerator of the time signature or the metronomic
                                              indication*. At 120 quarter notes per minute, each quarter note will last 500,000
                                              microseconds.</span><span class="attributeValues">
@@ -213,7 +213,7 @@
                               <div class="classBox" title="att.mmTempo">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mmTempo.html">att.mmTempo</a></label><span class="classDesc">(MEI.shared) Attributes that record tempo in terms of beats per minute.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
                                              minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm
                                              or
                                              midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
@@ -221,10 +221,10 @@
                                              time signature or the metronomic indication*.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPOVALUE.html">data.TEMPOVALUE</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the metronomic unit.">mm.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the metronomic unit.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the metronomic unit.">@mm.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the metronomic unit.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">mm.dots</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of augmentation dots required by a dotted metronome unit.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">@mm.dots</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of augmentation dots required by a dotted metronome unit.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>.
                                              </span></span></div>
                                  </div>
@@ -234,30 +234,30 @@
                               <div class="classBox" title="MEI.midi">
                                  <div class="classHeading"><label class="classLabel">MEI.midi</label><span class="classDesc">MIDI component declarations.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">midi.bpm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@midi.bpm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
                                              as a quarter note, *not the numerator of the time signature or the metronomic
                                              indication*.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIBPM.html">data.MIDIBPM</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records a MIDI channel value.">@midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDICHANNEL.html">data.MIDICHANNEL</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.">@midi.duty</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the 'on' part of the duty cycle as a percentage of a note’s duration.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PERCENT.LIMITED.html">data.PERCENT.LIMITED</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">midi.mspb</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.">@midi.mspb</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
                                              defined as a quarter note, *not the numerator of the time signature or the metronomic
                                              indication*. At 120 quarter notes per minute, each quarter note will last 500,000
                                              microseconds.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIMSPB.html">data.MIDIMSPB</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI port value.">midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI port value.">@midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIVALUE_NAME.html">data.MIDIVALUE_NAME</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
                                              Value is a positive integer.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
                                              quarter note. Unlike MIDI, MEI permits different values for a score and individual
                                              staves.</span><span class="attributeValues">
                                              Value is a positive integer.
@@ -267,7 +267,7 @@
                               <div class="classBox" title="MEI.shared">
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
                                              minute, ala M.M. (Maelzel’s Metronome). Do not confuse this attribute with midi.bpm
                                              or
                                              midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
@@ -275,19 +275,19 @@
                                              time signature or the metronomic indication*.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPOVALUE.html">data.TEMPOVALUE</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">mm.dots</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of augmentation dots required by a dotted metronome unit.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">@mm.dots</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the number of augmentation dots required by a dotted metronome unit.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the metronomic unit.">mm.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the metronomic unit.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the metronomic unit.">@mm.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the metronomic unit.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds a value for cycles per second, , Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
                                              Value is a decimal number.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="i.e. Holds the pitch name of a tuning reference pitch, , the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="just Provides an indication of the tuning system, , for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>.
                                              </span></span></div>
                                  </div>
@@ -303,12 +303,12 @@
                               <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html" title="Container for score meta-information.">scoreDef</a></div>
+                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html" title="Container for score meta-information.">&lt;scoreDef&gt;</a></div>
                            <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
                               <div class="classBox" title="att.scoreDef.ges">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a></label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="ident" title="Container for score meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a></span><span class="desc"><span class="desc">Container for score meta-information.</span></span></div>
+                                    <div class="def"><span class="ident" title="Container for score meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a></span><span class="desc"><span class="desc">Container for score meta-information.</span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -316,7 +316,7 @@
                               <div class="classBox" title="MEI.shared">
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="ident" title="Container for score meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a></span><span class="desc"><span class="desc">Container for score meta-information.</span></span></div>
+                                    <div class="def"><span class="ident" title="Container for score meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a></span><span class="desc"><span class="desc">Container for score meta-information.</span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -360,7 +360,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -568,8 +568,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

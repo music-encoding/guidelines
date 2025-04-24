@@ -61,10 +61,10 @@
                               <div class="classContent">
                                  <div class="def"><span class="ident" title="Encodes the ending point of an event, i.e. , a count of measures plus a beat location in the ending measure."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp2.ges.html">att.timestamp2.ges</a>/<span title="Encodes the ending point of an event, i.e. , a count of measures plus a beat location in the ending measure.">@tstamp2.ges</span></span><span class="desc"><span class="desc">Encodes the ending point of an event, <abbr>i.e.</abbr>, a count of measures plus a beat location
                                           in the ending measure.</span></span></div>
-                                 <div class="def"><span class="ident" title="encodes the ending point of musical material in terms of musical time, i.e. , a count of measures plus a beat location. The values are relative to the measure identified by origin.tstamp ."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.origin.timestamp.log.html">att.origin.timestamp.log</a>/<span title="encodes the ending point of musical material in terms of musical time, i.e. , a count of measures plus a beat location. The values are relative to the measure identified by origin.tstamp .">@origin.tstamp2</span></span><span class="desc"><span class="desc">encodes the ending point of musical material in terms of musical time, <abbr>i.e.</abbr>, a count
+                                 <div class="def"><span class="ident" title="encodes the ending point of musical material in terms of musical time, i.e. , a count of measures plus a beat location. The values are relative to the measure identified by @origin.tstamp ."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.origin.timestamp.log.html">att.origin.timestamp.log</a>/<span title="encodes the ending point of musical material in terms of musical time, i.e. , a count of measures plus a beat location. The values are relative to the measure identified by origin.tstamp .">@origin.tstamp2</span></span><span class="desc"><span class="desc">encodes the ending point of musical material in terms of musical time, <abbr>i.e.</abbr>, a count
                                           of measures plus a beat location. The values are relative to the measure identified
                                           by
-                                          <span class="att">origin.tstamp</span>.</span></span></div>
+                                          <span class="att">@origin.tstamp</span>.</span></span></div>
                                  <div class="def"><span class="ident" title="Encodes the ending point of an event, i.e. , a count of measures plus a beat location in the ending measure."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp2.log.html">att.timestamp2.log</a>/<span title="Encodes the ending point of an event, i.e. , a count of measures plus a beat location in the ending measure.">@tstamp2</span></span><span class="desc"><span class="desc">Encodes the ending point of an event, <abbr>i.e.</abbr>, a count of measures plus a beat location
                                           in the ending measure.</span></span></div>
                               </div>
@@ -107,7 +107,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -315,8 +315,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

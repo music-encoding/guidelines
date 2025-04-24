@@ -46,9 +46,9 @@
                            <div class="classBox" title="Attribute Classes">
                               <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.TUPLET</span></div>
                               <div class="classContent">
-                                 <div class="def"><span class="ident" title="Indicates that this feature participates in a tuplet. If visual information about the tuplet needs to be recorded, then a tuplet element should be employed."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tupletPresent.html">att.tupletPresent</a>/<span title="Indicates that this feature participates in a tuplet. If visual information about the tuplet needs to be recorded, then a tuplet element should be employed.">@tuplet</span></span><span class="desc"><span class="desc">Indicates that this feature participates in a tuplet. If visual information about
+                                 <div class="def"><span class="ident" title="Indicates that this feature participates in a tuplet. If visual information about the tuplet needs to be recorded, then a <tuplet&gt; element should be employed."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tupletPresent.html">att.tupletPresent</a>/<span title="Indicates that this feature participates in a tuplet. If visual information about the tuplet needs to be recorded, then a tuplet element should be employed.">@tuplet</span></span><span class="desc"><span class="desc">Indicates that this feature participates in a tuplet. If visual information about
                                           the
-                                          tuplet needs to be recorded, then a <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">tuplet</a> element should be
+                                          tuplet needs to be recorded, then a <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a> element should be
                                           employed.</span></span></div>
                               </div>
                            </div>
@@ -76,7 +76,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -284,8 +284,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')

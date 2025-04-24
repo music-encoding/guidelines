@@ -81,7 +81,7 @@
                      <p>In order to use Scalable Vector Graphics (SVG) in MEI, a new <em>module</em> needs to be
                         compiled into ODD (see <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.3.5 Customizing MEI</a> for an
                         introduction on how to do that). In order to do that, you need to enter the
-                        following <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-moduleRef.html">tei:moduleRef</a> into the <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html">tei:schemaSpec</a> of your ODD file:</p>
+                        following <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-moduleRef.html">&lt;tei:moduleRef&gt;</a> into the <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html">&lt;tei:schemaSpec&gt;</a> of your ODD file:</p>
                      
                      <p>
                         
@@ -118,11 +118,11 @@
                      
                      <p>With this addition, which can be added to any of the provided customizations of
                         MEI (see <a class="link_ptr chapterLink" title="MEI Profiles" href="../content/introduction.html#meiProfiles">1.3.4 MEI Profiles</a>), the <a class="link_ref link_external" href="https://www.w3.org/TR/SVG11/struct.html#SVGElement">&lt;svg&gt;</a>
-                        element becomes available everywhere `model.graphicLike` (<abbr>i.e.</abbr>, the <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">graphic</a> element) is currently allowed, that is: inside of <a class="link_odd link_odd_elementSpec" href="../elements/fig.html">fig</a>, <a class="link_odd link_odd_elementSpec" href="../elements/incip.html">incip</a>, <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a>.</p>
+                        element becomes available everywhere `model.graphicLike` (<abbr>i.e.</abbr>, the <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> element) is currently allowed, that is: inside of <a class="link_odd link_odd_elementSpec" href="../elements/fig.html">&lt;fig&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/incip.html">&lt;incip&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a>.</p>
                      
-                     <p> In the following example, an <a class="link_ref link_external" href="https://www.w3.org/TR/SVG11/paths.html#PathElement">&lt;svg:path&gt;</a> element is inserted into a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">surface</a>. It would now be possible for measures or other music features to
-                        point to the rectangular <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">zone</a> in MEI namespace, or the fancy
-                        shaped <a class="link_ref link_external" href="https://www.w3.org/TR/SVG11/paths.html#PathElement">&lt;svg:path&gt;</a> using their <span class="att">facs</span> attribute (see <a class="link_ptr chapterLink" title="Elements of the Facsimile Module" href="../content/facsimilesperformances.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a> for that mechanism). It’s equally possible to use
+                     <p> In the following example, an <a class="link_ref link_external" href="https://www.w3.org/TR/SVG11/paths.html#PathElement">&lt;svg:path&gt;</a> element is inserted into a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a>. It would now be possible for measures or other music features to
+                        point to the rectangular <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a> in MEI namespace, or the fancy
+                        shaped <a class="link_ref link_external" href="https://www.w3.org/TR/SVG11/paths.html#PathElement">&lt;svg:path&gt;</a> using their <span class="att">@facs</span> attribute (see <a class="link_ptr chapterLink" title="Elements of the Facsimile Module" href="../content/facsimilesperformances.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a> for that mechanism). It’s equally possible to use
                         SVG content inside figures on title pages or anywhere else.</p>
                      
                      <p>
@@ -174,18 +174,18 @@
                         reading.</p>
                      
                      <p>The MIDI module defines certain generally-accepted MIDI units that may be used
-                        outside of a MIDI context. For example, the <span class="att">dur.ppq</span> attribute accepts
+                        outside of a MIDI context. For example, the <span class="att">@dur.ppq</span> attribute accepts
                         MIDI <em>ppq</em> (Pulses Per Quarter) as a valid measurement of
-                        duration. Similarly, the <span class="att">pnum</span> attribute allows MIDI note numbers for
+                        duration. Similarly, the <span class="att">@pnum</span> attribute allows MIDI note numbers for
                         specifying a pitch value.</p>
                      
                      <div class="div3">
                         
                         <h3 id="midi.scoreDefppq"><span class="headingNumber">14.5.1</span><span class="head">PPQ in scoreDef and staffDef</span></h3>
                         
-                        <p>To define the MIDI resolution of a score, the <span class="att">ppq</span> attribute may be
-                           used on the <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a> element. This value can be used to
-                           interpret the values found in the <span class="att">dur.ppq</span> attribute on elements in
+                        <p>To define the MIDI resolution of a score, the <span class="att">@ppq</span> attribute may be
+                           used on the <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a> element. This value can be used to
+                           interpret the values found in the <span class="att">@dur.ppq</span> attribute on elements in
                            the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.ges.html">att.duration.ges</a> class.</p>
                         
                         <p>
@@ -227,13 +227,13 @@
                            </figure>
                            </p>
                         
-                        <p>The <span class="att">ppq</span> attribute is also available on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> element in order to aid in the conversion to MEI from other
+                        <p>The <span class="att">@ppq</span> attribute is also available on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> element in order to aid in the conversion to MEI from other
                            representations that allow a different time base for each staff. However, these
-                           independent values for <span class="att">ppq</span> are only interpretable in terms of a
-                           common time base. Therefore, the <span class="att">ppq</span> attribute is required on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a> when the values of <span class="att">ppq</span> on the staff
-                           definitions differ. In the following example, the values of the <span class="att">ppq</span>
-                           attributes on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> elements are all factors of
-                           the value of <span class="att">ppq</span> attached to <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">scoreDef</a>.</p>
+                           independent values for <span class="att">@ppq</span> are only interpretable in terms of a
+                           common time base. Therefore, the <span class="att">@ppq</span> attribute is required on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a> when the values of <span class="att">@ppq</span> on the staff
+                           definitions differ. In the following example, the values of the <span class="att">@ppq</span>
+                           attributes on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> elements are all factors of
+                           the value of <span class="att">@ppq</span> attached to <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a>.</p>
                         
                         <p>
                            
@@ -268,9 +268,9 @@
                         
                         <h3 id="midiInstruments"><span class="headingNumber">14.5.2</span><span class="head">Recording General MIDI Instrumentation</span></h3>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">instrDef</a> element can be used to record MIDI
-                           instrument names or numbers using the <span class="att">midi.instrname</span> and
-                           <span class="att">midi.instrnum</span> attributes. The <span class="att">midi.instrname</span> attribute
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element can be used to record MIDI
+                           instrument names or numbers using the <span class="att">@midi.instrname</span> and
+                           <span class="att">@midi.instrnum</span> attributes. The <span class="att">@midi.instrname</span> attribute
                            must contain an instrument name from the list provided by the data.MIDINAMES
                            data type. By default, data.MIDINAMES contains General MIDI Instrument
                            designations.</p>
@@ -317,7 +317,7 @@
                            </figure>
                            </p>
                         
-                        <p>The <span class="att">midi.instrnum</span> is provided for those cases when an instrument
+                        <p>The <span class="att">@midi.instrnum</span> is provided for those cases when an instrument
                            number is needed. It must contain valid MIDI values; that is, 0-127. In these
                            cases, a General MIDI Instrument name is redundant.</p>
                         
@@ -368,18 +368,18 @@
                         
                         <h3 id="midiData"><span class="headingNumber">14.5.3</span><span class="head">Recording MIDI Event Data</span></h3>
                         
-                        <p>MIDI messages are encapsulated in the <a class="link_odd link_odd_elementSpec" href="../elements/midi.html">midi</a> element, which
-                           is typically used in contexts like <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> and <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a>. In earlier versions of MEI, the <a class="link_odd link_odd_elementSpec" href="../elements/noteOn.html">noteOn</a> and <a class="link_odd link_odd_elementSpec" href="../elements/noteOff.html">noteOff</a> elements were used to record
+                        <p>MIDI messages are encapsulated in the <a class="link_odd link_odd_elementSpec" href="../elements/midi.html">&lt;midi&gt;</a> element, which
+                           is typically used in contexts like <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>. In earlier versions of MEI, the <a class="link_odd link_odd_elementSpec" href="../elements/noteOn.html">&lt;noteOn&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/noteOff.html">&lt;noteOff&gt;</a> elements were used to record
                            MIDI note on/off events. The use of these elements is now discouraged in favor
-                           of using the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">note</a> element directly. MIDI duration should
-                           be recorded using the <span class="att">dur.ges</span> attribute, and MIDI pitch information
-                           should be recorded using the <span class="att">pnum</span> attribute.</p>
+                           of using the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> element directly. MIDI duration should
+                           be recorded using the <span class="att">@dur.ges</span> attribute, and MIDI pitch information
+                           should be recorded using the <span class="att">@pnum</span> attribute.</p>
                         
-                        <p>MIDI control changes (<a class="link_odd link_odd_elementSpec" href="../elements/cc.html">cc</a>) are encoded using the
-                           <span class="att">num</span> and <span class="att">val</span> attributes. Control change numbers are
-                           specified in the General MIDI documentation. In the example below, the <a class="link_odd link_odd_elementSpec" href="../elements/cc.html">cc</a> elements encode increasing controller event 7 (volume)
+                        <p>MIDI control changes (<a class="link_odd link_odd_elementSpec" href="../elements/cc.html">&lt;cc&gt;</a>) are encoded using the
+                           <span class="att">@num</span> and <span class="att">@val</span> attributes. Control change numbers are
+                           specified in the General MIDI documentation. In the example below, the <a class="link_odd link_odd_elementSpec" href="../elements/cc.html">&lt;cc&gt;</a> elements encode increasing controller event 7 (volume)
                            values, or in musical terms, a crescendo. Other MIDI event messages follow this
-                           same pattern, using the <span class="att">num</span> and <span class="att">val</span> attributes to record
+                           same pattern, using the <span class="att">@num</span> and <span class="att">@val</span> attributes to record
                            the raw MIDI data.</p>
                         
                         <p>
@@ -427,13 +427,13 @@
                            </p>
                         
                         <p>In the preceding example, each control change is associated with a time stamp.
-                           The <span class="att">tstamp</span> attribute is required in order to indicate when the MIDI
+                           The <span class="att">@tstamp</span> attribute is required in order to indicate when the MIDI
                            event should take place. It is often necessary to indicate a time stamp
                            slightly earlier than the affected notes to compensate for MIDI delay.</p>
                         
-                        <p>For better legibility and error checking, the <a class="link_odd link_odd_elementSpec" href="../elements/midi.html">midi</a>
+                        <p>For better legibility and error checking, the <a class="link_odd link_odd_elementSpec" href="../elements/midi.html">&lt;midi&gt;</a>
                            element may be used, as in the following example, to group MIDI parameter
-                           changes. Even so, the <span class="att">tstamp</span> attribute is required on all parameters
+                           changes. Even so, the <span class="att">@tstamp</span> attribute is required on all parameters
                            in order to associate them with their point of actuation:</p>
                         
                         <p>
@@ -524,7 +524,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0b9e359a82e9533e703674bdec394ddb75fe9446" target="_blank" rel="noopener noreferrer">#0b9e359</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/68cbdb35b27058e8d157f7d501f2762ffaec9a5a" target="_blank" rel="noopener noreferrer">#68cbdb3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -734,8 +734,11 @@
                     a.setAttribute('href', pathAdjust + hit.item.url)
                     a.classList.add(hit.item.type)
                     a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
                     div.append(a)
-                    
+
                     if(hit.item.type === 'chapter') {
                         
                         let remarksHits = hit.matches.filter(m => m.key === 'remarks')
