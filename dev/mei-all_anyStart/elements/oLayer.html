@@ -1,0 +1,1252 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="author" content="Benjamin W. Bohl">
+      <meta name="author" content="Stefan Münnich">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="specPage elementSpec">
+                  <h2 id="oLayer">&lt;oLayer&gt;</h2>
+                  <div class="specs">
+                     <div class="desc">(ossia layer) – A layer that contains an alternative to material in another layer.
+                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/cmn.html#cmnOssia" title="4.1.1 Ossia">4.1.1 Ossia</a></div>
+                     </div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text"><a href="../modules/MEI.cmn.html">MEI.cmn</a></div>
+                     </div>
+                     <div id="attributes" class="facet attributes">
+                        <div class="label">Attributes</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span>, <span class="ident attribute" title="Points to an element of which the current element is a copy.">@copyof</span>, <span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span>, <span class="ident attribute" title="">@cue</span>, <span class="ident attribute" title="Identifies one or more metadata elements (other than classification terms) within the header, which are understood to apply to the element bearing this attribute and its content.">@decls</span>, <span class="ident attribute" title="Provides a mechanism for linking the layer to a layerDef element.">@def</span>, <span class="ident attribute" title="Points to one or more images, portions of an image, or surfaces which correspond to the current element.">@facs</span>, <span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span>, <span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span>, <span class="ident attribute" title="Specifies a generic MEI version label.">@meiversion</span>, <span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">@metcon</span>, <span class="ident attribute" title="Provides a numeric designation that indicates an element’s position in a sequence of similar elements. Its value must be a non-negative integer.">@n</span>, <span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span>, <span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span>, <span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span>, <span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text’s transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">@resp</span>, <span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span>, <span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span>, <span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span>, <span class="ident attribute" title="Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.">@visible</span>, <span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">@xml:base</span>, <span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span></div>
+                           <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
+                                       bearing this attribute.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a></span><span class="step end">@class</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Points to an element of which the current element is a copy.">@copyof</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element of which the current element is a copy.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@copyof</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
+                                       fashion.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@corresp</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="">@cue</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.log.html">att.layer.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cue.html">att.cue</a></span><span class="step end">@cue</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Identifies one or more metadata elements (other than classification terms) within the header, which are understood to apply to the element bearing this attribute and its content.">@decls</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies one or more metadata elements (other than classification terms) within
+                                       the
+                                       header, which are understood to apply to the element bearing this attribute and its
+                                       content.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.metadataPointing.html">att.metadataPointing</a></span><span class="step end">@decls</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Provides a mechanism for linking the layer to a layerDef element.">@def</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a mechanism for linking the layer to a layerDef element.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.log.html">att.layer.log</a></span><span class="step end">@def</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Points to one or more images, portions of an image, or surfaces which correspond to the current element.">@facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more images, portions of an image, or surfaces which correspond to
+                                       the current element.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a></span><span class="step end">@facs</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
+                                       predecessors of the current element.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@follows</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
+                                       a
+                                       "tool tip" or prefatory text, for example. Should not be used to record document
+                                       content.</span><span class="attributeValues">
+                                       Value is plain text.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.labelled.html">att.labelled</a></span><span class="step end">@label</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Specifies a generic MEI version label.">@meiversion</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">6.0-dev</span>" <i>(Version of MEI)</i>,  "<span style="font-weight: 500;">6.0-dev+anyStart</span>" <i>(Version of MEI all_anyStart customization)</i></span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.basic.html">att.basic</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.meiVersion.html">att.meiVersion</a></span><span class="step end">@meiversion</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">@metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a staff or layer and the prevailing
+                                       meter.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">c</span>" <i>(Complete; , conformant with the prevailing meter.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Incomplete; , not enough beats.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Overfull; , too many beats.)</i></span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.log.html">att.layer.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.html">att.meterConformance</a></span><span class="step end">@metcon</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Provides a numeric designation that indicates an element’s position in a sequence of similar elements. Its value must be a non-negative integer.">@n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element’s position in a sequence
+                                       of
+                                       similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
+                                       Value is a positive integer, including 0.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.nInteger.html">att.nInteger</a></span><span class="step end">@n</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@next</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
+                                       successors of the current element.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@precedes</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@prev</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text’s transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">@resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text’s transcription,
+                                       editing, or encoding. Its value must point to one or more identifiers declared in
+                                       the
+                                       document header.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a></span><span class="step end">@resp</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
+                                       copy
+                                       of the current element.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@sameas</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@synch</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
+                                       classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                       One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></span><span class="step end">@type</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.">@visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates if a feature should be rendered when the notation is presented graphically
+                                       or sounded when it is presented in an aural form.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.vis.html">att.layer.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visibility.html">att.visibility</a></span><span class="step end">@visible</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">@xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
+                                       references into absolute URI references.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.basic.html">att.basic</a></span><span class="step end">@xml:base</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
+                                       and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                       Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;oLayer&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.basic.html">att.basic</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.id.html">att.id</a></span><span class="step end">@xml:id</span></div>
+                              </div>
+                           </div>
+                           <div id="attributes_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="att.basic">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.basic.html">att.basic</a></label><span class="classDesc">(MEI.shared) Attributes that form the basis of the att.common class.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">@xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
+                                             references into absolute URI references.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
+                                    <div class="classBox" title="att.id">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.id.html">att.id</a></label><span class="classDesc">(MEI.shared) Attributes that uniquely identify an element.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
+                                                   and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                                   Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                                   </span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.meiVersion">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.meiVersion.html">att.meiVersion</a></label><span class="classDesc">(MEI.shared) Attributes that record the version of MEI in use.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Specifies a generic MEI version label.">@meiversion</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">6.0-dev</span>" <i>(Version of MEI)</i>,  "<span style="font-weight: 500;">6.0-dev+anyStart</span>" <i>(Version of MEI all_anyStart customization)</i></span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.facsimile">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a></label><span class="classDesc">(MEI.facsimile) Attributes that associate a feature corresponding with all or part
+                                       of an image.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more images, portions of an image, or surfaces which correspond to the current element.">@facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more images, portions of an image, or surfaces which correspond to
+                                             the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.labelled">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.labelled.html">att.labelled</a></label><span class="classDesc">(MEI.shared) </span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
+                                             a
+                                             "tool tip" or prefatory text, for example. Should not be used to record document
+                                             content.</span><span class="attributeValues">
+                                             Value is plain text.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.linking">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></label><span class="classDesc">(MEI.shared) Attributes that specify element-to-element relationships.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element of which the current element is a copy.">@copyof</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element of which the current element is a copy.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
+                                             fashion.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
+                                             predecessors of the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
+                                             successors of the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
+                                             copy
+                                             of the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.metadataPointing">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.metadataPointing.html">att.metadataPointing</a></label><span class="classDesc">(MEI.shared) Provides attributes for elements which may be associated with particular
+                                       contextual elements within the header.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Identifies one or more metadata elements (other than classification terms) within the header, which are understood to apply to the element bearing this attribute and its content.">@decls</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies one or more metadata elements (other than classification terms) within
+                                             the
+                                             header, which are understood to apply to the element bearing this attribute and its
+                                             content.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.nInteger">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.nInteger.html">att.nInteger</a></label><span class="classDesc">(MEI.shared) Attributes used to supply an integer number designation for an element.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides a numeric designation that indicates an element’s position in a sequence of similar elements. Its value must be a non-negative integer.">@n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element’s position in a sequence
+                                             of
+                                             similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
+                                             Value is a positive integer, including 0.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.responsibility">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a></label><span class="classDesc">(MEI.shared) Attributes capturing information regarding responsibility for some aspect
+                                       of the text's creation, transcription, editing, or encoding.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text’s transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">@resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text’s transcription,
+                                             editing, or encoding. Its value must point to one or more identifiers declared in
+                                             the
+                                             document header.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.typed">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
+                                             classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                             One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="classBox" title="att.classed">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
+                                                   bearing this attribute.</span><span class="attributeValues">
+                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   </span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.layer.log">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.log.html">att.layer.log</a></label><span class="classDesc">(MEI.shared) Logical domain attributes.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides a mechanism for linking the layer to a layerDef element.">@def</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a mechanism for linking the layer to a layerDef element.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
+                                    <div class="classBox" title="att.cue">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cue.html">att.cue</a></label><span class="classDesc">(MEI.shared) Attributes that describe "cue-ness".</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="">@cue</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                                   </span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.meterConformance">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.html">att.meterConformance</a></label><span class="classDesc">(MEI.shared) Attributes that provide information about a structure’s conformance to
+                                             the prevailing meter.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">@metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a staff or layer and the prevailing
+                                                   meter.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">c</span>" <i>(Complete; , conformant with the prevailing meter.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Incomplete; , not enough beats.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Overfull; , too many beats.)</i></span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.layer.vis">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.vis.html">att.layer.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes.</span></div>
+                                 <div class="classContent">
+                                    <div class="classBox" title="att.visibility">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visibility.html">att.visibility</a></label><span class="classDesc">(MEI.shared) Attributes describing whether a feature should be displayed.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.">@visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates if a feature should be rendered when the notation is presented graphically
+                                                   or sounded when it is presented in an aural form.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                                   </span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="att.layer.ges">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.ges.html">att.layer.ges</a></label><span class="classDesc">(MEI.gestural) Gestural domain attributes.</span></div>
+                                 <div class="classContent"></div>
+                              </div>
+                              <div class="classBox" title="att.layer.anl">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.anl.html">att.layer.anl</a></label><span class="classDesc">(MEI.analytical) Analytical domain attributes.</span></div>
+                                 <div class="classContent"></div>
+                              </div>
+                           </div>
+                           <div id="attributes_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.facsimile">
+                                 <div class="classHeading"><label class="classLabel">MEI.facsimile</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more images, portions of an image, or surfaces which correspond to the current element.">@facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more images, portions of an image, or surfaces which correspond to
+                                             the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
+                                             bearing this attribute.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element of which the current element is a copy.">@copyof</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element of which the current element is a copy.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
+                                             fashion.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="">@cue</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Identifies one or more metadata elements (other than classification terms) within the header, which are understood to apply to the element bearing this attribute and its content.">@decls</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies one or more metadata elements (other than classification terms) within
+                                             the
+                                             header, which are understood to apply to the element bearing this attribute and its
+                                             content.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides a mechanism for linking the layer to a layerDef element.">@def</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a mechanism for linking the layer to a layerDef element.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
+                                             predecessors of the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
+                                             a
+                                             "tool tip" or prefatory text, for example. Should not be used to record document
+                                             content.</span><span class="attributeValues">
+                                             Value is plain text.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Specifies a generic MEI version label.">@meiversion</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">6.0-dev</span>" <i>(Version of MEI)</i>,  "<span style="font-weight: 500;">6.0-dev+anyStart</span>" <i>(Version of MEI all_anyStart customization)</i></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">@metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a staff or layer and the prevailing
+                                             meter.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">c</span>" <i>(Complete; , conformant with the prevailing meter.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Incomplete; , not enough beats.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Overfull; , too many beats.)</i></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides a numeric designation that indicates an element’s position in a sequence of similar elements. Its value must be a non-negative integer.">@n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element’s position in a sequence
+                                             of
+                                             similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
+                                             Value is a positive integer, including 0.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
+                                             successors of the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text’s transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">@resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text’s transcription,
+                                             editing, or encoding. Its value must point to one or more identifiers declared in
+                                             the
+                                             document header.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
+                                             copy
+                                             of the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
+                                             classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                             One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.">@visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates if a feature should be rendered when the notation is presented graphically
+                                             or sounded when it is presented in an aural form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">@xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
+                                             references into absolute URI references.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
+                                             and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                             Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="memberships" class="facet memberships">
+                        <div class="label">Member of</div>
+                        <div class="statement memberships">
+                           <div class="memberOf"><span class="groupDesc">(oLayer isn't member of any model class)</span></div>
+                        </div>
+                     </div>
+                     <div id="containedBy" class="facet containedBy">
+                        <div class="label">Contained By</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="containedBy_compact" id="containedBy_compact_tab" href="#containedBy_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="containedBy_class" id="containedBy_class_tab" href="#containedBy_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="containedBy_module" id="containedBy_module_tab" href="#containedBy_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/ossia.html" title="Captures original notation and a differently notated version *present in the source being transcribed* .">&lt;ossia&gt;</a></div>
+                           <div id="containedBy_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="elements having oLayer as direct children">
+                                 <div class="classHeading"><label class="classLabel">elements having oLayer as direct children</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Captures original notation and a differently notated version *present in the source being transcribed* ."><a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">&lt;ossia&gt;</a></span><span class="desc">Captures original notation and a differently notated version <strong>*present in
+                                             the source being transcribed*</strong>.</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="containedBy_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Captures original notation and a differently notated version *present in the source being transcribed* ."><a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">&lt;ossia&gt;</a></span><span class="desc">Captures original notation and a differently notated version <strong>*present in
+                                             the source being transcribed*</strong>.</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="mayContain" class="facet mayContain">
+                        <div class="label">May Contain</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="mayContain_compact" id="mayContain_compact_tab" href="#mayContain_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="mayContain_class" id="mayContain_class_tab" href="#mayContain_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="mayContain_module" id="mayContain_module_tab" href="#mayContain_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="mayContain_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/accid.html" title="Records a temporary alteration to the pitch of a note.">&lt;accid&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/add.html" title="Marks an addition to the text.">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/anchoredText.html" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it.">&lt;anchoredText&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/annot.html" title="Provides a statement explaining the text or indicating the basis for an assertion.">&lt;annot&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/app.html" title="Contains one or more alternative encodings.">&lt;app&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/artic.html" title="An indication of how to play a note or chord.">&lt;artic&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bTrem.html" title="A rapid alternation on a single pitch or chord.">&lt;bTrem&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/barLine.html" title="Vertical line drawn through one or more staves that divides musical notation into metrical units.">&lt;barLine&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/beam.html" title="A container for a series of explicitly beamed events that begins and ends entirely within a measure.">&lt;beam&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/beatRpt.html" title="An indication that material on a preceding beat should be repeated.">&lt;beatRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/cb.html" title="An empty formatting element that forces text to begin in a new column.">&lt;cb&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/choice.html" title="Groups a number of alternative encodings for the same point in a text.">&lt;choice&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/chord.html" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*.">&lt;chord&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/clef.html" title="Indication of the exact location of a particular note on the staff and, therefore, the other notes as well.">&lt;clef&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/clefGrp.html" title="A set of simultaneously-occurring clefs.">&lt;clefGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/colLayout.html" title="An empty formatting element that signals the start of columnar layout.">&lt;colLayout&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corr.html" title="Contains the correct form of an apparent erroneous passage.">&lt;corr&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/curve.html" title="A curved line that cannot be represented by a more specific element, such as a slur.">&lt;curve&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/custos.html" title="Symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a &#34;direct&#34;.">&lt;custos&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/damage.html" title="Contains an area of damage to the physical medium.">&lt;damage&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html" title="Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.">&lt;del&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/divLine.html" title="Represents a division (divisio) in neume notation. Divisions indicate short, medium, or long pauses similar to breath marks in modern notation.">&lt;divLine&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dot.html" title="Dot of augmentation or division.">&lt;dot&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/fTrem.html" title="A rapid alternation between a pair of notes (or chords or perhaps between a note and a chord) that are (usually) farther apart than a major second.">&lt;fTrem&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/gap.html" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header.">&lt;gap&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html" title="A container for a sequence of grace notes.">&lt;graceGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html" title="A half-measure repeat in any meter.">&lt;halfmRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/handShift.html" title="Marks the beginning of a passage written in a new hand, or of a change in the scribe, writing style, ink or character of the document hand.">&lt;handShift&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/keySig.html" title="Written key signature.">&lt;keySig&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/ligature.html" title="A mensural notation symbol that combines two or more notes into a single sign.">&lt;ligature&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/line.html" title="A visual line that cannot be represented by a more specific; i.e. , semantic, element.">&lt;line&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRest.html" title="Complete measure rest in any meter.">&lt;mRest&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRpt2.html" title="An indication that the previous two measures should be repeated.">&lt;mRpt2&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRpt.html" title="An indication that the previous measure should be repeated.">&lt;mRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html" title="A measure containing only empty space in any meter.">&lt;mSpace&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mensur.html" title="Collects information about the metrical relationship between a note value and the next smaller value; that is, either triple or duple.">&lt;mensur&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html" title="Written meter signature.">&lt;meterSig&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures.">&lt;meterSigGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/midi.html" title="Container for elements that contain information useful when generating MIDI output.">&lt;midi&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html" title="Multiple full measure rests compressed into a single bar, frequently found in performer parts.">&lt;multiRest&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/multiRpt.html" title="Multiple repeated measures.">&lt;multiRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/neume.html" title="Sign representing one or more musical pitches.">&lt;neume&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/note.html" title="A single pitched event.">&lt;note&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/orig.html" title="Contains material which is marked as following the original, rather than being normalized or corrected.">&lt;orig&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/pad.html" title="An indication of extra visual space between notational elements.">&lt;pad&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/pb.html" title="An empty formatting element that forces text to begin on a new page.">&lt;pb&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/proport.html" title="Description of note duration as arithmetic ratio.">&lt;proport&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/reg.html" title="Contains material which has been regularized or normalized in some sense.">&lt;reg&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rest.html" title="A non-sounding event found in the source being transcribed.">&lt;rest&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/restore.html" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction.">&lt;restore&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/sb.html" title="An empty formatting element that forces musical notation to begin on a new line.">&lt;sb&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/sic.html" title="Contains apparently incorrect or inaccurate material.">&lt;sic&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/space.html" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure.">&lt;space&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/subst.html" title="Groups transcriptional elements when the combination is to be regarded as a single intervention in the text.">&lt;subst&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html" title="Contains material supplied by the transcriber or editor for any reason.">&lt;supplied&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/syllable.html" title="Neume notation can be thought of as &#34;neumed text&#34;. Therefore, the syllable element provides high-level organization in this repertoire.">&lt;syllable&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html" title="A visual indication of the duration of a <tabGrp&gt; .">&lt;tabDurSym&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html" title="A group of simultaneous tab notes, comparable to a <chord&gt; in CMN. Rarely, may also contain rests, as in some &#34;German&#34; lute tablatures.">&lt;tabGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five.">&lt;tuplet&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source.">&lt;unclear&gt;</a></div>
+                           <div id="mayContain_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="model.appLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.appLike.html">model.appLike</a></label><span class="classDesc">(MEI.critapp) Groups elements that contain a critical apparatus entry.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains one or more alternative encodings."><a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a></span><span class="desc"><span class="desc">Contains one or more alternative encodings.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="model.editLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.editLike.html">model.editLike</a></label><span class="classDesc">(MEI.edittrans) Groups elements for editorial interventions that may be useful both
+                                       in transcribing and in authoring processes.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a></span><span class="desc"><span class="desc">Groups a number of alternative encodings for the same point in a text.</span></span></div>
+                                    <div class="def"><span class="ident" title="Groups transcriptional elements when the combination is to be regarded as a single intervention in the text."><a class="link_odd link_odd_elementSpec" href="../elements/subst.html">&lt;subst&gt;</a></span><span class="desc"><span class="desc">Groups transcriptional elements when the combination is to be regarded as
+                                             a single intervention in the text.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="model.transcriptionLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.transcriptionLike.html">model.transcriptionLike</a></label><span class="classDesc">(MEI.edittrans) Groups elements used for editorial transcription of pre-existing source
+                                       materials.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Marks an addition to the text."><a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a></span><span class="desc"><span class="desc">Marks an addition to the text.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the correct form of an apparent erroneous passage."><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a></span><span class="desc"><span class="desc">Contains the correct form of an apparent erroneous passage.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains an area of damage to the physical medium."><a class="link_odd link_odd_elementSpec" href="../elements/damage.html">&lt;damage&gt;</a></span><span class="desc"><span class="desc">Contains an area of damage to the physical medium.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a></span><span class="desc"><span class="desc">Contains information deleted, marked as deleted, or otherwise indicated as
+                                             superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a></span><span class="desc"><span class="desc">Indicates a point where material has been omitted in a transcription, whether as part
+                                             of
+                                             sampling practice or for editorial reasons described in the MEI header.</span></span></div>
+                                    <div class="def"><span class="ident" title="Marks the beginning of a passage written in a new hand, or of a change in the scribe, writing style, ink or character of the document hand."><a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">&lt;handShift&gt;</a></span><span class="desc"><span class="desc">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
+                                             writing style, ink or character of the document hand.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">&lt;orig&gt;</a></span><span class="desc"><span class="desc">Contains material which is marked as following the original, rather than
+                                             being normalized or corrected.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a></span><span class="desc"><span class="desc">Contains material which has been regularized or normalized in some
+                                             sense.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd link_odd_elementSpec" href="../elements/restore.html">&lt;restore&gt;</a></span><span class="desc"><span class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                                             or
+                                             authorial marking or instruction.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains apparently incorrect or inaccurate material."><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a></span><span class="desc"><span class="desc">Contains apparently incorrect or inaccurate material.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a></span><span class="desc"><span class="desc">Contains material supplied by the transcriber or editor for any reason.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a></span><span class="desc"><span class="desc">Contains material that cannot be transcribed with certainty because it is illegible
+                                             or
+                                             inaudible in the source.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="model.annotLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.annotLike.html">model.annotLike</a></label><span class="classDesc">(MEI.shared) Groups annotation-like elements.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a></span><span class="desc"><span class="desc">Provides a statement explaining the text or indicating the basis for an
+                                             assertion.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="model.layerPart">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.layerPart.html">model.layerPart</a></label><span class="classDesc">(MEI.shared) Groups notated events that may appear at the layer level in all repertoires.</span></div>
+                                 <div class="classContent">
+                                    <div class="classBox" title="model.layerPart.cmn">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.layerPart.cmn.html">model.layerPart.cmn</a></label><span class="classDesc">(MEI.cmn) Groups notated events that may appear at the layer level in CMN.</span></div>
+                                       <div class="classContent">
+                                          <div class="classBox" title="model.eventLike.cmn">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.cmn.html">model.eventLike.cmn</a></label><span class="classDesc">(MEI.cmn) Groups events that appear in CMN.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="A rapid alternation on a single pitch or chord."><a class="link_odd link_odd_elementSpec" href="../elements/bTrem.html">&lt;bTrem&gt;</a></span><span class="desc"><span class="desc">A rapid alternation on a single pitch or chord.</span></span></div>
+                                                <div class="def"><span class="ident" title="A container for a series of explicitly beamed events that begins and ends entirely within a measure."><a class="link_odd link_odd_elementSpec" href="../elements/beam.html">&lt;beam&gt;</a></span><span class="desc"><span class="desc">A container for a series of explicitly beamed events that begins and ends entirely
+                                                         within
+                                                         a measure.</span></span></div>
+                                                <div class="def"><span class="ident" title="An indication that material on a preceding beat should be repeated."><a class="link_odd link_odd_elementSpec" href="../elements/beatRpt.html">&lt;beatRpt&gt;</a></span><span class="desc"><span class="desc">An indication that material on a preceding beat should be repeated.</span></span></div>
+                                                <div class="def"><span class="ident" title="A rapid alternation between a pair of notes (or chords or perhaps between a note and a chord) that are (usually) farther apart than a major second."><a class="link_odd link_odd_elementSpec" href="../elements/fTrem.html">&lt;fTrem&gt;</a></span><span class="desc"><span class="desc">A rapid alternation between a pair of notes (or chords or perhaps
+                                                         between a note and a chord) that are (usually) farther apart than a major second.</span></span></div>
+                                                <div class="def"><span class="ident" title="A container for a sequence of grace notes."><a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">&lt;graceGrp&gt;</a></span><span class="desc"><span class="desc">A container for a sequence of grace notes.</span></span></div>
+                                                <div class="def"><span class="ident" title="A half-measure repeat in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html">&lt;halfmRpt&gt;</a></span><span class="desc"><span class="desc">A half-measure repeat in any meter.</span></span></div>
+                                                <div class="def"><span class="ident" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a></span><span class="desc"><span class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+                                                         for
+                                                         example, three notes in the time normally occupied by two or nine in the time of five.</span></span></div>
+                                             </div>
+                                          </div>
+                                          <div class="classBox" title="model.eventLike.measureFilling">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.measureFilling.html">model.eventLike.measureFilling</a></label><span class="classDesc">(MEI.cmn) Groups events that completely fill a CMN measure.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="Complete measure rest in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">&lt;mRest&gt;</a></span><span class="desc"><span class="desc">Complete measure rest in any meter.  </span></span></div>
+                                                <div class="def"><span class="ident" title="An indication that the previous measure should be repeated."><a class="link_odd link_odd_elementSpec" href="../elements/mRpt.html">&lt;mRpt&gt;</a></span><span class="desc"><span class="desc">An indication that the previous measure should be repeated.</span></span></div>
+                                                <div class="def"><span class="ident" title="An indication that the previous two measures should be repeated."><a class="link_odd link_odd_elementSpec" href="../elements/mRpt2.html">&lt;mRpt2&gt;</a></span><span class="desc"><span class="desc">An indication that the previous two measures should be
+                                                         repeated.</span></span></div>
+                                                <div class="def"><span class="ident" title="A measure containing only empty space in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">&lt;mSpace&gt;</a></span><span class="desc"><span class="desc">A measure containing only empty space in any meter.</span></span></div>
+                                                <div class="def"><span class="ident" title="Multiple full measure rests compressed into a single bar, frequently found in performer parts."><a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html">&lt;multiRest&gt;</a></span><span class="desc"><span class="desc">Multiple full measure rests compressed into a single bar, 
+                                                         frequently found in performer parts.</span></span></div>
+                                                <div class="def"><span class="ident" title="Multiple repeated measures."><a class="link_odd link_odd_elementSpec" href="../elements/multiRpt.html">&lt;multiRpt&gt;</a></span><span class="desc"><span class="desc">Multiple repeated measures.</span></span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="model.eventLike">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a></label><span class="classDesc">(MEI.shared) Groups event elements that occur in all notational repertoires.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Vertical line drawn through one or more staves that divides musical notation into metrical units."><a class="link_odd link_odd_elementSpec" href="../elements/barLine.html">&lt;barLine&gt;</a></span><span class="desc"><span class="desc">Vertical line drawn through one or more staves that divides musical notation into
+                                                   metrical
+                                                   units.</span></span></div>
+                                          <div class="def"><span class="ident" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*."><a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a></span><span class="desc"><span class="desc">A simultaneous sounding of two or more notes in the same layer *with the same
+                                                   duration*.</span></span></div>
+                                          <div class="def"><span class="ident" title="Indication of the exact location of a particular note on the staff and, therefore, the other notes as well."><a class="link_odd link_odd_elementSpec" href="../elements/clef.html">&lt;clef&gt;</a></span><span class="desc"><span class="desc">Indication of the exact location of a particular note on the staff and, therefore,
+                                                   the
+                                                   other notes as well.</span></span></div>
+                                          <div class="def"><span class="ident" title="A set of simultaneously-occurring clefs."><a class="link_odd link_odd_elementSpec" href="../elements/clefGrp.html">&lt;clefGrp&gt;</a></span><span class="desc"><span class="desc">A set of simultaneously-occurring clefs.</span></span></div>
+                                          <div class="def"><span class="ident" title="Symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a &#34;direct&#34;."><a class="link_odd link_odd_elementSpec" href="../elements/custos.html">&lt;custos&gt;</a></span><span class="desc"><span class="desc">Symbol placed at the end of a line of music to indicate the first note of the next
+                                                   line.
+                                                   Sometimes called a "direct".</span></span></div>
+                                          <div class="def"><span class="ident" title="A single pitched event."><a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a></span><span class="desc"><span class="desc">A single pitched event.  </span></span></div>
+                                          <div class="def"><span class="ident" title="An indication of extra visual space between notational elements."><a class="link_odd link_odd_elementSpec" href="../elements/pad.html">&lt;pad&gt;</a></span><span class="desc"><span class="desc">An indication of extra visual space between notational elements.</span></span></div>
+                                          <div class="def"><span class="ident" title="A non-sounding event found in the source being transcribed."><a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a></span><span class="desc"><span class="desc">A non-sounding event found in the source being transcribed.</span></span></div>
+                                          <div class="def"><span class="ident" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure."><a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a></span><span class="desc"><span class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
+                                                   combined duration of the events equals the number of beats in the measure.</span></span></div>
+                                          <div class="def"><span class="ident" title="A visual indication of the duration of a <tabGrp&gt; ."><a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">&lt;tabDurSym&gt;</a></span><span class="desc"><span class="desc">A visual indication of the duration of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a>.</span></span></div>
+                                          <div class="def"><span class="ident" title="A group of simultaneous tab notes, comparable to a <chord&gt; in CMN. Rarely, may also contain rests, as in some &#34;German&#34; lute tablatures."><a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a></span><span class="desc"><span class="desc">A group of simultaneous tab notes, comparable to a <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> in CMN. Rarely, may also contain rests, as in some "German" lute tablatures.</span></span></div>
+                                          <div class="classBox" title="model.keySigLike">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.keySigLike.html">model.keySigLike</a></label><span class="classDesc">(MEI.shared) Groups elements that have the same function as a key signature.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="Written key signature."><a class="link_odd link_odd_elementSpec" href="../elements/keySig.html">&lt;keySig&gt;</a></span><span class="desc"><span class="desc">Written key signature.</span></span></div>
+                                             </div>
+                                          </div>
+                                          <div class="classBox" title="model.meterSigLike">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.meterSigLike.html">model.meterSigLike</a></label><span class="classDesc">(MEI.shared) Groups elements that represent a meter signature.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="Written meter signature."><a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">&lt;meterSig&gt;</a></span><span class="desc"><span class="desc">Written meter signature.</span></span></div>
+                                                <div class="def"><span class="ident" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures."><a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html">&lt;meterSigGrp&gt;</a></span><span class="desc"><span class="desc">Used to capture alternating, interchanging, mixed or other non-standard meter signatures.</span></span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="model.layerPart.mensuralAndNeumes">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a></label><span class="classDesc">(MEI.shared) Groups notated events at the layer level that are shared by the mensural
+                                             and neume repertoires.</span></div>
+                                       <div class="classContent">
+                                          <div class="classBox" title="model.layerPart.mensural">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.layerPart.mensural.html">model.layerPart.mensural</a></label><span class="classDesc">(MEI.mensural) Groups notated events that may appear at the layer level in the mensural
+                                                   repertoire.</span></div>
+                                             <div class="classContent">
+                                                <div class="classBox" title="model.eventLike.mensural">
+                                                   <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.mensural.html">model.eventLike.mensural</a></label><span class="classDesc">(MEI.mensural) Groups event elements that occur in the mensural repertoire.</span></div>
+                                                   <div class="classContent">
+                                                      <div class="def"><span class="ident" title="Dot of augmentation or division."><a class="link_odd link_odd_elementSpec" href="../elements/dot.html">&lt;dot&gt;</a></span><span class="desc"><span class="desc">Dot of augmentation or division.</span></span></div>
+                                                      <div class="def"><span class="ident" title="A mensural notation symbol that combines two or more notes into a single sign."><a class="link_odd link_odd_elementSpec" href="../elements/ligature.html">&lt;ligature&gt;</a></span><span class="desc"><span class="desc">A mensural notation symbol that combines two or more notes into a single sign.</span></span></div>
+                                                      <div class="def"><span class="ident" title="Collects information about the metrical relationship between a note value and the next smaller value; that is, either triple or duple."><a class="link_odd link_odd_elementSpec" href="../elements/mensur.html">&lt;mensur&gt;</a></span><span class="desc"><span class="desc">Collects information about the metrical relationship between a note value
+                                                               and the next smaller value; that is, either triple or duple.</span></span></div>
+                                                      <div class="def"><span class="ident" title="Description of note duration as arithmetic ratio."><a class="link_odd link_odd_elementSpec" href="../elements/proport.html">&lt;proport&gt;</a></span><span class="desc"><span class="desc">Description of note duration as arithmetic ratio.</span></span></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="classBox" title="model.midiLike">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.midiLike.html">model.midiLike</a></label><span class="classDesc">(MEI.midi) Groups elements which group MIDI-like elements.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd link_odd_elementSpec" href="../elements/midi.html">&lt;midi&gt;</a></span><span class="desc"><span class="desc">Container for elements that contain information useful when generating MIDI output.</span></span></div>
+                                             </div>
+                                          </div>
+                                          <div class="classBox" title="model.layerPart.neumes">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.layerPart.neumes.html">model.layerPart.neumes</a></label><span class="classDesc">(MEI.neumes) Groups notated events that may appear at the layer level in the neume
+                                                   repertoire.</span></div>
+                                             <div class="classContent">
+                                                <div class="classBox" title="model.eventLike.neumes">
+                                                   <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.neumes.html">model.eventLike.neumes</a></label><span class="classDesc">(MEI.neumes) Groups event elements that occur in the neume repertoire.</span></div>
+                                                   <div class="classContent">
+                                                      <div class="def"><span class="ident" title="Represents a division (divisio) in neume notation. Divisions indicate short, medium, or long pauses similar to breath marks in modern notation."><a class="link_odd link_odd_elementSpec" href="../elements/divLine.html">&lt;divLine&gt;</a></span><span class="desc"><span class="desc">Represents a division (divisio) in neume notation. Divisions indicate short, medium,
+                                                               or long pauses
+                                                               similar to breath marks in modern notation.</span></span></div>
+                                                      <div class="def"><span class="ident" title="Sign representing one or more musical pitches."><a class="link_odd link_odd_elementSpec" href="../elements/neume.html">&lt;neume&gt;</a></span><span class="desc"><span class="desc">Sign representing one or more musical pitches.</span></span></div>
+                                                   </div>
+                                                </div>
+                                                <div class="classBox" title="model.syllableLike">
+                                                   <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.syllableLike.html">model.syllableLike</a></label><span class="classDesc">(MEI.neumes) Groups elements that accommodate neumed text.</span></div>
+                                                   <div class="classContent">
+                                                      <div class="def"><span class="ident" title="Neume notation can be thought of as &#34;neumed text&#34;. Therefore, the syllable element provides high-level organization in this repertoire."><a class="link_odd link_odd_elementSpec" href="../elements/syllable.html">&lt;syllable&gt;</a></span><span class="desc"><span class="desc">Neume notation can be thought of as "neumed text". Therefore, the syllable element
+                                                               provides high-level organization in this repertoire.</span></span></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="classBox" title="model.noteModifierLike">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.noteModifierLike.html">model.noteModifierLike</a></label><span class="classDesc">(MEI.shared) Groups elements that modify note-like features.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="Records a temporary alteration to the pitch of a note."><a class="link_odd link_odd_elementSpec" href="../elements/accid.html">&lt;accid&gt;</a></span><span class="desc"><span class="desc">Records a temporary alteration to the pitch of a note.</span></span></div>
+                                                <div class="def"><span class="ident" title="An indication of how to play a note or chord."><a class="link_odd link_odd_elementSpec" href="../elements/artic.html">&lt;artic&gt;</a></span><span class="desc"><span class="desc">An indication of how to play a note or chord.</span></span></div>
+                                                <div class="def"><span class="ident" title="Dot of augmentation or division."><a class="link_odd link_odd_elementSpec" href="../elements/dot.html">&lt;dot&gt;</a></span><span class="desc"><span class="desc">Dot of augmentation or division.</span></span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="model.milestoneLike.music">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a></label><span class="classDesc">(MEI.shared) Groups milestone-style elements found in music notation.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="An empty formatting element that forces text to begin in a new column."><a class="link_odd link_odd_elementSpec" href="../elements/cb.html">&lt;cb&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that forces text to begin in a new
+                                             column.</span></span></div>
+                                    <div class="def"><span class="ident" title="An empty formatting element that signals the start of columnar layout."><a class="link_odd link_odd_elementSpec" href="../elements/colLayout.html">&lt;colLayout&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that signals the start of columnar
+                                             layout.</span></span></div>
+                                    <div class="def"><span class="ident" title="An empty formatting element that forces musical notation to begin on a new line."><a class="link_odd link_odd_elementSpec" href="../elements/sb.html">&lt;sb&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that forces musical notation to begin on
+                                             a new line.</span></span></div>
+                                    <div class="classBox" title="model.pbLike">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.pbLike.html">model.pbLike</a></label><span class="classDesc">(MEI.shared) Groups page beginning-like elements.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An empty formatting element that forces text to begin on a new page."><a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that forces text to begin on a new
+                                                   page.</span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="model.graphicPrimitiveLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.graphicPrimitiveLike.html">model.graphicPrimitiveLike</a></label><span class="classDesc">(MEI.usersymbols) Groups elements that function as drawing primitives.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd link_odd_elementSpec" href="../elements/anchoredText.html">&lt;anchoredText&gt;</a></span><span class="desc"><span class="desc">Container for text that is fixed to a particular page location, regardless of changes
+                                             made
+                                             to the layout of the measures around it.</span></span></div>
+                                    <div class="def"><span class="ident" title="A curved line that cannot be represented by a more specific element, such as a slur."><a class="link_odd link_odd_elementSpec" href="../elements/curve.html">&lt;curve&gt;</a></span><span class="desc"><span class="desc">A curved line that cannot be represented by a more specific element, such as a
+                                             slur.</span></span></div>
+                                    <div class="def"><span class="ident" title="A visual line that cannot be represented by a more specific; i.e. , semantic, element."><a class="link_odd link_odd_elementSpec" href="../elements/line.html">&lt;line&gt;</a></span><span class="desc"><span class="desc">A visual line that cannot be represented by a more specific; <abbr>i.e.</abbr>, semantic,
+                                             element.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="mayContain_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A rapid alternation on a single pitch or chord."><a class="link_odd link_odd_elementSpec" href="../elements/bTrem.html">&lt;bTrem&gt;</a></span><span class="desc"><span class="desc">A rapid alternation on a single pitch or chord.</span></span></div>
+                                    <div class="def"><span class="ident" title="A container for a series of explicitly beamed events that begins and ends entirely within a measure."><a class="link_odd link_odd_elementSpec" href="../elements/beam.html">&lt;beam&gt;</a></span><span class="desc"><span class="desc">A container for a series of explicitly beamed events that begins and ends entirely
+                                             within
+                                             a measure.</span></span></div>
+                                    <div class="def"><span class="ident" title="An indication that material on a preceding beat should be repeated."><a class="link_odd link_odd_elementSpec" href="../elements/beatRpt.html">&lt;beatRpt&gt;</a></span><span class="desc"><span class="desc">An indication that material on a preceding beat should be repeated.</span></span></div>
+                                    <div class="def"><span class="ident" title="A rapid alternation between a pair of notes (or chords or perhaps between a note and a chord) that are (usually) farther apart than a major second."><a class="link_odd link_odd_elementSpec" href="../elements/fTrem.html">&lt;fTrem&gt;</a></span><span class="desc"><span class="desc">A rapid alternation between a pair of notes (or chords or perhaps
+                                             between a note and a chord) that are (usually) farther apart than a major second.</span></span></div>
+                                    <div class="def"><span class="ident" title="A container for a sequence of grace notes."><a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">&lt;graceGrp&gt;</a></span><span class="desc"><span class="desc">A container for a sequence of grace notes.</span></span></div>
+                                    <div class="def"><span class="ident" title="A half-measure repeat in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html">&lt;halfmRpt&gt;</a></span><span class="desc"><span class="desc">A half-measure repeat in any meter.</span></span></div>
+                                    <div class="def"><span class="ident" title="Complete measure rest in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">&lt;mRest&gt;</a></span><span class="desc"><span class="desc">Complete measure rest in any meter.  </span></span></div>
+                                    <div class="def"><span class="ident" title="An indication that the previous measure should be repeated."><a class="link_odd link_odd_elementSpec" href="../elements/mRpt.html">&lt;mRpt&gt;</a></span><span class="desc"><span class="desc">An indication that the previous measure should be repeated.</span></span></div>
+                                    <div class="def"><span class="ident" title="An indication that the previous two measures should be repeated."><a class="link_odd link_odd_elementSpec" href="../elements/mRpt2.html">&lt;mRpt2&gt;</a></span><span class="desc"><span class="desc">An indication that the previous two measures should be
+                                             repeated.</span></span></div>
+                                    <div class="def"><span class="ident" title="A measure containing only empty space in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">&lt;mSpace&gt;</a></span><span class="desc"><span class="desc">A measure containing only empty space in any meter.</span></span></div>
+                                    <div class="def"><span class="ident" title="Written meter signature."><a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">&lt;meterSig&gt;</a></span><span class="desc"><span class="desc">Written meter signature.</span></span></div>
+                                    <div class="def"><span class="ident" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures."><a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html">&lt;meterSigGrp&gt;</a></span><span class="desc"><span class="desc">Used to capture alternating, interchanging, mixed or other non-standard meter signatures.</span></span></div>
+                                    <div class="def"><span class="ident" title="Multiple full measure rests compressed into a single bar, frequently found in performer parts."><a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html">&lt;multiRest&gt;</a></span><span class="desc"><span class="desc">Multiple full measure rests compressed into a single bar, 
+                                             frequently found in performer parts.</span></span></div>
+                                    <div class="def"><span class="ident" title="Multiple repeated measures."><a class="link_odd link_odd_elementSpec" href="../elements/multiRpt.html">&lt;multiRpt&gt;</a></span><span class="desc"><span class="desc">Multiple repeated measures.</span></span></div>
+                                    <div class="def"><span class="ident" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a></span><span class="desc"><span class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+                                             for
+                                             example, three notes in the time normally occupied by two or nine in the time of five.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.critapp">
+                                 <div class="classHeading"><label class="classLabel">MEI.critapp</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains one or more alternative encodings."><a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a></span><span class="desc"><span class="desc">Contains one or more alternative encodings.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.edittrans">
+                                 <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Marks an addition to the text."><a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a></span><span class="desc"><span class="desc">Marks an addition to the text.</span></span></div>
+                                    <div class="def"><span class="ident" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a></span><span class="desc"><span class="desc">Groups a number of alternative encodings for the same point in a text.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the correct form of an apparent erroneous passage."><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a></span><span class="desc"><span class="desc">Contains the correct form of an apparent erroneous passage.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains an area of damage to the physical medium."><a class="link_odd link_odd_elementSpec" href="../elements/damage.html">&lt;damage&gt;</a></span><span class="desc"><span class="desc">Contains an area of damage to the physical medium.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a></span><span class="desc"><span class="desc">Contains information deleted, marked as deleted, or otherwise indicated as
+                                             superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a></span><span class="desc"><span class="desc">Indicates a point where material has been omitted in a transcription, whether as part
+                                             of
+                                             sampling practice or for editorial reasons described in the MEI header.</span></span></div>
+                                    <div class="def"><span class="ident" title="Marks the beginning of a passage written in a new hand, or of a change in the scribe, writing style, ink or character of the document hand."><a class="link_odd link_odd_elementSpec" href="../elements/handShift.html">&lt;handShift&gt;</a></span><span class="desc"><span class="desc">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
+                                             writing style, ink or character of the document hand.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">&lt;orig&gt;</a></span><span class="desc"><span class="desc">Contains material which is marked as following the original, rather than
+                                             being normalized or corrected.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a></span><span class="desc"><span class="desc">Contains material which has been regularized or normalized in some
+                                             sense.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd link_odd_elementSpec" href="../elements/restore.html">&lt;restore&gt;</a></span><span class="desc"><span class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                                             or
+                                             authorial marking or instruction.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains apparently incorrect or inaccurate material."><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a></span><span class="desc"><span class="desc">Contains apparently incorrect or inaccurate material.</span></span></div>
+                                    <div class="def"><span class="ident" title="Groups transcriptional elements when the combination is to be regarded as a single intervention in the text."><a class="link_odd link_odd_elementSpec" href="../elements/subst.html">&lt;subst&gt;</a></span><span class="desc"><span class="desc">Groups transcriptional elements when the combination is to be regarded as
+                                             a single intervention in the text.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a></span><span class="desc"><span class="desc">Contains material supplied by the transcriber or editor for any reason.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a></span><span class="desc"><span class="desc">Contains material that cannot be transcribed with certainty because it is illegible
+                                             or
+                                             inaudible in the source.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.mensural">
+                                 <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A mensural notation symbol that combines two or more notes into a single sign."><a class="link_odd link_odd_elementSpec" href="../elements/ligature.html">&lt;ligature&gt;</a></span><span class="desc"><span class="desc">A mensural notation symbol that combines two or more notes into a single sign.</span></span></div>
+                                    <div class="def"><span class="ident" title="Collects information about the metrical relationship between a note value and the next smaller value; that is, either triple or duple."><a class="link_odd link_odd_elementSpec" href="../elements/mensur.html">&lt;mensur&gt;</a></span><span class="desc"><span class="desc">Collects information about the metrical relationship between a note value
+                                             and the next smaller value; that is, either triple or duple.</span></span></div>
+                                    <div class="def"><span class="ident" title="Description of note duration as arithmetic ratio."><a class="link_odd link_odd_elementSpec" href="../elements/proport.html">&lt;proport&gt;</a></span><span class="desc"><span class="desc">Description of note duration as arithmetic ratio.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.midi">
+                                 <div class="classHeading"><label class="classLabel">MEI.midi</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd link_odd_elementSpec" href="../elements/midi.html">&lt;midi&gt;</a></span><span class="desc"><span class="desc">Container for elements that contain information useful when generating MIDI output.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.neumes">
+                                 <div class="classHeading"><label class="classLabel">MEI.neumes</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Represents a division (divisio) in neume notation. Divisions indicate short, medium, or long pauses similar to breath marks in modern notation."><a class="link_odd link_odd_elementSpec" href="../elements/divLine.html">&lt;divLine&gt;</a></span><span class="desc"><span class="desc">Represents a division (divisio) in neume notation. Divisions indicate short, medium,
+                                             or long pauses
+                                             similar to breath marks in modern notation.</span></span></div>
+                                    <div class="def"><span class="ident" title="Sign representing one or more musical pitches."><a class="link_odd link_odd_elementSpec" href="../elements/neume.html">&lt;neume&gt;</a></span><span class="desc"><span class="desc">Sign representing one or more musical pitches.</span></span></div>
+                                    <div class="def"><span class="ident" title="Neume notation can be thought of as &#34;neumed text&#34;. Therefore, the syllable element provides high-level organization in this repertoire."><a class="link_odd link_odd_elementSpec" href="../elements/syllable.html">&lt;syllable&gt;</a></span><span class="desc"><span class="desc">Neume notation can be thought of as "neumed text". Therefore, the syllable element
+                                             provides high-level organization in this repertoire.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Records a temporary alteration to the pitch of a note."><a class="link_odd link_odd_elementSpec" href="../elements/accid.html">&lt;accid&gt;</a></span><span class="desc"><span class="desc">Records a temporary alteration to the pitch of a note.</span></span></div>
+                                    <div class="def"><span class="ident" title="Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a></span><span class="desc"><span class="desc">Provides a statement explaining the text or indicating the basis for an
+                                             assertion.</span></span></div>
+                                    <div class="def"><span class="ident" title="An indication of how to play a note or chord."><a class="link_odd link_odd_elementSpec" href="../elements/artic.html">&lt;artic&gt;</a></span><span class="desc"><span class="desc">An indication of how to play a note or chord.</span></span></div>
+                                    <div class="def"><span class="ident" title="Vertical line drawn through one or more staves that divides musical notation into metrical units."><a class="link_odd link_odd_elementSpec" href="../elements/barLine.html">&lt;barLine&gt;</a></span><span class="desc"><span class="desc">Vertical line drawn through one or more staves that divides musical notation into
+                                             metrical
+                                             units.</span></span></div>
+                                    <div class="def"><span class="ident" title="An empty formatting element that forces text to begin in a new column."><a class="link_odd link_odd_elementSpec" href="../elements/cb.html">&lt;cb&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that forces text to begin in a new
+                                             column.</span></span></div>
+                                    <div class="def"><span class="ident" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*."><a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a></span><span class="desc"><span class="desc">A simultaneous sounding of two or more notes in the same layer *with the same
+                                             duration*.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indication of the exact location of a particular note on the staff and, therefore, the other notes as well."><a class="link_odd link_odd_elementSpec" href="../elements/clef.html">&lt;clef&gt;</a></span><span class="desc"><span class="desc">Indication of the exact location of a particular note on the staff and, therefore,
+                                             the
+                                             other notes as well.</span></span></div>
+                                    <div class="def"><span class="ident" title="A set of simultaneously-occurring clefs."><a class="link_odd link_odd_elementSpec" href="../elements/clefGrp.html">&lt;clefGrp&gt;</a></span><span class="desc"><span class="desc">A set of simultaneously-occurring clefs.</span></span></div>
+                                    <div class="def"><span class="ident" title="An empty formatting element that signals the start of columnar layout."><a class="link_odd link_odd_elementSpec" href="../elements/colLayout.html">&lt;colLayout&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that signals the start of columnar
+                                             layout.</span></span></div>
+                                    <div class="def"><span class="ident" title="Symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a &#34;direct&#34;."><a class="link_odd link_odd_elementSpec" href="../elements/custos.html">&lt;custos&gt;</a></span><span class="desc"><span class="desc">Symbol placed at the end of a line of music to indicate the first note of the next
+                                             line.
+                                             Sometimes called a "direct".</span></span></div>
+                                    <div class="def"><span class="ident" title="Dot of augmentation or division."><a class="link_odd link_odd_elementSpec" href="../elements/dot.html">&lt;dot&gt;</a></span><span class="desc"><span class="desc">Dot of augmentation or division.</span></span></div>
+                                    <div class="def"><span class="ident" title="Dot of augmentation or division."><a class="link_odd link_odd_elementSpec" href="../elements/dot.html">&lt;dot&gt;</a></span><span class="desc"><span class="desc">Dot of augmentation or division.</span></span></div>
+                                    <div class="def"><span class="ident" title="Written key signature."><a class="link_odd link_odd_elementSpec" href="../elements/keySig.html">&lt;keySig&gt;</a></span><span class="desc"><span class="desc">Written key signature.</span></span></div>
+                                    <div class="def"><span class="ident" title="A single pitched event."><a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a></span><span class="desc"><span class="desc">A single pitched event.  </span></span></div>
+                                    <div class="def"><span class="ident" title="An indication of extra visual space between notational elements."><a class="link_odd link_odd_elementSpec" href="../elements/pad.html">&lt;pad&gt;</a></span><span class="desc"><span class="desc">An indication of extra visual space between notational elements.</span></span></div>
+                                    <div class="def"><span class="ident" title="An empty formatting element that forces text to begin on a new page."><a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that forces text to begin on a new
+                                             page.</span></span></div>
+                                    <div class="def"><span class="ident" title="A non-sounding event found in the source being transcribed."><a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a></span><span class="desc"><span class="desc">A non-sounding event found in the source being transcribed.</span></span></div>
+                                    <div class="def"><span class="ident" title="An empty formatting element that forces musical notation to begin on a new line."><a class="link_odd link_odd_elementSpec" href="../elements/sb.html">&lt;sb&gt;</a></span><span class="desc"><span class="desc">An empty formatting element that forces musical notation to begin on
+                                             a new line.</span></span></div>
+                                    <div class="def"><span class="ident" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure."><a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a></span><span class="desc"><span class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
+                                             combined duration of the events equals the number of beats in the measure.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.stringtab">
+                                 <div class="classHeading"><label class="classLabel">MEI.stringtab</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A visual indication of the duration of a <tabGrp&gt; ."><a class="link_odd link_odd_elementSpec" href="../elements/tabDurSym.html">&lt;tabDurSym&gt;</a></span><span class="desc"><span class="desc">A visual indication of the duration of a <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a>.</span></span></div>
+                                    <div class="def"><span class="ident" title="A group of simultaneous tab notes, comparable to a <chord&gt; in CMN. Rarely, may also contain rests, as in some &#34;German&#34; lute tablatures."><a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a></span><span class="desc"><span class="desc">A group of simultaneous tab notes, comparable to a <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> in CMN. Rarely, may also contain rests, as in some "German" lute tablatures.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.usersymbols">
+                                 <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd link_odd_elementSpec" href="../elements/anchoredText.html">&lt;anchoredText&gt;</a></span><span class="desc"><span class="desc">Container for text that is fixed to a particular page location, regardless of changes
+                                             made
+                                             to the layout of the measures around it.</span></span></div>
+                                    <div class="def"><span class="ident" title="A curved line that cannot be represented by a more specific element, such as a slur."><a class="link_odd link_odd_elementSpec" href="../elements/curve.html">&lt;curve&gt;</a></span><span class="desc"><span class="desc">A curved line that cannot be represented by a more specific element, such as a
+                                             slur.</span></span></div>
+                                    <div class="def"><span class="ident" title="A visual line that cannot be represented by a more specific; i.e. , semantic, element."><a class="link_odd link_odd_elementSpec" href="../elements/line.html">&lt;line&gt;</a></span><span class="desc"><span class="desc">A visual line that cannot be represented by a more specific; <abbr>i.e.</abbr>, semantic,
+                                             element.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"oLayer"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.cmn"</span>&gt;</span><div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>ossia layer<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A layer that contains an alternative to material in another layer.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.basic.html">att.basic</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.labelled.html">att.labelled</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.metadataPointing.html">att.metadataPointing</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.nInteger.html">att.nInteger</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.log.html">att.layer.log</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.vis.html">att.layer.vis</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.ges.html">att.layer.ges</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.layer.anl.html">att.layer.anl</a>"</span>/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;zeroOrMore&gt;</span><div class="indent indent4"><span data-indentation="4" class="element">&lt;choice&gt;</span><div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.annotLike.html">model.annotLike</a>"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.appLike.html">model.appLike</a>"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.editLike.html">model.editLike</a>"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.graphicPrimitiveLike.html">model.graphicPrimitiveLike</a>"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.layerPart.html">model.layerPart</a>"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.transcriptionLike.html">model.transcriptionLike</a>"</span>/&gt;</span></div><span data-indentation="4" class="element">&lt;/choice&gt;</span></div><span data-indentation="3" class="element">&lt;/zeroOrMore&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/content&gt;</span></div><span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+anyStart'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

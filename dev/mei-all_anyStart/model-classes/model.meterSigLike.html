@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="author" content="Benjamin W. Bohl">
+      <meta name="author" content="Stefan Münnich">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="specPage modelClassSpec">
+                  <h2 id="model.meterSigLike">model.meterSigLike</h2>
+                  <div class="specs">
+                     <div class="desc">Groups elements that represent a meter signature.</div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text"><a href="../modules/MEI.shared.html">MEI.shared</a></div>
+                     </div>
+                     <div id="attributes" class="facet attributes">
+                        <div class="label">Attributes</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"></div>
+                           <div id="attributes_full" class="facetTabbedContent full" data-label="full definition"></div>
+                           <div id="attributes_class" class="facetTabbedContent class" data-label="by class"></div>
+                           <div id="attributes_module" class="facetTabbedContent module" data-label="by module"></div>
+                        </div>
+                     </div>
+                     <div id="memberships" class="facet memberships">
+                        <div class="label">Member of</div>
+                        <div class="statement memberships">
+                           <div class="memberOf"><a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a><span class="groupDesc">Groups event elements that occur in all notational repertoires.</span></div>
+                           <div class="memberOf"><a class="link_odd link_odd_modelClass" href="../model-classes/model.staffDefPart.html">model.staffDefPart</a><span class="groupDesc">Groups elements that may appear in the declaration of staff features.</span></div>
+                        </div>
+                     </div>
+                     <div id="members" class="facet members">
+                        <div class="label">Members</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="members_compact" id="members_compact_tab" href="#members_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="members_module" id="members_module_tab" href="#members_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="members_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html" title="Written meter signature.">&lt;meterSig&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures.">&lt;meterSigGrp&gt;</a></div>
+                           <div id="members_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Written meter signature."><a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">&lt;meterSig&gt;</a></span><span class="desc"><span class="desc">Written meter signature.</span></span></div>
+                                    <div class="def"><span class="ident" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures."><a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html">&lt;meterSigGrp&gt;</a></span><span class="desc"><span class="desc">Used to capture alternating, interchanging, mixed or other non-standard meter signatures.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="containedBy" class="facet containedBy">
+                        <div class="label">Contained By</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="containedBy_compact" id="containedBy_compact_tab" href="#containedBy_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="containedBy_class" id="containedBy_class_tab" href="#containedBy_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="containedBy_module" id="containedBy_module_tab" href="#containedBy_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="containedBy_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html" title="A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation.">&lt;abbr&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/add.html" title="Marks an addition to the text.">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/beam.html" title="A container for a series of explicitly beamed events that begins and ends entirely within a measure.">&lt;beam&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corr.html" title="Contains the correct form of an apparent erroneous passage.">&lt;corr&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/damage.html" title="Contains an area of damage to the physical medium.">&lt;damage&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html" title="Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.">&lt;del&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/expan.html" title="Contains the expansion of an abbreviation.">&lt;expan&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html" title="A container for a sequence of grace notes.">&lt;graceGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/layer.html" title="An independent stream of events on a staff.">&lt;layer&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html" title="Container for layer meta-information.">&lt;layerDef&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/lem.html" title="Contains the lemma, or base text, of a textual variation.">&lt;lem&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/ligature.html" title="A mensural notation symbol that combines two or more notes into a single sign.">&lt;ligature&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures.">&lt;meterSigGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/oLayer.html" title="A layer that contains an alternative to material in another layer.">&lt;oLayer&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/orig.html" title="Contains material which is marked as following the original, rather than being normalized or corrected.">&lt;orig&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html" title="Contains a single reading within a textual variation.">&lt;rdg&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/reg.html" title="Contains material which has been regularized or normalized in some sense.">&lt;reg&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/restore.html" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction.">&lt;restore&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html" title="Container for score meta-information.">&lt;scoreDef&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/sic.html" title="Contains apparently incorrect or inaccurate material.">&lt;sic&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html" title="Container for staff meta-information.">&lt;staffDef&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html" title="Contains material supplied by the transcriber or editor for any reason.">&lt;supplied&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five.">&lt;tuplet&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/unclear.html" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source.">&lt;unclear&gt;</a></div>
+                           <div id="containedBy_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="model.meterSigLike">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.meterSigLike.html">model.meterSigLike</a></label><span class="classDesc">(MEI.shared) Groups elements that represent a meter signature.</span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Container for layer meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">&lt;layerDef&gt;</a></span><span class="desc">Container for layer meta-information.</span></div>
+                                    <div class="def"><span class="ident" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures."><a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html">&lt;meterSigGrp&gt;</a></span><span class="desc">Used to capture alternating, interchanging, mixed or other non-standard meter signatures.</span></div>
+                                    <div class="def"><span class="ident" title="Container for score meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a></span><span class="desc">Container for score meta-information.</span></div>
+                                    <div class="classBox" title="model.eventLike">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a></label><span class="classDesc">(MEI.shared) Groups event elements that occur in all notational repertoires.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A container for a series of explicitly beamed events that begins and ends entirely within a measure."><a class="link_odd link_odd_elementSpec" href="../elements/beam.html">&lt;beam&gt;</a></span><span class="desc">A container for a series of explicitly beamed events that begins and ends entirely
+                                                within
+                                                a measure.</span></div>
+                                          <div class="def"><span class="ident" title="A container for a sequence of grace notes."><a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">&lt;graceGrp&gt;</a></span><span class="desc">A container for a sequence of grace notes.</span></div>
+                                          <div class="def"><span class="ident" title="A mensural notation symbol that combines two or more notes into a single sign."><a class="link_odd link_odd_elementSpec" href="../elements/ligature.html">&lt;ligature&gt;</a></span><span class="desc">A mensural notation symbol that combines two or more notes into a single sign.</span></div>
+                                          <div class="def"><span class="ident" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a></span><span class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+                                                for
+                                                example, three notes in the time normally occupied by two or nine in the time of five.</span></div>
+                                          <div class="classBox" title="model.layerPart">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.layerPart.html">model.layerPart</a></label><span class="classDesc">(MEI.shared) Groups notated events that may appear at the layer level in all repertoires.</span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a></span><span class="desc">A generic element for 1) a shortened form of a word, including an acronym
+                                                      or 2) a shorthand notation.</span></div>
+                                                <div class="def"><span class="ident" title="Marks an addition to the text."><a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a></span><span class="desc">Marks an addition to the text.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the correct form of an apparent erroneous passage."><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a></span><span class="desc">Contains the correct form of an apparent erroneous passage.</span></div>
+                                                <div class="def"><span class="ident" title="Contains an area of damage to the physical medium."><a class="link_odd link_odd_elementSpec" href="../elements/damage.html">&lt;damage&gt;</a></span><span class="desc">Contains an area of damage to the physical medium.</span></div>
+                                                <div class="def"><span class="ident" title="Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a></span><span class="desc">Contains information deleted, marked as deleted, or otherwise indicated as
+                                                      superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the expansion of an abbreviation."><a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a></span><span class="desc">Contains the expansion of an abbreviation.</span></div>
+                                                <div class="def"><span class="ident" title="An independent stream of events on a staff."><a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a></span><span class="desc">An independent stream of events on a staff.</span></div>
+                                                <div class="def"><span class="ident" title="Contains the lemma, or base text, of a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a></span><span class="desc">Contains the lemma, or base text, of a textual variation.</span></div>
+                                                <div class="def"><span class="ident" title="A layer that contains an alternative to material in another layer."><a class="link_odd link_odd_elementSpec" href="../elements/oLayer.html">&lt;oLayer&gt;</a></span><span class="desc">A layer that contains an alternative to material in another layer.</span></div>
+                                                <div class="def"><span class="ident" title="Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">&lt;orig&gt;</a></span><span class="desc">Contains material which is marked as following the original, rather than
+                                                      being normalized or corrected.</span></div>
+                                                <div class="def"><span class="ident" title="Contains a single reading within a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a></span><span class="desc">Contains a single reading within a textual variation.</span></div>
+                                                <div class="def"><span class="ident" title="Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a></span><span class="desc">Contains material which has been regularized or normalized in some
+                                                      sense.</span></div>
+                                                <div class="def"><span class="ident" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd link_odd_elementSpec" href="../elements/restore.html">&lt;restore&gt;</a></span><span class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                                                      or
+                                                      authorial marking or instruction.</span></div>
+                                                <div class="def"><span class="ident" title="Contains apparently incorrect or inaccurate material."><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a></span><span class="desc">Contains apparently incorrect or inaccurate material.</span></div>
+                                                <div class="def"><span class="ident" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a></span><span class="desc">Contains material supplied by the transcriber or editor for any reason.</span></div>
+                                                <div class="def"><span class="ident" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a></span><span class="desc">Contains material that cannot be transcribed with certainty because it is illegible
+                                                      or
+                                                      inaudible in the source.</span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="model.staffDefPart">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_modelClass" href="../model-classes/model.staffDefPart.html">model.staffDefPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear in the declaration of staff features.</span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Container for staff meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a></span><span class="desc">Container for staff meta-information.</span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="containedBy_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A container for a series of explicitly beamed events that begins and ends entirely within a measure."><a class="link_odd link_odd_elementSpec" href="../elements/beam.html">&lt;beam&gt;</a></span><span class="desc">A container for a series of explicitly beamed events that begins and ends entirely
+                                          within
+                                          a measure.</span></div>
+                                    <div class="def"><span class="ident" title="A container for a sequence of grace notes."><a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">&lt;graceGrp&gt;</a></span><span class="desc">A container for a sequence of grace notes.</span></div>
+                                    <div class="def"><span class="ident" title="Used to capture alternating, interchanging, mixed or other non-standard meter signatures."><a class="link_odd link_odd_elementSpec" href="../elements/meterSigGrp.html">&lt;meterSigGrp&gt;</a></span><span class="desc">Used to capture alternating, interchanging, mixed or other non-standard meter signatures.</span></div>
+                                    <div class="def"><span class="ident" title="A layer that contains an alternative to material in another layer."><a class="link_odd link_odd_elementSpec" href="../elements/oLayer.html">&lt;oLayer&gt;</a></span><span class="desc">A layer that contains an alternative to material in another layer.</span></div>
+                                    <div class="def"><span class="ident" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a></span><span class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+                                          for
+                                          example, three notes in the time normally occupied by two or nine in the time of five.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.critapp">
+                                 <div class="classHeading"><label class="classLabel">MEI.critapp</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains the lemma, or base text, of a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/lem.html">&lt;lem&gt;</a></span><span class="desc">Contains the lemma, or base text, of a textual variation.</span></div>
+                                    <div class="def"><span class="ident" title="Contains a single reading within a textual variation."><a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a></span><span class="desc">Contains a single reading within a textual variation.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.edittrans">
+                                 <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a></span><span class="desc">A generic element for 1) a shortened form of a word, including an acronym
+                                          or 2) a shorthand notation.</span></div>
+                                    <div class="def"><span class="ident" title="Marks an addition to the text."><a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a></span><span class="desc">Marks an addition to the text.</span></div>
+                                    <div class="def"><span class="ident" title="Contains the correct form of an apparent erroneous passage."><a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a></span><span class="desc">Contains the correct form of an apparent erroneous passage.</span></div>
+                                    <div class="def"><span class="ident" title="Contains an area of damage to the physical medium."><a class="link_odd link_odd_elementSpec" href="../elements/damage.html">&lt;damage&gt;</a></span><span class="desc">Contains an area of damage to the physical medium.</span></div>
+                                    <div class="def"><span class="ident" title="Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a></span><span class="desc">Contains information deleted, marked as deleted, or otherwise indicated as
+                                          superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                                    <div class="def"><span class="ident" title="Contains the expansion of an abbreviation."><a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a></span><span class="desc">Contains the expansion of an abbreviation.</span></div>
+                                    <div class="def"><span class="ident" title="Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd link_odd_elementSpec" href="../elements/orig.html">&lt;orig&gt;</a></span><span class="desc">Contains material which is marked as following the original, rather than
+                                          being normalized or corrected.</span></div>
+                                    <div class="def"><span class="ident" title="Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a></span><span class="desc">Contains material which has been regularized or normalized in some
+                                          sense.</span></div>
+                                    <div class="def"><span class="ident" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd link_odd_elementSpec" href="../elements/restore.html">&lt;restore&gt;</a></span><span class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                                          or
+                                          authorial marking or instruction.</span></div>
+                                    <div class="def"><span class="ident" title="Contains apparently incorrect or inaccurate material."><a class="link_odd link_odd_elementSpec" href="../elements/sic.html">&lt;sic&gt;</a></span><span class="desc">Contains apparently incorrect or inaccurate material.</span></div>
+                                    <div class="def"><span class="ident" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a></span><span class="desc">Contains material supplied by the transcriber or editor for any reason.</span></div>
+                                    <div class="def"><span class="ident" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd link_odd_elementSpec" href="../elements/unclear.html">&lt;unclear&gt;</a></span><span class="desc">Contains material that cannot be transcribed with certainty because it is illegible
+                                          or
+                                          inaudible in the source.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.mensural">
+                                 <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A mensural notation symbol that combines two or more notes into a single sign."><a class="link_odd link_odd_elementSpec" href="../elements/ligature.html">&lt;ligature&gt;</a></span><span class="desc">A mensural notation symbol that combines two or more notes into a single sign.</span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="An independent stream of events on a staff."><a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a></span><span class="desc">An independent stream of events on a staff.</span></div>
+                                    <div class="def"><span class="ident" title="Container for layer meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">&lt;layerDef&gt;</a></span><span class="desc">Container for layer meta-information.</span></div>
+                                    <div class="def"><span class="ident" title="Container for score meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a></span><span class="desc">Container for score meta-information.</span></div>
+                                    <div class="def"><span class="ident" title="Container for staff meta-information."><a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a></span><span class="desc">Container for staff meta-information.</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"model.meterSigLike"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Groups elements that represent a meter signature.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a>"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_modelClass" href="../model-classes/model.staffDefPart.html">model.staffDefPart</a>"</span>/&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+anyStart'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

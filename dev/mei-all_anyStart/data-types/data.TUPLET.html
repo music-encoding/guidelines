@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="author" content="Benjamin W. Bohl">
+      <meta name="author" content="Stefan Münnich">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="specPage dataTypeSpec">
+                  <h2 id="data.TUPLET">data.TUPLET</h2>
+                  <div class="specs">
+                     <div class="desc">Tuplet attribute values: initial, medial, terminal.</div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text"><a href="../modules/MEI.html">MEI</a></div>
+                     </div>
+                     <div id="usedBy" class="facet usedBy">
+                        <div class="label">Used by</div>
+                        <div class="statement classes">
+                           <div class="classBox" title="Attribute Classes">
+                              <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.TUPLET</span></div>
+                              <div class="classContent">
+                                 <div class="def"><span class="ident" title="Indicates that this feature participates in a tuplet. If visual information about the tuplet needs to be recorded, then a <tuplet&gt; element should be employed."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tupletPresent.html">att.tupletPresent</a>/<span title="Indicates that this feature participates in a tuplet. If visual information about the tuplet needs to be recorded, then a tuplet element should be employed.">@tuplet</span></span><span class="desc"><span class="desc">Indicates that this feature participates in a tuplet. If visual information about
+                                          the
+                                          tuplet needs to be recorded, then a <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a> element should be
+                                          employed.</span></span></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"data.TUPLET"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Tuplet attribute values: initial, medial, terminal.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>[i|m|t][1-6]<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+anyStart'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

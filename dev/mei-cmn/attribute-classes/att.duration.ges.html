@@ -1,0 +1,915 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization for encoding Common Music Notation (CMN).">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="specPage attClassSpec">
+                  <h2 id="att.duration.ges">att.duration.ges</h2>
+                  <div class="specs">
+                     <div class="desc">Attributes that record performed duration that differs from a feature’s written
+                        duration.
+                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/integration.html#midi.scoreDefppq" title="12.1.1 PPQ in scoreDef and staffDef">12.1.1 PPQ in scoreDef and staffDef</a></div>
+                     </div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text"><a href="../modules/MEI.gestural.html">MEI.gestural</a></div>
+                     </div>
+                     <div id="attributes" class="facet attributes">
+                        <div class="label">Attributes</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Number of dots required for a gestural duration when different from that of the written duration.">@dots.ges</span>, <span class="ident attribute" title="Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.">@dur.ges</span>, <span class="ident attribute" title="Duration as a count of units provided in the time signature denominator.">@dur.metrical</span>, <span class="ident attribute" title="e.g. Duration recorded as pulses-per-quarter note, , MIDI clicks or MusicXML divisions.">@dur.ppq</span>, <span class="ident attribute" title="e.g. 1.732 Duration in seconds, , .">@dur.real</span>, <span class="ident attribute" title="Humdrum **recip value Duration as an optionally dotted .">@dur.recip</span></div>
+                           <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Number of dots required for a gestural duration when different from that of the written duration.">@dots.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Number of dots required for a gestural duration when different from that of the
+                                       written duration.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.duration.ges&gt;</span><span class="step">direct children</span><span class="step end">@dots.ges</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.">@dur.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows
+                                       the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.GESTURAL.html">data.DURATION.GESTURAL</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.duration.ges&gt;</span><span class="step">direct children</span><span class="step end">@dur.ges</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Duration as a count of units provided in the time signature denominator.">@dur.metrical</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as a count of units provided in the time signature denominator.</span><span class="attributeValues">
+                                       Value is a decimal number.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.duration.ges&gt;</span><span class="step">direct children</span><span class="step end">@dur.metrical</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="e.g. Duration recorded as pulses-per-quarter note, , MIDI clicks or MusicXML divisions.">@dur.ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration recorded as pulses-per-quarter note, <abbr>e.g.</abbr>, MIDI clicks or MusicXML
+                                       divisions.</span><span class="attributeValues">
+                                       Value is a positive integer, including 0.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.duration.ges&gt;</span><span class="step">direct children</span><span class="step end">@dur.ppq</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="e.g. 1.732 Duration in seconds, , .">@dur.real</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration in seconds, <abbr>e.g.</abbr>, <span class="val">1.732</span>.</span><span class="attributeValues">
+                                       Value is a decimal number.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.duration.ges&gt;</span><span class="step">direct children</span><span class="step end">@dur.real</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Humdrum **recip value Duration as an optionally dotted .">@dur.recip</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as an optionally dotted <a class="link_ref link_external" href="https://www.humdrum.org/rep/recip/">Humdrum **recip value</a>.</span><span class="attributeValues">
+                                       Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.duration.ges&gt;</span><span class="step">direct children</span><span class="step end">@dur.recip</span></div>
+                              </div>
+                           </div>
+                           <div id="attributes_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="direct children">
+                                 <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.">@dur.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows
+                                             the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.GESTURAL.html">data.DURATION.GESTURAL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Number of dots required for a gestural duration when different from that of the written duration.">@dots.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Number of dots required for a gestural duration when different from that of the
+                                             written duration.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Duration as a count of units provided in the time signature denominator.">@dur.metrical</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as a count of units provided in the time signature denominator.</span><span class="attributeValues">
+                                             Value is a decimal number.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="e.g. Duration recorded as pulses-per-quarter note, , MIDI clicks or MusicXML divisions.">@dur.ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration recorded as pulses-per-quarter note, <abbr>e.g.</abbr>, MIDI clicks or MusicXML
+                                             divisions.</span><span class="attributeValues">
+                                             Value is a positive integer, including 0.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="e.g. 1.732 Duration in seconds, , .">@dur.real</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration in seconds, <abbr>e.g.</abbr>, <span class="val">1.732</span>.</span><span class="attributeValues">
+                                             Value is a decimal number.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Humdrum **recip value Duration as an optionally dotted .">@dur.recip</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as an optionally dotted <a class="link_ref link_external" href="https://www.humdrum.org/rep/recip/">Humdrum **recip value</a>.</span><span class="attributeValues">
+                                             Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="attributes_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.gestural">
+                                 <div class="classHeading"><label class="classLabel">MEI.gestural</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Number of dots required for a gestural duration when different from that of the written duration.">@dots.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Number of dots required for a gestural duration when different from that of the
+                                             written duration.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.">@dur.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows
+                                             the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.GESTURAL.html">data.DURATION.GESTURAL</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Duration as a count of units provided in the time signature denominator.">@dur.metrical</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as a count of units provided in the time signature denominator.</span><span class="attributeValues">
+                                             Value is a decimal number.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="e.g. Duration recorded as pulses-per-quarter note, , MIDI clicks or MusicXML divisions.">@dur.ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration recorded as pulses-per-quarter note, <abbr>e.g.</abbr>, MIDI clicks or MusicXML
+                                             divisions.</span><span class="attributeValues">
+                                             Value is a positive integer, including 0.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="e.g. 1.732 Duration in seconds, , .">@dur.real</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration in seconds, <abbr>e.g.</abbr>, <span class="val">1.732</span>.</span><span class="attributeValues">
+                                             Value is a decimal number.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Humdrum **recip value Duration as an optionally dotted .">@dur.recip</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as an optionally dotted <a class="link_ref link_external" href="https://www.humdrum.org/rep/recip/">Humdrum **recip value</a>.</span><span class="attributeValues">
+                                             Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="availableAt" class="facet availableAt">
+                        <div class="label">Available at</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/annot.html" title="Provides a statement explaining the text or indicating the basis for an assertion.">&lt;annot&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html" title="Alternative element for explicitly encoding beams, particularly those which extend across bar lines.">&lt;beamSpan&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bracketSpan.html" title="Marks a sequence of notational events grouped by a bracket.">&lt;bracketSpan&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/caesura.html" title="Break, pause, or interruption in the normal tempo of a composition. Typically indicated by &#34;railroad tracks&#34;, i.e. , two diagonal slashes.">&lt;caesura&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/chord.html" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*.">&lt;chord&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html" title="A verbal or graphical indication to copy musical material written elsewhere.">&lt;cpMark&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dir.html" title="An instruction expressed as a combination of text and symbols, typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like <tempo&gt; , <dynam&gt; or <repeatMark&gt; .">&lt;dir&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html" title="Indication of the volume of a note, phrase, or section of music.">&lt;dynam&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/f.html" title="Single element of a figured bass indication.">&lt;f&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/fermata.html" title="An indication placed over a note or rest to indicate that it should be held longer than its written value. May also occur over a bar line to indicate the end of a phrase or section. Sometimes called a 'hold' or 'pause'.">&lt;fermata&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/fing.html" title="An individual finger in a fingering indication.">&lt;fing&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/fingGrp.html" title="A group of individual fingers in a fingering indication.">&lt;fingGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/gliss.html" title="A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line.">&lt;gliss&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/hairpin.html" title="Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g. , < and &gt;.">&lt;hairpin&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html" title="A half-measure repeat in any meter.">&lt;halfmRpt&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/harm.html" title="An indication of harmony, e.g. , chord names, tablature grids, harmonic analysis, figured bass.">&lt;harm&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html" title="Harp pedal diagram.">&lt;harpPedal&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/line.html" title="A visual line that cannot be represented by a more specific; i.e. , semantic, element.">&lt;line&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mRest.html" title="Complete measure rest in any meter.">&lt;mRest&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html" title="A measure containing only empty space in any meter.">&lt;mSpace&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as <add&gt; , <del&gt; , etc.">&lt;metaMark&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html" title="Multiple full measure rests compressed into a single bar, frequently found in performer parts.">&lt;multiRest&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/note.html" title="A single pitched event.">&lt;note&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/octave.html" title="An indication that a passage should be performed one or more octaves above or below its written pitch.">&lt;octave&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/ornam.html" title="An element indicating an ornament that is not a mordent, turn, or trill.">&lt;ornam&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/phrase.html" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique.">&lt;phrase&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/repeatMark.html" title="An instruction expressed as a combination of text and symbols – segno and coda – typically above, below, or between staves, but not on the staff.">&lt;repeatMark&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rest.html" title="A non-sounding event found in the source being transcribed.">&lt;rest&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/slur.html" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique.">&lt;slur&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/space.html" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure.">&lt;space&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html" title="A group of simultaneous tab notes, comparable to a <chord&gt; in CMN. Rarely, may also contain rests, as in some &#34;German&#34; lute tablatures.">&lt;tabGrp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/trill.html" title="Rapid alternation of a note with another (usually at the interval of a second above).">&lt;trill&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five.">&lt;tuplet&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/tupletSpan.html" title="Alternative element for encoding tuplets, especially useful for tuplets that extend across bar lines.">&lt;tupletSpan&gt;</a></div>
+                           <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="att.duration.ges">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.ges.html">att.duration.ges</a></label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="classBox" title="att.annot.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.annot.ges.html">att.annot.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a></span><span class="desc"><span class="desc">Provides a statement explaining the text or indicating the basis for an
+                                                   assertion.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.beamSpan.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.beamSpan.ges.html">att.beamSpan.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Alternative element for explicitly encoding beams, particularly those which extend across bar lines."><a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">&lt;beamSpan&gt;</a></span><span class="desc"><span class="desc">Alternative element for explicitly encoding beams, particularly those which
+                                                   extend across bar lines.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.bracketSpan.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.bracketSpan.ges.html">att.bracketSpan.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Marks a sequence of notational events grouped by a bracket."><a class="link_odd link_odd_elementSpec" href="../elements/bracketSpan.html">&lt;bracketSpan&gt;</a></span><span class="desc"><span class="desc">Marks a sequence of notational events grouped by a bracket.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.caesura.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.caesura.ges.html">att.caesura.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Break, pause, or interruption in the normal tempo of a composition. Typically indicated by &#34;railroad tracks&#34;, i.e. , two diagonal slashes."><a class="link_odd link_odd_elementSpec" href="../elements/caesura.html">&lt;caesura&gt;</a></span><span class="desc"><span class="desc">Break, pause, or interruption in the normal tempo of a composition. Typically indicated
+                                                   by
+                                                   "railroad tracks", <abbr>i.e.</abbr>, two diagonal slashes.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.chord.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.chord.ges.html">att.chord.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*."><a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a></span><span class="desc"><span class="desc">A simultaneous sounding of two or more notes in the same layer *with the same
+                                                   duration*.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.cpMark.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cpMark.ges.html">att.cpMark.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A verbal or graphical indication to copy musical material written elsewhere."><a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a></span><span class="desc"><span class="desc">A verbal or graphical indication to copy musical material
+                                                   written elsewhere.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.dir.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.dir.ges.html">att.dir.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An instruction expressed as a combination of text and symbols, typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like <tempo&gt; , <dynam&gt; or <repeatMark&gt; ."><a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a></span><span class="desc"><span class="desc">An instruction expressed as a combination of text and symbols, typically above,
+                                                   below, or between staves, but not on the staff — that is not encoded elsewhere in
+                                                   more specific
+                                                   elements, like <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a>  or <a class="link_odd link_odd_elementSpec" href="../elements/repeatMark.html">&lt;repeatMark&gt;</a>.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.dynam.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.dynam.ges.html">att.dynam.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Indication of the volume of a note, phrase, or section of music."><a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a></span><span class="desc"><span class="desc">Indication of the volume of a note, phrase, or section of music.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.f.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.f.ges.html">att.f.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Single element of a figured bass indication."><a class="link_odd link_odd_elementSpec" href="../elements/f.html">&lt;f&gt;</a></span><span class="desc"><span class="desc">Single element of a figured bass indication.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.fermata.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.fermata.ges.html">att.fermata.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An indication placed over a note or rest to indicate that it should be held longer than its written value. May also occur over a bar line to indicate the end of a phrase or section. Sometimes called a 'hold' or 'pause'."><a class="link_odd link_odd_elementSpec" href="../elements/fermata.html">&lt;fermata&gt;</a></span><span class="desc"><span class="desc">An indication placed over a note or rest to indicate that it should be held longer
+                                                   than
+                                                   its written value. May also occur over a bar line to indicate the end of a phrase
+                                                   or section.
+                                                   Sometimes called a 'hold' or 'pause'.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.fing.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.fing.ges.html">att.fing.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An individual finger in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fing.html">&lt;fing&gt;</a></span><span class="desc"><span class="desc">An individual finger in a fingering indication.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.fingGrp.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.fingGrp.ges.html">att.fingGrp.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A group of individual fingers in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fingGrp.html">&lt;fingGrp&gt;</a></span><span class="desc"><span class="desc">A group of individual fingers in a fingering indication.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.gliss.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.gliss.ges.html">att.gliss.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line."><a class="link_odd link_odd_elementSpec" href="../elements/gliss.html">&lt;gliss&gt;</a></span><span class="desc"><span class="desc">A continuous or sliding movement from one pitch to another, usually
+                                                   indicated by a straight or wavy line.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.hairpin.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.hairpin.ges.html">att.hairpin.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g. , < and &gt;."><a class="link_odd link_odd_elementSpec" href="../elements/hairpin.html">&lt;hairpin&gt;</a></span><span class="desc"><span class="desc">Indicates continuous dynamics expressed on the score as wedge-shaped graphics, <abbr>e.g.</abbr>, &lt;
+                                                   and &gt;.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.halfmRpt.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.halfmRpt.ges.html">att.halfmRpt.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A half-measure repeat in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html">&lt;halfmRpt&gt;</a></span><span class="desc"><span class="desc">A half-measure repeat in any meter.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.harm.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.ges.html">att.harm.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An indication of harmony, e.g. , chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a></span><span class="desc"><span class="desc">An indication of harmony, <abbr>e.g.</abbr>, chord names, tablature grids, harmonic
+                                                   analysis, figured bass.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.harpPedal.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.harpPedal.ges.html">att.harpPedal.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Harp pedal diagram."><a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html">&lt;harpPedal&gt;</a></span><span class="desc"><span class="desc">Harp pedal diagram.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.line.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.line.ges.html">att.line.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A visual line that cannot be represented by a more specific; i.e. , semantic, element."><a class="link_odd link_odd_elementSpec" href="../elements/line.html">&lt;line&gt;</a></span><span class="desc"><span class="desc">A visual line that cannot be represented by a more specific; <abbr>i.e.</abbr>, semantic,
+                                                   element.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.metaMark.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.metaMark.ges.html">att.metaMark.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as <add&gt; , <del&gt; , etc."><a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a></span><span class="desc"><span class="desc">A graphical or textual statement with additional / explanatory information about the
+                                                   musical text. The textual consequences of this intervention are encoded independently
+                                                   via
+                                                   other means; that is, with elements such as <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, etc.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.mRest.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mRest.ges.html">att.mRest.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Complete measure rest in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">&lt;mRest&gt;</a></span><span class="desc"><span class="desc">Complete measure rest in any meter.  </span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.mSpace.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mSpace.ges.html">att.mSpace.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A measure containing only empty space in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">&lt;mSpace&gt;</a></span><span class="desc"><span class="desc">A measure containing only empty space in any meter.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.multiRest.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.multiRest.ges.html">att.multiRest.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Multiple full measure rests compressed into a single bar, frequently found in performer parts."><a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html">&lt;multiRest&gt;</a></span><span class="desc"><span class="desc">Multiple full measure rests compressed into a single bar, 
+                                                   frequently found in performer parts.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.note.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.note.ges.html">att.note.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A single pitched event."><a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a></span><span class="desc"><span class="desc">A single pitched event.  </span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.octave.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.octave.ges.html">att.octave.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd link_odd_elementSpec" href="../elements/octave.html">&lt;octave&gt;</a></span><span class="desc"><span class="desc">An indication that a passage should be performed one or more octaves above or below
+                                                   its
+                                                   written pitch.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.ornam.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.ornam.ges.html">att.ornam.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An element indicating an ornament that is not a mordent, turn, or trill."><a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">&lt;ornam&gt;</a></span><span class="desc"><span class="desc">An element indicating an ornament that is not a mordent, turn, or trill. </span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.phrase.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.phrase.ges.html">att.phrase.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd link_odd_elementSpec" href="../elements/phrase.html">&lt;phrase&gt;</a></span><span class="desc"><span class="desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.repeatMark.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.repeatMark.ges.html">att.repeatMark.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="An instruction expressed as a combination of text and symbols – segno and coda – typically above, below, or between staves, but not on the staff."><a class="link_odd link_odd_elementSpec" href="../elements/repeatMark.html">&lt;repeatMark&gt;</a></span><span class="desc"><span class="desc">
+                                                   An instruction expressed as a combination of text and symbols – segno and coda – typically
+                                                   above, 
+                                                   below, or between staves, but not on the staff.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.rest.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.rest.ges.html">att.rest.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A non-sounding event found in the source being transcribed."><a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a></span><span class="desc"><span class="desc">A non-sounding event found in the source being transcribed.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.slur.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.ges.html">att.slur.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd link_odd_elementSpec" href="../elements/slur.html">&lt;slur&gt;</a></span><span class="desc"><span class="desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.space.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.space.ges.html">att.space.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure."><a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a></span><span class="desc"><span class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
+                                                   combined duration of the events equals the number of beats in the measure.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.tabGrp.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tabGrp.ges.html">att.tabGrp.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A group of simultaneous tab notes, comparable to a <chord&gt; in CMN. Rarely, may also contain rests, as in some &#34;German&#34; lute tablatures."><a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a></span><span class="desc"><span class="desc">A group of simultaneous tab notes, comparable to a <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> in CMN. Rarely, may also contain rests, as in some "German" lute tablatures.</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.trill.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.trill.ges.html">att.trill.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Rapid alternation of a note with another (usually at the interval of a second above)."><a class="link_odd link_odd_elementSpec" href="../elements/trill.html">&lt;trill&gt;</a></span><span class="desc"><span class="desc">Rapid alternation of a note with another (usually at the interval of a second
+                                                   above).</span></span></div>
+                                       </div>
+                                    </div>
+                                    <div class="classBox" title="att.tuplet.ges">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuplet.ges.html">att.tuplet.ges</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a></span><span class="desc"><span class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+                                                   for
+                                                   example, three notes in the time normally occupied by two or nine in the time of five.</span></span></div>
+                                          <div class="classBox" title="att.tupletSpan.ges">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tupletSpan.ges.html">att.tupletSpan.ges</a></label><span class="classDesc"></span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="Alternative element for encoding tuplets, especially useful for tuplets that extend across bar lines."><a class="link_odd link_odd_elementSpec" href="../elements/tupletSpan.html">&lt;tupletSpan&gt;</a></span><span class="desc"><span class="desc">Alternative element for encoding tuplets, especially useful for tuplets
+                                                         that extend across bar lines.</span></span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="availableAt_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.cmn">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Alternative element for explicitly encoding beams, particularly those which extend across bar lines."><a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">&lt;beamSpan&gt;</a></span><span class="desc"><span class="desc">Alternative element for explicitly encoding beams, particularly those which
+                                             extend across bar lines.</span></span></div>
+                                    <div class="def"><span class="ident" title="Marks a sequence of notational events grouped by a bracket."><a class="link_odd link_odd_elementSpec" href="../elements/bracketSpan.html">&lt;bracketSpan&gt;</a></span><span class="desc"><span class="desc">Marks a sequence of notational events grouped by a bracket.</span></span></div>
+                                    <div class="def"><span class="ident" title="An indication placed over a note or rest to indicate that it should be held longer than its written value. May also occur over a bar line to indicate the end of a phrase or section. Sometimes called a 'hold' or 'pause'."><a class="link_odd link_odd_elementSpec" href="../elements/fermata.html">&lt;fermata&gt;</a></span><span class="desc"><span class="desc">An indication placed over a note or rest to indicate that it should be held longer
+                                             than
+                                             its written value. May also occur over a bar line to indicate the end of a phrase
+                                             or section.
+                                             Sometimes called a 'hold' or 'pause'.</span></span></div>
+                                    <div class="def"><span class="ident" title="A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line."><a class="link_odd link_odd_elementSpec" href="../elements/gliss.html">&lt;gliss&gt;</a></span><span class="desc"><span class="desc">A continuous or sliding movement from one pitch to another, usually
+                                             indicated by a straight or wavy line.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g. , < and &gt;."><a class="link_odd link_odd_elementSpec" href="../elements/hairpin.html">&lt;hairpin&gt;</a></span><span class="desc"><span class="desc">Indicates continuous dynamics expressed on the score as wedge-shaped graphics, <abbr>e.g.</abbr>, &lt;
+                                             and &gt;.</span></span></div>
+                                    <div class="def"><span class="ident" title="A half-measure repeat in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/halfmRpt.html">&lt;halfmRpt&gt;</a></span><span class="desc"><span class="desc">A half-measure repeat in any meter.</span></span></div>
+                                    <div class="def"><span class="ident" title="Harp pedal diagram."><a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html">&lt;harpPedal&gt;</a></span><span class="desc"><span class="desc">Harp pedal diagram.</span></span></div>
+                                    <div class="def"><span class="ident" title="Complete measure rest in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">&lt;mRest&gt;</a></span><span class="desc"><span class="desc">Complete measure rest in any meter.  </span></span></div>
+                                    <div class="def"><span class="ident" title="A measure containing only empty space in any meter."><a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">&lt;mSpace&gt;</a></span><span class="desc"><span class="desc">A measure containing only empty space in any meter.</span></span></div>
+                                    <div class="def"><span class="ident" title="Multiple full measure rests compressed into a single bar, frequently found in performer parts."><a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html">&lt;multiRest&gt;</a></span><span class="desc"><span class="desc">Multiple full measure rests compressed into a single bar, 
+                                             frequently found in performer parts.</span></span></div>
+                                    <div class="def"><span class="ident" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd link_odd_elementSpec" href="../elements/octave.html">&lt;octave&gt;</a></span><span class="desc"><span class="desc">An indication that a passage should be performed one or more octaves above or below
+                                             its
+                                             written pitch.</span></span></div>
+                                    <div class="def"><span class="ident" title="An instruction expressed as a combination of text and symbols – segno and coda – typically above, below, or between staves, but not on the staff."><a class="link_odd link_odd_elementSpec" href="../elements/repeatMark.html">&lt;repeatMark&gt;</a></span><span class="desc"><span class="desc">
+                                             An instruction expressed as a combination of text and symbols – segno and coda – typically
+                                             above, 
+                                             below, or between staves, but not on the staff.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd link_odd_elementSpec" href="../elements/slur.html">&lt;slur&gt;</a></span><span class="desc"><span class="desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></span></div>
+                                    <div class="def"><span class="ident" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd link_odd_elementSpec" href="../elements/tuplet.html">&lt;tuplet&gt;</a></span><span class="desc"><span class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+                                             for
+                                             example, three notes in the time normally occupied by two or nine in the time of five.</span></span></div>
+                                    <div class="def"><span class="ident" title="Alternative element for encoding tuplets, especially useful for tuplets that extend across bar lines."><a class="link_odd link_odd_elementSpec" href="../elements/tupletSpan.html">&lt;tupletSpan&gt;</a></span><span class="desc"><span class="desc">Alternative element for encoding tuplets, especially useful for tuplets
+                                             that extend across bar lines.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.cmnOrnaments">
+                                 <div class="classHeading"><label class="classLabel">MEI.cmnOrnaments</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Rapid alternation of a note with another (usually at the interval of a second above)."><a class="link_odd link_odd_elementSpec" href="../elements/trill.html">&lt;trill&gt;</a></span><span class="desc"><span class="desc">Rapid alternation of a note with another (usually at the interval of a second
+                                             above).</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.edittrans">
+                                 <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A verbal or graphical indication to copy musical material written elsewhere."><a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a></span><span class="desc"><span class="desc">A verbal or graphical indication to copy musical material
+                                             written elsewhere.</span></span></div>
+                                    <div class="def"><span class="ident" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as <add&gt; , <del&gt; , etc."><a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a></span><span class="desc"><span class="desc">A graphical or textual statement with additional / explanatory information about the
+                                             musical text. The textual consequences of this intervention are encoded independently
+                                             via
+                                             other means; that is, with elements such as <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, etc.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.fingering">
+                                 <div class="classHeading"><label class="classLabel">MEI.fingering</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="An individual finger in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fing.html">&lt;fing&gt;</a></span><span class="desc"><span class="desc">An individual finger in a fingering indication.</span></span></div>
+                                    <div class="def"><span class="ident" title="A group of individual fingers in a fingering indication."><a class="link_odd link_odd_elementSpec" href="../elements/fingGrp.html">&lt;fingGrp&gt;</a></span><span class="desc"><span class="desc">A group of individual fingers in a fingering indication.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.harmony">
+                                 <div class="classHeading"><label class="classLabel">MEI.harmony</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Single element of a figured bass indication."><a class="link_odd link_odd_elementSpec" href="../elements/f.html">&lt;f&gt;</a></span><span class="desc"><span class="desc">Single element of a figured bass indication.</span></span></div>
+                                    <div class="def"><span class="ident" title="An indication of harmony, e.g. , chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a></span><span class="desc"><span class="desc">An indication of harmony, <abbr>e.g.</abbr>, chord names, tablature grids, harmonic
+                                             analysis, figured bass.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a></span><span class="desc"><span class="desc">Provides a statement explaining the text or indicating the basis for an
+                                             assertion.</span></span></div>
+                                    <div class="def"><span class="ident" title="Break, pause, or interruption in the normal tempo of a composition. Typically indicated by &#34;railroad tracks&#34;, i.e. , two diagonal slashes."><a class="link_odd link_odd_elementSpec" href="../elements/caesura.html">&lt;caesura&gt;</a></span><span class="desc"><span class="desc">Break, pause, or interruption in the normal tempo of a composition. Typically indicated
+                                             by
+                                             "railroad tracks", <abbr>i.e.</abbr>, two diagonal slashes.</span></span></div>
+                                    <div class="def"><span class="ident" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*."><a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a></span><span class="desc"><span class="desc">A simultaneous sounding of two or more notes in the same layer *with the same
+                                             duration*.</span></span></div>
+                                    <div class="def"><span class="ident" title="An instruction expressed as a combination of text and symbols, typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like <tempo&gt; , <dynam&gt; or <repeatMark&gt; ."><a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a></span><span class="desc"><span class="desc">An instruction expressed as a combination of text and symbols, typically above,
+                                             below, or between staves, but not on the staff — that is not encoded elsewhere in
+                                             more specific
+                                             elements, like <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a>  or <a class="link_odd link_odd_elementSpec" href="../elements/repeatMark.html">&lt;repeatMark&gt;</a>.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indication of the volume of a note, phrase, or section of music."><a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a></span><span class="desc"><span class="desc">Indication of the volume of a note, phrase, or section of music.</span></span></div>
+                                    <div class="def"><span class="ident" title="A single pitched event."><a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a></span><span class="desc"><span class="desc">A single pitched event.  </span></span></div>
+                                    <div class="def"><span class="ident" title="An element indicating an ornament that is not a mordent, turn, or trill."><a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">&lt;ornam&gt;</a></span><span class="desc"><span class="desc">An element indicating an ornament that is not a mordent, turn, or trill. </span></span></div>
+                                    <div class="def"><span class="ident" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd link_odd_elementSpec" href="../elements/phrase.html">&lt;phrase&gt;</a></span><span class="desc"><span class="desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></span></div>
+                                    <div class="def"><span class="ident" title="A non-sounding event found in the source being transcribed."><a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a></span><span class="desc"><span class="desc">A non-sounding event found in the source being transcribed.</span></span></div>
+                                    <div class="def"><span class="ident" title="A placeholder used to fill an incomplete measure, layer, etc. most often so that the combined duration of the events equals the number of beats in the measure."><a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a></span><span class="desc"><span class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
+                                             combined duration of the events equals the number of beats in the measure.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.stringtab">
+                                 <div class="classHeading"><label class="classLabel">MEI.stringtab</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A group of simultaneous tab notes, comparable to a <chord&gt; in CMN. Rarely, may also contain rests, as in some &#34;German&#34; lute tablatures."><a class="link_odd link_odd_elementSpec" href="../elements/tabGrp.html">&lt;tabGrp&gt;</a></span><span class="desc"><span class="desc">A group of simultaneous tab notes, comparable to a <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> in CMN. Rarely, may also contain rests, as in some "German" lute tablatures.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.usersymbols">
+                                 <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="A visual line that cannot be represented by a more specific; i.e. , semantic, element."><a class="link_odd link_odd_elementSpec" href="../elements/line.html">&lt;line&gt;</a></span><span class="desc"><span class="desc">A visual line that cannot be represented by a more specific; <abbr>i.e.</abbr>, semantic,
+                                             element.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"att.duration.ges"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.gestural"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Attributes that record performed duration that differs from a feature’s written
+                                       duration.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dur.ges"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Records performed duration information that differs from the written duration; @dur.ges&nbsp;allows
+                                             the same datatypes as&nbsp;@dur. Values of&nbsp;@dur.ges&nbsp;that require dots should also use&nbsp;@dots.ges.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.GESTURAL.html">data.DURATION.GESTURAL</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dots.ges"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Number of dots required for a gestural duration when different from that of the
+                                             written duration.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dur.metrical"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Duration as a count of units provided in the time signature denominator.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>\d+(\.\d+)?<span data-indentation="6" class="element">&lt;/rng:param&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/rng:data&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dur.ppq"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Duration recorded as pulses-per-quarter note, 
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="5" class="element">&lt;/abbr&gt;</span></div>, MIDI clicks or MusicXML
+                                             divisions.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"nonNegativeInteger"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dur.real"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Duration in seconds, 
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="5" class="element">&lt;/abbr&gt;</span></div>, 
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;val&gt;</span>1.732<span data-indentation="5" class="element">&lt;/val&gt;</span></div>.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>\d+(\.\d+)?<span data-indentation="6" class="element">&lt;/rng:param&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/rng:data&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dur.recip"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Duration as an optionally dotted 
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"https://www.humdrum.org/rep/recip/"</span>&gt;</span>Humdrum **recip value<span data-indentation="5" class="element">&lt;/ref&gt;</span></div>.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>[0-9]+(%[0-9]+)?\.*q?<span data-indentation="6" class="element">&lt;/rng:param&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/rng:data&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+cmn'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

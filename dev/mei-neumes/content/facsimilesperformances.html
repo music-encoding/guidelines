@@ -1,0 +1,1394 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization for encoding neume notation.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="div1">
+                  
+                  <h1 id="facsimilesperformances"><span class="headingNumber">B10</span><span class="head">Facsimiles and Performances</span></h1>
+                  
+                  <p>MEI can be used to connect an encoding of some sort –&nbsp;either a transcription of existing
+                     material, or the specification of some expected output in some form –&nbsp;with existing
+                     sources. This existing material may be in different formats –&nbsp;music notation in any
+                     combination of print and manuscript, or audio or video footage. The concepts for establishing
+                     such connections between encoded music and source material is described in the following
+                     chapters.</p>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="facsimiles"><span class="headingNumber">10.1</span><span class="head">Facsimiles</span></h2>
+                     
+                     <p>Most often, MEI is used for the preparation of a digital musical text based on an
+                        existing music document, or with the intention of rendering the encoded notation into
+                        a document or audio rendition. MEI can, however, be used to provide a different kind
+                        of digital reproduction of a source document, which relies on the description and
+                        provision of digital imagery. Both approaches may be combined, so that the encoding
+                        of the musical content and digital facsimiles may add different facets to the same
+                        MEI document.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="facsimileElements"><span class="headingNumber">10.1.1</span><span class="head">Elements of the Facsimile Module</span></h3>
+                        
+                        <p>This module makes available the following elements for encoding facsimiles:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Contains a representation of a written source in the form of a set of images rather
+                                       than
+                                       as transcribed or encoded text.</span></div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
+                                       one or more graphic representations of that space, and rectangular zones of interest
+                                       within
+                                       it.</span></div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Defines an area of interest within a <a class="link_odd link_odd_elementSpec" href="#surface">&lt;surface&gt;</a> or graphic file.</span></div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>These element are used to add a separate subtree to MEI, starting with the <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element inside <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a>, as seen in the following example:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17612" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;mei&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;meiHead&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- metadata header --&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/meiHead&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;music&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;facsimile&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!-- The facsimile subtree starts here. --&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/facsimile&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;body&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!-- The encoding of the musical content goes here. --&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/body&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/music&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/mei&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 310. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>It is possible to have more than one <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element in this location. This is especially useful when multiple sources are encoded
+                           in the same file using the mechanisms described in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.1 Editorial Markup</a> of these Guidelines. In this case, the <span class="att">@decls</span> (declarations) attribute of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> may be used to refer to a source defined in the document’s header, as seen in the
+                           following example:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17637" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;mei&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;meiHead&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;fileDesc&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;sourceDesc&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;source <span class="attribute">xml:id=</span><span class="attributevalue">"facsimile.source1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="comment">&lt;!-- description of source --&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/source&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/sourceDesc&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/fileDesc&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/meiHead&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;music&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;facsimile <span class="attribute">decls=</span><span class="attributevalue">"#facsimile.source1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!-- facsimile content --&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/facsimile&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/music&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/mei&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 311. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>When using the FRBR model (see <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a>), it is equally possible to reference a <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> element instead of <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a>.</p>
+                        
+                        <p>Within a <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element, each page of the source is represented by a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> element. Each surface may be assigned an identifying string utilizing the <span class="att">@label</span> attribute. In addition, it may encapsulate more detailed metadata about itself in
+                           a <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">&lt;figDesc&gt;</a> element. The coordinate space of the surface may be recorded in abstract terms in
+                           the <span class="att">@ulx</span>, <span class="att">@uly</span>, <span class="att">@lrx</span>, and <span class="att">@lry</span> attributes. For navigation purposes, <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> has a <span class="att">@startid</span> attribute that accommodates pointing to the first object appearing on this particular
+                           writing surface.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17687" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;facsimile&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;surface <span class="attribute">label=</span><span class="attributevalue">"page 1"</span> <span class="attribute">lrx=</span><span class="attributevalue">"2000"</span> <span class="attribute">lry=</span><span class="attributevalue">"3000"</span> <span class="attribute">startid=</span><span class="attributevalue">"#measure1"</span> <span class="attribute">ulx=</span><span class="attributevalue">"0"</span> <span class="attribute">uly=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/facsimile&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 312. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Within <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> elements, one may nest one or more <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> elements, each providing a reference to an image file that represents the writing
+                           surface. Multiple <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> elements are permitted in order to accommodate alternative versions (different resolutions
+                           or formats, for instance) of the surface image. In spite of changes in resolution
+                           or format, all images must contain the same content, <abbr>i.e.</abbr>, the entire writing surface. A <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> may refer to a single page within a multi-page document, which is – at least for
+                           Adobe PDF documents – available through a #page=X suffix to the <span class="att">@target</span> attribute.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17719" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;facsimile&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;surface&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"2000px"</span> <span class="attribute">target=</span><span class="attributevalue">"image1.jpg"</span> <span class="attribute">width=</span><span class="attributevalue">"3000px"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"1000px"</span> <span class="attribute">target=</span><span class="attributevalue">"image1smaller.jpg"</span> <span class="attribute">width=</span><span class="attributevalue">"1500px"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"200px"</span> <span class="attribute">target=</span><span class="attributevalue">"image1smallest.png"</span> <span class="attribute">width=</span><span class="attributevalue">"300px"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/surface&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/facsimile&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;facsimile&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;surface&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"297mm"</span> <span class="attribute">target=</span><span class="attributevalue">"source1.pdf#page=1"</span> <span class="attribute">width=</span><span class="attributevalue">"210mm"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/surface&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;surface&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"297mm"</span> <span class="attribute">target=</span><span class="attributevalue">"source1.pdf#page=2"</span> <span class="attribute">width=</span><span class="attributevalue">"210mm"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/surface&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/facsimile&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 313. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The preceding markup will provide the basis for most page-turning applications. Often,
+                           however, it is desirable to focus attention on particular areas of the graphical representation
+                           of the surface. The <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a> element fulfills this purpose:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17736" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;surface <span class="attribute">lrx=</span><span class="attributevalue">"3000"</span> <span class="attribute">lry=</span><span class="attributevalue">"2000"</span> <span class="attribute">ulx=</span><span class="attributevalue">"0"</span> <span class="attribute">uly=</span><span class="attributevalue">"0"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"2000px"</span> <span class="attribute">target=</span><span class="attributevalue">"image1.jpg"</span> <span class="attribute">width=</span><span class="attributevalue">"3000px"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;zone <span class="attribute">lrx=</span><span class="attributevalue">"370"</span> <span class="attribute">lry=</span><span class="attributevalue">"410"</span> <span class="attribute">ulx=</span><span class="attributevalue">"300"</span> <span class="attribute">uly=</span><span class="attributevalue">"200"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;zone <span class="attribute">lrx=</span><span class="attributevalue">"439"</span> <span class="attribute">lry=</span><span class="attributevalue">"410"</span> <span class="attribute">ulx=</span><span class="attributevalue">"367"</span> <span class="attribute">uly=</span><span class="attributevalue">"200"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;zone <span class="attribute">lrx=</span><span class="attributevalue">"512"</span> <span class="attribute">lry=</span><span class="attributevalue">"410"</span> <span class="attribute">ulx=</span><span class="attributevalue">"436"</span> <span class="attribute">uly=</span><span class="attributevalue">"200"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/surface&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 314. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The coordinates of each zone <em>define a space relative to the coordinate space of its parent surface</em>. Note that this is not necessarily the same coordinate space defined by the width
+                           and height attributes of the graphic that represents the surface. The zone coordinates
+                           in the preceding example do not represent regions within the graphic, but rather regions
+                           of the <em>writing surface</em>.</p>
+                        
+                        <p>Because the coordinate space of a zone is defined relative to that of a surface, it
+                           is possible to provide multiple graphic elements <em>and</em> multiple zone elements within a single surface. In the following example, two different
+                           images representing the entire surface are provided alongside specification of two
+                           zones of interest within the surface:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17762" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;surface <span class="attribute">lrx=</span><span class="attributevalue">"3000"</span> <span class="attribute">lry=</span><span class="attributevalue">"2000"</span> <span class="attribute">ulx=</span><span class="attributevalue">"0"</span> <span class="attribute">uly=</span><span class="attributevalue">"0"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"2000px"</span> <span class="attribute">target=</span><span class="attributevalue">"image1.jpg"</span> <span class="attribute">width=</span><span class="attributevalue">"3000px"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"1995px"</span> <span class="attribute">target=</span><span class="attributevalue">"image1cropped.jpg"</span> <span class="attribute">width=</span><span class="attributevalue">"2995px"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;zone <span class="attribute">lrx=</span><span class="attributevalue">"370"</span> <span class="attribute">lry=</span><span class="attributevalue">"410"</span> <span class="attribute">ulx=</span><span class="attributevalue">"300"</span> <span class="attribute">uly=</span><span class="attributevalue">"200"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;zone <span class="attribute">lrx=</span><span class="attributevalue">"30"</span> <span class="attribute">lry=</span><span class="attributevalue">"30"</span> <span class="attribute">ulx=</span><span class="attributevalue">"0"</span> <span class="attribute">uly=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/surface&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 315. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">&lt;figDesc&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> elements that provide detailed descriptive information about the zone and additional
+                           images, e.g., at a different/higher resolution, of the rectangle defined by the zone.
+                           The data objects contained within the zone may also be specified through the use of
+                           the <span class="att">@data</span> attribute, which contains ID references to one more elements in the content tree
+                           of the MEI file, such as a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>, <span class="missingLink">measure [not available in this MEI customization]</span>, etc.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17795" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- In the facsimile subtree: --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;zone <span class="attribute">data=</span><span class="attributevalue">"#facsimile.measure1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"facsimile.zone1"</span>/&gt;</span></div>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- somewhere in the content: --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">xml:id=</span><span class="attributevalue">"facsimile.measure1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- measure content --&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 316. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Conversely, an element in the content may refer to the <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> subtree using its <span class="att">@facs</span> attribute, which is made available by the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a> attribute class. The last example could therefore be encoded with pointers in the
+                           other direction:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17817" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- In the facsimile subtree: --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;zone <span class="attribute">xml:id=</span><span class="attributevalue">"facsimile.zone2"</span>/&gt;</span></div>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- somewhere in the content: --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">facs=</span><span class="attributevalue">"#facsimile.zone2"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"facsimile.measure2"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- measure content --&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 317. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> element defined in the <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">B2 Shared Concepts in MEI</a> makes special use of the <span class="att">@facs</span> attribute, in that it does not point to a <a class="link_odd link_odd_elementSpec" href="../elements/zone.html">&lt;zone&gt;</a>, but a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> element instead. A <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> marks the beginning of a page, so it can be concluded that all elements in the content
+                           tree which are encoded between any two <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> elements encode musical symbols written on the page (<a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a>) referenced by the first of these two <a class="link_odd link_odd_elementSpec" href="../elements/pb.html">&lt;pb&gt;</a> element’s <span class="att">@facs</span> attribute.</p>
+                        
+                        <p>The encoding of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> elements is intended to support sequential display of page images. If an encoder
+                           wants to describe the physical setup of a source document, the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> element is more appropriate. The difference of both approaches, and how to combine
+                           them, is described in chapter <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.1.1.1 Description of Folia</a>.</p>
+                        </div>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="performances"><span class="headingNumber">10.1</span><span class="head">Performances</span></h2>
+                     
+                     <p>This chapter describes the ‘performance’ module, which can be used for organizing
+                        audio and video files of performances of a musical work. The elements provided allow
+                        the encoder to group different recordings of the same performance, identify temporal
+                        segments within the recordings, and encode simple alignments with a music text.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="perfElements"><span class="headingNumber">10.1.1</span><span class="head">Overview</span></h3>
+                        
+                        <p>The following elements are available to encode information about a recorded performance:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A presentation of one or more musical works.</span></div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/recording.html">&lt;recording&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A recorded performance.</span></div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">References an external digital audio or video file.</span></div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Defines a time segment of interest within a recording or within a digital audio or
+                                       video
+                                       file.</span></div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Indicates a point in time either absolutely (using the absolute attribute), or relative
+                                       to
+                                       another when element (using the since, interval and inttype attributes).</span></div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element begins a subtree of the <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> element and appears alongside with, or instead of, <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a> (described in <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.1 General Music Structure Elements</a>) and <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> (described in <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">10.1 Facsimiles</a>). A <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element represents one recorded performance event. As a performance may be recorded
+                           in multiple formats or by different personnel or using different equipment, the <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element may group one or more recordings of the event.</p>
+                        
+                        <p>The <span class="att">@decls</span> attribute can be used to point to performance medium metadata for the performed work.
+                           See <a class="link_ptr chapterLink" title="Performance Medium" href="../content/metadata.html#headerWorkMedium">3.1.1 Performance Medium</a> and <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a> for more details.</p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/recording.html">&lt;recording&gt;</a> element identifies a single recording event taking place within an absolute temporal
+                           space. The class <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a> contains attributes that can be used to define this space:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@begin</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Specifies a point where the relevant content begins. A numerical value must be less
+                                    and a time value must be earlier than that given by the end attribute.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@end</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Specifies a point where the relevant content ends. If not specified, the end of the
+                                    content is assumed to be the end point. A numerical value must be greater and a time
+                                    value
+                                    must be later than that given by the begin attribute.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@betype</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Type of values used in the begin/end attributes. The begin and end attributes can
+                                    only
+                                    be interpreted meaningfully in conjunction with this attribute.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a> element identifies an external file associated with a recording act. In the simplest
+                           case, the recording element will contain one <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a> element identifying a file that represents it. The <span class="att">@target</span> attribute contains the URI of the digital media file. Use of the <span class="att">@mimetype</span> attribute is recommended for the <a class="link_odd link_odd_elementSpec" href="../elements/avFile.html">&lt;avFile&gt;</a> element. Its value should be a valid MIME media type defined by the Internet Engineering
+                           Task Force in RFC 2046. It is also recommended that all avFile elements have a recording
+                           or clip parent which bears the <span class="att">@begin</span>, <span class="att">@end</span>, and <span class="att">@betype</span> attributes.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17976" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:10.00"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/wav"</span> <span class="attribute">target=</span><span class="attributevalue">"http://example.com/path/to/audio/recording"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 318. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Sometimes, multiple digital files are created in order to provide greater flexibility
+                           in redistribution and playback capabilities. In this case, multiple avFile elements
+                           may occur, each with a different mimetype. Keep in mind, however, that each file still
+                           represents the complete temporal extent of the recording act in spite of the change
+                           of file format:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17989" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:10.00"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/wav"</span> <span class="attribute">target=</span><span class="attributevalue">"http://example.com/path/to/audio/recording/wav"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/mpeg"</span> <span class="attribute">target=</span><span class="attributevalue">"http://example.com/path/to/audio/recording/mpeg"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 319. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> element identifies a temporal segment of a recording act. In the following example,
+                           the clip begins two minutes into the timeframe of the recording and ends 20 seconds
+                           later:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18007" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:10.00"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:02:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:20:20.00"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/recording&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 320. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Beyond these relatively simple uses, complex situations may occur that require equally
+                           complex markup. For example, a single performance may be represented by multiple digital
+                           media files. Because they have differing durations, the media files must be the result
+                           of separate recording acts, even if these recording acts took place at the same time:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18020" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:10.00"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/wav"</span> <span class="attribute">target=</span><span class="attributevalue">"http://example.com/path/to/audio/recording/wav"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:15.00"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/mpeg"</span> <span class="attribute">target=</span><span class="attributevalue">"http://example.com/path/to/audio/recording/mpg"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 321. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>A single performance may also be represented by multiple, <em>sequential</em> digital files, as when a complete work is recorded in several so-called ‘takes’.
+                           In this case, the files may be considered to be parts of a single recording act, the
+                           extent of which is the combined extent of the individual clips. For example, a series
+                           of <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> elements may be used to identify each movement of a piece and give start and end
+                           times for the movements in relation to the overall temporal space of the complete
+                           work:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18040" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:07:00.00"</span> <span class="attribute">n=</span><span class="attributevalue">"mov1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/aiff"</span> <span class="attribute">target=</span><span class="attributevalue">"movement01.aiff"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/clip&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:07:01.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:12:03.00"</span> <span class="attribute">n=</span><span class="attributevalue">"mov2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/aiff"</span> <span class="attribute">target=</span><span class="attributevalue">"movement02.aiff"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/clip&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 322. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Similar markup is also applicable when a single file representing the entirety of
+                           a recording act is broken into segments later, as is often done for practical storage
+                           and distribution reasons. The file from which the clips are derived is indicated using
+                           an avFile element:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18054" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:12:03.00"</span> <span class="attribute">n=</span><span class="attributevalue">"completeWork"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/aiff"</span> <span class="attribute">target=</span><span class="attributevalue">"completeWork.aiff"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:07:00.00"</span> <span class="attribute">n=</span><span class="attributevalue">"mov1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/aiff"</span> <span class="attribute">target=</span><span class="attributevalue">"movement01.aiff"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/clip&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:07:02.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:12:03.00"</span> <span class="attribute">n=</span><span class="attributevalue">"mov2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/aiff"</span> <span class="attribute">target=</span><span class="attributevalue">"movement02.aiff"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/clip&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 323. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>A <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> may be used to define any region of interest, such as a cadenza or a modulation,
+                           a song verse, etc. The following example shows the use of <a class="link_odd link_odd_elementSpec" href="../elements/clip.html">&lt;clip&gt;</a> and its attributes to identify significant sections of a recording:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18074" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:05:21.00"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- Exposition --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:01:41.00"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- Development --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:01:41.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:14.00"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- Recapitulation --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:03:14.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:04:28.00"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- Coda --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:04:28.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:05:21.00"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 324. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>The preceding example also demonstrates that media files are not required in order
+                           to define the temporal space of a recording act or clip. This makes it possible to
+                           set the boundaries of these features, then use the content of the performance element
+                           as a rudimentary "edit decision list" to create the matching digital files.</p>
+                        
+                        <p>If an encoding of the notated text with which the media files are associated is included
+                           in the MEI file, the <span class="att">@startid</span> attribute can be used to indicate the first element in the sequence of events to
+                           which the recording corresponds:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18093" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:07:00.00"</span> <span class="attribute">n=</span><span class="attributevalue">"mov1"</span> <span class="attribute">startid=</span><span class="attributevalue">"#performance.m1_1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/aiff"</span> <span class="attribute">target=</span><span class="attributevalue">"fullpiece.aiff"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- ... --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;body&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;mdiv&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;score&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;section&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"performance.m1_1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="comment">&lt;!-- ... --&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/measure&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/section&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/score&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/mdiv&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/body&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 325. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Clips can also be aligned with components of the musical text encoded in the <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a>. The <span class="att">@startid</span> attribute can be used to specify the starting element in the sequence of events to
+                           which the clip corresponds. The following example shows the use of clip elements to
+                           identify the exposition of the first movement from Beethoven’s piano sonata Op. 14,
+                           no. 2 and its concluding ‘codetta’.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18112" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:05:21.00"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;avFile <span class="attribute">mimetype=</span><span class="attributevalue">"audio/aiff"</span> <span class="attribute">target=</span><span class="attributevalue">"BeethovenOp14N2-Mov1.aiff"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- Exposition --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:0.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:01:41.00"</span> <span class="attribute">startid=</span><span class="attributevalue">"#performance.m1"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- Exposition's "codetta" --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:01:31.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:01:41.00"</span> <span class="attribute">startid=</span><span class="attributevalue">"#performance.m48"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- ... --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;body&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;mdiv&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;score&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;section&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"performance.m1"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="comment">&lt;!-- ... --&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/measure&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="comment">&lt;!-- ... --&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"48"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"performance.m48"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="comment">&lt;!-- ... --&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/measure&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/section&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/score&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/mdiv&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/body&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 326. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Please note that the begin and end times of clips may overlap. In the preceding example,
+                           the extent of the codetta is contained within that of the exposition. Overlapping
+                           beginning and ending points may also be used to provide additional performance context
+                           for a segment or because there is uncertainty with regard to precise values for these
+                           points.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18125" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:06.54"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- a section of interest --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:00:41.00"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- the following section starts a little before the end of the
+                                                previous one to give some "adjustment" time --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:31.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:01:07.00"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- the boundaries of the following section are "fuzzy" --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:02:18.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:02:49.85"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 327. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>A bibliographic description of a recording or metadata explaining how clip boundaries
+                           were determined may be associated with the recording and clip elements via the <span class="att">@decls</span> attribute:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18142" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;performance&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;recording <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">decls=</span><span class="attributevalue">"#performance.recBibDesc"</span> <span class="attribute">end=</span><span class="attributevalue">"00:03:06.54"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- a section of interest --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:00:41.00"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- the following section starts a little before the end of the
+                                                previous one to give some "adjustment" time --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:00:31.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">decls=</span><span class="attributevalue">"#performance.clipDesc"</span> <span class="attribute">end=</span><span class="attributevalue">"00:01:07.00"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- the boundaries of the following section are "fuzzy" --&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;clip <span class="attribute">begin=</span><span class="attributevalue">"00:02:18.00"</span> <span class="attribute">betype=</span><span class="attributevalue">"time"</span> <span class="attribute">end=</span><span class="attributevalue">"00:02:49.85"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/recording&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/performance&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 328. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Associations between a feature of the encoding, such as a note, dynamic mark, or annotation,
+                           and a time point, may be created using <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> elements and <span class="att">@when</span> attributes.</p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> element identifies a particular point in time during the playback of a media file,
+                           such as an audio recording.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18167" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;when <span class="attribute">absolute=</span><span class="attributevalue">"00:00:01.915291666"</span> <span class="attribute">abstype=</span><span class="attributevalue">"time"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"t1"</span>/&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 329. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Time points may be identified in absolute terms as above; that is, in hours, minutes,
+                           and seconds since the beginning of the recording, or in relative terms using the <span class="att">@interval</span>, <span class="att">@inttype</span>, and <span class="att">@since</span> attributes. In the following example, the time point of interest happens 48 frames
+                           after the occurrence of the point labelled as "t1".</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18187" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;when <span class="attribute">interval=</span><span class="attributevalue">"48"</span> <span class="attribute">inttype=</span><span class="attributevalue">"smpte-ndf29.97"</span> <span class="attribute">since=</span><span class="attributevalue">"#t1"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"t1.1"</span>/&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 330. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Having identified a point of interest, another feature of the encoding may be associated
+                           with this point using its <span class="att">@when</span> attribute:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18204" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">resp=</span><span class="attributevalue">"#LvB"</span> <span class="attribute">when=</span><span class="attributevalue">"#t1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;p&gt;</span>I like this part!<span data-indentation="2" class="element">&lt;/p&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 331. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>One use of the association created between the annotation and the time point is to
+                           display the text of the annotation as the recording or clip is played.</p>
+                        
+                        <p>The <span class="att">@when</span> attributes allows only a single value, so only one-to-one relationships can be created
+                           using this mechanism. However, one-to-many relationships are accommodated in the opposite
+                           direction; that is, from a time point to other features of the markup. For example,</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18222" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;when <span class="attribute">xml:id=</span><span class="attributevalue">"t1.2"</span> <span class="attribute">absolute=</span><span class="attributevalue">"00:00:01.915291666"</span> <span class="attribute">abstype=</span><span class="attributevalue">"time"</span> <span class="attribute">data=</span><span class="attributevalue">"#feature1 #feature2 #feature3"</span>/&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 332. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>indicates that the entities identified in <span class="att">@data</span> all occur at the same instant.</p>
+                        
+                        <p><a class="link_odd link_odd_elementSpec" href="../elements/extData.html">&lt;extData&gt;</a> is a container for holding non-MEI data formats, similar to <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a> but available in <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> rather than in <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a>. <a class="link_odd link_odd_elementSpec" href="../elements/extData.html">&lt;extData&gt;</a> allows for data from audio or other sources to be linked to notes or other score
+                           events. Data should be enclosed in a CDATA tag.</p>
+                        
+                        <p>The following example shows JSON formatted performance data encoded with <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a> for a single note (presumed to be defined elsewhere in the document as with the ID
+                           "note_1"). Both single-value summaries (<abbr>e.g.</abbr>, pitch) and time series values (<abbr>e.g.</abbr>, contF0) are encoded.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e18266" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;when <span class="attribute">absolute=</span><span class="attributevalue">"00:00:00.00"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"when_1"</span> <span class="attribute">data=</span><span class="attributevalue">"#note_1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;extData&gt;</span>
+                                          &lt;![CDATA[
+                                          {"offset": "00:00:02.9005", 
+                                          "pitch": "455.98", 
+                                          "contF0": [454.3737606, 454.7165531, 455.2337513, 455.4622624, 456.0605954]}
+                                          ]]&gt;
+                                          <span data-indentation="2" class="element">&lt;/extData&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/when&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 333. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     </div>
+                  </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+               <p class="sectionToc sticky"><a class="level-2" href="#facsimiles">10.1 Facsimiles</a><a class="level-3" href="#facsimileElements">10.1.1 Elements of the Facsimile Module</a><a class="level-2" href="#performances">10.1 Performances</a><a class="level-3" href="#perfElements">10.1.1 Overview</a></p>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                     <p class="sectionToc sticky"><a class="level-2" href="#facsimiles">10.1 Facsimiles</a><a class="level-3" href="#facsimileElements">10.1.1 Elements of the Facsimile Module</a><a class="level-2" href="#performances">10.1 Performances</a><a class="level-3" href="#perfElements">10.1.1 Overview</a></p>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+neumes'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

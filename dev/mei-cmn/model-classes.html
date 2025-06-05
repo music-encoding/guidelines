@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization for encoding Common Music Notation (CMN).">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="assets/css/screen/mei-screen.css"><script src="assets/js/searchIndex.js"></script><script src="assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <div class="specPage overview">
+                  <h2>Model Classes</h2>
+                  <div class="letterSelection">
+                     <ul class="pagination">
+                        <li class="page-item"><a href="#letterFacet_a">a</a></li>
+                        <li class="page-item"><a href="#letterFacet_b">b</a></li>
+                        <li class="page-item"><a href="#letterFacet_c">c</a></li>
+                        <li class="page-item"><a href="#letterFacet_d">d</a></li>
+                        <li class="page-item"><a href="#letterFacet_e">e</a></li>
+                        <li class="page-item"><a href="#letterFacet_f">f</a></li>
+                        <li class="page-item"><a href="#letterFacet_g">g</a></li>
+                        <li class="page-item"><a href="#letterFacet_h">h</a></li>
+                        <li class="page-item"><a href="#letterFacet_i">i</a></li>
+                        <li class="page-item"><a href="#letterFacet_k">k</a></li>
+                        <li class="page-item"><a href="#letterFacet_l">l</a></li>
+                        <li class="page-item"><a href="#letterFacet_m">m</a></li>
+                        <li class="page-item"><a href="#letterFacet_n">n</a></li>
+                        <li class="page-item"><a href="#letterFacet_o">o</a></li>
+                        <li class="page-item"><a href="#letterFacet_p">p</a></li>
+                        <li class="page-item"><a href="#letterFacet_q">q</a></li>
+                        <li class="page-item"><a href="#letterFacet_r">r</a></li>
+                        <li class="page-item"><a href="#letterFacet_s">s</a></li>
+                        <li class="page-item"><a href="#letterFacet_t">t</a></li>
+                        <li class="page-item"><a href="#letterFacet_v">v</a></li>
+                        <li class="page-item"><a href="#letterFacet_w">w</a></li>
+                     </ul>
+                  </div>
+                  <div id="letterFacet_a" class="letter facet overview">
+                     <div class="label">a</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements used to represent a postal address." data-initial="a" data-ident="model.addressLike" href="./model-classes/model.addressLike.html">model.addressLike</a><a class="overviewLink model" title="Groups elements used as part of a physical address." data-initial="a" data-ident="model.addressPart" href="./model-classes/model.addressPart.html">model.addressPart</a><a class="overviewLink model" title="Groups annotation-like elements." data-initial="a" data-ident="model.annotLike" href="./model-classes/model.annotLike.html">model.annotLike</a><a class="overviewLink model" title="Groups elements that contain a critical apparatus entry." data-initial="a" data-ident="model.appLike" href="./model-classes/model.appLike.html">model.appLike</a></div>
+                  </div>
+                  <div id="letterFacet_b" class="letter facet overview">
+                     <div class="label">b</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that may contain back matter." data-initial="b" data-ident="model.backLike" href="./model-classes/model.backLike.html">model.backLike</a><a class="overviewLink model" title="Groups elements containing a bibliographic description." data-initial="b" data-ident="model.biblLike" href="./model-classes/model.biblLike.html">model.biblLike</a><a class="overviewLink model" title="Groups elements that may appear as part of a bibliographic description." data-initial="b" data-ident="model.biblPart" href="./model-classes/model.biblPart.html">model.biblPart</a><a class="overviewLink model" title="Collects bifoliumlike elements." data-initial="b" data-ident="model.bifoliumLike" href="./model-classes/model.bifoliumLike.html">model.bifoliumLike</a></div>
+                  </div>
+                  <div id="letterFacet_c" class="letter facet overview">
+                     <div class="label">c</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that contain the text of a caption or other text displayed along with a figure." data-initial="c" data-ident="model.captionLike" href="./model-classes/model.captionLike.html">model.captionLike</a><a class="overviewLink model" title="Groups elements that may appear as part of the content of a choice element." data-initial="c" data-ident="model.choicePart" href="./model-classes/model.choicePart.html">model.choicePart</a><a class="overviewLink model" title="Groups elements that may appear as part of the content of a chord element." data-initial="c" data-ident="model.chordPart" href="./model-classes/model.chordPart.html">model.chordPart</a><a class="overviewLink model" title="Groups elements that group playable chord definitions." data-initial="c" data-ident="model.chordTableLike" href="./model-classes/model.chordTableLike.html">model.chordTableLike</a><a class="overviewLink model" title="Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend upon other events, such as notes or rests, for their existence." data-initial="c" data-ident="model.controlEventLike" href="./model-classes/model.controlEventLike.html">model.controlEventLike</a><a class="overviewLink model" title="Groups control events that appear in CMN." data-initial="c" data-ident="model.controlEventLike.cmn" href="./model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a><a class="overviewLink model" title="Groups harmonic elements that function as control events; that is, those events that modify or otherwise depend on the existence of notated events." data-initial="c" data-ident="model.controlEventLike.harmony" href="./model-classes/model.controlEventLike.harmony.html">model.controlEventLike.harmony</a></div>
+                  </div>
+                  <div id="letterFacet_d" class="letter facet overview">
+                     <div class="label">d</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements containing date expressions." data-initial="d" data-ident="model.dateLike" href="./model-classes/model.dateLike.html">model.dateLike</a><a class="overviewLink model" title="Groups elements which describe a measurement forming part of the physical dimensions of an object." data-initial="d" data-ident="model.dimLike" href="./model-classes/model.dimLike.html">model.dimLike</a><a class="overviewLink model" title="Groups elements used to represent generic structural divisions of text." data-initial="d" data-ident="model.divLike" href="./model-classes/model.divLike.html">model.divLike</a></div>
+                  </div>
+                  <div id="letterFacet_e" class="letter facet overview">
+                     <div class="label">e</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements for editorial interventions that may be useful both in transcribing and in authoring processes." data-initial="e" data-ident="model.editLike" href="./model-classes/model.editLike.html">model.editLike</a><a class="overviewLink model" title="Groups elements that may appear as part of editorial and transcription elements." data-initial="e" data-ident="model.editTransPart" href="./model-classes/model.editTransPart.html">model.editTransPart</a><a class="overviewLink model" title="Groups elements that may appear as part of editorial and transcription elements in music notation." data-initial="e" data-ident="model.editTransPart.music" href="./model-classes/model.editTransPart.music.html">model.editTransPart.music</a><a class="overviewLink model" title="Groups elements that may appear as part of editorial and transcription elements in prose." data-initial="e" data-ident="model.editTransPart.text" href="./model-classes/model.editTransPart.text.html">model.editTransPart.text</a><a class="overviewLink model" title="Groups elements containing bibliographic edition information." data-initial="e" data-ident="model.editionLike" href="./model-classes/model.editionLike.html">model.editionLike</a><a class="overviewLink model" title="Groups elements that may appear as part of a description of the editorial process applied to the encoding of notation." data-initial="e" data-ident="model.editorialDeclPart" href="./model-classes/model.editorialDeclPart.html">model.editorialDeclPart</a><a class="overviewLink model" title="Groups editorial intervention elements." data-initial="e" data-ident="model.editorialLike" href="./model-classes/model.editorialLike.html">model.editorialLike</a><a class="overviewLink model" title="Groups elements that represent alternative endings." data-initial="e" data-ident="model.endingLike" href="./model-classes/model.endingLike.html">model.endingLike</a><a class="overviewLink model" title="Groups event elements that occur in all notational repertoires." data-initial="e" data-ident="model.eventLike" href="./model-classes/model.eventLike.html">model.eventLike</a><a class="overviewLink model" title="Groups events that appear in CMN." data-initial="e" data-ident="model.eventLike.cmn" href="./model-classes/model.eventLike.cmn.html">model.eventLike.cmn</a><a class="overviewLink model" title="Groups events that completely fill a CMN measure." data-initial="e" data-ident="model.eventLike.measureFilling" href="./model-classes/model.eventLike.measureFilling.html">model.eventLike.measureFilling</a><a class="overviewLink model" title="Groups elements that may be used to provide a structured description of an event." data-initial="e" data-ident="model.eventPart" href="./model-classes/model.eventPart.html">model.eventPart</a><a class="overviewLink model" title="Collects FRBR expression-like elements." data-initial="e" data-ident="model.expressionLike" href="./model-classes/model.expressionLike.html">model.expressionLike</a></div>
+                  </div>
+                  <div id="letterFacet_f" class="letter facet overview">
+                     <div class="label">f</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that represent single figured bass elements." data-initial="f" data-ident="model.fLike" href="./model-classes/model.fLike.html">model.fLike</a><a class="overviewLink model" title="Groups elements that provide a brief prose description of the appearance or content of a graphic figure." data-initial="f" data-ident="model.figDescLike" href="./model-classes/model.figDescLike.html">model.figDescLike</a><a class="overviewLink model" title="Groups elements that record figured bass." data-initial="f" data-ident="model.figbassLike" href="./model-classes/model.figbassLike.html">model.figbassLike</a><a class="overviewLink model" title="Groups elements representing or containing graphic information such as an illustration or figure." data-initial="f" data-ident="model.figureLike" href="./model-classes/model.figureLike.html">model.figureLike</a><a class="overviewLink model" title="Groups elements that capture performance instructions regarding the use of the fingers of the hand (or a subset of them)." data-initial="f" data-ident="model.fingeringLike" href="./model-classes/model.fingeringLike.html">model.fingeringLike</a><a class="overviewLink model" title="Collects foliumlike elements." data-initial="f" data-ident="model.foliumLike" href="./model-classes/model.foliumLike.html">model.foliumLike</a><a class="overviewLink model" title="Groups elements that may appear as part of auxiliary material preceding or following the text proper." data-initial="f" data-ident="model.frontAndBackPart" href="./model-classes/model.frontAndBackPart.html">model.frontAndBackPart</a><a class="overviewLink model" title="Groups elements that may contain front matter." data-initial="f" data-ident="model.frontLike" href="./model-classes/model.frontLike.html">model.frontLike</a></div>
+                  </div>
+                  <div id="letterFacet_g" class="letter facet overview">
+                     <div class="label">g</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements which form part of a geographic name." data-initial="g" data-ident="model.geogNamePart" href="./model-classes/model.geogNamePart.html">model.geogNamePart</a><a class="overviewLink model" title="Groups elements that indicate the location of an inline graphic, illustration, or figure." data-initial="g" data-ident="model.graphicLike" href="./model-classes/model.graphicLike.html">model.graphicLike</a><a class="overviewLink model" title="Groups elements that function as drawing primitives." data-initial="g" data-ident="model.graphicPrimitiveLike" href="./model-classes/model.graphicPrimitiveLike.html">model.graphicPrimitiveLike</a></div>
+                  </div>
+                  <div id="letterFacet_h" class="letter facet overview">
+                     <div class="label">h</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that record indications of harmony." data-initial="h" data-ident="model.harmLike" href="./model-classes/model.harmLike.html">model.harmLike</a><a class="overviewLink model" title="Groups elements used to provide a heading at the start of a text division or other markup component." data-initial="h" data-ident="model.headLike" href="./model-classes/model.headLike.html">model.headLike</a></div>
+                  </div>
+                  <div id="letterFacet_i" class="letter facet overview">
+                     <div class="label">i</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups identifier-like elements." data-initial="i" data-ident="model.identifierLike" href="./model-classes/model.identifierLike.html">model.identifierLike</a><a class="overviewLink model" title="Groups elements that may appear as part of a bibliographic imprint." data-initial="i" data-ident="model.imprintPart" href="./model-classes/model.imprintPart.html">model.imprintPart</a><a class="overviewLink model" title="Groups elements used to represent a textual or musical incipit." data-initial="i" data-ident="model.incipLike" href="./model-classes/model.incipLike.html">model.incipLike</a><a class="overviewLink model" title="Groups elements used to declare a MIDI instrument." data-initial="i" data-ident="model.instrDefLike" href="./model-classes/model.instrDefLike.html">model.instrDefLike</a><a class="overviewLink model" title="Collects FRBR item-like elements." data-initial="i" data-ident="model.itemLike" href="./model-classes/model.itemLike.html">model.itemLike</a></div>
+                  </div>
+                  <div id="letterFacet_k" class="letter facet overview">
+                     <div class="label">k</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that represent accidentals in a key signature." data-initial="k" data-ident="model.keyAccidLike" href="./model-classes/model.keyAccidLike.html">model.keyAccidLike</a><a class="overviewLink model" title="Groups elements that have the same function as a key signature." data-initial="k" data-ident="model.keySigLike" href="./model-classes/model.keySigLike.html">model.keySigLike</a></div>
+                  </div>
+                  <div id="letterFacet_l" class="letter facet overview">
+                     <div class="label">l</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements representing metrical components such as verse lines." data-initial="l" data-ident="model.lLike" href="./model-classes/model.lLike.html">model.lLike</a><a class="overviewLink model" title="Groups elements used to assign a label to other parts of a document." data-initial="l" data-ident="model.labelLike" href="./model-classes/model.labelLike.html">model.labelLike</a><a class="overviewLink model" title="Groups elements that permit declaration of layer properties." data-initial="l" data-ident="model.layerDefLike" href="./model-classes/model.layerDefLike.html">model.layerDefLike</a><a class="overviewLink model" title="Groups elements that function as notational layers within a staff." data-initial="l" data-ident="model.layerLike" href="./model-classes/model.layerLike.html">model.layerLike</a><a class="overviewLink model" title="Groups notated events that may appear at the layer level in all repertoires." data-initial="l" data-ident="model.layerPart" href="./model-classes/model.layerPart.html">model.layerPart</a><a class="overviewLink model" title="Groups notated events that may appear at the layer level in CMN." data-initial="l" data-ident="model.layerPart.cmn" href="./model-classes/model.layerPart.cmn.html">model.layerPart.cmn</a><a class="overviewLink model" title="Groups elements that function like line beginnings." data-initial="l" data-ident="model.lbLike" href="./model-classes/model.lbLike.html">model.lbLike</a><a class="overviewLink model" title="Groups elements that have a line-grouping function." data-initial="l" data-ident="model.lgLike" href="./model-classes/model.lgLike.html">model.lgLike</a><a class="overviewLink model" title="Groups list-like elements." data-initial="l" data-ident="model.listLike" href="./model-classes/model.listLike.html">model.listLike</a><a class="overviewLink model" title="Groups elements used for purposes of location and reference." data-initial="l" data-ident="model.locrefLike" href="./model-classes/model.locrefLike.html">model.locrefLike</a></div>
+                  </div>
+                  <div id="letterFacet_m" class="letter facet overview">
+                     <div class="label">m</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Collects FRBR manifestation-like elements." data-initial="m" data-ident="model.manifestationLike" href="./model-classes/model.manifestationLike.html">model.manifestationLike</a><a class="overviewLink model" title="Groups elements used to represent generic structural divisions of music notation." data-initial="m" data-ident="model.mdivLike" href="./model-classes/model.mdivLike.html">model.mdivLike</a><a class="overviewLink model" title="Groups CMN measure-like elements." data-initial="m" data-ident="model.measureLike" href="./model-classes/model.measureLike.html">model.measureLike</a><a class="overviewLink model" title="Groups elements that may appear within a CMN measure." data-initial="m" data-ident="model.measurePart" href="./model-classes/model.measurePart.html">model.measurePart</a><a class="overviewLink model" title="Groups elements that represent a measurement." data-initial="m" data-ident="model.measurementLike" href="./model-classes/model.measurementLike.html">model.measurementLike</a><a class="overviewLink model" title="Groups elements that represent a meter signature." data-initial="m" data-ident="model.meterSigLike" href="./model-classes/model.meterSigLike.html">model.meterSigLike</a><a class="overviewLink model" title="Groups elements which group MIDI-like elements." data-initial="m" data-ident="model.midiLike" href="./model-classes/model.midiLike.html">model.midiLike</a><a class="overviewLink model" title="Groups milestone-style elements found in music notation." data-initial="m" data-ident="model.milestoneLike.music" href="./model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a><a class="overviewLink model" title="Groups milestone-style elements found in text." data-initial="m" data-ident="model.milestoneLike.text" href="./model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a><a class="overviewLink model" title="Groups elements that may appear inline when the msdesc module is active." data-initial="m" data-ident="model.msInline" href="./model-classes/model.msInline.html">model.msInline</a></div>
+                  </div>
+                  <div id="letterFacet_n" class="letter facet overview">
+                     <div class="label">n</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that contain names." data-initial="n" data-ident="model.nameLike" href="./model-classes/model.nameLike.html">model.nameLike</a><a class="overviewLink model" title="Groups elements which contain names of individuals or corporate bodies." data-initial="n" data-ident="model.nameLike.agent" href="./model-classes/model.nameLike.agent.html">model.nameLike.agent</a><a class="overviewLink model" title="Groups geographic name elements." data-initial="n" data-ident="model.nameLike.geogName" href="./model-classes/model.nameLike.geogName.html">model.nameLike.geogName</a><a class="overviewLink model" title="Groups elements that serve as stylistic labels." data-initial="n" data-ident="model.nameLike.label" href="./model-classes/model.nameLike.label.html">model.nameLike.label</a><a class="overviewLink model" title="Groups place name elements." data-initial="n" data-ident="model.nameLike.place" href="./model-classes/model.nameLike.place.html">model.nameLike.place</a><a class="overviewLink model" title="Groups elements that modify note-like features." data-initial="n" data-ident="model.noteModifierLike" href="./model-classes/model.noteModifierLike.html">model.noteModifierLike</a><a class="overviewLink model" title="Groups elements that denote a number or a quantity." data-initial="n" data-ident="model.numLike" href="./model-classes/model.numLike.html">model.numLike</a></div>
+                  </div>
+                  <div id="letterFacet_o" class="letter facet overview">
+                     <div class="label">o</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups CMN ornament elements." data-initial="o" data-ident="model.ornamentLike.cmn" href="./model-classes/model.ornamentLike.cmn.html">model.ornamentLike.cmn</a><a class="overviewLink model" title="Groups elements that function like ossia." data-initial="o" data-ident="model.ossiaLike" href="./model-classes/model.ossiaLike.html">model.ossiaLike</a></div>
+                  </div>
+                  <div id="letterFacet_p" class="letter facet overview">
+                     <div class="label">p</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups paragraph-like elements." data-initial="p" data-ident="model.pLike" href="./model-classes/model.pLike.html">model.pLike</a><a class="overviewLink model" title="Groups elements dealing with modifications of document pages." data-initial="p" data-ident="model.paperModLike" href="./model-classes/model.paperModLike.html">model.paperModLike</a><a class="overviewLink model" title="Groups elements which may appear as part of the paragraph content model. A paragraph may contain inline elements and all other block-level elements except itself." data-initial="p" data-ident="model.paracontentPart" href="./model-classes/model.paracontentPart.html">model.paracontentPart</a><a class="overviewLink model" title="Groups elements that represent a separate performer part." data-initial="p" data-ident="model.partLike" href="./model-classes/model.partLike.html">model.partLike</a><a class="overviewLink model" title="Groups elements that collect separate performer parts." data-initial="p" data-ident="model.partsLike" href="./model-classes/model.partsLike.html">model.partsLike</a><a class="overviewLink model" title="Groups page beginning-like elements." data-initial="p" data-ident="model.pbLike" href="./model-classes/model.pbLike.html">model.pbLike</a><a class="overviewLink model" title="Groups elements which form part of a personal name." data-initial="p" data-ident="model.persNamePart" href="./model-classes/model.persNamePart.html">model.persNamePart</a><a class="overviewLink model" title="Groups elements that may appear as part of the physical description of a bibliographic item." data-initial="p" data-ident="model.physDescPart" href="./model-classes/model.physDescPart.html">model.physDescPart</a><a class="overviewLink model" title="Groups elements that may appear as part of the publication statement for a bibliographic item." data-initial="p" data-ident="model.pubStmtPart" href="./model-classes/model.pubStmtPart.html">model.pubStmtPart</a></div>
+                  </div>
+                  <div id="letterFacet_q" class="letter facet overview">
+                     <div class="label">q</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements related to highlighting which can appear at the phrase-level." data-initial="q" data-ident="model.qLike" href="./model-classes/model.qLike.html">model.qLike</a><a class="overviewLink model" title="Groups elements used to directly contain quotations." data-initial="q" data-ident="model.quoteLike" href="./model-classes/model.quoteLike.html">model.quoteLike</a></div>
+                  </div>
+                  <div id="letterFacet_r" class="letter facet overview">
+                     <div class="label">r</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that may appear as part of a textual or musical variant." data-initial="r" data-ident="model.rdgPart" href="./model-classes/model.rdgPart.html">model.rdgPart</a><a class="overviewLink model" title="Groups elements that may appear as part of a musical variant." data-initial="r" data-ident="model.rdgPart.music" href="./model-classes/model.rdgPart.music.html">model.rdgPart.music</a><a class="overviewLink model" title="Groups elements that may appear as part of a textual variant." data-initial="r" data-ident="model.rdgPart.text" href="./model-classes/model.rdgPart.text.html">model.rdgPart.text</a><a class="overviewLink model" title="Collects elements that express a relationship." data-initial="r" data-ident="model.relationLike" href="./model-classes/model.relationLike.html">model.relationLike</a><a class="overviewLink model" title="Groups elements that mark typographical features." data-initial="r" data-ident="model.rendLike" href="./model-classes/model.rendLike.html">model.rendLike</a><a class="overviewLink model" title="Groups elements that denote a corporate entity that holds a bibliographic item." data-initial="r" data-ident="model.repositoryLike" href="./model-classes/model.repositoryLike.html">model.repositoryLike</a><a class="overviewLink model" title="Groups non-text components that represent the content of the musical text." data-initial="r" data-ident="model.resourceLike" href="./model-classes/model.resourceLike.html">model.resourceLike</a><a class="overviewLink model" title="Groups elements that are used to indicate intellectual or other significant responsibility, for example within a bibliographic citation." data-initial="r" data-ident="model.respLike" href="./model-classes/model.respLike.html">model.respLike</a><a class="overviewLink model" title="Groups elements that delineate particular responsibilities as opposed to the respStmt element that provides for generic statements of responsibility." data-initial="r" data-ident="model.respLikePart" href="./model-classes/model.respLikePart.html">model.respLikePart</a></div>
+                  </div>
+                  <div id="letterFacet_s" class="letter facet overview">
+                     <div class="label">s</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that provide score meta-information." data-initial="s" data-ident="model.scoreDefLike" href="./model-classes/model.scoreDefLike.html">model.scoreDefLike</a><a class="overviewLink model" title="Groups elements that represent a score." data-initial="s" data-ident="model.scoreLike" href="./model-classes/model.scoreLike.html">model.scoreLike</a><a class="overviewLink model" title="Groups elements that may appear as part of a score." data-initial="s" data-ident="model.scorePart" href="./model-classes/model.scorePart.html">model.scorePart</a><a class="overviewLink model" title="Groups elements that represent a segment of music notation." data-initial="s" data-ident="model.sectionLike" href="./model-classes/model.sectionLike.html">model.sectionLike</a><a class="overviewLink model" title="Groups elements that may appear as part of a section." data-initial="s" data-ident="model.sectionPart" href="./model-classes/model.sectionPart.html">model.sectionPart</a><a class="overviewLink model" title="Groups elements that may appear as part of a section." data-initial="s" data-ident="model.sectionPart.cmn" href="./model-classes/model.sectionPart.cmn.html">model.sectionPart.cmn</a><a class="overviewLink model" title="Groups elements that permit declaration of staff properties." data-initial="s" data-ident="model.staffDefLike" href="./model-classes/model.staffDefLike.html">model.staffDefLike</a><a class="overviewLink model" title="Groups elements that may appear in the declaration of staff features." data-initial="s" data-ident="model.staffDefPart" href="./model-classes/model.staffDefPart.html">model.staffDefPart</a><a class="overviewLink model" title="Groups elements that permit declaration of staff group properties." data-initial="s" data-ident="model.staffGrpLike" href="./model-classes/model.staffGrpLike.html">model.staffGrpLike</a><a class="overviewLink model" title="Groups elements that function like staves." data-initial="s" data-ident="model.staffLike" href="./model-classes/model.staffLike.html">model.staffLike</a><a class="overviewLink model" title="Groups elements that are components of a staff." data-initial="s" data-ident="model.staffPart" href="./model-classes/model.staffPart.html">model.staffPart</a><a class="overviewLink model" title="Groups elements containing stage directions in performance texts." data-initial="s" data-ident="model.stageDirLike" href="./model-classes/model.stageDirLike.html">model.stageDirLike</a><a class="overviewLink model" title="Groups elements that contain a lyric syllable." data-initial="s" data-ident="model.sylLike" href="./model-classes/model.sylLike.html">model.sylLike</a><a class="overviewLink model" title="Groups elements that group symbol definitions." data-initial="s" data-ident="model.symbolTableLike" href="./model-classes/model.symbolTableLike.html">model.symbolTableLike</a></div>
+                  </div>
+                  <div id="letterFacet_t" class="letter facet overview">
+                     <div class="label">t</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups table-like elements." data-initial="t" data-ident="model.tableLike" href="./model-classes/model.tableLike.html">model.tableLike</a><a class="overviewLink model" title="Groups block-level text elements." data-initial="t" data-ident="model.textComponentLike" href="./model-classes/model.textComponentLike.html">model.textComponentLike</a><a class="overviewLink model" title="Groups textual elements that occur at the level of individual words or phrases." data-initial="t" data-ident="model.textPhraseLike" href="./model-classes/model.textPhraseLike.html">model.textPhraseLike</a><a class="overviewLink model" title="Groups textual elements that occur at the level of individual words or phrases. This class is equivalent to the model.textPhraseLike class without the pb element." data-initial="t" data-ident="model.textPhraseLike.limited" href="./model-classes/model.textPhraseLike.limited.html">model.textPhraseLike.limited</a><a class="overviewLink model" title="Groups elements that denote the name of a bibliographic item." data-initial="t" data-ident="model.titleLike" href="./model-classes/model.titleLike.html">model.titleLike</a><a class="overviewLink model" title="Groups elements that may appear as part of a title page transcription." data-initial="t" data-ident="model.titlePagePart" href="./model-classes/model.titlePagePart.html">model.titlePagePart</a><a class="overviewLink model" title="Groups elements used for editorial transcription of pre-existing source materials." data-initial="t" data-ident="model.transcriptionLike" href="./model-classes/model.transcriptionLike.html">model.transcriptionLike</a><a class="overviewLink model" title="Groups elements that may appear inside the element." data-initial="t" data-ident="model.tuningPart" href="./model-classes/model.tuningPart.html">model.tuningPart</a></div>
+                  </div>
+                  <div id="letterFacet_v" class="letter facet overview">
+                     <div class="label">v</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that contain a lyric verse." data-initial="v" data-ident="model.verseLike" href="./model-classes/model.verseLike.html">model.verseLike</a></div>
+                  </div>
+                  <div id="letterFacet_w" class="letter facet overview">
+                     <div class="label">w</div>
+                     <div class="statement compact list"><a class="overviewLink model" title="Groups elements that assist in the identification of a work." data-initial="w" data-ident="model.workIdent" href="./model-classes/model.workIdent.html">model.workIdent</a><a class="overviewLink model" title="Collects work-like elements." data-initial="w" data-ident="model.workLike" href="./model-classes/model.workLike.html">model.workLike</a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+cmn'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = true;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

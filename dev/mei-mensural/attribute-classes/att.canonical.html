@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="specPage attClassSpec">
+                  <h2 id="att.canonical">att.canonical</h2>
+                  <div class="specs">
+                     <div class="desc">Attributes that can be used to associate a representation such as a name or title
+                        with
+                        canonical information about the object being named or referenced.
+                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/textencoding.html#namesdatesCorpNames" title="7.1.1.1.1 Corporate Names">7.1.1.1.1 Corporate Names</a>, <a class="chapterLink" href="../content/textencoding.html#namesdatesGeogNames" title="7.1.1.1.1 Geographic Names">7.1.1.1.1 Geographic Names</a>, <a class="chapterLink" href="../content/textencoding.html#namesdatesPeriodNames" title="7.1.1.1.1 Time Period Names">7.1.1.1.1 Time Period Names</a>, <a class="chapterLink" href="../content/textencoding.html#namesdatesPersNames" title="7.1.1.1.1 Personal Names">7.1.1.1.1 Personal Names</a></div>
+                     </div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text"><a href="../modules/MEI.shared.html">MEI.shared</a></div>
+                     </div>
+                     <div id="attributes" class="facet attributes">
+                        <div class="label">Attributes</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="@auth @auth.uri A value that represents or identifies other data. Often, it is a primary key in the database or a unique value in the coded list identified by the or attributes.">@codedval</span></div>
+                           <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="@auth @auth.uri A value that represents or identifies other data. Often, it is a primary key in the database or a unique value in the coded list identified by the or attributes.">@codedval</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A value that represents or identifies other data. Often, it is a primary key in the
+                                       database or a unique value in the coded list identified by the <span class="att">@auth</span> or
+                                       <span class="att">@auth.uri</span> attributes.</span><span class="attributeValues">
+                                       One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.canonical&gt;</span><span class="step">direct children</span><span class="step end">@codedval</span></div>
+                              </div>
+                           </div>
+                           <div id="attributes_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="direct children">
+                                 <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="@auth @auth.uri A value that represents or identifies other data. Often, it is a primary key in the database or a unique value in the coded list identified by the or attributes.">@codedval</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A value that represents or identifies other data. Often, it is a primary key in the
+                                             database or a unique value in the coded list identified by the <span class="att">@auth</span> or
+                                             <span class="att">@auth.uri</span> attributes.</span><span class="attributeValues">
+                                             One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="attributes_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="@auth @auth.uri A value that represents or identifies other data. Often, it is a primary key in the database or a unique value in the coded list identified by the or attributes.">@codedval</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A value that represents or identifies other data. Often, it is a primary key in the
+                                             database or a unique value in the coded list identified by the <span class="att">@auth</span> or
+                                             <span class="att">@auth.uri</span> attributes.</span><span class="attributeValues">
+                                             One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="availableAt" class="facet availableAt">
+                        <div class="label">Available at</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/accessRestrict.html" title="Describes the conditions that affect the accessibility of material.">&lt;accessRestrict&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/addName.html" title="Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.">&lt;addName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/audience.html" title="Defines the class of user for which the work is intended, as defined by age group ( e.g. , children, young adults, adults, etc.), educational level ( e.g. , primary, secondary, etc.), or other categorization.">&lt;audience&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bloc.html" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries.">&lt;bloc&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/captureMode.html" title="The means used to record notation, sound, or images in the production of a source/manifestation ( e.g. , analogue, acoustic, electric, digital, optical etc.).">&lt;captureMode&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/carrierForm.html" title="The specific class of material to which the physical carrier of the source/manifestation belongs ( e.g. , sound cassette, videodisc, microfilm cartridge, transparency, etc.). The carrier for a manifestation comprising multiple physical components may include more than one form ( e.g. , a filmstrip with an accompanying booklet, a separate sound disc carrying the sound track for a film, etc.).">&lt;carrierForm&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/catRel.html" title="Contains the name, i.e., label, of a related category.">&lt;catRel&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/category.html" title="Contains an individual descriptive category in a user-defined taxonomy, possibly nested within a superordinate category.">&lt;category&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/context.html" title="The historical, social, intellectual, artistic, or other context within which the work was originally conceived ( e.g. , the 17th century restoration of the monarchy in England, the aesthetic movement of the late 19th century, etc.) or the historical, social, intellectual, artistic, or other context within which the expression was realized.">&lt;context&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corpName.html" title="Identifies an organization or group of people that acts as a single entity.">&lt;corpName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/country.html" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc.">&lt;country&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/district.html" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit.">&lt;district&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/expression.html" title="Intellectual or artistic realization of a work.">&lt;expression&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/famName.html" title="Contains a family (inherited) name, as opposed to a given, baptismal, or nick name.">&lt;famName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/foreName.html" title="Contains a forename, given or baptismal name.">&lt;foreName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/genName.html" title="Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named.">&lt;genName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/genre.html" title="Term or terms that designate a category characterizing a particular style, form, or content.">&lt;genre&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html" title="Contains a common noun identifying a geographical feature.">&lt;geogFeat&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/geogName.html" title="The proper noun designation for a place, natural feature, or political jurisdiction.">&lt;geogName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/identifier.html" title="An alpha-numeric string that establishes the identity of the described material.">&lt;identifier&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/item.html" title="Single instance or exemplar of a source/manifestation.">&lt;item&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/language.html" title="Description of a language used in the document.">&lt;language&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html" title="A bibliographic description of a physical embodiment of an expression of a work.">&lt;manifestation&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/name.html" title="Proper noun or noun phrase.">&lt;name&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html" title="Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc.">&lt;nameLink&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/perfMedium.html" title="Indicates the number and character of the performing forces used in a musical composition.">&lt;perfMedium&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html" title="Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation.">&lt;perfRes&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html" title="Several instrumental or vocal resources treated as a group.">&lt;perfResList&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/periodName.html" title="A label that describes a period of time, such as 'Baroque' or '3rd Style period'.">&lt;periodName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/persName.html" title="Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names.">&lt;persName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/physMedium.html" title="Records the physical materials used in the source, such as ink and paper.">&lt;physMedium&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/reg.html" title="Contains material which has been regularized or normalized in some sense.">&lt;reg&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/region.html" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country.">&lt;region&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/relation.html" title="Describes a relationship or linkage amongst entities.">&lt;relation&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/repository.html" title="Institution, agency, or individual which holds a bibliographic item.">&lt;repository&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/resp.html" title="A phrase describing the nature of intellectual responsibility.">&lt;resp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/roleName.html" title="Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank.">&lt;roleName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/scoreFormat.html" title="Describes the type of score used to represent a musical composition ( e.g. , short score, full score, condensed score, close score, etc.).">&lt;scoreFormat&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/settlement.html" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit.">&lt;settlement&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/soundChan.html" title="Reflects the number of apparent sound channels in the playback of a recording (monaural, stereophonic, quadraphonic, etc.).">&lt;soundChan&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/source.html" title="A bibliographic description of a source used in the creation of the electronic file.">&lt;source&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/specRepro.html" title="The equalization system, noise reduction system, etc. used in making the recording ( e.g. , NAB, DBX, Dolby, etc.).">&lt;specRepro&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/styleName.html" title="A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'.">&lt;styleName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/title.html" title="Title of a bibliographic entity.">&lt;title&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/titlePart.html" title="Contains a subsection or division of the title of a bibliographic entity.">&lt;titlePart&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/trackConfig.html" title="Number of physical/input tracks on a sound medium ( e.g. , eight track, twelve track).">&lt;trackConfig&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/useRestrict.html" title="Container for information about the conditions that affect use of a bibliographic item after access has been granted.">&lt;useRestrict&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/watermarkList.html" title="Grouping several watermarks.">&lt;watermarkList&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/work.html" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes ( e.g. , key, tempo, meter, medium of performance, and intended duration).">&lt;work&gt;</a></div>
+                           <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="att.canonical">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.canonical.html">att.canonical</a></label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="classBox" title="att.authorized">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.authorized.html">att.authorized</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Describes the conditions that affect the accessibility of material."><a class="link_odd link_odd_elementSpec" href="../elements/accessRestrict.html">&lt;accessRestrict&gt;</a></span><span class="desc"><span class="desc">Describes the conditions that affect the accessibility of
+                                                   material.</span></span></div>
+                                          <div class="def"><span class="ident" title="Defines the class of user for which the work is intended, as defined by age group ( e.g. , children, young adults, adults, etc.), educational level ( e.g. , primary, secondary, etc.), or other categorization."><a class="link_odd link_odd_elementSpec" href="../elements/audience.html">&lt;audience&gt;</a></span><span class="desc"><span class="desc">Defines the class of user for which the work is intended, as defined by age group
+                                                   (<abbr>e.g.</abbr>,
+                                                   children, young adults, adults, etc.), educational level (<abbr>e.g.</abbr>, primary, secondary, etc.), or
+                                                   other categorization.</span></span></div>
+                                          <div class="def"><span class="ident" title="The means used to record notation, sound, or images in the production of a source/manifestation ( e.g. , analogue, acoustic, electric, digital, optical etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/captureMode.html">&lt;captureMode&gt;</a></span><span class="desc"><span class="desc">The means used to record notation, sound, or images in the production of
+                                                   a source/manifestation (<abbr>e.g.</abbr>, analogue, acoustic, electric, digital, optical etc.).</span></span></div>
+                                          <div class="def"><span class="ident" title="The specific class of material to which the physical carrier of the source/manifestation belongs ( e.g. , sound cassette, videodisc, microfilm cartridge, transparency, etc.). The carrier for a manifestation comprising multiple physical components may include more than one form ( e.g. , a filmstrip with an accompanying booklet, a separate sound disc carrying the sound track for a film, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/carrierForm.html">&lt;carrierForm&gt;</a></span><span class="desc"><span class="desc">The specific class of material to which the physical carrier of the
+                                                   source/manifestation belongs (<abbr>e.g.</abbr>, sound cassette, videodisc, microfilm cartridge,
+                                                   transparency, etc.). The carrier for a manifestation comprising multiple physical
+                                                   components
+                                                   may include more than one form (<abbr>e.g.</abbr>, a filmstrip with an accompanying booklet, a separate
+                                                   sound disc carrying the sound track for a film, etc.).</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains an individual descriptive category in a user-defined taxonomy, possibly nested within a superordinate category."><a class="link_odd link_odd_elementSpec" href="../elements/category.html">&lt;category&gt;</a></span><span class="desc"><span class="desc">Contains an individual descriptive category in a user-defined taxonomy, possibly nested
+                                                   within a superordinate category.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains the name, i.e., label, of a related category."><a class="link_odd link_odd_elementSpec" href="../elements/catRel.html">&lt;catRel&gt;</a></span><span class="desc"><span class="desc">Contains the name, i.e., label, of a related
+                                                   category.</span></span></div>
+                                          <div class="def"><span class="ident" title="The historical, social, intellectual, artistic, or other context within which the work was originally conceived ( e.g. , the 17th century restoration of the monarchy in England, the aesthetic movement of the late 19th century, etc.) or the historical, social, intellectual, artistic, or other context within which the expression was realized."><a class="link_odd link_odd_elementSpec" href="../elements/context.html">&lt;context&gt;</a></span><span class="desc"><span class="desc">The historical, social, intellectual, artistic, or other context within which the
+                                                   work was
+                                                   originally conceived (<abbr>e.g.</abbr>, the 17th century restoration of the monarchy in England, the
+                                                   aesthetic movement of the late 19th century, etc.) or the historical, social, intellectual,
+                                                   artistic, or other context within which the expression was realized.</span></span></div>
+                                          <div class="def"><span class="ident" title="Intellectual or artistic realization of a work."><a class="link_odd link_odd_elementSpec" href="../elements/expression.html">&lt;expression&gt;</a></span><span class="desc"><span class="desc">Intellectual or artistic realization of a work.</span></span></div>
+                                          <div class="def"><span class="ident" title="Term or terms that designate a category characterizing a particular style, form, or content."><a class="link_odd link_odd_elementSpec" href="../elements/genre.html">&lt;genre&gt;</a></span><span class="desc"><span class="desc">Term or terms that designate a category characterizing a particular style, form, or
+                                                   content.</span></span></div>
+                                          <div class="def"><span class="ident" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd link_odd_elementSpec" href="../elements/identifier.html">&lt;identifier&gt;</a></span><span class="desc"><span class="desc">An alpha-numeric string that establishes the identity of the described material.</span></span></div>
+                                          <div class="def"><span class="ident" title="Single instance or exemplar of a source/manifestation."><a class="link_odd link_odd_elementSpec" href="../elements/item.html">&lt;item&gt;</a></span><span class="desc"><span class="desc">Single instance or exemplar of a source/manifestation.</span></span></div>
+                                          <div class="def"><span class="ident" title="Description of a language used in the document."><a class="link_odd link_odd_elementSpec" href="../elements/language.html">&lt;language&gt;</a></span><span class="desc"><span class="desc">Description of a language used in the document.</span></span></div>
+                                          <div class="def"><span class="ident" title="A bibliographic description of a physical embodiment of an expression of a work."><a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a></span><span class="desc"><span class="desc">A bibliographic description of a physical embodiment of an expression of a work.</span></span></div>
+                                          <div class="def"><span class="ident" title="Indicates the number and character of the performing forces used in a musical composition."><a class="link_odd link_odd_elementSpec" href="../elements/perfMedium.html">&lt;perfMedium&gt;</a></span><span class="desc"><span class="desc">Indicates the number and character of the performing forces used in
+                                                   a musical composition.</span></span></div>
+                                          <div class="def"><span class="ident" title="Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation."><a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">&lt;perfRes&gt;</a></span><span class="desc"><span class="desc">Name of an instrument on which a performer plays, a performer's
+                                                   voice range, or a standard performing ensemble designation.</span></span></div>
+                                          <div class="def"><span class="ident" title="Several instrumental or vocal resources treated as a group."><a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a></span><span class="desc"><span class="desc">Several instrumental or vocal resources treated as a group.</span></span></div>
+                                          <div class="def"><span class="ident" title="Records the physical materials used in the source, such as ink and paper."><a class="link_odd link_odd_elementSpec" href="../elements/physMedium.html">&lt;physMedium&gt;</a></span><span class="desc"><span class="desc">Records the physical materials used in the source, such as ink and
+                                                   paper.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a></span><span class="desc"><span class="desc">Contains material which has been regularized or normalized in some
+                                                   sense.</span></span></div>
+                                          <div class="def"><span class="ident" title="Describes a relationship or linkage amongst entities."><a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a></span><span class="desc"><span class="desc">Describes a relationship or linkage amongst entities.</span></span></div>
+                                          <div class="def"><span class="ident" title="A phrase describing the nature of intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/resp.html">&lt;resp&gt;</a></span><span class="desc"><span class="desc">A phrase describing the nature of intellectual responsibility.</span></span></div>
+                                          <div class="def"><span class="ident" title="Describes the type of score used to represent a musical composition ( e.g. , short score, full score, condensed score, close score, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/scoreFormat.html">&lt;scoreFormat&gt;</a></span><span class="desc"><span class="desc">Describes the type of score used to represent a musical composition (<abbr>e.g.</abbr>, short score,
+                                                   full score, condensed score, close score, etc.).</span></span></div>
+                                          <div class="def"><span class="ident" title="Reflects the number of apparent sound channels in the playback of a recording (monaural, stereophonic, quadraphonic, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/soundChan.html">&lt;soundChan&gt;</a></span><span class="desc"><span class="desc">Reflects the number of apparent sound channels in the playback of a
+                                                   recording (monaural, stereophonic, quadraphonic, etc.).</span></span></div>
+                                          <div class="def"><span class="ident" title="A bibliographic description of a source used in the creation of the electronic file."><a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a></span><span class="desc"><span class="desc">A bibliographic description of a source used in the creation of the electronic
+                                                   file.</span></span></div>
+                                          <div class="def"><span class="ident" title="The equalization system, noise reduction system, etc. used in making the recording ( e.g. , NAB, DBX, Dolby, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/specRepro.html">&lt;specRepro&gt;</a></span><span class="desc"><span class="desc">The equalization system, noise reduction system,
+                                                   etc. used in making the recording (<abbr>e.g.</abbr>, NAB, DBX, Dolby, etc.).</span></span></div>
+                                          <div class="def"><span class="ident" title="Title of a bibliographic entity."><a class="link_odd link_odd_elementSpec" href="../elements/title.html">&lt;title&gt;</a></span><span class="desc"><span class="desc">Title of a bibliographic entity.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains a subsection or division of the title of a bibliographic entity."><a class="link_odd link_odd_elementSpec" href="../elements/titlePart.html">&lt;titlePart&gt;</a></span><span class="desc"><span class="desc">Contains a subsection or division of the title of a bibliographic entity.</span></span></div>
+                                          <div class="def"><span class="ident" title="Number of physical/input tracks on a sound medium ( e.g. , eight track, twelve track)."><a class="link_odd link_odd_elementSpec" href="../elements/trackConfig.html">&lt;trackConfig&gt;</a></span><span class="desc"><span class="desc">Number of physical/input tracks on a sound medium (<abbr>e.g.</abbr>, eight
+                                                   track, twelve track).</span></span></div>
+                                          <div class="def"><span class="ident" title="Container for information about the conditions that affect use of a bibliographic item after access has been granted."><a class="link_odd link_odd_elementSpec" href="../elements/useRestrict.html">&lt;useRestrict&gt;</a></span><span class="desc"><span class="desc">Container for information about the conditions that affect use of a
+                                                   bibliographic item after access has been granted.</span></span></div>
+                                          <div class="def"><span class="ident" title="Grouping several watermarks."><a class="link_odd link_odd_elementSpec" href="../elements/watermarkList.html">&lt;watermarkList&gt;</a></span><span class="desc"><span class="desc">Grouping several watermarks.</span></span></div>
+                                          <div class="def"><span class="ident" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes ( e.g. , key, tempo, meter, medium of performance, and intended duration)."><a class="link_odd link_odd_elementSpec" href="../elements/work.html">&lt;work&gt;</a></span><span class="desc"><span class="desc">Provides a detailed description of a work — a distinct intellectual or artistic creation
+                                                   —
+                                                   specifically its history, language use, and high-level musical attributes (<abbr>e.g.</abbr>, key, tempo,
+                                                   meter, medium of performance, and intended duration).</span></span></div>
+                                          <div class="classBox" title="att.name">
+                                             <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.name.html">att.name</a></label><span class="classDesc"></span></div>
+                                             <div class="classContent">
+                                                <div class="def"><span class="ident" title="Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name."><a class="link_odd link_odd_elementSpec" href="../elements/addName.html">&lt;addName&gt;</a></span><span class="desc"><span class="desc">Contains an additional name component, such as a nickname, epithet, or
+                                                         alias, or any other descriptive phrase used within a personal name.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd link_odd_elementSpec" href="../elements/bloc.html">&lt;bloc&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit consisting of two or more nation states or
+                                                         countries.</span></span></div>
+                                                <div class="def"><span class="ident" title="Identifies an organization or group of people that acts as a single entity."><a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">&lt;corpName&gt;</a></span><span class="desc"><span class="desc">Identifies an organization or group of people that acts as a single
+                                                         entity.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd link_odd_elementSpec" href="../elements/country.html">&lt;country&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or
+                                                         commonwealth, larger than or administratively superior to a region and smaller than
+                                                         a
+                                                         bloc.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd link_odd_elementSpec" href="../elements/district.html">&lt;district&gt;</a></span><span class="desc"><span class="desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+                                                         or
+                                                         other administrative or geographic unit.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains a family (inherited) name, as opposed to a given, baptismal, or nick name."><a class="link_odd link_odd_elementSpec" href="../elements/famName.html">&lt;famName&gt;</a></span><span class="desc"><span class="desc">Contains a family (inherited) name, as opposed to a given, baptismal, or
+                                                         nick name.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains a forename, given or baptismal name."><a class="link_odd link_odd_elementSpec" href="../elements/foreName.html">&lt;foreName&gt;</a></span><span class="desc"><span class="desc">Contains a forename, given or baptismal name.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named."><a class="link_odd link_odd_elementSpec" href="../elements/genName.html">&lt;genName&gt;</a></span><span class="desc"><span class="desc">Contains a name component used to distinguish otherwise
+                                                         similar names on the basis of the relative ages or generations of the persons named.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains a common noun identifying a geographical feature."><a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html">&lt;geogFeat&gt;</a></span><span class="desc"><span class="desc">Contains a common noun identifying a geographical
+                                                         feature.</span></span></div>
+                                                <div class="def"><span class="ident" title="The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd link_odd_elementSpec" href="../elements/geogName.html">&lt;geogName&gt;</a></span><span class="desc"><span class="desc">The proper noun designation for a place, natural feature, or political
+                                                         jurisdiction.</span></span></div>
+                                                <div class="def"><span class="ident" title="Proper noun or noun phrase."><a class="link_odd link_odd_elementSpec" href="../elements/name.html">&lt;name&gt;</a></span><span class="desc"><span class="desc">Proper noun or noun phrase.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html">&lt;nameLink&gt;</a></span><span class="desc"><span class="desc">Contains a connecting phrase or link used within a name but not regarded as
+                                                         part of it, such as "van der" or "of", "from", etc.</span></span></div>
+                                                <div class="def"><span class="ident" title="A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd link_odd_elementSpec" href="../elements/periodName.html">&lt;periodName&gt;</a></span><span class="desc"><span class="desc">A label that describes a period of time, such as 'Baroque' or '3rd Style
+                                                         period'.</span></span></div>
+                                                <div class="def"><span class="ident" title="Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd link_odd_elementSpec" href="../elements/persName.html">&lt;persName&gt;</a></span><span class="desc"><span class="desc">Designation for an individual, including any or all of that individual's
+                                                         forenames, surnames, honorific titles, and added names.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd link_odd_elementSpec" href="../elements/region.html">&lt;region&gt;</a></span><span class="desc"><span class="desc">Contains the name of an administrative unit such as a state, province, or county,
+                                                         larger
+                                                         than a settlement, but smaller than a country.</span></span></div>
+                                                <div class="def"><span class="ident" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></span><span class="desc"><span class="desc">Institution, agency, or individual which holds a bibliographic item.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank."><a class="link_odd link_odd_elementSpec" href="../elements/roleName.html">&lt;roleName&gt;</a></span><span class="desc"><span class="desc">Contains a name component which indicates that the referent has a particular
+                                                         role or position in society, such as an official title or rank.</span></span></div>
+                                                <div class="def"><span class="ident" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd link_odd_elementSpec" href="../elements/settlement.html">&lt;settlement&gt;</a></span><span class="desc"><span class="desc">Contains the name of a settlement such as a city, town, or village identified as a
+                                                         single
+                                                         geopolitical or administrative unit.</span></span></div>
+                                                <div class="def"><span class="ident" title="A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd link_odd_elementSpec" href="../elements/styleName.html">&lt;styleName&gt;</a></span><span class="desc"><span class="desc">A label for a characteristic style of writing or performance, such as
+                                                         'bebop' or 'rock-n-roll'.</span></span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="availableAt_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.edittrans">
+                                 <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains material which has been regularized or normalized in some sense."><a class="link_odd link_odd_elementSpec" href="../elements/reg.html">&lt;reg&gt;</a></span><span class="desc"><span class="desc">Contains material which has been regularized or normalized in some
+                                             sense.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.frbr">
+                                 <div class="classHeading"><label class="classLabel">MEI.frbr</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Intellectual or artistic realization of a work."><a class="link_odd link_odd_elementSpec" href="../elements/expression.html">&lt;expression&gt;</a></span><span class="desc"><span class="desc">Intellectual or artistic realization of a work.</span></span></div>
+                                    <div class="def"><span class="ident" title="Single instance or exemplar of a source/manifestation."><a class="link_odd link_odd_elementSpec" href="../elements/item.html">&lt;item&gt;</a></span><span class="desc"><span class="desc">Single instance or exemplar of a source/manifestation.</span></span></div>
+                                    <div class="def"><span class="ident" title="A bibliographic description of a physical embodiment of an expression of a work."><a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a></span><span class="desc"><span class="desc">A bibliographic description of a physical embodiment of an expression of a work.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.header">
+                                 <div class="classHeading"><label class="classLabel">MEI.header</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Describes the conditions that affect the accessibility of material."><a class="link_odd link_odd_elementSpec" href="../elements/accessRestrict.html">&lt;accessRestrict&gt;</a></span><span class="desc"><span class="desc">Describes the conditions that affect the accessibility of
+                                             material.</span></span></div>
+                                    <div class="def"><span class="ident" title="Defines the class of user for which the work is intended, as defined by age group ( e.g. , children, young adults, adults, etc.), educational level ( e.g. , primary, secondary, etc.), or other categorization."><a class="link_odd link_odd_elementSpec" href="../elements/audience.html">&lt;audience&gt;</a></span><span class="desc"><span class="desc">Defines the class of user for which the work is intended, as defined by age group
+                                             (<abbr>e.g.</abbr>,
+                                             children, young adults, adults, etc.), educational level (<abbr>e.g.</abbr>, primary, secondary, etc.), or
+                                             other categorization.</span></span></div>
+                                    <div class="def"><span class="ident" title="The means used to record notation, sound, or images in the production of a source/manifestation ( e.g. , analogue, acoustic, electric, digital, optical etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/captureMode.html">&lt;captureMode&gt;</a></span><span class="desc"><span class="desc">The means used to record notation, sound, or images in the production of
+                                             a source/manifestation (<abbr>e.g.</abbr>, analogue, acoustic, electric, digital, optical etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="The specific class of material to which the physical carrier of the source/manifestation belongs ( e.g. , sound cassette, videodisc, microfilm cartridge, transparency, etc.). The carrier for a manifestation comprising multiple physical components may include more than one form ( e.g. , a filmstrip with an accompanying booklet, a separate sound disc carrying the sound track for a film, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/carrierForm.html">&lt;carrierForm&gt;</a></span><span class="desc"><span class="desc">The specific class of material to which the physical carrier of the
+                                             source/manifestation belongs (<abbr>e.g.</abbr>, sound cassette, videodisc, microfilm cartridge,
+                                             transparency, etc.). The carrier for a manifestation comprising multiple physical
+                                             components
+                                             may include more than one form (<abbr>e.g.</abbr>, a filmstrip with an accompanying booklet, a separate
+                                             sound disc carrying the sound track for a film, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name, i.e., label, of a related category."><a class="link_odd link_odd_elementSpec" href="../elements/catRel.html">&lt;catRel&gt;</a></span><span class="desc"><span class="desc">Contains the name, i.e., label, of a related
+                                             category.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains an individual descriptive category in a user-defined taxonomy, possibly nested within a superordinate category."><a class="link_odd link_odd_elementSpec" href="../elements/category.html">&lt;category&gt;</a></span><span class="desc"><span class="desc">Contains an individual descriptive category in a user-defined taxonomy, possibly nested
+                                             within a superordinate category.</span></span></div>
+                                    <div class="def"><span class="ident" title="The historical, social, intellectual, artistic, or other context within which the work was originally conceived ( e.g. , the 17th century restoration of the monarchy in England, the aesthetic movement of the late 19th century, etc.) or the historical, social, intellectual, artistic, or other context within which the expression was realized."><a class="link_odd link_odd_elementSpec" href="../elements/context.html">&lt;context&gt;</a></span><span class="desc"><span class="desc">The historical, social, intellectual, artistic, or other context within which the
+                                             work was
+                                             originally conceived (<abbr>e.g.</abbr>, the 17th century restoration of the monarchy in England, the
+                                             aesthetic movement of the late 19th century, etc.) or the historical, social, intellectual,
+                                             artistic, or other context within which the expression was realized.</span></span></div>
+                                    <div class="def"><span class="ident" title="Description of a language used in the document."><a class="link_odd link_odd_elementSpec" href="../elements/language.html">&lt;language&gt;</a></span><span class="desc"><span class="desc">Description of a language used in the document.</span></span></div>
+                                    <div class="def"><span class="ident" title="Indicates the number and character of the performing forces used in a musical composition."><a class="link_odd link_odd_elementSpec" href="../elements/perfMedium.html">&lt;perfMedium&gt;</a></span><span class="desc"><span class="desc">Indicates the number and character of the performing forces used in
+                                             a musical composition.</span></span></div>
+                                    <div class="def"><span class="ident" title="Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation."><a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">&lt;perfRes&gt;</a></span><span class="desc"><span class="desc">Name of an instrument on which a performer plays, a performer's
+                                             voice range, or a standard performing ensemble designation.</span></span></div>
+                                    <div class="def"><span class="ident" title="Several instrumental or vocal resources treated as a group."><a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a></span><span class="desc"><span class="desc">Several instrumental or vocal resources treated as a group.</span></span></div>
+                                    <div class="def"><span class="ident" title="Records the physical materials used in the source, such as ink and paper."><a class="link_odd link_odd_elementSpec" href="../elements/physMedium.html">&lt;physMedium&gt;</a></span><span class="desc"><span class="desc">Records the physical materials used in the source, such as ink and
+                                             paper.</span></span></div>
+                                    <div class="def"><span class="ident" title="Describes the type of score used to represent a musical composition ( e.g. , short score, full score, condensed score, close score, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/scoreFormat.html">&lt;scoreFormat&gt;</a></span><span class="desc"><span class="desc">Describes the type of score used to represent a musical composition (<abbr>e.g.</abbr>, short score,
+                                             full score, condensed score, close score, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="Reflects the number of apparent sound channels in the playback of a recording (monaural, stereophonic, quadraphonic, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/soundChan.html">&lt;soundChan&gt;</a></span><span class="desc"><span class="desc">Reflects the number of apparent sound channels in the playback of a
+                                             recording (monaural, stereophonic, quadraphonic, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="A bibliographic description of a source used in the creation of the electronic file."><a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a></span><span class="desc"><span class="desc">A bibliographic description of a source used in the creation of the electronic
+                                             file.</span></span></div>
+                                    <div class="def"><span class="ident" title="The equalization system, noise reduction system, etc. used in making the recording ( e.g. , NAB, DBX, Dolby, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/specRepro.html">&lt;specRepro&gt;</a></span><span class="desc"><span class="desc">The equalization system, noise reduction system,
+                                             etc. used in making the recording (<abbr>e.g.</abbr>, NAB, DBX, Dolby, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="Number of physical/input tracks on a sound medium ( e.g. , eight track, twelve track)."><a class="link_odd link_odd_elementSpec" href="../elements/trackConfig.html">&lt;trackConfig&gt;</a></span><span class="desc"><span class="desc">Number of physical/input tracks on a sound medium (<abbr>e.g.</abbr>, eight
+                                             track, twelve track).</span></span></div>
+                                    <div class="def"><span class="ident" title="Container for information about the conditions that affect use of a bibliographic item after access has been granted."><a class="link_odd link_odd_elementSpec" href="../elements/useRestrict.html">&lt;useRestrict&gt;</a></span><span class="desc"><span class="desc">Container for information about the conditions that affect use of a
+                                             bibliographic item after access has been granted.</span></span></div>
+                                    <div class="def"><span class="ident" title="Grouping several watermarks."><a class="link_odd link_odd_elementSpec" href="../elements/watermarkList.html">&lt;watermarkList&gt;</a></span><span class="desc"><span class="desc">Grouping several watermarks.</span></span></div>
+                                    <div class="def"><span class="ident" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes ( e.g. , key, tempo, meter, medium of performance, and intended duration)."><a class="link_odd link_odd_elementSpec" href="../elements/work.html">&lt;work&gt;</a></span><span class="desc"><span class="desc">Provides a detailed description of a work — a distinct intellectual or artistic creation
+                                             —
+                                             specifically its history, language use, and high-level musical attributes (<abbr>e.g.</abbr>, key, tempo,
+                                             meter, medium of performance, and intended duration).</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.namesdates">
+                                 <div class="classHeading"><label class="classLabel">MEI.namesdates</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name."><a class="link_odd link_odd_elementSpec" href="../elements/addName.html">&lt;addName&gt;</a></span><span class="desc"><span class="desc">Contains an additional name component, such as a nickname, epithet, or
+                                             alias, or any other descriptive phrase used within a personal name.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd link_odd_elementSpec" href="../elements/bloc.html">&lt;bloc&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit consisting of two or more nation states or
+                                             countries.</span></span></div>
+                                    <div class="def"><span class="ident" title="Identifies an organization or group of people that acts as a single entity."><a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">&lt;corpName&gt;</a></span><span class="desc"><span class="desc">Identifies an organization or group of people that acts as a single
+                                             entity.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd link_odd_elementSpec" href="../elements/country.html">&lt;country&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or
+                                             commonwealth, larger than or administratively superior to a region and smaller than
+                                             a
+                                             bloc.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd link_odd_elementSpec" href="../elements/district.html">&lt;district&gt;</a></span><span class="desc"><span class="desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+                                             or
+                                             other administrative or geographic unit.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a family (inherited) name, as opposed to a given, baptismal, or nick name."><a class="link_odd link_odd_elementSpec" href="../elements/famName.html">&lt;famName&gt;</a></span><span class="desc"><span class="desc">Contains a family (inherited) name, as opposed to a given, baptismal, or
+                                             nick name.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a forename, given or baptismal name."><a class="link_odd link_odd_elementSpec" href="../elements/foreName.html">&lt;foreName&gt;</a></span><span class="desc"><span class="desc">Contains a forename, given or baptismal name.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named."><a class="link_odd link_odd_elementSpec" href="../elements/genName.html">&lt;genName&gt;</a></span><span class="desc"><span class="desc">Contains a name component used to distinguish otherwise
+                                             similar names on the basis of the relative ages or generations of the persons named.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a common noun identifying a geographical feature."><a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html">&lt;geogFeat&gt;</a></span><span class="desc"><span class="desc">Contains a common noun identifying a geographical
+                                             feature.</span></span></div>
+                                    <div class="def"><span class="ident" title="The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd link_odd_elementSpec" href="../elements/geogName.html">&lt;geogName&gt;</a></span><span class="desc"><span class="desc">The proper noun designation for a place, natural feature, or political
+                                             jurisdiction.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html">&lt;nameLink&gt;</a></span><span class="desc"><span class="desc">Contains a connecting phrase or link used within a name but not regarded as
+                                             part of it, such as "van der" or "of", "from", etc.</span></span></div>
+                                    <div class="def"><span class="ident" title="A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd link_odd_elementSpec" href="../elements/periodName.html">&lt;periodName&gt;</a></span><span class="desc"><span class="desc">A label that describes a period of time, such as 'Baroque' or '3rd Style
+                                             period'.</span></span></div>
+                                    <div class="def"><span class="ident" title="Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd link_odd_elementSpec" href="../elements/persName.html">&lt;persName&gt;</a></span><span class="desc"><span class="desc">Designation for an individual, including any or all of that individual's
+                                             forenames, surnames, honorific titles, and added names.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd link_odd_elementSpec" href="../elements/region.html">&lt;region&gt;</a></span><span class="desc"><span class="desc">Contains the name of an administrative unit such as a state, province, or county,
+                                             larger
+                                             than a settlement, but smaller than a country.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank."><a class="link_odd link_odd_elementSpec" href="../elements/roleName.html">&lt;roleName&gt;</a></span><span class="desc"><span class="desc">Contains a name component which indicates that the referent has a particular
+                                             role or position in society, such as an official title or rank.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd link_odd_elementSpec" href="../elements/settlement.html">&lt;settlement&gt;</a></span><span class="desc"><span class="desc">Contains the name of a settlement such as a city, town, or village identified as a
+                                             single
+                                             geopolitical or administrative unit.</span></span></div>
+                                    <div class="def"><span class="ident" title="A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd link_odd_elementSpec" href="../elements/styleName.html">&lt;styleName&gt;</a></span><span class="desc"><span class="desc">A label for a characteristic style of writing or performance, such as
+                                             'bebop' or 'rock-n-roll'.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Term or terms that designate a category characterizing a particular style, form, or content."><a class="link_odd link_odd_elementSpec" href="../elements/genre.html">&lt;genre&gt;</a></span><span class="desc"><span class="desc">Term or terms that designate a category characterizing a particular style, form, or
+                                             content.</span></span></div>
+                                    <div class="def"><span class="ident" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd link_odd_elementSpec" href="../elements/identifier.html">&lt;identifier&gt;</a></span><span class="desc"><span class="desc">An alpha-numeric string that establishes the identity of the described material.</span></span></div>
+                                    <div class="def"><span class="ident" title="Proper noun or noun phrase."><a class="link_odd link_odd_elementSpec" href="../elements/name.html">&lt;name&gt;</a></span><span class="desc"><span class="desc">Proper noun or noun phrase.</span></span></div>
+                                    <div class="def"><span class="ident" title="Describes a relationship or linkage amongst entities."><a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a></span><span class="desc"><span class="desc">Describes a relationship or linkage amongst entities.</span></span></div>
+                                    <div class="def"><span class="ident" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></span><span class="desc"><span class="desc">Institution, agency, or individual which holds a bibliographic item.</span></span></div>
+                                    <div class="def"><span class="ident" title="A phrase describing the nature of intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/resp.html">&lt;resp&gt;</a></span><span class="desc"><span class="desc">A phrase describing the nature of intellectual responsibility.</span></span></div>
+                                    <div class="def"><span class="ident" title="Title of a bibliographic entity."><a class="link_odd link_odd_elementSpec" href="../elements/title.html">&lt;title&gt;</a></span><span class="desc"><span class="desc">Title of a bibliographic entity.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a subsection or division of the title of a bibliographic entity."><a class="link_odd link_odd_elementSpec" href="../elements/titlePart.html">&lt;titlePart&gt;</a></span><span class="desc"><span class="desc">Contains a subsection or division of the title of a bibliographic entity.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"att.canonical"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Attributes that can be used to associate a representation such as a name or title
+                                       with
+                                       canonical information about the object being named or referenced.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"codedval"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A value that represents or identifies other data. Often, it is a primary key in the
+                                             database or a unique value in the coded list identified by the 
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;att&gt;</span>auth<span data-indentation="5" class="element">&lt;/att&gt;</span></div> or
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;att&gt;</span>auth.uri<span data-indentation="5" class="element">&lt;/att&gt;</span></div> attributes.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+mensural'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

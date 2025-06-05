@@ -1,0 +1,1330 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization for encoding neume notation.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="div1">
+                  
+                  <h1 id="introduction"><span class="headingNumber">B1</span><span class="head">Introduction to MEI</span></h1>
+                  
+                  <p>Welcome to the MEI Guidelines. They provide documentation for the Music Encoding
+                     Initiative’s framework for describing music notation documents. This includes both
+                     a
+                     technical specification of the XML-based implementation of MEI and an explanatory
+                     description of its concepts.</p>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="about"><span class="headingNumber">1.1</span><span class="head">About these Guidelines</span></h2>
+                     
+                     <p>The MEI Guidelines are intended to serve as a reference tool for music encoders.
+                        Through the use of natural-language definitions and examples, this documentation
+                        assists users of MEI in achieving effective and consistent markup. Despite
+                        translating XML and RNG terminology and concepts into more accessible language, it
+                        is
+                        still a technical one that presupposes a minimal understanding of XML and music
+                        notation. Novice encoders may want to start their MEI experience by doing an <a class="link_ref link_external" href="https://music-encoding.org/resources/tutorials.html">introductory
+                           tutorial</a> first. These Guidelines will provide recommendations and arguments
+                        for encoding different types of music notation for a variety of purposes. While the
+                        specification of the framework is complete, the description is not necessarily
+                        complete. MEI is used in various contexts, and not every use-case may be fully
+                        reflected in these Guidelines. However, MEI is a community effort, so feedback and
+                        suggestions for improvement are highly welcome. Several starting points to get in
+                        touch with the MEI community can be found on the <a class="link_ref link_external" href="https://music-encoding.org/community/community-contacts.html">MEI
+                           website</a>.</p>
+                     
+                     <p>These Guidelines make use of real-world examples to illustrate appropriate encoding
+                        concepts. We consider the use of such images as fair use. Contributors to these
+                        Guidelines are requested to given proper reference to the libraries holding the
+                        material used here. They're also asked to be aware of potential copyright
+                        infringements and avoid respective material, or replace it with hand-drawn, made-up
+                        examples. If you find material that possibly offends copyright, please <a class="link_ref link_external" href="mailto:info@music-encoding.org">get in touch</a> with us, and we will
+                        take it down.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="acknowledgments"><span class="headingNumber">1.1.1</span><span class="head">Acknowledgments</span></h3>
+                        
+                        <p>Many institutions and individuals assisted in the preparation of these
+                           Guidelines and in the overall development of the Music Encoding Initiative
+                           framework and community.</p>
+                        
+                        <p>Grateful acknowledgment is given to the following institutions for their
+                           generous contributions: the Akademie der Wissenschaften und der Literatur (AdW)
+                           in Mainz for serving as hosting institution for the MEI Community, and the
+                           National Endowment for the Humanities (NEH) and the Deutsche
+                           Forschungsgemeinschaft (DFG) for their joint financial support of the MEI
+                           project in its early stages. We thank several institutions that hosted Music
+                           Encoding Conferences or other MEI-related meetings in the past: The AdW Mainz,
+                           the University of Virginia Library, the Biblioteca Umanistica of the
+                           Università degli Studi Firenze, McGill University Montréal, the Centre
+                           d’études supérieures de la Renaissance Tours, the Maryland Institute for
+                           Technology in the Humanities (MITH) in College Park, the Oxford e-Research
+                           Centre, the Universität Paderborn and the Österreichische Akademie der
+                           Wissenschaften Wien in conjunction with the Universität Wien and the Mozarteum
+                           Salzburg. We also thank all other institutions that allow their researchers to
+                           invest time into both the community and the encoding framework. It is their
+                           interest that makes MEI an incredible platform for interchange and scholarly
+                           progress.</p>
+                        
+                        <p>The Text Encoding Initiative is also owed a special debt of gratitude. In
+                           addition to providing much of the inspiration for MEI, the TEI organization
+                           supplied funding for the MEI Technical Group in its efforts to adopt ODD. The
+                           editors of these Guidelines are grateful for those of the TEI, which provided a
+                           stellar exemplar and from which we have borrowed shamelessly.</p>
+                        
+                        <p>MEI has been a community-driven effort for more than a decade, and many
+                           individuals have provided significant and much-appreciated commitments of time
+                           and energy to the development of MEI: Nikolaos Beer; Vincent Besson; Benjamin
+                           W. Bohl; Margrethe Bue; Donald Byrd; Irmlind Capelle; Tim Crawford; David A.
+                           Day; Giuliano Di Bacco; Norbert Dubowy; Richard Freedman; Ichiro Fujinaga;
+                           Andrew Hankinson; Maja Hartwig; Kristin Herold; Franz Kelnreiter; Johannes
+                           Kepper; Robert Klugseder; Zoltán Kőmíves; David Lewis; Urs Liska; Elsa De Luca;
+                           Erin Mayhood; Stefan Morent; Stefan Münnich; Markus Neuwirth; Kevin Page;
+                           Daniel Pitti; Laurent Pugin; Klaus Rettinghaus; Kristina Richts; Daniel
+                           Röwenstrunk; Perry Roland; Craig Sapp; Agnes Seipelt; Eleanor Selfridge-Field;
+                           Christine Siegert; Peter Stadler; Axel Teich Geertinger; Martha Thomae; Joachim
+                           Veit; Raffaele Viglianti; Thomas Weber; and Sonia Wronkowska.</p>
+                        
+                        <p>Thanks to Bernhard R. Appel; Richard Chesser; Morgan Cundiff; J. Stephen
+                           Downie; Oliver Huck; Fotis Jannidis; John Rink; Federica Riva; Frans Wiering
+                           and Barbara Wiermann for providing expertise on a wide range of topics related
+                           to music notation modelling.</p>
+                        
+                        <p>Also thanks to Syd Bauman, Terry Catapano, and Sebastian Rahtz for their
+                           invaluable problem-solving assistance during the development of the 2010 RNG
+                           schema. Thanks to Sebastian Rahtz and James Cummings of the Text Encoding
+                           Initiative (TEI) for their help with making ODD work with MEI, their assistance
+                           in more closely aligning MEI and TEI, and their quick responses to questions
+                           and Roma bug reports.</p>
+                        
+                        <p>Finally, the members of the Music Encoding Initiative would like to thank Perry
+                           Roland for his foresight, engagement and dedication in laying the foundations
+                           of this initiative.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="aboutVersion5_1"><span class="headingNumber">1.1.1</span><span class="head">About version 5.1</span></h3>
+                        
+                        <p>Following release 5.0 from September 2023, Release 5.1 of MEI focuses primarily on
+                           maintenance 
+                           fixes of the guidelines and the development infrastructure, and on consistency, with
+                           only 
+                           limited changes to the specifications. Perhaps the most important additions are the
+                           enhancements 
+                           for the MEI tablature module, particularly the support for German Lute Tablature (GLT).
+                           
+                           Notable fixes to the guidelines include correcting the description of the <span class="att">@optimize</span> 
+                           attribute on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a> to clarify that empty staves 
+                           are <em>not</em> displayed when its value is set to 'true'. 
+                           The Release Managers for MEI 5.1 were the Technical Co-Chairs, Benjamin W. Bohl and
+                           Stefan Münnich.</p>
+                        
+                        <p>With MEI 5.1, five additional elements have been added to the 
+                           schema: <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">&lt;tuning&gt;</a>, <span class="missingLink">course [not available in this MEI customization]</span>, 
+                           <span class="missingLink">string [not available in this MEI customization]</span>, <span class="missingLink">tabDurSym [not available in this MEI customization]</span>, and 
+                           <span class="missingLink">tabGrp [not available in this MEI customization]</span>. All of these elements are used to encode tablature
+                           notation. The use of these elements, including relevant attributes, is documented
+                           in the
+                           largely rewritten chapter <a class="link_ptr chapterLink" title="Repertoire: String Tablature" href="../content/tablature.html">B5 Repertoire: String Tablature</a> of these Guidelines. The existing
+                           <span class="ident">att.stringtab.tuning [not available in this MEI customization]
+                              </span> attribute class has been deprecated
+                           in favor of these additions and will be removed in a future version of MEI.</p>
+                        
+                        <p>The new <a class="link_odd link_odd_attClass" href="../attribute-classes/att.dataSelecting.html">att.dataSelecting</a> class (currently available 
+                           only on <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a>) introduces an XPath-based selection 
+                           mechanism to identify elements to which certain features apply.</p>
+                        
+                        <p>All controlevents (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.1.1 Events and Controlevents</a>, technically implemented 
+                           through membership in the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a> class) are now member of 
+                           <a class="link_odd link_odd_attClass" href="../attribute-classes/att.color.html">att.color</a>, enabling color customization through the <span class="att">@color</span>
+                           attribute. Similarly, directive-like elements (<span class="missingLink">bend [not available in this MEI customization]</span>, 
+                           <span class="missingLink">breath [not available in this MEI customization]</span>, <a class="link_odd link_odd_elementSpec" href="../elements/caesura.html">&lt;caesura&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a>, 
+                           <span class="missingLink">fermata [not available in this MEI customization]</span>, <span class="missingLink">fing [not available in this MEI customization]</span>, <span class="missingLink">fingGrp [not available in this MEI customization]</span>, 
+                           <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a>, <span class="missingLink">harpPedal [not available in this MEI customization]</span>, <a class="link_odd link_odd_elementSpec" href="../elements/metaMark.html">&lt;metaMark&gt;</a>, 
+                           <span class="missingLink">mordent [not available in this MEI customization]</span>, <span class="missingLink">octave [not available in this MEI customization]</span>, <a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">&lt;ornam&gt;</a>,
+                           <span class="missingLink">trill [not available in this MEI customization]</span>, and <span class="missingLink">turn [not available in this MEI customization]</span>) are now member of the
+                           <a class="link_odd link_odd_attClass" href="../attribute-classes/att.verticalGroup.html">att.verticalGroup</a> class, which gives them access to the <span class="att">@vgrp</span>
+                           attribute, facilitating vertical alignment.</p>
+                        
+                        <p>Minor changes include the addition of <span class="att">@visible</span> and <span class="att">@enclose</span> on 
+                           <span class="missingLink">meterSigGrp [not available in this MEI customization]</span>.</p>
+                        </div>   
+                     
+                     <div class="div3">
+                        
+                        <h3 id="aboutVersion5"><span class="headingNumber">1.1.1</span><span class="head">About version 5.0</span></h3>
+                        
+                        <p>Release 5.0 of MEI focuses primarily on the guidelines, development infrastructure,
+                           
+                           and consistency, with only limited changes to the specifications. Perhaps the most
+                           important 
+                           additions are the introduction of the MEI Basic customization, and the availability
+                           of an auto-generated PDF version of the Guidelines (see below for more details on
+                           both).
+                           The Release Managers for MEI 5.0 were the Technical Co-Chairs, Benjamin W. Bohl and
+                           Stefan
+                           Münnich.</p>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="meiBasic"><span class="headingNumber">1.1.1.1</span><span class="head">MEI Basic</span></h4>
+                           
+                           <p>As a framework to encode music, MEI offers extensive flexibility to encode music
+                              documents of various kinds, and for a wide variety of uses. For scholarly research,
+                              
+                              this flexibility is necessary and is one of the greatest strengths of MEI. At the
+                              
+                              same time, we recognize that this flexibility presents challenges for broad adoption
+                              
+                              of MEI as a notation interchange format. For developers, providing "full" MEI support
+                              
+                              is a difficult and time-consuming chore, writing and supporting code for features
+                              
+                              which most of their users will not use. Accordingly, MEI has not seen a great deal
+                              of adoption 
+                              by current score-writing applications.</p>
+                           
+                           <p>This is addressed this with the release of MEI 5. We are now offering a new customization
+                              of MEI, 
+                              <em>MEI Basic</em>, that provides a simplified subset of the MEI framework that 
+                              reflects the capabilities of most popular "Common Western Music Notation" score-writing
+                              
+                              applications currently in use.</p>
+                           
+                           <p>In the full MEI schema there are often multiple ways to encode something. MEI Basic
+                              
+                              simplifies this by providing only one approach for each music feature, making it significantly
+                              easier to provide full feature support in software. As noted, MEI Basic only supports
+                              
+                              Common Western Music Notation. Many of the more complex encoding mechanisms for
+                              editorial and analytical workflows are also removed in MEI Basic. MEI Basic has a
+                              relatively 
+                              small footprint of supported features, which may be expanded over time as more software
+                              
+                              applications adopt MEI and more use cases are identified. All MEI Basic files are
+                              
+                              valid MEI "full" files, meaning MEI Basic files may be expanded and upgraded to MEI
+                              "full",
+                              adding more complex features and encoding mechanisms as required.</p>
+                           
+                           <p>We hope that this customization facilitates more application adoption, data sharing
+                              between 
+                              MEI projects, and conversion between MEI and other data formats.</p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="pdfGuidelines"><span class="headingNumber">1.1.1.1</span><span class="head">Guidelines</span></h4>
+                           
+                           <p>With MEI 5, we re-introduce a PDF version of the MEI Guidelines. With a total
+                              of more than 5,700 pages, this PDF clearly is not intended to be printed, but may
+                              
+                              serve as a single-file reference to the current release of MEI. The PDF is 
+                              interactive, so may be offline with working links between sections. While the 
+                              largest part of the PDF is taken up by the formal specification of the format, 
+                              there are also more than 370 pages of prose documentation and examples of how to 
+                              use the MEI framework for various purposes. The PDF therefore gives a good 
+                              impression of the huge effort that went into the development of MEI.</p>
+                           
+                           <p>The Guidelines have also had several notable contributions, led in large part 
+                              by our Interest Groups. These contributions have sought to make some chapters more
+                              clear and consistent, to help newcomers to MEI understand how MEI encoding may be
+                              applied.</p>
+                           
+                           <p>In total, we have over 40 contributors actively involved in 
+                              the preparation of this release of MEI. Many of them are early-career researchers,
+                              
+                              investing significant time and effort into the MEI Framework. Due to the open 
+                              nature of this community work, happening alongside conferences, workshops, and 
+                              other meetings, others may not be listed properly because of rather informal, 
+                              but no less important, contributions. Without the joint effort of all those involved,
+                              
+                              an undertaking like MEI would not be possible.</p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="modelChanges"><span class="headingNumber">1.1.1.1</span><span class="head">Model changes in MEI</span></h4>
+                           
+                           <p>MEI 5.0 introduces five new elements: <span class="missingLink">plica [not available in this MEI customization]</span> and 
+                              <span class="missingLink">stem [not available in this MEI customization]</span>, for the encoding of documents written in Mensural 
+                              notation, and <a class="link_odd link_odd_elementSpec" href="../elements/divLine.html">&lt;divLine&gt;</a> for Neumes documents. The new CMN 
+                              element <span class="missingLink">repeatMark [not available in this MEI customization]</span> can be used to express repetition marks 
+                              as a combination of text and symbols, and the added shared element 
+                              <a class="link_odd link_odd_elementSpec" href="../elements/extData.html">&lt;extData&gt;</a> provides a container for non-MEI data formats. 
+                              The release technically removes the &lt;fingerprint&gt; element, which has been 
+                              deprecated for ten years. It also removes the elements &lt;pgHead2&gt; and 
+                              &lt;pgFoot2&gt;, which are now superseded by the <span class="att">@func</span> attribute on 
+                              <a class="link_odd link_odd_elementSpec" href="../elements/pgHead.html">&lt;pgHead&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/pgFoot.html">&lt;pgFoot&gt;</a> respectively.</p>
+                           
+                           <p>Most other changes affect more specific aspects in the model of MEI, usually 
+                              expressed in attributes. These include the refinement of the encoding of key 
+                              signatures, with <span class="att">@key.sig</span> moved to <span class="att">@keysig</span>, <span class="att">@keysig.show</span> moved to 
+                              <span class="att">@keysig.visible</span>, and <span class="att">@keysig.showchange</span> and <span class="att">@sig.showchange</span> moved to 
+                              <span class="att">@keysig.cancelaccid</span> and <span class="att">@cancelaccid</span> respectively. The <span class="att">@instr</span> 
+                              attribute is removed from quiet events like <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a>, 
+                              <span class="missingLink">mRest [not available in this MEI customization]</span>, <span class="missingLink">mSpace [not available in this MEI customization]</span> and <span class="missingLink">multiRest [not available in this MEI customization]</span>, 
+                              and the <span class="att">@visible</span> attribute is also removed from <span class="missingLink">mRest [not available in this MEI customization]</span>. 
+                              Moreover, attributes <span class="att">@line.form</span> and <span class="att">@line.width</span> on the <span class="missingLink">arpeg [not available in this MEI customization]</span> 
+                              element are aligned with other line-like elements as <span class="att">@lform</span> and 
+                              <span class="att">@lwidth</span>. <span class="att">@text.dist</span> on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a> and 
+                              <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> is removed in favor of the newly added attributes 
+                              <span class="att">@dir.dist</span>, <span class="att">@reh.dist</span> or <span class="att">@tempo.dist</span>. 
+                              <span class="att">@meter.form</span>="invis" is updated to <span class="att">@meter.visible</span>="false", 
+                              and the same change applies to <span class="att">@form</span>="invis" on meterSig, now replaced 
+                              with <span class="att">@visible</span>="false". The text-rendition values of <span class="val">letter-spacing</span> 
+                              and <span class="val">line-height</span> on <span class="att">@rend</span> are moved to separate attributes, that is, 
+                              <span class="att">@rend</span>="letter-spacing(0.25) line-height(120%)" will be now 
+                              <span class="att">@letterspacing</span>="0.25" <span class="att">@lineheight</span>="120%". Additionally, corrections 
+                              are applied to specific attribute values, such as changing <span class="val">Bagpipe</span> on
+                              <span class="att">@midi.instrname</span> to <span class="val">Bag_pipe</span> and replacing <span class="val">dblwhole</span> 
+                              on <span class="att">@head.mod</span> with <span class="val">fences</span>. All changes can be traced in the 
+                              detailed Release Notes auto-generated from the Pull Requests on GitHub. A larger 
+                              group of changes affects the internal class structure of MEI only, where significant
+                              effort went into improved consistency in naming things. While this set of changes
+                              
+                              does not affect end users of MEI during validation of files, they may have 
+                              consequences for local customizations which reference classes not available anymore.
+                              
+                              If you have advanced local customizations based on MEI v4 or older releases, 
+                              please check that the rules provided still work as expected under v5. A very helpful
+                              
+                              addition for this task may be the validation for MEI customizations, which is now
+                              
+                              available and used for all customizations officially provided by MEI.</p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="infrastructuralChanges"><span class="headingNumber">1.1.1.1</span><span class="head">Infrastructural changes</span></h4>
+                           
+                           <p>A lot of effort went into updating the infrastructure for generating releases. These
+                              changes are designed to help improve the development workflow of MEI, improving consistency
+                              and oversight of changes as they are contributed to MEI. Our new setup is explained
+                              in 
+                              great detail in <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding/blob/v5.0/README.md">the project README file</a>. 
+                              We have also expanded our <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding/blob/v5.0/CONTRIBUTING.md">Contribution Guidelines</a> 
+                              and other documentation files in the <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding">music-encoding GitHub repository</a>.</p>
+                           
+                           <p>The MEI documentation and guidelines are now expressed in TEI ODD again, 
+                              moving away from the MarkDown-based approach used in the preparation of 
+                              MEI v4 documentation. This re-introduces greater compatibility with the TEI toolset.
+                              
+                              The source code for both the Guidelines and the Specification is now jointly 
+                              contained in the <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding">music-encoding GitHub repository</a>, 
+                              which simplifies validation across both parts of MEI. All assets –&nbsp;web 
+                              documentation, PDF Guidelines, and schemata – are automatically generated from there.
+                              
+                              A multi-platform Docker image for running these processes locally is also provided
+                              to help new developers with getting started in contributing to MEI.
+                              Setting up these technical workflows has taken considerable effort, but should now
+                              
+                              simplify future development and releases considerably.</p>
+                           
+                           <p>In addition to the main Music Encoding schema and Guidelines, we have also updated
+                              our Sample Encodings and Encoding Tools repositories. Sample Encodings have been updated
+                              to MEI 5.0, and several problems with encodings from older releases have been fixed.
+                              In the
+                              Encoding Tools, several bugs were fixed with older upgrade XSLT scripts, and a new
+                              XSLT for
+                              upgrading MEI 4 to MEI 5 was added.</p>
+                           
+                           <p>To see all of the changes made for this revision, please visit our Git repositories:
+                              
+                              <ul>
+                                 <li class="item"><a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding">https://github.com/music-encoding/music-encoding</a></li>
+                                 <li class="item"><a class="link_ref link_external" href="https://github.com/music-encoding/sample-encodings">https://github.com/music-encoding/sample-encodings</a></li>
+                                 <li class="item"><a class="link_ref link_external" href="https://github.com/music-encoding/encoding-tools">https://github.com/music-encoding/encoding-tools</a></li>
+                              </ul>
+                              </p>
+                           
+                           <p>The editors wish to thank everyone who participated in this process. Of course, 
+                              errors and omissions are the sole responsibility of the editors.</p>
+                           </div>
+                        </div>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="designPrinciples"><span class="headingNumber">1.1</span><span class="head">MEI Design Principles</span></h2>
+                     
+                     <p>This section of the Guidelines defines principles and criteria for designing,
+                        developing, and maintaining an XML-based encoding scheme for music notation
+                        documents.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="definitionsAndParameters"><span class="headingNumber">1.1.1</span><span class="head">Definitions and Parameters</span></h3>
+                        
+                        <p>A music notation document is one that contains music notation; that is, any
+                           one of a number of "visual analogues of musical sound, either as a record of
+                           sound heard or imagined, or as a set of visual instructions for performers."
+                           (Ian D. Bent, et al. "Notation." Grove Music Online. Oxford Music Online. 25
+                           May 2010. <a class="link_ref link_external" href="http://www.oxfordmusiconline.com/subscriber/article/grove/music/20114">http://www.oxfordmusiconline.com/subscriber/article/grove/music/20114</a>.)
+                           However, MEI’s understanding is more inclusive than this restrictive
+                           definition, <abbr>i.e.</abbr>, Braille certainly qualifies as music notation
+                           documents.</p>
+                        
+                        <p>The encoding scheme permits both the creation of new music notation
+                           documents and the conversion of existing ones from print and other
+                           electronic formats. However, conversion of existing documents may require
+                           revisions in content or rearrangement of information.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="generalPrinciples"><span class="headingNumber">1.1.1</span><span class="head">General Principles</span></h3>
+                        
+                        <p>MEI may be used to encode both primary sources of music notation, such as an
+                           autograph or published score, and secondary sources, such as a scholarly
+                           edition based on one or more primary sources. The format encompasses both
+                           use cases, and the encoder must choose the elements and attributes most
+                           appropriate in each case. These Guidelines aim to provide guidance on that
+                           task.</p>
+                        
+                        <p>As an encoded representation of one or more music notation documents, an MEI
+                           file may be employed as a surrogate for the original materials.</p>
+                        
+                        <p>Although the encoding scheme does not define or prescribe intellectual
+                           content for music notation documents, it does define content designation and
+                           is intended to be used with available data content standards. MEI identifies
+                           the essential data elements within music notation documents and establishes
+                           codes and conventions necessary for capturing and distinguishing information
+                           within those elements for future action or manipulation. While there are a
+                           few elements that ought to appear in any MEI document, various intellectual,
+                           technical, and economic factors influence the level of detail of analysis
+                           and encoding actually undertaken. Taking this into consideration, the
+                           encoding scheme is designed with a minimum of required elements and allows
+                           for progressively more detailed levels of description as desired.</p>
+                        
+                        <p>The encoding scheme preserves and enhances the current functionality of
+                           existing music notation documents. It permits identification of document
+                           structures and content that support description, navigation, analysis, and
+                           online and print presentation.</p>
+                        
+                        <p>The encoding scheme is intended to facilitate interchange between notational
+                           tools. It aims to assist in the creation of more effective and consistent
+                           encoding, encourage the creation of cooperatively-created and widely
+                           available databases of music notation documents, and permit the reuse of
+                           encoded data for multiple output purposes. It will also ensure that
+                           machine-readable music notation documents will outlive changing hardware and
+                           software environments because they are based on a platform-independent
+                           standard.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="structuralFeatures"><span class="headingNumber">1.1.1</span><span class="head">Structural Features</span></h3>
+                        
+                        <p>The encoding scheme is based on eXtensible Markup Language (XML), a
+                           text-based format for representing structured information. It is expressed
+                           as a One Document Does-it-all (ODD) document. For more information on ODD, please
+                           refer to <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.1.1 Customizing MEI</a>.</p>
+                        
+                        <p>Related or complementary standards, such as the <a class="link_ref link_external" href="http://www.tei-c.org/Guidelines/P5/">Text Encoding Initiative (TEI) Guidelines for Electronic Text Encoding and Interchange</a>, <a class="link_ref link_external" href="http://www.loc.gov/ead/">the Encoded Archival Description (EAD)</a>, <a class="link_ref link_external" href="http://www.loc.gov/marc/bibliographic/ecbdhome.html">MARC 21 Format for Bibliographic Data</a>, existing notation encoding schemes, etc. have been consulted and employed as appropriate.
+                           For example, the data
+                           model includes a header that is comparable to the TEI header, and TEI and
+                           EAD naming conventions and tag structures have been used whenever feasible.
+                           However, while some feature names are similar, or even the same, it is
+                           important to recognize that MEI and TEI have different semantic scope.
+                           Obviously, a note element in MEI does not carry the same meaning as the
+                           element of the same name in TEI. Perhaps less obviously, a phrase in music
+                           notation is unrelated to a textual phrase.</p>
+                        
+                        <p>With respect to metadata, MEI recognizes the close relationship between the
+                           metadata content found in the MEI header and that of catalog records,
+                           authority records, and finding aids. Therefore MEI provides ways of
+                           indicating in the encoding the corresponding fields of other metadata
+                           standards.</p>
+                        
+                        <p>To ensure broad international and multi-repertoire application of MEI,
+                           existing musical terminology was used in building the data model where
+                           practical. When appropriate, a more neutral terminology was used to
+                           facilitate sharing of concepts and thus stressing the commonalities between
+                           different repertoires. Finally, extensive use of attributes and
+                           clearly-defined classification mechanisms in the schema permits the
+                           refinement of element meanings within specific musical, geographic, or
+                           temporal contexts.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="controlAndMaintenance"><span class="headingNumber">1.1.1</span><span class="head">Control and Maintenance</span></h3>
+                        
+                        <p>The Music Encoding Initiative Community has given itself <a class="link_ref link_external" href="https://music-encoding.org/community/mei-by-laws.html">By-laws</a>, which regulate all essential properties and procedures.
+                           The community elects a <a class="link_ref link_external" href="https://music-encoding.org/community/mei-board.html">Board</a>,
+                           which in turn governs and represents the community. The Board consists of
+                           nine elected members, with three seats standing for election for three year
+                           terms each year. Everyone registered to the <a class="link_ref link_external" href="https://music-encoding.org/community/community-contacts.html">MEI-L</a> mailing list is eligible to vote for the Board.</p>
+                        
+                        <p>In addition to the Board, there is a <a class="link_ref link_external" href="https://music-encoding.org/community/technical-team.html">Technical Team</a>, which is open for anyone interested to work on the
+                           maintenance and improvement of MEI itself. The Technical team will assist
+                           Interest Groups and other interested community members in an advisory
+                           capacity on how to further develop MEI for both existing and new fields of
+                           application.</p>
+                        </div>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="basicConcepts"><span class="headingNumber">1.1</span><span class="head">Basic Concepts of MEI</span></h2>
+                     
+                     <p>This chapter is intended to explain basic concepts of MEI, like events vs.
+                        controlevents.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="musicalDomains"><span class="headingNumber">1.1.1</span><span class="head">Musical Domains</span></h3>
+                        
+                        <p>The term "music" has many different notions, ranging from audible sounds over
+                           written performance instructions or transcriptions of such events to conceptual
+                           rulesets that establish different theories of what music is, and what is
+                           allowed in music. In 1965, Milton Babbitt distinguished between <em>graphemic</em>, <em>acoustic</em> and <em>auditory</em> aspects of music (Babbitt, Milton: <em>The Use of Computers in Musicological Research</em>, in: <em>Perspectives of New Music</em> 3/2 (1965), p. 76).</p>
+                        
+                        <p>Various music encoding formats took up this distinction, most notably SMDL, the
+                           <em>Standard Music Description Language</em> (ISO/IEC DIS
+                           10743). While the format itself was hardly ever used for its impractical
+                           implementation details, parts of its design certainly influenced the
+                           development of other formats, including MEI. In a documentation draft (<a class="link_ref link_external" href="http://xml.coverpages.org/smdl10743-pdf.gz">http://xml.coverpages.org/smdl10743-pdf.gz, p.5</a>), SMDL identifies
+                           four different <em>musical domains</em>:</p>
+                        
+                        <p class="gloss"><strong><span>logical domain</span></strong>:
+                           The logical domain is the basic musical content – the essence from which
+                           all performances and editions of the work are derived, including virtual
+                           time values, nominal pitches, etc. The logical domain is describable as “the
+                           composer’s intentions with respect to pitches, rhythms, harmonies, dynamics,
+                           tempi, articulations, accents, etc.,” and it is the primary focus of SMDL.
+                           It can also be described as “the abstract information common to both the
+                           gestural and visual domains.” […]</p>
+                        <p class="gloss"><strong><span>gestural domain</span></strong>:
+                           The gestural domain is comprised of any number of performances, each of
+                           which may specify how and when components of the logical domain is rendered
+                           in a specific performance, including all the means whereby the performer
+                           actually “expresses” (acoustically instantiates) the music (intonation,
+                           agogic and dynamic stress, etc.). The gestural domain is perhaps most
+                           succinctly described as “the information added by performers,” or “how the
+                           music actually sounds during particular performances.” […]</p>
+                        <p class="gloss"><strong><span>visual domain</span></strong>:
+                           The visual domain is comprised of any number of scores, each of which
+                           somehow specifies exactly how components of the logical domain is rendered
+                           visually in some particular printable (and/or displayable) edition,
+                           including such graphical details as symbology, symbol sets, fonts, page
+                           layout, beaming conventions and exceptions, etc. The visual domain is
+                           perhaps most succinctly described as “the information added by human
+                           editors, engravers, and typesetters,” or “how the music actually looks in
+                           some particular edition.” […]</p>
+                        <p class="gloss"><strong><span>analytical domain</span></strong>:
+                           The analytical domain is comprised of any number of theoretical analyses
+                           and/or commentaries, each of which somehow specifies opinions, exegeses,
+                           etc. about any or all of the information in the other three domains.
+                           […]</p>
+                        
+                        <p>On a generic level, MEI follows the same definition, and it definitely shares
+                           the same terminology. However, not all four domains are available throughout
+                           the MEI schema, and quite frequently, two domains fall together in MEI. Very
+                           often, <em>MEI prioritizes the visual domain over the gestural domain</em> by (partly)
+                           <em>conflating the logical and the visual domains</em>. For example, MEI utilizes the
+                           <span class="att">@pname</span> (pitch name) attribute on notes to capture the <em>written</em>
+                           pitch of a note, whereas the sounding pitch may be described with the
+                           <span class="att">@pname.ges</span> attribute. Here, the logical and visual domains go
+                           without a special indication, whereas the gestural domain is identified by a
+                           special suffix. However, in case of transposing instruments, additional markup
+                           (namely the attributes <span class="att">@trans.diat</span> and <span class="att">@trans.semi</span> from
+                           MEI’s attribute class <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a>) will create
+                           a distinction between the logical and visual domain (see chapter <span class="missingPtr">#cmnDefs [not available in this MEI customization]</span>). In that case, <span class="att">@pname</span> will be restricted to
+                           the visual domain, while the logical aforementioned attributes provide
+                           additional information for the logical domain.</p>
+                        
+                        <p>Even though the technical implementation of MEI prioritizes the visual domain
+                           to some degree, this does not mean that any given encoding has to provide
+                           visual information. MEI takes no assumption on what data is required: While an
+                           OMR project (<em>optical music recognition</em>) may generate strictly visually
+                           oriented data only, another project focussed on audio transcriptions may
+                           generate gestural data only. A third project could integrate both
+                           approaches.</p>
+                        
+                        <p>In order to avoid ambiguous encodings, MEI is very strict and specific on the
+                           scope of its individual markup elements. For an encoder, the suffixes mentioned
+                           above provide clear hints on which domain is addressed by specific markup: Many
+                           attributes carry a suffixed <em>.log</em> (logical), <em>.ges</em> (gestural), <em>.vis</em>
+                           (visual), or <em>.anl</em> (analytical) in their name. In addition, the internal
+                           structure of MEI heavily relies on those different domains. When customizing
+                           MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.1.1 Customizing MEI</a>), it is possible to turn off
+                           either visual or gestural domain encoding completely. That way, MEI allows to
+                           address the four most eminent musical domains specifically and independent of
+                           each other.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="eventsControlevents"><span class="headingNumber">1.1.1</span><span class="head">Events and Controlevents</span></h3>
+                        
+                        <p>MEI differentiates between two essential aspects of music notation: <em>Events</em> and <em>ControlEvents</em>. There
+                           are other examples for such a separation of concerns with regard to music. In
+                           Greg’s Copy-Text Theory (W.W. Greg: <em>The Rationale of
+                              Copy-Text</em>, 1950), a distinction between primary and secondary text is
+                           made; similar attempts have been made for music specifically.</p>
+                        
+                        <p>In MEI, elements describing the basic musical text are referred to as <em>Events</em>. They are the building blocks for the stream of
+                           music –&nbsp;mostly those are <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>s, <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a>s, and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>s. In contrast, <em>ControlEvents</em> make no independent contribution to that
+                           flow of music. Instead, they provide additional information about the encoded
+                           <em>Events</em>, they <em>control</em> their
+                           performance. Examples for such <em>ControlEvents</em> are <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a>ic markings, <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>s
+                           indications, or performance <a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a>ectives. Depending on the
+                           encoding strategy used, <span class="missingLink">slur [not available in this MEI customization]</span>s and <span class="missingLink">tie [not available in this MEI customization]</span>s often also fall into this category (they may be encoded as
+                           attributes instead, in which case they become a property of the basic events).
+                           Simply put, <em>Events</em> describe <strong><em>what</em></strong> needs to be performed, and <em>ControlEvents</em>
+                           indicate <strong><em>how</em></strong> it needs to be performed. In (<span class="missingPtr">#cmn [not available in this MEI customization]</span>-based) MEI, <em>Events</em> are nested inside
+                           a <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> element, while <em>ControlEvents</em> are direct children of the first <span class="missingLink">measure [not available in this MEI customization]</span> they apply to, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a>
+                           elements there. These structural differences result in different markup
+                           concepts. As <em>Events</em> are encoded inside <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>s, their <em>semantic position</em> inside the
+                           encoded work can be derived from their <em>structural
+                              position</em> –&nbsp;the measure, staff and layer they're nested in, and within
+                           that layer by their position inside the sequence of all layer children. As
+                           mentioned above, it is highly <em>recommended</em> to encode <em>ControlEvents</em> inside the first measure they apply to, but
+                           they still require references to the actual events they apply to. There are two
+                           common concepts to provide such a connection, both of which offering specific
+                           benefits and drawbacks. A technically very stable connection between <em>ControlEvents</em> and <em>Events</em> can be
+                           established by using <em>pointers</em>. In this case, all events
+                           that need to be referenced need an <span class="att">@xml:id</span> attribute, which holds a
+                           globally unique identifier for this very element. The referencing controlevent
+                           then uses a <span class="att">@startid</span> and, if necessary, <span class="att">@endid</span> attribute to
+                           create a link to where in the stream of music it is supposed to start or
+                           end.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e852" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"10"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"c4ded06ff"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;dynam <span class="attribute">startid=</span><span class="attributevalue">"#c4ded06ff"</span>&gt;</span>f<span data-indentation="2" class="element">&lt;/dynam&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 1. The <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> element uses <span class="att">@startid</span> to reference the <span class="att">@xml:id</span> of the second quarter in the given measure</figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>In the example above, the <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> element references the
+                           second quarter in the given measure. Additional attributes like
+                           <span class="att">@place</span> may be used to describe the position of the <em>forte</em> indication within the score. A <span class="missingLink">hairpin [not available in this MEI customization]</span> element may use the <span class="att">@endid</span> attribute to indicate the
+                           duration of the hairpin using the same mechanism as above.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@startid</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.startId.html">att.startId</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Holds a reference to the first element in a sequence of events to which the feature
+                                    applies.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@endid</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.startEndId.html">att.startEndId</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Indicates the final element in a sequence of events to which the feature
+                                    applies.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>A <em>ControlEvent</em> encoded like above will be strictly tied
+                           to the referenced <em>Events</em> –&nbsp;if their position inside the
+                           XML document changes for whatever reason, they will keep that connection. This
+                           means that the <em>semantic position</em> to which they are bound
+                           may change without affecting the binding. An example could be an inserted
+                           additional note in front –&nbsp;the dynamic marking would not start on the second
+                           quarter, but perhaps on the third instead.</p>
+                        
+                        <p>As this behavior may not be desired in all cases, an alternative binding
+                           between <em>ControlEvents</em> and <em>Events</em>
+                           is possible, relying on <em>timestamps</em> instead. This
+                           mechanism is illustrated in the following example:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e924" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"10"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;dynam <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">layer=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"2"</span>&gt;</span>f<span data-indentation="2" class="element">&lt;/dynam&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 2. The <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> element uses <span class="att">@staff</span>, <span class="att">@layer</span> and <span class="att">@tstamp</span> to indicate the place of the dynamic</figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Here, no <span class="att">@xml:id</span> is required on notes. Instead, the <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> element uses the <span class="att">@staff</span> and <span class="att">@layer</span>
+                           attributes to indicate to which set of events the following <span class="att">@tstamp</span>
+                           attribute refers to.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@tstamp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp.log.html">att.timestamp.log</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Encodes the onset time in terms of musical time, <abbr>i.e.</abbr>, beats[.fractional beat part],
+                                    as expressed in the written time signature.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>This mechanism actually depends on what has been only recommended above:
+                           placing the controlevent inside the measure where it starts. The
+                           <span class="att">@startid</span> reference mechanism would work equally well if all
+                           controlevents where positioned in the very first or last measure, or actually
+                           even inside a separate file. The <span class="att">@tstamp</span> references however would
+                           not, they depend on correct placement of the controlevents inside the XML tree.
+                           For consistency, it is therefore <em>recommended</em> to always
+                           use this placement.</p>
+                        
+                        <p>The benefit of this concept is that controlevents are tied to a <em>semantic position</em>, but not necessarily to a given XML
+                           element. The <em>forte</em> may still be placed on the second
+                           quarter, even though the composer may have replaced that quarter G4 with a
+                           different pitch and / or duration. Actually, it is not required that an <em>Event</em> can be found at the position indicated by a
+                           timestamp. This may be useful to encode a slur ending at an arbitrary position
+                           between two events, or dynam markings spread across otherwise empty
+                           measures.</p>
+                        
+                        <p>If the ending of a <em>ControlEvent</em> shall be given by
+                           timestamp, the <span class="att">@tstamp2</span> attribute is used.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@tstamp2</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp2.log.html">att.timestamp2.log</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Encodes the ending point of an event, <abbr>i.e.</abbr>, a count of measures plus a beat location
+                                    in the ending measure.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>Because of potential inconsistencies, an encoding should not offer both
+                           <span class="att">@startid</span> and <span class="att">@tstamp</span> or <span class="att">@endid</span> and
+                           <span class="att">@tstamp2</span>. Though not being recommendable, it is possible to mix
+                           <span class="att">@startid</span> with <span class="att">@tstamp2</span> and <span class="att">@tstamp</span> with
+                           <span class="att">@endid</span>. In general, it is easier for software to process
+                           <span class="att">@startid</span> and <span class="att">@endid</span>. When no other arguments apply,
+                           using <span class="att">@xml:id</span>-based pointers is therefore the most common way to
+                           connect <em>ControlEvents</em> with <em>Events</em>.</p>
+                        
+                        <p>The details on how timestamps are calculated and used in MEI are given in <a class="link_ptr chapterLink" title="Timestamps in MEI" href="../content/introduction.html#timestamps">1.1.1 Timestamps in MEI</a>.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="timestamps"><span class="headingNumber">1.1.1</span><span class="head">Timestamps in MEI</span></h3>
+                        
+                        <p>In MEI, timestamps are treated in a slightly simplified way: they have no
+                           notion of <em>beat</em>. Instead, timestamps rely solely on the
+                           numbers given in the meter signature. In a measure of 4/4, timestamps will
+                           range from 1 to 4. The second eighth note will be 1.5 in this case. If the same
+                           measure would be given in 2/2, it would be 1.25 instead.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@tstamp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp.log.html">att.timestamp.log</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Encodes the onset time in terms of musical time, <abbr>i.e.</abbr>, beats[.fractional beat part],
+                                    as expressed in the written time signature.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>At this point, MEI uses real numbers only to express timestamps. In case of
+                           (nested or complex) tuplets, this solution is inferior to fractions because of
+                           rounding errors. It is envisioned to introduce a fraction-based value for
+                           timestamps in a future revision of MEI. For now, it is recommended to round the
+                           fractional part of the number to no more than five digits to avoid such
+                           problems.</p>
+                        
+                        <p>Durations may also be expressed based on timestamps. In this case, the values
+                           are a combination of the <em>count of measures</em> that need to
+                           be moved forward to reach the measure in which an encoded feature ends, and the
+                           <em>timestamp</em> within that measure.</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@tstamp2</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp2.log.html">att.timestamp2.log</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Encodes the ending point of an event, <abbr>i.e.</abbr>, a count of measures plus a beat location
+                                    in the ending measure.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e1077" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- slur starting on timestamp 1, ending on timestamp 4 of the same measure --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;slur <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"0m+4"</span>/&gt;</span></div>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- slur ending on timestamp 1 of the following measure --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;slur <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"1m+1"</span>/&gt;</span></div>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- slur ending on timestamp 2.5 in the second next measure --&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;slur <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"2m+2.5"</span>/&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 3. The encoding contains a number of <span class="missingLink">slur [not available in this MEI customization]</span> examples
+                                 illustrating durations expressed by timestamps</figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>Sometimes, timestamps are used to indicate positions where no music <em>Events</em> are located (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.1.1 Events and Controlevents</a>). Therefore, the allowed range of timestamps
+                           stretches from 0 to the current meter count + 1. By definition, a timestamp of
+                           0 indicates the position of the left bar line, while a timestamp of 5 (in case
+                           of a 4/4 meter) indicates the right bar line. This makes it possible to encode
+                           open-ended slurs in a graphical way. However, it should be kept in mind that
+                           such timestamps may not be converted to <span class="att">@startid</span> and
+                           <span class="att">@endid</span>, and not every application may be able to render them
+                           correctly, even though they are perfectly valid MEI, and sometimes are
+                           necessary to faithfully transcribe a source.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="meiProfiles"><span class="headingNumber">1.1.1</span><span class="head">MEI Profiles</span></h3>
+                        
+                        <p>MEI is an encoding framework, not a data format. This means that MEI provides
+                           recommendations for encoding music documents, but it depends on the encoder's
+                           needs and requirements to which features and solutions are appropriate to the
+                           task and should be used. MEI offers specific models for different notation
+                           types and music repertoires, but it is rarely advisable to use them all side by
+                           side in one encoding.</p>
+                        
+                        <p>In order to use MEI, it is advised to use a restricted version of the schema,
+                           which will make it easier both for an encoder and a reader of the encoded
+                           files. MEI provides a number of pre-defined <em>profiles</em>, which focus on specific
+                           uses of MEI while still maintaining a great level of flexibility. For projects
+                           that need even better control over their data, it is highly recommended to
+                           create a more specific customized version of MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.1.1 Customizing MEI</a>). The following customizations are provided
+                           with every release of MEI:</p>
+                        
+                        <p class="gloss"><strong><span>mei-CMN</span></strong>:
+                           For most users, this will be the best starting point into music
+                           encoding with MEI. The <em>mei-CMN</em> customization targets at documents that use
+                           <em>Common Western Music Notation</em>. The specific rules for that notation are
+                           specified in chapter <span class="missingPtr">#cmn [not available in this MEI customization]</span>, even though other chapters of these
+                           Guidelines apply as well.</p>
+                        <p class="gloss"><strong><span>mei-Mensural</span></strong>:
+                           For documents written in <em>Mensural Notation</em> (both black and
+                           white), MEI offers the <em>mei-Mensural</em> customization. The specific rules for
+                           that notation are specified in chapter <span class="missingPtr">#mensural [not available in this MEI customization]</span>, even though
+                           other chapters of these Guidelines apply as well.</p>
+                        <p class="gloss"><strong><span>mei-Neumes</span></strong>:
+                           This profile allows to encode medieval <em>Neume Notation</em> with MEI.
+                           The specific rules for that notation are specified in chapter <a class="link_ptr chapterLink" title="Repertoire: Neume Notation" href="../content/neumes.html">B4 Repertoire: Neume Notation</a>, even though other chapters of these Guidelines apply as
+                           well. Please note that the <em>mei-Neumes</em> profile has undergone significant
+                           changes from MEI version 3 to version 4.</p>
+                        <p class="gloss"><strong><span>mei-Basic</span></strong>:
+                           As an encoding framework, MEI offers multiple approaches to encode
+                           certain features at various levels of detail. While this flexibility is at the
+                           core of MEI and often required for research projects, it is an obstacle when
+                           developing software and converters for MEI. The <em>mei-Basic</em> profile is a subset
+                           of MEI which restricts it to one way of encoding for every feature of music
+                           notation. It covers <em>Common Western Music Notation</em> only, and excludes all
+                           editorial markup. In essence, it has the same functionality as most other music
+                           encoding formats like MusicXML or MNX. The purpose of <em>mei-Basic</em> is to serve
+                           as common ground for data interchange, both between projects using different
+                           profiles of MEI, and other encoding schemes.</p>
+                        <p class="gloss"><strong><span>mei-all</span></strong>:
+                           This is the full definition of MEI. It includes all different
+                           repertoires, which has certain side effects and enables encoding options that
+                           are neither intended nor advocable. For example, in mensural notation music is
+                           organized by staves. In contrast, Common Music Notation utilizes measures,
+                           which in turn contain staves. These staves have a different meaning here, and
+                           are modeled differently in MEI. <em>mei-all</em> mixes those models and thus invites
+                           encoding errors. In general, you should almost never use <em>mei-all</em> except for
+                           testing purposes.</p>
+                        <p class="gloss"><strong><span>mei-all_anyStart </span></strong>:
+                           This profile includes all of <em>mei-all</em>, but extends it even
+                           further so that it allows any MEI element as root of conforming MEI instances.
+                           In regular MEI, the only allowed starting elements are <a class="link_odd link_odd_elementSpec" href="../elements/mei.html">&lt;mei&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> and
+                           <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a>. The sole purpose of this customization is
+                           to simplify validation at tutorial sessions and other educational purposes. It
+                           should not be used in production.</p>
+                        
+                        <p>The first three profiles provide good starting points to encode music from the
+                           respective repertoires. They may also serve as template for further,
+                           project-specific customizations. The latter two profiles target very
+                           specific use cases and should not be used by default.</p>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="meiCustomization"><span class="headingNumber">1.1.1</span><span class="head">Customizing MEI</span></h3>
+                        
+                        <p>In production, it is best to use a customized version of MEI, restricted to the
+                           very needs of a project. Such a custom schema will guide the encoders and will
+                           help to ensure consistency and data quality throughout a project’s files. A
+                           customization typically provides a subset of MEI’s encoding models (typically
+                           starting from one of the official <em>profiles</em> mentioned in chapter <a class="link_ptr chapterLink" title="MEI Profiles" href="../content/introduction.html#meiProfiles">1.1.1 MEI Profiles</a>), with only one solution for any given situation
+                           being allowed. The customization will help to reflect the scope of a project
+                           into its data: Only those aspects of music notation a project is interested in
+                           will be allowed, so that the absence of a specific information can not be
+                           misunderstood as an oversight of the encoders. Larger editorial projects like
+                           <em>Complete Works</em> editions typically use <em>Editorial Guidelines</em> (german:
+                           <em>Editionsrichtlinien</em>) for the same purposes: (internal) quality control and
+                           (external) documentation. In that sense, MEI customizations may serve as
+                           Editorial Guidelines in digital form.</p>
+                        
+                        <p>MEI is implemented in ODD. ODD, or <em>One Document Does-it-all</em>, is another
+                           XML-based markup language developed and maintained by the TEI. TEI's
+                           documentation for ODD can be found in the TEI Guidelines chapter 22: <a class="link_ref link_external" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html">Documentation Elements</a>, chapter 23: <a class="link_ref link_external" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html">Using
+                              the TEI</a>, and the "<a class="link_ref link_external" href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">Getting Started with P5 ODDs</a>" document.</p>
+                        
+                        <p>At this point, there is no specific documentation on how to customize MEI with
+                           ODD beyond the generic TEI documentation. However, the provided <a class="link_ptr chapterLink" title="MEI Profiles" href="../content/introduction.html#meiProfiles">1.1.1 MEI Profiles</a> are based on ODD customizations, and may serve as
+                           starting point for further project-specific restrictions. They can be found
+                           at <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding/tree/stable/customizations">https://github.com/music-encoding/music-encoding/tree/stable/customizations</a>.
+                           In addition, several projects have shared their customizations on GitHub, such
+                           as <a class="link_ref link_external" href="https://github.com/Freischuetz-Digital/data-music/tree/master/schemata/odd">Freischütz Digital</a> or <a class="link_ref link_external" href="https://github.com/BeethovensWerkstatt/module2/tree/dev/data/odd">Beethovens Werkstatt</a>.</p>
+                        
+                        <p>MEI provides a web service at <a class="link_ref link_external" href="http://custom.music-encoding.org/">http://custom.music-encoding.org</a> which allows to
+                           compile such customizations against the MEI sources in order to generate
+                           RelaxNG schemata, which can be used for validation. More documentation on
+                           customizing MEI will be provided as time permits; until then, it is recommended
+                           to <a class="link_ref link_external" href="https://music-encoding.org/community/community-contacts.html">reach out to the MEI Community</a> for additional
+                           assistance.</p>
+                        </div>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="samplesTools"><span class="headingNumber">1.1</span><span class="head">Sample Encodings and Tools for MEI</span></h2>
+                     
+                     <p>The Music Encoding Initiative provides a collection of sample encodings, which
+                        demonstrate a wide-range of uses of MEI in real-world contexts. They are available
+                        from <a class="link_ref link_external" href="https://github.com/music-encoding/sample-encodings">https://github.com/music-encoding/sample-encodings</a>.</p>
+                     
+                     <p>For MEI, there is also a number of tools, which facilitate encoding of and working
+                        with MEI instances in various contexts. These tools are available from the <a class="link_ref link_external" href="https://music-encoding.org/resources/tools.html">https://music-encoding.org/resources/tools.html</a> website.</p>
+                     </div>
+                  </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+               <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiProfiles">1.1.1 MEI Profiles</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                     <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiProfiles">1.1.1 MEI Profiles</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+neumes'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

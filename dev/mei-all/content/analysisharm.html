@@ -1,0 +1,1943 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization integrating all aspects of MEI.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="div1">
+                  
+                  <h1 id="analysisharm"><span class="headingNumber">B10</span><span class="head">Analysis Markup and Harmonies</span></h1>
+                  
+                  <p>This chapter of the MEI Guidelines describes how the results of a musical analysis
+                     or harmonic information may be stored in MEI.</p>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="analysis"><span class="headingNumber">10.1</span><span class="head">Analytical Information</span></h2>
+                     
+                     <p>This chapter describes the use of attributes that capture data which may be useful
+                        for analytical purposes. The analysis module provides attributes that record relationships
+                        between entities found in the encoding. These attributes may be used differently by
+                        different users, depending on the purpose of the analysis.</p>
+                     
+                     <p>These Guidelines recommend that encoders employ commonly accepted analytical practices,
+                        such as ‘functional analysis’ or ‘Schenkerian analysis’, and document their use in
+                        the <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a> described in section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.1.1 Encoding Description</a>. For general information on musical analysis, please consult Grove Music Online,
+                        ‘<a class="link_ref link_external" href="https://doi.org/10.1093/gmo/9781561592630.article.41862">Analysis</a>’.</p>
+                     
+                     <p>The relationships between event elements, such as note, chord, and rest, are the basic
+                        material of musical analysis. MEI provides linking attributes to ensure a closed network
+                        of these relations. They provide the opportunity to record data useful for common
+                        analytical tasks. In the context of a formal analysis, for instance, these attributes
+                        can be useful in the capture information about the structure of a musical work. Further
+                        information on these attributes can be found in <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">B13 Linking Data</a>.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="analysisSpecificAttrs"><span class="headingNumber">10.1.1</span><span class="head">Event-Specific Analytical Information</span></h3>
+                        
+                        <p>In addition to the common linking attributes (see <a class="link_ptr chapterLink" title="General Relationships Between Elements" href="../content/linkingdata.html#linkingDescribingRelationships">13.1.1 General Relationships Between Elements</a>), the analysis module also offers other, more specific attributes on certain musical
+                           elements:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Encodes the harmonic interval between pitches occurring at the same time.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@intm</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalMelodic.html">att.intervalMelodic</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Encodes the melodic interval from the previous pitch. The value may be a general
+                                    directional indication (u, d, s, etc.), an indication of diatonic interval direction,
+                                    quality, and size, or a precise numeric value in half steps.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@mfunc</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.melodicFunction.html">att.melodicFunction</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Describes melodic function using <a class="link_ref link_external" href="https://www.humdrum.org/rep/embel/">Humdrum **embel syntax</a>.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@deg</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harmonicFunction.html">att.harmonicFunction</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Captures scale degree information using <a class="link_ref link_external" href="https://www.humdrum.org/rep/deg/">Humdrum **deg syntax</a> -- an optional indicator
+                                    of melodic approach (^ = ascending approach, v = descending approach), a scale degree
+                                    value (1 = tonic ... 7 = leading tone), and an optional indication of chromatic
+                                    alteration, <span class="val">1</span>, <span class="val">v7</span>, <span class="val">^1</span>, or <span class="val">v5+</span>, for example. 
+                                    The amount of chromatic alternation is not indicated.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@pclass</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.pitchClass.html">att.pitchClass</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Holds pitch class information.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@psolfa</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.solfa.html">att.solfa</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Contains sol-fa designation, <abbr>e.g.</abbr>, do, re, mi, etc., in either a fixed or movable Do
+                                    system.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="analysisMelodicIntervals"><span class="headingNumber">10.1.1.1</span><span class="head">Melodic Intervals</span></h4>
+                           
+                           <p>The <span class="att">@intm</span> attribute offers several methods for encoding the melodic interval from a preceding
+                              pitch. First, Parsons Code allows for description of the contour of the melody in
+                              very general terms; that is, as up, down, or same note. Parsons Code is helpful for
+                              identifying musical works with clearly defined melodies and analyzing the relationship
+                              between successive notes of monophonic tunes. For more information about the Parsons
+                              Code, please see the "The Directory of Tunes and Musical Themes" by Denys Parsons
+                              (2002). The next example shows interval relationships indicated by the Parsons Code:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e20869" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">intm=</span><span class="attributevalue">"u"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">intm=</span><span class="attributevalue">"s"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">intm=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 362. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>Alternatively, diatonic interval quality and size may be indicated by a letter signifying
+                              the interval quality (A= augmented, d= diminished, M = major, m = minor, P = perfect)
+                              followed by a number indicating the size of the interval. The interval direction may
+                              be encoded using a leading plus (+) or minus (-) sign:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e20882" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">intm=</span><span class="attributevalue">"+M2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">intm=</span><span class="attributevalue">"-M2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">intm=</span><span class="attributevalue">"-m2"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">intm=</span><span class="attributevalue">"-P8"</span>/&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 363. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>As a third option, signed integers may be used to record the difference in half steps
+                              between the previous pitch and the current one. Decimal values accommodate the description
+                              of microtonal intervals:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e20896" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">intm=</span><span class="attributevalue">"1.1"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">intm=</span><span class="attributevalue">"7.9"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">intm=</span><span class="attributevalue">"-2.334"</span>/&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 364. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="analysisMelodicFunction"><span class="headingNumber">10.1.1.1</span><span class="head">Melodic Function</span></h4>
+                           
+                           <p>The <span class="att">@mfunc</span> attribute describes melodic function of a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> or neume using the <a class="link_ref link_external" href="https://www.humdrum.org/rep/embel/">Humdrum **embel syntax</a>. In the following example, the note B is labeled as a lower neighbor while all other
+                              notes are labeled as chord tones: 
+                              <figure class="figure specPage">
+                                 <div id="d18e20920" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;section&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                   
+                                                   <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"up"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.chord1"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">mfunc=</span><span class="attributevalue">"ct"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m2e1"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">mfunc=</span><span class="attributevalue">"ct"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m2e2"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">mfunc=</span><span class="attributevalue">"ct"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m2e3"</span>/&gt;</span></div>
+                                                      <span data-indentation="5" class="element">&lt;/chord&gt;</span></div>
+                                                   
+                                                   <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">accid=</span><span class="attributevalue">"f"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">mfunc=</span><span class="attributevalue">"ln"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m2e4"</span>/&gt;</span></div>
+                                                   <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                                   
+                                                   <div class="indent indent5"><span data-indentation="5" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"up"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.chord2"</span>&gt;</span>
+                                                      
+                                                      <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">mfunc=</span><span class="attributevalue">"ct"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m3e5"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">mfunc=</span><span class="attributevalue">"ct"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m3e6"</span>/&gt;</span></div>
+                                                      
+                                                      <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">mfunc=</span><span class="attributevalue">"ct"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.m3e7"</span>/&gt;</span></div>
+                                                      <span data-indentation="5" class="element">&lt;/chord&gt;</span></div>
+                                                   <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/measure&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/section&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 365. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="analysisHarmonicIntervals"><span class="headingNumber">10.1.1.1</span><span class="head">Harmonic Intervals</span></h4>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Encodes the harmonic interval between pitches occurring at the same time.</div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p>In contrast with <span class="att">@intm</span>, which characterizes melodic (sequential) intervals, the <span class="att">@inth</span> attribute is used to encode the harmonic interval between the current note and other
+                              pitches occurring at the same moment in time. The notes of interest may or may not
+                              be marked as a <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. In the markup below, for example, the values of <span class="att">@inth</span> capture the harmonic intervals between notes distributed across multiple staves and
+                              layers.</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e20957" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">inth=</span><span class="attributevalue">"M3 P5"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.e1"</span>/&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">inth=</span><span class="attributevalue">"M3 m3"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.e2"</span>/&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">inth=</span><span class="attributevalue">"P5 m3"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"analysis.e3"</span>/&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 366. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>Use of the <span class="att">@inth</span> permits detailed specification of intervallic information for every note and its
+                              function in relation to other simultaneously-occurring notes and hence about the harmonic
+                              nature of the musical work.</p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="analysisScaleDegrees"><span class="headingNumber">10.1.1.1</span><span class="head">Scale Degrees</span></h4>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@deg</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harmonicFunction.html">att.harmonicFunction</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Captures scale degree information using <a class="link_ref link_external" href="https://www.humdrum.org/rep/deg/">Humdrum **deg syntax</a> -- an optional indicator
+                                       of melodic approach (^ = ascending approach, v = descending approach), a scale degree
+                                       value (1 = tonic ... 7 = leading tone), and an optional indication of chromatic
+                                       alteration, <span class="val">1</span>, <span class="val">v7</span>, <span class="val">^1</span>, or <span class="val">v5+</span>, for example. 
+                                       The amount of chromatic alternation is not indicated.</div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p>The <span class="att">@deg</span> attribute can be used to represent key-dependent scale-degree information for music
+                              in major or minor keys.</p>
+                           
+                           <p>Scale-degree values are relative to the prevailing major or minor key. In the case
+                              of minor keys, scale degrees are characterized with respect to the harmonic minor
+                              scale. For example, the pitch F in the key of A minor is the submediant (6), but F
+                              is the lowered submediant (6-) in the key of A major.</p>
+                           
+                           <p>Melodic approach can be indicated by a leading caret (^) or lowercase v, representing
+                              ascending and descending approaches, respectively.</p>
+                           
+                           <p>Chromatic alteration of the scale degree can be represented using a trailing plus
+                              (+) or minus (-) signs, signifying raised or lowered scale degree, respectively. The
+                              actual amount of chromatic alteration is not indicated.</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e20998" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Fifth scale degree in the prevailing scale --&gt;</span></div>
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">deg=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 367. </figcaption>
+                              </figure>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21006" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Augmented 5th --&gt;</span></div>
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">deg=</span><span class="attributevalue">"5+"</span>/&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 368. </figcaption>
+                              </figure>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21014" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Lowered 6 scale degree approached from below --&gt;</span></div>
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">deg=</span><span class="attributevalue">"^6-"</span>/&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 369. </figcaption>
+                              </figure>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21022" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Leading tone approached from above --&gt;</span></div>
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">deg=</span><span class="attributevalue">"v7"</span>/&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 370. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="analysisPitchClass"><span class="headingNumber">10.1.1.1</span><span class="head">Pitch Class</span></h4>
+                           
+                           <p>The <span class="att">@pclass</span> attribute can be used to encode information about the pitch class to which a note
+                              belongs. The attribute’s value must be an integer less than or equal to 11. It is
+                              only allowed on the <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> element. The <span class="att">@pclass</span> attribute comes from "musical set theory" elaborated first by Howard Hanson and Allen
+                              Forte as a new method for organizing tones. It provides a concept for categorizing
+                              musical objects (notes) and describing their relationships. It is a kind of grouping
+                              and combining, mostly developed in connection with atonal music. However, the concept
+                              of set theory is general and can also be applied to tonal music. A pitch class means
+                              the summary of every pitch with specific characteristics that means a pitch class
+                              set is an unordered collection of pitches, <abbr>e.g.</abbr>, every pitch with the name C.</p>
+                           
+                           <p>A pitch class may contain a large number of pitches, because different octaves and
+                              enharmonic spellings of pitch make no difference. The notes C, E, and G would be 0,
+                              4 and 7 in pitch class notation, for example, regardless of the octave in which they
+                              are performed. The example below contains the same pitch in four different enharmonic
+                              spellings, but all are part of the same pitch class.</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21052" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;chord&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span> <span class="attribute">pclass=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">accid=</span><span class="attributevalue">"ss"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">pclass=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">accid=</span><span class="attributevalue">"ff"</span> <span class="attribute">dur=</span><span class="attributevalue">"1"</span> <span class="attribute">pclass=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/chord&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 371. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>For further information on pitch class set theory, please consult the following sources:</p>
+                           
+                           <ul>
+                              <li class="item">
+                                 <a class="link_ref link_external" href="http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html">http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html</a></li>
+                              <li class="item">"Analyzing Atonal Music: Pitch Class Set Theory and its Contexts" by Michael Schuijler
+                                 (2008)</li>
+                              <li class="item">Cohen, Allen Laurence (2004). Howard Hanson in Theory and Practice</li>
+                           </ul>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="analysisSolmization"><span class="headingNumber">10.1.1.1</span><span class="head">Solmization</span></h4>
+                           
+                           <p>Solmization is a system which associates a syllable with each note of a musical scale.
+                              There are various forms of solmization used throughout the world. In Europe and North
+                              America, solfège is the most common practice. In this system, the seven syllables
+                              for a major scale are do, re, mi, fa, so, la and ti. In the ‘fixed-do’ system, the
+                              syllable "do" is always associated with the pitch "c", while in the ‘movable-do’ system,
+                              "do" is associated with the tonic note. The <span class="att">@psolfa</span> attribute is only allowed on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/nc.html">&lt;nc&gt;</a> elements. Its value is unconstrained in order to accommodate various solmization
+                              systems. 
+                              <figure class="figure specPage">
+                                 <div id="d18e21091" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">psolfa=</span><span class="attributevalue">"do"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span> <span class="attribute">psolfa=</span><span class="attributevalue">"re"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">psolfa=</span><span class="attributevalue">"mi"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span> <span class="attribute">psolfa=</span><span class="attributevalue">"fa"</span>/&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 372. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="analysisMetricalConformance"><span class="headingNumber">10.1.1</span><span class="head">Metrical Conformance</span></h3>
+                        
+                        <p>It is often helpful to record whether a given staff, layer, or measure obeys the meter
+                           established for it. The following attributes are provided for this purpose:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@metcon</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.html">att.meterConformance</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Indicates the relationship between the content of a staff or layer and the prevailing
+                                    meter.</div>
+                              </div>
+                           </div>
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="att">@metcon</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterConformance.bar.html">att.meterConformance.bar</a>)
+                                    </div>
+                                 <div class="tile-subtitle text-gray">Indicates the relationship between the content of a measure and the prevailing
+                                    meter.</div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>When used on <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> elements, the <span class="att">@metcon</span> attribute can be used to indicate if the duration of the contained events is equal
+                           to (<span class="val">c</span>), less than (<span class="val">i</span>), or greater than (<span class="val">o</span>) that predicted by the time signature. When used on the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> element, <span class="att">@metcon</span> takes a boolean value, where <span class="val">true</span> indicates conformance by all staff and layer descendants of the measure.</p>
+                        
+                        <p>In the first example below, the layer, staff, and measure all match the prevailing
+                           meter. In the second example, however, the first layer does not comply with the meter,
+                           making the staff containing it and measure as a whole non-compliant. When there is
+                           a single layer or when all the layers on a staff agree with each other, metrical compliance
+                           can be indicated on the <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> element. When, however, not all layers have the same value for <span class="att">@metcon</span>, then it is necessary to omit <span class="att">@metcon</span> at the staff level. The value of <span class="att">@metcon</span> on the measure level can usually be computed based on the values of its layer and
+                           staff sub-elements.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e21159" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- in 2/4 --&gt;</span></div>
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">metcon=</span><span class="attributevalue">"true"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 373. </figcaption>
+                           </figure>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e21167" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- in 2/4 --&gt;</span></div>
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">metcon=</span><span class="attributevalue">"false"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">metcon=</span><span class="attributevalue">"i"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">metcon=</span><span class="attributevalue">"true"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"d"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 374. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
+                     </div>
+                  
+                  <div class="div2">
+                     
+                     <h2 id="harmony"><span class="headingNumber">10.1</span><span class="head">Harmony</span></h2>
+                     
+                     <p>This chapter describes the encoding of indications of harmony occurring within a music
+                        text, <abbr>e.g.</abbr>, chord names, tablature grids, figured bass, or signs for harmonic analysis, and
+                        the methods by which these indications can be connected with their interpretations.
+                        For encoder-supplied analysis of intervallic content, please see chapter <a class="link_ptr chapterLink" title="Analytical Information" href="../content/analysisharm.html#analysis">10.1 Analytical Information</a>.</p>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="harmonyDetails"><span class="headingNumber">10.1.1</span><span class="head">Indications of Harmony</span></h3>
+                        
+                        <p>On the most basic level, chords in the musical text can be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element:</p>
+                        
+                        <p>
+                           
+                           <div class="tile tile-centered">
+                              <div class="tile-icon">
+                                 <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                              </div>
+                              <div class="tile-content">
+                                 <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a></span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A simultaneous sounding of two or more notes in the same layer *with the same
+                                       duration*.</span></div>
+                              </div>
+                           </div>
+                           </p>
+                        
+                        <p>Additional information on the use of the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element is available in <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.1.1 Basic Music Events</a> and <a class="link_ptr chapterLink" title="Notes, Chords and Rests in CMN" href="../content/cmn.html#cmnNotesChords">4.1.1 Notes, Chords and Rests in CMN</a>.</p>
+                        
+                        <p>With only this kind of markup, harmonic information is implicit in the notes themselves.
+                           The elements and attributes of this module, however, provide for the encoding of explicit
+                           indications of harmony, such as chord symbols, tablature grids, figured bass signs,
+                           and the symbols of harmonic analysis like Roman numerals and their interpretation.</p>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="harmonyMetadataInscoreDef"><span class="headingNumber">10.1.1.1</span><span class="head">Interpreted Chord Data in scoreDef</span></h4>
+                           
+                           <p>An harmonic label, such as "7", may occur many times throughout an MEI instance. Where
+                              the goal is diplomatic transcription, simply recording the uninterpreted label is
+                              sufficient. Recording the precise meaning of such a label requires storing an interpretation.
+                              But, including the interpretation at every point of occurrence of the label would
+                              swell the size of the file and complicate the markup for those users who are not interested
+                              in the interpretation. Therefore, MEI separates the encoding of harmonic labels from
+                              the encoding of the interpretation of those labels.</p>
+                           
+                           <p>The following elements enable the creation and re-use of interpreted chord data:</p>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordTable.html">&lt;chordTable&gt;</a></span></div>
+                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Chord/tablature look-up table.</span></div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a></span></div>
+                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Chord tablature definition.</span></div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@tab.pos</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.position.html">att.stringtab.position</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Records fret position.</div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a></span></div>
+                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">An individual pitch in a chord defined by a <a class="link_odd link_odd_elementSpec" href="#chordDef">&lt;chordDef&gt;</a> element.</span></div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@inth</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.intervalHarmonic.html">att.intervalHarmonic</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Encodes the harmonic interval between pitches occurring at the same time.</div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@tab.fing</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">This attribute is deprecated and will be removed in a future version. Indicates which
+                                       finger, if any, should be used to play an individual string. The index, middle, ring,
+                                       and little fingers are represented by the values 1-4, while <span class="val">t</span> is for the thumb. The values <span class="val">x</span> and <span class="val">o</span> indicate muffled and open strings, respectively.</div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@tab.fret</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Records the location at which a string should be stopped against a fret.</div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a></span></div>
+                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">A barre in a chord tablature grid.</span></div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@fret</span> (<a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">This attribute is deprecated in favor of <span class="att">@tab.fret</span>, and will be removed in a future version. Records the location at which the strings
+                                       should be stopped against a fret in a fretboard diagram. This may or may not be the
+                                       same as the actual location on the fretboard of the instrument in performance.</div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordTable.html">&lt;chordTable&gt;</a> element is a container for a set of chord definitions, while the <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> element defines a single chord. Chord definitions may be created <em>a priori</em> or as the result of analysis of the pitch content of the music at hand, for instance,
+                              by examination of the notes occurring on the downbeat of each measure. In this way,
+                              the chord definitions serve as a record of the analysis.</p>
+                           
+                           <p>Even though it is not required by the schema, an <span class="att">@xml:id</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> is necessary to permit the creation of associations between harmonic indications
+                              in the musical text with the chord defined here. The <span class="att">@xml:id</span> attribute provides a unique identifier for the chord definition that can be referenced
+                              by the <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element’s <span class="att">@chordref</span> attribute.</p>
+                           
+                           <p>Individual pitches of a chord are encoded using <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a>. The <span class="att">@inth</span> attribute provides the means for indicating the number of half steps of the chord
+                              note above the bass note.</p>
+                           
+                           <p>These simple resources allow for the detailed specification and interpretation of
+                              harmonic indications found in the musical text. For example, the harmonic label A
+                              can be equated with a fully spelled-out indication of functional harmony that can
+                              be substituted for the harmonic label, say, in an aural rendition:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21291" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Chord defined in scoreDef --&gt;</span></div>
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;chordDef <span class="attribute">xml:id=</span><span class="attributevalue">"harmonychordA"</span>&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">accid.ges=</span><span class="attributevalue">"s"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"e"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/chordDef&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Later in musical text --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">chordref=</span><span class="attributevalue">"#harmonychordA"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>A<span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 375. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>Alternatively, the non-bass chord tones may be indicated, not with pitch names, but
+                              with their intervallic distance above the bass note. Therefore, the example above
+                              may also be encoded:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21304" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;chordDef <span class="attribute">xml:id=</span><span class="attributevalue">"harmonychordA2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">inth=</span><span class="attributevalue">"P5"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">inth=</span><span class="attributevalue">"M10"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">inth=</span><span class="attributevalue">"P12"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">inth=</span><span class="attributevalue">"P15"</span>/&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/chordDef&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 376. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>The preceding encoding possibilities provide the detailed information necessary to
+                              create playable chord annotations. For more generic uses, however, the encoding can
+                              be taken one step further; that is, it can be reduced to its minimum intervallic content
+                              by eliminating octave duplications and expressing all chord members, including the
+                              bass note, using intervals above the bass. Of course, the <span class="att">@inth</span> attribute for the bass note itself should be set to P1. For example:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21321" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;chordDef <span class="attribute">xml:id=</span><span class="attributevalue">"harmonychordA3"</span>&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">inth=</span><span class="attributevalue">"P1"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">inth=</span><span class="attributevalue">"M3"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;chordMember <span class="attribute">inth=</span><span class="attributevalue">"P5"</span>/&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/chordDef&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 377. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="harmonyTablatureGrids"><span class="headingNumber">10.1.1.1</span><span class="head">Chord Tablature Grids</span></h4>
+                           
+                           <p>The <span class="att">@pos</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a>, the <span class="att">@fing</span> and <span class="att">@fret</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a>, and the <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> element child of <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> are provided in order to create displayable and performable chord tablature grids
+                              for guitar and other fretted string instruments. The fret at which a finger should
+                              be placed is recorded in the <span class="att">@fret</span> attribute, while <span class="att">@fing</span> indicates which finger, if any, should be used to play an individual string. The
+                              values x and o are used to indicate muffled and open strings, respectively.</p>
+                           
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> sub-elements when a single finger is used to stop multiple strings. Here the <span class="att">@fret</span> attribute gives the fret position at which the barre should be created, while the
+                              <span class="att">@startid</span> and <span class="att">@endid</span> attributes are used to indicate the <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a> elements on which the barre starts and finishes.</p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="harmonyMusicText"><span class="headingNumber">10.1.1.1</span><span class="head">Indications of Harmony in the Music Text</span></h4>
+                           
+                           <p>With regard to indications of harmony, MEI attempts to strike a balance between very
+                              precise (interpreted) and very loose (uninterpreted) markup needs. Therefore, various
+                              kinds of harmonic labels are accommodated by the <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element. While some are more structured than others, in the final analysis they all
+                              function as <em>labels</em>. Therefore, MEI provides only a single element for the capture of harmonic indications
+                              of all kinds:</p>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@extender</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Indicates the presence of an extension symbol, typically a line.</div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@rendgrid</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.vis.html">att.harm.vis</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Describes how the harmonic indication should be rendered.</div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element can be used to capture chord labels that consist entirely of text: 
+                              <figure class="figure specPage">
+                                 <div id="d18e21409" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>Cmaj<span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"2"</span>&gt;</span>ii6<span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 378. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>or labels that are chord tablature grids:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/A7_5th.gif"><figcaption class="figure-caption">Figure 116. Chord grid without label</figcaption>
+                              </figure>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21430" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">chordref=</span><span class="attributevalue">"#harmonychordA"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>/&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 379. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>or labels that mix these styles:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/A7_1st.gif"><figcaption class="figure-caption">Figure 117. Chord grid with label</figcaption>
+                              </figure>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e21450" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">chordref=</span><span class="attributevalue">"#harmonychordA"</span> <span class="attribute">rendgrid=</span><span class="attributevalue">"gridtext"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>A7<span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 380. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element must define a point of attachment using one of the following attributes:
+                              <span class="att">@startid</span>, <span class="att">@tstamp</span>, <span class="att">@tstamp.ges</span> or <span class="att">@tstamp.real</span>. The most commonly-used of these are <span class="att">@startid</span> and <span class="att">@tstamp</span>.</p>
+                           
+                           <p>The <span class="att">@dur</span> attribute encodes the logical and visual duration of the harmony. Please note that
+                              the <span class="att">@dur</span> attribute here is not a true duration, but rather a time stamp for the end point
+                              of the harmony.</p>
+                           
+                           <p>Precise placement of the harmonic label can be controlled through the use of attributes
+                              in the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.vis.html">att.harm.vis</a> attribute class.</p>
+                           
+                           <div class="div5">
+                              
+                              <h5 id="harmonyFigbass"><span class="headingNumber">10.1.1.1.1</span><span class="head">Figured Bass</span></h5>
+                              
+                              <p>Figured bass is a specialized form of harmonic indication. In order to support the
+                                 capture of the semantics of figured bass, and not just its visual representation,
+                                 MEI provides the following elements:</p>
+                              
+                              <p>
+                                 
+                                 <div class="tile tile-centered">
+                                    <div class="tile-icon">
+                                       <div class="example-tile-icon"><i class="icon icon-resize-horiz centered"></i></div>
+                                    </div>
+                                    <div class="tile-content">
+                                       <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/fb.html">&lt;fb&gt;</a></span></div>
+                                       <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Symbols added to a bass line that indicate harmony. Used to improvise a
+                                             chordal accompaniment. Sometimes called Generalbass, thoroughbass, or basso continuo.</span></div>
+                                    </div>
+                                 </div>
+                                 <div class="tile tile-centered">
+                                    <div class="tile-icon">
+                                       <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                    </div>
+                                    <div class="tile-content">
+                                       <div class="tile-title"><span class="att">@extender</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.extender.html">att.extender</a>)
+                                          </div>
+                                       <div class="tile-subtitle text-gray">Indicates the presence of an extension symbol, typically a line.</div>
+                                    </div>
+                                 </div>
+                                 </p>
+                              
+                              <p>Figured bass, consisting as it does of text, can always be represented purely visually.
+                                 This is probably how an OMR program or other naive encoder might deal with the markup
+                                 of figured bass:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass01.png"><figcaption class="figure-caption">Figure 118. Figured bass</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21519" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">place=</span><span class="attributevalue">"above"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>6<span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 381. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>However, this kind of approach fails to recognize that a figured bass is being used
+                                 and not some other system of harmonic indications. To capture this knowledge, the
+                                 preceding example can also be marked more explicitly with:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21533" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">place=</span><span class="attributevalue">"above"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>6<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 382. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>In order to provide greater control over the individual components of the figured
+                                 bass, each component can be treated as a figure. The natural symbol is encoded using
+                                 the Unicode MUSIC NATURAL SIGN character.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass02.png"><figcaption class="figure-caption">Figure 119. Figured bass with accidental</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21553" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">place=</span><span class="attributevalue">"above"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>7<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>♮<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 383. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Encoding order of the component <a class="link_odd link_odd_elementSpec" href="../elements/f.html">&lt;f&gt;</a> elements is significant as is the encoding order of the characters within each component.
+                                 In the preceding example, the entire figured bass sign is encoded from top to bottom,
+                                 in other words, just as the figure appears on the page. In the following examples,
+                                 the encoding order of the characters in <a class="link_odd link_odd_elementSpec" href="../elements/f.html">&lt;f&gt;</a> explicitly locates the accidentals:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass03.png"><figcaption class="figure-caption">Figure 120. Figured bass with chromatically altered figure</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21580" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">place=</span><span class="attributevalue">"below"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>7♭<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 384. </figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass04.png"><figcaption class="figure-caption">Figure 121. Figured bass with chromatically altered figures</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21595" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>6<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>4+<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>♮3<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 385. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>You may use 6\ and 6/ for numerals that should be shown with a backslash and slash,
+                                 respectively. An alternative would be to use the "bslash" (backward slash) and "fslash"
+                                 (forward slash) on the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">&lt;rend&gt;</a> element.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass05.png"><figcaption class="figure-caption">Figure 122. Figured bass with chromatically altered figure</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21620" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span><div class="indent indent4"><span data-indentation="4" class="element">&lt;rend <span class="attribute">rend=</span><span class="attributevalue">"bslash"</span>&gt;</span>6<span data-indentation="4" class="element">&lt;/rend&gt;</span></div><span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- or --&gt;</span></div>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span><div class="indent indent4"><span data-indentation="4" class="element">&lt;rend <span class="attribute">rend=</span><span class="attributevalue">"fslash"</span>&gt;</span>6<span data-indentation="4" class="element">&lt;/rend&gt;</span></div><span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 386. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Each component of the figured bass sign may use the <span class="att">@extender</span> attribute to indicate that horizontal lines are used to mark the extent of the figure’s
+                                 harmonic influence. The <span class="att">@altsym</span> attribute can be used to point to a user-defined symbol that better represents the
+                                 figure component, for example, the combined "2" and "+" below. Similar to the slash
+                                 in the preceding example before, the small curve over the "5" in example 6 can be
+                                 represented by the Unicode COMBINING INVERTED BREVE.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass06.png"><figcaption class="figure-caption">Figure 123. Figured bass with alternative sign</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21645" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>̑<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f <span class="attribute">extender=</span><span class="attributevalue">"true"</span>&gt;</span>5<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f <span class="attribute">altsym=</span><span class="attributevalue">"combo2plus"</span>&gt;</span>2+<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>3<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 387. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Because the repertoire of signs is so large, figures which consist entirely of a mark
+                                 indicating repetition of the preceding figure, should be represented by the character
+                                 appearing in the document. For example, in some notational styles, the repetition
+                                 sign is a dash (-), while in others it is a solidus (/). Using characters like this
+                                 is also consistent with other existing figured bass encoding schemes.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass07.png"><figcaption class="figure-caption">Figure 124. Figured bass repetition</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21665" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"1.5"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>-<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 388. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Often, the distinction between extending lines and repetition signs is unclear. Treating
+                                 what at first appear to be extenders as repetition signs, however, can sometimes help
+                                 to simplify the required markup and to make the intent of the signs explicit. For
+                                 example, in the following example the dashes on beat 4 and 4.5 are treated as repetition
+                                 signs:</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass09.png"><figcaption class="figure-caption">Figure 125. Extenders and repetition</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21686" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"3.5"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>♭3<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>6<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>5<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>-<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>♯3<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"4.5"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>7<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>-<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 389. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>Using <span class="att">@extender</span> attributes for this example may make it easier to render the figured bass symbol,
+                                 but it is less explicit with regard to the intended harmony. For example, it is difficult
+                                 to ascertain what harmony should be sounding on beat 4 and its after-beat.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21702" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"3.5"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>♭3<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f <span class="attribute">extender=</span><span class="attributevalue">"true"</span>&gt;</span>6<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>5<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f <span class="attribute">extender=</span><span class="attributevalue">"true"</span>&gt;</span>♯3<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"4.5"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>7<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 390. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>The primary goal of <a class="link_odd link_odd_elementSpec" href="../elements/fb.html">&lt;fb&gt;</a> is not the capture all the visual idiosyncracies that can be found in printed and
+                                 manuscript scores throughout the centuries, but to provide a more-or-less standardized
+                                 label. The markup below, or any markup in fact, cannot capture the exact look of the
+                                 figured bass signs. The <span class="att">@altsym</span> attribute may be used to provide access to a user-defined symbol for precise rendition.
+                                 Similarly, the <span class="att">@facs</span> attribute may be employed to point to the symbol as it occurs in the encoding source
+                                 material.</p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/harmony/figuredBass10.png"><figcaption class="figure-caption">Figure 126. Figured bass with alternative sign</figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21730" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Ex. a --&gt;</span></div>
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>8<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f <span class="attribute">altsym=</span><span class="attributevalue">"#my6_1"</span> <span class="attribute">facs=</span><span class="attributevalue">"#source6_1"</span>&gt;</span>6♮<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>4+<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>2<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;fb&gt;</span>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f <span class="attribute">altsym=</span><span class="attributevalue">"#my6_2"</span> <span class="attribute">facs=</span><span class="attributevalue">"#source6_2"</span>&gt;</span>6\<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>4<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   
+                                                   <div class="indent indent4"><span data-indentation="4" class="element">&lt;f&gt;</span>3<span data-indentation="4" class="element">&lt;/f&gt;</span></div>
+                                                   <span data-indentation="3" class="element">&lt;/fb&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/harm&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 391. </figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21738" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Ex. b --&gt;</span></div>
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"4.5"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>6\<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 392. </figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21746" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!--  Ex. c --&gt;</span></div>
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f&gt;</span>5/<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 393. </figcaption>
+                                 </figure>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e21754" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!--  Ex. d --&gt;</span></div>
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;harm&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;fb&gt;</span>
+                                                
+                                                <div class="indent indent3"><span data-indentation="3" class="element">&lt;f <span class="attribute">altsym=</span><span class="attributevalue">"#my5"</span> <span class="attribute">facs=</span><span class="attributevalue">"#source5"</span>&gt;</span>5+<span data-indentation="3" class="element">&lt;/f&gt;</span></div>
+                                                <span data-indentation="2" class="element">&lt;/fb&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/harm&gt;</span></div>
+                                          
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 394. </figcaption>
+                                 </figure>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+               <p class="sectionToc sticky"><a class="level-2" href="#analysis">10.1 Analytical Information</a><a class="level-3" href="#analysisSpecificAttrs">10.1.1 Event-Specific Analytical Information</a><a class="level-3" href="#analysisMetricalConformance">10.1.1 Metrical Conformance</a><a class="level-2" href="#harmony">10.1 Harmony</a><a class="level-3" href="#harmonyDetails">10.1.1 Indications of Harmony</a></p>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                     <p class="sectionToc sticky"><a class="level-2" href="#analysis">10.1 Analytical Information</a><a class="level-3" href="#analysisSpecificAttrs">10.1.1 Event-Specific Analytical Information</a><a class="level-3" href="#analysisMetricalConformance">10.1.1 Metrical Conformance</a><a class="level-2" href="#harmony">10.1 Harmony</a><a class="level-3" href="#harmonyDetails">10.1.1 Indications of Harmony</a></p>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-06-05">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="specPage attClassSpec">
+                  <h2 id="att.datable">att.datable</h2>
+                  <div class="specs">
+                     <div class="desc">Attributes common to dates.
+                        <div class="chapterLinksBox"><a class="chapterLink" href="../content/textencoding.html#dates" title="7.1.1 Dates">7.1.1 Dates</a></div>
+                     </div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text"><a href="../modules/MEI.shared.html">MEI.shared</a></div>
+                     </div>
+                     <div id="attributes" class="facet attributes">
+                        <div class="label">Attributes</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="attributes_compact" id="attributes_compact_tab" href="#attributes_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="attributes_full" id="attributes_full_tab" href="#attributes_full_tab" class="displayTab">full definition</a></li>
+                              <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Contains the end point of a date range in standard ISO form.">@enddate</span>, <span class="ident attribute" title="Provides the value of a textual date in standard ISO form.">@isodate</span>, <span class="ident attribute" title="Contains an upper boundary for an uncertain date in standard ISO form.">@notafter</span>, <span class="ident attribute" title="Contains a lower boundary, in standard ISO form, for an uncertain date.">@notbefore</span>, <span class="ident attribute" title="Contains the starting point of a date range in standard ISO form.">@startdate</span></div>
+                           <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Contains the end point of a date range in standard ISO form.">@enddate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the end point of a date range in standard ISO form.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.datable&gt;</span><span class="step">direct children</span><span class="step end">@enddate</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Provides the value of a textual date in standard ISO form.">@isodate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides the value of a textual date in standard ISO form.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.datable&gt;</span><span class="step">direct children</span><span class="step end">@isodate</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Contains an upper boundary for an uncertain date in standard ISO form.">@notafter</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains an upper boundary for an uncertain date in standard ISO form.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.datable&gt;</span><span class="step">direct children</span><span class="step end">@notafter</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Contains a lower boundary, in standard ISO form, for an uncertain date.">@notbefore</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.datable&gt;</span><span class="step">direct children</span><span class="step end">@notbefore</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Contains the starting point of a date range in standard ISO form.">@startdate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the starting point of a date range in standard ISO form.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                       </span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.datable&gt;</span><span class="step">direct children</span><span class="step end">@startdate</span></div>
+                              </div>
+                           </div>
+                           <div id="attributes_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="direct children">
+                                 <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains the end point of a date range in standard ISO form.">@enddate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the end point of a date range in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides the value of a textual date in standard ISO form.">@isodate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides the value of a textual date in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains an upper boundary for an uncertain date in standard ISO form.">@notafter</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains an upper boundary for an uncertain date in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains a lower boundary, in standard ISO form, for an uncertain date.">@notbefore</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains the starting point of a date range in standard ISO form.">@startdate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the starting point of a date range in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="attributes_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains the end point of a date range in standard ISO form.">@enddate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the end point of a date range in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides the value of a textual date in standard ISO form.">@isodate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides the value of a textual date in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains an upper boundary for an uncertain date in standard ISO form.">@notafter</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains an upper boundary for an uncertain date in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains a lower boundary, in standard ISO form, for an uncertain date.">@notbefore</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Contains the starting point of a date range in standard ISO form.">@startdate</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the starting point of a date range in standard ISO form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>.
+                                             </span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="availableAt" class="facet availableAt">
+                        <div class="label">Available at</div>
+                        <div class="statement classes">
+                           <ul class="tab">
+                              <li class="tab-item"><a data-display="availableAt_compact" id="availableAt_compact_tab" href="#availableAt_compact_tab" class="displayTab active">compact</a></li>
+                              <li class="tab-item"><a data-display="availableAt_class" id="availableAt_class_tab" href="#availableAt_class_tab" class="displayTab">by class</a></li>
+                              <li class="tab-item"><a data-display="availableAt_module" id="availableAt_module_tab" href="#availableAt_module_tab" class="displayTab">by module</a></li>
+                           </ul>
+                           <div id="availableAt_compact" class="facetTabbedContent compact active" data-label="compact"><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html" title="Records information concerning the process by which an item was acquired by the holding institution.">&lt;acquisition&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/addName.html" title="Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.">&lt;addName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/application.html" title="Provides information about an application which has acted upon the current document.">&lt;application&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/binding.html" title="Contains a description of one binding, i.e. , type of covering, boards, etc. applied to an item.">&lt;binding&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/bloc.html" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries.">&lt;bloc&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/change.html" title="Individual change within the revision description.">&lt;change&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/corpName.html" title="Identifies an organization or group of people that acts as a single entity.">&lt;corpName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/country.html" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc.">&lt;country&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/creation.html" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element.">&lt;creation&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/date.html" title="A string identifying a point in time or the time period between two such points.">&lt;date&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/district.html" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit.">&lt;district&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/event.html" title="Contains a free-text event description.">&lt;event&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html" title="A record of public exhibitions, including dates, venues, etc.">&lt;exhibHist&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/famName.html" title="Contains a family (inherited) name, as opposed to a given, baptismal, or nick name.">&lt;famName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/foreName.html" title="Contains a forename, given or baptismal name.">&lt;foreName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/genName.html" title="Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named.">&lt;genName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/genState.html" title="Describes a distinctive state in the textual development of a work.">&lt;genState&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html" title="Contains a common noun identifying a geographical feature.">&lt;geogFeat&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/geogName.html" title="The proper noun designation for a place, natural feature, or political jurisdiction.">&lt;geogName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/name.html" title="Proper noun or noun phrase.">&lt;name&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html" title="Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc.">&lt;nameLink&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/periodName.html" title="A label that describes a period of time, such as 'Baroque' or '3rd Style period'.">&lt;periodName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/persName.html" title="Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names.">&lt;persName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/provenance.html" title="The record of ownership or custodianship of an item.">&lt;provenance&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/region.html" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country.">&lt;region&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/relation.html" title="Describes a relationship or linkage amongst entities.">&lt;relation&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/repository.html" title="Institution, agency, or individual which holds a bibliographic item.">&lt;repository&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/resp.html" title="A phrase describing the nature of intellectual responsibility.">&lt;resp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/roleName.html" title="Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank.">&lt;roleName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/seal.html" title="A single seal or similar attachment.">&lt;seal&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/settlement.html" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit.">&lt;settlement&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/stamp.html" title="Contains a word or phrase describing an official mark indicating ownership, genuineness, validity, etc.">&lt;stamp&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/styleName.html" title="A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'.">&lt;styleName&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/treatHist.html" title="A record of the treatment the item has undergone ( e.g. , de-acidification, restoration, etc.).">&lt;treatHist&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/treatSched.html" title="Scheduled treatment, e.g. , de-acidification, restoration, etc., for an item.">&lt;treatSched&gt;</a></div>
+                           <div id="availableAt_class" class="facetTabbedContent class" data-label="by class">
+                              <div class="classBox" title="att.datable">
+                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.datable.html">att.datable</a></label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Records information concerning the process by which an item was acquired by the holding institution."><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html">&lt;acquisition&gt;</a></span><span class="desc"><span class="desc">Records information concerning the process by which an item was acquired by the holding
+                                             institution.</span></span></div>
+                                    <div class="def"><span class="ident" title="Provides information about an application which has acted upon the current document."><a class="link_odd link_odd_elementSpec" href="../elements/application.html">&lt;application&gt;</a></span><span class="desc"><span class="desc">Provides information about an application which has acted upon the current
+                                             document.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a description of one binding, i.e. , type of covering, boards, etc. applied to an item."><a class="link_odd link_odd_elementSpec" href="../elements/binding.html">&lt;binding&gt;</a></span><span class="desc"><span class="desc">Contains a description of one binding, <abbr>i.e.</abbr>, type of covering, boards, etc.
+                                             applied to an item.</span></span></div>
+                                    <div class="def"><span class="ident" title="Individual change within the revision description."><a class="link_odd link_odd_elementSpec" href="../elements/change.html">&lt;change&gt;</a></span><span class="desc"><span class="desc">Individual change within the revision description.</span></span></div>
+                                    <div class="def"><span class="ident" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element."><a class="link_odd link_odd_elementSpec" href="../elements/creation.html">&lt;creation&gt;</a></span><span class="desc"><span class="desc">Non-bibliographic details of the creation of an intellectual entity, in narrative
+                                             form,
+                                             such as the date, place, and circumstances of its composition. More detailed information
+                                             may
+                                             be captured within the history element.</span></span></div>
+                                    <div class="def"><span class="ident" title="A string identifying a point in time or the time period between two such points."><a class="link_odd link_odd_elementSpec" href="../elements/date.html">&lt;date&gt;</a></span><span class="desc"><span class="desc">A string identifying a point in time or the time period between two such points.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a free-text event description."><a class="link_odd link_odd_elementSpec" href="../elements/event.html">&lt;event&gt;</a></span><span class="desc"><span class="desc">Contains a free-text event description.</span></span></div>
+                                    <div class="def"><span class="ident" title="A record of public exhibitions, including dates, venues, etc."><a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a></span><span class="desc"><span class="desc">A record of public exhibitions, including dates, venues,
+                                             etc.</span></span></div>
+                                    <div class="def"><span class="ident" title="Describes a distinctive state in the textual development of a work."><a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a></span><span class="desc"><span class="desc">Describes a distinctive state in the textual development of a work.</span></span></div>
+                                    <div class="def"><span class="ident" title="The record of ownership or custodianship of an item."><a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">&lt;provenance&gt;</a></span><span class="desc"><span class="desc">The record of ownership or custodianship of an item.</span></span></div>
+                                    <div class="def"><span class="ident" title="Describes a relationship or linkage amongst entities."><a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a></span><span class="desc"><span class="desc">Describes a relationship or linkage amongst entities.</span></span></div>
+                                    <div class="def"><span class="ident" title="A phrase describing the nature of intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/resp.html">&lt;resp&gt;</a></span><span class="desc"><span class="desc">A phrase describing the nature of intellectual responsibility.</span></span></div>
+                                    <div class="def"><span class="ident" title="A single seal or similar attachment."><a class="link_odd link_odd_elementSpec" href="../elements/seal.html">&lt;seal&gt;</a></span><span class="desc"><span class="desc">A single seal or similar attachment.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a word or phrase describing an official mark indicating ownership, genuineness, validity, etc."><a class="link_odd link_odd_elementSpec" href="../elements/stamp.html">&lt;stamp&gt;</a></span><span class="desc"><span class="desc">Contains a word or phrase describing an official mark indicating ownership, genuineness,
+                                             validity, etc.</span></span></div>
+                                    <div class="def"><span class="ident" title="A record of the treatment the item has undergone ( e.g. , de-acidification, restoration, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/treatHist.html">&lt;treatHist&gt;</a></span><span class="desc"><span class="desc">A record of the treatment the item has undergone (<abbr>e.g.</abbr>,
+                                             de-acidification, restoration, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="Scheduled treatment, e.g. , de-acidification, restoration, etc., for an item."><a class="link_odd link_odd_elementSpec" href="../elements/treatSched.html">&lt;treatSched&gt;</a></span><span class="desc"><span class="desc">Scheduled treatment, <abbr>e.g.</abbr>, de-acidification, restoration, etc., for
+                                             an item.</span></span></div>
+                                    <div class="classBox" title="att.name">
+                                       <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.name.html">att.name</a></label><span class="classDesc"></span></div>
+                                       <div class="classContent">
+                                          <div class="def"><span class="ident" title="Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name."><a class="link_odd link_odd_elementSpec" href="../elements/addName.html">&lt;addName&gt;</a></span><span class="desc"><span class="desc">Contains an additional name component, such as a nickname, epithet, or
+                                                   alias, or any other descriptive phrase used within a personal name.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd link_odd_elementSpec" href="../elements/bloc.html">&lt;bloc&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit consisting of two or more nation states or
+                                                   countries.</span></span></div>
+                                          <div class="def"><span class="ident" title="Identifies an organization or group of people that acts as a single entity."><a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">&lt;corpName&gt;</a></span><span class="desc"><span class="desc">Identifies an organization or group of people that acts as a single
+                                                   entity.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd link_odd_elementSpec" href="../elements/country.html">&lt;country&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or
+                                                   commonwealth, larger than or administratively superior to a region and smaller than
+                                                   a
+                                                   bloc.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd link_odd_elementSpec" href="../elements/district.html">&lt;district&gt;</a></span><span class="desc"><span class="desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+                                                   or
+                                                   other administrative or geographic unit.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains a family (inherited) name, as opposed to a given, baptismal, or nick name."><a class="link_odd link_odd_elementSpec" href="../elements/famName.html">&lt;famName&gt;</a></span><span class="desc"><span class="desc">Contains a family (inherited) name, as opposed to a given, baptismal, or
+                                                   nick name.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains a forename, given or baptismal name."><a class="link_odd link_odd_elementSpec" href="../elements/foreName.html">&lt;foreName&gt;</a></span><span class="desc"><span class="desc">Contains a forename, given or baptismal name.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named."><a class="link_odd link_odd_elementSpec" href="../elements/genName.html">&lt;genName&gt;</a></span><span class="desc"><span class="desc">Contains a name component used to distinguish otherwise
+                                                   similar names on the basis of the relative ages or generations of the persons named.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains a common noun identifying a geographical feature."><a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html">&lt;geogFeat&gt;</a></span><span class="desc"><span class="desc">Contains a common noun identifying a geographical
+                                                   feature.</span></span></div>
+                                          <div class="def"><span class="ident" title="The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd link_odd_elementSpec" href="../elements/geogName.html">&lt;geogName&gt;</a></span><span class="desc"><span class="desc">The proper noun designation for a place, natural feature, or political
+                                                   jurisdiction.</span></span></div>
+                                          <div class="def"><span class="ident" title="Proper noun or noun phrase."><a class="link_odd link_odd_elementSpec" href="../elements/name.html">&lt;name&gt;</a></span><span class="desc"><span class="desc">Proper noun or noun phrase.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html">&lt;nameLink&gt;</a></span><span class="desc"><span class="desc">Contains a connecting phrase or link used within a name but not regarded as
+                                                   part of it, such as "van der" or "of", "from", etc.</span></span></div>
+                                          <div class="def"><span class="ident" title="A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd link_odd_elementSpec" href="../elements/periodName.html">&lt;periodName&gt;</a></span><span class="desc"><span class="desc">A label that describes a period of time, such as 'Baroque' or '3rd Style
+                                                   period'.</span></span></div>
+                                          <div class="def"><span class="ident" title="Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd link_odd_elementSpec" href="../elements/persName.html">&lt;persName&gt;</a></span><span class="desc"><span class="desc">Designation for an individual, including any or all of that individual's
+                                                   forenames, surnames, honorific titles, and added names.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd link_odd_elementSpec" href="../elements/region.html">&lt;region&gt;</a></span><span class="desc"><span class="desc">Contains the name of an administrative unit such as a state, province, or county,
+                                                   larger
+                                                   than a settlement, but smaller than a country.</span></span></div>
+                                          <div class="def"><span class="ident" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></span><span class="desc"><span class="desc">Institution, agency, or individual which holds a bibliographic item.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank."><a class="link_odd link_odd_elementSpec" href="../elements/roleName.html">&lt;roleName&gt;</a></span><span class="desc"><span class="desc">Contains a name component which indicates that the referent has a particular
+                                                   role or position in society, such as an official title or rank.</span></span></div>
+                                          <div class="def"><span class="ident" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd link_odd_elementSpec" href="../elements/settlement.html">&lt;settlement&gt;</a></span><span class="desc"><span class="desc">Contains the name of a settlement such as a city, town, or village identified as a
+                                                   single
+                                                   geopolitical or administrative unit.</span></span></div>
+                                          <div class="def"><span class="ident" title="A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd link_odd_elementSpec" href="../elements/styleName.html">&lt;styleName&gt;</a></span><span class="desc"><span class="desc">A label for a characteristic style of writing or performance, such as
+                                                   'bebop' or 'rock-n-roll'.</span></span></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="availableAt_module" class="facetTabbedContent module" data-label="by module">
+                              <div class="classBox" title="MEI.genetic">
+                                 <div class="classHeading"><label class="classLabel">MEI.genetic</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Describes a distinctive state in the textual development of a work."><a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a></span><span class="desc"><span class="desc">Describes a distinctive state in the textual development of a work.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.header">
+                                 <div class="classHeading"><label class="classLabel">MEI.header</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Records information concerning the process by which an item was acquired by the holding institution."><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html">&lt;acquisition&gt;</a></span><span class="desc"><span class="desc">Records information concerning the process by which an item was acquired by the holding
+                                             institution.</span></span></div>
+                                    <div class="def"><span class="ident" title="Provides information about an application which has acted upon the current document."><a class="link_odd link_odd_elementSpec" href="../elements/application.html">&lt;application&gt;</a></span><span class="desc"><span class="desc">Provides information about an application which has acted upon the current
+                                             document.</span></span></div>
+                                    <div class="def"><span class="ident" title="Individual change within the revision description."><a class="link_odd link_odd_elementSpec" href="../elements/change.html">&lt;change&gt;</a></span><span class="desc"><span class="desc">Individual change within the revision description.</span></span></div>
+                                    <div class="def"><span class="ident" title="A record of public exhibitions, including dates, venues, etc."><a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a></span><span class="desc"><span class="desc">A record of public exhibitions, including dates, venues,
+                                             etc.</span></span></div>
+                                    <div class="def"><span class="ident" title="The record of ownership or custodianship of an item."><a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">&lt;provenance&gt;</a></span><span class="desc"><span class="desc">The record of ownership or custodianship of an item.</span></span></div>
+                                    <div class="def"><span class="ident" title="A record of the treatment the item has undergone ( e.g. , de-acidification, restoration, etc.)."><a class="link_odd link_odd_elementSpec" href="../elements/treatHist.html">&lt;treatHist&gt;</a></span><span class="desc"><span class="desc">A record of the treatment the item has undergone (<abbr>e.g.</abbr>,
+                                             de-acidification, restoration, etc.).</span></span></div>
+                                    <div class="def"><span class="ident" title="Scheduled treatment, e.g. , de-acidification, restoration, etc., for an item."><a class="link_odd link_odd_elementSpec" href="../elements/treatSched.html">&lt;treatSched&gt;</a></span><span class="desc"><span class="desc">Scheduled treatment, <abbr>e.g.</abbr>, de-acidification, restoration, etc., for
+                                             an item.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.msDesc">
+                                 <div class="classHeading"><label class="classLabel">MEI.msDesc</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains a description of one binding, i.e. , type of covering, boards, etc. applied to an item."><a class="link_odd link_odd_elementSpec" href="../elements/binding.html">&lt;binding&gt;</a></span><span class="desc"><span class="desc">Contains a description of one binding, <abbr>i.e.</abbr>, type of covering, boards, etc.
+                                             applied to an item.</span></span></div>
+                                    <div class="def"><span class="ident" title="A single seal or similar attachment."><a class="link_odd link_odd_elementSpec" href="../elements/seal.html">&lt;seal&gt;</a></span><span class="desc"><span class="desc">A single seal or similar attachment.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a word or phrase describing an official mark indicating ownership, genuineness, validity, etc."><a class="link_odd link_odd_elementSpec" href="../elements/stamp.html">&lt;stamp&gt;</a></span><span class="desc"><span class="desc">Contains a word or phrase describing an official mark indicating ownership, genuineness,
+                                             validity, etc.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.namesdates">
+                                 <div class="classHeading"><label class="classLabel">MEI.namesdates</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name."><a class="link_odd link_odd_elementSpec" href="../elements/addName.html">&lt;addName&gt;</a></span><span class="desc"><span class="desc">Contains an additional name component, such as a nickname, epithet, or
+                                             alias, or any other descriptive phrase used within a personal name.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd link_odd_elementSpec" href="../elements/bloc.html">&lt;bloc&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit consisting of two or more nation states or
+                                             countries.</span></span></div>
+                                    <div class="def"><span class="ident" title="Identifies an organization or group of people that acts as a single entity."><a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">&lt;corpName&gt;</a></span><span class="desc"><span class="desc">Identifies an organization or group of people that acts as a single
+                                             entity.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd link_odd_elementSpec" href="../elements/country.html">&lt;country&gt;</a></span><span class="desc"><span class="desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or
+                                             commonwealth, larger than or administratively superior to a region and smaller than
+                                             a
+                                             bloc.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd link_odd_elementSpec" href="../elements/district.html">&lt;district&gt;</a></span><span class="desc"><span class="desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+                                             or
+                                             other administrative or geographic unit.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a family (inherited) name, as opposed to a given, baptismal, or nick name."><a class="link_odd link_odd_elementSpec" href="../elements/famName.html">&lt;famName&gt;</a></span><span class="desc"><span class="desc">Contains a family (inherited) name, as opposed to a given, baptismal, or
+                                             nick name.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a forename, given or baptismal name."><a class="link_odd link_odd_elementSpec" href="../elements/foreName.html">&lt;foreName&gt;</a></span><span class="desc"><span class="desc">Contains a forename, given or baptismal name.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named."><a class="link_odd link_odd_elementSpec" href="../elements/genName.html">&lt;genName&gt;</a></span><span class="desc"><span class="desc">Contains a name component used to distinguish otherwise
+                                             similar names on the basis of the relative ages or generations of the persons named.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a common noun identifying a geographical feature."><a class="link_odd link_odd_elementSpec" href="../elements/geogFeat.html">&lt;geogFeat&gt;</a></span><span class="desc"><span class="desc">Contains a common noun identifying a geographical
+                                             feature.</span></span></div>
+                                    <div class="def"><span class="ident" title="The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd link_odd_elementSpec" href="../elements/geogName.html">&lt;geogName&gt;</a></span><span class="desc"><span class="desc">The proper noun designation for a place, natural feature, or political
+                                             jurisdiction.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a connecting phrase or link used within a name but not regarded as part of it, such as &#34;van der&#34; or &#34;of&#34;, &#34;from&#34;, etc."><a class="link_odd link_odd_elementSpec" href="../elements/nameLink.html">&lt;nameLink&gt;</a></span><span class="desc"><span class="desc">Contains a connecting phrase or link used within a name but not regarded as
+                                             part of it, such as "van der" or "of", "from", etc.</span></span></div>
+                                    <div class="def"><span class="ident" title="A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd link_odd_elementSpec" href="../elements/periodName.html">&lt;periodName&gt;</a></span><span class="desc"><span class="desc">A label that describes a period of time, such as 'Baroque' or '3rd Style
+                                             period'.</span></span></div>
+                                    <div class="def"><span class="ident" title="Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd link_odd_elementSpec" href="../elements/persName.html">&lt;persName&gt;</a></span><span class="desc"><span class="desc">Designation for an individual, including any or all of that individual's
+                                             forenames, surnames, honorific titles, and added names.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd link_odd_elementSpec" href="../elements/region.html">&lt;region&gt;</a></span><span class="desc"><span class="desc">Contains the name of an administrative unit such as a state, province, or county,
+                                             larger
+                                             than a settlement, but smaller than a country.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank."><a class="link_odd link_odd_elementSpec" href="../elements/roleName.html">&lt;roleName&gt;</a></span><span class="desc"><span class="desc">Contains a name component which indicates that the referent has a particular
+                                             role or position in society, such as an official title or rank.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd link_odd_elementSpec" href="../elements/settlement.html">&lt;settlement&gt;</a></span><span class="desc"><span class="desc">Contains the name of a settlement such as a city, town, or village identified as a
+                                             single
+                                             geopolitical or administrative unit.</span></span></div>
+                                    <div class="def"><span class="ident" title="A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd link_odd_elementSpec" href="../elements/styleName.html">&lt;styleName&gt;</a></span><span class="desc"><span class="desc">A label for a characteristic style of writing or performance, such as
+                                             'bebop' or 'rock-n-roll'.</span></span></div>
+                                 </div>
+                              </div>
+                              <div class="classBox" title="MEI.shared">
+                                 <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="def"><span class="ident" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element."><a class="link_odd link_odd_elementSpec" href="../elements/creation.html">&lt;creation&gt;</a></span><span class="desc"><span class="desc">Non-bibliographic details of the creation of an intellectual entity, in narrative
+                                             form,
+                                             such as the date, place, and circumstances of its composition. More detailed information
+                                             may
+                                             be captured within the history element.</span></span></div>
+                                    <div class="def"><span class="ident" title="A string identifying a point in time or the time period between two such points."><a class="link_odd link_odd_elementSpec" href="../elements/date.html">&lt;date&gt;</a></span><span class="desc"><span class="desc">A string identifying a point in time or the time period between two such points.</span></span></div>
+                                    <div class="def"><span class="ident" title="Contains a free-text event description."><a class="link_odd link_odd_elementSpec" href="../elements/event.html">&lt;event&gt;</a></span><span class="desc"><span class="desc">Contains a free-text event description.</span></span></div>
+                                    <div class="def"><span class="ident" title="Proper noun or noun phrase."><a class="link_odd link_odd_elementSpec" href="../elements/name.html">&lt;name&gt;</a></span><span class="desc"><span class="desc">Proper noun or noun phrase.</span></span></div>
+                                    <div class="def"><span class="ident" title="Describes a relationship or linkage amongst entities."><a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a></span><span class="desc"><span class="desc">Describes a relationship or linkage amongst entities.</span></span></div>
+                                    <div class="def"><span class="ident" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></span><span class="desc"><span class="desc">Institution, agency, or individual which holds a bibliographic item.</span></span></div>
+                                    <div class="def"><span class="ident" title="A phrase describing the nature of intellectual responsibility."><a class="link_odd link_odd_elementSpec" href="../elements/resp.html">&lt;resp&gt;</a></span><span class="desc"><span class="desc">A phrase describing the nature of intellectual responsibility.</span></span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"att.datable"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Attributes common to dates.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"enddate"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Contains the end point of a date range in standard ISO form.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"isodate"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Provides the value of a textual date in standard ISO form.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"notafter"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Contains an upper boundary for an uncertain date in standard ISO form.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"notbefore"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Contains a lower boundary, in standard ISO form, for an uncertain date.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"startdate"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Contains the starting point of a date range in standard ISO form.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.ISODATE.html">data.ISODATE</a>"</span>/&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8aded9a461a2d3e8b7830a8cfe827996a202bf6" target="_blank" rel="noopener noreferrer">#d8aded9</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+mensural'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>
