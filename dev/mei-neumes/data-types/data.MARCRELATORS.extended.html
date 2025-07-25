@@ -1,0 +1,699 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--THIS FILE IS GENERATED FROM AN XML TEMPLATE. DO NOT EDIT!-->
+      <title>Music Encoding Initiative Guidelines</title>
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+      <meta name="author" content="Perry Roland">
+      <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
+      <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
+      <meta name="date" content="2025-07-25">
+      <meta name="generator" content="MEI XSLT stylesheets">
+      <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
+      <meta name="DC.description" content="A customization for encoding neume notation.">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/search.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-website.css">
+      <link rel="stylesheet" media="screen" type="text/css" href="../assets/css/screen/mei-screen.css"><script src="../assets/js/searchIndex.js"></script><script src="../assets/js/fuse.min.js"></script></head>
+   <body class="simple" id="TOP">
+      <div class="headerBar"></div>
+      <div class="container content">
+         <div class="columns specsLayout">
+            <div class="top-navigation column col-md-12 show-md">
+               <div class="top-navigation-header columns">
+                  <div class="buttonbox"><button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button></div>
+                  <div class="searchbox">
+                     <form>
+                        <div class="search_group"><input id="search_inputTop" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonTop" class="search_button"><span class="search_icon">⚲</span></button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="column col-8 col-md-12">
+               <div id="search-content"></div>
+               <section class="specPage dataTypeSpec">
+                  <h2 id="data.MARCRELATORS.extended">data.MARCRELATORS.extended</h2>
+                  <div class="specs">
+                     <div class="desc">Relators [MARC]. Values and definitions taken from <a class="link_ref link_external" href="https://id.loc.gov/vocabulary/relators.html">http://id.loc.gov/vocabulary/relators</a>.</div>
+                     <div id="module" class="facet module">
+                        <div class="label">Module</div>
+                        <div class="statement text"><a href="../modules/MEI.shared.html">MEI.shared</a></div>
+                     </div>
+                     <div id="usedBy" class="facet usedBy">
+                        <div class="label">Used by</div>
+                        <div class="statement classes">
+                           <div class="classBox" title="Data Types">
+                              <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.MARCRELATORS.extended</span></div>
+                              <div class="classContent">
+                                 <div class="def"><span class="ident" title="Datatypes for values to specify roles."><a class="link_odd link_odd_dataType" href="../data-types/data.RELATORS.html">data.RELATORS</a></span><span class="desc"><span class="desc">Datatypes for values to specify roles.</span></span></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="toleratedValues" class="facet toleratedValues">
+                        <div class="label">Suggested Values</div>
+                        <div class="statement list">
+                           <div class="dataValueBox" id="act"><span class="dataValue ident">act</span><span class="dataValue desc"><span class="desc">A performer contributing to an expression of a work by acting as a cast member or
+                                    player in a musical or dramatic presentation, etc. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/act.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="ard"><span class="dataValue ident">ard</span><span class="dataValue desc"><span class="desc">A person responsible for controlling the development of the artistic style of an entire
+                                    production, including the choice of works to be presented and selection of senior
+                                    production staff. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/ard.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="art"><span class="dataValue ident">art</span><span class="dataValue desc"><span class="desc">A person, family, or organization responsible for creating a work by conceiving, and
+                                    implementing, an original graphic design, drawing, painting, etc. For book illustrators,
+                                    prefer Illustrator. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/art.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="aus"><span class="dataValue ident">aus</span><span class="dataValue desc"><span class="desc">An author of a screenplay, script, or scene. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/aus.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="chr"><span class="dataValue ident">chr</span><span class="dataValue desc"><span class="desc">A person responsible for creating or contributing to a work of movement. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/chr.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="cnd"><span class="dataValue ident">cnd</span><span class="dataValue desc"><span class="desc">A performer contributing to a musical resource by leading a performing group (orchestra,
+                                    chorus, opera, etc.) in a musical or dramatic presentation. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/cnd.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="crp"><span class="dataValue ident">crp</span><span class="dataValue desc"><span class="desc">A person or organization who was either the writer or recipient of a letter or other
+                                    communication. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/crp.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="cst"><span class="dataValue ident">cst</span><span class="dataValue desc"><span class="desc">A person, family, or organization that designs the costumes for a moving image production
+                                    or for a musical or dramatic presentation or entertainment. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/cst.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="drt"><span class="dataValue ident">drt</span><span class="dataValue desc"><span class="desc">A person responsible for the general management and supervision of a filmed performance,
+                                    a radio or television program, etc. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/drt.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="egr"><span class="dataValue ident">egr</span><span class="dataValue desc"><span class="desc">A person or organization who cuts letters, figures, etc. on a surface, such as a wooden
+                                    or metal plate used for printing. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/egr.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="flm"><span class="dataValue ident">flm</span><span class="dataValue desc"><span class="desc">A person who, following the script and in creative cooperation with the Director,
+                                    selects, arranges, and assembles the filmed material, controls the synchronization
+                                    of picture and sound, and participates in other post-production tasks such as sound
+                                    mixing and visual effects processing. Today, picture editing is often performed digitally.
+                                    [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/flm.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="fmd"><span class="dataValue ident">fmd</span><span class="dataValue desc"><span class="desc">A director responsible for the general management and supervision of a filmed performance.
+                                    [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/fmd.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="fmp"><span class="dataValue ident">fmp</span><span class="dataValue desc"><span class="desc">A producer responsible for most of the business aspects of a film. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/fmp.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="itr"><span class="dataValue ident">itr</span><span class="dataValue desc"><span class="desc">A performer contributing to a resource by playing a musical instrument. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/itr.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="mcp"><span class="dataValue ident">mcp</span><span class="dataValue desc"><span class="desc">A person who transcribes or copies musical notation. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/mcp.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="mus"><span class="dataValue ident">mus</span><span class="dataValue desc"><span class="desc">A person or organization who performs music or contributes to the musical content
+                                    of a work when it is not possible or desirable to identify the function more precisely.
+                                    [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/mus.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="msd"><span class="dataValue ident">msd</span><span class="dataValue desc"><span class="desc">A person who coordinates the activities of the composer, the sound editor, and sound
+                                    mixers for a moving image production or for a musical or dramatic presentation or
+                                    entertainment. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/msd.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="pdr"><span class="dataValue ident">pdr</span><span class="dataValue desc"><span class="desc">A person or organization with primary responsibility for all essential aspects of
+                                    a project, has overall responsibility for managing projects, or provides overall direction
+                                    to a project manager. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/pdr.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="pmn"><span class="dataValue ident">pmn</span><span class="dataValue desc"><span class="desc">A person responsible for all technical and business matters in a production. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/pmn.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="prn"><span class="dataValue ident">prn</span><span class="dataValue desc"><span class="desc">An organization that is responsible for financial, technical, and organizational management
+                                    of a production for stage, screen, audio recording, television, webcast, etc. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/prn.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="pro"><span class="dataValue ident">pro</span><span class="dataValue desc"><span class="desc">A person, family, or organization responsible for most of the business aspects of
+                                    a production for screen, audio recording, television, webcast, etc. The producer is
+                                    generally responsible for fund raising, managing the production, hiring key personnel,
+                                    arranging for distributors, etc. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/pro.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="rce"><span class="dataValue ident">rce</span><span class="dataValue desc"><span class="desc">A person contributing to a resource by supervising the technical aspects of a sound
+                                    or video recording session. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/rce.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="scr"><span class="dataValue ident">scr</span><span class="dataValue desc"><span class="desc">A person who is an amanuensis and for a writer of manuscripts proper. For a person
+                                    who makes pen-facsimiles, use facsimilist. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/scr.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="sng"><span class="dataValue ident">sng</span><span class="dataValue desc"><span class="desc">A performer contributing to a resource by using his/her/their voice, with or without
+                                    instrumental accompaniment, to produce music. A singer's performance may or may not
+                                    include actual words. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/sng.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="std"><span class="dataValue ident">std</span><span class="dataValue desc"><span class="desc">A person who translates the rough sketches of the art director into actual architectural
+                                    structures for a theatrical presentatio.n, entertainment, motion picture, etc. Set
+                                    designers draw the detailed guides and specifications for building the set. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/std.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="trc"><span class="dataValue ident">trc</span><span class="dataValue desc"><span class="desc">A person, family, or organization contributing to a resource by changing it from one
+                                    system of notation to another. For a work transcribed for a different instrument or
+                                    performing group, see arranger [arr]. For makers of pen-facsimiles, use facsimilist.
+                                    [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/trc.html">MARC</a>]</span></span></div>
+                           <div class="dataValueBox" id="trl"><span class="dataValue ident">trl</span><span class="dataValue desc"><span class="desc">A person or organization who renders a text from one language into another, or from
+                                    an older form of a language into the modern form. [<a class="link_ref link_external" href="http://id.loc.gov/vocabulary/relators/trl.html">MARC</a>]</span></span></div>
+                        </div>
+                     </div>
+                     <div id="declaration" class="facet declaration">
+                        <div class="label">Declaration</div>
+                        <div class="statement declaration">
+                           <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"data.MARCRELATORS.extended"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-02-05"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Relators [MARC]. Values and definitions taken from 
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"https://id.loc.gov/vocabulary/relators.html"</span>&gt;</span>http://id.loc.gov/vocabulary/relators<span data-indentation="3" class="element">&lt;/ref&gt;</span></div>.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"semi"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"act"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>actor<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A performer contributing to an expression of a work by acting as a cast member or
+                                                player in a musical or dramatic presentation, etc. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/act.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ard"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>artistic director<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person responsible for controlling the development of the artistic style of an entire
+                                                production, including the choice of works to be presented and selection of senior
+                                                production staff. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/ard.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"art"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>artist<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person, family, or organization responsible for creating a work by conceiving, and
+                                                implementing, an original graphic design, drawing, painting, etc. For book illustrators,
+                                                prefer Illustrator. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/art.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"aus"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>screenwriter<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>An author of a screenplay, script, or scene. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/aus.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"chr"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>choreographer<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person responsible for creating or contributing to a work of movement. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/chr.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"cnd"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>conductor<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A performer contributing to a musical resource by leading a performing group (orchestra,
+                                                chorus, opera, etc.) in a musical or dramatic presentation. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/cnd.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"crp"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>correspondent<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person or organization who was either the writer or recipient of a letter or other
+                                                communication. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/crp.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"cst"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>costume designer<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person, family, or organization that designs the costumes for a moving image production
+                                                or for a musical or dramatic presentation or entertainment. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/cst.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"drt"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>director<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person responsible for the general management and supervision of a filmed performance,
+                                                a radio or television program, etc. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/drt.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"egr"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>engraver<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person or organization who cuts letters, figures, etc. on a surface, such as a wooden
+                                                or metal plate used for printing. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/egr.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"flm"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>film editor<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person who, following the script and in creative cooperation with the Director,
+                                                selects, arranges, and assembles the filmed material, controls the synchronization
+                                                of picture and sound, and participates in other post-production tasks such as sound
+                                                mixing and visual effects processing. Today, picture editing is often performed digitally.
+                                                [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/flm.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fmd"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>film director<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A director responsible for the general management and supervision of a filmed performance.
+                                                [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/fmd.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fmp"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>film producer<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A producer responsible for most of the business aspects of a film. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/fmp.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"itr"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>instrumentalist<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A performer contributing to a resource by playing a musical instrument. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/itr.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"mcp"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>music copyist<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person who transcribes or copies musical notation. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/mcp.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"mus"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>musician<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person or organization who performs music or contributes to the musical content
+                                                of a work when it is not possible or desirable to identify the function more precisely.
+                                                [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/mus.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"msd"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>musical director<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person who coordinates the activities of the composer, the sound editor, and sound
+                                                mixers for a moving image production or for a musical or dramatic presentation or
+                                                entertainment. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/msd.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"pdr"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>project director<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person or organization with primary responsibility for all essential aspects of
+                                                a project, has overall responsibility for managing projects, or provides overall direction
+                                                to a project manager. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/pdr.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"pmn"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>production manager<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person responsible for all technical and business matters in a production. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/pmn.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"prn"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>production company<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>An organization that is responsible for financial, technical, and organizational management
+                                                of a production for stage, screen, audio recording, television, webcast, etc. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/prn.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"pro"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>producer<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person, family, or organization responsible for most of the business aspects of
+                                                a production for screen, audio recording, television, webcast, etc. The producer is
+                                                generally responsible for fund raising, managing the production, hiring key personnel,
+                                                arranging for distributors, etc. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/pro.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"rce"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>recording engineer<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person contributing to a resource by supervising the technical aspects of a sound
+                                                or video recording session. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/rce.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"scr"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>scribe<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person who is an amanuensis and for a writer of manuscripts proper. For a person
+                                                who makes pen-facsimiles, use facsimilist. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/scr.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"sng"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>singer<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A performer contributing to a resource by using his/her/their voice, with or without
+                                                instrumental accompaniment, to produce music. A singer's performance may or may not
+                                                include actual words. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/sng.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"std"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>set designer<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person who translates the rough sketches of the art director into actual architectural
+                                                structures for a theatrical presentatio.n, entertainment, motion picture, etc. Set
+                                                designers draw the detailed guides and specifications for building the set. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/std.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"trc"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>transcriber<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person, family, or organization contributing to a resource by changing it from one
+                                                system of notation to another. For a work transcribed for a different instrument or
+                                                performing group, see arranger [arr]. For makers of pen-facsimiles, use facsimilist.
+                                                [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/trc.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"trl"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;gloss <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>translator<span data-indentation="5" class="element">&lt;/gloss&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">versionDate=</span><span class="attributevalue">"2025-05-25"</span> <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A person or organization who renders a text from one language into another, or from
+                                                an older form of a language into the modern form. [
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://id.loc.gov/vocabulary/relators/trl.html"</span>&gt;</span>MARC<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>]<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                                    <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="column col-4 hide-md">
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7e5a2ab2b45ebc25648f185067d067d279642aca" target="_blank" rel="noopener noreferrer">#7e5a2ab</a>)</span></div>
+               <form>
+                  <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
+               </form>
+               <ul class="nav">
+                  <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                  <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                  <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                  <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                  <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                  <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                  <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+               </ul>
+               <div class="divider"></div>
+            </div>
+         </div>
+         <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+               <div class="modal-header"><a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a><div class="modal-title h5">Table of Contents</div>
+               </div>
+               <div class="modal-body">
+                  <div class="content">
+                     <ul class="nav">
+                        <li class="nav-item"><a href="../content/index.html">Guidelines</a></li>
+                        <li class="nav-item"><a href="../modules.html">Modules</a></li>
+                        <li class="nav-item"><a href="../elements.html">Elements</a></li>
+                        <li class="nav-item"><a href="../model-classes.html">Model Classes</a></li>
+                        <li class="nav-item"><a href="../macro-groups.html">Macro Groups</a></li>
+                        <li class="nav-item"><a href="../attribute-classes.html">Attribute Classes</a></li>
+                        <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
+                     </ul>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+            </div>
+         </div><script>
+                                window.addEventListener("load", function(event) {
+                                    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+                                        var elem = document.getElementById('toc-modal');
+                                        elem.classList.toggle('active');
+                                    })
+                                    
+                                    function getMenu() {
+                                        const fullVersion = '6.0-dev+neumes'
+                                        const version = (fullVersion.includes('-dev')) ? 'dev' : 'v' + fullVersion.split('.')[0];
+                                        console.log('trying to get menu for version ' + version + ' (' + fullVersion + ')');
+                                        
+                                        const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+                                        
+                                        fetch(url)
+                                            .then(function(response) { return response.text()})
+                                            .then(function(doc) {
+                                                let headerBar = document.querySelector('.headerBar');
+                                                const parser = new DOMParser();
+                                                const htmlDoc = parser.parseFromString(doc, 'text/html');
+                                                const menu = htmlDoc.querySelector('.headerBar');
+                                                headerBar.parentNode.replaceChild(menu, headerBar);
+                                            });
+                                    };
+                                    getMenu();
+                                        
+                                });
+                            </script></div>
+      <div class="modal" id="searchResultsModal"><a id="searchModalCloseBg" href="#" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
+            <div class="modal-header"><button id="searchModalCloseLink" class="btn btn-clear float-right" aria-label="Close"></button><div class="modal-title h5">Search Results for "<span id="searchPattern"></span>"</div>
+            </div>
+            <div class="modal-body">
+               <div class="content" id="searchResultsBox"></div>
+            </div>
+            <div class="modal-footer"><button class="btn" id="searchModalCloseBtn">Close</button></div>
+         </div>
+      </div><script>
+                            const tabbedFacets = document.querySelectorAll('.facet ul.tab');
+                            
+                            const tabClick = function(e) {
+                                const targetDataDisplay = e.target.getAttribute('data-display');
+                                const facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                                //console.log('clicked at ' + facetId + ' with data display ' + targetDataDisplay);
+                                setTabs(facetId,targetDataDisplay);
+                            }
+                            
+                            console.log('[INFO] Javascript initialized')
+                            
+                            for(let facetUl of tabbedFacets) {
+                                const facetElem = facetUl.parentNode?.parentNode;
+                                const facetId = facetElem.id;
+                                const storageName = getStorageName(facetId);
+                                const defaultDataDisplay = facetUl.children[0]?.children[0]?.getAttribute('data-display');
+                                
+                                if(localStorage.getItem(storageName) === null) {
+                                    setTabs(facetId,defaultDataDisplay?.trim());
+                                } else {
+                                    setTabs(facetId,`${facetId}_${localStorage.getItem(storageName)?.trim()}`);
+                                }
+                                
+                                const tabs = facetUl.querySelectorAll('.tab-item a');
+                                
+                                for(let tab of tabs) {
+                                    tab.addEventListener('click',tabClick);
+                                }
+                            }
+
+                            function getDisplayStyle(style) {
+                                // split dataDisplay string at underscore, e.g. 'attributes_full' to ['attributes','full'] and return the second part of the array
+                                const [_, displayStyle = 'compact'] = style.split('_');
+                                return displayStyle;
+                            }
+
+                            function getStorageName(facetId) {
+                                return 'meiSpecs_' + facetId + '_display';
+                            }
+
+                            function setTabs(facetId, style) {
+                                const storageName = getStorageName(facetId);
+                                const displayStyle = getDisplayStyle(style);
+                                localStorage.setItem(storageName,displayStyle);
+                                
+                                const facetElem = document.getElementById(facetId);
+                                
+                                const oldTab = facetElem.querySelector('.displayTab.active');
+                                if (oldTab) {
+                                    oldTab.classList.remove('active');
+                                }
+                                
+                                const newTab = document.getElementById(style + '_tab');
+                                if (newTab) {
+                                    newTab.classList.add('active');
+                                }
+                                
+                                const oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                                if (oldBox) {
+                                    oldBox.classList.remove('active');
+                                    oldBox.style.display = 'none';
+                                }
+                                
+                                const newBox = document.getElementById(style);
+                                if(newBox) {
+                                    newBox.classList.add('active');
+                                    newBox.style.display = 'block';
+                                }
+                            }
+                            
+                            const reducedLevels = false;
+                            
+            /* SEARCH */
+            const searchOptions = {
+                // isCaseSensitive: false,
+                includeScore: true,
+                shouldSort: true,
+                includeMatches: true,
+                // findAllMatches: false,
+                minMatchCharLength: 3,
+                // location: 0,
+                threshold: 0.1,
+                // distance: 100,
+                // useExtendedSearch: false,
+                ignoreLocation: true,
+                ignoreFieldNorm: false,
+                keys: [
+                    { name:"ident",
+                      weight: 10 },
+                    { name:"desc",
+                      weight: 2 },
+                    { name:"remarks",
+                      weight: 1 }
+                ]
+            };
+            
+            //initialize search
+            let fuse = new Fuse(searchIndex, searchOptions);
+            let searchReady = true;
+            
+            const searchButton1 = document.querySelector('#submitSearchButtonSide');
+            const searchButton2 = document.querySelector('#submitSearchButtonTop');
+            const searchInput1 = document.querySelector('#search_input');
+            const searchInput2 = document.querySelector('#search_inputTop');
+            const searchModal = document.querySelector('#searchResultsModal');
+            const searchModalCloseBtn = document.querySelector('#searchModalCloseBtn');
+            const searchModalCloseBg = document.querySelector('#searchModalCloseBg');
+            const searchModalCloseLink = document.querySelector('#searchModalCloseLink');
+            const searchResultsBox = document.querySelector('#searchResultsBox');
+            
+            function search(pattern) {
+                
+                let results = fuse.search(pattern)
+                console.log(results)
+                
+                searchResultsBox.innerHTML = '';
+                
+                document.querySelector('#searchPattern').innerText = pattern;
+                
+                const pathAdjust = (reducedLevels) ? './' : '../';
+                
+                results.forEach(hit => {
+                    let div = document.createElement('div')
+                    div.classList.add('searchHit')
+                    div.setAttribute('data-score', hit.score)
+                    let a = document.createElement('a')
+                    a.setAttribute('href', pathAdjust + hit.item.url)
+                    a.classList.add(hit.item.type)
+                    a.innerHTML = hit.item.ident
+                    if (hit.item.type === "element") {
+                        a.innerHTML = "&lt;" + a.innerHTML + "&gt;"
+                    }
+                    div.append(a)
+
+                    if(hit.item.type === 'chapter') {
+                        
+                        let remarksHits = hit.matches.filter(m => m.key === 'remarks')
+                        if(remarksHits.length > 0) {
+                        
+                            let firstI = remarksHits[0].indices[0][0];
+                            let dist = remarksHits[0].indices[0][1] - remarksHits[0].indices[0][0] + 1;
+                            let startRaw = firstI - 40;
+                            
+                            let hitLength = 140;
+                            
+                            let offset = (0 > startRaw)? 40 - firstI : 0;
+                            let startCleaned = startRaw + offset;
+                            
+                            let prefix = (startCleaned > 0) ? '…': '';
+                            let postfix = (remarksHits[0].value.length > hitLength + dist) ? '…': '';
+                            
+                            let snippet = remarksHits[0].value.substr(startCleaned, hitLength + dist);
+                            
+                            let pre = prefix + snippet.substr(0, 40 - offset);
+                            let match = snippet.substr(40 - offset, dist);
+                            let post = snippet.substr(40 - offset + dist) + postfix;
+                            
+                            let preview = document.createElement('div')
+                            preview.classList.add('searchPreview')
+                            preview.setAttribute('data-snippet', snippet)
+                            
+                            let preSpan = document.createElement('span')
+                            preSpan.innerHTML = pre
+                            preview.append(preSpan)
+                            let matchSpan = document.createElement('span')
+                            matchSpan.classList.add('match')
+                            matchSpan.innerHTML = match
+                            preview.append(matchSpan)
+                            let postSpan = document.createElement('span')
+                            postSpan.innerHTML = post
+                            preview.append(postSpan)
+                            
+                            div.append(preview)
+                        }
+                    }
+                    
+                    
+                    
+                    searchResultsBox.append(div)
+                })
+                
+                searchModal.classList.add('active');
+            }
+            
+            function initSideSearch(e) {
+                e.preventDefault();
+                const val = searchInput1.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function initTopSearch(e) {
+                e.preventDefault();
+                const val = searchInput2.value;
+                if(!val.length > 2) {
+                    return false;
+                }
+                search(val)
+            }
+            
+            function closeSearch(e) {
+                e.preventDefault();
+                searchModal.classList.remove('active');
+            }
+            
+            searchInput1.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initSideSearch(e)
+                }
+            });
+            
+            searchInput2.addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                  initTopSearch(e)
+                }
+            });
+            
+            searchButton1.addEventListener('click', initSideSearch)
+            searchButton2.addEventListener('click', initTopSearch)
+            searchModalCloseBtn.addEventListener('click',closeSearch)
+            searchModalCloseBg.addEventListener('click',closeSearch)
+            searchModalCloseLink.addEventListener('click',closeSearch)
+            
+        </script></body>
+</html>
