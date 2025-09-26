@@ -899,7 +899,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="meiProfiles"><span class="headingNumber">1.1.1</span><span class="head">MEI Profiles</span></h3>
+                        <h3 id="meiCustomizations"><span class="headingNumber">1.1.1</span><span class="head">MEI Customizations</span></h3>
                         
                         <p>MEI is an encoding framework, not a data format. This means that MEI provides
                            recommendations for encoding music documents, but it depends on the encoder's
@@ -910,39 +910,39 @@
                         
                         <p>In order to use MEI, it is advised to use a restricted version of the schema,
                            which will make it easier both for an encoder and a reader of the encoded
-                           files. MEI provides a number of pre-defined <em>profiles</em>, which focus on specific
+                           files. MEI provides a number of pre-defined <em>customizations</em>, which focus on specific
                            uses of MEI while still maintaining a great level of flexibility. For projects
                            that need even better control over their data, it is highly recommended to
                            create a more specific customized version of MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.1.1 Customizing MEI</a>). The following customizations are provided
                            with every release of MEI:</p>
                         
-                        <p class="gloss"><strong><span>mei-CMN</span></strong>:
+                        <p class="gloss"><strong><span>mei-cmn</span></strong>:
                            For most users, this will be the best starting point into music
-                           encoding with MEI. The <em>mei-CMN</em> customization targets at documents that use
+                           encoding with MEI. The <em>mei-cmn</em> customization targets at documents that use
                            <em>Common Western Music Notation</em>. The specific rules for that notation are
                            specified in chapter <a class="link_ptr chapterLink" title="Repertoire: Common Music Notation" href="../content/cmn.html">B4 Repertoire: Common Music Notation</a>, even though other chapters of these
                            Guidelines apply as well.</p>
-                        <p class="gloss"><strong><span>mei-Mensural</span></strong>:
+                        <p class="gloss"><strong><span>mei-mensural</span></strong>:
                            For documents written in <em>Mensural Notation</em> (both black and
-                           white), MEI offers the <em>mei-Mensural</em> customization. The specific rules for
+                           white), MEI offers the <em>mei-mensural</em> customization. The specific rules for
                            that notation are specified in chapter <span class="missingPtr">#mensural [not available in this MEI customization]</span>, even though
                            other chapters of these Guidelines apply as well.</p>
-                        <p class="gloss"><strong><span>mei-Neumes</span></strong>:
-                           This profile allows to encode medieval <em>Neume Notation</em> with MEI.
+                        <p class="gloss"><strong><span>mei-neumes</span></strong>:
+                           This customization allows to encode medieval <em>Neume Notation</em> with MEI.
                            The specific rules for that notation are specified in chapter <span class="missingPtr">#neumes [not available in this MEI customization]</span>, even though other chapters of these Guidelines apply as
-                           well. Please note that the <em>mei-Neumes</em> profile has undergone significant
+                           well. Please note that the <em>mei-neumes</em> customization has undergone significant
                            changes from MEI version 3 to version 4.</p>
-                        <p class="gloss"><strong><span>mei-Basic</span></strong>:
+                        <p class="gloss"><strong><span>mei-basic</span></strong>:
                            As an encoding framework, MEI offers multiple approaches to encode
                            certain features at various levels of detail. While this flexibility is at the
                            core of MEI and often required for research projects, it is an obstacle when
-                           developing software and converters for MEI. The <em>mei-Basic</em> profile is a subset
+                           developing software and converters for MEI. The <em>mei-Basic</em> customization is a subset
                            of MEI which restricts it to one way of encoding for every feature of music
                            notation. It covers <em>Common Western Music Notation</em> only, and excludes all
                            editorial markup. In essence, it has the same functionality as most other music
                            encoding formats like MusicXML or MNX. The purpose of <em>mei-Basic</em> is to serve
                            as common ground for data interchange, both between projects using different
-                           profiles of MEI, and other encoding schemes.</p>
+                           customizations of MEI, and other encoding schemes.</p>
                         <p class="gloss"><strong><span>mei-all</span></strong>:
                            This is the full definition of MEI. It includes all different
                            repertoires, which has certain side effects and enables encoding options that
@@ -953,16 +953,16 @@
                            encoding errors. In general, you should almost never use <em>mei-all</em> except for
                            testing purposes.</p>
                         <p class="gloss"><strong><span>mei-all_anyStart </span></strong>:
-                           This profile includes all of <em>mei-all</em>, but extends it even
+                           This customization includes all of <em>mei-all</em>, but extends it even
                            further so that it allows any MEI element as root of conforming MEI instances.
                            In regular MEI, the only allowed starting elements are <a class="link_odd link_odd_elementSpec" href="../elements/mei.html">&lt;mei&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> and
                            <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a>. The sole purpose of this customization is
                            to simplify validation at tutorial sessions and other educational purposes. It
                            should not be used in production.</p>
                         
-                        <p>The first three profiles provide good starting points to encode music from the
+                        <p>The first three customizations provide good starting points to encode music from the
                            respective repertoires. They may also serve as template for further,
-                           project-specific customizations. The latter two profiles target very
+                           project-specific customizations. The latter two customizations target very
                            specific use cases and should not be used by default.</p>
                         </div>
                      
@@ -974,7 +974,7 @@
                            very needs of a project. Such a custom schema will guide the encoders and will
                            help to ensure consistency and data quality throughout a project’s files. A
                            customization typically provides a subset of MEI’s encoding models (typically
-                           starting from one of the official <em>profiles</em> mentioned in chapter <a class="link_ptr chapterLink" title="MEI Profiles" href="../content/introduction.html#meiProfiles">1.1.1 MEI Profiles</a>), with only one solution for any given situation
+                           starting from one of the official <em>customizations</em> mentioned in chapter <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.1.1 MEI Customizations</a>), with only one solution for any given situation
                            being allowed. The customization will help to reflect the scope of a project
                            into its data: Only those aspects of music notation a project is interested in
                            will be allowed, so that the absence of a specific information can not be
@@ -990,7 +990,7 @@
                               the TEI</a>, and the "<a class="link_ref link_external" href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">Getting Started with P5 ODDs</a>" document.</p>
                         
                         <p>At this point, there is no specific documentation on how to customize MEI with
-                           ODD beyond the generic TEI documentation. However, the provided <a class="link_ptr chapterLink" title="MEI Profiles" href="../content/introduction.html#meiProfiles">1.1.1 MEI Profiles</a> are based on ODD customizations, and may serve as
+                           ODD beyond the generic TEI documentation. However, the provided <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.1.1 MEI Customizations</a> are based on ODD customizations, and may serve as
                            starting point for further project-specific restrictions. They can be found
                            at <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding/tree/stable/customizations">https://github.com/music-encoding/music-encoding/tree/stable/customizations</a>.
                            In addition, several projects have shared their customizations on GitHub, such
@@ -1019,7 +1019,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/ec47cd97658ce464d7e9ea0ad2d9c047eeeb0f9f" target="_blank" rel="noopener noreferrer">#ec47cd9</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/b6daa7b14d6c9f426c370de34379eaa5115b4af9" target="_blank" rel="noopener noreferrer">#b6daa7b</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1033,7 +1033,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiProfiles">1.1.1 MEI Profiles</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiCustomizations">1.1.1 MEI Customizations</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -1051,7 +1051,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiProfiles">1.1.1 MEI Profiles</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiCustomizations">1.1.1 MEI Customizations</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
                   </div>
                </div>
             </div>
