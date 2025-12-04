@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
@@ -43,10 +43,10 @@
                      
                      <p>Metadata means "data about data", <abbr>i.e.</abbr>, information about various aspects of an encoding at hand. There are many different
                         types of metadata, which MEI tries to order according to their respective scope or
-                        perspective, as described in <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.1 Structure of the MEI Header</a>. MEI’s approach to metadata is heavily influenced by other existing standards and
+                        perspective, as described in <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.2 Structure of the MEI Header</a>. MEI’s approach to metadata is heavily influenced by other existing standards and
                         models, such as TEI, MARC, and FRBR. It attempts to reflect both current library practice
                         and common scholarly methods, for example in the field of source descriptions (see
-                        chapter <a class="link_ptr chapterLink" title="Encoding Sources in MEI" href="../content/metadata.html#msdesc">3.1 Encoding Sources in MEI</a>).</p>
+                        chapter <a class="link_ptr chapterLink" title="Encoding Sources in MEI" href="../content/metadata.html#msdesc">3.7 Encoding Sources in MEI</a>).</p>
                      
                      <p>This chapter thus addresses the description of an encoded item so that the musical
                         text, as well as its sources, encoding, and revisions are all thoroughly documented.
@@ -59,14 +59,14 @@
                   
                   <div class="div2">
                      
-                     <h2 id="headerstructure"><span class="headingNumber">3.1</span><span class="head">Structure of the MEI Header</span></h2>
+                     <h2 id="headerstructure"><span class="headingNumber">3.2</span><span class="head">Structure of the MEI Header</span></h2>
                      
                      <p>Every MEI-conformant text not embedded in another XML carrier that provides for capturing
                         metadata, such as TEI or METS, must carry a set of descriptions, prefixed to it and
                         encoded as described in this chapter. This set is known as the MEI header, tagged
                         <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a>.</p>
                      
-                     <p>The metadata encoded inside <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> covers a number of different use cases. Some child elements like <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> may appear in various places (see <a class="link_ptr chapterLink" title="Title Statement" href="../content/metadata.html#headerTitleStatement">3.1.1 Title Statement</a>), so it is important to understand the roles of the different areas of the MEI header.
+                     <p>The metadata encoded inside <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> covers a number of different use cases. Some child elements like <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> may appear in various places (see <a class="link_ptr chapterLink" title="Title Statement" href="../content/metadata.html#headerTitleStatement">3.3.1 Title Statement</a>), so it is important to understand the roles of the different areas of the MEI header.
                         These areas are described following their order of appearance within the <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element:</p>
                      
                      <ol>
@@ -81,13 +81,13 @@
                            files. The file description also includes information about the <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> or sources from which the electronic document was derived (not to be confused with
                            sources that represent or witness the encoded work in a more general sense; these
                            may be described within the <a class="link_odd link_odd_elementSpec" href="../elements/manifestationList.html">&lt;manifestationList&gt;</a> element).</li>
-                        <li class="item">The MEI elements used to encode the file description are described in section <a class="link_ptr chapterLink" title="Information about an MEI file" href="../content/metadata.html#meifile">3.1 Information about an MEI file</a>.</li>
+                        <li class="item">The MEI elements used to encode the file description are described in section <a class="link_ptr chapterLink" title="Information about an MEI file" href="../content/metadata.html#meifile">3.4 Information about an MEI file</a>.</li>
                         <li class="item">An optional <em>encoding description</em>, tagged <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a>, which describes the relationship between an electronic text and its source or sources.
                            It allows for detailed description of whether (or how) the text was normalized during
                            transcription, how the encoder resolved ambiguities in the source, what levels of
                            encoding or analysis were applied, and similar matters.</li>
                         <li class="item">The MEI elements used to encode the encoding description are described in section
-                           <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.1.1 Encoding Description</a>.</li>
+                           <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>.</li>
                         <li class="item">An optional <em>work description</em> or list of the works encoded or described in the file, tagged <a class="link_odd link_odd_elementSpec" href="../elements/workList.html">&lt;workList&gt;</a>, containing classification and contextual information about the work(s), such as
                            its subject matter, the situation in which it was produced, the individuals described
                            by or participating in producing it, and so forth. Such a work profile is of particular
@@ -95,30 +95,30 @@
                            where it is often highly desirable to enforce a controlled descriptive vocabulary
                            or to perform retrievals from a body of text in terms of text type or origin. The
                            work description may however be of use in any form of automatic text processing.</li>
-                        <li class="item">The MEI elements used to encode the work description are described in section <a class="link_ptr chapterLink" title="Work Description" href="../content/metadata.html#headerWorkDescription">3.1 Work Description</a>.</li>
-                        <li class="item">An optional list of manifestations of the work, tagged <a class="link_odd link_odd_elementSpec" href="../elements/manifestationList.html">&lt;manifestationList&gt;</a>, containing descriptions of <em>sources</em> ("manifestations" in <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a> terms) that represent or witness the encoded work in some way, regardless of whether
+                        <li class="item">The MEI elements used to encode the work description are described in section <a class="link_ptr chapterLink" title="Work Description" href="../content/metadata.html#headerWorkDescription">3.6 Work Description</a>.</li>
+                        <li class="item">An optional list of manifestations of the work, tagged <a class="link_odd link_odd_elementSpec" href="../elements/manifestationList.html">&lt;manifestationList&gt;</a>, containing descriptions of <em>sources</em> ("manifestations" in <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> terms) that represent or witness the encoded work in some way, regardless of whether
                            the encoding is based on these sources or not; for instance, it is useful for listing
                            all known sources to a particular work in a cataloging project or a critical edition.</li>
-                        <li class="item">The MEI elements used to encode the source description are described in section <a class="link_ptr chapterLink" title="Encoding Sources in MEI" href="../content/metadata.html#msdesc">3.1 Encoding Sources in MEI</a>.</li>
+                        <li class="item">The MEI elements used to encode the source description are described in section <a class="link_ptr chapterLink" title="Encoding Sources in MEI" href="../content/metadata.html#msdesc">3.7 Encoding Sources in MEI</a>.</li>
                         <li class="item">Zero or more elements tagged <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a>, containing <em>non-MEI metadata</em>.</li>
-                        <li class="item">This concept is covered in section <a class="link_ptr chapterLink" title="Typical Use Cases" href="../content/metadata.html#headerusecases">3.1 Typical Use Cases</a>.</li>
+                        <li class="item">This concept is covered in section <a class="link_ptr chapterLink" title="Typical Use Cases" href="../content/metadata.html#headerusecases">3.8 Typical Use Cases</a>.</li>
                         <li class="item">A <em>revision history</em>, tagged <a class="link_odd link_odd_elementSpec" href="../elements/revisionDesc.html">&lt;revisionDesc&gt;</a>, which allows the encoder to provide a history of changes made during the development
                            of the electronic text. The revision history is important for version control and
                            for resolving questions about the history of a file. The MEI elements used to encode
-                           the revision description are described in section <a class="link_ptr chapterLink" title="Revision Description" href="../content/metadata.html#headerRevisionDescription">3.1.1 Revision Description</a>.</li>
+                           the revision description are described in section <a class="link_ptr chapterLink" title="Revision Description" href="../content/metadata.html#headerRevisionDescription">3.4.3 Revision Description</a>.</li>
                      </ol>
                      </div>
                   
                   <div class="div2">
                      
-                     <h2 id="commonconcepts"><span class="headingNumber">3.1</span><span class="head">Common Metadata Concepts</span></h2>
+                     <h2 id="commonconcepts"><span class="headingNumber">3.3</span><span class="head">Common Metadata Concepts</span></h2>
                      
                      <p>This chapter introduces data models and markup available in various locations of the
                         MEI header.</p>
                      
                      <div class="div3">
                         
-                        <h3 id="headerTitleStatement"><span class="headingNumber">3.1.1</span><span class="head">Title Statement</span></h3>
+                        <h3 id="headerTitleStatement"><span class="headingNumber">3.3.1</span><span class="head">Title Statement</span></h3>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> element is to capture the title of an MEI file (within a <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> element) and the title of any of the relevant <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>s (sources) of the encoded work.</p>
                         
@@ -298,14 +298,14 @@
                            may be found in the Anglo-American Cataloguing Rules (Gorman and Winkler, 1978, chapter
                            25) or in equivalent national-level bibliographical documentation.</p>
                         
-                        <p>It is important to keep in mind that the <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> element provides <em>structured</em> metadata. Preserving the exact rendition of a title page is possible using the <a class="link_odd link_odd_elementSpec" href="../elements/titlePage.html">&lt;titlePage&gt;</a> element (see <a class="link_ptr chapterLink" title="Title Pages" href="../content/metadata.html#textTitlePages">3.1.1.1 Title Pages</a>).</p>
+                        <p>It is important to keep in mind that the <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> element provides <em>structured</em> metadata. Preserving the exact rendition of a title page is possible using the <a class="link_odd link_odd_elementSpec" href="../elements/titlePage.html">&lt;titlePage&gt;</a> element (see <a class="link_ptr chapterLink" title="Title Pages" href="../content/metadata.html#textTitlePages">3.7.1.2 Title Pages</a>).</p>
                         
                         <p>The title of a <a class="link_odd link_odd_elementSpec" href="../elements/work.html">&lt;work&gt;</a> is given by using the <a class="link_odd link_odd_elementSpec" href="../elements/title.html">&lt;title&gt;</a> element directly, as many other child elements of <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> are available on work directly.</p>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="headerrespstatement"><span class="headingNumber">3.1.1</span><span class="head">Responsibility Attribution</span></h3>
+                        <h3 id="headerrespstatement"><span class="headingNumber">3.3.2</span><span class="head">Responsibility Attribution</span></h3>
                         
                         <p>In scholarly work, attribution of responsibility is crucial. For this purpose, MEI
                            offers the <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a> element, which is available in the following contexts:</p>
@@ -514,7 +514,7 @@
                         <p>This method of encoding facilitates exchange of bibliographic data with library catalogs
                            and bibliographic databases as well as applications whose handling of bibliographic
                            data is restricted to traditional responsibility roles. Additional information regarding
-                           these responsibility-role elements can be found in chapter <a class="link_ptr chapterLink" title="Bibliographic Citations and References" href="../content/textencoding.html#sharedBibliographicCitations">7.1.1 Bibliographic Citations and References</a>.</p>
+                           these responsibility-role elements can be found in chapter <a class="link_ptr chapterLink" title="Bibliographic Citations and References" href="../content/textencoding.html#sharedBibliographicCitations">7.2.12 Bibliographic Citations and References</a>.</p>
                         
                         <p>When the MEI.namesdates module is enabled, two additional elements are also permitted
                            within <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a>:</p>
@@ -570,7 +570,7 @@
                            </figure>
                            </p>
                         
-                        <p>For additional information about corporate and personal names, see chapter <a class="link_ptr chapterLink" title="Names" href="../content/textencoding.html#sharedNames">7.1.1 Names</a>.</p>
+                        <p>For additional information about corporate and personal names, see chapter <a class="link_ptr chapterLink" title="Names" href="../content/textencoding.html#sharedNames">7.2.8 Names</a>.</p>
                         
                         <p>In addition to, or instead of the <a class="link_odd link_odd_elementSpec" href="../elements/resp.html">&lt;resp&gt;</a> element, the <span class="att">@role</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/name.html">&lt;name&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/persName.html">&lt;persName&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">&lt;corpName&gt;</a> may be used to capture the nature of responsibility. While <a class="link_odd link_odd_elementSpec" href="../elements/resp.html">&lt;resp&gt;</a> accommodates capturing the wide variety of text that may occur in responsibility
                            statements, use of the <span class="att">@role</span> attribute provides the possibility of recording a controlled value independently
@@ -712,7 +712,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerAssociatingMetadataAndData"><span class="headingNumber">3.1.1</span><span class="head">Associating Metadata and Data</span></h3>
+                        <h3 id="headerAssociatingMetadataAndData"><span class="headingNumber">3.3.3</span><span class="head">Associating Metadata and Data</span></h3>
                         
                         <p>In the MEI header, the <span class="att">@data</span> attribute may be used to associate metadata with related notational elements.</p>
                         
@@ -725,11 +725,11 @@
                   
                   <div class="div2">
                      
-                     <h2 id="meifile"><span class="headingNumber">3.1</span><span class="head">Information about an MEI file</span></h2>
+                     <h2 id="meifile"><span class="headingNumber">3.4</span><span class="head">Information about an MEI file</span></h2>
                      
                      <div class="div3">
                         
-                        <h3 id="headerFileDescription"><span class="headingNumber">3.1.1</span><span class="head">File Description</span></h3>
+                        <h3 id="headerFileDescription"><span class="headingNumber">3.4.1</span><span class="head">File Description</span></h3>
                         
                         <p>The structure of the bibliographic description of a machine-readable or digital musical
                            text resembles that of a book, an article, or other kinds of textual objects. The
@@ -892,7 +892,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerEditionstmt"><span class="headingNumber">3.1.1.1</span><span class="head">Edition Statement</span></h4>
+                           <h4 id="headerEditionstmt"><span class="headingNumber">3.4.1.1</span><span class="head">Edition Statement</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/editionStmt.html">&lt;editionStmt&gt;</a> element is the second component of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> element, following the mandatory <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a>. It is optional but recommended when applicable.</p>
                            
@@ -971,7 +971,7 @@
                            
                            <p>Note that all changes in a file, whether or not they are regarded as constituting
                               a new edition or simply a revision, should be independently noted in the revision
-                              description section of the file header (see section <a class="link_ptr chapterLink" title="Revision Description" href="../content/metadata.html#headerRevisionDescription">3.1.1 Revision Description</a>).</p>
+                              description section of the file header (see section <a class="link_ptr chapterLink" title="Revision Description" href="../content/metadata.html#headerRevisionDescription">3.4.3 Revision Description</a>).</p>
                            
                            <p>The edition element should contain phrases describing the edition or version, including
                               the word 'edition', 'version', or an equivalent term, together with a number or date,
@@ -1039,7 +1039,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerFileExtent"><span class="headingNumber">3.1.1.1</span><span class="head">Extent of the File</span></h4>
+                           <h4 id="headerFileExtent"><span class="headingNumber">3.4.1.2</span><span class="head">Extent of the File</span></h4>
                            
                            <p>The third component of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> is a description of the physical qualities of the file. The <a class="link_odd link_odd_elementSpec" href="../elements/extent.html">&lt;extent&gt;</a> element is provided for this purpose.</p>
                            
@@ -1160,7 +1160,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerPublicationDistribution"><span class="headingNumber">3.1.1.1</span><span class="head">Publication, Distribution, etc.</span></h4>
+                           <h4 id="headerPublicationDistribution"><span class="headingNumber">3.4.1.3</span><span class="head">Publication, Distribution, etc.</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/pubStmt.html">&lt;pubStmt&gt;</a> element is the fourth component of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> element and is mandatory.</p>
                            
@@ -1450,7 +1450,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerSeriesStatement"><span class="headingNumber">3.1.1.1</span><span class="head">Series Statement</span></h4>
+                           <h4 id="headerSeriesStatement"><span class="headingNumber">3.4.1.4</span><span class="head">Series Statement</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/seriesStmt.html">&lt;seriesStmt&gt;</a> element is the fifth component of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> element and is optional.</p>
                            
@@ -1685,7 +1685,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerNotesStatement"><span class="headingNumber">3.1.1.1</span><span class="head">Notes Statement</span></h4>
+                           <h4 id="headerNotesStatement"><span class="headingNumber">3.4.1.5</span><span class="head">Notes Statement</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/notesStmt.html">&lt;notesStmt&gt;</a> element is the sixth component of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> element and is optional. If used, it contains one or more <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> elements, each containing a single piece of descriptive information of the kind treated
                               as ‘general notes’ in traditional bibliographic descriptions.</p>
@@ -1711,13 +1711,13 @@
                            <ul>
                               <li class="item">the nature, scope, artistic form, or purpose of the work; also the genre or other
                                  intellectual category to which it may belong. These should be formally described within
-                                 the <a class="link_odd link_odd_elementSpec" href="../elements/workList.html">&lt;workList&gt;</a> element (section <a class="link_ptr chapterLink" title="Work Description" href="../content/metadata.html#headerWorkDescription">3.1 Work Description</a>).</li>
+                                 the <a class="link_odd link_odd_elementSpec" href="../elements/workList.html">&lt;workList&gt;</a> element (section <a class="link_ptr chapterLink" title="Work Description" href="../content/metadata.html#headerWorkDescription">3.6 Work Description</a>).</li>
                               <li class="item">bibliographic details relating to the source or sources of an electronic text: <abbr>e.g.</abbr>, ‘Transcribed from a facsimile of the 1743 publication’. These should be formally
-                                 described in the <a class="link_odd link_odd_elementSpec" href="../elements/sourceDesc.html">&lt;sourceDesc&gt;</a> element (section <a class="link_ptr chapterLink" title="Source Description" href="../content/metadata.html#headerSourceDescription">3.1.1.1 Source Description</a>).</li>
+                                 described in the <a class="link_odd link_odd_elementSpec" href="../elements/sourceDesc.html">&lt;sourceDesc&gt;</a> element (section <a class="link_ptr chapterLink" title="Source Description" href="../content/metadata.html#headerSourceDescription">3.4.1.6 Source Description</a>).</li>
                               <li class="item">further information relating to publication, distribution, or release of the text,
                                  including sources from which the text may be obtained, any restrictions on its use
                                  or formal terms on its availability. These should be placed in the appropriate division
-                                 of the <a class="link_odd link_odd_elementSpec" href="../elements/pubStmt.html">&lt;pubStmt&gt;</a> element (section <a class="link_ptr chapterLink" title="Publication, Distribution, etc." href="../content/metadata.html#headerPublicationDistribution">3.1.1.1 Publication, Distribution, etc.</a>).</li>
+                                 of the <a class="link_odd link_odd_elementSpec" href="../elements/pubStmt.html">&lt;pubStmt&gt;</a> element (section <a class="link_ptr chapterLink" title="Publication, Distribution, etc." href="../content/metadata.html#headerPublicationDistribution">3.4.1.3 Publication, Distribution, etc.</a>).</li>
                               <li class="item">publicly documented numbers associated <em>with the file</em> should be placed in an <a class="link_odd link_odd_elementSpec" href="../elements/altId.html">&lt;altId&gt;</a> element within the <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element. International Standard Serial Numbers (ISSN), International Standard Book
                                  Numbers (ISBN), and other internationally agreed upon standard numbers that uniquely
                                  identify an item, should be treated in the same way, rather than as specialized bibliographic
@@ -1805,7 +1805,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerSourceDescription"><span class="headingNumber">3.1.1.1</span><span class="head">Source Description</span></h4>
+                           <h4 id="headerSourceDescription"><span class="headingNumber">3.4.1.6</span><span class="head">Source Description</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/sourceDesc.html">&lt;sourceDesc&gt;</a> element is the seventh and final component of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> element. In MEI, <a class="link_odd link_odd_elementSpec" href="../elements/sourceDesc.html">&lt;sourceDesc&gt;</a> is a grouping element containing one or more <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> elements, each of which records details of a source from which the computer file
                               is derived. This might be a printed text or manuscript, another computer file, an
@@ -1896,7 +1896,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerEncodingDescription"><span class="headingNumber">3.1.1</span><span class="head">Encoding Description</span></h3>
+                        <h3 id="headerEncodingDescription"><span class="headingNumber">3.4.2</span><span class="head">Encoding Description</span></h3>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a> element is the second major subdivision of the MEI header. It specifies the methods
                            and editorial principles which governed the transcription or encoding of the source
@@ -1997,7 +1997,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerApplicationInformation"><span class="headingNumber">3.1.1.1</span><span class="head">Application Information</span></h4>
+                           <h4 id="headerApplicationInformation"><span class="headingNumber">3.4.2.1</span><span class="head">Application Information</span></h4>
                            
                            <p>It is sometimes convenient to store information relating to the processing of an encoded
                               resource within its header. Typical uses for such information might be:</p>
@@ -2082,7 +2082,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerEditorialPrinciples"><span class="headingNumber">3.1.1.1</span><span class="head">Declaration of Editorial Principles</span></h4>
+                           <h4 id="headerEditorialPrinciples"><span class="headingNumber">3.4.2.2</span><span class="head">Declaration of Editorial Principles</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/editorialDecl.html">&lt;editorialDecl&gt;</a> element is used to provide details of the editorial practices applied during the
                               encoding of a musical text.</p>
@@ -2099,7 +2099,7 @@
                            <p class="gloss"><strong><span>correction</span></strong>:
                               States how and under what circumstances corrections have been made in the text. <span class="att">@corrlevel</span> indicates the degree of correction applied to the text. <span class="att">@method</span> indicates the method employed to mark corrections and normalizations. Was the text
                               corrected during or after data capture? If so, were corrections made silently or are
-                              they marked using the tags described in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.1 Editorial Markup</a>? What principles have been adopted with respect to omissions, truncations, dubious
+                              they marked using the tags described in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.2 Editorial Markup</a>? What principles have been adopted with respect to omissions, truncations, dubious
                               corrections, alternate readings, false starts, repetitions, etc.?</p>
                            <p class="gloss"><strong><span>interpretation</span></strong>:
                               Describes the scope of any analytic or interpretive information added to the transcription
@@ -2111,9 +2111,9 @@
                               out in converting it to electronic form. <span class="att">@method</span> indicates the method employed to mark corrections and normalizations. Was the text
                               normalized, for example by regularizing any non-standard enharmonic spellings, etc.?
                               If so, were normalizations performed silently or are they marked using the tags described
-                              in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.1 Editorial Markup</a>? What authority was used for the regularization? Also, what principles were used
+                              in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.2 Editorial Markup</a>? What authority was used for the regularization? Also, what principles were used
                               when normalizing numbers to provide the standard values for the value attribute described
-                              in sections <a class="link_ptr chapterLink" title="Names" href="../content/textencoding.html#sharedNames">7.1.1 Names</a>–<a class="link_ptr chapterLink" title="Addresses" href="../content/textencoding.html#sharedAddresses">7.1.1 Addresses</a> and what format is used for them?</p>
+                              in sections <a class="link_ptr chapterLink" title="Names" href="../content/textencoding.html#sharedNames">7.2.8 Names</a>–<a class="link_ptr chapterLink" title="Addresses" href="../content/textencoding.html#sharedAddresses">7.2.11 Addresses</a> and what format is used for them?</p>
                            <p class="gloss"><strong><span>segmentation</span></strong>:
                               Describes the principles according to which the musical text has been segmented, for
                               example into movements, sections, etc. How is the musical text segmented? If mdiv
@@ -2187,7 +2187,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerProjectDescription"><span class="headingNumber">3.1.1.1</span><span class="head">Project Description</span></h4>
+                           <h4 id="headerProjectDescription"><span class="headingNumber">3.4.2.3</span><span class="head">Project Description</span></h4>
                            
                            <p>
                               
@@ -2239,7 +2239,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerSamplingDeclaration"><span class="headingNumber">3.1.1.1</span><span class="head">Sampling Declaration</span></h4>
+                           <h4 id="headerSamplingDeclaration"><span class="headingNumber">3.4.2.4</span><span class="head">Sampling Declaration</span></h4>
                            
                            <p>The samplingDecl element holds a prose description of the rationale and methods used
                               in selecting texts, or parts of text, for inclusion in the resource.</p>
@@ -2337,12 +2337,12 @@
                            <p>A sampling declaration which applies to more than one text or division of a text need
                               not be repeated in the header of each such text. Instead, the <span class="att">@decls</span> attribute of each text (or subdivision of the text) to which the sampling declaration
                               applies may be used to supply a cross-reference to it, as further described in section
-                              <a class="link_ptr chapterLink" title="Associating Metadata and Data" href="../content/metadata.html#headerAssociatingMetadataAndData">3.1.1 Associating Metadata and Data</a>.</p>
+                              <a class="link_ptr chapterLink" title="Associating Metadata and Data" href="../content/metadata.html#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a>.</p>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="headerClassDeclarations"><span class="headingNumber">3.1.1.1</span><span class="head">Class Declarations</span></h4>
+                           <h4 id="headerClassDeclarations"><span class="headingNumber">3.4.2.5</span><span class="head">Class Declarations</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/classDecls.html">&lt;classDecls&gt;</a> element allows the declaration of generic taxonomies for the classification of entities
                               according to one or both of the following two methods:</p>
@@ -2435,13 +2435,13 @@
                               </figure>
                               </p>
                            
-                           <p>The categories declared in the taxonomies may then be referenced to within <a class="link_odd link_odd_elementSpec" href="../elements/classification.html">&lt;classification&gt;</a> by means of the <span class="att">@class</span> attribute as described in the <a class="link_ptr chapterLink" title="Classification" href="../content/metadata.html#headerWorkClass">3.1.1 Classification</a> section.</p>
+                           <p>The categories declared in the taxonomies may then be referenced to within <a class="link_odd link_odd_elementSpec" href="../elements/classification.html">&lt;classification&gt;</a> by means of the <span class="att">@class</span> attribute as described in the <a class="link_ptr chapterLink" title="Classification" href="../content/metadata.html#headerWorkClass">3.6.12 Classification</a> section.</p>
                            </div>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="headerRevisionDescription"><span class="headingNumber">3.1.1</span><span class="head">Revision Description</span></h3>
+                        <h3 id="headerRevisionDescription"><span class="headingNumber">3.4.3</span><span class="head">Revision Description</span></h3>
                         
                         <p>The final sub-element of the MEI header, the <a class="link_odd link_odd_elementSpec" href="../elements/revisionDesc.html">&lt;revisionDesc&gt;</a> element, provides a detailed change log in which each change made to a text may be
                            recorded. Its use is optional but highly recommended. It provides essential information
@@ -2573,7 +2573,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="FRBR"><span class="headingNumber">3.1</span><span class="head">Functional Requirements for Bibliographic Records (FRBR)</span></h2>
+                     <h2 id="FRBR"><span class="headingNumber">3.5</span><span class="head">Functional Requirements for Bibliographic Records (FRBR)</span></h2>
                      
                      <p>MEI header information may refer to different levels of description of the encoded
                         work: Some information may apply the work in all its various forms and realizations,
@@ -2609,7 +2609,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="FRBRentities"><span class="headingNumber">3.1.1</span><span class="head">FRBR Entities in MEI</span></h3>
+                        <h3 id="FRBRentities"><span class="headingNumber">3.5.1</span><span class="head">FRBR Entities in MEI</span></h3>
                         
                         <p>With the FRBR module, MEI offers four elements corresponding to the FRBR "Group 1"
                            entities:</p>
@@ -2852,7 +2852,7 @@
                            </figure>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/manifestationList.html">&lt;manifestationList&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> elements are discussed in section <a class="link_ptr chapterLink" title="Encoding Sources in MEI" href="../content/metadata.html#msdesc">3.1 Encoding Sources in MEI</a>.</p>
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/manifestationList.html">&lt;manifestationList&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> elements are discussed in section <a class="link_ptr chapterLink" title="Encoding Sources in MEI" href="../content/metadata.html#msdesc">3.7 Encoding Sources in MEI</a>.</p>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/itemList.html">&lt;itemList&gt;</a> element provides functionality similar to that of <a class="link_odd link_odd_elementSpec" href="../elements/expressionList.html">&lt;expressionList&gt;</a>; that is, it can be used to group descriptions of individual items (exemplars) of
                            the parent source. Just like <a class="link_odd link_odd_elementSpec" href="../elements/expressionList.html">&lt;expressionList&gt;</a>, which can only hold <a class="link_odd link_odd_elementSpec" href="../elements/expression.html">&lt;expression&gt;</a> sub-components, <a class="link_odd link_odd_elementSpec" href="../elements/itemList.html">&lt;itemList&gt;</a> may only contain <a class="link_odd link_odd_elementSpec" href="../elements/item.html">&lt;item&gt;</a> elements.</p>
@@ -2929,7 +2929,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="FRBRcomponents"><span class="headingNumber">3.1.1</span><span class="head">Component Parts in FRBR</span></h3>
+                        <h3 id="FRBRcomponents"><span class="headingNumber">3.5.2</span><span class="head">Component Parts in FRBR</span></h3>
                         
                         <p>Each of the four MEI elements corresponding to FRBR entities may contain a list of
                            constituent parts. All four entities utilize the same element:</p>
@@ -3090,7 +3090,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="FRBRrelations"><span class="headingNumber">3.1.1</span><span class="head">FRBR Relationships</span></h3>
+                        <h3 id="FRBRrelations"><span class="headingNumber">3.5.3</span><span class="head">FRBR Relationships</span></h3>
                         
                         <p>FRBR defines a number of terms that describe how the basic entities relate to each
                            other. MEI provides the following elements for this purpose.</p>
@@ -3394,17 +3394,17 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerRelatedItemVsFRBR"><span class="headingNumber">3.1.1</span><span class="head">RelatedItem vs. FRBR</span></h3>
+                        <h3 id="headerRelatedItemVsFRBR"><span class="headingNumber">3.5.4</span><span class="head">RelatedItem vs. FRBR</span></h3>
                         
                         <p>MEI offers two related concepts for capturing relations between bibliographic items.
-                           The model of <a class="link_odd link_odd_elementSpec" href="../elements/relatedItem.html">&lt;relatedItem&gt;</a>, as described in chapter <a class="link_ptr chapterLink" title="Related Items" href="../content/textencoding.html#sharedRelatedItemDesc">7.1.1.1 Related Items</a> of these Guidelines, is derived from MODS v3.4 (see documentation <a class="link_ref link_external" href="http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#relateditem">here</a>). Its purpose in MEI is to encode bibliographic references between mostly "secondary"
+                           The model of <a class="link_odd link_odd_elementSpec" href="../elements/relatedItem.html">&lt;relatedItem&gt;</a>, as described in chapter <a class="link_ptr chapterLink" title="Related Items" href="../content/textencoding.html#sharedRelatedItemDesc">7.2.12.1 Related Items</a> of these Guidelines, is derived from MODS v3.4 (see documentation <a class="link_ref link_external" href="http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#relateditem">here</a>). Its purpose in MEI is to encode bibliographic references between mostly "secondary"
                            material, like reviews, articles, and so on. It may be used to provide cross-references
                            between information encoded in different places of the header.</p>
                         
                         <p>However, <a class="link_odd link_odd_elementSpec" href="../elements/relatedItem.html">&lt;relatedItem&gt;</a> is less ideal for describing the relations between works, differing versions of these
                            works, the sources in which those versions are transmitted, and where applicable the
                            individual copies of a print. For these situations, it is strongly recommended to
-                           use the <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a> instead. This module is based on the Functional Requirements for Bibliographic Records,
+                           use the <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> instead. This module is based on the Functional Requirements for Bibliographic Records,
                            as <a class="link_ref link_external" href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records">specified</a> by the <a class="link_ref link_external" href="http://www.ifla.org">IFLA</a>. It allows a much finer description of relationships between such "primary" entities.
                            For compatibility reasons, both models should not be confused or mixed under any circumstances.</p>
                         </div>
@@ -3412,7 +3412,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="headerWorkDescription"><span class="headingNumber">3.1</span><span class="head">Work Description</span></h2>
+                     <h2 id="headerWorkDescription"><span class="headingNumber">3.6</span><span class="head">Work Description</span></h2>
                      
                      <p>The <a class="link_odd link_odd_elementSpec" href="../elements/workList.html">&lt;workList&gt;</a> element is the third major subdivision of the MEI Header. It is an optional element,
                         the purpose of which is to enable the recording of information characterizing various
@@ -3511,7 +3511,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkIdentification"><span class="headingNumber">3.1.1</span><span class="head">Work Identification</span></h3>
+                        <h3 id="headerWorkIdentification"><span class="headingNumber">3.6.1</span><span class="head">Work Identification</span></h3>
                         
                         <p>The following elements provide minimal identifying information for the intellectual
                            work:</p>
@@ -3618,12 +3618,12 @@
                         
                         <p>The identifier and title values recorded here may or may not be the same as those
                            assigned to published versions of the work. Fuller details are available in section
-                           <a class="link_ptr chapterLink" title="Title Statement" href="../content/metadata.html#headerTitleStatement">3.1.1 Title Statement</a>.</p>
+                           <a class="link_ptr chapterLink" title="Title Statement" href="../content/metadata.html#headerTitleStatement">3.3.1 Title Statement</a>.</p>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkIncipit"><span class="headingNumber">3.1.1</span><span class="head">Incipits</span></h3>
+                        <h3 id="headerWorkIncipit"><span class="headingNumber">3.6.2</span><span class="head">Incipits</span></h3>
                         
                         <p>
                            
@@ -3800,7 +3800,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkKeyTempoMeter"><span class="headingNumber">3.1.1</span><span class="head">Key, Tempo, and Meter</span></h3>
+                        <h3 id="headerWorkKeyTempoMeter"><span class="headingNumber">3.6.3</span><span class="head">Key, Tempo, and Meter</span></h3>
                         
                         <p>The attributes key, tempo, and meter are often helpful for identifying a musical work
                            when it does not have a distinctive title.</p>
@@ -3857,7 +3857,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkOtherChar"><span class="headingNumber">3.1.1</span><span class="head">Other Identifying Characteristics</span></h3>
+                        <h3 id="headerWorkOtherChar"><span class="headingNumber">3.6.4</span><span class="head">Other Identifying Characteristics</span></h3>
                         
                         <p>Additional information that aids the identification of the work may be encoded using
                            <a class="link_odd link_odd_elementSpec" href="../elements/otherChar.html">&lt;otherChar&gt;</a>.</p>
@@ -3883,7 +3883,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkHistory"><span class="headingNumber">3.1.1</span><span class="head">Work History</span></h3>
+                        <h3 id="headerWorkHistory"><span class="headingNumber">3.6.5</span><span class="head">Work History</span></h3>
                         
                         <p>The following elements are provided to capture the history of a musical work:</p>
                         
@@ -3953,7 +3953,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkLanguage"><span class="headingNumber">3.1.1</span><span class="head">Language Usage</span></h3>
+                        <h3 id="headerWorkLanguage"><span class="headingNumber">3.6.6</span><span class="head">Language Usage</span></h3>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/langUsage.html">&lt;langUsage&gt;</a> element is used within the <a class="link_odd link_odd_elementSpec" href="../elements/workList.html">&lt;workList&gt;</a> element to describe the languages, sublanguages, dialects, etc. represented within
                            a work. It contains one or more <a class="link_odd link_odd_elementSpec" href="../elements/language.html">&lt;language&gt;</a> elements, each of which provides information about a single language.</p>
@@ -4022,7 +4022,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkMedium"><span class="headingNumber">3.1.1</span><span class="head">Performance Medium</span></h3>
+                        <h3 id="headerWorkMedium"><span class="headingNumber">3.6.7</span><span class="head">Performance Medium</span></h3>
                         
                         <p>The following elements are available for description of a composition’s performing
                            forces:</p>
@@ -4065,7 +4065,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerWorkCast"><span class="headingNumber">3.1.1.1</span><span class="head">Cast Lists</span></h4>
+                           <h4 id="headerWorkCast"><span class="headingNumber">3.6.7.1</span><span class="head">Cast Lists</span></h4>
                            
                            <p>A cast list is a specialized form of list, conventionally found at the start or end
                               of a dramatic work, usually listing all the speaking/singing and non-speaking/singing
@@ -4303,7 +4303,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerWorkInstrumentation"><span class="headingNumber">3.1.1.1</span><span class="head">Instrumentation</span></h4>
+                           <h4 id="headerWorkInstrumentation"><span class="headingNumber">3.6.7.2</span><span class="head">Instrumentation</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a> element is used to capture the solo and ensemble instrumental and vocal resources
                               of a composition. For example, a work for a standard ensemble may be indicated thus:</p>
@@ -4618,7 +4618,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkAudience"><span class="headingNumber">3.1.1</span><span class="head">Audience and Context</span></h3>
+                        <h3 id="headerWorkAudience"><span class="headingNumber">3.6.8</span><span class="head">Audience and Context</span></h3>
                         
                         <p>
                            
@@ -4655,7 +4655,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkContents"><span class="headingNumber">3.1.1</span><span class="head">Work Contents</span></h3>
+                        <h3 id="headerWorkContents"><span class="headingNumber">3.6.9</span><span class="head">Work Contents</span></h3>
                         
                         <p>
                            
@@ -4818,7 +4818,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkBiblList"><span class="headingNumber">3.1.1</span><span class="head">Bibliographic Evidence</span></h3>
+                        <h3 id="headerWorkBiblList"><span class="headingNumber">3.6.10</span><span class="head">Bibliographic Evidence</span></h3>
                         
                         <p>
                            
@@ -4839,7 +4839,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkNotes"><span class="headingNumber">3.1.1</span><span class="head">Notes Statement</span></h3>
+                        <h3 id="headerWorkNotes"><span class="headingNumber">3.6.11</span><span class="head">Notes Statement</span></h3>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/notesStmt.html">&lt;notesStmt&gt;</a> element may be used within the description of the musical work to capture information
                            not accounted for by the other elements of the description.</p>
@@ -4847,7 +4847,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkClass"><span class="headingNumber">3.1.1</span><span class="head">Classification</span></h3>
+                        <h3 id="headerWorkClass"><span class="headingNumber">3.6.12</span><span class="head">Classification</span></h3>
                         
                         <p>Within <a class="link_odd link_odd_elementSpec" href="../elements/work.html">&lt;work&gt;</a>, the <a class="link_odd link_odd_elementSpec" href="../elements/classification.html">&lt;classification&gt;</a> element is used to classify the work according to some classification scheme. More
                            generally, <a class="link_odd link_odd_elementSpec" href="../elements/classification.html">&lt;classification&gt;</a> may be used to classifiy any FRBR entity (<a class="link_odd link_odd_elementSpec" href="../elements/work.html">&lt;work&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/expression.html">&lt;expression&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>, or <a class="link_odd link_odd_elementSpec" href="../elements/item.html">&lt;item&gt;</a>). The following elements are provided for this purpose:</p>
@@ -4970,7 +4970,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerWorkRelationships"><span class="headingNumber">3.1.1</span><span class="head">Work Relationships</span></h3>
+                        <h3 id="headerWorkRelationships"><span class="headingNumber">3.6.13</span><span class="head">Work Relationships</span></h3>
                         
                         <p>When the FRBR (Functional Requirements for Bibliographic Records) module is available,
                            the following elements may be used within <a class="link_odd link_odd_elementSpec" href="../elements/work.html">&lt;work&gt;</a> to describe relationships between the work being described and other works or between
@@ -5007,17 +5007,17 @@
                            </div>
                            </p>
                         
-                        <p>For more information about FRBR and the use of these elements, see chapter <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a>.</p>
+                        <p>For more information about FRBR and the use of these elements, see chapter <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a>.</p>
                         </div>
                      </div>
                   
                   <div class="div2">
                      
-                     <h2 id="msdesc"><span class="headingNumber">3.1</span><span class="head">Encoding Sources in MEI</span></h2>
+                     <h2 id="msdesc"><span class="headingNumber">3.7</span><span class="head">Encoding Sources in MEI</span></h2>
                      
                      <p>The <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/item.html">&lt;item&gt;</a> elements allow detailed description of various types of sources, for instance, a
                         printed text or manuscript, another computer file, an audio or video recording, or
-                        a combination of these. Both <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/item.html">&lt;item&gt;</a> are part of the <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a> implementation in MEI. Please note: in MEI 3.0.0, the <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> element was used to capture this type of information. The <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> element may contain the following elements:</p>
+                        a combination of these. Both <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/item.html">&lt;item&gt;</a> are part of the <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> implementation in MEI. Please note: in MEI 3.0.0, the <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> element was used to capture this type of information. The <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> element may contain the following elements:</p>
                      
                      <p>
                         
@@ -5350,10 +5350,10 @@
                         </div>
                         </p>
                      
-                     <p>Many of these elements are already described in chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.1 Structure of the MEI Header</a>, especially in <a class="link_ptr chapterLink" title="Work Description" href="../content/metadata.html#headerWorkDescription">3.1 Work Description</a>.</p>
+                     <p>Many of these elements are already described in chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.2 Structure of the MEI Header</a>, especially in <a class="link_ptr chapterLink" title="Work Description" href="../content/metadata.html#headerWorkDescription">3.6 Work Description</a>.</p>
                      
                      <p>The <a class="link_odd link_odd_elementSpec" href="../elements/manifestationList.html">&lt;manifestationList&gt;</a> is available to create lists of physical sources representing a work, for instance
-                        for use in a thematic catalog or a critical edition. The <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> child element corresponds to the <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a> level of the same name, that is, it describes embodiments of certain expressions
+                        for use in a thematic catalog or a critical edition. The <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> child element corresponds to the <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> level of the same name, that is, it describes embodiments of certain expressions
                         of a work. The list below reflects the order in which the optional components of manifestation
                         must occur. 
                         <div class="tile tile-centered">
@@ -5569,11 +5569,11 @@
                      
                      <div class="div3">
                         
-                        <h3 id="manuscriptsAndPrints"><span class="headingNumber">3.1.1</span><span class="head">Manuscripts and Prints</span></h3>
+                        <h3 id="manuscriptsAndPrints"><span class="headingNumber">3.7.1</span><span class="head">Manuscripts and Prints</span></h3>
                         
                         <div class="div4">
                            
-                           <h4 id="conditionColophon"><span class="headingNumber">3.1.1.1</span><span class="head">Condition and Statement of Production</span></h4>
+                           <h4 id="conditionColophon"><span class="headingNumber">3.7.1.1</span><span class="head">Condition and Statement of Production</span></h4>
                            
                            <p>
                               
@@ -5649,7 +5649,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="textTitlePages"><span class="headingNumber">3.1.1.1</span><span class="head">Title Pages</span></h4>
+                           <h4 id="textTitlePages"><span class="headingNumber">3.7.1.2</span><span class="head">Title Pages</span></h4>
                            
                            <p>A specialized element is furnished for the capture of title page information.</p>
                            
@@ -5792,7 +5792,7 @@
                               </p>
                            
                            <p>The physical appearance of title page information is often of considerable importance.
-                              One approach to capturing the appearance is to use the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">&lt;rend&gt;</a> element, described in chapter <a class="link_ptr chapterLink" title="Text Rendition" href="../content/textencoding.html#sharedTextRendition">7.1.1 Text Rendition</a> to specify the placement of each of the components of the title page. Another would
+                              One approach to capturing the appearance is to use the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">&lt;rend&gt;</a> element, described in chapter <a class="link_ptr chapterLink" title="Text Rendition" href="../content/textencoding.html#sharedTextRendition">7.2.2 Text Rendition</a> to specify the placement of each of the components of the title page. Another would
                               be to employ a CSS stylesheet. Finally, a module customized for the description of
                               typographic entities such as pages, lines, rules, etc., bearing special-purpose attributes
                               to describe line-height, leading, degree of kerning, font, etc. could be employed.</p>
@@ -5800,7 +5800,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="physicalProperties"><span class="headingNumber">3.1.1.1</span><span class="head">Physical Properties</span></h4>
+                           <h4 id="physicalProperties"><span class="headingNumber">3.7.1.3</span><span class="head">Physical Properties</span></h4>
                            
                            <p>The physical properties of a manifestation can be described using the following elements:</p>
                            
@@ -6310,7 +6310,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="bindingDesc"><span class="headingNumber">3.1.1.1</span><span class="head">Binding Description</span></h4>
+                           <h4 id="bindingDesc"><span class="headingNumber">3.7.1.4</span><span class="head">Binding Description</span></h4>
                            
                            <p>
                               
@@ -6338,7 +6338,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="foliadesc"><span class="headingNumber">3.1.1.1</span><span class="head">Description of Folia</span></h4>
+                           <h4 id="foliadesc"><span class="headingNumber">3.7.1.5</span><span class="head">Description of Folia</span></h4>
                            
                            <p>While many other elements within <a class="link_odd link_odd_elementSpec" href="../elements/physDesc.html">&lt;physDesc&gt;</a> describe specific features of manuscripts and prints in prose, <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> is intended to provide a <em>structured</em> description. It provides information about the collation of the manuscript; that
                               is, how the individual leaves are bound and related to each other, and how the groups
@@ -6423,7 +6423,7 @@
                            
                            <div class="div4">
                               
-                              <h5 id="linkingsurfaces"><span class="headingNumber">3.1.1.1.1</span><span class="head">Linking surface elements</span></h5>
+                              <h5 id="linkingsurfaces"><span class="headingNumber">3.7.1.5.1</span><span class="head">Linking surface elements</span></h5>
                               
                               <p>The <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> element and it's children are used to relate musical content with digitizations and
                                  specific image zones on them (see <a class="link_ptr chapterLink" title="Elements of the Facsimile Module" href="../content/facsimilesperformances.html#facsimileElements">10.1.1 Elements of the Facsimile Module</a>). <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> elements are always encoded in sequence within <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a>, and thus lack the expressiveness of <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a>. However, it is possible to relate these two concepts.</p>
@@ -6548,7 +6548,7 @@
                            
                            <div class="div4">
                               
-                              <h5 id="foliumdimensions"><span class="headingNumber">3.1.1.1.1</span><span class="head">Specifying page dimensions</span></h5>
+                              <h5 id="foliumdimensions"><span class="headingNumber">3.7.1.5.2</span><span class="head">Specifying page dimensions</span></h5>
                               
                               <p>Within <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a>, each <a class="link_odd link_odd_elementSpec" href="../elements/graphic.html">&lt;graphic&gt;</a> element may specify its dimensions using the following attributes:</p>
                               
@@ -6588,7 +6588,7 @@
                            
                            <div class="div4">
                               
-                              <h5 id="patches"><span class="headingNumber">3.1.1.1.1</span><span class="head">Patches</span></h5>
+                              <h5 id="patches"><span class="headingNumber">3.7.1.5.3</span><span class="head">Patches</span></h5>
                               
                               <p>Sometimes, manuscripts (but also prints) are subject to modifications that do not
                                  change the textual content, but the actual physical item. Typical examples for this
@@ -6675,7 +6675,7 @@
                            
                            <div class="div4">
                               
-                              <h5 id="cutouts"><span class="headingNumber">3.1.1.1.1</span><span class="head">Cutouts</span></h5>
+                              <h5 id="cutouts"><span class="headingNumber">3.7.1.5.4</span><span class="head">Cutouts</span></h5>
                               
                               <p>
                                  
@@ -6690,7 +6690,7 @@
                                  </div>
                                  </p>
                               
-                              <p>Cutouts are treated almost similarly as <a class="link_ptr chapterLink" title="Patches" href="../content/metadata.html#patches">3.1.1.1.1 Patches</a>. The most relevant attributes are:</p>
+                              <p>Cutouts are treated almost similarly as <a class="link_ptr chapterLink" title="Patches" href="../content/metadata.html#patches">3.7.1.5.3 Patches</a>. The most relevant attributes are:</p>
                               
                               <p>
                                  
@@ -6727,13 +6727,13 @@
                                  using <span class="att">@width</span> and <span class="att">@height</span> there. In this case, <span class="att">@width</span> and <span class="att">@height</span> on cutout is expendable.</p>
                               
                               <p>The genetic aspect of applying patches or cutting out parts of a page is described
-                                 in <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">9.1 Genetic Markup</a>.</p>
+                                 in <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">9.3 Genetic Markup</a>.</p>
                               </div>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="layoutDescSupportDesc"><span class="headingNumber">3.1.1.1</span><span class="head">Description of Layout and Support</span></h4>
+                           <h4 id="layoutDescSupportDesc"><span class="headingNumber">3.7.1.6</span><span class="head">Description of Layout and Support</span></h4>
                            
                            <p>
                               
@@ -6761,7 +6761,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="scriptDesc"><span class="headingNumber">3.1.1.1</span><span class="head">Description of Script</span></h4>
+                           <h4 id="scriptDesc"><span class="headingNumber">3.7.1.7</span><span class="head">Description of Script</span></h4>
                            
                            <p>
                               
@@ -6780,11 +6780,11 @@
                         
                         <div class="div4">
                            
-                           <h4 id="addDesc"><span class="headingNumber">3.1.1.1</span><span class="head">Additional Elements for Source Description</span></h4>
+                           <h4 id="addDesc"><span class="headingNumber">3.7.1.8</span><span class="head">Additional Elements for Source Description</span></h4>
                            
                            <div class="div5">
                               
-                              <h5 id="sourcesPrinted"><span class="headingNumber">3.1.1.1.1</span><span class="head">Printed Sources</span></h5>
+                              <h5 id="sourcesPrinted"><span class="headingNumber">3.7.1.8.1</span><span class="head">Printed Sources</span></h5>
                               
                               <p>
                                  
@@ -6834,12 +6834,12 @@
                                  </figure>
                                  </p>
                               
-                              <p>For <a class="link_odd link_odd_elementSpec" href="../elements/captureMode.html">&lt;captureMode&gt;</a> see <a class="link_ptr chapterLink" title="Describing Audio Sources or Other Media" href="../content/metadata.html#audioAndOther">3.1.1 Describing Audio Sources or Other Media</a>.</p>
+                              <p>For <a class="link_odd link_odd_elementSpec" href="../elements/captureMode.html">&lt;captureMode&gt;</a> see <a class="link_ptr chapterLink" title="Describing Audio Sources or Other Media" href="../content/metadata.html#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a>.</p>
                               </div>
                            
                            <div class="div5">
                               
-                              <h5 id="sourcesAdditions"><span class="headingNumber">3.1.1.1.1</span><span class="head">Handwriting, Additions, Accompaning</span></h5>
+                              <h5 id="sourcesAdditions"><span class="headingNumber">3.7.1.8.2</span><span class="head">Handwriting, Additions, Accompaning</span></h5>
                               
                               <p>
                                  
@@ -6935,7 +6935,7 @@
                                  </figure>
                                  </p>
                               
-                              <p>These transcriptions – as in the musical text – can also be marked by means of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, (see module MEI.edittrans) etc. (see <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.1 Editorial Markup</a>) and assigned to a specific scribe by <span class="att">@hand</span> (see <a class="link_odd link_odd_elementSpec" href="../elements/handList.html">&lt;handList&gt;</a>):</p>
+                              <p>These transcriptions – as in the musical text – can also be marked by means of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, (see module MEI.edittrans) etc. (see <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.2 Editorial Markup</a>) and assigned to a specific scribe by <span class="att">@hand</span> (see <a class="link_odd link_odd_elementSpec" href="../elements/handList.html">&lt;handList&gt;</a>):</p>
                               
                               <p>
                                  
@@ -7002,7 +7002,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="sourcesDecoSeal"><span class="headingNumber">3.1.1.1.1</span><span class="head">Seals and Decorations</span></h5>
+                              <h5 id="sourcesDecoSeal"><span class="headingNumber">3.7.1.8.3</span><span class="head">Seals and Decorations</span></h5>
                               
                               <p>
                                  
@@ -7052,7 +7052,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="sourcesParticularObjects"><span class="headingNumber">3.1.1.1.1</span><span class="head">Describing particular objects within the manuscript</span></h5>
+                              <h5 id="sourcesParticularObjects"><span class="headingNumber">3.7.1.8.4</span><span class="head">Describing particular objects within the manuscript</span></h5>
                               
                               <p>
                                  
@@ -7110,7 +7110,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="audioAndOther"><span class="headingNumber">3.1.1</span><span class="head">Describing Audio Sources or Other Media</span></h3>
+                        <h3 id="audioAndOther"><span class="headingNumber">3.7.2</span><span class="head">Describing Audio Sources or Other Media</span></h3>
                         
                         <p>
                            
@@ -7205,7 +7205,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="historicalAccount"><span class="headingNumber">3.1.1</span><span class="head">Additional Elements for Historical Account</span></h3>
+                        <h3 id="historicalAccount"><span class="headingNumber">3.7.3</span><span class="head">Additional Elements for Historical Account</span></h3>
                         
                         <p>
                            
@@ -7321,7 +7321,7 @@
                            in a published exhibition catalogue, so the encoding may also include information
                            about why the object was shown or what was significant about the exhibition. When
                            formulating the encoding, it is at the discretion of the encoder whether to opt for
-                           text or more structured information. Text-centred encoding is made possible by <a class="link_odd link_odd_elementSpec" href="../elements/p.html">&lt;p&gt;</a> elements in <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a>, among others. For more structured encodings, it is recommended to use the <a class="link_odd link_odd_elementSpec" href="../elements/eventList.html">&lt;eventList&gt;</a> element contained in <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a>. In FRBR-based cataloging (see <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a>),  <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a> is conceptually bound to the item-level. As an element it is not permitted at the
+                           text or more structured information. Text-centred encoding is made possible by <a class="link_odd link_odd_elementSpec" href="../elements/p.html">&lt;p&gt;</a> elements in <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a>, among others. For more structured encodings, it is recommended to use the <a class="link_odd link_odd_elementSpec" href="../elements/eventList.html">&lt;eventList&gt;</a> element contained in <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a>. In FRBR-based cataloging (see <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a>),  <a class="link_odd link_odd_elementSpec" href="../elements/exhibHist.html">&lt;exhibHist&gt;</a> is conceptually bound to the item-level. As an element it is not permitted at the
                            work or expression level and only permitted at the manifestation level if the manifestation
                            is a manifestation singleton.</p>
                         
@@ -7493,13 +7493,13 @@
                   
                   <div class="div2">
                      
-                     <h2 id="headerusecases"><span class="headingNumber">3.1</span><span class="head">Typical Use Cases</span></h2>
+                     <h2 id="headerusecases"><span class="headingNumber">3.8</span><span class="head">Typical Use Cases</span></h2>
                      
                      <p>This chapter introduces common use cases for MEI metadata.</p>
                      
                      <div class="div3">
                         
-                        <h3 id="headerIndependentHeader"><span class="headingNumber">3.1.1</span><span class="head">Independent Headers</span></h3>
+                        <h3 id="headerIndependentHeader"><span class="headingNumber">3.8.1</span><span class="head">Independent Headers</span></h3>
                         
                         <p>Many libraries, repositories, research sites and related institutions collect bibliographic
                            and documentary information about machine readable music documents without necessarily
@@ -7514,7 +7514,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="headerIndependentHeaderDefinition"><span class="headingNumber">3.1.1.1</span><span class="head">Independent MEI Headers</span></h4>
+                           <h4 id="headerIndependentHeaderDefinition"><span class="headingNumber">3.8.1.1</span><span class="head">Independent MEI Headers</span></h4>
                            
                            <p>An independent header is an MEI metadata header that can be exchanged as an independent
                               document between libraries, archives, collections, projects, and individuals.</p>
@@ -7559,7 +7559,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerExtendedMetadata"><span class="headingNumber">3.1.1</span><span class="head">Including non-MEI Metadata in MEI files</span></h3>
+                        <h3 id="headerExtendedMetadata"><span class="headingNumber">3.8.2</span><span class="head">Including non-MEI Metadata in MEI files</span></h3>
                         
                         <p>The following element is provided to accommodate non-MEI metadata:</p>
                         
@@ -7612,12 +7612,12 @@
                         
                         <p>An MEI processor is not required to validate or otherwise process any markup within
                            the <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a> element. Therefore, the <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a> element itself is the lowest level at which an association can be created between
-                           ‘foreign’ metadata and other MEI elements as described in section <a class="link_ptr chapterLink" title="Associating Metadata and Data" href="../content/metadata.html#headerAssociatingMetadataAndData">3.1.1 Associating Metadata and Data</a>.</p>
+                           ‘foreign’ metadata and other MEI elements as described in section <a class="link_ptr chapterLink" title="Associating Metadata and Data" href="../content/metadata.html#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a>.</p>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="headerMinimalRecommendedHeader"><span class="headingNumber">3.1.1</span><span class="head">Minimal and Recommended Header Information</span></h3>
+                        <h3 id="headerMinimalRecommendedHeader"><span class="headingNumber">3.8.3</span><span class="head">Minimal and Recommended Header Information</span></h3>
                         
                         <p>The MEI header allows for the provision of a very large amount of information concerning
                            the text itself, its source, its encodings, and revisions of it, as well as a wealth
@@ -7827,7 +7827,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="headerBiblAnalog"><span class="headingNumber">3.1.1</span><span class="head">Header Elements and their Relationship to Other Bibliographic Standards</span></h3>
+                        <h3 id="headerBiblAnalog"><span class="headingNumber">3.8.4</span><span class="head">Header Elements and their Relationship to Other Bibliographic Standards</span></h3>
                         
                         <p>Mapping elements from the MEI metadata header to another descriptive system may help
                            a repository harvest selected data from the MEI file to build a basic catalog record.
@@ -7855,7 +7855,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="corpus"><span class="headingNumber">3.1.1</span><span class="head">Musical Corpora</span></h3>
+                        <h3 id="corpus"><span class="headingNumber">3.8.5</span><span class="head">Musical Corpora</span></h3>
                         
                         <p>The term corpus may refer to any collection of musical data, although it is often
                            reserved for collections which have been organized or collected with a particular
@@ -7882,7 +7882,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="corpusModuleOverview"><span class="headingNumber">3.1.1.1</span><span class="head">Corpus Module Overview</span></h4>
+                           <h4 id="corpusModuleOverview"><span class="headingNumber">3.8.5.1</span><span class="head">Corpus Module Overview</span></h4>
                            
                            <p>The meiCorpus module defines a single element:</p>
                            
@@ -7969,11 +7969,11 @@
                            
                            <p>If it is essential to reflect the organization of a corpus into sub-components, then
                               the members of the corpus should be encoded as composite texts instead, using the
-                              <a class="link_odd link_odd_elementSpec" href="../elements/group.html">&lt;group&gt;</a> element described section <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.1 General Music Structure Elements</a>. The mechanisms for corpus characterization described in this chapter, however, are
+                              <a class="link_odd link_odd_elementSpec" href="../elements/group.html">&lt;group&gt;</a> element described section <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.2 General Music Structure Elements</a>. The mechanisms for corpus characterization described in this chapter, however, are
                               designed to reduce the need to do this. Useful groupings of components may easily
                               be expressed using the classification and identification elements described in section
-                              <a class="link_ptr chapterLink" title="Classification" href="../content/metadata.html#headerWorkClass">3.1.1 Classification</a>, and those for associating declarations with corpus components described in section
-                              <a class="link_ptr chapterLink" title="Associating Metadata and Data" href="../content/metadata.html#headerAssociatingMetadataAndData">3.1.1 Associating Metadata and Data</a>. These mechanisms also allow several different methods of text grouping to co-exist,
+                              <a class="link_ptr chapterLink" title="Classification" href="../content/metadata.html#headerWorkClass">3.6.12 Classification</a>, and those for associating declarations with corpus components described in section
+                              <a class="link_ptr chapterLink" title="Associating Metadata and Data" href="../content/metadata.html#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a>. These mechanisms also allow several different methods of text grouping to co-exist,
                               each to be used as needed at different times. This helps minimize the danger of cross-classification
                               and mis-classification of samples, and helps improve the flexibility with which parts
                               of a corpus may be characterized for different applications.</p>
@@ -7986,7 +7986,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="corpusCombiningHeaders"><span class="headingNumber">3.1.1.1</span><span class="head">Combining Corpus and Text Headers</span></h4>
+                           <h4 id="corpusCombiningHeaders"><span class="headingNumber">3.8.5.2</span><span class="head">Combining Corpus and Text Headers</span></h4>
                            
                            <p>An MEI-conformant document may have more than one header only in the case of a TEI
                               corpus, which must have a header in its own right, as well as the obligatory header
@@ -7998,7 +7998,7 @@
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> for a corpus text is understood to be prefixed by the <a class="link_odd link_odd_elementSpec" href="../elements/titleStmt.html">&lt;titleStmt&gt;</a> given in the corpus header. All other optional elements of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> should be omitted from an individual corpus text header unless they differ from those
                               specified in the corpus header. All other header elements behave identically, in the
-                              manner documented in chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.1 Structure of the MEI Header</a>. This makes it possible to state information which is common to the whole of the
+                              manner documented in chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.2 Structure of the MEI Header</a>. This makes it possible to state information which is common to the whole of the
                               corpus in the corpus header, while still allowing for individual texts to vary from
                               this common metadata.</p>
                            
@@ -8099,7 +8099,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="corpusRecommendations"><span class="headingNumber">3.1.1.1</span><span class="head">Recommendations for the Encoding of Large Corpora</span></h4>
+                           <h4 id="corpusRecommendations"><span class="headingNumber">3.8.5.3</span><span class="head">Recommendations for the Encoding of Large Corpora</span></h4>
                            
                            <p>These Guidelines include proposals for the identification and encoding of a far greater
                               variety of textual features and characteristics than is likely to be either feasible
@@ -8133,7 +8133,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -8147,7 +8147,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.1 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.1 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.1.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.1.1 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.1.1 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.1 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.1.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.1.1 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.1.1 Revision Description</a><a class="level-2" href="#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.1.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.1.1 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.1.1 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.1.1 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.1 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.1.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.1.1 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.1.1 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.1.1 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.1.1 Work History</a><a class="level-3" href="#headerWorkLanguage">3.1.1 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.1.1 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.1.1 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.1.1 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.1.1 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.1.1 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.1.1 Classification</a><a class="level-3" href="#headerWorkRelationships">3.1.1 Work Relationships</a><a class="level-2" href="#msdesc">3.1 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.1.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.1.1 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.1.1 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.1 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.1.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.1.1 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.1.1 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.1.1 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.1.1 Musical Corpora</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -8165,7 +8165,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.1 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.1 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.1.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.1.1 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.1.1 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.1 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.1.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.1.1 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.1.1 Revision Description</a><a class="level-2" href="#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.1.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.1.1 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.1.1 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.1.1 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.1 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.1.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.1.1 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.1.1 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.1.1 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.1.1 Work History</a><a class="level-3" href="#headerWorkLanguage">3.1.1 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.1.1 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.1.1 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.1.1 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.1.1 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.1.1 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.1.1 Classification</a><a class="level-3" href="#headerWorkRelationships">3.1.1 Work Relationships</a><a class="level-2" href="#msdesc">3.1 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.1.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.1.1 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.1.1 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.1 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.1.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.1.1 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.1.1 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.1.1 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.1.1 Musical Corpora</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
                   </div>
                </div>
             </div>

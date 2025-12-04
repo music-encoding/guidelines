@@ -10,7 +10,7 @@
       <meta name="author" content="Stefan Münnich">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
@@ -53,7 +53,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="cmnBasics"><span class="headingNumber">4.1</span><span class="head">Basic Elements of CMN</span></h2>
+                     <h2 id="cmnBasics"><span class="headingNumber">4.2</span><span class="head">Basic Elements of CMN</span></h2>
                      
                      <p>This section describes the use of basic features of MEI important for encoding CMN
                         material. Most of the elements discussed here are defined in chapter <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">B2 Shared Concepts in MEI</a> of these Guidelines, but are used in music from the CMN repertoire in specialized
@@ -61,7 +61,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnMeasures"><span class="headingNumber">4.1.1</span><span class="head">The Role of the Measure Element</span></h3>
+                        <h3 id="cmnMeasures"><span class="headingNumber">4.2.1</span><span class="head">The Role of the Measure Element</span></h3>
                         
                         <p>Arguably, the most important element of the CMN module is the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> element. It is used as a structural unit inside <a class="link_odd link_odd_elementSpec" href="../elements/section.html">&lt;section&gt;</a> elements and acts as a container for ‘events’ from the <a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a> class, such as notes, chords and rests as well as ‘control events’ from the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, such as slurs and indications of dynamics.</p>
                         
@@ -219,7 +219,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnDefs"><span class="headingNumber">4.1.1</span><span class="head">Defining Score Parameters for CMN</span></h3>
+                        <h3 id="cmnDefs"><span class="headingNumber">4.2.2</span><span class="head">Defining Score Parameters for CMN</span></h3>
                         
                         <p>When encoding a score in CMN, MEI relies on the following elements from the <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">B2 Shared Concepts in MEI</a> module:</p>
                         
@@ -729,7 +729,7 @@
                         <p>With the exception of <a class="link_odd link_odd_elementSpec" href="../elements/label.html">&lt;label&gt;</a>, these elements may also occur within the flow of musical events captured in a <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>, since they are members of <a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a>. In the layer context they function as milestones and affect all following content
                            assigned to the layer (even in subsequent measures) until their information is again
                            overridden either by the same element bearing different information or a <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a>. In this context, it is also possible to combine them with the elements described
-                           in chapters <a class="link_ptr chapterLink" title="Critical Apparatus" href="../content/scholarlyediting.html#critApp">11.1 Critical Apparatus</a> and <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.1 Editorial Markup</a> of these Guidelines.</p>
+                           in chapters <a class="link_ptr chapterLink" title="Critical Apparatus" href="../content/scholarlyediting.html#critApp">11.1 Critical Apparatus</a> and <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> of these Guidelines.</p>
                         
                         <p>Such flexibility as this may require close inspection of an encoding to retrieve the
                            correct definitions for a given staff. As a general rule, the closest preceding and
@@ -745,7 +745,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnDefsSepecial"><span class="headingNumber">4.1.1</span><span class="head">Special cases in staff definitions</span></h3>
+                        <h3 id="cmnDefsSepecial"><span class="headingNumber">4.2.3</span><span class="head">Special cases in staff definitions</span></h3>
                         
                         <p>Usually <a class="link_odd link_odd_elementSpec" href="../elements/clef.html">&lt;clef&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/key.html">&lt;key&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/meterSig.html">&lt;meterSig&gt;</a> apply to a whole staff.</p>
                         
@@ -826,7 +826,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnReDef"><span class="headingNumber">4.1.1</span><span class="head">Re-definition of Score Parameters</span></h3>
+                        <h3 id="cmnReDef"><span class="headingNumber">4.2.4</span><span class="head">Re-definition of Score Parameters</span></h3>
                         
                         <p>Sometimes it is necessary to re-define the parameters of a score or a staff. For example,
                            a score may change keys, the number of staves, or use different layout settings. Likewise,
@@ -996,19 +996,19 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnNotesChords"><span class="headingNumber">4.1.1</span><span class="head">Notes, Chords and Rests in CMN</span></h3>
+                        <h3 id="cmnNotesChords"><span class="headingNumber">4.2.5</span><span class="head">Notes, Chords and Rests in CMN</span></h3>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnNotes"><span class="headingNumber">4.1.1.1</span><span class="head">Notes</span></h4>
+                           <h4 id="cmnNotes"><span class="headingNumber">4.2.5.1</span><span class="head">Notes</span></h4>
                            
                            <p>Undoubtedly, the most important element for any music notation representation is the
-                              <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> element, which is defined in section <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.1.1 Basic Music Events</a>. This section describes the usage of <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> in the CMN repertoire as well as CMN-specific additions to the basic definition in
+                              <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> element, which is defined in section <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a>. This section describes the usage of <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> in the CMN repertoire as well as CMN-specific additions to the basic definition in
                               the shared module.</p>
                            
                            <div class="div5">
                               
-                              <h5 id="cmnNotesBasic"><span class="headingNumber">4.1.1.1.1</span><span class="head">Basic Usage of Notes in CMN</span></h5>
+                              <h5 id="cmnNotesBasic"><span class="headingNumber">4.2.5.1.1</span><span class="head">Basic Usage of Notes in CMN</span></h5>
                               
                               <p>In CMN, notes are determined by three basic parameters:</p>
                               
@@ -1094,7 +1094,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnNotesGrace"><span class="headingNumber">4.1.1.1.1</span><span class="head">Grace Notes</span></h5>
+                              <h5 id="cmnNotesGrace"><span class="headingNumber">4.2.5.1.2</span><span class="head">Grace Notes</span></h5>
                               
                               <p>The CMN module adds two optional attributes, <span class="att">@grace</span> and <span class="att">@grace.time</span>, to <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. The presence of the <span class="att">@grace</span> attribute indicates a grace note or chord.</p>
                               
@@ -1156,13 +1156,13 @@
                                  event or to the preceding one. The <a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">&lt;graceGrp&gt;</a> element can be used with single or multiple grace notes.</p>
                               
                               <p>More information about grace notes in the context of other CMN ornaments is available
-                                 in chapter <a class="link_ptr chapterLink" title="Common Music Notation Ornaments" href="../content/cmn.html#cmnOrnaments">4.1 Common Music Notation Ornaments</a>.</p>
+                                 in chapter <a class="link_ptr chapterLink" title="Common Music Notation Ornaments" href="../content/cmn.html#cmnOrnaments">4.4 Common Music Notation Ornaments</a>.</p>
                               </div>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnChords"><span class="headingNumber">4.1.1.1</span><span class="head">Chords</span></h4>
+                           <h4 id="cmnChords"><span class="headingNumber">4.2.5.2</span><span class="head">Chords</span></h4>
                            
                            <p>Often we find multiple notes that are not sounding in succession but sounding simultaneously.
                               These chords in MEI are basically defined as a container of notes that are stemmed
@@ -1170,7 +1170,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnChordsBasic"><span class="headingNumber">4.1.1.1.1</span><span class="head">Chords in CMN</span></h5>
+                              <h5 id="cmnChordsBasic"><span class="headingNumber">4.2.5.2.1</span><span class="head">Chords in CMN</span></h5>
                               
                               <p>A chord is any set of pitches consisting of multiple notes that are to be played simultaneously
                                  and are usually grouped together visually with a single stem. In MEI the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element functions as a container for all participating notes. Also it features many
@@ -1242,7 +1242,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnChordsStems"><span class="headingNumber">4.1.1.1.1</span><span class="head">Stem Modifications</span></h5>
+                              <h5 id="cmnChordsStems"><span class="headingNumber">4.2.5.2.2</span><span class="head">Stem Modifications</span></h5>
                               
                               <p>The <span class="att">@stem.mod</span> attribute accommodates various stem modifiers found in the CMN repertoire. These
                                  symbols are placed on a note or chord’s stem and generally indicate different types
@@ -1265,7 +1265,7 @@
                               <p class="gloss"><strong><span>z</span></strong>:
                                  Z placed on stem</p>
                               
-                              <p>The <span class="att">@stem.mod</span> attibute is normally used in accordance with practices described in section <a class="link_ptr chapterLink" title="Tremolandi" href="../content/cmn.html#cmnTrem">4.1.1.1 Tremolandi</a>.</p>
+                              <p>The <span class="att">@stem.mod</span> attibute is normally used in accordance with practices described in section <a class="link_ptr chapterLink" title="Tremolandi" href="../content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a>.</p>
                               
                               <p>The CMN module makes the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.stems.cmn.html">att.stems.cmn</a> attribute class available, which adds the optional <span class="att">@stem.with</span> attribute to <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. The attribute <span class="att">@stem.with</span> allows for the indication of a stem that joins notes on adjacent staves.</p>
                               
@@ -1320,7 +1320,7 @@
                               
                               <p>Alternatively, the encoder may choose to treat the notes in the lower staff as logically
                                  belonging to the top staff and to ‘displace’ them using the <span class="att">@staff</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>. Some use cases, however, may require filling the time that those notes would normally
-                                 occupy using the <a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a> element described in section <a class="link_ptr chapterLink" title="Event Spacing" href="../content/shared.html#sharedNoteSpacing">2.1.1.1 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:</p>
+                                 occupy using the <a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a> element described in section <a class="link_ptr chapterLink" title="Event Spacing" href="../content/shared.html#sharedNoteSpacing">2.2.4.5 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:</p>
                               
                               <p>
                                  
@@ -1462,7 +1462,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnRests"><span class="headingNumber">4.1.1.1</span><span class="head">Rests</span></h4>
+                           <h4 id="cmnRests"><span class="headingNumber">4.2.5.3</span><span class="head">Rests</span></h4>
                            
                            <p>The <span class="att">@dur</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a> captures the written duration of the rest and allows the same values as on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. The CMN module also makes three more elements available for special forms of rest:</p>
                            
@@ -1500,7 +1500,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnRestsMRest"><span class="headingNumber">4.1.1.1.1</span><span class="head">Measure Rests</span></h5>
+                              <h5 id="cmnRestsMRest"><span class="headingNumber">4.2.5.3.1</span><span class="head">Measure Rests</span></h5>
                               
                               <p>The <a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">&lt;mRest&gt;</a> (measure rest) element is used to indicate a complete measure rest, independent from
                                  the meter of the current</p>
@@ -1540,7 +1540,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnRestsMultiRest"><span class="headingNumber">4.1.1.1.1</span><span class="head">Multiple-Measure Rests</span></h5>
+                              <h5 id="cmnRestsMultiRest"><span class="headingNumber">4.2.5.3.2</span><span class="head">Multiple-Measure Rests</span></h5>
                               
                               <p>The <a class="link_odd link_odd_elementSpec" href="../elements/multiRest.html">&lt;multiRest&gt;</a> (multiple measure rest) element is used to encode multiple measures of rest. It is
                                  commonly used in performer parts, but due to the problem of synchronicity with other
@@ -1578,7 +1578,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="cmnRestsMSpace"><span class="headingNumber">4.1.1.1.1</span><span class="head">Empty Measures</span></h5>
+                              <h5 id="cmnRestsMSpace"><span class="headingNumber">4.2.5.3.3</span><span class="head">Empty Measures</span></h5>
                               
                               <p>The <a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">&lt;mSpace&gt;</a> (measure space) element is closely related to the <a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/mRest.html">&lt;mRest&gt;</a> elements. It is used to explicitly indicate that a layer has no content but that
                                  no information is missing from the encoding.</p>
@@ -1618,7 +1618,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnTstamp"><span class="headingNumber">4.1.1</span><span class="head">Timestamps and Durations</span></h3>
+                        <h3 id="cmnTstamp"><span class="headingNumber">4.2.6</span><span class="head">Timestamps and Durations</span></h3>
                         
                         <p>MEI offers multiple ways of defining onsets and offsets of timed musical events such
                            as notes and slurs. The most common and most musician-friendly approach to this is
@@ -1635,7 +1635,7 @@
                            left bar line ('0') and ending with the right bar line of the measure ('5', in the
                            case of 4/4 time).</p>
                         
-                        <p>For expressing durations, MEI offers the <span class="att">@dur</span> attribute. This attribute is described in section <a class="link_ptr chapterLink" title="Basic Usage of Notes in CMN" href="../content/cmn.html#cmnNotesBasic">4.1.1.1.1 Basic Usage of Notes in CMN</a>.</p>
+                        <p>For expressing durations, MEI offers the <span class="att">@dur</span> attribute. This attribute is described in section <a class="link_ptr chapterLink" title="Basic Usage of Notes in CMN" href="../content/cmn.html#cmnNotesBasic">4.2.5.1.1 Basic Usage of Notes in CMN</a>.</p>
                         
                         <p>For ‘spanning’ elements like slurs, which are members of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, it is often more intuitive to record two timestamps – one for the onset of
                            the event and one for its termination. Because the termination of the event may be
@@ -1652,7 +1652,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="cmnAdditionalMeasureContent"><span class="headingNumber">4.1</span><span class="head">Advanced CMN Features</span></h2>
+                     <h2 id="cmnAdditionalMeasureContent"><span class="headingNumber">4.3</span><span class="head">Advanced CMN Features</span></h2>
                      
                      <p>Over time, in addition to the basic features of note, chord, and rest, many other
                         symbols have been added to CMN. The following section describes some of these symbols
@@ -1660,7 +1660,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnBeams"><span class="headingNumber">4.1.1</span><span class="head">Beams</span></h3>
+                        <h3 id="cmnBeams"><span class="headingNumber">4.3.1</span><span class="head">Beams</span></h3>
                         
                         <p>A very common feature of music from the CMN repertoire is the beaming of eighth or
                            shorter notes. MEI provides two elements for the explicit encoding of features joined
@@ -2089,7 +2089,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnSlurTies"><span class="headingNumber">4.1.1</span><span class="head">Ties, Slurs and Phrase Marks</span></h3>
+                        <h3 id="cmnSlurTies"><span class="headingNumber">4.3.2</span><span class="head">Ties, Slurs and Phrase Marks</span></h3>
                         
                         <p>One of the most specific features of CMN is the use of ‘curved lines’ which connect
                            notes. These lines are used to indicate various musical features, depending on their
@@ -2492,7 +2492,7 @@
                         
                         <p>Another reason for using elements instead of attributes for ties, slurs, and phrase
                            marks is that only elements may be combined with the functionality provided in chapters
-                           <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.1 Editorial Markup</a> and <a class="link_ptr chapterLink" title="Critical Apparatus" href="../content/scholarlyediting.html#critApp">11.1 Critical Apparatus</a> of these Guidelines.</p>
+                           <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> and <a class="link_ptr chapterLink" title="Critical Apparatus" href="../content/scholarlyediting.html#critApp">11.1 Critical Apparatus</a> of these Guidelines.</p>
                         
                         <p>Although these elements are allowed within a <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> to accommodate unmeasured notation, by convention in CMN they are normally placed
                            inside <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>, after the encoding of staves, alongside other so-called ‘control events’.</p>
@@ -2559,7 +2559,7 @@
                            </p>
                         
                         <p>For the ‘horizontal assignment’, the encoder may choose between two different mechanisms.
-                           The first uses two timestamp attributes as described in section <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.1.1 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:</p>
+                           The first uses two timestamp attributes as described in section <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:</p>
                         
                         <p>
                            
@@ -2600,7 +2600,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnDynam"><span class="headingNumber">4.1.1</span><span class="head">Dynamics in CMN</span></h3>
+                        <h3 id="cmnDynam"><span class="headingNumber">4.3.3</span><span class="head">Dynamics in CMN</span></h3>
                         
                         <p>Common Music Notation provides two different methodologies for expressing the volume
                            of a note, phrase, section, etc. The first is a verbal instruction providing such
@@ -2714,7 +2714,7 @@
                         
                         <p>Dynamics must also be associated with a particular time point in a measure, using
                            the <span class="att">@tstamp</span>, or with a particular event, using the <span class="att">@startid</span> attribute. Linking a control event with measures and events is discussed in section
-                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.1.1 Timestamps and Durations</a>:</p>
+                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a>:</p>
                         
                         <p>
                            
@@ -2968,7 +2968,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnTuplets"><span class="headingNumber">4.1.1</span><span class="head">Tuplets</span></h3>
+                        <h3 id="cmnTuplets"><span class="headingNumber">4.3.4</span><span class="head">Tuplets</span></h3>
                         
                         <p>Tuplets indicate a localized change of meter; that is, a given duration in the regular
                            meter is divided between a group of notes with irregular (according to the current
@@ -3088,7 +3088,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnArtic"><span class="headingNumber">4.1.1</span><span class="head">Articulation and Performance Instructions in CMN</span></h3>
+                        <h3 id="cmnArtic"><span class="headingNumber">4.3.5</span><span class="head">Articulation and Performance Instructions in CMN</span></h3>
                         
                         <p>This section introduces elements and attributes which may hold CMN-specific performance
                            instructions. The functionality described herein is related to the <span class="att">@artic</span> attribute and <a class="link_odd link_odd_elementSpec" href="../elements/artic.html">&lt;artic&gt;</a> element introduced in <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">B2 Shared Concepts in MEI</a>. The following elements are relevant in this context:</p>
@@ -3173,7 +3173,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnArpegGliss"><span class="headingNumber">4.1.1.1</span><span class="head">Arpeggio and Glissando</span></h4>
+                           <h4 id="cmnArpegGliss"><span class="headingNumber">4.3.5.1</span><span class="head">Arpeggio and Glissando</span></h4>
                            
                            <p>In CMN, the notes of a chord are sometimes performed successively rather than simultaneously.
                               This behavior, called arpeggiation, is normally indicated using a vertical wavy line
@@ -3378,7 +3378,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnBend"><span class="headingNumber">4.1.1.1</span><span class="head">Bend</span></h4>
+                           <h4 id="cmnBend"><span class="headingNumber">4.3.5.2</span><span class="head">Bend</span></h4>
                            
                            <p>A bend is a variation in pitch (often microtonal) upwards or downwards during the
                               course of a note. Typically, the performer attacks the note at ‘true’ pitch, changes
@@ -3388,7 +3388,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnTrem"><span class="headingNumber">4.1.1.1</span><span class="head">Tremolandi</span></h4>
+                           <h4 id="cmnTrem"><span class="headingNumber">4.3.5.3</span><span class="head">Tremolandi</span></h4>
                            
                            <p>CMN has two slightly different concepts which are both called tremolo. The first is
                               a rapid repetition of a single pitch or chord, whereas the second is a rapid alternation
@@ -3608,7 +3608,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnFermata"><span class="headingNumber">4.1.1.1</span><span class="head">Fermata</span></h4>
+                           <h4 id="cmnFermata"><span class="headingNumber">4.3.5.4</span><span class="head">Fermata</span></h4>
                            
                            <p>A very common feature of music notation from the CMN period is the so-called ‘fermata’
                               (or ‘corona’ in Italian). It is usually written as a dot above or below an arc. It
@@ -3691,7 +3691,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnOctave"><span class="headingNumber">4.1.1.1</span><span class="head">Octave Shift</span></h4>
+                           <h4 id="cmnOctave"><span class="headingNumber">4.3.5.5</span><span class="head">Octave Shift</span></h4>
                            
                            <p>An indication that a passage should be performed one or more octaves above or below
                               its written pitch is represented by the <a class="link_odd link_odd_elementSpec" href="../elements/octave.html">&lt;octave&gt;</a> element.</p>
@@ -3932,7 +3932,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnInstr"><span class="headingNumber">4.1.1</span><span class="head">Instrument-specific Symbols in CMN</span></h3>
+                        <h3 id="cmnInstr"><span class="headingNumber">4.3.6</span><span class="head">Instrument-specific Symbols in CMN</span></h3>
                         
                         <p>CMN contains a number of symbols which are closely related to a specific instrument.
                            MEI offers elements for three of these symbols, namely breath marks, harp pedal diagrams,
@@ -3940,7 +3940,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnBreath"><span class="headingNumber">4.1.1.1</span><span class="head">Breath Marks</span></h4>
+                           <h4 id="cmnBreath"><span class="headingNumber">4.3.6.1</span><span class="head">Breath Marks</span></h4>
                            
                            <p>A breath mark indicates a point at which the performer of a wind instrument or singer
                               may breathe. It is sometimes also used to indicate a short pause or break for instruments
@@ -3979,12 +3979,12 @@
                               </p>
                            
                            <p>The usual sign for the breath mark is a comma; however, other visual forms of the
-                              breath mark may be indicated using the <span class="att">@altsym</span> attribute (see chapter <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.1 User-defined Symbols</a> for further details).</p>
+                              breath mark may be indicated using the <span class="att">@altsym</span> attribute (see chapter <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.4 User-defined Symbols</a> for further details).</p>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnHarp"><span class="headingNumber">4.1.1.1</span><span class="head">Harp Pedals</span></h4>
+                           <h4 id="cmnHarp"><span class="headingNumber">4.3.6.2</span><span class="head">Harp Pedals</span></h4>
                            
                            <p>Modern harps have seven pedals which allow adjustment of their strings to different
                               pitches. The settings for these pedals occur at the beginning of the harp notation
@@ -3992,7 +3992,7 @@
                               rendered using letter pitches (in the order of the pedals from left to right) or in
                               a diagrammatic fashion, such as the form invented by <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Carlos_Salzedo">Carlos Salzedo</a>.</p>
                            
-                           <p>In MEI, harp pedal settings are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html">&lt;harpPedal&gt;</a> element. It is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class and is therefore placed within <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> children. The <span class="att">@staff</span> and <span class="att">@layer</span> attributes may be used to assign it to a certain <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>. Either a <span class="att">@tstamp</span> or <span class="att">@startid</span> attribute must be used to indicate the placement within the measure (see <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.1.1 Timestamps and Durations</a> and <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">B13 Linking Data</a> for further details about those linking mechanisms).</p>
+                           <p>In MEI, harp pedal settings are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/harpPedal.html">&lt;harpPedal&gt;</a> element. It is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class and is therefore placed within <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> children. The <span class="att">@staff</span> and <span class="att">@layer</span> attributes may be used to assign it to a certain <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>. Either a <span class="att">@tstamp</span> or <span class="att">@startid</span> attribute must be used to indicate the placement within the measure (see <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a> and <a class="link_ptr chapterLink" title="Linking Data" href="../content/linkingdata.html">B13 Linking Data</a> for further details about those linking mechanisms).</p>
                            
                            <p>The musical intention of the element is described using the <span class="att">@c</span>, <span class="att">@d</span>, <span class="att">@e</span>, <span class="att">@f</span>, <span class="att">@g</span>, <span class="att">@a</span> and <span class="att">@b</span> attributes, which affect the corresponding strings of the harp. All of these attributes
                               may take the values <span class="val">f</span> (flat), <span class="val">s</span> (sharp) or <span class="val">n</span> (natural), where a natural is the default value, which is assumed when one of these
@@ -4031,7 +4031,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnPedal"><span class="headingNumber">4.1.1.1</span><span class="head">Piano Pedal</span></h4>
+                           <h4 id="cmnPedal"><span class="headingNumber">4.3.6.3</span><span class="head">Piano Pedal</span></h4>
                            
                            <p>Music for piano also often includes indications of the use of pedals. In MEI, these
                               symbols are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/pedal.html">&lt;pedal&gt;</a> element. As a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class, it is located within <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> and refers to a staff, layer and timestamp using the <span class="att">@staff</span>, <span class="att">@layer</span> and <span class="att">@tstamp</span> attributes. Alternatively, the <span class="att">@startid</span> attribute may be used to identify a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> to which the mark should be assigned.</p>
@@ -4092,7 +4092,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnFing"><span class="headingNumber">4.1.1.1</span><span class="head">Fingering</span></h4>
+                           <h4 id="cmnFing"><span class="headingNumber">4.3.6.4</span><span class="head">Fingering</span></h4>
                            
                            <p>A common feature for keyboard music is fingering, indicating the finger, which should
                               be used to play a single note. Basic fingering can be encoded in MEI using the <a class="link_odd link_odd_elementSpec" href="../elements/fing.html">&lt;fing&gt;</a> element, which is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.fingeringLike.html">model.fingeringLike</a> class, and thus part of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class.</p>
@@ -4140,7 +4140,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnOssia"><span class="headingNumber">4.1.1</span><span class="head">Ossia</span></h3>
+                        <h3 id="cmnOssia"><span class="headingNumber">4.3.7</span><span class="head">Ossia</span></h3>
                         
                         <p>The term <span class="term">ossia</span>, Italian for "or", denotes an alternative for a certain passage which is provided
                            by the composer <em class="mentioned">without any preference</em> one alternative over another. An ossia often provides a simpler (easier to perform)
@@ -4255,7 +4255,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnCue"><span class="headingNumber">4.1.1</span><span class="head">Cue</span></h3>
+                        <h3 id="cmnCue"><span class="headingNumber">4.3.8</span><span class="head">Cue</span></h3>
                         
                         <p>Cue notes are smaller notes that usually occur in an orchestral or vocal part and
                            are not to be played or sung by the corresponding musician, but by other instruments
@@ -4392,17 +4392,17 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnDir"><span class="headingNumber">4.1.1</span><span class="head">Directives and Rehearsal marks</span></h3>
+                        <h3 id="cmnDir"><span class="headingNumber">4.3.9</span><span class="head">Directives and Rehearsal marks</span></h3>
                         
                         <p>In CMN scores, there is often a large number of natural language instructions. Some
                            of them concern the loudness and the speed of the performance, in which case MEI offers
-                           the elements <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> (described at <a class="link_ptr chapterLink" title="Dynamics in CMN" href="../content/cmn.html#cmnDynam">4.1.1 Dynamics in CMN</a>) and <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>. In other cases, however, they provide other instructions for the performer. Instead
+                           the elements <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> (described at <a class="link_ptr chapterLink" title="Dynamics in CMN" href="../content/cmn.html#cmnDynam">4.3.3 Dynamics in CMN</a>) and <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>. In other cases, however, they provide other instructions for the performer. Instead
                            of providing separate elements for all possible types of such directions, MEI offers
                            the generic <a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a> element. Although this element is not CMN specific (it is defined in <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">B2 Shared Concepts in MEI</a>), it is frequently used in this repertoire.</p>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnTempo"><span class="headingNumber">4.1.1.1</span><span class="head">Tempo changes and other directives</span></h4>
+                           <h4 id="cmnTempo"><span class="headingNumber">4.3.9.1</span><span class="head">Tempo changes and other directives</span></h4>
                            
                            <p>A tempo or character indication is often provided above the topmost staff of the first
                               measure of a score, movement, or section. This indication, such as "Allegro moderato"
@@ -4440,7 +4440,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnReh"><span class="headingNumber">4.1.1.1</span><span class="head">Rehearsal marks</span></h4>
+                           <h4 id="cmnReh"><span class="headingNumber">4.3.9.2</span><span class="head">Rehearsal marks</span></h4>
                            
                            <p>Rehearsal marks are another specialized kind of directive. Consisting of letters,
                               numbers, or a combination of both, rehearsal marks are used in scores and corresponding
@@ -4448,7 +4448,7 @@
                               interruptions. For this reason, they are often visually emphasized by placing them
                               within a square or circle. In MEI, they are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/reh.html">&lt;reh&gt;</a> element, which holds the textual content of the rehearsal mark. It is a member of
                               the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.cmn.html">model.controlEventLike.cmn</a> class. The visual rendition of the rehearsal mark, including the surrounding shape,
-                              may be captured using the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">&lt;rend&gt;</a> element described in chapter <a class="link_ptr chapterLink" title="Text Rendition" href="../content/textencoding.html#sharedTextRendition">9.1.1 Text Rendition</a>.</p>
+                              may be captured using the <a class="link_odd link_odd_elementSpec" href="../elements/rend.html">&lt;rend&gt;</a> element described in chapter <a class="link_ptr chapterLink" title="Text Rendition" href="../content/textencoding.html#sharedTextRendition">9.2.2 Text Rendition</a>.</p>
                            
                            <p>The following detail from an edition of Hector Berlioz’ <em>Symphonie Fantastique</em> shows a typical example:</p>
                            
@@ -4527,7 +4527,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnRep"><span class="headingNumber">4.1.1</span><span class="head">Repetition in CMN</span></h3>
+                        <h3 id="cmnRep"><span class="headingNumber">4.3.10</span><span class="head">Repetition in CMN</span></h3>
                         
                         <p>Repetition is a characteristic feature of music. Many musical forms rely on repetition
                            (sometimes with modification) of distinct sections of the music. Repetition in this
@@ -4538,14 +4538,14 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnRepStruct"><span class="headingNumber">4.1.1.1</span><span class="head">Structural Repetition</span></h4>
+                           <h4 id="cmnRepStruct"><span class="headingNumber">4.3.10.1</span><span class="head">Structural Repetition</span></h4>
                            
-                           <p>Large-scale structural repetition, utilizing <a class="link_odd link_odd_elementSpec" href="../elements/section.html">&lt;section&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expansion.html">&lt;expansion&gt;</a> elements, is discussed in section <a class="link_ptr chapterLink" title="Content of Musical Divisions" href="../content/shared.html#sharedMdivContent">2.1.1.1 Content of Musical Divisions</a>. This section will focus on repetition within sections.</p>
+                           <p>Large-scale structural repetition, utilizing <a class="link_odd link_odd_elementSpec" href="../elements/section.html">&lt;section&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expansion.html">&lt;expansion&gt;</a> elements, is discussed in section <a class="link_ptr chapterLink" title="Content of Musical Divisions" href="../content/shared.html#sharedMdivContent">2.1.2.2 Content of Musical Divisions</a>. This section will focus on repetition within sections.</p>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="cmnRepSym"><span class="headingNumber">4.1.1.1</span><span class="head">Measure-Level Repetition Symbols</span></h4>
+                           <h4 id="cmnRepSym"><span class="headingNumber">4.3.10.2</span><span class="head">Measure-Level Repetition Symbols</span></h4>
                            
                            <p>In addition to repetition at the section level, CMN includes a number of different
                               symbols for measure-level repetitions. Many of these symbols are found in manuscripts
@@ -4819,7 +4819,7 @@
                               The <span class="att">@num</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/multiRpt.html">&lt;multiRpt&gt;</a> records the number of preceding measures to be repeated.</p>
                            
                            <p>All elements described above allow for association of the sign with a symbol in a
-                              digital facsimile (via the <span class="att">@facs</span> attribute) and with a user-defined symbol (using <span class="att">@altsym</span>). See <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">12.1 Facsimiles</a> and <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.1 User-defined Symbols</a> for further details. In addition, the <span class="att">@expand</span> attribute is available on the foregoing elements to inform a rendering process whether
+                              digital facsimile (via the <span class="att">@facs</span> attribute) and with a user-defined symbol (using <span class="att">@altsym</span>). See <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">12.1 Facsimiles</a> and <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.4 User-defined Symbols</a> for further details. In addition, the <span class="att">@expand</span> attribute is available on the foregoing elements to inform a rendering process whether
                               to use the repeat symbol or the full content represented by it. A value of <span class="val">true</span> indicates that the content should be displayed, while a <span class="val">false</span> value means to show only the repeat symbol.</p>
                            </div>
                         </div>
@@ -4827,7 +4827,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="cmnOrnaments"><span class="headingNumber">4.1</span><span class="head">Common Music Notation Ornaments</span></h2>
+                     <h2 id="cmnOrnaments"><span class="headingNumber">4.4</span><span class="head">Common Music Notation Ornaments</span></h2>
                      
                      <p>This module includes elements and attributes for the encoding of ornaments typical
                         of ‘Common Music Notation’ (CMN). Ornaments are formulae of embellishment that can
@@ -4849,7 +4849,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnOrnamentsAll"><span class="headingNumber">4.1.1</span><span class="head">Encoding Common To All Ornaments</span></h3>
+                        <h3 id="cmnOrnamentsAll"><span class="headingNumber">4.4.1</span><span class="head">Encoding Common To All Ornaments</span></h3>
                         
                         <p>When encoding CMN, ornaments should be encoded within a <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>, following the <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> elements, and connected to events on the staff via attributes. The <span class="att">@startid</span> attribute is used to refer to the <span class="att">@xml:id</span> of the starting note. Additionally, if the ornament involves more than one events
                            on the staff, the <span class="att">@endid</span> attribute can be used to anchor the ornament to a concluding event.</p>
@@ -4887,7 +4887,7 @@
                         
                         <p>Alternatively, the relationship of an ornament to a note can be expressed in terms
                            of beats with the attribute <span class="att">@tstamp</span>. If the ornament involves more than one event on the staff, the <span class="att">@tstamp2</span> attribute can be used to indicate the ending time stamp, as is explained in section
-                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.1.1 Timestamps and Durations</a>. These methods may also be utilized simultaneously.</p>
+                           <a class="link_ptr chapterLink" title="Timestamps and Durations" href="../content/cmn.html#cmnTstamp">4.2.6 Timestamps and Durations</a>. These methods may also be utilized simultaneously.</p>
                         
                         <p>The following example shows the use of <span class="att">@tstamp</span> for an ornament. Assuming that the following measure is in 2/2, the ornament (in
                            this case, a mordent) is related to the note on the second beat.</p>
@@ -4937,16 +4937,16 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnOrnamentsOverride"><span class="headingNumber">4.1.1.1</span><span class="head">Overriding Default Resolutions</span></h4>
+                           <h4 id="cmnOrnamentsOverride"><span class="headingNumber">4.4.1.1</span><span class="head">Overriding Default Resolutions</span></h4>
                            
                            <p>The symbols and sounded resolutions suggested for each ornament in this chapter are
                               to be considered defaults. Nevertheless, because of the great historical and geographical
                               variance in the notation of ornaments, the encoder is given methods to override the
                               default resolutions.</p>
                            
-                           <p>It is possible, for example, to specify in the <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> a new default sounded resolution for an ornament. As discussed in the section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.1.1 Encoding Description</a>, the element <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a> holds a description (optional, but recommended) of the methods and editorial principles
+                           <p>It is possible, for example, to specify in the <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> a new default sounded resolution for an ornament. As discussed in the section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>, the element <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a> holds a description (optional, but recommended) of the methods and editorial principles
                               which govern the transcription or encoding of the source material. Let us take a trill
-                              as an example. The section regarding <a class="link_ptr chapterLink" title="Trills" href="../content/cmn.html#cmnOrnamentsTrills">4.1.1 Trills</a> does not set a specific number of alternations between the principal and secondary
+                              as an example. The section regarding <a class="link_ptr chapterLink" title="Trills" href="../content/cmn.html#cmnOrnamentsTrills">4.4.3 Trills</a> does not set a specific number of alternations between the principal and secondary
                               notes; the encoder, however, may specify an exact number in the encoding description.</p>
                            
                            <p>
@@ -4974,13 +4974,13 @@
                               </p>
                            
                            <p>Alternatively, resolutions can be defined on a case-by-case basis by encoding a specific
-                              resolution using the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element. See the section <a class="link_ptr chapterLink" title="Special Cases" href="../content/cmn.html#cmnOrnamentsTrillsSpecial">4.1.1.1 Special Cases</a> below for an example of a specific resolution of a trill.</p>
+                              resolution using the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element. See the section <a class="link_ptr chapterLink" title="Special Cases" href="../content/cmn.html#cmnOrnamentsTrillsSpecial">4.4.3.1 Special Cases</a> below for an example of a specific resolution of a trill.</p>
                            </div>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="cmnOrnamentsMordents"><span class="headingNumber">4.1.1</span><span class="head">Mordents</span></h3>
+                        <h3 id="cmnOrnamentsMordents"><span class="headingNumber">4.4.2</span><span class="head">Mordents</span></h3>
                         
                         <p>A mordent is an ornament that involves an auxiliary note a step above or below the
                            principal note. The presence of a mordent is encoded with the <a class="link_odd link_odd_elementSpec" href="../elements/mordent.html">&lt;mordent&gt;</a> element and its attributes:</p>
@@ -5141,7 +5141,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnOrnamentsTrills"><span class="headingNumber">4.1.1</span><span class="head">Trills</span></h3>
+                        <h3 id="cmnOrnamentsTrills"><span class="headingNumber">4.4.3</span><span class="head">Trills</span></h3>
                         
                         <p>Trills are a type of ornament that consists of a rapid alternation of a note with
                            one a semitone or tone above. A trill is encoded with the <a class="link_odd link_odd_elementSpec" href="../elements/trill.html">&lt;trill&gt;</a> element and its attributes:</p>
@@ -5295,7 +5295,7 @@
                            </p>
                         
                         <p>When giving an end point to trills, the <span class="att">@extender</span> attribute should also be added, to indicate the presence or absence of a line extender.
-                           Notice, that the note referenced in <span class="att">@endid</span> is not part of the trill itself, just like in <a class="link_ref chapterLink" title="4.1.1.1 Arpeggio and Glissando" href="../content/cmn.html#cmnArpegGliss">glissandos</a>.</p>
+                           Notice, that the note referenced in <span class="att">@endid</span> is not part of the trill itself, just like in <a class="link_ref chapterLink" title="4.3.5.1 Arpeggio and Glissando" href="../content/cmn.html#cmnArpegGliss">glissandos</a>.</p>
                         
                         <p>Chromatic alterations of auxiliary notes are occasionally expressed on the staff using
                            small notes enclosed in parentheses, as shown in the example below. However, the attribute
@@ -5337,7 +5337,7 @@
                         <p>Some trills may be introduced by a turn or followed by an inverted turn leading to
                            the next note (see Le garzantine, Musica 2003, p. 911). In such cases, the trill is
                            encoded as in previous examples and associated with the principal note. Starting or
-                           concluding turns are notated on the staff (in <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>) as <a class="link_ptr chapterLink" title="Grace Notes" href="../content/cmn.html#cmnNotesGrace">4.1.1.1.1 Grace Notes</a>.</p>
+                           concluding turns are notated on the staff (in <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>) as <a class="link_ptr chapterLink" title="Grace Notes" href="../content/cmn.html#cmnNotesGrace">4.2.5.1.2 Grace Notes</a>.</p>
                         
                         <p>The following example, from a keyboard sonata by Joseph Haydn, shows a trill with
                            concluding grace notes (called <span class="foreign">Nachschlag</span>):</p>
@@ -5388,11 +5388,11 @@
                         
                         <div class="div4">
                            
-                           <h4 id="cmnOrnamentsTrillsSpecial"><span class="headingNumber">4.1.1.1</span><span class="head">Special Cases</span></h4>
+                           <h4 id="cmnOrnamentsTrillsSpecial"><span class="headingNumber">4.4.3.1</span><span class="head">Special Cases</span></h4>
                            
                            <p>Symbols and abbreviations for trills have changed and evolved considerably throughout
                               history. Strategies to clarify the encoding and interpretation of ornaments have been
-                              discussed in section <a class="link_ptr chapterLink" title="Overriding Default Resolutions" href="../content/cmn.html#cmnOrnamentsOverride">4.1.1.1 Overriding Default Resolutions</a> above. However, in order to aid the encoder in making educated choices in the encoding
+                              discussed in section <a class="link_ptr chapterLink" title="Overriding Default Resolutions" href="../content/cmn.html#cmnOrnamentsOverride">4.4.1.1 Overriding Default Resolutions</a> above. However, in order to aid the encoder in making educated choices in the encoding
                               of non-standard trills, this section shows two examples diverging from modern standard
                               use.</p>
                            
@@ -5668,7 +5668,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnOrnamentsTurns"><span class="headingNumber">4.1.1</span><span class="head">Turns</span></h3>
+                        <h3 id="cmnOrnamentsTurns"><span class="headingNumber">4.4.4</span><span class="head">Turns</span></h3>
                         
                         <p>A turn is an ornament that typically consists of four notes: the upper neighbor of
                            the principal note, the principal note, the lower neighbor, and the principal note
@@ -5821,7 +5821,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="cmnOrnamentsOther"><span class="headingNumber">4.1.1</span><span class="head">Other Ornaments</span></h3>
+                        <h3 id="cmnOrnamentsOther"><span class="headingNumber">4.4.5</span><span class="head">Other Ornaments</span></h3>
                         
                         <p>CMN ornaments that are not mordents, trills, or turns can be encoded with a generic
                            <a class="link_odd link_odd_elementSpec" href="../elements/ornam.html">&lt;ornam&gt;</a>.</p>
@@ -5866,12 +5866,12 @@
                            </figure>
                            </p>
                         
-                        <p>A resolution, or expansion of the ornament can be provided as discussed in <a class="link_ptr chapterLink" title="Special Cases" href="../content/cmn.html#cmnOrnamentsTrillsSpecial">4.1.1.1 Special Cases</a> below.</p>
+                        <p>A resolution, or expansion of the ornament can be provided as discussed in <a class="link_ptr chapterLink" title="Special Cases" href="../content/cmn.html#cmnOrnamentsTrillsSpecial">4.4.3.1 Special Cases</a> below.</p>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="cmnOrnamentsMultiple"><span class="headingNumber">4.1.1</span><span class="head">Ornaments in Combinations</span></h3>
+                        <h3 id="cmnOrnamentsMultiple"><span class="headingNumber">4.4.6</span><span class="head">Ornaments in Combinations</span></h3>
                         
                         <p>Particularly in baroque keyboard music, but also in the early classical period, various
                            combinations of ornaments can be found. Despite being written vertically above the
@@ -5947,7 +5947,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -5961,7 +5961,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.1 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.1.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.1.1 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.1.1 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.1.1 Re-definition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.1.1 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.1.1 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.1 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.1.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.1.1 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.1.1 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.1.1 Tuplets</a><a class="level-3" href="#cmnArtic">4.1.1 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.1.1 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.1.1 Ossia</a><a class="level-3" href="#cmnCue">4.1.1 Cue</a><a class="level-3" href="#cmnDir">4.1.1 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.1.1 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.1 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.1.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.1.1 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.1.1 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.1.1 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.1.1 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.1.1 Ornaments in Combinations</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Re-definition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnCue">4.3.8 Cue</a><a class="level-3" href="#cmnDir">4.3.9 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.10 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -5979,7 +5979,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.1 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.1.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.1.1 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.1.1 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.1.1 Re-definition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.1.1 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.1.1 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.1 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.1.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.1.1 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.1.1 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.1.1 Tuplets</a><a class="level-3" href="#cmnArtic">4.1.1 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.1.1 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.1.1 Ossia</a><a class="level-3" href="#cmnCue">4.1.1 Cue</a><a class="level-3" href="#cmnDir">4.1.1 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.1.1 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.1 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.1.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.1.1 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.1.1 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.1.1 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.1.1 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.1.1 Ornaments in Combinations</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#cmnintro">4.1 Introduction</a><a class="level-2" href="#cmnBasics">4.2 Basic Elements of CMN</a><a class="level-3" href="#cmnMeasures">4.2.1 The Role of the Measure Element</a><a class="level-3" href="#cmnDefs">4.2.2 Defining Score Parameters for CMN</a><a class="level-3" href="#cmnDefsSepecial">4.2.3 Special cases in staff definitions</a><a class="level-3" href="#cmnReDef">4.2.4 Re-definition of Score Parameters</a><a class="level-3" href="#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a><a class="level-3" href="#cmnTstamp">4.2.6 Timestamps and Durations</a><a class="level-2" href="#cmnAdditionalMeasureContent">4.3 Advanced CMN Features</a><a class="level-3" href="#cmnBeams">4.3.1 Beams</a><a class="level-3" href="#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a><a class="level-3" href="#cmnDynam">4.3.3 Dynamics in CMN</a><a class="level-3" href="#cmnTuplets">4.3.4 Tuplets</a><a class="level-3" href="#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a><a class="level-3" href="#cmnInstr">4.3.6 Instrument-specific Symbols in CMN</a><a class="level-3" href="#cmnOssia">4.3.7 Ossia</a><a class="level-3" href="#cmnCue">4.3.8 Cue</a><a class="level-3" href="#cmnDir">4.3.9 Directives and Rehearsal marks</a><a class="level-3" href="#cmnRep">4.3.10 Repetition in CMN</a><a class="level-2" href="#cmnOrnaments">4.4 Common Music Notation Ornaments</a><a class="level-3" href="#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a><a class="level-3" href="#cmnOrnamentsMordents">4.4.2 Mordents</a><a class="level-3" href="#cmnOrnamentsTrills">4.4.3 Trills</a><a class="level-3" href="#cmnOrnamentsTurns">4.4.4 Turns</a><a class="level-3" href="#cmnOrnamentsOther">4.4.5 Other Ornaments</a><a class="level-3" href="#cmnOrnamentsMultiple">4.4.6 Ornaments in Combinations</a></p>
                   </div>
                </div>
             </div>

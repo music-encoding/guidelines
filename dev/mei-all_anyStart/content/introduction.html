@@ -10,7 +10,7 @@
       <meta name="author" content="Stefan Münnich">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
@@ -137,7 +137,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="aboutVersion5_1"><span class="headingNumber">1.1.1</span><span class="head">About version 5.1</span></h3>
+                        <h3 id="aboutVersion5_1"><span class="headingNumber">1.1.2</span><span class="head">About version 5.1</span></h3>
                         
                         <p>Following release 5.0 from September 2023, Release 5.1 of MEI focuses primarily on
                            maintenance 
@@ -167,7 +167,7 @@
                            only on <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a>) introduces an XPath-based selection 
                            mechanism to identify elements to which certain features apply.</p>
                         
-                        <p>All controlevents (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.1.1 Events and Controlevents</a>, technically implemented 
+                        <p>All controlevents (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>, technically implemented 
                            through membership in the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a> class) are now member of 
                            <a class="link_odd link_odd_attClass" href="../attribute-classes/att.color.html">att.color</a>, enabling color customization through the <span class="att">@color</span>
                            attribute. Similarly, directive-like elements (<a class="link_odd link_odd_elementSpec" href="../elements/bend.html">&lt;bend&gt;</a>, 
@@ -185,7 +185,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="aboutVersion5"><span class="headingNumber">1.1.1</span><span class="head">About version 5.0</span></h3>
+                        <h3 id="aboutVersion5"><span class="headingNumber">1.1.3</span><span class="head">About version 5.0</span></h3>
                         
                         <p>Release 5.0 of MEI focuses primarily on the guidelines, development infrastructure,
                            
@@ -200,7 +200,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="meiBasic"><span class="headingNumber">1.1.1.1</span><span class="head">MEI Basic</span></h4>
+                           <h4 id="meiBasic"><span class="headingNumber">1.1.3.1</span><span class="head">MEI Basic</span></h4>
                            
                            <p>As a framework to encode music, MEI offers extensive flexibility to encode music
                               documents of various kinds, and for a wide variety of uses. For scholarly research,
@@ -247,7 +247,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="pdfGuidelines"><span class="headingNumber">1.1.1.1</span><span class="head">Guidelines</span></h4>
+                           <h4 id="pdfGuidelines"><span class="headingNumber">1.1.3.2</span><span class="head">Guidelines</span></h4>
                            
                            <p>With MEI 5, we re-introduce a PDF version of the MEI Guidelines. With a total
                               of more than 5,700 pages, this PDF clearly is not intended to be printed, but may
@@ -277,7 +277,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="modelChanges"><span class="headingNumber">1.1.1.1</span><span class="head">Model changes in MEI</span></h4>
+                           <h4 id="modelChanges"><span class="headingNumber">1.1.3.3</span><span class="head">Model changes in MEI</span></h4>
                            
                            <p>MEI 5.0 introduces five new elements: <a class="link_odd link_odd_elementSpec" href="../elements/plica.html">&lt;plica&gt;</a> and 
                               <a class="link_odd link_odd_elementSpec" href="../elements/stem.html">&lt;stem&gt;</a>, for the encoding of documents written in Mensural 
@@ -329,7 +329,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="infrastructuralChanges"><span class="headingNumber">1.1.1.1</span><span class="head">Infrastructural changes</span></h4>
+                           <h4 id="infrastructuralChanges"><span class="headingNumber">1.1.3.4</span><span class="head">Infrastructural changes</span></h4>
                            
                            <p>A lot of effort went into updating the infrastructure for generating releases. These
                               changes are designed to help improve the development workflow of MEI, improving consistency
@@ -379,7 +379,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="designPrinciples"><span class="headingNumber">1.1</span><span class="head">MEI Design Principles</span></h2>
+                     <h2 id="designPrinciples"><span class="headingNumber">1.2</span><span class="head">MEI Design Principles</span></h2>
                      
                      <p>This section of the Guidelines defines principles and criteria for designing,
                         developing, and maintaining an XML-based encoding scheme for music notation
@@ -387,7 +387,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="definitionsAndParameters"><span class="headingNumber">1.1.1</span><span class="head">Definitions and Parameters</span></h3>
+                        <h3 id="definitionsAndParameters"><span class="headingNumber">1.2.1</span><span class="head">Definitions and Parameters</span></h3>
                         
                         <p>A music notation document is one that contains music notation; that is, any
                            one of a number of "visual analogues of musical sound, either as a record of
@@ -406,7 +406,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="generalPrinciples"><span class="headingNumber">1.1.1</span><span class="head">General Principles</span></h3>
+                        <h3 id="generalPrinciples"><span class="headingNumber">1.2.2</span><span class="head">General Principles</span></h3>
                         
                         <p>MEI may be used to encode both primary sources of music notation, such as an
                            autograph or published score, and secondary sources, such as a scholarly
@@ -447,12 +447,12 @@
                      
                      <div class="div3">
                         
-                        <h3 id="structuralFeatures"><span class="headingNumber">1.1.1</span><span class="head">Structural Features</span></h3>
+                        <h3 id="structuralFeatures"><span class="headingNumber">1.2.3</span><span class="head">Structural Features</span></h3>
                         
                         <p>The encoding scheme is based on eXtensible Markup Language (XML), a
                            text-based format for representing structured information. It is expressed
                            as a One Document Does-it-all (ODD) document. For more information on ODD, please
-                           refer to <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.1.1 Customizing MEI</a>.</p>
+                           refer to <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.3.5 Customizing MEI</a>.</p>
                         
                         <p>Related or complementary standards, such as the <a class="link_ref link_external" href="http://www.tei-c.org/Guidelines/P5/">Text Encoding Initiative (TEI) Guidelines for Electronic Text Encoding and Interchange</a>, <a class="link_ref link_external" href="http://www.loc.gov/ead/">the Encoded Archival Description (EAD)</a>, <a class="link_ref link_external" href="http://www.loc.gov/marc/bibliographic/ecbdhome.html">MARC 21 Format for Bibliographic Data</a>, existing notation encoding schemes, etc. have been consulted and employed as appropriate.
                            For example, the data
@@ -482,7 +482,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="controlAndMaintenance"><span class="headingNumber">1.1.1</span><span class="head">Control and Maintenance</span></h3>
+                        <h3 id="controlAndMaintenance"><span class="headingNumber">1.2.4</span><span class="head">Control and Maintenance</span></h3>
                         
                         <p>The Music Encoding Initiative Community has given itself <a class="link_ref link_external" href="https://music-encoding.org/community/mei-by-laws.html">By-laws</a>, which regulate all essential properties and procedures.
                            The community elects a <a class="link_ref link_external" href="https://music-encoding.org/community/mei-board.html">Board</a>,
@@ -500,14 +500,14 @@
                   
                   <div class="div2">
                      
-                     <h2 id="basicConcepts"><span class="headingNumber">1.1</span><span class="head">Basic Concepts of MEI</span></h2>
+                     <h2 id="basicConcepts"><span class="headingNumber">1.3</span><span class="head">Basic Concepts of MEI</span></h2>
                      
                      <p>This chapter is intended to explain basic concepts of MEI, like events vs.
                         controlevents.</p>
                      
                      <div class="div3">
                         
-                        <h3 id="musicalDomains"><span class="headingNumber">1.1.1</span><span class="head">Musical Domains</span></h3>
+                        <h3 id="musicalDomains"><span class="headingNumber">1.3.1</span><span class="head">Musical Domains</span></h3>
                         
                         <p>The term "music" has many different notions, ranging from audible sounds over
                            written performance instructions or transcriptions of such events to conceptual
@@ -564,7 +564,7 @@
                            special suffix. However, in case of transposing instruments, additional markup
                            (namely the attributes <span class="att">@trans.diat</span> and <span class="att">@trans.semi</span> from
                            MEI’s attribute class <a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a>) will create
-                           a distinction between the logical and visual domain (see chapter <a class="link_ptr chapterLink" title="Defining Score Parameters for CMN" href="../content/cmn.html#cmnDefs">4.1.1 Defining Score Parameters for CMN</a>). In that case, <span class="att">@pname</span> will be restricted to
+                           a distinction between the logical and visual domain (see chapter <a class="link_ptr chapterLink" title="Defining Score Parameters for CMN" href="../content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>). In that case, <span class="att">@pname</span> will be restricted to
                            the visual domain, while the logical aforementioned attributes provide
                            additional information for the logical domain.</p>
                         
@@ -582,7 +582,7 @@
                            attributes carry a suffixed <em>.log</em> (logical), <em>.ges</em> (gestural), <em>.vis</em>
                            (visual), or <em>.anl</em> (analytical) in their name. In addition, the internal
                            structure of MEI heavily relies on those different domains. When customizing
-                           MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.1.1 Customizing MEI</a>), it is possible to turn off
+                           MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.3.5 Customizing MEI</a>), it is possible to turn off
                            either visual or gestural domain encoding completely. That way, MEI allows to
                            address the four most eminent musical domains specifically and independent of
                            each other.</p>
@@ -590,7 +590,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="eventsControlevents"><span class="headingNumber">1.1.1</span><span class="head">Events and Controlevents</span></h3>
+                        <h3 id="eventsControlevents"><span class="headingNumber">1.3.2</span><span class="head">Events and Controlevents</span></h3>
                         
                         <p>MEI differentiates between two essential aspects of music notation: <em>Events</em> and <em>ControlEvents</em>. There
                            are other examples for such a separation of concerns with regard to music. In
@@ -802,12 +802,12 @@
                            using <span class="att">@xml:id</span>-based pointers is therefore the most common way to
                            connect <em>ControlEvents</em> with <em>Events</em>.</p>
                         
-                        <p>The details on how timestamps are calculated and used in MEI are given in <a class="link_ptr chapterLink" title="Timestamps in MEI" href="../content/introduction.html#timestamps">1.1.1 Timestamps in MEI</a>.</p>
+                        <p>The details on how timestamps are calculated and used in MEI are given in <a class="link_ptr chapterLink" title="Timestamps in MEI" href="../content/introduction.html#timestamps">1.3.3 Timestamps in MEI</a>.</p>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="timestamps"><span class="headingNumber">1.1.1</span><span class="head">Timestamps in MEI</span></h3>
+                        <h3 id="timestamps"><span class="headingNumber">1.3.3</span><span class="head">Timestamps in MEI</span></h3>
                         
                         <p>In MEI, timestamps are treated in a slightly simplified way: they have no
                            notion of <em>beat</em>. Instead, timestamps rely solely on the
@@ -888,7 +888,7 @@
                            </figure>
                            </p>
                         
-                        <p>Sometimes, timestamps are used to indicate positions where no music <em>Events</em> are located (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.1.1 Events and Controlevents</a>). Therefore, the allowed range of timestamps
+                        <p>Sometimes, timestamps are used to indicate positions where no music <em>Events</em> are located (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>). Therefore, the allowed range of timestamps
                            stretches from 0 to the current meter count + 1. By definition, a timestamp of
                            0 indicates the position of the left bar line, while a timestamp of 5 (in case
                            of a 4/4 meter) indicates the right bar line. This makes it possible to encode
@@ -901,7 +901,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="meiCustomizations"><span class="headingNumber">1.1.1</span><span class="head">MEI Customizations</span></h3>
+                        <h3 id="meiCustomizations"><span class="headingNumber">1.3.4</span><span class="head">MEI Customizations</span></h3>
                         
                         <p>MEI is an encoding framework, not a data format. This means that MEI provides
                            recommendations for encoding music documents, but it depends on the encoder's
@@ -915,7 +915,7 @@
                            files. MEI provides a number of pre-defined <em>customizations</em>, which focus on specific
                            uses of MEI while still maintaining a great level of flexibility. For projects
                            that need even better control over their data, it is highly recommended to
-                           create a more specific customized version of MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.1.1 Customizing MEI</a>). The following customizations are provided
+                           create a more specific customized version of MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.3.5 Customizing MEI</a>). The following customizations are provided
                            with every release of MEI:</p>
                         
                         <p class="gloss"><strong><span>mei-cmn</span></strong>:
@@ -970,13 +970,13 @@
                      
                      <div class="div3">
                         
-                        <h3 id="meiCustomization"><span class="headingNumber">1.1.1</span><span class="head">Customizing MEI</span></h3>
+                        <h3 id="meiCustomization"><span class="headingNumber">1.3.5</span><span class="head">Customizing MEI</span></h3>
                         
                         <p>In production, it is best to use a customized version of MEI, restricted to the
                            very needs of a project. Such a custom schema will guide the encoders and will
                            help to ensure consistency and data quality throughout a project’s files. A
                            customization typically provides a subset of MEI’s encoding models (typically
-                           starting from one of the official <em>customizations</em> mentioned in chapter <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.1.1 MEI Customizations</a>), with only one solution for any given situation
+                           starting from one of the official <em>customizations</em> mentioned in chapter <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a>), with only one solution for any given situation
                            being allowed. The customization will help to reflect the scope of a project
                            into its data: Only those aspects of music notation a project is interested in
                            will be allowed, so that the absence of a specific information can not be
@@ -992,7 +992,7 @@
                               the TEI</a>, and the "<a class="link_ref link_external" href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">Getting Started with P5 ODDs</a>" document.</p>
                         
                         <p>At this point, there is no specific documentation on how to customize MEI with
-                           ODD beyond the generic TEI documentation. However, the provided <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.1.1 MEI Customizations</a> are based on ODD customizations, and may serve as
+                           ODD beyond the generic TEI documentation. However, the provided <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a> are based on ODD customizations, and may serve as
                            starting point for further project-specific restrictions. They can be found
                            at <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding/tree/stable/customizations">https://github.com/music-encoding/music-encoding/tree/stable/customizations</a>.
                            In addition, several projects have shared their customizations on GitHub, such
@@ -1009,7 +1009,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="samplesTools"><span class="headingNumber">1.1</span><span class="head">Sample Encodings and Tools for MEI</span></h2>
+                     <h2 id="samplesTools"><span class="headingNumber">1.4</span><span class="head">Sample Encodings and Tools for MEI</span></h2>
                      
                      <p>The Music Encoding Initiative provides a collection of sample encodings, which
                         demonstrate a wide-range of uses of MEI in real-world contexts. They are available
@@ -1021,7 +1021,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1035,7 +1035,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiCustomizations">1.1.1 MEI Customizations</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.2 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.3 About version 5.0</a><a class="level-2" href="#designPrinciples">1.2 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.2.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.2.2 General Principles</a><a class="level-3" href="#structuralFeatures">1.2.3 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.2.4 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.3 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.3.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.3.2 Events and Controlevents</a><a class="level-3" href="#timestamps">1.3.3 Timestamps in MEI</a><a class="level-3" href="#meiCustomizations">1.3.4 MEI Customizations</a><a class="level-3" href="#meiCustomization">1.3.5 Customizing MEI</a><a class="level-2" href="#samplesTools">1.4 Sample Encodings and Tools for MEI</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -1053,7 +1053,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.1 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.1 About version 5.0</a><a class="level-2" href="#designPrinciples">1.1 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.1.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.1.1 General Principles</a><a class="level-3" href="#structuralFeatures">1.1.1 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.1.1 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.1 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.1.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.1.1 Events and Controlevents</a><a class="level-3" href="#timestamps">1.1.1 Timestamps in MEI</a><a class="level-3" href="#meiCustomizations">1.1.1 MEI Customizations</a><a class="level-3" href="#meiCustomization">1.1.1 Customizing MEI</a><a class="level-2" href="#samplesTools">1.1 Sample Encodings and Tools for MEI</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#about">1.1 About these Guidelines</a><a class="level-3" href="#acknowledgments">1.1.1 Acknowledgments</a><a class="level-3" href="#aboutVersion5_1">1.1.2 About version 5.1</a><a class="level-3" href="#aboutVersion5">1.1.3 About version 5.0</a><a class="level-2" href="#designPrinciples">1.2 MEI Design Principles</a><a class="level-3" href="#definitionsAndParameters">1.2.1 Definitions and Parameters</a><a class="level-3" href="#generalPrinciples">1.2.2 General Principles</a><a class="level-3" href="#structuralFeatures">1.2.3 Structural Features</a><a class="level-3" href="#controlAndMaintenance">1.2.4 Control and Maintenance</a><a class="level-2" href="#basicConcepts">1.3 Basic Concepts of MEI</a><a class="level-3" href="#musicalDomains">1.3.1 Musical Domains</a><a class="level-3" href="#eventsControlevents">1.3.2 Events and Controlevents</a><a class="level-3" href="#timestamps">1.3.3 Timestamps in MEI</a><a class="level-3" href="#meiCustomizations">1.3.4 MEI Customizations</a><a class="level-3" href="#meiCustomization">1.3.5 Customizing MEI</a><a class="level-2" href="#samplesTools">1.4 Sample Encodings and Tools for MEI</a></p>
                   </div>
                </div>
             </div>

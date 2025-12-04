@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization integrating all aspects of MEI.">
@@ -74,7 +74,7 @@
                         
                         <p>The most straightforward – and probably the most common choice fitting most of the
                            use cases when encoding music – is the <a class="link_odd link_odd_elementSpec" href="../elements/mei.html">&lt;mei&gt;</a> element. It contains an <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element for capturing metadata and a <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> element for describing the musical text. A more detailed description of the application
-                           of <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> can be found in the course of this section (see <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.1 General Music Structure Elements</a>). If you want to learn more about the use of the <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element – formally declared in the MEI.header module – please visit the chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.1 Structure of the MEI Header</a> in the <a class="link_ptr chapterLink" title="Metadata in MEI" href="../content/metadata.html">B3 Metadata in MEI</a> section.</p>
+                           of <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> can be found in the course of this section (see <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.2 General Music Structure Elements</a>). If you want to learn more about the use of the <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element – formally declared in the MEI.header module – please visit the chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.2 Structure of the MEI Header</a> in the <a class="link_ptr chapterLink" title="Metadata in MEI" href="../content/metadata.html">B3 Metadata in MEI</a> section.</p>
                         
                         <p>The below example shows the basic structure of an MEI file with <a class="link_odd link_odd_elementSpec" href="../elements/mei.html">&lt;mei&gt;</a> as root element. Please be aware that this example still does not represent a valid
                            MEI file:</p>
@@ -169,7 +169,7 @@
                         <p>
                            <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a> contains an <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element describing a collection of related MEI-encoded texts – known as a corpus
                            – and an <a class="link_odd link_odd_elementSpec" href="../elements/mei.html">&lt;mei&gt;</a> element for each text. Further information regarding the organization and encoding
-                           of music corpora is given in chapter <a class="link_ptr chapterLink" title="Musical Corpora" href="../content/metadata.html#corpus">3.1.1 Musical Corpora</a>.</p>
+                           of music corpora is given in chapter <a class="link_ptr chapterLink" title="Musical Corpora" href="../content/metadata.html#corpus">3.8.5 Musical Corpora</a>.</p>
                         
                         <p>The below example shows the basic structure of an MEI file with <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a> as root element. Please be aware that this example still does not represent a valid
                            MEI file:</p>
@@ -251,8 +251,8 @@
                            </div>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element, formally declared in the MEI.header module, is described in chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.1 Structure of the MEI Header</a>. A document with <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> as root element only contains metadata and is also known as an independent or stand-alone
-                           header. Stand-alone headers are more fully described in chapter <a class="link_ptr chapterLink" title="Independent Headers" href="../content/metadata.html#headerIndependentHeader">3.1.1 Independent Headers</a>.</p>
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> element, formally declared in the MEI.header module, is described in chapter <a class="link_ptr chapterLink" title="Structure of the MEI Header" href="../content/metadata.html#headerstructure">3.2 Structure of the MEI Header</a>. A document with <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> as root element only contains metadata and is also known as an independent or stand-alone
+                           header. Stand-alone headers are more fully described in chapter <a class="link_ptr chapterLink" title="Independent Headers" href="../content/metadata.html#headerIndependentHeader">3.8.1 Independent Headers</a>.</p>
                         
                         <p>The below example shows the basic structure of an MEI file with <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a> as root element. Please be aware that this example still does not represent a valid
                            MEI file:</p>
@@ -301,7 +301,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedMusicElement"><span class="headingNumber">2.1.1</span><span class="head">General Music Structure Elements</span></h3>
+                        <h3 id="sharedMusicElement"><span class="headingNumber">2.1.2</span><span class="head">General Music Structure Elements</span></h3>
                         
                         <p>
                            
@@ -350,13 +350,13 @@
                            other <abbr>e.g.</abbr>, to represent a collection of independent musical texts which is to be regarded as
                            a single unit for processing or other purposes. It is provided to simplify the encoding
                            of collections, anthologies, and cyclic works. It can also be used to record the potentially
-                           complex internal structure of corpora, covered more fully in chapter <a class="link_ptr chapterLink" title="Musical Corpora" href="../content/metadata.html#corpus">3.1.1 Musical Corpora</a>. Whether the musical text being encoded should be structured one way or the other
+                           complex internal structure of corpora, covered more fully in chapter <a class="link_ptr chapterLink" title="Musical Corpora" href="../content/metadata.html#corpus">3.8.5 Musical Corpora</a>. Whether the musical text being encoded should be structured one way or the other
                            is not to be decided here. For example, a collection of songs might be regarded as
                            a single item in some circumstances, or as a number of distinct items in others. In
                            such borderline cases, the encoder must choose whether to treat the text as unitary
                            or composite; each option may have advantages and disadvantages.</p>
                         
-                        <p>There are several more possible child elements of the <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> element defined in other modules of MEI, such as <a class="link_odd link_odd_elementSpec" href="../elements/front.html">&lt;front&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/back.html">&lt;back&gt;</a> elements (defined in MEI.text module, cf. <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.1 Text in MEI</a>), <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> (defined in MEI.performance module, cf. <a class="link_ptr chapterLink" title="Performances" href="../content/facsimilesperformances.html#performances">12.1 Performances</a>), <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> (defined in MEI.genetic module, cf. <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">11.1 Genetic Markup</a>), <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> (defined in MEI.facsimile module, cf. <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">12.1 Facsimiles</a>).</p>
+                        <p>There are several more possible child elements of the <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> element defined in other modules of MEI, such as <a class="link_odd link_odd_elementSpec" href="../elements/front.html">&lt;front&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/back.html">&lt;back&gt;</a> elements (defined in MEI.text module, cf. <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.2 Text in MEI</a>), <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> (defined in MEI.performance module, cf. <a class="link_ptr chapterLink" title="Performances" href="../content/facsimilesperformances.html#performances">12.2 Performances</a>), <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> (defined in MEI.genetic module, cf. <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">11.3 Genetic Markup</a>), <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> (defined in MEI.facsimile module, cf. <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">12.1 Facsimiles</a>).</p>
                         
                         <p>Please be aware that the following examples still do not reflect valid MEI files as
                            they are missing some required elements not defined in the MEI.shared module.</p>
@@ -494,9 +494,9 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedDivisionsBody"><span class="headingNumber">2.1.1.1</span><span class="head">Divisions of the Body</span></h4>
+                           <h4 id="sharedDivisionsBody"><span class="headingNumber">2.1.2.1</span><span class="head">Divisions of the Body</span></h4>
                            
-                           <p>This section describes sub-division of the <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a> of a musical text. Front and back matter are described in chapter <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.1 Text in MEI</a>.</p>
+                           <p>This section describes sub-division of the <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a> of a musical text. Front and back matter are described in chapter <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.2 Text in MEI</a>.</p>
                            
                            <p>
                               
@@ -698,7 +698,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedMdivContent"><span class="headingNumber">2.1.1.1</span><span class="head">Content of Musical Divisions</span></h4>
+                           <h4 id="sharedMdivContent"><span class="headingNumber">2.1.2.2</span><span class="head">Content of Musical Divisions</span></h4>
                            
                            <p>The contents of <a class="link_odd link_odd_elementSpec" href="../elements/mdiv.html">&lt;mdiv&gt;</a> can be organized according to the two encoding paradigms provided by the <a class="link_odd link_odd_elementSpec" href="../elements/score.html">&lt;score&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/parts.html">&lt;parts&gt;</a> elements.</p>
                            
@@ -1000,7 +1000,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedDocumentStructure"><span class="headingNumber">2.1.1</span><span class="head">Document Layout Elements</span></h3>
+                        <h3 id="sharedDocumentStructure"><span class="headingNumber">2.1.3</span><span class="head">Document Layout Elements</span></h3>
                         
                         <p>This section introduces the elements that can be used to represent document layout
                            features in MEI, be it for the sake of capturing an original source's layout when
@@ -1145,7 +1145,7 @@
                         <p>Critical editions and collections of works often contain extensive text, such as a
                            title page, table of contents, an introductory essay, commentary, biographical sketch,
                            index, etc. These textual items may appear in either the <a class="link_odd link_odd_elementSpec" href="../elements/front.html">&lt;front&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/back.html">&lt;back&gt;</a> elements. The front and back elements, available only when the MEI.text module is
-                           activated, are described more fully in chapter <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.1 Text in MEI</a>.</p>
+                           activated, are described more fully in chapter <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.2 Text in MEI</a>.</p>
                         
                         <p>
                            
@@ -1173,7 +1173,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedTextStructure"><span class="headingNumber">2.1.1</span><span class="head">General Text Structure Elements</span></h3>
+                        <h3 id="sharedTextStructure"><span class="headingNumber">2.1.4</span><span class="head">General Text Structure Elements</span></h3>
                         
                         <p>The MEI.shared module provides basic text structure elements.</p>
                         
@@ -1233,20 +1233,20 @@
                            </p>
                         
                         <p>A detailed description of their use and of other elements from the MEI.text module
-                           can be found in the corresponding chapter <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.1 Text in MEI</a>.</p>
+                           can be found in the corresponding chapter <a class="link_ptr chapterLink" title="Text in MEI" href="../content/textencoding.html#text">9.2 Text in MEI</a>.</p>
                         </div>
                      </div>
                   
                   <div class="div2">
                      
-                     <h2 id="sharedMusicalElements"><span class="headingNumber">2.1</span><span class="head">General Music Elements</span></h2>
+                     <h2 id="sharedMusicalElements"><span class="headingNumber">2.2</span><span class="head">General Music Elements</span></h2>
                      
                      <p>This section lists the elements defined in the shared module that are available within
                         the music element.</p>
                      
                      <div class="div3">
                         
-                        <h3 id="sharedScoreAndParts"><span class="headingNumber">2.1.1</span><span class="head">Score and Parts</span></h3>
+                        <h3 id="sharedScoreAndParts"><span class="headingNumber">2.2.1</span><span class="head">Score and Parts</span></h3>
                         
                         <p>The following elements are provided for the capture of scores and parts:</p>
                         
@@ -1383,12 +1383,12 @@
                         
                         <p>The actual use of these elements depends on the repertoire and historical context
                            of the source material. For details on their use in Common Western Notation, please
-                           refer to chapter <a class="link_ptr chapterLink" title="Defining Score Parameters for CMN" href="../content/cmn.html#cmnDefs">4.1.1 Defining Score Parameters for CMN</a>.</p>
+                           refer to chapter <a class="link_ptr chapterLink" title="Defining Score Parameters for CMN" href="../content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>.</p>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="sharedStavesAndLayers"><span class="headingNumber">2.1.1</span><span class="head">Staves and Layers</span></h3>
+                        <h3 id="sharedStavesAndLayers"><span class="headingNumber">2.2.2</span><span class="head">Staves and Layers</span></h3>
                         
                         <p>The elements below are used to capture the logical organization of musical notation:</p>
                         
@@ -1424,7 +1424,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedBasicEvents"><span class="headingNumber">2.1.1</span><span class="head">Basic Music Events</span></h3>
+                        <h3 id="sharedBasicEvents"><span class="headingNumber">2.2.3</span><span class="head">Basic Music Events</span></h3>
                         
                         <p>The basic features of music notation are represented by the following elements:</p>
                         
@@ -1531,7 +1531,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedOtherEvents"><span class="headingNumber">2.1.1</span><span class="head">Other events</span></h3>
+                        <h3 id="sharedOtherEvents"><span class="headingNumber">2.2.4</span><span class="head">Other events</span></h3>
                         
                         <p>Because they can occur in the context of a stream of events on the staff, some elements
                            which are used in other contexts are also treated as events. For example, in addition
@@ -1539,7 +1539,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedKeySignaturesAndClefs"><span class="headingNumber">2.1.1.1</span><span class="head">Key Signatures and Clefs</span></h4>
+                           <h4 id="sharedKeySignaturesAndClefs"><span class="headingNumber">2.2.4.1</span><span class="head">Key Signatures and Clefs</span></h4>
                            
                            <p>Key signatures and clefs as well as intra-staff changes to these musical parameters
                               are treated as events.</p>
@@ -1589,7 +1589,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedBarlines"><span class="headingNumber">2.1.1.1</span><span class="head">Bar Lines and Custos Signs</span></h4>
+                           <h4 id="sharedBarlines"><span class="headingNumber">2.2.4.2</span><span class="head">Bar Lines and Custos Signs</span></h4>
                            
                            <p>Measure separators, <abbr>i.e.</abbr>, bar lines, and custos signs are also considered to be events.</p>
                            
@@ -1622,7 +1622,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedAccidentalsArticulations"><span class="headingNumber">2.1.1.1</span><span class="head">Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs</span></h4>
+                           <h4 id="sharedAccidentalsArticulations"><span class="headingNumber">2.2.4.3</span><span class="head">Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs</span></h4>
                            
                            <p>The following elements are regarded as events primarily because they sometimes occur
                               independently of any associated notes, rests, or chords, especially in mensural and
@@ -1706,10 +1706,10 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedLyricSyllables"><span class="headingNumber">2.1.1.1</span><span class="head">Lyric Syllables</span></h4>
+                           <h4 id="sharedLyricSyllables"><span class="headingNumber">2.2.4.4</span><span class="head">Lyric Syllables</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/syl.html">&lt;syl&gt;</a> element is used to mark a word or portion of a word that is to be vocally performed.
-                              A fuller description of its use is provided in chapter <a class="link_ptr chapterLink" title="Lyric Syllables" href="../content/lyricsperfdir.html#lyricsSyl">8.1 Lyric Syllables</a>.</p>
+                              A fuller description of its use is provided in chapter <a class="link_ptr chapterLink" title="Lyric Syllables" href="../content/lyricsperfdir.html#lyricsSyl">8.2 Lyric Syllables</a>.</p>
                            
                            <p>
                               
@@ -1727,7 +1727,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedNoteSpacing"><span class="headingNumber">2.1.1.1</span><span class="head">Event Spacing</span></h4>
+                           <h4 id="sharedNoteSpacing"><span class="headingNumber">2.2.4.5</span><span class="head">Event Spacing</span></h4>
                            
                            <p>The following elements provide control over the horizontal spacing of notational events,
                               such as notes, chords, rests, etc.:</p>
@@ -1778,7 +1778,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedExpressionMarks"><span class="headingNumber">2.1.1</span><span class="head">Expression Marks</span></h3>
+                        <h3 id="sharedExpressionMarks"><span class="headingNumber">2.2.5</span><span class="head">Expression Marks</span></h3>
                         
                         <p>Expression marks are instructions in the form of words, abbreviations, or symbols
                            that convey aspects of performance that cannot be expressed purely through the musical
@@ -1786,7 +1786,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedTextDirectives"><span class="headingNumber">2.1.1.1</span><span class="head">Text Directives</span></h4>
+                           <h4 id="sharedTextDirectives"><span class="headingNumber">2.2.5.1</span><span class="head">Text Directives</span></h4>
                            
                            <p>All of the following elements can be considered text directives; however, MEI uses
                               the <a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a> element specifically for words, abbreviations, numbers, or symbols specifying or
@@ -1820,7 +1820,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedTempoMarks"><span class="headingNumber">2.1.1.1</span><span class="head">Tempo</span></h4>
+                           <h4 id="sharedTempoMarks"><span class="headingNumber">2.2.5.2</span><span class="head">Tempo</span></h4>
                            
                            <p>Tempo marks are indications through words, abbreviations, or specific metronome settings
                               of the speed at which a piece of music is to be performed. Both instantaneous and
@@ -1880,7 +1880,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedDynamics"><span class="headingNumber">2.1.1.1</span><span class="head">Dynamics</span></h4>
+                           <h4 id="sharedDynamics"><span class="headingNumber">2.2.5.3</span><span class="head">Dynamics</span></h4>
                            
                            <p>Dynamics, or dynamic marks, are terms, abbreviations, and symbols that indicate the
                               specific degrees of volume of a note, phrase, or section of music, <abbr>e.g.</abbr>, "piano", "forte". Transitions from one volume level to another, <abbr>e.g.</abbr>, "crescendo", "diminuendo", are also specified through dynamic marks.</p>
@@ -1901,7 +1901,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedPhraseMarks"><span class="headingNumber">2.1.1.1</span><span class="head">Phrase Marks</span></h4>
+                           <h4 id="sharedPhraseMarks"><span class="headingNumber">2.2.5.4</span><span class="head">Phrase Marks</span></h4>
                            
                            <p>Phrase marks are curved lines placed over or under notes to delineate short sections
                               of a work that represent a unified melodic idea, analogous to a phrase in literature.</p>
@@ -1941,7 +1941,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="sharedOrnaments"><span class="headingNumber">2.1.1.1</span><span class="head">Ornaments</span></h4>
+                           <h4 id="sharedOrnaments"><span class="headingNumber">2.2.5.5</span><span class="head">Ornaments</span></h4>
                            
                            <p>Ornaments are formulae of embellishment that can be realized by adding supplementary
                               notes to one or more notes of the melody.</p>
@@ -1960,11 +1960,11 @@
                               </p>
                            
                            <p>MEI provides a generic element for encoding an ornament symbol that is not a mordent,
-                              turn, or trill. For those common CMN ornaments, please refer to <a class="link_ptr chapterLink" title="Common Music Notation Ornaments" href="../content/cmn.html#cmnOrnaments">4.1 Common Music Notation Ornaments</a>.</p>
+                              turn, or trill. For those common CMN ornaments, please refer to <a class="link_ptr chapterLink" title="Common Music Notation Ornaments" href="../content/cmn.html#cmnOrnaments">4.4 Common Music Notation Ornaments</a>.</p>
                            
-                           <p>Ornaments can be represented as textual strings (<abbr>e.g.</abbr>, with a Unicode symbol) or with a user defined symbol (for the latter also see <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.1 User-defined Symbols</a>).</p>
+                           <p>Ornaments can be represented as textual strings (<abbr>e.g.</abbr>, with a Unicode symbol) or with a user defined symbol (for the latter also see <a class="link_ptr chapterLink" title="User-defined Symbols" href="../content/shared.html#userSymbols">2.4 User-defined Symbols</a>).</p>
                            
-                           <p>Ornaments may also be encoded as so called control events (see also: <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.1.1 Events and Controlevents</a>). That is, they be can linked via their attributes to other events. It is a semantic
+                           <p>Ornaments may also be encoded as so called control events (see also: <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>). That is, they be can linked via their attributes to other events. It is a semantic
                               error not to specify a starting point attribute with either <span class="att">@tstamp</span> or <span class="att">@startid</span>.</p>
                            </div>
                         </div>
@@ -1972,7 +1972,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="sharedCommonAttributes"><span class="headingNumber">2.1</span><span class="head">Common Attributes</span></h2>
+                     <h2 id="sharedCommonAttributes"><span class="headingNumber">2.3</span><span class="head">Common Attributes</span></h2>
                      
                      <p>The following attributes, all of which are defined in separate attribute classes but
                         are also provided through the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a> attribute class, are available on nearly all elements in an MEI encoding. They provide
@@ -1980,7 +1980,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedXmlAttributes"><span class="headingNumber">2.1.1</span><span class="head">Attributes from the XML-namespace</span></h3>
+                        <h3 id="sharedXmlAttributes"><span class="headingNumber">2.3.1</span><span class="head">Attributes from the XML-namespace</span></h3>
                         
                         <p>The most general attributes that are very frequently encountered in MEI files are
                            not even native MEI attributes but are coming from the basic definition of XML in
@@ -2199,7 +2199,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedLabellingAttributes"><span class="headingNumber">2.1.1</span><span class="head">Label Attributes</span></h3>
+                        <h3 id="sharedLabellingAttributes"><span class="headingNumber">2.3.2</span><span class="head">Label Attributes</span></h3>
                         
                         <p>
                            
@@ -2276,7 +2276,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedClassificationAttributes"><span class="headingNumber">2.1.1</span><span class="head">Classification Attributes</span></h3>
+                        <h3 id="sharedClassificationAttributes"><span class="headingNumber">2.3.3</span><span class="head">Classification Attributes</span></h3>
                         
                         <p>
                            
@@ -2307,7 +2307,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedResponsibilityAttributes"><span class="headingNumber">2.1.1</span><span class="head">Responsibility Attributes</span></h3>
+                        <h3 id="sharedResponsibilityAttributes"><span class="headingNumber">2.3.4</span><span class="head">Responsibility Attributes</span></h3>
                         
                         <p>
                            
@@ -2329,7 +2329,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="sharedLinkingAttributes"><span class="headingNumber">2.1.1</span><span class="head">Linking Attributes</span></h3>
+                        <h3 id="sharedLinkingAttributes"><span class="headingNumber">2.3.5</span><span class="head">Linking Attributes</span></h3>
                         
                         <p>
                            
@@ -2427,20 +2427,20 @@
                   
                   <div class="div2">
                      
-                     <h2 id="userSymbols"><span class="headingNumber">2.1</span><span class="head">User-defined Symbols</span></h2>
+                     <h2 id="userSymbols"><span class="headingNumber">2.4</span><span class="head">User-defined Symbols</span></h2>
                      
                      <p>This chapter describes the elements, model classes, and attribute classes that are
                         part of the MEI.usersymbols module.</p>
                      
                      <div class="div3">
                         
-                        <h3 id="usersymbolsOverview"><span class="headingNumber">2.1.1</span><span class="head">Overview of the Usersymbols Module</span></h3>
+                        <h3 id="usersymbolsOverview"><span class="headingNumber">2.4.1</span><span class="head">Overview of the Usersymbols Module</span></h3>
                         
                         <p>The module described in this chapter makes available the following components:</p>
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsElements"><span class="headingNumber">2.1.1.1</span><span class="head">Elements</span></h4>
+                           <h4 id="usersymbolsElements"><span class="headingNumber">2.4.1.1</span><span class="head">Elements</span></h4>
                            
                            <p>
                               
@@ -2507,14 +2507,14 @@
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsAttributeClasses"><span class="headingNumber">2.1.1.1</span><span class="head">Attribute Classes</span></h4>
+                           <h4 id="usersymbolsAttributeClasses"><span class="headingNumber">2.4.1.2</span><span class="head">Attribute Classes</span></h4>
                            
                            <p>No attribute classes are defined in this module.</p>
                            </div>
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsModelClasses"><span class="headingNumber">2.1.1.1</span><span class="head">Model Classes</span></h4>
+                           <h4 id="usersymbolsModelClasses"><span class="headingNumber">2.4.1.3</span><span class="head">Model Classes</span></h4>
                            
                            <p>The usersymbols module defines the following model classes:</p>
                            
@@ -2527,7 +2527,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="usersymbolsModuleUses"><span class="headingNumber">2.1.1</span><span class="head">Uses of the Usersymbols Module</span></h3>
+                        <h3 id="usersymbolsModuleUses"><span class="headingNumber">2.4.2</span><span class="head">Uses of the Usersymbols Module</span></h3>
                         
                         <p>The elements provided by the usersymbols module may be used in two ways:</p>
                         
@@ -2541,7 +2541,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsReusableSymbols"><span class="headingNumber">2.1.1.1</span><span class="head">Defining Reusable Symbols</span></h4>
+                           <h4 id="usersymbolsReusableSymbols"><span class="headingNumber">2.4.2.1</span><span class="head">Defining Reusable Symbols</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> element uses SVG markup or the aforementioned graphic primitives to describe a symbol.
                               A symbol definition may also use symbols defined by other <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> elements by employing the <a class="link_odd link_odd_elementSpec" href="../elements/symbol.html">&lt;symbol&gt;</a> element.</p>
@@ -2603,7 +2603,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsSemanticImplications"><span class="headingNumber">2.1.1.1</span><span class="head">Elements Without Semantic Implications</span></h4>
+                           <h4 id="usersymbolsSemanticImplications"><span class="headingNumber">2.4.2.2</span><span class="head">Elements Without Semantic Implications</span></h4>
                            
                            <p>The graphics primitives and symbols can be used directly in the music to describe
                               text and lines on a purely graphical level, without implying a specific logical meaning.
@@ -2691,7 +2691,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsGraphicalRendition"><span class="headingNumber">2.1.1.1</span><span class="head">Defining a Specific Graphical Rendition for a Semantic Element</span></h4>
+                           <h4 id="usersymbolsGraphicalRendition"><span class="headingNumber">2.4.2.3</span><span class="head">Defining a Specific Graphical Rendition for a Semantic Element</span></h4>
                            
                            <p>Usersymbols can define the rendition of different elements in two ways. Some elements,
                               for example <a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>, can have user symbol elements as content. In the following example, the content
@@ -2923,11 +2923,11 @@
                      
                      <div class="div3">
                         
-                        <h3 id="usersymbolsPositioningCoordinates"><span class="headingNumber">2.1.1</span><span class="head">Positioning and Coordinates</span></h3>
+                        <h3 id="usersymbolsPositioningCoordinates"><span class="headingNumber">2.4.3</span><span class="head">Positioning and Coordinates</span></h3>
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsCoordinateSystem"><span class="headingNumber">2.1.1.1</span><span class="head">Axis Orientation</span></h4>
+                           <h4 id="usersymbolsCoordinateSystem"><span class="headingNumber">2.4.3.1</span><span class="head">Axis Orientation</span></h4>
                            
                            <p>MEI uses the classic axis directions where the x-axis points from left to right and
                               the y-axis points from bottom up. (This is compatible with PostScript's axis orientation,
@@ -2936,7 +2936,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsUnits"><span class="headingNumber">2.1.1.1</span><span class="head">Units</span></h4>
+                           <h4 id="usersymbolsUnits"><span class="headingNumber">2.4.3.2</span><span class="head">Units</span></h4>
                            
                            <p>There are two types of units used by MEI: Staff units and units of the output coordinate
                               system. Units of the output coordinate system can be translated to physical real world
@@ -2947,7 +2947,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsPositioning"><span class="headingNumber">2.1.1.1</span><span class="head">Positioning</span></h4>
+                           <h4 id="usersymbolsPositioning"><span class="headingNumber">2.4.3.3</span><span class="head">Positioning</span></h4>
                            
                            <p>An element may be positioned using either absolute or relative coordinates. If absolute
                               start point coordinates are specified using <span class="att">@x</span>/<span class="att">@y</span> coordinates (or their relatives <span class="att">@x2</span>/<span class="att">@y2</span> for endpoints) they take precedence over relative positions specified by <span class="att">@ho</span>/<span class="att">@vo</span>/<span class="att">@to</span> (or <span class="att">@startho</span>/<span class="att">@startvo</span>/<span class="att">@startto</span>). Analogously, <span class="att">@x2</span>/<span class="att">@y2</span> override <span class="att">@endho</span>/<span class="att">@endvo</span>/<span class="att">@endto</span>.</p>
@@ -2994,7 +2994,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="usersymbolsCurveShape"><span class="headingNumber">2.1.1.1</span><span class="head">Curve Shape</span></h4>
+                           <h4 id="usersymbolsCurveShape"><span class="headingNumber">2.4.3.4</span><span class="head">Curve Shape</span></h4>
                            
                            <p>If neither a <span class="att">@bezier</span> nor <span class="att">@bulge</span> attribute is present, the renderer determines a suitable shape. However, if <span class="att">@curvedir</span> is present, the curve must respect the curvature direction specified there.</p>
                            
@@ -3030,7 +3030,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="usersymbolsLineRendition"><span class="headingNumber">2.1.1</span><span class="head">Line Rendition</span></h3>
+                        <h3 id="usersymbolsLineRendition"><span class="headingNumber">2.4.4</span><span class="head">Line Rendition</span></h3>
                         
                         <p>The <span class="att">@form</span> attribute of the <a class="link_odd link_odd_elementSpec" href="../elements/line.html">&lt;line&gt;</a> element may take the following values:</p>
                         
@@ -3066,7 +3066,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="usersymbolsLimitations"><span class="headingNumber">2.1.1</span><span class="head">Limitations</span></h3>
+                        <h3 id="usersymbolsLimitations"><span class="headingNumber">2.4.5</span><span class="head">Limitations</span></h3>
                         
                         <p>The usersymbols module does not currently support continuous composite lines or filled
                            areas. As mentioned above, the rendition of lines is highly implementation dependent.
@@ -3076,7 +3076,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -3090,7 +3090,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#sharedStructuralElements">2.1 Structural Elements</a><a class="level-3" href="#sharedDocumentElements">2.1.1 Document Root Elements</a><a class="level-3" href="#sharedMusicElement">2.1.1 General Music Structure Elements</a><a class="level-3" href="#sharedDocumentStructure">2.1.1 Document Layout Elements</a><a class="level-3" href="#sharedTextStructure">2.1.1 General Text Structure Elements</a><a class="level-2" href="#sharedMusicalElements">2.1 General Music Elements</a><a class="level-3" href="#sharedScoreAndParts">2.1.1 Score and Parts</a><a class="level-3" href="#sharedStavesAndLayers">2.1.1 Staves and Layers</a><a class="level-3" href="#sharedBasicEvents">2.1.1 Basic Music Events</a><a class="level-3" href="#sharedOtherEvents">2.1.1 Other events</a><a class="level-3" href="#sharedExpressionMarks">2.1.1 Expression Marks</a><a class="level-2" href="#sharedCommonAttributes">2.1 Common Attributes</a><a class="level-3" href="#sharedXmlAttributes">2.1.1 Attributes from the XML-namespace</a><a class="level-3" href="#sharedLabellingAttributes">2.1.1 Label Attributes</a><a class="level-3" href="#sharedClassificationAttributes">2.1.1 Classification Attributes</a><a class="level-3" href="#sharedResponsibilityAttributes">2.1.1 Responsibility Attributes</a><a class="level-3" href="#sharedLinkingAttributes">2.1.1 Linking Attributes</a><a class="level-2" href="#userSymbols">2.1 User-defined Symbols</a><a class="level-3" href="#usersymbolsOverview">2.1.1 Overview of the Usersymbols Module</a><a class="level-3" href="#usersymbolsModuleUses">2.1.1 Uses of the Usersymbols Module</a><a class="level-3" href="#usersymbolsPositioningCoordinates">2.1.1 Positioning and Coordinates</a><a class="level-3" href="#usersymbolsLineRendition">2.1.1 Line Rendition</a><a class="level-3" href="#usersymbolsLimitations">2.1.1 Limitations</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#sharedStructuralElements">2.1 Structural Elements</a><a class="level-3" href="#sharedDocumentElements">2.1.1 Document Root Elements</a><a class="level-3" href="#sharedMusicElement">2.1.2 General Music Structure Elements</a><a class="level-3" href="#sharedDocumentStructure">2.1.3 Document Layout Elements</a><a class="level-3" href="#sharedTextStructure">2.1.4 General Text Structure Elements</a><a class="level-2" href="#sharedMusicalElements">2.2 General Music Elements</a><a class="level-3" href="#sharedScoreAndParts">2.2.1 Score and Parts</a><a class="level-3" href="#sharedStavesAndLayers">2.2.2 Staves and Layers</a><a class="level-3" href="#sharedBasicEvents">2.2.3 Basic Music Events</a><a class="level-3" href="#sharedOtherEvents">2.2.4 Other events</a><a class="level-3" href="#sharedExpressionMarks">2.2.5 Expression Marks</a><a class="level-2" href="#sharedCommonAttributes">2.3 Common Attributes</a><a class="level-3" href="#sharedXmlAttributes">2.3.1 Attributes from the XML-namespace</a><a class="level-3" href="#sharedLabellingAttributes">2.3.2 Label Attributes</a><a class="level-3" href="#sharedClassificationAttributes">2.3.3 Classification Attributes</a><a class="level-3" href="#sharedResponsibilityAttributes">2.3.4 Responsibility Attributes</a><a class="level-3" href="#sharedLinkingAttributes">2.3.5 Linking Attributes</a><a class="level-2" href="#userSymbols">2.4 User-defined Symbols</a><a class="level-3" href="#usersymbolsOverview">2.4.1 Overview of the Usersymbols Module</a><a class="level-3" href="#usersymbolsModuleUses">2.4.2 Uses of the Usersymbols Module</a><a class="level-3" href="#usersymbolsPositioningCoordinates">2.4.3 Positioning and Coordinates</a><a class="level-3" href="#usersymbolsLineRendition">2.4.4 Line Rendition</a><a class="level-3" href="#usersymbolsLimitations">2.4.5 Limitations</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -3108,7 +3108,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#sharedStructuralElements">2.1 Structural Elements</a><a class="level-3" href="#sharedDocumentElements">2.1.1 Document Root Elements</a><a class="level-3" href="#sharedMusicElement">2.1.1 General Music Structure Elements</a><a class="level-3" href="#sharedDocumentStructure">2.1.1 Document Layout Elements</a><a class="level-3" href="#sharedTextStructure">2.1.1 General Text Structure Elements</a><a class="level-2" href="#sharedMusicalElements">2.1 General Music Elements</a><a class="level-3" href="#sharedScoreAndParts">2.1.1 Score and Parts</a><a class="level-3" href="#sharedStavesAndLayers">2.1.1 Staves and Layers</a><a class="level-3" href="#sharedBasicEvents">2.1.1 Basic Music Events</a><a class="level-3" href="#sharedOtherEvents">2.1.1 Other events</a><a class="level-3" href="#sharedExpressionMarks">2.1.1 Expression Marks</a><a class="level-2" href="#sharedCommonAttributes">2.1 Common Attributes</a><a class="level-3" href="#sharedXmlAttributes">2.1.1 Attributes from the XML-namespace</a><a class="level-3" href="#sharedLabellingAttributes">2.1.1 Label Attributes</a><a class="level-3" href="#sharedClassificationAttributes">2.1.1 Classification Attributes</a><a class="level-3" href="#sharedResponsibilityAttributes">2.1.1 Responsibility Attributes</a><a class="level-3" href="#sharedLinkingAttributes">2.1.1 Linking Attributes</a><a class="level-2" href="#userSymbols">2.1 User-defined Symbols</a><a class="level-3" href="#usersymbolsOverview">2.1.1 Overview of the Usersymbols Module</a><a class="level-3" href="#usersymbolsModuleUses">2.1.1 Uses of the Usersymbols Module</a><a class="level-3" href="#usersymbolsPositioningCoordinates">2.1.1 Positioning and Coordinates</a><a class="level-3" href="#usersymbolsLineRendition">2.1.1 Line Rendition</a><a class="level-3" href="#usersymbolsLimitations">2.1.1 Limitations</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#sharedStructuralElements">2.1 Structural Elements</a><a class="level-3" href="#sharedDocumentElements">2.1.1 Document Root Elements</a><a class="level-3" href="#sharedMusicElement">2.1.2 General Music Structure Elements</a><a class="level-3" href="#sharedDocumentStructure">2.1.3 Document Layout Elements</a><a class="level-3" href="#sharedTextStructure">2.1.4 General Text Structure Elements</a><a class="level-2" href="#sharedMusicalElements">2.2 General Music Elements</a><a class="level-3" href="#sharedScoreAndParts">2.2.1 Score and Parts</a><a class="level-3" href="#sharedStavesAndLayers">2.2.2 Staves and Layers</a><a class="level-3" href="#sharedBasicEvents">2.2.3 Basic Music Events</a><a class="level-3" href="#sharedOtherEvents">2.2.4 Other events</a><a class="level-3" href="#sharedExpressionMarks">2.2.5 Expression Marks</a><a class="level-2" href="#sharedCommonAttributes">2.3 Common Attributes</a><a class="level-3" href="#sharedXmlAttributes">2.3.1 Attributes from the XML-namespace</a><a class="level-3" href="#sharedLabellingAttributes">2.3.2 Label Attributes</a><a class="level-3" href="#sharedClassificationAttributes">2.3.3 Classification Attributes</a><a class="level-3" href="#sharedResponsibilityAttributes">2.3.4 Responsibility Attributes</a><a class="level-3" href="#sharedLinkingAttributes">2.3.5 Linking Attributes</a><a class="level-2" href="#userSymbols">2.4 User-defined Symbols</a><a class="level-3" href="#usersymbolsOverview">2.4.1 Overview of the Usersymbols Module</a><a class="level-3" href="#usersymbolsModuleUses">2.4.2 Uses of the Usersymbols Module</a><a class="level-3" href="#usersymbolsPositioningCoordinates">2.4.3 Positioning and Coordinates</a><a class="level-3" href="#usersymbolsLineRendition">2.4.4 Line Rendition</a><a class="level-3" href="#usersymbolsLimitations">2.4.5 Limitations</a></p>
                   </div>
                </div>
             </div>

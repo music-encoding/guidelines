@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding Common Music Notation (CMN).">
@@ -138,7 +138,7 @@
                            </p>
                         
                         <p>It is possible to have more than one <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element in this location. This is especially useful when multiple sources are encoded
-                           in the same file using the mechanisms described in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.1 Editorial Markup</a> of these Guidelines. In this case, the <span class="att">@decls</span> (declarations) attribute of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> may be used to refer to a source defined in the document’s header, as seen in the
+                           in the same file using the mechanisms described in chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">9.2 Editorial Markup</a> of these Guidelines. In this case, the <span class="att">@decls</span> (declarations) attribute of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> may be used to refer to a source defined in the document’s header, as seen in the
                            following example:</p>
                         
                         <p>
@@ -182,7 +182,7 @@
                            </figure>
                            </p>
                         
-                        <p>When using the FRBR model (see <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a>), it is equally possible to reference a <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> element instead of <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a>.</p>
+                        <p>When using the FRBR model (see <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a>), it is equally possible to reference a <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a> element instead of <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a>.</p>
                         
                         <p>Within a <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> element, each page of the source is represented by a <a class="link_odd link_odd_elementSpec" href="../elements/surface.html">&lt;surface&gt;</a> element. Each surface may be assigned an identifying string utilizing the <span class="att">@label</span> attribute. In addition, it may encapsulate more detailed metadata about itself in
                            a <a class="link_odd link_odd_elementSpec" href="../elements/figDesc.html">&lt;figDesc&gt;</a> element. The coordinate space of the surface may be recorded in abstract terms in
@@ -397,13 +397,13 @@
                         
                         <p>The encoding of <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> elements is intended to support sequential display of page images. If an encoder
                            wants to describe the physical setup of a source document, the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> element is more appropriate. The difference of both approaches, and how to combine
-                           them, is described in chapter <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.1.1.1 Description of Folia</a>.</p>
+                           them, is described in chapter <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.7.1.5 Description of Folia</a>.</p>
                         </div>
                      </div>
                   
                   <div class="div2">
                      
-                     <h2 id="performances"><span class="headingNumber">10.1</span><span class="head">Performances</span></h2>
+                     <h2 id="performances"><span class="headingNumber">10.2</span><span class="head">Performances</span></h2>
                      
                      <p>This chapter describes the ‘performance’ module, which can be used for organizing
                         audio and video files of performances of a musical work. The elements provided allow
@@ -412,7 +412,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="perfElements"><span class="headingNumber">10.1.1</span><span class="head">Overview</span></h3>
+                        <h3 id="perfElements"><span class="headingNumber">10.2.1</span><span class="head">Overview</span></h3>
                         
                         <p>The following elements are available to encode information about a recorded performance:</p>
                         
@@ -469,11 +469,11 @@
                            </div>
                            </p>
                         
-                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element begins a subtree of the <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> element and appears alongside with, or instead of, <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a> (described in <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.1 General Music Structure Elements</a>) and <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> (described in <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">10.1 Facsimiles</a>). A <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element represents one recorded performance event. As a performance may be recorded
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element begins a subtree of the <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> element and appears alongside with, or instead of, <a class="link_odd link_odd_elementSpec" href="../elements/body.html">&lt;body&gt;</a> (described in <a class="link_ptr chapterLink" title="General Music Structure Elements" href="../content/shared.html#sharedMusicElement">2.1.2 General Music Structure Elements</a>) and <a class="link_odd link_odd_elementSpec" href="../elements/facsimile.html">&lt;facsimile&gt;</a> (described in <a class="link_ptr chapterLink" title="Facsimiles" href="../content/facsimilesperformances.html#facsimiles">10.1 Facsimiles</a>). A <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element represents one recorded performance event. As a performance may be recorded
                            in multiple formats or by different personnel or using different equipment, the <a class="link_odd link_odd_elementSpec" href="../elements/performance.html">&lt;performance&gt;</a> element may group one or more recordings of the event.</p>
                         
                         <p>The <span class="att">@decls</span> attribute can be used to point to performance medium metadata for the performed work.
-                           See <a class="link_ptr chapterLink" title="Performance Medium" href="../content/metadata.html#headerWorkMedium">3.1.1 Performance Medium</a> and <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a> for more details.</p>
+                           See <a class="link_ptr chapterLink" title="Performance Medium" href="../content/metadata.html#headerWorkMedium">3.6.7 Performance Medium</a> and <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> for more details.</p>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/recording.html">&lt;recording&gt;</a> element identifies a single recording event taking place within an absolute temporal
                            space. The class <a class="link_odd link_odd_attClass" href="../attribute-classes/att.mediaBounds.html">att.mediaBounds</a> contains attributes that can be used to define this space:</p>
@@ -1084,7 +1084,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1098,7 +1098,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#facsimiles">10.1 Facsimiles</a><a class="level-3" href="#facsimileElements">10.1.1 Elements of the Facsimile Module</a><a class="level-2" href="#performances">10.1 Performances</a><a class="level-3" href="#perfElements">10.1.1 Overview</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#facsimiles">10.1 Facsimiles</a><a class="level-3" href="#facsimileElements">10.1.1 Elements of the Facsimile Module</a><a class="level-2" href="#performances">10.2 Performances</a><a class="level-3" href="#perfElements">10.2.1 Overview</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -1116,7 +1116,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#facsimiles">10.1 Facsimiles</a><a class="level-3" href="#facsimileElements">10.1.1 Elements of the Facsimile Module</a><a class="level-2" href="#performances">10.1 Performances</a><a class="level-3" href="#perfElements">10.1.1 Overview</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#facsimiles">10.1 Facsimiles</a><a class="level-3" href="#facsimileElements">10.1.1 Elements of the Facsimile Module</a><a class="level-2" href="#performances">10.2 Performances</a><a class="level-3" href="#perfElements">10.2.1 Overview</a></p>
                   </div>
                </div>
             </div>

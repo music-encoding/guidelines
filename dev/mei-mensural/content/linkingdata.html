@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
@@ -711,13 +711,13 @@
                            from the order in which entities occur in time.</p>
                         
                         <p>The <span class="att">@when</span> attribute may be used to indicate the point of occurrence of the feature bearing
-                           this attribute along a time line. Its value must be the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> element. For more detailed information regarding the use of <span class="att">@when</span>, please see <a class="link_ptr chapterLink" title="Performances" href="../content/facsimilesperformances.html#performances">10.1 Performances</a>.</p>
+                           this attribute along a time line. Its value must be the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/when.html">&lt;when&gt;</a> element. For more detailed information regarding the use of <span class="att">@when</span>, please see <a class="link_ptr chapterLink" title="Performances" href="../content/facsimilesperformances.html#performances">10.2 Performances</a>.</p>
                         </div>
                      </div>
                   
                   <div class="div2">
                      
-                     <h2 id="linkFromMei"><span class="headingNumber">11.1</span><span class="head">Linking from MEI</span></h2>
+                     <h2 id="linkFromMei"><span class="headingNumber">11.2</span><span class="head">Linking from MEI</span></h2>
                      
                      <p>This section describes techniques and approaches to establish references within a
                         single MEI document, or to link out from one MEI document to another or to other external
@@ -725,7 +725,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="ptrRef"><span class="headingNumber">11.1.1</span><span class="head">Pointers and References</span></h3>
+                        <h3 id="ptrRef"><span class="headingNumber">11.2.1</span><span class="head">Pointers and References</span></h3>
                         
                         <p>The link elements discussed in this section are the <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">&lt;ptr&gt;</a> and the <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">&lt;ref&gt;</a> elements which are declared in the MEI.ptrref module.</p>
                         
@@ -831,7 +831,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="ptrrefModule"><span class="headingNumber">11.1.1</span><span class="head">Specifying Link Elements</span></h3>
+                        <h3 id="ptrrefModule"><span class="headingNumber">11.2.2</span><span class="head">Specifying Link Elements</span></h3>
                         
                         <p>
                            In addition to the common linking attributes provided by the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a> class (see <a class="link_ptr chapterLink" title="General Relationships Between Elements" href="../content/linkingdata.html#linkingDescribingRelationships">11.1.1 General Relationships Between Elements</a>), the <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">&lt;ptr&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/ref.html">&lt;ref&gt;</a> elements inherit another set of common attributes from the <a class="link_odd link_odd_attClass" href="../attribute-classes/att.pointing.html">att.pointing</a> class (a more detailed explanation is provided below):
@@ -983,7 +983,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="ptrRefTarget"><span class="headingNumber">11.1.1.1</span><span class="head">Define the link element’s target (XPointer mechanism)</span></h4>
+                           <h4 id="ptrRefTarget"><span class="headingNumber">11.2.2.1</span><span class="head">Define the link element’s target (XPointer mechanism)</span></h4>
                            
                            <p>
                               The <span class="att">@target</span> attribute specifies the destination of a pointer or reference using a method standardized
@@ -1120,7 +1120,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="ptrRefTargettype"><span class="headingNumber">11.1.1.1</span><span class="head">Define the type of a link element’s target</span></h4>
+                           <h4 id="ptrRefTargettype"><span class="headingNumber">11.2.2.2</span><span class="head">Define the type of a link element’s target</span></h4>
                            
                            <p>
                               The <span class="att">@targettype</span> attribute allows the target resource to be characterized using any convenient classification
@@ -1169,7 +1169,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="ptrRefMimetype"><span class="headingNumber">11.1.1.1</span><span class="head">Define the mimetype of a link element’s target</span></h4>
+                           <h4 id="ptrRefMimetype"><span class="headingNumber">11.2.2.3</span><span class="head">Define the mimetype of a link element’s target</span></h4>
                            
                            <p>
                               The function of the <span class="att">@mimetype</span> attribute is similar to that of <span class="att">@targettype</span> in that they both allow classification of the destination. Unlike <span class="att">@targettype</span>, however, <span class="att">@mimetype</span> explicitly defines the destination type using a standard taxonomy. Its value should
@@ -1250,7 +1250,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="ptrRefXlinkActuateShow"><span class="headingNumber">11.1.1.1</span><span class="head">Determine the link element’s behaviour</span></h4>
+                           <h4 id="ptrRefXlinkActuateShow"><span class="headingNumber">11.2.2.4</span><span class="head">Determine the link element’s behaviour</span></h4>
                            
                            <p>
                               The <span class="att">@xlink:actuate</span> and <span class="att">@xlink:show</span> attributes are used in conjunction to determine the link’s behavior.
@@ -1339,7 +1339,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="ptrRefXlinkRole"><span class="headingNumber">11.1.1.1</span><span class="head">Determine the link element’s role</span></h4>
+                           <h4 id="ptrRefXlinkRole"><span class="headingNumber">11.2.2.5</span><span class="head">Determine the link element’s role</span></h4>
                            
                            <p>
                               The <span class="att">@xlink:role</span> attribute describes the meaning of resources within the context of a link. It is
@@ -1394,14 +1394,14 @@
                   
                   <div class="div2">
                      
-                     <h2 id="linkAlign"><span class="headingNumber">11.1</span><span class="head">Linking and Alignment</span></h2>
+                     <h2 id="linkAlign"><span class="headingNumber">11.3</span><span class="head">Linking and Alignment</span></h2>
                      
                      <p>The linkAlign module has been deprecated in MEI v3.</p>
                      </div>
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1415,7 +1415,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#links">11.1 Links</a><a class="level-3" href="#linkingDescribingRelationships">11.1.1 General Relationships Between Elements</a><a class="level-2" href="#linkFromMei">11.1 Linking from MEI</a><a class="level-3" href="#ptrRef">11.1.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">11.1.1 Specifying Link Elements</a><a class="level-2" href="#linkAlign">11.1 Linking and Alignment</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#links">11.1 Links</a><a class="level-3" href="#linkingDescribingRelationships">11.1.1 General Relationships Between Elements</a><a class="level-2" href="#linkFromMei">11.2 Linking from MEI</a><a class="level-3" href="#ptrRef">11.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">11.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">11.3 Linking and Alignment</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -1433,7 +1433,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#links">11.1 Links</a><a class="level-3" href="#linkingDescribingRelationships">11.1.1 General Relationships Between Elements</a><a class="level-2" href="#linkFromMei">11.1 Linking from MEI</a><a class="level-3" href="#ptrRef">11.1.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">11.1.1 Specifying Link Elements</a><a class="level-2" href="#linkAlign">11.1 Linking and Alignment</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#links">11.1 Links</a><a class="level-3" href="#linkingDescribingRelationships">11.1.1 General Relationships Between Elements</a><a class="level-2" href="#linkFromMei">11.2 Linking from MEI</a><a class="level-3" href="#ptrRef">11.2.1 Pointers and References</a><a class="level-3" href="#ptrrefModule">11.2.2 Specifying Link Elements</a><a class="level-2" href="#linkAlign">11.3 Linking and Alignment</a></p>
                   </div>
                </div>
             </div>

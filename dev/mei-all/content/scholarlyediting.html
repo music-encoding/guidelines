@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization integrating all aspects of MEI.">
@@ -39,7 +39,7 @@
                   
                   <p>This chapter introduces markup targeting at digital scholarly editions of music. In
                      <a class="link_ptr chapterLink" title="Critical Apparatus" href="../content/scholarlyediting.html#critApp">11.1 Critical Apparatus</a>, the alignment of multiple sources / witnesses of the same musical text is discussed.
-                     <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.1 Editorial Markup</a> covers editorial observations in and interventions to the text. <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">11.1 Genetic Markup</a> finally deals with the special requirements and needs of genetic editions in music.</p>
+                     <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> covers editorial observations in and interventions to the text. <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">11.3 Genetic Markup</a> finally deals with the special requirements and needs of genetic editions in music.</p>
                   
                   <div class="div2">
                      
@@ -48,7 +48,7 @@
                      <p>This chapter describes how to encode differences between multiple exemplars of the
                         same musical work (often referred to in MEI as ‘sources’). The mechanisms and elements
                         described in this chapter are closely related to their counterparts in the TEI guidelines.
-                        It is also important to refer to chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.1 Editorial Markup</a> of these guidelines, especially concerning the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element described therein.</p>
+                        It is also important to refer to chapter <a class="link_ptr chapterLink" title="Editorial Markup" href="../content/scholarlyediting.html#editTrans">11.2 Editorial Markup</a> of these guidelines, especially concerning the <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element described therein.</p>
                      
                      <div class="div3">
                         
@@ -223,7 +223,7 @@
                            </figure>
                            </p>
                         
-                        <p>If interested in modeling such dependencies between witnesses, using markup from <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.1 Functional Requirements for Bibliographic Records (FRBR)</a> is generally recommendable.</p>
+                        <p>If interested in modeling such dependencies between witnesses, using markup from <a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a> is generally recommendable.</p>
                         
                         <p>If a source has additional content that is not found in other sources, an empty <a class="link_odd link_odd_elementSpec" href="../elements/rdg.html">&lt;rdg&gt;</a> element may be used to indicate the lack of material in the other sources. In the
                            following example, source 1 includes material that is not found in sources 2 and 3:</p>
@@ -261,7 +261,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="critAppInContent"><span class="headingNumber">11.1.1</span><span class="head">Variants in Musical Content</span></h3>
+                        <h3 id="critAppInContent"><span class="headingNumber">11.1.2</span><span class="head">Variants in Musical Content</span></h3>
                         
                         <p>The <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> element may be used to accommodate textual variation at nearly any point in a musical
                            text. For example, it may be used to indicate minor differences such as stem directions:</p>
@@ -348,7 +348,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="critAppInDefs"><span class="headingNumber">11.1.1</span><span class="head">Variants in Score Definitions</span></h3>
+                        <h3 id="critAppInDefs"><span class="headingNumber">11.1.3</span><span class="head">Variants in Score Definitions</span></h3>
                         
                         <p>In addition to its use for differentiation of the musical content of multiple sources,
                            <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> may also be utilized to describe the layout of different scores, even when the musical
@@ -431,7 +431,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="critAppNesting"><span class="headingNumber">11.1.1</span><span class="head">Nesting Apparati</span></h3>
+                        <h3 id="critAppNesting"><span class="headingNumber">11.1.4</span><span class="head">Nesting Apparati</span></h3>
                         
                         <p>In some situations, musical sources will agree at one level while differing at a lower
                            level. For these cases, <a class="link_odd link_odd_elementSpec" href="../elements/app.html">&lt;app&gt;</a> elements may be nested to any level necessary. In the following example, there are
@@ -501,7 +501,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="editTrans"><span class="headingNumber">11.1</span><span class="head">Editorial Markup</span></h2>
+                     <h2 id="editTrans"><span class="headingNumber">11.2</span><span class="head">Editorial Markup</span></h2>
                      
                      <p>It is often necessary to render an account of any changes made to a musical text during
                         its creation (and any subsequent editing) and to accommodate editorial comment necessitated
@@ -513,7 +513,7 @@
                      <p>The scope of the elements described herein is therefore the description of features
                         relating to the genesis, later revision and editorial interpretation of a text. Mechanisms
                         for describing multiple sources are described in chapter <a class="link_ptr chapterLink" title="Critical Apparatus" href="../content/scholarlyediting.html#critApp">11.1 Critical Apparatus</a> of these Guidelines, while the full setup for genetic editions is described in chapter
-                        <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">11.1 Genetic Markup</a>.</p>
+                        <a class="link_ptr chapterLink" title="Genetic Markup" href="../content/scholarlyediting.html#genetic">11.3 Genetic Markup</a>.</p>
                      
                      <p>The elements described in this chapter may be contained by a wide range of other MEI
                         elements and, in turn, may contain a variety of elements. The encoder must assume
@@ -599,7 +599,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="edittransAbbrev"><span class="headingNumber">11.1.1</span><span class="head">Abbreviations</span></h3>
+                        <h3 id="edittransAbbrev"><span class="headingNumber">11.2.1</span><span class="head">Abbreviations</span></h3>
                         
                         <p>MEI offers methods for marking abbreviations in prose, as in the following example:</p>
                         
@@ -671,7 +671,7 @@
                         <p class="gloss"><strong><span>geographic</span></strong>:
                            the abbreviation is for a geographic name.</p>
                         
-                        <p>This tag is the mirror image of the <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> tag (not to be confused with the <a class="link_odd link_odd_elementSpec" href="../elements/expansion.html">&lt;expansion&gt;</a> element described in <a class="link_ptr chapterLink" title="Content of Musical Divisions" href="../content/shared.html#sharedMdivContent">2.1.1.1 Content of Musical Divisions</a>). Both <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> allow the encoder to transcribe an abbreviation and its expansion. In the case of
+                        <p>This tag is the mirror image of the <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> tag (not to be confused with the <a class="link_odd link_odd_elementSpec" href="../elements/expansion.html">&lt;expansion&gt;</a> element described in <a class="link_ptr chapterLink" title="Content of Musical Divisions" href="../content/shared.html#sharedMdivContent">2.1.2.2 Content of Musical Divisions</a>). Both <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> allow the encoder to transcribe an abbreviation and its expansion. In the case of
                            <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a>, the original is transcribed as the content of the element and the expansion as an
                            attribute value, while <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> reverses this. The choice between the two is up to the user. For example:</p>
                         
@@ -750,7 +750,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="edittranscpMark"><span class="headingNumber">11.1.1.1</span><span class="head"> Instructions</span></h4>
+                           <h4 id="edittranscpMark"><span class="headingNumber">11.2.1.1</span><span class="head"> Instructions</span></h4>
                            
                            <p>Many musical scores make use of various kinds of shorthand notation which omit some
                               parts of the score that have already been written elsewhere. Typical examples for
@@ -779,7 +779,7 @@
                               </div>
                               </p>
                            
-                           <p>Like any other ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.1.1 Events and Controlevents</a>), <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> is placed in the score using the <span class="att">@staff</span> and <span class="att">@tstamp</span> attributes. The end point of the mark itself, when necessary, may be indicated using
+                           <p>Like any other ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>), <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> is placed in the score using the <span class="att">@staff</span> and <span class="att">@tstamp</span> attributes. The end point of the mark itself, when necessary, may be indicated using
                               the <span class="att">@tstamp2</span> attribute. The source material, which is intended to be inserted in the space indicated
                               by the copy mark, can be identified by the attributes <span class="att">@origin.tstamp</span>, <span class="att">@origin.tstamp2</span>, <span class="att">@origin.staff</span> and <span class="att">@origin.layer</span>. While <span class="att">@origin.tstamp</span> provides the relative distance from the beginning of the "gap", <span class="att">@origin.tstamp</span> is relative to the position identified by <span class="att">@origin.tstamp</span>. However, <span class="att">@origin.tstamp</span> defaults to the same value as <span class="att">@tstamp2</span> and should only be provided when necessary. When neither <span class="att">@origin.staff</span> nor <span class="att">@origin.tstamp</span> are provided, they take the same values as the cpMark’s <span class="att">@staff</span> and <span class="att">@tstamp</span> attributes; that is, they indicate a strict ‘vertical’ or ‘horizontal’ copy.</p>
                            
@@ -833,13 +833,13 @@
                            <p>Depending on the purpose of the encoding, the omitted parts in the score may be filled
                               with <a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/mSpace.html">&lt;mSpace&gt;</a> elements of appropriate duration or silently overwritten with the content that the
                               <a class="link_odd link_odd_elementSpec" href="../elements/cpMark.html">&lt;cpMark&gt;</a> identifies. Also, these two options may be combined through the use a <a class="link_odd link_odd_elementSpec" href="../elements/choice.html">&lt;choice&gt;</a> element whose <a class="link_odd link_odd_elementSpec" href="../elements/abbr.html">&lt;abbr&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> children explicitly encode a transcription of the original ‘gap’ (in abbr) and the
-                              result of the insertion of the indicated material (in expan, see <a class="link_ptr chapterLink" title="Abbreviations" href="../content/scholarlyediting.html#edittransAbbrev">11.1.1 Abbreviations</a>).</p>
+                              result of the insertion of the indicated material (in expan, see <a class="link_ptr chapterLink" title="Abbreviations" href="../content/scholarlyediting.html#edittransAbbrev">11.2.1 Abbreviations</a>).</p>
                            </div>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="edittransErrors"><span class="headingNumber">11.1.1</span><span class="head">Apparent Errors</span></h3>
+                        <h3 id="edittransErrors"><span class="headingNumber">11.2.2</span><span class="head">Apparent Errors</span></h3>
                         
                         <p>When the source material to be encoded is manifestly faulty, an encoder or transcriber
                            may elect simply to correct it without comment, although for scholarly purposes it
@@ -1105,14 +1105,14 @@
                         
                         <p>Where, as here, the correction takes the form of amending information present in the
                            text being encoded, the encoder should use the <a class="link_odd link_odd_elementSpec" href="../elements/corr.html">&lt;corr&gt;</a> element. Where the correction is present in the text being encoded, and consists
-                           of some combination of visible additions and deletions, the elements <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and / or <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> should be used. For additional information on the use of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, see section <a class="link_ptr chapterLink" title="Additions and Deletions" href="../content/scholarlyediting.html#edittransAddDel">11.1.1.1 Additions and Deletions</a>. Where the correction takes the form of an addition of material not present in the
+                           of some combination of visible additions and deletions, the elements <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and / or <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> should be used. For additional information on the use of <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, see section <a class="link_ptr chapterLink" title="Additions and Deletions" href="../content/scholarlyediting.html#edittransAddDel">11.2.4.3 Additions and Deletions</a>. Where the correction takes the form of an addition of material not present in the
                            original because of physical damage or illegibility, the <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a> element may be used. Where the ‘correction’ is simply a matter of expanding abbreviated
                            notation, the <a class="link_odd link_odd_elementSpec" href="../elements/expan.html">&lt;expan&gt;</a> element may be used.</p>
                         </div>
                      
                      <div class="div3">
                         
-                        <h3 id="edittransReg"><span class="headingNumber">11.1.1</span><span class="head">Regularization and Normalization</span></h3>
+                        <h3 id="edittransReg"><span class="headingNumber">11.2.3</span><span class="head">Regularization and Normalization</span></h3>
                         
                         <p>When the musical source makes extensive use of unusual symbol shapes or non-standard
                            notation features, it may be desirable for a number of reasons to regularize it; that
@@ -1250,7 +1250,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="edittransAddDelOmissions"><span class="headingNumber">11.1.1</span><span class="head">Additions, Deletions, and Omissions</span></h3>
+                        <h3 id="edittransAddDelOmissions"><span class="headingNumber">11.2.4</span><span class="head">Additions, Deletions, and Omissions</span></h3>
                         
                         <p>The following elements are used to indicate when single notational symbols have been
                            omitted from, added to, or marked for deletion from, a musical text. Like the other
@@ -1315,11 +1315,11 @@
                         
                         <div class="div4">
                            
-                           <h4 id="edittransOmission"><span class="headingNumber">11.1.1.1</span><span class="head">Omissions, Unclear Readings, Damage, and Supplied Readings</span></h4>
+                           <h4 id="edittransOmission"><span class="headingNumber">11.2.4.1</span><span class="head">Omissions, Unclear Readings, Damage, and Supplied Readings</span></h4>
                            
                            <p>Encoders may choose to omit parts of the source for reasons ranging from illegibility,
                               (making transcription difficult or impossible), to editorial policy, <abbr>e.g.</abbr>, systematic exclusion of poetry or prose from an encoding. The full details of the
-                              policy decisions concerned should be documented in the MEI header (see section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.1.1 Encoding Description</a>). Each place in the text at which omission has taken place should be marked with
+                              policy decisions concerned should be documented in the MEI header (see section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>). Each place in the text at which omission has taken place should be marked with
                               a <a class="link_odd link_odd_elementSpec" href="../elements/gap.html">&lt;gap&gt;</a> element, optionally with further information about the reason for the omission, its
                               extent, and the person or agency responsible for it, as in the following examples:</p>
                            
@@ -1452,7 +1452,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="edittransVisual"><span class="headingNumber">11.1.1.1</span><span class="head">Visual appearance of editorial decisions</span></h4>
+                           <h4 id="edittransVisual"><span class="headingNumber">11.2.4.2</span><span class="head">Visual appearance of editorial decisions</span></h4>
                            
                            <p>Material added by the editors is often highlighted in the sheet music, either by brackets
                               or small print. In addition to the semantic markup by elements like <a class="link_odd link_odd_elementSpec" href="../elements/supplied.html">&lt;supplied&gt;</a>, the visual appearance can be encoded using the attributes <span class="att">@enclose</span> and <span class="att">@fontsize</span>, which are available on many elements.</p>
@@ -1508,7 +1508,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="edittransAddDel"><span class="headingNumber">11.1.1.1</span><span class="head">Additions and Deletions</span></h4>
+                           <h4 id="edittransAddDel"><span class="headingNumber">11.2.4.3</span><span class="head">Additions and Deletions</span></h4>
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a> elements may be used to record where material has been added or deleted in the source
                               material.</p>
@@ -1607,7 +1607,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="edittransSubst"><span class="headingNumber">11.1.1.1</span><span class="head">Substitutions, Restorations, and Handshifts</span></h4>
+                           <h4 id="edittransSubst"><span class="headingNumber">11.2.4.4</span><span class="head">Substitutions, Restorations, and Handshifts</span></h4>
                            
                            <p>When several interventions to the musical text are to be regarded as a single action,
                               they may be grouped using the <a class="link_odd link_odd_elementSpec" href="../elements/subst.html">&lt;subst&gt;</a> element. The most common combination is a replacement of portions of the musical
@@ -1739,7 +1739,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="genetic"><span class="headingNumber">11.1</span><span class="head">Genetic Markup</span></h2>
+                     <h2 id="genetic"><span class="headingNumber">11.3</span><span class="head">Genetic Markup</span></h2>
                      
                      <p>Genetic editions try to trace the creation of a (musical) work in all its recorded
                         details, from the first sketches to the ‘final’ complete text. The aim of genetic
@@ -1753,7 +1753,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="geneticStates"><span class="headingNumber">11.1.1</span><span class="head">Encoding Genetic States</span></h3>
+                        <h3 id="geneticStates"><span class="headingNumber">11.3.1</span><span class="head">Encoding Genetic States</span></h3>
                         
                         <p>Leaving aside temporary breaks, a compositional process is continuous: the composer’s
                            writing operations have happened in a strict order, which could be specified if his
@@ -1840,9 +1840,9 @@
                      
                      <div class="div3">
                         
-                        <h3 id="geneticReferences"><span class="headingNumber">11.1.1</span><span class="head">Referencing Genetic States</span></h3>
+                        <h3 id="geneticReferences"><span class="headingNumber">11.3.2</span><span class="head">Referencing Genetic States</span></h3>
                         
-                        <p>While the (relative) chronology of genetic states may be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> element (see <a class="link_ptr chapterLink" title="Encoding Genetic States" href="../content/scholarlyediting.html#geneticStates">11.1.1 Encoding Genetic States</a>), the textual operations they manifest in are encoded using the regular <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, etc. elements are used (see <a class="link_ptr chapterLink" title="Additions, Deletions, and Omissions" href="../content/scholarlyediting.html#edittransAddDelOmissions">11.1.1 Additions, Deletions, and Omissions</a>). However, for a genetic edition these elements are linked to their corresponding
+                        <p>While the (relative) chronology of genetic states may be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/genDesc.html">&lt;genDesc&gt;</a> element (see <a class="link_ptr chapterLink" title="Encoding Genetic States" href="../content/scholarlyediting.html#geneticStates">11.3.1 Encoding Genetic States</a>), the textual operations they manifest in are encoded using the regular <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>, etc. elements are used (see <a class="link_ptr chapterLink" title="Additions, Deletions, and Omissions" href="../content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a>). However, for a genetic edition these elements are linked to their corresponding
                            <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a> element using the <span class="att">@state</span> attribute.</p>
                         
                         <p>
@@ -1900,7 +1900,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="metatexts"><span class="headingNumber">11.1.1</span><span class="head">Encoding Metatexts</span></h3>
+                        <h3 id="metatexts"><span class="headingNumber">11.3.3</span><span class="head">Encoding Metatexts</span></h3>
                         
                         <p>The arguments used to establish a chronological order of genetic states are sometimes
                            found in external sources like letters, but very often they are to be found in the
@@ -1927,7 +1927,7 @@
                            </div>
                            </p>
                         
-                        <p>A metaMark is provided as a ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.1.1 Events and Controlevents</a>); as such, by convention, it should be encoded at the end of the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> where it first occurs. It is highly recommended to specify the function of the metaMark
+                        <p>A metaMark is provided as a ‘controlEvent’ (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>); as such, by convention, it should be encoded at the end of the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> where it first occurs. It is highly recommended to specify the function of the metaMark
                            using its <span class="att">@function</span> attribute, which may take the following values:</p>
                         
                         <ul>
@@ -2039,17 +2039,17 @@
                      
                      <div class="div3">
                         
-                        <h3 id="geneticPageChanges"><span class="headingNumber">11.1.1</span><span class="head">Genetic Changes at the Page Level</span></h3>
+                        <h3 id="geneticPageChanges"><span class="headingNumber">11.3.4</span><span class="head">Genetic Changes at the Page Level</span></h3>
                         
                         <p>In genetic editions, it may also be of interest to trace when pages are added and
                            / or removed from manuscripts. The general information about pages can be encoded
-                           using the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> element, as described in <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.1.1.1 Description of Folia</a>. It is possible to wrap the elements used there, including <a class="link_odd link_odd_elementSpec" href="../elements/patch.html">&lt;patch&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/cutout.html">&lt;cutout&gt;</a> with editorial markup like <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>. These elements can then be used to reference <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a> as described in <a class="link_ptr chapterLink" title="Referencing Genetic States" href="../content/scholarlyediting.html#geneticReferences">11.1.1 Referencing Genetic States</a>.</p>
+                           using the <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> element, as described in <a class="link_ptr chapterLink" title="Description of Folia" href="../content/metadata.html#foliadesc">3.7.1.5 Description of Folia</a>. It is possible to wrap the elements used there, including <a class="link_odd link_odd_elementSpec" href="../elements/patch.html">&lt;patch&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/cutout.html">&lt;cutout&gt;</a> with editorial markup like <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/del.html">&lt;del&gt;</a>. These elements can then be used to reference <a class="link_odd link_odd_elementSpec" href="../elements/genState.html">&lt;genState&gt;</a> as described in <a class="link_ptr chapterLink" title="Referencing Genetic States" href="../content/scholarlyediting.html#geneticReferences">11.3.2 Referencing Genetic States</a>.</p>
                         </div>
                      </div>
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -2063,7 +2063,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#critApp">11.1 Critical Apparatus</a><a class="level-3" href="#critAppElements">11.1.1 General Usage</a><a class="level-3" href="#critAppInContent">11.1.1 Variants in Musical Content</a><a class="level-3" href="#critAppInDefs">11.1.1 Variants in Score Definitions</a><a class="level-3" href="#critAppNesting">11.1.1 Nesting Apparati</a><a class="level-2" href="#editTrans">11.1 Editorial Markup</a><a class="level-3" href="#edittransAbbrev">11.1.1 Abbreviations</a><a class="level-3" href="#edittransErrors">11.1.1 Apparent Errors</a><a class="level-3" href="#edittransReg">11.1.1 Regularization and Normalization</a><a class="level-3" href="#edittransAddDelOmissions">11.1.1 Additions, Deletions, and Omissions</a><a class="level-2" href="#genetic">11.1 Genetic Markup</a><a class="level-3" href="#geneticStates">11.1.1 Encoding Genetic States</a><a class="level-3" href="#geneticReferences">11.1.1 Referencing Genetic States</a><a class="level-3" href="#metatexts">11.1.1 Encoding Metatexts</a><a class="level-3" href="#geneticPageChanges">11.1.1 Genetic Changes at the Page Level</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#critApp">11.1 Critical Apparatus</a><a class="level-3" href="#critAppElements">11.1.1 General Usage</a><a class="level-3" href="#critAppInContent">11.1.2 Variants in Musical Content</a><a class="level-3" href="#critAppInDefs">11.1.3 Variants in Score Definitions</a><a class="level-3" href="#critAppNesting">11.1.4 Nesting Apparati</a><a class="level-2" href="#editTrans">11.2 Editorial Markup</a><a class="level-3" href="#edittransAbbrev">11.2.1 Abbreviations</a><a class="level-3" href="#edittransErrors">11.2.2 Apparent Errors</a><a class="level-3" href="#edittransReg">11.2.3 Regularization and Normalization</a><a class="level-3" href="#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a><a class="level-2" href="#genetic">11.3 Genetic Markup</a><a class="level-3" href="#geneticStates">11.3.1 Encoding Genetic States</a><a class="level-3" href="#geneticReferences">11.3.2 Referencing Genetic States</a><a class="level-3" href="#metatexts">11.3.3 Encoding Metatexts</a><a class="level-3" href="#geneticPageChanges">11.3.4 Genetic Changes at the Page Level</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -2081,7 +2081,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#critApp">11.1 Critical Apparatus</a><a class="level-3" href="#critAppElements">11.1.1 General Usage</a><a class="level-3" href="#critAppInContent">11.1.1 Variants in Musical Content</a><a class="level-3" href="#critAppInDefs">11.1.1 Variants in Score Definitions</a><a class="level-3" href="#critAppNesting">11.1.1 Nesting Apparati</a><a class="level-2" href="#editTrans">11.1 Editorial Markup</a><a class="level-3" href="#edittransAbbrev">11.1.1 Abbreviations</a><a class="level-3" href="#edittransErrors">11.1.1 Apparent Errors</a><a class="level-3" href="#edittransReg">11.1.1 Regularization and Normalization</a><a class="level-3" href="#edittransAddDelOmissions">11.1.1 Additions, Deletions, and Omissions</a><a class="level-2" href="#genetic">11.1 Genetic Markup</a><a class="level-3" href="#geneticStates">11.1.1 Encoding Genetic States</a><a class="level-3" href="#geneticReferences">11.1.1 Referencing Genetic States</a><a class="level-3" href="#metatexts">11.1.1 Encoding Metatexts</a><a class="level-3" href="#geneticPageChanges">11.1.1 Genetic Changes at the Page Level</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#critApp">11.1 Critical Apparatus</a><a class="level-3" href="#critAppElements">11.1.1 General Usage</a><a class="level-3" href="#critAppInContent">11.1.2 Variants in Musical Content</a><a class="level-3" href="#critAppInDefs">11.1.3 Variants in Score Definitions</a><a class="level-3" href="#critAppNesting">11.1.4 Nesting Apparati</a><a class="level-2" href="#editTrans">11.2 Editorial Markup</a><a class="level-3" href="#edittransAbbrev">11.2.1 Abbreviations</a><a class="level-3" href="#edittransErrors">11.2.2 Apparent Errors</a><a class="level-3" href="#edittransReg">11.2.3 Regularization and Normalization</a><a class="level-3" href="#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a><a class="level-2" href="#genetic">11.3 Genetic Markup</a><a class="level-3" href="#geneticStates">11.3.1 Encoding Genetic States</a><a class="level-3" href="#geneticReferences">11.3.2 Referencing Genetic States</a><a class="level-3" href="#metatexts">11.3.3 Encoding Metatexts</a><a class="level-3" href="#geneticPageChanges">11.3.4 Genetic Changes at the Page Level</a></p>
                   </div>
                </div>
             </div>

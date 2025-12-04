@@ -10,7 +10,7 @@
       <meta name="author" content="Stefan Münnich">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2025-11-28">
+      <meta name="date" content="2025-12-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
@@ -53,7 +53,7 @@
                      
                      <p>These Guidelines recommend that encoders employ commonly accepted analytical practices,
                         such as ‘functional analysis’ or ‘Schenkerian analysis’, and document their use in
-                        the <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a> described in section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.1.1 Encoding Description</a>. For general information on musical analysis, please consult Grove Music Online,
+                        the <a class="link_odd link_odd_elementSpec" href="../elements/encodingDesc.html">&lt;encodingDesc&gt;</a> described in section <a class="link_ptr chapterLink" title="Encoding Description" href="../content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>. For general information on musical analysis, please consult Grove Music Online,
                         ‘<a class="link_ref link_external" href="https://doi.org/10.1093/gmo/9781561592630.article.41862">Analysis</a>’.</p>
                      
                      <p>The relationships between event elements, such as note, chord, and rest, are the basic
@@ -272,7 +272,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="analysisMelodicFunction"><span class="headingNumber">10.1.1.1</span><span class="head">Melodic Function</span></h4>
+                           <h4 id="analysisMelodicFunction"><span class="headingNumber">10.1.1.2</span><span class="head">Melodic Function</span></h4>
                            
                            <p>The <span class="att">@mfunc</span> attribute describes melodic function of a <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> or neume using the <a class="link_ref link_external" href="https://www.humdrum.org/rep/embel/">Humdrum **embel syntax</a>. In the following example, the note B is labeled as a lower neighbor while all other
                               notes are labeled as chord tones: 
@@ -334,7 +334,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="analysisHarmonicIntervals"><span class="headingNumber">10.1.1.1</span><span class="head">Harmonic Intervals</span></h4>
+                           <h4 id="analysisHarmonicIntervals"><span class="headingNumber">10.1.1.3</span><span class="head">Harmonic Intervals</span></h4>
                            
                            <p>
                               
@@ -402,7 +402,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="analysisScaleDegrees"><span class="headingNumber">10.1.1.1</span><span class="head">Scale Degrees</span></h4>
+                           <h4 id="analysisScaleDegrees"><span class="headingNumber">10.1.1.4</span><span class="head">Scale Degrees</span></h4>
                            
                            <p>
                               
@@ -507,7 +507,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="analysisPitchClass"><span class="headingNumber">10.1.1.1</span><span class="head">Pitch Class</span></h4>
+                           <h4 id="analysisPitchClass"><span class="headingNumber">10.1.1.5</span><span class="head">Pitch Class</span></h4>
                            
                            <p>The <span class="att">@pclass</span> attribute can be used to encode information about the pitch class to which a note
                               belongs. The attribute’s value must be an integer less than or equal to 11. It is
@@ -563,7 +563,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="analysisSolmization"><span class="headingNumber">10.1.1.1</span><span class="head">Solmization</span></h4>
+                           <h4 id="analysisSolmization"><span class="headingNumber">10.1.1.6</span><span class="head">Solmization</span></h4>
                            
                            <p>Solmization is a system which associates a syllable with each note of a musical scale.
                               There are various forms of solmization used throughout the world. In Europe and North
@@ -607,7 +607,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="analysisMetricalConformance"><span class="headingNumber">10.1.1</span><span class="head">Metrical Conformance</span></h3>
+                        <h3 id="analysisMetricalConformance"><span class="headingNumber">10.1.2</span><span class="head">Metrical Conformance</span></h3>
                         
                         <p>It is often helpful to record whether a given staff, layer, or measure obeys the meter
                            established for it. The following attributes are provided for this purpose:</p>
@@ -720,7 +720,7 @@
                   
                   <div class="div2">
                      
-                     <h2 id="harmony"><span class="headingNumber">10.1</span><span class="head">Harmony</span></h2>
+                     <h2 id="harmony"><span class="headingNumber">10.2</span><span class="head">Harmony</span></h2>
                      
                      <p>This chapter describes the encoding of indications of harmony occurring within a music
                         text, <abbr>e.g.</abbr>, chord names, tablature grids, figured bass, or signs for harmonic analysis, and
@@ -729,7 +729,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="harmonyDetails"><span class="headingNumber">10.1.1</span><span class="head">Indications of Harmony</span></h3>
+                        <h3 id="harmonyDetails"><span class="headingNumber">10.2.1</span><span class="head">Indications of Harmony</span></h3>
                         
                         <p>On the most basic level, chords in the musical text can be encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element:</p>
                         
@@ -747,7 +747,7 @@
                            </div>
                            </p>
                         
-                        <p>Additional information on the use of the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element is available in <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.1.1 Basic Music Events</a> and <a class="link_ptr chapterLink" title="Notes, Chords and Rests in CMN" href="../content/cmn.html#cmnNotesChords">4.1.1 Notes, Chords and Rests in CMN</a>.</p>
+                        <p>Additional information on the use of the <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> element is available in <a class="link_ptr chapterLink" title="Basic Music Events" href="../content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a> and <a class="link_ptr chapterLink" title="Notes, Chords and Rests in CMN" href="../content/cmn.html#cmnNotesChords">4.2.5 Notes, Chords and Rests in CMN</a>.</p>
                         
                         <p>With only this kind of markup, harmonic information is implicit in the notes themselves.
                            The elements and attributes of this module, however, provide for the encoding of explicit
@@ -756,7 +756,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="harmonyMetadataInscoreDef"><span class="headingNumber">10.1.1.1</span><span class="head">Interpreted Chord Data in scoreDef</span></h4>
+                           <h4 id="harmonyMetadataInscoreDef"><span class="headingNumber">10.2.1.1</span><span class="head">Interpreted Chord Data in scoreDef</span></h4>
                            
                            <p>An harmonic label, such as "7", may occur many times throughout an MEI instance. Where
                               the goal is diplomatic transcription, simply recording the uninterpreted label is
@@ -979,7 +979,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="harmonyTablatureGrids"><span class="headingNumber">10.1.1.1</span><span class="head">Chord Tablature Grids</span></h4>
+                           <h4 id="harmonyTablatureGrids"><span class="headingNumber">10.2.1.2</span><span class="head">Chord Tablature Grids</span></h4>
                            
                            <p>The <span class="att">@pos</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a>, the <span class="att">@fing</span> and <span class="att">@fret</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a>, and the <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> element child of <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> are provided in order to create displayable and performable chord tablature grids
                               for guitar and other fretted string instruments. The fret at which a finger should
@@ -992,7 +992,7 @@
                         
                         <div class="div4">
                            
-                           <h4 id="harmonyMusicText"><span class="headingNumber">10.1.1.1</span><span class="head">Indications of Harmony in the Music Text</span></h4>
+                           <h4 id="harmonyMusicText"><span class="headingNumber">10.2.1.3</span><span class="head">Indications of Harmony in the Music Text</span></h4>
                            
                            <p>With regard to indications of harmony, MEI attempts to strike a balance between very
                               precise (interpreted) and very loose (uninterpreted) markup needs. Therefore, various
@@ -1104,7 +1104,7 @@
                            
                            <div class="div5">
                               
-                              <h5 id="harmonyFigbass"><span class="headingNumber">10.1.1.1.1</span><span class="head">Figured Bass</span></h5>
+                              <h5 id="harmonyFigbass"><span class="headingNumber">10.2.1.3.1</span><span class="head">Figured Bass</span></h5>
                               
                               <p>Figured bass is a specialized form of harmonic indication. In order to support the
                                  capture of the semantics of figured bass, and not just its visual representation,
@@ -1635,7 +1635,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9eaae62ec566c8105f6eb16130b1160cfac0cc50" target="_blank" rel="noopener noreferrer">#9eaae62</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c4c20f73bf0b3982a0f55fe7351d34b7a09db23e" target="_blank" rel="noopener noreferrer">#c4c20f7</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1649,7 +1649,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#analysis">10.1 Analytical Information</a><a class="level-3" href="#analysisSpecificAttrs">10.1.1 Event-Specific Analytical Information</a><a class="level-3" href="#analysisMetricalConformance">10.1.1 Metrical Conformance</a><a class="level-2" href="#harmony">10.1 Harmony</a><a class="level-3" href="#harmonyDetails">10.1.1 Indications of Harmony</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#analysis">10.1 Analytical Information</a><a class="level-3" href="#analysisSpecificAttrs">10.1.1 Event-Specific Analytical Information</a><a class="level-3" href="#analysisMetricalConformance">10.1.2 Metrical Conformance</a><a class="level-2" href="#harmony">10.2 Harmony</a><a class="level-3" href="#harmonyDetails">10.2.1 Indications of Harmony</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -1667,7 +1667,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#analysis">10.1 Analytical Information</a><a class="level-3" href="#analysisSpecificAttrs">10.1.1 Event-Specific Analytical Information</a><a class="level-3" href="#analysisMetricalConformance">10.1.1 Metrical Conformance</a><a class="level-2" href="#harmony">10.1 Harmony</a><a class="level-3" href="#harmonyDetails">10.1.1 Indications of Harmony</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#analysis">10.1 Analytical Information</a><a class="level-3" href="#analysisSpecificAttrs">10.1.1 Event-Specific Analytical Information</a><a class="level-3" href="#analysisMetricalConformance">10.1.2 Metrical Conformance</a><a class="level-2" href="#harmony">10.2 Harmony</a><a class="level-3" href="#harmonyDetails">10.2.1 Indications of Harmony</a></p>
                   </div>
                </div>
             </div>
