@@ -4139,8 +4139,8 @@
                         
                         <h3 id="cmnOssia"><span class="headingNumber">4.3.7</span><span class="head">Ossia</span></h3>
                         
-                        <p>The term ossia, Italian for "or", denotes an alternative for a certain passage which
-                           is provided by the composer <em>without any preference</em> of one alternative over another. An ossia often provides a simpler (easier to perform)
+                        <p>The term <span class="term">ossia</span>, Italian for "or", denotes an alternative for a certain passage which is provided
+                           by the composer <em class="mentioned">without any preference</em> one alternative over another. An ossia often provides a simpler (easier to perform)
                            version of the original content. Another frequent use case for ossia is the provision
                            of indications about performance practice, such as an alternative version with ornamentation
                            written out in full. In all cases, it is up to the performer to choose between the
@@ -4150,13 +4150,13 @@
                            however, the alternate material occurs on the same staff as the primary text, but
                            in a separate layer. In this case, the alternative material is usually rendered in
                            small-sized notation on the normal-sized staff. For both situations, MEI offers the
-                           <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">ossia</a> element, which may be nested either inside <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">measure</a> to reflect an ossia on a separate staff, or inside <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> to reflect an inline ossia in a separate layer. The following example demonstrates
+                           <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">&lt;ossia&gt;</a> element, which may be nested either inside <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> to reflect an ossia on a separate staff, or inside <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> to reflect an inline ossia in a separate layer. The following example demonstrates
                            an ossia on a separate staff:</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12490" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12857" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4169,10 +4169,10 @@
                                        
                                        <div class="indent indent2"><span data-indentation="2" class="element">&lt;ossia&gt;</span>
                                           
-                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff&gt;</span>
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;oStaff&gt;</span>
                                              
                                              <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!-- alternative content on reduced-size staff --&gt;</span></div>
-                                             <span data-indentation="3" class="element">&lt;/staff&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/oStaff&gt;</span></div>
                                           
                                           <div class="indent indent3"><span data-indentation="3" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
                                              
@@ -4195,22 +4195,19 @@
                            </figure>
                            </p>
                         
-                        <p>The example above demonstrates that only one of the two <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">staff</a> elements within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">ossia</a> has an <span class="att">n</span> attribute. This mechanism allows one to distinguish between the "regular" and the
-                           "alternative" content: The one bearing the <span class="att">n</span> attribute goes in line with the preceding measure’s staff, the other one is printed
-                           in reduced size above. In this case, the vertical order of staves follows document
-                           order: The top-most staff is encoded as the first child, the lowest comes last. In
-                           combination with the presence of the <span class="att">n</span> attribute, this allows the capture of multiple simultaneous ossia staves.</p>
+                        <p>The example above shows a <a class="link_odd link_odd_elementSpec" href="../elements/oStaff.html">&lt;oStaff&gt;</a> element and a <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> element within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">&lt;ossia&gt;</a>. This mechanism allows one to distinguish between the "regular" and the "alternative"
+                           content: The "normal" staff goes in line with the preceding measure’s staff, the <a class="link_odd link_odd_elementSpec" href="../elements/oStaff.html">&lt;oStaff&gt;</a> contains the alternative and is printed in reduced size above. In combination with
+                           the presence of an <span class="att">@n</span> attribute multiple simultaneous ossia staves may be encoded.</p>
                         
-                        <p>All staves within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">ossia</a>, even the alternative ones without a direct reference, obey the definitions of the
-                           associated <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a>, which can be derived from the value of the <span class="att">n</span> attribute. Alternatively, a separate <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">staffDef</a> may be given at the beginning of the contained <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">layer</a> element(s).</p>
+                        <p>All staves within <a class="link_odd link_odd_elementSpec" href="../elements/ossia.html">&lt;ossia&gt;</a>, even the alternative ones without a direct reference, obey the definitions of the
+                           associated <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>, which can be derived from the value of the <span class="att">@n</span> attribute. Alternatively, a separate <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> may be given at the beginning of the contained <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> element(s).</p>
                         
-                        <p>In case of an inline ossia, the whole setup of elements moves down one step in the
-                           hierarchy, as seen in the following example:</p>
+                        <p>In case of an inline ossia, the alternative content is held in an <a class="link_odd link_odd_elementSpec" href="../elements/oLayer.html">&lt;oLayer&gt;</a> element, as seen in the following example:</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12536" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12912" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4230,10 +4227,10 @@
                                                 <div class="indent indent5"><span data-indentation="5" class="comment">&lt;!-- original content in regular layer --&gt;</span></div>
                                                 <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
                                              
-                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;layer&gt;</span>
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;oLayer&gt;</span>
                                                 
                                                 <div class="indent indent5"><span data-indentation="5" class="comment">&lt;!-- alternative content in separate layer --&gt;</span></div>
-                                                <span data-indentation="4" class="element">&lt;/layer&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/oLayer&gt;</span></div>
                                              <span data-indentation="3" class="element">&lt;/ossia&gt;</span></div>
                                           <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
                                        
@@ -4242,9 +4239,7 @@
                                           <div class="indent indent3"><span data-indentation="3" class="comment">&lt;!-- content omitted --&gt;</span></div>
                                           <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
                                        <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
-                                    
-                                    
-                                    
+
                                     </code>
                                  
                                  </div>
