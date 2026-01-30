@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-01-13">
+      <meta name="date" content="2026-01-30">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
@@ -62,6 +62,8 @@
                            <div class="dataValueBox" id="mensural.white"><span class="dataValue ident">mensural.white</span><span class="dataValue desc"><span class="desc">White mensural notation.</span></span></div>
                            <div class="dataValueBox" id="neume"><span class="dataValue ident">neume</span><span class="dataValue desc"><span class="desc">Neumatic notation.</span></span></div>
                            <div class="dataValueBox" id="tab"><span class="dataValue ident">tab</span><span class="dataValue desc"><span class="desc">Tablature notation.</span></span></div>
+                           <div class="dataValueBox" id="tab.staff-like"><span class="dataValue ident">tab.staff-like</span><span class="dataValue desc"><span class="desc">"Notehead" notation: a hybrid between staff and tablature notation consisting of solid,
+                                    stemless noteheads on a CMN staff with tablature rhythm flags placed above the staff.</span></span></div>
                            <div class="dataValueBox" id="tab.guitar"><span class="dataValue ident">tab.guitar</span><span class="dataValue desc"><span class="desc">Tablature notation for guitars (includes "spanish" lute tablature). Frets are indicated
                                     using numbers. Courses closest to the player's feet are at the top of the staff.</span></span></div>
                            <div class="dataValueBox" id="tab.lute.french"><span class="dataValue ident">tab.lute.french</span><span class="dataValue desc"><span class="desc">"French" tablature notation for lutes. Frets are indicated using letters. Courses
@@ -115,6 +117,12 @@
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Tablature notation.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tab.staff-like"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>"Notehead" notation: a hybrid between staff and tablature notation consisting of solid,
+                                                stemless noteheads on a CMN staff with tablature rhythm flags placed above the staff.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tab.guitar"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Tablature notation for guitars (includes "spanish" lute tablature). Frets are indicated
@@ -147,7 +155,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/87b120e2d65e7cba7322ec1d074df6f42e34e10b" target="_blank" rel="noopener noreferrer">#87b120e</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9bd2d7c7473e5cf40a91095b3992d6f326ac53d5" target="_blank" rel="noopener noreferrer">#9bd2d7c</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

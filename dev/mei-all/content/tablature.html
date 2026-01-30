@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-01-13">
+      <meta name="date" content="2026-01-30">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization integrating all aspects of MEI.">
@@ -50,14 +50,14 @@
                         <h3 id="tablature-def"><span class="headingNumber">7.1.1</span><span class="head">Defining the Notation</span></h3>
                         
                         <p>Tablatures come in a variety of types or notations, varying according to instrument
-                           but also according to historical context. The notation used is defined on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> element using the <span class="att">@notationtype</span> attribute. Possible values are: <span class="val">tab.guitar</span>, <span class="val">tab.lute.italian</span>, <span class="val">tab.lute.french</span> and <span class="val">tab.lute.german</span>.</p>
+                           but also according to historical context. The notation used is defined on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> element using the <span class="att">@notationtype</span> attribute. Possible values are: <span class="val">tab.guitar</span>, <span class="val">tab.lute.italian</span>, <span class="val">tab.lute.french</span>, <span class="val">tab.lute.german</span> and <span class="val">tab.staff-like</span>.</p> 
                         
                         <p>The <span class="att">@lines</span> attribute on the <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> element is used to define the number of horizontal lines used in a staff.</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17491" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17493" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -71,7 +71,7 @@
                                  </div>
                               <figcaption class="figure-caption">Listing 284. </figcaption>
                            </figure>
-                           </p>
+                           </p>  
                         </div>
                      
                      <div class="div3">
@@ -100,7 +100,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17523" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17525" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -122,7 +122,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17536" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17538" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -147,7 +147,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17567" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17569" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -179,7 +179,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17584" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17586" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -218,7 +218,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17601" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17603" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -289,7 +289,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17644" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17646" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -311,7 +311,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17678" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17680" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -337,7 +337,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17699" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17701" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -373,7 +373,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17719" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17721" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -396,7 +396,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17739" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17741" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -418,7 +418,143 @@
                      
                      <div class="div3">
                         
-                        <h3 id="tablature-vertical-org"><span class="headingNumber">7.2.2</span><span class="head">Vertical Organisation in German Lute Tablature</span></h3>
+                        <h3 id="tab-staff-like"><span class="headingNumber">7.2.2</span><span class="head">Special Case: 'Notehead' Notation</span></h3>
+                        
+                        <p>A special kind of <span class="att">@notationtype</span> is <span class="val">tab.staff-like</span>, also referred to as 'notehead notation'. This notationtype is a hybrid between CMN
+                           and tablature that uses solid, stemless noteheads on a CMN staff, with tablature rhythm
+                           flags placed above the staff. It provides only pitch and onset information, and gives
+                           no interpretation of note duration or voice leading; as such, it faithfully transcribes
+                           tablature into a staff-like form.</p>
+                        
+                        <p><span class="val">tab.staff-like</span> differs from the other tablature <span class="att">@notationtype</span>s in the following ways. The <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> are structured following the conventions of the Common Music Notation repertoire
+                           (see <a class="link_ptr chapterLink" title="Defining Score Parameters for CMN" href="../content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>): in <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>, the attribute <span class="att">@lines</span> always has value <span class="val">5</span> and the elements <a class="link_odd link_odd_elementSpec" href="../elements/clef.html">&lt;clef&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/keySig.html">&lt;keySig&gt;</a> are required. The element <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> requires the attributes <span class="att">@pitch</span> and <span class="att">@oct</span>. Unlike in other tablature notation types, the element <a class="link_odd link_odd_elementSpec" href="../elements/tuning.html">&lt;tuning&gt;</a> in <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> and the attributes <span class="att">@tab.course</span> and <span class="att">@tab.fret</span> on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> are now optional.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17813" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"1"</span> <span class="attribute">lines=</span><span class="attributevalue">"5"</span> <span class="attribute">notationtype=</span><span class="attributevalue">"tab.staff-like"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;clef <span class="attribute">shape=</span><span class="attributevalue">"G"</span> <span class="attribute">line=</span><span class="attributevalue">"2"</span> <span class="attribute">dis=</span><span class="attributevalue">"8"</span> <span class="attribute">dis.place=</span><span class="attributevalue">"below"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;keySig <span class="attribute">sig=</span><span class="attributevalue">"0"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;mensur <span class="attribute">sign=</span><span class="attributevalue">"C"</span> <span class="attribute">num=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staffDef&gt;</span></div>
+                                    ...
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;measure <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;staff <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;layer <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"4"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"16"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tabGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;beam&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"5"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;tabGrp <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;tabDurSym/&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span>/&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/tabGrp&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/beam&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/layer&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/staff&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/measure&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 295. </figcaption>
+                           </figure>
+                           </p> 
+                        </div>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="tablature-vertical-org"><span class="headingNumber">7.2.3</span><span class="head">Vertical Organisation in German Lute Tablature</span></h3>
                         
                         <p>Unlike other types of lute tablature, German lute tablature encodes the course and
                            the fret information simultaneously, and in that sense is different from the staff-based
@@ -459,7 +595,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e17866" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e17940" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -535,7 +671,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 295. </figcaption>
+                                    <figcaption class="figure-caption">Listing 296. </figcaption>
                                  </figure>
                                  </p>
                               </li>
@@ -552,7 +688,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e17903" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e17977" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -636,7 +772,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 296. </figcaption>
+                                    <figcaption class="figure-caption">Listing 297. </figcaption>
                                  </figure>
                                  </p>
                               </li>
@@ -658,7 +794,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e17947" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e18021" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -765,7 +901,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 297. </figcaption>
+                                    <figcaption class="figure-caption">Listing 298. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -780,7 +916,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e17989" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e18063" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -834,7 +970,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 298. </figcaption>
+                                    <figcaption class="figure-caption">Listing 299. </figcaption>
                                  </figure>
                                  </p>
                               </li>
@@ -853,7 +989,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e18055" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e18129" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1062,7 +1198,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 299. </figcaption>
+                                    <figcaption class="figure-caption">Listing 300. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -1075,7 +1211,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e18091" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e18165" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1193,7 +1329,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 300. </figcaption>
+                                    <figcaption class="figure-caption">Listing 301. </figcaption>
                                  </figure>
                                  </p>
                               </li>
@@ -1203,7 +1339,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/87b120e2d65e7cba7322ec1d074df6f42e34e10b" target="_blank" rel="noopener noreferrer">#87b120e</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9bd2d7c7473e5cf40a91095b3992d6f326ac53d5" target="_blank" rel="noopener noreferrer">#9bd2d7c</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -1217,7 +1353,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-encoding">7.2 Encoding Tablatures</a><a class="level-3" href="#tablature-basics">7.2.1 Basic Structure</a><a class="level-3" href="#tablature-vertical-org">7.2.2 Vertical Organisation in German Lute Tablature</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-encoding">7.2 Encoding Tablatures</a><a class="level-3" href="#tablature-basics">7.2.1 Basic Structure</a><a class="level-3" href="#tab-staff-like">7.2.2 Special Case: 'Notehead' Notation</a><a class="level-3" href="#tablature-vertical-org">7.2.3 Vertical Organisation in German Lute Tablature</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -1235,7 +1371,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-encoding">7.2 Encoding Tablatures</a><a class="level-3" href="#tablature-basics">7.2.1 Basic Structure</a><a class="level-3" href="#tablature-vertical-org">7.2.2 Vertical Organisation in German Lute Tablature</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#tablature-staffdef">7.1 The Staff Definition</a><a class="level-3" href="#tablature-def">7.1.1 Defining the Notation</a><a class="level-3" href="#tablature-tuning">7.1.2 The Instrument Setup and Tuning</a><a class="level-2" href="#tablature-encoding">7.2 Encoding Tablatures</a><a class="level-3" href="#tablature-basics">7.2.1 Basic Structure</a><a class="level-3" href="#tab-staff-like">7.2.2 Special Case: 'Notehead' Notation</a><a class="level-3" href="#tablature-vertical-org">7.2.3 Vertical Organisation in German Lute Tablature</a></p>
                   </div>
                </div>
             </div>
