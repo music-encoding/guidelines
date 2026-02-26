@@ -3305,8 +3305,7 @@
                               </div>
                               <div class="tile-content">
                                  <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a></span></div>
-                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Provides a statement explaining the text or indicating the basis for an
-                                       assertion.</span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Associates a statement or other information with a part of the encoding.</span></div>
                               </div>
                            </div>
                            <div class="tile tile-centered">
@@ -3736,37 +3735,33 @@
                               </div>
                               <div class="tile-content">
                                  <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a></span></div>
-                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Provides a statement explaining the text or indicating the basis for an
-                                       assertion.</span></div>
+                                 <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Associates a statement or other information with a part of the encoding.</span></div>
                               </div>
                            </div>
                            </p>
                         
-                        <p>This element may be contained by a wide range of other elements and may contain a
-                           large number of other elements. While this offers great flexibility in addressing
-                           the wide variety of textual features that might occur within an annotation, it may
-                           lead to markup that cannot be effectively processed mechanistically.</p>
+                        <p>This element can be contained by a wide range of other elements and may contain a
+                           large number of other elements. Its meaning also depends on the context in which it
+                           appears (see, for example, <a class="link_ptr chapterLink" title="Notes Statement" href="../content/metadata.html#headerNotesStatement">3.4.1.5 Notes Statement</a> and <a class="link_ptr chapterLink" title="Omissions, Unclear Readings, Damage, and Supplied Readings" href="../content/scholarlyediting.html#edittransOmission">9.2.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a>). While this offers great flexibility in addressing the wide variety of textual features
+                           that might occur within an annotation, it may lead to markup that is hard or impossible
+                           to interpret automatically. Use of the <span class="att">@func</span> (see below) and/or <span class="att">@type</span> attributes (see <a class="link_ptr chapterLink" title="Classification Attributes" href="../content/shared.html#sharedClassificationAttributes">2.3.3 Classification Attributes</a>) is encouraged to reduce ambiguity and support processing within a specific context,
+                           such as engraving a score.</p>
                         
-                        <p>In all cases, <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> provides a comment upon a feature of the encoding, but never contains textual transcription.
-                           Depending on its context, an annotation will deal with either its parent element,
-                           or, more usually, with the element(s) specified in its <span class="att">@plist</span> attribute. This attribute uses URI references to link to one or more other elements
-                           using their <span class="att">@xml:id</span> attribute values, as in the following example:</p>
+                        <p><a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> may comment on a feature of the encoding, or it may provide information or comments
+                           about the material represented by the encoding.</p>
+                        
+                        <p>We can use the <span class="att">@func</span> attribute to distinguish annotations suitable for display (e.g. via an engraving
+                           tool). This may be used to process annotations about the (encoded) structure of the
+                           MEI document separately from those about its content. For example:</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e17467" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e17478" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
-                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"shared.someInterestingNote"</span>/&gt;</span></div>
-                                    
-                                    <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- elsewhere in the document: --&gt;</span></div>
-                                    
-                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">plist=</span><span class="attributevalue">"#shared.someInterestingNote"</span>&gt;</span>
-                                       
-                                       <div class="indent indent2"><span data-indentation="2" class="comment">&lt;!-- additional information about this note --&gt;</span></div>
-                                       <span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">func=</span><span class="attributevalue">"display"</span> <span class="attribute">plist=</span><span class="attributevalue">"#note1"</span>&gt;</span>The prominent use of a G here contrasts with the previous focus on F<span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
                                     
                                     
                                     </code>
@@ -3775,12 +3770,172 @@
                               <figcaption class="figure-caption">Listing 306. </figcaption>
                            </figure>
                            </p>
+                        
+                        <p>The area of music to be annotated by an <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> element is selected using the same mechanism as as for control events (<a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>) – they can be identified using a <span class="att">@plist</span> of element identifiers, or they can be specified as a range, delimited by time points
+                           (<span class="att">@tstamp</span>, <span class="att">@tstamp2</span>, <span class="att">@dur</span>) or elements (<span class="att">@startid</span>, <span class="att">@endid</span>).</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17510" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">func=</span><span class="attributevalue">"display"</span> <span class="attribute">plist=</span><span class="attributevalue">"#v100jcki #vdmu55 #v3swz5r"</span>&gt;</span>The lyric 'Sea-breakers' 
+                                       introduces quotations from Sea Slumber Song (Op. 37/1).
+                                       <span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 307. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>These delimiters for ranges are horizontal – they dictate start and end points in
+                           the score. Vertical positions may also be specified. For single-voice regions, staff
+                           (<span class="att">@staff</span>) and layer (<span class="att">@layer</span>) may be specified, and for multiple-voice examples, staff on its own can be used
+                           to specify multiple staves (<span class="att">@staff</span>). </p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17530" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">func=</span><span class="attributevalue">"display"</span> <span class="attribute">startid=</span><span class="attributevalue">"#n18po5kn"</span> <span class="attribute">endid=</span><span class="attributevalue">"#n172z7ie"</span> <span class="attribute">staff=</span><span class="attributevalue">"3 4"</span>&gt;</span>
+                                       Quotes Sea Slumber Song from Sea Pictures (Op. 37/1).
+                                       <span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 308. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        
+                        <p>Where no staff is specified, the region’s application is ambiguous. Where starting
+                           and ending elements are in the same layer, it is reasonable to assume that the annotation
+                           applies to just that, but in other cases, one might infer that the annotation applies
+                           to the full score. Where possible such ambiguity should be avoided.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17544" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;staff <span class="attribute">xml:id=</span><span class="attributevalue">"m1s3"</span> <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;layer <span class="attribute">xml:id=</span><span class="attributevalue">"m1s3l1"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"anchor1"</span> <span class="attribute">dur=</span><span class="attributevalue">"4"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">tie=</span><span class="attributevalue">"i"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;beam&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;tuplet <span class="attribute">num=</span><span class="attributevalue">"3"</span> <span class="attribute">numbase=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">pname=</span><span class="attributevalue">"c"</span> <span class="attribute">oct=</span><span class="attributevalue">"4"</span> <span class="attribute">tie=</span><span class="attributevalue">"t"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"8"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/tuplet&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/beam&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">xml:id=</span><span class="attributevalue">"anchor2"</span> <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"g"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span>/&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/layer&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;layer <span class="attribute">xml:id=</span><span class="attributevalue">"m1s3l2"</span> <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"2"</span> <span class="attribute">stem.dir=</span><span class="attributevalue">"down"</span>&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"2"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"e"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"anchor3"</span>/&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/chord&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/layer&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/staff&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">staff=</span><span class="attributevalue">"m1s3"</span> <span class="attribute">layer=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                       This annotation unambiguously refers to layer 1 of this measure
+                                       <span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">startid=</span><span class="attributevalue">"#anchor1"</span> <span class="attribute">endid=</span><span class="attributevalue">"#anchor2"</span>&gt;</span>
+                                       This annotation is delimited by elements from the same layer, 
+                                       implying that it refers to just layer 1
+                                       <span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">startid=</span><span class="attributevalue">"#anchor1"</span> <span class="attribute">endid=</span><span class="attributevalue">"#anchor3"</span>&gt;</span>
+                                       This annotation is delimited by elements from different layers. 
+                                       It is ambiguous but could be assumed to apply to the full score.
+                                       <span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 309. </figcaption>
+                           </figure>
+                           </p>        
+                        
+                        <p>There are cases that this approach does not support. One occurs where the annotation
+                           applies to two or more individual layers in multiple staves (for example, the second
+                           flute and second oboe part in an orchestral score). A second case is where the region
+                           being indicated has different start and end times in different parts, for example,
+                           entries of a fugal subject in a polyphonic texture. Both of these cases can be resolved
+                           by breaking them down into annotations that can themselves be indicated, and then
+                           combining these separate annotations, for example:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e17557" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">func=</span><span class="attributevalue">"display"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"simple-1"</span> <span class="attribute">staff=</span><span class="attributevalue">"1"</span> <span class="attribute">layer=</span><span class="attributevalue">"2"</span>&gt;</span>Subject entry in second flute<span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">func=</span><span class="attributevalue">"display"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"simple-2"</span> <span class="attribute">staff=</span><span class="attributevalue">"2"</span> <span class="attribute">layer=</span><span class="attributevalue">"1"</span>&gt;</span>Subject entry in first oboe<span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;annot <span class="attribute">func=</span><span class="attributevalue">"display"</span> <span class="attribute">plist=</span><span class="attributevalue">"#simple-1 #simple-2"</span>&gt;</span>Subject entry<span data-indentation="1" class="element">&lt;/annot&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 310. </figcaption>
+                           </figure>
+                           </p>
+                        
+                        <p>There are some contexts in which rather than using <span class="hi italics">ControlEvent</span> attributes an annotation concerns either its parent element or some aspect of the
+                           encoding process as a whole. These cases are outlined in the relevant sections of
+                           the guidelines.</p>
+                        
+                        <p>Annotation often involves associating information or observations to a part of a document.
+                           This associated content may be included as a child of the <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> element. If the associated information is textual, this may simply take the form
+                           of text (as in the example above/below). Other associated information may be placed
+                           as a child of the <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a>, here it can be represented using MEI or, if it is a web resource, it can be added
+                           by url using the <a class="link_odd link_odd_elementSpec" href="../elements/ptr.html">&lt;ptr&gt;</a> element (<a class="link_ptr chapterLink" title="Pointers and References" href="../content/linkingdata.html#ptrRef">11.2.1 Pointers and References</a>).</p>
+                        
+                        <p>Annotation takes many forms, and not all of these can or should be represented in
+                           MEI using <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a>. Performance annotations, such as fingering or articulation have specialised elements
+                           already (e.g. <a class="link_odd link_odd_elementSpec" href="../elements/fing.html">&lt;fing&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/artic.html">&lt;artic&gt;</a>), as do some analytical annotations (e.g. <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> for harmonic labels). Thus, there is no all-encompassing and distinct ‘annotation’
+                           concept in MEI, and <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> should be considered one of many ways of expressing annotations.</p>
                         </div>
                      </div>
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f980565963a851fb78e466a0d0794b7ea31c5f48" target="_blank" rel="noopener noreferrer">#f980565</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/83dcad67f209f03d528a10e3a9d441723879f9f2" target="_blank" rel="noopener noreferrer">#83dcad6</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
