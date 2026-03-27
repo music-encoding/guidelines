@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-03-19">
+      <meta name="date" content="2026-03-27">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
@@ -55,6 +55,11 @@
                         declarations provide an electronic analog to the title page attached to a printed
                         work. They also constitute an equivalent for the content of the code books or introductory
                         manuals customarily accompanying electronic data sets.</p>
+                     
+                     <p>For large encoding projects, the Functional Requirements for Bibliographic Records
+                        (<abbr>FRBR</abbr>) capabilities of MEI provides most flexibility and descriptive capabilities. However,
+                        MEI also provides simpler, non-FRBR methods for source description for those cases
+                        where the FRBR capbilities are not needed. These are further discussed in <a class="link_ptr chapterLink" title="Non-FRBR Source Description" href="../content/metadata.html#nonfrbrsourcedescription">3.2.1 Non-FRBR Source Description</a>.</p>
                      </div>
                   
                   <div class="div2">
@@ -107,6 +112,98 @@
                            for resolving questions about the history of a file. The MEI elements used to encode
                            the revision description are described in section <a class="link_ptr chapterLink" title="Revision Description" href="../content/metadata.html#headerRevisionDescription">3.4.3 Revision Description</a>.</li>
                      </ol>
+                     
+                     <div class="div3">
+                        
+                        <h3 id="nonfrbrsourcedescription"><span class="headingNumber">3.2.1</span><span class="head">Non-FRBR Source Description</span></h3>
+                        
+                        <p>MEI allows two methodologies to be used when doing metadata capture and source description.
+                           The <abbr>FRBR</abbr> methodology (<a class="link_ptr chapterLink" title="Functional Requirements for Bibliographic Records (FRBR)" href="../content/metadata.html#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a>) gives encoders a mechanism for building detailed descriptions of bibliographic entities.
+                           Most bibliographic-based projects should favor the FRBR method.</p>
+                        
+                        <p>However, there are cases where detailed bibliographic analysis at the level required
+                           by the FRBR module is not possible or desirable. These may include situations such
+                           as retro-conversion of non-FRBR catalogues, or capturing the output of notation encoding
+                           software where only minimal source description capabilities are available. In these
+                           cases, encoders may capture metadata in the MEI header without using FRBR encoding
+                           entities and instead choose a simplified methodology for source description.</p>
+                        
+                        <p>The <a class="link_odd link_odd_elementSpec" href="../elements/sourceDesc.html">&lt;sourceDesc&gt;</a> element as a child of the <a class="link_odd link_odd_elementSpec" href="../elements/fileDesc.html">&lt;fileDesc&gt;</a> element may be used to capture simple bibliographic descriptions. An example is given
+                           below.</p>
+                        
+                        <p><a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> may use <a class="link_odd link_odd_elementSpec" href="../elements/bibl.html">&lt;bibl&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/biblStruct.html">&lt;biblStruct&gt;</a>, or <a class="link_odd link_odd_elementSpec" href="../elements/biblFull.html">&lt;biblFull&gt;</a>. The first two permit bibliographic citation for the souce, while <a class="link_odd link_odd_elementSpec" href="../elements/biblFull.html">&lt;biblFull&gt;</a> allows bibliographic description. In other words, <a class="link_odd link_odd_elementSpec" href="../elements/bibl.html">&lt;bibl&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/biblStruct.html">&lt;biblStruct&gt;</a> are not as fully-featured as <a class="link_odd link_odd_elementSpec" href="../elements/biblFull.html">&lt;biblFull&gt;</a>.</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div id="d18e3902" xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;fileDesc&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;titleStmt&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;title&gt;</span>La clé du caveau<span data-indentation="3" class="element">&lt;/title&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/titleStmt&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;pubStmt&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;publisher&gt;</span>Capelle &amp; Renand<span data-indentation="3" class="element">&lt;/publisher&gt;</span></div>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;pubPlace&gt;</span>Paris<span data-indentation="3" class="element">&lt;/pubPlace&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/pubStmt&gt;</span></div>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;sourceDesc&gt;</span>
+                                          
+                                          <div class="indent indent3"><span data-indentation="3" class="element">&lt;source&gt;</span>
+                                             
+                                             <div class="indent indent4"><span data-indentation="4" class="element">&lt;biblFull&gt;</span>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;titleStmt&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;title&gt;</span>La clé du caveau<span data-indentation="6" class="element">&lt;/title&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/titleStmt&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;physDesc&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;dimensions&gt;</span>
+                                                      
+                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;width <span class="attribute">unit=</span><span class="attributevalue">"cm"</span>&gt;</span>9.5<span data-indentation="7" class="element">&lt;/width&gt;</span></div>
+                                                      
+                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;height <span class="attribute">unit=</span><span class="attributevalue">"cm"</span>&gt;</span>14<span data-indentation="7" class="element">&lt;/height&gt;</span></div>
+                                                      <span data-indentation="6" class="element">&lt;/dimensions&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;extent <span class="attribute">unit=</span><span class="attributevalue">"page"</span>&gt;</span>376p<span data-indentation="6" class="element">&lt;/extent&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/physDesc&gt;</span></div>
+                                                
+                                                <div class="indent indent5"><span data-indentation="5" class="element">&lt;physLoc&gt;</span>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;identifier&gt;</span>XA Li 1811/1<span data-indentation="6" class="element">&lt;/identifier&gt;</span></div>
+                                                   
+                                                   <div class="indent indent6"><span data-indentation="6" class="element">&lt;repository&gt;</span>
+                                                      
+                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;corpName&gt;</span>Universität Bern, Institut für Musikwissenschaft<span data-indentation="7" class="element">&lt;/corpName&gt;</span></div>
+                                                      
+                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;geogName&gt;</span>Bern<span data-indentation="7" class="element">&lt;/geogName&gt;</span></div>
+                                                      
+                                                      <div class="indent indent7"><span data-indentation="7" class="element">&lt;country&gt;</span>Switzerland<span data-indentation="7" class="element">&lt;/country&gt;</span></div>
+                                                      <span data-indentation="6" class="element">&lt;/repository&gt;</span></div>
+                                                   <span data-indentation="5" class="element">&lt;/physLoc&gt;</span></div>
+                                                <span data-indentation="4" class="element">&lt;/biblFull&gt;</span></div>
+                                             <span data-indentation="3" class="element">&lt;/source&gt;</span></div>
+                                          <span data-indentation="2" class="element">&lt;/sourceDesc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/fileDesc&gt;</span></div>
+                                    
+                                    
+                                    
+                                    </code>
+                                 
+                                 </div>
+                              <figcaption class="figure-caption">Listing 32. </figcaption>
+                           </figure>
+                           </p>
+                        </div>
                      </div>
                   
                   <div class="div2">
@@ -233,7 +330,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3906" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3975" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -254,7 +351,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 32. Encoding of title informations</figcaption>
+                              <figcaption class="figure-caption">Listing 33. Encoding of title informations</figcaption>
                            </figure>
                            </p>
                         
@@ -271,7 +368,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3936" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4005" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -282,7 +379,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 33. Example of a <a class="link_odd link_odd_elementSpec" href="../elements/title.html">&lt;title&gt;</a> element</figcaption>
+                              <figcaption class="figure-caption">Listing 34. Example of a <a class="link_odd link_odd_elementSpec" href="../elements/title.html">&lt;title&gt;</a> element</figcaption>
                            </figure>
                            </p>
                         
@@ -450,7 +547,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4026" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4095" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -468,7 +565,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 34. Encoding of primary creative responsibility</figcaption>
+                              <figcaption class="figure-caption">Listing 35. Encoding of primary creative responsibility</figcaption>
                            </figure>
                            </p>
                         
@@ -480,7 +577,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4055" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4124" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -507,7 +604,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 35. Encoding of secondary intellectual responsibility</figcaption>
+                              <figcaption class="figure-caption">Listing 36. Encoding of secondary intellectual responsibility</figcaption>
                            </figure>
                            </p>
                         
@@ -550,7 +647,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4097" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4166" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -566,7 +663,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 36. Example of <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 37. Example of <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -579,7 +676,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4142" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4211" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -595,7 +692,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 37. The <span class="att">@role</span> attribute captures the nature of responsibility</figcaption>
+                              <figcaption class="figure-caption">Listing 38. The <span class="att">@role</span> attribute captures the nature of responsibility</figcaption>
                            </figure>
                            </p>
                         
@@ -607,7 +704,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4170" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4239" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -637,7 +734,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 38. Group responsibilities with multiple <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 39. Group responsibilities with multiple <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -649,7 +746,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4190" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4259" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -674,7 +771,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 39. Mix primary and secondary intellectual responsibility information</figcaption>
+                              <figcaption class="figure-caption">Listing 40. Mix primary and secondary intellectual responsibility information</figcaption>
                            </figure>
                            </p>
                         
@@ -684,7 +781,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4208" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4277" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -705,7 +802,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 40. Standardized values for <span class="att">@role</span></figcaption>
+                              <figcaption class="figure-caption">Listing 41. Standardized values for <span class="att">@role</span></figcaption>
                            </figure>
                            </p>
                         </div>
@@ -839,7 +936,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4295" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4364" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -886,7 +983,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 41. Structure of a complete file description</figcaption>
+                              <figcaption class="figure-caption">Listing 42. Structure of a complete file description</figcaption>
                            </figure>
                            </p>
                         
@@ -990,7 +1087,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4379" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4448" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1004,11 +1101,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 42. Example of <a class="link_odd link_odd_elementSpec" href="../elements/editionStmt.html">&lt;editionStmt&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 43. Example of <a class="link_odd link_odd_elementSpec" href="../elements/editionStmt.html">&lt;editionStmt&gt;</a></figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4392" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4461" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1032,7 +1129,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 43. <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a> within <a class="link_odd link_odd_elementSpec" href="../elements/editionStmt.html">&lt;editionStmt&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 44. <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a> within <a class="link_odd link_odd_elementSpec" href="../elements/editionStmt.html">&lt;editionStmt&gt;</a></figcaption>
                               </figure>
                               </p>
                            </div>
@@ -1100,7 +1197,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4474" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4543" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1126,7 +1223,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 44. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extent.html">&lt;extent&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 45. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extent.html">&lt;extent&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -1135,7 +1232,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4496" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4565" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1146,7 +1243,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 45. <a class="link_odd link_odd_elementSpec" href="../elements/extent.html">&lt;extent&gt;</a> uses the <span class="att">@unit</span> attribute to ease the processability</figcaption>
+                                 <figcaption class="figure-caption">Listing 46. <a class="link_odd link_odd_elementSpec" href="../elements/extent.html">&lt;extent&gt;</a> uses the <span class="att">@unit</span> attribute to ease the processability</figcaption>
                               </figure>
                               </p>
                            
@@ -1328,7 +1425,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4640" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4709" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1367,11 +1464,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 46. Detailed example of <a class="link_odd link_odd_elementSpec" href="../elements/pubStmt.html">&lt;pubStmt&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/publisher.html">&lt;publisher&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 47. Detailed example of <a class="link_odd link_odd_elementSpec" href="../elements/pubStmt.html">&lt;pubStmt&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/publisher.html">&lt;publisher&gt;</a></figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4657" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4726" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1411,7 +1508,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 47. Detailed example of <a class="link_odd link_odd_elementSpec" href="../elements/pubStmt.html">&lt;pubStmt&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/publisher.html">&lt;publisher&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/distributor.html">&lt;distributor&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 48. Detailed example of <a class="link_odd link_odd_elementSpec" href="../elements/pubStmt.html">&lt;pubStmt&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/publisher.html">&lt;publisher&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/distributor.html">&lt;distributor&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -1425,7 +1522,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4683" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4752" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1443,7 +1540,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 48. <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a> element contains all statements of responsibility regarding publication</figcaption>
+                                 <figcaption class="figure-caption">Listing 49. <a class="link_odd link_odd_elementSpec" href="../elements/respStmt.html">&lt;respStmt&gt;</a> element contains all statements of responsibility regarding publication</figcaption>
                               </figure>
                               </p>
                            </div>
@@ -1549,7 +1646,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4775" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4844" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1563,7 +1660,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 49. Example of <a class="link_odd link_odd_elementSpec" href="../elements/seriesStmt.html">&lt;seriesStmt&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 50. Example of <a class="link_odd link_odd_elementSpec" href="../elements/seriesStmt.html">&lt;seriesStmt&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -1575,7 +1672,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4800" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4869" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1593,7 +1690,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 50. Example of <a class="link_odd link_odd_elementSpec" href="../elements/seriesStmt.html">&lt;seriesStmt&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/identifier.html">&lt;identifier&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 51. Example of <a class="link_odd link_odd_elementSpec" href="../elements/seriesStmt.html">&lt;seriesStmt&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/identifier.html">&lt;identifier&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -1603,7 +1700,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4824" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4893" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1619,7 +1716,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 51. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 52. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -1628,7 +1725,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4847" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4916" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1654,7 +1751,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 52. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">&lt;contentItem&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 53. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">&lt;contentItem&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -1664,7 +1761,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4872" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4941" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1675,7 +1772,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 53. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> using the <span class="att">@target</span> attribute</figcaption>
+                                 <figcaption class="figure-caption">Listing 54. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> using the <span class="att">@target</span> attribute</figcaption>
                               </figure>
                               </p>
                            
@@ -1743,7 +1840,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5010" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5079" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1759,7 +1856,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 54. Groups of annotations are contained within the <a class="link_odd link_odd_elementSpec" href="../elements/notesStmt.html">&lt;notesStmt&gt;</a> element</figcaption>
+                                 <figcaption class="figure-caption">Listing 55. Groups of annotations are contained within the <a class="link_odd link_odd_elementSpec" href="../elements/notesStmt.html">&lt;notesStmt&gt;</a> element</figcaption>
                               </figure>
                               </p>
                            
@@ -1770,7 +1867,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5023" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5092" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1798,7 +1895,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 55. Notes encoded with more precise elements</figcaption>
+                                 <figcaption class="figure-caption">Listing 56. Notes encoded with more precise elements</figcaption>
                               </figure>
                               </p>
                            </div>
@@ -2054,7 +2151,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5189" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5258" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2075,7 +2172,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 56. Example of <a class="link_odd link_odd_elementSpec" href="../elements/application.html">&lt;application&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 57. Example of <a class="link_odd link_odd_elementSpec" href="../elements/application.html">&lt;application&gt;</a></figcaption>
                               </figure>
                               </p>
                            </div>
@@ -2134,7 +2231,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5261" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5330" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2175,7 +2272,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 57. Example of <a class="link_odd link_odd_elementSpec" href="../elements/editorialDecl.html">&lt;editorialDecl&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 58. Example of <a class="link_odd link_odd_elementSpec" href="../elements/editorialDecl.html">&lt;editorialDecl&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -2215,7 +2312,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5301" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5370" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2232,7 +2329,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 58. Example of <a class="link_odd link_odd_elementSpec" href="../elements/projectDesc.html">&lt;projectDesc&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 59. Example of <a class="link_odd link_odd_elementSpec" href="../elements/projectDesc.html">&lt;projectDesc&gt;</a></figcaption>
                               </figure>
                               </p>
                            </div>
@@ -2270,7 +2367,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5348" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5417" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2284,7 +2381,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 59. Example of <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">&lt;samplingDecl&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 60. Example of <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">&lt;samplingDecl&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -2294,7 +2391,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5365" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5434" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2312,11 +2409,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 60. Example of <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">&lt;samplingDecl&gt;</a> with some description</figcaption>
+                                 <figcaption class="figure-caption">Listing 61. Example of <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">&lt;samplingDecl&gt;</a> with some description</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5377" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5446" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2330,7 +2427,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 61. Example of <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">&lt;samplingDecl&gt;</a> with simple description</figcaption>
+                                 <figcaption class="figure-caption">Listing 62. Example of <a class="link_odd link_odd_elementSpec" href="../elements/samplingDecl.html">&lt;samplingDecl&gt;</a> with simple description</figcaption>
                               </figure>
                               </p>
                            
@@ -2376,7 +2473,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5438" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5507" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2400,7 +2497,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 62. Example of <a class="link_odd link_odd_elementSpec" href="../elements/taxonomy.html">&lt;taxonomy&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/head.html">&lt;head&gt;</a> and a <a class="link_odd link_odd_elementSpec" href="../elements/category.html">&lt;category&gt;</a> element</figcaption>
+                                 <figcaption class="figure-caption">Listing 63. Example of <a class="link_odd link_odd_elementSpec" href="../elements/taxonomy.html">&lt;taxonomy&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/head.html">&lt;head&gt;</a> and a <a class="link_odd link_odd_elementSpec" href="../elements/category.html">&lt;category&gt;</a> element</figcaption>
                               </figure>
                               </p>
                            
@@ -2410,7 +2507,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5459" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5528" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -2431,7 +2528,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 63. More detailed information in the <a class="link_odd link_odd_elementSpec" href="../elements/category.html">&lt;category&gt;</a> element</figcaption>
+                                 <figcaption class="figure-caption">Listing 64. More detailed information in the <a class="link_odd link_odd_elementSpec" href="../elements/category.html">&lt;category&gt;</a> element</figcaption>
                               </figure>
                               </p>
                            
@@ -2494,7 +2591,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5529" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5598" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2536,7 +2633,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 64. Example of <a class="link_odd link_odd_elementSpec" href="../elements/revisionDesc.html">&lt;revisionDesc&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 65. Example of <a class="link_odd link_odd_elementSpec" href="../elements/revisionDesc.html">&lt;revisionDesc&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -2548,7 +2645,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5545" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5614" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2565,7 +2662,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 65. Shorter form for recording changes</figcaption>
+                              <figcaption class="figure-caption">Listing 66. Shorter form for recording changes</figcaption>
                            </figure>
                            </p>
                         
@@ -2577,7 +2674,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5587" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5656" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2622,7 +2719,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 66. </figcaption>
+                              <figcaption class="figure-caption">Listing 67. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -2774,7 +2871,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5752" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5821" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2817,7 +2914,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 67. </figcaption>
+                              <figcaption class="figure-caption">Listing 68. </figcaption>
                            </figure>
                            </p>
                         
@@ -2831,7 +2928,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5765" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5834" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2874,11 +2971,11 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 68. </figcaption>
+                              <figcaption class="figure-caption">Listing 69. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5773" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5842" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2905,7 +3002,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 69. </figcaption>
+                              <figcaption class="figure-caption">Listing 70. </figcaption>
                            </figure>
                            </p>
                         
@@ -2937,7 +3034,7 @@
                            </div>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5827" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5896" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2979,7 +3076,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 70. </figcaption>
+                              <figcaption class="figure-caption">Listing 71. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -3011,7 +3108,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5868" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5937" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3048,7 +3145,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 71. </figcaption>
+                              <figcaption class="figure-caption">Listing 72. </figcaption>
                            </figure>
                            </p>
                         
@@ -3059,7 +3156,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5882" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5951" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3140,7 +3237,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 72. </figcaption>
+                              <figcaption class="figure-caption">Listing 73. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -3232,7 +3329,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5983" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e6052" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3254,7 +3351,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 73. A manifestation is an embodiment of an expression</figcaption>
+                              <figcaption class="figure-caption">Listing 74. A manifestation is an embodiment of an expression</figcaption>
                            </figure>
                            </p>
                         
@@ -3266,7 +3363,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e6005" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e6074" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3292,7 +3389,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 74. A manifestation is a reproduction in form of a reprint of another source</figcaption>
+                              <figcaption class="figure-caption">Listing 75. A manifestation is a reproduction in form of a reprint of another source</figcaption>
                            </figure>
                            </p>
                         
@@ -3304,7 +3401,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e6026" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e6095" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3372,7 +3469,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 75. Four component works encoded as sibling work elements</figcaption>
+                              <figcaption class="figure-caption">Listing 76. Four component works encoded as sibling work elements</figcaption>
                            </figure>
                            </p>
                         
@@ -3385,7 +3482,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e6046" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e6115" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3413,7 +3510,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 76. <span class="att">@target</span> in <a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a> can point to external resources</figcaption>
+                              <figcaption class="figure-caption">Listing 77. <span class="att">@target</span> in <a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a> can point to external resources</figcaption>
                            </figure>
                            </p>
                         
@@ -3422,7 +3519,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e6065" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e6134" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3444,7 +3541,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 77. <span class="att">@target</span> in <a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a> can point to an external resource</figcaption>
+                              <figcaption class="figure-caption">Listing 78. <span class="att">@target</span> in <a class="link_odd link_odd_elementSpec" href="../elements/relation.html">&lt;relation&gt;</a> can point to an external resource</figcaption>
                            </figure>
                            </p>
                         </div>
@@ -4045,7 +4142,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e6600" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e6669" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4070,7 +4167,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 78. Example of <a class="link_odd link_odd_elementSpec" href="../elements/langUsage.html">&lt;langUsage&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 79. Example of <a class="link_odd link_odd_elementSpec" href="../elements/langUsage.html">&lt;langUsage&gt;</a></figcaption>
                            </figure>
                            </p>
                         </div>
@@ -4204,7 +4301,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6708" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6777" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4243,7 +4340,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 79. Example of <a class="link_odd link_odd_elementSpec" href="../elements/castList.html">&lt;castList&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 80. Example of <a class="link_odd link_odd_elementSpec" href="../elements/castList.html">&lt;castList&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -4252,7 +4349,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6730" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6799" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4328,7 +4425,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 80. <a class="link_odd link_odd_elementSpec" href="../elements/castList.html">&lt;castList&gt;</a> of Beethoven’s opera <em>Fidelio</em></figcaption>
+                                 <figcaption class="figure-caption">Listing 81. <a class="link_odd link_odd_elementSpec" href="../elements/castList.html">&lt;castList&gt;</a> of Beethoven’s opera <em>Fidelio</em></figcaption>
                               </figure>
                               </p>
                            
@@ -4366,7 +4463,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6791" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6860" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4383,7 +4480,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 81. Example of <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 82. Example of <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -4392,7 +4489,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6807" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6876" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4419,7 +4516,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 82. Detailed <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 83. Detailed <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -4428,7 +4525,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6831" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6900" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4457,7 +4554,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 83. <span class="att">@count</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">&lt;perfRes&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 84. <span class="att">@count</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">&lt;perfRes&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -4466,7 +4563,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6854" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6923" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4515,11 +4612,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 84. <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a> can group instrument or voice specifications (here woodwinds and brass section)</figcaption>
+                                 <figcaption class="figure-caption">Listing 85. <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a> can group instrument or voice specifications (here woodwinds and brass section)</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6865" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6934" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4563,7 +4660,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 85. <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a> can group instrument or voice specifications (here woodwinds and strings section)</figcaption>
+                                 <figcaption class="figure-caption">Listing 86. <a class="link_odd link_odd_elementSpec" href="../elements/perfResList.html">&lt;perfResList&gt;</a> can group instrument or voice specifications (here woodwinds and strings section)</figcaption>
                               </figure>
                               </p>
                            
@@ -4578,7 +4675,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6904" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6973" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4601,7 +4698,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 86. <a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">&lt;perfRes&gt;</a> element provides the <span class="att">@codedval</span> attribute</figcaption>
+                                 <figcaption class="figure-caption">Listing 87. <a class="link_odd link_odd_elementSpec" href="../elements/perfRes.html">&lt;perfRes&gt;</a> element provides the <span class="att">@codedval</span> attribute</figcaption>
                               </figure>
                               </p>
                            
@@ -4610,7 +4707,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6926" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e6995" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4632,7 +4729,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 87. Solo parts may be marked with the <span class="att">@solo</span> attribute</figcaption>
+                                 <figcaption class="figure-caption">Listing 88. Solo parts may be marked with the <span class="att">@solo</span> attribute</figcaption>
                               </figure>
                               </p>
                            
@@ -4643,7 +4740,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e6955" xml:space="preserve" class="pre code egXML_invalid">
+                                 <div id="d18e7024" xml:space="preserve" class="pre code egXML_invalid">
                                     <code>
                                        
                                        
@@ -4665,7 +4762,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 88. Ad libitum parts may be marked with the <span class="att">@adlib</span> attribute</figcaption>
+                                 <figcaption class="figure-caption">Listing 89. Ad libitum parts may be marked with the <span class="att">@adlib</span> attribute</figcaption>
                               </figure>
                               </p>
                            </div>
@@ -4741,7 +4838,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7014" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7083" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4757,7 +4854,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 89. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 90. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -4766,7 +4863,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7038" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7107" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4784,7 +4881,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 90. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">&lt;contentItem&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 91. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">&lt;contentItem&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -4793,7 +4890,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7067" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7136" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4817,7 +4914,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 91. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">&lt;contentItem&gt;</a> and preceding optional <a class="link_odd link_odd_elementSpec" href="../elements/label.html">&lt;label&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 92. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/contentItem.html">&lt;contentItem&gt;</a> and preceding optional <a class="link_odd link_odd_elementSpec" href="../elements/label.html">&lt;label&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -4826,7 +4923,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7086" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7155" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4837,7 +4934,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 92. Use of the <span class="att">@target</span> attribute</figcaption>
+                              <figcaption class="figure-caption">Listing 93. Use of the <span class="att">@target</span> attribute</figcaption>
                            </figure>
                            </p>
                         
@@ -4846,7 +4943,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7110" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7179" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4866,7 +4963,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 93. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/head.html">&lt;head&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 94. Example of <a class="link_odd link_odd_elementSpec" href="../elements/contents.html">&lt;contents&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/head.html">&lt;head&gt;</a></figcaption>
                            </figure>
                            </p>
                         </div>
@@ -4940,7 +5037,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7207" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7276" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4954,7 +5051,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 94. Example of <a class="link_odd link_odd_elementSpec" href="../elements/termList.html">&lt;termList&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 95. Example of <a class="link_odd link_odd_elementSpec" href="../elements/termList.html">&lt;termList&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -4964,7 +5061,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7233" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7302" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4985,7 +5082,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 95. The <span class="att">@class</span> attribute at the <a class="link_odd link_odd_elementSpec" href="../elements/term.html">&lt;term&gt;</a> element</figcaption>
+                              <figcaption class="figure-caption">Listing 96. The <span class="att">@class</span> attribute at the <a class="link_odd link_odd_elementSpec" href="../elements/term.html">&lt;term&gt;</a> element</figcaption>
                            </figure>
                            </p>
                         
@@ -4994,7 +5091,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e7258" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e7327" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5018,7 +5115,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 96. The <span class="att">@class</span> attribute at the <a class="link_odd link_odd_elementSpec" href="../elements/termList.html">&lt;termList&gt;</a> element</figcaption>
+                              <figcaption class="figure-caption">Listing 97. The <span class="att">@class</span> attribute at the <a class="link_odd link_odd_elementSpec" href="../elements/termList.html">&lt;termList&gt;</a> element</figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5792,7 +5889,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e7681" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e7750" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5844,7 +5941,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 97. Example of <a class="link_odd link_odd_elementSpec" href="../elements/titlePage.html">&lt;titlePage&gt;</a> describing Vaughan Williams' <em>On Wenlock Edge</em></figcaption>
+                                 <figcaption class="figure-caption">Listing 98. Example of <a class="link_odd link_odd_elementSpec" href="../elements/titlePage.html">&lt;titlePage&gt;</a> describing Vaughan Williams' <em>On Wenlock Edge</em></figcaption>
                               </figure>
                               </p>
                            
@@ -5972,7 +6069,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e7753" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e7822" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5990,7 +6087,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 98. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extent.html">&lt;extent&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 99. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extent.html">&lt;extent&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6013,7 +6110,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e7795" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e7864" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6032,7 +6129,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 99. Example of <a class="link_odd link_odd_elementSpec" href="../elements/dimensions.html">&lt;dimensions&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 100. Example of <a class="link_odd link_odd_elementSpec" href="../elements/dimensions.html">&lt;dimensions&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6055,7 +6152,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e7840" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e7909" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6074,7 +6171,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 100. Example of <a class="link_odd link_odd_elementSpec" href="../elements/dimensions.html">&lt;dimensions&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/dim.html">&lt;dim&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 101. Example of <a class="link_odd link_odd_elementSpec" href="../elements/dimensions.html">&lt;dimensions&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/dim.html">&lt;dim&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6131,7 +6228,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e7926" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e7995" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6152,7 +6249,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 101. Example of <a class="link_odd link_odd_elementSpec" href="../elements/watermark.html">&lt;watermark&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 102. Example of <a class="link_odd link_odd_elementSpec" href="../elements/watermark.html">&lt;watermark&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6163,7 +6260,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e7959" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e8028" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6201,7 +6298,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 102. The <a class="link_odd link_odd_elementSpec" href="../elements/fig.html">&lt;fig&gt;</a> element increases the depth of the description of the different components</figcaption>
+                                 <figcaption class="figure-caption">Listing 103. The <a class="link_odd link_odd_elementSpec" href="../elements/fig.html">&lt;fig&gt;</a> element increases the depth of the description of the different components</figcaption>
                               </figure>
                               </p>
                            
@@ -6234,7 +6331,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e7993" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e8062" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6259,7 +6356,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 103. Example of <a class="link_odd link_odd_elementSpec" href="../elements/stamp.html">&lt;stamp&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 104. Example of <a class="link_odd link_odd_elementSpec" href="../elements/stamp.html">&lt;stamp&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6270,7 +6367,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e8025" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e8094" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6288,7 +6385,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 104. Example of <a class="link_odd link_odd_elementSpec" href="../elements/stamp.html">&lt;stamp&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">&lt;corpName&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/locus.html">&lt;locus&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 105. Example of <a class="link_odd link_odd_elementSpec" href="../elements/stamp.html">&lt;stamp&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/corpName.html">&lt;corpName&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/locus.html">&lt;locus&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6297,7 +6394,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e8039" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e8108" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6318,7 +6415,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 105. Encoding of an address stamp</figcaption>
+                                 <figcaption class="figure-caption">Listing 106. Encoding of an address stamp</figcaption>
                               </figure>
                               </p>
                            
@@ -6344,7 +6441,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e8084" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e8153" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6354,7 +6451,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 106. Example of <a class="link_odd link_odd_elementSpec" href="../elements/scoreFormat.html">&lt;scoreFormat&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 107. Example of <a class="link_odd link_odd_elementSpec" href="../elements/scoreFormat.html">&lt;scoreFormat&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6441,7 +6538,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e8175" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e8244" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -6463,7 +6560,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 107. Structure of <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 108. Structure of <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -6577,7 +6674,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8298" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e8367" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -6597,7 +6694,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 108. Example of <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> with detailed placement information of recto and verso</figcaption>
+                                    <figcaption class="figure-caption">Listing 109. Example of <a class="link_odd link_odd_elementSpec" href="../elements/foliaDesc.html">&lt;foliaDesc&gt;</a> with detailed placement information of recto and verso</figcaption>
                                  </figure>
                                  </p>
                               </div>
@@ -6699,7 +6796,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8478" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e8547" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -6716,7 +6813,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 109. Example of <a class="link_odd link_odd_elementSpec" href="../elements/patch.html">&lt;patch&gt;</a></figcaption>
+                                    <figcaption class="figure-caption">Listing 110. Example of <a class="link_odd link_odd_elementSpec" href="../elements/patch.html">&lt;patch&gt;</a></figcaption>
                                  </figure>
                                  </p>
                               
@@ -6876,7 +6973,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8633" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e8702" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -6886,7 +6983,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 110. Example of <a class="link_odd link_odd_elementSpec" href="../elements/plateNum.html">&lt;plateNum&gt;</a></figcaption>
+                                    <figcaption class="figure-caption">Listing 111. Example of <a class="link_odd link_odd_elementSpec" href="../elements/plateNum.html">&lt;plateNum&gt;</a></figcaption>
                                  </figure>
                                  </p>
                               
@@ -6946,7 +7043,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8683" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e8752" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -6960,7 +7057,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 111. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a></figcaption>
+                                    <figcaption class="figure-caption">Listing 112. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a></figcaption>
                                  </figure>
                                  </p>
                               
@@ -6969,7 +7066,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8701" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e8770" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -6987,7 +7084,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 112. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with a little bit more structure</figcaption>
+                                    <figcaption class="figure-caption">Listing 113. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with a little bit more structure</figcaption>
                                  </figure>
                                  </p>
                               
@@ -6996,7 +7093,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8737" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e8806" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -7016,7 +7113,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 113. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <span class="att">@hand</span> attribute</figcaption>
+                                    <figcaption class="figure-caption">Listing 114. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <span class="att">@hand</span> attribute</figcaption>
                                  </figure>
                                  </p>
                               
@@ -7026,7 +7123,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8754" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e8823" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -7048,7 +7145,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 114. Separate <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> elements for structuring purposes</figcaption>
+                                    <figcaption class="figure-caption">Listing 115. Separate <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> elements for structuring purposes</figcaption>
                                  </figure>
                                  </p>
                               
@@ -7457,7 +7554,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e8984" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9053" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -7496,7 +7593,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 115. Example of <a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 116. Example of <a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -7639,7 +7736,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e9140" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9209" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -7662,7 +7759,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 116. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 117. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -7703,7 +7800,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e9174" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9243" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -7733,7 +7830,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 117. Minimal Header Information</figcaption>
+                              <figcaption class="figure-caption">Listing 118. Minimal Header Information</figcaption>
                            </figure>
                            </p>
                         
@@ -7757,7 +7854,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e9224" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9293" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -7876,7 +7973,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 118. Recommended Header Information</figcaption>
+                              <figcaption class="figure-caption">Listing 119. Recommended Header Information</figcaption>
                            </figure>
                            </p>
                         </div>
@@ -7964,7 +8061,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e9315" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e9384" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -8007,7 +8104,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 119. Example of <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 120. Example of <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -8065,7 +8162,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e9380" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e9449" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -8148,7 +8245,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 120. Combination of Corpus and Text Headers</figcaption>
+                                 <figcaption class="figure-caption">Listing 121. Combination of Corpus and Text Headers</figcaption>
                               </figure>
                               </p>
                            </div>
@@ -8189,7 +8286,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d8b14322beee77173be02f3318c31749fafe9273" target="_blank" rel="noopener noreferrer">#d8b1432</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/bafad98dd00dcda94b2d0a1cb2523098047e6347" target="_blank" rel="noopener noreferrer">#bafad98</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -8203,7 +8300,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-3" href="#nonfrbrsourcedescription">3.2.1 Non-FRBR Source Description</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -8221,7 +8318,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-3" href="#nonfrbrsourcedescription">3.2.1 Non-FRBR Source Description</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-3" href="#headerAssociatingMetadataAndData">3.3.3 Associating Metadata and Data</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional Elements for Historical Account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
                   </div>
                </div>
             </div>
