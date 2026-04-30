@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-04-20">
+      <meta name="date" content="2026-04-30">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization integrating all aspects of MEI.">
@@ -4410,12 +4410,12 @@
                               is necessary.</p>
                            
                            <p>Labels which address the tempo at which the music should be performed should be encoded
-                              using the <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a> element, which is a specialized form of <a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a>. <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a> is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class and as such occurs as a child of <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> children. Its <span class="att">@staff</span>, <span class="att">@layer</span> and <span class="att">@tstamp</span> attributes are used to ensure correct semantic positioning, and <span class="att">@place</span> indicates a visual position with respect to the staff.</p>
+                              using the <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a> element, which is a specialized form of <a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a>. <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a> is a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class and as such occurs as a child of <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a>, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> children. Its <span class="att">@staffgrp</span>, <span class="att">@staff</span>, <span class="att">@layer</span> and <span class="att">@tstamp</span> attributes are used to ensure correct semantic positioning, and <span class="att">@place</span> indicates a visual position with respect to the staff.</p>
                            
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13172" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13174" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4456,7 +4456,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13215" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13217" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4501,7 +4501,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13240" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13242" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4521,6 +4521,136 @@
                               </figure>
                               </p>
                            </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="cmnStaffGrp"><span class="headingNumber">4.3.9.3</span><span class="head">Referencing Staff Groups</span></h4>
+                           
+                           <p>Directives or rehearsal marks that refer to one or more staff groups can be specified
+                              using the <span class="att">@staffgrp</span> attribute. This is particularly useful in large ensemble scores where the same direction
+                              may apply to entire sections (e.g., all woodwinds, all strings). The attribute value(s)
+                              correspond to the <span class="att">@n</span> attribute of the referenced <a class="link_odd link_odd_elementSpec" href="../elements/staffGrp.html">&lt;staffGrp&gt;</a> element(s). Multiple staff groups may be indicated by providing space-separated positive
+                              integer values. The attribute is optional but becomes mandatory when the <em>ControlEvent</em> needs to be scoped to specific staff groups rather than applying to all staves in
+                              the measure. <em>ControlEvents</em> applying to all staves can be addressed to the mandatory parent staff group. The
+                              position of the <em>ControlEvent</em> above or below the corresponding staff group is indicated through the <span class="att">@place</span> attribute. <span class="att">@staffgrp</span> complements the existing <span class="att">@staff</span> attribute, which targets individual staves. Both attributes can be used simultaneously.</p>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@staffgrp</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffGrpIdent.html">att.staffGrpIdent</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Signifies the staff group to which a control event applies. Mandatory when applicable.</div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p>The following excerpt from an edition of Mozart's <em>Die Zauberflöte</em> (<a class="link_ref link_external" href="https://kv.mozarteum.at/en/work/7138">Ouverture</a>) shows a tempo indication that refers to the full score and is also placed above
+                              the first violin. This can be encoded in two ways: either by combining <span class="att">@staffgrp</span> and <span class="att">@staff</span>, or by using a single <span class="att">@staffgrp</span> with multiple values.</p>
+                           
+                           <p>
+                              
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/K620-ouverture_mm1-7.png"><figcaption class="figure-caption">Figure 37. Assigning tempo using <span class="att">@staffgrp</span> and <span class="att">@staff</span></figcaption>
+                              </figure>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e13318" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;scoreDef&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffGrp <span class="attribute">bar.thru=</span><span class="attributevalue">"false"</span> <span class="attribute">n=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffGrp <span class="attribute">n=</span><span class="attributevalue">"2"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!--Flauto, Oboe, Clarinetto, Fagotto--&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/staffGrp&gt;</span></div>
+                                             
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffGrp <span class="attribute">n=</span><span class="attributevalue">"3"</span>&gt;</span><div class="indent indent4"><span data-indentation="4" class="comment">&lt;!--Corno, Clarino, Trombone alto, Trombone tenore, Trombone basso--&gt;</span></div><span data-indentation="3" class="element">&lt;/staffGrp&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"10"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!--Timpani--&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/staffDef&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;staffGrp <span class="attribute">bar.thru=</span><span class="attributevalue">"true"</span> <span class="attribute">n=</span><span class="attributevalue">"5"</span> <span class="attribute">symbol=</span><span class="attributevalue">"bracket"</span> <span class="attribute">xml:id=</span><span class="attributevalue">"scoreDef_01_staffGrp_05"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;staffDef <span class="attribute">n=</span><span class="attributevalue">"11"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent5"><span data-indentation="5" class="element">&lt;label&gt;</span>Violino I<span data-indentation="5" class="element">&lt;/label&gt;</span></div>
+                                                   <span data-indentation="4" class="element">&lt;/staffDef&gt;</span></div>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="comment">&lt;!-- Violino II, Viola, Violoncello e Basso--&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/staffGrp&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staffGrp&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/scoreDef&gt;</span></div>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- content omitted --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;tempo <span class="attribute">place=</span><span class="attributevalue">"above"</span> <span class="attribute">staffgrp=</span><span class="attributevalue">"1"</span> <span class="attribute">staff=</span><span class="attributevalue">"11"</span>&gt;</span>Adagio<span data-indentation="1" class="element">&lt;/tempo&gt;</span></div>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!--Alternative encoding--&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;tempo <span class="attribute">place=</span><span class="attributevalue">"above"</span> <span class="attribute">staffgrp=</span><span class="attributevalue">"1 5"</span>&gt;</span>Adagio<span data-indentation="1" class="element">&lt;/tempo&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 210. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>The following excerpt from an edition of Mozart's <em>Die Zauberflöte</em> (<a class="link_ref link_external" href="https://kv.mozarteum.at/en/work/7185">No. 11, Duetto ‘Bewahret euch vor Weibertücken’</a>) shows a typical example of a stage direction referring to the staff group of the
+                              singers (‘both priests exit’).</p>
+                           
+                           <p>
+                              
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/K620-11_mm20-23.png"><figcaption class="figure-caption">Figure 38. Stage direction using <span class="att">@staffgrp</span></figcaption>
+                              </figure>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e13348" xml:space="preserve" class="pre code egXML_feasible">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;staffGrp <span class="attribute">n=</span><span class="attributevalue">"6"</span>&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffDef&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;label&gt;</span>ZWEITER PRIESTER<span data-indentation="3" class="element">&lt;/label&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;labelAbbr&gt;</span>2. PR<span data-indentation="3" class="element">&lt;/labelAbbr&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staffDef&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;staffDef&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;label&gt;</span>SPRECHER<span data-indentation="3" class="element">&lt;/label&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;labelAbbr&gt;</span>SPR<span data-indentation="3" class="element">&lt;/labelAbbr&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/staffDef&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/staffGrp&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- content omitted --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;stageDir <span class="attribute">place=</span><span class="attributevalue">"above"</span> <span class="attribute">staffgrp=</span><span class="attributevalue">"6"</span>&gt;</span>(beide PRIESTER ab)<span data-indentation="1" class="element">&lt;/stageDir&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 211. </figcaption>
+                              </figure>
+                              </p>
+                           </div>                  
                         </div>
                      
                      <div class="div3">
@@ -4555,7 +4685,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beatrpt-20100510.png"><figcaption class="figure-caption">Figure 37. Beat repeat signs</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beatrpt-20100510.png"><figcaption class="figure-caption">Figure 39. Beat repeat signs</figcaption>
                               </figure>
                               </p>
                            
@@ -4635,7 +4765,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13353.svg"><div id="d18e13353" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13461.svg"><div id="d18e13461" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -4710,7 +4840,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 210. Measure repetition</figcaption>
+                                 <figcaption class="figure-caption">Listing 212. Measure repetition</figcaption>
                               </figure>
                               </p>
                            
@@ -4723,11 +4853,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/halfmRpt_beethoven.png"><figcaption class="figure-caption">Figure 38. Half-measure repeat</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/halfmRpt_beethoven.png"><figcaption class="figure-caption">Figure 40. Half-measure repeat</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13380" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13488" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4792,7 +4922,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 211. </figcaption>
+                                 <figcaption class="figure-caption">Listing 213. </figcaption>
                               </figure>
                               </p>
                            
@@ -4804,10 +4934,10 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/mrpt2-20100510.png"><figcaption class="figure-caption">Figure 39. Two-measure repetition</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/mrpt2-20100510.png"><figcaption class="figure-caption">Figure 41. Two-measure repetition</figcaption>
                               </figure>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/multirpt-20100510.png"><figcaption class="figure-caption">Figure 40. Multi-measure repetition</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/multirpt-20100510.png"><figcaption class="figure-caption">Figure 42. Multi-measure repetition</figcaption>
                               </figure>
                               </p>
                            
@@ -4857,7 +4987,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13493" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13601" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4879,7 +5009,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 212. </figcaption>
+                              <figcaption class="figure-caption">Listing 214. </figcaption>
                            </figure>
                            </p>
                         
@@ -4893,7 +5023,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13519" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13627" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4917,7 +5047,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 213. </figcaption>
+                              <figcaption class="figure-caption">Listing 215. </figcaption>
                            </figure>
                            </p>
                         
@@ -4950,7 +5080,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13558" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13666" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4967,7 +5097,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 214. </figcaption>
+                                 <figcaption class="figure-caption">Listing 216. </figcaption>
                               </figure>
                               </p>
                            
@@ -5059,11 +5189,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent.png"><figcaption class="figure-caption">Figure 41. Example of simple mordent</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent.png"><figcaption class="figure-caption">Figure 43. Example of simple mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13638" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13746" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5091,7 +5221,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 215. </figcaption>
+                              <figcaption class="figure-caption">Listing 217. </figcaption>
                            </figure>
                            </p>
                         
@@ -5100,11 +5230,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent_l.png"><figcaption class="figure-caption">Figure 42. Example of a long mordent</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent_l.png"><figcaption class="figure-caption">Figure 44. Example of a long mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13661" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13769" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5132,7 +5262,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 216. </figcaption>
+                              <figcaption class="figure-caption">Listing 218. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5186,11 +5316,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr.png"><figcaption class="figure-caption">Figure 43. Example of simple trills.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr.png"><figcaption class="figure-caption">Figure 45. Example of simple trills.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13705" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13813" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5226,7 +5356,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 217. </figcaption>
+                              <figcaption class="figure-caption">Listing 219. </figcaption>
                            </figure>
                            </p>
                         
@@ -5236,11 +5366,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_trill_wavy.png"><figcaption class="figure-caption">Figure 44. Example of trills followed by wavy lines.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_trill_wavy.png"><figcaption class="figure-caption">Figure 46. Example of trills followed by wavy lines.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13734" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13842" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5288,7 +5418,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 218. </figcaption>
+                              <figcaption class="figure-caption">Listing 220. </figcaption>
                            </figure>
                            </p>
                         
@@ -5302,11 +5432,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_accid.png"><figcaption class="figure-caption">Figure 45. Example alterations expressed on the staff.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_accid.png"><figcaption class="figure-caption">Figure 47. Example alterations expressed on the staff.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13767" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13875" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5328,7 +5458,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 219. </figcaption>
+                              <figcaption class="figure-caption">Listing 221. </figcaption>
                            </figure>
                            </p>
                         
@@ -5342,11 +5472,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_grace.png"><figcaption class="figure-caption">Figure 46. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_grace.png"><figcaption class="figure-caption">Figure 48. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13800" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13908" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5380,7 +5510,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 220. </figcaption>
+                              <figcaption class="figure-caption">Listing 222. </figcaption>
                            </figure>
                            </p>
                         
@@ -5399,7 +5529,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_multi.png"><figcaption class="figure-caption">Figure 47. Example of multiple trills.</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_multi.png"><figcaption class="figure-caption">Figure 49. Example of multiple trills.</figcaption>
                               </figure>
                               </p>
                            
@@ -5409,7 +5539,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13835" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13943" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5439,7 +5569,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 221. </figcaption>
+                                 <figcaption class="figure-caption">Listing 223. </figcaption>
                               </figure>
                               </p>
                            
@@ -5449,7 +5579,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13848" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13956" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5485,7 +5615,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 222. </figcaption>
+                                 <figcaption class="figure-caption">Listing 224. </figcaption>
                               </figure>
                               </p>
                            
@@ -5495,7 +5625,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13871" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13979" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5523,7 +5653,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 223. </figcaption>
+                                 <figcaption class="figure-caption">Listing 225. </figcaption>
                               </figure>
                               </p>
                            
@@ -5540,12 +5670,12 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/ExplicationBach.png"><figcaption class="figure-caption">Figure 48. Trill transcribed from J. S. Bach’s Klavierbüchlein für Wilhelm Friedemann
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/ExplicationBach.png"><figcaption class="figure-caption">Figure 50. Trill transcribed from J. S. Bach’s Klavierbüchlein für Wilhelm Friedemann
                                     Bach</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13914" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14022" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5588,7 +5718,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 224. </figcaption>
+                                 <figcaption class="figure-caption">Listing 226. </figcaption>
                               </figure>
                               </p>
                            
@@ -5599,7 +5729,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13927" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14035" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5651,7 +5781,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 225. </figcaption>
+                                 <figcaption class="figure-caption">Listing 227. </figcaption>
                               </figure>
                               </p>
                            
@@ -5733,11 +5863,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn.png"><figcaption class="figure-caption">Figure 49. Example of a simple turn.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn.png"><figcaption class="figure-caption">Figure 51. Example of a simple turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14010" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14118" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5765,7 +5895,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 226. </figcaption>
+                              <figcaption class="figure-caption">Listing 228. </figcaption>
                            </figure>
                            </p>
                         
@@ -5779,11 +5909,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn_d.png"><figcaption class="figure-caption">Figure 50. Delayed turn.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn_d.png"><figcaption class="figure-caption">Figure 52. Delayed turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14043" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14151" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5812,7 +5942,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 227. </figcaption>
+                              <figcaption class="figure-caption">Listing 229. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5835,7 +5965,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/JSBtableofornaments.jpg"><figcaption class="figure-caption">Figure 51. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/JSBtableofornaments.jpg"><figcaption class="figure-caption">Figure 53. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
                                  für Wilhelm Friedemann Bach</figcaption>
                            </figure>
                            </p>
@@ -5846,7 +5976,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14096" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14204" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5860,7 +5990,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 228. </figcaption>
+                              <figcaption class="figure-caption">Listing 230. </figcaption>
                            </figure>
                            </p>
                         
@@ -5879,7 +6009,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/CPEB_Dorinde.png"><figcaption class="figure-caption">Figure 52. Combined ornaments in C.P.E. Bach’s song Dorinde</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/CPEB_Dorinde.png"><figcaption class="figure-caption">Figure 54. Combined ornaments in C.P.E. Bach’s song Dorinde</figcaption>
                            </figure>
                            </p>
                         
@@ -5892,7 +6022,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14151" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14259" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5937,7 +6067,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 229. </figcaption>
+                              <figcaption class="figure-caption">Listing 231. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5945,7 +6075,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/db53d16d1d639d80a00173d28346a10de3684f4a" target="_blank" rel="noopener noreferrer">#db53d16</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/2765378c2dcdf5b71bb7ee525a2da58414c6279b" target="_blank" rel="noopener noreferrer">#2765378</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
