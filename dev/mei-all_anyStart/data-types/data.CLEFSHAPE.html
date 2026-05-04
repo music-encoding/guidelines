@@ -10,7 +10,7 @@
       <meta name="author" content="Stefan Münnich">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-04-30">
+      <meta name="date" content="2026-05-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
@@ -59,11 +59,12 @@
                      <div id="toleratedValues" class="facet toleratedValues">
                         <div class="label">Allowed Values</div>
                         <div class="statement list">
-                           <div class="dataValueBox" id="G"><span class="dataValue ident">G</span><span class="dataValue desc"><span class="desc">G clef (Unicode 1D11E).</span></span></div>
-                           <div class="dataValueBox" id="GG"><span class="dataValue ident">GG</span><span class="dataValue desc"><span class="desc">Double G clef. Sounds one octave lower than G clef. (See remarks on usage below.)</span></span></div>
-                           <div class="dataValueBox" id="F"><span class="dataValue ident">F</span><span class="dataValue desc"><span class="desc">F clef (Unicode 1D122).</span></span></div>
-                           <div class="dataValueBox" id="C"><span class="dataValue ident">C</span><span class="dataValue desc"><span class="desc">C clef (Unicode 1D121).</span></span></div>
-                           <div class="dataValueBox" id="perc"><span class="dataValue ident">perc</span><span class="dataValue desc"><span class="desc">Drum clef (Unicode 1D125 or Unicode 1D126).</span></span></div>
+                           <div class="dataValueBox" id="G"><span class="dataValue ident">G</span><span class="dataValue desc"><span class="desc">G clef (<abbr>e.g.</abbr>, Unicode 1D11E).</span></span></div>
+                           <div class="dataValueBox" id="GG"><span class="dataValue ident">GG</span><span class="dataValue desc"><span class="desc">Double G clef. Sounds one octave lower than G clef. (<abbr>e.g.</abbr>, SMuFL E055) See remarks on usage below.</span></span></div>
+                           <div class="dataValueBox" id="C"><span class="dataValue ident">C</span><span class="dataValue desc"><span class="desc">C clef (<abbr>e.g.</abbr>, Unicode 1D121).</span></span></div>
+                           <div class="dataValueBox" id="F"><span class="dataValue ident">F</span><span class="dataValue desc"><span class="desc">F clef (<abbr>e.g.</abbr>, Unicode 1D122).</span></span></div>
+                           <div class="dataValueBox" id="gamma"><span class="dataValue ident">gamma</span><span class="dataValue desc"><span class="desc">Gamma clef depicting the locus of gamma-ut</span></span></div>
+                           <div class="dataValueBox" id="perc"><span class="dataValue ident">perc</span><span class="dataValue desc"><span class="desc">Drum clef (<abbr>e.g.</abbr>, Unicode 1D125 or Unicode 1D126).</span></span></div>
                            <div class="dataValueBox" id="TAB"><span class="dataValue ident">TAB</span><span class="dataValue desc"><span class="desc">Tablature "clef"; <abbr>i.e.</abbr>, usually "TAB" rendered vertically.</span></span></div>
                         </div>
                      </div>
@@ -94,27 +95,37 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"G"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>G clef (Unicode 1D11E).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>G clef (
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, Unicode 1D11E).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"GG"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Double G clef. Sounds one octave lower than G clef. (See remarks on usage below.)<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"F"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>F clef (Unicode 1D122).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Double G clef. Sounds one octave lower than G clef. (
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, SMuFL E055) See remarks on usage below.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"C"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>C clef (Unicode 1D121).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>C clef (
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, Unicode 1D121).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"F"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>F clef (
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, Unicode 1D122).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"gamma"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Gamma clef depicting the locus of gamma-ut<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"perc"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Drum clef (Unicode 1D125 or Unicode 1D126).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Drum clef (
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;abbr&gt;</span>e.g.<span data-indentation="6" class="element">&lt;/abbr&gt;</span></div>, Unicode 1D125 or Unicode 1D126).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"TAB"</span>&gt;</span>
@@ -141,7 +152,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/2765378c2dcdf5b71bb7ee525a2da58414c6279b" target="_blank" rel="noopener noreferrer">#2765378</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/728bb70ffbdb4d4c2df324726208a207a3bac705" target="_blank" rel="noopener noreferrer">#728bb70</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
