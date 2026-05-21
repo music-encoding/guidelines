@@ -147,7 +147,7 @@
                            
                            Notable fixes to the guidelines include correcting the description of the <span class="att">@optimize</span> 
                            attribute on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a> to clarify that empty staves 
-                           are <em>not</em> displayed when its value is set to 'true'. 
+                           are <em class="mentioned">not</em> displayed when its value is set to <span class="val">true</span>. 
                            The Release Managers for MEI 5.1 were the Technical Co-Chairs, Benjamin W. Bohl and
                            Stefan Münnich.</p>
                         
@@ -207,8 +207,7 @@
                               
                               same time, we recognize that this flexibility presents challenges for broad adoption
                               
-                              of MEI as a notation interchange format. For developers, providing "full" MEI support
-                              
+                              of MEI as a notation interchange format. For developers, providing <em class="mentioned">full</em> MEI support 
                               is a difficult and time-consuming chore, writing and supporting code for features
                               
                               which most of their users will not use. Accordingly, MEI has not seen a great deal
@@ -217,7 +216,7 @@
                            
                            <p>This is addressed this with the release of MEI 5. We are now offering a new customization
                               of MEI, 
-                              <em>MEI Basic</em>, that provides a simplified subset of the MEI framework that 
+                              <em class="mentioned">MEI Basic</em>, that provides a simplified subset of the MEI framework that 
                               reflects the capabilities of most popular "Common Western Music Notation" score-writing
                               
                               applications currently in use.</p>
@@ -234,8 +233,7 @@
                               
                               applications adopt MEI and more use cases are identified. All MEI Basic files are
                               
-                              valid MEI "full" files, meaning MEI Basic files may be expanded and upgraded to MEI
-                              "full",
+                              valid MEI <em class="mentioned">full</em> files, meaning MEI Basic files may be expanded and upgraded to MEI <em class="mentioned">full</em>,
                               adding more complex features and encoding mechanisms as required.</p>
                            
                            <p>We hope that this customization facilitates more application adoption, data sharing
@@ -301,12 +299,12 @@
                               <span class="att">@lwidth</span>. <span class="att">@text.dist</span> on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a> and 
                               <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> is removed in favor of the newly added attributes 
                               <span class="att">@dir.dist</span>, <span class="att">@reh.dist</span> or <span class="att">@tempo.dist</span>. 
-                              <span class="att">@meter.form</span>="invis" is updated to <span class="att">@meter.visible</span>="false", 
-                              and the same change applies to <span class="att">@form</span>="invis" on meterSig, now replaced 
-                              with <span class="att">@visible</span>="false". The text-rendition values of <span class="val">letter-spacing</span> 
+                              <span class="att">@meter.form</span>=<span class="val">invis</span> is updated to <span class="att">@meter.visible</span>=<span class="val">false</span>, 
+                              and the same change applies to <span class="att">@form</span>=<span class="val">invis</span> on meterSig, now replaced 
+                              with <span class="att">@visible</span>=<span class="val">false</span>. The text-rendition values of <span class="val">letter-spacing</span> 
                               and <span class="val">line-height</span> on <span class="att">@rend</span> are moved to separate attributes, that is, 
-                              <span class="att">@rend</span>="letter-spacing(0.25) line-height(120%)" will be now 
-                              <span class="att">@letterspacing</span>="0.25" <span class="att">@lineheight</span>="120%". Additionally, corrections 
+                              <span class="att">@rend</span>=<span class="val">letter-spacing(0.25) line-height(120%)</span> will be now 
+                              <span class="att">@letterspacing</span>=<span class="val">0.25</span> <span class="att">@lineheight</span>=<span class="val">120%</span>. Additionally, corrections 
                               are applied to specific attribute values, such as changing <span class="val">Bagpipe</span> on
                               <span class="att">@midi.instrname</span> to <span class="val">Bag_pipe</span> and replacing <span class="val">dblwhole</span> 
                               on <span class="att">@head.mod</span> with <span class="val">fences</span>. All changes can be traced in the 
@@ -510,40 +508,43 @@
                         <p>The term "music" has many different notions, ranging from audible sounds over
                            written performance instructions or transcriptions of such events to conceptual
                            rulesets that establish different theories of what music is, and what is
-                           allowed in music. In 1965, Milton Babbitt distinguished between <em>graphemic</em>, <em>acoustic</em> and <em>auditory</em> aspects of music (Babbitt, Milton: <em>The Use of Computers in Musicological Research</em>, in: <em>Perspectives of New Music</em> 3/2 (1965), p. 76).</p>
+                           allowed in music. In 1965, Milton Babbitt distinguished between
+                           <em class="mentioned">graphemic</em>, <em class="mentioned">acoustic</em> and <em class="mentioned">auditory</em>
+                           aspects of music (Babbitt, Milton: "The Use of Computers in Musicological Research",
+                           in: <em>Perspectives of New Music</em> 3/2 (1965), p. 76).</p>
                         
-                        <p>Various music encoding formats took up this distinction, most notably SMDL, the
-                           <em>Standard Music Description Language</em> (ISO/IEC DIS
+                        <p>Various music encoding formats took up this distinction, most notably, the
+                           Standard Music Description Language (SMDL) (ISO/IEC DIS
                            10743). While the format itself was hardly ever used for its impractical
                            implementation details, parts of its design certainly influenced the
                            development of other formats, including MEI. In a documentation draft (<a class="link_ref link_external" href="http://xml.coverpages.org/smdl10743-pdf.gz">http://xml.coverpages.org/smdl10743-pdf.gz, p.5</a>), SMDL identifies
-                           four different <em>musical domains</em>:</p>
+                           four different <em class="mentioned">musical domains</em>:</p>
                         
                         <p class="gloss"><strong><span>logical domain</span></strong>:
                            The logical domain is the basic musical content – the essence from which
                            all performances and editions of the work are derived, including virtual
-                           time values, nominal pitches, etc. The logical domain is describable as “the
+                           time values, nominal pitches, etc. The logical domain is describable as "the
                            composer’s intentions with respect to pitches, rhythms, harmonies, dynamics,
-                           tempi, articulations, accents, etc.,” and it is the primary focus of SMDL.
-                           It can also be described as “the abstract information common to both the
-                           gestural and visual domains.” […]</p>
+                           tempi, articulations, accents, etc.," and it is the primary focus of SMDL.
+                           It can also be described as "the abstract information common to both the
+                           gestural and visual domains." […]</p>
                         <p class="gloss"><strong><span>gestural domain</span></strong>:
                            The gestural domain is comprised of any number of performances, each of
                            which may specify how and when components of the logical domain is rendered
                            in a specific performance, including all the means whereby the performer
-                           actually “expresses” (acoustically instantiates) the music (intonation,
+                           actually <em class="mentioned">expresses</em> (acoustically instantiates) the music (intonation,
                            agogic and dynamic stress, etc.). The gestural domain is perhaps most
-                           succinctly described as “the information added by performers,” or “how the
-                           music actually sounds during particular performances.” […]</p>
+                           succinctly described as "the information added by performers," or "how the
+                           music actually sounds during particular performances." […]</p>
                         <p class="gloss"><strong><span>visual domain</span></strong>:
                            The visual domain is comprised of any number of scores, each of which
                            somehow specifies exactly how components of the logical domain is rendered
                            visually in some particular printable (and/or displayable) edition,
                            including such graphical details as symbology, symbol sets, fonts, page
                            layout, beaming conventions and exceptions, etc. The visual domain is
-                           perhaps most succinctly described as “the information added by human
-                           editors, engravers, and typesetters,” or “how the music actually looks in
-                           some particular edition.” […]</p>
+                           perhaps most succinctly described as "the information added by human
+                           editors, engravers, and typesetters," or "how the music actually looks in
+                           some particular edition." […]</p>
                         <p class="gloss"><strong><span>analytical domain</span></strong>:
                            The analytical domain is comprised of any number of theoretical analyses
                            and/or commentaries, each of which somehow specifies opinions, exegeses,
@@ -553,9 +554,9 @@
                         <p>On a generic level, MEI follows the same definition, and it definitely shares
                            the same terminology. However, not all four domains are available throughout
                            the MEI schema, and quite frequently, two domains fall together in MEI. Very
-                           often, <em>MEI prioritizes the visual domain over the gestural domain</em> by (partly)
-                           <em>conflating the logical and the visual domains</em>. For example, MEI utilizes the
-                           <span class="att">@pname</span> (pitch name) attribute on notes to capture the <em>written</em>
+                           often, <em class="mentioned">MEI prioritizes the visual domain over the gestural domain</em> by (partly)
+                           <em class="mentioned">conflating the logical and the visual domains</em>. For example, MEI utilizes the
+                           <span class="att">@pname</span> (pitch name) attribute on notes to capture the <em class="mentioned">written</em>
                            pitch of a note, whereas the sounding pitch may be described with the
                            <span class="att">@pname.ges</span> attribute. Here, the logical and visual domains go
                            without a special indication, whereas the gestural domain is identified by a
@@ -569,7 +570,7 @@
                         <p>Even though the technical implementation of MEI prioritizes the visual domain
                            to some degree, this does not mean that any given encoding has to provide
                            visual information. MEI takes no assumption on what data is required: While an
-                           OMR project (<em>optical music recognition</em>) may generate strictly visually
+                           Optical music recognition (OMR) project may generate strictly visually
                            oriented data only, another project focussed on audio transcriptions may
                            generate gestural data only. A third project could integrate both
                            approaches.</p>
@@ -577,8 +578,8 @@
                         <p>In order to avoid ambiguous encodings, MEI is very strict and specific on the
                            scope of its individual markup elements. For an encoder, the suffixes mentioned
                            above provide clear hints on which domain is addressed by specific markup: Many
-                           attributes carry a suffixed <em>.log</em> (logical), <em>.ges</em> (gestural), <em>.vis</em>
-                           (visual), or <em>.anl</em> (analytical) in their name. In addition, the internal
+                           attributes carry a suffixed <code class="">.log</code> (logical), <code class="">.ges</code> (gestural), <code class="">.vis</code>
+                           (visual), or <code class="">.anl</code> (analytical) in their name. In addition, the internal
                            structure of MEI heavily relies on those different domains. When customizing
                            MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.3.5 Customizing MEI</a>), it is possible to turn off
                            either visual or gestural domain encoding completely. That way, MEI allows to
@@ -590,33 +591,39 @@
                         
                         <h3 id="eventsControlevents"><span class="headingNumber">1.3.2</span><span class="head">Events and Controlevents</span></h3>
                         
-                        <p>MEI differentiates between two essential aspects of music notation: <em>Events</em> and <em>ControlEvents</em>. There
+                        <p>MEI differentiates between two essential aspects of music notation:
+                           <em class="mentioned">Events</em> and <em class="mentioned">ControlEvents</em>. There
                            are other examples for such a separation of concerns with regard to music. In
                            Greg’s Copy-Text Theory (W.W. Greg: <em>The Rationale of
                               Copy-Text</em>, 1950), a distinction between primary and secondary text is
                            made; similar attempts have been made for music specifically.</p>
                         
-                        <p>In MEI, elements describing the basic musical text are referred to as <em>Events</em>. They are the building blocks for the stream of
-                           music –&nbsp;mostly those are <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>s, <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a>s, and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>s. In contrast, <em>ControlEvents</em> make no independent contribution to that
+                        <p>In MEI, elements describing the basic musical text are referred to as <em class="mentioned">Events</em>.
+                           They are the building blocks for the stream of
+                           music –&nbsp;mostly those are <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>s, <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a>s, and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>s. In contrast,
+                           <em class="mentioned">ControlEvents</em> make no independent contribution to that
                            flow of music. Instead, they provide additional information about the encoded
-                           <em>Events</em>, they <em>control</em> their
-                           performance. Examples for such <em>ControlEvents</em> are <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a>ic markings, <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>s
+                           <em class="mentioned">Events</em>, they <em class="mentioned">control</em> their
+                           performance. Examples for such <em class="mentioned">ControlEvents</em> are <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a>ic markings, <a class="link_odd link_odd_elementSpec" href="../elements/tempo.html">&lt;tempo&gt;</a>s
                            indications, or performance <a class="link_odd link_odd_elementSpec" href="../elements/dir.html">&lt;dir&gt;</a>ectives. Depending on the
                            encoding strategy used, <a class="link_odd link_odd_elementSpec" href="../elements/slur.html">&lt;slur&gt;</a>s and <a class="link_odd link_odd_elementSpec" href="../elements/tie.html">&lt;tie&gt;</a>s often also fall into this category (they may be encoded as
                            attributes instead, in which case they become a property of the basic events).
-                           Simply put, <em>Events</em> describe <strong><em>what</em></strong> needs to be performed, and <em>ControlEvents</em>
-                           indicate <strong><em>how</em></strong> it needs to be performed. In (<a class="link_ptr chapterLink" title="Repertoire: Common Music Notation" href="../content/cmn.html">B4 Repertoire: Common Music Notation</a>-based) MEI, <em>Events</em> are nested inside
-                           a <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> element, while <em>ControlEvents</em> are direct children of the first <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> they apply to, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a>
+                           Simply put, <em class="mentioned">Events</em> describe <em class="mentioned">what</em> needs to be performed, and <em class="mentioned">ControlEvents</em>
+                           indicate <em class="mentioned">how</em> it needs to be performed. In (<a class="link_ptr chapterLink" title="Repertoire: Common Music Notation" href="../content/cmn.html">B4 Repertoire: Common Music Notation</a>-based) MEI, <em class="mentioned">Events</em> are nested inside
+                           a <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> element, while <em class="mentioned">ControlEvents</em> are direct children of the first
+                           <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> they apply to, following all <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a>
                            elements there. These structural differences result in different markup
-                           concepts. As <em>Events</em> are encoded inside <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>s, their <em>semantic position</em> inside the
-                           encoded work can be derived from their <em>structural
-                              position</em> –&nbsp;the measure, staff and layer they're nested in, and within
+                           concepts. As <em class="mentioned">Events</em> are encoded inside <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a>s, their <em class="mentioned">semantic position</em> inside the
+                           encoded work can be derived from their <em class="mentioned">structural
+                              position</em> –&nbsp;the measure, staff and layer they’re nested in, and within
                            that layer by their position inside the sequence of all layer children. As
-                           mentioned above, it is highly <em>recommended</em> to encode <em>ControlEvents</em> inside the first measure they apply to, but
+                           mentioned above, it is highly <em class="mentioned">recommended</em> to encode
+                           <em class="mentioned">ControlEvents</em> inside the first measure they apply to, but
                            they still require references to the actual events they apply to. There are two
                            common concepts to provide such a connection, both of which offering specific
-                           benefits and drawbacks. A technically very stable connection between <em>ControlEvents</em> and <em>Events</em> can be
-                           established by using <em>pointers</em>. In this case, all events
+                           benefits and drawbacks. A technically very stable connection between
+                           <em class="mentioned">ControlEvents</em> and <em class="mentioned">Events</em> can be
+                           established by using <em class="mentioned">pointers</em>. In this case, all events
                            that need to be referenced need an <span class="att">@xml:id</span> attribute, which holds a
                            globally unique identifier for this very element. The referencing controlevent
                            then uses a <span class="att">@startid</span> and, if necessary, <span class="att">@endid</span> attribute to
@@ -689,23 +696,23 @@
                            </div>
                            </p>
                         
-                        <p>A <em>ControlEvent</em> encoded like above will be strictly tied
-                           to the referenced <em>Events</em> –&nbsp;if their position inside the
+                        <p>A <em class="mentioned">ControlEvent</em> encoded like above will be strictly tied
+                           to the referenced <em class="mentioned">Events</em> –&nbsp;if their position inside the
                            XML document changes for whatever reason, they will keep that connection. This
-                           means that the <em>semantic position</em> to which they are bound
+                           means that the <em class="mentioned">semantic position</em> to which they are bound
                            may change without affecting the binding. An example could be an inserted
                            additional note in front –&nbsp;the dynamic marking would not start on the second
                            quarter, but perhaps on the third instead.</p>
                         
                         <p>As this behavior may not be desired in all cases, an alternative binding
-                           between <em>ControlEvents</em> and <em>Events</em>
-                           is possible, relying on <em>timestamps</em> instead. This
+                           between <em class="mentioned">ControlEvents</em> and <em class="mentioned">Events</em>
+                           is possible, relying on <em class="mentioned">timestamps</em> instead. This
                            mechanism is illustrated in the following example:</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e928" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e922" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -762,18 +769,20 @@
                            controlevents where positioned in the very first or last measure, or actually
                            even inside a separate file. The <span class="att">@tstamp</span> references however would
                            not, they depend on correct placement of the controlevents inside the XML tree.
-                           For consistency, it is therefore <em>recommended</em> to always
+                           For consistency, it is therefore <em class="mentioned">recommended</em> to always
                            use this placement.</p>
                         
-                        <p>The benefit of this concept is that controlevents are tied to a <em>semantic position</em>, but not necessarily to a given XML
-                           element. The <em>forte</em> may still be placed on the second
+                        <p>The benefit of this concept is that controlevents are tied to a <em class="mentioned">semantic position</em>,
+                           but not necessarily to a given XML element.
+                           The <em class="mentioned">forte</em> may still be placed on the second
                            quarter, even though the composer may have replaced that quarter G4 with a
-                           different pitch and / or duration. Actually, it is not required that an <em>Event</em> can be found at the position indicated by a
+                           different pitch and / or duration. Actually, it is not required that
+                           an <em class="mentioned">Event</em> can be found at the position indicated by a
                            timestamp. This may be useful to encode a slur ending at an arbitrary position
                            between two events, or dynam markings spread across otherwise empty
                            measures.</p>
                         
-                        <p>If the ending of a <em>ControlEvent</em> shall be given by
+                        <p>If the ending of a <em class="mentioned">ControlEvent</em> shall be given by
                            timestamp, the <span class="att">@tstamp2</span> attribute is used.</p>
                         
                         <p>
@@ -798,7 +807,7 @@
                            <span class="att">@endid</span>. In general, it is easier for software to process
                            <span class="att">@startid</span> and <span class="att">@endid</span>. When no other arguments apply,
                            using <span class="att">@xml:id</span>-based pointers is therefore the most common way to
-                           connect <em>ControlEvents</em> with <em>Events</em>.</p>
+                           connect <em class="mentioned">ControlEvents</em> with <em class="mentioned">Events</em>.</p>
                         
                         <p>The details on how timestamps are calculated and used in MEI are given in <a class="link_ptr chapterLink" title="Timestamps in MEI" href="../content/introduction.html#timestamps">1.3.3 Timestamps in MEI</a>.</p>
                         </div>
@@ -808,7 +817,7 @@
                         <h3 id="timestamps"><span class="headingNumber">1.3.3</span><span class="head">Timestamps in MEI</span></h3>
                         
                         <p>In MEI, timestamps are treated in a slightly simplified way: they have no
-                           notion of <em>beat</em>. Instead, timestamps rely solely on the
+                           notion of <em class="mentioned">beat</em>. Instead, timestamps rely solely on the
                            numbers given in the meter signature. In a measure of 4/4, timestamps will
                            range from 1 to 4. The second eighth note will be 1.5 in this case. If the same
                            measure would be given in 2/2, it would be 1.25 instead.</p>
@@ -836,9 +845,9 @@
                            problems.</p>
                         
                         <p>Durations may also be expressed based on timestamps. In this case, the values
-                           are a combination of the <em>count of measures</em> that need to
+                           are a combination of the <em class="mentioned">count of measures</em> that need to
                            be moved forward to reach the measure in which an encoded feature ends, and the
-                           <em>timestamp</em> within that measure.</p>
+                           <em class="mentioned">timestamp</em> within that measure.</p>
                         
                         <p>
                            
@@ -858,7 +867,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1081" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1065" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -886,7 +895,7 @@
                            </figure>
                            </p>
                         
-                        <p>Sometimes, timestamps are used to indicate positions where no music <em>Events</em> are located (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>). Therefore, the allowed range of timestamps
+                        <p>Sometimes, timestamps are used to indicate positions where no music <em class="mentioned">Events</em> are located (see <a class="link_ptr chapterLink" title="Events and Controlevents" href="../content/introduction.html#eventsControlevents">1.3.2 Events and Controlevents</a>). Therefore, the allowed range of timestamps
                            stretches from 0 to the current meter count + 1. By definition, a timestamp of
                            0 indicates the position of the left bar line, while a timestamp of 5 (in case
                            of a 4/4 meter) indicates the right bar line. This makes it possible to encode
@@ -902,7 +911,7 @@
                         <h3 id="meiCustomizations"><span class="headingNumber">1.3.4</span><span class="head">MEI Customizations</span></h3>
                         
                         <p>MEI is an encoding framework, not a data format. This means that MEI provides
-                           recommendations for encoding music documents, but it depends on the encoder's
+                           recommendations for encoding music documents, but it depends on the encoder’s
                            needs and requirements to which features and solutions are appropriate to the
                            task and should be used. MEI offers specific models for different notation
                            types and music repertoires, but it is rarely advisable to use them all side by
@@ -910,7 +919,7 @@
                         
                         <p>In order to use MEI, it is advised to use a restricted version of the schema,
                            which will make it easier both for an encoder and a reader of the encoded
-                           files. MEI provides a number of pre-defined <em>customizations</em>, which focus on specific
+                           files. MEI provides a number of pre-defined <em class="mentioned">customizations</em>, which focus on specific
                            uses of MEI while still maintaining a great level of flexibility. For projects
                            that need even better control over their data, it is highly recommended to
                            create a more specific customized version of MEI (see chapter <a class="link_ptr chapterLink" title="Customizing MEI" href="../content/introduction.html#meiCustomization">1.3.5 Customizing MEI</a>). The following customizations are provided
@@ -918,29 +927,29 @@
                         
                         <p class="gloss"><strong><span>mei-cmn</span></strong>:
                            For most users, this will be the best starting point into music
-                           encoding with MEI. The <em>mei-cmn</em> customization targets at documents that use
-                           <em>Common Western Music Notation</em>. The specific rules for that notation are
+                           encoding with MEI. The <em class="mentioned">mei-CMN</em> customization targets at documents that use
+                           <em class="mentioned">Common Western Music Notation</em>. The specific rules for that notation are
                            specified in chapter <a class="link_ptr chapterLink" title="Repertoire: Common Music Notation" href="../content/cmn.html">B4 Repertoire: Common Music Notation</a>, even though other chapters of these
                            Guidelines apply as well.</p>
-                        <p class="gloss"><strong><span>mei-mensural</span></strong>:
-                           For documents written in <em>Mensural Notation</em> (both black and
-                           white), MEI offers the <em>mei-mensural</em> customization. The specific rules for
+                        <p class="gloss"><strong><span>mei-Mensural</span></strong>:
+                           For documents written in <em class="mentioned">Mensural Notation</em> (both black and
+                           white), MEI offers the <em class="mentioned">mei-Mensural</em> customization. The specific rules for
                            that notation are specified in chapter <span class="missingPtr">#mensural [not available in this MEI customization]</span>, even though
                            other chapters of these Guidelines apply as well.</p>
-                        <p class="gloss"><strong><span>mei-neumes</span></strong>:
-                           This customization allows to encode medieval <em>Neume Notation</em> with MEI.
+                        <p class="gloss"><strong><span>mei-Neumes</span></strong>:
+                           This customization allows to encode medieval <em class="mentioned">Neume Notation</em> with MEI.
                            The specific rules for that notation are specified in chapter <span class="missingPtr">#neumes [not available in this MEI customization]</span>, even though other chapters of these Guidelines apply as
-                           well. Please note that the <em>mei-neumes</em> customization has undergone significant
+                           well. Please note that the <em class="mentioned">mei-Neumes</em> customization has undergone significant
                            changes from MEI version 3 to version 4.</p>
                         <p class="gloss"><strong><span>mei-basic</span></strong>:
                            As an encoding framework, MEI offers multiple approaches to encode
                            certain features at various levels of detail. While this flexibility is at the
                            core of MEI and often required for research projects, it is an obstacle when
-                           developing software and converters for MEI. The <em>mei-Basic</em> customization is a subset
+                           developing software and converters for MEI. The <em class="mentioned">mei-Basic</em> customization is a subset
                            of MEI which restricts it to one way of encoding for every feature of music
-                           notation. It covers <em>Common Western Music Notation</em> only, and excludes all
+                           notation. It covers <em class="mentioned">Common Western Music Notation</em> only, and excludes all
                            editorial markup. In essence, it has the same functionality as most other music
-                           encoding formats like MusicXML or MNX. The purpose of <em>mei-Basic</em> is to serve
+                           encoding formats like MusicXML or MNX. The purpose of <em class="mentioned">mei-Basic</em> is to serve
                            as common ground for data interchange, both between projects using different
                            customizations of MEI, and other encoding schemes.</p>
                         <p class="gloss"><strong><span>mei-all</span></strong>:
@@ -949,11 +958,11 @@
                            are neither intended nor advocable. For example, in mensural notation music is
                            organized by staves. In contrast, Common Music Notation utilizes measures,
                            which in turn contain staves. These staves have a different meaning here, and
-                           are modeled differently in MEI. <em>mei-all</em> mixes those models and thus invites
-                           encoding errors. In general, you should almost never use <em>mei-all</em> except for
+                           are modeled differently in MEI. <em class="mentioned">mei-all</em> mixes those models and thus invites
+                           encoding errors. In general, you should almost never use <em class="mentioned">mei-all</em> except for
                            testing purposes.</p>
                         <p class="gloss"><strong><span>mei-all_anyStart </span></strong>:
-                           This customization includes all of <em>mei-all</em>, but extends it even
+                           This customization includes all of <em class="mentioned">mei-all</em>, but extends it even
                            further so that it allows any MEI element as root of conforming MEI instances.
                            In regular MEI, the only allowed starting elements are <a class="link_odd link_odd_elementSpec" href="../elements/mei.html">&lt;mei&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/meiHead.html">&lt;meiHead&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/music.html">&lt;music&gt;</a> and
                            <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a>. The sole purpose of this customization is
@@ -974,20 +983,20 @@
                            very needs of a project. Such a custom schema will guide the encoders and will
                            help to ensure consistency and data quality throughout a project’s files. A
                            customization typically provides a subset of MEI’s encoding models (typically
-                           starting from one of the official <em>customizations</em> mentioned in chapter <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a>), with only one solution for any given situation
+                           starting from one of the official <em class="mentioned">customizations</em> mentioned in chapter <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a>), with only one solution for any given situation
                            being allowed. The customization will help to reflect the scope of a project
                            into its data: Only those aspects of music notation a project is interested in
                            will be allowed, so that the absence of a specific information can not be
                            misunderstood as an oversight of the encoders. Larger editorial projects like
-                           <em>Complete Works</em> editions typically use <em>Editorial Guidelines</em> (german:
-                           <em>Editionsrichtlinien</em>) for the same purposes: (internal) quality control and
+                           <em class="mentioned">Complete Works</em> editions typically use <em class="mentioned">Editorial Guidelines</em> (german:
+                           <span class="foreign">Editionsrichtlinien</span>) for the same purposes: (internal) quality control and
                            (external) documentation. In that sense, MEI customizations may serve as
                            Editorial Guidelines in digital form.</p>
                         
-                        <p>MEI is implemented in ODD. ODD, or <em>One Document Does-it-all</em>, is another
-                           XML-based markup language developed and maintained by the TEI. TEI's
+                        <p>MEI is implemented in ODD (One Document Does-it-all). ODD, is another
+                           XML-based markup language developed and maintained by the TEI. TEI’s
                            documentation for ODD can be found in the TEI Guidelines chapter 22: <a class="link_ref link_external" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html">Documentation Elements</a>, chapter 23: <a class="link_ref link_external" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html">Using
-                              the TEI</a>, and the "<a class="link_ref link_external" href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">Getting Started with P5 ODDs</a>" document.</p>
+                              the TEI</a>, and the <a class="link_ref link_external" href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">Getting Started with P5 ODDs</a> document.</p>
                         
                         <p>At this point, there is no specific documentation on how to customize MEI with
                            ODD beyond the generic TEI documentation. However, the provided <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a> are based on ODD customizations, and may serve as
@@ -1019,7 +1028,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0a5b48451600ace21e87f7073ece79c2c94f92ed" target="_blank" rel="noopener noreferrer">#0a5b484</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/4d3c485d4d27d8654616476169994b55279461f1" target="_blank" rel="noopener noreferrer">#4d3c485</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

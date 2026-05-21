@@ -38,7 +38,7 @@
                   <h1 id="cmn"><span class="headingNumber">B2</span><span class="head">Repertoire: Common Music Notation</span></h1>
                   
                   <p>The module described in this chapter offers the means to describe music in so-called
-                     ‘Common Music Notation’ (CMN, sometimes referred to as ‘Common Western Music Notation’).
+                     "Common Music Notation" (CMN, sometimes referred to as "Common Western Music Notation").
                      For this purpose, it provides a number of special elements and adds several attribute
                      classes to elements from the <span class="missingPtr">#shared [not available in this MEI customization]</span> module.</p>
                   
@@ -61,14 +61,14 @@
                         
                         <h3 id="cmnMeasures"><span class="headingNumber">2.2.1</span><span class="head">The Role of the Measure Element</span></h3>
                         
-                        <p>Arguably, the most important element of the CMN module is the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> element. It is used as a structural unit inside <a class="link_odd link_odd_elementSpec" href="../elements/section.html">&lt;section&gt;</a> elements and acts as a container for ‘events’ from the <a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a> class, such as notes, chords and rests as well as ‘control events’ from the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, such as slurs and indications of dynamics.</p>
+                        <p>Arguably, the most important element of the CMN module is the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> element. It is used as a structural unit inside <a class="link_odd link_odd_elementSpec" href="../elements/section.html">&lt;section&gt;</a> elements and acts as a container for <em class="mentioned">events</em> from the <a class="link_odd link_odd_modelClass" href="../model-classes/model.eventLike.html">model.eventLike</a> class, such as notes, chords and rests as well as <em class="mentioned">control events</em> from the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, such as slurs and indications of dynamics.</p>
                         
                         <p>The following example demonstrates the use of the <a class="link_odd link_odd_elementSpec" href="../elements/measure.html">&lt;measure&gt;</a> element:</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1373" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1346" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -118,7 +118,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1421" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1394" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -151,13 +151,13 @@
                            </figure>
                            </p>
                         
-                        <p>Each <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> may hold a number of <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> elements to reflect multiple ‘voices’. Just as with <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a>, the order of the <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> elements in the file does not have to reflect their original order in the document,
+                        <p>Each <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a> may hold a number of <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> elements to reflect multiple <em class="mentioned">voices</em>. Just as with <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a>, the order of the <a class="link_odd link_odd_elementSpec" href="../elements/layer.html">&lt;layer&gt;</a> elements in the file does not have to reflect their original order in the document,
                            so they also possess <span class="att">@n</span> and <span class="att">@def</span> attributes for association with the appropriate layer definition.</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1452" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1427" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -180,7 +180,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1465" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1440" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -317,7 +317,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1523" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1498" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -585,7 +585,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1681" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1656" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -608,7 +608,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1702" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e1677" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -727,10 +727,9 @@
                            information about key signature gathered from a <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> for a transposing instrument.</p>
                         
                         <p>Every <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a> may contain a number of <span class="missingLink">layerDef [not available in this MEI customization]</span> elements, which may be used to establish default values for the distinct layers sharing
-                           one staff. MEI does not use the term ‘voice’ to describe these ‘musical threads’ because
-                           that term implies continuity across measure boundaries. Given the sometimes arbitrary
-                           relationships between these threads from measure to measure as well as across staves,
-                           MEI uses the more neutral term ‘layer’.</p>
+                           one staff. MEI does not use the term <em>voice</em> to describe these "musical threads" because that term implies continuity across measure
+                           boundaries. Given the sometimes arbitrary relationships between these threads from
+                           measure to measure as well as across staves, MEI uses the more neutral term <em class="mentioned">layer</em></p>
                         </div>
                      
                      <div class="div3">
@@ -752,7 +751,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e1837" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e1818" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -792,7 +791,7 @@
                         
                         <p>
                            
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e1854.svg"><div id="d18e1854" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e1835.svg"><div id="d18e1835" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
@@ -809,7 +808,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 12. Alternating meters in Tchaikovsky's String Quartet in F major</figcaption>
+                              <figcaption class="figure-caption">Listing 12. Alternating meters in Tchaikovsky’s String Quartet in F major</figcaption>
                            </figure>
                            </p>
                         </div>
@@ -846,7 +845,7 @@
                         
                         <p>
                            
-                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e1954.svg"><div id="d18e1954" xml:space="preserve" class="pre code egXML_feasible verovio">
+                           <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e1935.svg"><div id="d18e1935" xml:space="preserve" class="pre code egXML_feasible verovio">
                                  <code>
                                     
                                     
@@ -1010,7 +1009,7 @@
                               
                               <p>A single note, in this case a quarter note C4, is therefore encoded as: 
                                  <figure class="figure specPage">
-                                    <div id="d18e2009" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e1990" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1066,7 +1065,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2116" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e2097" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1099,7 +1098,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2159" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e2140" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1140,7 +1139,7 @@
                                  duration remains unknown.</p>
                               
                               <p>The <span class="att">@grace.time</span> attribute is only to be used in combination with the <span class="att">@grace</span> attribute. It records the amount of time (as a percentage of the written duration)
-                                 that the grace note should ‘steal’ from the preceding note (when <span class="att">@grace</span>="unacc") or the following note (when <span class="att">@grace</span>="acc").</p>
+                                 that the grace note should ‘steal’ from the preceding note (when <span class="att">@grace</span>=<span class="val">unacc</span>) or the following note (when <span class="att">@grace</span>=<span class="val">acc</span>).</p>
                               
                               <p>Grace notes can be placed within a <a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">&lt;graceGrp&gt;</a> element, which itself allows all values for <span class="att">@grace</span> as explained above. The optional <span class="att">@attach</span> attribute is used to record whether the grace note group is attached to the following
                                  event or to the preceding one. The <a class="link_odd link_odd_elementSpec" href="../elements/graceGrp.html">&lt;graceGrp&gt;</a> element can be used with single or multiple grace notes.</p>
@@ -1176,7 +1175,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2268" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e2254" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1272,7 +1271,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2365" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e2351" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1316,7 +1315,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2389" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e2375" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1382,7 +1381,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2433" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e2419" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1505,7 +1504,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2502" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e2488" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1545,7 +1544,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2557" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e2543" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1580,7 +1579,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e2593" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e2579" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1616,28 +1615,26 @@
                            through the use of a combination of the attributes <span class="att">@tstamp</span> and <span class="att">@dur</span>, which are made available by the attribute classes <a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp.log.html">att.timestamp.log</a> (inherited by <a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a>) and <a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp2.log.html">att.timestamp2.log</a>, both from the shared module.</p>
                         
                         <p>The timestamp (<span class="att">@tstamp</span>) of a musical event is calculated in relation to the meter of the current measure
-                           and resembles the so-called ‘beat’ position. In a common time measure with four quarter
+                           and resembles the so-called "beat" position. In a common time measure with four quarter
                            notes, the timestamp of each quarter equals its beat position in the measure: The
                            first quarter has a timestamp of 1, the second has a timestamp of 2, and so on. MEI
                            defines the value of <span class="att">@tstamp</span> as a real number; the second eighth note position in a measure would thus be represented
-                           by the value of "1.5". The range of possible values is defined as starting with zero
-                           and ending with the number of metrical units in a measure (the ‘numerator’ in a time
-                           signature) + 1. This allows the capture of all graphical positions starting from the
-                           left bar line ('0') and ending with the right bar line of the measure ('5', in the
-                           case of 4/4 time).</p>
+                           by the value of <span class="val">1.5</span>. The range of possible values is defined as starting with zero and ending with the
+                           number of metrical units in a measure (the ‘numerator’ in a time signature) + 1. This
+                           allows the capture of all graphical positions starting from the left bar line (<span class="val">0</span>) and ending with the right bar line of the measure (<span class="val">5</span>, in the case of 4/4 time).</p>
                         
                         <p>For expressing durations, MEI offers the <span class="att">@dur</span> attribute. This attribute is described in section <a class="link_ptr chapterLink" title="Basic Usage of Notes in CMN" href="../content/cmn.html#cmnNotesBasic">2.2.5.1.1 Basic Usage of Notes in CMN</a>.</p>
                         
-                        <p>For ‘spanning’ elements like slurs, which are members of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, it is often more intuitive to record two timestamps – one for the onset of
+                        <p>For "spanning" elements like slurs, which are members of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.controlEventLike.html">model.controlEventLike</a> class, it is often more intuitive to record two timestamps – one for the onset of
                            the event and one for its termination. Because the termination of the event may be
                            in a succeeding measure, the second timestamp (<span class="att">@tstamp2</span>) has a slightly different datatype than the one marking the initiation of the event.
-                           Its datatype is constrained to values following the formula "<em>xm + y</em>", where <em>x</em> is the number of full measures that this particular feature lasts (or the number
-                           of bar lines crossed) and <em>y</em> is the timestamp in the target measure where the feature ends. The timestamp is expressed
-                           using the same logic as described above. For example, a value of "0m+3" in 4/4 time
-                           indicates that the element bearing this attribute, a slur for example, ends on beat
-                           3 of the same measure where it started. A value of "1m+1.5" would indicate an end
-                           on the second eighth note of the following measure. In 6/8 time, the value "2m+3"
-                           means that the feature ends two measures later on the third eighth note.</p>
+                           Its datatype is constrained to values following the formula "xm + y", where "x" is
+                           the number of full measures that this particular feature lasts (or the number of bar
+                           lines crossed) and "y" is the timestamp in the target measure where the feature ends.
+                           The timestamp is expressed using the same logic as described above. For example, a
+                           value of <span class="val">0m+3</span> in 4/4 time indicates that the element bearing this attribute, a slur for example,
+                           ends on beat 3 of the same measure where it started. A value of <span class="val">1m+1.5</span> would indicate an end on the second eighth note of the following measure. In 6/8
+                           time, the value <span class="val">2m+3</span> means that the feature ends two measures later on the third eighth note.</p>
                         </div>
                      </div>
                   
@@ -1687,7 +1684,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2691" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2692" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1718,7 +1715,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2705" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2706" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1760,7 +1757,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2739" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2740" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1817,7 +1814,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2778" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2779" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1852,10 +1849,10 @@
                            </figure>
                            </p>
                         
-                        <p>The duration of notes, rests, or chords under a beam which carries the <span class="att">@form</span> attribute with a value of ‘acc’, ‘rit’, or ‘mixed’ must be treated specially. The
-                           first and last contained elements must specify a duration which matches the number
-                           of beams displayed at the point of these events. In the case of a ‘mixed’ beam, each
-                           event at the point of change in the number of secondary beams must carry a <span class="att">@dur</span> attribute. Beams like this may be encoded thusly:</p>
+                        <p>The duration of notes, rests, or chords under a beam which carries the <span class="att">@form</span> attribute with a value of <span class="val">acc</span>, <span class="val">rit</span>, or <span class="val">mixed</span> must be treated specially. The first and last contained elements must specify a duration
+                           which matches the number of beams displayed at the point of these events. In the case
+                           of a ‘mixed’ beam, each event at the point of change in the number of secondary beams
+                           must carry a <span class="att">@dur</span> attribute. Beams like this may be encoded thusly:</p>
                         
                         <p>
                            
@@ -1863,7 +1860,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2803" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2810" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1924,7 +1921,7 @@
                         
                         <p>Beams that connect events on different staves may be encoded in two different ways.
                            First, a single-layer approach may be taken that treats the events lying under the
-                           beam as logically belonging to the same layer as the initial event but visually ‘displaced’
+                           beam as logically belonging to the same layer as the initial event but visually "displaced"
                            to an adjacent staff. In the example above from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/Moritz_Moszkowski">Moritz Moszkowski’s</a>
                            <em>12 Pianoforte Studies for the left hand</em>, Op. 92, MoszWV 117 this method makes even from a semantic perspective perfect sense.
                            It can be achieved with an additional <span class="att">@staff</span> attribute value that contradicts the ‘normal’ staff placement indicated by the <span class="att">@n</span> attribute of their ancestor <a class="link_odd link_odd_elementSpec" href="../elements/staff.html">&lt;staff&gt;</a>.</p>
@@ -1932,7 +1929,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2841" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2851" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1976,7 +1973,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2864" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2874" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2037,7 +2034,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e2914" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e2924" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2092,7 +2089,7 @@
                         <p>In MEI, ties can be encoded in different ways, depending on the level of detail that
                            the encoder wants to preserve. The simplest solution is to use the <span class="att">@tie</span> attribute found on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. 
                            <figure class="figure specPage">
-                              <div id="d18e3020" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3030" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2130,7 +2127,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3071" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3081" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2214,7 +2211,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3087" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3097" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2256,7 +2253,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3101" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3111" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2310,7 +2307,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3145" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3155" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2334,17 +2331,16 @@
                         
                         <p>The reason for this difference is that slurs, unlike ties, may overlap, so that a
                            second slur may start while the first slur is still ongoing. The digit indicates the
-                           level of nesting of slurs on the note; ‘1’ indicates no nesting, while ‘2’ indicates
-                           the existence of 2 slurs in which this note participates, and so on. In the example
-                           below, the second and third quarter notes lie under 2 slurs. The second note is covered
-                           by the slur that begins on the preceding note and by the one that it starts. The third
-                           note is affected by the slur that begins on note one and by the one that starts on
-                           note two.</p>
+                           level of nesting of slurs on the note; <span class="val">1</span> indicates no nesting, while <span class="val">2</span> indicates the existence of 2 slurs in which this note participates, and so on. In
+                           the example below, the second and third quarter notes lie under 2 slurs. The second
+                           note is covered by the slur that begins on the preceding note and by the one that
+                           it starts. The third note is affected by the slur that begins on note one and by the
+                           one that starts on note two.</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3159" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3174" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2384,7 +2380,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3175" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3190" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2430,7 +2426,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3193" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3208" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2490,7 +2486,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3250" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3265" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2526,14 +2522,14 @@
                            </figure>
                            </p>
                         
-                        <p>Obviously, to be complete the slur in the above example needs to be ‘attached’ to
-                           the notes somehow. The ‘vertical assignment’ can be indicated for the example above
+                        <p>Obviously, to be complete the slur in the above example needs to be "attached" to
+                           the notes somehow. The "vertical assignment" can be indicated for the example above
                            using the <span class="att">@staff</span> and <span class="att">@layer</span> attributes like so:</p>
                         
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3269" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3288" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2554,7 +2550,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3285" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3304" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2597,7 +2593,7 @@
                            information in human language, possibly in an abbreviated form. An example is the
                            word <em>piano</em>, indicating a quiet volume, often abbreviated as <em>p</em>. In MEI, verbal instructions like this are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> element from the Shared module (see chapter <span class="missingPtr">#shared [not available in this MEI customization]</span>): 
                            <figure class="figure specPage">
-                              <div id="d18e3385" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e3404" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2618,7 +2614,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3422" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3441" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2638,7 +2634,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3439" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3458" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2663,7 +2659,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3455" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3474" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2684,7 +2680,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3479" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3498" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2709,7 +2705,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3500" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e3519" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2760,7 +2756,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3530" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3549" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2776,7 +2772,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3538" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3557" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2799,7 +2795,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3569" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3588" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2815,7 +2811,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3577" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3596" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2831,7 +2827,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3585" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3604" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2847,7 +2843,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3593" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3612" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2868,7 +2864,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3615" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3634" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2893,7 +2889,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3654" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e3673" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2914,7 +2910,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3672" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3691" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2940,7 +2936,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3704" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e3723" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2966,8 +2962,8 @@
                            three notes take the time normally occupied by two.</p>
                         
                         <p>The relation of the tuplet to the underlying meter is specified using the <span class="att">@num</span> and <span class="att">@numbase</span> attributes, where <span class="att">@num</span> specifies the number of replacing notes and <span class="att">@numbase</span> specifies the number of notes <em>of the same duration</em> to be replaced. For example, when three eighth notes replace one quarter note in
-                           common time, <span class="att">@num</span> takes a value of "3", whereas <span class="att">@numbase</span> reads "2", because a quarter note in common time is normally divided into two eighths.
-                           When three quarters replace two in the same meter, <span class="att">@numbase</span> also reads "2". The combination of these attributes may be read as "3 in the time
+                           common time, <span class="att">@num</span> takes a value of <span class="val">3</span>, whereas <span class="att">@numbase</span> reads <span class="val">2</span>, because a quarter note in common time is normally divided into two eighths. When
+                           three quarters replace two in the same meter, <span class="att">@numbase</span> also reads "2". The combination of these attributes may be read as "3 in the time
                            of 2" in either case.</p>
                         
                         <p>
@@ -2976,7 +2972,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3751" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3774" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3004,7 +3000,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3770" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3793" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3034,8 +3030,8 @@
                         <p>Tuplets are often highlighted using brackets above or below the affected notes. The
                            presence and position of these brackets can be encoded using the <span class="att">@bracket.place</span> (above / below) and <span class="att">@bracket.visible</span> (true / false) attributes.</p>
                         
-                        <p>Usually, however, tuplets are rendered with a bracket (<span class="att">@bracket.visible</span>="true") and a single number (<span class="att">@num.format</span>="count" and <span class="att">@num.visible</span>="true"), as seen in the example above. However, the number-to-numbase ratio may be
-                           provided in addition to, or in some cases as a replacement for, the bracket. The <span class="att">@num.format</span> attribute indicates whether a plain number (the value of <span class="att">@num</span>) or a ratio (comprised of <span class="att">@num</span> and <span class="att">@numbase</span>, <abbr>e.g.</abbr>, "3:2") should be displayed and <span class="att">@num.visible</span> indicates the general presence of such a number.</p>
+                        <p>Usually, however, tuplets are rendered with a bracket (<span class="att">@bracket.visible</span>=<span class="val">true</span>) and a single number (<span class="att">@num.format</span>=<span class="val">count</span> and <span class="att">@num.visible</span>=<span class="val">true</span>), as seen in the example above. However, the number-to-numbase ratio may be provided
+                           in addition to, or in some cases as a replacement for, the bracket. The <span class="att">@num.format</span> attribute indicates whether a plain number (the value of <span class="att">@num</span>) or a ratio (comprised of <span class="att">@num</span> and <span class="att">@numbase</span>, <abbr>e.g.</abbr>, "3:2") should be displayed and <span class="att">@num.visible</span> indicates the general presence of such a number.</p>
                         
                         <p>Further visual control comes with the <span class="att">@num.place</span> and <span class="att">@bracket.place</span> attributes, that allow specific placement of the number and the bracket <span class="val">above</span> or <span class="val">below</span> the staff.</p>
                         
@@ -3060,7 +3056,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e3886" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e3916" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3169,7 +3165,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e3957" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e3987" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3219,7 +3215,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e3990" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4020" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3259,7 +3255,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4016" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4046" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3275,7 +3271,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4024" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4054" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3291,7 +3287,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4032" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4062" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3308,7 +3304,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4040" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4070" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3330,8 +3326,8 @@
                               where arpeggiation is the usual method of performing chords and deviation from the
                               norm must be explicitly indicated.</p>
                            
-                           <p>Whereas an arpeggio ‘staggers’ the onset times of the notes of a chord, a glissando
-                              denotes a situation where the pitch ‘slides’ from one note to another. It makes no
+                           <p>Whereas an arpeggio "staggers" the onset times of the notes of a chord, a glissando
+                              denotes a situation where the pitch "slides" from one note to another. It makes no
                               difference whether this slide produces distinct intermediate pitches (as on the piano)
                               or not (as on the trombone), though the latter is sometimes referred to as portamento.
                               The visual appearance of a glissando, which MEI encodes as <a class="link_odd link_odd_elementSpec" href="../elements/gliss.html">&lt;gliss&gt;</a>, is normally a line connecting two notes in the glissando.</p>
@@ -3342,7 +3338,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4071" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4105" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3394,7 +3390,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4168" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4202" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3455,7 +3451,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4207" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4241" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3478,7 +3474,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4220" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4254" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3513,7 +3509,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4248" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4282" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3531,7 +3527,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4256" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4290" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3562,7 +3558,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4297" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4331" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3597,12 +3593,11 @@
                            
                            <h4 id="cmnFermata"><span class="headingNumber">2.3.5.4</span><span class="head">Fermata</span></h4>
                            
-                           <p>A very common feature of music notation from the CMN period is the so-called ‘fermata’
-                              (or ‘corona’ in Italian). It is usually written as a dot above or below an arc. It
-                              may stand above or below the staff it affects with its ‘open’ side usually facing
-                              towards the staff. A fermata indicates that a related note or rest should be held
-                              longer than its written duration would normally require. Sometimes, a fermata occurs
-                              over or under a bar line to indicate a pause or even the end of a phrase or section.</p>
+                           <p>A very common feature of music notation from the CMN period is the so-called <em>fermata</em> (or <em>corona</em> in Italian). It is usually written as a dot above or below an arc. It may stand above
+                              or below the staff it affects with its "open" side usually facing towards the staff.
+                              A fermata indicates that a related note or rest should be held longer than its written
+                              duration would normally require. Sometimes, a fermata occurs over or under a bar line
+                              to indicate a pause or even the end of a phrase or section.</p>
                            
                            <p>
                               
@@ -3622,7 +3617,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4368" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4411" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3645,7 +3640,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4414" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4457" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3660,7 +3655,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4422" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4465" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3685,7 +3680,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e4444.svg"><div id="d18e4444" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e4487.svg"><div id="d18e4487" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -3937,7 +3932,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4505" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e4548" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -3991,7 +3986,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4600" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4643" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4037,7 +4032,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4671" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4714" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4093,7 +4088,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4748" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4791" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4108,7 +4103,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4756" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e4799" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4146,7 +4141,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4792" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4835" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4197,7 +4192,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4847" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4890" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4252,7 +4247,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4870" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e4913" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4278,7 +4273,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e4898" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e4941" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -4404,7 +4399,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e4989" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5032" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4445,7 +4440,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5032" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5075" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4490,7 +4485,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5057" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5100" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4546,7 +4541,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5133" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5176" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4606,7 +4601,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5163" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5206" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4753,7 +4748,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e5276.svg"><div id="d18e5276" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e5319.svg"><div id="d18e5319" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -4845,7 +4840,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5303" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5346" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4975,7 +4970,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5416" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5459" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5011,7 +5006,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5442" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5485" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5047,9 +5042,8 @@
                            the key signature or the scale of the current key. When the ornament involves other
                            chromatic auxiliaries, an accidental is expressed next to or above the ornament sign.
                            The attributes <span class="att">@accidlower</span> and <span class="att">@accidupper</span>, available on all ornaments described in this chapter, can be used to record this
-                           accidental. The attribute values ‘upper’ and ‘lower’ indicate whether the accidental
-                           is associated with an upper or lower auxiliary note, not the position of the accidental
-                           sign.</p>
+                           accidental. The attribute values <span class="val">upper</span> and <span class="val">lower</span> indicate whether the accidental is associated with an upper or lower auxiliary note,
+                           not the position of the accidental sign.</p>
                         
                         <div class="div4">
                            
@@ -5068,7 +5062,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5481" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5528" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5181,7 +5175,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5561" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5608" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5222,7 +5216,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5584" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5631" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5308,7 +5302,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5628" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5675" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5358,7 +5352,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5657" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5704" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5424,7 +5418,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5690" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5737" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5464,7 +5458,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5723" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e5770" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5527,7 +5521,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5758" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5805" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5567,7 +5561,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5771" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5818" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5613,7 +5607,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5794" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5841" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5663,7 +5657,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5837" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5884" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5717,7 +5711,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e5850" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e5897" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5855,7 +5849,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5933" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e5980" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5901,7 +5895,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e5966" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e6013" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5964,7 +5958,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e6019" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e6066" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -6010,7 +6004,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e6074" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e6121" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -6063,7 +6057,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/0a5b48451600ace21e87f7073ece79c2c94f92ed" target="_blank" rel="noopener noreferrer">#0a5b484</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/4d3c485d4d27d8654616476169994b55279461f1" target="_blank" rel="noopener noreferrer">#4d3c485</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
