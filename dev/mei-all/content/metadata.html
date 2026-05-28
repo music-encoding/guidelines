@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-05-25">
+      <meta name="date" content="2026-05-28">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization integrating all aspects of MEI.">
@@ -7258,6 +7258,36 @@
                                  </div>
                                  </p>
                               
+                              <p>
+                                 <a class="link_odd link_odd_elementSpec" href="../elements/accMat.html">&lt;accMat&gt;</a> can be used to describe accompanying material that is physically or historically
+                                 closely associated with the described item, e.g., loose or bound-in documents, fragments,
+                                 later additions, inserts, or other non-contemporaneous materials kept with the source.
+                                 It is important to record enough detail to identify what the accompanying material
+                                 is and how it relates to the item (optionally including extent, content summary, dates,
+                                 provenance notes, etc.).
+                                 </p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e8990" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;accMat&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;p&gt;</span>Loose insert: 1 handwritten letter (20th c.) and 2 printed program leaves,
+                                                stored with the manuscript; not part of the original production.<span data-indentation="2" class="element">&lt;/p&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/accMat&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 116. Example of using <a class="link_odd link_odd_elementSpec" href="../elements/accMat.html">&lt;accMat&gt;</a></figcaption>
+                                 </figure>
+                                 </p>
+                              
                               <p>In documents (handwritten or printed) there can be various kinds of entries, additions,
                                  corrections, marginalia and revisions; all these interventions in the "original" manuscript
                                  can be documented under <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a>. However, it is important to understand that these are not additions to the musical
@@ -7266,15 +7296,14 @@
                                  usually indicated in the continuous text with an indication of the location within
                                  the document as well as the means of writing used. E.g. "Auf fol. 109v links mit Bleistift
                                  von Schindler „NB (Sch.) Hier fehlen 8 Takte (auch im Chor). jedoch die eine spätere
-                                 […]“" (see <a class="link_ref link_external" href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN756658373&amp;PHYSID=PHYS_0398&amp;DMDID=DMDLOG_0005">facsimile</a>).
-                                 </p>
+                                 […]“" (see <a class="link_ref link_external" href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN756658373&amp;PHYSID=PHYS_0398&amp;DMDID=DMDLOG_0005">facsimile</a>).</p>
                               
                               <p>This entry could be encoded as follows:</p>
                               
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e8999" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e9020" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -7288,7 +7317,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 116. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a></figcaption>
+                                    <figcaption class="figure-caption">Listing 117. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a></figcaption>
                                  </figure>
                                  </p>
                               
@@ -7297,7 +7326,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e9017" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e9037" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -7315,7 +7344,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 117. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with a little bit more structure</figcaption>
+                                    <figcaption class="figure-caption">Listing 118. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with a little bit more structure</figcaption>
                                  </figure>
                                  </p>
                               
@@ -7324,7 +7353,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e9053" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e9073" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -7344,7 +7373,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 118. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <span class="att">@hand</span> attribute</figcaption>
+                                    <figcaption class="figure-caption">Listing 119. Example of <a class="link_odd link_odd_elementSpec" href="../elements/addDesc.html">&lt;addDesc&gt;</a> with <a class="link_odd link_odd_elementSpec" href="../elements/add.html">&lt;add&gt;</a> and <span class="att">@hand</span> attribute</figcaption>
                                  </figure>
                                  </p>
                               
@@ -7354,7 +7383,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e9070" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e9091" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -7376,7 +7405,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 119. Separate <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> elements for structuring purposes</figcaption>
+                                    <figcaption class="figure-caption">Listing 120. Separate <a class="link_odd link_odd_elementSpec" href="../elements/annot.html">&lt;annot&gt;</a> elements for structuring purposes</figcaption>
                                  </figure>
                                  </p>
                               
@@ -7488,6 +7517,9 @@
                                     </div>
                                  </div>
                                  </p>
+                              
+                              <p>The <a class="link_odd link_odd_elementSpec" href="../elements/catchwords.html">&lt;catchwords&gt;</a> element is used to mark up (catch-)phrases that indicate the text on the following
+                                 page. This is common in librettos, e.g., G. F. Handel: Giulio Cesare in Egitto (<a class="link_ref link_external" href="https://archive.org/details/giuliocesareineg00hand/page/12/mode/2up">p. 12-13</a>) or printed music books, e.g., in Brasenose College UB/S III 18/1 (<a class="link_ref link_external" href="https://digital.bodleian.ox.ac.uk/objects/aeb0a34b-c27c-47be-a69c-1ff818810e50/surfaces/25cf11f5-65fe-40ea-9925-4ec5eb6448c4/">fol. B1r</a>).</p>
                               </div>
                            </div>
                         </div>
@@ -7785,7 +7817,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e9300" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9332" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -7824,7 +7856,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 120. Example of <a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 121. Example of <a class="link_odd link_odd_elementSpec" href="../elements/repository.html">&lt;repository&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -7967,7 +7999,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e9456" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9488" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -7990,7 +8022,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 121. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a></figcaption>
+                              <figcaption class="figure-caption">Listing 122. Example of <a class="link_odd link_odd_elementSpec" href="../elements/extMeta.html">&lt;extMeta&gt;</a></figcaption>
                            </figure>
                            </p>
                         
@@ -8031,7 +8063,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e9490" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9522" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -8061,7 +8093,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 122. Minimal Header Information</figcaption>
+                              <figcaption class="figure-caption">Listing 123. Minimal Header Information</figcaption>
                            </figure>
                            </p>
                         
@@ -8085,7 +8117,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e9540" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e9572" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -8204,7 +8236,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 123. Recommended Header Information</figcaption>
+                              <figcaption class="figure-caption">Listing 124. Recommended Header Information</figcaption>
                            </figure>
                            </p>
                         </div>
@@ -8292,7 +8324,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e9631" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e9663" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -8335,7 +8367,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 124. Example of <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a></figcaption>
+                                 <figcaption class="figure-caption">Listing 125. Example of <a class="link_odd link_odd_elementSpec" href="../elements/meiCorpus.html">&lt;meiCorpus&gt;</a></figcaption>
                               </figure>
                               </p>
                            
@@ -8393,7 +8425,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e9696" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e9728" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -8476,7 +8508,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 125. Combination of Corpus and Text Headers</figcaption>
+                                 <figcaption class="figure-caption">Listing 126. Combination of Corpus and Text Headers</figcaption>
                               </figure>
                               </p>
                            </div>
@@ -8517,7 +8549,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/56d2fe786e2bdafcf88d598592b50018d65bdac7" target="_blank" rel="noopener noreferrer">#56d2fe7</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/cf5c04dd88138165f3fcdbfed36c5b2bb8751fbb" target="_blank" rel="noopener noreferrer">#cf5c04d</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
