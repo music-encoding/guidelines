@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-06-24">
+      <meta name="date" content="2026-06-25">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding Common Music Notation (CMN).">
@@ -2057,6 +2057,17 @@
                            </figure>
                            </p>
                         
+                        <p>Another way of notating beams is to use the <span class="att">@beam</span> attribute found on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/rest.html">&lt;rest&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/space.html">&lt;space&gt;</a> elements. This attribute allows three values:</p>
+                        
+                        <p class="gloss"><strong><span>i (initial)</span></strong>:
+                           Marks the start of a beam</p>
+                        <p class="gloss"><strong><span>m (medial)</span></strong>:
+                           Marks a participant in a beam other than the first or last</p>
+                        <p class="gloss"><strong><span>t (terminal)</span></strong>:
+                           Marks the end of a beam</p>
+                        
+                        <p>Although <span class="att">@beam</span> can be used for rendering beams, <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">&lt;beam&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">&lt;beamSpan&gt;</a> is preferred over <span class="att">@beam</span> in most cases. However, because it makes beaming a <em class="mentioned">property</em> of a note, chord, rest, or space rather than an <em class="mentioned">entity</em> in its own right, <span class="att">@beam</span> can provide a flatter structure that simplifies analytical tasks.</p>
+                        
                         <p>In addition to the explicit encoding of beams accommodated by the <a class="link_odd link_odd_elementSpec" href="../elements/beam.html">&lt;beam&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/beamSpan.html">&lt;beamSpan&gt;</a> elements and the <span class="att">@beam</span> attribute, MEI allows for specification of default beaming behavior using the following
                            attributes on <a class="link_odd link_odd_elementSpec" href="../elements/scoreDef.html">&lt;scoreDef&gt;</a>, <a class="link_odd link_odd_elementSpec" href="../elements/staffDef.html">&lt;staffDef&gt;</a>, and <a class="link_odd link_odd_elementSpec" href="../elements/layerDef.html">&lt;layerDef&gt;</a>:</p>
                         
@@ -2097,7 +2108,7 @@
                         <p>In MEI, ties can be encoded in different ways, depending on the level of detail that
                            the encoder wants to preserve. The simplest solution is to use the <span class="att">@tie</span> attribute found on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. 
                            <figure class="figure specPage">
-                              <div id="d18e11613" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11667" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2135,7 +2146,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11664" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11718" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2219,7 +2230,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11680" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11734" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2261,7 +2272,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11694" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11748" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2315,7 +2326,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11738" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11792" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2348,7 +2359,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11757" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11811" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2388,7 +2399,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11773" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11827" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2434,7 +2445,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11791" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11845" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2494,7 +2505,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11848" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11902" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2537,7 +2548,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11871" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11925" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2558,7 +2569,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11887" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11941" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2601,7 +2612,7 @@
                            information in human language, possibly in an abbreviated form. An example is the
                            word <em>piano</em>, indicating a quiet volume, often abbreviated as <em>p</em>. In MEI, verbal instructions like this are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> element from the Shared module (see chapter <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">B2 Shared Concepts in MEI</a>): 
                            <figure class="figure specPage">
-                              <div id="d18e11987" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e12041" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2622,7 +2633,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12024" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12078" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2642,7 +2653,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12041" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12095" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2667,7 +2678,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12057" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12111" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2688,7 +2699,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12081" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12135" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2713,7 +2724,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12102" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e12156" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2764,7 +2775,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12132" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12186" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2780,7 +2791,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12140" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12194" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2803,7 +2814,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12171" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12225" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2819,7 +2830,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12179" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12233" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2835,7 +2846,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12187" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12241" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2851,7 +2862,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12195" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12249" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2872,7 +2883,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12217" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12271" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2897,7 +2908,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12256" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e12310" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2918,7 +2929,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12274" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12328" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2944,7 +2955,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12306" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12360" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2980,7 +2991,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12357" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12411" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3008,7 +3019,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12376" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12430" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3064,7 +3075,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12499" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12553" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3176,7 +3187,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12570" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12624" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3226,7 +3237,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12603" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12657" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3266,7 +3277,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12629" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12683" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3282,7 +3293,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12637" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12691" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3298,7 +3309,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12645" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12699" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3315,7 +3326,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12653" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12707" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3349,7 +3360,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12688" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12742" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3401,7 +3412,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12785" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12839" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3462,7 +3473,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12824" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12878" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3485,7 +3496,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12837" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12891" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3520,7 +3531,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12865" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12919" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3538,7 +3549,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12873" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12927" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3569,7 +3580,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12914" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12968" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3628,7 +3639,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12994" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13048" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3651,7 +3662,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13040" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13094" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3666,7 +3677,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13048" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13102" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3691,7 +3702,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13070.svg"><div id="d18e13070" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13124.svg"><div id="d18e13124" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -3943,7 +3954,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13131" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13185" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -3997,7 +4008,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13226" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13280" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4043,7 +4054,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13297" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13351" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4099,7 +4110,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13374" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13428" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4114,7 +4125,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13382" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13436" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4152,7 +4163,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13418" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13472" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4203,7 +4214,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13473" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13527" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4258,7 +4269,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13496" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13550" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4284,7 +4295,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13524" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e13578" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -4410,7 +4421,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13615" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13669" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4451,7 +4462,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13658" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13712" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4496,7 +4507,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13683" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13737" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4552,7 +4563,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13759" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13813" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4612,7 +4623,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13789" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13843" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4760,7 +4771,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13902.svg"><div id="d18e13902" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13956.svg"><div id="d18e13956" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -4852,7 +4863,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13929" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13983" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4982,7 +4993,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14042" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14096" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5018,7 +5029,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14068" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14122" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5074,7 +5085,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14111" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14165" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5187,7 +5198,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14191" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14245" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5228,7 +5239,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14214" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14268" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5314,7 +5325,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14258" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14312" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5364,7 +5375,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14287" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14341" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5430,7 +5441,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14320" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14374" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5470,7 +5481,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14353" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14407" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5533,7 +5544,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14388" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14442" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5573,7 +5584,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14401" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14455" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5619,7 +5630,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14424" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14478" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5669,7 +5680,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14467" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14521" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5723,7 +5734,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14480" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14534" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5861,7 +5872,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14563" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14617" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5907,7 +5918,7 @@
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14596" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14650" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5970,7 +5981,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14649" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14703" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -6016,7 +6027,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14704" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14758" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -6069,7 +6080,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f3366bdaba8c8fa1440d4652640ad271e401e4d7" target="_blank" rel="noopener noreferrer">#f3366bd</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/ac492c9b2e1f6a64247aadfadac381555d35defc" target="_blank" rel="noopener noreferrer">#ac492c9</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
