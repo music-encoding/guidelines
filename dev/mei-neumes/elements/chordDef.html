@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-07-24">
+      <meta name="date" content="2026-08-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding neume notation.">
@@ -36,7 +36,8 @@
                <section class="specPage elementSpec">
                   <h2 id="chordDef">&lt;chordDef&gt;</h2>
                   <div class="specs">
-                     <div class="desc">(chord definition) – Chord tablature definition.
+                     <div class="desc">(chord definition) – Complements <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> with a more detailed description of
+                        the notes in a chord. Can describe chord tablature grids.
                         <div class="chapterLinksBox"><a class="chapterLink" href="../content/analysisharm.html#harmonyMetadataInscoreDef" title="8.2.1.1 Interpreted Chord Data in scoreDef">8.2.1.1 Interpreted Chord Data in scoreDef</a>, <a class="chapterLink" href="../content/analysisharm.html#harmonyTablatureGrids" title="8.2.1.2 Chord Tablature Grids">8.2.1.2 Chord Tablature Grids</a></div>
                      </div>
                      <div id="module" class="facet module">
@@ -432,7 +433,9 @@
                         <div class="statement declaration">
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
                                  <div class="indent indent1"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">xmlns=</span><span class="attributevalue">"http://www.tei-c.org/ns/1.0"</span> <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"chordDef"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.harmony"</span>&gt;</span><div class="indent indent2"><span data-indentation="2" class="element">&lt;gloss <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>chord definition<span data-indentation="2" class="element">&lt;/gloss&gt;</span></div>
-                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Chord tablature definition.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Complements 
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>harm<span data-indentation="3" class="element">&lt;/gi&gt;</span></div> with a more detailed description of
+                                       the notes in a chord. Can describe chord tablature grids.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a>"</span>/&gt;</span></div>
@@ -465,7 +468,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/86ac5788713b38bb5f48bb4464eb372f7b44b697" target="_blank" rel="noopener noreferrer">#86ac578</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/34e82b155d55ae0bc0159ffefe2050ac992e931d" target="_blank" rel="noopener noreferrer">#34e82b1</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-07-24">
+      <meta name="date" content="2026-08-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
@@ -50,23 +50,20 @@
                               <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use '%all' when the feature should occur in every part.">@part</span>, <span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use '%all' when the feature should occur on every staff.">@partstaff</span></div>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use 'all' when the feature should occur in every part or 'none' when the feature should not appear in any part.">@part</span>, <span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use 'all' when the feature should occur on every staff.">@partstaff</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use '%all' when the feature should occur in every part.">@part</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the part in which the current feature should appear. Use '%all' when the
-                                       feature should occur in every part.</span><span class="attributeValues">
-                                       One or more values of datatype <span style="font-weight: 500;">
-                                          a string matching the following regular expression: "(%all|#[\i][\c]+)"
-                                          </span>, separated by spaces.
+                                 <div class="desc"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use 'all' when the feature should occur in every part or 'none' when the feature should not appear in any part.">@part</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the part in which the current feature should appear. Use 'all' when the
+                                       feature
+                                       should occur in every part or 'none' when the feature should not appear in any part.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PART.html">data.PART</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.partIdent&gt;</span><span class="step">direct children</span><span class="step end">@part</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use '%all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                                 <div class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use 'all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use 'all' when the
                                        feature should occur on every staff.</span><span class="attributeValues">
-                                       One or more values of datatype <span style="font-weight: 500;">
-                                          a string matching the following regular expression: "(%all|\d+(-\d+)?)"
-                                          </span>, separated by spaces.
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>, separated by spaces.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.partIdent&gt;</span><span class="step">direct children</span><span class="step end">@partstaff</span></div>
                               </div>
@@ -75,17 +72,14 @@
                               <div class="classBox" title="direct children">
                                  <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use '%all' when the feature should occur in every part.">@part</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the part in which the current feature should appear. Use '%all' when the
-                                             feature should occur in every part.</span><span class="attributeValues">
-                                             One or more values of datatype <span style="font-weight: 500;">
-                                                a string matching the following regular expression: "(%all|#[\i][\c]+)"
-                                                </span>, separated by spaces.
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use 'all' when the feature should occur in every part or 'none' when the feature should not appear in any part.">@part</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the part in which the current feature should appear. Use 'all' when the
+                                             feature
+                                             should occur in every part or 'none' when the feature should not appear in any part.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PART.html">data.PART</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use '%all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use 'all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use 'all' when the
                                              feature should occur on every staff.</span><span class="attributeValues">
-                                             One or more values of datatype <span style="font-weight: 500;">
-                                                a string matching the following regular expression: "(%all|\d+(-\d+)?)"
-                                                </span>, separated by spaces.
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>, separated by spaces.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -94,17 +88,14 @@
                               <div class="classBox" title="MEI.shared">
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use '%all' when the feature should occur in every part.">@part</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the part in which the current feature should appear. Use '%all' when the
-                                             feature should occur in every part.</span><span class="attributeValues">
-                                             One or more values of datatype <span style="font-weight: 500;">
-                                                a string matching the following regular expression: "(%all|#[\i][\c]+)"
-                                                </span>, separated by spaces.
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use 'all' when the feature should occur in every part or 'none' when the feature should not appear in any part.">@part</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the part in which the current feature should appear. Use 'all' when the
+                                             feature
+                                             should occur in every part or 'none' when the feature should not appear in any part.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PART.html">data.PART</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use '%all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use 'all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use 'all' when the
                                              feature should occur on every staff.</span><span class="attributeValues">
-                                             One or more values of datatype <span style="font-weight: 500;">
-                                                a string matching the following regular expression: "(%all|\d+(-\d+)?)"
-                                                </span>, separated by spaces.
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>, separated by spaces.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -393,10 +384,7 @@
                         <div class="statement constraints">
                            <p>
                               <div class="constraint">
-                                 <div class="schematronText">'%all' cannot be mixed with other values.</div>
-                              </div>
-                              <div class="constraint">
-                                 <div class="schematronText">'%all' cannot be mixed with other values.</div>
+                                 <div class="schematronText">'all' cannot be mixed with other values.</div>
                               </div>
                            </p>
                         </div>
@@ -413,50 +401,33 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"part"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Indicates the part in which the current feature should appear. Use '%all' when the
-                                             feature should occur in every part.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Indicates the part in which the current feature should appear. Use 'all' when the
+                                             feature
+                                             should occur in every part or 'none' when the feature should not appear in any part.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
-                                                
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>(%all|#[\i][\c]+)<span data-indentation="6" class="element">&lt;/rng:param&gt;</span></div>
-                                                <span data-indentation="5" class="element">&lt;/rng:data&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.PART.html">data.PART</a>"</span>/&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
-                                          
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_part_attr_all"</span> <span class="attribute">scheme=</span><span class="attributevalue">"schematron"</span>&gt;</span>
-                                             
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;constraint&gt;</span>
-                                                
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@part[some $i in tokenize(., '\s+') satisfies (matches($i, '^%all$'))]"</span>&gt;</span>
-                                                   
-                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(tokenize(., '\s+')) = 1"</span>&gt;</span>'%all' cannot be mixed with other
-                                                      values.<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
-                                                   <span data-indentation="6" class="element">&lt;/sch:rule&gt;</span></div>
-                                                <span data-indentation="5" class="element">&lt;/constraint&gt;</span></div>
-                                             <span data-indentation="4" class="element">&lt;/constraintSpec&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"partstaff"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Signifies the part staff on which a notated feature occurs. Use 'all' when the
                                              feature should occur on every staff.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
-                                                
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>(%all|\d+(-\d+)?)<span data-indentation="6" class="element">&lt;/rng:param&gt;</span></div>
-                                                <span data-indentation="5" class="element">&lt;/rng:data&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;ref <span class="attribute">name=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>"</span>/&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_partstaff_attr_all"</span> <span class="attribute">scheme=</span><span class="attributevalue">"schematron"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;constraint&gt;</span>
                                                 
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@partstaff[some $i in tokenize(., '\s+') satisfies (matches($i, '^%all$'))]"</span>&gt;</span>
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@partstaff[some $i in tokenize(., '\s+') satisfies (matches($i, '^all$'))]"</span>&gt;</span>
                                                    
-                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(tokenize(., '\s+')) = 1"</span>&gt;</span>'%all' cannot be mixed with other
+                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(tokenize(., '\s+')) = 1"</span>&gt;</span>'all' cannot be mixed with other
                                                       values.<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
                                                    <span data-indentation="6" class="element">&lt;/sch:rule&gt;</span></div>
                                                 <span data-indentation="5" class="element">&lt;/constraint&gt;</span></div>
@@ -470,7 +441,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/86ac5788713b38bb5f48bb4464eb372f7b44b697" target="_blank" rel="noopener noreferrer">#86ac578</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/34e82b155d55ae0bc0159ffefe2050ac992e931d" target="_blank" rel="noopener noreferrer">#34e82b1</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

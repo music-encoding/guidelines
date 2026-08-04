@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-07-24">
+      <meta name="date" content="2026-08-04">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding mensural notation, both black and white.">
@@ -780,7 +780,8 @@
                                  </div>
                                  <div class="tile-content">
                                     <div class="tile-title"><span class="specList-elementSpec"><a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a></span></div>
-                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Chord tablature definition.</span></div>
+                                    <div class="tile-subtitle text-gray"><span class="specList-elementSpec-desc">Complements <a class="link_odd link_odd_elementSpec" href="#harm">&lt;harm&gt;</a> with a more detailed description of
+                                          the notes in a chord. Can describe chord tablature grids.</span></div>
                                  </div>
                               </div>
                               <div class="tile tile-centered">
@@ -817,11 +818,10 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">@tab.fing</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
+                                    <div class="tile-title"><span class="att">@tab.fret</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
                                        </div>
-                                    <div class="tile-subtitle text-gray">This attribute is deprecated and will be removed in a future version. Indicates which
-                                       finger, if any, should be used to play an individual string. The index, middle, ring,
-                                       and little fingers are represented by the values 1-4, while <span class="val">t</span> is for the thumb. The values <span class="val">x</span> and <span class="val">o</span> indicate muffled and open strings, respectively.</div>
+                                    <div class="tile-subtitle text-gray">Records the location at which a string should be stopped against a fret. The value
+                                       <span class="val">0</span> (zero) indicates the open string. The value <span class="val">omit</span> indicates an omitted string that does not sound.</div>
                                  </div>
                               </div>
                               <div class="tile tile-centered">
@@ -829,9 +829,19 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">@tab.fret</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
+                                    <div class="tile-title"><span class="att">@tab.course</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.stringtab.html">att.stringtab</a>)
                                        </div>
-                                    <div class="tile-subtitle text-gray">Records the location at which a string should be stopped against a fret.</div>
+                                    <div class="tile-subtitle text-gray">Records which course is to be played.</div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@finger</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.fing.finger.html">att.fing.finger</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray"></div>
                                  </div>
                               </div>
                               <div class="tile tile-centered">
@@ -848,11 +858,9 @@
                                     <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
                                  </div>
                                  <div class="tile-content">
-                                    <div class="tile-title"><span class="att">@fret</span> (<a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a>)
+                                    <div class="tile-title"><span class="att">@tab.fret</span> (<a class="link_odd link_odd_elementSpec" href="../elements/barre.html">barre</a>)
                                        </div>
-                                    <div class="tile-subtitle text-gray">This attribute is deprecated in favor of <span class="att">@tab.fret</span>, and will be removed in a future version. Records the location at which the strings
-                                       should be stopped against a fret in a fretboard diagram. This may or may not be the
-                                       same as the actual location on the fretboard of the instrument in performance.</div>
+                                    <div class="tile-subtitle text-gray"></div>
                                  </div>
                               </div>
                               </p>
@@ -876,7 +884,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e15419" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e15421" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -914,7 +922,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e15432" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e15434" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -949,7 +957,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e15449" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e15451" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -976,12 +984,11 @@
                            
                            <h4 id="harmonyTablatureGrids"><span class="headingNumber">8.2.1.2</span><span class="head">Chord Tablature Grids</span></h4>
                            
-                           <p>The <span class="att">@pos</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a>, the <span class="att">@fing</span> and <span class="att">@fret</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a>, and the <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> element child of <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> are provided in order to create displayable and performable chord tablature grids
+                           <p>The <span class="att">@tab.pos</span> attribute on <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a>, the <span class="att">@tab.course</span>, <span class="att">@tab.fret</span> and <span class="att">@finger</span> attributes on <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a>, and the <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> element child of <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> are provided in order to create displayable and performable chord tablature grids
                               for guitar and other fretted string instruments. The fret at which a finger should
-                              be placed is recorded in the <span class="att">@fret</span> attribute, while <span class="att">@fing</span> indicates which finger, if any, should be used to play an individual string. The
-                              values x and o are used to indicate muffled and open strings, respectively.</p>
+                              be placed is recorded in the <span class="att">@tab.fret</span> attribute, while <span class="att">@finger</span> indicates which finger, if any, should be used to play an individual string.</p>
                            
-                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> sub-elements when a single finger is used to stop multiple strings. Here the <span class="att">@fret</span> attribute gives the fret position at which the barre should be created, while the
+                           <p>The <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> element may contain <a class="link_odd link_odd_elementSpec" href="../elements/barre.html">&lt;barre&gt;</a> sub-elements when a single finger is used to stop multiple strings. Here the <span class="att">@tab.fret</span> attribute gives the fret position at which the barre should be created, while the
                               <span class="att">@startid</span> and <span class="att">@endid</span> attributes are used to indicate the <a class="link_odd link_odd_elementSpec" href="../elements/chordMember.html">&lt;chordMember&gt;</a> elements on which the barre starts and finishes.</p>
                            </div>
                         
@@ -1021,7 +1028,7 @@
                            
                            <p>The <a class="link_odd link_odd_elementSpec" href="../elements/harm.html">&lt;harm&gt;</a> element can be used to capture chord labels that consist entirely of text: 
                               <figure class="figure specPage">
-                                 <div id="d18e15537" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e15541" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1049,7 +1056,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e15558" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e15562" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1072,7 +1079,7 @@
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e15578" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e15582" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -1139,7 +1146,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15647" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15651" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1161,7 +1168,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15661" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15665" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1192,7 +1199,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15681" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15685" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1226,7 +1233,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15708" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15712" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1250,7 +1257,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15723" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15727" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1285,7 +1292,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15748" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15752" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1322,7 +1329,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15773" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15777" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1370,7 +1377,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15793" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15797" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1403,7 +1410,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15814" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15818" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1458,7 +1465,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15830" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15834" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1515,7 +1522,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15858" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15862" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1558,7 +1565,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15866" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15870" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1580,7 +1587,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15874" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15878" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1602,7 +1609,7 @@
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e15882" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e15886" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1630,7 +1637,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/86ac5788713b38bb5f48bb4464eb372f7b44b697" target="_blank" rel="noopener noreferrer">#86ac578</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/34e82b155d55ae0bc0159ffefe2050ac992e931d" target="_blank" rel="noopener noreferrer">#34e82b1</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
