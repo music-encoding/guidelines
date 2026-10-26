@@ -1456,9 +1456,56 @@
                                  </p>
                               </div>
                            
-                           <div class="">
+                           <div class="div5">
                               
-                              <h5 id="cmn-clusters"><span class="headingNumber">4.2.5.2.3</span><span class="head">Note Clusters</span></h5>
+                              <h5 id="cmnChordsSplitStems"><span class="headingNumber">4.2.5.2.3</span><span class="head">Split Stems</span></h5>
+                              
+                              <p>In some more modern cases, a chord may have a split stem, where the notes of the chord
+                                 are divided into two groups, each with its own stem. This is often necessary when
+                                 two notes sharing the same diatonic pitch have different accidentals. In MEI, this
+                                 can be represented by using <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a> elements, where single notes carry a <span class="att">@stem.split</span> attribute to indicate the direction of the stem.</p>
+                              
+                              <p>In the following example from <a class="link_ref link_external" href="https://en.wikipedia.org/wiki/B%C3%A9la_Bart%C3%B3k">Béla Bartók’s</a>
+                                 <em>Mikrokosmos</em>, Sz.107 the chords in the right hand may be encoded as follows.</p>
+                              
+                              
+                              <p>
+                                 
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/stemsplit.png"><figcaption class="figure-caption">Figure 15. A chord with a split stem</figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              <p>
+                                 
+                                 <figure class="figure specPage">
+                                    <div id="d18e11034" xml:space="preserve" class="pre code egXML_feasible">
+                                       <code>
+                                          
+                                          
+                                          <div class="indent indent1"><span data-indentation="1" class="element">&lt;chord <span class="attribute">dur=</span><span class="attributevalue">"8"</span>&gt;</span>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">accid=</span><span class="attributevalue">"n"</span> <span class="attribute">stem.split=</span><span class="attributevalue">"right"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"b"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;note <span class="attribute">pname=</span><span class="attributevalue">"a"</span> <span class="attribute">oct=</span><span class="attributevalue">"3"</span> <span class="attribute">accid=</span><span class="attributevalue">"f"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent2"><span data-indentation="2" class="element">&lt;artic <span class="attribute">artic=</span><span class="attributevalue">"staccato"</span>/&gt;</span></div>
+                                             <span data-indentation="1" class="element">&lt;/chord&gt;</span></div>
+                                          
+                                          
+                                          </code>
+                                       
+                                       </div>
+                                    <figcaption class="figure-caption">Listing 144. </figcaption>
+                                 </figure>
+                                 </p>
+                              
+                              </div>
+                           
+                           <div class="div5">
+                              
+                              <h5 id="cmnChordsClusters"><span class="headingNumber">4.2.5.2.4</span><span class="head">Note Clusters</span></h5>
                               
                               <p>A <span class="term">tone cluster</span> is a musical chord comprised of adjacent musical steps played simultaneously. In
                                  MEI, clusters can be represented to capture both their underlying harmonic meaning
@@ -1482,7 +1529,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e11045" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e11089" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1497,7 +1544,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 144. A cluster on white keys only</figcaption>
+                                    <figcaption class="figure-caption">Listing 145. A cluster on white keys only</figcaption>
                                  </figure>
                                  </p>
                               
@@ -1505,7 +1552,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e11057" xml:space="preserve" class="pre code egXML_feasible">
+                                    <div id="d18e11101" xml:space="preserve" class="pre code egXML_feasible">
                                        <code>
                                           
                                           
@@ -1520,7 +1567,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 145. A chromatic cluster</figcaption>
+                                    <figcaption class="figure-caption">Listing 146. A chromatic cluster</figcaption>
                                  </figure>
                                  </p>
                               
@@ -1581,7 +1628,7 @@
                               <p>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e11126" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e11170" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1598,7 +1645,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 146. </figcaption>
+                                    <figcaption class="figure-caption">Listing 147. </figcaption>
                                  </figure>
                                  </p>
                               
@@ -1617,11 +1664,11 @@
                               
                               <p>
                                  
-                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/multirest.png"><figcaption class="figure-caption">Figure 15. Forms of multiple measure rests</figcaption>
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/multirest.png"><figcaption class="figure-caption">Figure 16. Forms of multiple measure rests</figcaption>
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e11181" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e11225" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1638,7 +1685,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 147. </figcaption>
+                                    <figcaption class="figure-caption">Listing 148. </figcaption>
                                  </figure>
                                  </p>
                               </div>
@@ -1652,11 +1699,11 @@
                               
                               <p>
                                  
-                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/mspace.1.png"><figcaption class="figure-caption">Figure 16. Empty measure</figcaption>
+                                 <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/mspace.1.png"><figcaption class="figure-caption">Figure 17. Empty measure</figcaption>
                                  </figure>
                                  
                                  <figure class="figure specPage">
-                                    <div id="d18e11217" xml:space="preserve" class="pre code egXML_valid">
+                                    <div id="d18e11261" xml:space="preserve" class="pre code egXML_valid">
                                        <code>
                                           
                                           
@@ -1676,7 +1723,7 @@
                                           </code>
                                        
                                        </div>
-                                    <figcaption class="figure-caption">Listing 148. </figcaption>
+                                    <figcaption class="figure-caption">Listing 149. </figcaption>
                                  </figure>
                                  </p>
                               </div>
@@ -1762,7 +1809,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11330" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11374" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1781,7 +1828,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 149. </figcaption>
+                              <figcaption class="figure-caption">Listing 150. </figcaption>
                            </figure>
                            </p>
                         
@@ -1793,7 +1840,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11344" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11388" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1822,7 +1869,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 150. </figcaption>
+                              <figcaption class="figure-caption">Listing 151. </figcaption>
                            </figure>
                            </p>
                         
@@ -1831,11 +1878,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beam-a-20100510.png"><figcaption class="figure-caption">Figure 17. Primary and secondary beams</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beam-a-20100510.png"><figcaption class="figure-caption">Figure 18. Primary and secondary beams</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11378" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11422" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1871,7 +1918,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 151. </figcaption>
+                              <figcaption class="figure-caption">Listing 152. </figcaption>
                            </figure>
                            </p>
                         
@@ -1892,7 +1939,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11417" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11461" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1923,7 +1970,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 152. </figcaption>
+                              <figcaption class="figure-caption">Listing 153. </figcaption>
                            </figure>
                            </p>
                         
@@ -1934,11 +1981,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/beamAcc-Rit.png"><figcaption class="figure-caption">Figure 18. Feathered beaming</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/beamAcc-Rit.png"><figcaption class="figure-caption">Figure 19. Feathered beaming</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11448" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11492" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -1986,13 +2033,13 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 153. </figcaption>
+                              <figcaption class="figure-caption">Listing 154. </figcaption>
                            </figure>
                            </p>
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/cross-staff.1.png"><figcaption class="figure-caption">Figure 19. Two measures from No. 4 of Moszkowski’s 12 Pianoforte Studies for the left
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/cross-staff.1.png"><figcaption class="figure-caption">Figure 20. Two measures from No. 4 of Moszkowski’s 12 Pianoforte Studies for the left
                                  hand</figcaption>
                            </figure>
                            </p>
@@ -2007,7 +2054,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11489" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11533" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2037,7 +2084,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 154. </figcaption>
+                              <figcaption class="figure-caption">Listing 155. </figcaption>
                            </figure>
                            </p>
                         
@@ -2051,7 +2098,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11512" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11556" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2093,7 +2140,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 155. </figcaption>
+                              <figcaption class="figure-caption">Listing 156. </figcaption>
                            </figure>
                            </p>
                         
@@ -2108,11 +2155,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beamspan.1.png"><figcaption class="figure-caption">Figure 20. Cross-measure beam in the third movement of Schulhoff’s Sonata</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beamspan.1.png"><figcaption class="figure-caption">Figure 21. Cross-measure beam in the third movement of Schulhoff’s Sonata</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11562" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e11606" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2123,7 +2170,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 156. </figcaption>
+                              <figcaption class="figure-caption">Listing 157. </figcaption>
                            </figure>
                            </p>
                         
@@ -2178,7 +2225,7 @@
                         <p>In MEI, ties can be encoded in different ways, depending on the level of detail that
                            the encoder wants to preserve. The simplest solution is to use the <span class="att">@tie</span> attribute found on <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> and <a class="link_odd link_odd_elementSpec" href="../elements/chord.html">&lt;chord&gt;</a>. 
                            <figure class="figure specPage">
-                              <div id="d18e11722" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11766" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2194,7 +2241,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 157. </figcaption>
+                              <figcaption class="figure-caption">Listing 158. </figcaption>
                            </figure>
                            </p>
                         
@@ -2212,11 +2259,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/finger-300.png"><figcaption class="figure-caption">Figure 21. Ties across bar lines</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/finger-300.png"><figcaption class="figure-caption">Figure 22. Ties across bar lines</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11773" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11817" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2289,7 +2336,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 158. </figcaption>
+                              <figcaption class="figure-caption">Listing 159. </figcaption>
                            </figure>
                            </p>
                         
@@ -2300,7 +2347,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11789" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11833" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2333,7 +2380,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 159. </figcaption>
+                              <figcaption class="figure-caption">Listing 160. </figcaption>
                            </figure>
                            </p>
                         
@@ -2342,7 +2389,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11803" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11847" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2375,7 +2422,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 160. </figcaption>
+                              <figcaption class="figure-caption">Listing 161. </figcaption>
                            </figure>
                            </p>
                         
@@ -2386,7 +2433,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/slur-300-20100514.png"><figcaption class="figure-caption">Figure 22. Slurs</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/slur-300-20100514.png"><figcaption class="figure-caption">Figure 23. Slurs</figcaption>
                            </figure>
                            </p>
                         
@@ -2396,7 +2443,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11847" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11891" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2414,7 +2461,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 161. </figcaption>
+                              <figcaption class="figure-caption">Listing 162. </figcaption>
                            </figure>
                            </p>
                         
@@ -2429,7 +2476,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11866" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11910" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2459,7 +2506,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 162. </figcaption>
+                              <figcaption class="figure-caption">Listing 163. </figcaption>
                            </figure>
                            </p>
                         
@@ -2469,7 +2516,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11882" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11926" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2499,7 +2546,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 163. </figcaption>
+                              <figcaption class="figure-caption">Listing 164. </figcaption>
                            </figure>
                            </p>
                         
@@ -2515,7 +2562,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11900" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e11944" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2551,7 +2598,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 164. </figcaption>
+                              <figcaption class="figure-caption">Listing 165. </figcaption>
                            </figure>
                            </p>
                         
@@ -2575,7 +2622,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11957" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12001" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2607,7 +2654,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 165. </figcaption>
+                              <figcaption class="figure-caption">Listing 166. </figcaption>
                            </figure>
                            </p>
                         
@@ -2618,7 +2665,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11980" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12024" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2629,7 +2676,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 166. </figcaption>
+                              <figcaption class="figure-caption">Listing 167. </figcaption>
                            </figure>
                            </p>
                         
@@ -2639,7 +2686,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e11996" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12040" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -2650,7 +2697,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 167. </figcaption>
+                              <figcaption class="figure-caption">Listing 168. </figcaption>
                            </figure>
                            </p>
                         
@@ -2682,7 +2729,7 @@
                            information in human language, possibly in an abbreviated form. An example is the
                            word <em>piano</em>, indicating a quiet volume, often abbreviated as <em>p</em>. In MEI, verbal instructions like this are encoded using the <a class="link_odd link_odd_elementSpec" href="../elements/dynam.html">&lt;dynam&gt;</a> element from the Shared module (see chapter <a class="link_ptr chapterLink" title="Shared Concepts in MEI" href="../content/shared.html">B2 Shared Concepts in MEI</a>): 
                            <figure class="figure specPage">
-                              <div id="d18e12096" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e12140" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2693,7 +2740,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 168. </figcaption>
+                              <figcaption class="figure-caption">Listing 169. </figcaption>
                            </figure>
                            </p>
                         
@@ -2703,7 +2750,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12133" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12177" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2714,7 +2761,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 169. </figcaption>
+                              <figcaption class="figure-caption">Listing 170. </figcaption>
                            </figure>
                            </p>
                         
@@ -2723,7 +2770,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12150" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12194" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2739,7 +2786,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 170. </figcaption>
+                              <figcaption class="figure-caption">Listing 171. </figcaption>
                            </figure>
                            </p>
                         
@@ -2748,7 +2795,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12166" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12210" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2759,7 +2806,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 171. </figcaption>
+                              <figcaption class="figure-caption">Listing 172. </figcaption>
                            </figure>
                            </p>
                         
@@ -2769,7 +2816,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12190" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12234" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2783,7 +2830,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 172. </figcaption>
+                              <figcaption class="figure-caption">Listing 173. </figcaption>
                            </figure>
                            </p>
                         
@@ -2794,7 +2841,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12211" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e12255" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2830,7 +2877,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 173. </figcaption>
+                              <figcaption class="figure-caption">Listing 174. </figcaption>
                            </figure>
                            </p>
                         
@@ -2845,7 +2892,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12241" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12285" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2857,11 +2904,11 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 174. </figcaption>
+                              <figcaption class="figure-caption">Listing 175. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12249" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12293" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2873,7 +2920,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 175. </figcaption>
+                              <figcaption class="figure-caption">Listing 176. </figcaption>
                            </figure>
                            </p>
                         
@@ -2884,7 +2931,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12280" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12324" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2896,11 +2943,11 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 176. </figcaption>
+                              <figcaption class="figure-caption">Listing 177. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12288" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12332" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2912,11 +2959,11 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 177. </figcaption>
+                              <figcaption class="figure-caption">Listing 178. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12296" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12340" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2928,11 +2975,11 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 178. </figcaption>
+                              <figcaption class="figure-caption">Listing 179. </figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12304" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12348" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2944,7 +2991,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 179. </figcaption>
+                              <figcaption class="figure-caption">Listing 180. </figcaption>
                            </figure>
                            </p>
                         
@@ -2953,7 +3000,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12326" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12370" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -2964,7 +3011,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 180. </figcaption>
+                              <figcaption class="figure-caption">Listing 181. </figcaption>
                            </figure>
                            </p>
                         
@@ -2978,7 +3025,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12365" xml:space="preserve" class="pre code egXML_invalid">
+                              <div id="d18e12409" xml:space="preserve" class="pre code egXML_invalid">
                                  <code>
                                     
                                     
@@ -2989,7 +3036,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 181. </figcaption>
+                              <figcaption class="figure-caption">Listing 182. </figcaption>
                            </figure>
                            </p>
                         
@@ -2999,7 +3046,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12383" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12427" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -3010,7 +3057,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 182. </figcaption>
+                              <figcaption class="figure-caption">Listing 183. </figcaption>
                            </figure>
                            </p>
                         
@@ -3021,11 +3068,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/dynamics.1.png"><figcaption class="figure-caption">Figure 23. A diminuendo in Bartók’s In Phrygian Mode</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/dynamics.1.png"><figcaption class="figure-caption">Figure 24. A diminuendo in Bartók’s In Phrygian Mode</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12415" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e12459" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -3036,7 +3083,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 183. </figcaption>
+                              <figcaption class="figure-caption">Listing 184. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -3057,11 +3104,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tuplets.1.png"><figcaption class="figure-caption">Figure 24. Tuplet rhythms from Maurice Ravel’s Boléro</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tuplets.1.png"><figcaption class="figure-caption">Figure 25. Tuplet rhythms from Maurice Ravel’s Boléro</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12466" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12510" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3079,7 +3126,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 184. </figcaption>
+                              <figcaption class="figure-caption">Listing 185. </figcaption>
                            </figure>
                            </p>
                         
@@ -3089,7 +3136,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12485" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12529" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3112,7 +3159,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 185. </figcaption>
+                              <figcaption class="figure-caption">Listing 186. </figcaption>
                            </figure>
                            </p>
                         
@@ -3141,11 +3188,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tuplets.2.png"><figcaption class="figure-caption">Figure 25. Hierarchy-crossing tuplets</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tuplets.2.png"><figcaption class="figure-caption">Figure 26. Hierarchy-crossing tuplets</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e12608" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e12652" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -3156,7 +3203,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 186. </figcaption>
+                              <figcaption class="figure-caption">Listing 187. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -3257,7 +3304,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12679" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12723" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3293,7 +3340,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 187. </figcaption>
+                                 <figcaption class="figure-caption">Listing 188. </figcaption>
                               </figure>
                               </p>
                            
@@ -3303,11 +3350,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/LisztMazeppa.png"><figcaption class="figure-caption">Figure 26. Spanning arpeggios in Liszt’s Mazeppa study</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/LisztMazeppa.png"><figcaption class="figure-caption">Figure 27. Spanning arpeggios in Liszt’s Mazeppa study</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12712" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12756" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3320,7 +3367,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 188. </figcaption>
+                                 <figcaption class="figure-caption">Listing 189. </figcaption>
                               </figure>
                               </p>
                            
@@ -3347,7 +3394,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12738" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12782" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3359,11 +3406,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 189. </figcaption>
+                                 <figcaption class="figure-caption">Listing 190. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12746" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12790" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3375,11 +3422,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 190. </figcaption>
+                                 <figcaption class="figure-caption">Listing 191. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12754" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12798" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3392,11 +3439,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 191. </figcaption>
+                                 <figcaption class="figure-caption">Listing 192. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12762" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12806" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3408,7 +3455,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 192. </figcaption>
+                                 <figcaption class="figure-caption">Listing 193. </figcaption>
                               </figure>
                               </p>
                            
@@ -3426,11 +3473,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/TarregaAlborada.png"><figcaption class="figure-caption">Figure 27. A simple glissando in Tárrega’s Alborada from a leading grace note</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/TarregaAlborada.png"><figcaption class="figure-caption">Figure 28. A simple glissando in Tárrega’s Alborada from a leading grace note</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12797" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12841" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3441,7 +3488,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 193. </figcaption>
+                                 <figcaption class="figure-caption">Listing 194. </figcaption>
                               </figure>
                               </p>
                            
@@ -3478,11 +3525,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/SchubertD887.png"><figcaption class="figure-caption">Figure 28. Bowed tremolandi in Schubert’s last String Quartet</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/SchubertD887.png"><figcaption class="figure-caption">Figure 29. Bowed tremolandi in Schubert’s last String Quartet</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12894" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12938" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3528,7 +3575,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 194. </figcaption>
+                                 <figcaption class="figure-caption">Listing 195. </figcaption>
                               </figure>
                               </p>
                            
@@ -3543,7 +3590,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12933" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12977" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3557,7 +3604,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 195. </figcaption>
+                                 <figcaption class="figure-caption">Listing 196. </figcaption>
                               </figure>
                               </p>
                            
@@ -3566,7 +3613,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12946" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e12990" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3588,7 +3635,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 196. </figcaption>
+                                 <figcaption class="figure-caption">Listing 197. </figcaption>
                               </figure>
                               </p>
                            
@@ -3601,7 +3648,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12974" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13018" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3615,11 +3662,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 197. </figcaption>
+                                 <figcaption class="figure-caption">Listing 198. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e12982" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13026" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3636,7 +3683,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 198. </figcaption>
+                                 <figcaption class="figure-caption">Listing 199. </figcaption>
                               </figure>
                               </p>
                            
@@ -3646,11 +3693,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tremolos.2.png"><figcaption class="figure-caption">Figure 29. Fingered tremolos</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tremolos.2.png"><figcaption class="figure-caption">Figure 30. Fingered tremolos</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13023" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13067" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3666,7 +3713,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 199. </figcaption>
+                                 <figcaption class="figure-caption">Listing 200. </figcaption>
                               </figure>
                               </p>
                            
@@ -3676,7 +3723,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tremolos.3.png"><figcaption class="figure-caption">Figure 30. Tremolos with floating beams</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/tremolos.3.png"><figcaption class="figure-caption">Figure 31. Tremolos with floating beams</figcaption>
                               </figure>
                               </p>
                            </div>
@@ -3693,7 +3740,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/Beethoven.png"><figcaption class="figure-caption">Figure 31. The probably most famous fermatas in history from Beethoven’s fifth symphony</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/Beethoven.png"><figcaption class="figure-caption">Figure 32. The probably most famous fermatas in history from Beethoven’s fifth symphony</figcaption>
                               </figure>
                               </p>
                            
@@ -3702,14 +3749,14 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/MozartK428.4.png"><figcaption class="figure-caption">Figure 32. Fermatas in Mozart’s String Quartet K. 428 indicating general pauses</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/MozartK428.4.png"><figcaption class="figure-caption">Figure 33. Fermatas in Mozart’s String Quartet K. 428 indicating general pauses</figcaption>
                               </figure>
                               </p>
                            
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13103" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13147" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3720,7 +3767,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 200. </figcaption>
+                                 <figcaption class="figure-caption">Listing 201. </figcaption>
                               </figure>
                               </p>
                            
@@ -3732,7 +3779,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13149" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13193" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3743,11 +3790,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 201. </figcaption>
+                                 <figcaption class="figure-caption">Listing 202. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13157" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13201" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -3758,7 +3805,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 202. </figcaption>
+                                 <figcaption class="figure-caption">Listing 203. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -3772,7 +3819,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13179.svg"><div id="d18e13179" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e13223.svg"><div id="d18e13223" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -3993,7 +4040,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 203. </figcaption>
+                                 <figcaption class="figure-caption">Listing 204. </figcaption>
                               </figure>
                               </p>
                            
@@ -4024,7 +4071,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13240" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13284" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4048,7 +4095,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 204. </figcaption>
+                                 <figcaption class="figure-caption">Listing 205. </figcaption>
                               </figure>
                               </p>
                            
@@ -4074,11 +4121,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/harppedal.1.png"><figcaption class="figure-caption">Figure 33. Harp pedal diagrams</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/harppedal.1.png"><figcaption class="figure-caption">Figure 34. Harp pedal diagrams</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13335" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13379" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4094,7 +4141,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 205. </figcaption>
+                                 <figcaption class="figure-caption">Listing 206. </figcaption>
                               </figure>
                               </p>
                            
@@ -4124,7 +4171,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13406" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13450" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4140,7 +4187,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 206. </figcaption>
+                                 <figcaption class="figure-caption">Listing 207. </figcaption>
                               </figure>
                               </p>
                            
@@ -4176,11 +4223,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/Hanon.21.png"><figcaption class="figure-caption">Figure 34. Fingering in Hanon’s exercise no. 21</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/Hanon.21.png"><figcaption class="figure-caption">Figure 35. Fingering in Hanon’s exercise no. 21</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13483" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13527" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4191,11 +4238,11 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 207. </figcaption>
+                                 <figcaption class="figure-caption">Listing 208. </figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13491" xml:space="preserve" class="pre code egXML_valid">
+                                 <div id="d18e13535" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
                                        
@@ -4206,7 +4253,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 208. </figcaption>
+                                 <figcaption class="figure-caption">Listing 209. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -4233,7 +4280,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13527" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13571" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4268,7 +4315,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 209. </figcaption>
+                              <figcaption class="figure-caption">Listing 210. </figcaption>
                            </figure>
                            </p>
                         
@@ -4284,7 +4331,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13582" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13626" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4322,7 +4369,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 210. </figcaption>
+                              <figcaption class="figure-caption">Listing 211. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -4339,7 +4386,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13605" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e13649" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -4352,7 +4399,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 211. </figcaption>
+                              <figcaption class="figure-caption">Listing 212. </figcaption>
                            </figure>
                            </p>
                         
@@ -4361,11 +4408,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/Brahms-flutePart.png"><figcaption class="figure-caption">Figure 35. Cue notes in the flute part of Brahms’ <em>Ein deutsches Requiem</em>.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/Brahms-flutePart.png"><figcaption class="figure-caption">Figure 36. Cue notes in the flute part of Brahms’ <em>Ein deutsches Requiem</em>.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e13633" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e13677" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -4454,7 +4501,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 212. </figcaption>
+                              <figcaption class="figure-caption">Listing 213. </figcaption>
                            </figure>
                            </p>
                         
@@ -4491,7 +4538,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13724" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13768" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4507,7 +4554,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 213. </figcaption>
+                                 <figcaption class="figure-caption">Listing 214. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -4528,11 +4575,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/reh_berlioz.png"><figcaption class="figure-caption">Figure 36. Rehearsal mark</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/reh_berlioz.png"><figcaption class="figure-caption">Figure 37. Rehearsal mark</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13767" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13811" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4564,7 +4611,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 214. </figcaption>
+                                 <figcaption class="figure-caption">Listing 215. </figcaption>
                               </figure>
                               </p>
                            
@@ -4577,7 +4624,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13792" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13836" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4593,7 +4640,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 215. </figcaption>
+                                 <figcaption class="figure-caption">Listing 216. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -4629,11 +4676,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/K620-ouverture_mm1-7.png"><figcaption class="figure-caption">Figure 37. Assigning tempo using <span class="att">@staffgrp</span> and <span class="att">@staff</span></figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/K620-ouverture_mm1-7.png"><figcaption class="figure-caption">Figure 38. Assigning tempo using <span class="att">@staffgrp</span> and <span class="att">@staff</span></figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13868" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13912" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4680,7 +4727,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 216. </figcaption>
+                                 <figcaption class="figure-caption">Listing 217. </figcaption>
                               </figure>
                               </p>
                            
@@ -4689,11 +4736,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/K620-11_mm20-23.png"><figcaption class="figure-caption">Figure 38. Stage direction using <span class="att">@staffgrp</span></figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/K620-11_mm20-23.png"><figcaption class="figure-caption">Figure 39. Stage direction using <span class="att">@staffgrp</span></figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e13898" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e13942" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4723,7 +4770,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 217. </figcaption>
+                                 <figcaption class="figure-caption">Listing 218. </figcaption>
                               </figure>
                               </p>
                            </div>                  
@@ -4761,7 +4808,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beatrpt-20100510.png"><figcaption class="figure-caption">Figure 39. Beat repeat signs</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/beatrpt-20100510.png"><figcaption class="figure-caption">Figure 40. Beat repeat signs</figcaption>
                               </figure>
                               </p>
                            
@@ -4841,7 +4888,7 @@
                            
                            <p>
                               
-                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e14011.svg"><div id="d18e14011" xml:space="preserve" class="pre code egXML_feasible verovio">
+                              <figure class="figure specPage"><img alt="example" class="graphic liveExample" src="../assets/images/GeneratedImages/d18e14055.svg"><div id="d18e14055" xml:space="preserve" class="pre code egXML_feasible verovio">
                                     <code>
                                        
                                        
@@ -4916,7 +4963,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 218. Measure repetition</figcaption>
+                                 <figcaption class="figure-caption">Listing 219. Measure repetition</figcaption>
                               </figure>
                               </p>
                            
@@ -4929,11 +4976,11 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/halfmRpt_beethoven.png"><figcaption class="figure-caption">Figure 40. Half-measure repeat</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmn/halfmRpt_beethoven.png"><figcaption class="figure-caption">Figure 41. Half-measure repeat</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14038" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14082" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -4998,7 +5045,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 219. </figcaption>
+                                 <figcaption class="figure-caption">Listing 220. </figcaption>
                               </figure>
                               </p>
                            
@@ -5010,10 +5057,10 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/mrpt2-20100510.png"><figcaption class="figure-caption">Figure 41. Two-measure repetition</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/mrpt2-20100510.png"><figcaption class="figure-caption">Figure 42. Two-measure repetition</figcaption>
                               </figure>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/multirpt-20100510.png"><figcaption class="figure-caption">Figure 42. Multi-measure repetition</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/multirpt-20100510.png"><figcaption class="figure-caption">Figure 43. Multi-measure repetition</figcaption>
                               </figure>
                               </p>
                            
@@ -5063,7 +5110,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14151" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14195" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5085,7 +5132,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 220. </figcaption>
+                              <figcaption class="figure-caption">Listing 221. </figcaption>
                            </figure>
                            </p>
                         
@@ -5099,7 +5146,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14177" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14221" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5123,7 +5170,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 221. </figcaption>
+                              <figcaption class="figure-caption">Listing 222. </figcaption>
                            </figure>
                            </p>
                         
@@ -5155,7 +5202,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14220" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14264" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5172,7 +5219,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 222. </figcaption>
+                                 <figcaption class="figure-caption">Listing 223. </figcaption>
                               </figure>
                               </p>
                            
@@ -5264,11 +5311,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent.png"><figcaption class="figure-caption">Figure 43. Example of simple mordent</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent.png"><figcaption class="figure-caption">Figure 44. Example of simple mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14300" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14344" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5296,7 +5343,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 223. </figcaption>
+                              <figcaption class="figure-caption">Listing 224. </figcaption>
                            </figure>
                            </p>
                         
@@ -5305,11 +5352,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent_l.png"><figcaption class="figure-caption">Figure 44. Example of a long mordent</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_mordent_l.png"><figcaption class="figure-caption">Figure 45. Example of a long mordent</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14323" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14367" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5337,7 +5384,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 224. </figcaption>
+                              <figcaption class="figure-caption">Listing 225. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -5391,11 +5438,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr.png"><figcaption class="figure-caption">Figure 45. Example of simple trills.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr.png"><figcaption class="figure-caption">Figure 46. Example of simple trills.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14367" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14411" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5431,7 +5478,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 225. </figcaption>
+                              <figcaption class="figure-caption">Listing 226. </figcaption>
                            </figure>
                            </p>
                         
@@ -5441,11 +5488,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_trill_wavy.png"><figcaption class="figure-caption">Figure 46. Example of trills followed by wavy lines.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_trill_wavy.png"><figcaption class="figure-caption">Figure 47. Example of trills followed by wavy lines.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14396" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14440" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5493,7 +5540,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 226. </figcaption>
+                              <figcaption class="figure-caption">Listing 227. </figcaption>
                            </figure>
                            </p>
                         
@@ -5507,11 +5554,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_accid.png"><figcaption class="figure-caption">Figure 47. Example alterations expressed on the staff.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_accid.png"><figcaption class="figure-caption">Figure 48. Example alterations expressed on the staff.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14429" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14473" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5533,7 +5580,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 227. </figcaption>
+                              <figcaption class="figure-caption">Listing 228. </figcaption>
                            </figure>
                            </p>
                         
@@ -5547,11 +5594,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_grace.png"><figcaption class="figure-caption">Figure 48. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_grace.png"><figcaption class="figure-caption">Figure 49. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14462" xml:space="preserve" class="pre code egXML_feasible">
+                              <div id="d18e14506" xml:space="preserve" class="pre code egXML_feasible">
                                  <code>
                                     
                                     
@@ -5585,7 +5632,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 228. </figcaption>
+                              <figcaption class="figure-caption">Listing 229. </figcaption>
                            </figure>
                            </p>
                         
@@ -5604,7 +5651,7 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_multi.png"><figcaption class="figure-caption">Figure 49. Example of multiple trills.</figcaption>
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_tr_multi.png"><figcaption class="figure-caption">Figure 50. Example of multiple trills.</figcaption>
                               </figure>
                               </p>
                            
@@ -5614,7 +5661,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14497" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14541" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5644,7 +5691,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 229. </figcaption>
+                                 <figcaption class="figure-caption">Listing 230. </figcaption>
                               </figure>
                               </p>
                            
@@ -5654,7 +5701,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14510" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14554" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5690,7 +5737,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 230. </figcaption>
+                                 <figcaption class="figure-caption">Listing 231. </figcaption>
                               </figure>
                               </p>
                            
@@ -5700,7 +5747,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14533" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14577" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5728,7 +5775,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 231. </figcaption>
+                                 <figcaption class="figure-caption">Listing 232. </figcaption>
                               </figure>
                               </p>
                            
@@ -5745,12 +5792,12 @@
                            
                            <p>
                               
-                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/ExplicationBach.png"><figcaption class="figure-caption">Figure 50. Trill transcribed from J. S. Bach’s Klavierbüchlein für Wilhelm Friedemann
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/ExplicationBach.png"><figcaption class="figure-caption">Figure 51. Trill transcribed from J. S. Bach’s Klavierbüchlein für Wilhelm Friedemann
                                     Bach</figcaption>
                               </figure>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14576" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14620" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5793,7 +5840,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 232. </figcaption>
+                                 <figcaption class="figure-caption">Listing 233. </figcaption>
                               </figure>
                               </p>
                            
@@ -5804,7 +5851,7 @@
                            <p>
                               
                               <figure class="figure specPage">
-                                 <div id="d18e14589" xml:space="preserve" class="pre code egXML_feasible">
+                                 <div id="d18e14633" xml:space="preserve" class="pre code egXML_feasible">
                                     <code>
                                        
                                        
@@ -5856,7 +5903,7 @@
                                        </code>
                                     
                                     </div>
-                                 <figcaption class="figure-caption">Listing 233. </figcaption>
+                                 <figcaption class="figure-caption">Listing 234. </figcaption>
                               </figure>
                               </p>
                            
@@ -5938,11 +5985,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn.png"><figcaption class="figure-caption">Figure 51. Example of a simple turn.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn.png"><figcaption class="figure-caption">Figure 52. Example of a simple turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14672" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14716" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -5970,7 +6017,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 234. </figcaption>
+                              <figcaption class="figure-caption">Listing 235. </figcaption>
                            </figure>
                            </p>
                         
@@ -5984,11 +6031,11 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn_d.png"><figcaption class="figure-caption">Figure 52. Delayed turn.</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/ex_turn_d.png"><figcaption class="figure-caption">Figure 53. Delayed turn.</figcaption>
                            </figure>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14705" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14749" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -6017,7 +6064,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 235. </figcaption>
+                              <figcaption class="figure-caption">Listing 236. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -6040,7 +6087,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/JSBtableofornaments.jpg"><figcaption class="figure-caption">Figure 53. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/cmnOrnaments/JSBtableofornaments.jpg"><figcaption class="figure-caption">Figure 54. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
                                  für Wilhelm Friedemann Bach</figcaption>
                            </figure>
                            </p>
@@ -6051,7 +6098,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14758" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14802" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -6065,7 +6112,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 236. </figcaption>
+                              <figcaption class="figure-caption">Listing 237. </figcaption>
                            </figure>
                            </p>
                         
@@ -6084,7 +6131,7 @@
                         
                         <p>
                            
-                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/CPEB_Dorinde.png"><figcaption class="figure-caption">Figure 54. Combined ornaments in C.P.E. Bach’s song Dorinde</figcaption>
+                           <figure class="figure"><img alt="example" class="graphic" src="../assets/images/ExampleImages/CPEB_Dorinde.png"><figcaption class="figure-caption">Figure 55. Combined ornaments in C.P.E. Bach’s song Dorinde</figcaption>
                            </figure>
                            </p>
                         
@@ -6097,7 +6144,7 @@
                         <p>
                            
                            <figure class="figure specPage">
-                              <div id="d18e14813" xml:space="preserve" class="pre code egXML_valid">
+                              <div id="d18e14857" xml:space="preserve" class="pre code egXML_valid">
                                  <code>
                                     
                                     
@@ -6142,7 +6189,7 @@
                                     </code>
                                  
                                  </div>
-                              <figcaption class="figure-caption">Listing 237. </figcaption>
+                              <figcaption class="figure-caption">Listing 238. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -6150,7 +6197,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/73f96c85658dbadf1a36df7c3124f89b89d92dd7" target="_blank" rel="noopener noreferrer">#73f96c8</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7def085a78fc6ea86c6a06760b7ab9d78116a014" target="_blank" rel="noopener noreferrer">#7def085</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

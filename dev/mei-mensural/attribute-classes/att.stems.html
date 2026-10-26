@@ -53,7 +53,7 @@
                               <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Describes the direction of a stem.">@stem.dir</span>, <span class="ident attribute" title="Records the form of the stem.">@stem.form</span>, <span class="ident attribute" title="Encodes the stem length.">@stem.len</span>, <span class="ident attribute" title="Encodes any stem &#34;modifiers&#34;; that is, symbols rendered on the stem, such as tremolo or Sprechstimme indicators.">@stem.mod</span>, <span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">@stem.pos</span>, <span class="ident attribute" title="Points to a note element in a different layer whose stem is shared. The linked notes should be rendered like a chord though they are part of different layers.">@stem.sameas</span>, <span class="ident attribute" title="Determines whether a stem should be displayed.">@stem.visible</span>, <span class="ident attribute" title="Records the output x coordinate of the stem’s attachment point.">@stem.x</span>, <span class="ident attribute" title="Records the output y coordinate of the stem’s attachment point.">@stem.y</span></div>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Describes the direction of a stem.">@stem.dir</span>, <span class="ident attribute" title="Records the form of the stem.">@stem.form</span>, <span class="ident attribute" title="Encodes the stem length.">@stem.len</span>, <span class="ident attribute" title="Encodes any stem &#34;modifiers&#34;; that is, symbols rendered on the stem, such as tremolo or Sprechstimme indicators.">@stem.mod</span>, <span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">@stem.pos</span>, <span class="ident attribute" title="Points to a note element in a different layer whose stem is shared. The linked notes should be rendered like a chord though they are part of different layers.">@stem.sameas</span>, <span class="ident attribute" title="Determines if and how a stem should be split within a chord.">@stem.split</span>, <span class="ident attribute" title="Determines whether a stem should be displayed.">@stem.visible</span>, <span class="ident attribute" title="Records the output x coordinate of the stem’s attachment point.">@stem.x</span>, <span class="ident attribute" title="Records the output y coordinate of the stem’s attachment point.">@stem.y</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Describes the direction of a stem.">@stem.dir</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the direction of a stem.</span><span class="attributeValues">
@@ -94,6 +94,10 @@
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.stems&gt;</span><span class="step">direct children</span><span class="step end">@stem.sameas</span></div>
+                              </div>
+                              <div class="classItem attributeDef">
+                                 <div class="desc"><span class="ident attribute" title="Determines if and how a stem should be split within a chord.">@stem.split</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if and how a stem should be split within a chord.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">left</span>" <i>(The stem branches off to the left.)</i>,  "<span style="font-weight: 500;">right</span>" <i>(The stem branches off to the right.)</i></span></div>
+                                 <div class="breadcrumb"><span class="step start">&lt;att.stems&gt;</span><span class="step">direct children</span><span class="step end">@stem.split</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Determines whether a stem should be displayed.">@stem.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether a stem should be displayed.</span><span class="attributeValues">
@@ -137,6 +141,7 @@
                                              </span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Determines if and how a stem should be split within a chord.">@stem.split</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if and how a stem should be split within a chord.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">left</span>" <i>(The stem branches off to the left.)</i>,  "<span style="font-weight: 500;">right</span>" <i>(The stem branches off to the right.)</i></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Determines whether a stem should be displayed.">@stem.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether a stem should be displayed.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
                                              </span></span></div>
@@ -189,6 +194,7 @@
                                              </span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Determines if and how a stem should be split within a chord.">@stem.split</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if and how a stem should be split within a chord.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">left</span>" <i>(The stem branches off to the left.)</i>,  "<span style="font-weight: 500;">right</span>" <i>(The stem branches off to the right.)</i></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Determines whether a stem should be displayed.">@stem.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether a stem should be displayed.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
                                              </span></span></div>
@@ -260,6 +266,10 @@
                                  <div class="schematronText">The value in @stem.sameas should correspond to the @xml:id attribute of the linked
                                     note element of a different layer.</div>
                                  <div class="schematronText">The linked notes by @stem.sameas should have the same @dur values.</div>
+                              </div>
+                              <div class="constraint">
+                                 <div class="schematronText">@stem.split must not be used directly on chord elements.</div>
+                                 <div class="schematronText">Split stem notes are expected to be chord notes.</div>
                               </div>
                            </p>
                         </div>
@@ -360,6 +370,41 @@
                                              <span data-indentation="4" class="element">&lt;/constraintSpec&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                                        
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"stem.split"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Determines if and how a stem should be split within a chord.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_stem.split"</span> <span class="attribute">scheme=</span><span class="attributevalue">"schematron"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;constraint&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@stem.split"</span>&gt;</span>
+                                                   
+                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"error"</span> <span class="attribute">test=</span><span class="attributevalue">"not(parent::node()/local-name() = 'chord')"</span>&gt;</span>
+                                                      @stem.split must not be used directly on chord elements.
+                                                      <span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
+                                                   
+                                                   <div class="indent indent7"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"error"</span> <span class="attribute">test=</span><span class="attributevalue">"self::node()/ancestor::mei:chord"</span>&gt;</span>
+                                                      Split stem notes are expected to be chord notes.
+                                                      <span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
+                                                   <span data-indentation="6" class="element">&lt;/sch:rule&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/constraint&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/constraintSpec&gt;</span></div>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"left"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>The stem branches off to the left.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"right"</span>&gt;</span>
+                                                
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>The stem branches off to the right.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                                <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/valList&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                                       
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"stem.visible"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>Determines whether a stem should be displayed.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
@@ -397,7 +442,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/73f96c85658dbadf1a36df7c3124f89b89d92dd7" target="_blank" rel="noopener noreferrer">#73f96c8</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7def085a78fc6ea86c6a06760b7ab9d78116a014" target="_blank" rel="noopener noreferrer">#7def085</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
