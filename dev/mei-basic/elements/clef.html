@@ -664,12 +664,27 @@
                               staff. This element may also be used within the staff context to indicate changes
                               of
                               clef.</p>
+                           
+                           <p>The position of a clef may be specified using either <span class="att">@line</span> or <span class="att">@loc</span>,
+                              but not both. The <span class="att">@line</span> attribute numbers staff lines starting with <span class="val">1</span>
+                              for the bottom line. The <span class="att">@loc</span> attribute uses
+                              <span class="ident">data.STAFFLOC</span>: integer MEI virtual units (half the distance
+                              between adjacent staff lines), with <span class="val">0</span> at the bottom line, positive values above
+                              it, and negative values below it. For a position on a staff line, loc = 2 * (line
+                              - 1).
+                              Thus, line="1" and loc="0" are alternative ways to specify the bottom line, while
+                              loc="5" specifies the space between the third and fourth lines. The <span class="att">@loc</span> attribute
+                              allows clefs to be placed on spaces as well as lines.
+                              </p>
                            </div>
                      </div>
                      <div id="constraints" class="facet constraints">
                         <div class="label">Constraints</div>
                         <div class="statement constraints">
                            <p>
+                              <div class="constraint">
+                                 <div class="schematronText">The @line and @loc attributes must not be used together on the same clef.</div>
+                              </div>
                               <div class="constraint">
                                  <div class="schematronText">The clef position must be less than or equal to the number of lines of an ancestor
                                     staff.</div>
@@ -710,11 +725,22 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;empty/&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                                    <div class="indent indent2"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"clef_line_loc_exclusive"</span> <span class="attribute">scheme=</span><span class="attributevalue">"schematron"</span>&gt;</span>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:clef"</span>&gt;</span>
+                                             
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not(@line and @loc)"</span>&gt;</span>The @line and @loc attributes must not be used
+                                                together on the same clef.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                                             <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                                          <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                                       <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"Clef_position_lines"</span> <span class="attribute">scheme=</span><span class="attributevalue">"schematron"</span>&gt;</span>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:clef[matches(@shape, '[FCG]')][ancestor::mei:staffDef[@lines]]"</span>&gt;</span>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:clef[@line][matches(@shape, '[FCG]')][ancestor::mei:staffDef[@lines]]"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"thisstaff"</span> <span class="attribute">value=</span><span class="attributevalue">"ancestor::mei:staffDef/@n"</span>/&gt;</span></div>
                                              
@@ -727,7 +753,7 @@
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
                                           
-                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:clef[ancestor::mei:staffDef[not(@lines)]]"</span>&gt;</span>
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:clef[@line][ancestor::mei:staffDef[not(@lines)]]"</span>&gt;</span>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"thisstaff"</span> <span class="attribute">value=</span><span class="attributevalue">"ancestor::mei:staffDef/@n"</span>/&gt;</span></div>
                                              
@@ -745,6 +771,21 @@
                                           staff. This element may also be used within the staff context to indicate changes
                                           of
                                           clef.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                                       
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;p&gt;</span>The position of a clef may be specified using either <span data-indentation="4" class="element">&lt;att&gt;</span>line<span data-indentation="4" class="element">&lt;/att&gt;</span> or <span data-indentation="4" class="element">&lt;att&gt;</span>loc<span data-indentation="4" class="element">&lt;/att&gt;</span>,
+                                          but not both. The <span data-indentation="4" class="element">&lt;att&gt;</span>line<span data-indentation="4" class="element">&lt;/att&gt;</span> attribute numbers staff lines starting with 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;val&gt;</span>1<span data-indentation="4" class="element">&lt;/val&gt;</span></div>
+                                          for the bottom line. The <span data-indentation="4" class="element">&lt;att&gt;</span>loc<span data-indentation="4" class="element">&lt;/att&gt;</span> attribute uses
+                                          
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;ident <span class="attribute">type=</span><span class="attributevalue">"datatype"</span>&gt;</span>data.STAFFLOC<span data-indentation="4" class="element">&lt;/ident&gt;</span></div>: integer MEI virtual units (half the distance
+                                          between adjacent staff lines), with 
+                                          <div class="indent indent4"><span data-indentation="4" class="element">&lt;val&gt;</span>0<span data-indentation="4" class="element">&lt;/val&gt;</span></div> at the bottom line, positive values above
+                                          it, and negative values below it. For a position on a staff line, loc = 2 * (line
+                                          - 1).
+                                          Thus, line="1" and loc="0" are alternative ways to specify the bottom line, while
+                                          loc="5" specifies the space between the third and fourth lines. The <span data-indentation="4" class="element">&lt;att&gt;</span>loc<span data-indentation="4" class="element">&lt;/att&gt;</span> attribute
+                                          allows clefs to be placed on spaces as well as lines.
+                                          <span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div><span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
                         </div>
                      </div>
@@ -752,7 +793,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f7d2b5a789d40e06e78f8f2ab493d0440ea0361f" target="_blank" rel="noopener noreferrer">#f7d2b5a</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f282d706eee0eccc19a2a9d0a50544f8b1d97b30" target="_blank" rel="noopener noreferrer">#f282d70</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
