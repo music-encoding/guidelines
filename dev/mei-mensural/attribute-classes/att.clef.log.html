@@ -50,7 +50,7 @@
                               <li class="tab-item"><a data-display="attributes_class" id="attributes_class_tab" href="#attributes_class_tab" class="displayTab">by class</a></li>
                               <li class="tab-item"><a data-display="attributes_module" id="attributes_module_tab" href="#attributes_module_tab" class="displayTab">by module</a></li>
                            </ul>
-                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Records the function of the clef. A &#34;cautionary&#34; clef does not change the following pitches.">@cautionary</span>, <span class="ident attribute" title="Records the amount of octave displacement.">@dis</span>, <span class="ident attribute" title="Records the direction of octave displacement.">@dis.place</span>, <span class="ident attribute" title="Indicates the line upon which a feature stands. The value must be in the range between 1 and the number of lines on the staff. The numbering of lines starts with the lowest line of the staff.">@line</span>, <span class="ident attribute" title="Holds the staff location of the feature.">@loc</span>, <span class="ident attribute" title="Captures written octave information.">@oct</span>, <span class="ident attribute" title="Describes a clef’s shape.">@shape</span></div>
+                           <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Records the function of the clef. A &#34;cautionary&#34; clef does not change the following pitches.">@cautionary</span>, <span class="ident attribute" title="Records the amount of octave displacement.">@dis</span>, <span class="ident attribute" title="Records the direction of octave displacement.">@dis.place</span>, <span class="ident attribute" title="Indicates the line upon which a feature stands. The value must be in the range between 1 and the number of lines on the staff. The numbering of lines starts with the lowest line of the staff.">@line</span>, <span class="ident attribute" title="Captures written octave information.">@oct</span>, <span class="ident attribute" title="Describes a clef’s shape.">@shape</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records the function of the clef. A &#34;cautionary&#34; clef does not change the following pitches.">@cautionary</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the function of the clef. A "cautionary" clef does not change the following
@@ -79,12 +79,6 @@
                                        Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.clef.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineLoc.html">att.lineLoc</a></span><span class="step end">@line</span></div>
-                              </div>
-                              <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Holds the staff location of the feature.">@loc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the staff location of the feature.</span><span class="attributeValues">
-                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFLOC.html">data.STAFFLOC</a>.
-                                       </span></div>
-                                 <div class="breadcrumb"><span class="step start">&lt;att.clef.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffLoc.html">att.staffLoc</a></span><span class="step end">@loc</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Captures written octave information.">@oct</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures written octave information.</span><span class="attributeValues">
@@ -147,14 +141,6 @@
                                              </span></span></div>
                                  </div>
                               </div>
-                              <div class="classBox" title="att.staffLoc">
-                                 <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffLoc.html">att.staffLoc</a></label><span class="classDesc">(MEI.shared) Attributes that identify location on a staff in terms of lines and spaces.</span></div>
-                                 <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the staff location of the feature.">@loc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the staff location of the feature.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFLOC.html">data.STAFFLOC</a>.
-                                             </span></span></div>
-                                 </div>
-                              </div>
                            </div>
                            <div id="attributes_module" class="facetTabbedContent module" data-label="by module">
                               <div class="classBox" title="MEI.shared">
@@ -175,9 +161,6 @@
                                              line
                                              of the staff.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
-                                             </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the staff location of the feature.">@loc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the staff location of the feature.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFLOC.html">data.STAFFLOC</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Captures written octave information.">@oct</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures written octave information.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.OCTAVE.html">data.OCTAVE</a>.
@@ -238,8 +221,6 @@
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.octave.html">att.octave</a>"</span>/&gt;</span></div>
                                        
                                        <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.octaveDisplacement.html">att.octaveDisplacement</a>"</span>/&gt;</span></div>
-                                       
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffLoc.html">att.staffLoc</a>"</span>/&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;attList&gt;</span>
@@ -262,7 +243,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/f282d706eee0eccc19a2a9d0a50544f8b1d97b30" target="_blank" rel="noopener noreferrer">#f282d70</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+mensural</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/79137772c52c9dca32eeb1ddc9f7eb42fc9f9cde" target="_blank" rel="noopener noreferrer">#7913777</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
