@@ -999,21 +999,660 @@
                         <p>MEI is implemented in ODD (One Document Does-it-all). ODD, is another
                            XML-based markup language developed and maintained by the TEI. TEI’s
                            documentation for ODD can be found in the TEI Guidelines chapter 22: <a class="link_ref link_external" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html">Documentation Elements</a>, chapter 23: <a class="link_ref link_external" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html">Using
-                              the TEI</a>, and the <a class="link_ref link_external" href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">Getting Started with P5 ODDs</a> document.</p>
+                              the TEI</a>, and the <a class="link_ref link_external" href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">Getting Started with P5 ODDs</a>" document.</p>
                         
-                        <p>At this point, there is no specific documentation on how to customize MEI with
-                           ODD beyond the generic TEI documentation. However, the provided <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a> are based on ODD customizations, and may serve as
-                           starting point for further project-specific restrictions. They can be found
-                           at <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding/tree/stable/customizations">https://github.com/music-encoding/music-encoding/tree/stable/customizations</a>.
-                           In addition, several projects have shared their customizations on GitHub, such
-                           as <a class="link_ref link_external" href="https://github.com/Freischuetz-Digital/data-music/tree/master/schemata/odd">Freischütz Digital</a> or <a class="link_ref link_external" href="https://github.com/BeethovensWerkstatt/module2/tree/dev/data/odd">Beethovens Werkstatt</a>.</p>
+                        <div class="div4">
+                           
+                           <h4 id="customizationTerminologyWorkflows"><span class="headingNumber">1.3.5.1</span><span class="head">Terminology and Workflows</span></h4>
+                           
+                           <p>MEI can be customized for different reasons, and it is important to use the 
+                              correct terminology for the specific use cases. The MEI profile called <strong><em>mei-all</em></strong>
+                              (see chapter <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a>) takes a special role in this. This profile 
+                              contains the complete concept model of MEI. All customizations are measured against
+                              
+                              <em>mei-all</em>. If a customization is a <em>conceptual subset</em> of
+                              <em>mei-all</em>, it is considered as <strong>conformant</strong> with MEI. If, 
+                              on the other hand, it contains concepts and markup unknown to <em>mei-all</em>, it
+                              is considered an <strong>extension</strong> of MEI, but it does <em>not 
+                                 conform</em> to MEI. This extension cannot claim <em>compatibility
+                                 with MEI</em> as a whole, even though parts of it may be conformant.</p>
+                           
+                           <p>For the decision if a customization is conceptually conformant with <em>mei-all</em>, it
+                              is important to consider that MEI already provides a certain level of built-in extensibility,
+                              which means 
+                              that customizations based on the approaches described in chapters <a class="link_ptr chapterLink" title="Quick Extensions using the Type Attribute" href="../content/introduction.html#extensionsUsingType">1.3.5.2 Quick Extensions using the Type Attribute</a> and 
+                              <a class="link_ptr chapterLink" title="Extensions based on Classification" href="../content/introduction.html#extensionsUsingClass">1.3.5.3 Extensions based on Classification</a> are always conformant to MEI. All official profiles provided by MEI 
+                              (see chapter <a class="link_ptr chapterLink" title="MEI Customizations" href="../content/introduction.html#meiCustomizations">1.3.4 MEI Customizations</a>) are subsets of MEI, and thus conformant to 
+                              <em>mei-all</em>.</p>
+                           
+                           <p>Not being conformant with <em>mei-all</em> is not considered harmful or 
+                              problematic. Actually, such extensions to current MEI are considered the intended
+                              way to add new 
+                              functionality to MEI. For this, all markup that goes beyond the conceptual model of
+                              
+                              <em>mei-all</em> is supposed to use an XML Namespace other than 
+                              <em>http://www.music-encoding.org/ns/mei</em> (see chapter <a class="link_ptr chapterLink" title="Extensions introducing New Markup" href="../content/introduction.html#extensions">1.3.5.4 Extensions introducing New Markup</a>). 
+                              Adopting such an extension into MEI is very easy from a technical perspective, but
+                              the different namespace 
+                              will very clearly communicate which parts of an MEI instance are conforming, and which
+                              are not yet adopted.
+                              Putting these extensions into the MEI Namespace would make false claims, is unexpected
+                              by MEI users, and 
+                              might not be interpreted as intended. At the same time, having files which use a separate
+                              namespace 
+                              for their extensions to MEI will identify the use of the proposed new markup, and
+                              are thus an ideal basis 
+                              for discussing the benefit of these new concepts with the wider 
+                              <a class="link_ref link_external" href="https://music-encoding.org/community/community-contacts.html">MEI Community</a>, which is a 
+                              first step into adopting it into the MEI schema.</p>
+                           
+                           <p>Reaching out to the <a class="link_ref link_external" href="https://music-encoding.org/community/community-contacts.html">MEI Community</a>
+                              is recommended for all types of customizations, as this allows others to evaluate
+                              such uses of MEI and may
+                              convince them to follow the same practice, increasing interoperability of data between
+                              different projects.</p>
+                           </div>
                         
-                        <p>MEI provides a web service at <a class="link_ref link_external" href="http://custom.music-encoding.org/">http://custom.music-encoding.org</a> which allows to
-                           compile such customizations against the MEI sources in order to generate
-                           RelaxNG schemata, which can be used for validation. More documentation on
-                           customizing MEI will be provided as time permits; until then, it is recommended
-                           to <a class="link_ref link_external" href="https://music-encoding.org/community/community-contacts.html">reach out to the MEI Community</a> for additional
-                           assistance.</p>
+                        <div class="div4">
+                           
+                           <h4 id="extensionsUsingType"><span class="headingNumber">1.3.5.2</span><span class="head">Quick Extensions using the Type Attribute</span></h4>
+                           
+                           <p>In MEI, the <span class="att">@type</span> attribute is available on almost every element.</p>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@type</span> (<a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray">Designation which characterizes the element in some sense, using any convenient
+                                       classification scheme or typology that employs single-token labels.</div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p><span class="att">@type</span> is a built-in, easy to use extension mechanism, as it allows for the addition of
+                              almost any kind of data to any given element.</p>
+                           
+                           <p>
+                              
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/introduction/Sch%C3%BCtz_Matth%C3%A4uspassion_16th.png"><figcaption class="figure-caption">Figure 1. Snippet from <em>Ehre sei mit Dir</em> from Heinrich Schütz' 
+                                    <em>Matthäuspassion</em> (composed 1665/1666).</figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>In the example above, the scribe uses two different ways to write 16th notes for the
+                              Canto and Alto voices.
+                              In the following measure, he uses the same way again, leaving it unclear if there
+                              is any meaning associated
+                              with the form written.</p>
+                           
+                           <p>If a project wants to preserve this observation, ib order to be able to get back to
+                              it later, compiling all 
+                              such cases and search for potentially meaningful patterns, it is possible to flag
+                              one or both of these notes
+                              with a <span class="att">@type</span> attribute. Such a solution could be as follows:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1358" xml:space="preserve" class="pre code egXML_invalid">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Canto note --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"16"</span> <span class="attribute">type=</span><span class="attributevalue">"regularShape"</span>/&gt;</span></div>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Alto note --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"16"</span> <span class="attribute">type=</span><span class="attributevalue">"weirdShape"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 4. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>While not using dedicated new markup for this information, it is possible to query
+                              a file for all the 
+                              notes having a <span class="att">@type</span> of <span class="val">weirdShape</span> (or any other value), using standard 
+                              <a class="link_ref link_external" href="https://www.w3.org/TR/xpath-31/">XPath</a> queries. In other words, a (here deliberately informal) 
+                              description of an additional feature not covered by regular MEI has been added to
+                              the encoding of the note,
+                              which is fully accessible to further investigation and / or processing. Please note
+                              that it is not required 
+                              to add <span class="att">@type</span> to all notes, so it would be equally possible to add it just to the "special" notes
+                              or 
+                              elements, and then later query for the absence of a given type value.</p>
+                           
+                           <p>The datatype of <span class="att">@type</span> allows for a series of multiple string values, making it possible to capture 
+                              any number of additional features not catered for by regular MEI.</p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="extensionsUsingClass"><span class="headingNumber">1.3.5.3</span><span class="head">Extensions based on Classification</span></h4>
+                           
+                           <p>With sufficient clarity to categorize elements based on a feature not covered by dedicated
+                              markup in MEI, 
+                              it is recommended to move from the use of <span class="att">@type</span> to <span class="att">@class</span> instead.</p>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><span class="font-icon centered">@</span></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><span class="att">@class</span> (<a class="link_odd broken" href="#att.classed">att.classed</a>)
+                                       </div>
+                                    <div class="tile-subtitle text-gray"></div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p>A value in <span class="att">@class</span> is then supposed to reference into a formal description of the feature observed.
+                              Using the example from above, an encoding might look like the following:
+                              </p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1412" xml:space="preserve" class="pre code egXML_invalid">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Encoding of the two notes --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"16"</span> <span class="attribute">class=</span><span class="attributevalue">"#twoFlags"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">dur=</span><span class="attributevalue">"16"</span> <span class="attribute">class=</span><span class="attributevalue">"#doubleFlag"</span>/&gt;</span></div>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Encoding of a simple classification for these notes --&gt;</span></div>
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;classDecls&gt;</span> 
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;taxonomy&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;head&gt;</span>Scribal habits<span data-indentation="3" class="element">&lt;/head&gt;</span></div>     
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;category <span class="attribute">xml:id=</span><span class="attributevalue">"twoFlags"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>A 16th note with two separate flags.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/category&gt;</span></div> 
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;category <span class="attribute">xml:id=</span><span class="attributevalue">"doubleFlag"</span>&gt;</span>
+                                                
+                                                <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>A 16th note with a single flag with an extra curve.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                                <span data-indentation="3" class="element">&lt;/category&gt;</span></div> 
+                                             <span data-indentation="2" class="element">&lt;/taxonomy&gt;</span></div>
+                                           <span data-indentation="1" class="element">&lt;/classDecls&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 5. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>This is a very basic example of a classification, where the <span class="missingLink">classDecls [not available in this MEI customization]</span> would go into the 
+                              header of the MEI file, and each note would use a <span class="att">@class</span> attribute to reference one of the 
+                              <span class="missingLink">category [not available in this MEI customization]</span> elements. It is expected that those will provide a full description of the 
+                              feature in question, shared by all instances refering to it. For this purposes, additional
+                              markup within 
+                              <span class="missingLink">desc [not available in this MEI customization]</span> is available. The following elements are important for class-based extensions.</p>
+                           
+                           <p>
+                              
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-link centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><a class="link_odd broken" href="#classDecls">&lt;classDecls&gt;</a></div>
+                                    <div class="tile-subtitle text-gray"></div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-link centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><a class="link_odd broken" href="#taxonomy">&lt;taxonomy&gt;</a></div>
+                                    <div class="tile-subtitle text-gray"></div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-link centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><a class="link_odd broken" href="#category">&lt;category&gt;</a></div>
+                                    <div class="tile-subtitle text-gray"></div>
+                                 </div>
+                              </div>
+                              <div class="tile tile-centered">
+                                 <div class="tile-icon">
+                                    <div class="example-tile-icon"><i class="icon icon-link centered"></i></div>
+                                 </div>
+                                 <div class="tile-content">
+                                    <div class="tile-title"><a class="link_odd broken" href="#desc">&lt;desc&gt;</a></div>
+                                    <div class="tile-subtitle text-gray"></div>
+                                 </div>
+                              </div>
+                              </p>
+                           
+                           <p>A major difference between the use of <span class="att">@type</span> and <span class="att">@class</span> is that the latter already comes 
+                              with a basic amount of validation: Values in <span class="att">@class</span> must point to the <span class="att">@xml:id</span> of an
+                              <span class="missingLink">category [not available in this MEI customization]</span> element in the same file (or be an external URI; more on that below). So, while
+                              <span class="att">@type</span> is very informal and may be used any time without much preparation to store interesting
+                              features
+                              that are not expected upfront, <span class="att">@class</span> is meant to thoroughly classify every affected element according
+                              to some predefined terminology.</p>
+                           
+                           <p>Instead of using local <span class="missingLink">category [not available in this MEI customization]</span> elements for defining the features in question, it is 
+                              encouraged to point to existing Authority Files where available and applicable. These
+                              external definitions may
+                              be stored in MEI or any other format, as long as the categories used can be referenced
+                              by URI.</p>
+                           
+                           <p>Every element in MEI can have any number of categories (internal or external) referenced
+                              from <span class="att">@class</span>.</p>
+                           
+                           <p>When observations initally encoded using <span class="att">@type</span> have proven their value, it is recommended to turn them
+                              into more formal <span class="att">@class</span> declarations and share those with the wider MEI Community. Ideally, this may 
+                              lead to wider adoption in other projects as well, result in shared concepts and new
+                              Authority Files, and also
+                              provide arguments for adding new markup to MEI.</p>
+                           </div>
+                        
+                        <div class="div4">
+                           
+                           <h4 id="extensions"><span class="headingNumber">1.3.5.4</span><span class="head">Extensions introducing New Markup</span></h4>
+                           
+                           <p>Sometimes, <a class="link_ptr chapterLink" title="Quick Extensions using the Type Attribute" href="../content/introduction.html#extensionsUsingType">1.3.5.2 Quick Extensions using the Type Attribute</a> and <a class="link_ptr chapterLink" title="Extensions based on Classification" href="../content/introduction.html#extensionsUsingClass">1.3.5.3 Extensions based on Classification</a> are not sufficient to
+                              adequately capture certain situations. This is usually the case when existing MEI
+                              elements do not offer the 
+                              amount of structure or specifity needed to address the feature in question with attribute-based
+                              approaches only.</p>
+                           
+                           <p>The following example is a hyphothetical extension to MEI. It is actually not considered
+                              a generally useful 
+                              addition – if so, it would have been added already. However, it may make sense under
+                              certain conditions, and 
+                              so this example is just an example for the process of extending MEI with new markup
+                              –&nbsp;it is not necessarily an 
+                              example of a particularly convincing extension.</p>
+                           
+                           <p>Consider a project that wants to encode a music document written in multiple colors.
+                              Here is an excerpt of that 
+                              document, used for the purposes of this example:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure"><img alt="example" class="graphic" src="../assets/images/modules/introduction/Colorful.png"><figcaption class="figure-caption">Figure 2. Excerpt from a hypothetical music document written in multiple colors.</figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>MEI is capable of capturing the color of a note, using the <span class="att">@color</span> attribute.</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1521" xml:space="preserve" class="pre code egXML_invalid">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">color=</span><span class="attributevalue">"colorful"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 6. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>However, with a value of <span class="val">colorful</span> (or any other single string), it is not possible to explicitly identify 
+                              the different colors for notehead, stem and flag independently. If that music document
+                              would reflect some fictional
+                              20th century piece where color of these parameters would indicate some meaningful
+                              feature (performing forces, dynamics, 
+                              …), it would be necessary to capture the color at a higher resolution. One potential
+                              way to do that would be to go 
+                              for dedicated child elements:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1537" xml:space="preserve" class="pre code egXML_invalid">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note&gt;</span>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;head <span class="attribute">color=</span><span class="attributevalue">"blue"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;stem <span class="attribute">color=</span><span class="attributevalue">"red"</span>/&gt;</span></div>
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;flag <span class="attribute">color=</span><span class="attributevalue">"green"</span>/&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/note&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 7. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>This encoding would now capture the colors of the various note components correctly,
+                              but following to the arguments
+                              provided in chapter <a class="link_ptr chapterLink" title="Terminology and Workflows" href="../content/introduction.html#customizationTerminologyWorkflows">1.3.5.1 Terminology and Workflows</a>, would be considered an incorrect extension 
+                              to MEI: Neither the <code class="">&lt;stem&gt;</code> and <code class="">&lt;flag&gt;</code> elements are actually part of MEI, and the <span class="missingLink">head [not available in this MEI customization]</span>
+                              element is actually not meant for noteheads, but headings –&nbsp;even when adding <span class="att">@color</span> to it, it would be
+                              severe <em>tag abuse</em> to use it for the purpose at hand. Instead, the new child elements of 
+                              <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> should be put in a separate namespace:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1569" xml:space="preserve" class="pre code egXML_invalid">
+                                    <code>
+                                       
+                                       &lt;note&gt;
+                                       &lt;ex:noteHead color="blue"/&gt;
+                                       &lt;ex:stem color="red"/&gt;
+                                       &lt;ex:flag color="green"/&gt;
+                                       &lt;/note&gt;
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 8. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>The three child elements are now referencing a (yet to be defined) separate namespace,
+                              making it clear they are not 
+                              part of regular MEI. Please note that the notehead is also avoiding the name of the
+                              <span class="missingLink">head [not available in this MEI customization]</span>
+                              element to minimize the risk of confusion on the encoder's side.</p>
+                           
+                           <p>The definition of one such new element could be as follows:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1589" xml:space="preserve" class="pre code egXML_valid">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">ident=</span><span class="attributevalue">"noteHead"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.visual"</span> <span class="attribute">prefix=</span><span class="attributevalue">"ex_"</span> <span class="attribute">ns=</span><span class="attributevalue">"https://www.example.com/mei/proposals"</span>&gt;</span>     
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>This element describes the visual appearance of a note head.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div> 
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"att.common"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"att.color"</span>/&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/classes&gt;</span></div> 
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;empty/&gt;</span></div> 
+                                             <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                                           <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 9. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>This <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html">&lt;tei:elementSpec&gt;</a> would be inserted in an ODD customization file, that would then be compiled 
+                              against the MEI sources to create a new MEI profile supporting this new element (see
+                              the 
+                              <a class="link_ref link_external" href="https://github.com/music-encoding/music-encoding?tab=readme-ov-file#customizing-mei">MEI 
+                                 repository</a> for details about the technical procedures). While this definition is quite similar
+                              to the
+                              definition of other elements in the MEI sources, there are some important attributes
+                              to note. First of all,
+                              the <span class="att">@mode</span> attribute with <span class="val">add</span> value is necessary to insert an element in a customization –&nbsp;it 
+                              means that this element will be added compared to what is in the ODD sources the customization
+                              is applied to.
+                              The <span class="att">@ns</span> attribute will actually move the new element to a different namespace, while the
+                              <span class="att">@prefix</span> 
+                              attribute will specify how this new element may be addressed within the ODD file (more
+                              on that below). It has no 
+                              meaning for files using this modified model. Please also note that the new element,
+                              despite being in a separate 
+                              namespace, may fully utilize existing MEI attribute classes.</p>
+                           
+                           <p>With the new <code class="">&lt;ex:noteHead&gt;</code> element being defined, it is now necessary to make it available somewhere within
+                              
+                              MEI, in this case as a child of the regular <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> element. For this purpose, the customization
+                              could also update the specification of that element:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1626" xml:space="preserve" class="pre code egXML_valid">
+                                    <code>
+                                       
+                                       &lt;elementSpec ident="note" module="MEI.shared" mode="change"&gt;     
+                                       &lt;content&gt;
+                                       &lt;rng:zeroOrMore&gt;
+                                       &lt;rng:choice&gt;
+                                       &lt;rng:ref name="model.noteModifierLike"/&gt; 
+                                       &lt;!-- omitted for brevity --&gt;
+                                       &lt;rng:ref name="ex_noteHead"/&gt;
+                                       &lt;/rng:choice&gt;
+                                       &lt;/rng:zeroOrMore&gt;
+                                       &lt;/content&gt;
+                                       &lt;remarks xml:lang="en"&gt; 
+                                       &lt;p&gt;
+                                       The &lt;gi scheme="MEI"&gt;note&lt;/gi&gt; element may have an additional 
+                                       &lt;gi&gt;noteHead&lt;/gi&gt; child element in our project, which
+                                       is meant to …
+                                       &lt;/p&gt; 
+                                       &lt;/remarks&gt;
+                                        &lt;/elementSpec&gt;
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 10. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>Here, the existing <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html">&lt;tei:elementSpec&gt;</a> is updated using the <span class="val">change</span> <span class="att">@mode</span>. This means 
+                              that original child elements are overwritten with the specifications provided within
+                              the customization, leaving all others 
+                              unchanged. For the purposes of this example, it is sufficient to just update the <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-content.html">&lt;tei:content&gt;</a>, 
+                              where an additional <span class="missingLink">rng:ref [not available in this MEI customization]</span> with <span class="att">@name</span> <span class="val">ex_noteHead</span> is inserted. This refers to 
+                              the <span class="att">@prefix</span> attribute given for the new <code class="">&lt;noteHead&gt;</code> element above, and will make this newly specified
+                              element available as child inside <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>.</p>
+                           
+                           <p>When changing existing MEI elements, it is recommended to add a <a class="link_odd_elementSpec" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-remarks.html">&lt;tei:remarks&gt;</a> element which explains
+                              the changes made and thus provides documentation for the specific use of this element
+                              and how it differs from common use.</p>
+                           
+                           <p>Another, perhaps more elegant way to insert the new element into the MEI model which
+                              does not require
+                              to change existing elements would be to make the new element a member of the <a class="link_odd link_odd_modelClass" href="../model-classes/model.noteModifierLike.html">model.noteModifierLike</a> 
+                              class, as in the following example:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1678" xml:space="preserve" class="pre code egXML_valid">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">ident=</span><span class="attributevalue">"noteHead"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.visual"</span> <span class="attribute">prefix=</span><span class="attributevalue">"ex_"</span> <span class="attribute">ns=</span><span class="attributevalue">"https://www.example.com/mei/proposals"</span>&gt;</span>     
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>This element visually describes a notehead.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div> 
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;classes&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"att.common"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"att.color"</span>/&gt;</span></div>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;memberOf <span class="attribute">key=</span><span class="attributevalue">"model.noteModifierLike"</span>/&gt;</span></div>
+                                             <span data-indentation="2" class="element">&lt;/classes&gt;</span></div> 
+                                          
+                                          <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
+                                             
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;empty/&gt;</span></div> 
+                                             <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                                           <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div>
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 11. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>Since members of that class are already allowed as child elements of <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a>, the new 
+                              <code class="">&lt;noteHead&gt;</code> element will be allowed there as well. Please note that it is not necessary to offer
+                              both options, and using
+                              classes may result in a number of additional places where elements are allowed, which
+                              may or may not be appropriate. Also, 
+                              sometimes there are no adequate classes available, so this is just illustrating potential
+                              solutions.</p>
+                           
+                           
+                           <p>It is equally possible to extend MEI with new attributes. Following the same arguments,
+                              these attributes should also be put in 
+                              a separate namespace. Note that the following approach could also serve as an alternative
+                              strategy to encode the color of 
+                              the different components of our colorful music document.</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1700" xml:space="preserve" class="pre code egXML_valid">
+                                    <code>
+                                       
+                                       &lt;attDef ident="headColor" usage="opt" mode="add"
+                                       ns="https://www.example.com/mei/proposals"&gt;
+                                       &lt;gloss xml:lang="en"&gt;Color of a noteHead.&lt;/gloss&gt; 
+                                       &lt;desc xml:lang="en"&gt;Describes the color of a note head.&lt;/desc&gt;
+                                       &lt;datatype&gt; 
+                                       &lt;rng:ref name="data.COLOR"/&gt; 
+                                       &lt;/datatype&gt;
+                                        &lt;/attDef&gt;
+                                       
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 12. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>This new attribute could then either be added to an existing or new attribute class,
+                              or could be made available on 
+                              <a class="link_odd link_odd_elementSpec" href="../elements/note.html">&lt;note&gt;</a> directly. An encoding using this attribute might then look like so:</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1717" xml:space="preserve" class="pre code egXML_valid">
+                                    <code>
+                                       
+                                       &lt;note ex:headColor="blue"/&gt;
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 13. </figcaption>
+                              </figure>
+                              </p>
+                           
+                           <p>Using ODD customizations, it is also possible to restrict or extend allowed values
+                              of attributes. While this is not
+                              documented in the current version of these Guidelines, it is important to point out
+                              that it technically not possible to
+                              indicate which values are not included in regular MEI, as neither XML Namespaces nor
+                              similar mechanisms can be applied to
+                              those new values. It is therefore important to exercise extra diligence when documenting
+                              such extensions to the schema.</p>
+                           
+                           <p>Extending MEI should not be taken lightly, and should always be based on intense interchange
+                              with the MEI Community. 
+                              Adding new markup to the schema is often a tempting solution, but it comes at the
+                              risk of weakening the standard through
+                              competing solutions. In general, extensions should only be made when either the community
+                              agrees on the proposed solution, 
+                              ensuring interoperability between similar projects, or when the proposed markup is
+                              for internal use only, and not expected 
+                              to be taken up by others at all. Very often, less invasive but equally target-oriented
+                              approaches can be found. In case of the
+                              colorful example above, it might be equally adequate to address the situtation by
+                              using <span class="att">@type</span> (or <span class="att">@class</span>):</p>
+                           
+                           <p>
+                              
+                              <figure class="figure specPage">
+                                 <div id="d18e1737" xml:space="preserve" class="pre code egXML_invalid">
+                                    <code>
+                                       
+                                       
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;note <span class="attribute">type=</span><span class="attributevalue">"noteHead:blue stem:red flag:green"</span>/&gt;</span></div>
+                                       
+                                       
+                                       </code>
+                                    
+                                    </div>
+                                 <figcaption class="figure-caption">Listing 14. </figcaption>
+                              </figure>
+                              </p>
+                           </div>
+                        <!--<p>At this point, there is no specific documentation on how to customize MEI with
+                     ODD beyond the generic TEI documentation. However, the provided <ptr
+                        target="#meiCustomizations"/> are based on ODD customizations, and may serve as
+                     starting point for further project-specific restrictions. They can be found
+                        at <ref
+                        target="https://github.com/music-encoding/music-encoding/tree/stable/customizations"
+                        >https://github.com/music-encoding/music-encoding/tree/stable/customizations</ref>.
+                     In addition, several projects have shared their customizations on GitHub, such
+                        as <ref
+                        target="https://github.com/Freischuetz-Digital/data-music/tree/master/schemata/odd"
+                        >Freischütz Digital</ref> or <ref
+                        target="https://github.com/BeethovensWerkstatt/module2/tree/dev/data/odd"
+                        >Beethovens Werkstatt</ref>.</p>
+                  <p>MEI provides a web service at <ref target="http://custom.music-encoding.org/"
+                        >http://custom.music-encoding.org</ref> which allows to
+                     compile such customizations against the MEI sources in order to generate
+                     RelaxNG schemata, which can be used for validation. More documentation on
+                     customizing MEI will be provided as time permits; until then, it is recommended
+                        to <ref target="https://music-encoding.org/community/community-contacts.html"
+                        >reach out to the MEI Community</ref> for additional
+                     assistance.</p>-->
                         </div>
                      </div>
                   
@@ -1031,7 +1670,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/47b03a3292a9f3bb51a11099911b078b5d9e1da3" target="_blank" rel="noopener noreferrer">#47b03a3</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/d93ef60bb3ca56d0bf1e13a29c17cf9404541f38" target="_blank" rel="noopener noreferrer">#d93ef60</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
