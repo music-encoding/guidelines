@@ -259,15 +259,15 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;remarks <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;p&gt;</span>The location may include staff lines, the spaces between the lines, and the spaces
-                                                directly above and below the staff. The value ranges between 0 (just below the staff)
-                                                to
-                                                2 * number of staff lines (directly above the staff). For example, on a 5-line staff
-                                                the
-                                                lines would be numbered 1, 3, 5, 7, and 9 while the spaces would be numbered 0, 2,
-                                                4, 6,
-                                                8, and 10. So, a value of 
-                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;val&gt;</span>9<span data-indentation="6" class="element">&lt;/val&gt;</span></div> puts the bar line through the top line of the staff.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;p&gt;</span>The location follows 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;ident <span class="attribute">type=</span><span class="attributevalue">"datatype"</span>&gt;</span>data.STAFFLOC<span data-indentation="6" class="element">&lt;/ident&gt;</span></div>. For example, on a
+                                                5-line staff the lines are numbered 0, 2, 4, 6, and 8, and the spaces between them
+                                                are
+                                                numbered 1, 3, 5, and 7. The spaces directly below and above the staff are numbered
+                                                -1
+                                                and 9, respectively. A value of 
+                                                <div class="indent indent6"><span data-indentation="6" class="element">&lt;val&gt;</span>8<span data-indentation="6" class="element">&lt;/val&gt;</span></div> puts the bar line through the top line of
+                                                the staff.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                              
                                              <div class="indent indent5"><span data-indentation="5" class="element">&lt;p&gt;</span>This attribute is ignored if the value of the bar.style attribute is 
                                                 <div class="indent indent6"><span data-indentation="6" class="element">&lt;val&gt;</span>mensur<span data-indentation="6" class="element">&lt;/val&gt;</span></div>.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
@@ -281,7 +281,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/79137772c52c9dca32eeb1ddc9f7eb42fc9f9cde" target="_blank" rel="noopener noreferrer">#7913777</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/47b03a3292a9f3bb51a11099911b078b5d9e1da3" target="_blank" rel="noopener noreferrer">#47b03a3</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
