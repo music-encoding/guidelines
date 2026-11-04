@@ -51,52 +51,28 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="classBox" title="Attribute Classes">
-                              <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.URI</span></div>
-                              <div class="classContent">
-                                 <div class="def"><span class="ident" title="The web-accessible location of the controlled vocabulary from which the value of @glyph.name or @glyph.num is taken, or the textual content of the element."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extSym.auth.html">att.extSym.auth</a>/<span title="The web-accessible location of the controlled vocabulary from which the value of glyph.name or glyph.num is taken, or the textual content of the element.">@glyph.uri</span></span><span class="desc"><span class="desc">The web-accessible location of the controlled vocabulary from which the value of
-                                          <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span></span></div>
-                                 <div class="def"><span class="ident" title="Contains a reference to a <chordDef&gt; element elsewhere in the document."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.harm.log.html">att.harm.log</a>/<span title="Contains a reference to a chordDef element elsewhere in the document.">@chordref</span></span><span class="desc"><span class="desc">Contains a reference to a <a class="link_odd link_odd_elementSpec" href="../elements/chordDef.html">&lt;chordDef&gt;</a> element elsewhere in the
-                                          document.</span></span></div>
-                                 <div class="def"><span class="ident" title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an <instrDef&gt; element elsewhere in the document."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.instrumentIdent.html">att.instrumentIdent</a>/<span title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an instrDef element elsewhere in the document.">@instr</span></span><span class="desc"><span class="desc">Provides a way of pointing to a MIDI instrument definition. It must contain the ID
-                                          of
-                                          an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element elsewhere in the document.</span></span></div>
-                                 <div class="def"><span class="ident" title="Used to link metadata elements to one or more data-containing elements."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.dataPointing.html">att.dataPointing</a>/<span title="Used to link metadata elements to one or more data-containing elements.">@data</span></span><span class="desc"><span class="desc">Used to link metadata elements to one or more data-containing elements.</span></span></div>
-                                 <div class="def"><span class="ident" title="Used to record a pointer to the regularized form of the name elsewhere in the document."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.name.html">att.name</a>/<span title="Used to record a pointer to the regularized form of the name elsewhere in the document.">@nymref</span></span><span class="desc"><span class="desc">Used to record a pointer to the regularized form of the name elsewhere in the
-                                          document.</span></span></div>
-                                 <div class="def"><span class="ident" title="When the target attribute is present, plist identifies the active participants; that is, those entities pointed &#34;from&#34;, in a relationship with the specified target(s). When the target attribute is not present, it identifies participants in a mutual relationship."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plist.html">att.plist</a>/<span title="When the target attribute is present, plist identifies the active participants; that is, those entities pointed &#34;from&#34;, in a relationship with the specified target(s). When the target attribute is not present, it identifies participants in a mutual relationship.">@plist</span></span><span class="desc"><span class="desc">When the target attribute is present, plist identifies the active participants; that
-                                          is, those entities pointed "from", in a relationship with the specified target(s).
-                                          When
-                                          the target attribute is not present, it identifies participants in a mutual
-                                          relationship.</span></span></div>
-                                 <div class="def"><span class="ident" title="Indicates the final element in a sequence of events to which the feature applies."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.startEndId.html">att.startEndId</a>/<span title="Indicates the final element in a sequence of events to which the feature applies.">@endid</span></span><span class="desc"><span class="desc">Indicates the final element in a sequence of events to which the feature
-                                          applies.</span></span></div>
-                                 <div class="def"><span class="ident" title="Holds a reference to the first element in a sequence of events to which the feature applies."><a class="link_odd link_odd_attClass" href="../attribute-classes/att.startId.html">att.startId</a>/<span title="Holds a reference to the first element in a sequence of events to which the feature applies.">@startid</span></span><span class="desc"><span class="desc">Holds a reference to the first element in a sequence of events to which the feature
-                                          applies.</span></span></div>
-                              </div>
-                           </div>
                         </div>
                      </div>
                      <div id="declaration" class="facet declaration">
                         <div class="label">Declaration</div>
                         <div class="statement declaration">
                            <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">xmlns=</span><span class="attributevalue">"http://www.tei-c.org/ns/1.0"</span> <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"data.URI"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
+                                 <div class="indent indent1"><span data-indentation="1" class="element">&lt;dataSpec <span class="attribute">xmlns=</span><span class="attributevalue">"http://www.tei-c.org/ns/1.0"</span> <span class="attribute">rend=</span><span class="attributevalue">"add"</span> <span class="attribute">ident=</span><span class="attributevalue">"data.URI"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI"</span>&gt;</span>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>A Uniform Resource Identifier, see [RFC2396].<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                                     
                                     <div class="indent indent2"><span data-indentation="2" class="element">&lt;content&gt;</span>
                                        
-                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"anyURI"</span>/&gt;</span></div>
+                                       <div class="indent indent3"><span data-indentation="3" class="element">&lt;dataRef <span class="attribute">name=</span><span class="attributevalue">"anyURI"</span>/&gt;</span></div>
                                        <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
-                                    <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
+                                    <span data-indentation="1" class="element">&lt;/dataSpec&gt;</span></div></code></div>
                         </div>
                      </div>
                   </div>
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/31c7453750e2ea7779bae0718fc82d74300aef06" target="_blank" rel="noopener noreferrer">#31c7453</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/021ede6b6a1c8983534fd6bdfe400ca160a43f21" target="_blank" rel="noopener noreferrer">#021ede6</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
