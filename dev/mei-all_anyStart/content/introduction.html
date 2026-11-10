@@ -10,7 +10,7 @@
       <meta name="author" content="Stefan Münnich">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-11-05">
+      <meta name="date" content="2026-11-10">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization allowing any MEI element as root element, e.g., suited for validating MEI chunks.">
@@ -1179,23 +1179,23 @@
                                        
                                        <div class="indent indent1"><span data-indentation="1" class="comment">&lt;!-- Encoding of a simple classification for these notes --&gt;</span></div>
                                        
-                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;classDecls&gt;</span> 
+                                       <div class="indent indent1"><span data-indentation="1" class="element">&lt;classDecls&gt;</span>
                                           
                                           <div class="indent indent2"><span data-indentation="2" class="element">&lt;taxonomy&gt;</span>
                                              
-                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;head&gt;</span>Scribal habits<span data-indentation="3" class="element">&lt;/head&gt;</span></div>     
+                                             <div class="indent indent3"><span data-indentation="3" class="element">&lt;head&gt;</span>Scribal habits<span data-indentation="3" class="element">&lt;/head&gt;</span></div>    
                                              
                                              <div class="indent indent3"><span data-indentation="3" class="element">&lt;category <span class="attribute">xml:id=</span><span class="attributevalue">"twoFlags"</span>&gt;</span>
                                                 
                                                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>A 16th note with two separate flags.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                                                <span data-indentation="3" class="element">&lt;/category&gt;</span></div> 
+                                                <span data-indentation="3" class="element">&lt;/category&gt;</span></div>
                                              
                                              <div class="indent indent3"><span data-indentation="3" class="element">&lt;category <span class="attribute">xml:id=</span><span class="attributevalue">"doubleFlag"</span>&gt;</span>
                                                 
                                                 <div class="indent indent4"><span data-indentation="4" class="element">&lt;desc&gt;</span>A 16th note with a single flag with an extra curve.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                                                <span data-indentation="3" class="element">&lt;/category&gt;</span></div> 
+                                                <span data-indentation="3" class="element">&lt;/category&gt;</span></div>
                                              <span data-indentation="2" class="element">&lt;/taxonomy&gt;</span></div>
-                                           <span data-indentation="1" class="element">&lt;/classDecls&gt;</span></div>
+                                          <span data-indentation="1" class="element">&lt;/classDecls&gt;</span></div>
                                        
                                        
                                        </code>
@@ -1458,24 +1458,24 @@
                                  <div id="d19e1623" xml:space="preserve" class="pre code egXML_valid">
                                     <code>
                                        
-                                       &lt;elementSpec ident="note" module="MEI.shared" mode="change"&gt;     
+                                       &lt;elementSpec ident="note" module="MEI.shared" mode="change"&gt;    
                                        &lt;content&gt;
                                        &lt;rng:zeroOrMore&gt;
                                        &lt;rng:choice&gt;
-                                       &lt;rng:ref name="model.noteModifierLike"/&gt; 
+                                       &lt;rng:ref name="model.noteModifierLike"/&gt;
                                        &lt;!-- omitted for brevity --&gt;
                                        &lt;rng:ref name="ex_noteHead"/&gt;
                                        &lt;/rng:choice&gt;
                                        &lt;/rng:zeroOrMore&gt;
                                        &lt;/content&gt;
-                                       &lt;remarks xml:lang="en"&gt; 
+                                       &lt;remarks xml:lang="en"&gt;
                                        &lt;p&gt;
                                        The &lt;gi scheme="MEI"&gt;note&lt;/gi&gt; element may have an additional 
                                        &lt;gi&gt;noteHead&lt;/gi&gt; child element in our project, which
                                        is meant to …
-                                       &lt;/p&gt; 
+                                       &lt;/p&gt;
                                        &lt;/remarks&gt;
-                                        &lt;/elementSpec&gt;
+                                       &lt;/elementSpec&gt;
                                        
                                        
                                        
@@ -1561,12 +1561,12 @@
                                        
                                        &lt;attDef ident="headColor" usage="opt" mode="add"
                                        ns="https://www.example.com/mei/proposals"&gt;
-                                       &lt;gloss xml:lang="en"&gt;Color of a noteHead.&lt;/gloss&gt; 
+                                       &lt;gloss xml:lang="en"&gt;Color of a noteHead.&lt;/gloss&gt;
                                        &lt;desc xml:lang="en"&gt;Describes the color of a note head.&lt;/desc&gt;
-                                       &lt;datatype&gt; 
-                                       &lt;rng:ref name="data.COLOR"/&gt; 
+                                       &lt;datatype&gt;
+                                       &lt;rng:ref name="data.COLOR"/&gt;
                                        &lt;/datatype&gt;
-                                        &lt;/attDef&gt;
+                                       &lt;/attDef&gt;
                                        
                                        
                                        
@@ -1674,7 +1674,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/021ede6b6a1c8983534fd6bdfe400ca160a43f21" target="_blank" rel="noopener noreferrer">#021ede6</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c874ef509b6ec91cbf07d9b417b94579aa646b47" target="_blank" rel="noopener noreferrer">#c874ef5</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
