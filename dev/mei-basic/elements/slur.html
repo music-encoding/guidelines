@@ -8,7 +8,7 @@
       <meta name="author" content="Johannes Kepper">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-11-10">
+      <meta name="date" content="2026-11-15">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization optimized for interchange and interoperability.">
@@ -56,7 +56,9 @@
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">@color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
-                                       as used in pre-CMN notation.</span><span class="attributeValues"></span></div>
+                                       as used in pre-CMN notation.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.color.html">att.color</a></span><span class="step end">@color</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -65,29 +67,39 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="When a duration cannot be represented as a single power-of-two value, multiple space-separated values that add up to the total duration may be used.">@dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When a duration cannot be represented as a single power-of-two value, multiple
-                                       space-separated values that add up to the total duration may be used.</span><span class="attributeValues"></span></div>
+                                       space-separated values that add up to the total duration may be used.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>, separated by spaces.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.log.html">att.slur.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.additive.html">att.duration.additive</a></span><span class="step end">@dur</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined end point.">@endho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the horizontal adjustment of a feature’s programmatically-determined end
-                                       point.</span><span class="attributeValues"></span></div>
+                                       point.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.html">att.visualOffset2</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.ho.html">att.visualOffset2.ho</a></span><span class="step end">@endho</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Indicates the final element in a sequence of events to which the feature applies.">@endid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the final element in a sequence of events to which the feature
-                                       applies.</span><span class="attributeValues"></span></div>
+                                       applies.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.log.html">att.slur.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.startEndId.html">att.startEndId</a></span><span class="step end">@endid</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records a vertical adjustment of a feature’s programmatically-determined end point.">@endvo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a vertical adjustment of a feature’s programmatically-determined end
-                                       point.</span><span class="attributeValues"></span></div>
+                                       point.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.html">att.visualOffset2</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.vo.html">att.visualOffset2.vo</a></span><span class="step end">@endvo</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records a horizontal adjustment to a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">@ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature’s programmatically-determined location
                                        in
                                        terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                                       staff lines.</span><span class="attributeValues"></span></div>
+                                       staff lines.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset.html">att.visualOffset</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset.ho.html">att.visualOffset.ho</a></span><span class="step end">@ho</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -102,7 +114,9 @@
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.log.html">att.slur.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layerIdent.html">att.layerIdent</a></span><span class="step end">@layer</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Describes the style of a line.">@lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the style of a line.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Describes the style of a line.">@lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the style of a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lform</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -117,7 +131,9 @@
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lsegs</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Width of a line.">@lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Width of a line.">@lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></span><span class="step end">@lwidth</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -125,7 +141,9 @@
                                        is, those entities pointed "from", in a relationship with the specified target(s).
                                        When
                                        the target attribute is not present, it identifies participants in a mutual
-                                       relationship.</span><span class="attributeValues"></span></div>
+                                       relationship.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.log.html">att.slur.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plist.html">att.plist</a></span><span class="step end">@plist</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -135,27 +153,37 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined start point.">@startho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the horizontal adjustment of a feature’s programmatically-determined start
-                                       point.</span><span class="attributeValues"></span></div>
+                                       point.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.html">att.visualOffset2</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.ho.html">att.visualOffset2.ho</a></span><span class="step end">@startho</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Holds a reference to the first element in a sequence of events to which the feature applies.">@startid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a reference to the first element in a sequence of events to which the feature
-                                       applies.</span><span class="attributeValues"></span></div>
+                                       applies.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.log.html">att.slur.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.startEndId.html">att.startEndId</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.startId.html">att.startId</a></span><span class="step end">@startid</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records a vertical adjustment of a feature’s programmatically-determined start point.">@startvo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a vertical adjustment of a feature’s programmatically-determined start
-                                       point.</span><span class="attributeValues"></span></div>
+                                       point.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.html">att.visualOffset2</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.vo.html">att.visualOffset2.vo</a></span><span class="step end">@startvo</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">@tstamp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the onset time in terms of musical time, <abbr>i.e.</abbr>, beats[.fractional beat part],
-                                       as expressed in the written time signature.</span><span class="attributeValues"></span></div>
+                                       as expressed in the written time signature.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BEAT.html">data.BEAT</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.log.html">att.slur.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp.log.html">att.timestamp.log</a></span><span class="step end">@tstamp</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Encodes the ending point of an event, i.e., a count of measures plus a beat location in the ending measure.">@tstamp2</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the ending point of an event, <abbr>i.e.</abbr>, a count of measures plus a beat location
-                                       in the ending measure.</span><span class="attributeValues"></span></div>
+                                       in the ending measure.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREBEAT.html">data.MEASUREBEAT</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.log.html">att.slur.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timestamp2.log.html">att.timestamp2.log</a></span><span class="step end">@tstamp2</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -167,7 +195,9 @@
                                  <div class="desc"><span class="ident attribute" title="Records the vertical adjustment of a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">@vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature’s programmatically-determined location
                                        in
                                        terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                                       staff lines.</span><span class="attributeValues"></span></div>
+                                       staff lines.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;slur&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slur.vis.html">att.slur.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset.html">att.visualOffset</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset.vo.html">att.visualOffset.vo</a></span><span class="step end">@vo</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -226,7 +256,9 @@
                                                          is, those entities pointed "from", in a relationship with the specified target(s).
                                                          When
                                                          the target attribute is not present, it identifies participants in a mutual
-                                                         relationship.</span><span class="attributeValues"></span></span></div>
+                                                         relationship.</span><span class="attributeValues">
+                                                         One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                           <div class="classBox" title="att.staffIdent">
@@ -242,7 +274,9 @@
                                                    beat part].</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">@tstamp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the onset time in terms of musical time, <abbr>i.e.</abbr>, beats[.fractional beat part],
-                                                         as expressed in the written time signature.</span><span class="attributeValues"></span></span></div>
+                                                         as expressed in the written time signature.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BEAT.html">data.BEAT</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                        </div>
@@ -251,7 +285,9 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.additive.html">att.duration.additive</a></label><span class="classDesc">(MEI.shared) Attributes that permit total duration to be represented by multiple values.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="When a duration cannot be represented as a single power-of-two value, multiple space-separated values that add up to the total duration may be used.">@dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When a duration cannot be represented as a single power-of-two value, multiple
-                                                   space-separated values that add up to the total duration may be used.</span><span class="attributeValues"></span></span></div>
+                                                   space-separated values that add up to the total duration may be used.</span><span class="attributeValues">
+                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>, separated by spaces.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.startEndId">
@@ -259,12 +295,16 @@
                                              a sequence of elements to which the current element is associated.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the final element in a sequence of events to which the feature applies.">@endid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the final element in a sequence of events to which the feature
-                                                   applies.</span><span class="attributeValues"></span></span></div>
+                                                   applies.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                                   </span></span></div>
                                           <div class="classBox" title="att.startId">
                                              <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.startId.html">att.startId</a></label><span class="classDesc">(MEI.shared) Attributes that identify a relative starting point.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Holds a reference to the first element in a sequence of events to which the feature applies.">@startid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a reference to the first element in a sequence of events to which the feature
-                                                         applies.</span><span class="attributeValues"></span></span></div>
+                                                         applies.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                        </div>
@@ -274,7 +314,9 @@
                                              of musical time.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Encodes the ending point of an event, i.e., a count of measures plus a beat location in the ending measure.">@tstamp2</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the ending point of an event, <abbr>i.e.</abbr>, a count of measures plus a beat location
-                                                   in the ending measure.</span><span class="attributeValues"></span></span></div>
+                                                   in the ending measure.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREBEAT.html">data.MEASUREBEAT</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -287,7 +329,9 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.color.html">att.color</a></label><span class="classDesc">(MEI.shared) Visual color attributes.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">@color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
-                                                   as used in pre-CMN notation.</span><span class="attributeValues"></span></span></div>
+                                                   as used in pre-CMN notation.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.curvature">
@@ -299,8 +343,12 @@
                                     <div class="classBox" title="att.lineRend.base">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.lineRend.base.html">att.lineRend.base</a></label><span class="classDesc">(MEI.shared) Attributes that record the basic visual rendition of lines.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes the style of a line.">@lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the style of a line.</span><span class="attributeValues"></span></span></div>
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">@lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes the style of a line.">@lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the style of a line.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">@lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">@lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
                                                    or
                                                    the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
@@ -323,7 +371,9 @@
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Records a horizontal adjustment to a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">@ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature’s programmatically-determined location
                                                          in
                                                          terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                                                         staff lines.</span><span class="attributeValues"></span></span></div>
+                                                         staff lines.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                           <div class="classBox" title="att.visualOffset.vo">
@@ -332,7 +382,9 @@
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Records the vertical adjustment of a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">@vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature’s programmatically-determined location
                                                          in
                                                          terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                                                         staff lines.</span><span class="attributeValues"></span></span></div>
+                                                         staff lines.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                        </div>
@@ -350,18 +402,26 @@
                                              <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.ho.html">att.visualOffset2.ho</a></label><span class="classDesc">(MEI.shared) Horizontal offset requiring a pair of attributes.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined start point.">@startho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the horizontal adjustment of a feature’s programmatically-determined start
-                                                         point.</span><span class="attributeValues"></span></span></div>
+                                                         point.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                                         </span></span></div>
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined end point.">@endho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the horizontal adjustment of a feature’s programmatically-determined end
-                                                         point.</span><span class="attributeValues"></span></span></div>
+                                                         point.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                           <div class="classBox" title="att.visualOffset2.vo">
                                              <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visualOffset2.vo.html">att.visualOffset2.vo</a></label><span class="classDesc">(MEI.shared) Vertical offset attributes requiring a pair of attributes.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Records a vertical adjustment of a feature’s programmatically-determined start point.">@startvo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a vertical adjustment of a feature’s programmatically-determined start
-                                                         point.</span><span class="attributeValues"></span></span></div>
+                                                         point.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                                         </span></span></div>
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Records a vertical adjustment of a feature’s programmatically-determined end point.">@endvo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a vertical adjustment of a feature’s programmatically-determined end
-                                                         point.</span><span class="attributeValues"></span></span></div>
+                                                         point.</span><span class="attributeValues">
+                                                         Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                        </div>
@@ -378,26 +438,40 @@
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">@color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
-                                             as used in pre-CMN notation.</span><span class="attributeValues"></span></span></div>
+                                             as used in pre-CMN notation.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes a curve with a generic term indicating the direction of curvature.">@curvedir</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a curve with a generic term indicating the direction of curvature.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">above</span>" <i>(Upward curve.)</i>,  "<span style="font-weight: 500;">below</span>" <i>(Downward curve.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>(A "meandering" curve, both above and below the items it pertains to.)</i></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="When a duration cannot be represented as a single power-of-two value, multiple space-separated values that add up to the total duration may be used.">@dur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When a duration cannot be represented as a single power-of-two value, multiple
-                                             space-separated values that add up to the total duration may be used.</span><span class="attributeValues"></span></span></div>
+                                             space-separated values that add up to the total duration may be used.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.DURATION.html">data.DURATION</a>, separated by spaces.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined end point.">@endho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the horizontal adjustment of a feature’s programmatically-determined end
-                                             point.</span><span class="attributeValues"></span></span></div>
+                                             point.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the final element in a sequence of events to which the feature applies.">@endid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the final element in a sequence of events to which the feature
-                                             applies.</span><span class="attributeValues"></span></span></div>
+                                             applies.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records a vertical adjustment of a feature’s programmatically-determined end point.">@endvo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a vertical adjustment of a feature’s programmatically-determined end
-                                             point.</span><span class="attributeValues"></span></span></div>
+                                             point.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records a horizontal adjustment to a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">@ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature’s programmatically-determined location
                                              in
                                              terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                                             staff lines.</span><span class="attributeValues"></span></span></div>
+                                             staff lines.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                              a
                                              "tool tip" or prefatory text, for example. Should not be used to record document
                                              content.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">@layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the style of a line.">@lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the style of a line.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the style of a line.">@lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the style of a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEFORM.html">data.LINEFORM</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">@lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
                                              or
                                              the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
@@ -406,30 +480,46 @@
                                              may fall, while a single value indicates a fixed amount of space; that is, the minimum
                                              and
                                              maximum values are equal.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">@lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Width of a line.">@lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="When the target attribute is present, plist identifies the active participants; that is, those entities pointed &#34;from&#34;, in a relationship with the specified target(s). When the target attribute is not present, it identifies participants in a mutual relationship.">@plist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When the target attribute is present, plist identifies the active participants; that
                                              is, those entities pointed "from", in a relationship with the specified target(s).
                                              When
                                              the target attribute is not present, it identifies participants in a mutual
-                                             relationship.</span><span class="attributeValues"></span></span></div>
+                                             relationship.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">@staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                              applies. Mandatory when applicable.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the horizontal adjustment of a feature’s programmatically-determined start point.">@startho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the horizontal adjustment of a feature’s programmatically-determined start
-                                             point.</span><span class="attributeValues"></span></span></div>
+                                             point.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Holds a reference to the first element in a sequence of events to which the feature applies.">@startid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a reference to the first element in a sequence of events to which the feature
-                                             applies.</span><span class="attributeValues"></span></span></div>
+                                             applies.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records a vertical adjustment of a feature’s programmatically-determined start point.">@startvo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a vertical adjustment of a feature’s programmatically-determined start
-                                             point.</span><span class="attributeValues"></span></span></div>
+                                             point.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">@tstamp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the onset time in terms of musical time, <abbr>i.e.</abbr>, beats[.fractional beat part],
-                                             as expressed in the written time signature.</span><span class="attributeValues"></span></span></div>
+                                             as expressed in the written time signature.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BEAT.html">data.BEAT</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Encodes the ending point of an event, i.e., a count of measures plus a beat location in the ending measure.">@tstamp2</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the ending point of an event, <abbr>i.e.</abbr>, a count of measures plus a beat location
-                                             in the ending measure.</span><span class="attributeValues"></span></span></div>
+                                             in the ending measure.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREBEAT.html">data.MEASUREBEAT</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                                              classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the vertical adjustment of a feature’s programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">@vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature’s programmatically-determined location
                                              in
                                              terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                                             staff lines.</span><span class="attributeValues"></span></span></div>
+                                             staff lines.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                              and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues"></span></span></div>
                                  </div>
@@ -592,7 +682,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c874ef509b6ec91cbf07d9b417b94579aa646b47" target="_blank" rel="noopener noreferrer">#c874ef5</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/648725a9b525edb7ec7320288eaf65170126aa3c" target="_blank" rel="noopener noreferrer">#648725a</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

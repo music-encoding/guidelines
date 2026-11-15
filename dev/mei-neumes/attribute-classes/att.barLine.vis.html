@@ -8,7 +8,7 @@
       <meta name="author" content="Perry Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-11-10">
+      <meta name="date" content="2026-11-15">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization for encoding neume notation.">
@@ -55,12 +55,16 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a symbolDef element elsewhere in the document.">@altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
                                        an
-                                       ID of a <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues"></span></div>
+                                       ID of a <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.altSym.html">att.altSym</a></span><span class="step end">@altsym</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">@color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
-                                       as used in pre-CMN notation.</span><span class="attributeValues"></span></div>
+                                       as used in pre-CMN notation.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.color.html">att.color</a></span><span class="step end">@color</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -74,12 +78,16 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g., &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">@glyph.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Numeric glyph reference in hexadecimal notation, <abbr>e.g.</abbr>, "#xE000" or "U+E000". N.B. SMuFL
-                                       version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues"></span></div>
+                                       version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.HEXNUM.html">data.HEXNUM</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extSym.html">att.extSym</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extSym.names.html">att.extSym.names</a></span><span class="step end">@glyph.num</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="The web-accessible location of the controlled vocabulary from which the value of glyph.name or glyph.num is taken, or the textual content of the element.">@glyph.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The web-accessible location of the controlled vocabulary from which the value of
-                                       <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues"></span></div>
+                                       <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extSym.html">att.extSym</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.extSym.auth.html">att.extSym.auth</a></span><span class="step end">@glyph.uri</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -90,20 +98,28 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step">direct children</span><span class="step end">@len</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records the method of barring.">@method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Records the method of barring.">@method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step">direct children</span><span class="step end">@method</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Denotes the staff location of the bar line if its length is non-standard.">@place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Denotes the staff location of the bar line if its length is non-standard.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Denotes the staff location of the bar line if its length is non-standard.">@place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Denotes the staff location of the bar line if its length is non-standard.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFLOC.html">data.STAFFLOC</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step">direct children</span><span class="step end">@place</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.">@visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates if a feature should be rendered when the notation is presented graphically
-                                       or sounded when it is presented in an aural form.</span><span class="attributeValues"></span></div>
+                                       or sounded when it is presented in an aural form.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visibility.html">att.visibility</a></span><span class="step end">@visible</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">@width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">@width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTUNSIGNED.html">data.MEASUREMENTUNSIGNED</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.barLine.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.width.html">att.width</a></span><span class="step end">@width</span></div>
                               </div>
                            </div>
@@ -115,8 +131,12 @@
                                              and
                                              is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
                                              5-line staff.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Denotes the staff location of the bar line if its length is non-standard.">@place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Denotes the staff location of the bar line if its length is non-standard.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Denotes the staff location of the bar line if its length is non-standard.">@place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Denotes the staff location of the bar line if its length is non-standard.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFLOC.html">data.STAFFLOC</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="att.altSym">
@@ -124,14 +144,18 @@
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a symbolDef element elsewhere in the document.">@altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
                                              an
-                                             ID of a <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues"></span></span></div>
+                                             ID of a <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="att.color">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.color.html">att.color</a></label><span class="classDesc">(MEI.shared) Visual color attributes.</span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">@color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
-                                             as used in pre-CMN notation.</span><span class="attributeValues"></span></span></div>
+                                             as used in pre-CMN notation.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="att.extSym">
@@ -144,7 +168,9 @@
                                           <div class="def"><span class="desc"><span class="ident attribute" title="A name or label associated with the controlled vocabulary from which the value of glyph.name or glyph.num is taken, or the textual content of the element.">@glyph.auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with the controlled vocabulary from which the value of
                                                    <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">smufl</span>" <i>(Standard Music Font Layout.)</i></span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="The web-accessible location of the controlled vocabulary from which the value of glyph.name or glyph.num is taken, or the textual content of the element.">@glyph.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The web-accessible location of the controlled vocabulary from which the value of
-                                                   <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues"></span></span></div>
+                                                   <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.extSym.names">
@@ -153,7 +179,9 @@
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Glyph name.">@glyph.name</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Glyph name.</span><span class="attributeValues"></span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g., &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">@glyph.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Numeric glyph reference in hexadecimal notation, <abbr>e.g.</abbr>, "#xE000" or "U+E000". N.B. SMuFL
-                                                   version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues"></span></span></div>
+                                                   version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.HEXNUM.html">data.HEXNUM</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -162,13 +190,17 @@
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.visibility.html">att.visibility</a></label><span class="classDesc">(MEI.shared) Attributes describing whether a feature should be displayed.</span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.">@visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates if a feature should be rendered when the notation is presented graphically
-                                             or sounded when it is presented in an aural form.</span><span class="attributeValues"></span></span></div>
+                                             or sounded when it is presented in an aural form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="att.width">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.width.html">att.width</a></label><span class="classDesc">(MEI.shared) Attributes that describe horizontal size.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">@width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">@width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTUNSIGNED.html">data.MEASUREMENTUNSIGNED</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -180,19 +212,29 @@
                                              <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">smufl</span>" <i>(Standard Music Font Layout.)</i></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Glyph name.">@glyph.name</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Glyph name.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g., &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">@glyph.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Numeric glyph reference in hexadecimal notation, <abbr>e.g.</abbr>, "#xE000" or "U+E000". N.B. SMuFL
-                                             version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues"></span></span></div>
+                                             version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.HEXNUM.html">data.HEXNUM</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="The web-accessible location of the controlled vocabulary from which the value of glyph.name or glyph.num is taken, or the textual content of the element.">@glyph.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The web-accessible location of the controlled vocabulary from which the value of
-                                             <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues"></span></span></div>
+                                             <span class="att">@glyph.name</span> or <span class="att">@glyph.num</span> is taken, or the textual content of the element.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="MEI.shared">
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">@color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
-                                             as used in pre-CMN notation.</span><span class="attributeValues"></span></span></div>
+                                             as used in pre-CMN notation.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.">@visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates if a feature should be rendered when the notation is presented graphically
-                                             or sounded when it is presented in an aural form.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">@width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues"></span></span></div>
+                                             or sounded when it is presented in an aural form.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">@width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTUNSIGNED.html">data.MEASUREMENTUNSIGNED</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="MEI.usersymbols">
@@ -200,7 +242,9 @@
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a symbolDef element elsewhere in the document.">@altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
                                              an
-                                             ID of a <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues"></span></span></div>
+                                             ID of a <a class="link_odd link_odd_elementSpec" href="../elements/symbolDef.html">&lt;symbolDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="MEI.visual">
@@ -210,8 +254,12 @@
                                              and
                                              is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
                                              5-line staff.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Denotes the staff location of the bar line if its length is non-standard.">@place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Denotes the staff location of the bar line if its length is non-standard.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Denotes the staff location of the bar line if its length is non-standard.">@place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Denotes the staff location of the bar line if its length is non-standard.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFLOC.html">data.STAFFLOC</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -303,7 +351,7 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;dataRef <span class="attribute">key=</span><span class="attributevalue">"data.BARMETHOD"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;dataRef <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>"</span>/&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                                           <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                                        
@@ -313,7 +361,7 @@
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                              
-                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;dataRef <span class="attribute">key=</span><span class="attributevalue">"data.STAFFLOC"</span>/&gt;</span></div>
+                                             <div class="indent indent5"><span data-indentation="5" class="element">&lt;dataRef <span class="attribute">key=</span><span class="attributevalue">"<a class="link_odd link_odd_dataType" href="../data-types/data.STAFFLOC.html">data.STAFFLOC</a>"</span>/&gt;</span></div>
                                              <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                                           
                                           <div class="indent indent4"><span data-indentation="4" class="element">&lt;remarks <span class="attribute">xml:lang=</span><span class="attributevalue">"en"</span>&gt;</span>
@@ -340,7 +388,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c874ef509b6ec91cbf07d9b417b94579aa646b47" target="_blank" rel="noopener noreferrer">#c874ef5</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/648725a9b525edb7ec7320288eaf65170126aa3c" target="_blank" rel="noopener noreferrer">#648725a</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

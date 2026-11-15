@@ -8,7 +8,7 @@
       <meta name="author" content="Johannes Kepper">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2026-11-10">
+      <meta name="date" content="2026-11-15">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.description" content="A customization optimized for interchange and interoperability.">
@@ -55,32 +55,44 @@
                            <div id="attributes_compact" class="facetTabbedContent compact active" data-label="compact"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span>, <span class="ident attribute" title="Records the direction of octave displacement to be applied to the clef.">@clef.dis.place</span>, <span class="ident attribute" title="Contains a default value for the position of the clef. The value must be in the range between 1 and the number of lines on the staff. The numbering of lines starts with the lowest line of the staff.">@clef.line</span>, <span class="ident attribute" title="Encodes a value for the clef symbol.">@clef.shape</span>, <span class="ident attribute" title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an instrDef element elsewhere in the document.">@instr</span>, <span class="ident attribute" title="Written key signature.">@keysig</span>, <span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span>, <span class="ident attribute" title="Indicates the number of staff lines.">@lines</span>, <span class="ident attribute" title="Captures the colors of the staff lines.">@lines.color</span>, <span class="ident attribute" title="Records whether all staff lines are visible.">@lines.visible</span>, <span class="ident attribute" title="Captures the number of beats in a measure, that is, the top number of the meter signature. It must contain a decimal number or an expression that evaluates to a decimal number, such as 2+3 or 3*2.">@meter.count</span>, <span class="ident attribute" title="Indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C' for common time or 'C' with a slash for cut time.">@meter.sym</span>, <span class="ident attribute" title="Contains the number indicating the beat unit, that is, the bottom number of the meter signature.">@meter.unit</span>, <span class="ident attribute" title="Provides a numeric designation that indicates an element’s position in a sequence of similar elements. Its value must be a non-negative integer.">@n</span>, <span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@num</span>, <span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@numbase</span>, <span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span>, <span class="ident attribute" title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span>, <span class="ident attribute" title="Records the amount of diatonic pitch shift, e.g., C to C♯ = 0, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.diat</span>, <span class="ident attribute" title="Records the amount of pitch shift in semitones, e.g., C to C♯ = 1, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.semi</span>, <span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span>, <span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span>, <span class="ident attribute" title="Provides an indication of the tuning system, just, for example.">@tune.temper</span>, <span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span>, <span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span></div>
                            <div id="attributes_full" class="facetTabbedContent full" data-label="full definition">
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of octave displacement to be applied to the clef.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of octave displacement to be applied to the clef.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.OCTAVE.DIS.html">data.OCTAVE.DIS</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cleffing.log.html">att.cleffing.log</a></span><span class="step end">@clef.dis</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records the direction of octave displacement to be applied to the clef.">@clef.dis.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the direction of octave displacement to be applied to the clef.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Records the direction of octave displacement to be applied to the clef.">@clef.dis.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the direction of octave displacement to be applied to the clef.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFREL.basic.html">data.STAFFREL.basic</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cleffing.log.html">att.cleffing.log</a></span><span class="step end">@clef.dis.place</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Contains a default value for the position of the clef. The value must be in the range between 1 and the number of lines on the staff. The numbering of lines starts with the lowest line of the staff.">@clef.line</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a default value for the position of the clef. The value must be in the range
                                        between 1 and the number of lines on the staff. The numbering of lines starts with
                                        the
-                                       lowest line of the staff.</span><span class="attributeValues"></span></div>
+                                       lowest line of the staff.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cleffing.log.html">att.cleffing.log</a></span><span class="step end">@clef.line</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Encodes a value for the clef symbol.">@clef.shape</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a value for the clef symbol.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Encodes a value for the clef symbol.">@clef.shape</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a value for the clef symbol.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFSHAPE.html">data.CLEFSHAPE</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cleffing.log.html">att.cleffing.log</a></span><span class="step end">@clef.shape</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an instrDef element elsewhere in the document.">@instr</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a MIDI instrument definition. It must contain the ID
                                        of
-                                       an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues"></span></div>
+                                       an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.ges.html">att.staffDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.instrumentIdent.html">att.instrumentIdent</a></span><span class="step end">@instr</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues">
+                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>, separated by spaces.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a></span><span class="step end">@keysig</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -95,15 +107,11 @@
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a></span><span class="step end">@lines</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Captures the colors of the staff lines.">@lines.color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the colors of the staff lines.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>, separated by spaces.
-                                       </span></div>
+                                 <div class="desc"><span class="ident attribute" title="Captures the colors of the staff lines.">@lines.color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the colors of the staff lines.</span><span class="attributeValues"></span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a></span><span class="step end">@lines.color</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Records whether all staff lines are visible.">@lines.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records whether all staff lines are visible.</span><span class="attributeValues">
-                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
-                                       </span></div>
+                                 <div class="desc"><span class="ident attribute" title="Records whether all staff lines are visible.">@lines.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records whether all staff lines are visible.</span><span class="attributeValues"></span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a></span><span class="step end">@lines.visible</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -115,7 +123,9 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C' for common time or 'C' with a slash for cut time.">@meter.sym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
                                        'C'
-                                       for common time or 'C' with a slash for cut time.</span><span class="attributeValues"></span></div>
+                                       for common time or 'C' with a slash for cut time.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.METERSIGN.html">data.METERSIGN</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.log.html">att.staffDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSigDefault.log.html">att.meterSigDefault.log</a></span><span class="step end">@meter.sym</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -146,7 +156,9 @@
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.ges.html">att.staffDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timeBase.html">att.timeBase</a></span><span class="step end">@ppq</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Scale factor to be applied to the feature to make it the desired display size.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Scale factor to be applied to the feature to make it the desired display size.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PERCENT.html">data.PERCENT</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scalable.html">att.scalable</a></span><span class="step end">@scale</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -164,11 +176,15 @@
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.ges.html">att.staffDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></span><span class="step end">@tune.Hz</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.ges.html">att.staffDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></span><span class="step end">@tune.pname</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Provides an indication of the tuning system, just, for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Provides an indication of the tuning system, just, for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
+                                       Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;staffDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.ges.html">att.staffDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></span><span class="step end">@tune.temper</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -227,7 +243,9 @@
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an instrDef element elsewhere in the document.">@instr</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a MIDI instrument definition. It must contain the ID
                                                    of
-                                                   an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues"></span></span></div>
+                                                   an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.timeBase">
@@ -242,8 +260,12 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></label><span class="classDesc">(MEI.shared) Attributes that describe tuning.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues"></span></span></div>
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues"></span></span></div>
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Provides an indication of the tuning system, just, for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Provides an indication of the tuning system, just, for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -256,13 +278,21 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.cleffing.log.html">att.cleffing.log</a></label><span class="classDesc">(MEI.shared) Used by staffDef and scoreDef to provide default values for attributes
                                              in the logical domain related to clefs.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Encodes a value for the clef symbol.">@clef.shape</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a value for the clef symbol.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Encodes a value for the clef symbol.">@clef.shape</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a value for the clef symbol.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFSHAPE.html">data.CLEFSHAPE</a>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Contains a default value for the position of the clef. The value must be in the range between 1 and the number of lines on the staff. The numbering of lines starts with the lowest line of the staff.">@clef.line</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a default value for the position of the clef. The value must be in the range
                                                    between 1 and the number of lines on the staff. The numbering of lines starts with
                                                    the
-                                                   lowest line of the staff.</span><span class="attributeValues"></span></span></div>
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of octave displacement to be applied to the clef.</span><span class="attributeValues"></span></span></div>
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Records the direction of octave displacement to be applied to the clef.">@clef.dis.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the direction of octave displacement to be applied to the clef.</span><span class="attributeValues"></span></span></div>
+                                                   lowest line of the staff.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of octave displacement to be applied to the clef.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.OCTAVE.DIS.html">data.OCTAVE.DIS</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Records the direction of octave displacement to be applied to the clef.">@clef.dis.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the direction of octave displacement to be applied to the clef.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFREL.basic.html">data.STAFFREL.basic</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.duration.ratio">
@@ -278,7 +308,9 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a></label><span class="classDesc">(MEI.shared) Used by staffDef and scoreDef to provide default values for attributes
                                              in the logical domain that are related to key signatures.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues">
+                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>, separated by spaces.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.meterSigDefault.log">
@@ -292,7 +324,9 @@
                                                    signature.</span><span class="attributeValues"></span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C' for common time or 'C' with a slash for cut time.">@meter.sym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
                                                    'C'
-                                                   for common time or 'C' with a slash for cut time.</span><span class="attributeValues"></span></span></div>
+                                                   for common time or 'C' with a slash for cut time.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.METERSIGN.html">data.METERSIGN</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.transposition">
@@ -313,16 +347,14 @@
                               <div class="classBox" title="att.staffDef.vis">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes for staffDef.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the colors of the staff lines.">@lines.color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the colors of the staff lines.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>, separated by spaces.
-                                             </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records whether all staff lines are visible.">@lines.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records whether all staff lines are visible.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
-                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the colors of the staff lines.">@lines.color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the colors of the staff lines.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records whether all staff lines are visible.">@lines.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records whether all staff lines are visible.</span><span class="attributeValues"></span></span></div>
                                     <div class="classBox" title="att.scalable">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scalable.html">att.scalable</a></label><span class="classDesc">(MEI.shared) Attributes that describe relative size.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Scale factor to be applied to the feature to make it the desired display size.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Scale factor to be applied to the feature to make it the desired display size.</span><span class="attributeValues">
+                                                   Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PERCENT.html">data.PERCENT</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -334,7 +366,9 @@
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides a way of pointing to a MIDI instrument definition. It must contain the ID of an instrDef element elsewhere in the document.">@instr</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a MIDI instrument definition. It must contain the ID
                                              of
-                                             an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues"></span></span></div>
+                                             an <a class="link_odd link_odd_elementSpec" href="../elements/instrDef.html">&lt;instrDef&gt;</a> element elsewhere in the document.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
                                              quarter note. Unlike MIDI, MEI permits different values for a score and individual
                                              staves.</span><span class="attributeValues"></span></span></div>
@@ -343,14 +377,24 @@
                               <div class="classBox" title="MEI.shared">
                                  <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of octave displacement to be applied to the clef.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the direction of octave displacement to be applied to the clef.">@clef.dis.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the direction of octave displacement to be applied to the clef.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of octave displacement to be applied to the clef.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.OCTAVE.DIS.html">data.OCTAVE.DIS</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records the direction of octave displacement to be applied to the clef.">@clef.dis.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the direction of octave displacement to be applied to the clef.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFREL.basic.html">data.STAFFREL.basic</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains a default value for the position of the clef. The value must be in the range between 1 and the number of lines on the staff. The numbering of lines starts with the lowest line of the staff.">@clef.line</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a default value for the position of the clef. The value must be in the range
                                              between 1 and the number of lines on the staff. The numbering of lines starts with
                                              the
-                                             lowest line of the staff.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Encodes a value for the clef symbol.">@clef.shape</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a value for the clef symbol.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues"></span></span></div>
+                                             lowest line of the staff.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFLINE.html">data.CLEFLINE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Encodes a value for the clef symbol.">@clef.shape</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a value for the clef symbol.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.CLEFSHAPE.html">data.CLEFSHAPE</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues">
+                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>, separated by spaces.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                              a
                                              "tool tip" or prefatory text, for example. Should not be used to record document
@@ -361,7 +405,9 @@
                                              decimal number, such as 2+3 or 3*2.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C' for common time or 'C' with a slash for cut time.">@meter.sym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
                                              'C'
-                                             for common time or 'C' with a slash for cut time.</span><span class="attributeValues"></span></span></div>
+                                             for common time or 'C' with a slash for cut time.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.METERSIGN.html">data.METERSIGN</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains the number indicating the beat unit, that is, the bottom number of the meter signature.">@meter.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the number indicating the beat unit, that is, the bottom number of the meter
                                              signature.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides a numeric designation that indicates an element’s position in a sequence of similar elements. Its value must be a non-negative integer.">@n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element’s position in a sequence
@@ -371,14 +417,20 @@
                                              ratio, while numbase is the second.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
                                              while numbase is the second.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Scale factor to be applied to the feature to make it the desired display size.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Scale factor to be applied to the feature to make it the desired display size.">@scale</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Scale factor to be applied to the feature to make it the desired display size.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PERCENT.html">data.PERCENT</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of diatonic pitch shift, e.g., C to C♯ = 0, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.diat</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of diatonic pitch shift, <abbr>e.g.</abbr>, C to C♯ = 0, C to D♭ = 1, necessary
                                              to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of pitch shift in semitones, e.g., C to C♯ = 1, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.semi</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of pitch shift in semitones, <abbr>e.g.</abbr>, C to C♯ = 1, C to D♭ = 1,
                                              necessary to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides an indication of the tuning system, just, for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Provides an indication of the tuning system, just, for example.">@tune.temper</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the tuning system, <span class="val">just</span>, for example.</span><span class="attributeValues">
+                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                                              classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
@@ -388,12 +440,8 @@
                               <div class="classBox" title="MEI.visual">
                                  <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the colors of the staff lines.">@lines.color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the colors of the staff lines.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.COLOR.html">data.COLOR</a>, separated by spaces.
-                                             </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records whether all staff lines are visible.">@lines.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records whether all staff lines are visible.</span><span class="attributeValues">
-                                             Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
-                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Captures the colors of the staff lines.">@lines.color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the colors of the staff lines.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Records whether all staff lines are visible.">@lines.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records whether all staff lines are visible.</span><span class="attributeValues"></span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -739,7 +787,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/c874ef509b6ec91cbf07d9b417b94579aa646b47" target="_blank" rel="noopener noreferrer">#c874ef5</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+basic</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/648725a9b525edb7ec7320288eaf65170126aa3c" target="_blank" rel="noopener noreferrer">#648725a</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
