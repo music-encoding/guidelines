@@ -62,13 +62,15 @@
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.edit.html">att.edit</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.evidence.html">att.evidence</a></span><span class="step end">@cert</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Describes the character of the new hand.">@character</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the character of the new hand.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Describes the character of the new hand.">@character</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the character of the new hand.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step">direct children</span><span class="step end">@character</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                                        bearing this attribute.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a></span><span class="step end">@class</span></div>
                               </div>
@@ -81,27 +83,28 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                                        fashion.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@corresp</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.">@evidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the nature of the evidence supporting the reliability or accuracy of the
                                        intervention or interpretation.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">internal</span>" <i>(There is evidence within the document to support the intervention.)</i>,  "<span style="font-weight: 500;">external</span>" <i>(There is evidence outside the document to support the intervention.)</i>,  "<span style="font-weight: 500;">conjecture</span>" <i>(The assertion has been made by the editor, cataloguer, or scholar on the basis of
-                                          their expertise.)</i></span></div>
+                                          their expertise.)</i>. Other values conform to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.edit.html">att.edit</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.evidence.html">att.evidence</a></span><span class="step end">@evidence</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to one or more images, portions of an image, or surfaces which correspond to the current element.">@facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more images, portions of an image, or surfaces which correspond to
                                        the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.facsimile.html">att.facsimile</a></span><span class="step end">@facs</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                                        predecessors of the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@follows</span></div>
                               </div>
@@ -109,11 +112,15 @@
                                  <div class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                        a
                                        "tool tip" or prefatory text, for example. Should not be used to record document
-                                       content.</span><span class="attributeValues"></span></div>
+                                       content.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.labelled.html">att.labelled</a></span><span class="step end">@label</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Describes the writing medium.">@medium</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the writing medium.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Describes the writing medium.">@medium</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the writing medium.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.medium.html">att.medium</a></span><span class="step end">@medium</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -132,7 +139,7 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@next</span></div>
                               </div>
@@ -146,13 +153,13 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                                        successors of the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@precedes</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@prev</span></div>
                               </div>
@@ -161,7 +168,7 @@
                                        editing, or encoding. Its value must point to one or more identifiers declared in
                                        the
                                        document header.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a></span><span class="step end">@resp</span></div>
                               </div>
@@ -169,26 +176,28 @@
                                  <div class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                                        copy
                                        of the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@sameas</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a source or manifestationelement located in the document header.">@source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                                        reading. Each value should correspond to the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>element located in the document header.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.edit.html">att.edit</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.source.html">att.source</a></span><span class="step end">@source</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@synch</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
-                                       classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></div>
+                                       classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                       Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></span><span class="step end">@type</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -200,7 +209,9 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
-                                       and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues"></span></div>
+                                       and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#ID">XML Schema ID datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;handShift&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.basic.html">att.basic</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.id.html">att.id</a></span><span class="step end">@xml:id</span></div>
                               </div>
                            </div>
@@ -208,7 +219,9 @@
                               <div class="classBox" title="direct children">
                                  <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the character of the new hand.">@character</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the character of the new hand.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the character of the new hand.">@character</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the character of the new hand.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the new hand. The value must contain the ID of a hand element given elsewhere in the document.">@new</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the new hand. The value must contain the ID of a hand element given
                                              elsewhere in the document.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
@@ -233,7 +246,9 @@
                                              <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.id.html">att.id</a></label><span class="classDesc">(MEI.shared) Attributes that uniquely identify an element.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
-                                                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues"></span></span></div>
+                                                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                                         Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#ID">XML Schema ID datatype</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                        </div>
@@ -244,7 +259,9 @@
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                                    a
                                                    "tool tip" or prefatory text, for example. Should not be used to record document
-                                                   content.</span><span class="attributeValues"></span></span></div>
+                                                   content.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.linking">
@@ -255,29 +272,29 @@
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                                                    fashion.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                                                    predecessors of the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                                                    successors of the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                                                    copy
                                                    of the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -298,7 +315,7 @@
                                                    editing, or encoding. Its value must point to one or more identifiers declared in
                                                    the
                                                    document header.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -306,13 +323,15 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
-                                                   classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></span></div>
+                                                   classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                                   Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                                   </span></span></div>
                                           <div class="classBox" title="att.classed">
                                              <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                                                          bearing this attribute.</span><span class="attributeValues">
-                                                         One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                         Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                          </span></span></div>
                                              </div>
                                           </div>
@@ -329,7 +348,7 @@
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a source or manifestationelement located in the document header.">@source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                                                    reading. Each value should correspond to the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>element located in the document header.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -341,7 +360,8 @@
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.">@evidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the nature of the evidence supporting the reliability or accuracy of the
                                                    intervention or interpretation.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">internal</span>" <i>(There is evidence within the document to support the intervention.)</i>,  "<span style="font-weight: 500;">external</span>" <i>(There is evidence outside the document to support the intervention.)</i>,  "<span style="font-weight: 500;">conjecture</span>" <i>(The assertion has been made by the editor, cataloguer, or scholar on the basis of
-                                                      their expertise.)</i></span></span></div>
+                                                      their expertise.)</i>. Other values conform to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -352,14 +372,16 @@
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more images, portions of an image, or surfaces which correspond to the current element.">@facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more images, portions of an image, or surfaces which correspond to
                                              the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="att.medium">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.medium.html">att.medium</a></label><span class="classDesc">(MEI.shared) Attributes describing a writing medium, such as pencil or ink.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the writing medium.">@medium</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the writing medium.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the writing medium.">@medium</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the writing medium.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -367,7 +389,9 @@
                               <div class="classBox" title="MEI.edittrans">
                                  <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc"></span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the character of the new hand.">@character</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the character of the new hand.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the character of the new hand.">@character</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the character of the new hand.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the new hand. The value must contain the ID of a hand element given elsewhere in the document.">@new</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the new hand. The value must contain the ID of a hand element given
                                              elsewhere in the document.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
@@ -383,7 +407,7 @@
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more images, portions of an image, or surfaces which correspond to the current element.">@facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more images, portions of an image, or surfaces which correspond to
                                              the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -395,67 +419,76 @@
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                                              bearing this attribute.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element of which the current element is a copy.">@copyof</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element of which the current element is a copy.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                                              fashion.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.">@evidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the nature of the evidence supporting the reliability or accuracy of the
                                              intervention or interpretation.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">internal</span>" <i>(There is evidence within the document to support the intervention.)</i>,  "<span style="font-weight: 500;">external</span>" <i>(There is evidence outside the document to support the intervention.)</i>,  "<span style="font-weight: 500;">conjecture</span>" <i>(The assertion has been made by the editor, cataloguer, or scholar on the basis of
-                                                their expertise.)</i></span></span></div>
+                                                their expertise.)</i>. Other values conform to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                                              predecessors of the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                              a
                                              "tool tip" or prefatory text, for example. Should not be used to record document
-                                             content.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the writing medium.">@medium</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the writing medium.</span><span class="attributeValues"></span></span></div>
+                                             content.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the writing medium.">@medium</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the writing medium.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides a number-like designation that indicates an element’s position in a sequence of similar elements. May not contain space characters.">@n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element’s position in a sequence
                                              of similar elements. May not contain space characters.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.WORD.html">data.WORD</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                                              successors of the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text’s transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">@resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text’s transcription,
                                              editing, or encoding. Its value must point to one or more identifiers declared in
                                              the
                                              document header.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                                              copy
                                              of the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a source or manifestationelement located in the document header.">@source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                                              reading. Each value should correspond to the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>element located in the document header.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
-                                             classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></span></div>
+                                             classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                             Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">@xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                                              references into absolute URI references.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
-                                             and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues"></span></span></div>
+                                             and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#ID">XML Schema ID datatype</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -1014,7 +1047,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1ceca4787345be1b96f4fa1701d60b6c2d19da78" target="_blank" rel="noopener noreferrer">#1ceca47</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+neumes</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9b0a3fe437eba210e542632efcf136503365687a" target="_blank" rel="noopener noreferrer">#9b0a3fe</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

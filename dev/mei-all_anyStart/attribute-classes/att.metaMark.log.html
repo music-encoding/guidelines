@@ -65,7 +65,7 @@
                                        the
                                        header, which are understood to apply to the element bearing this attribute and its
                                        content.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.trans.html">att.trans</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.metadataPointing.html">att.metadataPointing</a></span><span class="step end">@decls</span></div>
                               </div>
@@ -87,7 +87,8 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.">@evidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the nature of the evidence supporting the reliability or accuracy of the
                                        intervention or interpretation.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">internal</span>" <i>(There is evidence within the document to support the intervention.)</i>,  "<span style="font-weight: 500;">external</span>" <i>(There is evidence outside the document to support the intervention.)</i>,  "<span style="font-weight: 500;">conjecture</span>" <i>(The assertion has been made by the editor, cataloguer, or scholar on the basis of
-                                          their expertise.)</i></span></div>
+                                          their expertise.)</i>. Other values conform to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.edit.html">att.edit</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.evidence.html">att.evidence</a></span><span class="step end">@evidence</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -105,7 +106,9 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.trans.html">att.trans</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.geneticState.html">att.geneticState</a></span><span class="step end">@instant</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">@layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">@layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
+                                       Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layerIdent.html">att.layerIdent</a></span><span class="step end">@layer</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -119,7 +122,7 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use 'all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use 'all' when the
                                        feature should occur on every staff.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.partIdent.html">att.partIdent</a></span><span class="step end">@partstaff</span></div>
                               </div>
@@ -129,25 +132,29 @@
                                        When
                                        the target attribute is not present, it identifies participants in a mutual
                                        relationship.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.plist.html">att.plist</a></span><span class="step end">@plist</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">@seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
-                                       carrying this attribute are believed to have occurred.</span><span class="attributeValues"></span></div>
+                                       carrying this attribute are believed to have occurred.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.trans.html">att.trans</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.sequence.html">att.sequence</a></span><span class="step end">@seq</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a source or manifestationelement located in the document header.">@source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                                        reading. Each value should correspond to the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>element located in the document header.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.edit.html">att.edit</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.source.html">att.source</a></span><span class="step end">@source</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">@staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
-                                       applies. Mandatory when applicable.</span><span class="attributeValues"></span></div>
+                                       applies. Mandatory when applicable.</span><span class="attributeValues">
+                                       Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.controlEvent.html">att.controlEvent</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffIdent.html">att.staffIdent</a></span><span class="step end">@staff</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -159,7 +166,7 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to the genetic state that results from this modification.">@state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.metaMark.log&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.trans.html">att.trans</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.geneticState.html">att.geneticState</a></span><span class="step end">@state</span></div>
                               </div>
@@ -218,7 +225,9 @@
                                     <div class="classBox" title="att.layerIdent">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.layerIdent.html">att.layerIdent</a></label><span class="classDesc">(MEI.shared) Attributes that identify the layer to which a feature applies.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">@layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">@layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
+                                                   Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.partIdent">
@@ -231,7 +240,7 @@
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use 'all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use 'all' when the
                                                    feature should occur on every staff.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -243,7 +252,7 @@
                                                    When
                                                    the target attribute is not present, it identifies participants in a mutual
                                                    relationship.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -252,7 +261,9 @@
                                              current feature.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">@staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
-                                                   applies. Mandatory when applicable.</span><span class="attributeValues"></span></span></div>
+                                                   applies. Mandatory when applicable.</span><span class="attributeValues">
+                                                   Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.targetEval">
@@ -327,7 +338,7 @@
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a source or manifestationelement located in the document header.">@source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                                                    reading. Each value should correspond to the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>element located in the document header.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -339,7 +350,8 @@
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.">@evidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the nature of the evidence supporting the reliability or accuracy of the
                                                    intervention or interpretation.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">internal</span>" <i>(There is evidence within the document to support the intervention.)</i>,  "<span style="font-weight: 500;">external</span>" <i>(There is evidence outside the document to support the intervention.)</i>,  "<span style="font-weight: 500;">conjecture</span>" <i>(The assertion has been made by the editor, cataloguer, or scholar on the basis of
-                                                      their expertise.)</i></span></span></div>
+                                                      their expertise.)</i>. Other values conform to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -357,7 +369,7 @@
                                                    Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.unknown.html">data.BOOLEAN.unknown</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to the genetic state that results from this modification.">@state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -377,7 +389,7 @@
                                                    the
                                                    header, which are understood to apply to the element bearing this attribute and its
                                                    content.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -385,7 +397,9 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.sequence.html">att.sequence</a></label><span class="classDesc">(MEI.shared) Attributes that describe order within a collection of features.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">@seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
-                                                   carrying this attribute are believed to have occurred.</span><span class="attributeValues"></span></span></div>
+                                                   carrying this attribute are believed to have occurred.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -401,7 +415,7 @@
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.unknown.html">data.BOOLEAN.unknown</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to the genetic state that results from this modification.">@state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -437,7 +451,7 @@
                                              the
                                              header, which are understood to apply to the element bearing this attribute and its
                                              content.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the final element in a sequence of events to which the feature applies.">@endid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the final element in a sequence of events to which the feature
                                              applies.</span><span class="attributeValues">
@@ -450,11 +464,14 @@
                                                 element(s) specified in plist or target attribute.)</i></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.">@evidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the nature of the evidence supporting the reliability or accuracy of the
                                              intervention or interpretation.</span><span class="attributeValues"> Suggested values are: "<span style="font-weight: 500;">internal</span>" <i>(There is evidence within the document to support the intervention.)</i>,  "<span style="font-weight: 500;">external</span>" <i>(There is evidence outside the document to support the intervention.)</i>,  "<span style="font-weight: 500;">conjecture</span>" <i>(The assertion has been made by the editor, cataloguer, or scholar on the basis of
-                                                their expertise.)</i></span></span></div>
+                                                their expertise.)</i>. Other values conform to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the hand responsible for an action. The value must be the ID of a hand element declared in the header.">@hand</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the hand responsible for an action. The value must be the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/hand.html">&lt;hand&gt;</a> element declared in the header.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">@layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Identifies the layer to which a feature applies.">@layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
+                                             Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the part in which the current feature should appear. Use 'all' when the feature should occur in every part or 'none' when the feature should not appear in any part.">@part</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the part in which the current feature should appear. Use 'all' when the
                                              feature
                                              should occur in every part or 'none' when the feature should not appear in any part.</span><span class="attributeValues">
@@ -462,23 +479,27 @@
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the part staff on which a notated feature occurs. Use 'all' when the feature should occur on every staff.">@partstaff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the part staff on which a notated feature occurs. Use 'all' when the
                                              feature should occur on every staff.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.PARTSTAFF.html">data.PARTSTAFF</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="When the target attribute is present, plist identifies the active participants; that is, those entities pointed &#34;from&#34;, in a relationship with the specified target(s). When the target attribute is not present, it identifies participants in a mutual relationship.">@plist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When the target attribute is present, plist identifies the active participants; that
                                              is, those entities pointed "from", in a relationship with the specified target(s).
                                              When
                                              the target attribute is not present, it identifies participants in a mutual
                                              relationship.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">@seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
-                                             carrying this attribute are believed to have occurred.</span><span class="attributeValues"></span></span></div>
+                                             carrying this attribute are believed to have occurred.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a source or manifestationelement located in the document header.">@source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                                              reading. Each value should correspond to the ID of a <a class="link_odd link_odd_elementSpec" href="../elements/source.html">&lt;source&gt;</a> or <a class="link_odd link_odd_elementSpec" href="../elements/manifestation.html">&lt;manifestation&gt;</a>element located in the document header.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">@staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
-                                             applies. Mandatory when applicable.</span><span class="attributeValues"></span></span></div>
+                                             applies. Mandatory when applicable.</span><span class="attributeValues">
+                                             Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Holds a reference to the first element in a sequence of events to which the feature applies.">@startid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a reference to the first element in a sequence of events to which the feature
                                              applies.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
@@ -556,7 +577,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1ceca4787345be1b96f4fa1701d60b6c2d19da78" target="_blank" rel="noopener noreferrer">#1ceca47</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+anyStart</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9b0a3fe437eba210e542632efcf136503365687a" target="_blank" rel="noopener noreferrer">#9b0a3fe</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

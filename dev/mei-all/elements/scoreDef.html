@@ -58,7 +58,7 @@
                                  <div class="desc"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">@aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                                        away
                                        from the staff.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffItems.html">att.staffItems</a></span><span class="step end">@aboveorder</span></div>
                               </div>
@@ -66,7 +66,9 @@
                                  <div class="desc"><span class="ident attribute" title="States the length of bar lines in virtual units. The value must be greater than 0 and is typically equal to 2 times (the number of staff lines - 1); e.g., a value of 8 for a 5-line staff.">@bar.len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States the length of bar lines in virtual units. The value must be greater than 0
                                        and
                                        is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
-                                       5-line staff.</span><span class="attributeValues"></span></div>
+                                       5-line staff.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.barring.html">att.barring</a></span><span class="step end">@bar.len</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -90,7 +92,9 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Provides an example of how automated beaming (including secondary beams) is to be performed.">@beam.group</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an example of how automated beaming (including secondary beams) is to be
-                                       performed.</span><span class="attributeValues"></span></div>
+                                       performed.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.cmn.html">att.scoreDef.log.cmn</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.beaming.log.html">att.beaming.log</a></span><span class="step end">@beam.group</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -118,20 +122,20 @@
                                  <div class="desc"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">@beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                                        away
                                        from the staff.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffItems.html">att.staffItems</a></span><span class="step end">@beloworder</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">@betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffItems.html">att.staffItems</a></span><span class="step end">@betweenorder</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                                        bearing this attribute.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a></span><span class="step end">@class</span></div>
                               </div>
@@ -183,7 +187,7 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                                        fashion.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@corresp</span></div>
                               </div>
@@ -220,7 +224,7 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                                        predecessors of the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@follows</span></div>
                               </div>
@@ -258,7 +262,7 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a></span><span class="step end">@keysig</span></div>
                               </div>
@@ -278,7 +282,9 @@
                                  <div class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                        a
                                        "tool tip" or prefatory text, for example. Should not be used to record document
-                                       content.</span><span class="attributeValues"></span></div>
+                                       content.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.labelled.html">att.labelled</a></span><span class="step end">@label</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -360,13 +366,17 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Indicates the number lines added to the mensuration sign. For example, one slash is added for what we now call 'alla breve'.">@mensur.slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number lines added to the mensuration sign. For example, one slash is
-                                       added for what we now call 'alla breve'.</span><span class="attributeValues"></span></div>
+                                       added for what we now call 'alla breve'.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.mensural.html">att.scoreDef.vis.mensural</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensural.vis.html">att.mensural.vis</a></span><span class="step end">@mensur.slash</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Captures the number of beats in a measure, that is, the top number of the meter signature. It must contain a decimal number or an expression that evaluates to a decimal number, such as 2+3 or 3*2.">@meter.count</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of beats in a measure, that is, the top number of the meter
                                        signature. It must contain a decimal number or an expression that evaluates to a
-                                       decimal number, such as 2+3 or 3*2.</span><span class="attributeValues"></span></div>
+                                       decimal number, such as 2+3 or 3*2.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>, matching the regular expression <code>\d+(\.\d+)?(\s*[\+\-\*/]\s*\d+(\.\d+)?)*</code>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSigDefault.log.html">att.meterSigDefault.log</a></span><span class="step end">@meter.count</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -392,7 +402,9 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Contains the number indicating the beat unit, that is, the bottom number of the meter signature.">@meter.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the number indicating the beat unit, that is, the bottom number of the meter
-                                       signature.</span><span class="attributeValues"></span></div>
+                                       signature.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.meterSigDefault.log.html">att.meterSigDefault.log</a></span><span class="step end">@meter.unit</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -437,7 +449,9 @@
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.channelized.html">att.channelized</a></span><span class="step end">@midi.port</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.channelized.html">att.channelized</a></span><span class="step end">@midi.track</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -508,30 +522,38 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@next</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase, describes duration as a ratio. num is the first value in the
-                                       ratio, while numbase is the second.</span><span class="attributeValues"></span></div>
+                                       ratio, while numbase is the second.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.ratio.html">att.duration.ratio</a></span><span class="step end">@num</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Along with numbase.default, describes the default duration as a ratio. num.default is the first value in the ratio.">@num.default</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase.default, describes the default duration as a ratio. num.default
                                        is
-                                       the first value in the ratio.</span><span class="attributeValues"></span></div>
+                                       the first value in the ratio.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.default.html">att.duration.default</a></span><span class="step end">@num.default</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
-                                       while numbase is the second.</span><span class="attributeValues"></span></div>
+                                       while numbase is the second.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.ratio.html">att.duration.ratio</a></span><span class="step end">@numbase</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Along with num.default, describes the default duration as a ratio. numbase.default is the second value in the ratio.">@numbase.default</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num.default, describes the default duration as a ratio. numbase.default
                                        is
-                                       the second value in the ratio.</span><span class="attributeValues"></span></div>
+                                       the second value in the ratio.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.default.html">att.duration.default</a></span><span class="step end">@numbase.default</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -616,19 +638,21 @@
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
                                        quarter note. Unlike MIDI, MEI permits different values for a score and individual
-                                       staves.</span><span class="attributeValues"></span></div>
+                                       staves.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.timeBase.html">att.timeBase</a></span><span class="step end">@ppq</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                                        successors of the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@precedes</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@prev</span></div>
                               </div>
@@ -640,12 +664,16 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Together, proport.num and proport.numbase specify a proportional change as a ratio, e.g., 1:3. Proport.num is for the first value in the ratio.">@proport.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Together, proport.num and proport.numbase specify a proportional change as a ratio,
-                                       <abbr>e.g.</abbr>, 1:3. Proport.num is for the first value in the ratio.</span><span class="attributeValues"></span></div>
+                                       <abbr>e.g.</abbr>, 1:3. Proport.num is for the first value in the ratio.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.mensural.html">att.scoreDef.log.mensural</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensural.log.html">att.mensural.log</a></span><span class="step end">@proport.num</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Together, proport.num and proport.numbase specify a proportional change as a ratio, e.g., 1:3. Proport.numbase is for the second value in the ratio.">@proport.numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Together, proport.num and proport.numbase specify a proportional change as a ratio,
-                                       <abbr>e.g.</abbr>, 1:3. Proport.numbase is for the second value in the ratio.</span><span class="attributeValues"></span></div>
+                                       <abbr>e.g.</abbr>, 1:3. Proport.numbase is for the second value in the ratio.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.mensural.html">att.scoreDef.log.mensural</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensural.log.html">att.mensural.log</a></span><span class="step end">@proport.numbase</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -663,7 +691,7 @@
                                        editing, or encoding. Its value must point to one or more identifiers declared in
                                        the
                                        document header.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.responsibility.html">att.responsibility</a></span><span class="step end">@resp</span></div>
                               </div>
@@ -671,7 +699,7 @@
                                  <div class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                                        copy
                                        of the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@sameas</span></div>
                               </div>
@@ -688,11 +716,15 @@
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.cmn.html">att.scoreDef.vis.cmn</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slurRend.html">att.slurRend</a></span><span class="step end">@slur.lwidth</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></span><span class="step end">@spacing.packexp</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></span><span class="step end">@spacing.packfact</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -708,13 +740,13 @@
                                        (minimum and maximum, respectively) provides a range between which a rendering
                                        system-supplied value may fall, while a single value indicates a fixed amount of space;
                                        that is, the minimum and maximum values are equal.</span><span class="attributeValues">
-                                       One or two values from <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>, separated by a space.
+                                       Value conforms to 1 to 2 space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></span><span class="step end">@spacing.system</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.linking.html">att.linking</a></span><span class="step end">@synch</span></div>
                               </div>
@@ -809,16 +841,22 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records the amount of diatonic pitch shift, e.g., C to C♯ = 0, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.diat</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of diatonic pitch shift, <abbr>e.g.</abbr>, C to C♯ = 0, C to D♭ = 1, necessary
-                                       to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></div>
+                                       to calculate the sounded pitch from the written one.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#integer">XML Schema integer datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.transposition.html">att.transposition</a></span><span class="step end">@trans.diat</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Records the amount of pitch shift in semitones, e.g., C to C♯ = 1, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.semi</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of pitch shift in semitones, <abbr>e.g.</abbr>, C to C♯ = 1, C to D♭ = 1,
-                                       necessary to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></div>
+                                       necessary to calculate the sounded pitch from the written one.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#integer">XML Schema integer datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.transposition.html">att.transposition</a></span><span class="step end">@trans.semi</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></span><span class="step end">@tune.Hz</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -835,7 +873,9 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
-                                       classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></div>
+                                       classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                       Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></span><span class="step end">@type</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -843,7 +883,9 @@
                                        vu
                                        is half the distance between adjacent staff lines where the interline space is measured
                                        
-                                       from the middle of a staff line.</span><span class="attributeValues"></span></div>
+                                       from the middle of a staff line.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">XML Schema token datatype</a>, matching the regular expression <code>\d+(\.\d+)?(cm|mm|in|pt|pc)</code>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a></span><span class="step end">@vu.height</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -855,7 +897,9 @@
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
-                                       and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues"></span></div>
+                                       and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#ID">XML Schema ID datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;scoreDef&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.common.html">att.common</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.basic.html">att.basic</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.id.html">att.id</a></span><span class="step end">@xml:id</span></div>
                               </div>
                            </div>
@@ -874,7 +918,9 @@
                                              <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.id.html">att.id</a></label><span class="classDesc">(MEI.shared) Attributes that uniquely identify an element.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
-                                                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues"></span></span></div>
+                                                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                                         Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#ID">XML Schema ID datatype</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                        </div>
@@ -885,7 +931,9 @@
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                                    a
                                                    "tool tip" or prefatory text, for example. Should not be used to record document
-                                                   content.</span><span class="attributeValues"></span></span></div>
+                                                   content.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.linking">
@@ -896,29 +944,29 @@
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                                                    fashion.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                                                    predecessors of the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                                                    successors of the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                                                    copy
                                                    of the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -939,7 +987,7 @@
                                                    editing, or encoding. Its value must point to one or more identifiers declared in
                                                    the
                                                    document header.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -947,13 +995,15 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.typed.html">att.typed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
-                                                   classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></span></div>
+                                                   classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                                   Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                                   </span></span></div>
                                           <div class="classBox" title="att.classed">
                                              <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.classed.html">att.classed</a></label><span class="classDesc">(MEI.shared) Attributes which can be used to classify features.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                                                          bearing this attribute.</span><span class="attributeValues">
-                                                         One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                                         Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                                          </span></span></div>
                                              </div>
                                           </div>
@@ -1003,7 +1053,9 @@
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI port value.">@midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
                                                    Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIVALUE_NAME.html">data.MIDIVALUE_NAME</a>.
                                                    </span></span></div>
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.timeBase">
@@ -1011,13 +1063,17 @@
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
                                                    quarter note. Unlike MIDI, MEI permits different values for a score and individual
-                                                   staves.</span><span class="attributeValues"></span></span></div>
+                                                   staves.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.tuning">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.tuning.html">att.tuning</a></label><span class="classDesc">(MEI.shared) Attributes that describe tuning.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
                                                    Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
                                                    </span></span></div>
@@ -1098,19 +1154,27 @@
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Along with numbase.default, describes the default duration as a ratio. num.default is the first value in the ratio.">@num.default</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase.default, describes the default duration as a ratio. num.default
                                                    is
-                                                   the first value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                                   the first value in the ratio.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Along with num.default, describes the default duration as a ratio. numbase.default is the second value in the ratio.">@numbase.default</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num.default, describes the default duration as a ratio. numbase.default
                                                    is
-                                                   the second value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                                   the second value in the ratio.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.duration.ratio">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.duration.ratio.html">att.duration.ratio</a></label><span class="classDesc">(MEI.shared) Attributes that describe duration as a ratio.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase, describes duration as a ratio. num is the first value in the
-                                                   ratio, while numbase is the second.</span><span class="attributeValues"></span></span></div>
+                                                   ratio, while numbase is the second.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
-                                                   while numbase is the second.</span><span class="attributeValues"></span></span></div>
+                                                   while numbase is the second.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.keySigDefault.log">
@@ -1118,7 +1182,7 @@
                                              in the logical domain that are related to key signatures.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -1128,9 +1192,13 @@
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Captures the number of beats in a measure, that is, the top number of the meter signature. It must contain a decimal number or an expression that evaluates to a decimal number, such as 2+3 or 3*2.">@meter.count</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of beats in a measure, that is, the top number of the meter
                                                    signature. It must contain a decimal number or an expression that evaluates to a
-                                                   decimal number, such as 2+3 or 3*2.</span><span class="attributeValues"></span></span></div>
+                                                   decimal number, such as 2+3 or 3*2.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>, matching the regular expression <code>\d+(\.\d+)?(\s*[\+\-\*/]\s*\d+(\.\d+)?)*</code>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Contains the number indicating the beat unit, that is, the bottom number of the meter signature.">@meter.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the number indicating the beat unit, that is, the bottom number of the meter
-                                                   signature.</span><span class="attributeValues"></span></span></div>
+                                                   signature.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C' for common time or 'C' with a slash for cut time.">@meter.sym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
                                                    'C'
                                                    for common time or 'C' with a slash for cut time.</span><span class="attributeValues">
@@ -1152,9 +1220,13 @@
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.transposition.html">att.transposition</a></label><span class="classDesc">(MEI.shared) Attributes that describe transposition.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of diatonic pitch shift, e.g., C to C♯ = 0, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.diat</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of diatonic pitch shift, <abbr>e.g.</abbr>, C to C♯ = 0, C to D♭ = 1, necessary
-                                                   to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></span></div>
+                                                   to calculate the sounded pitch from the written one.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#integer">XML Schema integer datatype</a>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of pitch shift in semitones, e.g., C to C♯ = 1, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.semi</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of pitch shift in semitones, <abbr>e.g.</abbr>, C to C♯ = 1, C to D♭ = 1,
-                                                   necessary to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></span></div>
+                                                   necessary to calculate the sounded pitch from the written one.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#integer">XML Schema integer datatype</a>.
+                                                   </span></span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="att.scoreDef.log.cmn">
@@ -1165,7 +1237,9 @@
                                                    in the logical domain related to beaming.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Provides an example of how automated beaming (including secondary beams) is to be performed.">@beam.group</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an example of how automated beaming (including secondary beams) is to be
-                                                         performed.</span><span class="attributeValues"></span></span></div>
+                                                         performed.</span><span class="attributeValues">
+                                                         Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                                         </span></span></div>
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Indicates whether automatically-drawn beams should include rests shorter than a quarter note duration.">@beam.rests</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether automatically-drawn beams should include rests shorter than a
                                                          quarter note duration.</span><span class="attributeValues">
                                                          Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
@@ -1190,9 +1264,13 @@
                                                    describe augmentation or diminution of the normal value of the notes in mensural notation.</span></div>
                                              <div class="classContent">
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Together, proport.num and proport.numbase specify a proportional change as a ratio, e.g., 1:3. Proport.num is for the first value in the ratio.">@proport.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Together, proport.num and proport.numbase specify a proportional change as a ratio,
-                                                         <abbr>e.g.</abbr>, 1:3. Proport.num is for the first value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                                         <abbr>e.g.</abbr>, 1:3. Proport.num is for the first value in the ratio.</span><span class="attributeValues">
+                                                         Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                         </span></span></div>
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Together, proport.num and proport.numbase specify a proportional change as a ratio, e.g., 1:3. Proport.numbase is for the second value in the ratio.">@proport.numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Together, proport.num and proport.numbase specify a proportional change as a ratio,
-                                                         <abbr>e.g.</abbr>, 1:3. Proport.numbase is for the second value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                                         <abbr>e.g.</abbr>, 1:3. Proport.numbase is for the second value in the ratio.</span><span class="attributeValues">
+                                                         Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                         </span></span></div>
                                                 <div class="classBox" title="att.mensural.shared">
                                                    <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.mensural.shared.html">att.mensural.shared</a></label><span class="classDesc">(MEI.mensural) Shared attributes in the mensural repertoire.</span></div>
                                                    <div class="classContent">
@@ -1226,14 +1304,18 @@
                                              vu
                                              is half the distance between adjacent staff lines where the interline space is measured
                                              
-                                             from the middle of a staff line.</span><span class="attributeValues"></span></span></div>
+                                             from the middle of a staff line.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">XML Schema token datatype</a>, matching the regular expression <code>\d+(\.\d+)?(cm|mm|in|pt|pc)</code>.
+                                             </span></span></div>
                                     <div class="classBox" title="att.barring">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.barring.html">att.barring</a></label><span class="classDesc">(MEI.shared) Attributes that capture the placement of bar lines.</span></div>
                                        <div class="classContent">
                                           <div class="def"><span class="desc"><span class="ident attribute" title="States the length of bar lines in virtual units. The value must be greater than 0 and is typically equal to 2 times (the number of staff lines - 1); e.g., a value of 8 for a 5-line staff.">@bar.len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States the length of bar lines in virtual units. The value must be greater than 0
                                                    and
                                                    is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
-                                                   5-line staff.</span><span class="attributeValues"></span></span></div>
+                                                   5-line staff.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                                                    Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>.
                                                    </span></span></div>
@@ -1414,8 +1496,12 @@
                                     <div class="classBox" title="att.spacing">
                                        <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></label><span class="classDesc">(MEI.shared) Attributes that capture notation spacing information.</span></div>
                                        <div class="classContent">
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues"></span></span></div>
-                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues"></span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                                   </span></span></div>
+                                          <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues">
+                                                   Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                                   </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the minimum amount of space between adjacent staves in the same system; measured from the bottom line of the staff above to the top line of the staff below.">@spacing.staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the minimum amount of space between adjacent staves in the same system;
                                                    measured from the bottom line of the staff above to the top line of the staff
                                                    below.</span><span class="attributeValues">
@@ -1425,7 +1511,7 @@
                                                    (minimum and maximum, respectively) provides a range between which a rendering
                                                    system-supplied value may fall, while a single value indicates a fixed amount of space;
                                                    that is, the minimum and maximum values are equal.</span><span class="attributeValues">
-                                                   One or two values from <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>, separated by a space.
+                                                   Value conforms to 1 to 2 space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -1436,15 +1522,15 @@
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">@aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                                                    away
                                                    from the staff.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">@beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                                                    away
                                                    from the staff.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                                    </span></span></div>
                                           <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">@betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
-                                                   One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                                   Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                                    </span></span></div>
                                        </div>
                                     </div>
@@ -1592,7 +1678,9 @@
                                                          Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZE.html">data.FONTSIZE</a>.
                                                          </span></span></div>
                                                 <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number lines added to the mensuration sign. For example, one slash is added for what we now call 'alla breve'.">@mensur.slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number lines added to the mensuration sign. For example, one slash is
-                                                         added for what we now call 'alla breve'.</span><span class="attributeValues"></span></span></div>
+                                                         added for what we now call 'alla breve'.</span><span class="attributeValues">
+                                                         Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                                         </span></span></div>
                                              </div>
                                           </div>
                                        </div>
@@ -1624,7 +1712,9 @@
                                  <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
                                  <div class="classContent">
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides an example of how automated beaming (including secondary beams) is to be performed.">@beam.group</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an example of how automated beaming (including secondary beams) is to be
-                                             performed.</span><span class="attributeValues"></span></span></div>
+                                             performed.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates whether automatically-drawn beams should include rests shorter than a quarter note duration.">@beam.rests</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether automatically-drawn beams should include rests shorter than a
                                              quarter note duration.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BOOLEAN.html">data.BOOLEAN</a>.
@@ -1663,9 +1753,13 @@
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PROLATIO.html">data.PROLATIO</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Together, proport.num and proport.numbase specify a proportional change as a ratio, e.g., 1:3. Proport.num is for the first value in the ratio.">@proport.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Together, proport.num and proport.numbase specify a proportional change as a ratio,
-                                             <abbr>e.g.</abbr>, 1:3. Proport.num is for the first value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                             <abbr>e.g.</abbr>, 1:3. Proport.num is for the first value in the ratio.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Together, proport.num and proport.numbase specify a proportional change as a ratio, e.g., 1:3. Proport.numbase is for the second value in the ratio.">@proport.numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Together, proport.num and proport.numbase specify a proportional change as a ratio,
-                                             <abbr>e.g.</abbr>, 1:3. Proport.numbase is for the second value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                             <abbr>e.g.</abbr>, 1:3. Proport.numbase is for the second value in the ratio.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes the breve-semibreve relationship.">@tempus</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the breve-semibreve relationship.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPUS.html">data.TEMPUS</a>.
                                              </span></span></div>
@@ -1694,10 +1788,14 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI port value.">@midi.port</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI port value.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MIDIVALUE_NAME.html">data.MIDIVALUE_NAME</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Sets the MIDI track.">@midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.">@ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
                                              quarter note. Unlike MIDI, MEI permits different values for a score and individual
-                                             staves.</span><span class="attributeValues"></span></span></div>
+                                             staves.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="MEI.shared">
@@ -1706,12 +1804,14 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">@aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                                              away
                                              from the staff.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="States the length of bar lines in virtual units. The value must be greater than 0 and is typically equal to 2 times (the number of staff lines - 1); e.g., a value of 8 for a 5-line staff.">@bar.len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States the length of bar lines in virtual units. The value must be greater than 0
                                              and
                                              is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
-                                             5-line staff.</span><span class="attributeValues"></span></span></div>
+                                             5-line staff.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>.
                                              </span></span></div>
@@ -1722,14 +1822,14 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">@beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                                              away
                                              from the staff.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">@betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">@class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                                              bearing this attribute.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of octave displacement to be applied to the clef.">@clef.dis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of octave displacement to be applied to the clef.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.OCTAVE.DIS.html">data.OCTAVE.DIS</a>.
@@ -1751,7 +1851,7 @@
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">@corresp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to other elements that correspond to this one in a generic
                                              fashion.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the default distance from the staff for directives.">@dir.dist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the default distance from the staff for directives.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
@@ -1767,19 +1867,21 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes where ending marks should be displayed.">@ending.rend</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes where ending marks should be displayed.</span><span class="attributeValues"> Allowed values are: "<span style="font-weight: 500;">top</span>" <i>(Ending rendered only above top staff.)</i>,  "<span style="font-weight: 500;">barred</span>" <i>(Ending rendered above staves that have bar lines drawn across them.)</i>,  "<span style="font-weight: 500;">grouped</span>" <i>(Endings rendered above staff groups.)</i></span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">@follows</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">points to one or more events in a user-defined collection that are known to be
                                              predecessors of the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the default distance from the staff of harmonic indications, such as guitar chord grids or functional labels.">@harm.dist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the default distance from the staff of harmonic indications, such as guitar
                                              chord grids or functional labels.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Written key signature.">@keysig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Written key signature.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.KEYFIFTHS.html">data.KEYFIFTHS</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it’s attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">@label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it’s attached,
                                              a
                                              "tool tip" or prefatory text, for example. Should not be used to record document
-                                             content.</span><span class="attributeValues"></span></span></div>
+                                             content.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes the alignment of lyric syllables associated with a note or chord.">@lyric.align</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the alignment of lyric syllables associated with a note or chord.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                              </span></span></div>
@@ -1800,14 +1902,18 @@
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Captures the number of beats in a measure, that is, the top number of the meter signature. It must contain a decimal number or an expression that evaluates to a decimal number, such as 2+3 or 3*2.">@meter.count</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of beats in a measure, that is, the top number of the meter
                                              signature. It must contain a decimal number or an expression that evaluates to a
-                                             decimal number, such as 2+3 or 3*2.</span><span class="attributeValues"></span></span></div>
+                                             decimal number, such as 2+3 or 3*2.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#string">XML Schema string datatype</a>, matching the regular expression <code>\d+(\.\d+)?(\s*[\+\-\*/]\s*\d+(\.\d+)?)*</code>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C' for common time or 'C' with a slash for cut time.">@meter.sym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
                                              'C'
                                              for common time or 'C' with a slash for cut time.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.METERSIGN.html">data.METERSIGN</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains the number indicating the beat unit, that is, the bottom number of the meter signature.">@meter.unit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the number indicating the beat unit, that is, the bottom number of the meter
-                                             signature.</span><span class="attributeValues"></span></span></div>
+                                             signature.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute; e.g., M.M. (Maelzel’s Metronome) markings. Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, not the numerator of the time signature or the metronomic indication.">@mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
                                              minute; e.g., M.M. (Maelzel’s Metronome) markings. Do not confuse this attribute with
                                              <span class="att">@midi.bpm</span> or 
@@ -1839,18 +1945,26 @@
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.WORD.html">data.WORD</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">@next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase, describes duration as a ratio. num is the first value in the
-                                             ratio, while numbase is the second.</span><span class="attributeValues"></span></span></div>
+                                             ratio, while numbase is the second.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Along with numbase.default, describes the default duration as a ratio. num.default is the first value in the ratio.">@num.default</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase.default, describes the default duration as a ratio. num.default
                                              is
-                                             the first value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                             the first value in the ratio.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">@numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
-                                             while numbase is the second.</span><span class="attributeValues"></span></span></div>
+                                             while numbase is the second.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Along with num.default, describes the default duration as a ratio. numbase.default is the second value in the ratio.">@numbase.default</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num.default, describes the default duration as a ratio. numbase.default
                                              is
-                                             the second value in the ratio.</span><span class="attributeValues"></span></span></div>
+                                             the second value in the ratio.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains a default octave specification for use when the first note, rest, chord, etc. in a measure does not have an octave value specified.">@oct.default</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a default octave specification for use when the first note, rest, chord,
                                              etc.
                                              in a measure does not have an octave value specified.</span><span class="attributeValues">
@@ -1893,10 +2007,10 @@
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">@precedes</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to one or more events in a user-defined collection that are known to be
                                              successors of the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">@prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the default distance from the staff for rehearsal marks.">@reh.dist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the default distance from the staff for rehearsal marks.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
@@ -1905,15 +2019,19 @@
                                              editing, or encoding. Its value must point to one or more identifiers declared in
                                              the
                                              document header.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">@sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                                              copy
                                              of the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the minimum amount of space between adjacent staves in the same system; measured from the bottom line of the staff above to the top line of the staff below.">@spacing.staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the minimum amount of space between adjacent staves in the same system;
                                              measured from the bottom line of the staff above to the top line of the staff
                                              below.</span><span class="attributeValues">
@@ -1923,10 +2041,10 @@
                                              (minimum and maximum, respectively) provides a range between which a rendering
                                              system-supplied value may fall, while a single value indicates a fixed amount of space;
                                              that is, the minimum and maximum values are equal.</span><span class="attributeValues">
-                                             One or two values from <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>, separated by a space.
+                                             Value conforms to 1 to 2 space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Points to elements that are synchronous with the current element.">@synch</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to elements that are synchronous with the current element.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates whether the system starts with a continuous line connecting all staves, including single-staff systems. Do not confuse this with the heavy vertical line used as a grouping symbol.">@system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the system starts with a continuous line connecting all staves,
                                              including single-staff systems. Do not confuse this with the heavy vertical line used
@@ -1970,10 +2088,16 @@
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTWEIGHT.html">data.FONTWEIGHT</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of diatonic pitch shift, e.g., C to C♯ = 0, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.diat</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of diatonic pitch shift, <abbr>e.g.</abbr>, C to C♯ = 0, C to D♭ = 1, necessary
-                                             to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></span></div>
+                                             to calculate the sounded pitch from the written one.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#integer">XML Schema integer datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the amount of pitch shift in semitones, e.g., C to C♯ = 1, C to D♭ = 1, necessary to calculate the sounded pitch from the written one.">@trans.semi</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of pitch shift in semitones, <abbr>e.g.</abbr>, C to C♯ = 1, C to D♭ = 1,
-                                             necessary to calculate the sounded pitch from the written one.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues"></span></span></div>
+                                             necessary to calculate the sounded pitch from the written one.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#integer">XML Schema integer datatype</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.">@tune.Hz</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a value for cycles per second, <abbr>i.e.</abbr>, Hertz, for a tuning reference pitch.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Holds the pitch name of a tuning reference pitch, i.e., the central tone of a tuning system.">@tune.pname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the pitch name of a tuning reference pitch, <abbr>i.e.</abbr>, the central tone of a tuning system.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
                                              </span></span></div>
@@ -1981,13 +2105,17 @@
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">@type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
-                                             classification scheme or typology that employs single-token labels.</span><span class="attributeValues"></span></span></div>
+                                             classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
+                                             Value conforms to 1 or more space-separated values of <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">XML Schema NMTOKEN datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">@xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                                              references into absolute URI references.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.URI.html">data.URI</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">@xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
-                                             and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues"></span></span></div>
+                                             and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#ID">XML Schema ID datatype</a>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="MEI.visual">
@@ -2040,7 +2168,9 @@
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.FONTSIZE.html">data.FONTSIZE</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates the number lines added to the mensuration sign. For example, one slash is added for what we now call 'alla breve'.">@mensur.slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number lines added to the mensuration sign. For example, one slash is
-                                             added for what we now call 'alla breve'.</span><span class="attributeValues"></span></span></div>
+                                             added for what we now call 'alla breve'.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#positiveInteger">XML Schema positiveInteger datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Contains an indication of how the meter signature should be rendered.">@meter.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains an indication of how the meter signature should be rendered.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.METERFORM.html">data.METERFORM</a>.
                                              </span></span></div>
@@ -2055,7 +2185,9 @@
                                              vu
                                              is half the distance between adjacent staff lines where the interline space is measured
                                              
-                                             from the middle of a staff line.</span><span class="attributeValues"></span></span></div>
+                                             from the middle of a staff line.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">XML Schema token datatype</a>, matching the regular expression <code>\d+(\.\d+)?(cm|mm|in|pt|pc)</code>.
+                                             </span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -2312,7 +2444,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1ceca4787345be1b96f4fa1701d60b6c2d19da78" target="_blank" rel="noopener noreferrer">#1ceca47</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9b0a3fe437eba210e542632efcf136503365687a" target="_blank" rel="noopener noreferrer">#9b0a3fe</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>

@@ -56,7 +56,7 @@
                                  <div class="desc"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">@aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                                        away
                                        from the staff.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffItems.html">att.staffItems</a></span><span class="step end">@aboveorder</span></div>
                               </div>
@@ -64,7 +64,9 @@
                                  <div class="desc"><span class="ident attribute" title="States the length of bar lines in virtual units. The value must be greater than 0 and is typically equal to 2 times (the number of staff lines - 1); e.g., a value of 8 for a 5-line staff.">@bar.len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States the length of bar lines in virtual units. The value must be greater than 0
                                        and
                                        is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
-                                       5-line staff.</span><span class="attributeValues"></span></div>
+                                       5-line staff.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.barring.html">att.barring</a></span><span class="step end">@bar.len</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -104,13 +106,13 @@
                                  <div class="desc"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">@beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                                        away
                                        from the staff.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffItems.html">att.staffItems</a></span><span class="step end">@beloworder</span></div>
                               </div>
                               <div class="classItem attributeDef">
                                  <div class="desc"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">@betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
-                                       One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                       Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.staffItems.html">att.staffItems</a></span><span class="step end">@betweenorder</span></div>
                               </div>
@@ -341,11 +343,15 @@
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.scoreDef.vis.cmn.html">att.scoreDef.vis.cmn</a></span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.slurRend.html">att.slurRend</a></span><span class="step end">@slur.lwidth</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></span><span class="step end">@spacing.packexp</span></div>
                               </div>
                               <div class="classItem attributeDef">
-                                 <div class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues"></span></div>
+                                 <div class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></span><span class="step end">@spacing.packfact</span></div>
                               </div>
                               <div class="classItem attributeDef">
@@ -361,7 +367,7 @@
                                        (minimum and maximum, respectively) provides a range between which a rendering
                                        system-supplied value may fall, while a single value indicates a fixed amount of space;
                                        that is, the minimum and maximum values are equal.</span><span class="attributeValues">
-                                       One or two values from <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>, separated by a space.
+                                       Value conforms to 1 to 2 space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                        </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></span><span class="step end">@spacing.system</span></div>
                               </div>
@@ -453,7 +459,9 @@
                                        vu
                                        is half the distance between adjacent staff lines where the interline space is measured
                                        
-                                       from the middle of a staff line.</span><span class="attributeValues"></span></div>
+                                       from the middle of a staff line.</span><span class="attributeValues">
+                                       Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">XML Schema token datatype</a>, matching the regular expression <code>\d+(\.\d+)?(cm|mm|in|pt|pc)</code>.
+                                       </span></div>
                                  <div class="breadcrumb"><span class="step start">&lt;att.scoreDef.vis&gt;</span><span class="step">direct children</span><span class="step end">@vu.height</span></div>
                               </div>
                            </div>
@@ -465,7 +473,9 @@
                                              vu
                                              is half the distance between adjacent staff lines where the interline space is measured
                                              
-                                             from the middle of a staff line.</span><span class="attributeValues"></span></span></div>
+                                             from the middle of a staff line.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">XML Schema token datatype</a>, matching the regular expression <code>\d+(\.\d+)?(cm|mm|in|pt|pc)</code>.
+                                             </span></span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="att.barring">
@@ -474,7 +484,9 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="States the length of bar lines in virtual units. The value must be greater than 0 and is typically equal to 2 times (the number of staff lines - 1); e.g., a value of 8 for a 5-line staff.">@bar.len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States the length of bar lines in virtual units. The value must be greater than 0
                                              and
                                              is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
-                                             5-line staff.</span><span class="attributeValues"></span></span></div>
+                                             5-line staff.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>.
                                              </span></span></div>
@@ -655,8 +667,12 @@
                               <div class="classBox" title="att.spacing">
                                  <div class="classHeading"><label class="classLabel"><a class="link_odd link_odd_attClass" href="../attribute-classes/att.spacing.html">att.spacing</a></label><span class="classDesc">(MEI.shared) Attributes that capture notation spacing information.</span></div>
                                  <div class="classContent">
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the minimum amount of space between adjacent staves in the same system; measured from the bottom line of the staff above to the top line of the staff below.">@spacing.staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the minimum amount of space between adjacent staves in the same system;
                                              measured from the bottom line of the staff above to the top line of the staff
                                              below.</span><span class="attributeValues">
@@ -666,7 +682,7 @@
                                              (minimum and maximum, respectively) provides a range between which a rendering
                                              system-supplied value may fall, while a single value indicates a fixed amount of space;
                                              that is, the minimum and maximum values are equal.</span><span class="attributeValues">
-                                             One or two values from <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>, separated by a space.
+                                             Value conforms to 1 to 2 space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -677,15 +693,15 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">@aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                                              away
                                              from the staff.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">@beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                                              away
                                              from the staff.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">@betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                  </div>
                               </div>
@@ -838,12 +854,14 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">@aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                                              away
                                              from the staff.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="States the length of bar lines in virtual units. The value must be greater than 0 and is typically equal to 2 times (the number of staff lines - 1); e.g., a value of 8 for a 5-line staff.">@bar.len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States the length of bar lines in virtual units. The value must be greater than 0
                                              and
                                              is typically equal to 2 times (the number of staff lines - 1); <abbr>e.g.</abbr>, a value of <span class="val">8</span> for a
-                                             5-line staff.</span><span class="attributeValues"></span></span></div>
+                                             5-line staff.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>, greater than <code>0</code>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the method of barring.">@bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.BARMETHOD.html">data.BARMETHOD</a>.
                                              </span></span></div>
@@ -854,10 +872,10 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">@beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                                              away
                                              from the staff.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">@betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
-                                             One or more values from <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>, separated by spaces.
+                                             Value conforms to 1 or more space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.STAFFITEM.html">data.STAFFITEM</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the default distance from the staff for directives.">@dir.dist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the default distance from the staff for directives.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
@@ -939,8 +957,12 @@
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Records the default distance from the staff for rehearsal marks.">@reh.dist</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the default distance from the staff for rehearsal marks.</span><span class="attributeValues">
                                              Value conforms to <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                              </span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues"></span></span></div>
-                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues"></span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes a note’s spacing relative to its time value.">@spacing.packexp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes a note’s spacing relative to its time value.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                             </span></span></div>
+                                    <div class="def"><span class="desc"><span class="ident attribute" title="Describes the note spacing of output.">@spacing.packfact</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the note spacing of output.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#decimal">XML Schema decimal datatype</a>.
+                                             </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Specifies the minimum amount of space between adjacent staves in the same system; measured from the bottom line of the staff above to the top line of the staff below.">@spacing.staff</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the minimum amount of space between adjacent staves in the same system;
                                              measured from the bottom line of the staff above to the top line of the staff
                                              below.</span><span class="attributeValues">
@@ -950,7 +972,7 @@
                                              (minimum and maximum, respectively) provides a range between which a rendering
                                              system-supplied value may fall, while a single value indicates a fixed amount of space;
                                              that is, the minimum and maximum values are equal.</span><span class="attributeValues">
-                                             One or two values from <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>, separated by a space.
+                                             Value conforms to 1 to 2 space-separated values of <a class="link_odd link_odd_dataType" href="../data-types/data.MEASUREMENTSIGNED.html">data.MEASUREMENTSIGNED</a>.
                                              </span></span></div>
                                     <div class="def"><span class="desc"><span class="ident attribute" title="Indicates whether the system starts with a continuous line connecting all staves, including single-staff systems. Do not confuse this with the heavy vertical line used as a grouping symbol.">@system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the system starts with a continuous line connecting all staves,
                                              including single-staff systems. Do not confuse this with the heavy vertical line used
@@ -1038,7 +1060,9 @@
                                              vu
                                              is half the distance between adjacent staff lines where the interline space is measured
                                              
-                                             from the middle of a staff line.</span><span class="attributeValues"></span></span></div>
+                                             from the middle of a staff line.</span><span class="attributeValues">
+                                             Value conforms to <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">XML Schema token datatype</a>, matching the regular expression <code>\d+(\.\d+)?(cm|mm|in|pt|pc)</code>.
+                                             </span></span></div>
                                  </div>
                               </div>
                            </div>
@@ -1148,7 +1172,7 @@
                </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/1ceca4787345be1b96f4fa1701d60b6c2d19da78" target="_blank" rel="noopener noreferrer">#1ceca47</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">6.0-dev+cmn</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/9b0a3fe437eba210e542632efcf136503365687a" target="_blank" rel="noopener noreferrer">#9b0a3fe</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" class="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
